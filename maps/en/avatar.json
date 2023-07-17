@@ -473,7 +473,7 @@
 			},
 			"talentName": "Gentle but Cruel",
 			"talentTag": "Single Target",
-			"talentDesc": "After an ally of Kafka's uses Basic ATK on an enemy, Kafka immediately launches 1 <u>follow-up attack</u> and deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of her ATK to that enemy, with a <unbreak>#4[i]%</unbreak> <u>base chance</u> of increasing the DoT DMG received by the enemy by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> for <unbreak>#3[i]</unbreak> turns. This effect can only be triggered 1 time per turn.",
+			"talentDesc": "After an ally of Kafka's uses Basic ATK on an enemy target, Kafka immediately launches 1 <u>follow-up attack</u> and deals Lightning DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of her ATK to that target, with a <unbreak>#2[i]%</unbreak> base chance to inflict Shock equivalent to that applied by her Ultimate to the attacked enemy target for <unbreak>#3[i]</unbreak> turns. This effect can only be triggered 1 time per turn.",
 			"talentIcon": "SkillIcon_1005_Passive",
 			"talentId": 100504,
 			"talentPromo": {
@@ -488,7 +488,7 @@
 				"111013": 7
 			},
 			"techName": "Mercy Is Not Forgiveness",
-			"techDesc": "Immediately attacks the enemy. After entering battle, deal Lightning DMG equal to <unbreak>#4[i]%</unbreak> of Kafka's ATK to all enemies. In addition, each enemy has a <unbreak>#1[i]%</unbreak> <u>base chance</u> to become Shocked for <unbreak>#3[i]</unbreak> turn(s).\\nWhile Shocked, enemies receive Lightning DoT equal to <unbreak>#2[i]%</unbreak> of Kafka's ATK at the beginning of each turn.",
+			"techDesc": "Immediately attacks all enemies within a set range. After entering battle, deals Lightning DMG equal to <unbreak>#3[i]%</unbreak> of Kafka's ATK to all enemies, with a <unbreak>#1[i]%</unbreak> <u>base chance</u> to inflict Shock equivalent to that applied by her Ultimate on every enemy target for <unbreak>#2[i]</unbreak> turn(s).",
 			"techIcon": "SkillIcon_1005_Maze",
 			"techId": 100507
 		},
@@ -543,7 +543,7 @@
 			},
 			"skillName": "Allow Changes?",
 			"skillTag": "Impair",
-			"skillDesc": "There is a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>base chance</u> to add 1 Weakness of an on-field ally's Type to the target enemy. This also reduces the enemy's DMG RES to that Weakness Type by <unbreak>#4[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s). If the enemy already has that Type Weakness, the effect of DMG RES reduction to that Weakness Type will not be triggered.\\nEach enemy can only have 1 Weakness implanted by Silver Wolf. When Silver Wolf implants another Weakness to the target, only the most recent implanted Weakness will be kept.\\nIn addition, there is a <unbreak>#5[i]%</unbreak> <u>base chance</u> to reduce the All-Type RES of the enemy further by <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> for <unbreak>#7[i]</unbreak> turn(s).\\nDeals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Silver Wolf's ATK to this enemy.",
+			"skillDesc": "There is a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> <u>base chance</u> to add 1 Weakness of an on-field character's Type to the target enemy. This also reduces the enemy's DMG RES to that Weakness Type by <unbreak>#4[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s). If the enemy already has that Type Weakness, the effect of DMG RES reduction to that Weakness Type will not be triggered.\\nEach enemy can only have 1 Weakness implanted by Silver Wolf. When Silver Wolf implants another Weakness to the target, only the most recent implanted Weakness will be kept.\\nIn addition, there is a <unbreak>#5[i]%</unbreak> <u>base chance</u> to further reduce the All-Type RES of the enemy by <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> for <unbreak>#7[i]</unbreak> turn(s).\\nDeals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Silver Wolf's ATK to this enemy.",
 			"skillIcon": "SkillIcon_1006_BP",
 			"skillId": 100602,
 			"skillPromo": {
@@ -575,7 +575,7 @@
 			},
 			"talentName": "Awaiting System Response...",
 			"talentTag": "Impair",
-			"talentDesc": "Silver Wolf can create three types of Bugs: reduce ATK by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>, reduce DEF by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>, and reduce SPD by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>.\\nEvery time Silver Wolf attacks, she has a <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> <u>base chance</u> to implant a random Bug that lasts for <unbreak>#5[i]</unbreak> turn(s) in the enemy target.",
+			"talentDesc": "Silver Wolf can create three types of Bugs: reduce ATK by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>, reduce DEF by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>, and reduce SPD by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>.\\nEvery time Silver Wolf attacks, she has a <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> <u>base chance</u> to implant a random Bug that lasts for <unbreak>#5[i]</unbreak> turn(s) in an enemy target.",
 			"talentIcon": "SkillIcon_1006_Passive",
 			"talentId": 100604,
 			"talentPromo": {
@@ -1843,6 +1843,108 @@
 			80
 		]
 	},
+	"1111": {
+		"name": "Luka",
+		"stats": {
+			"maxHP": 917,
+			"maxATK": 582,
+			"maxDEF": 485,
+			"SPD": 103,
+			"TNT": 100,
+			"CR": 0.05000000004656613,
+			"CDMG": 0.5000000004656613
+		},
+		"icon": "1111",
+		"rarity": "VeryRare",
+		"element": "Physical",
+		"skills": {
+			"basicName": "Direct Punch",
+			"basicTag": "Single Target",
+			"basicDesc": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Luka's ATK to a single enemy.",
+			"basicIcon": "SkillIcon_1111_Normal",
+			"basicId": 111101,
+			"basicPromo": {
+				"2": 192000,
+				"110151": 2,
+				"110152": 6,
+				"110153": 8,
+				"112011": 4,
+				"112012": 5,
+				"112013": 5
+			},
+			"skillName": "Lacerating Fist",
+			"skillTag": "Single Target",
+			"skillDesc": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Luka's ATK to a single enemy target. In addition, there is a <unbreak>#2[i]%</unbreak> <u>base chance</u> to inflict Bleed on them, lasting for <unbreak>#5[i]</unbreak> turn(s).\\nWhile Bleeding, the enemy will take <unbreak>#3[f1]%</unbreak> of their Max HP as Physical DoT at the start of each turn. This DMG will not exceed more than <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of Luka's ATK.",
+			"skillIcon": "SkillIcon_1111_BP",
+			"skillId": 111102,
+			"skillPromo": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"112011": 6,
+				"112012": 10,
+				"112013": 5
+			},
+			"ultName": "Coup de Grâce",
+			"ultTag": "Single Target",
+			"ultDesc": "Receives <unbreak>#5[i]</unbreak> stack(s) of Fighting Will, with a <unbreak>#2[i]%</unbreak> <u>base chance</u> to increase a single enemy target's DMG received by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> for <unbreak>#4[i]</unbreak> turn(s). Then, deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Luka's ATK to the target.",
+			"ultIcon": "SkillIcon_1111_Ultra",
+			"ultId": 111103,
+			"ultPromo": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"112011": 6,
+				"112012": 10,
+				"112013": 5
+			},
+			"talentName": "Flying Sparks",
+			"talentTag": "Enhance",
+			"talentDesc": "After Luka uses his Basic ATK \"Direct Punch\" or Skill \"Lacerating Fist,\" he receives <unbreak>#1[i]</unbreak> stack(s) of Fighting Will, up to 4 stacks. When he has 2 or more stacks of Fighting Will, his Basic ATK \"Direct Punch\" is enhanced to \"Sky-Shatter Fist.\" After his Enhanced Basic ATK's \"Rising Uppercut\" hits a Bleeding enemy target, the Bleed status will immediately deal DMG for 1 time equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the original DMG to the target. At the start of battle, Luka will possess 1 stack of Fighting Will.",
+			"talentIcon": "SkillIcon_1111_Passive",
+			"talentId": 111104,
+			"talentPromo": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"112011": 6,
+				"112012": 10,
+				"112013": 5
+			},
+			"techName": "Anticipator",
+			"techDesc": "Immediately attacks the enemy. Upon entering battle, Luka deals Physical DMG equal to <unbreak>#1[i]%</unbreak> of his ATK to a random single enemy with a <unbreak>#2[i]%</unbreak> <u>base chance</u> to inflict his Skill's Bleed effect on the target. Then, Luka gains 1 additional stack of Fighting Will.",
+			"techIcon": "SkillIcon_1111_Maze",
+			"techId": 111107
+		},
+		"avatarType": "Warlock",
+		"promotion": {
+			"2": 246400,
+			"110401": 50,
+			"112011": 12,
+			"112012": 13,
+			"112013": 12
+		},
+		"exp": 5797920,
+		"id": "1111",
+		"maxLevels": [
+			20,
+			30,
+			40,
+			50,
+			60,
+			70,
+			80
+		]
+	},
 	"1201": {
 		"name": "Qingque",
 		"stats": {
@@ -2096,7 +2198,7 @@
 			},
 			"ultName": "Death Wish",
 			"ultTag": "AoE",
-			"ultDesc": "Removes <unbreak>#2[i]</unbreak> <u>buff(s)</u> from all enemies and deals Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Luocha's ATK to all enemies. Luocha gains 1 stack of Abyss Flower.",
+			"ultDesc": "Removes <unbreak>#2[i]</unbreak> <u>buff(s)</u> from all enemies and deals all enemies Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Luocha's ATK. At the same time, Luocha gains 1 stack of Abyss Flower.",
 			"ultIcon": "SkillIcon_1203_Ultra",
 			"ultId": 120303,
 			"ultPromo": {
@@ -2255,6 +2357,108 @@
 			80
 		]
 	},
+	"1205": {
+		"name": "Blade",
+		"stats": {
+			"maxHP": 1358,
+			"maxATK": 543,
+			"maxDEF": 485,
+			"SPD": 97,
+			"TNT": 125,
+			"CR": 0.05000000004656613,
+			"CDMG": 0.5000000004656613
+		},
+		"icon": "1205",
+		"rarity": "SuperRare",
+		"element": "Wind",
+		"skills": {
+			"basicName": "Shard Sword",
+			"basicTag": "Single Target",
+			"basicDesc": "Deals <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Blade's ATK as Wind DMG to a target enemy.",
+			"basicIcon": "SkillIcon_1205_Normal",
+			"basicId": 120501,
+			"basicPromo": {
+				"2": 240000,
+				"110111": 3,
+				"110112": 8,
+				"110113": 11,
+				"113001": 6,
+				"113002": 7,
+				"113003": 7
+			},
+			"skillName": "Hellscape",
+			"skillTag": "Enhance",
+			"skillDesc": "Consumes HP equal to <unbreak>#1[i]%</unbreak> of Blade's Max HP to enter the Hellscape state.\\nWhen Hellscape is active, his Skill cannot be used, his DMG dealt increases by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, and his Basic ATK Shard Sword is enhanced to Forest of Swords for <unbreak>#2[i]</unbreak> turn(s).\\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when he uses his Skill.\\nThis Skill does not regenerate Energy. Using this Skill does not end the current turn.",
+			"skillIcon": "SkillIcon_1205_BP",
+			"skillId": 120502,
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"ultName": "Death Sentence",
+			"ultTag": "Blast",
+			"ultDesc": "Sets Blade's current HP to <unbreak>50%</unbreak> of his Max HP and deals to a single enemy Wind DMG equal to the sum of <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of his ATK, <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of his Max HP, and <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of the total HP he has lost in the current battle. At the same time, deals Wind DMG to adjacent targets equal to the sum of <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> of his ATK, <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of his Max HP, and <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> of the total HP he has lost in the current battle.\\nThe total HP Blade has lost in the current battle is capped at <unbreak>#7[i]%</unbreak> of his Max HP. This value will be reset and re-accumulated after his Ultimate has been used.",
+			"ultIcon": "SkillIcon_1205_Ultra",
+			"ultId": 120503,
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"talentName": "Shuhu's Gift",
+			"talentTag": "AoE",
+			"talentDesc": "When Blade sustains DMG or consumes his HP, he gains 1 stack of Charge, stacking up to 5 times. A max of 1 Charge stack can be gained every time he is attacked.\\nWhen Charge stack reaches maximum, immediately launches a <u>follow-up attack</u> on all enemies, dealing Wind DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Blade's ATK plus <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of his Max HP. At the same time, restores Blade's HP by <unbreak>#3[i]%</unbreak> of his Max HP. After the follow-up attack, all Charges are consumed.",
+			"talentIcon": "SkillIcon_1205_Passive",
+			"talentId": 120504,
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"techName": "Karma Wind",
+			"techDesc": "Immediately attacks the enemy. After entering combat, consumes <unbreak>#2[i]%</unbreak> of Blade's Max HP while dealing Wind DMG equal to <unbreak>#1[i]%</unbreak> of his Max HP to all enemies.\\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when this Technique is used.",
+			"techIcon": "SkillIcon_1205_Maze",
+			"techId": 120507
+		},
+		"avatarType": "Warrior",
+		"promotion": {
+			"2": 308000,
+			"110415": 65,
+			"113001": 15,
+			"113002": 15,
+			"113003": 15
+		},
+		"exp": 5797920,
+		"id": "1205",
+		"maxLevels": [
+			20,
+			30,
+			40,
+			50,
+			60,
+			70,
+			80
+		]
+	},
 	"1206": {
 		"name": "Sushang",
 		"stats": {
@@ -2388,7 +2592,7 @@
 			},
 			"skillName": "Emboldening Salvo",
 			"skillTag": "Support",
-			"skillDesc": "Obtains <unbreak>#1[i]</unbreak> stack(s) of \"Roaring Bowstrings\" (to a maximum of 2 stacks). When \"Roaring Bowstrings\" is active, the ATK of all allies increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, and every time an ally's turn ends, Yukong loses 1 stack of \"Roaring Bowstrings.\"\\nWhen it's the turn where Yukong gains \"Roaring Bowstrings\" by using Skill, \"Roaring Bowstrings\" will not be removed.",
+			"skillDesc": "Obtains <unbreak>#1[i]</unbreak> stack(s) of \"Roaring Bowstrings\" (to a maximum of 2 stacks). When \"Roaring Bowstrings\" is active, the ATK of all allies increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, and every time an ally's turn (including Yukong's) ends, Yukong loses 1 stack of \"Roaring Bowstrings.\"\\nWhen it's the turn where Yukong gains \"Roaring Bowstrings\" by using Skill, \"Roaring Bowstrings\" will not be removed.",
 			"skillIcon": "SkillIcon_1207_BP",
 			"skillId": 120702,
 			"skillPromo": {
@@ -2656,6 +2860,99 @@
 		},
 		"exp": 5797920,
 		"id": "1211",
+		"maxLevels": [
+			20,
+			30,
+			40,
+			50,
+			60,
+			70,
+			80
+		]
+	},
+	"1213": {
+		"name": "Dan Heng • Imbibitor Lunae",
+		"stats": {
+			"maxHP": 1242,
+			"maxATK": 699,
+			"maxDEF": 364,
+			"SPD": 102,
+			"TNT": 125,
+			"CR": 0.05000000004656613,
+			"CDMG": 0.5000000004656613
+		},
+		"icon": "1213",
+		"rarity": "SuperRare",
+		"element": "Imaginary",
+		"skills": {
+			"basicTag": "Single Target",
+			"basicIcon": "SkillIcon_1213_Normal",
+			"basicId": 121301,
+			"basicPromo": {
+				"2": 240000,
+				"110111": 3,
+				"110112": 8,
+				"110113": 11,
+				"113001": 6,
+				"113002": 7,
+				"113003": 7
+			},
+			"skillTag": "Enhance",
+			"skillIcon": "SkillIcon_1213_BP",
+			"skillId": 121302,
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"ultTag": "Blast",
+			"ultIcon": "SkillIcon_1213_Ultra",
+			"ultId": 121303,
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"talentTag": "Enhance",
+			"talentIcon": "SkillIcon_1213_Passive",
+			"talentId": 121304,
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"techTag": "Enhance",
+			"techIcon": "SkillIcon_1213_Maze",
+			"techId": 121307
+		},
+		"avatarType": "Warrior",
+		"promotion": {
+			"2": 308000,
+			"999": 65,
+			"113001": 15,
+			"113002": 15,
+			"113003": 15
+		},
+		"exp": 5797920,
+		"id": "1213",
 		"maxLevels": [
 			20,
 			30,

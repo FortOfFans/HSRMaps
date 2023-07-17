@@ -1789,25 +1789,18 @@
 	},
 	"1005101": {
 		"name": "Giày Vò",
-		"description": "Khi thi triển Chiến Kỹ và Tuyệt Kỹ khiến kẻ địch đang trong Hiệu Ứng Xấu dạng Sát Thương Duy Trì lập tức sinh ra Sát Thương Duy Trì, sẽ tăng Bội Số Sát Thương theo tỷ lệ, tỷ lệ tăng tương đương với **24%** Tấn Công Kích Phá của Kafka, tối đa không vượt quá **24%**.",
+		"description": "Khi thi triển Tuyệt Kỹ, kẻ địch từ \"trạng thái Sốc Điện kẻ địch đang phải chịu sinh ra sát thương ngay lập tức\" đổi thành \"tất cả Hiệu Ứng Xấu thuộc dạng sát thương duy trì mà kẻ địch đang phải chịu sẽ sinh ra sát thương ngay lập tức\".",
 		"avatar": 1005,
 		"avatarName": "Kafka",
 		"type": 3,
 		"pos": "Point06",
-		"icon": "SkillIcon_1005_Normal",
+		"icon": "SkillIcon_1005_SkillTree1",
 		"promotion": {
 			"2": 5000,
 			"110151": 3,
 			"110503": 1
 		},
-		"params": [
-			{
-				"Value": 0.24000000022351742
-			},
-			{
-				"Value": 0.24000000022351742
-			}
-		],
+		"params": [],
 		"status": [],
 		"baseSkill": [],
 		"id": "1005101"
@@ -1819,7 +1812,7 @@
 		"avatarName": "Kafka",
 		"type": 3,
 		"pos": "Point07",
-		"icon": "SkillIcon_1005_BP",
+		"icon": "SkillIcon_1005_SkillTree2",
 		"promotion": {
 			"2": 20000,
 			"241": 1,
@@ -1837,12 +1830,12 @@
 	},
 	"1005103": {
 		"name": "Gai Góc",
-		"description": "Thiên Phú sẽ tăng **20%** xác suất cơ bản để tăng Sát Thương Duy Trì mà kẻ địch phải chịu, Tuyệt Kỹ tăng **20%** xác suất cơ bản khiến kẻ địch rơi vào trạng thái Sốc Điện.",
+		"description": "Tăng **30%** xác suất cơ bản khiến kẻ địch rơi vào Sốc Điện của Tuyệt Kỹ, Bí Kỹ và Đòn Đánh Theo Sau kích hoạt bởi Thiên Phú.",
 		"avatar": 1005,
 		"avatarName": "Kafka",
 		"type": 3,
 		"pos": "Point08",
-		"icon": "SkillIcon_1005_Ultra",
+		"icon": "SkillIcon_1005_SkillTree3",
 		"promotion": {
 			"2": 160000,
 			"241": 1,
@@ -1851,10 +1844,7 @@
 		},
 		"params": [
 			{
-				"Value": 0.20000000018626451
-			},
-			{
-				"Value": 0.20000000018626451
+				"Value": 0.3000000002793968
 			}
 		],
 		"status": [],
@@ -1867,7 +1857,7 @@
 		"avatarName": "Kafka",
 		"type": 1,
 		"pos": "Point09",
-		"icon": "SkillIcon_1005_Normal",
+		"icon": "IconAttack",
 		"promotion": {
 			"2": 2500,
 			"111011": 2
@@ -1885,12 +1875,12 @@
 		"id": "1005201"
 	},
 	"1005202": {
-		"name": "Cường Hóa Kích Phá",
+		"name": "Cường Hóa Chính Xác Hiệu Ứng",
 		"avatar": 1005,
 		"avatarName": "Kafka",
 		"type": 1,
 		"pos": "Point10",
-		"icon": "IconAttack",
+		"icon": "IconStatusProbability",
 		"promotion": {
 			"2": 5000,
 			"110151": 3,
@@ -1899,9 +1889,9 @@
 		"params": [],
 		"status": [
 			{
-				"PropertyType": "BreakDamageAddedRatioBase",
+				"PropertyType": "StatusProbabilityBase",
 				"Value": {
-					"Value": 0.05299999983981252
+					"Value": 0.0400000000372529
 				}
 			}
 		],
@@ -1981,12 +1971,12 @@
 		"id": "1005205"
 	},
 	"1005206": {
-		"name": "Cường Hóa Kích Phá",
+		"name": "Cường Hóa Chính Xác Hiệu Ứng",
 		"avatar": 1005,
 		"avatarName": "Kafka",
 		"type": 1,
 		"pos": "Point14",
-		"icon": "IconAttack",
+		"icon": "IconStatusProbability",
 		"promotion": {
 			"2": 45000,
 			"110153": 3,
@@ -1995,9 +1985,9 @@
 		"params": [],
 		"status": [
 			{
-				"PropertyType": "BreakDamageAddedRatioBase",
+				"PropertyType": "StatusProbabilityBase",
 				"Value": {
-					"Value": 0.0800000000745058
+					"Value": 0.060000000055879354
 				}
 			}
 		],
@@ -2053,12 +2043,12 @@
 		"id": "1005208"
 	},
 	"1005209": {
-		"name": "Cường Hóa Kích Phá",
+		"name": "Cường Hóa Chính Xác Hiệu Ứng",
 		"avatar": 1005,
 		"avatarName": "Kafka",
 		"type": 1,
 		"pos": "Point17",
-		"icon": "IconAttack",
+		"icon": "IconStatusProbability",
 		"promotion": {
 			"2": 160000,
 			"110153": 8,
@@ -2067,9 +2057,9 @@
 		"params": [],
 		"status": [
 			{
-				"PropertyType": "BreakDamageAddedRatioBase",
+				"PropertyType": "StatusProbabilityBase",
 				"Value": {
-					"Value": 0.10699999961070716
+					"Value": 0.0800000000745058
 				}
 			}
 		],
@@ -7515,6 +7505,422 @@
 		"baseSkill": [],
 		"id": "1109210"
 	},
+	"1111001": {
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 2,
+		"pos": "Point01",
+		"icon": "SkillIcon_1111_Normal",
+		"promotion": {
+			"2": 192000,
+			"110151": 2,
+			"110152": 6,
+			"110153": 8,
+			"112011": 4,
+			"112012": 5,
+			"112013": 5
+		},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			111101,
+			111108
+		],
+		"id": "1111001"
+	},
+	"1111002": {
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 2,
+		"pos": "Point02",
+		"icon": "SkillIcon_1111_BP",
+		"promotion": {
+			"2": 522000,
+			"241": 1,
+			"110151": 2,
+			"110152": 12,
+			"110153": 23,
+			"110503": 3,
+			"112011": 6,
+			"112012": 10,
+			"112013": 5
+		},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			111102
+		],
+		"id": "1111002"
+	},
+	"1111003": {
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 2,
+		"pos": "Point03",
+		"icon": "SkillIcon_1111_Ultra",
+		"promotion": {
+			"2": 522000,
+			"241": 1,
+			"110151": 2,
+			"110152": 12,
+			"110153": 23,
+			"110503": 3,
+			"112011": 6,
+			"112012": 10,
+			"112013": 5
+		},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			111103
+		],
+		"id": "1111003"
+	},
+	"1111004": {
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 2,
+		"pos": "Point04",
+		"icon": "SkillIcon_1111_Passive",
+		"promotion": {
+			"2": 522000,
+			"241": 1,
+			"110151": 2,
+			"110152": 12,
+			"110153": 23,
+			"110503": 3,
+			"112011": 6,
+			"112012": 10,
+			"112013": 5
+		},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			111104
+		],
+		"id": "1111004"
+	},
+	"1111007": {
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 2,
+		"pos": "Point05",
+		"icon": "SkillIcon_1111_Maze",
+		"promotion": {},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			111107
+		],
+		"id": "1111007"
+	},
+	"1111101": {
+		"name": "Động Năng Quá Tải",
+		"description": "Khi thi triển Chiến Kỹ, sẽ giải trừ ngay **1** Hiệu Ứng Buff của kẻ địch.",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 3,
+		"pos": "Point06",
+		"icon": "SkillIcon_1111_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110151": 2,
+			"110503": 1
+		},
+		"params": [
+			{
+				"Value": 1
+			}
+		],
+		"status": [],
+		"baseSkill": [],
+		"id": "1111101"
+	},
+	"1111102": {
+		"name": "Phanh Theo Chu Kỳ",
+		"description": "Mỗi khi nhận 1 tầng Ý Chí Chiến Đấu sẽ hồi thêm **3** điểm năng lượng.",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 3,
+		"pos": "Point07",
+		"icon": "SkillIcon_1111_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110152": 4,
+			"110503": 1
+		},
+		"params": [
+			{
+				"Value": 3
+			}
+		],
+		"status": [],
+		"baseSkill": [],
+		"id": "1111102"
+	},
+	"1111103": {
+		"name": "Nghiền Nát Ý Chí",
+		"description": "Khi thi triển tấn công thường cường hóa, mỗi một đòn tấn công của Nắm Đấm Trực Diện đều có **50%** xác suất cố định khiến Luka thi triển thêm 1 đòn tấn công. Hiệu ứng này sẽ không có hiệu lực với tấn công thi triển thêm.",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 3,
+		"pos": "Point08",
+		"icon": "SkillIcon_1111_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110153": 6,
+			"110503": 1
+		},
+		"params": [
+			{
+				"Value": 0.5000000004656613
+			}
+		],
+		"status": [],
+		"baseSkill": [],
+		"id": "1111103"
+	},
+	"1111201": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 1,
+		"pos": "Point09",
+		"icon": "IconAttack",
+		"promotion": {
+			"2": 2000,
+			"112011": 2
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": {
+					"Value": 0.0400000000372529
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1111201"
+	},
+	"1111202": {
+		"name": "Cường Hóa Chính Xác Hiệu Ứng",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 1,
+		"pos": "Point10",
+		"icon": "IconStatusProbability",
+		"promotion": {
+			"2": 4000,
+			"110151": 2,
+			"112011": 4
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "StatusProbabilityBase",
+				"Value": {
+					"Value": 0.0400000000372529
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1111202"
+	},
+	"1111203": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 1,
+		"pos": "Point11",
+		"icon": "IconAttack",
+		"promotion": {
+			"2": 8000,
+			"110152": 2,
+			"112012": 2
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": {
+					"Value": 0.0400000000372529
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1111203"
+	},
+	"1111204": {
+		"name": "Cường Hóa Phòng Thủ",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 1,
+		"pos": "Point12",
+		"icon": "IconDefence",
+		"promotion": {
+			"2": 8000,
+			"110152": 2,
+			"112012": 2
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": {
+					"Value": 0.05000000004656613
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1111204"
+	},
+	"1111205": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 1,
+		"pos": "Point13",
+		"icon": "IconAttack",
+		"promotion": {
+			"2": 16000,
+			"110152": 4,
+			"112012": 3
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": {
+					"Value": 0.060000000055879354
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1111205"
+	},
+	"1111206": {
+		"name": "Cường Hóa Chính Xác Hiệu Ứng",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 1,
+		"pos": "Point14",
+		"icon": "IconStatusProbability",
+		"promotion": {
+			"2": 36000,
+			"110153": 2,
+			"112013": 2
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "StatusProbabilityBase",
+				"Value": {
+					"Value": 0.060000000055879354
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1111206"
+	},
+	"1111207": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 1,
+		"pos": "Point15",
+		"icon": "IconAttack",
+		"promotion": {
+			"2": 36000,
+			"110153": 2,
+			"112013": 2
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": {
+					"Value": 0.060000000055879354
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1111207"
+	},
+	"1111208": {
+		"name": "Cường Hóa Phòng Thủ",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 1,
+		"pos": "Point16",
+		"icon": "IconDefence",
+		"promotion": {
+			"2": 128000,
+			"110153": 6,
+			"112013": 6
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": {
+					"Value": 0.07499999972060323
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1111208"
+	},
+	"1111209": {
+		"name": "Cường Hóa Chính Xác Hiệu Ứng",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 1,
+		"pos": "Point17",
+		"icon": "IconStatusProbability",
+		"promotion": {
+			"2": 128000,
+			"110153": 6,
+			"112013": 6
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "StatusProbabilityBase",
+				"Value": {
+					"Value": 0.0800000000745058
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1111209"
+	},
+	"1111210": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1111,
+		"avatarName": "Luka",
+		"type": 1,
+		"pos": "Point18",
+		"icon": "IconAttack",
+		"promotion": {
+			"2": 128000,
+			"110153": 6,
+			"112013": 6
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": {
+					"Value": 0.0800000000745058
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1111210"
+	},
 	"1201001": {
 		"avatar": 1201,
 		"avatarName": "Qingque",
@@ -9181,6 +9587,425 @@
 		"baseSkill": [],
 		"id": "1204210"
 	},
+	"1205001": {
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 2,
+		"pos": "Point01",
+		"icon": "SkillIcon_1205_Normal",
+		"promotion": {
+			"2": 240000,
+			"110111": 3,
+			"110112": 8,
+			"110113": 11,
+			"113001": 6,
+			"113002": 7,
+			"113003": 7
+		},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			120501,
+			120508
+		],
+		"id": "1205001"
+	},
+	"1205002": {
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 2,
+		"pos": "Point02",
+		"icon": "SkillIcon_1205_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110111": 3,
+			"110112": 15,
+			"110113": 30,
+			"110503": 3,
+			"113001": 9,
+			"113002": 13,
+			"113003": 7
+		},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			120502
+		],
+		"id": "1205002"
+	},
+	"1205003": {
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 2,
+		"pos": "Point03",
+		"icon": "SkillIcon_1205_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110111": 3,
+			"110112": 15,
+			"110113": 30,
+			"110503": 3,
+			"113001": 9,
+			"113002": 13,
+			"113003": 7
+		},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			120503
+		],
+		"id": "1205003"
+	},
+	"1205004": {
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 2,
+		"pos": "Point04",
+		"icon": "SkillIcon_1205_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110111": 3,
+			"110112": 15,
+			"110113": 30,
+			"110503": 3,
+			"113001": 9,
+			"113002": 13,
+			"113003": 7
+		},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			120504
+		],
+		"id": "1205004"
+	},
+	"1205007": {
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 2,
+		"pos": "Point05",
+		"icon": "SkillIcon_1205_Maze",
+		"promotion": {},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			120507
+		],
+		"id": "1205007"
+	},
+	"1205101": {
+		"name": "Tuổi Thọ Vô Tận",
+		"description": "Khi Phần Trăm HP hiện tại của Blade nhỏ hơn hoặc bằng **50%** Giới Hạn HP, lượng hồi phục khi được trị liệu tăng **20%**.",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 3,
+		"pos": "Point06",
+		"icon": "SkillIcon_1205_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110111": 3,
+			"110503": 1
+		},
+		"params": [
+			{
+				"Value": 0.20000000018626451
+			}
+		],
+		"status": [],
+		"baseSkill": [],
+		"id": "1205101"
+	},
+	"1205102": {
+		"name": "Cái Chết Không Hồi Kết",
+		"description": "Sau khi thi triển Rừng Kiếm, nếu đánh trúng kẻ địch ở trạng thái Phá Vỡ Điểm Yếu, Blade sẽ hồi HP bằng **5%** Giới Hạn HP của bản thân +**100**",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 3,
+		"pos": "Point07",
+		"icon": "SkillIcon_1205_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110112": 5,
+			"110503": 1
+		},
+		"params": [
+			{
+				"Value": 0.05000000004656613
+			},
+			{
+				"Value": 100
+			}
+		],
+		"status": [],
+		"baseSkill": [],
+		"id": "1205102"
+	},
+	"1205103": {
+		"name": "Thảm Họa Huỷ Diệt",
+		"description": "Tăng **20%** sát thương gây ra bởi Đòn Đánh Theo Sau của Thiên Phú.",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 3,
+		"pos": "Point08",
+		"icon": "SkillIcon_1205_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110113": 8,
+			"110503": 1
+		},
+		"params": [
+			{
+				"Value": 0.20000000018626451
+			}
+		],
+		"status": [],
+		"baseSkill": [],
+		"id": "1205103"
+	},
+	"1205201": {
+		"name": "Cường Hóa HP",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 1,
+		"pos": "Point09",
+		"icon": "IconMaxHP",
+		"promotion": {
+			"2": 2500,
+			"113001": 2
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": {
+					"Value": 0.0400000000372529
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1205201"
+	},
+	"1205202": {
+		"name": "Cường Hóa Tỷ Lệ Bạo Kích",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 1,
+		"pos": "Point10",
+		"icon": "IconCriticalChance",
+		"promotion": {
+			"2": 5000,
+			"110111": 3,
+			"113001": 6
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": {
+					"Value": 0.026999999536201358
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1205202"
+	},
+	"1205203": {
+		"name": "Cường Hóa HP",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 1,
+		"pos": "Point11",
+		"icon": "IconMaxHP",
+		"promotion": {
+			"2": 10000,
+			"110112": 3,
+			"113002": 3
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": {
+					"Value": 0.0400000000372529
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1205203"
+	},
+	"1205204": {
+		"name": "Cường Hóa Kháng Hiệu Ứng",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 1,
+		"pos": "Point12",
+		"icon": "IconStatusResistance",
+		"promotion": {
+			"2": 10000,
+			"110112": 3,
+			"113002": 3
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "StatusResistanceBase",
+				"Value": {
+					"Value": 0.0400000000372529
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1205204"
+	},
+	"1205205": {
+		"name": "Cường Hóa HP",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 1,
+		"pos": "Point13",
+		"icon": "IconMaxHP",
+		"promotion": {
+			"2": 20000,
+			"110112": 5,
+			"113002": 4
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": {
+					"Value": 0.060000000055879354
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1205205"
+	},
+	"1205206": {
+		"name": "Cường Hóa Tỷ Lệ Bạo Kích",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 1,
+		"pos": "Point14",
+		"icon": "IconCriticalChance",
+		"promotion": {
+			"2": 45000,
+			"110113": 3,
+			"113003": 3
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": {
+					"Value": 0.0400000000372529
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1205206"
+	},
+	"1205207": {
+		"name": "Cường Hóa HP",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 1,
+		"pos": "Point15",
+		"icon": "IconMaxHP",
+		"promotion": {
+			"2": 45000,
+			"110113": 3,
+			"113003": 3
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": {
+					"Value": 0.060000000055879354
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1205207"
+	},
+	"1205208": {
+		"name": "Cường Hóa Kháng Hiệu Ứng",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 1,
+		"pos": "Point16",
+		"icon": "IconStatusResistance",
+		"promotion": {
+			"2": 160000,
+			"110113": 8,
+			"113003": 8
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "StatusResistanceBase",
+				"Value": {
+					"Value": 0.060000000055879354
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1205208"
+	},
+	"1205209": {
+		"name": "Cường Hóa Tỷ Lệ Bạo Kích",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 1,
+		"pos": "Point17",
+		"icon": "IconCriticalChance",
+		"promotion": {
+			"2": 160000,
+			"110113": 8,
+			"113003": 8
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": {
+					"Value": 0.05299999983981252
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1205209"
+	},
+	"1205210": {
+		"name": "Cường Hóa HP",
+		"avatar": 1205,
+		"avatarName": "Blade",
+		"type": 1,
+		"pos": "Point18",
+		"icon": "IconMaxHP",
+		"promotion": {
+			"2": 160000,
+			"110113": 8,
+			"113003": 8
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": {
+					"Value": 0.0800000000745058
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1205210"
+	},
 	"1206001": {
 		"avatar": 1206,
 		"avatarName": "Sushang",
@@ -10544,7 +11369,7 @@
 		"id": "1211007"
 	},
 	"1211101": {
-		"name": "Lý Luận Qihuang",
+		"name": "Lý Luận Kỳ Hoàng",
 		"description": "Khi Bailu trị liệu quá mức cho mục tiêu của phe ta sẽ tăng **10%** Giới Hạn HP của mục tiêu, duy trì **2** hiệp.",
 		"avatar": 1211,
 		"avatarName": "Bailu",
@@ -10852,6 +11677,418 @@
 		],
 		"baseSkill": [],
 		"id": "1211210"
+	},
+	"1213001": {
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 2,
+		"pos": "Point01",
+		"icon": "SkillIcon_1213_Normal",
+		"promotion": {
+			"2": 240000,
+			"110111": 3,
+			"110112": 8,
+			"110113": 11,
+			"113001": 6,
+			"113002": 7,
+			"113003": 7
+		},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			121301
+		],
+		"id": "1213001"
+	},
+	"1213002": {
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 2,
+		"pos": "Point02",
+		"icon": "SkillIcon_1213_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110111": 3,
+			"110112": 15,
+			"110113": 30,
+			"110503": 3,
+			"113001": 9,
+			"113002": 13,
+			"113003": 7
+		},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			121302,
+			121308,
+			121310,
+			121312
+		],
+		"id": "1213002"
+	},
+	"1213003": {
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 2,
+		"pos": "Point03",
+		"icon": "SkillIcon_1213_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110111": 3,
+			"110112": 15,
+			"110113": 30,
+			"110503": 3,
+			"113001": 9,
+			"113002": 13,
+			"113003": 7
+		},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			121303
+		],
+		"id": "1213003"
+	},
+	"1213004": {
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 2,
+		"pos": "Point04",
+		"icon": "SkillIcon_1213_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110111": 3,
+			"110112": 15,
+			"110113": 30,
+			"110503": 3,
+			"113001": 9,
+			"113002": 13,
+			"113003": 7
+		},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			121304
+		],
+		"id": "1213004"
+	},
+	"1213007": {
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 2,
+		"pos": "Point05",
+		"icon": "SkillIcon_1213_Maze",
+		"promotion": {},
+		"params": [],
+		"status": [],
+		"baseSkill": [
+			121307
+		],
+		"id": "1213007"
+	},
+	"1213101": {
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 3,
+		"pos": "Point06",
+		"icon": "SkillIcon_1213_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110111": 3,
+			"110503": 1
+		},
+		"params": [
+			{
+				"Value": 1
+			}
+		],
+		"status": [],
+		"baseSkill": [],
+		"id": "1213101"
+	},
+	"1213102": {
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 3,
+		"pos": "Point07",
+		"icon": "SkillIcon_1213_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110112": 5,
+			"110503": 1
+		},
+		"params": [
+			{
+				"Value": 0.3500000003259629
+			}
+		],
+		"status": [],
+		"baseSkill": [],
+		"id": "1213102"
+	},
+	"1213103": {
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 3,
+		"pos": "Point08",
+		"icon": "SkillIcon_1213_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110113": 8,
+			"110503": 1
+		},
+		"params": [
+			{
+				"Value": 0.12000000011175871
+			}
+		],
+		"status": [],
+		"baseSkill": [],
+		"id": "1213103"
+	},
+	"1213201": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 1,
+		"pos": "Point09",
+		"icon": "IconImaginaryAddedRatio",
+		"promotion": {
+			"2": 2500,
+			"113001": 2
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "ImaginaryAddedRatio",
+				"Value": {
+					"Value": 0.031999999890103936
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1213201"
+	},
+	"1213202": {
+		"name": "Cường Hóa Sát Thương - Số Ảo",
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 1,
+		"pos": "Point10",
+		"icon": "IconCriticalChance",
+		"promotion": {
+			"2": 5000,
+			"110111": 3,
+			"113001": 6
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": {
+					"Value": 0.026999999536201358
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1213202"
+	},
+	"1213203": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 1,
+		"pos": "Point11",
+		"icon": "IconImaginaryAddedRatio",
+		"promotion": {
+			"2": 10000,
+			"110112": 3,
+			"113002": 3
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "ImaginaryAddedRatio",
+				"Value": {
+					"Value": 0.031999999890103936
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1213203"
+	},
+	"1213204": {
+		"name": "Cường Hóa HP",
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 1,
+		"pos": "Point12",
+		"icon": "IconMaxHP",
+		"promotion": {
+			"2": 10000,
+			"110112": 3,
+			"113002": 3
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": {
+					"Value": 0.0400000000372529
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1213204"
+	},
+	"1213205": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 1,
+		"pos": "Point13",
+		"icon": "IconImaginaryAddedRatio",
+		"promotion": {
+			"2": 20000,
+			"110112": 5,
+			"113002": 4
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "ImaginaryAddedRatio",
+				"Value": {
+					"Value": 0.04799999948590994
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1213205"
+	},
+	"1213206": {
+		"name": "Cường Hóa Sát Thương - Số Ảo",
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 1,
+		"pos": "Point14",
+		"icon": "IconCriticalChance",
+		"promotion": {
+			"2": 45000,
+			"110113": 3,
+			"113003": 3
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": {
+					"Value": 0.0400000000372529
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1213206"
+	},
+	"1213207": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 1,
+		"pos": "Point15",
+		"icon": "IconImaginaryAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110113": 3,
+			"113003": 3
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "ImaginaryAddedRatio",
+				"Value": {
+					"Value": 0.04799999948590994
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1213207"
+	},
+	"1213208": {
+		"name": "Cường Hóa HP",
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 1,
+		"pos": "Point16",
+		"icon": "IconMaxHP",
+		"promotion": {
+			"2": 160000,
+			"110113": 8,
+			"113003": 8
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": {
+					"Value": 0.060000000055879354
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1213208"
+	},
+	"1213209": {
+		"name": "Cường Hóa Sát Thương - Số Ảo",
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 1,
+		"pos": "Point17",
+		"icon": "IconCriticalChance",
+		"promotion": {
+			"2": 160000,
+			"110113": 8,
+			"113003": 8
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": {
+					"Value": 0.05299999983981252
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1213209"
+	},
+	"1213210": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1213,
+		"avatarName": "Dan Heng - Ẩm Nguyệt",
+		"type": 1,
+		"pos": "Point18",
+		"icon": "IconImaginaryAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110113": 8,
+			"113003": 8
+		},
+		"params": [],
+		"status": [
+			{
+				"PropertyType": "ImaginaryAddedRatio",
+				"Value": {
+					"Value": 0.06399999978020787
+				}
+			}
+		],
+		"baseSkill": [],
+		"id": "1213210"
 	},
 	"8001001": {
 		"avatar": 8001,

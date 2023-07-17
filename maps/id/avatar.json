@@ -473,7 +473,7 @@
 			},
 			"talentName": "Gentle but Cruel",
 			"talentTag": "Single Target",
-			"talentDesc": "Setelah rekan Kafka melancarkan Basic ATK pada target musuh, Kafka akan segera melancarkan <u>Serangan Lanjutan</u> dan mengakibatkan Lightning DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Kafka pada target tersebut, serta memiliki <unbreak>#4[i]%</unbreak> <u>peluang dasar</u> untuk meningkatkan <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> DoT yang diterima target tersebut selama <unbreak>#3[i]</unbreak> giliran. Efek ini hanya dapat terpicu 1 kali setiap giliran.",
+			"talentDesc": "Setelah rekan Kafka melancarkan Basic ATK pada target musuh, Kafka akan segera memicu <u>Serangan Lanjutan</u> yang mengakibatkan Lightning DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Kafka pada target tersebut, serta memiliki <unbreak>#2[i]%</unbreak> peluang dasar untuk membuat target musuh yang terkena serangan ini memasuki status Shock yang sama dengan status Shock dari Ultimate Kafka, berlangsung selama <unbreak>#3[i]</unbreak> giliran. Efek ini hanya dapat dipicu 1 kali setiap giliran.",
 			"talentIcon": "SkillIcon_1005_Passive",
 			"talentId": 100504,
 			"talentPromo": {
@@ -488,7 +488,7 @@
 				"111013": 7
 			},
 			"techName": "Mercy Is Not Forgiveness",
-			"techDesc": "Segera menyerang musuh. Setelah memasuki pertempuran, mengakibatkan Lightning DMG sebesar <unbreak>#4[i]%</unbreak> ATK Kafka pada seluruh musuh, dan di saat bersamaan memiliki <unbreak>#1[i]%</unbreak> <u>peluang dasar</u> untuk membuat setiap target musuh memasuki status Shock selama <unbreak>#3[i]</unbreak> giliran.\\nSaat dalam status Shock, target musuh akan menerima Lightning DoT sebesar <unbreak>#2[i]%</unbreak> ATK Kafka setiap gilirannya dimulai.",
+			"techDesc": "Segera menyerang musuh dalam cakupan area tertentu. Setelah memasuki pertempuran, mengakibatkan Lightning DMG sebesar <unbreak>#3[i]%</unbreak> ATK Kafka pada seluruh musuh, dan di saat bersamaan memiliki <unbreak>#1[i]%</unbreak> <u>peluang dasar</u> untuk membuat setiap target musuh memasuki status Shock yang sama dengan status Shock dari Ultimate Kafka selama <unbreak>#2[i]</unbreak> giliran.",
 			"techIcon": "SkillIcon_1005_Maze",
 			"techId": 100507
 		},
@@ -1843,6 +1843,108 @@
 			80
 		]
 	},
+	"1111": {
+		"name": "Luka",
+		"stats": {
+			"maxHP": 917,
+			"maxATK": 582,
+			"maxDEF": 485,
+			"SPD": 103,
+			"TNT": 100,
+			"CR": 0.05000000004656613,
+			"CDMG": 0.5000000004656613
+		},
+		"icon": "1111",
+		"rarity": "VeryRare",
+		"element": "Physical",
+		"skills": {
+			"basicName": "Direct Punch",
+			"basicTag": "Single Target",
+			"basicDesc": "Mengakibatkan Physical DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Luka pada 1 target musuh.",
+			"basicIcon": "SkillIcon_1111_Normal",
+			"basicId": 111101,
+			"basicPromo": {
+				"2": 192000,
+				"110151": 2,
+				"110152": 6,
+				"110153": 8,
+				"112011": 4,
+				"112012": 5,
+				"112013": 5
+			},
+			"skillName": "Lacerating Fist",
+			"skillTag": "Single Target",
+			"skillDesc": "Mengakibatkan Physical DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Luka pada 1 musuh yang ditarget, dan kemudian memiliki <unbreak>#2[i]%</unbreak> <u>peluang dasar</u> untuk membuat target memasuki status Bleed selama <unbreak>#5[i]</unbreak> giliran.\\nDalam status Bleed, setiap saat giliran target musuh dimulai, musuh akan menerima Physical DoT sebesar <unbreak>#3[f1]%</unbreak> Max HP dirinya. Maksimal tidak melebihi <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> ATK Luka.",
+			"skillIcon": "SkillIcon_1111_BP",
+			"skillId": 111102,
+			"skillPromo": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"112011": 6,
+				"112012": 10,
+				"112013": 5
+			},
+			"ultName": "Coup de Grâce",
+			"ultTag": "Single Target",
+			"ultDesc": "Memperoleh <unbreak>#5[i]</unbreak> lapis \"Fighting Will\", dan memiliki <unbreak>#2[i]%</unbreak> <u>peluang dasar</u> untuk meningkatkan <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> DMG yang diterima musuh yang ditarget selama <unbreak>#4[i]</unbreak> giliran. Lalu kemudian akan mengakibatkan Physical DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Luka pada target tersebut.",
+			"ultIcon": "SkillIcon_1111_Ultra",
+			"ultId": 111103,
+			"ultPromo": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"112011": 6,
+				"112012": 10,
+				"112013": 5
+			},
+			"talentName": "Flying Sparks",
+			"talentTag": "Enhance",
+			"talentDesc": "Setelah Luka melancarkan Basic Attack \"Direct Punch\" atau Skill \"Lacerating Fist\", Luka akan memperoleh <unbreak>#1[i]</unbreak> lapis \"Fighting Will\", maksimal 4 lapis. Saat \"Fighting Will\" yang dimiliki lebih dari atau sama dengan 2, Basic Attack Luka \"Direct Punch\" akan meningkat menjadi \"Sky-Shatter Fist\". Saat \"Rising Uppercut\" dari Enhanced Basic Attack mengenai target musuh dengan status Bleed, maka status Bleed tersebut akan membuat target musuh segera menerima 1 kali DMG sebesar <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> DMG awal. Saat pertempuran dimulai, Luka akan memiliki 1 lapis \"Fighting Will\".",
+			"talentIcon": "SkillIcon_1111_Passive",
+			"talentId": 111104,
+			"talentPromo": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"112011": 6,
+				"112012": 10,
+				"112013": 5
+			},
+			"techName": "Anticipator",
+			"techDesc": "Segera menyerang musuh. Setelah memasuki pertempuran, akan mengakibatkan Physical DMG sebesar <unbreak>#1[i]%</unbreak> ATK Luka pada musuh secara acak, serta memiliki <unbreak>#2[i]%</unbreak> <u>peluang dasar</u> untuk membuat target memasuki status Bleed yang sama dengan Skill. Setelah itu Luka akan memperoleh tambahan 1 lapis \"Fighting Will\".",
+			"techIcon": "SkillIcon_1111_Maze",
+			"techId": 111107
+		},
+		"avatarType": "Warlock",
+		"promotion": {
+			"2": 246400,
+			"110401": 50,
+			"112011": 12,
+			"112012": 13,
+			"112013": 12
+		},
+		"exp": 5797920,
+		"id": "1111",
+		"maxLevels": [
+			20,
+			30,
+			40,
+			50,
+			60,
+			70,
+			80
+		]
+	},
 	"1201": {
 		"name": "Qingque",
 		"stats": {
@@ -2255,6 +2357,108 @@
 			80
 		]
 	},
+	"1205": {
+		"name": "Blade",
+		"stats": {
+			"maxHP": 1358,
+			"maxATK": 543,
+			"maxDEF": 485,
+			"SPD": 97,
+			"TNT": 125,
+			"CR": 0.05000000004656613,
+			"CDMG": 0.5000000004656613
+		},
+		"icon": "1205",
+		"rarity": "SuperRare",
+		"element": "Wind",
+		"skills": {
+			"basicName": "Shard Sword",
+			"basicTag": "Single Target",
+			"basicDesc": "Mengakibatkan Wind DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Blade pada 1 target musuh.",
+			"basicIcon": "SkillIcon_1205_Normal",
+			"basicId": 120501,
+			"basicPromo": {
+				"2": 240000,
+				"110111": 3,
+				"110112": 8,
+				"110113": 11,
+				"113001": 6,
+				"113002": 7,
+				"113003": 7
+			},
+			"skillName": "Hellscape",
+			"skillTag": "Enhance",
+			"skillDesc": "Mengonsumsi HP sebesar <unbreak>#1[i]%</unbreak> Max HP Blade dan memasuki status \"Hellscape\".\\nSaat berstatus \"Hellscape\", Blade tidak dapat melancarkan Skill dan DMG yang diakibatkannya akan meningkat <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>. Basic Attack \"Shard Sword\" akan meningkat menjadi \"Forest of Swords\" selama <unbreak>#2[i]</unbreak> giliran.\\nJika HP-nya tidak mencukupi, saat melancarkan Skill, HP Blade akan berkurang hingga 1.\\nSkill ini tidak dapat memulihkan Energy. Setelah melancarkan Skill ini, giliran saat ini tidak akan berakhir.",
+			"skillIcon": "SkillIcon_1205_BP",
+			"skillId": 120502,
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"ultName": "Death Sentence",
+			"ultTag": "Blast",
+			"ultDesc": "Mengubah HP Blade saat ini menjadi <unbreak>50%</unbreak> dari Max HP-nya, serta mengakibatkan Wind DMG pada 1 musuh sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK + <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Max HP + <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> akumulasi jumlah HP Blade yang berkurang dalam pertempuran ini. Di saat yang bersamaan juga akan mengakibatkan Wind DMG pada target di sekitarnya sebesar <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> ATK + <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> Max HP + <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> akumulasi jumlah HP Blade yang berkurang dalam pertempuran ini.\\nJumlah akumulasi HP Blade yang berkurang di pertempuran saat ini maksimal tidak boleh melebihi <unbreak>#7[i]%</unbreak> Max HP Blade. Setelah melancarkan Ultimate, jumlah akumulasi akan direset ulang dan diakumulasi kembali.",
+			"ultIcon": "SkillIcon_1205_Ultra",
+			"ultId": 120503,
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"talentName": "Shuhu's Gift",
+			"talentTag": "AoE",
+			"talentDesc": "Saat Blade terkena serangan atau mengonsumsi HP-nya, dia akan mendapatkan 1 lapis Charge, maksimal 5 lapis. Setiap kali Blade terkena serangan, Blade hanya bisa mendapatkan 1 lapis Charge efek ini.\\nSetelah jumlah Charge mencapai batas maksimal, Blade akan segera melancarkan 1 kali <u>Serangan Lanjutan</u> yang mengakibatkan Wind DMG sebesar <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> ATK Blade + <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> Max HP Blade pada seluruh musuh. Di saat yang bersamaan, akan memulihkan HP Blade sebesar <unbreak>#3[i]%</unbreak> Max HP-nya. Setelah Serangan Lanjutan ini dilancarkan, semua lapisan Charge akan dihapus.",
+			"talentIcon": "SkillIcon_1205_Passive",
+			"talentId": 120504,
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"techName": "Karma Wind",
+			"techDesc": "Segera menyerang musuh. Setelah memasuki pertempuran, mengonsumsi HP sebesar <unbreak>#2[i]%</unbreak> Max HP Blade dan di saat bersamaan, mengakibatkan Wind DMG sebesar <unbreak>#1[i]%</unbreak> Max HP Blade pada seluruh musuh.\\nJika HP saat ini tidak cukup, saat melancarkan Technique, HP Blade saat ini akan berkurang hingga 1.",
+			"techIcon": "SkillIcon_1205_Maze",
+			"techId": 120507
+		},
+		"avatarType": "Warrior",
+		"promotion": {
+			"2": 308000,
+			"110415": 65,
+			"113001": 15,
+			"113002": 15,
+			"113003": 15
+		},
+		"exp": 5797920,
+		"id": "1205",
+		"maxLevels": [
+			20,
+			30,
+			40,
+			50,
+			60,
+			70,
+			80
+		]
+	},
 	"1206": {
 		"name": "Sushang",
 		"stats": {
@@ -2656,6 +2860,99 @@
 		},
 		"exp": 5797920,
 		"id": "1211",
+		"maxLevels": [
+			20,
+			30,
+			40,
+			50,
+			60,
+			70,
+			80
+		]
+	},
+	"1213": {
+		"name": "Dan Heng · Imbibitor Lunae",
+		"stats": {
+			"maxHP": 1242,
+			"maxATK": 699,
+			"maxDEF": 364,
+			"SPD": 102,
+			"TNT": 125,
+			"CR": 0.05000000004656613,
+			"CDMG": 0.5000000004656613
+		},
+		"icon": "1213",
+		"rarity": "SuperRare",
+		"element": "Imaginary",
+		"skills": {
+			"basicTag": "Single Target",
+			"basicIcon": "SkillIcon_1213_Normal",
+			"basicId": 121301,
+			"basicPromo": {
+				"2": 240000,
+				"110111": 3,
+				"110112": 8,
+				"110113": 11,
+				"113001": 6,
+				"113002": 7,
+				"113003": 7
+			},
+			"skillTag": "Enhance",
+			"skillIcon": "SkillIcon_1213_BP",
+			"skillId": 121302,
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"ultTag": "Blast",
+			"ultIcon": "SkillIcon_1213_Ultra",
+			"ultId": 121303,
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"talentTag": "Enhance",
+			"talentIcon": "SkillIcon_1213_Passive",
+			"talentId": 121304,
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"techTag": "Enhance",
+			"techIcon": "SkillIcon_1213_Maze",
+			"techId": 121307
+		},
+		"avatarType": "Warrior",
+		"promotion": {
+			"2": 308000,
+			"999": 65,
+			"113001": 15,
+			"113002": 15,
+			"113003": 15
+		},
+		"exp": 5797920,
+		"id": "1213",
 		"maxLevels": [
 			20,
 			30,

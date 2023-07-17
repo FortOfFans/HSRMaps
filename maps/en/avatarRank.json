@@ -245,18 +245,28 @@
 	},
 	"100501": {
 		"name": "Da Capo",
-		"description": "When using Ultimate, instead of immediately receiving DMG from the Shock state, enemies will now immediately receive DMG from all currently applied DoT sources.",
+		"description": "When the Talent triggers a follow-up attack, there is a <unbreak>#1[i]%</unbreak> base chance to increase the DoT received by the target by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
 		"icon": "SkillIcon_1005_Rank1",
-		"numbers": [],
+		"numbers": [
+			{
+				"Value": 1
+			},
+			{
+				"Value": 0.3000000002793968
+			},
+			{
+				"Value": 2
+			}
+		],
 		"id": "100501"
 	},
 	"100502": {
 		"name": "Fortississimo",
-		"description": "Weakness Break Efficiency boosted by <unbreak>#1[i]%</unbreak>.",
+		"description": "While Kafka is on the field, DoT dealt by all allies increases by <unbreak>#1[i]%</unbreak>.",
 		"icon": "SkillIcon_1005_Rank2",
 		"numbers": [
 			{
-				"Value": 0.5000000004656613
+				"Value": 0.25000000023283064
 			}
 		],
 		"id": "100502"
@@ -270,12 +280,9 @@
 	},
 	"100504": {
 		"name": "Recitativo",
-		"description": "The duration of the increased DoT caused by Talent is extended by <unbreak>#1[i]</unbreak> turn(s). This effect is stackable and can stack up to <unbreak>#2[i]</unbreak> time(s)",
+		"description": "When an enemy target takes DMG from the Shock status inflicted by Kafka, Kafka additionally regenerates <unbreak>#1[i]</unbreak> Energy.",
 		"icon": "SkillIcon_1005_Rank4",
 		"numbers": [
-			{
-				"Value": 1
-			},
 			{
 				"Value": 2
 			}
@@ -291,11 +298,11 @@
 	},
 	"100506": {
 		"name": "Leggiero",
-		"description": "The Ultimate increases the DMG multiplier of Shock DMG dealt to enemies by <unbreak>#1[i]%</unbreak> and extends the duration of Shock by <unbreak>#2[i]</unbreak> turn(s).",
+		"description": "The DMG multiplier for Shock DMG dealt by Ultimate, Technique, or the follow-up attack triggered by Talent increases by <unbreak>#1[i]%</unbreak>, and extends the duration of Shock on the enemy target by <unbreak>#2[i]</unbreak> turn(s).",
 		"icon": "SkillIcon_1005_Rank6",
 		"numbers": [
 			{
-				"Value": 1.3000000002793968
+				"Value": 1.5600000005215406
 			},
 			{
 				"Value": 1
@@ -1117,6 +1124,70 @@
 		],
 		"id": "110906"
 	},
+	"111101": {
+		"name": "Fighting Endlessly",
+		"description": "When Luka takes action, if the target enemy is Bleeding, increases DMG dealt by Luka by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
+		"icon": "SkillIcon_1111_Rank1",
+		"numbers": [
+			{
+				"Value": 0.1500000001396984
+			},
+			{
+				"Value": 2
+			}
+		],
+		"id": "111101"
+	},
+	"111102": {
+		"name": "The Enemy is Weak, I am Strong",
+		"description": "If the Skill hits an enemy target with Physical Weakness, gain <unbreak>#1[i]</unbreak> stack(s) of Fighting Will.",
+		"icon": "SkillIcon_1111_Rank2",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"id": "111102"
+	},
+	"111103": {
+		"name": "Born for the Ring",
+		"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+		"icon": "SkillIcon_1111_BP",
+		"numbers": [],
+		"id": "111103"
+	},
+	"111104": {
+		"name": "Never Turning Back",
+		"description": "For every stack of Fighting Will obtained, increases ATK by <unbreak>#1[i]%</unbreak>, stacking up to <unbreak>#2[i]</unbreak> time(s).",
+		"icon": "SkillIcon_1111_Rank4",
+		"numbers": [
+			{
+				"Value": 0.05000000004656613
+			},
+			{
+				"Value": 4
+			}
+		],
+		"id": "111104"
+	},
+	"111105": {
+		"name": "The Spirit of Wildfire",
+		"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+		"icon": "SkillIcon_1111_Ultra",
+		"numbers": [],
+		"id": "111105"
+	},
+	"111106": {
+		"name": "A Champion's Applause",
+		"description": "After the Enhanced Basic ATK's \"Rising Uppercut\" hits a Bleeding enemy target, the Bleed status will immediately deal DMG 1 time equal to <unbreak>#1[i]%</unbreak> of the original DMG for every hit of Direct Punch already unleashed during the current Enhanced Basic ATK.",
+		"icon": "SkillIcon_1111_Rank6",
+		"numbers": [
+			{
+				"Value": 0.0800000000745058
+			}
+		],
+		"id": "111106"
+	},
 	"120101": {
 		"name": "Rise Through the Tiles",
 		"description": "Ultimate deals <unbreak>#1[i]%</unbreak> more DMG.",
@@ -1366,6 +1437,70 @@
 		],
 		"id": "120406"
 	},
+	"120501": {
+		"name": "Blade Cuts the Deepest in Hell",
+		"description": "Blade's Ultimate deals additionally increased DMG to a single enemy target, with the increased amount equal to <unbreak>#1[i]%</unbreak> of Blade's total HP loss in the current battle.\\nThe total HP Blade has lost in the current battle is capped at <unbreak>#2[i]%</unbreak> of his Max HP. This value will be reset and re-accumulated after his Ultimate has been used.",
+		"icon": "SkillIcon_1205_Rank1",
+		"numbers": [
+			{
+				"Value": 1.5000000004656613
+			},
+			{
+				"Value": 0.9000000008381903
+			}
+		],
+		"id": "120501"
+	},
+	"120502": {
+		"name": "Ten Thousand Sorrows From One Broken Dream",
+		"description": "When Blade is in the Hellscape state, his CRIT Rate increases by <unbreak>#1[i]%</unbreak>.",
+		"icon": "SkillIcon_1205_Rank2",
+		"numbers": [
+			{
+				"Value": 0.1500000001396984
+			}
+		],
+		"id": "120502"
+	},
+	"120503": {
+		"name": "Hardened Blade Bleeds Coldest Shade",
+		"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+		"icon": "SkillIcon_1205_Ultra",
+		"numbers": [],
+		"id": "120503"
+	},
+	"120504": {
+		"name": "Rejected by Death, Infected With Life",
+		"description": "When Blade's current HP drops to <unbreak>50%</unbreak> or lower of his Max HP, increases his Max HP by <unbreak>#1[i]%</unbreak>. Stacks up to <unbreak>#2[i]</unbreak> time(s).",
+		"icon": "SkillIcon_1205_Rank4",
+		"numbers": [
+			{
+				"Value": 0.20000000018626451
+			},
+			{
+				"Value": 2
+			}
+		],
+		"id": "120504"
+	},
+	"120505": {
+		"name": "Death By Ten Lords' Gaze",
+		"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+		"icon": "SkillIcon_1205_BP",
+		"numbers": [],
+		"id": "120505"
+	},
+	"120506": {
+		"name": "Reborn Into an Empty Husk",
+		"description": "The maximum number of Charge stacks is reduced to 4. The DMG of the follow-up attack triggered by Blade's Talent additionally increases by <unbreak>#1[i]%</unbreak> of his Max HP.",
+		"icon": "SkillIcon_1205_Rank6",
+		"numbers": [
+			{
+				"Value": 0.5000000004656613
+			}
+		],
+		"id": "120506"
+	},
 	"120601": {
 		"name": "Cut With Ease",
 		"description": "After using Skill against a Weakness Broken enemy, regenerates 1 Skill Point.",
@@ -1432,7 +1567,7 @@
 	},
 	"120702": {
 		"name": "Skyward Command",
-		"description": "When any ally's current energy is equal to its energy limit, Yukong regenerates an additional <unbreak>#1[i]</unbreak> energy. This effect can only be triggered once for each ally. The trigger count is reset after Yukong casts her Ultimate.",
+		"description": "When any ally's current energy is equal to its energy limit, Yukong regenerates an additional <unbreak>#1[i]</unbreak> energy. This effect can only be triggered once for each ally. The trigger count is reset after Yukong uses her Ultimate.",
 		"icon": "SkillIcon_1207_Rank2",
 		"numbers": [
 			{
@@ -1443,7 +1578,7 @@
 	},
 	"120703": {
 		"name": "Torrential Fusillade",
-		"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>. Basic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+		"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
 		"icon": "SkillIcon_1207_BP",
 		"numbers": [],
 		"id": "120703"
@@ -1461,7 +1596,7 @@
 	},
 	"120705": {
 		"name": "August Deadshot",
-		"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>. Talent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+		"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
 		"icon": "SkillIcon_1207_Ultra",
 		"numbers": [],
 		"id": "120705"
@@ -1600,6 +1735,50 @@
 			}
 		],
 		"id": "121106"
+	},
+	"121301": {
+		"icon": "SkillIcon_1213_Rank1",
+		"numbers": [
+			{
+				"Value": 2
+			}
+		],
+		"id": "121301"
+	},
+	"121302": {
+		"icon": "SkillIcon_1213_Rank2",
+		"numbers": [
+			{
+				"Value": 0.0400000000372529
+			}
+		],
+		"id": "121302"
+	},
+	"121303": {
+		"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>. Talent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+		"icon": "SkillIcon_1213_Ultra",
+		"numbers": [],
+		"id": "121303"
+	},
+	"121304": {
+		"icon": "SkillIcon_1213_Rank4",
+		"numbers": [],
+		"id": "121304"
+	},
+	"121305": {
+		"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>. Basic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+		"icon": "SkillIcon_1213_BP",
+		"numbers": [],
+		"id": "121305"
+	},
+	"121306": {
+		"icon": "SkillIcon_1213_Rank6",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"id": "121306"
 	},
 	"800101": {
 		"name": "A Falling Star",

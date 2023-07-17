@@ -245,18 +245,28 @@
 	},
 	"100501": {
 		"name": "無窮に動く！無窮に",
-		"description": "必殺技を発動した時、敵は「付与された感電状態がダメージを発生する」から「付与されたすべての持続ダメージ系デバフがダメージを発生する」に変更される。",
+		"description": "天賦効果により追加攻撃を行う時、<unbreak>#1[i]%</unbreak>の基礎確率でターゲットの持続被ダメージ+<unbreak>#2[i]%</unbreak>、<unbreak>#3[i]</unbreak>ターン継続。",
 		"icon": "SkillIcon_1005_Rank1",
-		"numbers": [],
+		"numbers": [
+			{
+				"Value": 1
+			},
+			{
+				"Value": 0.3000000002793968
+			},
+			{
+				"Value": 2
+			}
+		],
 		"id": "100501"
 	},
 	"100502": {
 		"name": "狂想者の嗚咽",
-		"description": "弱点撃破効率+<unbreak>#1[i]%</unbreak>。",
+		"description": "カフカがフィールド上にいる時、味方全体の持続与ダメージ+<unbreak>#1[i]%</unbreak>。",
 		"icon": "SkillIcon_1005_Rank2",
 		"numbers": [
 			{
-				"Value": 0.5000000004656613
+				"Value": 0.25000000023283064
 			}
 		],
 		"id": "100502"
@@ -270,12 +280,9 @@
 	},
 	"100504": {
 		"name": "この叙唱を",
-		"description": "天賦による、敵の持続被ダメージがアップする効果の継続時間+<unbreak>#1[i]</unbreak>ターン。この効果が累積できるようになる、最大で<unbreak>#2[i]</unbreak>層累積可能。",
+		"description": "カフカが敵に付与した感電状態がダメージを発生する時、カフカのEPをさらに<unbreak>#1[i]</unbreak>回復する。",
 		"icon": "SkillIcon_1005_Rank4",
 		"numbers": [
-			{
-				"Value": 1
-			},
 			{
 				"Value": 2
 			}
@@ -291,11 +298,11 @@
 	},
 	"100506": {
 		"name": "回る、静かに",
-		"description": "必殺技が敵に付与する感電状態のダメージ倍率+<unbreak>#1[i]%</unbreak>、感電状態の継続時間+<unbreak>#2[i]</unbreak>ターン。",
+		"description": "必殺技、秘技、天賦による追加攻撃が敵に付与する感電状態のダメージ倍率+<unbreak>#1[i]%</unbreak>、感電状態の継続時間+<unbreak>#2[i]</unbreak>ターン。",
 		"icon": "SkillIcon_1005_Rank6",
 		"numbers": [
 			{
-				"Value": 1.3000000002793968
+				"Value": 1.5600000005215406
 			},
 			{
 				"Value": 1
@@ -475,7 +482,7 @@
 	},
 	"100906": {
 		"name": "銀河の下に眠る",
-		"description": "ターンが回ってきた時、天賦の蓄エネ層数減少値-<unbreak>#1[i]</unbreak>。",
+		"description": "ターンが回ってくるたびに天賦の蓄エネ層数減少値-<unbreak>#1[i]</unbreak>。",
 		"icon": "SkillIcon_1009_Rank6",
 		"numbers": [
 			{
@@ -1117,6 +1124,70 @@
 		],
 		"id": "110906"
 	},
+	"111101": {
+		"name": "止まぬ争い",
+		"description": "ルカが行動する時、指定した敵が裂創状態の場合、ルカの与ダメージ+<unbreak>#1[i]%</unbreak>、<unbreak>#2[i]</unbreak>ターン継続。",
+		"icon": "SkillIcon_1111_Rank1",
+		"numbers": [
+			{
+				"Value": 0.1500000001396984
+			},
+			{
+				"Value": 2
+			}
+		],
+		"id": "111101"
+	},
+	"111102": {
+		"name": "オレが強い",
+		"description": "物理の弱点がある敵に戦闘スキルが命中した場合、「闘志」を<unbreak>#1[i]</unbreak>層獲得する。",
+		"icon": "SkillIcon_1111_Rank2",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"id": "111102"
+	},
+	"111103": {
+		"name": "リングに立つため生まれた男",
+		"description": "戦闘スキルのLv.+2、最大Lv.<unbreak>15</unbreak>まで。天賦のLv.+2、最大Lv.<unbreak>15</unbreak>まで。",
+		"icon": "SkillIcon_1111_BP",
+		"numbers": [],
+		"id": "111103"
+	},
+	"111104": {
+		"name": "不撓不屈",
+		"description": "「闘志」を1層獲得するごとに、攻撃力+<unbreak>#1[i]%</unbreak>。この効果は最大で<unbreak>#2[i]</unbreak>層累積できる。",
+		"icon": "SkillIcon_1111_Rank4",
+		"numbers": [
+			{
+				"Value": 0.05000000004656613
+			},
+			{
+				"Value": 4
+			}
+		],
+		"id": "111104"
+	},
+	"111105": {
+		"name": "地炎魂",
+		"description": "必殺技のLv.+2、最大Lv.<unbreak>15</unbreak>まで。通常攻撃のLv.+1、最大Lv.<unbreak>10</unbreak>まで。",
+		"icon": "SkillIcon_1111_Ultra",
+		"numbers": [],
+		"id": "111105"
+	},
+	"111106": {
+		"name": "チャンピオンに相応しい喝采",
+		"description": "強化通常攻撃の「砕天拳」が裂創状態の敵に命中した後、その回の攻撃で「裂地拳」を1段行ったごとに、敵に付与された裂創状態が、さらに本来のダメージ<unbreak>#1[i]%</unbreak>分のダメージを1回発生する。",
+		"icon": "SkillIcon_1111_Rank6",
+		"numbers": [
+			{
+				"Value": 0.0800000000745058
+			}
+		],
+		"id": "111106"
+	},
 	"120101": {
 		"name": "幺魚と戯れる孤兵",
 		"description": "必殺技の与ダメージ+<unbreak>#1[i]%</unbreak>。",
@@ -1242,7 +1313,7 @@
 	},
 	"120302": {
 		"name": "純庭の礼賜",
-		"description": "戦闘スキルの効果が触発された時、指定した味方の残りHPが<unbreak>50%</unbreak>未満の場合、羅刹の治癒量+<unbreak>#1[i]%</unbreak>。指定した味方の残りHPが<unbreak>50%</unbreak>以上の場合、その味方に羅刹の攻撃力<unbreak>#2[i]%</unbreak>+<unbreak>#3[i]</unbreak>の耐久値を持つバリアを付与する、<unbreak>#4[i]</unbreak>ターン継続。",
+		"description": "戦闘スキルの効果が発動された時、指定した味方の残りHPが<unbreak>50%</unbreak>未満の場合、羅刹の治癒量+<unbreak>#1[i]%</unbreak>。指定した味方の残りHPが<unbreak>50%</unbreak>以上の場合、その味方に羅刹の攻撃力<unbreak>#2[i]%</unbreak>+<unbreak>#3[i]</unbreak>の耐久値を持つバリアを付与する、<unbreak>#4[i]</unbreak>ターン継続。",
 		"icon": "SkillIcon_1203_Rank2",
 		"numbers": [
 			{
@@ -1366,6 +1437,70 @@
 		],
 		"id": "120406"
 	},
+	"120501": {
+		"name": "形寿記せし剣身\\n地獄変の如く",
+		"description": "指定した敵単体に対する必殺技の与ダメージが、刃の戦闘中失ったHPの累計<unbreak>#1[i]%</unbreak>分アップする。\\n戦闘中失ったHPの累計のカウントは、刃の最大HPの<unbreak>#2[i]%</unbreak>を超えず、必殺技を発動した後にリセットされる。",
+		"icon": "SkillIcon_1205_Rank1",
+		"numbers": [
+			{
+				"Value": 1.5000000004656613
+			},
+			{
+				"Value": 0.9000000008381903
+			}
+		],
+		"id": "120501"
+	},
+	"120502": {
+		"name": "支離の旧夢\\n万事が遺恨",
+		"description": "刃が「地獄変」状態の時、会心率+<unbreak>#1[i]%</unbreak>。",
+		"icon": "SkillIcon_1205_Rank2",
+		"numbers": [
+			{
+				"Value": 0.1500000001396984
+			}
+		],
+		"id": "120502"
+	},
+	"120503": {
+		"name": "鍛造されし玄鋼\\n寒光放つ",
+		"description": "必殺技のLv.+2、最大Lv.<unbreak>15</unbreak>まで。天賦のLv.+2、最大Lv.<unbreak>15</unbreak>まで。",
+		"icon": "SkillIcon_1205_Ultra",
+		"numbers": [],
+		"id": "120503"
+	},
+	"120504": {
+		"name": "冥府の岐路越え\\n回生せし骸",
+		"description": "残りHPが<unbreak>50%</unbreak>を超える状態から、<unbreak>50%</unbreak>以下になった時、最大HP+<unbreak>#1[i]%</unbreak>、この効果は最大で<unbreak>#2[i]</unbreak>層累積できる。",
+		"icon": "SkillIcon_1205_Rank4",
+		"numbers": [
+			{
+				"Value": 0.20000000018626451
+			},
+			{
+				"Value": 2
+			}
+		],
+		"id": "120504"
+	},
+	"120505": {
+		"name": "十王の大辟\\n懸かり照らす業鏡",
+		"description": "戦闘スキルのLv.+2、最大Lv.<unbreak>15</unbreak>まで。通常攻撃のLv.+1、最大Lv.<unbreak>10</unbreak>まで。",
+		"icon": "SkillIcon_1205_BP",
+		"numbers": [],
+		"id": "120505"
+	},
+	"120506": {
+		"name": "涸れし魂魄留まりて\\n此の身に戻る",
+		"description": "チャージ層数の上限が4層になる。天賦による追加攻撃の与ダメージが、さらに刃の最大HP<unbreak>#1[i]%</unbreak>分アップする。",
+		"icon": "SkillIcon_1205_Rank6",
+		"numbers": [
+			{
+				"Value": 0.5000000004656613
+			}
+		],
+		"id": "120506"
+	},
 	"120601": {
 		"name": "游刃有余",
 		"description": "弱点撃破状態の敵に対して戦闘スキルを発動した後、SPを1回復する。",
@@ -1432,7 +1567,7 @@
 	},
 	"120702": {
 		"name": "青霄を駆け\\n蒼穹を御す",
-		"description": "任意の味方のEPが満タンの時、御空はさらにEPを<unbreak>#1[i]</unbreak>回復する。この効果は味方1名につき1回まで触発できる。御空が必殺技を発動した後、この効果の触発回数がリセットされる。",
+		"description": "任意の味方のEPが満タンの時、御空はさらにEPを<unbreak>#1[i]</unbreak>回復する。この効果は味方1名につき1回まで発動できる。御空が必殺技を発動した後、この効果の発動回数がリセットされる。",
 		"icon": "SkillIcon_1207_Rank2",
 		"numbers": [
 			{
@@ -1600,6 +1735,50 @@
 			}
 		],
 		"id": "121106"
+	},
+	"121301": {
+		"icon": "SkillIcon_1213_Rank1",
+		"numbers": [
+			{
+				"Value": 2
+			}
+		],
+		"id": "121301"
+	},
+	"121302": {
+		"icon": "SkillIcon_1213_Rank2",
+		"numbers": [
+			{
+				"Value": 0.0400000000372529
+			}
+		],
+		"id": "121302"
+	},
+	"121303": {
+		"description": "必殺技のLv.+2、最大Lv.<unbreak>15</unbreak>まで。天賦のLv.+2、最大Lv.<unbreak>15</unbreak>まで。",
+		"icon": "SkillIcon_1213_Ultra",
+		"numbers": [],
+		"id": "121303"
+	},
+	"121304": {
+		"icon": "SkillIcon_1213_Rank4",
+		"numbers": [],
+		"id": "121304"
+	},
+	"121305": {
+		"description": "戦闘スキルのLv.+2、最大Lv.<unbreak>15</unbreak>まで。通常攻撃のLv.+1、最大Lv.<unbreak>10</unbreak>まで。",
+		"icon": "SkillIcon_1213_BP",
+		"numbers": [],
+		"id": "121305"
+	},
+	"121306": {
+		"icon": "SkillIcon_1213_Rank6",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"id": "121306"
 	},
 	"800101": {
 		"name": "万界に墜臨した星芒",

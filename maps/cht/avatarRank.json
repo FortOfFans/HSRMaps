@@ -245,18 +245,28 @@
 	},
 	"100501": {
 		"name": "無窮動！無窮",
-		"description": "施放終結技時，敵方目標由「其目前的觸電狀態立即產生傷害」變更為「其目前承受的所有持續傷害類負面狀態立即產生傷害」。",
+		"description": "天賦觸發追加攻擊時，有<unbreak>#1[i]%</unbreak>的基礎機率使目標受到的持續傷害提高<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
 		"icon": "SkillIcon_1005_Rank1",
-		"numbers": [],
+		"numbers": [
+			{
+				"Value": 1
+			},
+			{
+				"Value": 0.3000000002793968
+			},
+			{
+				"Value": 2
+			}
+		],
 		"id": "100501"
 	},
 	"100502": {
 		"name": "狂想者，嗚咽",
-		"description": "弱點擊破效率提高<unbreak>#1[i]%</unbreak>。",
+		"description": "卡芙卡在場時，我方全體造成的持續傷害提高<unbreak>#1[i]%</unbreak>。",
 		"icon": "SkillIcon_1005_Rank2",
 		"numbers": [
 			{
-				"Value": 0.5000000004656613
+				"Value": 0.25000000023283064
 			}
 		],
 		"id": "100502"
@@ -270,12 +280,9 @@
 	},
 	"100504": {
 		"name": "把宣敘呈獻給",
-		"description": "天賦使敵方目標承受的持續傷害提高效果、持續時間增加<unbreak>#1[i]</unbreak>回合，並使該效果可以疊加，最多<unbreak>#2[i]</unbreak>層",
+		"description": "當卡芙卡對敵方目標施加的觸電狀態對敵方目標造成傷害時，額外為卡芙卡恢復<unbreak>#1[i]</unbreak>點能量。",
 		"icon": "SkillIcon_1005_Rank4",
 		"numbers": [
-			{
-				"Value": 1
-			},
 			{
 				"Value": 2
 			}
@@ -291,11 +298,11 @@
 	},
 	"100506": {
 		"name": "迴旋，悄悄地",
-		"description": "終結技使敵方目標陷入的觸電狀態的傷害倍率提高<unbreak>#1[i]%</unbreak>，並使觸電狀態的持續時間增加<unbreak>#2[i]</unbreak>回合。",
+		"description": "終結技、秘技與天賦觸發的追加攻擊使敵方目標陷入的觸電狀態的傷害倍率提高<unbreak>#1[i]%</unbreak>，並使觸電狀態的持續時間增加<unbreak>#2[i]</unbreak>回合。",
 		"icon": "SkillIcon_1005_Rank6",
 		"numbers": [
 			{
-				"Value": 1.3000000002793968
+				"Value": 1.5600000005215406
 			},
 			{
 				"Value": 1
@@ -1117,6 +1124,70 @@
 		],
 		"id": "110906"
 	},
+	"111101": {
+		"name": "爭鬥不休",
+		"description": "當盧卡行動時，若指定的敵方目標處於裂傷狀態，則盧卡造成的傷害提高<unbreak>#1[i]%</unbreak>，持續<unbreak>#2[i]</unbreak>回合。",
+		"icon": "SkillIcon_1111_Rank1",
+		"numbers": [
+			{
+				"Value": 0.1500000001396984
+			},
+			{
+				"Value": 2
+			}
+		],
+		"id": "111101"
+	},
+	"111102": {
+		"name": "敵弱，我強",
+		"description": "若戰技命中的敵方目標弱點為物理屬性，獲得<unbreak>#1[i]</unbreak>層【鬥志】。",
+		"icon": "SkillIcon_1111_Rank2",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"id": "111102"
+	},
+	"111103": {
+		"name": "為擂台而生",
+		"description": "戰技等級+2，最多不超過<unbreak>15</unbreak>級；天賦等級+2，最多不超過<unbreak>15</unbreak>級。",
+		"icon": "SkillIcon_1111_BP",
+		"numbers": [],
+		"id": "111103"
+	},
+	"111104": {
+		"name": "百折不撓",
+		"description": "每獲得1層【鬥志】，攻擊力便提高<unbreak>#1[i]%</unbreak>，該效果最多疊加<unbreak>#2[i]</unbreak>層。",
+		"icon": "SkillIcon_1111_Rank4",
+		"numbers": [
+			{
+				"Value": 0.05000000004656613
+			},
+			{
+				"Value": 4
+			}
+		],
+		"id": "111104"
+	},
+	"111105": {
+		"name": "地火之魂",
+		"description": "終結技等級+2，最多不超過<unbreak>15</unbreak>級；普通攻擊等級+1，最多不超過<unbreak>10</unbreak>級。",
+		"icon": "SkillIcon_1111_Ultra",
+		"numbers": [],
+		"id": "111105"
+	},
+	"111106": {
+		"name": "冠軍應得的喝彩",
+		"description": "發動強化普通攻擊的【碎天拳】命中陷入裂傷狀態下的敵方目標後，本次強化普通攻擊使用的【直衝拳】每發動過1段攻擊，則額外使其當下承受的裂傷狀態立即造成1次相當於原傷害<unbreak>#1[i]%</unbreak>的傷害。",
+		"icon": "SkillIcon_1111_Rank6",
+		"numbers": [
+			{
+				"Value": 0.0800000000745058
+			}
+		],
+		"id": "111106"
+	},
 	"120101": {
 		"name": "散勇化驍摸么魚",
 		"description": "施放終結技造成的傷害提高<unbreak>#1[i]%</unbreak>。",
@@ -1231,7 +1302,7 @@
 	},
 	"120301": {
 		"name": "濯洗生者",
-		"description": "結界生效時，我方全體攻擊力提高<unbreak>#1[i]%</unbreak>",
+		"description": "結界生效時我方全體攻擊力提高<unbreak>#1[i]%</unbreak>。",
 		"icon": "SkillIcon_1203_Rank1",
 		"numbers": [
 			{
@@ -1365,6 +1436,70 @@
 			}
 		],
 		"id": "120406"
+	},
+	"120501": {
+		"name": "劍錄大限，地獄變相",
+		"description": "終結技對指定敵方單體造成的傷害額外提高，提高數值等同於刃<unbreak>#1[i]%</unbreak>本場戰鬥中累積的已損失生命值。\\n本場戰鬥中累積已損失生命值最高不超過刃生命上限的<unbreak>#2[i]%</unbreak>，施放終結技後會歸零並重新開始累積。",
+		"icon": "SkillIcon_1205_Rank1",
+		"numbers": [
+			{
+				"Value": 1.5000000004656613
+			},
+			{
+				"Value": 0.9000000008381903
+			}
+		],
+		"id": "120501"
+	},
+	"120502": {
+		"name": "支離舊夢，萬端遺恨",
+		"description": "刃處於【地獄變】狀態時，暴擊率提高<unbreak>#1[i]%</unbreak>。",
+		"icon": "SkillIcon_1205_Rank2",
+		"numbers": [
+			{
+				"Value": 0.1500000001396984
+			}
+		],
+		"id": "120502"
+	},
+	"120503": {
+		"name": "冶煉玄鋼，銑淬寒芒",
+		"description": "終結技等級+2，最多不超過<unbreak>15</unbreak>級；天賦等級+2，最多不超過<unbreak>15</unbreak>級。",
+		"icon": "SkillIcon_1205_Ultra",
+		"numbers": [],
+		"id": "120503"
+	},
+	"120504": {
+		"name": "泉台歧路，百骸回春",
+		"description": "現有生命值百分比從高於<unbreak>50%</unbreak>降低至小於等於<unbreak>50%</unbreak>時，生命上限提高<unbreak>#1[i]%</unbreak>，該效果最多疊加<unbreak>#2[i]</unbreak>層。",
+		"icon": "SkillIcon_1205_Rank4",
+		"numbers": [
+			{
+				"Value": 0.20000000018626451
+			},
+			{
+				"Value": 2
+			}
+		],
+		"id": "120504"
+	},
+	"120505": {
+		"name": "十王判死，業鏡懸照",
+		"description": "戰技等級+2，最多不超過<unbreak>15</unbreak>級；普通攻擊等級+1，最多不超過<unbreak>10</unbreak>級。",
+		"icon": "SkillIcon_1205_BP",
+		"numbers": [],
+		"id": "120505"
+	},
+	"120506": {
+		"name": "命留魂銷，復返此身",
+		"description": "充能的層數上限降低至4層。天賦觸發追加攻擊造成的傷害額外提高，提高數值等同於刃<unbreak>#1[i]%</unbreak>的生命上限。",
+		"icon": "SkillIcon_1205_Rank6",
+		"numbers": [
+			{
+				"Value": 0.5000000004656613
+			}
+		],
+		"id": "120506"
 	},
 	"120601": {
 		"name": "遊刃有餘",
@@ -1600,6 +1735,50 @@
 			}
 		],
 		"id": "121106"
+	},
+	"121301": {
+		"icon": "SkillIcon_1213_Rank1",
+		"numbers": [
+			{
+				"Value": 2
+			}
+		],
+		"id": "121301"
+	},
+	"121302": {
+		"icon": "SkillIcon_1213_Rank2",
+		"numbers": [
+			{
+				"Value": 0.0400000000372529
+			}
+		],
+		"id": "121302"
+	},
+	"121303": {
+		"description": "終結技等級+2，最多不超過<unbreak>15</unbreak>級；天賦等級+2，最多不超過<unbreak>15</unbreak>級。",
+		"icon": "SkillIcon_1213_Ultra",
+		"numbers": [],
+		"id": "121303"
+	},
+	"121304": {
+		"icon": "SkillIcon_1213_Rank4",
+		"numbers": [],
+		"id": "121304"
+	},
+	"121305": {
+		"description": "戰技等級+2，最多不超過<unbreak>15</unbreak>級；普通攻擊等級+1，最多不超過<unbreak>10</unbreak>級。",
+		"icon": "SkillIcon_1213_BP",
+		"numbers": [],
+		"id": "121305"
+	},
+	"121306": {
+		"icon": "SkillIcon_1213_Rank6",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"id": "121306"
 	},
 	"800101": {
 		"name": "墜臨萬界的星芒",

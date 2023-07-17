@@ -220,7 +220,7 @@
 	},
 	"100404": {
 		"name": "Anruf der Gerechtigkeit",
-		"description": "Erhöht die Grundchance, einen angriffenen Gegner beim Einsatz der Fertigkeit zu verlangsamen, um <unbreak>#1[i]%</unbreak>.",
+		"description": "Erhöht die Grundchance, einen angegriffenen Gegner beim Einsatz der Fertigkeit zu verlangsamen, um <unbreak>#1[i]%</unbreak>.",
 		"icon": "SkillIcon_1004_Rank4",
 		"numbers": [
 			{
@@ -245,18 +245,28 @@
 	},
 	"100501": {
 		"name": "Da capo",
-		"description": "Nach dem Einsatz des Ultimates erleiden Gegner sofort SCH durch alle aktuellen Debuffs mit DoT, anstatt nur SCH durch den Status Schock.",
+		"description": "Bei Auslösung eines Folgeangriffs durch das Talent besteht eine Grundchance von <unbreak>#1[i]%</unbreak>, den erlittenen DoT des Ziels für <unbreak>#3[i]</unbreak> Rd. um <unbreak>#2[i]%</unbreak> zu erhöhen.",
 		"icon": "SkillIcon_1005_Rank1",
-		"numbers": [],
+		"numbers": [
+			{
+				"Value": 1
+			},
+			{
+				"Value": 0.3000000002793968
+			},
+			{
+				"Value": 2
+			}
+		],
 		"id": "100501"
 	},
 	"100502": {
 		"name": "Fortississimo",
-		"description": "Erhöht die Schwächebruch-Effizienz um <unbreak>#1[i]%</unbreak>.",
+		"description": "Erhöht den DoT aller Verbündeten um <unbreak>#1[i]%</unbreak>, wenn Kafka mitkämpft.",
 		"icon": "SkillIcon_1005_Rank2",
 		"numbers": [
 			{
-				"Value": 0.5000000004656613
+				"Value": 0.25000000023283064
 			}
 		],
 		"id": "100502"
@@ -270,12 +280,9 @@
 	},
 	"100504": {
 		"name": "Rezitativ",
-		"description": "Verlängert die Dauer des erhöhten DoT, der durch Kafkas Talent verursacht wird, um <unbreak>#1[i]</unbreak> Rd. Dieser Effekt ist bis zu <unbreak>#2[i]</unbreak>-mal stapelbar.",
+		"description": "Wenn ein Gegner SCH durch den von Kafka verursachten Schock-Status erleidet, wird die Energie von Kafka zusätzlich um <unbreak>#1[i]</unbreak> Pkt. wiederhergestellt.",
 		"icon": "SkillIcon_1005_Rank4",
 		"numbers": [
-			{
-				"Value": 1
-			},
 			{
 				"Value": 2
 			}
@@ -291,11 +298,11 @@
 	},
 	"100506": {
 		"name": "Leggiero",
-		"description": "Erhöht den SCH-Multiplikator des Status Schock durch Ultimate um <unbreak>#1[i]%</unbreak> und verlängert den Status Schock um <unbreak>#2[i]</unbreak> Rd.",
+		"description": "Erhöht den SCH-Multiplikator des Status Schock durch Ultimate, Technik und Folgeangriffe des Talents um <unbreak>#1[i]%</unbreak> und verlängert den Status Schock um <unbreak>#2[i]</unbreak> Rd.",
 		"icon": "SkillIcon_1005_Rank6",
 		"numbers": [
 			{
-				"Value": 1.3000000002793968
+				"Value": 1.5600000005215406
 			},
 			{
 				"Value": 1
@@ -337,7 +344,7 @@
 	},
 	"100604": {
 		"name": "Bounce-Angriff",
-		"description": "Nachdem Silberwolf mit ihrem Ultimate einen Gegner angegriffen hat, fügt sie für jeden Debuff des Ziels zusätzlichen Quantum-SCH in Höhe von <unbreak>#1[i]%</unbreak> von Silberwolfs ANG zu. Dieser Effekt kann bei jedem Einsatz ihres Ultimates bis zu <unbreak>#2[i]</unbreak>-mal ausgelöst werden.",
+		"description": "Nachdem Silberwolf mit ihrem Ultimate einen Gegner angegriffen hat, fügt sie für jeden Debuff des Ziels zusätzlichen Quanten-SCH in Höhe von <unbreak>#1[i]%</unbreak> von Silberwolfs ANG zu. Dieser Effekt kann bei jedem Einsatz ihres Ultimates bis zu <unbreak>#2[i]</unbreak>-mal ausgelöst werden.",
 		"icon": "SkillIcon_1006_Rank4",
 		"numbers": [
 			{
@@ -553,7 +560,7 @@
 	},
 	"110101": {
 		"name": "Stärke erhöhen",
-		"description": "Beim Einsatz der Fertigkeit besteht eine feste Chance von <unbreak>#1[i]%</unbreak>, 1 Fertigkeitspunkt wiederzuherstellen. Dieser Effekt hat eine Abklingzeit von 1 Rd.",
+		"description": "Beim Einsatz der Fertigkeit besteht eine feste Chance von <unbreak>#1[i]%</unbreak>, 1 Fertigkeitspunkt wiederherzustellen. Dieser Effekt hat eine Abklingzeit von 1 Rd.",
 		"icon": "SkillIcon_1101_Rank1",
 		"numbers": [
 			{
@@ -661,7 +668,7 @@
 	},
 	"110206": {
 		"name": "Trennung",
-		"description": "Der Ultimate verursacht beim getroffenen Gegner für <unbreak>#2[i]</unbreak> Rd. den Status „Schmetterlingssturm“. Gegner im Schmetterlingssturm erleiden bei Treffern 1-mal zusätzlich Quantum-SCH in Höhe von <unbreak>#1[i]%</unbreak> von Seeles Ultimate-SCH. Wenn ein anderer Verbündeter das Ziel durch den zusätzlichen SCH von „Schmetterlingssturm“ besiegt, wird Seeles Talent nicht ausgelöst.\\nIst Seele handlungsunfähig, wird der Status „Schmetterlingssturm“ vom Gegner entfernt.",
+		"description": "Der Ultimate verursacht beim getroffenen Gegner für <unbreak>#2[i]</unbreak> Rd. den Status „Schmetterlingssturm“. Gegner im Schmetterlingssturm erleiden bei Treffern 1-mal zusätzlich Quanten-SCH in Höhe von <unbreak>#1[i]%</unbreak> von Seeles Ultimate-SCH. Wenn ein anderer Verbündeter das Ziel durch den zusätzlichen SCH von „Schmetterlingssturm“ besiegt, wird Seeles Talent nicht ausgelöst.\\nIst Seele handlungsunfähig, wird der Status „Schmetterlingssturm“ vom Gegner entfernt.",
 		"icon": "SkillIcon_1102_Rank6",
 		"numbers": [
 			{
@@ -1090,7 +1097,7 @@
 	},
 	"110904": {
 		"name": "Nichts wissen macht auch nichts",
-		"description": "Beim Auslösung des Talents besteht eine Grundchance von <unbreak>#1[i]%</unbreak>, dass angrenzende Ziele des anvisierten Gegners von Brennen betroffen werden, das durch Fertigkeit verursacht wird.",
+		"description": "Bei Auslösung des Talents besteht eine Grundchance von <unbreak>#1[i]%</unbreak>, dass angrenzende Ziele des anvisierten Gegners von Brennen betroffen werden, das durch Fertigkeit verursacht wird.",
 		"icon": "SkillIcon_1109_Rank4",
 		"numbers": [
 			{
@@ -1116,6 +1123,70 @@
 			}
 		],
 		"id": "110906"
+	},
+	"111101": {
+		"name": "Endloser Kampf",
+		"description": "Wenn Luka eine Aktion ausführt und der anvisierte Gegner von Bluten betroffen ist, wird der von Luka verursachte SCH für <unbreak>#2[i]</unbreak> Rd. um <unbreak>#1[i]%</unbreak> erhöht.",
+		"icon": "SkillIcon_1111_Rank1",
+		"numbers": [
+			{
+				"Value": 0.1500000001396984
+			},
+			{
+				"Value": 2
+			}
+		],
+		"id": "111101"
+	},
+	"111102": {
+		"name": "Der Feind ist schwach, ich bin stark",
+		"description": "Wenn die Fertigkeit einen Gegner mit physischer Schwäche trifft, erhält Luka <unbreak>#1[i]</unbreak> Stapelung „Kampfeswille“.",
+		"icon": "SkillIcon_1111_Rank2",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"id": "111102"
+	},
+	"111103": {
+		"name": "Geboren für den Ring",
+		"description": "Fertigkeitsstufe +2 bis zu max. St. <unbreak>15</unbreak>. Talentstufe +2 bis zu max. St. <unbreak>15</unbreak>.",
+		"icon": "SkillIcon_1111_BP",
+		"numbers": [],
+		"id": "111103"
+	},
+	"111104": {
+		"name": "Keine Umkehr",
+		"description": "Erhöht ANG für jede Stapelung „Kampfeswille“ um <unbreak>#1[i]%</unbreak>. Dieser Effekt ist bis zu <unbreak>#2[i]</unbreak>-fach stapelbar.",
+		"icon": "SkillIcon_1111_Rank4",
+		"numbers": [
+			{
+				"Value": 0.05000000004656613
+			},
+			{
+				"Value": 4
+			}
+		],
+		"id": "111104"
+	},
+	"111105": {
+		"name": "Der Geist von Wildfeuer",
+		"description": "Ultimate-Stufe +2 bis zu max. St. <unbreak>15</unbreak>. Standardangriff-Stufe +1 bis zu max. St. <unbreak>10</unbreak>.",
+		"icon": "SkillIcon_1111_Ultra",
+		"numbers": [],
+		"id": "111105"
+	},
+	"111106": {
+		"name": "Applaus für den Champion",
+		"description": "Nachdem der verstärkte Standardangriff „Himmelsbrecher-Faust“ einen blutenden Gegner getroffen hat, verursacht das Bluten sofort einmal SCH in Höhe von <unbreak>#1[i]%</unbreak> des ursprünglichen SCH für jeden Treffer von „Gerader Haken“, der in diesem verstärkten Standardangriff verwendet wird.",
+		"icon": "SkillIcon_1111_Rank6",
+		"numbers": [
+			{
+				"Value": 0.0800000000745058
+			}
+		],
+		"id": "111106"
 	},
 	"120101": {
 		"name": "Bauer umgewandelt, Preis erhalten",
@@ -1148,7 +1219,7 @@
 	},
 	"120104": {
 		"name": "Glückliche Kombination, der letzte Stein wartet",
-		"description": "Nach dem Einsatz der Fertigkeit besteht eine Grundchance von <unbreak>#1[i]%</unbreak>, in „Autarkie“ einzutreten. Dieser Status hält bis zum Ende dieser Runde.\\nIn „Autarkie“ führt Qingque nach dem Einsatz des Standardangriffs oder verstärkten Standardangriffs sofort einen Folgeangriff aus und fügt dem Ziel Quantum-SCH in Höhe von <unbreak>100</unbreak> % des Standardangriffs oder verstärkten Standardangriffs zu.",
+		"description": "Nach dem Einsatz der Fertigkeit besteht eine Grundchance von <unbreak>#1[i]%</unbreak>, in „Autarkie“ einzutreten. Dieser Status hält bis zum Ende dieser Runde.\\nIn „Autarkie“ führt Qingque nach dem Einsatz des Standardangriffs oder verstärkten Standardangriffs sofort einen Folgeangriff aus und fügt dem Ziel Quanten-SCH in Höhe von <unbreak>100</unbreak> % des Standardangriffs oder verstärkten Standardangriffs zu.",
 		"icon": "SkillIcon_1201_Rank4",
 		"numbers": [
 			{
@@ -1365,6 +1436,70 @@
 			}
 		],
 		"id": "120406"
+	},
+	"120501": {
+		"name": "Eine Schwertlänge, tausend Höllentiefen",
+		"description": "Blades Ultimate verursacht bei einem anvisierten Gegner zusätzlich erhöhten SCH, wobei der erhöhte Betrag <unbreak>#1[i]%</unbreak> seiner gesamten im aktuellen Kampf verlorenen LP beträgt.\\nDie berechneten LP, die Blade im aktuellen Kampf insgesamt verloren hat, werden auf <unbreak>#2[i]%</unbreak> seiner max. LP begrenzt. Nachdem er seinen Ultimate eingesetzt hat, wird dieser Wert zurückgesetzt und neu berechnet.",
+		"icon": "SkillIcon_1205_Rank1",
+		"numbers": [
+			{
+				"Value": 1.5000000004656613
+			},
+			{
+				"Value": 0.9000000008381903
+			}
+		],
+		"id": "120501"
+	},
+	"120502": {
+		"name": "Verpasste Träume, unendliches Bedauern",
+		"description": "Wenn „Höllenqual“ aktiv ist, wird die KRIT-Rate um <unbreak>#1[i]%</unbreak> erhöht.",
+		"icon": "SkillIcon_1205_Rank2",
+		"numbers": [
+			{
+				"Value": 0.1500000001396984
+			}
+		],
+		"id": "120502"
+	},
+	"120503": {
+		"name": "Geschmolzener Stahl, gemahlenes Korn",
+		"description": "Ultimate-Stufe +2 bis zu max. St. <unbreak>15</unbreak>. Talentstufe +2 bis zu max. St. <unbreak>15</unbreak>.",
+		"icon": "SkillIcon_1205_Ultra",
+		"numbers": [],
+		"id": "120503"
+	},
+	"120504": {
+		"name": "Vom Tod abgewiesen, vom Leben heimgesucht",
+		"description": "Werden Blades aktuelle LP auf <unbreak>50</unbreak> % oder niedriger reduziert, werden seine max. LP um <unbreak>#1[i]%</unbreak> erhöht. Dieser Effekt ist bis zu <unbreak>#2[i]</unbreak>-fach stapelbar.",
+		"icon": "SkillIcon_1205_Rank4",
+		"numbers": [
+			{
+				"Value": 0.20000000018626451
+			},
+			{
+				"Value": 2
+			}
+		],
+		"id": "120504"
+	},
+	"120505": {
+		"name": "Todesurteil, Karmavollstreckung",
+		"description": "Fertigkeitsstufe +2 bis zu max. St. <unbreak>15</unbreak>. Standardangriff-Stufe +1 bis zu max. St. <unbreak>10</unbreak>.",
+		"icon": "SkillIcon_1205_BP",
+		"numbers": [],
+		"id": "120505"
+	},
+	"120506": {
+		"name": "Wie Körper, so Seele",
+		"description": "Die maximale Aufladungsanzahl wird auf 4 reduziert. Der SCH des Folgeangriffs, der durch Blades Talent ausgelöst wird, wird zusätzlich um <unbreak>#1[i]%</unbreak> seiner max. LP erhöht.",
+		"icon": "SkillIcon_1205_Rank6",
+		"numbers": [
+			{
+				"Value": 0.5000000004656613
+			}
+		],
+		"id": "120506"
 	},
 	"120601": {
 		"name": "Mit Leichtigkeit schneiden",
@@ -1600,6 +1735,50 @@
 			}
 		],
 		"id": "121106"
+	},
+	"121301": {
+		"icon": "SkillIcon_1213_Rank1",
+		"numbers": [
+			{
+				"Value": 2
+			}
+		],
+		"id": "121301"
+	},
+	"121302": {
+		"icon": "SkillIcon_1213_Rank2",
+		"numbers": [
+			{
+				"Value": 0.0400000000372529
+			}
+		],
+		"id": "121302"
+	},
+	"121303": {
+		"description": "Ultimate-Stufe +2 bis zu max. St. <unbreak>15</unbreak>. Talentstufe +2 bis zu max. St. <unbreak>15</unbreak>.",
+		"icon": "SkillIcon_1213_Ultra",
+		"numbers": [],
+		"id": "121303"
+	},
+	"121304": {
+		"icon": "SkillIcon_1213_Rank4",
+		"numbers": [],
+		"id": "121304"
+	},
+	"121305": {
+		"description": "Fertigkeitsstufe +2 bis zu max. St. <unbreak>15</unbreak>. Standardangriff-Stufe +1 bis zu max. St. <unbreak>10</unbreak>.",
+		"icon": "SkillIcon_1213_BP",
+		"numbers": [],
+		"id": "121305"
+	},
+	"121306": {
+		"icon": "SkillIcon_1213_Rank6",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"id": "121306"
 	},
 	"800101": {
 		"name": "Verstreute Sterne",

@@ -473,7 +473,7 @@
 			},
 			"talentName": "Douce mais cruelle",
 			"talentTag": "Cible unique",
-			"talentDesc": "Lorsqu'un allié de Kafka utilise une ATQ normale sur un ennemi, Kafka lance immédiatement 1 <u>attaque de suivi</u> et inflige des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de sa propre ATQ à cet ennemi, avec <unbreak>#4[i]%</unbreak> de <u>chances de base</u> d'augmenter les DGT subis par cet ennemi de <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> pendant <unbreak>#3[i]</unbreak> tours. Cet effet ne peut être déclenché qu'1 fois par tour.",
+			"talentDesc": "Lorsqu'un allié de Kafka utilise une ATQ normale sur une cible ennemie, Kafka lance immédiatement 1 <u>attaque de suivi</u> et inflige des DGT de foudre équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de son ATQ à cette cible, avec <unbreak>#2[i]%</unbreak> de chances de base de lui infliger l'effet Stupéfaction de son ultime pendant <unbreak>#3[i]</unbreak> tours. Cet effet ne peut être déclenché que 1 fois par tour.",
 			"talentIcon": "SkillIcon_1005_Passive",
 			"talentId": 100504,
 			"talentPromo": {
@@ -488,7 +488,7 @@
 				"111013": 7
 			},
 			"techName": "La pitié n'est pas un pardon",
-			"techDesc": "Attaque immédiatement. Inflige des DGT de foudre équivalents à <unbreak>#4[i]%</unbreak> de l'ATQ de Kafka à tous les ennemis après être entré en combat. D'autre part, chaque ennemi a <unbreak>#1[i]%</unbreak> de <u>chances de base</u> d'être stupéfié pendant <unbreak>#3[i]</unbreak> tours.\\nLes ennemis stupéfiés subissent des dégâts de foudre sur la durée équivalents à <unbreak>#2[i]%</unbreak> de l'ATQ de Kafka au début de chaque tour.",
+			"techDesc": "Attaque immédiatement tous les ennemis dans un rayon déterminé. Inflige des DGT de foudre équivalents à <unbreak>#3[i]%</unbreak> de l'ATQ de Kafka à tous les ennemis après être entré en combat, avec <unbreak>#1[i]%</unbreak> de <u>chances de base</u> d'infliger l'effet Stupéfaction de l'ultime à chaque ennemi pendant <unbreak>#2[i]</unbreak> tours.",
 			"techIcon": "SkillIcon_1005_Maze",
 			"techId": 100507
 		},
@@ -543,7 +543,7 @@
 			},
 			"skillName": "Autoriser les modifications ?",
 			"skillTag": "Incapacitation",
-			"skillDesc": "Il y a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de <u>chances de base</u> d'appliquer 1 Faiblesse du type d'un allié présent sur le champ de bataille à une cible ennemie. Réduit également la RÉS aux DGT de ce type de faiblesse de l'ennemi de <unbreak>#4[i]%</unbreak> pendant <unbreak>#3[i]</unbreak> tours. Si l'ennemi a déjà ce type de faiblesse, l'effet de réduction de RÉS aux DGT ne sera pas déclenché.\\nChaque ennemi ne peut avoir qu'une seule Faiblesse appliquée par Louve d'argent à la fois. Si Louve d'argent applique une nouvelle Faiblesse, elle remplace la précédente.\\nD'autre part, il y a <unbreak>#5[i]%</unbreak> de <u>chances de base</u> de réduire toutes les RÉS de type de l'ennemi de <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> pendant <unbreak>#7[i]</unbreak> tours.\\nInflige des DGT quantiques équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Louve d'argent à cet ennemi.",
+			"skillDesc": "Il y a <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de <u>chances de base</u> d'appliquer 1 Faiblesse du type d'un personnage présent sur le champ de bataille à une cible ennemie. Réduit également la RÉS aux DGT de ce type de faiblesse de l'ennemi de <unbreak>#4[i]%</unbreak> pendant <unbreak>#3[i]</unbreak> tours. Si l'ennemi a déjà ce type de faiblesse, l'effet de réduction de RÉS aux DGT ne sera pas déclenché.\\nChaque ennemi ne peut avoir qu'une seule Faiblesse appliquée par Louve d'argent à la fois. Si Louve d'argent applique une nouvelle Faiblesse, elle remplace la précédente.\\nD'autre part, il y a <unbreak>#5[i]%</unbreak> de <u>chances de base</u> de réduire toutes les RÉS de type de l'ennemi de <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> pendant <unbreak>#7[i]</unbreak> tours.\\nInflige des DGT quantiques équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Louve d'argent à cet ennemi.",
 			"skillIcon": "SkillIcon_1006_BP",
 			"skillId": 100602,
 			"skillPromo": {
@@ -879,7 +879,7 @@
 				"111002": 10,
 				"111003": 5
 			},
-			"talentName": "On n'est pas mieux servi que par soi-même",
+			"talentName": "La chance a tourné !",
 			"talentTag": "ZdE",
 			"talentDesc": "Lorsque l'attaque d'un allié réduit le pourcentage de PV d'un ennemi à <unbreak>#1[i]%</unbreak> ou moins, Herta lance une <u>attaque de suivi</u> qui inflige des DGT de glace équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de son ATQ à tous les ennemis.",
 			"talentIcon": "SkillIcon_1013_Passive",
@@ -1843,6 +1843,108 @@
 			80
 		]
 	},
+	"1111": {
+		"name": "Luka",
+		"stats": {
+			"maxHP": 917,
+			"maxATK": 582,
+			"maxDEF": 485,
+			"SPD": 103,
+			"TNT": 100,
+			"CR": 0.05000000004656613,
+			"CDMG": 0.5000000004656613
+		},
+		"icon": "1111",
+		"rarity": "VeryRare",
+		"element": "Physical",
+		"skills": {
+			"basicName": "Direct du droit",
+			"basicTag": "Cible unique",
+			"basicDesc": "Inflige des DGT physiques équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Luka à un ennemi unique.",
+			"basicIcon": "SkillIcon_1111_Normal",
+			"basicId": 111101,
+			"basicPromo": {
+				"2": 192000,
+				"110151": 2,
+				"110152": 6,
+				"110153": 8,
+				"112011": 4,
+				"112012": 5,
+				"112013": 5
+			},
+			"skillName": "Poing lacérateur",
+			"skillTag": "Cible unique",
+			"skillDesc": "Inflige des DGT physiques équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Luka à une cible ennemie unique, avec <unbreak>#2[i]%</unbreak> de <u>chances de base</u> de lui infliger Saignement pendant <unbreak>#5[i]</unbreak> tours.\\nQuand un ennemi souffre de Saignement, il subit des dégâts sur la durée physiques équivalents à <unbreak>#3[f1]%</unbreak> de ses PV max au début de chaque tour. Ces DGT ne peuvent pas excéder <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> de l'ATQ de Luka.",
+			"skillIcon": "SkillIcon_1111_BP",
+			"skillId": 111102,
+			"skillPromo": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"112011": 6,
+				"112012": 10,
+				"112013": 5
+			},
+			"ultName": "Coup de grâce",
+			"ultTag": "Cible unique",
+			"ultDesc": "Accorde <unbreak>#5[i]</unbreak> cumuls de Soif de combat, avec <unbreak>#2[i]%</unbreak> de <u>chances de base</u> d'augmenter les DGT subis par une cible ennemie unique de <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> pendant <unbreak>#4[i]</unbreak> tours. Puis inflige des DGT physiques équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Luka à la cible.",
+			"ultIcon": "SkillIcon_1111_Ultra",
+			"ultId": 111103,
+			"ultPromo": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"112011": 6,
+				"112012": 10,
+				"112013": 5
+			},
+			"talentName": "Étincelles volantes",
+			"talentTag": "Renforcement",
+			"talentDesc": "Luka reçoit <unbreak>#1[i]</unbreak> cumul de Soif de combat après utilisation de son ATQ normale, « Direct du droit », ou de sa compétence, « Poing lacérateur », jusqu'à un maximum de 4 cumuls. À 2 cumuls de Soif de combat, son ATQ normale, Direct du droit, se trouve renforcée en « Poing destructeur d'étoiles ». Lorsque l'« Uppercut du droit » de son ATQ normale renforcée touche une cible ennemie victime de Saignement, l'effet Saignement inflige immédiatement des DGT équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> des DGT de Saignement d'origine 1 fois. Luka dispose d'1 cumul de Soif de combat en début de combat.",
+			"talentIcon": "SkillIcon_1111_Passive",
+			"talentId": 111104,
+			"talentPromo": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"112011": 6,
+				"112012": 10,
+				"112013": 5
+			},
+			"techName": "Anticipation",
+			"techDesc": "Attaque immédiatement les ennemis. Luka inflige des DGT physiques équivalents à <unbreak>#1[i]%</unbreak> de son ATQ à un ennemi aléatoire en entrant en combat, avec <unbreak>#2[i]%</unbreak> de <u>chances de base</u> de lui infliger l'effet Saignement de sa compétence, à la suite de quoi Luka obtient un cumul supplémentaire de Soif de combat.",
+			"techIcon": "SkillIcon_1111_Maze",
+			"techId": 111107
+		},
+		"avatarType": "Warlock",
+		"promotion": {
+			"2": 246400,
+			"110401": 50,
+			"112011": 12,
+			"112012": 13,
+			"112013": 12
+		},
+		"exp": 5797920,
+		"id": "1111",
+		"maxLevels": [
+			20,
+			30,
+			40,
+			50,
+			60,
+			70,
+			80
+		]
+	},
 	"1201": {
 		"name": "Qingque",
 		"stats": {
@@ -2080,7 +2182,7 @@
 			},
 			"skillName": "Prière de la Fleur de l'abîme",
 			"skillTag": "Restauration",
-			"skillDesc": "Après utilisation de la compétence, restaure immédiatement des PV à une cible alliée à hauteur de <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Luocha + <color=#f29e38ff><unbreak>#2[i]</unbreak></color>. D'autre part, Luocha obtient 1 cumul de Fleur de l'abîme.\\nLorsque le pourcentage de PV d'un allié devient inférieur ou égal à <unbreak>#3[i]%</unbreak>, un effet équivalent à celui de la compétence de Luocha est immédiatement déclenché et appliqué une fois à cet allié (sans consommer de points de compétence). Cet effet peut être déclenché à nouveau après <unbreak>#4[i]</unbreak> tours.",
+			"skillDesc": "Après utilisation de la compétence, restaure immédiatement des PV à une cible alliée à hauteur de <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Luocha + <color=#f29e38ff><unbreak>#2[i]</unbreak></color>. D'autre part, Luocha obtient 1 cumul de Fleur de l'abîme.\\nLorsque le pourcentage de PV d'un allié devient inférieur ou égal à <unbreak>#3[i]%</unbreak>, un effet équivalent à celui de la compétence est immédiatement déclenché et appliqué une fois à cet allié (sans consommer de points de compétence). Cet effet peut être déclenché à nouveau après <unbreak>#4[i]</unbreak> tours.",
 			"skillIcon": "SkillIcon_1203_BP",
 			"skillId": 120302,
 			"skillPromo": {
@@ -2112,7 +2214,7 @@
 			},
 			"talentName": "Cycle de la vie",
 			"talentTag": "Restauration",
-			"talentDesc": "Lorsque le nombre de cumuls de Fleur de l'abîme atteint <unbreak>#1[i]</unbreak>, Luocha consomme tous les cumuls de Fleur de l'abîme pour déployer un Champ hostile aux ennemis.\\nLorsqu'un ennemi situé dans le Champ est attaqué par un allié, ce dernier restaure immédiatement un montant de PV équivalent à <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> de l'ATQ de Luocha + <color=#f29e38ff><unbreak>#4[i]</unbreak></color>.\\nL'effet du Champ dure <unbreak>#3[i]</unbreak> tours. Le Champ se dissipe lorsque Luocha est à terre.",
+			"talentDesc": "Lorsque le nombre de cumuls de Fleur de l'abîme atteint <unbreak>#1[i]</unbreak>, Luocha consomme tous les cumuls de Fleur de l'abîme pour déployer un Champ hostile aux ennemis.\\nLorsqu'un ennemi situé dans le Champ est attaqué par un allié, les PV de ce dernier sont immédiatement restaurés à hauteur de <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> de l'ATQ de Luocha + <color=#f29e38ff><unbreak>#4[i]</unbreak></color>.\\nL'effet du Champ dure <unbreak>#3[i]</unbreak> tours. Le Champ se dissipe lorsque Luocha est à terre.",
 			"talentIcon": "SkillIcon_1203_Passive",
 			"talentId": 120304,
 			"talentPromo": {
@@ -2128,7 +2230,7 @@
 			},
 			"techName": "Miséricorde d'un fou",
 			"techTag": "Restauration",
-			"techDesc": "Après utilisation de la technique, le talent se déclenche immédiatement au début du combat suivant.",
+			"techDesc": "Après utilisation de la technique, déclenche immédiatement l'effet du talent au début du combat suivant.",
 			"techIcon": "SkillIcon_1203_Maze",
 			"techId": 120307
 		},
@@ -2255,6 +2357,108 @@
 			80
 		]
 	},
+	"1205": {
+		"name": "Blade",
+		"stats": {
+			"maxHP": 1358,
+			"maxATK": 543,
+			"maxDEF": 485,
+			"SPD": 97,
+			"TNT": 125,
+			"CR": 0.05000000004656613,
+			"CDMG": 0.5000000004656613
+		},
+		"icon": "1205",
+		"rarity": "SuperRare",
+		"element": "Wind",
+		"skills": {
+			"basicName": "Lame d'éclat",
+			"basicTag": "Cible unique",
+			"basicDesc": "Inflige des DGT de vent équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Blade à une cible ennemie.",
+			"basicIcon": "SkillIcon_1205_Normal",
+			"basicId": 120501,
+			"basicPromo": {
+				"2": 240000,
+				"110111": 3,
+				"110112": 8,
+				"110113": 11,
+				"113001": 6,
+				"113002": 7,
+				"113003": 7
+			},
+			"skillName": "Vue de l'enfer",
+			"skillTag": "Renforcement",
+			"skillDesc": "Consomme <unbreak>#1[i]%</unbreak> des PV max de Blade pour entrer dans l'état Vue de l'enfer.\\nLorsque l'état Vue de l'enfer est actif, Blade ne peut plus utiliser sa compétence, mais les DGT qu'il inflige augmentent de <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, et son ATQ normale Lame d'éclat se renforce en Forêt de lames pendant <unbreak>#2[i]</unbreak> tours.\\nSi les PV de Blade sont insuffisants pour utiliser la compétence, ils tombent à 1 après utilisation de la compétence.\\nCette compétence ne régénère pas l'énergie. Utiliser cette compétence ne met pas fin au tour.",
+			"skillIcon": "SkillIcon_1205_BP",
+			"skillId": 120502,
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"ultName": "Condamnation à mort",
+			"ultTag": "Propagation",
+			"ultDesc": "Les PV de Blade passent à <unbreak>50</unbreak> % de ses PV max, et il inflige des DGT de vent équivalents à la somme de <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de son ATQ, <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de ses PV max, et <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> du total des PV qu'il a perdus au cours du combat à une cible unique, tout en infligeant des DGT de vent équivalents à la somme de <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> de son ATQ, <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> de ses PV max, et <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> du total des PV qu'il a perdus au cours du combat aux cibles adjacentes. Le montant des PV qu'il a perdus au cours du combat est plafonné à <color=#f29e38ff><unbreak>#7[i]%</unbreak></color> de ses PV max. Ce montant est remis à zéro et recommence à s'accumuler après l'utilisation de l'ultime.",
+			"ultIcon": "SkillIcon_1205_Ultra",
+			"ultId": 120503,
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"talentName": "Don de Shuhu",
+			"talentTag": "ZdE",
+			"talentDesc": "Chaque fois que Blade subit des DGT ou consomme ses PV, il gagne 1 cumul de Charge, jusqu'à un maximum de 5 cumuls. Blade ne peut gagner qu'1 cumul de Charge au maximum pour chaque attaque qu'il subit.\\nLorsque le nombre de cumuls de Charge atteint son maximum, il lance immédiatement une <u>attaque de suivi</u> sur tous les ennemis, infligeant des DGT de vent équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de son ATQ + <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> de ses PV max. Blade restaure également <unbreak>#3[i]%</unbreak> de ses PV max. Toutes les Charges sont consommées après avoir déclenché l'attaque de suivi.",
+			"talentIcon": "SkillIcon_1205_Passive",
+			"talentId": 120504,
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"techName": "Vent de karma",
+			"techDesc": "Attaque immédiatement les ennemis. Consomme <unbreak>#2[i]%</unbreak> des PV max de Blade après être entré en combat pour infliger des DGT de vent équivalents à <unbreak>#1[i]%</unbreak> de ses PV max à tous les ennemis.\\nSi les PV de Blade sont insuffisants, ils tombent à 1 après utilisation de cette technique.",
+			"techIcon": "SkillIcon_1205_Maze",
+			"techId": 120507
+		},
+		"avatarType": "Warrior",
+		"promotion": {
+			"2": 308000,
+			"110415": 65,
+			"113001": 15,
+			"113002": 15,
+			"113003": 15
+		},
+		"exp": 5797920,
+		"id": "1205",
+		"maxLevels": [
+			20,
+			30,
+			40,
+			50,
+			60,
+			70,
+			80
+		]
+	},
 	"1206": {
 		"name": "Sushang",
 		"stats": {
@@ -2286,7 +2490,7 @@
 			},
 			"skillName": "Escrime perce-nuages : Chute de montagne",
 			"skillTag": "Cible unique",
-			"skillDesc": "Inflige des DGT physiques équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Sushang à un ennemi unique. De plus, il y a <unbreak>#3[i]%</unbreak> de chances de déclencher Posture de l'épée lors du coup final, ce qui inflige à l'ennemi des DGT physiques <u>additionnels</u> équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de l'ATQ de Sushang.\\nSi l'ennemi est affecté par <u>Rupture de faiblesse</u>, le déclenchement de Posture de l'épée est garanti.",
+			"skillDesc": "Inflige des DGT physiques équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Sushang à un ennemi unique. De plus, il y a <unbreak>#3[i]%</unbreak> de chances de déclencher Posture de l'épée lors du coup final, ce qui inflige à l'ennemi des DGT physiques <u>additionnels</u> équivalents à <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> de l'ATQ de Sushang.\\nSi l'ennemi est affecté par une <u>Rupture de faiblesse</u>, le déclenchement de Posture de l'épée est garanti.",
 			"skillIcon": "SkillIcon_1206_BP",
 			"skillId": 120602,
 			"skillPromo": {
@@ -2388,7 +2592,7 @@
 			},
 			"skillName": "Salve de courage",
 			"skillTag": "Soutien",
-			"skillDesc": "Obtient <unbreak>#1[i]</unbreak> cumuls de Rugissement des cordes (maximum de 2 cumuls). Lorsque « Rugissement des cordes » est actif, l'ATQ de tous les alliés augmente de <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, et Yukong perd 1 cumul de « Rugissement des cordes » à la fin de chaque tour allié.\\nAu cours du tour où Yukong obtient « Rugissement des cordes » en utilisant sa compétence, elle ne perd pas de cumul de « Rugissement des cordes ».",
+			"skillDesc": "Obtient <unbreak>#1[i]</unbreak> cumuls de « Rugissement des cordes » (maximum de 2 cumuls). Lorsque « Rugissement des cordes » est actif, l'ATQ de tous les alliés augmente de <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, et Yukong perd 1 cumul de « Rugissement des cordes » à la fin de chaque tour allié (y compris celui de Yukong).\\nAu cours du tour où Yukong obtient « Rugissement des cordes » en utilisant sa compétence, elle ne perd pas de cumul de « Rugissement des cordes ».",
 			"skillIcon": "SkillIcon_1207_BP",
 			"skillId": 120702,
 			"skillPromo": {
@@ -2420,7 +2624,7 @@
 			},
 			"talentName": "Sept épaisseurs, une flèche",
 			"talentTag": "Renforcement",
-			"talentDesc": "Les ATQ normales infligent des DGT imaginaires supplémentaires équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Yukong et les DGT à la robustesse de ces attaques augmentent de <unbreak>#2[i]%</unbreak>. Cet effet peut être déclenché une fois tous les <unbreak>#3[i]</unbreak> tours.",
+			"talentDesc": "Les ATQ normales infligent des DGT imaginaires supplémentaires équivalents à <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> de l'ATQ de Yukong et les DGT à la robustesse de ces attaques augmentent de <unbreak>#2[i]%</unbreak>. Cet effet peut être déclenché à nouveau après <unbreak>#3[i]</unbreak> tour.",
 			"talentIcon": "SkillIcon_1207_Passive",
 			"talentId": 120704,
 			"talentPromo": {
@@ -2436,7 +2640,7 @@
 			},
 			"techName": "À la poursuite du vent",
 			"techTag": "Renforcement",
-			"techDesc": "Après utilisation de la technique, entre en mode Sprint pendant <unbreak>#1[i]</unbreak> secondes. En mode Sprint, la vitesse de déplacement augmente de <unbreak>#2[i]%</unbreak> et Yukong obtient <unbreak>#3[i]</unbreak> cumuls de « Rugissement des cordes » lorsqu'elle entre en combat en attaquant des ennemis.",
+			"techDesc": "Après utilisation de la technique, Yukong entre en mode Sprint pendant <unbreak>#1[i]</unbreak> secondes. En mode Sprint, la vitesse de déplacement augmente de <unbreak>#2[i]%</unbreak> et Yukong obtient <unbreak>#3[i]</unbreak> cumuls de « Rugissement des cordes » lorsqu'elle entre en combat en attaquant des ennemis.",
 			"techIcon": "SkillIcon_1207_Maze",
 			"techId": 120707
 		},
@@ -2656,6 +2860,99 @@
 		},
 		"exp": 5797920,
 		"id": "1211",
+		"maxLevels": [
+			20,
+			30,
+			40,
+			50,
+			60,
+			70,
+			80
+		]
+	},
+	"1213": {
+		"name": "Dan Heng • Imbibitor Lunae",
+		"stats": {
+			"maxHP": 1242,
+			"maxATK": 699,
+			"maxDEF": 364,
+			"SPD": 102,
+			"TNT": 125,
+			"CR": 0.05000000004656613,
+			"CDMG": 0.5000000004656613
+		},
+		"icon": "1213",
+		"rarity": "SuperRare",
+		"element": "Imaginary",
+		"skills": {
+			"basicTag": "Cible unique",
+			"basicIcon": "SkillIcon_1213_Normal",
+			"basicId": 121301,
+			"basicPromo": {
+				"2": 240000,
+				"110111": 3,
+				"110112": 8,
+				"110113": 11,
+				"113001": 6,
+				"113002": 7,
+				"113003": 7
+			},
+			"skillTag": "Renforcement",
+			"skillIcon": "SkillIcon_1213_BP",
+			"skillId": 121302,
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"ultTag": "Propagation",
+			"ultIcon": "SkillIcon_1213_Ultra",
+			"ultId": 121303,
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"talentTag": "Renforcement",
+			"talentIcon": "SkillIcon_1213_Passive",
+			"talentId": 121304,
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"techTag": "Renforcement",
+			"techIcon": "SkillIcon_1213_Maze",
+			"techId": 121307
+		},
+		"avatarType": "Warrior",
+		"promotion": {
+			"2": 308000,
+			"999": 65,
+			"113001": 15,
+			"113002": 15,
+			"113003": 15
+		},
+		"exp": 5797920,
+		"id": "1213",
 		"maxLevels": [
 			20,
 			30,

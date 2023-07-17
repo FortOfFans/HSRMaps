@@ -244,19 +244,29 @@
 		"id": "100406"
 	},
 	"100501": {
-		"name": "Moto perpetuo",
-		"description": "Al usar la habilidad definitiva, los enemigos pasan de recibir el daño provocado por el estado de Electrocución a recibir daño de todos los estados negativos de Daño con el tiempo que tengan en ese momento.",
+		"name": "Da capo",
+		"description": "Cuando el talento activa un ataque adicional, hay un <unbreak>#1[i]%</unbreak> de probabilidad base de que el Daño con el tiempo que recibe el objetivo aumente en un <unbreak>#2[i]%</unbreak> durante <unbreak>#3[i]</unbreak> turnos.",
 		"icon": "SkillIcon_1005_Rank1",
-		"numbers": [],
+		"numbers": [
+			{
+				"Value": 1
+			},
+			{
+				"Value": 0.3000000002793968
+			},
+			{
+				"Value": 2
+			}
+		],
 		"id": "100501"
 	},
 	"100502": {
-		"name": "Fortissimo",
-		"description": "La eficiencia de la Ruptura de Debilidad aumenta en un <unbreak>#1[i]%</unbreak>.",
+		"name": "Fortississimo",
+		"description": "Cuando Kafka está en la batalla, el Daño con el tiempo que infligen todos los aliados aumenta en un <unbreak>#1[i]%</unbreak>.",
 		"icon": "SkillIcon_1005_Rank2",
 		"numbers": [
 			{
-				"Value": 0.5000000004656613
+				"Value": 0.25000000023283064
 			}
 		],
 		"id": "100502"
@@ -270,12 +280,9 @@
 	},
 	"100504": {
 		"name": "Recitativo",
-		"description": "El talento hace que el Daño con el tiempo aumentado que reciben los objetivos dure <unbreak>#1[i]</unbreak> turno más y que este efecto se pueda acumular hasta <unbreak>#2[i]</unbreak> veces.",
+		"description": "Cuando el objetivo recibe daño del estado de Electrocución provocado por Kafka, Kafka recupera <unbreak>#1[i]</unbreak> pts. de energía adicionales.",
 		"icon": "SkillIcon_1005_Rank4",
 		"numbers": [
-			{
-				"Value": 1
-			},
 			{
 				"Value": 2
 			}
@@ -291,11 +298,11 @@
 	},
 	"100506": {
 		"name": "Leggiero",
-		"description": "La habilidad definitiva hace que el multiplicador de daño de la Electrocución infligida a los enemigos aumente en un <unbreak>#1[i]%</unbreak> y extiende la duración de Electrocución en <unbreak>#2[i]</unbreak> turno.",
+		"description": "El ataque adicional de la habilidad definitiva, la técnica o el talento hace que el multiplicador de daño de la Electrocución infligida a los enemigos aumente en un <unbreak>#1[i]%</unbreak> y extiende la duración de Electrocución en <unbreak>#2[i]</unbreak> turno.",
 		"icon": "SkillIcon_1005_Rank6",
 		"numbers": [
 			{
-				"Value": 1.3000000002793968
+				"Value": 1.5600000005215406
 			},
 			{
 				"Value": 1
@@ -500,7 +507,7 @@
 	},
 	"101302": {
 		"name": "Que no pare la fiesta",
-		"description": "Cada vez que se activa el talento, su Prob. CRIT aumenta en un <unbreak>#1[i]%</unbreak>. Se puede acumular hasta <unbreak>#2[i]</unbreak> veces.",
+		"description": "Cada vez que se activa el talento, su Prob. CRIT aumenta en un <unbreak>#1[i]%</unbreak>. Este efecto se puede acumular hasta <unbreak>#2[i]</unbreak> veces.",
 		"icon": "SkillIcon_1013_Rank2",
 		"numbers": [
 			{
@@ -704,7 +711,7 @@
 	},
 	"110304": {
 		"name": "¡Hagamos algo de ruido!",
-		"description": "Al usar la habilidad definitiva, hay una probabilidad base del <unbreak>#1[i]%</unbreak> de afectar con Electrocución a los enemigos que no estén ya electrocutados. Esta Electrocución es igual que la que inflige la habilidad básica.",
+		"description": "Al usar la habilidad definitiva, tiene una probabilidad base del <unbreak>#1[i]%</unbreak> de afectar a los enemigos que no estén ya electrocutados con un estado de Electrocución equivalente al de la habilidad básica.",
 		"icon": "SkillIcon_1103_Rank4",
 		"numbers": [
 			{
@@ -1090,7 +1097,7 @@
 	},
 	"110904": {
 		"name": "No pasa nada si no lo sabes",
-		"description": "Al activar el talento, hay una probabilidad base del <unbreak>#1[i]%</unbreak> de afectar a los enemigos adyacentes al objetivo con una Quemadura equivalente a la de la habilidad básica.",
+		"description": "Al activar el talento, tiene una probabilidad base del <unbreak>#1[i]%</unbreak> de afectar a los enemigos adyacentes al objetivo con una Quemadura equivalente a la de la habilidad básica.",
 		"icon": "SkillIcon_1109_Rank4",
 		"numbers": [
 			{
@@ -1116,6 +1123,70 @@
 			}
 		],
 		"id": "110906"
+	},
+	"111101": {
+		"name": "Lucha interminable",
+		"description": "Cuando Luka realiza una acción, si el objetivo está afectado por Sangrado, el daño que inflige Luka aumenta en un <unbreak>#1[i]%</unbreak> durante <unbreak>#2[i]</unbreak> turnos.",
+		"icon": "SkillIcon_1111_Rank1",
+		"numbers": [
+			{
+				"Value": 0.1500000001396984
+			},
+			{
+				"Value": 2
+			}
+		],
+		"id": "111101"
+	},
+	"111102": {
+		"name": "El enemigo es débil, yo soy fuerte",
+		"description": "Cuando la habilidad básica golpea a un enemigo con Debilidad Física, Luka obtiene <unbreak>#1[i]</unbreak> acumulación de Voluntad luchadora.",
+		"icon": "SkillIcon_1111_Rank2",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"id": "111102"
+	},
+	"111103": {
+		"name": "Nacido para el ring",
+		"description": "Niv. de habilidad básica +2 (máximo: nivel <unbreak>15</unbreak>). Niv. de talento +2 (máximo: nivel <unbreak>15</unbreak>).",
+		"icon": "SkillIcon_1111_BP",
+		"numbers": [],
+		"id": "111103"
+	},
+	"111104": {
+		"name": "Persistencia implacable",
+		"description": "Por cada acumulación de Voluntad luchadora, el ATQ aumenta en un <unbreak>#1[i]%</unbreak>. Este efecto se puede acumular hasta <unbreak>#2[i]</unbreak> veces.",
+		"icon": "SkillIcon_1111_Rank4",
+		"numbers": [
+			{
+				"Value": 0.05000000004656613
+			},
+			{
+				"Value": 4
+			}
+		],
+		"id": "111104"
+	},
+	"111105": {
+		"name": "El espíritu de Llamarada",
+		"description": "Niv. de habilidad definitiva +2 (máximo: nivel <unbreak>15</unbreak>). Niv. de ATQ básico +1 (máximo: nivel <unbreak>10</unbreak>).",
+		"icon": "SkillIcon_1111_Ultra",
+		"numbers": [],
+		"id": "111105"
+	},
+	"111106": {
+		"name": "El aplauso del campeón",
+		"description": "Tras golpear con el Puño rompecielos de su ATQ básico potenciado a un enemigo afectado por Sangrado, el estado de Sangrado inflige al instante 1 vez adicional un daño equivalente al <unbreak>#1[i]%</unbreak> del daño de Sangrado original por cada golpe de Puño certero de ese ATQ básico potenciado.",
+		"icon": "SkillIcon_1111_Rank6",
+		"numbers": [
+			{
+				"Value": 0.0800000000745058
+			}
+		],
+		"id": "111106"
 	},
 	"120101": {
 		"name": "Peón coronado, premio obtenido",
@@ -1366,6 +1437,70 @@
 		],
 		"id": "120406"
 	},
+	"120501": {
+		"name": "La espada que atraviesa el infierno",
+		"description": "El daño que inflige la habilidad definitiva de Blade a un enemigo determinado aumenta en una cantidad adicional equivalente al <unbreak>#1[i]%</unbreak> del recuento de PV que ha perdido en esta batalla.\\nEl recuento de PV perdidos en esta batalla no puede superar el <unbreak>#2[i]%</unbreak> de los PV máx. de Blade. Al usar su habilidad definitiva, este recuento se reinicia.",
+		"icon": "SkillIcon_1205_Rank1",
+		"numbers": [
+			{
+				"Value": 1.5000000004656613
+			},
+			{
+				"Value": 0.9000000008381903
+			}
+		],
+		"id": "120501"
+	},
+	"120502": {
+		"name": "Mil pesares por un sueño roto",
+		"description": "Cuando Blade está en el estado Panorama infernal, su Prob. CRIT aumenta en un <unbreak>#1[i]%</unbreak>.",
+		"icon": "SkillIcon_1205_Rank2",
+		"numbers": [
+			{
+				"Value": 0.1500000001396984
+			}
+		],
+		"id": "120502"
+	},
+	"120503": {
+		"name": "Acero templado para sangrar sombras",
+		"description": "Niv. de habilidad definitiva +2 (máximo: nivel <unbreak>15</unbreak>). Niv. de talento +2 (máximo: nivel <unbreak>15</unbreak>).",
+		"icon": "SkillIcon_1205_Ultra",
+		"numbers": [],
+		"id": "120503"
+	},
+	"120504": {
+		"name": "Rechazado por la muerte, infectado por la vida",
+		"description": "Cuando el porcentaje de PV pasa de ser superior al <unbreak>50%</unbreak> a igual o inferior al <unbreak>50%</unbreak>, los PV máx. aumentan en un <unbreak>#1[i]%</unbreak>. Este efecto se puede acumular hasta <unbreak>#2[i]</unbreak> veces.",
+		"icon": "SkillIcon_1205_Rank4",
+		"numbers": [
+			{
+				"Value": 0.20000000018626451
+			},
+			{
+				"Value": 2
+			}
+		],
+		"id": "120504"
+	},
+	"120505": {
+		"name": "Muerte a ojos de los Diez Líderes",
+		"description": "Niv. de habilidad básica +2 (máximo: nivel <unbreak>15</unbreak>). Niv. de ATQ básico +1 (máximo: nivel <unbreak>10</unbreak>).",
+		"icon": "SkillIcon_1205_BP",
+		"numbers": [],
+		"id": "120505"
+	},
+	"120506": {
+		"name": "Renacimiento en un cuerpo vacío",
+		"description": "El límite de acumulaciones de carga se reduce a 4. El daño infligido por el ataque adicional del talento aumenta en una cantidad equivalente al <unbreak>#1[i]%</unbreak> de los PV máx. de Blade.",
+		"icon": "SkillIcon_1205_Rank6",
+		"numbers": [
+			{
+				"Value": 0.5000000004656613
+			}
+		],
+		"id": "120506"
+	},
 	"120601": {
 		"name": "Corte fácil",
 		"description": "Recupera 1 pt. de habilidad básica tras usar la habilidad básica contra un objetivo afectado por Ruptura de Debilidad.",
@@ -1600,6 +1735,50 @@
 			}
 		],
 		"id": "121106"
+	},
+	"121301": {
+		"icon": "SkillIcon_1213_Rank1",
+		"numbers": [
+			{
+				"Value": 2
+			}
+		],
+		"id": "121301"
+	},
+	"121302": {
+		"icon": "SkillIcon_1213_Rank2",
+		"numbers": [
+			{
+				"Value": 0.0400000000372529
+			}
+		],
+		"id": "121302"
+	},
+	"121303": {
+		"description": "Niv. de habilidad definitiva +2 (máximo: nivel <unbreak>15</unbreak>). Niv. de talento +2 (máximo: nivel <unbreak>15</unbreak>).",
+		"icon": "SkillIcon_1213_Ultra",
+		"numbers": [],
+		"id": "121303"
+	},
+	"121304": {
+		"icon": "SkillIcon_1213_Rank4",
+		"numbers": [],
+		"id": "121304"
+	},
+	"121305": {
+		"description": "Niv. de habilidad básica +2 (máximo: nivel <unbreak>15</unbreak>). Niv. de ATQ básico +1 (máximo: nivel <unbreak>10</unbreak>).",
+		"icon": "SkillIcon_1213_BP",
+		"numbers": [],
+		"id": "121305"
+	},
+	"121306": {
+		"icon": "SkillIcon_1213_Rank6",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"id": "121306"
 	},
 	"800101": {
 		"name": "Estrellas dispersas",

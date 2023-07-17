@@ -245,18 +245,28 @@
 	},
 	"100501": {
 		"name": "Da capo",
-		"description": "Après utilisation de l'ultime, les ennemis subissent immédiatement les DGT infligés par tous les effets de dégâts sur la durée actuels au lieu de subir les DGT de Stupéfaction.",
+		"description": "Lorsque le talent déclenche une attaque de suivi, il y a <unbreak>#1[i]%</unbreak> de chances de base d'augmenter les dégâts sur la durée subis par la cible de <unbreak>#2[i]%</unbreak> pendant <unbreak>#3[i]</unbreak> tours.",
 		"icon": "SkillIcon_1005_Rank1",
-		"numbers": [],
+		"numbers": [
+			{
+				"Value": 1
+			},
+			{
+				"Value": 0.3000000002793968
+			},
+			{
+				"Value": 2
+			}
+		],
 		"id": "100501"
 	},
 	"100502": {
 		"name": "Fortississimo",
-		"description": "Augmente l'efficacité de Rupture de faiblesse de <unbreak>#1[i]%</unbreak>.",
+		"description": "Lorsque Kafka est sur le champ de bataille, les dégâts sur la durée infligés par tous les alliés augmentent de <unbreak>#1[i]%</unbreak>.",
 		"icon": "SkillIcon_1005_Rank2",
 		"numbers": [
 			{
-				"Value": 0.5000000004656613
+				"Value": 0.25000000023283064
 			}
 		],
 		"id": "100502"
@@ -270,12 +280,9 @@
 	},
 	"100504": {
 		"name": "Recitativo",
-		"description": "L'augmentation des dégâts sur la durée conférée par le talent est prolongée de <unbreak>#1[i]</unbreak> tours. Cet effet est cumulable jusqu'à <unbreak>#2[i]</unbreak> fois.",
+		"description": "Lorsqu'un ennemi subit des dégâts de l'état Stupéfaction infligé par Kafka, cette dernière régénère en plus <unbreak>#1[i]</unbreak> points d'énergie.",
 		"icon": "SkillIcon_1005_Rank4",
 		"numbers": [
-			{
-				"Value": 1
-			},
 			{
 				"Value": 2
 			}
@@ -291,11 +298,11 @@
 	},
 	"100506": {
 		"name": "Leggiero",
-		"description": "L'ultime augmente le multiplicateur des DGT de Stupéfaction sur les ennemis de <unbreak>#1[i]%</unbreak> et prolonge la durée de Stupéfaction d'<unbreak>#2[i]</unbreak> tour.",
+		"description": "Augmente de <unbreak>#1[i]%</unbreak> le multiplicateur des DGT de Stupéfaction infligés par l'ultime, la technique et l'attaque de suivi déclenchée par le talent et prolonge la durée de Stupéfaction sur les cibles ennemies d'<unbreak>#2[i]</unbreak> tour.",
 		"icon": "SkillIcon_1005_Rank6",
 		"numbers": [
 			{
-				"Value": 1.3000000002793968
+				"Value": 1.5600000005215406
 			},
 			{
 				"Value": 1
@@ -305,7 +312,7 @@
 	},
 	"100601": {
 		"name": "Piratage psychologique",
-		"description": "Lorsque qu'elle utilise son ultime pour attaquer un ennemi, Louve d'argent régénère <unbreak>#1[i]</unbreak> points d'énergie pour chaque malus actuellement subi par la cible ennemie. Cet effet peut être déclenché jusqu'à <unbreak>#2[i]</unbreak> fois pour chaque utilisation de son ultime.",
+		"description": "Lorsqu'elle utilise son ultime pour attaquer un ennemi, Louve d'argent régénère <unbreak>#1[i]</unbreak> points d'énergie pour chaque malus actuellement subi par la cible ennemie. Cet effet peut être déclenché jusqu'à <unbreak>#2[i]</unbreak> fois pour chaque utilisation de son ultime.",
 		"icon": "SkillIcon_1006_Rank1",
 		"numbers": [
 			{
@@ -1117,6 +1124,70 @@
 		],
 		"id": "110906"
 	},
+	"111101": {
+		"name": "Lutte sans fin",
+		"description": "Lorsque Luka entre en action, si la cible ennemie souffre de Saignement, les DGT infligés par Luka augmentent de <unbreak>#1[i]%</unbreak> pendant <unbreak>#2[i]</unbreak> tours.",
+		"icon": "SkillIcon_1111_Rank1",
+		"numbers": [
+			{
+				"Value": 0.1500000001396984
+			},
+			{
+				"Value": 2
+			}
+		],
+		"id": "111101"
+	},
+	"111102": {
+		"name": "L'ennemi est faible, je suis fort",
+		"description": "Gagne <unbreak>#1[i]</unbreak> cumul de Soif de combat lorsque la compétence touche un ennemi qui possède une Faiblesse physique.",
+		"icon": "SkillIcon_1111_Rank2",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"id": "111102"
+	},
+	"111103": {
+		"name": "Né pour l'arène",
+		"description": "Niv. de la compétence +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. du talent +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.",
+		"icon": "SkillIcon_1111_BP",
+		"numbers": [],
+		"id": "111103"
+	},
+	"111104": {
+		"name": "Sans jamais se retourner",
+		"description": "Augmente l'ATQ de <unbreak>#1[i]%</unbreak> pour chaque cumul de Soif de combat, cumulable jusqu'à <unbreak>#2[i]</unbreak> fois.",
+		"icon": "SkillIcon_1111_Rank4",
+		"numbers": [
+			{
+				"Value": 0.05000000004656613
+			},
+			{
+				"Value": 4
+			}
+		],
+		"id": "111104"
+	},
+	"111105": {
+		"name": "L'esprit des Feux sauvages",
+		"description": "Niv. de l'ultime +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. de l'ATQ normale +1, jusqu'au Niv. <unbreak>10</unbreak> maximum.",
+		"icon": "SkillIcon_1111_Ultra",
+		"numbers": [],
+		"id": "111105"
+	},
+	"111106": {
+		"name": "Applaudissements d'un champion",
+		"description": "Lorsque l'« Uppercut du droit » de l'ATQ normale renforcée touche une cible ennemie victime de Saignement, cette dernière subit immédiatement 1 fois des DGT équivalents à <unbreak>#1[i]%</unbreak> des DGT de Saignement d'origine pour chaque Direct du droit déclenché lors de cette ATQ normale renforcée.",
+		"icon": "SkillIcon_1111_Rank6",
+		"numbers": [
+			{
+				"Value": 0.0800000000745058
+			}
+		],
+		"id": "111106"
+	},
 	"120101": {
 		"name": "Avènement des tuiles",
 		"description": "Les DGT de l'ultime augmentent de <unbreak>#1[i]%</unbreak>.",
@@ -1268,7 +1339,7 @@
 		"id": "120303"
 	},
 	"120304": {
-		"name": "Jugement des épines",
+		"name": "Lourde est la couronne",
 		"description": "Lorsque le Champ de Luocha est actif, les ennemis sont affaiblis et les DGT qu'ils infligent diminuent de <unbreak>#1[i]%</unbreak>.",
 		"icon": "SkillIcon_1203_Rank4",
 		"numbers": [
@@ -1287,7 +1358,7 @@
 	},
 	"120306": {
 		"name": "Retour à la poussière",
-		"description": "Il y a <unbreak>#1[i]%</unbreak> de chances fixes de réduire les RÉS à tous les types de tous les ennemis de <unbreak>#2[i]%</unbreak> pendant <unbreak>#3[i]</unbreak> tours lors de l'utilisation de l'ultime.",
+		"description": "Il y a <unbreak>#1[i]%</unbreak> de chances fixes de réduire toutes les RÉS de type de tous les ennemis de <unbreak>#2[i]%</unbreak> pendant <unbreak>#3[i]</unbreak> tours lors de l'utilisation de l'ultime.",
 		"icon": "SkillIcon_1203_Rank6",
 		"numbers": [
 			{
@@ -1366,6 +1437,70 @@
 		],
 		"id": "120406"
 	},
+	"120501": {
+		"name": "Les lames s'affûtent en enfer",
+		"description": "L'ultime de Blade inflige des DGT augmentés à une cible ennemie unique. L'augmentation des DGT est égale à <unbreak>#1[i]%</unbreak> des PV que Blade a perdus pendant le combat en cours.\\nLe montant des PV perdus est plafonné à <unbreak>#2[i]%</unbreak> des PV max de Blade. Ce montant est remis à zéro et recommence à s'accumuler après l'utilisation de l'ultime.",
+		"icon": "SkillIcon_1205_Rank1",
+		"numbers": [
+			{
+				"Value": 1.5000000004656613
+			},
+			{
+				"Value": 0.9000000008381903
+			}
+		],
+		"id": "120501"
+	},
+	"120502": {
+		"name": "Dix mille souffrances pour un rêve brisé",
+		"description": "Les chances de coup critique de Blade augmentent de <unbreak>#1[i]%</unbreak> lorsqu'il est dans l'état Vue de l'enfer.",
+		"icon": "SkillIcon_1205_Rank2",
+		"numbers": [
+			{
+				"Value": 0.1500000001396984
+			}
+		],
+		"id": "120502"
+	},
+	"120503": {
+		"name": "Le sang est froid sur les lames endurcies",
+		"description": "Niv. de l'ultime +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. du talent +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.",
+		"icon": "SkillIcon_1205_Ultra",
+		"numbers": [],
+		"id": "120503"
+	},
+	"120504": {
+		"name": "Rejeté par la mort, infecté par la vie",
+		"description": "Lorsque les PV de Blade sont inférieurs ou égaux à <unbreak>50</unbreak> %, ses PV max augmentent de <unbreak>#1[i]%</unbreak>. Cumulable jusqu'à <unbreak>#2[i]</unbreak> fois.",
+		"icon": "SkillIcon_1205_Rank4",
+		"numbers": [
+			{
+				"Value": 0.20000000018626451
+			},
+			{
+				"Value": 2
+			}
+		],
+		"id": "120504"
+	},
+	"120505": {
+		"name": "Regard mortel des Dix seigneurs",
+		"description": "Niv. de la compétence +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. de l'ATQ normale +1, jusqu'au Niv. <unbreak>10</unbreak> maximum.",
+		"icon": "SkillIcon_1205_BP",
+		"numbers": [],
+		"id": "120505"
+	},
+	"120506": {
+		"name": "Revenu dans une coquille vide",
+		"description": "Le nombre de cumuls maximum de Charge est réduit à 4. Les DGT de l'attaque de suivi déclenchée par le talent de Blade augmentent d'un montant équivalent à <unbreak>#1[i]%</unbreak> de ses PV max.",
+		"icon": "SkillIcon_1205_Rank6",
+		"numbers": [
+			{
+				"Value": 0.5000000004656613
+			}
+		],
+		"id": "120506"
+	},
 	"120601": {
 		"name": "Tranchant aiguisé",
 		"description": "Régénère 1 point de compétence après avoir utilisé la compétence contre un ennemi qui subit une Rupture de faiblesse.",
@@ -1443,7 +1578,7 @@
 	},
 	"120703": {
 		"name": "Pluie de flèches",
-		"description": "Niv. de la compétence +2, jusqu'au niv. <unbreak>15</unbreak> maximum. Niv. de l'ATQ normale +1, jusqu'au niv. <unbreak>10</unbreak> maximum.",
+		"description": "Niv. de la compétence +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. de l'ATQ normale +1, jusqu'au Niv. <unbreak>10</unbreak> maximum.",
 		"icon": "SkillIcon_1207_BP",
 		"numbers": [],
 		"id": "120703"
@@ -1461,7 +1596,7 @@
 	},
 	"120705": {
 		"name": "Tir mortel majestueux",
-		"description": "Niv. de l'ultime +2, jusqu'au niv. <unbreak>15</unbreak> maximum. Niv. du talent +2, jusqu'au niv. <unbreak>15</unbreak> maximum.",
+		"description": "Niv. de l'ultime +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. du talent +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.",
 		"icon": "SkillIcon_1207_Ultra",
 		"numbers": [],
 		"id": "120705"
@@ -1600,6 +1735,50 @@
 			}
 		],
 		"id": "121106"
+	},
+	"121301": {
+		"icon": "SkillIcon_1213_Rank1",
+		"numbers": [
+			{
+				"Value": 2
+			}
+		],
+		"id": "121301"
+	},
+	"121302": {
+		"icon": "SkillIcon_1213_Rank2",
+		"numbers": [
+			{
+				"Value": 0.0400000000372529
+			}
+		],
+		"id": "121302"
+	},
+	"121303": {
+		"description": "Niv. de l'ultime +2, jusqu'au niv. <unbreak>15</unbreak> maximum.\\nNiv. du talent +2, jusqu'au niv. <unbreak>15</unbreak> maximum.",
+		"icon": "SkillIcon_1213_Ultra",
+		"numbers": [],
+		"id": "121303"
+	},
+	"121304": {
+		"icon": "SkillIcon_1213_Rank4",
+		"numbers": [],
+		"id": "121304"
+	},
+	"121305": {
+		"description": "Niv. de la compétence +2, jusqu'au niv. <unbreak>15</unbreak> maximum.\\nNiv. de l'ATQ normale +1, jusqu'au niv. <unbreak>10</unbreak> maximum.",
+		"icon": "SkillIcon_1213_BP",
+		"numbers": [],
+		"id": "121305"
+	},
+	"121306": {
+		"icon": "SkillIcon_1213_Rank6",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"id": "121306"
 	},
 	"800101": {
 		"name": "Étoile tombée du ciel",
