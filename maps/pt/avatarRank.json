@@ -576,7 +576,7 @@
 		"id": "100905"
 	},
 	"100906": {
-		"name": "Sonhos Galácticos Tranquilos e Confortáveis",
+		"name": "Sonhos Cósmicos Tranquilos e Confortáveis",
 		"description": "A perda de acúmulo(s) de carregamento a cada rodada é diminuída em <unbreak>#1[i]</unbreak>.",
 		"icon": "SkillIcon_1009_Rank6",
 		"numbers": [
@@ -1341,6 +1341,85 @@
 		"sall": {},
 		"id": "110906"
 	},
+	"111001": {
+		"name": "Madrugada da Caminhada na Neve",
+		"description": "Ao curar aliados com PV iguais ou menores que <unbreak>#1[i]%</unbreak>, a Cura Realizada de Lynx aumenta em <unbreak>#2[i]%</unbreak>. Este efeito também funciona em curas contínuas.",
+		"icon": "SkillIcon_1110_Rank1",
+		"numbers": [
+			{
+				"Value": 0.5000000004656613
+			},
+			{
+				"Value": 0.20000000018626451
+			}
+		],
+		"sall": {},
+		"id": "111001"
+	},
+	"111002": {
+		"name": "Manhã da Fornalha Portátil",
+		"description": "Um alvo com \"Resposta de Sobrevivência\" pode resistir a aplicação de penalidade por <unbreak>#1[i]</unbreak> vez(es).",
+		"icon": "SkillIcon_1110_Rank2",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"sall": {},
+		"id": "111002"
+	},
+	"111003": {
+		"name": "Tarde do Sinalizador de Avalanche",
+		"description": "Nv. da Perícia +2, até no máximo Nv. <unbreak>15</unbreak>.\\nNv. do ATQ Básico +1, até no máximo Nv. <unbreak>10</unbreak>.",
+		"icon": "SkillIcon_1110_BP",
+		"numbers": [],
+		"sall": {
+			"111001": 1,
+			"111002": 2
+		},
+		"id": "111003"
+	},
+	"111004": {
+		"name": "Crepúsculo da Fogueira Acolhedora",
+		"description": "Quando a \"Resposta de Sobrevivência\" é recebida, aumenta o ATQ do alvo em uma quantidade igual a <unbreak>#1[f1]%</unbreak> dos PV máximos de Lynx por <unbreak>#2[i]</unbreak> rodada(s).",
+		"icon": "SkillIcon_1110_Rank4",
+		"numbers": [
+			{
+				"Value": 0.030000000027939677
+			},
+			{
+				"Value": 1
+			}
+		],
+		"sall": {},
+		"id": "111004"
+	},
+	"111005": {
+		"name": "Noite do Chá de Aurora",
+		"description": "Nv. da Perícia Suprema +2, até no máximo Nv. <unbreak>15</unbreak>.\\nNv. do Talento +2, até no máximo Nv. <unbreak>15</unbreak>.",
+		"icon": "SkillIcon_1110_Ultra",
+		"numbers": [],
+		"sall": {
+			"111003": 2,
+			"111004": 2
+		},
+		"id": "111005"
+	},
+	"111006": {
+		"name": "Amanhecer do Mapa dos Exploradores",
+		"description": "Melhora adicionalmente o efeito de aumento de PV máximos da \"Resposta de Sobrevivência\" em uma quantidade igual a <unbreak>#1[f1]%</unbreak> dos PV máximos de Lynx e aumenta a RES a Efeito em <unbreak>#2[i]%</unbreak>.",
+		"icon": "SkillIcon_1110_Rank6",
+		"numbers": [
+			{
+				"Value": 0.060000000055879354
+			},
+			{
+				"Value": 0.3000000002793968
+			}
+		],
+		"sall": {},
+		"id": "111006"
+	},
 	"111101": {
 		"name": "Lutando Infinitamente",
 		"description": "Quando Luka age, se o inimigo-alvo estiver com Sangramento, aumenta o Dano causado por Luka em <unbreak>#1[i]%</unbreak> por <unbreak>#2[i]</unbreak> rodada(s).",
@@ -1358,7 +1437,7 @@
 	},
 	"111102": {
 		"name": "O Inimigo é Fraco, Eu Sou Forte",
-		"description": "Se a Perícia atingir um inimigo-alvo com Fraqueza a Físico, ganha <unbreak>#1[i]</unbreak> acúmulo(s) de Desejo de Lutar.",
+		"description": "Se a Perícia atingir um inimigo-alvo com Fraqueza Física, ganha <unbreak>#1[i]</unbreak> acúmulo(s) de Desejo de Lutar.",
 		"icon": "SkillIcon_1111_Rank2",
 		"numbers": [
 			{
@@ -1718,7 +1797,7 @@
 	},
 	"120501": {
 		"name": "A Lâmina Corta Mais Fundo no Inferno",
-		"description": "A Perícia Suprema de Blade causa Dano aumentado adicional a um único alvo inimigo, com um aumento igual a <unbreak>#1[i]%</unbreak> dos PV totais que Blade perdeu na batalha atual. O total de PV que Blade perdeu na batalha atual tem um limite de <unbreak>#2[i]%</unbreak> de seus PV máximos. Este valor será redefinido e reacumulado após usar sua Perícia Suprema.",
+		"description": "A Perícia Suprema de Blade causa Dano aumentado adicional a um único alvo inimigo, com um aumento igual a <unbreak>#1[i]%</unbreak> do total de PV que Blade perdeu na batalha atual. O total de PV que Blade perdeu na batalha atual tem um limite de <unbreak>#2[i]%</unbreak> de seus PV máximos. Este valor será redefinido e reacumulado após usar sua Perícia Suprema.",
 		"icon": "SkillIcon_1205_Rank1",
 		"numbers": [
 			{
@@ -1928,6 +2007,79 @@
 		"sall": {},
 		"id": "120706"
 	},
+	"120801": {
+		"name": "Dominus Pacis",
+		"description": "Todas as unidades com Conhecimento têm seu Dano CRIT aumentado em <unbreak>#1[i]%</unbreak>.",
+		"icon": "SkillIcon_1208_Rank1",
+		"numbers": [
+			{
+				"Value": 0.3000000002793968
+			}
+		],
+		"sall": {},
+		"id": "120801"
+	},
+	"120802": {
+		"name": "Optimus Felix",
+		"description": "Se qualquer membro da equipe for atingido por um golpe fatal enquanto a Matriz de Presciência estiver ativa, todos os aliados que forem atingidos por um golpe fatal durante esta ação não serão derrubados e <unbreak>#1[i]%</unbreak> de seus PV máximos serão restaurados imediatamente. Este efeito pode ser acionado 1 vez por batalha.",
+		"icon": "SkillIcon_1208_Rank2",
+		"numbers": [
+			{
+				"Value": 0.7000000006519258
+			}
+		],
+		"sall": {},
+		"id": "120802"
+	},
+	"120803": {
+		"name": "Ápice da Ligação",
+		"description": "Nv. da Perícia +2, até no máximo Nv. <unbreak>15</unbreak>.\\nNv. do Talento +2, até no máximo Nv. <unbreak>15</unbreak>.",
+		"icon": "SkillIcon_1208_BP",
+		"numbers": [],
+		"sall": {
+			"120802": 2,
+			"120804": 2
+		},
+		"id": "120803"
+	},
+	"120804": {
+		"name": "Fortuna Stellaris",
+		"description": "Quando outros aliados sob a Matriz da Presciência são atacados, Fu Xuan regenera <unbreak>#1[i]</unbreak> de Energia.",
+		"icon": "SkillIcon_1208_Rank4",
+		"numbers": [
+			{
+				"Value": 5
+			}
+		],
+		"sall": {},
+		"id": "120804"
+	},
+	"120805": {
+		"name": "Árbitra Primordial",
+		"description": "Nv. da Perícia Suprema +2, até no máximo Nv. <unbreak>15</unbreak>.\\nNv. do ATQ Básico +1, até no máximo Nv. <unbreak>10</unbreak>.",
+		"icon": "SkillIcon_1208_Ultra",
+		"numbers": [],
+		"sall": {
+			"120801": 1,
+			"120803": 2
+		},
+		"id": "120805"
+	},
+	"120806": {
+		"name": "Omnia Vita",
+		"description": "Assim que a Matriz de Presciência é ativada, ela manterá um registro com o valor total de PV perdidos por todos os membros da equipe na batalha atual. O Dano da Perícia Suprema de Fu Xuan aumentará em <unbreak>#1[i]%</unbreak> desse valor de PV perdidos.\\nEsse valor também é limitado a <unbreak>#2[i]%</unbreak> dos PV máximos de Fu Xuan e o valor registrado será reiniciado e reacumulado após a Perícia Suprema de Fu Xuan ser utilizada.",
+		"icon": "SkillIcon_1208_Rank6",
+		"numbers": [
+			{
+				"Value": 2
+			},
+			{
+				"Value": 1.2000000001862645
+			}
+		],
+		"sall": {},
+		"id": "120806"
+	},
 	"120901": {
 		"name": "Sabre Esbelto",
 		"description": "Quando Yanqing ataca um inimigo com Congelamento, ele causa <unbreak>#1[i]%</unbreak> de seu ATQ como Dano de Gelo Adicional.",
@@ -2077,59 +2229,68 @@
 		"id": "121106"
 	},
 	"121301": {
+		"name": "Conectado ao Céu",
+		"description": "Aumenta a contagem acumulável de Coração Íntegro em <unbreak>#1[i]</unbreak>, e ganha 1 acúmulo extra de Coração Íntegro por cada golpe durante o ataque.",
 		"icon": "SkillIcon_1213_Rank1",
 		"numbers": [
 			{
-				"Value": 2
+				"Value": 4
 			}
 		],
 		"sall": {},
 		"id": "121301"
 	},
 	"121302": {
+		"name": "Império nas Nuvens",
+		"description": "Depois de usar sua Perícia Suprema, a ação de Dan Heng - Embebidor Lunae é Avançada Adiante em <unbreak>100%</unbreak> e ganha 1 Squama Sacrosancta extra.",
 		"icon": "SkillIcon_1213_Rank2",
-		"numbers": [
-			{
-				"Value": 0.0400000000372529
-			}
-		],
+		"numbers": [],
 		"sall": {},
 		"id": "121302"
 	},
 	"121303": {
-		"description": "Nv. de Perícia Suprema +2, até no máximo Nv. <unbreak>15</unbreak>.\\nNv. de Talento +2, até no máximo Nv. <unbreak>15</unbreak>.",
-		"icon": "SkillIcon_1213_Ultra",
+		"name": "Trajado com Nuvens",
+		"description": "Nv. da Perícia +2, até no máximo Nv. <unbreak>15</unbreak>.\\nNv. do ATQ Básico +1, até no máximo Nv. <unbreak>10</unbreak>.",
+		"icon": "SkillIcon_1213_BP",
 		"numbers": [],
 		"sall": {
-			"121303": 2,
-			"121304": 2
+			"121301": 1,
+			"121302": 2,
+			"121308": 1,
+			"121310": 1,
+			"121312": 1
 		},
 		"id": "121303"
 	},
 	"121304": {
+		"name": "Bênção Zefirina",
+		"description": "O efeito de melhoria concedido por \"Rugido Soberano\" dura até o final da próxima rodada deste personagem.",
 		"icon": "SkillIcon_1213_Rank4",
 		"numbers": [],
 		"sall": {},
 		"id": "121304"
 	},
 	"121305": {
-		"description": "Nv. de Perícia +2, até no máximo Nv. <unbreak>15</unbreak>.\\nNv. de ATQ Básico +1, até no máximo Nv. <unbreak>10</unbreak>.",
-		"icon": "SkillIcon_1213_BP",
+		"name": "A Queda é o Orgulho",
+		"description": "Nv. da Perícia Suprema +2, até no máximo Nv. <unbreak>15</unbreak>.\\nNv. do Talento +2, até no máximo Nv. <unbreak>15</unbreak>.",
+		"icon": "SkillIcon_1213_Ultra",
 		"numbers": [],
 		"sall": {
-			"121301": 1,
-			"121302": 2,
-			"121308": 2,
-			"121310": 2,
-			"121312": 2
+			"121303": 2,
+			"121304": 2
 		},
 		"id": "121305"
 	},
 	"121306": {
+		"name": "Reinado, Retornado",
+		"description": "Depois que qualquer aliado usa a Perícia Suprema, a PEN de RES a Imaginário do próximo Salto Fulgurante de Dan Heng - Embebidor Lunae aumenta em <unbreak>#1[i]%</unbreak>. Este efeito pode acumular até <unbreak>#2[i]</unbreak> vez(es).",
 		"icon": "SkillIcon_1213_Rank6",
 		"numbers": [
 			{
-				"Value": 1
+				"Value": 0.20000000018626451
+			},
+			{
+				"Value": 3
 			}
 		],
 		"sall": {},

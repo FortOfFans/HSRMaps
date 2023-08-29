@@ -23,10 +23,17 @@
 	},
 	"11": {
 		"name": "Poder trazacaminos",
-		"description": "Un complejo poder que se esconde en los motores del Expreso Astral y protege a quienes van por la Vía Trazacaminos.",
+		"description": "El Poder trazacaminos se va recuperando con el tiempo, 1 punto cada 6 minutos hasta un máximo de **240** pts. Se puede canjear Jade estelar por Poder trazacaminos.\nUna vez que se alcance o se sobrepase el límite máximo de Poder trazacaminos, no se recuperará más. Al mismo tiempo, el Poder trazacaminos de reserva comenzará a acumularse con el tiempo.",
 		"icon": "11",
 		"rarity": "VeryRare",
 		"id": "11"
+	},
+	"12": {
+		"name": "Poder trazacaminos de reserva",
+		"description": "Cuando el Poder trazacaminos se recupere al máximo o supere el límite, el Poder trazacaminos de reserva comenzará a acumularse con el tiempo. Cada **18** minutos se recupera 1 pt., hasta un máximo de **2400** pts.\nEl Poder trazacaminos de reserva consume la misma cantidad de puntos que el Poder trazacaminos. Puedes retirar como máximo **240** pts. cada vez.",
+		"icon": "12",
+		"rarity": "VeryRare",
+		"id": "12"
 	},
 	"21": {
 		"name": "EXP",
@@ -1352,16 +1359,18 @@
 		"id": "110415"
 	},
 	"110416": {
+		"name": "Clavo del simio",
 		"type": "Material de ascensión de personaje",
-		"description": "Clavo del simio",
-		"icon": "Icon_Testmaterial01",
+		"description": "Vestigio de un Espíritu de la Abundancia. Material de ascensión para los personajes de tipo Cuántico.",
+		"icon": "110416",
 		"rarity": "VeryRare",
 		"id": "110416"
 	},
 	"110417": {
+		"name": "Edicto de la contención",
 		"type": "Material de ascensión de personaje",
-		"description": "Edicto de la contención",
-		"icon": "Icon_Testmaterial01",
+		"description": "Componente de un ingenio de Xianzhou. Material de ascensión para los personajes de tipo Imaginario.",
+		"icon": "110417",
 		"rarity": "VeryRare",
 		"id": "110417"
 	},
@@ -2537,6 +2546,67 @@
 		"rarity": "Normal",
 		"id": "140201"
 	},
+	"140202": {
+		"name": "Trozos de sashimi de salmón",
+		"type": "Objeto de misión",
+		"icon": "140202",
+		"rarity": "Rare",
+		"id": "140202"
+	},
+	"140203": {
+		"name": "Babosa de nieve mimética",
+		"type": "Objeto de misión",
+		"icon": "140203",
+		"rarity": "Rare",
+		"id": "140203"
+	},
+	"140204": {
+		"type": "Objeto de misión",
+		"icon": "140082",
+		"rarity": "Rare",
+		"id": "140204"
+	},
+	"140205": {
+		"type": "Objeto de misión",
+		"icon": "140082",
+		"rarity": "Rare",
+		"id": "140205"
+	},
+	"140206": {
+		"name": "Elemento de activación de geomédula",
+		"type": "Objeto de misión",
+		"icon": "140206",
+		"rarity": "Rare",
+		"id": "140206"
+	},
+	"140207": {
+		"name": "Pan de salmón",
+		"type": "Objeto de misión",
+		"icon": "408409",
+		"rarity": "Rare",
+		"id": "140207"
+	},
+	"140208": {
+		"name": "Brocheta de carne asada",
+		"type": "Objeto de misión",
+		"icon": "408204",
+		"rarity": "Rare",
+		"id": "140208"
+	},
+	"140209": {
+		"name": "Estofado de las llanuras nevadas",
+		"type": "Objeto de misión",
+		"icon": "402018",
+		"rarity": "Rare",
+		"id": "140209"
+	},
+	"140210": {
+		"name": "Disquete con la foto de Pela y su madre",
+		"type": "Objeto de misión",
+		"icon": "140210",
+		"rarity": "Rare",
+		"id": "140210"
+	},
 	"140211": {
 		"name": "Fragmento de meteorito",
 		"type": "Objeto de misión",
@@ -2717,60 +2787,172 @@
 		"rarity": "Rare",
 		"id": "140241"
 	},
+	"140242": {
+		"name": "Un enrollado de colmipir que compraste para Bailu.",
+		"type": "Objeto de misión",
+		"icon": "408201",
+		"rarity": "Rare",
+		"id": "140242"
+	},
+	"140243": {
+		"name": "Un pastel de loto sonoro que compraste para Bailu.",
+		"type": "Objeto de misión",
+		"icon": "408407",
+		"rarity": "Rare",
+		"id": "140243"
+	},
+	"140244": {
+		"name": "Una brocheta de bayafaisán que compraste para Bailu.",
+		"type": "Objeto de misión",
+		"icon": "408202",
+		"rarity": "Rare",
+		"id": "140244"
+	},
+	"140245": {
+		"name": "Leche de floticabra caliente que compraste para Bailu.",
+		"type": "Objeto de misión",
+		"icon": "408408",
+		"rarity": "Rare",
+		"id": "140245"
+	},
+	"140246": {
+		"name": "Un refresco de frijoles que compraste para Bailu.",
+		"type": "Objeto de misión",
+		"icon": "408405",
+		"rarity": "Rare",
+		"id": "140246"
+	},
+	"140247": {
+		"name": "Paquete de mensajería",
+		"type": "Objeto de misión",
+		"icon": "140161",
+		"rarity": "Rare",
+		"id": "140247"
+	},
+	"140248": {
+		"name": "Registro de ingresos y pagos",
+		"type": "Objeto de misión",
+		"icon": "140254",
+		"rarity": "Rare",
+		"id": "140248"
+	},
+	"140249": {
+		"name": "Testimonio de trabajador del muelle",
+		"type": "Objeto de misión",
+		"icon": "140125",
+		"rarity": "Rare",
+		"id": "140249"
+	},
+	"140250": {
+		"name": "Renta del muelle del Callejón Aurum",
+		"type": "Objeto de misión",
+		"icon": "140247",
+		"rarity": "Rare",
+		"id": "140250"
+	},
+	"140251": {
+		"name": "Contrato de alquiler del muelle",
+		"type": "Objeto de misión",
+		"icon": "190002",
+		"rarity": "Rare",
+		"id": "140251"
+	},
+	"140252": {
+		"name": "Transacción comercial del gremio del Callejón Aurum",
+		"type": "Objeto de misión",
+		"icon": "140247",
+		"rarity": "Rare",
+		"id": "140252"
+	},
+	"140253": {
+		"name": "Análisis de ventas del Taller Rebosatalento",
+		"type": "Objeto de misión",
+		"icon": "190002",
+		"rarity": "Rare",
+		"id": "140253"
+	},
+	"140254": {
+		"name": "Volumen de comercio histórico del Callejón Aurum",
+		"type": "Objeto de misión",
+		"icon": "140248",
+		"rarity": "Rare",
+		"id": "140254"
+	},
+	"140255": {
+		"name": "Depósito de licitación del gremio del Callejón Aurum",
+		"type": "Objeto de misión",
+		"icon": "140254",
+		"rarity": "Rare",
+		"id": "140255"
+	},
+	"140256": {
+		"name": "Evento de colaboración de Especias Supremas",
+		"type": "Objeto de misión",
+		"icon": "140250",
+		"rarity": "Rare",
+		"id": "140256"
+	},
+	"140257": {
+		"name": "Encuesta sobre la opinión de negocios en el Callejón Aurum",
+		"type": "Objeto de misión",
+		"icon": "190002",
+		"rarity": "Rare",
+		"id": "140257"
+	},
 	"140258": {
 		"name": "Calco de una marca de la Sociedad (I)",
 		"type": "Objeto de misión",
 		"icon": "149975",
-		"rarity": "Rare",
+		"rarity": "Normal",
 		"id": "140258"
 	},
 	"140259": {
 		"name": "Calco de una marca de la Sociedad (II)",
 		"type": "Objeto de misión",
 		"icon": "149975",
-		"rarity": "Rare",
+		"rarity": "Normal",
 		"id": "140259"
 	},
 	"140260": {
 		"name": "Calco de una marca de la Sociedad (III)",
 		"type": "Objeto de misión",
 		"icon": "149975",
-		"rarity": "Rare",
+		"rarity": "Normal",
 		"id": "140260"
 	},
 	"140261": {
 		"name": "Calco de una marca de la Sociedad (IV)",
 		"type": "Objeto de misión",
 		"icon": "149975",
-		"rarity": "Rare",
+		"rarity": "Normal",
 		"id": "140261"
 	},
 	"140262": {
 		"name": "Calco de una marca de la Sociedad (V)",
 		"type": "Objeto de misión",
 		"icon": "149975",
-		"rarity": "Rare",
+		"rarity": "Normal",
 		"id": "140262"
 	},
 	"140263": {
 		"name": "Calco de una marca de la Sociedad (VI)",
 		"type": "Objeto de misión",
 		"icon": "149975",
-		"rarity": "Rare",
+		"rarity": "Normal",
 		"id": "140263"
 	},
 	"140264": {
 		"name": "Calco de una marca de la Sociedad (VII)",
 		"type": "Objeto de misión",
 		"icon": "149975",
-		"rarity": "Rare",
+		"rarity": "Normal",
 		"id": "140264"
 	},
 	"140265": {
 		"name": "Calco de una marca de la Sociedad (VIII)",
 		"type": "Objeto de misión",
 		"icon": "149975",
-		"rarity": "Rare",
+		"rarity": "Normal",
 		"id": "140265"
 	},
 	"140266": {
@@ -2821,6 +3003,71 @@
 		"icon": "140230",
 		"rarity": "Rare",
 		"id": "140272"
+	},
+	"140273": {
+		"name": "Abanico con dibujo de un pez",
+		"type": "Objeto de misión",
+		"icon": "140273",
+		"rarity": "Rare",
+		"id": "140273"
+	},
+	"140274": {
+		"name": "Sello del aeroembajador",
+		"type": "Objeto de misión",
+		"icon": "140274",
+		"rarity": "Rare",
+		"id": "140274"
+	},
+	"140275": {
+		"name": "Cajita enviada al Conde Insomne",
+		"type": "Objeto de misión",
+		"icon": "140275",
+		"rarity": "Rare",
+		"id": "140275"
+	},
+	"140276": {
+		"name": "Cuchillo de cocina enviado a Especias Supremas",
+		"type": "Objeto de misión",
+		"icon": "140276",
+		"rarity": "Rare",
+		"id": "140276"
+	},
+	"140277": {
+		"name": "Arco y flechas cuyo destinatario se desconoce",
+		"type": "Objeto de misión",
+		"icon": "140277",
+		"rarity": "Rare",
+		"id": "140277"
+	},
+	"140278": {
+		"name": "Nuevo té Mezcla de Tingyun",
+		"type": "Objeto de misión",
+		"description": "Tras su uso, un aliado determinado regenera inmediatamente unos PV equivalentes al **36%** de sus PV máx. + **460** PV adicionales.",
+		"icon": "140278",
+		"rarity": "Rare",
+		"id": "140278"
+	},
+	"140279": {
+		"name": "Salteado de tripas de ternera en aceite picante",
+		"type": "Objeto de misión",
+		"description": "Tras su uso, el equipo recupera inmediatamente 4pts. de técnica.",
+		"icon": "140279",
+		"rarity": "Rare",
+		"id": "140279"
+	},
+	"140280": {
+		"name": "Cometa de papel conmemorativa",
+		"type": "Objeto de misión",
+		"icon": "140280",
+		"rarity": "Rare",
+		"id": "140280"
+	},
+	"140281": {
+		"name": "Ábaco de jade de la alianza",
+		"type": "Objeto de misión",
+		"icon": "140281",
+		"rarity": "Rare",
+		"id": "140281"
 	},
 	"140291": {
 		"name": "Loto de hielo y fuego",
@@ -2927,12 +3174,103 @@
 		"rarity": "Rare",
 		"id": "140305"
 	},
+	"140306": {
+		"name": "«Guía de diagnóstico rápido de la galaxia»",
+		"type": "Objeto de misión",
+		"icon": "140225",
+		"rarity": "Rare",
+		"id": "140306"
+	},
+	"140307": {
+		"name": "Registro de juego de Jade celestial",
+		"type": "Objeto de misión",
+		"icon": "140230",
+		"rarity": "Rare",
+		"id": "140307"
+	},
+	"140308": {
+		"name": "Copia del certificado de baja por enfermedad",
+		"type": "Objeto de misión",
+		"icon": "140125",
+		"rarity": "Rare",
+		"id": "140308"
+	},
+	"140309": {
+		"name": "Invitación de colaboración de la Corporación para la Paz Interastral",
+		"type": "Objeto de misión",
+		"icon": "140175",
+		"rarity": "Rare",
+		"id": "140309"
+	},
 	"140310": {
 		"name": "Oda {F#a la}{M#al} Trazacaminos",
 		"type": "Objeto de misión",
 		"icon": "140303",
 		"rarity": "VeryRare",
 		"id": "140310"
+	},
+	"140311": {
+		"name": "\"Origen\" de Siete de Marzo",
+		"type": "Objeto de misión",
+		"icon": "140311",
+		"rarity": "Rare",
+		"id": "140311"
+	},
+	"140312": {
+		"name": "Botín de abominación de la Abundancia",
+		"type": "Objeto de misión",
+		"icon": "140082",
+		"rarity": "Rare",
+		"id": "140312"
+	},
+	"140313": {
+		"name": "Documentación de Yongren",
+		"type": "Objeto de misión",
+		"icon": "140125",
+		"rarity": "Rare",
+		"id": "140313"
+	},
+	"140314": {
+		"name": "Grabaciones autorizadas del Sr. Xiyan",
+		"type": "Objeto de misión",
+		"icon": "140231",
+		"rarity": "Rare",
+		"id": "140314"
+	},
+	"140315": {
+		"name": "Grabaciones autorizadas de Deacá y Parallá",
+		"type": "Objeto de misión",
+		"icon": "140231",
+		"rarity": "Rare",
+		"id": "140315"
+	},
+	"140316": {
+		"name": "Paquete ultrasecreto del Sr. Huo",
+		"type": "Objeto de misión",
+		"icon": "140161",
+		"rarity": "Rare",
+		"id": "140316"
+	},
+	"140317": {
+		"name": "«Manuscrito de la sabiduría»",
+		"type": "Objeto de misión",
+		"icon": "140230",
+		"rarity": "Rare",
+		"id": "140317"
+	},
+	"140318": {
+		"name": "«Manuscrito del silencio»",
+		"type": "Objeto de misión",
+		"icon": "140271",
+		"rarity": "Rare",
+		"id": "140318"
+	},
+	"140319": {
+		"name": "«Manuscrito del delirio»",
+		"type": "Objeto de misión",
+		"icon": "140230",
+		"rarity": "Rare",
+		"id": "140319"
 	},
 	"149960": {
 		"name": "Llave del puente luminoso",
@@ -3150,6 +3488,22 @@
 		"rarity": "Normal",
 		"id": "180007"
 	},
+	"180008": {
+		"name": "Componentes mecánicos abandonados",
+		"type": "Material de síntesis",
+		"description": "Material de síntesis de grado 1",
+		"icon": "180008",
+		"rarity": "Normal",
+		"id": "180008"
+	},
+	"180009": {
+		"name": "Cosecha tan alta como una persona",
+		"type": "Material de síntesis",
+		"description": "Material de síntesis de grado 1",
+		"icon": "180009",
+		"rarity": "Normal",
+		"id": "180009"
+	},
 	"181001": {
 		"name": "Componente",
 		"type": "Material de síntesis",
@@ -3230,6 +3584,30 @@
 		"rarity": "NotNormal",
 		"id": "181010"
 	},
+	"181011": {
+		"name": "Unidad de ábaco de jade",
+		"type": "Material de síntesis",
+		"description": "Material de síntesis de grado 2",
+		"icon": "181011",
+		"rarity": "NotNormal",
+		"id": "181011"
+	},
+	"181012": {
+		"name": "Extracto de hierbas medicinales",
+		"type": "Material de síntesis",
+		"description": "Material de síntesis de grado 2",
+		"icon": "181012",
+		"rarity": "NotNormal",
+		"id": "181012"
+	},
+	"181013": {
+		"name": "Tian dong",
+		"type": "Material de síntesis",
+		"description": "Material de síntesis de grado 2",
+		"icon": "181013",
+		"rarity": "NotNormal",
+		"id": "181013"
+	},
 	"182001": {
 		"name": "Materia extraña de la Destrucción",
 		"type": "Material de síntesis",
@@ -3285,6 +3663,14 @@
 		"icon": "182007",
 		"rarity": "Rare",
 		"id": "182007"
+	},
+	"182008": {
+		"name": "Coral escama de dragón",
+		"type": "Material de síntesis",
+		"description": "Material de síntesis de grado 3",
+		"icon": "182008",
+		"rarity": "Rare",
+		"id": "182008"
 	},
 	"183001": {
 		"name": "Hoja del árbol interdimensional",
@@ -5567,9 +5953,9 @@
 		"id": "190386"
 	},
 	"190387": {
-		"name": "Razas de larga vida (I)",
+		"name": "Razas de larga vida I",
 		"type": "Lecturas",
-		"description": "Razas de larga vida (I)",
+		"description": "Razas de larga vida I",
 		"icon": "190007",
 		"rarity": "Normal",
 		"id": "190387"
@@ -6160,17 +6546,38 @@
 	},
 	"220000": {
 		"name": "El arte del lenguaje",
-		"description": "Marco de mensajes y conversaciones. Se puede cambiar en las funciones de mensajes y conversaciones.",
+		"description": "Marco de mensajes y conversaciones. Tras obtenerlo, se puede cambiar en las funciones de mensajes y conversaciones.",
 		"icon": "220000",
 		"rarity": "VeryRare",
 		"id": "220000"
 	},
 	"220001": {
 		"name": "¿Dónde está el conejo?",
-		"description": "Marco de mensajes y conversaciones. Se puede cambiar en las funciones de mensajes y conversaciones.",
+		"description": "Marco de mensajes y conversaciones. Tras obtenerlo, se puede cambiar en las funciones de mensajes y conversaciones.",
 		"icon": "220001",
 		"rarity": "VeryRare",
 		"id": "220001"
+	},
+	"221000": {
+		"name": "Camino de los Anónimos",
+		"description": "Fondo de pantalla para el teléfono. Tras obtenerlo, puedes cambiarlo en las funciones del teléfono.",
+		"icon": "221000",
+		"rarity": "VeryRare",
+		"id": "221000"
+	},
+	"221001": {
+		"name": "Noche larga, sueño lúcido",
+		"description": "Fondo de pantalla para el teléfono. Tras obtenerlo, puedes cambiarlo en las funciones del teléfono.",
+		"icon": "221001",
+		"rarity": "VeryRare",
+		"id": "221001"
+	},
+	"221002": {
+		"name": "Especialidad del revisor",
+		"description": "Fondo de pantalla para el teléfono. Tras obtenerlo, puedes cambiarlo en las funciones del teléfono.",
+		"icon": "221002",
+		"rarity": "VeryRare",
+		"id": "221002"
 	},
 	"250001": {
 		"name": "Fragmento de meteorito",
@@ -6583,6 +6990,25 @@
 		"rarity": "Rare",
 		"id": "270000"
 	},
+	"270001": {
+		"name": "Certificado de prosperidad",
+		"description": "Certificado de prosperidad",
+		"icon": "270001",
+		"rarity": "VeryRare",
+		"id": "270001"
+	},
+	"280001": {
+		"icon": "Icon_Testmaterial01",
+		"rarity": "Rare",
+		"id": "280001"
+	},
+	"281001": {
+		"name": "Fondos del gremio",
+		"description": "Fondos del gremio",
+		"icon": "281001",
+		"rarity": "Rare",
+		"id": "281001"
+	},
 	"300002": {
 		"name": "Don de los Andavías",
 		"description": "Regalos que los Andavías intercambian entre ellos. Con ellos puedes elegir el material que desees.",
@@ -6626,6 +7052,22 @@
 		"icon": "300041",
 		"rarity": "Rare",
 		"id": "300041"
+	},
+	"300051": {
+		"name": "Paquete sin recoger",
+		"type": "Objeto valioso",
+		"description": "Paquete postal sin recoger y que nadie ha reclamado. Ábrelo y puede que obtengas materiales aleatorios.",
+		"icon": "300051",
+		"rarity": "Rare",
+		"id": "300051"
+	},
+	"300052": {
+		"name": "Paquete valioso sin recoger",
+		"type": "Objeto valioso",
+		"description": "Paquete postal valioso sin recoger y que nadie ha reclamado. Ábrelo y puede que obtengas materiales aleatorios.",
+		"icon": "300052",
+		"rarity": "VeryRare",
+		"id": "300052"
 	},
 	"300101": {
 		"name": "Pase de suministros del Expreso",
@@ -6715,21 +7157,21 @@
 	"310007": {
 		"name": "Paquete de salida de Honkai: Star Rail (limitado)",
 		"description": "Tras usarlo, podrás obtener los siguientes objetos:\n**•**  Pase de los raíles estelares ×2\n**•**  Crédito ×**150****000**\n**•**  Registro de aventuras ×**80**\n**•**  Éter disperso ×**50**\n**•**  Aperitivo con truco ×**10**\n**•**  Arroz inflado saludable ×**10**\n**•**  Refresco embotellado ×**10**\n**•**  Transmisor de vida ×**10**\n**•**  Guía del espíritu viajero ×**15**\n**•**  Éter refinado ×5\n**•**  Cristal perdido ×5",
-		"icon": "xxx-2",
+		"icon": "310007",
 		"rarity": "VeryRare",
 		"id": "310007"
 	},
 	"310008": {
 		"name": "Paquete de salida de Honkai: Star Rail",
 		"description": "Tras usarlo, podrás obtener los siguientes objetos:\n**•**  Pase de los raíles estelares ×2\n**•**  Crédito ×**150****000**\n**•**  Registro de aventuras ×**80**\n**•**  Éter disperso ×**50**\n**•**  Aperitivo con truco ×**10**\n**•**  Arroz inflado saludable ×**10**\n**•**  Refresco embotellado ×**10**\n**•**  Transmisor de vida ×**10**",
-		"icon": "xxx-1",
+		"icon": "310008",
 		"rarity": "VeryRare",
 		"id": "310008"
 	},
 	"310009": {
 		"name": "Paquete de inicio de sesión de Honkai: Star Rail",
 		"description": "Tras usarlo, podrás obtener los siguientes objetos:\n**•**  Crédito ×**10****000**\n**•**  Registro de aventuras ×5\n**•**  Éter condensado ×5\n**•**  Cono de luz \"La solemnidad del desayuno\"\n**•**  Conjunto de artefactos de 4 estrellas \"Pistolera de la espiga silvestre\"",
-		"icon": "310004",
+		"icon": "310009",
 		"rarity": "VeryRare",
 		"id": "310009"
 	},
@@ -6764,6 +7206,14 @@
 		"icon": "400007",
 		"rarity": "Normal",
 		"id": "400007"
+	},
+	"400008": {
+		"name": "Té de burbujas de taro estelar",
+		"type": "Consumible",
+		"description": "Tras su uso, el equipo recupera 2 pts. de técnica y todos los aliados pierden unos PV equivalentes al **15%** de sus PV máx.",
+		"icon": "400008",
+		"rarity": "Normal",
+		"id": "400008"
 	},
 	"401003": {
 		"name": "Arroz frito cósmico",
@@ -6852,6 +7302,30 @@
 		"icon": "401013",
 		"rarity": "NotNormal",
 		"id": "401013"
+	},
+	"401014": {
+		"name": "Alitas de moa de Shantak a la parrilla sobre madera de frutal",
+		"type": "Consumible",
+		"description": "Tras su uso, el Daño de Fuego de todos los aliados aumenta en un **16%** en la siguiente batalla.",
+		"icon": "401014",
+		"rarity": "NotNormal",
+		"id": "401014"
+	},
+	"401015": {
+		"name": "Té flamaardiente",
+		"type": "Consumible",
+		"description": "Tras su uso, todos los aliados pierden inmediatamente el 5% de sus PV máx. y en la siguiente batalla, la probabilidad de resistir Congelación de todos los aliados aumenta en un **30%**.",
+		"icon": "401015",
+		"rarity": "NotNormal",
+		"id": "401015"
+	},
+	"401016": {
+		"name": "Autosuficiencia",
+		"type": "Consumible",
+		"description": "Tras su uso, todos los aliados aumentan su ATQ en **190** pts. en la siguiente batalla.",
+		"icon": "401016",
+		"rarity": "NotNormal",
+		"id": "401016"
 	},
 	"402001": {
 		"name": "Aerosol curativo",
@@ -6976,7 +7450,7 @@
 	"402016": {
 		"name": "Agente emético",
 		"type": "Consumible",
-		"description": "Tras su uso, un aliado determinado pierde el **99%** de sus PV máx. y su saciedad se reduce en gran medida.",
+		"description": "Tras su uso, un aliado determinado pierde el **99%** de sus PV máx.",
 		"icon": "402016",
 		"rarity": "Rare",
 		"id": "402016"
@@ -6988,6 +7462,54 @@
 		"icon": "402017",
 		"rarity": "Rare",
 		"id": "402017"
+	},
+	"402018": {
+		"name": "Estofado de las llanuras nevadas",
+		"type": "Consumible",
+		"description": "Tras su uso, el Daño de Fuego que reciban todos los aliados disminuye en un **16%** en la siguiente batalla y los PV máx. aumentan en un **20%**.",
+		"icon": "402018",
+		"rarity": "Rare",
+		"id": "402018"
+	},
+	"402019": {
+		"name": "Máquina recitaescrituras",
+		"type": "Consumible",
+		"description": "Tras su uso, en la siguiente batalla todos los aliados y todos los enemigos regeneran **1000** PV al principio de cada turno durante 5 turnos.",
+		"icon": "402019",
+		"rarity": "Rare",
+		"id": "402019"
+	},
+	"402020": {
+		"name": "Elixir de jade de los cinco cereales",
+		"type": "Consumible",
+		"description": "Tras su uso, todos los aliados pierden inmediatamente el 5% de sus PV máx. y en la siguiente batalla el daño de su técnica aumenta en un **100%**.",
+		"icon": "402020",
+		"rarity": "Rare",
+		"id": "402020"
+	},
+	"402021": {
+		"name": "Píldora medicinal desintoxicante",
+		"type": "Consumible",
+		"description": "Tras su uso, todos los aliados se vuelven inmunes a los estados negativos durante 3 turnos en la siguiente batalla.",
+		"icon": "402021",
+		"rarity": "Rare",
+		"id": "402021"
+	},
+	"402022": {
+		"name": "Difusión de médula de jade",
+		"type": "Consumible",
+		"description": "Tras su uso, la RES a efecto de todos los aliados aumenta en un **30%** en la siguiente batalla.",
+		"icon": "402022",
+		"rarity": "Rare",
+		"id": "402022"
+	},
+	"402023": {
+		"name": "Ave salvaje frita de Pom-Pom",
+		"type": "Consumible",
+		"description": "Tras su uso, en la siguiente batalla el Daño de Fuego de todos los aliados aumenta en un **16%** y el ATQ aumenta en un **18%**.",
+		"icon": "402023",
+		"rarity": "Rare",
+		"id": "402023"
 	},
 	"403001": {
 		"name": "Brazo cinético desechable",
@@ -7037,6 +7559,22 @@
 		"rarity": "VeryRare",
 		"id": "403006"
 	},
+	"403007": {
+		"name": "Viscorpus frito con azúcar",
+		"type": "Consumible",
+		"description": "Tras su uso, el Daño de Hielo de todos los aliados aumenta en un **35%** en la siguiente batalla.",
+		"icon": "403007",
+		"rarity": "VeryRare",
+		"id": "403007"
+	},
+	"403008": {
+		"name": "Muñeco de madera automático",
+		"type": "Consumible",
+		"description": "Tras su uso, el combate automático se activa en la siguiente batalla y no se puede apagar. Mientras esté activo el combate automático, el daño que infligen todos los aliados aumenta en un **45%**",
+		"icon": "403008",
+		"rarity": "VeryRare",
+		"id": "403008"
+	},
 	"404004": {
 		"name": "Receta: Alimento nutritivo",
 		"type": "Receta",
@@ -7068,6 +7606,14 @@
 		"icon": "404001",
 		"rarity": "Normal",
 		"id": "404007"
+	},
+	"404008": {
+		"name": "Receta: Té de burbujas de taro estelar",
+		"type": "Receta",
+		"description": "Una ecuación sencilla. Introdúcela en la máquina sintetizadora para desbloquear una nueva receta.",
+		"icon": "404001",
+		"rarity": "Normal",
+		"id": "404008"
 	},
 	"405003": {
 		"name": "Receta: Arroz frito cósmico",
@@ -7156,6 +7702,30 @@
 		"icon": "404001",
 		"rarity": "NotNormal",
 		"id": "405013"
+	},
+	"405014": {
+		"name": "Receta: Alitas asadas de moa de Shantak a la madera frutal",
+		"type": "Receta",
+		"description": "Una ecuación sencilla. Introdúcela en la máquina sintetizadora para desbloquear una nueva receta.",
+		"icon": "404001",
+		"rarity": "NotNormal",
+		"id": "405014"
+	},
+	"405015": {
+		"name": "Receta: Té flamaardiente",
+		"type": "Receta",
+		"description": "Una ecuación sencilla. Introdúcela en la máquina sintetizadora para desbloquear una nueva receta.",
+		"icon": "404001",
+		"rarity": "NotNormal",
+		"id": "405015"
+	},
+	"405016": {
+		"name": "Receta: Autosuficiencia",
+		"type": "Receta",
+		"description": "Una ecuación sencilla. Introdúcela en la máquina sintetizadora para desbloquear una nueva receta.",
+		"icon": "404001",
+		"rarity": "NotNormal",
+		"id": "405016"
 	},
 	"406001": {
 		"name": "Receta: Aerosol curativo",
@@ -7293,6 +7863,54 @@
 		"rarity": "Rare",
 		"id": "406017"
 	},
+	"406018": {
+		"name": "Receta: Estofado de las llanuras nevadas",
+		"type": "Receta",
+		"description": "Una ecuación sencilla. Introdúcela en la máquina sintetizadora para desbloquear una nueva receta.",
+		"icon": "404001",
+		"rarity": "Rare",
+		"id": "406018"
+	},
+	"406019": {
+		"name": "Receta: Máquina recitaescrituras",
+		"type": "Receta",
+		"description": "Una ecuación sencilla. Introdúcela en la máquina sintetizadora para desbloquear una nueva receta.",
+		"icon": "404001",
+		"rarity": "Rare",
+		"id": "406019"
+	},
+	"406020": {
+		"name": "Receta: Elixir de jade de los cinco cereales",
+		"type": "Receta",
+		"description": "Una ecuación sencilla. Introdúcela en la máquina sintetizadora para desbloquear una nueva receta.",
+		"icon": "404001",
+		"rarity": "Rare",
+		"id": "406020"
+	},
+	"406021": {
+		"name": "Receta: Píldora medicinal desintoxicante",
+		"type": "Receta",
+		"description": "Una ecuación sencilla. Introdúcela en la máquina sintetizadora para desbloquear una nueva receta.",
+		"icon": "404001",
+		"rarity": "Rare",
+		"id": "406021"
+	},
+	"406022": {
+		"name": "Receta: Difusión de médula de jade",
+		"type": "Receta",
+		"description": "Una ecuación sencilla. Introdúcela en la máquina sintetizadora para desbloquear una nueva receta.",
+		"icon": "404001",
+		"rarity": "Rare",
+		"id": "406022"
+	},
+	"406023": {
+		"name": "Receta: Ave salvaje frita de Pom-Pom",
+		"type": "Receta",
+		"description": "Una ecuación sencilla. Introdúcela en la máquina sintetizadora para desbloquear una nueva receta.",
+		"icon": "406023",
+		"rarity": "Rare",
+		"id": "406023"
+	},
 	"407001": {
 		"name": "Receta: Brazo cinético desechable",
 		"type": "Receta",
@@ -7340,6 +7958,22 @@
 		"icon": "404001",
 		"rarity": "VeryRare",
 		"id": "407006"
+	},
+	"407007": {
+		"name": "Receta: Viscorpus frito con azúcar",
+		"type": "Receta",
+		"description": "Una ecuación sencilla. Introdúcela en la máquina sintetizadora para desbloquear una nueva receta.",
+		"icon": "404001",
+		"rarity": "VeryRare",
+		"id": "407007"
+	},
+	"407008": {
+		"name": "Receta: Muñeco de madera automático",
+		"type": "Receta",
+		"description": "Una ecuación sencilla. Introdúcela en la máquina sintetizadora para desbloquear una nueva receta.",
+		"icon": "404001",
+		"rarity": "VeryRare",
+		"id": "407008"
 	},
 	"408001": {
 		"name": "Basura",
@@ -7405,6 +8039,38 @@
 		"rarity": "Normal",
 		"id": "408203"
 	},
+	"408204": {
+		"name": "Brocheta de carne asada",
+		"type": "Consumible",
+		"description": "Tras su uso, los PV máx. de todos los aliados aumentan en un **12%** en la siguiente batalla.",
+		"icon": "408204",
+		"rarity": "Normal",
+		"id": "408204"
+	},
+	"408205": {
+		"name": "Placa de la suerte de nave de combate",
+		"type": "Consumible",
+		"description": "Tras su uso, el equipo recupera inmediatamente 2pts. de técnica.",
+		"icon": "408205",
+		"rarity": "Normal",
+		"id": "408205"
+	},
+	"408206": {
+		"name": "Píldora rejuvenecedora grande",
+		"type": "Consumible",
+		"description": "Tras su uso, un aliado determinado regenera inmediatamente **10** PV.",
+		"icon": "408206",
+		"rarity": "Normal",
+		"id": "408206"
+	},
+	"408207": {
+		"name": "Píldora rejuvenecedora pequeña",
+		"type": "Consumible",
+		"description": "Tras su uso, un aliado determinado regenera inmediatamente 1 PV.",
+		"icon": "408207",
+		"rarity": "Normal",
+		"id": "408207"
+	},
 	"408401": {
 		"name": "Pescado frito con mermelada",
 		"type": "Consumible",
@@ -7446,7 +8112,7 @@
 		"id": "408405"
 	},
 	"408406": {
-		"name": "Agua de Marea Primaveral",
+		"name": "Agua del Desfiladero",
 		"type": "Consumible",
 		"description": "Tras su uso, un aliado recupera inmediatamente un **30%** de su energía máxima.",
 		"icon": "408406",
@@ -7468,6 +8134,14 @@
 		"icon": "408408",
 		"rarity": "NotNormal",
 		"id": "408408"
+	},
+	"408409": {
+		"name": "Pan de salmón",
+		"type": "Consumible",
+		"description": "Tras su uso, el Daño de Fuego que reciban todos los aliados disminuye en un **16%** en la siguiente batalla.",
+		"icon": "408409",
+		"rarity": "NotNormal",
+		"id": "408409"
 	},
 	"408601": {
 		"name": "Salchicha de Belobog",
@@ -7500,5 +8174,13 @@
 		"icon": "408604",
 		"rarity": "Rare",
 		"id": "408604"
+	},
+	"408605": {
+		"name": "Salteado de tripas de ternera en aceite picante de la casa",
+		"type": "Consumible",
+		"description": "Tras su uso, el equipo recupera inmediatamente 4pts. de técnica.",
+		"icon": "140279",
+		"rarity": "Rare",
+		"id": "408605"
 	}
 }

@@ -826,7 +826,7 @@
 	},
 	"110302": {
 		"name": "安可！",
-		"description": "每觸發1次天賦的附加傷害，希露瓦恢復<unbreak>#1[i]</unbreak>點能量。",
+		"description": "每觸發1次天賦的附加傷害，希露瓦便恢復<unbreak>#1[i]</unbreak>點能量。",
 		"icon": "SkillIcon_1103_Rank2",
 		"numbers": [
 			{
@@ -1341,6 +1341,85 @@
 		"sall": {},
 		"id": "110906"
 	},
+	"111001": {
+		"name": "遠行雪杖的清晨",
+		"description": "為現有生命值百分比小於等於<unbreak>#1[i]%</unbreak>的我方目標提供治療時，玲可的治療量提高<unbreak>#2[i]%</unbreak>，該效果對持續治療效果也會生效。",
+		"icon": "SkillIcon_1110_Rank1",
+		"numbers": [
+			{
+				"Value": 0.5000000004656613
+			},
+			{
+				"Value": 0.20000000018626451
+			}
+		],
+		"sall": {},
+		"id": "111001"
+	},
+	"111002": {
+		"name": "便攜爐具的正午",
+		"description": "持有【求生反應】的目標被施加負面效果時可抵抗<unbreak>#1[i]</unbreak>次負面效果。",
+		"icon": "SkillIcon_1110_Rank2",
+		"numbers": [
+			{
+				"Value": 1
+			}
+		],
+		"sall": {},
+		"id": "111002"
+	},
+	"111003": {
+		"name": "雪崩信標的午後",
+		"description": "戰技等級+2，最多不超過<unbreak>15</unbreak>級；普通攻擊等級+1，最多不超過<unbreak>10</unbreak>級。",
+		"icon": "SkillIcon_1110_BP",
+		"numbers": [],
+		"sall": {
+			"111001": 1,
+			"111002": 2
+		},
+		"id": "111003"
+	},
+	"111004": {
+		"name": "露營篝火的薄暮",
+		"description": "獲得【求生反應】時，使該目標攻擊力提高，提高數值等同於玲可<unbreak>#1[f1]%</unbreak>生命上限的攻擊力，持續<unbreak>#2[i]</unbreak>回合。",
+		"icon": "SkillIcon_1110_Rank4",
+		"numbers": [
+			{
+				"Value": 0.030000000027939677
+			},
+			{
+				"Value": 1
+			}
+		],
+		"sall": {},
+		"id": "111004"
+	},
+	"111005": {
+		"name": "極光紅茶的新夜",
+		"description": "終結技等級+2，最多不超過<unbreak>15</unbreak>級；天賦等級+2，最多不超過<unbreak>15</unbreak>級。",
+		"icon": "SkillIcon_1110_Ultra",
+		"numbers": [],
+		"sall": {
+			"111003": 2,
+			"111004": 2
+		},
+		"id": "111005"
+	},
+	"111006": {
+		"name": "測繪圖紙的黎明",
+		"description": "【求生反應】的生命上限提高效果額外提高，提高數值等同於玲可<unbreak>#1[f1]%</unbreak>的生命上限，並使其效果抗性提高<unbreak>#2[i]%</unbreak>。",
+		"icon": "SkillIcon_1110_Rank6",
+		"numbers": [
+			{
+				"Value": 0.060000000055879354
+			},
+			{
+				"Value": 0.3000000002793968
+			}
+		],
+		"sall": {},
+		"id": "111006"
+	},
 	"111101": {
 		"name": "爭鬥不休",
 		"description": "當盧卡行動時，若指定的敵方目標處於裂傷狀態，則盧卡造成的傷害提高<unbreak>#1[i]%</unbreak>，持續<unbreak>#2[i]</unbreak>回合。",
@@ -1756,7 +1835,7 @@
 	},
 	"120504": {
 		"name": "泉台歧路，百骸回春",
-		"description": "現有生命值百分比從高於<unbreak>50%</unbreak>降低至小於等於<unbreak>50%</unbreak>時，生命上限提高<unbreak>#1[i]%</unbreak>，該效果最多疊加<unbreak>#2[i]</unbreak>層。",
+		"description": "現有生命值百分比從大於<unbreak>50%</unbreak>降低至小於等於<unbreak>50%</unbreak>時，生命上限提高<unbreak>#1[i]%</unbreak>，該效果最多疊加<unbreak>#2[i]</unbreak>層。",
 		"icon": "SkillIcon_1205_Rank4",
 		"numbers": [
 			{
@@ -1928,6 +2007,79 @@
 		"sall": {},
 		"id": "120706"
 	},
+	"120801": {
+		"name": "司危",
+		"description": "【鑑知】使暴擊傷害提高<unbreak>#1[i]%</unbreak>。",
+		"icon": "SkillIcon_1208_Rank1",
+		"numbers": [
+			{
+				"Value": 0.3000000002793968
+			}
+		],
+		"sall": {},
+		"id": "120801"
+	},
+	"120802": {
+		"name": "柔兆",
+		"description": "【窮觀陣】開啟時，若我方目標受到致命傷害，則本次行動中所有受到致命傷害的我方目標都不會陷入無法戰鬥狀態，並立即回復等同於其自身生命上限<unbreak>#1[i]%</unbreak>的生命值。該效果單場戰鬥中可以觸發1次。",
+		"icon": "SkillIcon_1208_Rank2",
+		"numbers": [
+			{
+				"Value": 0.7000000006519258
+			}
+		],
+		"sall": {},
+		"id": "120802"
+	},
+	"120803": {
+		"name": "直符",
+		"description": "戰技等級+2，最多不超過<unbreak>15</unbreak>級；天賦等級+2，最多不超過<unbreak>15</unbreak>級。",
+		"icon": "SkillIcon_1208_BP",
+		"numbers": [],
+		"sall": {
+			"120802": 2,
+			"120804": 2
+		},
+		"id": "120803"
+	},
+	"120804": {
+		"name": "格澤",
+		"description": "當處於【窮觀陣】的我方其他目標受到攻擊後，符玄恢復<unbreak>#1[i]</unbreak>點能量。",
+		"icon": "SkillIcon_1208_Rank4",
+		"numbers": [
+			{
+				"Value": 5
+			}
+		],
+		"sall": {},
+		"id": "120804"
+	},
+	"120805": {
+		"name": "計神",
+		"description": "終結技等級+2，最多不超過<unbreak>15</unbreak>級；普通攻擊等級+1，最多不超過<unbreak>10</unbreak>級。",
+		"icon": "SkillIcon_1208_Ultra",
+		"numbers": [],
+		"sall": {
+			"120801": 1,
+			"120803": 2
+		},
+		"id": "120805"
+	},
+	"120806": {
+		"name": "種陵",
+		"description": "【窮觀陣】開啟時，會累積我方全體本場戰鬥中的已損失生命值。符玄施放終結技造成的傷害提高，增幅數值等同於本場戰鬥中累積已損失生命值的<unbreak>#1[i]%</unbreak>。\\n本場戰鬥中累積已損失生命值最高不超過符玄生命上限的<unbreak>#2[i]%</unbreak>，施放終結技後會歸零並重新開始累積。",
+		"icon": "SkillIcon_1208_Rank6",
+		"numbers": [
+			{
+				"Value": 2
+			},
+			{
+				"Value": 1.2000000001862645
+			}
+		],
+		"sall": {},
+		"id": "120806"
+	},
 	"120901": {
 		"name": "素刃",
 		"description": "當彥卿攻擊敵方目標時，如果目標處於凍結狀態，則立即對目標造成等同於彥卿<unbreak>#1[i]%</unbreak>攻擊力的冰屬性附加傷害。",
@@ -2077,26 +2229,49 @@
 		"id": "121106"
 	},
 	"121301": {
+		"name": "縈天",
+		"description": "使【亢心】的可疊加層數增加<unbreak>#1[i]</unbreak>層。且每段攻擊額外獲得1層【亢心】。",
 		"icon": "SkillIcon_1213_Rank1",
 		"numbers": [
 			{
-				"Value": 2
+				"Value": 4
 			}
 		],
 		"sall": {},
 		"id": "121301"
 	},
 	"121302": {
+		"name": "九斿",
+		"description": "施放終結技後，丹恆•飲月行動提前<unbreak>100%</unbreak>，並且會額外獲得1個【逆鱗】。",
 		"icon": "SkillIcon_1213_Rank2",
-		"numbers": [
-			{
-				"Value": 0.0400000000372529
-			}
-		],
+		"numbers": [],
 		"sall": {},
 		"id": "121302"
 	},
 	"121303": {
+		"name": "雲旂",
+		"description": "戰技等級+2，最多不超過<unbreak>15</unbreak>級；普通攻擊等級+1，最多不超過<unbreak>10</unbreak>級。",
+		"icon": "SkillIcon_1213_BP",
+		"numbers": [],
+		"sall": {
+			"121301": 1,
+			"121302": 2,
+			"121308": 1,
+			"121310": 1,
+			"121312": 1
+		},
+		"id": "121303"
+	},
+	"121304": {
+		"name": "嘲風",
+		"description": "【叱吒】的增益效果會持續到下一個自身回合結束。",
+		"icon": "SkillIcon_1213_Rank4",
+		"numbers": [],
+		"sall": {},
+		"id": "121304"
+	},
+	"121305": {
+		"name": "偃蹇",
 		"description": "終結技等級+2，最多不超過<unbreak>15</unbreak>級；天賦等級+2，最多不超過<unbreak>15</unbreak>級。",
 		"icon": "SkillIcon_1213_Ultra",
 		"numbers": [],
@@ -2104,32 +2279,18 @@
 			"121303": 2,
 			"121304": 2
 		},
-		"id": "121303"
-	},
-	"121304": {
-		"icon": "SkillIcon_1213_Rank4",
-		"numbers": [],
-		"sall": {},
-		"id": "121304"
-	},
-	"121305": {
-		"description": "戰技等級+2，最多不超過<unbreak>15</unbreak>級；普通攻擊等級+1，最多不超過<unbreak>10</unbreak>級。",
-		"icon": "SkillIcon_1213_BP",
-		"numbers": [],
-		"sall": {
-			"121301": 1,
-			"121302": 2,
-			"121308": 2,
-			"121310": 2,
-			"121312": 2
-		},
 		"id": "121305"
 	},
 	"121306": {
+		"name": "見譙",
+		"description": "我方其他角色施放終結技後，丹恆•飲月下一次施放【盤拏耀躍】時虛數屬性抗性穿透提高<unbreak>#1[i]%</unbreak>，該效果最多疊加<unbreak>#2[i]</unbreak>層。",
 		"icon": "SkillIcon_1213_Rank6",
 		"numbers": [
 			{
-				"Value": 1
+				"Value": 0.20000000018626451
+			},
+			{
+				"Value": 3
 			}
 		],
 		"sall": {},
