@@ -7,10 +7,11 @@
 			"maxDEF": 573,
 			"SPD": 101,
 			"TNT": 150,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1001",
+		"icon": "SpriteOutput/AvatarRoundIcon/1001.png",
+		"shortIcon": "1001",
 		"rarity": "VeryRare",
 		"element": "Ice",
 		"skills": {
@@ -18,7 +19,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量冰屬性傷害。",
-			"basicIcon": "SkillIcon_1001_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1001/SkillIcon_1001_Normal.png",
+			"basicShortIcon": "SkillIcon_1001_Normal",
 			"basicId": 100101,
 			"basicPromo": {
 				"2": 192000,
@@ -33,7 +35,8 @@
 			"skillTag": "防禦",
 			"skillDesc": "為指定我方單體提供能夠抵消等同於三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>防禦力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>傷害的護盾，持續<unbreak>#2[i]</unbreak>回合。\\n若該目標現有生命值百分比大於等於<unbreak>#3[i]%</unbreak>，則遭到敵方攻擊的機率大幅提高。",
 			"skillSimpleDesc": "為我方單體<color=#f29e38ff>施加護盾</color>。",
-			"skillIcon": "SkillIcon_1001_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1001/SkillIcon_1001_BP.png",
+			"skillShortIcon": "SkillIcon_1001_BP",
 			"skillId": 100102,
 			"skillPromo": {
 				"2": 522000,
@@ -50,7 +53,9 @@
 			"ultTag": "群體攻擊",
 			"ultDesc": "對敵方全體造成等同於三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。受到攻擊的敵方目標有<unbreak>#2[i]%</unbreak><u>基礎機率</u>陷入凍結狀態，持續<unbreak>#3[i]</unbreak>回合。\\n凍結狀態下，敵方目標不能行動同時每回合開始時受到等同於三月七<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻擊力的冰屬性<u>附加傷害</u>。",
 			"ultSimpleDesc": "對敵方<color=#f29e38ff>全體</color>造成冰屬性傷害，<color=#f29e38ff>有機率施加凍結狀態</color>。",
-			"ultIcon": "SkillIcon_1001_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1001/SkillIcon_1001_Ultra.png",
+			"ultShortIcon": "SkillIcon_1001_Ultra",
+			"ultER": 120,
 			"ultId": 100103,
 			"ultPromo": {
 				"2": 522000,
@@ -67,7 +72,8 @@
 			"talentTag": "單體攻擊",
 			"talentDesc": "當持有護盾的我方目標受到敵方目標攻擊後，三月七立即向攻擊者發動<u>反擊</u>，對其造成等同於三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害，該效果每回合可觸發<unbreak>#2[i]</unbreak>次。",
 			"talentSimpleDesc": "持有護盾的我方目標受到敵方攻擊後，三月七<color=#f29e38ff>立即對其發動<u>反擊</u></color>，造成少量冰屬性傷害。",
-			"talentIcon": "SkillIcon_1001_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1001/SkillIcon_1001_Passive.png",
+			"talentShortIcon": "SkillIcon_1001_Passive",
 			"talentId": 100104,
 			"talentPromo": {
 				"2": 522000,
@@ -83,7 +89,8 @@
 			"techName": "凍人的瞬間",
 			"techDesc": "立即攻擊敵人，進入戰鬥後有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使隨機敵方單體陷入凍結狀態，持續<unbreak>#2[i]</unbreak>回合。\\n凍結狀態下，敵方目標不能行動，同時每回合開始時受到等同於三月七<unbreak>#3[i]%</unbreak>攻擊力的冰屬性<u>附加傷害</u>。",
 			"techSimpleDesc": "攻擊敵人，進入戰鬥後有高機率使敵方隨機單體陷入凍結狀態。",
-			"techIcon": "SkillIcon_1001_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1001/SkillIcon_1001_Maze.png",
+			"techShortIcon": "SkillIcon_1001_Maze",
 			"techId": 100107
 		},
 		"avatarType": "Knight",
@@ -94,17 +101,19 @@
 			"111012": 13,
 			"111013": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110141": 4,
+			"110142": 12,
+			"110143": 28,
+			"110501": 3,
+			"111011": 6,
+			"111012": 7,
+			"111013": 22
+		},
 		"exp": 5797920,
-		"id": "1001",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1001"
 	},
 	"1002": {
 		"name": "丹恆",
@@ -114,10 +123,11 @@
 			"maxDEF": 397,
 			"SPD": 110,
 			"TNT": 75,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1002",
+		"icon": "SpriteOutput/AvatarRoundIcon/1002.png",
+		"shortIcon": "1002",
 		"rarity": "VeryRare",
 		"element": "Wind",
 		"skills": {
@@ -125,7 +135,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於丹恆<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量風屬性傷害。",
-			"basicIcon": "SkillIcon_1002_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1002/SkillIcon_1002_Normal.png",
+			"basicShortIcon": "SkillIcon_1002_Normal",
 			"basicId": 100201,
 			"basicPromo": {
 				"2": 192000,
@@ -140,7 +151,8 @@
 			"skillTag": "單體攻擊",
 			"skillDesc": "對指定敵方單體造成等同於丹恆<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。\\n戰技造成的傷害觸發暴擊時，有<unbreak>#4[i]%</unbreak>的<u>基礎機率</u>使受到攻擊的敵方目標速度降低<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
 			"skillSimpleDesc": "對敵方單體造成風屬性傷害，暴擊時高機率施加減速狀態。",
-			"skillIcon": "SkillIcon_1002_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1002/SkillIcon_1002_BP.png",
+			"skillShortIcon": "SkillIcon_1002_BP",
 			"skillId": 100202,
 			"skillPromo": {
 				"2": 522000,
@@ -157,7 +169,9 @@
 			"ultTag": "單體攻擊",
 			"ultDesc": "對指定敵方單體造成等同於丹恆<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。當受到攻擊的敵方目標處於減速狀態時，終結技造成的傷害倍率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
 			"ultSimpleDesc": "對敵方單體造成大量風屬性傷害，對減速狀態的目標傷害倍率提高。",
-			"ultIcon": "SkillIcon_1002_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1002/SkillIcon_1002_Ultra.png",
+			"ultShortIcon": "SkillIcon_1002_Ultra",
+			"ultER": 100,
 			"ultId": 100203,
 			"ultPromo": {
 				"2": 522000,
@@ -174,7 +188,8 @@
 			"talentTag": "強化",
 			"talentDesc": "當丹恆成為我方技能的目標時，下一次攻擊的風屬性<u>抗性穿透</u>提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。該效果在<unbreak>#2[i]</unbreak>回合後可再次觸發。",
 			"talentSimpleDesc": "成為我方技能施放目標時，下一次攻擊風屬性<u>抗性穿透</u>提高。該效果2回合後可再次觸發。",
-			"talentIcon": "SkillIcon_1002_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1002/SkillIcon_1002_Passive.png",
+			"talentShortIcon": "SkillIcon_1002_Passive",
 			"talentId": 100204,
 			"talentPromo": {
 				"2": 522000,
@@ -191,7 +206,8 @@
 			"techTag": "強化",
 			"techDesc": "使用秘技後，下一次戰鬥開始時丹恆攻擊力提高<unbreak>#1[i]%</unbreak>，持續<unbreak>#2[i]</unbreak>回合。",
 			"techSimpleDesc": "使用秘技，下一次進入戰鬥後攻擊力提高。",
-			"techIcon": "SkillIcon_1002_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1002/SkillIcon_1002_Maze.png",
+			"techShortIcon": "SkillIcon_1002_Maze",
 			"techId": 100207
 		},
 		"avatarType": "Rogue",
@@ -202,17 +218,19 @@
 			"111002": 13,
 			"111003": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110121": 4,
+			"110122": 12,
+			"110123": 28,
+			"110501": 3,
+			"111001": 6,
+			"111002": 7,
+			"111003": 22
+		},
 		"exp": 5797920,
-		"id": "1002",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1002"
 	},
 	"1003": {
 		"name": "姬子",
@@ -222,10 +240,11 @@
 			"maxDEF": 437,
 			"SPD": 96,
 			"TNT": 75,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1003",
+		"icon": "SpriteOutput/AvatarRoundIcon/1003.png",
+		"shortIcon": "1003",
 		"rarity": "SuperRare",
 		"element": "Fire",
 		"skills": {
@@ -233,7 +252,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於姬子<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量火屬性傷害。",
-			"basicIcon": "SkillIcon_1003_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1003/SkillIcon_1003_Normal.png",
+			"basicShortIcon": "SkillIcon_1003_Normal",
 			"basicId": 100301,
 			"basicPromo": {
 				"2": 240000,
@@ -248,7 +268,8 @@
 			"skillTag": "擴散",
 			"skillDesc": "對指定敵方單體造成等同於姬子<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害，同時對其相鄰目標造成等同於姬子<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的火屬性傷害。",
 			"skillSimpleDesc": "對敵方單體造成火屬性傷害，對相鄰目標造成少量火屬性傷害。",
-			"skillIcon": "SkillIcon_1003_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1003/SkillIcon_1003_BP.png",
+			"skillShortIcon": "SkillIcon_1003_BP",
 			"skillId": 100302,
 			"skillPromo": {
 				"2": 652500,
@@ -265,7 +286,9 @@
 			"ultTag": "群體攻擊",
 			"ultDesc": "對敵方全體造成等同於姬子<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害，每消滅1個敵方目標額外恢復姬子<unbreak>#2[i]</unbreak>點能量。",
 			"ultSimpleDesc": "對敵方全體造成火屬性傷害，消滅敵人時回復能量。",
-			"ultIcon": "SkillIcon_1003_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1003/SkillIcon_1003_Ultra.png",
+			"ultShortIcon": "SkillIcon_1003_Ultra",
+			"ultER": 120,
 			"ultId": 100303,
 			"ultPromo": {
 				"2": 652500,
@@ -282,7 +305,8 @@
 			"talentTag": "群體攻擊",
 			"talentDesc": "當有敵方目標的弱點被擊破時，姬子獲得充能，上限<unbreak>#2[i]</unbreak>點。\\n當我方目標發動攻擊後，若姬子的充能達到上限則立即發動1次<u>追加攻擊</u>，對敵方全體目標造成等同於姬子<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害，並消耗全部充能。\\n戰鬥開始時獲得1點充能。",
 			"talentSimpleDesc": "敵人弱點被擊破時獲得充能。\\n我方目標攻擊後，若充能達到上限則<color=#f29e38ff>立即發動<u>追加攻擊</u></color>，對<color=#f29e38ff>敵方全體</color>造成火屬性傷害並消耗全部充能。\\n戰鬥開始時獲得1點充能。",
-			"talentIcon": "SkillIcon_1003_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1003/SkillIcon_1003_Passive.png",
+			"talentShortIcon": "SkillIcon_1003_Passive",
 			"talentId": 100304,
 			"talentPromo": {
 				"2": 652500,
@@ -299,7 +323,8 @@
 			"techTag": "妨害",
 			"techDesc": "使用秘技後，製造1片持續<unbreak>#4[i]</unbreak>秒的特殊領域。與處於特殊領域內的敵人進入戰鬥後，有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方目標受到的火屬性傷害提高<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。由我方製造的領域效果同時最多只能存在1個。",
 			"techSimpleDesc": "製造特殊領域。與領域內敵人進入戰鬥後，有高機率使敵方目標<color=#f29e38ff>受到的火屬性傷害提高</color>。",
-			"techIcon": "SkillIcon_1003_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1003/SkillIcon_1003_Maze.png",
+			"techShortIcon": "SkillIcon_1003_Maze",
 			"techId": 100307
 		},
 		"avatarType": "Mage",
@@ -310,17 +335,19 @@
 			"111002": 15,
 			"111003": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110131": 6,
+			"110132": 16,
+			"110133": 38,
+			"110501": 3,
+			"111001": 8,
+			"111002": 10,
+			"111003": 30
+		},
 		"exp": 5797920,
-		"id": "1003",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1003"
 	},
 	"1004": {
 		"name": "瓦爾特",
@@ -330,10 +357,11 @@
 			"maxDEF": 509,
 			"SPD": 102,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1004",
+		"icon": "SpriteOutput/AvatarRoundIcon/1004.png",
+		"shortIcon": "1004",
 		"rarity": "SuperRare",
 		"element": "Imaginary",
 		"skills": {
@@ -341,7 +369,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於瓦爾特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量虛數屬性傷害。",
-			"basicIcon": "SkillIcon_1004_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1004/SkillIcon_1004_Normal.png",
+			"basicShortIcon": "SkillIcon_1004_Normal",
 			"basicId": 100401,
 			"basicPromo": {
 				"2": 240000,
@@ -356,7 +385,8 @@
 			"skillTag": "彈射",
 			"skillDesc": "對指定敵方單體造成等同於瓦爾特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害，並額外造成2次傷害。每次傷害對敵方隨機單體造成等同於瓦爾特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。攻擊命中時有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基礎機率</u>使受到攻擊的敵方目標速度降低<unbreak>#3[i]%</unbreak>，持續<unbreak>#4[i]</unbreak>回合。",
 			"skillSimpleDesc": "對敵方單體造成少量虛數屬性傷害，共彈射3次，有機率對目標<color=#f29e38ff>施加減速狀態</color>。",
-			"skillIcon": "SkillIcon_1004_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1004/SkillIcon_1004_BP.png",
+			"skillShortIcon": "SkillIcon_1004_BP",
 			"skillId": 100402,
 			"skillPromo": {
 				"2": 652500,
@@ -373,7 +403,9 @@
 			"ultTag": "群體攻擊",
 			"ultDesc": "對敵方全體造成等同於瓦爾特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害，有<unbreak>#3[i]%</unbreak>的<u>基礎機率</u>使受到攻擊的敵方目標陷入禁錮狀態，持續1回合。\\n禁錮狀態下，敵方目標<u>行動延後</u><color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、速度降低<unbreak>#4[i]%</unbreak>。",
 			"ultSimpleDesc": "對敵方全體造成虛數屬性傷害，<color=#f29e38ff>有高機率施加禁錮效果</color>。",
-			"ultIcon": "SkillIcon_1004_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1004/SkillIcon_1004_Ultra.png",
+			"ultShortIcon": "SkillIcon_1004_Ultra",
+			"ultER": 120,
 			"ultId": 100403,
 			"ultPromo": {
 				"2": 652500,
@@ -390,7 +422,8 @@
 			"talentTag": "強化",
 			"talentDesc": "擊中處於減速狀態的敵方目標時，額外造成1次等同於瓦爾特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性<u>附加傷害</u>。",
 			"talentSimpleDesc": "命中處於減速狀態的敵方目標時，<color=#f29e38ff>額外造成少量虛數屬性<u>附加傷害</u></color>。",
-			"talentIcon": "SkillIcon_1004_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1004/SkillIcon_1004_Passive.png",
+			"talentShortIcon": "SkillIcon_1004_Passive",
 			"talentId": 100404,
 			"talentPromo": {
 				"2": 652500,
@@ -407,7 +440,8 @@
 			"techTag": "妨害",
 			"techDesc": "使用秘技後，製造1片持續<unbreak>#4[i]</unbreak>秒的特殊領域。處於特殊領域內的敵人移動速度降低<unbreak>#5[i]%</unbreak>。與處於特殊領域內的敵人進入戰鬥後，有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方目標陷入禁錮狀態，持續1回合。\\n禁錮狀態下，敵方目標<u>行動延後</u><unbreak>#2[i]%</unbreak>，速度降低<unbreak>#3[i]%</unbreak>。我方製造的領域效果最多存在1個。",
 			"techSimpleDesc": "製造特殊領域。領域內敵人移動速度降低。與領域內敵人進入戰鬥後，<color=#f29e38ff>有高機率使敵方目標陷入禁錮狀態</color>。",
-			"techIcon": "SkillIcon_1004_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1004/SkillIcon_1004_Maze.png",
+			"techShortIcon": "SkillIcon_1004_Maze",
 			"techId": 100407
 		},
 		"avatarType": "Warlock",
@@ -418,17 +452,19 @@
 			"112002": 15,
 			"112003": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110151": 6,
+			"110152": 16,
+			"110153": 38,
+			"110501": 3,
+			"112001": 8,
+			"112002": 10,
+			"112003": 30
+		},
 		"exp": 5797920,
-		"id": "1004",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1004"
 	},
 	"1005": {
 		"name": "卡芙卡",
@@ -438,10 +474,11 @@
 			"maxDEF": 485,
 			"SPD": 100,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1005",
+		"icon": "SpriteOutput/AvatarRoundIcon/1005.png",
+		"shortIcon": "1005",
 		"rarity": "SuperRare",
 		"element": "Thunder",
 		"skills": {
@@ -449,7 +486,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量雷屬性傷害。",
-			"basicIcon": "SkillIcon_1005_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_Normal.png",
+			"basicShortIcon": "SkillIcon_1005_Normal",
 			"basicId": 100501,
 			"basicPromo": {
 				"2": 240000,
@@ -464,7 +502,8 @@
 			"skillTag": "擴散",
 			"skillDesc": "對指定敵方單體造成等同於卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，同時對其相鄰目標造成等同於卡芙卡<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻擊力的雷屬性傷害。\\n若指定敵方單體處於持續傷害狀態，其當下承受的所有持續傷害立即產生相當於原傷害<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的傷害。",
 			"skillSimpleDesc": "對敵方單體造成雷屬性傷害，對相鄰目標造成少量雷屬性傷害。\\n若主目標處於持續傷害類負面狀態，則使持續傷害類負面狀態額外產生1次傷害。",
-			"skillIcon": "SkillIcon_1005_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_BP.png",
+			"skillShortIcon": "SkillIcon_1005_BP",
 			"skillId": 100502,
 			"skillPromo": {
 				"2": 652500,
@@ -481,7 +520,9 @@
 			"ultTag": "群體攻擊",
 			"ultDesc": "對敵方全體造成等同於卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>使受到攻擊的敵方目標陷入觸電狀態，並使其當下承受的觸電狀態立即產生相當於原傷害<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>的傷害。觸電狀態持續<unbreak>#3[i]</unbreak>回合。\\n觸電狀態下，敵方目標每回合開始時受到等同於卡芙卡<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻擊力的雷屬性持續傷害。",
 			"ultSimpleDesc": "對敵方全體造成少量雷屬性傷害，有高機率施加觸電狀態。\\n若敵方目標處於觸電狀態，則使觸電狀態額外產生1次傷害。",
-			"ultIcon": "SkillIcon_1005_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_Ultra.png",
+			"ultShortIcon": "SkillIcon_1005_Ultra",
+			"ultER": 120,
 			"ultId": 100503,
 			"ultPromo": {
 				"2": 652500,
@@ -498,7 +539,8 @@
 			"talentTag": "單體攻擊",
 			"talentDesc": "當卡芙卡的隊友對敵方目標發動普通攻擊後，卡芙卡立即發動<u>追加攻擊</u>，對該目標造成等同於卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，並有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>使受到攻擊的敵方目標陷入與終結技相同的觸電狀態，持續<unbreak>#3[i]</unbreak>回合，該效果每回合只能觸發1次。",
 			"talentSimpleDesc": "當隊友對敵方目標發動普通攻擊後，卡芙卡立即發動<u>追加攻擊</u>，對該目標造成雷屬性傷害，並有高機率施加觸電狀態。該效果每回合只能觸發1次。",
-			"talentIcon": "SkillIcon_1005_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_Passive.png",
+			"talentShortIcon": "SkillIcon_1005_Passive",
 			"talentId": 100504,
 			"talentPromo": {
 				"2": 652500,
@@ -514,7 +556,8 @@
 			"techName": "寬恕無關慈悲",
 			"techDesc": "立即攻擊一定範圍內的所有敵人，進入戰鬥後對敵方全體造成等同於卡芙卡<unbreak>#3[i]%</unbreak>攻擊力的雷屬性傷害，同時有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方每個單體目標陷入與終結技相同的觸電狀態，持續<unbreak>#2[i]</unbreak>回合。",
 			"techSimpleDesc": "攻擊範圍內的所有敵人，進入戰鬥後對敵方全體造成少量雷屬性傷害，有高機率施加觸電狀態。",
-			"techIcon": "SkillIcon_1005_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_Maze.png",
+			"techShortIcon": "SkillIcon_1005_Maze",
 			"techId": 100507
 		},
 		"avatarType": "Warlock",
@@ -525,17 +568,19 @@
 			"111012": 15,
 			"111013": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110151": 6,
+			"110152": 16,
+			"110153": 38,
+			"110503": 3,
+			"111011": 8,
+			"111012": 10,
+			"111013": 30
+		},
 		"exp": 5797920,
-		"id": "1005",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1005"
 	},
 	"1006": {
 		"name": "銀狼",
@@ -545,10 +590,11 @@
 			"maxDEF": 461,
 			"SPD": 107,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1006",
+		"icon": "SpriteOutput/AvatarRoundIcon/1006.png",
+		"shortIcon": "1006",
 		"rarity": "SuperRare",
 		"element": "Quantum",
 		"skills": {
@@ -556,7 +602,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於銀狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量量子屬性傷害。",
-			"basicIcon": "SkillIcon_1006_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_Normal.png",
+			"basicShortIcon": "SkillIcon_1006_Normal",
 			"basicId": 100601,
 			"basicPromo": {
 				"2": 240000,
@@ -571,7 +618,8 @@
 			"skillTag": "妨害",
 			"skillDesc": "有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基礎機率</u>向指定敵方單體目標附加1個場上我方目標持有屬性的弱點，且該弱點對應屬性的抗性降低<unbreak>#4[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。若附加的是敵方目標原有屬性的弱點，則不會觸發對應屬性的抗性降低效果。\\n同一敵方目標僅能被銀狼附加1個弱點，當銀狼對其再次附加弱點時，僅保留最新附加的弱點。\\n有<unbreak>#5[i]%</unbreak>的<u>基礎機率</u>額外使該目標的全屬性抗性降低<color=#f29e38ff><unbreak>#6[f1]%</unbreak></color>，持續<unbreak>#7[i]</unbreak>回合。\\n對該目標造成等同於銀狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
 			"skillSimpleDesc": "高機率向敵方單體附加額外的弱點，並對其造成量子屬性傷害。",
-			"skillIcon": "SkillIcon_1006_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_BP.png",
+			"skillShortIcon": "SkillIcon_1006_BP",
 			"skillId": 100602,
 			"skillPromo": {
 				"2": 652500,
@@ -588,7 +636,9 @@
 			"ultTag": "妨害",
 			"ultDesc": "有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基礎機率</u>使指定敵方單體防禦力降低<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>，持續<unbreak>#4[i]</unbreak>回合，同時對該目標造成等同於銀狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
 			"ultSimpleDesc": "高機率使敵方單體防禦力降低，並對其造成大量量子屬性傷害。",
-			"ultIcon": "SkillIcon_1006_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_Ultra.png",
+			"ultShortIcon": "SkillIcon_1006_Ultra",
+			"ultER": 110,
 			"ultId": 100603,
 			"ultPromo": {
 				"2": 652500,
@@ -605,7 +655,8 @@
 			"talentTag": "妨害",
 			"talentDesc": "銀狼能夠製造：攻擊力降低<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>、防禦力降低<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>、速度降低<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>3種【缺陷】。\\n銀狼每次發動攻擊後有<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>的<u>基礎機率</u>向受到攻擊的敵方目標植入1個隨機【缺陷】，持續<unbreak>#5[i]</unbreak>回合。",
 			"talentSimpleDesc": "攻擊後有機率向目標植入1個隨機【缺陷】。",
-			"talentIcon": "SkillIcon_1006_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_Passive.png",
+			"talentShortIcon": "SkillIcon_1006_Passive",
 			"talentId": 100604,
 			"talentPromo": {
 				"2": 652500,
@@ -621,7 +672,8 @@
 			"techName": "|強制結束程式|",
 			"techDesc": "立即攻擊敵人，進入戰鬥後對敵方全體造成等同於銀狼<unbreak>#1[i]%</unbreak>攻擊力的量子屬性傷害，並無視弱點屬性削減敵方全體的韌性，擊破弱點時，觸發量子屬性的弱點擊破效果。",
 			"techSimpleDesc": "攻擊敵人，進入戰鬥後對敵方全體造成少量傷害，並無視弱點屬性削減韌性。",
-			"techIcon": "SkillIcon_1006_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_Maze.png",
+			"techShortIcon": "SkillIcon_1006_Maze",
 			"techId": 100607
 		},
 		"avatarType": "Warlock",
@@ -632,17 +684,19 @@
 			"112012": 15,
 			"112013": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110151": 6,
+			"110152": 16,
+			"110153": 38,
+			"110501": 3,
+			"112011": 8,
+			"112012": 10,
+			"112013": 30
+		},
 		"exp": 5797920,
-		"id": "1006",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1006"
 	},
 	"1008": {
 		"name": "阿蘭",
@@ -652,10 +706,11 @@
 			"maxDEF": 331,
 			"SPD": 102,
 			"TNT": 125,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1008",
+		"icon": "SpriteOutput/AvatarRoundIcon/1008.png",
+		"shortIcon": "1008",
 		"rarity": "VeryRare",
 		"element": "Thunder",
 		"skills": {
@@ -663,7 +718,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於阿蘭<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量雷屬性傷害。",
-			"basicIcon": "SkillIcon_1008_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1008/SkillIcon_1008_Normal.png",
+			"basicShortIcon": "SkillIcon_1008_Normal",
 			"basicId": 100801,
 			"basicPromo": {
 				"2": 192000,
@@ -678,7 +734,8 @@
 			"skillTag": "單體攻擊",
 			"skillDesc": "消耗等同於阿蘭生命上限<unbreak>#1[i]%</unbreak>的生命值對指定敵方單體造成等同於阿蘭<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的雷屬性傷害。若現有生命值不足，則施放戰技時阿蘭的現有生命值降至1點。",
 			"skillSimpleDesc": "消耗自身部分生命值，對敵方單體造成雷屬性傷害。",
-			"skillIcon": "SkillIcon_1008_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1008/SkillIcon_1008_BP.png",
+			"skillShortIcon": "SkillIcon_1008_BP",
 			"skillId": 100802,
 			"skillPromo": {
 				"2": 522000,
@@ -695,7 +752,9 @@
 			"ultTag": "擴散",
 			"ultDesc": "對指定敵方單體造成等同於阿蘭<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，同時對其相鄰目標造成等同於阿蘭<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的雷屬性傷害。",
 			"ultSimpleDesc": "對敵方單體造成大量雷屬性傷害，對相鄰目標造成雷屬性傷害。",
-			"ultIcon": "SkillIcon_1008_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1008/SkillIcon_1008_Ultra.png",
+			"ultShortIcon": "SkillIcon_1008_Ultra",
+			"ultER": 110,
 			"ultId": 100803,
 			"ultPromo": {
 				"2": 522000,
@@ -712,7 +771,8 @@
 			"talentTag": "強化",
 			"talentDesc": "根據阿蘭目前損失的生命值百分比獲得傷害加成，最多使阿蘭造成的傷害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
 			"talentSimpleDesc": "根據自身目前已損失的生命值百分比提高傷害。",
-			"talentIcon": "SkillIcon_1008_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1008/SkillIcon_1008_Passive.png",
+			"talentShortIcon": "SkillIcon_1008_Passive",
 			"talentId": 100804,
 			"talentPromo": {
 				"2": 522000,
@@ -728,7 +788,8 @@
 			"techName": "極速收割",
 			"techDesc": "立即攻擊敵人，進入戰鬥後對敵方全體造成等同於阿蘭<unbreak>#1[i]%</unbreak>攻擊力的雷屬性傷害。",
 			"techSimpleDesc": "攻擊敵人，進入戰鬥後對敵方全體造成少量雷屬性傷害。",
-			"techIcon": "SkillIcon_1008_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1008/SkillIcon_1008_Maze.png",
+			"techShortIcon": "SkillIcon_1008_Maze",
 			"techId": 100807
 		},
 		"avatarType": "Warrior",
@@ -739,17 +800,19 @@
 			"111002": 13,
 			"111003": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110111": 4,
+			"110112": 12,
+			"110113": 28,
+			"110501": 3,
+			"111001": 6,
+			"111002": 7,
+			"111003": 22
+		},
 		"exp": 5797920,
-		"id": "1008",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1008"
 	},
 	"1009": {
 		"name": "艾絲妲",
@@ -759,10 +822,11 @@
 			"maxDEF": 463,
 			"SPD": 106,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1009",
+		"icon": "SpriteOutput/AvatarRoundIcon/1009.png",
+		"shortIcon": "1009",
 		"rarity": "VeryRare",
 		"element": "Fire",
 		"skills": {
@@ -770,7 +834,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於艾絲妲<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量火屬性傷害。",
-			"basicIcon": "SkillIcon_1009_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1009/SkillIcon_1009_Normal.png",
+			"basicShortIcon": "SkillIcon_1009_Normal",
 			"basicId": 100901,
 			"basicPromo": {
 				"2": 192000,
@@ -785,7 +850,8 @@
 			"skillTag": "彈射",
 			"skillDesc": "對指定敵方單體造成等同於艾絲妲<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害，並額外造成4次傷害。每次傷害對隨機敵方單體造成等同於艾絲妲<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。",
 			"skillSimpleDesc": "對敵方單體造成少量火屬性傷害，共彈射5次。",
-			"skillIcon": "SkillIcon_1009_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1009/SkillIcon_1009_BP.png",
+			"skillShortIcon": "SkillIcon_1009_BP",
 			"skillId": 100902,
 			"skillPromo": {
 				"2": 522000,
@@ -802,7 +868,9 @@
 			"ultTag": "輔助",
 			"ultDesc": "使我方全體速度提高<color=#f29e38ff><unbreak>#1[i]</unbreak></color>點，持續<unbreak>#2[i]</unbreak>回合。",
 			"ultSimpleDesc": "使我方全體<color=#f29e38ff>速度提高</color>。",
-			"ultIcon": "SkillIcon_1009_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1009/SkillIcon_1009_Ultra.png",
+			"ultShortIcon": "SkillIcon_1009_Ultra",
+			"ultER": 120,
 			"ultId": 100903,
 			"ultPromo": {
 				"2": 522000,
@@ -819,7 +887,8 @@
 			"talentTag": "輔助",
 			"talentDesc": "每擊中1名不同的敵方目標獲得1層蓄能，若受到攻擊的敵方目標弱點為火屬性，則額外獲得1層蓄能。\\n艾絲妲每擁有1層蓄能，便使我方全體攻擊力提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，最多疊加<unbreak>#2[i]</unbreak>層。\\n從自身的第2回合開始，艾絲妲每回合開始時蓄能層數減少<unbreak>#3[i]</unbreak>層。",
 			"talentSimpleDesc": "每命中1名不同敵人便獲得1層蓄能，最多疊加5層。每層蓄能提高我方全體攻擊力。自身回合開始時降低蓄能層數。",
-			"talentIcon": "SkillIcon_1009_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1009/SkillIcon_1009_Passive.png",
+			"talentShortIcon": "SkillIcon_1009_Passive",
 			"talentId": 100904,
 			"talentPromo": {
 				"2": 522000,
@@ -835,7 +904,8 @@
 			"techName": "靈光一現",
 			"techDesc": "立即攻擊敵人，進入戰鬥後對敵方全體目標造成等同於艾絲妲<unbreak>#1[i]%</unbreak>攻擊力的火屬性傷害。",
 			"techSimpleDesc": "攻擊敵人，進入戰鬥後對敵方全體造成少量傷害。",
-			"techIcon": "SkillIcon_1009_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1009/SkillIcon_1009_Maze.png",
+			"techShortIcon": "SkillIcon_1009_Maze",
 			"techId": 100907
 		},
 		"avatarType": "Shaman",
@@ -846,17 +916,19 @@
 			"112002": 13,
 			"112003": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110161": 4,
+			"110162": 12,
+			"110163": 28,
+			"110501": 3,
+			"112001": 6,
+			"112002": 7,
+			"112003": 22
+		},
 		"exp": 5797920,
-		"id": "1009",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1009"
 	},
 	"1013": {
 		"name": "黑塔",
@@ -866,10 +938,11 @@
 			"maxDEF": 397,
 			"SPD": 100,
 			"TNT": 75,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1013",
+		"icon": "SpriteOutput/AvatarRoundIcon/1013.png",
+		"shortIcon": "1013",
 		"rarity": "VeryRare",
 		"element": "Ice",
 		"skills": {
@@ -877,7 +950,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於黑塔<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量冰屬性傷害。",
-			"basicIcon": "SkillIcon_1013_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1013/SkillIcon_1013_Normal.png",
+			"basicShortIcon": "SkillIcon_1013_Normal",
 			"basicId": 101301,
 			"basicPromo": {
 				"2": 192000,
@@ -892,7 +966,8 @@
 			"skillTag": "群體攻擊",
 			"skillDesc": "對敵方全體造成等同於黑塔<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。若敵方目標現有生命值百分比大於等於<unbreak>#2[i]%</unbreak>，則對該目標造成的傷害提高<unbreak>#3[i]%</unbreak>。",
 			"skillSimpleDesc": "對敵方全體造成少量冰屬性傷害，對生命值較高的目標造成的傷害提高。",
-			"skillIcon": "SkillIcon_1013_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1013/SkillIcon_1013_BP.png",
+			"skillShortIcon": "SkillIcon_1013_BP",
 			"skillId": 101302,
 			"skillPromo": {
 				"2": 522000,
@@ -909,7 +984,9 @@
 			"ultTag": "群體攻擊",
 			"ultDesc": "對敵方全體造成等同於黑塔<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。",
 			"ultSimpleDesc": "對敵方全體造成冰屬性傷害。",
-			"ultIcon": "SkillIcon_1013_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1013/SkillIcon_1013_Ultra.png",
+			"ultShortIcon": "SkillIcon_1013_Ultra",
+			"ultER": 110,
 			"ultId": 101303,
 			"ultPromo": {
 				"2": 522000,
@@ -925,7 +1002,8 @@
 			"talentName": "還是我來吧",
 			"talentTag": "群體攻擊",
 			"talentDesc": "當任意我方目標的攻擊使敵方目標的現有生命值百分比小於等於<unbreak>#1[i]%</unbreak>時，黑塔發動<u>追加攻擊</u>，對敵方全體造成等同於黑塔<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的冰屬性傷害。",
-			"talentIcon": "SkillIcon_1013_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1013/SkillIcon_1013_Passive.png",
+			"talentShortIcon": "SkillIcon_1013_Passive",
 			"talentId": 101304,
 			"talentPromo": {
 				"2": 522000,
@@ -941,7 +1019,8 @@
 			"techName": "可以改良一下",
 			"techTag": "強化",
 			"techDesc": "使用秘技後，下一次戰鬥開始時黑塔攻擊力提高<unbreak>#1[i]%</unbreak>，持續<unbreak>#2[i]</unbreak>回合。",
-			"techIcon": "SkillIcon_1013_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1013/SkillIcon_1013_Maze.png",
+			"techShortIcon": "SkillIcon_1013_Maze",
 			"techId": 101307
 		},
 		"avatarType": "Mage",
@@ -952,17 +1031,19 @@
 			"111002": 13,
 			"111003": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110131": 4,
+			"110132": 12,
+			"110133": 28,
+			"110501": 3,
+			"111001": 6,
+			"111002": 7,
+			"111003": 22
+		},
 		"exp": 5797920,
-		"id": "1013",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1013"
 	},
 	"1101": {
 		"name": "布洛妮婭",
@@ -972,10 +1053,11 @@
 			"maxDEF": 534,
 			"SPD": 99,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1101",
+		"icon": "SpriteOutput/AvatarRoundIcon/1101.png",
+		"shortIcon": "1101",
 		"rarity": "SuperRare",
 		"element": "Wind",
 		"skills": {
@@ -983,7 +1065,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於布洛妮婭<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量風屬性傷害。",
-			"basicIcon": "SkillIcon_1101_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1101/SkillIcon_1101_Normal.png",
+			"basicShortIcon": "SkillIcon_1101_Normal",
 			"basicId": 110101,
 			"basicPromo": {
 				"2": 240000,
@@ -998,7 +1081,8 @@
 			"skillTag": "輔助",
 			"skillDesc": "解除指定我方單體的1個<u>負面效果</u>，並使該目標立即行動，且造成的傷害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，持續<unbreak>#3[i]</unbreak>回合。\\n當對自身施放該技能時，無法觸發立即行動效果。",
 			"skillSimpleDesc": "<color=#f29e38ff>解除</color>我方單體1個<color=#f29e38ff><u>負面效果</u></color>，同時使其<color=#f29e38ff>造成的傷害提高</color>，並<color=#f29e38ff>立刻行動</color>。",
-			"skillIcon": "SkillIcon_1101_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1101/SkillIcon_1101_BP.png",
+			"skillShortIcon": "SkillIcon_1101_BP",
 			"skillId": 110102,
 			"skillPromo": {
 				"2": 652500,
@@ -1015,7 +1099,9 @@
 			"ultTag": "輔助",
 			"ultDesc": "使我方全體攻擊力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，同時提高等同於布洛妮婭<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>暴擊傷害+<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>的暴擊傷害，持續<unbreak>#4[i]</unbreak>回合。",
 			"ultSimpleDesc": "使我方全體<color=#f29e38ff>攻擊力提高</color>，<color=#f29e38ff>暴擊傷害提高</color>。",
-			"ultIcon": "SkillIcon_1101_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1101/SkillIcon_1101_Ultra.png",
+			"ultShortIcon": "SkillIcon_1101_Ultra",
+			"ultER": 120,
 			"ultId": 110103,
 			"ultPromo": {
 				"2": 652500,
@@ -1032,7 +1118,8 @@
 			"talentTag": "強化",
 			"talentDesc": "發動普通攻擊後，布洛妮婭的下一次<u>行動提前</u><color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
 			"talentSimpleDesc": "發動普通攻擊後，自身下一次<u>行動提前</u>。",
-			"talentIcon": "SkillIcon_1101_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1101/SkillIcon_1101_Passive.png",
+			"talentShortIcon": "SkillIcon_1101_Passive",
 			"talentId": 110104,
 			"talentPromo": {
 				"2": 652500,
@@ -1049,7 +1136,8 @@
 			"techTag": "輔助",
 			"techDesc": "使用秘技後，下一次戰鬥開始時使我方全體攻擊力提高<unbreak>#1[i]%</unbreak>，持續<unbreak>#2[i]</unbreak>回合。",
 			"techSimpleDesc": "使用秘技，下一次戰鬥開始時我方全體攻擊力提高。",
-			"techIcon": "SkillIcon_1101_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1101/SkillIcon_1101_Maze.png",
+			"techShortIcon": "SkillIcon_1101_Maze",
 			"techId": 110107
 		},
 		"avatarType": "Shaman",
@@ -1060,17 +1148,19 @@
 			"112002": 15,
 			"112003": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110161": 6,
+			"110162": 16,
+			"110163": 38,
+			"110502": 3,
+			"112001": 8,
+			"112002": 10,
+			"112003": 30
+		},
 		"exp": 5797920,
-		"id": "1101",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1101"
 	},
 	"1102": {
 		"name": "希兒",
@@ -1080,10 +1170,11 @@
 			"maxDEF": 364,
 			"SPD": 115,
 			"TNT": 75,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1102",
+		"icon": "SpriteOutput/AvatarRoundIcon/1102.png",
+		"shortIcon": "1102",
 		"rarity": "SuperRare",
 		"element": "Quantum",
 		"skills": {
@@ -1091,7 +1182,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於希兒<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量量子屬性傷害。",
-			"basicIcon": "SkillIcon_1102_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1102/SkillIcon_1102_Normal.png",
+			"basicShortIcon": "SkillIcon_1102_Normal",
 			"basicId": 110201,
 			"basicPromo": {
 				"2": 240000,
@@ -1106,7 +1198,8 @@
 			"skillTag": "單體攻擊",
 			"skillDesc": "使希兒的速度提高<unbreak>#2[i]%</unbreak>，並對指定敵方單體造成等同於希兒<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害，速度提高效果持續<unbreak>#3[i]</unbreak>回合。",
 			"skillSimpleDesc": "對敵方單體造成量子屬性傷害，並使自身速度提高。",
-			"skillIcon": "SkillIcon_1102_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1102/SkillIcon_1102_BP.png",
+			"skillShortIcon": "SkillIcon_1102_BP",
 			"skillId": 110202,
 			"skillPromo": {
 				"2": 652500,
@@ -1122,8 +1215,10 @@
 			"ultName": "亂蝶",
 			"ultTag": "單體攻擊",
 			"ultDesc": "立即進入增幅狀態，並對指定敵方單體造成等同於希兒<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
-			"ultSimpleDesc": "進入增幅狀態，對敵方單體造成大量量子屬性傷害。",
-			"ultIcon": "SkillIcon_1102_Ultra",
+			"ultSimpleDesc": "進入<color=#f29e38ff>增幅狀態</color>，對敵方單體造成大量量子屬性傷害。",
+			"ultIcon": "SpriteOutput/SkillIcons/1102/SkillIcon_1102_Ultra.png",
+			"ultShortIcon": "SkillIcon_1102_Ultra",
+			"ultER": 120,
 			"ultId": 110203,
 			"ultPromo": {
 				"2": 652500,
@@ -1139,7 +1234,9 @@
 			"talentName": "再現",
 			"talentTag": "強化",
 			"talentDesc": "以普通攻擊、戰技、終結技消滅敵方目標時立即獲得1個<u>額外回合</u>並進入增幅狀態。增幅狀態下，希兒攻擊傷害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，持續<unbreak>#2[i]</unbreak>回合。\\n若希兒在因天賦【再現】獲得的<u>額外回合</u>中消滅敵方目標，此天賦不會生效。",
-			"talentIcon": "SkillIcon_1102_Passive",
+			"talentSimpleDesc": "使用普通攻擊、戰技、終結技<color=#f29e38ff>消滅敵方目標</color>時獲得<color=#f29e38ff><u>額外回合</u>並進入增幅狀態</color>，增幅狀態下自身造成的傷害提高。",
+			"talentIcon": "SpriteOutput/SkillIcons/1102/SkillIcon_1102_Passive.png",
+			"talentShortIcon": "SkillIcon_1102_Passive",
 			"talentId": 110204,
 			"talentPromo": {
 				"2": 652500,
@@ -1155,7 +1252,9 @@
 			"techName": "幻身",
 			"techTag": "強化",
 			"techDesc": "使用秘技後進入持續<unbreak>#1[i]</unbreak>秒的隱身狀態。隱身狀態下不會被敵人發現，且主動攻擊敵人進入戰鬥時，希兒立即進入增幅狀態。",
-			"techIcon": "SkillIcon_1102_Maze",
+			"techSimpleDesc": "進入<color=#f29e38ff>隱身</color>狀態。攻擊敵人進入戰鬥後立即進入<color=#f29e38ff>增幅狀態</color>。",
+			"techIcon": "SpriteOutput/SkillIcons/1102/SkillIcon_1102_Maze.png",
+			"techShortIcon": "SkillIcon_1102_Maze",
 			"techId": 110207
 		},
 		"avatarType": "Rogue",
@@ -1166,17 +1265,19 @@
 			"111012": 15,
 			"111013": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110121": 6,
+			"110122": 16,
+			"110123": 38,
+			"110502": 3,
+			"111011": 8,
+			"111012": 10,
+			"111013": 30
+		},
 		"exp": 5797920,
-		"id": "1102",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1102"
 	},
 	"1103": {
 		"name": "希露瓦",
@@ -1186,10 +1287,11 @@
 			"maxDEF": 375,
 			"SPD": 104,
 			"TNT": 75,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1103",
+		"icon": "SpriteOutput/AvatarRoundIcon/1103.png",
+		"shortIcon": "1103",
 		"rarity": "VeryRare",
 		"element": "Thunder",
 		"skills": {
@@ -1197,7 +1299,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於希露瓦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量雷屬性傷害。",
-			"basicIcon": "SkillIcon_1103_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1103/SkillIcon_1103_Normal.png",
+			"basicShortIcon": "SkillIcon_1103_Normal",
 			"basicId": 110301,
 			"basicPromo": {
 				"2": 192000,
@@ -1212,7 +1315,8 @@
 			"skillTag": "擴散",
 			"skillDesc": "對指定敵方單體造成等同於希露瓦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，同時對其相鄰目標造成等同於希露瓦<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的雷屬性傷害，此外有<unbreak>#3[i]%</unbreak>的<u>基礎機率</u>使受到攻擊的敵方目標陷入觸電狀態，持續<unbreak>#4[i]</unbreak>回合。\\n觸電狀態下，敵方目標每回合開始時受到等同於希露瓦<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>攻擊力的雷屬性持續傷害。",
 			"skillSimpleDesc": "對敵方單體及其相鄰目標造成少量雷屬性傷害，有高機率對目標施加觸電狀態。",
-			"skillIcon": "SkillIcon_1103_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1103/SkillIcon_1103_BP.png",
+			"skillShortIcon": "SkillIcon_1103_BP",
 			"skillId": 110302,
 			"skillPromo": {
 				"2": 522000,
@@ -1229,7 +1333,9 @@
 			"ultTag": "群體攻擊",
 			"ultDesc": "對全體造成等同於希露瓦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，並使觸電狀態下的敵方目標延長<unbreak>#2[i]</unbreak>回合的觸電狀態。",
 			"ultSimpleDesc": "對敵方全體造成雷屬性傷害，並延長目標觸電狀態的持續時間。",
-			"ultIcon": "SkillIcon_1103_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1103/SkillIcon_1103_Ultra.png",
+			"ultShortIcon": "SkillIcon_1103_Ultra",
+			"ultER": 100,
 			"ultId": 110303,
 			"ultPromo": {
 				"2": 522000,
@@ -1246,7 +1352,8 @@
 			"talentTag": "強化",
 			"talentDesc": "發動攻擊後，對所有觸電狀態下的敵方目標造成等同於希露瓦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性<u>附加傷害</u>。",
 			"talentSimpleDesc": "發動攻擊後，對所有觸電狀態敵方目標造成少量<u>附加傷害</u>。",
-			"talentIcon": "SkillIcon_1103_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1103/SkillIcon_1103_Passive.png",
+			"talentShortIcon": "SkillIcon_1103_Passive",
 			"talentId": 110304,
 			"talentPromo": {
 				"2": 522000,
@@ -1262,7 +1369,8 @@
 			"techName": "晚安，貝洛伯格",
 			"techDesc": "立即攻擊敵人，進入戰鬥後對敵方隨機單體造成等同於希露瓦<unbreak>#4[i]%</unbreak>攻擊力的雷屬性傷害，同時有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方每個單體目標陷入觸電狀態，持續<unbreak>#3[i]</unbreak>回合。\\n觸電狀態下，敵方目標每回合開始時受到等同於希露瓦<unbreak>#2[i]%</unbreak>攻擊力的雷屬性持續傷害。",
 			"techSimpleDesc": "攻擊敵人，進入戰鬥後對敵方隨機單體造成少量傷害，並有高機率使敵方每個單體目標陷入觸電狀態。",
-			"techIcon": "SkillIcon_1103_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1103/SkillIcon_1103_Maze.png",
+			"techShortIcon": "SkillIcon_1103_Maze",
 			"techId": 110307
 		},
 		"avatarType": "Mage",
@@ -1273,17 +1381,19 @@
 			"112002": 13,
 			"112003": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110131": 4,
+			"110132": 12,
+			"110133": 28,
+			"110502": 3,
+			"112001": 6,
+			"112002": 7,
+			"112003": 22
+		},
 		"exp": 5797920,
-		"id": "1103",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1103"
 	},
 	"1104": {
 		"name": "傑帕德",
@@ -1293,10 +1403,11 @@
 			"maxDEF": 655,
 			"SPD": 92,
 			"TNT": 150,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1104",
+		"icon": "SpriteOutput/AvatarRoundIcon/1104.png",
+		"shortIcon": "1104",
 		"rarity": "SuperRare",
 		"element": "Ice",
 		"skills": {
@@ -1304,7 +1415,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於傑帕德<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量冰屬性傷害。",
-			"basicIcon": "SkillIcon_1104_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1104/SkillIcon_1104_Normal.png",
+			"basicShortIcon": "SkillIcon_1104_Normal",
 			"basicId": 110401,
 			"basicPromo": {
 				"2": 240000,
@@ -1319,7 +1431,8 @@
 			"skillTag": "妨害",
 			"skillDesc": "對指定敵方單體造成等同於傑帕德<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害，同時有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>使受到攻擊的敵方目標陷入凍結狀態，持續<unbreak>#3[i]</unbreak>回合。\\n凍結狀態下，敵方目標不能行動同時每回合開始時受到等同於傑帕德<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻擊力的冰屬性<u>附加傷害</u>。",
 			"skillSimpleDesc": "對敵方單體造成冰屬性傷害，<color=#f29e38ff>有機率對目標施加凍結狀態</color>。",
-			"skillIcon": "SkillIcon_1104_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1104/SkillIcon_1104_BP.png",
+			"skillShortIcon": "SkillIcon_1104_BP",
 			"skillId": 110402,
 			"skillPromo": {
 				"2": 652500,
@@ -1336,7 +1449,9 @@
 			"ultTag": "防禦",
 			"ultDesc": "為我方全體提供強度等同於傑帕德<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>防禦力+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>的護盾，持續<unbreak>#2[i]</unbreak>回合。",
 			"ultSimpleDesc": "為我方全體<color=#f29e38ff>提供護盾</color>。",
-			"ultIcon": "SkillIcon_1104_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1104/SkillIcon_1104_Ultra.png",
+			"ultShortIcon": "SkillIcon_1104_Ultra",
+			"ultER": 100,
 			"ultId": 110403,
 			"ultPromo": {
 				"2": 652500,
@@ -1353,7 +1468,8 @@
 			"talentTag": "回復",
 			"talentDesc": "受到致命攻擊時傑帕德不會陷入<u>無法戰鬥狀態</u>，並立即回復等同於自身生命上限<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>的生命值。該效果單場戰鬥中只能觸發1次。",
 			"talentSimpleDesc": "受到致命攻擊時<color=#f29e38ff>不會陷入<u>無法戰鬥狀態</u></color>，立即回復生命值。單場戰鬥中僅觸發1次。",
-			"talentIcon": "SkillIcon_1104_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1104/SkillIcon_1104_Passive.png",
+			"talentShortIcon": "SkillIcon_1104_Passive",
 			"talentId": 110404,
 			"talentPromo": {
 				"2": 652500,
@@ -1370,7 +1486,8 @@
 			"techTag": "防禦",
 			"techDesc": "使用秘技後，下一次戰鬥開始時為我方全體提供強度等同於傑帕德<unbreak>#1[i]%</unbreak>防禦力+<unbreak>#3[i]</unbreak>的護盾，持續<unbreak>#2[i]</unbreak>回合。",
 			"techSimpleDesc": "使用秘技，下一次戰鬥開始時我方全體獲得護盾。",
-			"techIcon": "SkillIcon_1104_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1104/SkillIcon_1104_Maze.png",
+			"techShortIcon": "SkillIcon_1104_Maze",
 			"techId": 110407
 		},
 		"avatarType": "Knight",
@@ -1381,17 +1498,19 @@
 			"112002": 15,
 			"112003": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110141": 6,
+			"110142": 16,
+			"110143": 38,
+			"110502": 3,
+			"112001": 8,
+			"112002": 10,
+			"112003": 30
+		},
 		"exp": 5797920,
-		"id": "1104",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1104"
 	},
 	"1105": {
 		"name": "娜塔莎",
@@ -1401,10 +1520,11 @@
 			"maxDEF": 507,
 			"SPD": 98,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1105",
+		"icon": "SpriteOutput/AvatarRoundIcon/1105.png",
+		"shortIcon": "1105",
 		"rarity": "VeryRare",
 		"element": "Physical",
 		"skills": {
@@ -1412,7 +1532,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於娜塔莎<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量物理屬性傷害。",
-			"basicIcon": "SkillIcon_1105_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1105/SkillIcon_1105_Normal.png",
+			"basicShortIcon": "SkillIcon_1105_Normal",
 			"basicId": 110501,
 			"basicPromo": {
 				"2": 192000,
@@ -1427,7 +1548,8 @@
 			"skillTag": "回復",
 			"skillDesc": "立即為指定我方單體回復等同於娜塔莎<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值，同時目標每回合開始時為其回復等同於娜塔莎<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值，持續<unbreak>#3[i]</unbreak>回合。",
 			"skillSimpleDesc": "為我方單體回復生命值，並使目標持續回復生命值。",
-			"skillIcon": "SkillIcon_1105_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1105/SkillIcon_1105_BP.png",
+			"skillShortIcon": "SkillIcon_1105_BP",
 			"skillId": 110502,
 			"skillPromo": {
 				"2": 522000,
@@ -1444,7 +1566,9 @@
 			"ultTag": "回復",
 			"ultDesc": "立即為我方全體回復等同於娜塔莎<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值。",
 			"ultSimpleDesc": "為我方全體回復生命值。",
-			"ultIcon": "SkillIcon_1105_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1105/SkillIcon_1105_Ultra.png",
+			"ultShortIcon": "SkillIcon_1105_Ultra",
+			"ultER": 90,
 			"ultId": 110503,
 			"ultPromo": {
 				"2": 522000,
@@ -1461,7 +1585,8 @@
 			"talentTag": "強化",
 			"talentDesc": "為現有生命值百分比小於等於<unbreak>#1[i]%</unbreak>的我方目標提供治療時，娜塔莎的治療量提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。該效果對持續治療效果也會生效。",
 			"talentSimpleDesc": "為現有生命值百分比較低的我方目標提供治療時，治療量提高。該效果對持續治療效果也會生效。",
-			"talentIcon": "SkillIcon_1105_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1105/SkillIcon_1105_Passive.png",
+			"talentShortIcon": "SkillIcon_1105_Passive",
 			"talentId": 110504,
 			"talentPromo": {
 				"2": 522000,
@@ -1477,7 +1602,8 @@
 			"techName": "催眠研習",
 			"techDesc": "立即攻擊敵人，進入戰鬥後對敵方隨機單體造成等同於娜塔莎<unbreak>#4[i]%</unbreak>攻擊力的物理屬性傷害，並有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方每個單體目標陷入虛弱狀態。\\n虛弱狀態下的敵方目標對我方造成的傷害降低<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
 			"techSimpleDesc": "攻擊敵人，進入戰鬥後對敵方隨機單體造成少量物理屬性傷害，有高機率使敵方每個單體目標陷入虛弱狀態。",
-			"techIcon": "SkillIcon_1105_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1105/SkillIcon_1105_Maze.png",
+			"techShortIcon": "SkillIcon_1105_Maze",
 			"techId": 110507
 		},
 		"avatarType": "Priest",
@@ -1488,17 +1614,19 @@
 			"112012": 13,
 			"112013": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110171": 4,
+			"110172": 12,
+			"110173": 28,
+			"110502": 3,
+			"112011": 6,
+			"112012": 7,
+			"112013": 22
+		},
 		"exp": 5797920,
-		"id": "1105",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1105"
 	},
 	"1106": {
 		"name": "佩拉",
@@ -1508,10 +1636,11 @@
 			"maxDEF": 463,
 			"SPD": 105,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1106",
+		"icon": "SpriteOutput/AvatarRoundIcon/1106.png",
+		"shortIcon": "1106",
 		"rarity": "VeryRare",
 		"element": "Ice",
 		"skills": {
@@ -1519,7 +1648,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於佩拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量冰屬性傷害。",
-			"basicIcon": "SkillIcon_1106_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1106/SkillIcon_1106_Normal.png",
+			"basicShortIcon": "SkillIcon_1106_Normal",
 			"basicId": 110601,
 			"basicPromo": {
 				"2": 192000,
@@ -1534,7 +1664,8 @@
 			"skillTag": "妨害",
 			"skillDesc": "解除指定敵方單體的<unbreak>#2[i]</unbreak>個<u>增益效果</u>，同時造成等同於佩拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。",
 			"skillSimpleDesc": "<color=#f29e38ff>解除</color>敵方單體1個<color=#f29e38ff><u>增益效果</u></color>，對敵方單體造成冰屬性傷害。",
-			"skillIcon": "SkillIcon_1106_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1106/SkillIcon_1106_BP.png",
+			"skillShortIcon": "SkillIcon_1106_BP",
 			"skillId": 110602,
 			"skillPromo": {
 				"2": 522000,
@@ -1551,7 +1682,9 @@
 			"ultTag": "妨害",
 			"ultDesc": "有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方每個單體目標陷入【通解】狀態，同時對敵方全體造成等同於佩拉<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻擊力的冰屬性傷害。\\n【通解】狀態下，敵方目標防禦力降低<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持續<unbreak>#3[i]</unbreak>回合。",
 			"ultSimpleDesc": "高機率使敵方目標<color=#f29e38ff>防禦力降低</color>，並對敵方全體造成少量冰屬性傷害。",
-			"ultIcon": "SkillIcon_1106_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1106/SkillIcon_1106_Ultra.png",
+			"ultShortIcon": "SkillIcon_1106_Ultra",
+			"ultER": 110,
 			"ultId": 110603,
 			"ultPromo": {
 				"2": 522000,
@@ -1568,7 +1701,8 @@
 			"talentTag": "輔助",
 			"talentDesc": "發動攻擊後若敵方目標處於<u>負面效果</u>狀態，則佩拉額外恢復<color=#f29e38ff><unbreak>#1[f1]</unbreak></color>點能量。該效果每次攻擊只能觸發1次。",
 			"talentSimpleDesc": "發動攻擊後，若敵方目標處於<u>負面效果</u>狀態，則佩拉恢復能量。",
-			"talentIcon": "SkillIcon_1106_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1106/SkillIcon_1106_Passive.png",
+			"talentShortIcon": "SkillIcon_1106_Passive",
 			"talentId": 110604,
 			"talentPromo": {
 				"2": 522000,
@@ -1584,7 +1718,8 @@
 			"techName": "先發制人",
 			"techDesc": "立即攻擊敵人，進入戰鬥後對敵方隨機單體造成等同於佩拉<unbreak>#4[i]%</unbreak>攻擊力的冰屬性傷害，同時有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方每個單體目標防禦力降低<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
 			"techSimpleDesc": "攻擊敵人，進入戰鬥後對敵方隨機單體造成少量傷害，並有高機率使敵方每個單體目標防禦力降低。",
-			"techIcon": "SkillIcon_1106_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1106/SkillIcon_1106_Maze.png",
+			"techShortIcon": "SkillIcon_1106_Maze",
 			"techId": 110607
 		},
 		"avatarType": "Warlock",
@@ -1595,17 +1730,19 @@
 			"111002": 13,
 			"111003": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110151": 4,
+			"110152": 12,
+			"110153": 28,
+			"110502": 3,
+			"111001": 6,
+			"111002": 7,
+			"111003": 22
+		},
 		"exp": 5797920,
-		"id": "1106",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1106"
 	},
 	"1107": {
 		"name": "克拉拉",
@@ -1615,10 +1752,11 @@
 			"maxDEF": 485,
 			"SPD": 90,
 			"TNT": 125,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1107",
+		"icon": "SpriteOutput/AvatarRoundIcon/1107.png",
+		"shortIcon": "1107",
 		"rarity": "SuperRare",
 		"element": "Physical",
 		"skills": {
@@ -1626,7 +1764,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於克拉拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量物理屬性傷害。",
-			"basicIcon": "SkillIcon_1107_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1107/SkillIcon_1107_Normal.png",
+			"basicShortIcon": "SkillIcon_1107_Normal",
 			"basicId": 110701,
 			"basicPromo": {
 				"2": 240000,
@@ -1641,7 +1780,8 @@
 			"skillTag": "群體攻擊",
 			"skillDesc": "對敵方全體造成等同於克拉拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害，並對所有被史瓦羅標上【反擊標記】的敵方目標額外造成等同於克拉拉<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的物理屬性傷害。\\n戰技施放後所有【反擊標記】失效。",
 			"skillSimpleDesc": "對敵方全體造成物理屬性傷害，對持有【反擊標記】的目標<color=#f29e38ff>額外造成物理傷害</color>。",
-			"skillIcon": "SkillIcon_1107_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1107/SkillIcon_1107_BP.png",
+			"skillShortIcon": "SkillIcon_1107_BP",
 			"skillId": 110702,
 			"skillPromo": {
 				"2": 652500,
@@ -1658,7 +1798,9 @@
 			"ultTag": "強化",
 			"ultDesc": "施放終結技後克拉拉受到的傷害額外降低<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>且被敵方攻擊的機率大幅提高，持續<unbreak>#3[i]</unbreak>回合。\\n同時史瓦羅的<u>反擊</u>得到強化，當任意我方目標受到攻擊後，史瓦羅會立即發動<u>反擊</u>，對敵方目標造成的傷害倍率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，並對其相鄰目標造成相當於主目標<unbreak>50%</unbreak>的傷害。強化效果可生效<unbreak>#5[i]</unbreak>次。",
 			"ultSimpleDesc": "自身<color=#f29e38ff>受到的傷害降低</color>、被攻擊的機率提高，並強化<u>反擊</u>的效果。",
-			"ultIcon": "SkillIcon_1107_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1107/SkillIcon_1107_Ultra.png",
+			"ultShortIcon": "SkillIcon_1107_Ultra",
+			"ultER": 110,
 			"ultId": 110703,
 			"ultPromo": {
 				"2": 652500,
@@ -1675,7 +1817,8 @@
 			"talentTag": "單體攻擊",
 			"talentDesc": "克拉拉在史瓦羅的保護下，受到敵方目標攻擊的傷害降低<unbreak>#3[i]%</unbreak>。攻擊克拉拉的敵方目標會被史瓦羅標上【反擊標記】，並遭到史瓦羅的<u>反擊</u>，對其造成等同於克拉拉<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 			"talentSimpleDesc": "自身<color=#f29e38ff>受到敵方目標攻擊的傷害降低</color>。發動攻擊的敵方目標會被標上【反擊標記】，並<color=#f29e38ff>遭到史瓦羅的<u>反擊</u></color>，受到物理屬性傷害。",
-			"talentIcon": "SkillIcon_1107_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1107/SkillIcon_1107_Passive.png",
+			"talentShortIcon": "SkillIcon_1107_Passive",
 			"talentId": 110704,
 			"talentPromo": {
 				"2": 652500,
@@ -1691,7 +1834,8 @@
 			"techName": "勝利的小小代價",
 			"techDesc": "立即攻擊敵人，進入戰鬥後克拉拉受到敵方攻擊的機率提高，持續<unbreak>#1[i]</unbreak>回合。",
 			"techSimpleDesc": "攻擊敵人，進入戰鬥後受到敵人攻擊的機率提高。",
-			"techIcon": "SkillIcon_1107_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1107/SkillIcon_1107_Maze.png",
+			"techShortIcon": "SkillIcon_1107_Maze",
 			"techId": 110707
 		},
 		"avatarType": "Warrior",
@@ -1702,17 +1846,19 @@
 			"112012": 15,
 			"112013": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110111": 6,
+			"110112": 16,
+			"110113": 38,
+			"110502": 3,
+			"112011": 8,
+			"112012": 10,
+			"112013": 30
+		},
 		"exp": 5797920,
-		"id": "1107",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1107"
 	},
 	"1108": {
 		"name": "桑博",
@@ -1722,10 +1868,11 @@
 			"maxDEF": 397,
 			"SPD": 102,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1108",
+		"icon": "SpriteOutput/AvatarRoundIcon/1108.png",
+		"shortIcon": "1108",
 		"rarity": "VeryRare",
 		"element": "Wind",
 		"skills": {
@@ -1733,7 +1880,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於桑博<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量風屬性傷害。",
-			"basicIcon": "SkillIcon_1108_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1108/SkillIcon_1108_Normal.png",
+			"basicShortIcon": "SkillIcon_1108_Normal",
 			"basicId": 110801,
 			"basicPromo": {
 				"2": 192000,
@@ -1748,7 +1896,8 @@
 			"skillTag": "彈射",
 			"skillDesc": "對指定敵方單體造成等同於桑博<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的風屬性傷害，並額外造成<unbreak>#1[i]</unbreak>次傷害，每次傷害對敵方隨機單體造成等同於桑博<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的風屬性傷害。",
 			"skillSimpleDesc": "對敵方單體造成少量風屬性傷害，共彈射5次。",
-			"skillIcon": "SkillIcon_1108_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1108/SkillIcon_1108_BP.png",
+			"skillShortIcon": "SkillIcon_1108_BP",
 			"skillId": 110802,
 			"skillPromo": {
 				"2": 522000,
@@ -1764,8 +1913,10 @@
 			"ultName": "驚喜禮盒",
 			"ultTag": "妨害",
 			"ultDesc": "對敵方全體造成等同於桑博<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害，同時有<unbreak>#4[i]%</unbreak>的<u>基礎機率</u>使被攻擊的敵方目標受到的持續傷害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持續<unbreak>#3[i]</unbreak>回合。",
-			"ultSimpleDesc": "對敵方全體造成風屬性傷害，高機率使其受到的持續傷害提高。",
-			"ultIcon": "SkillIcon_1108_Ultra",
+			"ultSimpleDesc": "對敵方全體造成風屬性傷害，有高機率使其<color=#f29e38ff>受到的持續傷害提高</color>。",
+			"ultIcon": "SpriteOutput/SkillIcons/1108/SkillIcon_1108_Ultra.png",
+			"ultShortIcon": "SkillIcon_1108_Ultra",
+			"ultER": 120,
 			"ultId": 110803,
 			"ultPromo": {
 				"2": 522000,
@@ -1781,8 +1932,9 @@
 			"talentName": "撕風的匕首",
 			"talentTag": "強化",
 			"talentDesc": "桑博命中敵方目標後有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使目標陷入風化狀態，持續<unbreak>#3[i]</unbreak>回合。\\n風化狀態下，敵方目標每回合開始時受到等同於桑博<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的風屬性持續傷害。風化狀態最多疊加<unbreak>#4[i]</unbreak>層。",
-			"talentSimpleDesc": "自身命中敵方目標後有機率使目標陷入風化狀態。",
-			"talentIcon": "SkillIcon_1108_Passive",
+			"talentSimpleDesc": "自身命中敵方目標後有機率使目標<color=#f29e38ff>陷入風化狀態</color>。",
+			"talentIcon": "SpriteOutput/SkillIcons/1108/SkillIcon_1108_Passive.png",
+			"talentShortIcon": "SkillIcon_1108_Passive",
 			"talentId": 110804,
 			"talentPromo": {
 				"2": 522000,
@@ -1799,7 +1951,8 @@
 			"techTag": "妨害",
 			"techDesc": "使用秘技後使一定區域內的敵人陷入<unbreak>#1[i]</unbreak>秒的目盲狀態，目盲狀態下的敵人無法發現我方目標。\\n若主動攻擊陷入目盲狀態的敵人，則進入戰鬥時有<unbreak>#2[i]%</unbreak><u>固定機率</u>使敵方每個單體目標行動延後<unbreak>#3[i]%</unbreak>。",
 			"techSimpleDesc": "使一定區域內敵人陷入目盲狀態。攻擊陷入目盲狀態敵人，進入戰鬥後有高機率使敵方每個單體目標<u>行動延後</u>。",
-			"techIcon": "SkillIcon_1108_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1108/SkillIcon_1108_Maze.png",
+			"techShortIcon": "SkillIcon_1108_Maze",
 			"techId": 110807
 		},
 		"avatarType": "Warlock",
@@ -1810,17 +1963,19 @@
 			"112012": 13,
 			"112013": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110151": 4,
+			"110152": 12,
+			"110153": 28,
+			"110502": 3,
+			"112011": 6,
+			"112012": 7,
+			"112013": 22
+		},
 		"exp": 5797920,
-		"id": "1108",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1108"
 	},
 	"1109": {
 		"name": "虎克",
@@ -1830,10 +1985,11 @@
 			"maxDEF": 353,
 			"SPD": 94,
 			"TNT": 125,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1109",
+		"icon": "SpriteOutput/AvatarRoundIcon/1109.png",
+		"shortIcon": "1109",
 		"rarity": "VeryRare",
 		"element": "Fire",
 		"skills": {
@@ -1841,7 +1997,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量火屬性傷害。",
-			"basicIcon": "SkillIcon_1109_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_Normal.png",
+			"basicShortIcon": "SkillIcon_1109_Normal",
 			"basicId": 110901,
 			"basicPromo": {
 				"2": 192000,
@@ -1856,7 +2013,8 @@
 			"skillTag": "單體攻擊",
 			"skillDesc": "對指定敵方單體造成等同於虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害，同時有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>使其陷入灼燒狀態，持續<unbreak>#3[i]</unbreak>回合。\\n灼燒狀態下，敵方目標每回合開始時受到等同於虎克<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻擊力的火屬性持續傷害。",
 			"skillSimpleDesc": "對敵方單體造成火屬性傷害，高機率對目標施加灼燒狀態。",
-			"skillIcon": "SkillIcon_1109_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_BP.png",
+			"skillShortIcon": "SkillIcon_1109_BP",
 			"skillId": 110902,
 			"skillPromo": {
 				"2": 522000,
@@ -1873,7 +2031,9 @@
 			"ultTag": "單體攻擊",
 			"ultDesc": "對指定敵方單體造成等同於虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。\\n施放終結技後，下一次施放的戰技得到強化，強化後的戰技能夠同時對指定敵方單體及其相鄰目標造成傷害。",
 			"ultSimpleDesc": "對敵方單體造成大量火屬性傷害，並<color=#f29e38ff>強化自身下一次的戰技</color>。",
-			"ultIcon": "SkillIcon_1109_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_Ultra.png",
+			"ultShortIcon": "SkillIcon_1109_Ultra",
+			"ultER": 120,
 			"ultId": 110903,
 			"ultPromo": {
 				"2": 522000,
@@ -1890,7 +2050,8 @@
 			"talentTag": "強化",
 			"talentDesc": "攻擊處於灼燒狀態的敵方目標時，追加1次等同於虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性<u>附加傷害</u>，並額外恢復<unbreak>#2[i]</unbreak>點能量。",
 			"talentSimpleDesc": "攻擊處於灼燒狀態的敵方目標時，<color=#f29e38ff>造成少量火屬性<u>附加傷害</u></color>並額外恢復能量。",
-			"talentIcon": "SkillIcon_1109_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_Passive.png",
+			"talentShortIcon": "SkillIcon_1109_Passive",
 			"talentId": 110904,
 			"talentPromo": {
 				"2": 522000,
@@ -1906,7 +2067,8 @@
 			"techName": "唉！瞧這一團糟",
 			"techDesc": "立即攻擊敵人，進入戰鬥後對敵方隨機單體造成等同於虎克<unbreak>#4[i]%</unbreak>攻擊力的火屬性傷害，同時有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>使敵方每個單體目標陷入灼燒狀態，持續<unbreak>#3[i]</unbreak>回合。\\n灼燒狀態下，敵方目標每回合開始時受到等同於虎克<unbreak>#2[i]%</unbreak>攻擊力的火屬性持續傷害。",
 			"techSimpleDesc": "攻擊敵人，進入戰鬥後對敵方隨機單體造成火屬性傷害，並有高機率使敵方每個單體陷入灼燒狀態。",
-			"techIcon": "SkillIcon_1109_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_Maze.png",
+			"techShortIcon": "SkillIcon_1109_Maze",
 			"techId": 110907
 		},
 		"avatarType": "Warrior",
@@ -1917,17 +2079,19 @@
 			"112012": 13,
 			"112013": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110111": 4,
+			"110112": 12,
+			"110113": 28,
+			"110502": 3,
+			"112011": 6,
+			"112012": 7,
+			"112013": 22
+		},
 		"exp": 5797920,
-		"id": "1109",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1109"
 	},
 	"1110": {
 		"name": "玲可",
@@ -1937,10 +2101,11 @@
 			"maxDEF": 551,
 			"SPD": 100,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1110",
+		"icon": "SpriteOutput/AvatarRoundIcon/1110.png",
+		"shortIcon": "1110",
 		"rarity": "VeryRare",
 		"element": "Quantum",
 		"skills": {
@@ -1948,7 +2113,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於自身<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的量子屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量量子屬性傷害。",
-			"basicIcon": "SkillIcon_1110_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Normal.png",
+			"basicShortIcon": "SkillIcon_1110_Normal",
 			"basicId": 111001,
 			"basicPromo": {
 				"2": 192000,
@@ -1963,7 +2129,8 @@
 			"skillTag": "回復",
 			"skillDesc": "為指定我方單體附加【求生反應】，提高等同於玲可<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命上限，若該目標為「毀滅」或「存護」命途，則被敵方攻擊的機率大幅提高，【求生反應】持續<unbreak>#3[i]</unbreak>回合。\\n使該目標回復等同於玲可<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值。",
 			"skillSimpleDesc": "使我方單體獲得【求生反應】，使其<color=#f29e38ff>生命上限提高</color>，同時為其回復生命值。",
-			"skillIcon": "SkillIcon_1110_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_BP.png",
+			"skillShortIcon": "SkillIcon_1110_BP",
 			"skillId": 111002,
 			"skillPromo": {
 				"2": 522000,
@@ -1980,7 +2147,9 @@
 			"ultTag": "回復",
 			"ultDesc": "解除我方全體的<unbreak>#1[i]</unbreak>個<u>負面效果</u>，並立即為我方全體回復等同於玲可<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>的生命值。",
 			"ultSimpleDesc": "解除<color=#f29e38ff>我方全體1個<u>負面效果</u></color>，並為我方全體回復生命值。",
-			"ultIcon": "SkillIcon_1110_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Ultra.png",
+			"ultShortIcon": "SkillIcon_1110_Ultra",
+			"ultER": 100,
 			"ultId": 111003,
 			"ultPromo": {
 				"2": 522000,
@@ -1997,7 +2166,8 @@
 			"talentTag": "回復",
 			"talentDesc": "施放戰技或終結技時，使我方目標獲得<unbreak>#1[i]</unbreak>回合的持續治療效果，目標每回合開始時回復等同於玲可<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>的生命值。若該目標持有【求生反應】，則持續治療效果額外回復等同於玲可<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值。",
 			"talentSimpleDesc": "施放戰技或終結技時，使我方目標獲得<color=#f29e38ff>持續回復生命值</color>效果，若目標持有【求生反應】則持續回復生命值效果額外提高。",
-			"talentIcon": "SkillIcon_1110_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Passive.png",
+			"talentShortIcon": "SkillIcon_1110_Passive",
 			"talentId": 111004,
 			"talentPromo": {
 				"2": 522000,
@@ -2014,7 +2184,8 @@
 			"techTag": "回復",
 			"techDesc": "使用秘技後，下一次戰鬥開始時為我方全體附加玲可天賦的持續治療效果，持續<unbreak>#1[i]</unbreak>回合。",
 			"techSimpleDesc": "使用秘技，下一次戰鬥開始時為我方全體附上持續治療效果。",
-			"techIcon": "SkillIcon_1110_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Maze.png",
+			"techShortIcon": "SkillIcon_1110_Maze",
 			"techId": 111007
 		},
 		"avatarType": "Priest",
@@ -2025,17 +2196,19 @@
 			"111002": 13,
 			"111003": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110171": 4,
+			"110172": 12,
+			"110173": 28,
+			"110503": 3,
+			"111001": 6,
+			"111002": 7,
+			"111003": 22
+		},
 		"exp": 5797920,
-		"id": "1110",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1110"
 	},
 	"1111": {
 		"name": "盧卡",
@@ -2045,10 +2218,11 @@
 			"maxDEF": 485,
 			"SPD": 103,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1111",
+		"icon": "SpriteOutput/AvatarRoundIcon/1111.png",
+		"shortIcon": "1111",
 		"rarity": "VeryRare",
 		"element": "Physical",
 		"skills": {
@@ -2056,7 +2230,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於盧卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量物理屬性傷害。",
-			"basicIcon": "SkillIcon_1111_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Normal.png",
+			"basicShortIcon": "SkillIcon_1111_Normal",
 			"basicId": 111101,
 			"basicPromo": {
 				"2": 192000,
@@ -2070,8 +2245,9 @@
 			"skillName": "裂傷拳",
 			"skillTag": "單體攻擊",
 			"skillDesc": "對指定敵方單體造成等同於盧卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害，隨後有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>使目標陷入裂傷狀態，持續<unbreak>#5[i]</unbreak>回合。\\n裂傷狀態下，敵方目標每回合開始時受到等同於自身<unbreak>#3[f1]%</unbreak>生命上限的物理屬性持續傷害，最多不超過盧卡攻擊力的<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>。",
-			"skillSimpleDesc": "對敵方單體造成物理屬性傷害，有高機率對目標施加裂傷狀態。",
-			"skillIcon": "SkillIcon_1111_BP",
+			"skillSimpleDesc": "對敵方單體造成物理屬性傷害，有高機率對目標<color=#f29e38ff>施加裂傷狀態</color>。",
+			"skillIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_BP.png",
+			"skillShortIcon": "SkillIcon_1111_BP",
 			"skillId": 111102,
 			"skillPromo": {
 				"2": 522000,
@@ -2088,7 +2264,9 @@
 			"ultTag": "單體攻擊",
 			"ultDesc": "獲得<unbreak>#5[i]</unbreak>層【鬥志】，並有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>使指定敵方單體受到的傷害提高<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>，持續<unbreak>#4[i]</unbreak>回合，隨後對該目標造成等同於盧卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 			"ultSimpleDesc": "獲得<color=#f29e38ff><unbreak>#5[i]</unbreak></color>層【鬥志】，有高機率使敵方單體受到的傷害提高，並對其造成大量物理屬性傷害。",
-			"ultIcon": "SkillIcon_1111_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Ultra.png",
+			"ultShortIcon": "SkillIcon_1111_Ultra",
+			"ultER": 130,
 			"ultId": 111103,
 			"ultPromo": {
 				"2": 522000,
@@ -2104,8 +2282,9 @@
 			"talentName": "火花四濺",
 			"talentTag": "強化",
 			"talentDesc": "盧卡在發動普通攻擊【直衝拳】和施放戰技【裂傷拳】後，獲得<unbreak>#1[i]</unbreak>層【鬥志】，最多可持有4層【鬥志】。當持有的【鬥志】大於等於2層時，普通攻擊【直衝拳】強化為【直衝碎天拳】。當強化普通攻擊的【碎天拳】命中處於裂傷狀態下的敵方目標後，則使其當下承受的裂傷狀態立即造成1次相當於原傷害<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的傷害。戰鬥開始時，盧卡持有1層【鬥志】。",
-			"talentSimpleDesc": "發動普通攻擊【直衝拳】和施放戰技【裂傷拳】後，獲得1層【鬥志】。當持有的【鬥志】大於等於2層時，獲得強化普通攻擊。\\n若敵方目標處於裂傷狀態，則強化普通攻擊使裂傷狀態額外產生1次傷害。",
-			"talentIcon": "SkillIcon_1111_Passive",
+			"talentSimpleDesc": "發動普通攻擊【直衝拳】和戰技【裂傷拳】後，獲得1層【鬥志】。當持有的【鬥志】大於等於2層時，<color=#f29e38ff>獲得強化普通攻擊</color>。\\n若敵方目標處於裂傷狀態，則強化普通攻擊<color=#f29e38ff>使裂傷狀態額外產生1次傷害</color>。",
+			"talentIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Passive.png",
+			"talentShortIcon": "SkillIcon_1111_Passive",
 			"talentId": 111104,
 			"talentPromo": {
 				"2": 522000,
@@ -2120,8 +2299,9 @@
 			},
 			"techName": "搶先者",
 			"techDesc": "立即攻擊敵人，進入戰鬥後對敵方隨機單體造成等同於盧卡<unbreak>#1[i]%</unbreak>攻擊力的物理屬性傷害，並有<unbreak>#2[i]%</unbreak>的<u>基礎機率</u>使目標陷入與戰技相同的裂傷狀態。隨後盧卡額外獲得1層【鬥志】。",
-			"techSimpleDesc": "攻擊敵人，進入戰鬥後對敵方隨機單體造成少量物理屬性傷害，並有高機率使目標陷入裂傷狀態，隨後額外獲得1層【鬥志】。",
-			"techIcon": "SkillIcon_1111_Maze",
+			"techSimpleDesc": "攻擊敵人，進入戰鬥後對敵方隨機單體造成少量物理屬性傷害，並有高機率使目標<color=#f29e38ff>陷入裂傷狀態</color>，隨後額外獲得1層【鬥志】。",
+			"techIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Maze.png",
+			"techShortIcon": "SkillIcon_1111_Maze",
 			"techId": 111107
 		},
 		"avatarType": "Warlock",
@@ -2132,17 +2312,136 @@
 			"112012": 13,
 			"112013": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110151": 4,
+			"110152": 12,
+			"110153": 28,
+			"110503": 3,
+			"112011": 6,
+			"112012": 7,
+			"112013": 22
+		},
 		"exp": 5797920,
-		"id": "1111",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1111"
+	},
+	"1112": {
+		"name": "托帕&帳帳",
+		"stats": {
+			"maxHP": 931,
+			"maxATK": 621,
+			"maxDEF": 412,
+			"SPD": 110,
+			"TNT": 75,
+			"CR": 0.05,
+			"CDMG": 0.5
+		},
+		"icon": "SpriteOutput/AvatarRoundIcon/1112.png",
+		"shortIcon": "1112",
+		"rarity": "SuperRare",
+		"element": "Fire",
+		"skills": {
+			"basicName": "赤字……",
+			"basicTag": "單體攻擊",
+			"basicDesc": "對指定敵方單體造成等同於托帕<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。",
+			"basicSimpleDesc": "對敵方單體造成少量火屬性傷害。",
+			"basicIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Normal.png",
+			"basicShortIcon": "SkillIcon_1112_Normal",
+			"basicId": 111201,
+			"basicPromo": {
+				"2": 240000,
+				"110121": 3,
+				"110122": 8,
+				"110123": 11,
+				"112001": 6,
+				"112002": 7,
+				"112003": 7
+			},
+			"skillName": "支付困難？",
+			"skillTag": "單體攻擊",
+			"skillDesc": "使指定敵方單體陷入【負債證明】狀態，使其受到的<u>追加攻擊</u>傷害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。【負債證明】僅對最新被施加的目標生效，我方目標回合開始或行動時，若場上沒有陷入【負債證明】狀態的敵方目標，則托帕使隨機敵方目標陷入【負債證明】狀態。\\n使帳帳對該目標造成等同於托帕<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。施放此戰技造成傷害時，視為發動了<u>追加攻擊</u>。",
+			"skillSimpleDesc": "使敵方單體陷入【負債證明】狀態，<color=#f29e38ff>受到的追加攻擊傷害提高</color>。帳帳對目標造成火屬性傷害。",
+			"skillIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_BP.png",
+			"skillShortIcon": "SkillIcon_1112_BP",
+			"skillId": 111202,
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"110121": 3,
+				"110122": 15,
+				"110123": 30,
+				"110503": 3,
+				"112001": 9,
+				"112002": 13,
+				"112003": 7
+			},
+			"ultName": "轉虧為盈！",
+			"ultTag": "強化",
+			"ultDesc": "使帳帳進入【漲幅驚人！】狀態，傷害倍率提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，暴擊傷害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，且當陷入【負債證明】狀態下的敵方目標受到我方的普通攻擊、戰技或終結技的攻擊時，帳帳行動提前<unbreak>#3[i]%</unbreak>。帳帳發動<unbreak>#4[i]</unbreak>次攻擊後退出【漲幅驚人！】狀態。",
+			"ultSimpleDesc": "使帳帳進入【漲幅驚人！】狀態，<color=#f29e38ff>傷害倍率與暴擊傷害提高</color>。",
+			"ultIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Ultra.png",
+			"ultShortIcon": "SkillIcon_1112_Ultra",
+			"ultER": 130,
+			"ultId": 111203,
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"110121": 3,
+				"110122": 15,
+				"110123": 30,
+				"110503": 3,
+				"112001": 9,
+				"112002": 13,
+				"112003": 7
+			},
+			"talentName": "豬市？！",
+			"talentTag": "單體攻擊",
+			"talentDesc": "戰鬥開始時召喚帳帳。帳帳初始擁有<unbreak>#1[i]</unbreak>點速度，行動時發動<u>追加攻擊</u>，對陷入【負債證明】狀態下的敵方單體造成等同於托帕<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的火屬性傷害。\\n陷入【負債證明】狀態下的敵方目標受到我方的追加攻擊時，帳帳行動提前<unbreak>#3[i]%</unbreak>。在帳帳自身回合內，無法觸發行動提前效果。\\n托帕陷入<u>無法戰鬥狀態</u>時，帳帳便會消失。",
+			"talentSimpleDesc": "戰鬥開始時<color=#f29e38ff>召喚帳帳</color>，帳帳行動時<color=#f29e38ff>對陷入【負債證明】的敵方單體發動追加攻擊</color>。陷入【負債證明】的敵人受到追加攻擊時帳帳<color=#f29e38ff>行動提前</color>。",
+			"talentIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Passive.png",
+			"talentShortIcon": "SkillIcon_1112_Passive",
+			"talentId": 111204,
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"110121": 3,
+				"110122": 15,
+				"110123": 30,
+				"110503": 3,
+				"112001": 9,
+				"112002": 13,
+				"112003": 7
+			},
+			"techName": "明補",
+			"techTag": "強化",
+			"techDesc": "托帕入場時召喚帳帳，帳帳會自動搜尋一定範圍內的普通戰利品與撲滿。\\n主動施放秘技的下一場戰鬥中，帳帳發動首次攻擊後，托帕恢復<unbreak>#1[i]</unbreak>點能量。\\n主動施放秘技與大地圖內的敵人戰鬥勝利後，若托帕仍在隊伍中，則在獲得信用點時額外獲得少量信用點，每個地球日內最多額外獲得<unbreak>#2[i]</unbreak>點。\\n主動施放秘技與模擬宇宙內的敵人戰鬥勝利後，額外獲得少量宇宙碎片，並有低機率獲得1個隨機奇物。",
+			"techSimpleDesc": "迷宮內<color=#f29e38ff>召喚帳帳跟隨移動</color>，帳帳會自動<color=#f29e38ff>搜尋附近的普通戰利品和撲滿</color>。施放秘技使下一場戰鬥中帳帳首次攻擊後，托帕恢復能量。",
+			"techIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Maze.png",
+			"techShortIcon": "SkillIcon_1112_Maze",
+			"techId": 111207
+		},
+		"avatarType": "Rogue",
+		"promotion": {
+			"2": 308000,
+			"110412": 65,
+			"112001": 15,
+			"112002": 15,
+			"112003": 15
+		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110121": 6,
+			"110122": 16,
+			"110123": 38,
+			"110503": 3,
+			"112001": 8,
+			"112002": 10,
+			"112003": 30
+		},
+		"exp": 5797920,
+		"id": "1112"
 	},
 	"1201": {
 		"name": "青雀",
@@ -2152,10 +2451,11 @@
 			"maxDEF": 441,
 			"SPD": 98,
 			"TNT": 75,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1201",
+		"icon": "SpriteOutput/AvatarRoundIcon/1201.png",
+		"shortIcon": "1201",
 		"rarity": "VeryRare",
 		"element": "Quantum",
 		"skills": {
@@ -2163,7 +2463,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "使用1張目前花色最少的瓊玉牌，對指定敵方單體造成等同於青雀<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害。",
 			"basicSimpleDesc": "使用1張牌，對敵方單體造成少量量子屬性傷害。",
-			"basicIcon": "SkillIcon_1201_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1201/SkillIcon_1201_Normal.png",
+			"basicShortIcon": "SkillIcon_1201_Normal",
 			"basicId": 120101,
 			"basicPromo": {
 				"2": 192000,
@@ -2177,8 +2478,9 @@
 			"skillName": "海底撈月",
 			"skillTag": "強化",
 			"skillDesc": "立即抽取<unbreak>#1[i]</unbreak>張瓊玉牌，使自身造成的傷害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持續至本回合結束。該效果可以疊加<unbreak>#3[i]</unbreak>層。施放該戰技後，本回合不會結束。",
-			"skillSimpleDesc": "抽牌，使自身造成的傷害提高，且本回合不會結束。",
-			"skillIcon": "SkillIcon_1201_BP",
+			"skillSimpleDesc": "<color=#f29e38ff>抽牌</color>，使自身造成的傷害提高，且<color=#f29e38ff>本回合不會結束</color>。",
+			"skillIcon": "SpriteOutput/SkillIcons/1201/SkillIcon_1201_BP.png",
+			"skillShortIcon": "SkillIcon_1201_BP",
 			"skillId": 120102,
 			"skillPromo": {
 				"2": 522000,
@@ -2195,7 +2497,9 @@
 			"ultTag": "群體攻擊",
 			"ultDesc": "對敵方全體造成等同於青雀<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的量子屬性傷害，並獲得4張相同花色的瓊玉牌。",
 			"ultSimpleDesc": "對敵方全體造成量子屬性傷害，獲得4張相同花色的牌。",
-			"ultIcon": "SkillIcon_1201_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1201/SkillIcon_1201_Ultra.png",
+			"ultShortIcon": "SkillIcon_1201_Ultra",
+			"ultER": 140,
 			"ultId": 120103,
 			"ultPromo": {
 				"2": 522000,
@@ -2211,8 +2515,9 @@
 			"talentName": "帝垣瓊玉",
 			"talentTag": "強化",
 			"talentDesc": "我方目標回合開始時，青雀會從3種不同花色的瓊玉牌中隨機抽取1張，最多持有4張瓊玉牌。\\n青雀回合開始時，若持有的瓊玉牌數為4且花色相同，青雀消耗所有瓊玉牌進入【暗槓】狀態。\\n處於【暗槓】狀態時無法再次施放戰技，同時使自身攻擊力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，普通攻擊【門前清】強化為【槓上開花！】，【暗槓】狀態會在施放【槓上開花！】後結束。",
-			"talentSimpleDesc": "我方目標回合開始時，抽牌。自身回合開始時，若持有4張同花色牌，則清空已有牌並強化本次普通攻擊，同時使自身攻擊力提高。",
-			"talentIcon": "SkillIcon_1201_Passive",
+			"talentSimpleDesc": "我方目標回合開始時，抽牌。自身回合開始時，若持有4張同花色牌，則清空已有牌並<color=#f29e38ff>強化當次普通攻擊</color>，同時使自身攻擊力提高。",
+			"talentIcon": "SpriteOutput/SkillIcons/1201/SkillIcon_1201_Passive.png",
+			"talentShortIcon": "SkillIcon_1201_Passive",
 			"talentId": 120104,
 			"talentPromo": {
 				"2": 522000,
@@ -2229,7 +2534,8 @@
 			"techTag": "強化",
 			"techDesc": "使用秘技後，進入戰鬥時青雀會抽取<unbreak>#1[i]</unbreak>張瓊玉牌。",
 			"techSimpleDesc": "使用秘技，下一次進入戰鬥時抽牌。",
-			"techIcon": "SkillIcon_1201_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1201/SkillIcon_1201_Maze.png",
+			"techShortIcon": "SkillIcon_1201_Maze",
 			"techId": 120107
 		},
 		"avatarType": "Mage",
@@ -2240,17 +2546,19 @@
 			"111012": 13,
 			"111013": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110131": 4,
+			"110132": 12,
+			"110133": 28,
+			"110502": 3,
+			"111011": 6,
+			"111012": 7,
+			"111013": 22
+		},
 		"exp": 5797920,
-		"id": "1201",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1201"
 	},
 	"1202": {
 		"name": "停雲",
@@ -2260,10 +2568,11 @@
 			"maxDEF": 397,
 			"SPD": 112,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1202",
+		"icon": "SpriteOutput/AvatarRoundIcon/1202.png",
+		"shortIcon": "1202",
 		"rarity": "VeryRare",
 		"element": "Thunder",
 		"skills": {
@@ -2271,7 +2580,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於停雲<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量雷屬性傷害。",
-			"basicIcon": "SkillIcon_1202_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1202/SkillIcon_1202_Normal.png",
+			"basicShortIcon": "SkillIcon_1202_Normal",
 			"basicId": 120201,
 			"basicPromo": {
 				"2": 192000,
@@ -2285,8 +2595,9 @@
 			"skillName": "祥音和韻",
 			"skillTag": "輔助",
 			"skillDesc": "為指定我方單體提供【賜福】，使其攻擊力提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，最高不超過停雲當下攻擊力的<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>。\\n獲得【賜福】的目標發動攻擊後，會額外造成1次等同於其自身<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性<u>附加傷害</u>。\\n【賜福】持續<unbreak>#3[i]</unbreak>回合且僅對停雲戰技最新的施放目標生效。",
-			"skillSimpleDesc": "使我方單體攻擊力提高，並獲得【賜福】。",
-			"skillIcon": "SkillIcon_1202_BP",
+			"skillSimpleDesc": "使我方單體<color=#f29e38ff>攻擊力提高</color>，並獲得【賜福】。【賜福】狀態下攻擊時額外造成少量<color=#f29e38ff>雷屬性<u>附加傷害</u></color>。",
+			"skillIcon": "SpriteOutput/SkillIcons/1202/SkillIcon_1202_BP.png",
+			"skillShortIcon": "SkillIcon_1202_BP",
 			"skillId": 120202,
 			"skillPromo": {
 				"2": 522000,
@@ -2302,8 +2613,10 @@
 			"ultName": "慶雲光覆儀禱",
 			"ultTag": "輔助",
 			"ultDesc": "為指定我方單體恢復<unbreak>#1[i]</unbreak>點能量，同時使目標造成的傷害提高<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>，持續<unbreak>#2[i]</unbreak>回合。",
-			"ultSimpleDesc": "為我方單體恢復能量，並使其造成的傷害提高。",
-			"ultIcon": "SkillIcon_1202_Ultra",
+			"ultSimpleDesc": "為我方單體<color=#f29e38ff>恢復能量</color>，並使其<color=#f29e38ff>造成的傷害提高</color>。",
+			"ultIcon": "SpriteOutput/SkillIcons/1202/SkillIcon_1202_Ultra.png",
+			"ultShortIcon": "SkillIcon_1202_Ultra",
+			"ultER": 130,
 			"ultId": 120203,
 			"ultPromo": {
 				"2": 522000,
@@ -2319,7 +2632,9 @@
 			"talentName": "紫電扶搖",
 			"talentTag": "強化",
 			"talentDesc": "敵方目標受到停雲攻擊後，獲得【賜福】的目標立即對其造成等同於自身<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性<u>附加傷害</u>。",
-			"talentIcon": "SkillIcon_1202_Passive",
+			"talentSimpleDesc": "敵人受到停雲攻擊後，獲得【賜福】的目標立即對其造成少量雷屬性<u>附加傷害</u>。",
+			"talentIcon": "SpriteOutput/SkillIcons/1202/SkillIcon_1202_Passive.png",
+			"talentShortIcon": "SkillIcon_1202_Passive",
 			"talentId": 120204,
 			"talentPromo": {
 				"2": 522000,
@@ -2335,7 +2650,9 @@
 			"techName": "惠風和暢",
 			"techTag": "輔助",
 			"techDesc": "使用秘技後立即為自身恢復<unbreak>#1[i]</unbreak>點能量。",
-			"techIcon": "SkillIcon_1202_Maze",
+			"techSimpleDesc": "使用秘技後立即為自身恢復能量。",
+			"techIcon": "SpriteOutput/SkillIcons/1202/SkillIcon_1202_Maze.png",
+			"techShortIcon": "SkillIcon_1202_Maze",
 			"techId": 120207
 		},
 		"avatarType": "Shaman",
@@ -2346,17 +2663,19 @@
 			"113002": 13,
 			"113003": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110161": 4,
+			"110162": 12,
+			"110163": 28,
+			"110501": 3,
+			"113001": 6,
+			"113002": 7,
+			"113003": 22
+		},
 		"exp": 5797920,
-		"id": "1202",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1202"
 	},
 	"1203": {
 		"name": "羅剎",
@@ -2366,10 +2685,11 @@
 			"maxDEF": 364,
 			"SPD": 101,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1203",
+		"icon": "SpriteOutput/AvatarRoundIcon/1203.png",
+		"shortIcon": "1203",
 		"rarity": "SuperRare",
 		"element": "Imaginary",
 		"skills": {
@@ -2377,7 +2697,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於羅剎<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量虛數屬性傷害。",
-			"basicIcon": "SkillIcon_1203_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_Normal.png",
+			"basicShortIcon": "SkillIcon_1203_Normal",
 			"basicId": 120301,
 			"basicPromo": {
 				"2": 240000,
@@ -2392,7 +2713,8 @@
 			"skillTag": "回復",
 			"skillDesc": "施放戰技後立即為指定我方單體回復等同於羅剎<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值，並使羅剎獲得1層【白花之刻】。\\n當我方任意單體現有生命值百分比小於等於<unbreak>#3[i]%</unbreak>時，羅剎會立即對其觸發1次等同於戰技的效果，此次觸發不消耗戰技點。該效果在<unbreak>#4[i]</unbreak>回合後可再次觸發。",
 			"skillSimpleDesc": "為我方單體回復生命值，獲得1層【白花之刻】。",
-			"skillIcon": "SkillIcon_1203_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_BP.png",
+			"skillShortIcon": "SkillIcon_1203_BP",
 			"skillId": 120302,
 			"skillPromo": {
 				"2": 652500,
@@ -2409,7 +2731,9 @@
 			"ultTag": "群體攻擊",
 			"ultDesc": "解除敵方全體<unbreak>#2[i]</unbreak>個<u>增益效果</u>，並對敵方全體造成等同於羅剎<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害，同時使羅剎獲得1層【白花之刻】。",
 			"ultSimpleDesc": "解除敵方全體1個<u>增益效果</u>，並對敵方全體造成虛數屬性傷害，獲得1層【白花之刻】。",
-			"ultIcon": "SkillIcon_1203_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_Ultra.png",
+			"ultShortIcon": "SkillIcon_1203_Ultra",
+			"ultER": 100,
 			"ultId": 120303,
 			"ultPromo": {
 				"2": 652500,
@@ -2426,7 +2750,8 @@
 			"talentTag": "回復",
 			"talentDesc": "當【白花之刻】達到<unbreak>#1[i]</unbreak>層時，羅剎會消耗全部【白花之刻】展開結界。\\n處於結界中的任意敵方目標受到攻擊後，發動攻擊的我方目標立即回復等同於羅剎<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值。\\n結界效果持續<unbreak>#3[i]</unbreak>回合。當羅剎陷入<u>無法戰鬥狀態</u>時，結界也會解除。",
 			"talentSimpleDesc": "當【白花之刻】2層時展開結界。結界存在時我方攻擊後回復生命值。",
-			"talentIcon": "SkillIcon_1203_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_Passive.png",
+			"talentShortIcon": "SkillIcon_1203_Passive",
 			"talentId": 120304,
 			"talentPromo": {
 				"2": 652500,
@@ -2443,7 +2768,8 @@
 			"techTag": "回復",
 			"techDesc": "使用秘技後，下一次戰鬥開始時立即觸發天賦。",
 			"techSimpleDesc": "使用秘技，下一次進入戰鬥後立即觸發天賦效果。",
-			"techIcon": "SkillIcon_1203_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_Maze.png",
+			"techShortIcon": "SkillIcon_1203_Maze",
 			"techId": 120307
 		},
 		"avatarType": "Priest",
@@ -2454,17 +2780,19 @@
 			"113012": 15,
 			"113013": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110171": 6,
+			"110172": 16,
+			"110173": 38,
+			"110502": 3,
+			"113011": 8,
+			"113012": 10,
+			"113013": 30
+		},
 		"exp": 5797920,
-		"id": "1203",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1203"
 	},
 	"1204": {
 		"name": "景元",
@@ -2474,10 +2802,11 @@
 			"maxDEF": 485,
 			"SPD": 99,
 			"TNT": 75,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1204",
+		"icon": "SpriteOutput/AvatarRoundIcon/1204.png",
+		"shortIcon": "1204",
 		"rarity": "SuperRare",
 		"element": "Thunder",
 		"skills": {
@@ -2485,7 +2814,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於景元<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量雷屬性傷害。",
-			"basicIcon": "SkillIcon_1204_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1204/SkillIcon_1204_Normal.png",
+			"basicShortIcon": "SkillIcon_1204_Normal",
 			"basicId": 120401,
 			"basicPromo": {
 				"2": 240000,
@@ -2500,7 +2830,8 @@
 			"skillTag": "群體攻擊",
 			"skillDesc": "對敵方全體造成等同於景元<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，同時使【神君】下回合的攻擊段數+<unbreak>#2[i]</unbreak>。",
 			"skillSimpleDesc": "對敵方全體造成少量雷屬性傷害，並增加【神君】的攻擊段數。",
-			"skillIcon": "SkillIcon_1204_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1204/SkillIcon_1204_BP.png",
+			"skillShortIcon": "SkillIcon_1204_BP",
 			"skillId": 120402,
 			"skillPromo": {
 				"2": 652500,
@@ -2517,7 +2848,9 @@
 			"ultTag": "群體攻擊",
 			"ultDesc": "對敵方全體造成等同於景元<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害，同時使【神君】下回合的攻擊段數+<unbreak>#2[i]</unbreak>。",
 			"ultSimpleDesc": "對敵方全體造成雷屬性傷害，並增加【神君】的攻擊段數。",
-			"ultIcon": "SkillIcon_1204_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1204/SkillIcon_1204_Ultra.png",
+			"ultShortIcon": "SkillIcon_1204_Ultra",
+			"ultER": 130,
 			"ultId": 120403,
 			"ultPromo": {
 				"2": 652500,
@@ -2533,7 +2866,8 @@
 			"talentName": "斬勘神形",
 			"talentTag": "彈射",
 			"talentDesc": "戰鬥開始時召喚【神君】。【神君】初始的速度為<unbreak>#1[i]</unbreak>、攻擊段數為<unbreak>#4[i]</unbreak>，將於行動時發動<u>追加攻擊</u>，每段攻擊對隨機敵方單體造成等同於景元攻擊力<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的雷屬性傷害，同時對其相鄰目標造成等同於主目標<unbreak>#5[i]%</unbreak>的雷屬性傷害。\\n【神君】的攻擊段數最多可累積<unbreak>#6[i]</unbreak>段，且每增加1段，速度便提高<unbreak>#3[i]</unbreak>點，行動結束後速度和攻擊段數恢復至初始狀態。\\n景元陷入<u>無法戰鬥狀態</u>時，【神君】便會消失。\\n景元受到<u>控制類負面狀態</u>影響時，【神君】也會無法行動。",
-			"talentIcon": "SkillIcon_1204_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1204/SkillIcon_1204_Passive.png",
+			"talentShortIcon": "SkillIcon_1204_Passive",
 			"talentId": 120404,
 			"talentPromo": {
 				"2": 652500,
@@ -2549,7 +2883,8 @@
 			"techName": "攝召威靈",
 			"techTag": "強化",
 			"techDesc": "使用秘技後，下一次戰鬥開始時【神君】第一回合的攻擊段數+<unbreak>#1[i]</unbreak>。",
-			"techIcon": "SkillIcon_1204_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1204/SkillIcon_1204_Maze.png",
+			"techShortIcon": "SkillIcon_1204_Maze",
 			"techId": 120407
 		},
 		"avatarType": "Mage",
@@ -2560,17 +2895,19 @@
 			"113002": 15,
 			"113003": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110131": 6,
+			"110132": 16,
+			"110133": 38,
+			"110501": 3,
+			"113001": 8,
+			"113002": 10,
+			"113003": 30
+		},
 		"exp": 5797920,
-		"id": "1204",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1204"
 	},
 	"1205": {
 		"name": "刃",
@@ -2580,10 +2917,11 @@
 			"maxDEF": 485,
 			"SPD": 97,
 			"TNT": 125,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1205",
+		"icon": "SpriteOutput/AvatarRoundIcon/1205.png",
+		"shortIcon": "1205",
 		"rarity": "SuperRare",
 		"element": "Wind",
 		"skills": {
@@ -2591,7 +2929,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於刃<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的風屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量風屬性傷害。",
-			"basicIcon": "SkillIcon_1205_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Normal.png",
+			"basicShortIcon": "SkillIcon_1205_Normal",
 			"basicId": 120501,
 			"basicPromo": {
 				"2": 240000,
@@ -2606,7 +2945,8 @@
 			"skillTag": "強化",
 			"skillDesc": "消耗等同於刃生命上限<unbreak>#1[i]%</unbreak>的生命值，進入【地獄變】狀態。\\n處於【地獄變】狀態時無法施放戰技，同時使自身造成的傷害提高<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，普通攻擊【支離劍】強化為【無間劍樹】，持續<unbreak>#2[i]</unbreak>回合。\\n若現有生命值不足，則施放戰技時刃的現有生命值降低至1點。\\n該戰技無法恢復能量。施放該戰技後，本回合不會結束。",
 			"skillSimpleDesc": "消耗自身生命值，獲得強化普通攻擊，且本回合不會結束。",
-			"skillIcon": "SkillIcon_1205_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_BP.png",
+			"skillShortIcon": "SkillIcon_1205_BP",
 			"skillId": 120502,
 			"skillPromo": {
 				"2": 652500,
@@ -2623,7 +2963,9 @@
 			"ultTag": "擴散",
 			"ultDesc": "將刃的現有生命值調整為生命上限的<unbreak>50%</unbreak>，並對敵方單體造成等同於刃<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>本場戰鬥累積已損失生命值的風屬性傷害，同時對其相鄰目標造成等同於刃<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#6[i]%</unbreak></color>本場戰鬥累積已損失生命值的風屬性傷害。\\n本場戰鬥累積已損失生命值最高不超過刃生命上限的<unbreak>#7[i]%</unbreak>，施放終結技後會歸零並重新開始累積。",
 			"ultSimpleDesc": "將現有生命值調整為生命上限的<unbreak>50%</unbreak>，並對敵方單體造成大量風屬性傷害、對相鄰目標造成風屬性傷害。",
-			"ultIcon": "SkillIcon_1205_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Ultra.png",
+			"ultShortIcon": "SkillIcon_1205_Ultra",
+			"ultER": 130,
 			"ultId": 120503,
 			"ultPromo": {
 				"2": 652500,
@@ -2640,7 +2982,8 @@
 			"talentTag": "群體攻擊",
 			"talentDesc": "刃受到傷害或消耗生命值時，獲得1層充能，最多疊加5層。該效果每次受到攻擊時最多疊加1層。\\n當充能疊加至上限時，立即對敵方全體發動1次<u>追加攻擊</u>，造成等同於刃<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>生命上限的風屬性傷害並回復等同於刃生命上限<unbreak>#3[i]%</unbreak>的生命值。發動追加攻擊後，消耗所有充能。",
 			"talentSimpleDesc": "刃的生命值降低時，獲得1層充能。當充能疊加至上限時，立即對敵方全體造成風屬性傷害並回復生命值，隨後消耗所有充能。",
-			"talentIcon": "SkillIcon_1205_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Passive.png",
+			"talentShortIcon": "SkillIcon_1205_Passive",
 			"talentId": 120504,
 			"talentPromo": {
 				"2": 652500,
@@ -2656,7 +2999,8 @@
 			"techName": "業途風",
 			"techDesc": "立即攻擊敵人，進入戰鬥後消耗等同於刃生命上限<unbreak>#2[i]%</unbreak>的生命值，同時對敵方全體造成等同於刃生命上限<unbreak>#1[i]%</unbreak>的風屬性傷害。\\n若現有生命值不足，則施放秘技時刃的現有生命值降低至1點。",
 			"techSimpleDesc": "攻擊敵人，進入戰鬥後消耗自身生命值，並對敵方全體造成風屬性傷害。",
-			"techIcon": "SkillIcon_1205_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Maze.png",
+			"techShortIcon": "SkillIcon_1205_Maze",
 			"techId": 120507
 		},
 		"avatarType": "Warrior",
@@ -2667,17 +3011,19 @@
 			"113002": 15,
 			"113003": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110111": 6,
+			"110112": 16,
+			"110113": 38,
+			"110503": 3,
+			"113001": 8,
+			"113002": 10,
+			"113003": 30
+		},
 		"exp": 5797920,
-		"id": "1205",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1205"
 	},
 	"1206": {
 		"name": "素裳",
@@ -2687,10 +3033,11 @@
 			"maxDEF": 419,
 			"SPD": 107,
 			"TNT": 75,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1206",
+		"icon": "SpriteOutput/AvatarRoundIcon/1206.png",
+		"shortIcon": "1206",
 		"rarity": "VeryRare",
 		"element": "Physical",
 		"skills": {
@@ -2698,7 +3045,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於素裳<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量物理屬性傷害。",
-			"basicIcon": "SkillIcon_1206_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1206/SkillIcon_1206_Normal.png",
+			"basicShortIcon": "SkillIcon_1206_Normal",
 			"basicId": 120601,
 			"basicPromo": {
 				"2": 192000,
@@ -2712,8 +3060,9 @@
 			"skillName": "雲騎劍經•山傾",
 			"skillTag": "單體攻擊",
 			"skillDesc": "對指定敵方單體造成等同於素裳<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害。同時最後一擊後有<unbreak>#3[i]%</unbreak>機率發動【劍勢】，對目標造成等同於素裳<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的物理屬性<u>附加傷害</u>。\\n若該目標處於<u>弱點擊破狀態</u>，則必定發動【劍勢】。",
-			"skillSimpleDesc": "對敵方單體造成物理屬性傷害，有低機率發動【劍勢】。若目標處於<u>弱點擊破狀態</u>則【劍勢】必定發動。",
-			"skillIcon": "SkillIcon_1206_BP",
+			"skillSimpleDesc": "對敵方單體造成物理屬性傷害，有<color=#f29e38ff>低機率發動【劍勢】</color>。若目標處於<u>弱點擊破狀態</u>則<color=#f29e38ff>【劍勢】必定發動</color>。",
+			"skillIcon": "SpriteOutput/SkillIcons/1206/SkillIcon_1206_BP.png",
+			"skillShortIcon": "SkillIcon_1206_BP",
 			"skillId": 120602,
 			"skillPromo": {
 				"2": 522000,
@@ -2729,8 +3078,10 @@
 			"ultName": "太虛形蘊•燭夜",
 			"ultTag": "單體攻擊",
 			"ultDesc": "對指定敵方單體造成等同於素裳<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害，並使素裳立即行動。同時使其攻擊力提高<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，且施放戰技時額外增加2次【劍勢】的發動判定，持續<unbreak>#2[i]</unbreak>回合。\\n通過額外判定發動的【劍勢】傷害為原傷害的<unbreak>#3[i]%</unbreak>。",
-			"ultSimpleDesc": "對敵方單體造成大量物理屬性傷害，強化【劍勢】效果並立即行動。",
-			"ultIcon": "SkillIcon_1206_Ultra",
+			"ultSimpleDesc": "對敵方單體造成大量物理屬性傷害，強化【劍勢】效果並<color=#f29e38ff>立即行動</color>。",
+			"ultIcon": "SpriteOutput/SkillIcons/1206/SkillIcon_1206_Ultra.png",
+			"ultShortIcon": "SkillIcon_1206_Ultra",
+			"ultER": 120,
 			"ultId": 120603,
 			"ultPromo": {
 				"2": 522000,
@@ -2747,7 +3098,8 @@
 			"talentTag": "強化",
 			"talentDesc": "當場上有敵方目標的弱點被擊破時，素裳的速度提高<color=#f29e38ff><unbreak>#1[f2]%</unbreak></color>，持續<unbreak>#2[i]</unbreak>回合。",
 			"talentSimpleDesc": "當場上有敵人的弱點被擊破時，自身速度提高。",
-			"talentIcon": "SkillIcon_1206_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1206/SkillIcon_1206_Passive.png",
+			"talentShortIcon": "SkillIcon_1206_Passive",
 			"talentId": 120604,
 			"talentPromo": {
 				"2": 522000,
@@ -2763,7 +3115,8 @@
 			"techName": "雲騎劍經•叩陣",
 			"techDesc": "立即攻擊敵人，進入戰鬥後對敵方全體造成等同於素裳<unbreak>#1[i]%</unbreak>攻擊力的物理屬性傷害。",
 			"techSimpleDesc": "攻擊敵人，進入戰鬥後對敵方全體造成少量物理屬性傷害。",
-			"techIcon": "SkillIcon_1206_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1206/SkillIcon_1206_Maze.png",
+			"techShortIcon": "SkillIcon_1206_Maze",
 			"techId": 120607
 		},
 		"avatarType": "Rogue",
@@ -2774,17 +3127,19 @@
 			"113012": 13,
 			"113013": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110121": 4,
+			"110122": 12,
+			"110123": 28,
+			"110502": 3,
+			"113011": 6,
+			"113012": 7,
+			"113013": 22
+		},
 		"exp": 5797920,
-		"id": "1206",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1206"
 	},
 	"1207": {
 		"name": "馭空",
@@ -2794,10 +3149,11 @@
 			"maxDEF": 375,
 			"SPD": 107,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1207",
+		"icon": "SpriteOutput/AvatarRoundIcon/1207.png",
+		"shortIcon": "1207",
 		"rarity": "VeryRare",
 		"element": "Imaginary",
 		"skills": {
@@ -2805,7 +3161,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於馭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量虛數屬性傷害。",
-			"basicIcon": "SkillIcon_1207_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_Normal.png",
+			"basicShortIcon": "SkillIcon_1207_Normal",
 			"basicId": 120701,
 			"basicPromo": {
 				"2": 192000,
@@ -2820,7 +3177,8 @@
 			"skillTag": "輔助",
 			"skillDesc": "獲得<unbreak>#1[i]</unbreak>層【鳴弦號令】，最多持有不超過2層。當馭空持有【鳴弦號令】時，我方全體攻擊力提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，且每次我方目標回合結束時，移除馭空1層【鳴弦號令】。\\n馭空施放戰技獲得【鳴弦號令】的回合，不會移除【鳴弦號令】。",
 			"skillSimpleDesc": "獲得2層【鳴弦號令】，自身持有【鳴弦號令】時我方全體<color=#f29e38ff>攻擊力提高</color>。",
-			"skillIcon": "SkillIcon_1207_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_BP.png",
+			"skillShortIcon": "SkillIcon_1207_BP",
 			"skillId": 120702,
 			"skillPromo": {
 				"2": 522000,
@@ -2835,9 +3193,11 @@
 			},
 			"ultName": "貫雲飲羽",
 			"ultTag": "單體攻擊",
-			"ultDesc": "施放終結技時，若馭空持有【鳴弦號令】，則額外使我方全體暴擊率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，暴擊傷害提高<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。同時對指定敵方單體造成等同於馭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。",
+			"ultDesc": "施放終結技時，若馭空持有【鳴弦號令】，則額外使我方全體暴擊率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、暴擊傷害提高<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>，同時對指定敵方單體造成等同於馭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。",
 			"ultSimpleDesc": "自身持有【鳴弦號令】時我方全體<color=#f29e38ff>暴擊率和暴擊傷害提高</color>，並對敵方單體造成大量虛數屬性傷害。",
-			"ultIcon": "SkillIcon_1207_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_Ultra.png",
+			"ultShortIcon": "SkillIcon_1207_Ultra",
+			"ultER": 130,
 			"ultId": 120703,
 			"ultPromo": {
 				"2": 522000,
@@ -2854,7 +3214,8 @@
 			"talentTag": "強化",
 			"talentDesc": "發動普通攻擊可額外造成等同於馭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害，並使本次攻擊的削韌傷害提高<unbreak>#2[i]%</unbreak>，該效果在<unbreak>#3[i]</unbreak>回合後可再次觸發。",
 			"talentSimpleDesc": "使普通攻擊額外造成少量傷害並提高本次普通攻擊削韌傷害。該效果1回合後可再次觸發。",
-			"talentIcon": "SkillIcon_1207_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_Passive.png",
+			"talentShortIcon": "SkillIcon_1207_Passive",
 			"talentId": 120704,
 			"talentPromo": {
 				"2": 522000,
@@ -2871,7 +3232,8 @@
 			"techTag": "強化",
 			"techDesc": "使用秘技後進入持續<unbreak>#1[i]</unbreak>秒的衝刺狀態。衝刺狀態下自身移動速度提高<unbreak>#2[i]%</unbreak>，且主動攻擊敵人進入戰鬥時，馭空獲得<unbreak>#3[i]</unbreak>層【鳴弦號令】。",
 			"techSimpleDesc": "使自身<color=#f29e38ff>移動速度提高</color>。攻擊敵人進入戰鬥後獲得2層【鳴弦號令】。",
-			"techIcon": "SkillIcon_1207_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_Maze.png",
+			"techShortIcon": "SkillIcon_1207_Maze",
 			"techId": 120707
 		},
 		"avatarType": "Shaman",
@@ -2882,17 +3244,19 @@
 			"113012": 13,
 			"113013": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110161": 4,
+			"110162": 12,
+			"110163": 28,
+			"110501": 3,
+			"113011": 6,
+			"113012": 7,
+			"113013": 22
+		},
 		"exp": 5797920,
-		"id": "1207",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1207"
 	},
 	"1208": {
 		"name": "符玄",
@@ -2902,10 +3266,11 @@
 			"maxDEF": 606,
 			"SPD": 100,
 			"TNT": 150,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1208",
+		"icon": "SpriteOutput/AvatarRoundIcon/1208.png",
+		"shortIcon": "1208",
 		"rarity": "SuperRare",
 		"element": "Quantum",
 		"skills": {
@@ -2913,7 +3278,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於符玄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的量子屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量量子屬性傷害。",
-			"basicIcon": "SkillIcon_1208_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Normal.png",
+			"basicShortIcon": "SkillIcon_1208_Normal",
 			"basicId": 120801,
 			"basicPromo": {
 				"2": 240000,
@@ -2928,7 +3294,8 @@
 			"skillTag": "防禦",
 			"skillDesc": "開啟【窮觀陣】，使符玄隊友所承受的未受護盾抵擋之前的傷害的<unbreak>#1[i]%</unbreak><u>分攤</u>給符玄，持續<unbreak>#3[i]</unbreak>回合。\\n處於【窮觀陣】的我方全體獲得【鑑知】。【鑑知】狀態下的我方目標生命上限提高，提高數值等同於符玄生命上限的<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>，暴擊率提高<color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>。\\n當符玄陷入<u>無法戰鬥狀態</u>時，【窮觀陣】也會解除。",
 			"skillSimpleDesc": "開啟【窮觀陣】，隊友<color=#f29e38ff>所受傷害<u>分攤</u></color>給符玄。並使我方全體生命上限、<color=#f29e38ff>暴擊率提高</color>。",
-			"skillIcon": "SkillIcon_1208_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_BP.png",
+			"skillShortIcon": "SkillIcon_1208_BP",
 			"skillId": 120802,
 			"skillPromo": {
 				"2": 652500,
@@ -2945,7 +3312,9 @@
 			"ultTag": "群體攻擊",
 			"ultDesc": "對敵方全體造成等同於符玄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的量子屬性傷害，並獲得1次符玄天賦生命回復的觸發次數。",
 			"ultSimpleDesc": "對敵方全體造成量子屬性傷害，增加符玄天賦的觸發次數。",
-			"ultIcon": "SkillIcon_1208_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Ultra.png",
+			"ultShortIcon": "SkillIcon_1208_Ultra",
+			"ultER": 135,
 			"ultId": 120803,
 			"ultPromo": {
 				"2": 652500,
@@ -2962,7 +3331,8 @@
 			"talentTag": "回復",
 			"talentDesc": "當符玄處於可戰鬥狀態時，為我方全體附加【避厄】。【避厄】狀態下的我方目標受到的傷害降低<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>。\\n當符玄現有生命值百分比小於等於<unbreak>#2[i]%</unbreak>時觸發生命回復，使自身回復等同於已損失生命值<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>的生命值，受到致命攻擊時無法觸發該效果。該效果初始擁有1次觸發次數，最多可擁有2次觸發次數。",
 			"talentSimpleDesc": "當符玄處於可戰鬥狀態時，我方全體受到的傷害降低。\\n生命值較低時<color=#f29e38ff>自動</color>按已損失生命值百分比<color=#f29e38ff>回復自身生命</color>。該效果最多擁有2次觸發次數。",
-			"talentIcon": "SkillIcon_1208_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Passive.png",
+			"talentShortIcon": "SkillIcon_1208_Passive",
 			"talentId": 120804,
 			"talentPromo": {
 				"2": 652500,
@@ -2979,7 +3349,8 @@
 			"techTag": "防禦",
 			"techDesc": "使用秘技後，我方全體獲得持續<unbreak>#1[i]</unbreak>秒的屏障。該屏障可抵擋敵人的所有攻擊，不會進入戰鬥。屏障持續期間進入戰鬥時符玄會自動開啟【窮觀陣】，持續<unbreak>#2[i]</unbreak>回合。",
 			"techSimpleDesc": "開啟屏障，受到敵人攻擊時不會進入戰鬥。進入戰鬥後自動開啟【窮觀陣】。",
-			"techIcon": "SkillIcon_1208_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Maze.png",
+			"techShortIcon": "SkillIcon_1208_Maze",
 			"techId": 120807
 		},
 		"avatarType": "Knight",
@@ -2990,17 +3361,19 @@
 			"113012": 15,
 			"113013": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110141": 6,
+			"110142": 16,
+			"110143": 38,
+			"110503": 3,
+			"113011": 8,
+			"113012": 10,
+			"113013": 30
+		},
 		"exp": 5797920,
-		"id": "1208",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1208"
 	},
 	"1209": {
 		"name": "彥卿",
@@ -3010,10 +3383,11 @@
 			"maxDEF": 412,
 			"SPD": 109,
 			"TNT": 75,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1209",
+		"icon": "SpriteOutput/AvatarRoundIcon/1209.png",
+		"shortIcon": "1209",
 		"rarity": "SuperRare",
 		"element": "Ice",
 		"skills": {
@@ -3021,7 +3395,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於彥卿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量冰屬性傷害。",
-			"basicIcon": "SkillIcon_1209_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1209/SkillIcon_1209_Normal.png",
+			"basicShortIcon": "SkillIcon_1209_Normal",
 			"basicId": 120901,
 			"basicPromo": {
 				"2": 240000,
@@ -3036,7 +3411,8 @@
 			"skillTag": "單體攻擊",
 			"skillDesc": "對指定敵方單體造成等同於彥卿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害，並為彥卿附加【智劍連心】，持續1回合。",
 			"skillSimpleDesc": "對敵方單體造成冰屬性傷害，並為自身附加【智劍連心】。",
-			"skillIcon": "SkillIcon_1209_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1209/SkillIcon_1209_BP.png",
+			"skillShortIcon": "SkillIcon_1209_BP",
 			"skillId": 120902,
 			"skillPromo": {
 				"2": 652500,
@@ -3053,7 +3429,9 @@
 			"ultTag": "單體攻擊",
 			"ultDesc": "提高自身<unbreak>#1[i]%</unbreak>暴擊率，若彥卿擁有【智劍連心】效果，則使其暴擊傷害額外提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，<u>增益效果</u>持續1回合。隨後對指定敵方單體造成等同於彥卿<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻擊力的冰屬性傷害。",
 			"ultSimpleDesc": "提高自身暴擊率，並強化【智劍連心】，對敵方單體造成大量冰屬性傷害。",
-			"ultIcon": "SkillIcon_1209_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1209/SkillIcon_1209_Ultra.png",
+			"ultShortIcon": "SkillIcon_1209_Ultra",
+			"ultER": 140,
 			"ultId": 120903,
 			"ultPromo": {
 				"2": 652500,
@@ -3070,7 +3448,8 @@
 			"talentTag": "單體攻擊",
 			"talentDesc": "彥卿擁有【智劍連心】效果時，受到攻擊的機率降低，並為自身提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>暴擊率和<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>暴擊傷害。對敵方目標發動攻擊後，有<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>的<u>固定機率</u>發動<u>追加攻擊</u>，對目標造成等同於彥卿<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻擊力的冰屬性傷害，並有<unbreak>#6[i]%</unbreak>的<u>基礎機率</u>使其陷入凍結狀態，持續1回合。\\n凍結狀態下，敵方目標不能行動，且每回合開始時受到等同於彥卿<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>攻擊力的冰屬性<u>附加傷害</u>。\\n當彥卿受到傷害後，【智劍連心】將會消失。",
 			"talentSimpleDesc": "<color=#f29e38ff>處於【智劍連心】時</color>受到攻擊的機率降低，自身<color=#f29e38ff>暴擊率和暴擊傷害提高</color>。對敵方目標<color=#f29e38ff>發動攻擊後</color>，有機率發動<u>追加攻擊</u>對其造成冰屬性傷害，並有機率使其陷入凍結狀態。\\n自身受到傷害後，【智劍連心】消失。",
-			"talentIcon": "SkillIcon_1209_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1209/SkillIcon_1209_Passive.png",
+			"talentShortIcon": "SkillIcon_1209_Passive",
 			"talentId": 120904,
 			"talentPromo": {
 				"2": 652500,
@@ -3087,7 +3466,8 @@
 			"techTag": "強化",
 			"techDesc": "使用秘技後，下一次戰鬥開始時彥卿對目前生命值百分比大於等於<unbreak>#1[i]%</unbreak>的敵方目標造成的傷害提高<unbreak>#2[i]%</unbreak>，持續<unbreak>#3[i]</unbreak>回合。",
 			"techSimpleDesc": "使用秘技，下一次戰鬥開始時自身對生命值百分比大於等於<unbreak>50%</unbreak>的敵方目標造成的傷害提高。",
-			"techIcon": "SkillIcon_1209_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1209/SkillIcon_1209_Maze.png",
+			"techShortIcon": "SkillIcon_1209_Maze",
 			"techId": 120907
 		},
 		"avatarType": "Rogue",
@@ -3098,17 +3478,135 @@
 			"111012": 15,
 			"111013": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110121": 6,
+			"110122": 16,
+			"110123": 38,
+			"110502": 3,
+			"111011": 8,
+			"111012": 10,
+			"111013": 30
+		},
 		"exp": 5797920,
-		"id": "1209",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1209"
+	},
+	"1210": {
+		"name": "桂乃芬",
+		"stats": {
+			"maxHP": 882,
+			"maxATK": 582,
+			"maxDEF": 441,
+			"SPD": 106,
+			"TNT": 100,
+			"CR": 0.05,
+			"CDMG": 0.5
+		},
+		"icon": "SpriteOutput/AvatarRoundIcon/1210.png",
+		"shortIcon": "1210",
+		"rarity": "VeryRare",
+		"element": "Fire",
+		"skills": {
+			"basicName": "劈頭滿堂彩",
+			"basicTag": "單體攻擊",
+			"basicDesc": "對指定敵方單體造成等同於桂乃芬<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害。",
+			"basicSimpleDesc": "對敵方單體造成少量火屬性傷害。",
+			"basicIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Normal.png",
+			"basicShortIcon": "SkillIcon_1210_Normal",
+			"basicId": 121001,
+			"basicPromo": {
+				"2": 192000,
+				"110151": 2,
+				"110152": 6,
+				"110153": 8,
+				"113011": 4,
+				"113012": 5,
+				"113013": 5
+			},
+			"skillName": "迎面開門紅",
+			"skillTag": "擴散",
+			"skillDesc": "對指定敵方單體造成等同於桂乃芬<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害，並對相鄰目標造成等同於桂乃芬<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的火屬性傷害，有<unbreak>#3[i]%</unbreak>的<u>基礎機率</u>使目標與相鄰目標陷入灼燒狀態。灼燒狀態下，敵方目標每回合開始時受到等同於桂乃芬<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻擊力的火屬性持續傷害，持續<unbreak>#5[i]</unbreak>回合。",
+			"skillSimpleDesc": "對敵方單體造成火屬性傷害，對相鄰目標造成少量火屬性傷害，有高機率施加<color=#f29e38ff>灼燒狀態</color>。",
+			"skillIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_BP.png",
+			"skillShortIcon": "SkillIcon_1210_BP",
+			"skillId": 121002,
+			"skillPromo": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"113011": 6,
+				"113012": 10,
+				"113013": 5
+			},
+			"ultName": "給您來段看家戲",
+			"ultTag": "群體攻擊",
+			"ultDesc": "對敵方全體造成等同於桂乃芬<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>攻擊力的火屬性傷害，若目標處於灼燒狀態，使其當下承受的灼燒狀態立即產生相當於原傷害<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的傷害。",
+			"ultSimpleDesc": "對敵方全體造成火屬性傷害，若敵方目標處於灼燒狀態，則使灼燒狀態額外產生1次傷害。",
+			"ultIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Ultra.png",
+			"ultShortIcon": "SkillIcon_1210_Ultra",
+			"ultER": 120,
+			"ultId": 121003,
+			"ultPromo": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"113011": 6,
+				"113012": 10,
+				"113013": 5
+			},
+			"talentName": "古來君子養藝人",
+			"talentTag": "妨害",
+			"talentDesc": "桂乃芬在場時，敵方受到的灼燒狀態觸發傷害後，有<unbreak>#1[i]%</unbreak>的<u>基礎機率</u>陷入【吞火】狀態，【吞火】狀態下敵方目標受到的傷害提高<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>，持續<unbreak>#5[i]</unbreak>回合，最多疊加<unbreak>#6[i]</unbreak>層。",
+			"talentSimpleDesc": "敵方受到的<color=#f29e38ff>灼燒狀態觸發傷害後</color>，有高機率施加<color=#f29e38ff>【吞火】狀態</color>。",
+			"talentIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Passive.png",
+			"talentShortIcon": "SkillIcon_1210_Passive",
+			"talentId": 121004,
+			"talentPromo": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"113011": 6,
+				"113012": 10,
+				"113013": 5
+			},
+			"techName": "耍耍把式賣賣藝",
+			"techDesc": "立即攻擊敵人，進入戰鬥後造成<unbreak>#2[i]</unbreak>次傷害，每次傷害對敵方隨機單體造成等同於桂乃芬<unbreak>#1[i]%</unbreak>攻擊力的火屬性傷害並使目標陷入【吞火】狀態。",
+			"techSimpleDesc": "攻擊敵人，進入戰鬥後對敵方單體造成少量火屬性傷害並施加<color=#f29e38ff>【吞火】狀態</color>，共彈射4次。",
+			"techIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Maze.png",
+			"techShortIcon": "SkillIcon_1210_Maze",
+			"techId": 121007
+		},
+		"avatarType": "Warlock",
+		"promotion": {
+			"2": 246400,
+			"110412": 50,
+			"113011": 12,
+			"113012": 13,
+			"113013": 12
+		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110151": 4,
+			"110152": 12,
+			"110153": 28,
+			"110503": 3,
+			"113011": 6,
+			"113012": 7,
+			"113013": 22
+		},
+		"exp": 5797920,
+		"id": "1210"
 	},
 	"1211": {
 		"name": "白露",
@@ -3118,10 +3616,11 @@
 			"maxDEF": 485,
 			"SPD": 98,
 			"TNT": 100,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1211",
+		"icon": "SpriteOutput/AvatarRoundIcon/1211.png",
+		"shortIcon": "1211",
 		"rarity": "SuperRare",
 		"element": "Thunder",
 		"skills": {
@@ -3129,7 +3628,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於白露<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的雷屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量雷屬性傷害。",
-			"basicIcon": "SkillIcon_1211_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1211/SkillIcon_1211_Normal.png",
+			"basicShortIcon": "SkillIcon_1211_Normal",
 			"basicId": 121101,
 			"basicPromo": {
 				"2": 240000,
@@ -3144,7 +3644,8 @@
 			"skillTag": "回復",
 			"skillDesc": "立即為指定我方單體回復等同於白露<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值，然後白露隨機為我方單體進行<unbreak>#4[i]</unbreak>次治療，每提供1次治療，下一次的治療量便會降低<unbreak>#3[i]%</unbreak>。",
 			"skillSimpleDesc": "為我方單體回復生命值，然後隨機治療我方單體。",
-			"skillIcon": "SkillIcon_1211_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1211/SkillIcon_1211_BP.png",
+			"skillShortIcon": "SkillIcon_1211_BP",
 			"skillId": 121102,
 			"skillPromo": {
 				"2": 652500,
@@ -3161,7 +3662,9 @@
 			"ultTag": "回復",
 			"ultDesc": "立即為我方全體回復等同於白露<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值。\\n為沒有【生息】的我方目標附加【生息】，對於已擁有【生息】的我方目標，則使其既有的【生息】持續時間延長1回合。\\n【生息】可持續<unbreak>#3[i]</unbreak>回合，該效果不可疊加。",
 			"ultSimpleDesc": "為我方全體回復生命值，並附上【生息】，或延長【生息】持續時間。",
-			"ultIcon": "SkillIcon_1211_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1211/SkillIcon_1211_Ultra.png",
+			"ultShortIcon": "SkillIcon_1211_Ultra",
+			"ultER": 100,
 			"ultId": 121103,
 			"ultPromo": {
 				"2": 652500,
@@ -3178,7 +3681,8 @@
 			"talentTag": "回復",
 			"talentDesc": "擁有【生息】的我方目標，在受到攻擊後會回復等同於白露<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值，該效果可以觸發<unbreak>#5[i]</unbreak>次。\\n當白露的隊友受到致命攻擊時，不會陷入<u>無法戰鬥狀態</u>，而由白露立即為其提供治療，回復等同於白露<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值。該效果單場戰鬥中可以觸發1次。",
 			"talentSimpleDesc": "擁有<color=#f29e38ff>【生息】</color>的我方目標受到攻擊後會<color=#f29e38ff>回復生命值</color>。\\n當隊友<color=#f29e38ff>受到致命攻擊時</color>，白露<color=#f29e38ff>立即為其回復生命值</color>。該效果單場戰鬥中可以觸發1次。",
-			"talentIcon": "SkillIcon_1211_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1211/SkillIcon_1211_Passive.png",
+			"talentShortIcon": "SkillIcon_1211_Passive",
 			"talentId": 121104,
 			"talentPromo": {
 				"2": 652500,
@@ -3195,7 +3699,8 @@
 			"techTag": "回復",
 			"techDesc": "使用秘技後，下一次戰鬥開始時為我方全體附加【生息】，持續<unbreak>#1[i]</unbreak>回合。",
 			"techSimpleDesc": "使用秘技，下一次戰鬥開始時為我方全體附上【生息】。",
-			"techIcon": "SkillIcon_1211_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1211/SkillIcon_1211_Maze.png",
+			"techShortIcon": "SkillIcon_1211_Maze",
 			"techId": 121107
 		},
 		"avatarType": "Priest",
@@ -3206,17 +3711,131 @@
 			"111002": 15,
 			"111003": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110171": 6,
+			"110172": 16,
+			"110173": 38,
+			"110502": 3,
+			"111001": 8,
+			"111002": 10,
+			"111003": 30
+		},
 		"exp": 5797920,
-		"id": "1211",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1211"
+	},
+	"1212": {
+		"name": "鏡流",
+		"stats": {
+			"maxHP": 1436,
+			"maxATK": 679,
+			"maxDEF": 485,
+			"SPD": 96,
+			"TNT": 125,
+			"CR": 0.05,
+			"CDMG": 0.5
+		},
+		"icon": "SpriteOutput/AvatarRoundIcon/1212.png",
+		"shortIcon": "1212",
+		"rarity": "SuperRare",
+		"element": "Ice",
+		"skills": {
+			"basicName": "流影方暉",
+			"basicTag": "單體攻擊",
+			"basicDesc": "對指定敵方單體造成等同於鏡流<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害。",
+			"basicSimpleDesc": "對指定敵方單體造成少量冰屬性傷害。",
+			"basicIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Normal.png",
+			"basicShortIcon": "SkillIcon_1212_Normal",
+			"basicId": 121201,
+			"basicPromo": {
+				"2": 240000,
+				"110111": 3,
+				"110112": 8,
+				"110113": 11,
+				"113001": 6,
+				"113002": 7,
+				"113003": 7
+			},
+			"skillName": "無罅飛光",
+			"skillTag": "單體攻擊",
+			"skillDesc": "對指定敵方單體造成等同於鏡流<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的冰屬性傷害，並獲得<unbreak>#2[i]</unbreak>層【朔望】。",
+			"skillSimpleDesc": "對指定敵方單體造成冰屬性傷害，並獲得<color=#f29e38ff>1層【朔望】</color>。",
+			"skillIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_BP.png",
+			"skillShortIcon": "SkillIcon_1212_BP",
+			"skillId": 121202,
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"ultName": "曇華生滅，天河瀉夢",
+			"ultTag": "擴散",
+			"ultSimpleDesc": "對指定敵方單體造成大量冰屬性傷害，對相鄰目標造成冰屬性傷害，並<color=#f29e38ff>獲得1層【朔望】</color>。",
+			"ultIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Ultra.png",
+			"ultShortIcon": "SkillIcon_1212_Ultra",
+			"ultER": 140,
+			"ultId": 121203,
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"talentName": "澹月轉魄",
+			"talentTag": "強化",
+			"talentIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Passive.png",
+			"talentShortIcon": "SkillIcon_1212_Passive",
+			"talentId": 121204,
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"110111": 3,
+				"110112": 15,
+				"110113": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"techName": "古鏡照神",
+			"techTag": "妨害",
+			"techIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Maze.png",
+			"techShortIcon": "SkillIcon_1212_Maze",
+			"techId": 121207
+		},
+		"avatarType": "Warrior",
+		"promotion": {
+			"2": 308000,
+			"110413": 65,
+			"113001": 15,
+			"113002": 15,
+			"113003": 15
+		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110111": 6,
+			"110112": 16,
+			"110113": 38,
+			"110503": 3,
+			"113001": 8,
+			"113002": 10,
+			"113003": 30
+		},
+		"exp": 5797920,
+		"id": "1212"
 	},
 	"1213": {
 		"name": "丹恆•飲月",
@@ -3226,10 +3845,11 @@
 			"maxDEF": 364,
 			"SPD": 102,
 			"TNT": 125,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "1213",
+		"icon": "SpriteOutput/AvatarRoundIcon/1213.png",
+		"shortIcon": "1213",
 		"rarity": "SuperRare",
 		"element": "Imaginary",
 		"skills": {
@@ -3237,7 +3857,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "發動2段攻擊，對指定敵方單體造成等同於丹恆•飲月<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量虛數屬性傷害。",
-			"basicIcon": "SkillIcon_1213_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Normal.png",
+			"basicShortIcon": "SkillIcon_1213_Normal",
 			"basicId": 121301,
 			"basicPromo": {
 				"2": 240000,
@@ -3252,7 +3873,8 @@
 			"skillTag": "強化",
 			"skillDesc": "使普通攻擊的效果得到強化，最多可連續強化3次，施放本技能不消耗戰技點且不視為使用戰技。\\n強化1次，【澤芝】變為【瞬華】。\\n強化2次，【澤芝】變為【天矢陰】。\\n強化3次，【澤芝】變為【盤拏耀躍】。\\n施放【天矢陰】或【盤拏耀躍】時，從第4段攻擊開始每段攻擊前獲得1層【叱吒】，使丹恒•飲月的暴擊傷害提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，該效果最多疊加<unbreak>#2[i]</unbreak>層，持續至自身回合結束。",
 			"skillSimpleDesc": "使普通攻擊【澤芝】<color=#f29e38ff>分別強化為【瞬華】</color>、<color=#f29e38ff>【天矢陰】或【盤拏耀躍】</color>。",
-			"skillIcon": "SkillIcon_1213_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_BP.png",
+			"skillShortIcon": "SkillIcon_1213_BP",
 			"skillId": 121302,
 			"skillPromo": {
 				"2": 652500,
@@ -3269,7 +3891,9 @@
 			"ultTag": "擴散",
 			"ultDesc": "發動3段攻擊，對指定敵方單體造成等同於丹恆•飲月<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的虛數屬性傷害，同時對其相鄰目標造成等同於丹恆•飲月<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的虛數屬性傷害。並使自身獲得<unbreak>#3[i]</unbreak>個【逆鱗】。\\n【逆鱗】最多持有<unbreak>#4[i]</unbreak>個，可用來抵扣丹恆•飲月的戰技點消耗。消耗【逆鱗】視為消耗戰技點。",
 			"ultSimpleDesc": "對敵方單體造成大量虛數屬性傷害，對相鄰目標造成虛數屬性傷害。獲得2個【逆鱗】：可<color=#f29e38ff>抵扣</color>丹恆•飲月的<color=#f29e38ff>戰技點消耗</color>且視為消耗戰技點。",
-			"ultIcon": "SkillIcon_1213_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Ultra.png",
+			"ultShortIcon": "SkillIcon_1213_Ultra",
+			"ultER": 140,
 			"ultId": 121303,
 			"ultPromo": {
 				"2": 652500,
@@ -3286,7 +3910,8 @@
 			"talentTag": "強化",
 			"talentDesc": "丹恆•飲月發動每段攻擊後皆會獲得1層【亢心】，使自身造成的傷害提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，該效果可以疊加<unbreak>#2[i]</unbreak>層，持續至自身回合結束。",
 			"talentSimpleDesc": "發動每段攻擊後，使自身造成的傷害提高，該效果可以疊加並持續至自身回合結束。",
-			"talentIcon": "SkillIcon_1213_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Passive.png",
+			"talentShortIcon": "SkillIcon_1213_Passive",
 			"talentId": 121304,
 			"talentPromo": {
 				"2": 652500,
@@ -3303,7 +3928,8 @@
 			"techTag": "強化",
 			"techDesc": "使用秘技後進入持續<unbreak>#2[i]</unbreak>秒的【蟠躍】狀態。【蟠躍】狀態下使用攻擊會快速向前移動一段距離並攻擊接觸到的敵人，在快速移動的過程中可抵擋敵人的所有攻擊。【蟠躍】狀態下主動攻擊敵人進入戰鬥後，對敵方全體造成等同於丹恆•飲月<unbreak>#3[i]%</unbreak>攻擊力的虛數屬性傷害，並使自身獲得<unbreak>#1[i]</unbreak>個【逆鱗】。",
 			"techSimpleDesc": "進入【蟠躍】狀態，使用攻擊會快速向前移動一段距離並攻擊接觸到的敵人。攻擊敵人進入戰鬥後，對敵方全體造成虛數屬性傷害，並獲得1個【逆鱗】。",
-			"techIcon": "SkillIcon_1213_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Maze.png",
+			"techShortIcon": "SkillIcon_1213_Maze",
 			"techId": 121307
 		},
 		"avatarType": "Warrior",
@@ -3314,17 +3940,19 @@
 			"113002": 15,
 			"113003": 15
 		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110111": 6,
+			"110112": 16,
+			"110113": 38,
+			"110503": 3,
+			"113001": 8,
+			"113002": 10,
+			"113003": 30
+		},
 		"exp": 5797920,
-		"id": "1213",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "1213"
 	},
 	"8001": {
 		"name": "Physical Trailblazer Boy",
@@ -3334,10 +3962,11 @@
 			"maxDEF": 461,
 			"SPD": 100,
 			"TNT": 125,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "8001",
+		"icon": "SpriteOutput/AvatarRoundIcon/8001.png",
+		"shortIcon": "8001",
 		"rarity": "SuperRare",
 		"element": "Physical",
 		"skills": {
@@ -3345,7 +3974,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於開拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量物理屬性傷害。",
-			"basicIcon": "SkillIcon_8001_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Normal.png",
+			"basicShortIcon": "SkillIcon_8001_Normal",
 			"basicId": 800101,
 			"basicPromo": {
 				"2": 192000,
@@ -3360,7 +3990,8 @@
 			"skillTag": "擴散",
 			"skillDesc": "對指定敵方單體及其相鄰目標造成等同於開拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 			"skillSimpleDesc": "對敵方單體以及相鄰目標造成物理屬性傷害。",
-			"skillIcon": "SkillIcon_8001_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_BP.png",
+			"skillShortIcon": "SkillIcon_8001_BP",
 			"skillId": 800102,
 			"skillPromo": {
 				"2": 522000,
@@ -3377,7 +4008,9 @@
 			"ultTag": "強化",
 			"ultDesc": "在兩種攻擊模式中選擇其一揮出全力一擊。\\n【全勝•再見安打】：對指定敵方單體造成等同於開拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害。\\n【全勝•安息全壘打】：對指定敵方單體造成等同於開拓者<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的物理屬性傷害，並對其相鄰目標造成等同於開拓者<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 			"ultSimpleDesc": "選擇單體或擴散的攻擊方式，揮出全力一擊。",
-			"ultIcon": "SkillIcon_8001_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Ultra.png",
+			"ultShortIcon": "SkillIcon_8001_Ultra",
+			"ultER": 120,
 			"ultId": 800103,
 			"ultPromo": {
 				"2": 522000,
@@ -3393,7 +4026,8 @@
 			"talentName": "牽制盜壘",
 			"talentTag": "強化",
 			"talentDesc": "每次擊破敵方目標的弱點後，攻擊力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，最多疊加<unbreak>#2[i]</unbreak>層。",
-			"talentIcon": "SkillIcon_8001_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Passive.png",
+			"talentShortIcon": "SkillIcon_8001_Passive",
 			"talentId": 800104,
 			"talentPromo": {
 				"2": 522000,
@@ -3409,7 +4043,8 @@
 			"techName": "不死三振",
 			"techTag": "回復",
 			"techDesc": "使用秘技後立即為我方全體回復等同於各自生命上限<unbreak>#1[i]%</unbreak>的生命值。",
-			"techIcon": "SkillIcon_8001_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Maze.png",
+			"techShortIcon": "SkillIcon_8001_Maze",
 			"techId": 800107
 		},
 		"avatarType": "Warrior",
@@ -3420,17 +4055,19 @@
 			"111012": 13,
 			"111013": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110111": 4,
+			"110112": 12,
+			"110113": 28,
+			"110501": 3,
+			"111011": 6,
+			"111012": 7,
+			"111013": 22
+		},
 		"exp": 5797920,
-		"id": "8001",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "8001"
 	},
 	"8002": {
 		"name": "Physical Trailblazer Girl",
@@ -3440,10 +4077,11 @@
 			"maxDEF": 461,
 			"SPD": 100,
 			"TNT": 125,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "8002",
+		"icon": "SpriteOutput/AvatarRoundIcon/8002.png",
+		"shortIcon": "8002",
 		"rarity": "SuperRare",
 		"element": "Physical",
 		"skills": {
@@ -3451,7 +4089,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於開拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 			"basicSimpleDesc": "對敵方單體造成少量物理屬性傷害。",
-			"basicIcon": "SkillIcon_8001_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Normal.png",
+			"basicShortIcon": "SkillIcon_8001_Normal",
 			"basicId": 800201,
 			"basicPromo": {
 				"2": 192000,
@@ -3466,7 +4105,8 @@
 			"skillTag": "擴散",
 			"skillDesc": "對指定敵方單體及其相鄰目標造成等同於開拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 			"skillSimpleDesc": "對敵方單體以及相鄰目標造成物理屬性傷害。",
-			"skillIcon": "SkillIcon_8001_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_BP.png",
+			"skillShortIcon": "SkillIcon_8001_BP",
 			"skillId": 800202,
 			"skillPromo": {
 				"2": 522000,
@@ -3483,7 +4123,9 @@
 			"ultTag": "強化",
 			"ultDesc": "在兩種攻擊模式中選擇其一揮出全力一擊。\\n【全勝•再見安打】：對指定敵方單體造成等同於開拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的物理屬性傷害。\\n【全勝•安息全壘打】：對指定敵方單體造成等同於開拓者<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻擊力的物理屬性傷害，並對其相鄰目標造成等同於開拓者<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻擊力的物理屬性傷害。",
 			"ultSimpleDesc": "選擇單體或擴散的攻擊方式，揮出全力一擊。",
-			"ultIcon": "SkillIcon_8001_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Ultra.png",
+			"ultShortIcon": "SkillIcon_8001_Ultra",
+			"ultER": 120,
 			"ultId": 800203,
 			"ultPromo": {
 				"2": 522000,
@@ -3499,7 +4141,8 @@
 			"talentName": "牽制盜壘",
 			"talentTag": "強化",
 			"talentDesc": "每次擊破敵方目標的弱點後，攻擊力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，最多疊加<unbreak>#2[i]</unbreak>層。",
-			"talentIcon": "SkillIcon_8001_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Passive.png",
+			"talentShortIcon": "SkillIcon_8001_Passive",
 			"talentId": 800204,
 			"talentPromo": {
 				"2": 522000,
@@ -3515,7 +4158,8 @@
 			"techName": "不死三振",
 			"techTag": "回復",
 			"techDesc": "使用秘技後立即為我方全體回復等同於各自生命上限<unbreak>#1[i]%</unbreak>的生命值。",
-			"techIcon": "SkillIcon_8001_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Maze.png",
+			"techShortIcon": "SkillIcon_8001_Maze",
 			"techId": 800207
 		},
 		"avatarType": "Warrior",
@@ -3526,17 +4170,19 @@
 			"111012": 13,
 			"111013": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110111": 4,
+			"110112": 12,
+			"110113": 28,
+			"110501": 3,
+			"111011": 6,
+			"111012": 7,
+			"111013": 22
+		},
 		"exp": 5797920,
-		"id": "8002",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "8002"
 	},
 	"8003": {
 		"name": "Fire Trailblazer Boy",
@@ -3546,10 +4192,11 @@
 			"maxDEF": 606,
 			"SPD": 95,
 			"TNT": 150,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "8003",
+		"icon": "SpriteOutput/AvatarRoundIcon/8003.png",
+		"shortIcon": "8003",
 		"rarity": "SuperRare",
 		"element": "Fire",
 		"skills": {
@@ -3557,7 +4204,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於開拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害並疊加1層【灼熱意志】。",
 			"basicSimpleDesc": "對敵方單體造成少量火屬性傷害，獲得【灼熱意志】。",
-			"basicIcon": "SkillIcon_8003_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Normal.png",
+			"basicShortIcon": "SkillIcon_8003_Normal",
 			"basicId": 800301,
 			"basicPromo": {
 				"2": 192000,
@@ -3572,7 +4220,8 @@
 			"skillTag": "防禦",
 			"skillDesc": "施放戰技後，開拓者受到的傷害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>並疊加1層【灼熱意志】，此外有<unbreak>#2[i]%</unbreak><u>基礎機率</u>使敵方全體陷入嘲諷狀態，持續<unbreak>#3[i]</unbreak>回合。",
 			"skillSimpleDesc": "降低自身受到的傷害，並獲得【灼熱意志】，高機率使敵方全體陷入嘲諷狀態。",
-			"skillIcon": "SkillIcon_8003_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_BP.png",
+			"skillShortIcon": "SkillIcon_8003_BP",
 			"skillId": 800302,
 			"skillPromo": {
 				"2": 522000,
@@ -3589,7 +4238,9 @@
 			"ultTag": "群體攻擊",
 			"ultDesc": "對敵方全體造成等同於開拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>防禦力的火屬性傷害。下一次發動普通攻擊時，自動獲得強化且不消耗【灼熱意志】。",
 			"ultSimpleDesc": "對敵方全體造成火屬性傷害、強化下一次普通攻擊。",
-			"ultIcon": "SkillIcon_8003_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Ultra.png",
+			"ultShortIcon": "SkillIcon_8003_Ultra",
+			"ultER": 120,
 			"ultId": 800303,
 			"ultPromo": {
 				"2": 522000,
@@ -3605,7 +4256,8 @@
 			"talentName": "築城者遺寶",
 			"talentTag": "強化",
 			"talentDesc": "每受到1次攻擊，便疊加1層【灼熱意志】，最多可疊加<unbreak>#3[i]</unbreak>層。\\n【灼熱意志】層數不低於4時，普通攻擊將獲得強化，對指定敵方單體及其相鄰目標同時造成傷害。\\n開拓者發動普通攻擊或施放戰技/終結技後，為我方全體提供能夠抵消等同於開拓者<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>防禦力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>傷害的護盾，持續<unbreak>#2[i]</unbreak>回合。",
-			"talentIcon": "SkillIcon_8003_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Passive.png",
+			"talentShortIcon": "SkillIcon_8003_Passive",
 			"talentId": 800304,
 			"talentPromo": {
 				"2": 522000,
@@ -3621,7 +4273,8 @@
 			"techName": "守護者召令",
 			"techTag": "防禦",
 			"techDesc": "使用秘技後，下一次戰鬥開始時為自身提供強度等同於開拓者<unbreak>#1[i]%</unbreak>防禦力+<unbreak>#2[i]</unbreak>的護盾，持續<unbreak>#3[i]</unbreak>回合。",
-			"techIcon": "SkillIcon_8003_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Maze.png",
+			"techShortIcon": "SkillIcon_8003_Maze",
 			"techId": 800307
 		},
 		"avatarType": "Knight",
@@ -3632,17 +4285,19 @@
 			"111012": 13,
 			"111013": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110141": 4,
+			"110142": 12,
+			"110143": 28,
+			"110501": 3,
+			"111011": 6,
+			"111012": 7,
+			"111013": 22
+		},
 		"exp": 5797920,
-		"id": "8003",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
+		"id": "8003"
 	},
 	"8004": {
 		"name": "Fire Trailblazer Girl",
@@ -3652,10 +4307,11 @@
 			"maxDEF": 606,
 			"SPD": 95,
 			"TNT": 150,
-			"CR": 0.05000000004656613,
-			"CDMG": 0.5000000004656613
+			"CR": 0.05,
+			"CDMG": 0.5
 		},
-		"icon": "8004",
+		"icon": "SpriteOutput/AvatarRoundIcon/8004.png",
+		"shortIcon": "8004",
 		"rarity": "SuperRare",
 		"element": "Fire",
 		"skills": {
@@ -3663,7 +4319,8 @@
 			"basicTag": "單體攻擊",
 			"basicDesc": "對指定敵方單體造成等同於開拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力的火屬性傷害並疊加1層【灼熱意志】。",
 			"basicSimpleDesc": "對敵方單體造成少量火屬性傷害，獲得【灼熱意志】。",
-			"basicIcon": "SkillIcon_8003_Normal",
+			"basicIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Normal.png",
+			"basicShortIcon": "SkillIcon_8003_Normal",
 			"basicId": 800401,
 			"basicPromo": {
 				"2": 192000,
@@ -3678,7 +4335,8 @@
 			"skillTag": "防禦",
 			"skillDesc": "施放戰技後，開拓者受到的傷害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>並疊加1層【灼熱意志】，此外有<unbreak>#2[i]%</unbreak><u>基礎機率</u>使敵方全體陷入嘲諷狀態，持續<unbreak>#3[i]</unbreak>回合。",
 			"skillSimpleDesc": "降低自身受到的傷害，並獲得【灼熱意志】，高機率使敵方全體陷入嘲諷狀態。",
-			"skillIcon": "SkillIcon_8003_BP",
+			"skillIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_BP.png",
+			"skillShortIcon": "SkillIcon_8003_BP",
 			"skillId": 800402,
 			"skillPromo": {
 				"2": 522000,
@@ -3695,7 +4353,9 @@
 			"ultTag": "群體攻擊",
 			"ultDesc": "對敵方全體造成等同於開拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻擊力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>防禦力的火屬性傷害。下一次發動普通攻擊時，自動獲得強化且不消耗【灼熱意志】。",
 			"ultSimpleDesc": "對敵方全體造成火屬性傷害、強化下一次普通攻擊。",
-			"ultIcon": "SkillIcon_8003_Ultra",
+			"ultIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Ultra.png",
+			"ultShortIcon": "SkillIcon_8003_Ultra",
+			"ultER": 120,
 			"ultId": 800403,
 			"ultPromo": {
 				"2": 522000,
@@ -3711,7 +4371,8 @@
 			"talentName": "築城者遺寶",
 			"talentTag": "強化",
 			"talentDesc": "每受到1次攻擊，便疊加1層【灼熱意志】，最多可疊加<unbreak>#3[i]</unbreak>層。\\n【灼熱意志】層數不低於4時，普通攻擊將獲得強化，對指定敵方單體及其相鄰目標同時造成傷害。\\n開拓者發動普通攻擊或施放戰技/終結技後，為我方全體提供能夠抵消等同於開拓者<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>防禦力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>傷害的護盾，持續<unbreak>#2[i]</unbreak>回合。",
-			"talentIcon": "SkillIcon_8003_Passive",
+			"talentIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Passive.png",
+			"talentShortIcon": "SkillIcon_8003_Passive",
 			"talentId": 800404,
 			"talentPromo": {
 				"2": 522000,
@@ -3727,7 +4388,8 @@
 			"techName": "守護者召令",
 			"techTag": "防禦",
 			"techDesc": "使用秘技後，下一次戰鬥開始時為自身提供強度等同於開拓者<unbreak>#1[i]%</unbreak>防禦力+<unbreak>#2[i]</unbreak>的護盾，持續<unbreak>#3[i]</unbreak>回合。",
-			"techIcon": "SkillIcon_8003_Maze",
+			"techIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Maze.png",
+			"techShortIcon": "SkillIcon_8003_Maze",
 			"techId": 800407
 		},
 		"avatarType": "Knight",
@@ -3738,16 +4400,27 @@
 			"111012": 13,
 			"111013": 12
 		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110141": 4,
+			"110142": 12,
+			"110143": 28,
+			"110501": 3,
+			"111011": 6,
+			"111012": 7,
+			"111013": 22
+		},
 		"exp": 5797920,
-		"id": "8004",
-		"maxLevels": [
-			20,
-			30,
-			40,
-			50,
-			60,
-			70,
-			80
-		]
-	}
+		"id": "8004"
+	},
+	"maxLevels": [
+		20,
+		30,
+		40,
+		50,
+		60,
+		70,
+		80
+	]
 }
