@@ -593,7 +593,7 @@
 		"shortIcon": "21007",
 		"rarity": "VeryRare",
 		"weaponType": "Priest",
-		"refinements": "Increases the wearer's Outgoing Healing by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When using Skill, regenerates <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Energy for all allies.",
+		"refinements": "Increases the wearer's Outgoing Healing by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When using Skill, regenerates <color=#f29e38ff><unbreak>#2[f1]</unbreak></color> Energy for all allies.",
 		"maxHP": 953,
 		"maxATK": 423,
 		"maxDEF": 397,
@@ -1196,6 +1196,27 @@
 		},
 		"id": "22000"
 	},
+	"22001": {
+		"name": "Hey, Over Here",
+		"icon": "SpriteOutput/LightConeMediumIcon/22001.png",
+		"shortIcon": "22001",
+		"rarity": "VeryRare",
+		"weaponType": "Priest",
+		"refinements": "Increases the wearer's Max HP by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Increases Outgoing Healing when the wearer uses their Skill by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <unbreak>#3[i]</unbreak> turn(s).",
+		"maxHP": 953,
+		"maxATK": 423,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 308000,
+			"110171": 3,
+			"110172": 9,
+			"110173": 12,
+			"113011": 15,
+			"113012": 15,
+			"113013": 12
+		},
+		"id": "22001"
+	},
 	"23000": {
 		"name": "Night on the Milky Way",
 		"icon": "SpriteOutput/LightConeMediumIcon/23000.png",
@@ -1496,7 +1517,7 @@
 		"shortIcon": "23014",
 		"rarity": "SuperRare",
 		"weaponType": "Warrior",
-		"refinements": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When ally gets attacked or loses HP, wearer gains 1 stack of Eclipse, up to a max of <unbreak>#2[i]</unbreak> stack(s). Each stack of Eclipse will increase the DMG of the wearer's next attack by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>. When <unbreak>#2[i]</unbreak> stack(s) are maxed out, an additional attack will be delivered that ignores <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of the enemy's DEF. This effect will be dispeled after the wearer delivers their attack.",
+		"refinements": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of <unbreak>#2[i]</unbreak> stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>. When <unbreak>#2[i]</unbreak> stack(s) are reached, additionally enables that attack to ignore <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of the enemy's DEF. This effect will be removed after the wearer uses an attack.",
 		"maxHP": 1164,
 		"maxATK": 582,
 		"maxDEF": 397,
@@ -1538,7 +1559,7 @@
 		"shortIcon": "23016",
 		"rarity": "SuperRare",
 		"weaponType": "Rogue",
-		"refinements": "Increase the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and DMG from follow-up attacks by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. After the wearer unleashes a follow-up attack, apply the Tame state to the target, stacking up to <unbreak>#4[i]</unbreak> stacks. When allies hit enemy targets under the Tame state, every Tame stack will increase the CRIT DMG received by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+		"refinements": "Increase the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and their follow-up attacks' DMG by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to <unbreak>#4[i]</unbreak> stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
 		"maxHP": 1058,
 		"maxATK": 582,
 		"maxDEF": 463,
@@ -1552,6 +1573,48 @@
 			"112003": 14
 		},
 		"id": "23016"
+	},
+	"23017": {
+		"name": "Night of Fright",
+		"icon": "SpriteOutput/LightConeMediumIcon/23017.png",
+		"shortIcon": "23017",
+		"rarity": "SuperRare",
+		"weaponType": "Priest",
+		"refinements": "Increases the wearer's Energy Regeneration Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When any ally uses their Ultimate, restores HP to them equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of their Max HP. When the wearer provides healing for allies, increases the healed ally's ATK by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>. This effect can stack up to <unbreak>#4[i]</unbreak> times and lasts for <unbreak>#5[i]</unbreak> turns.",
+		"maxHP": 1164,
+		"maxATK": 476,
+		"maxDEF": 529,
+		"promotion": {
+			"2": 385000,
+			"110171": 4,
+			"110172": 12,
+			"110173": 15,
+			"113001": 20,
+			"113002": 20,
+			"113003": 14
+		},
+		"id": "23017"
+	},
+	"23018": {
+		"name": "An Instance Forever Cherished",
+		"icon": "SpriteOutput/LightConeMediumIcon/23018.png",
+		"shortIcon": "23018",
+		"rarity": "SuperRare",
+		"weaponType": "Mage",
+		"refinements": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer unleashes their Ultimate, increases the wearer's Ultimate DMG based on their Max Energy. DMG increases by <color=#f29e38ff><unbreak>#2[f2]%</unbreak></color> per point of Energy, up to <unbreak>#3[i]</unbreak> Energy.",
+		"maxHP": 1058,
+		"maxATK": 582,
+		"maxDEF": 463,
+		"promotion": {
+			"2": 385000,
+			"110131": 4,
+			"110132": 12,
+			"110133": 15,
+			"111001": 20,
+			"111002": 20,
+			"111003": 14
+		},
+		"id": "23018"
 	},
 	"24000": {
 		"name": "On the Fall of an Aeon",

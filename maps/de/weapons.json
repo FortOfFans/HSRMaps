@@ -593,7 +593,7 @@
 		"shortIcon": "21007",
 		"rarity": "VeryRare",
 		"weaponType": "Priest",
-		"refinements": "Erhöht die bewirkte Heilung des Trägers um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Stellt beim Einsatz der Fertigkeit für alle Verbündeten <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Pkt. Energie wieder her.",
+		"refinements": "Erhöht die bewirkte Heilung des Trägers um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Stellt beim Einsatz der Fertigkeit für alle Verbündeten <color=#f29e38ff><unbreak>#2[f1]</unbreak></color> Pkt. Energie wieder her.",
 		"maxHP": 953,
 		"maxATK": 423,
 		"maxDEF": 397,
@@ -1196,6 +1196,27 @@
 		},
 		"id": "22000"
 	},
+	"22001": {
+		"name": "Hey, ich bin hier",
+		"icon": "SpriteOutput/LightConeMediumIcon/22001.png",
+		"shortIcon": "22001",
+		"rarity": "VeryRare",
+		"weaponType": "Priest",
+		"refinements": "Erhöht den Effekt-WDS des Trägers um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Erhöht beim Einsatz der Fertigkeit die bewirkte Heilung um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Dieser Effekt hält bis zum Beginn der nächsten Runde des Trägers an.",
+		"maxHP": 953,
+		"maxATK": 423,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 308000,
+			"110171": 3,
+			"110172": 9,
+			"110173": 12,
+			"113011": 15,
+			"113012": 15,
+			"113013": 12
+		},
+		"id": "22001"
+	},
 	"23000": {
 		"name": "Nacht auf der Milchstraße",
 		"icon": "SpriteOutput/LightConeMediumIcon/23000.png",
@@ -1496,7 +1517,7 @@
 		"shortIcon": "23014",
 		"rarity": "SuperRare",
 		"weaponType": "Warrior",
-		"refinements": "Erhöht den Fertigkeit-SCH des Trägers um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Wenn sein Ultimate genutzt wird, wird sofort <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Pkt. Energie wiederhergestellt und der KRIT-SCH des Trägers für <unbreak>#4[i]</unbreak> Rd. um <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> erhöht.",
+		"refinements": "Erhöht den KRIT-SCH des Trägers um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Wenn Verbündete angegriffen werden oder ihre eigenen LP verbrauchen, erhält der Träger 1 Stapelung „Mondfinsternis“, bis zu <unbreak>#2[i]</unbreak>-fach stapelbar. Jede Stapelung von „Mondfinsternis“ erhöht den verursachten SCH des nächsten Angriffs vom Träger um <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>. Wenn <unbreak>#2[i]</unbreak> Stapelungen erreicht sind, ignoriert dieser Angriff <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> der VTD des Ziels. Dieser Effekt wird entfernt, nachdem der Träger einen Angriff ausgeführt hat.",
 		"maxHP": 1164,
 		"maxATK": 582,
 		"maxDEF": 397,
@@ -1533,12 +1554,12 @@
 		"id": "23015"
 	},
 	"23016": {
-		"name": "Besorgt doch glücksselig",
+		"name": "Besorgt doch glückselig",
 		"icon": "SpriteOutput/LightConeMediumIcon/23016.png",
 		"shortIcon": "23016",
 		"rarity": "SuperRare",
 		"weaponType": "Rogue",
-		"refinements": "Erhöhe die KRIT-Rate des Trägers um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> und den SCH von Folgeangriffen um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Wenn der Träger einen Folgeangriff ausführt, wird das Ziel in den Zustand „Zähmen“ versetzt, wobei sich bis zu <unbreak>#4[i]</unbreak> Stapel bilden. Wenn Verbündete feindliche Ziele im gezähmten Zustand treffen, erhöht jeder Stapel Zähmung die erhaltene KRIT-SCH um <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+		"refinements": "Erhöhe die KRIT-Rate des Trägers um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> und den SCH von Folgeangriffen um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Wenn der Träger einen Folgeangriff ausführt, wird das Ziel in den Zustand „Zähmen“ versetzt. Dieser Effekt ist bis zu <unbreak>#4[i]</unbreak>-fach stapelbar. Wenn Verbündete Gegner im Status „Zähmen“ treffen, erhöht jede Stapelung von „Zähmen“ den verursachten KRIT-SCH um <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
 		"maxHP": 1058,
 		"maxATK": 582,
 		"maxDEF": 463,
@@ -1552,6 +1573,47 @@
 			"112003": 14
 		},
 		"id": "23016"
+	},
+	"23017": {
+		"name": "Nacht der Angst",
+		"icon": "SpriteOutput/LightConeMediumIcon/23017.png",
+		"shortIcon": "23017",
+		"rarity": "SuperRare",
+		"weaponType": "Priest",
+		"maxHP": 1164,
+		"maxATK": 476,
+		"maxDEF": 529,
+		"promotion": {
+			"2": 385000,
+			"110171": 4,
+			"110172": 12,
+			"110173": 15,
+			"113001": 20,
+			"113002": 20,
+			"113003": 14
+		},
+		"id": "23017"
+	},
+	"23018": {
+		"name": "Ein unvergesslicher Augenblick",
+		"icon": "SpriteOutput/LightConeMediumIcon/23018.png",
+		"shortIcon": "23018",
+		"rarity": "SuperRare",
+		"weaponType": "Mage",
+		"refinements": "Erhöht den KRIT-SCH des Trägers um <color=#f29e38ff><unbreak>#1[i]</unbreak></color>. Erhöht beim Einsatz des Ultimates den vom Träger verursachten SCH basierend auf seiner max. Energie: jeder Pkt. Energie erhöht den SCH um <color=#f29e38ff><unbreak>#2[f2]%</unbreak></color> bis max. <unbreak>#3[i]</unbreak> Pkt.",
+		"maxHP": 1058,
+		"maxATK": 582,
+		"maxDEF": 463,
+		"promotion": {
+			"2": 385000,
+			"110131": 4,
+			"110132": 12,
+			"110133": 15,
+			"111001": 20,
+			"111002": 20,
+			"111003": 14
+		},
+		"id": "23018"
 	},
 	"24000": {
 		"name": "Der Niedergang eines Äons",

@@ -593,7 +593,7 @@
 		"shortIcon": "21007",
 		"rarity": "VeryRare",
 		"weaponType": "Priest",
-		"refinements": "장착한 캐릭터의 치유량이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 전투 스킬 발동 시 모든 아군의 에너지가 <color=#f29e38ff><unbreak>#2[i]</unbreak></color>pt 회복된다",
+		"refinements": "장착한 캐릭터의 치유량이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 전투 스킬 발동 시 모든 아군의 에너지가 <color=#f29e38ff><unbreak>#2[f1]</unbreak></color>pt 회복된다",
 		"maxHP": 953,
 		"maxATK": 423,
 		"maxDEF": 397,
@@ -1196,6 +1196,27 @@
 		},
 		"id": "22000"
 	},
+	"22001": {
+		"name": "저기, 나 여기 있어",
+		"icon": "SpriteOutput/LightConeMediumIcon/22001.png",
+		"shortIcon": "22001",
+		"rarity": "VeryRare",
+		"weaponType": "Priest",
+		"refinements": "장착한 캐릭터의 HP 최대치<color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 전투 스킬 발동 시 치유량이 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다. 지속 시간: <unbreak>#3[i]</unbreak>턴",
+		"maxHP": 953,
+		"maxATK": 423,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 308000,
+			"110171": 3,
+			"110172": 9,
+			"110173": 12,
+			"113011": 15,
+			"113012": 15,
+			"113013": 12
+		},
+		"id": "22001"
+	},
 	"23000": {
 		"name": "은하철도의 밤",
 		"icon": "SpriteOutput/LightConeMediumIcon/23000.png",
@@ -1496,7 +1517,7 @@
 		"shortIcon": "23014",
 		"rarity": "SuperRare",
 		"weaponType": "Warrior",
-		"refinements": "장착한 캐릭터가 전투 스킬로 가하는 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 필살기 발동 시 즉시 에너지를 <color=#f29e38ff><unbreak>#2[i]</unbreak></color>pt 회복하고 장착한 캐릭터의 치명타 피해가 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가한다. 지속 시간: <unbreak>#4[i]</unbreak>턴",
+		"refinements": "장착한 캐릭터의 치명타 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 동료가 공격을 받거나 HP를 소모하면 장착한 캐릭터는 [월식]을 1스택 획득한다. 최대 중첩수: <unbreak>#2[i]</unbreak>스택. [월식] 스택당 장착한 캐릭터의 다음번 공격이 가하는 피해가 <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> 증가한다. <unbreak>#2[i]</unbreak>스택까지 중첩 시, 이번 공격은 추가로 목표의 방어력을 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> 무시한다. 해당 효과는 장착한 캐릭터가 공격을 발동하면 해제된다",
 		"maxHP": 1164,
 		"maxATK": 582,
 		"maxDEF": 397,
@@ -1552,6 +1573,48 @@
 			"112003": 14
 		},
 		"id": "23016"
+	},
+	"23017": {
+		"name": "섬뜩한 밤",
+		"icon": "SpriteOutput/LightConeMediumIcon/23017.png",
+		"shortIcon": "23017",
+		"rarity": "SuperRare",
+		"weaponType": "Priest",
+		"refinements": "장착한 캐릭터의 에너지 회복효율이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 장착한 캐릭터가 아군에게 필살기 발동 시 해당 대상은 HP 최대치의 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼 해당 목표의 HP를 회복한다. 장착한 캐릭터가 아군에게 치유 제공 시, 해당 목표의 공격력이 <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> 증가한다. 해당 효과 최대 중첩수: <unbreak>#4[i]</unbreak>스택, 지속 시간: <unbreak>#5[i]</unbreak>턴",
+		"maxHP": 1164,
+		"maxATK": 476,
+		"maxDEF": 529,
+		"promotion": {
+			"2": 385000,
+			"110171": 4,
+			"110172": 12,
+			"110173": 15,
+			"113001": 20,
+			"113002": 20,
+			"113003": 14
+		},
+		"id": "23017"
+	},
+	"23018": {
+		"name": "눈에 담긴 순간",
+		"icon": "SpriteOutput/LightConeMediumIcon/23018.png",
+		"shortIcon": "23018",
+		"rarity": "SuperRare",
+		"weaponType": "Mage",
+		"refinements": "장착한 캐릭터의 치명타 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 필살기 발동 시 장착한 캐릭터의 에너지 최대치에 따라 장착한 캐릭터가 필살기로 가하는 피해가 증가한다: 에너지 1pt당 <color=#f29e38ff><unbreak>#2[f2]%</unbreak></color> 증가. 최대 <unbreak>#3[i]</unbreak>까지 계산한다",
+		"maxHP": 1058,
+		"maxATK": 582,
+		"maxDEF": 463,
+		"promotion": {
+			"2": 385000,
+			"110131": 4,
+			"110132": 12,
+			"110133": 15,
+			"111001": 20,
+			"111002": 20,
+			"111003": 14
+		},
+		"id": "23018"
 	},
 	"24000": {
 		"name": "어떤 에이언즈의 몰락",

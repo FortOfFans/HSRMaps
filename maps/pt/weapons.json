@@ -593,7 +593,7 @@
 		"shortIcon": "21007",
 		"rarity": "VeryRare",
 		"weaponType": "Priest",
-		"refinements": "Aumenta a Cura Realizada do usuário em <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Ao usar uma Perícia, regenera <color=#f29e38ff><unbreak>#2[i]</unbreak></color> de Energia para todos os aliados.",
+		"refinements": "Aumenta a Cura Realizada do usuário em <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Ao usar uma Perícia, regenera <color=#f29e38ff><unbreak>#2[f1]</unbreak></color> de Energia para todos os aliados.",
 		"maxHP": 953,
 		"maxATK": 423,
 		"maxDEF": 397,
@@ -1196,6 +1196,27 @@
 		},
 		"id": "22000"
 	},
+	"22001": {
+		"name": "Ei, Estou Aqui",
+		"icon": "SpriteOutput/LightConeMediumIcon/22001.png",
+		"shortIcon": "22001",
+		"rarity": "VeryRare",
+		"weaponType": "Priest",
+		"refinements": "Aumenta a RES a Efeito do usuário em <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Aumenta a Cura Realizada quando o usuário usa sua Perícia em <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Este efeito dura até o início da próxima rodada do usuário.",
+		"maxHP": 953,
+		"maxATK": 423,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 308000,
+			"110171": 3,
+			"110172": 9,
+			"110173": 12,
+			"113011": 15,
+			"113012": 15,
+			"113013": 12
+		},
+		"id": "22001"
+	},
 	"23000": {
 		"name": "Noite na Via Láctea",
 		"icon": "SpriteOutput/LightConeMediumIcon/23000.png",
@@ -1496,7 +1517,7 @@
 		"shortIcon": "23014",
 		"rarity": "SuperRare",
 		"weaponType": "Warrior",
-		"refinements": "Aumenta o Dano da Perícia do usuário em <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Ao usar a Perícia Suprema, regenera imediatamente <color=#f29e38ff><unbreak>#2[i]</unbreak></color> de Energia e aumenta o Dano CRIT do usuário em <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> por <unbreak>#4[i]</unbreak> rodada(s).",
+		"refinements": "Aumenta o Dano CRIT do usuário em <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Quando um aliado é atacado ou perde PV, o usuário ganha 1 acúmulo de Eclipse, até um máximo de <unbreak>#2[i]</unbreak> acúmulo(s). Cada acúmulo de Eclipse aumenta o Dano do próximo ataque do usuário em <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>. Ao alcançar <unbreak>#2[i]</unbreak> acúmulo(s), permite adicionalmente que o ataque ignore <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> da DEF do inimigo. Este efeito será removido depois que o usuário utilizar um ataque.",
 		"maxHP": 1164,
 		"maxATK": 582,
 		"maxDEF": 397,
@@ -1538,7 +1559,7 @@
 		"shortIcon": "23016",
 		"rarity": "SuperRare",
 		"weaponType": "Rogue",
-		"refinements": "Aumenta o Chance de CRIT do usuário em <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> e o Dano de Ataques Extras em <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Após o usuário liberar um Ataque Extra, aplica o estado de Domesticação ao alvo, acumulando até <unbreak>#4[i]</unbreak> vezes. Quando os aliados atingem alvos inimigos sob o estado de Domesticação, cada acúmulo de Domesticação irá aumentar o Dano CRIT recebido em <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+		"refinements": "Aumenta o Chance de CRIT do usuário em <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> e o Dano dos seus Ataques Extras em <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Após o usuário utilizar um Ataque Extra, aplica o estado de Domesticação ao alvo, acumulando até <unbreak>#4[i]</unbreak> vezes. Quando os aliados atingem inimigos-alvo sob o estado de Domesticação, cada acúmulo de Domesticação aumenta o Dano CRIT causado em <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
 		"maxHP": 1058,
 		"maxATK": 582,
 		"maxDEF": 463,
@@ -1552,6 +1573,47 @@
 			"112003": 14
 		},
 		"id": "23016"
+	},
+	"23017": {
+		"name": "Noite Aterrorizante",
+		"icon": "SpriteOutput/LightConeMediumIcon/23017.png",
+		"shortIcon": "23017",
+		"rarity": "SuperRare",
+		"weaponType": "Priest",
+		"maxHP": 1164,
+		"maxATK": 476,
+		"maxDEF": 529,
+		"promotion": {
+			"2": 385000,
+			"110171": 4,
+			"110172": 12,
+			"110173": 15,
+			"113001": 20,
+			"113002": 20,
+			"113003": 14
+		},
+		"id": "23017"
+	},
+	"23018": {
+		"name": "Um Instante de um Olhar",
+		"icon": "SpriteOutput/LightConeMediumIcon/23018.png",
+		"shortIcon": "23018",
+		"rarity": "SuperRare",
+		"weaponType": "Mage",
+		"refinements": "Aumenta o Dano CRIT do usuário em <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Quando o usuário utiliza sua Perícia Suprema, aumenta o Dano do usuário com base da sua Energia máxima. O Dano aumenta em <color=#f29e38ff><unbreak>#2[f2]%</unbreak></color> por ponto de Energia, até <unbreak>#3[i]</unbreak> de Energia.",
+		"maxHP": 1058,
+		"maxATK": 582,
+		"maxDEF": 463,
+		"promotion": {
+			"2": 385000,
+			"110131": 4,
+			"110132": 12,
+			"110133": 15,
+			"111001": 20,
+			"111002": 20,
+			"111003": 14
+		},
+		"id": "23018"
 	},
 	"24000": {
 		"name": "Na Queda de Um Aeon",

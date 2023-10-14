@@ -14,14 +14,63 @@
 		"shortIcon": "1001",
 		"rarity": "VeryRare",
 		"element": "Ice",
-		"skills": {
-			"basicName": "极寒的弓矢",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量冰属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1001/SkillIcon_1001_Normal.png",
-			"basicShortIcon": "SkillIcon_1001_Normal",
-			"basicId": 100101,
+		"skills": [
+			{
+				"name": "极寒的弓矢",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 100101
+			},
+			{
+				"name": "可爱即是正义",
+				"tag": "防御",
+				"type": "战技",
+				"description": "为指定我方单体提供能够抵消等同于三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>防御力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>伤害的护盾，持续<unbreak>#2[i]</unbreak>回合。\\n若该目标当前生命值百分比大于等于<unbreak>#3[i]%</unbreak>，被敌方攻击的概率大幅提高。",
+				"regen": 30,
+				"er": null,
+				"id": 100102
+			},
+			{
+				"name": "冰刻箭雨之时",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。受到攻击的敌方目标有<unbreak>#2[i]%</unbreak><u>基础概率</u>陷入冻结状态，持续<unbreak>#3[i]</unbreak>回合。\\n冻结状态下，敌方目标不能行动同时每回合开始时受到等同于三月七<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的冰属性<u>附加伤害</u>。",
+				"regen": 5,
+				"er": 120,
+				"id": 100103
+			},
+			{
+				"name": "少女的特权",
+				"tag": "单攻",
+				"type": "天赋",
+				"description": "当持有护盾的我方目标受到敌方目标攻击后，三月七立即向攻击者发起<u>反击</u>，对其造成等同于三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害，该效果每回合可触发<unbreak>#2[i]</unbreak>次。",
+				"regen": 10,
+				"er": null,
+				"id": 100104
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 100106
+			},
+			{
+				"name": "冻人的瞬间",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使随机敌方单体陷入冻结状态，持续<unbreak>#2[i]</unbreak>回合。\\n冻结状态下，敌方目标不能行动同时每回合开始时受到等同于三月七<unbreak>#3[i]%</unbreak>攻击力的冰属性<u>附加伤害</u>。",
+				"regen": null,
+				"er": null,
+				"id": 100107
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110141": 2,
@@ -31,13 +80,6 @@
 				"111012": 5,
 				"111013": 5
 			},
-			"skillName": "可爱即是正义",
-			"skillTag": "防御",
-			"skillDesc": "为指定我方单体提供能够抵消等同于三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>防御力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>伤害的护盾，持续<unbreak>#2[i]</unbreak>回合。\\n若该目标当前生命值百分比大于等于<unbreak>#3[i]%</unbreak>，被敌方攻击的概率大幅提高。",
-			"skillSimpleDesc": "对我方单体<color=#f29e38ff>施加护盾</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1001/SkillIcon_1001_BP.png",
-			"skillShortIcon": "SkillIcon_1001_BP",
-			"skillId": 100102,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -49,14 +91,6 @@
 				"111012": 10,
 				"111013": 5
 			},
-			"ultName": "冰刻箭雨之时",
-			"ultTag": "群攻",
-			"ultDesc": "对敌方全体造成等同于三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。受到攻击的敌方目标有<unbreak>#2[i]%</unbreak><u>基础概率</u>陷入冻结状态，持续<unbreak>#3[i]</unbreak>回合。\\n冻结状态下，敌方目标不能行动同时每回合开始时受到等同于三月七<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的冰属性<u>附加伤害</u>。",
-			"ultSimpleDesc": "对敌方<color=#f29e38ff>全体</color>造成冰属性伤害，有<color=#f29e38ff>概率施加冻结状态</color>。",
-			"ultIcon": "SpriteOutput/SkillIcons/1001/SkillIcon_1001_Ultra.png",
-			"ultShortIcon": "SkillIcon_1001_Ultra",
-			"ultER": 120,
-			"ultId": 100103,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -68,13 +102,6 @@
 				"111012": 10,
 				"111013": 5
 			},
-			"talentName": "少女的特权",
-			"talentTag": "单攻",
-			"talentDesc": "当持有护盾的我方目标受到敌方目标攻击后，三月七立即向攻击者发起<u>反击</u>，对其造成等同于三月七<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害，该效果每回合可触发<unbreak>#2[i]</unbreak>次。",
-			"talentSimpleDesc": "持有护盾的我方目标受到敌方攻击后，三月七<color=#f29e38ff>立即对其<u>反击</u></color>，造成少量冰属性伤害。",
-			"talentIcon": "SpriteOutput/SkillIcons/1001/SkillIcon_1001_Passive.png",
-			"talentShortIcon": "SkillIcon_1001_Passive",
-			"talentId": 100104,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -85,14 +112,7 @@
 				"111011": 6,
 				"111012": 10,
 				"111013": 5
-			},
-			"techName": "冻人的瞬间",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使随机敌方单体陷入冻结状态，持续<unbreak>#2[i]</unbreak>回合。\\n冻结状态下，敌方目标不能行动同时每回合开始时受到等同于三月七<unbreak>#3[i]%</unbreak>攻击力的冰属性<u>附加伤害</u>。",
-			"techSimpleDesc": "攻击敌人，进战后大概率使敌方随机单体陷入冻结状态。",
-			"techIcon": "SpriteOutput/SkillIcons/1001/SkillIcon_1001_Maze.png",
-			"techShortIcon": "SkillIcon_1001_Maze",
-			"techId": 100107
+			}
 		},
 		"avatarType": "Knight",
 		"promotion": {
@@ -131,14 +151,63 @@
 		"shortIcon": "1002",
 		"rarity": "VeryRare",
 		"element": "Wind",
-		"skills": {
-			"basicName": "云骑枪术•朔风",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于丹恒<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量风属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1002/SkillIcon_1002_Normal.png",
-			"basicShortIcon": "SkillIcon_1002_Normal",
-			"basicId": 100201,
+		"skills": [
+			{
+				"name": "云骑枪术•朔风",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于丹恒<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 100201
+			},
+			{
+				"name": "云骑枪术•疾雨",
+				"tag": "单攻",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于丹恒<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害。\\n战技造成的伤害触发暴击时，有<unbreak>#4[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标速度降低<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": 30,
+				"er": null,
+				"id": 100202
+			},
+			{
+				"name": "洞天幻化，长梦一觉",
+				"tag": "单攻",
+				"type": "终结技",
+				"description": "对指定敌方单体造成等同于丹恒<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害。当受到攻击的敌方目标处于减速状态时，终结技造成的伤害倍率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"regen": 5,
+				"er": 100,
+				"id": 100203
+			},
+			{
+				"name": "寸长寸强",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "当丹恒成为我方技能的施放目标时，下一次攻击的风属性<u>抗性穿透</u>提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。该效果在<unbreak>#2[i]</unbreak>回合后可再次触发。",
+				"regen": null,
+				"er": null,
+				"id": 100204
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 100206
+			},
+			{
+				"name": "破敌锋芒",
+				"tag": "强化",
+				"type": "秘技",
+				"description": "使用秘技后，下一次战斗开始时丹恒攻击力提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 100207
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110121": 2,
@@ -148,13 +217,6 @@
 				"111002": 5,
 				"111003": 5
 			},
-			"skillName": "云骑枪术•疾雨",
-			"skillTag": "单攻",
-			"skillDesc": "对指定敌方单体造成等同于丹恒<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害。\\n战技造成的伤害触发暴击时，有<unbreak>#4[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标速度降低<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。",
-			"skillSimpleDesc": "对敌方单体造成风属性伤害，暴击时大概率施加减速状态。",
-			"skillIcon": "SpriteOutput/SkillIcons/1002/SkillIcon_1002_BP.png",
-			"skillShortIcon": "SkillIcon_1002_BP",
-			"skillId": 100202,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -166,14 +228,6 @@
 				"111002": 10,
 				"111003": 5
 			},
-			"ultName": "洞天幻化，长梦一觉",
-			"ultTag": "单攻",
-			"ultDesc": "对指定敌方单体造成等同于丹恒<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害。当受到攻击的敌方目标处于减速状态时，终结技造成的伤害倍率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
-			"ultSimpleDesc": "对敌方单体造成大量风属性伤害，对减速状态的目标伤害倍率提高。",
-			"ultIcon": "SpriteOutput/SkillIcons/1002/SkillIcon_1002_Ultra.png",
-			"ultShortIcon": "SkillIcon_1002_Ultra",
-			"ultER": 100,
-			"ultId": 100203,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -185,13 +239,6 @@
 				"111002": 10,
 				"111003": 5
 			},
-			"talentName": "寸长寸强",
-			"talentTag": "强化",
-			"talentDesc": "当丹恒成为我方技能的施放目标时，下一次攻击的风属性<u>抗性穿透</u>提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。该效果在<unbreak>#2[i]</unbreak>回合后可再次触发。",
-			"talentSimpleDesc": "成为我方技能施放目标时，下一次攻击风属性<u>抗性穿透</u>提高。该效果2回合后可再次触发。",
-			"talentIcon": "SpriteOutput/SkillIcons/1002/SkillIcon_1002_Passive.png",
-			"talentShortIcon": "SkillIcon_1002_Passive",
-			"talentId": 100204,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -202,14 +249,7 @@
 				"111001": 6,
 				"111002": 10,
 				"111003": 5
-			},
-			"techName": "破敌锋芒",
-			"techTag": "强化",
-			"techDesc": "使用秘技后，下一次战斗开始时丹恒攻击力提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。",
-			"techSimpleDesc": "使用秘技，下一次进战后攻击力提高。",
-			"techIcon": "SpriteOutput/SkillIcons/1002/SkillIcon_1002_Maze.png",
-			"techShortIcon": "SkillIcon_1002_Maze",
-			"techId": 100207
+			}
 		},
 		"avatarType": "Rogue",
 		"promotion": {
@@ -248,14 +288,63 @@
 		"shortIcon": "1003",
 		"rarity": "SuperRare",
 		"element": "Fire",
-		"skills": {
-			"basicName": "武装调律",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于姬子<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量火属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1003/SkillIcon_1003_Normal.png",
-			"basicShortIcon": "SkillIcon_1003_Normal",
-			"basicId": 100301,
+		"skills": [
+			{
+				"name": "武装调律",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于姬子<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 100301
+			},
+			{
+				"name": "熔核爆裂",
+				"tag": "扩散",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于姬子<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，同时对其相邻目标造成等同于姬子<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的火属性伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 100302
+			},
+			{
+				"name": "天坠之火",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于姬子<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，每消灭1个敌方目标额外恢复姬子<unbreak>#2[i]</unbreak>点能量。",
+				"regen": 5,
+				"er": 120,
+				"id": 100303
+			},
+			{
+				"name": "乘胜追击",
+				"tag": "群攻",
+				"type": "天赋",
+				"description": "当有敌方目标的弱点被击破时，姬子获得充能，上限<unbreak>#2[i]</unbreak>点。\\n当我方目标施放攻击后，若姬子的充能达到上限则立即发动1次<u>追加攻击</u>，对敌方全体目标造成等同于姬子<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，并消耗全部充能。\\n战斗开始时获得1点充能。",
+				"regen": 10,
+				"er": null,
+				"id": 100304
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 100306
+			},
+			{
+				"name": "不完全燃烧",
+				"tag": "妨害",
+				"type": "秘技",
+				"description": "使用秘技后，制造1片持续<unbreak>#4[i]</unbreak>秒的特殊领域。与处于特殊领域内的敌人进入战斗后，有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方目标受到的火属性伤害提高<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。我方制造的领域效果最多存在1个。",
+				"regen": null,
+				"er": null,
+				"id": 100307
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110131": 3,
@@ -265,13 +354,6 @@
 				"111002": 7,
 				"111003": 7
 			},
-			"skillName": "熔核爆裂",
-			"skillTag": "扩散",
-			"skillDesc": "对指定敌方单体造成等同于姬子<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，同时对其相邻目标造成等同于姬子<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的火属性伤害。",
-			"skillSimpleDesc": "对敌方单体造成火属性伤害，对相邻目标造成少量火属性伤害。",
-			"skillIcon": "SpriteOutput/SkillIcons/1003/SkillIcon_1003_BP.png",
-			"skillShortIcon": "SkillIcon_1003_BP",
-			"skillId": 100302,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -283,14 +365,6 @@
 				"111002": 13,
 				"111003": 7
 			},
-			"ultName": "天坠之火",
-			"ultTag": "群攻",
-			"ultDesc": "对敌方全体造成等同于姬子<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，每消灭1个敌方目标额外恢复姬子<unbreak>#2[i]</unbreak>点能量。",
-			"ultSimpleDesc": "对敌方全体造成火属性伤害，消灭敌人时恢复能量。",
-			"ultIcon": "SpriteOutput/SkillIcons/1003/SkillIcon_1003_Ultra.png",
-			"ultShortIcon": "SkillIcon_1003_Ultra",
-			"ultER": 120,
-			"ultId": 100303,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -302,13 +376,6 @@
 				"111002": 13,
 				"111003": 7
 			},
-			"talentName": "乘胜追击",
-			"talentTag": "群攻",
-			"talentDesc": "当有敌方目标的弱点被击破时，姬子获得充能，上限<unbreak>#2[i]</unbreak>点。\\n当我方目标施放攻击后，若姬子的充能达到上限则立即发动1次<u>追加攻击</u>，对敌方全体目标造成等同于姬子<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，并消耗全部充能。\\n战斗开始时获得1点充能。",
-			"talentSimpleDesc": "敌人弱点被击破时获得充能。\\n我方目标攻击后，若充能达到上限则<color=#f29e38ff>立即发动<u>追加攻击</u></color>，对<color=#f29e38ff>敌方全体</color>造成火属性伤害并消耗全部充能。\\n战斗开始时获得1点充能。",
-			"talentIcon": "SpriteOutput/SkillIcons/1003/SkillIcon_1003_Passive.png",
-			"talentShortIcon": "SkillIcon_1003_Passive",
-			"talentId": 100304,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -319,14 +386,7 @@
 				"111001": 9,
 				"111002": 13,
 				"111003": 7
-			},
-			"techName": "不完全燃烧",
-			"techTag": "妨害",
-			"techDesc": "使用秘技后，制造1片持续<unbreak>#4[i]</unbreak>秒的特殊领域。与处于特殊领域内的敌人进入战斗后，有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方目标受到的火属性伤害提高<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。我方制造的领域效果最多存在1个。",
-			"techSimpleDesc": "制造特殊领域。与领域内敌人进入战斗后，大概率使敌方目标<color=#f29e38ff>受到的火属性伤害提高</color>。",
-			"techIcon": "SpriteOutput/SkillIcons/1003/SkillIcon_1003_Maze.png",
-			"techShortIcon": "SkillIcon_1003_Maze",
-			"techId": 100307
+			}
 		},
 		"avatarType": "Mage",
 		"promotion": {
@@ -365,14 +425,63 @@
 		"shortIcon": "1004",
 		"rarity": "SuperRare",
 		"element": "Imaginary",
-		"skills": {
-			"basicName": "重力压制",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于瓦尔特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量虚数属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1004/SkillIcon_1004_Normal.png",
-			"basicShortIcon": "SkillIcon_1004_Normal",
-			"basicId": 100401,
+		"skills": [
+			{
+				"name": "重力压制",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于瓦尔特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 100401
+			},
+			{
+				"name": "虚空断界",
+				"tag": "弹射",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于瓦尔特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，并额外造成2次伤害。每次伤害对敌方随机单体造成等同于瓦尔特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。攻击命中时有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基础概率</u>使受到攻击的敌方目标速度降低<unbreak>#3[i]%</unbreak>，持续<unbreak>#4[i]</unbreak>回合。",
+				"regen": 10,
+				"er": null,
+				"id": 100402
+			},
+			{
+				"name": "拟似黑洞",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于瓦尔特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，有<unbreak>#3[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标陷入禁锢状态，持续1回合。\\n禁锢状态下，敌方目标<u>行动延后</u><color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>，速度降低<unbreak>#4[i]%</unbreak>。",
+				"regen": 5,
+				"er": 120,
+				"id": 100403
+			},
+			{
+				"name": "时空扭曲",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "击中处于减速状态的敌方目标时，额外造成1次等同于瓦尔特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性<u>附加伤害</u>。",
+				"regen": null,
+				"er": null,
+				"id": 100404
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 100406
+			},
+			{
+				"name": "画地为牢",
+				"tag": "妨害",
+				"type": "秘技",
+				"description": "使用秘技后，制造1片持续<unbreak>#4[i]</unbreak>秒的特殊领域。处于特殊领域内的敌人移动速度降低<unbreak>#5[i]%</unbreak>。与处于特殊领域内的敌人进入战斗后，有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方目标陷入禁锢状态，持续1回合。\\n禁锢状态下，敌方目标<u>行动延后</u><unbreak>#2[i]%</unbreak>，速度降低<unbreak>#3[i]%</unbreak>。我方制造的领域效果最多存在1个。",
+				"regen": null,
+				"er": null,
+				"id": 100407
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110151": 3,
@@ -382,13 +491,6 @@
 				"112002": 7,
 				"112003": 7
 			},
-			"skillName": "虚空断界",
-			"skillTag": "弹射",
-			"skillDesc": "对指定敌方单体造成等同于瓦尔特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，并额外造成2次伤害。每次伤害对敌方随机单体造成等同于瓦尔特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。攻击命中时有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基础概率</u>使受到攻击的敌方目标速度降低<unbreak>#3[i]%</unbreak>，持续<unbreak>#4[i]</unbreak>回合。",
-			"skillSimpleDesc": "对敌方单体造成少量虚数属性伤害，共弹射3次，有概率对目标<color=#f29e38ff>施加减速状态</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1004/SkillIcon_1004_BP.png",
-			"skillShortIcon": "SkillIcon_1004_BP",
-			"skillId": 100402,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -400,14 +502,6 @@
 				"112002": 13,
 				"112003": 7
 			},
-			"ultName": "拟似黑洞",
-			"ultTag": "群攻",
-			"ultDesc": "对敌方全体造成等同于瓦尔特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，有<unbreak>#3[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标陷入禁锢状态，持续1回合。\\n禁锢状态下，敌方目标<u>行动延后</u><color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，速度降低<unbreak>#4[i]%</unbreak>。",
-			"ultSimpleDesc": "对敌方全体造成虚数属性伤害，<color=#f29e38ff>大概率施加禁锢效果</color>。",
-			"ultIcon": "SpriteOutput/SkillIcons/1004/SkillIcon_1004_Ultra.png",
-			"ultShortIcon": "SkillIcon_1004_Ultra",
-			"ultER": 120,
-			"ultId": 100403,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -419,13 +513,6 @@
 				"112002": 13,
 				"112003": 7
 			},
-			"talentName": "时空扭曲",
-			"talentTag": "强化",
-			"talentDesc": "击中处于减速状态的敌方目标时，额外造成1次等同于瓦尔特<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性<u>附加伤害</u>。",
-			"talentSimpleDesc": "击中处于减速状态的敌方目标时，<color=#f29e38ff>额外造成少量虚数属性<u>附加伤害</u></color>。",
-			"talentIcon": "SpriteOutput/SkillIcons/1004/SkillIcon_1004_Passive.png",
-			"talentShortIcon": "SkillIcon_1004_Passive",
-			"talentId": 100404,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -436,14 +523,7 @@
 				"112001": 9,
 				"112002": 13,
 				"112003": 7
-			},
-			"techName": "画地为牢",
-			"techTag": "妨害",
-			"techDesc": "使用秘技后，制造1片持续<unbreak>#4[i]</unbreak>秒的特殊领域。处于特殊领域内的敌人移动速度降低<unbreak>#5[i]%</unbreak>。与处于特殊领域内的敌人进入战斗后，有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方目标陷入禁锢状态，持续1回合。\\n禁锢状态下，敌方目标<u>行动延后</u><unbreak>#2[i]%</unbreak>，速度降低<unbreak>#3[i]%</unbreak>。我方制造的领域效果最多存在1个。",
-			"techSimpleDesc": "制造特殊领域。领域内敌人移动速度降低。与领域内敌人进入战斗后，<color=#f29e38ff>大概率使敌方目标陷入禁锢状态</color>。",
-			"techIcon": "SpriteOutput/SkillIcons/1004/SkillIcon_1004_Maze.png",
-			"techShortIcon": "SkillIcon_1004_Maze",
-			"techId": 100407
+			}
 		},
 		"avatarType": "Warlock",
 		"promotion": {
@@ -482,14 +562,63 @@
 		"shortIcon": "1005",
 		"rarity": "SuperRare",
 		"element": "Thunder",
-		"skills": {
-			"basicName": "夜间喧嚣不止",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量雷属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_Normal.png",
-			"basicShortIcon": "SkillIcon_1005_Normal",
-			"basicId": 100501,
+		"skills": [
+			{
+				"name": "夜间喧嚣不止",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 100501
+			},
+			{
+				"name": "月光摩挲连绵",
+				"tag": "扩散",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，同时对其相邻目标造成等同于卡芙卡<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的雷属性伤害。\\n若指定敌方单体处于持续伤害状态，其当前承受的所有持续伤害立即产生相当于原伤害<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 100502
+			},
+			{
+				"name": "悲剧尽头的颤音",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标陷入触电状态，并使其当前承受的触电状态立即产生相当于原伤害<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>的伤害。触电状态持续<unbreak>#3[i]</unbreak>回合。\\n触电状态下，敌方目标每回合开始时受到等同于卡芙卡<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的雷属性持续伤害。",
+				"regen": 5,
+				"er": 120,
+				"id": 100503
+			},
+			{
+				"name": "温柔亦同残酷",
+				"tag": "单攻",
+				"type": "天赋",
+				"description": "当卡芙卡的队友对敌方目标施放普攻后，卡芙卡立即发动<u>追加攻击</u>，对该目标造成等同于卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，并有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标陷入与终结技相同的触电状态，持续<unbreak>#3[i]</unbreak>回合，该效果每回合只能触发1次。",
+				"regen": 10,
+				"er": null,
+				"id": 100504
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 100506
+			},
+			{
+				"name": "宽恕无关慈悲",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击一定范围内的所有敌人，进入战斗后对敌方全体造成等同于卡芙卡<unbreak>#3[i]%</unbreak>攻击力的雷属性伤害，同时有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方每个单体目标陷入与终结技相同的触电状态，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 100507
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110151": 3,
@@ -499,13 +628,6 @@
 				"111012": 7,
 				"111013": 7
 			},
-			"skillName": "月光摩挲连绵",
-			"skillTag": "扩散",
-			"skillDesc": "对指定敌方单体造成等同于卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，同时对其相邻目标造成等同于卡芙卡<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的雷属性伤害。\\n若指定敌方单体处于持续伤害状态，其当前承受的所有持续伤害立即产生相当于原伤害<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的伤害。",
-			"skillSimpleDesc": "对敌方单体造成雷属性伤害，对相邻目标造成少量雷属性伤害。\\n若主目标处于持续伤害类负面状态，则使持续伤害类负面状态额外产生1次伤害。",
-			"skillIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_BP.png",
-			"skillShortIcon": "SkillIcon_1005_BP",
-			"skillId": 100502,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -517,14 +639,6 @@
 				"111012": 13,
 				"111013": 7
 			},
-			"ultName": "悲剧尽头的颤音",
-			"ultTag": "群攻",
-			"ultDesc": "对敌方全体造成等同于卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标陷入触电状态，并使其当前承受的触电状态立即产生相当于原伤害<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>的伤害。触电状态持续<unbreak>#3[i]</unbreak>回合。\\n触电状态下，敌方目标每回合开始时受到等同于卡芙卡<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的雷属性持续伤害。",
-			"ultSimpleDesc": "对敌方全体造成少量雷属性伤害，大概率施加触电状态。\\n若敌方目标处于触电状态，则使触电状态额外产生1次伤害。",
-			"ultIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_Ultra.png",
-			"ultShortIcon": "SkillIcon_1005_Ultra",
-			"ultER": 120,
-			"ultId": 100503,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -536,13 +650,6 @@
 				"111012": 13,
 				"111013": 7
 			},
-			"talentName": "温柔亦同残酷",
-			"talentTag": "单攻",
-			"talentDesc": "当卡芙卡的队友对敌方目标施放普攻后，卡芙卡立即发动<u>追加攻击</u>，对该目标造成等同于卡芙卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，并有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标陷入与终结技相同的触电状态，持续<unbreak>#3[i]</unbreak>回合，该效果每回合只能触发1次。",
-			"talentSimpleDesc": "当队友对敌方目标施放普攻后，卡芙卡立即发动<u>追加攻击</u>，对该目标造成雷属性伤害，并有大概率施加触电状态。该效果每回合只能触发1次。",
-			"talentIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_Passive.png",
-			"talentShortIcon": "SkillIcon_1005_Passive",
-			"talentId": 100504,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -553,14 +660,7 @@
 				"111011": 9,
 				"111012": 13,
 				"111013": 7
-			},
-			"techName": "宽恕无关慈悲",
-			"techTag": "",
-			"techDesc": "立即攻击一定范围内的所有敌人，进入战斗后对敌方全体造成等同于卡芙卡<unbreak>#3[i]%</unbreak>攻击力的雷属性伤害，同时有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方每个单体目标陷入与终结技相同的触电状态，持续<unbreak>#2[i]</unbreak>回合。",
-			"techSimpleDesc": "攻击范围内的所有敌人，进入战斗后对敌方全体造成少量雷属性伤害，大概率施加触电状态。",
-			"techIcon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_Maze.png",
-			"techShortIcon": "SkillIcon_1005_Maze",
-			"techId": 100507
+			}
 		},
 		"avatarType": "Warlock",
 		"promotion": {
@@ -599,14 +699,63 @@
 		"shortIcon": "1006",
 		"rarity": "SuperRare",
 		"element": "Quantum",
-		"skills": {
-			"basicName": "|系统警告|",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于银狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量量子属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_Normal.png",
-			"basicShortIcon": "SkillIcon_1006_Normal",
-			"basicId": 100601,
+		"skills": [
+			{
+				"name": "|系统警告|",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于银狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 100601
+			},
+			{
+				"name": "是否允许更改？",
+				"tag": "妨害",
+				"type": "战技",
+				"description": "有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基础概率</u>为指定敌方单体目标添加1个场上我方目标持有属性的弱点，且该弱点对应属性的抗性降低<unbreak>#4[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。若添加的是敌方目标原有属性的弱点，则不会触发对应属性的抗性降低效果。\\n单个敌方目标仅能被银狼添加1个弱点，当银狼对其再次添加弱点时，仅保留最新添加的弱点。\\n有<unbreak>#5[i]%</unbreak>的<u>基础概率</u>额外使该目标的全属性抗性降低<color=#f29e38ff><unbreak>#6[f1]%</unbreak></color>，持续<unbreak>#7[i]</unbreak>回合。\\n对该目标造成等同于银狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 100602
+			},
+			{
+				"name": "|账号已封禁|",
+				"tag": "妨害",
+				"type": "终结技",
+				"description": "有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基础概率</u>使指定敌方单体防御力降低<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>，持续<unbreak>#4[i]</unbreak>回合，同时对该目标造成等同于银狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害。",
+				"regen": 5,
+				"er": 110,
+				"id": 100603
+			},
+			{
+				"name": "等待程序响应…",
+				"tag": "妨害",
+				"type": "天赋",
+				"description": "银狼能够制造：攻击力降低<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>、防御力降低<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>、速度降低<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>3种【缺陷】。\\n银狼每次施放攻击后有<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>的<u>基础概率</u>给受到攻击的敌方目标植入1个随机【缺陷】，持续<unbreak>#5[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 100604
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 100606
+			},
+			{
+				"name": "|强制结束进程|",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后对敌方全体造成等同于银狼<unbreak>#1[i]%</unbreak>攻击力的量子属性伤害，并无视弱点属性削减敌方全体的韧性，击破弱点时，触发量子属性的弱点击破效果。",
+				"regen": null,
+				"er": null,
+				"id": 100607
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110151": 3,
@@ -616,13 +765,6 @@
 				"112012": 7,
 				"112013": 7
 			},
-			"skillName": "是否允许更改？",
-			"skillTag": "妨害",
-			"skillDesc": "有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基础概率</u>为指定敌方单体目标添加1个场上我方目标持有属性的弱点，且该弱点对应属性的抗性降低<unbreak>#4[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。若添加的是敌方目标原有属性的弱点，则不会触发对应属性的抗性降低效果。\\n单个敌方目标仅能被银狼添加1个弱点，当银狼对其再次添加弱点时，仅保留最新添加的弱点。\\n有<unbreak>#5[i]%</unbreak>的<u>基础概率</u>额外使该目标的全属性抗性降低<color=#f29e38ff><unbreak>#6[f1]%</unbreak></color>，持续<unbreak>#7[i]</unbreak>回合。\\n对该目标造成等同于银狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害。",
-			"skillSimpleDesc": "大概率为敌方单体添加额外的弱点，并对其造成量子属性伤害。",
-			"skillIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_BP.png",
-			"skillShortIcon": "SkillIcon_1006_BP",
-			"skillId": 100602,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -634,14 +776,6 @@
 				"112012": 13,
 				"112013": 7
 			},
-			"ultName": "|账号已封禁|",
-			"ultTag": "妨害",
-			"ultDesc": "有<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的<u>基础概率</u>使指定敌方单体防御力降低<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>，持续<unbreak>#4[i]</unbreak>回合，同时对该目标造成等同于银狼<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害。",
-			"ultSimpleDesc": "大概率使敌方单体防御力降低，并对其造成大量量子属性伤害。",
-			"ultIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_Ultra.png",
-			"ultShortIcon": "SkillIcon_1006_Ultra",
-			"ultER": 110,
-			"ultId": 100603,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -653,13 +787,6 @@
 				"112012": 13,
 				"112013": 7
 			},
-			"talentName": "等待程序响应…",
-			"talentTag": "妨害",
-			"talentDesc": "银狼能够制造：攻击力降低<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>、防御力降低<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>、速度降低<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>3种【缺陷】。\\n银狼每次施放攻击后有<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>的<u>基础概率</u>给受到攻击的敌方目标植入1个随机【缺陷】，持续<unbreak>#5[i]</unbreak>回合。",
-			"talentSimpleDesc": "攻击后有概率给目标植入1个随机【缺陷】。",
-			"talentIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_Passive.png",
-			"talentShortIcon": "SkillIcon_1006_Passive",
-			"talentId": 100604,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -670,14 +797,7 @@
 				"112011": 9,
 				"112012": 13,
 				"112013": 7
-			},
-			"techName": "|强制结束进程|",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后对敌方全体造成等同于银狼<unbreak>#1[i]%</unbreak>攻击力的量子属性伤害，并无视弱点属性削减敌方全体的韧性，击破弱点时，触发量子属性的弱点击破效果。",
-			"techSimpleDesc": "攻击敌人，进战后对敌方全体造成少量伤害，并无视弱点属性削减韧性。",
-			"techIcon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_Maze.png",
-			"techShortIcon": "SkillIcon_1006_Maze",
-			"techId": 100607
+			}
 		},
 		"avatarType": "Warlock",
 		"promotion": {
@@ -716,14 +836,63 @@
 		"shortIcon": "1008",
 		"rarity": "VeryRare",
 		"element": "Thunder",
-		"skills": {
-			"basicName": "如雷疾行",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于阿兰<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量雷属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1008/SkillIcon_1008_Normal.png",
-			"basicShortIcon": "SkillIcon_1008_Normal",
-			"basicId": 100801,
+		"skills": [
+			{
+				"name": "如雷疾行",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于阿兰<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 100801
+			},
+			{
+				"name": "禁锢解除",
+				"tag": "单攻",
+				"type": "战技",
+				"description": "消耗等同于阿兰生命上限<unbreak>#1[i]%</unbreak>的生命值对指定敌方单体造成等同于阿兰<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的雷属性伤害。若当前生命值不足，施放战技时阿兰的当前生命值降至1点。",
+				"regen": 30,
+				"er": null,
+				"id": 100802
+			},
+			{
+				"name": "狂者制裁",
+				"tag": "扩散",
+				"type": "终结技",
+				"description": "对指定敌方单体造成等同于阿兰<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，同时对其相邻目标造成等同于阿兰<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的雷属性伤害。",
+				"regen": 5,
+				"er": 110,
+				"id": 100803
+			},
+			{
+				"name": "至痛至怒",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "根据阿兰当前损失的生命值百分比获得伤害加成，最多使阿兰造成的伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
+				"regen": null,
+				"er": null,
+				"id": 100804
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 100806
+			},
+			{
+				"name": "极速收割",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后对敌方全体造成等同于阿兰<unbreak>#1[i]%</unbreak>攻击力的雷属性伤害。",
+				"regen": null,
+				"er": null,
+				"id": 100807
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110111": 2,
@@ -733,13 +902,6 @@
 				"111002": 5,
 				"111003": 5
 			},
-			"skillName": "禁锢解除",
-			"skillTag": "单攻",
-			"skillDesc": "消耗等同于阿兰生命上限<unbreak>#1[i]%</unbreak>的生命值对指定敌方单体造成等同于阿兰<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的雷属性伤害。若当前生命值不足，施放战技时阿兰的当前生命值降至1点。",
-			"skillSimpleDesc": "消耗自身部分生命值，对敌方单体造成雷属性伤害。",
-			"skillIcon": "SpriteOutput/SkillIcons/1008/SkillIcon_1008_BP.png",
-			"skillShortIcon": "SkillIcon_1008_BP",
-			"skillId": 100802,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -751,14 +913,6 @@
 				"111002": 10,
 				"111003": 5
 			},
-			"ultName": "狂者制裁",
-			"ultTag": "扩散",
-			"ultDesc": "对指定敌方单体造成等同于阿兰<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，同时对其相邻目标造成等同于阿兰<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的雷属性伤害。",
-			"ultSimpleDesc": "对敌方单体造成大量雷属性伤害，对相邻目标造成雷属性伤害。",
-			"ultIcon": "SpriteOutput/SkillIcons/1008/SkillIcon_1008_Ultra.png",
-			"ultShortIcon": "SkillIcon_1008_Ultra",
-			"ultER": 110,
-			"ultId": 100803,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -770,13 +924,6 @@
 				"111002": 10,
 				"111003": 5
 			},
-			"talentName": "至痛至怒",
-			"talentTag": "强化",
-			"talentDesc": "根据阿兰当前损失的生命值百分比获得伤害加成，最多使阿兰造成的伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
-			"talentSimpleDesc": "根据自身当前已损失的生命值百分比提高伤害。",
-			"talentIcon": "SpriteOutput/SkillIcons/1008/SkillIcon_1008_Passive.png",
-			"talentShortIcon": "SkillIcon_1008_Passive",
-			"talentId": 100804,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -787,14 +934,7 @@
 				"111001": 6,
 				"111002": 10,
 				"111003": 5
-			},
-			"techName": "极速收割",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后对敌方全体造成等同于阿兰<unbreak>#1[i]%</unbreak>攻击力的雷属性伤害。",
-			"techSimpleDesc": "攻击敌人，进战后对敌方全体造成少量雷属性伤害。",
-			"techIcon": "SpriteOutput/SkillIcons/1008/SkillIcon_1008_Maze.png",
-			"techShortIcon": "SkillIcon_1008_Maze",
-			"techId": 100807
+			}
 		},
 		"avatarType": "Warrior",
 		"promotion": {
@@ -833,14 +973,63 @@
 		"shortIcon": "1009",
 		"rarity": "VeryRare",
 		"element": "Fire",
-		"skills": {
-			"basicName": "光谱射线",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于艾丝妲<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量火属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1009/SkillIcon_1009_Normal.png",
-			"basicShortIcon": "SkillIcon_1009_Normal",
-			"basicId": 100901,
+		"skills": [
+			{
+				"name": "光谱射线",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于艾丝妲<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 100901
+			},
+			{
+				"name": "流星群落",
+				"tag": "弹射",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于艾丝妲<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，并额外造成4次伤害。每次伤害对随机敌方单体造成等同于艾丝妲<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
+				"regen": 6,
+				"er": null,
+				"id": 100902
+			},
+			{
+				"name": "星空祝言",
+				"tag": "辅助",
+				"type": "终结技",
+				"description": "使我方全体速度提高<color=#f29e38ff><unbreak>#1[i]</unbreak></color>点，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": 5,
+				"er": 120,
+				"id": 100903
+			},
+			{
+				"name": "天象学",
+				"tag": "辅助",
+				"type": "天赋",
+				"description": "每击中1名不同的敌方目标获得1层蓄能，若受到攻击的敌方目标弱点为火属性，则额外获得1层蓄能。\\n艾丝妲每拥有1层蓄能，会使我方全体攻击力提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，该效果最多叠加<unbreak>#2[i]</unbreak>层。\\n从自身的第2回合开始，艾丝妲每回合开始时蓄能层数减少<unbreak>#3[i]</unbreak>层。",
+				"regen": null,
+				"er": null,
+				"id": 100904
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 100906
+			},
+			{
+				"name": "灵光一现",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后对敌方全体目标造成等同于艾丝妲<unbreak>#1[i]%</unbreak>攻击力的火属性伤害。",
+				"regen": null,
+				"er": null,
+				"id": 100907
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110161": 2,
@@ -850,13 +1039,6 @@
 				"112002": 5,
 				"112003": 5
 			},
-			"skillName": "流星群落",
-			"skillTag": "弹射",
-			"skillDesc": "对指定敌方单体造成等同于艾丝妲<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，并额外造成4次伤害。每次伤害对随机敌方单体造成等同于艾丝妲<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
-			"skillSimpleDesc": "对敌方单体造成少量火属性伤害，共弹射5次。",
-			"skillIcon": "SpriteOutput/SkillIcons/1009/SkillIcon_1009_BP.png",
-			"skillShortIcon": "SkillIcon_1009_BP",
-			"skillId": 100902,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -868,14 +1050,6 @@
 				"112002": 10,
 				"112003": 5
 			},
-			"ultName": "星空祝言",
-			"ultTag": "辅助",
-			"ultDesc": "使我方全体速度提高<color=#f29e38ff><unbreak>#1[i]</unbreak></color>点，持续<unbreak>#2[i]</unbreak>回合。",
-			"ultSimpleDesc": "使我方全体<color=#f29e38ff>速度提高</color>。",
-			"ultIcon": "SpriteOutput/SkillIcons/1009/SkillIcon_1009_Ultra.png",
-			"ultShortIcon": "SkillIcon_1009_Ultra",
-			"ultER": 120,
-			"ultId": 100903,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -887,13 +1061,6 @@
 				"112002": 10,
 				"112003": 5
 			},
-			"talentName": "天象学",
-			"talentTag": "辅助",
-			"talentDesc": "每击中1名不同的敌方目标获得1层蓄能，若受到攻击的敌方目标弱点为火属性，则额外获得1层蓄能。\\n艾丝妲每拥有1层蓄能，会使我方全体攻击力提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，该效果最多叠加<unbreak>#2[i]</unbreak>层。\\n从自身的第2回合开始，艾丝妲每回合开始时蓄能层数减少<unbreak>#3[i]</unbreak>层。",
-			"talentSimpleDesc": "每击中1名不同敌人后获得1层蓄能，最多叠加5层。每层蓄能提高我方全体攻击力。自身回合开始时降低蓄能层数。",
-			"talentIcon": "SpriteOutput/SkillIcons/1009/SkillIcon_1009_Passive.png",
-			"talentShortIcon": "SkillIcon_1009_Passive",
-			"talentId": 100904,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -904,14 +1071,7 @@
 				"112001": 6,
 				"112002": 10,
 				"112003": 5
-			},
-			"techName": "灵光一现",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后对敌方全体目标造成等同于艾丝妲<unbreak>#1[i]%</unbreak>攻击力的火属性伤害。",
-			"techSimpleDesc": "攻击敌人，进战后对敌方全体造成少量伤害。",
-			"techIcon": "SpriteOutput/SkillIcons/1009/SkillIcon_1009_Maze.png",
-			"techShortIcon": "SkillIcon_1009_Maze",
-			"techId": 100907
+			}
 		},
 		"avatarType": "Shaman",
 		"promotion": {
@@ -950,14 +1110,63 @@
 		"shortIcon": "1013",
 		"rarity": "VeryRare",
 		"element": "Ice",
-		"skills": {
-			"basicName": "看什么看",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于黑塔<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量冰属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1013/SkillIcon_1013_Normal.png",
-			"basicShortIcon": "SkillIcon_1013_Normal",
-			"basicId": 101301,
+		"skills": [
+			{
+				"name": "看什么看",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于黑塔<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 101301
+			},
+			{
+				"name": "一锤子买卖",
+				"tag": "群攻",
+				"type": "战技",
+				"description": "对敌方全体造成等同于黑塔<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。若敌方目标当前生命值百分比大于等于<unbreak>#2[i]%</unbreak>，则对该目标造成的伤害提高<unbreak>#3[i]%</unbreak>。",
+				"regen": 30,
+				"er": null,
+				"id": 101302
+			},
+			{
+				"name": "是魔法，我加了魔法",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于黑塔<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
+				"regen": 5,
+				"er": 110,
+				"id": 101303
+			},
+			{
+				"name": "还是我来吧",
+				"tag": "群攻",
+				"type": "天赋",
+				"description": "当任意我方目标的攻击使敌方目标的当前生命值百分比小于等于<unbreak>#1[i]%</unbreak>时，黑塔发动<u>追加攻击</u>，对敌方全体造成等同于黑塔<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的冰属性伤害。",
+				"regen": 5,
+				"er": null,
+				"id": 101304
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 101306
+			},
+			{
+				"name": "可以优化一下",
+				"tag": "强化",
+				"type": "秘技",
+				"description": "使用秘技后，下一次战斗开始时黑塔攻击力提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 101307
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110131": 2,
@@ -967,13 +1176,6 @@
 				"111002": 5,
 				"111003": 5
 			},
-			"skillName": "一锤子买卖",
-			"skillTag": "群攻",
-			"skillDesc": "对敌方全体造成等同于黑塔<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。若敌方目标当前生命值百分比大于等于<unbreak>#2[i]%</unbreak>，则对该目标造成的伤害提高<unbreak>#3[i]%</unbreak>。",
-			"skillSimpleDesc": "对敌方全体造成少量冰属性伤害，对生命值较高的目标造成的伤害提高。",
-			"skillIcon": "SpriteOutput/SkillIcons/1013/SkillIcon_1013_BP.png",
-			"skillShortIcon": "SkillIcon_1013_BP",
-			"skillId": 101302,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -985,14 +1187,6 @@
 				"111002": 10,
 				"111003": 5
 			},
-			"ultName": "是魔法，我加了魔法",
-			"ultTag": "群攻",
-			"ultDesc": "对敌方全体造成等同于黑塔<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
-			"ultSimpleDesc": "对敌方全体造成冰属性伤害。",
-			"ultIcon": "SpriteOutput/SkillIcons/1013/SkillIcon_1013_Ultra.png",
-			"ultShortIcon": "SkillIcon_1013_Ultra",
-			"ultER": 110,
-			"ultId": 101303,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1004,12 +1198,6 @@
 				"111002": 10,
 				"111003": 5
 			},
-			"talentName": "还是我来吧",
-			"talentTag": "群攻",
-			"talentDesc": "当任意我方目标的攻击使敌方目标的当前生命值百分比小于等于<unbreak>#1[i]%</unbreak>时，黑塔发动<u>追加攻击</u>，对敌方全体造成等同于黑塔<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的冰属性伤害。",
-			"talentIcon": "SpriteOutput/SkillIcons/1013/SkillIcon_1013_Passive.png",
-			"talentShortIcon": "SkillIcon_1013_Passive",
-			"talentId": 101304,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1020,13 +1208,7 @@
 				"111001": 6,
 				"111002": 10,
 				"111003": 5
-			},
-			"techName": "可以优化一下",
-			"techTag": "强化",
-			"techDesc": "使用秘技后，下一次战斗开始时黑塔攻击力提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。",
-			"techIcon": "SpriteOutput/SkillIcons/1013/SkillIcon_1013_Maze.png",
-			"techShortIcon": "SkillIcon_1013_Maze",
-			"techId": 101307
+			}
 		},
 		"avatarType": "Mage",
 		"promotion": {
@@ -1065,14 +1247,63 @@
 		"shortIcon": "1101",
 		"rarity": "SuperRare",
 		"element": "Wind",
-		"skills": {
-			"basicName": "驭风的子弹",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于布洛妮娅<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量风属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1101/SkillIcon_1101_Normal.png",
-			"basicShortIcon": "SkillIcon_1101_Normal",
-			"basicId": 110101,
+		"skills": [
+			{
+				"name": "驭风的子弹",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于布洛妮娅<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 110101
+			},
+			{
+				"name": "作战再部署",
+				"tag": "辅助",
+				"type": "战技",
+				"description": "解除指定我方单体的1个<u>负面效果</u>，并使该目标立即行动，造成的伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，持续<unbreak>#3[i]</unbreak>回合。\\n当对自身施放该技能时，无法触发立即行动效果。",
+				"regen": 30,
+				"er": null,
+				"id": 110102
+			},
+			{
+				"name": "贝洛伯格进行曲",
+				"tag": "辅助",
+				"type": "终结技",
+				"description": "使我方全体攻击力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，同时提高等同于布洛妮娅<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>暴击伤害+<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>的暴击伤害，持续<unbreak>#4[i]</unbreak>回合。",
+				"regen": 5,
+				"er": 120,
+				"id": 110103
+			},
+			{
+				"name": "先人一步",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "施放普攻后，布洛妮娅的下一次<u>行动提前</u><color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
+				"regen": 5,
+				"er": null,
+				"id": 110104
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 110106
+			},
+			{
+				"name": "在旗帜下",
+				"tag": "辅助",
+				"type": "秘技",
+				"description": "使用秘技后，下一次战斗开始时使我方全体攻击力提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 110107
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110161": 3,
@@ -1082,13 +1313,6 @@
 				"112002": 7,
 				"112003": 7
 			},
-			"skillName": "作战再部署",
-			"skillTag": "辅助",
-			"skillDesc": "解除指定我方单体的1个<u>负面效果</u>，并使该目标立即行动，造成的伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，持续<unbreak>#3[i]</unbreak>回合。\\n当对自身施放该技能时，无法触发立即行动效果。",
-			"skillSimpleDesc": "<color=#f29e38ff>解除</color>我方单体1个<color=#f29e38ff><u>负面效果</u></color>，使其<color=#f29e38ff>造成的伤害提高</color>，并<color=#f29e38ff>立刻行动</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1101/SkillIcon_1101_BP.png",
-			"skillShortIcon": "SkillIcon_1101_BP",
-			"skillId": 110102,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -1100,14 +1324,6 @@
 				"112002": 13,
 				"112003": 7
 			},
-			"ultName": "贝洛伯格进行曲",
-			"ultTag": "辅助",
-			"ultDesc": "使我方全体攻击力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，同时提高等同于布洛妮娅<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>暴击伤害+<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>的暴击伤害，持续<unbreak>#4[i]</unbreak>回合。",
-			"ultSimpleDesc": "使我方全体<color=#f29e38ff>攻击力提高</color>，<color=#f29e38ff>暴击伤害提高</color>。",
-			"ultIcon": "SpriteOutput/SkillIcons/1101/SkillIcon_1101_Ultra.png",
-			"ultShortIcon": "SkillIcon_1101_Ultra",
-			"ultER": 120,
-			"ultId": 110103,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -1119,13 +1335,6 @@
 				"112002": 13,
 				"112003": 7
 			},
-			"talentName": "先人一步",
-			"talentTag": "强化",
-			"talentDesc": "施放普攻后，布洛妮娅的下一次<u>行动提前</u><color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
-			"talentSimpleDesc": "施放普攻后，自身下一次<u>行动提前</u>。",
-			"talentIcon": "SpriteOutput/SkillIcons/1101/SkillIcon_1101_Passive.png",
-			"talentShortIcon": "SkillIcon_1101_Passive",
-			"talentId": 110104,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -1136,14 +1345,7 @@
 				"112001": 9,
 				"112002": 13,
 				"112003": 7
-			},
-			"techName": "在旗帜下",
-			"techTag": "辅助",
-			"techDesc": "使用秘技后，下一次战斗开始时使我方全体攻击力提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。",
-			"techSimpleDesc": "使用秘技，下一次战斗开始时我方全体攻击力提高。",
-			"techIcon": "SpriteOutput/SkillIcons/1101/SkillIcon_1101_Maze.png",
-			"techShortIcon": "SkillIcon_1101_Maze",
-			"techId": 110107
+			}
 		},
 		"avatarType": "Shaman",
 		"promotion": {
@@ -1182,14 +1384,63 @@
 		"shortIcon": "1102",
 		"rarity": "SuperRare",
 		"element": "Quantum",
-		"skills": {
-			"basicName": "强袭",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于希儿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量量子属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1102/SkillIcon_1102_Normal.png",
-			"basicShortIcon": "SkillIcon_1102_Normal",
-			"basicId": 110201,
+		"skills": [
+			{
+				"name": "强袭",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于希儿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 110201
+			},
+			{
+				"name": "归刃",
+				"tag": "单攻",
+				"type": "战技",
+				"description": "使希儿的速度提高<unbreak>#2[i]%</unbreak>，并对指定敌方单体造成等同于希儿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害，速度提高效果持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": 30,
+				"er": null,
+				"id": 110202
+			},
+			{
+				"name": "乱蝶",
+				"tag": "单攻",
+				"type": "终结技",
+				"description": "立即进入增幅状态，并对指定敌方单体造成等同于希儿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害。",
+				"regen": 5,
+				"er": 120,
+				"id": 110203
+			},
+			{
+				"name": "再现",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "施放普攻、战技、终结技消灭敌方目标时立即获得1个<u>额外回合</u>并进入增幅状态，增幅状态下希儿施放攻击造成的伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，持续<unbreak>#2[i]</unbreak>回合。\\n若希儿在因天赋【再现】获得的<u>额外回合</u>中消灭敌方目标，此天赋不会生效。",
+				"regen": null,
+				"er": null,
+				"id": 110204
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 110206
+			},
+			{
+				"name": "幻身",
+				"tag": "强化",
+				"type": "秘技",
+				"description": "使用秘技后进入持续<unbreak>#1[i]</unbreak>秒的隐身状态。隐身状态下不会被敌人发现，且主动攻击敌人进入战斗时，希儿立即进入增幅状态。",
+				"regen": null,
+				"er": null,
+				"id": 110207
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110121": 3,
@@ -1199,13 +1450,6 @@
 				"111012": 7,
 				"111013": 7
 			},
-			"skillName": "归刃",
-			"skillTag": "单攻",
-			"skillDesc": "使希儿的速度提高<unbreak>#2[i]%</unbreak>，并对指定敌方单体造成等同于希儿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害，速度提高效果持续<unbreak>#3[i]</unbreak>回合。",
-			"skillSimpleDesc": "对敌方单体造成量子属性伤害，并使自身速度提高。",
-			"skillIcon": "SpriteOutput/SkillIcons/1102/SkillIcon_1102_BP.png",
-			"skillShortIcon": "SkillIcon_1102_BP",
-			"skillId": 110202,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -1217,14 +1461,6 @@
 				"111012": 13,
 				"111013": 7
 			},
-			"ultName": "乱蝶",
-			"ultTag": "单攻",
-			"ultDesc": "立即进入增幅状态，并对指定敌方单体造成等同于希儿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害。",
-			"ultSimpleDesc": "进入<color=#f29e38ff>增幅状态</color>，对敌方单体造成大量量子属性伤害。",
-			"ultIcon": "SpriteOutput/SkillIcons/1102/SkillIcon_1102_Ultra.png",
-			"ultShortIcon": "SkillIcon_1102_Ultra",
-			"ultER": 120,
-			"ultId": 110203,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -1236,13 +1472,6 @@
 				"111012": 13,
 				"111013": 7
 			},
-			"talentName": "再现",
-			"talentTag": "强化",
-			"talentDesc": "施放普攻、战技、终结技消灭敌方目标时立即获得1个<u>额外回合</u>并进入增幅状态，增幅状态下希儿施放攻击造成的伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，持续<unbreak>#2[i]</unbreak>回合。\\n若希儿在因天赋【再现】获得的<u>额外回合</u>中消灭敌方目标，此天赋不会生效。",
-			"talentSimpleDesc": "施放普攻、战技、终结技<color=#f29e38ff>消灭敌方目标</color>时获得<color=#f29e38ff><u>额外回合</u>并进入增幅状态</color>，增幅状态下自身造成的伤害提高。",
-			"talentIcon": "SpriteOutput/SkillIcons/1102/SkillIcon_1102_Passive.png",
-			"talentShortIcon": "SkillIcon_1102_Passive",
-			"talentId": 110204,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -1253,14 +1482,7 @@
 				"111011": 9,
 				"111012": 13,
 				"111013": 7
-			},
-			"techName": "幻身",
-			"techTag": "强化",
-			"techDesc": "使用秘技后进入持续<unbreak>#1[i]</unbreak>秒的隐身状态。隐身状态下不会被敌人发现，且主动攻击敌人进入战斗时，希儿立即进入增幅状态。",
-			"techSimpleDesc": "进入<color=#f29e38ff>隐身</color>状态。攻击敌人进入战斗后立即进入<color=#f29e38ff>增幅状态</color>。",
-			"techIcon": "SpriteOutput/SkillIcons/1102/SkillIcon_1102_Maze.png",
-			"techShortIcon": "SkillIcon_1102_Maze",
-			"techId": 110207
+			}
 		},
 		"avatarType": "Rogue",
 		"promotion": {
@@ -1299,14 +1521,63 @@
 		"shortIcon": "1103",
 		"rarity": "VeryRare",
 		"element": "Thunder",
-		"skills": {
-			"basicName": "雷鸣音阶",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于希露瓦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量雷属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1103/SkillIcon_1103_Normal.png",
-			"basicShortIcon": "SkillIcon_1103_Normal",
-			"basicId": 110301,
+		"skills": [
+			{
+				"name": "雷鸣音阶",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于希露瓦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 110301
+			},
+			{
+				"name": "电光石火间",
+				"tag": "扩散",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于希露瓦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，同时对其相邻目标造成等同于希露瓦<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的雷属性伤害，此外有<unbreak>#3[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标陷入触电状态，持续<unbreak>#4[i]</unbreak>回合。\\n触电状态下，敌方目标每回合开始时受到等同于希露瓦<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>攻击力的雷属性持续伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 110302
+			},
+			{
+				"name": "机械热潮登场！",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于希露瓦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，并使触电状态下的敌方目标延长<unbreak>#2[i]</unbreak>回合的触电状态。",
+				"regen": 5,
+				"er": 100,
+				"id": 110303
+			},
+			{
+				"name": "燃情和弦",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "施放攻击后，对所有触电状态下的敌方目标造成等同于希露瓦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性<u>附加伤害</u>。",
+				"regen": null,
+				"er": null,
+				"id": 110304
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 110306
+			},
+			{
+				"name": "晚安，贝洛伯格",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后对敌方随机单体造成等同于希露瓦<unbreak>#4[i]%</unbreak>攻击力的雷属性伤害，同时有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方每个单体目标陷入触电状态，持续<unbreak>#3[i]</unbreak>回合。\\n触电状态下，敌方目标每回合开始时受到等同于希露瓦<unbreak>#2[i]%</unbreak>攻击力的雷属性持续伤害。",
+				"regen": null,
+				"er": null,
+				"id": 110307
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110131": 2,
@@ -1316,13 +1587,6 @@
 				"112002": 5,
 				"112003": 5
 			},
-			"skillName": "电光石火间",
-			"skillTag": "扩散",
-			"skillDesc": "对指定敌方单体造成等同于希露瓦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，同时对其相邻目标造成等同于希露瓦<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的雷属性伤害，此外有<unbreak>#3[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标陷入触电状态，持续<unbreak>#4[i]</unbreak>回合。\\n触电状态下，敌方目标每回合开始时受到等同于希露瓦<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>攻击力的雷属性持续伤害。",
-			"skillSimpleDesc": "对敌方单体及其相邻目标造成少量雷属性伤害，有大概率对目标施加触电状态。",
-			"skillIcon": "SpriteOutput/SkillIcons/1103/SkillIcon_1103_BP.png",
-			"skillShortIcon": "SkillIcon_1103_BP",
-			"skillId": 110302,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1334,14 +1598,6 @@
 				"112002": 10,
 				"112003": 5
 			},
-			"ultName": "机械热潮登场！",
-			"ultTag": "群攻",
-			"ultDesc": "对敌方全体造成等同于希露瓦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，并使触电状态下的敌方目标延长<unbreak>#2[i]</unbreak>回合的触电状态。",
-			"ultSimpleDesc": "对敌方全体造成雷属性伤害，并延长目标触电状态的持续时间。",
-			"ultIcon": "SpriteOutput/SkillIcons/1103/SkillIcon_1103_Ultra.png",
-			"ultShortIcon": "SkillIcon_1103_Ultra",
-			"ultER": 100,
-			"ultId": 110303,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1353,13 +1609,6 @@
 				"112002": 10,
 				"112003": 5
 			},
-			"talentName": "燃情和弦",
-			"talentTag": "强化",
-			"talentDesc": "施放攻击后，对所有触电状态下的敌方目标造成等同于希露瓦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性<u>附加伤害</u>。",
-			"talentSimpleDesc": "施放攻击后，对所有触电状态敌方目标造成少量<u>附加伤害</u>。",
-			"talentIcon": "SpriteOutput/SkillIcons/1103/SkillIcon_1103_Passive.png",
-			"talentShortIcon": "SkillIcon_1103_Passive",
-			"talentId": 110304,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1370,14 +1619,7 @@
 				"112001": 6,
 				"112002": 10,
 				"112003": 5
-			},
-			"techName": "晚安，贝洛伯格",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后对敌方随机单体造成等同于希露瓦<unbreak>#4[i]%</unbreak>攻击力的雷属性伤害，同时有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方每个单体目标陷入触电状态，持续<unbreak>#3[i]</unbreak>回合。\\n触电状态下，敌方目标每回合开始时受到等同于希露瓦<unbreak>#2[i]%</unbreak>攻击力的雷属性持续伤害。",
-			"techSimpleDesc": "攻击敌人，进战后对敌方随机单体造成少量伤害，并有大概率使敌方每个单体目标陷入触电状态。",
-			"techIcon": "SpriteOutput/SkillIcons/1103/SkillIcon_1103_Maze.png",
-			"techShortIcon": "SkillIcon_1103_Maze",
-			"techId": 110307
+			}
 		},
 		"avatarType": "Mage",
 		"promotion": {
@@ -1416,14 +1658,63 @@
 		"shortIcon": "1104",
 		"rarity": "SuperRare",
 		"element": "Ice",
-		"skills": {
-			"basicName": "一意之拳",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于杰帕德<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量冰属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1104/SkillIcon_1104_Normal.png",
-			"basicShortIcon": "SkillIcon_1104_Normal",
-			"basicId": 110401,
+		"skills": [
+			{
+				"name": "一意之拳",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于杰帕德<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 110401
+			},
+			{
+				"name": "震慑之击",
+				"tag": "妨害",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于杰帕德<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害，同时有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标陷入冻结状态，持续<unbreak>#3[i]</unbreak>回合。\\n冻结状态下，敌方目标不能行动同时每回合开始时受到等同于杰帕德<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的冰属性<u>附加伤害</u>。",
+				"regen": 30,
+				"er": null,
+				"id": 110402
+			},
+			{
+				"name": "永屹之壁",
+				"tag": "防御",
+				"type": "终结技",
+				"description": "为我方全体提供能够抵消等同于杰帕德<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>防御力+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>伤害的护盾，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": 5,
+				"er": 100,
+				"id": 110403
+			},
+			{
+				"name": "不屈之身",
+				"tag": "回复",
+				"type": "天赋",
+				"description": "受到致命攻击时杰帕德不会陷入<u>无法战斗状态</u>，并立即回复等同于自身生命上限<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>的生命值。该效果单场战斗中只能触发1次。",
+				"regen": null,
+				"er": null,
+				"id": 110404
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 110406
+			},
+			{
+				"name": "有情之证",
+				"tag": "防御",
+				"type": "秘技",
+				"description": "使用秘技后，下一次战斗开始时为我方全体提供能够抵消等同于杰帕德<unbreak>#1[i]%</unbreak>防御力+<unbreak>#3[i]</unbreak>伤害的护盾，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 110407
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110141": 3,
@@ -1433,13 +1724,6 @@
 				"112002": 7,
 				"112003": 7
 			},
-			"skillName": "震慑之击",
-			"skillTag": "妨害",
-			"skillDesc": "对指定敌方单体造成等同于杰帕德<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害，同时有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使受到攻击的敌方目标陷入冻结状态，持续<unbreak>#3[i]</unbreak>回合。\\n冻结状态下，敌方目标不能行动同时每回合开始时受到等同于杰帕德<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的冰属性<u>附加伤害</u>。",
-			"skillSimpleDesc": "对敌方单体造成冰属性伤害，<color=#f29e38ff>有概率对目标施加冻结状态</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1104/SkillIcon_1104_BP.png",
-			"skillShortIcon": "SkillIcon_1104_BP",
-			"skillId": 110402,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -1451,14 +1735,6 @@
 				"112002": 13,
 				"112003": 7
 			},
-			"ultName": "永屹之壁",
-			"ultTag": "防御",
-			"ultDesc": "为我方全体提供能够抵消等同于杰帕德<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>防御力+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>伤害的护盾，持续<unbreak>#2[i]</unbreak>回合。",
-			"ultSimpleDesc": "为我方全体<color=#f29e38ff>提供护盾</color>。",
-			"ultIcon": "SpriteOutput/SkillIcons/1104/SkillIcon_1104_Ultra.png",
-			"ultShortIcon": "SkillIcon_1104_Ultra",
-			"ultER": 100,
-			"ultId": 110403,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -1470,13 +1746,6 @@
 				"112002": 13,
 				"112003": 7
 			},
-			"talentName": "不屈之身",
-			"talentTag": "回复",
-			"talentDesc": "受到致命攻击时杰帕德不会陷入<u>无法战斗状态</u>，并立即回复等同于自身生命上限<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>的生命值。该效果单场战斗中只能触发1次。",
-			"talentSimpleDesc": "受到致命攻击时<color=#f29e38ff>不会陷入<u>无法战斗状态</u></color>，立即回复生命值。单场战斗中仅触发1次。",
-			"talentIcon": "SpriteOutput/SkillIcons/1104/SkillIcon_1104_Passive.png",
-			"talentShortIcon": "SkillIcon_1104_Passive",
-			"talentId": 110404,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -1487,14 +1756,7 @@
 				"112001": 9,
 				"112002": 13,
 				"112003": 7
-			},
-			"techName": "有情之证",
-			"techTag": "防御",
-			"techDesc": "使用秘技后，下一次战斗开始时为我方全体提供能够抵消等同于杰帕德<unbreak>#1[i]%</unbreak>防御力+<unbreak>#3[i]</unbreak>伤害的护盾，持续<unbreak>#2[i]</unbreak>回合。",
-			"techSimpleDesc": "使用秘技，下一次战斗开始时我方全体获得护盾。",
-			"techIcon": "SpriteOutput/SkillIcons/1104/SkillIcon_1104_Maze.png",
-			"techShortIcon": "SkillIcon_1104_Maze",
-			"techId": 110407
+			}
 		},
 		"avatarType": "Knight",
 		"promotion": {
@@ -1533,14 +1795,63 @@
 		"shortIcon": "1105",
 		"rarity": "VeryRare",
 		"element": "Physical",
-		"skills": {
-			"basicName": "仁慈的背面",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于娜塔莎<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量物理属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1105/SkillIcon_1105_Normal.png",
-			"basicShortIcon": "SkillIcon_1105_Normal",
-			"basicId": 110501,
+		"skills": [
+			{
+				"name": "仁慈的背面",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于娜塔莎<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 110501
+			},
+			{
+				"name": "爱，救护与抉择",
+				"tag": "回复",
+				"type": "战技",
+				"description": "立即为指定我方单体回复等同于娜塔莎<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值，同时目标每回合开始时为其回复等同于娜塔莎<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": 30,
+				"er": null,
+				"id": 110502
+			},
+			{
+				"name": "新生之礼",
+				"tag": "回复",
+				"type": "终结技",
+				"description": "立即为我方全体回复等同于娜塔莎<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值。",
+				"regen": 5,
+				"er": 90,
+				"id": 110503
+			},
+			{
+				"name": "生机焕发",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "为当前生命值百分比小于等于<unbreak>#1[i]%</unbreak>的我方目标提供治疗时，娜塔莎的治疗量提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，该效果对持续治疗效果也会生效。",
+				"regen": null,
+				"er": null,
+				"id": 110504
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 110506
+			},
+			{
+				"name": "催眠研习",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后对敌方随机单体造成等同于娜塔莎<unbreak>#4[i]%</unbreak>攻击力的物理属性伤害，并有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方每个单体目标陷入虚弱状态。\\n虚弱状态下的敌方目标对我方造成的伤害降低<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 110507
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110171": 2,
@@ -1550,13 +1861,6 @@
 				"112012": 5,
 				"112013": 5
 			},
-			"skillName": "爱，救护与抉择",
-			"skillTag": "回复",
-			"skillDesc": "立即为指定我方单体回复等同于娜塔莎<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值，同时目标每回合开始时为其回复等同于娜塔莎<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值，持续<unbreak>#3[i]</unbreak>回合。",
-			"skillSimpleDesc": "为我方单体回复生命值，并使目标持续回复生命值。",
-			"skillIcon": "SpriteOutput/SkillIcons/1105/SkillIcon_1105_BP.png",
-			"skillShortIcon": "SkillIcon_1105_BP",
-			"skillId": 110502,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1568,14 +1872,6 @@
 				"112012": 10,
 				"112013": 5
 			},
-			"ultName": "新生之礼",
-			"ultTag": "回复",
-			"ultDesc": "立即为我方全体回复等同于娜塔莎<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值。",
-			"ultSimpleDesc": "为我方全体回复生命值。",
-			"ultIcon": "SpriteOutput/SkillIcons/1105/SkillIcon_1105_Ultra.png",
-			"ultShortIcon": "SkillIcon_1105_Ultra",
-			"ultER": 90,
-			"ultId": 110503,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1587,13 +1883,6 @@
 				"112012": 10,
 				"112013": 5
 			},
-			"talentName": "生机焕发",
-			"talentTag": "强化",
-			"talentDesc": "为当前生命值百分比小于等于<unbreak>#1[i]%</unbreak>的我方目标提供治疗时，娜塔莎的治疗量提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，该效果对持续治疗效果也会生效。",
-			"talentSimpleDesc": "为当前生命值百分比较低的我方目标提供治疗时，治疗量提高。该效果对持续治疗效果也会生效。",
-			"talentIcon": "SpriteOutput/SkillIcons/1105/SkillIcon_1105_Passive.png",
-			"talentShortIcon": "SkillIcon_1105_Passive",
-			"talentId": 110504,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1604,14 +1893,7 @@
 				"112011": 6,
 				"112012": 10,
 				"112013": 5
-			},
-			"techName": "催眠研习",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后对敌方随机单体造成等同于娜塔莎<unbreak>#4[i]%</unbreak>攻击力的物理属性伤害，并有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方每个单体目标陷入虚弱状态。\\n虚弱状态下的敌方目标对我方造成的伤害降低<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。",
-			"techSimpleDesc": "攻击敌人，进战后对敌方随机单体造成少量物理属性伤害，大概率使敌方每个单体目标陷入虚弱状态。",
-			"techIcon": "SpriteOutput/SkillIcons/1105/SkillIcon_1105_Maze.png",
-			"techShortIcon": "SkillIcon_1105_Maze",
-			"techId": 110507
+			}
 		},
 		"avatarType": "Priest",
 		"promotion": {
@@ -1650,14 +1932,63 @@
 		"shortIcon": "1106",
 		"rarity": "VeryRare",
 		"element": "Ice",
-		"skills": {
-			"basicName": "冰点射击",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于佩拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量冰属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1106/SkillIcon_1106_Normal.png",
-			"basicShortIcon": "SkillIcon_1106_Normal",
-			"basicId": 110601,
+		"skills": [
+			{
+				"name": "冰点射击",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于佩拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 110601
+			},
+			{
+				"name": "低温妨害",
+				"tag": "妨害",
+				"type": "战技",
+				"description": "解除指定敌方单体的<unbreak>#2[i]</unbreak>个<u>增益效果</u>，同时造成等同于佩拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 110602
+			},
+			{
+				"name": "领域压制",
+				"tag": "妨害",
+				"type": "终结技",
+				"description": "有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方每个单体目标陷入【通解】状态，同时对敌方全体造成等同于佩拉<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的冰属性伤害。\\n【通解】状态下，敌方目标防御力降低<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": 5,
+				"er": 110,
+				"id": 110603
+			},
+			{
+				"name": "数据采集",
+				"tag": "辅助",
+				"type": "天赋",
+				"description": "施放攻击后若敌方目标处于<u>负面效果</u>状态，则佩拉额外恢复<color=#f29e38ff><unbreak>#1[f1]</unbreak></color>点能量。该效果每次攻击只能触发1次。",
+				"regen": null,
+				"er": null,
+				"id": 110604
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 110606
+			},
+			{
+				"name": "先发制人",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后对敌方随机单体造成等同于佩拉<unbreak>#4[i]%</unbreak>攻击力的冰属性伤害，同时有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方每个单体目标防御力降低<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 110607
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110151": 2,
@@ -1667,13 +1998,6 @@
 				"111002": 5,
 				"111003": 5
 			},
-			"skillName": "低温妨害",
-			"skillTag": "妨害",
-			"skillDesc": "解除指定敌方单体的<unbreak>#2[i]</unbreak>个<u>增益效果</u>，同时造成等同于佩拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
-			"skillSimpleDesc": "<color=#f29e38ff>解除</color>敌方单体1个<color=#f29e38ff><u>增益效果</u></color>，对敌方单体造成冰属性伤害。",
-			"skillIcon": "SpriteOutput/SkillIcons/1106/SkillIcon_1106_BP.png",
-			"skillShortIcon": "SkillIcon_1106_BP",
-			"skillId": 110602,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1685,14 +2009,6 @@
 				"111002": 10,
 				"111003": 5
 			},
-			"ultName": "领域压制",
-			"ultTag": "妨害",
-			"ultDesc": "有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方每个单体目标陷入【通解】状态，同时对敌方全体造成等同于佩拉<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的冰属性伤害。\\n【通解】状态下，敌方目标防御力降低<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持续<unbreak>#3[i]</unbreak>回合。",
-			"ultSimpleDesc": "大概率使敌方目标<color=#f29e38ff>防御力降低</color>，并对敌方全体造成少量冰属性伤害。",
-			"ultIcon": "SpriteOutput/SkillIcons/1106/SkillIcon_1106_Ultra.png",
-			"ultShortIcon": "SkillIcon_1106_Ultra",
-			"ultER": 110,
-			"ultId": 110603,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1704,13 +2020,6 @@
 				"111002": 10,
 				"111003": 5
 			},
-			"talentName": "数据采集",
-			"talentTag": "辅助",
-			"talentDesc": "施放攻击后若敌方目标处于<u>负面效果</u>状态，则佩拉额外恢复<color=#f29e38ff><unbreak>#1[f1]</unbreak></color>点能量。该效果每次攻击只能触发1次。",
-			"talentSimpleDesc": "施放攻击后，若敌方目标处于<u>负面效果</u>状态，则佩拉恢复能量。",
-			"talentIcon": "SpriteOutput/SkillIcons/1106/SkillIcon_1106_Passive.png",
-			"talentShortIcon": "SkillIcon_1106_Passive",
-			"talentId": 110604,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1721,14 +2030,7 @@
 				"111001": 6,
 				"111002": 10,
 				"111003": 5
-			},
-			"techName": "先发制人",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后对敌方随机单体造成等同于佩拉<unbreak>#4[i]%</unbreak>攻击力的冰属性伤害，同时有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方每个单体目标防御力降低<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。",
-			"techSimpleDesc": "攻击敌人，进战后对敌方随机单体造成少量伤害，并有大概率使敌方每个单体目标防御力降低。",
-			"techIcon": "SpriteOutput/SkillIcons/1106/SkillIcon_1106_Maze.png",
-			"techShortIcon": "SkillIcon_1106_Maze",
-			"techId": 110607
+			}
 		},
 		"avatarType": "Warlock",
 		"promotion": {
@@ -1767,14 +2069,63 @@
 		"shortIcon": "1107",
 		"rarity": "SuperRare",
 		"element": "Physical",
-		"skills": {
-			"basicName": "我也想帮上忙",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于克拉拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量物理属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1107/SkillIcon_1107_Normal.png",
-			"basicShortIcon": "SkillIcon_1107_Normal",
-			"basicId": 110701,
+		"skills": [
+			{
+				"name": "我也想帮上忙",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于克拉拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 110701
+			},
+			{
+				"name": "史瓦罗在看着你",
+				"tag": "群攻",
+				"type": "战技",
+				"description": "对敌方全体造成等同于克拉拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，并对所有被史瓦罗标上【反击标记】的敌方目标额外造成等同于克拉拉<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力物理属性伤害。\\n战技施放后所有【反击标记】失效。",
+				"regen": 30,
+				"er": null,
+				"id": 110702
+			},
+			{
+				"name": "是约定不是命令",
+				"tag": "强化",
+				"type": "终结技",
+				"description": "施放终结技后克拉拉受到的伤害额外降低<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>且被敌方目标攻击的概率大幅提高，持续<unbreak>#3[i]</unbreak>回合。\\n同时史瓦罗的<u>反击</u>得到强化，当任意我方目标受到攻击后史瓦罗立即施放<u>反击</u>，对敌方目标造成的伤害倍率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，并对其相邻目标造成相当于主目标<unbreak>50%</unbreak>的伤害。强化效果可生效<unbreak>#5[i]</unbreak>次。",
+				"regen": 5,
+				"er": 110,
+				"id": 110703
+			},
+			{
+				"name": "因为我们是家人",
+				"tag": "单攻",
+				"type": "天赋",
+				"description": "克拉拉在史瓦罗的保护下受到敌方目标攻击的伤害降低<unbreak>#3[i]%</unbreak>。攻击克拉拉的敌方目标会被史瓦罗标上【反击标记】，并遭到史瓦罗的<u>反击</u>，对其造成等同于克拉拉<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 5,
+				"er": null,
+				"id": 110704
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 110706
+			},
+			{
+				"name": "胜利的小小代价",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后克拉拉受到敌方攻击的概率提高，持续<unbreak>#1[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 110707
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110111": 3,
@@ -1784,13 +2135,6 @@
 				"112012": 7,
 				"112013": 7
 			},
-			"skillName": "史瓦罗在看着你",
-			"skillTag": "群攻",
-			"skillDesc": "对敌方全体造成等同于克拉拉<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，并对所有被史瓦罗标上【反击标记】的敌方目标额外造成等同于克拉拉<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力物理属性伤害。\\n战技施放后所有【反击标记】失效。",
-			"skillSimpleDesc": "对敌方全体造成物理属性伤害，对持有【反击标记】的目标<color=#f29e38ff>额外造成物理伤害</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1107/SkillIcon_1107_BP.png",
-			"skillShortIcon": "SkillIcon_1107_BP",
-			"skillId": 110702,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -1802,14 +2146,6 @@
 				"112012": 13,
 				"112013": 7
 			},
-			"ultName": "是约定不是命令",
-			"ultTag": "强化",
-			"ultDesc": "施放终结技后克拉拉受到的伤害额外降低<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>且被敌方目标攻击的概率大幅提高，持续<unbreak>#3[i]</unbreak>回合。\\n同时史瓦罗的<u>反击</u>得到强化，当任意我方目标受到攻击后史瓦罗立即施放<u>反击</u>，对敌方目标造成的伤害倍率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，并对其相邻目标造成相当于主目标<unbreak>50%</unbreak>的伤害。强化效果可生效<unbreak>#5[i]</unbreak>次。",
-			"ultSimpleDesc": "自身<color=#f29e38ff>受到的伤害降低</color>，被攻击的概率提高，并强化<u>反击</u>的效果。",
-			"ultIcon": "SpriteOutput/SkillIcons/1107/SkillIcon_1107_Ultra.png",
-			"ultShortIcon": "SkillIcon_1107_Ultra",
-			"ultER": 110,
-			"ultId": 110703,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -1821,13 +2157,6 @@
 				"112012": 13,
 				"112013": 7
 			},
-			"talentName": "因为我们是家人",
-			"talentTag": "单攻",
-			"talentDesc": "克拉拉在史瓦罗的保护下受到敌方目标攻击的伤害降低<unbreak>#3[i]%</unbreak>。攻击克拉拉的敌方目标会被史瓦罗标上【反击标记】，并遭到史瓦罗的<u>反击</u>，对其造成等同于克拉拉<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性伤害。",
-			"talentSimpleDesc": "自身<color=#f29e38ff>受到敌方目标攻击的伤害降低</color>。施放攻击的敌方目标会被标上【反击标记】，并<color=#f29e38ff>遭到史瓦罗的<u>反击</u></color>，造成物理属性伤害。",
-			"talentIcon": "SpriteOutput/SkillIcons/1107/SkillIcon_1107_Passive.png",
-			"talentShortIcon": "SkillIcon_1107_Passive",
-			"talentId": 110704,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -1838,14 +2167,7 @@
 				"112011": 9,
 				"112012": 13,
 				"112013": 7
-			},
-			"techName": "胜利的小小代价",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后克拉拉受到敌方攻击的概率提高，持续<unbreak>#1[i]</unbreak>回合。",
-			"techSimpleDesc": "攻击敌人，进战后受到敌人攻击的概率提高。",
-			"techIcon": "SpriteOutput/SkillIcons/1107/SkillIcon_1107_Maze.png",
-			"techShortIcon": "SkillIcon_1107_Maze",
-			"techId": 110707
+			}
 		},
 		"avatarType": "Warrior",
 		"promotion": {
@@ -1884,14 +2206,63 @@
 		"shortIcon": "1108",
 		"rarity": "VeryRare",
 		"element": "Wind",
-		"skills": {
-			"basicName": "酷炫的刀花",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于桑博<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量风属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1108/SkillIcon_1108_Normal.png",
-			"basicShortIcon": "SkillIcon_1108_Normal",
-			"basicId": 110801,
+		"skills": [
+			{
+				"name": "酷炫的刀花",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于桑博<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 110801
+			},
+			{
+				"name": "反复横跳的爱",
+				"tag": "弹射",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于桑博<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的风属性伤害，并额外造成<unbreak>#1[i]</unbreak>次伤害，每次伤害对敌方随机单体造成等同于桑博<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的风属性伤害。",
+				"regen": 6,
+				"er": null,
+				"id": 110802
+			},
+			{
+				"name": "惊喜礼盒",
+				"tag": "妨害",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于桑博<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害，同时有<unbreak>#4[i]%</unbreak>的<u>基础概率</u>使被攻击的敌方目标受到的持续伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": 5,
+				"er": 120,
+				"id": 110803
+			},
+			{
+				"name": "撕风的匕首",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "桑博击中敌方目标后有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使目标陷入风化状态，持续<unbreak>#3[i]</unbreak>回合。\\n风化状态下，敌方目标每回合开始时受到等同于桑博<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的风属性持续伤害。风化状态最多叠加<unbreak>#4[i]</unbreak>层。",
+				"regen": null,
+				"er": null,
+				"id": 110804
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 110806
+			},
+			{
+				"name": "你最闪亮",
+				"tag": "妨害",
+				"type": "秘技",
+				"description": "使用秘技后使一定区域内的敌人陷入<unbreak>#1[i]</unbreak>秒的目盲状态，目盲状态下的敌人无法发现我方目标。\\n若主动攻击陷入目盲状态的敌人，进入战斗时有<unbreak>#2[i]%</unbreak><u>固定概率</u>使敌方每个单体目标行动延后<unbreak>#3[i]%</unbreak>。",
+				"regen": null,
+				"er": null,
+				"id": 110807
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110151": 2,
@@ -1901,13 +2272,6 @@
 				"112012": 5,
 				"112013": 5
 			},
-			"skillName": "反复横跳的爱",
-			"skillTag": "弹射",
-			"skillDesc": "对指定敌方单体造成等同于桑博<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的风属性伤害，并额外造成<unbreak>#1[i]</unbreak>次伤害，每次伤害对敌方随机单体造成等同于桑博<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的风属性伤害。",
-			"skillSimpleDesc": "对敌方单体造成少量风属性伤害，共弹射5次。",
-			"skillIcon": "SpriteOutput/SkillIcons/1108/SkillIcon_1108_BP.png",
-			"skillShortIcon": "SkillIcon_1108_BP",
-			"skillId": 110802,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1919,14 +2283,6 @@
 				"112012": 10,
 				"112013": 5
 			},
-			"ultName": "惊喜礼盒",
-			"ultTag": "妨害",
-			"ultDesc": "对敌方全体造成等同于桑博<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害，同时有<unbreak>#4[i]%</unbreak>的<u>基础概率</u>使被攻击的敌方目标受到的持续伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持续<unbreak>#3[i]</unbreak>回合。",
-			"ultSimpleDesc": "对敌方全体造成风属性伤害，大概率使其<color=#f29e38ff>受到的持续伤害提高</color>。",
-			"ultIcon": "SpriteOutput/SkillIcons/1108/SkillIcon_1108_Ultra.png",
-			"ultShortIcon": "SkillIcon_1108_Ultra",
-			"ultER": 120,
-			"ultId": 110803,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1938,13 +2294,6 @@
 				"112012": 10,
 				"112013": 5
 			},
-			"talentName": "撕风的匕首",
-			"talentTag": "强化",
-			"talentDesc": "桑博击中敌方目标后有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使目标陷入风化状态，持续<unbreak>#3[i]</unbreak>回合。\\n风化状态下，敌方目标每回合开始时受到等同于桑博<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的风属性持续伤害。风化状态最多叠加<unbreak>#4[i]</unbreak>层。",
-			"talentSimpleDesc": "自身击中敌方目标后有概率使目标<color=#f29e38ff>陷入风化状态</color>。",
-			"talentIcon": "SpriteOutput/SkillIcons/1108/SkillIcon_1108_Passive.png",
-			"talentShortIcon": "SkillIcon_1108_Passive",
-			"talentId": 110804,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -1955,14 +2304,7 @@
 				"112011": 6,
 				"112012": 10,
 				"112013": 5
-			},
-			"techName": "你最闪亮",
-			"techTag": "妨害",
-			"techDesc": "使用秘技后使一定区域内的敌人陷入<unbreak>#1[i]</unbreak>秒的目盲状态，目盲状态下的敌人无法发现我方目标。\\n若主动攻击陷入目盲状态的敌人，进入战斗时有<unbreak>#2[i]%</unbreak><u>固定概率</u>使敌方每个单体目标行动延后<unbreak>#3[i]%</unbreak>。",
-			"techSimpleDesc": "使一定区域内敌人陷入目盲状态。攻击陷入目盲状态敌人，进战后大概率使敌方每个单体目标<u>行动延后</u>。",
-			"techIcon": "SpriteOutput/SkillIcons/1108/SkillIcon_1108_Maze.png",
-			"techShortIcon": "SkillIcon_1108_Maze",
-			"techId": 110807
+			}
 		},
 		"avatarType": "Warlock",
 		"promotion": {
@@ -2001,14 +2343,72 @@
 		"shortIcon": "1109",
 		"rarity": "VeryRare",
 		"element": "Fire",
-		"skills": {
-			"basicName": "喂！小心火烛",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量火属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_Normal.png",
-			"basicShortIcon": "SkillIcon_1109_Normal",
-			"basicId": 110901,
+		"skills": [
+			{
+				"name": "喂！小心火烛",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 110901
+			},
+			{
+				"name": "嘿！记得虎克吗",
+				"tag": "单攻",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，同时有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使其陷入灼烧状态，持续<unbreak>#3[i]</unbreak>回合。\\n灼烧状态下，敌方目标每回合开始时受到等同于虎克<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的火属性持续伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 110902
+			},
+			{
+				"name": "轰！飞来焰火",
+				"tag": "单攻",
+				"type": "终结技",
+				"description": "对指定敌方单体造成等同于虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。\\n施放终结技后，下一次施放的战技得到强化，强化后的战技能够同时对指定敌方单体及其相邻目标造成伤害。",
+				"regen": 5,
+				"er": 120,
+				"id": 110903
+			},
+			{
+				"name": "哈！火上浇油",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "攻击处于灼烧状态的敌方目标时，追加1次等同于虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性<u>附加伤害</u>，并额外恢复<unbreak>#2[i]</unbreak>点能量。",
+				"regen": null,
+				"er": null,
+				"id": 110904
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 110906
+			},
+			{
+				"name": "哎！瞧这一团糟",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后对敌方随机单体造成等同于虎克<unbreak>#4[i]%</unbreak>攻击力的火属性伤害，同时有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方每个单体目标陷入灼烧状态，持续<unbreak>#3[i]</unbreak>回合。\\n灼烧状态下，敌方目标每回合开始时受到等同于虎克<unbreak>#2[i]%</unbreak>攻击力的火属性持续伤害。",
+				"regen": null,
+				"er": null,
+				"id": 110907
+			},
+			{
+				"name": "嘿！记得虎克吗",
+				"tag": "扩散",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，同时有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使其陷入灼烧状态，持续<unbreak>#3[i]</unbreak>回合。此外对其相邻目标造成等同于虎克<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>攻击力的火属性伤害。\\n灼烧状态下，敌方目标每回合开始时受到等同于虎克<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的火属性持续伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 110909
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110111": 2,
@@ -2018,13 +2418,6 @@
 				"112012": 5,
 				"112013": 5
 			},
-			"skillName": "嘿！记得虎克吗",
-			"skillTag": "单攻",
-			"skillDesc": "对指定敌方单体造成等同于虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，同时有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使其陷入灼烧状态，持续<unbreak>#3[i]</unbreak>回合。\\n灼烧状态下，敌方目标每回合开始时受到等同于虎克<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的火属性持续伤害。",
-			"skillSimpleDesc": "对敌方单体造成火属性伤害，大概率对目标施加灼烧状态。",
-			"skillIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_BP.png",
-			"skillShortIcon": "SkillIcon_1109_BP",
-			"skillId": 110902,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2036,14 +2429,6 @@
 				"112012": 10,
 				"112013": 5
 			},
-			"ultName": "轰！飞来焰火",
-			"ultTag": "单攻",
-			"ultDesc": "对指定敌方单体造成等同于虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。\\n施放终结技后，下一次施放的战技得到强化，强化后的战技能够同时对指定敌方单体及其相邻目标造成伤害。",
-			"ultSimpleDesc": "对敌方单体造成大量火属性伤害，并<color=#f29e38ff>强化自身下一次的战技</color>。",
-			"ultIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_Ultra.png",
-			"ultShortIcon": "SkillIcon_1109_Ultra",
-			"ultER": 120,
-			"ultId": 110903,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2055,13 +2440,6 @@
 				"112012": 10,
 				"112013": 5
 			},
-			"talentName": "哈！火上浇油",
-			"talentTag": "强化",
-			"talentDesc": "攻击处于灼烧状态的敌方目标时，追加1次等同于虎克<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性<u>附加伤害</u>，并额外恢复<unbreak>#2[i]</unbreak>点能量。",
-			"talentSimpleDesc": "攻击处于灼烧状态的敌方目标时，<color=#f29e38ff>造成少量火属性<u>附加伤害</u></color>并额外恢复能量。",
-			"talentIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_Passive.png",
-			"talentShortIcon": "SkillIcon_1109_Passive",
-			"talentId": 110904,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2072,14 +2450,7 @@
 				"112011": 6,
 				"112012": 10,
 				"112013": 5
-			},
-			"techName": "哎！瞧这一团糟",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后对敌方随机单体造成等同于虎克<unbreak>#4[i]%</unbreak>攻击力的火属性伤害，同时有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方每个单体目标陷入灼烧状态，持续<unbreak>#3[i]</unbreak>回合。\\n灼烧状态下，敌方目标每回合开始时受到等同于虎克<unbreak>#2[i]%</unbreak>攻击力的火属性持续伤害。",
-			"techSimpleDesc": "攻击敌人，进战后对敌方随机单体造成火属性伤害，大概率使敌方每个单体陷入灼烧状态。",
-			"techIcon": "SpriteOutput/SkillIcons/1109/SkillIcon_1109_Maze.png",
-			"techShortIcon": "SkillIcon_1109_Maze",
-			"techId": 110907
+			}
 		},
 		"avatarType": "Warrior",
 		"promotion": {
@@ -2118,14 +2489,63 @@
 		"shortIcon": "1110",
 		"rarity": "VeryRare",
 		"element": "Quantum",
-		"skills": {
-			"basicName": "冰攀前齿技术",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于自身<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的量子属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量量子属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Normal.png",
-			"basicShortIcon": "SkillIcon_1110_Normal",
-			"basicId": 111001,
+		"skills": [
+			{
+				"name": "冰攀前齿技术",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于自身<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的量子属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 111001
+			},
+			{
+				"name": "盐渍野营罐头",
+				"tag": "回复",
+				"type": "战技",
+				"description": "为指定我方单体附上【求生反应】，提高等同于玲可<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命上限，若该目标为「毁灭」或「存护」命途，被敌方攻击的概率大幅提高，【求生反应】持续<unbreak>#3[i]</unbreak>回合。\\n使该目标回复等同于玲可<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值。",
+				"regen": 30,
+				"er": null,
+				"id": 111002
+			},
+			{
+				"name": "雪原急救方案",
+				"tag": "回复",
+				"type": "终结技",
+				"description": "解除我方全体的<unbreak>#1[i]</unbreak>个<u>负面效果</u>，立即为我方全体回复等同于玲可<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>的生命值。",
+				"regen": 5,
+				"er": 100,
+				"id": 111003
+			},
+			{
+				"name": "户外生存经验",
+				"tag": "回复",
+				"type": "天赋",
+				"description": "施放战技或终结技时，使我方目标获得<unbreak>#1[i]</unbreak>回合的持续治疗效果，目标每回合开始时回复等同于玲可<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>的生命值。若该目标持有【求生反应】，则持续治疗效果额外回复等同于玲可<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值。",
+				"regen": null,
+				"er": null,
+				"id": 111004
+			},
+			{
+				"name": "攻击",
+				"tag": "单攻",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 111006
+			},
+			{
+				"name": "巧克力能量棒",
+				"tag": "回复",
+				"type": "秘技",
+				"description": "使用秘技后，下一次战斗开始时为我方全体附加玲可天赋的持续治疗效果，持续<unbreak>#1[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 111007
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110171": 2,
@@ -2135,13 +2555,6 @@
 				"111002": 5,
 				"111003": 5
 			},
-			"skillName": "盐渍野营罐头",
-			"skillTag": "回复",
-			"skillDesc": "为指定我方单体附上【求生反应】，提高等同于玲可<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命上限，若该目标为「毁灭」或「存护」命途，被敌方攻击的概率大幅提高，【求生反应】持续<unbreak>#3[i]</unbreak>回合。\\n使该目标回复等同于玲可<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值。",
-			"skillSimpleDesc": "使我方单体获得【求生反应】，使其<color=#f29e38ff>生命上限提高</color>，同时为其回复生命值。",
-			"skillIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_BP.png",
-			"skillShortIcon": "SkillIcon_1110_BP",
-			"skillId": 111002,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2153,14 +2566,6 @@
 				"111002": 10,
 				"111003": 5
 			},
-			"ultName": "雪原急救方案",
-			"ultTag": "回复",
-			"ultDesc": "解除我方全体的<unbreak>#1[i]</unbreak>个<u>负面效果</u>，立即为我方全体回复等同于玲可<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>的生命值。",
-			"ultSimpleDesc": "解除<color=#f29e38ff>我方全体1个<u>负面效果</u></color>，为我方全体回复生命值。",
-			"ultIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Ultra.png",
-			"ultShortIcon": "SkillIcon_1110_Ultra",
-			"ultER": 100,
-			"ultId": 111003,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2172,13 +2577,6 @@
 				"111002": 10,
 				"111003": 5
 			},
-			"talentName": "户外生存经验",
-			"talentTag": "回复",
-			"talentDesc": "施放战技或终结技时，使我方目标获得<unbreak>#1[i]</unbreak>回合的持续治疗效果，目标每回合开始时回复等同于玲可<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#3[i]</unbreak></color>的生命值。若该目标持有【求生反应】，则持续治疗效果额外回复等同于玲可<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值。",
-			"talentSimpleDesc": "施放战技或终结技时，使我方目标获得<color=#f29e38ff>持续回复生命值</color>效果，若目标持有【求生反应】持续回复生命值效果额外提高。",
-			"talentIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Passive.png",
-			"talentShortIcon": "SkillIcon_1110_Passive",
-			"talentId": 111004,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2189,14 +2587,7 @@
 				"111001": 6,
 				"111002": 10,
 				"111003": 5
-			},
-			"techName": "巧克力能量棒",
-			"techTag": "回复",
-			"techDesc": "使用秘技后，下一次战斗开始时为我方全体附加玲可天赋的持续治疗效果，持续<unbreak>#1[i]</unbreak>回合。",
-			"techSimpleDesc": "使用秘技，下一次战斗开始时为我方全体附上持续治疗效果。",
-			"techIcon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Maze.png",
-			"techShortIcon": "SkillIcon_1110_Maze",
-			"techId": 111007
+			}
 		},
 		"avatarType": "Priest",
 		"promotion": {
@@ -2235,14 +2626,72 @@
 		"shortIcon": "1111",
 		"rarity": "VeryRare",
 		"element": "Physical",
-		"skills": {
-			"basicName": "直冲拳",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于卢卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量物理属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Normal.png",
-			"basicShortIcon": "SkillIcon_1111_Normal",
-			"basicId": 111101,
+		"skills": [
+			{
+				"name": "直冲拳",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于卢卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 111101
+			},
+			{
+				"name": "裂伤拳",
+				"tag": "单攻",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于卢卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，随后有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使目标陷入裂伤状态，持续<unbreak>#5[i]</unbreak>回合。\\n裂伤状态下，敌方目标每回合开始时受到等同于自身<unbreak>#3[f1]%</unbreak>生命上限的物理属性持续伤害，最多不超过卢卡攻击力的<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>。",
+				"regen": 30,
+				"er": null,
+				"id": 111102
+			},
+			{
+				"name": "制胜一击",
+				"tag": "单攻",
+				"type": "终结技",
+				"description": "获得<unbreak>#5[i]</unbreak>层【斗志】，并有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使指定敌方单体受到的伤害提高<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>，持续<unbreak>#4[i]</unbreak>回合，随后对该目标造成等同于卢卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 5,
+				"er": 130,
+				"id": 111103
+			},
+			{
+				"name": "火花四溅",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "卢卡在施放普攻【直冲拳】和战技【裂伤拳】后，获得<unbreak>#1[i]</unbreak>层【斗志】，最多可持有4层【斗志】。当持有的【斗志】大于等于2层时，普攻【直冲拳】强化为【直冲碎天拳】。当强化普攻的【碎天拳】击中陷入裂伤状态下的敌方目标后，则使其当前承受的裂伤状态立即产生1次相当于原伤害<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的伤害。战斗开始时，卢卡持有1层【斗志】。",
+				"regen": null,
+				"er": null,
+				"id": 111104
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 111106
+			},
+			{
+				"name": "抢先者",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后对敌方随机单体造成等同于卢卡<unbreak>#1[i]%</unbreak>攻击力的物理属性伤害，并有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使目标陷入与战技相同的裂伤状态。随后卢卡额外获得1层【斗志】。",
+				"regen": null,
+				"er": null,
+				"id": 111107
+			},
+			{
+				"name": "直冲碎天拳",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "消耗2层【斗志】，先使用【直冲拳】施放3段攻击，每段攻击对指定敌方单体造成等同于卢卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。\\n再使用【碎天拳】施放1段攻击，对指定敌方单体造成等同于卢卡<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 111108
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110151": 2,
@@ -2252,13 +2701,6 @@
 				"112012": 5,
 				"112013": 5
 			},
-			"skillName": "裂伤拳",
-			"skillTag": "单攻",
-			"skillDesc": "对指定敌方单体造成等同于卢卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，随后有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使目标陷入裂伤状态，持续<unbreak>#5[i]</unbreak>回合。\\n裂伤状态下，敌方目标每回合开始时受到等同于自身<unbreak>#3[f1]%</unbreak>生命上限的物理属性持续伤害，最多不超过卢卡攻击力的<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>。",
-			"skillSimpleDesc": "对敌方单体造成物理属性伤害，大概率对目标<color=#f29e38ff>施加裂伤状态</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_BP.png",
-			"skillShortIcon": "SkillIcon_1111_BP",
-			"skillId": 111102,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2270,14 +2712,6 @@
 				"112012": 10,
 				"112013": 5
 			},
-			"ultName": "制胜一击",
-			"ultTag": "单攻",
-			"ultDesc": "获得<unbreak>#5[i]</unbreak>层【斗志】，并有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使指定敌方单体受到的伤害提高<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>，持续<unbreak>#4[i]</unbreak>回合，随后对该目标造成等同于卢卡<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
-			"ultSimpleDesc": "获得<color=#f29e38ff><unbreak>#5[i]</unbreak></color>层【斗志】，大概率使敌方单体受到的伤害提高，并对其造成大量物理属性伤害。",
-			"ultIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Ultra.png",
-			"ultShortIcon": "SkillIcon_1111_Ultra",
-			"ultER": 130,
-			"ultId": 111103,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2289,13 +2723,6 @@
 				"112012": 10,
 				"112013": 5
 			},
-			"talentName": "火花四溅",
-			"talentTag": "强化",
-			"talentDesc": "卢卡在施放普攻【直冲拳】和战技【裂伤拳】后，获得<unbreak>#1[i]</unbreak>层【斗志】，最多可持有4层【斗志】。当持有的【斗志】大于等于2层时，普攻【直冲拳】强化为【直冲碎天拳】。当强化普攻的【碎天拳】击中陷入裂伤状态下的敌方目标后，则使其当前承受的裂伤状态立即产生1次相当于原伤害<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的伤害。战斗开始时，卢卡持有1层【斗志】。",
-			"talentSimpleDesc": "施放普攻【直冲拳】和战技【裂伤拳】后，获得1层【斗志】。当持有的【斗志】大于等于2层时，<color=#f29e38ff>获得强化普攻</color>。\\n若敌方目标处于裂伤状态，则强化普攻<color=#f29e38ff>使裂伤状态额外产生1次伤害</color>。",
-			"talentIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Passive.png",
-			"talentShortIcon": "SkillIcon_1111_Passive",
-			"talentId": 111104,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2306,14 +2733,7 @@
 				"112011": 6,
 				"112012": 10,
 				"112013": 5
-			},
-			"techName": "抢先者",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后对敌方随机单体造成等同于卢卡<unbreak>#1[i]%</unbreak>攻击力的物理属性伤害，并有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使目标陷入与战技相同的裂伤状态。随后卢卡额外获得1层【斗志】。",
-			"techSimpleDesc": "攻击敌人，进战后对敌方随机单体造成少量物理属性伤害，并有大概率使目标<color=#f29e38ff>陷入裂伤状态</color>，随后额外获得1层【斗志】。",
-			"techIcon": "SpriteOutput/SkillIcons/1111/SkillIcon_1111_Maze.png",
-			"techShortIcon": "SkillIcon_1111_Maze",
-			"techId": 111107
+			}
 		},
 		"avatarType": "Warlock",
 		"promotion": {
@@ -2352,14 +2772,63 @@
 		"shortIcon": "1112",
 		"rarity": "SuperRare",
 		"element": "Fire",
-		"skills": {
-			"basicName": "赤字…",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于托帕<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量火属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Normal.png",
-			"basicShortIcon": "SkillIcon_1112_Normal",
-			"basicId": 111201,
+		"skills": [
+			{
+				"name": "赤字…",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于托帕<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 111201
+			},
+			{
+				"name": "支付困难？",
+				"tag": "单攻",
+				"type": "战技",
+				"description": "使指定敌方单体陷入【负债证明】状态，使其受到的<u>追加攻击</u>伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。【负债证明】仅对最新被施加的目标生效，我方目标回合开始或行动时，若场上不存在陷入【负债证明】状态的敌方目标，托帕使随机敌方目标陷入【负债证明】状态。\\n使账账对该目标造成等同于托帕<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。施放此战技造成伤害时，被视为发动了<u>追加攻击</u>。",
+				"regen": 30,
+				"er": null,
+				"id": 111202
+			},
+			{
+				"name": "扭亏为盈！",
+				"tag": "强化",
+				"type": "终结技",
+				"description": "使账账进入【涨幅惊人！】状态，伤害倍率提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，暴击伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，且当陷入【负债证明】状态下的敌方目标受到我方的普攻、战技或终结技的攻击时，账账行动提前<unbreak>#3[i]%</unbreak>。账账施放<unbreak>#4[i]</unbreak>次攻击后退出【涨幅惊人！】状态。",
+				"regen": 5,
+				"er": 130,
+				"id": 111203
+			},
+			{
+				"name": "猪市？！",
+				"tag": "单攻",
+				"type": "天赋",
+				"description": "战斗开始时召唤账账。账账初始拥有<unbreak>#1[i]</unbreak>点速度，行动时发动<u>追加攻击</u>，对陷入【负债证明】状态下的敌方单体造成等同于托帕<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的火属性伤害。\\n陷入【负债证明】状态下的敌方目标受到我方的追加攻击时，账账行动提前<unbreak>#3[i]%</unbreak>。在账账自身回合内，无法触发行动提前效果。\\n当托帕陷入<u>无法战斗状态</u>时账账消失。",
+				"regen": null,
+				"er": null,
+				"id": 111204
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 111206
+			},
+			{
+				"name": "明补",
+				"tag": "强化",
+				"type": "秘技",
+				"description": "托帕入场时召唤账账，账账会自动搜寻一定范围内的普通战利品与扑满。\\n主动施放秘技使下一场战斗中账账施放首次攻击后，托帕恢复<unbreak>#1[i]</unbreak>点能量。\\n主动施放秘技与大地图内的敌人战斗胜利后，若托帕仍在队伍中，则在获取信用点时额外获取少量信用点，每个地球日内最多额外获取<unbreak>#2[i]</unbreak>点。\\n主动施放秘技与模拟宇宙内的敌人战斗胜利后，额外获取少量宇宙碎片并有小概率获得1个随机奇物。",
+				"regen": null,
+				"er": null,
+				"id": 111207
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110121": 3,
@@ -2369,13 +2838,6 @@
 				"112002": 7,
 				"112003": 7
 			},
-			"skillName": "支付困难？",
-			"skillTag": "单攻",
-			"skillDesc": "使指定敌方单体陷入【负债证明】状态，使其受到的<u>追加攻击</u>伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。【负债证明】仅对最新被施加的目标生效，我方目标回合开始或行动时，若场上不存在陷入【负债证明】状态的敌方目标，托帕使随机敌方目标陷入【负债证明】状态。\\n使账账对该目标造成等同于托帕<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。施放此战技造成伤害时，被视为发动了<u>追加攻击</u>。",
-			"skillSimpleDesc": "使敌方单体陷入【负债证明】状态，<color=#f29e38ff>受到的追加攻击伤害提高</color>。账账对目标造成火属性伤害。",
-			"skillIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_BP.png",
-			"skillShortIcon": "SkillIcon_1112_BP",
-			"skillId": 111202,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -2387,14 +2849,6 @@
 				"112002": 13,
 				"112003": 7
 			},
-			"ultName": "扭亏为盈！",
-			"ultTag": "强化",
-			"ultDesc": "使账账进入【涨幅惊人！】状态，伤害倍率提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，暴击伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，且当陷入【负债证明】状态下的敌方目标受到我方的普攻、战技或终结技的攻击时，账账行动提前<unbreak>#3[i]%</unbreak>。账账施放<unbreak>#4[i]</unbreak>次攻击后退出【涨幅惊人！】状态。",
-			"ultSimpleDesc": "使账账进入【涨幅惊人！】状态，<color=#f29e38ff>伤害倍率与暴击伤害提高</color>。",
-			"ultIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Ultra.png",
-			"ultShortIcon": "SkillIcon_1112_Ultra",
-			"ultER": 130,
-			"ultId": 111203,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -2406,13 +2860,6 @@
 				"112002": 13,
 				"112003": 7
 			},
-			"talentName": "猪市？！",
-			"talentTag": "单攻",
-			"talentDesc": "战斗开始时召唤账账。账账初始拥有<unbreak>#1[i]</unbreak>点速度，行动时发动<u>追加攻击</u>，对陷入【负债证明】状态下的敌方单体造成等同于托帕<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的火属性伤害。\\n陷入【负债证明】状态下的敌方目标受到我方的追加攻击时，账账行动提前<unbreak>#3[i]%</unbreak>。在账账自身回合内，无法触发行动提前效果。\\n当托帕陷入<u>无法战斗状态</u>时账账消失。",
-			"talentSimpleDesc": "战斗开始时<color=#f29e38ff>召唤账账</color>，账账行动时<color=#f29e38ff>对陷入【负债证明】的敌方单体发动追加攻击</color>。陷入【负债证明】的敌人受到追加攻击时账账<color=#f29e38ff>行动提前</color>。",
-			"talentIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Passive.png",
-			"talentShortIcon": "SkillIcon_1112_Passive",
-			"talentId": 111204,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -2423,14 +2870,7 @@
 				"112001": 9,
 				"112002": 13,
 				"112003": 7
-			},
-			"techName": "明补",
-			"techTag": "强化",
-			"techDesc": "托帕入场时召唤账账，账账会自动搜寻一定范围内的普通战利品与扑满。\\n主动施放秘技使下一场战斗中账账施放首次攻击后，托帕恢复<unbreak>#1[i]</unbreak>点能量。\\n主动施放秘技与大地图内的敌人战斗胜利后，若托帕仍在队伍中，则在获取信用点时额外获取少量信用点，每个地球日内最多额外获取<unbreak>#2[i]</unbreak>点。\\n主动施放秘技与模拟宇宙内的敌人战斗胜利后，额外获取少量宇宙碎片并有小概率获得1个随机奇物。",
-			"techSimpleDesc": "迷宫内<color=#f29e38ff>召唤账账跟随移动</color>，账账会自动<color=#f29e38ff>搜寻附近的普通战利品和扑满</color>。施放秘技使下一场战斗中账账首次攻击后，托帕恢复能量。",
-			"techIcon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Maze.png",
-			"techShortIcon": "SkillIcon_1112_Maze",
-			"techId": 111207
+			}
 		},
 		"avatarType": "Rogue",
 		"promotion": {
@@ -2469,14 +2909,72 @@
 		"shortIcon": "1201",
 		"rarity": "VeryRare",
 		"element": "Quantum",
-		"skills": {
-			"basicName": "门前清",
-			"basicTag": "单攻",
-			"basicDesc": "使用1张当前花色最少的琼玉牌，对指定敌方单体造成等同于青雀<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害。",
-			"basicSimpleDesc": "使用1张牌，对敌方单体造成少量量子属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1201/SkillIcon_1201_Normal.png",
-			"basicShortIcon": "SkillIcon_1201_Normal",
-			"basicId": 120101,
+		"skills": [
+			{
+				"name": "门前清",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "使用1张当前花色最少的琼玉牌，对指定敌方单体造成等同于青雀<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 120101
+			},
+			{
+				"name": "海底捞月",
+				"tag": "强化",
+				"type": "战技",
+				"description": "立即抽取<unbreak>#1[i]</unbreak>张琼玉牌，使自身造成的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持续至本回合结束。该效果可以叠加<unbreak>#3[i]</unbreak>层。施放该战技后，本回合不会结束。",
+				"regen": null,
+				"er": null,
+				"id": 120102
+			},
+			{
+				"name": "四幺暗刻？和！",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于青雀<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害，并获得4张相同花色的琼玉牌。",
+				"regen": 5,
+				"er": 140,
+				"id": 120103
+			},
+			{
+				"name": "帝垣琼玉",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "我方目标回合开始时，青雀会从3种不同花色的琼玉牌中随机抽取1张，最多持有4张琼玉牌。\\n青雀回合开始时，若持有的琼玉牌数为4且花色相同，青雀消耗所有琼玉牌进入【暗杠】状态。\\n处于【暗杠】状态时无法再次施放战技，同时使自身攻击力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，普攻【门前清】强化为【杠上开花！】，【暗杠】状态会在施放【杠上开花！】后结束。",
+				"regen": null,
+				"er": null,
+				"id": 120104
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 120106
+			},
+			{
+				"name": "独弈之乐",
+				"tag": "强化",
+				"type": "秘技",
+				"description": "使用秘技后，进入战斗时青雀会抽取<unbreak>#1[i]</unbreak>张琼玉牌。",
+				"regen": null,
+				"er": null,
+				"id": 120107
+			},
+			{
+				"name": "杠上开花！",
+				"tag": "扩散",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于青雀<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害，并对其相邻目标造成等同于青雀<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的量子属性伤害。\\n【杠上开花！】无法恢复战技点。",
+				"regen": 20,
+				"er": null,
+				"id": 120108
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110131": 2,
@@ -2486,13 +2984,6 @@
 				"111012": 5,
 				"111013": 5
 			},
-			"skillName": "海底捞月",
-			"skillTag": "强化",
-			"skillDesc": "立即抽取<unbreak>#1[i]</unbreak>张琼玉牌，使自身造成的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持续至本回合结束。该效果可以叠加<unbreak>#3[i]</unbreak>层。施放该战技后，本回合不会结束。",
-			"skillSimpleDesc": "<color=#f29e38ff>抽牌</color>，使自身造成的伤害提高，且<color=#f29e38ff>本回合不会结束</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1201/SkillIcon_1201_BP.png",
-			"skillShortIcon": "SkillIcon_1201_BP",
-			"skillId": 120102,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2504,14 +2995,6 @@
 				"111012": 10,
 				"111013": 5
 			},
-			"ultName": "四幺暗刻？和！",
-			"ultTag": "群攻",
-			"ultDesc": "对敌方全体造成等同于青雀<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的量子属性伤害，并获得4张相同花色的琼玉牌。",
-			"ultSimpleDesc": "对敌方全体造成量子属性伤害，获得4张相同花色的牌。",
-			"ultIcon": "SpriteOutput/SkillIcons/1201/SkillIcon_1201_Ultra.png",
-			"ultShortIcon": "SkillIcon_1201_Ultra",
-			"ultER": 140,
-			"ultId": 120103,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2523,13 +3006,6 @@
 				"111012": 10,
 				"111013": 5
 			},
-			"talentName": "帝垣琼玉",
-			"talentTag": "强化",
-			"talentDesc": "我方目标回合开始时，青雀会从3种不同花色的琼玉牌中随机抽取1张，最多持有4张琼玉牌。\\n青雀回合开始时，若持有的琼玉牌数为4且花色相同，青雀消耗所有琼玉牌进入【暗杠】状态。\\n处于【暗杠】状态时无法再次施放战技，同时使自身攻击力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，普攻【门前清】强化为【杠上开花！】，【暗杠】状态会在施放【杠上开花！】后结束。",
-			"talentSimpleDesc": "我方目标回合开始时，抽牌。自身回合开始时，若持有4张同花色牌，则清空已有牌并<color=#f29e38ff>强化本次普攻</color>，同时使自身攻击力提高。",
-			"talentIcon": "SpriteOutput/SkillIcons/1201/SkillIcon_1201_Passive.png",
-			"talentShortIcon": "SkillIcon_1201_Passive",
-			"talentId": 120104,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2540,14 +3016,7 @@
 				"111011": 6,
 				"111012": 10,
 				"111013": 5
-			},
-			"techName": "独弈之乐",
-			"techTag": "强化",
-			"techDesc": "使用秘技后，进入战斗时青雀会抽取<unbreak>#1[i]</unbreak>张琼玉牌。",
-			"techSimpleDesc": "使用秘技，下一次进战时抽牌。",
-			"techIcon": "SpriteOutput/SkillIcons/1201/SkillIcon_1201_Maze.png",
-			"techShortIcon": "SkillIcon_1201_Maze",
-			"techId": 120107
+			}
 		},
 		"avatarType": "Mage",
 		"promotion": {
@@ -2586,14 +3055,63 @@
 		"shortIcon": "1202",
 		"rarity": "VeryRare",
 		"element": "Thunder",
-		"skills": {
-			"basicName": "逐客令",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于停云<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量雷属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1202/SkillIcon_1202_Normal.png",
-			"basicShortIcon": "SkillIcon_1202_Normal",
-			"basicId": 120201,
+		"skills": [
+			{
+				"name": "逐客令",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于停云<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 120201
+			},
+			{
+				"name": "祥音和韵",
+				"tag": "辅助",
+				"type": "战技",
+				"description": "为指定我方单体提供【赐福】，使其攻击力提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，最高不超过停云当前攻击力的<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>。\\n获得【赐福】的目标施放攻击后，会额外造成1次等同于其自身<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性<u>附加伤害</u>。\\n【赐福】持续<unbreak>#3[i]</unbreak>回合且仅对停云战技最新的施放目标生效。",
+				"regen": 30,
+				"er": null,
+				"id": 120202
+			},
+			{
+				"name": "庆云光覆仪祷",
+				"tag": "辅助",
+				"type": "终结技",
+				"description": "为指定我方单体恢复<unbreak>#1[i]</unbreak>点能量，同时使目标造成的伤害提高<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": 5,
+				"er": 130,
+				"id": 120203
+			},
+			{
+				"name": "紫电扶摇",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "敌方目标受到停云攻击后，获得【赐福】的目标立即对其造成等同于自身<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性<u>附加伤害</u>。",
+				"regen": null,
+				"er": null,
+				"id": 120204
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 120206
+			},
+			{
+				"name": "惠风和畅",
+				"tag": "辅助",
+				"type": "秘技",
+				"description": "使用秘技后立即为自身恢复<unbreak>#1[i]</unbreak>点能量。",
+				"regen": null,
+				"er": null,
+				"id": 120207
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110161": 2,
@@ -2603,13 +3121,6 @@
 				"113002": 5,
 				"113003": 5
 			},
-			"skillName": "祥音和韵",
-			"skillTag": "辅助",
-			"skillDesc": "为指定我方单体提供【赐福】，使其攻击力提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，最高不超过停云当前攻击力的<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>。\\n获得【赐福】的目标施放攻击后，会额外造成1次等同于其自身<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性<u>附加伤害</u>。\\n【赐福】持续<unbreak>#3[i]</unbreak>回合且仅对停云战技最新的施放目标生效。",
-			"skillSimpleDesc": "使我方单体<color=#f29e38ff>攻击力提高</color>，并获得【赐福】。【赐福】状态下攻击时额外造成少量<color=#f29e38ff>雷属性<u>附加伤害</u></color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1202/SkillIcon_1202_BP.png",
-			"skillShortIcon": "SkillIcon_1202_BP",
-			"skillId": 120202,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2621,14 +3132,6 @@
 				"113002": 10,
 				"113003": 5
 			},
-			"ultName": "庆云光覆仪祷",
-			"ultTag": "辅助",
-			"ultDesc": "为指定我方单体恢复<unbreak>#1[i]</unbreak>点能量，同时使目标造成的伤害提高<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>，持续<unbreak>#2[i]</unbreak>回合。",
-			"ultSimpleDesc": "为我方单体<color=#f29e38ff>恢复能量</color>，并使其<color=#f29e38ff>造成的伤害提高</color>。",
-			"ultIcon": "SpriteOutput/SkillIcons/1202/SkillIcon_1202_Ultra.png",
-			"ultShortIcon": "SkillIcon_1202_Ultra",
-			"ultER": 130,
-			"ultId": 120203,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2640,13 +3143,6 @@
 				"113002": 10,
 				"113003": 5
 			},
-			"talentName": "紫电扶摇",
-			"talentTag": "强化",
-			"talentDesc": "敌方目标受到停云攻击后，获得【赐福】的目标立即对其造成等同于自身<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性<u>附加伤害</u>。",
-			"talentSimpleDesc": "敌人受到停云攻击后，获得【赐福】的目标立即对其造成少量雷属性<u>附加伤害</u>。",
-			"talentIcon": "SpriteOutput/SkillIcons/1202/SkillIcon_1202_Passive.png",
-			"talentShortIcon": "SkillIcon_1202_Passive",
-			"talentId": 120204,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -2657,14 +3153,7 @@
 				"113001": 6,
 				"113002": 10,
 				"113003": 5
-			},
-			"techName": "惠风和畅",
-			"techTag": "辅助",
-			"techDesc": "使用秘技后立即为自身恢复<unbreak>#1[i]</unbreak>点能量。",
-			"techSimpleDesc": "使用秘技后立即为自身恢复能量。",
-			"techIcon": "SpriteOutput/SkillIcons/1202/SkillIcon_1202_Maze.png",
-			"techShortIcon": "SkillIcon_1202_Maze",
-			"techId": 120207
+			}
 		},
 		"avatarType": "Shaman",
 		"promotion": {
@@ -2703,14 +3192,63 @@
 		"shortIcon": "1203",
 		"rarity": "SuperRare",
 		"element": "Imaginary",
-		"skills": {
-			"basicName": "黑渊的棘刺",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于罗刹<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量虚数属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_Normal.png",
-			"basicShortIcon": "SkillIcon_1203_Normal",
-			"basicId": 120301,
+		"skills": [
+			{
+				"name": "黑渊的棘刺",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于罗刹<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 120301
+			},
+			{
+				"name": "白花的祈望",
+				"tag": "回复",
+				"type": "战技",
+				"description": "施放战技后立即为指定我方单体回复等同于罗刹<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值，并使罗刹获得1层【白花之刻】。\\n当我方任意单体当前生命值百分比小于等于<unbreak>#3[i]%</unbreak>时，罗刹会立即对其触发1次等同于战技的效果，此次触发不消耗战技点。该效果在<unbreak>#4[i]</unbreak>回合后可再次触发。",
+				"regen": 30,
+				"er": null,
+				"id": 120302
+			},
+			{
+				"name": "归葬的遂愿",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "解除敌方全体<unbreak>#2[i]</unbreak>个<u>增益效果</u>，并对敌方全体造成等同于罗刹<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，同时使罗刹获得1层【白花之刻】。",
+				"regen": 5,
+				"er": 100,
+				"id": 120303
+			},
+			{
+				"name": "生息的轮转",
+				"tag": "回复",
+				"type": "天赋",
+				"description": "当【白花之刻】达到<unbreak>#1[i]</unbreak>层时，罗刹会消耗全部【白花之刻】展开结界。\\n处于结界中的任意敌方目标受到攻击后，施放攻击的我方目标立即回复等同于罗刹<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值。\\n结界效果持续<unbreak>#3[i]</unbreak>回合。当罗刹陷入<u>无法战斗状态</u>时，结界也会被解除。",
+				"regen": null,
+				"er": null,
+				"id": 120304
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 120306
+			},
+			{
+				"name": "愚者的悲悯",
+				"tag": "回复",
+				"type": "秘技",
+				"description": "使用秘技后，下一次战斗开始时立即触发天赋。",
+				"regen": null,
+				"er": null,
+				"id": 120307
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110171": 3,
@@ -2720,13 +3258,6 @@
 				"113012": 7,
 				"113013": 7
 			},
-			"skillName": "白花的祈望",
-			"skillTag": "回复",
-			"skillDesc": "施放战技后立即为指定我方单体回复等同于罗刹<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值，并使罗刹获得1层【白花之刻】。\\n当我方任意单体当前生命值百分比小于等于<unbreak>#3[i]%</unbreak>时，罗刹会立即对其触发1次等同于战技的效果，此次触发不消耗战技点。该效果在<unbreak>#4[i]</unbreak>回合后可再次触发。",
-			"skillSimpleDesc": "为我方单体回复生命值，获得1层【白花之刻】。",
-			"skillIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_BP.png",
-			"skillShortIcon": "SkillIcon_1203_BP",
-			"skillId": 120302,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -2738,14 +3269,6 @@
 				"113012": 13,
 				"113013": 7
 			},
-			"ultName": "归葬的遂愿",
-			"ultTag": "群攻",
-			"ultDesc": "解除敌方全体<unbreak>#2[i]</unbreak>个<u>增益效果</u>，并对敌方全体造成等同于罗刹<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，同时使罗刹获得1层【白花之刻】。",
-			"ultSimpleDesc": "解除敌方全体1个<u>增益效果</u>，并对敌方全体造成虚数属性伤害，获得1层【白花之刻】。",
-			"ultIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_Ultra.png",
-			"ultShortIcon": "SkillIcon_1203_Ultra",
-			"ultER": 100,
-			"ultId": 120303,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -2757,13 +3280,6 @@
 				"113012": 13,
 				"113013": 7
 			},
-			"talentName": "生息的轮转",
-			"talentTag": "回复",
-			"talentDesc": "当【白花之刻】达到<unbreak>#1[i]</unbreak>层时，罗刹会消耗全部【白花之刻】展开结界。\\n处于结界中的任意敌方目标受到攻击后，施放攻击的我方目标立即回复等同于罗刹<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值。\\n结界效果持续<unbreak>#3[i]</unbreak>回合。当罗刹陷入<u>无法战斗状态</u>时，结界也会被解除。",
-			"talentSimpleDesc": "当【白花之刻】2层时展开结界。结界存在时我方攻击后回复生命值。",
-			"talentIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_Passive.png",
-			"talentShortIcon": "SkillIcon_1203_Passive",
-			"talentId": 120304,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -2774,14 +3290,7 @@
 				"113011": 9,
 				"113012": 13,
 				"113013": 7
-			},
-			"techName": "愚者的悲悯",
-			"techTag": "回复",
-			"techDesc": "使用秘技后，下一次战斗开始时立即触发天赋。",
-			"techSimpleDesc": "使用秘技，下一次进战后立即触发天赋效果。",
-			"techIcon": "SpriteOutput/SkillIcons/1203/SkillIcon_1203_Maze.png",
-			"techShortIcon": "SkillIcon_1203_Maze",
-			"techId": 120307
+			}
 		},
 		"avatarType": "Priest",
 		"promotion": {
@@ -2820,14 +3329,63 @@
 		"shortIcon": "1204",
 		"rarity": "SuperRare",
 		"element": "Thunder",
-		"skills": {
-			"basicName": "石火流光",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于景元<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量雷属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1204/SkillIcon_1204_Normal.png",
-			"basicShortIcon": "SkillIcon_1204_Normal",
-			"basicId": 120401,
+		"skills": [
+			{
+				"name": "石火流光",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于景元<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 120401
+			},
+			{
+				"name": "紫霄震曜",
+				"tag": "群攻",
+				"type": "战技",
+				"description": "对敌方全体造成等同于景元<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，同时增加<unbreak>#2[i]</unbreak>段【神君】下回合的攻击段数。",
+				"regen": 30,
+				"er": null,
+				"id": 120402
+			},
+			{
+				"name": "吾身光明",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于景元<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。同时增加<unbreak>#2[i]</unbreak>段【神君】下回合的攻击段数。",
+				"regen": 5,
+				"er": 130,
+				"id": 120403
+			},
+			{
+				"name": "斩勘神形",
+				"tag": "弹射",
+				"type": "天赋",
+				"description": "战斗开始时召唤【神君】。【神君】初始拥有<unbreak>#1[i]</unbreak>点速度以及<unbreak>#4[i]</unbreak>段攻击段数，行动时发动<u>追加攻击</u>，每段攻击对随机敌方单体造成等同于景元攻击力<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的雷属性伤害，同时对其相邻目标造成等同于主目标<unbreak>#5[i]%</unbreak>的雷属性伤害。\\n【神君】最多累计<unbreak>#6[i]</unbreak>段攻击段数且每增加1段攻击段数，速度提高<unbreak>#3[i]</unbreak>点，行动结束后速度和攻击段数恢复至初始状态。\\n当景元陷入<u>无法战斗状态</u>时【神君】消失。\\n当景元受到<u>控制类负面状态</u>影响时【神君】也无法行动。",
+				"regen": null,
+				"er": null,
+				"id": 120404
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 120406
+			},
+			{
+				"name": "摄召威灵",
+				"tag": "强化",
+				"type": "秘技",
+				"description": "使用秘技后，下一次战斗开始时【神君】第1回合的攻击段数增加<unbreak>#1[i]</unbreak>段。",
+				"regen": null,
+				"er": null,
+				"id": 120407
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110131": 3,
@@ -2837,13 +3395,6 @@
 				"113002": 7,
 				"113003": 7
 			},
-			"skillName": "紫霄震曜",
-			"skillTag": "群攻",
-			"skillDesc": "对敌方全体造成等同于景元<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害，同时增加<unbreak>#2[i]</unbreak>段【神君】下回合的攻击段数。",
-			"skillSimpleDesc": "对敌方全体造成少量雷属性伤害，增加【神君】的攻击段数。",
-			"skillIcon": "SpriteOutput/SkillIcons/1204/SkillIcon_1204_BP.png",
-			"skillShortIcon": "SkillIcon_1204_BP",
-			"skillId": 120402,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -2855,14 +3406,6 @@
 				"113002": 13,
 				"113003": 7
 			},
-			"ultName": "吾身光明",
-			"ultTag": "群攻",
-			"ultDesc": "对敌方全体造成等同于景元<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。同时增加<unbreak>#2[i]</unbreak>段【神君】下回合的攻击段数。",
-			"ultSimpleDesc": "对敌方全体造成雷属性伤害，增加【神君】的攻击段数。",
-			"ultIcon": "SpriteOutput/SkillIcons/1204/SkillIcon_1204_Ultra.png",
-			"ultShortIcon": "SkillIcon_1204_Ultra",
-			"ultER": 130,
-			"ultId": 120403,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -2874,12 +3417,6 @@
 				"113002": 13,
 				"113003": 7
 			},
-			"talentName": "斩勘神形",
-			"talentTag": "弹射",
-			"talentDesc": "战斗开始时召唤【神君】。【神君】初始拥有<unbreak>#1[i]</unbreak>点速度以及<unbreak>#4[i]</unbreak>段攻击段数，行动时发动<u>追加攻击</u>，每段攻击对随机敌方单体造成等同于景元攻击力<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的雷属性伤害，同时对其相邻目标造成等同于主目标<unbreak>#5[i]%</unbreak>的雷属性伤害。\\n【神君】最多累计<unbreak>#6[i]</unbreak>段攻击段数且每增加1段攻击段数，速度提高<unbreak>#3[i]</unbreak>点，行动结束后速度和攻击段数恢复至初始状态。\\n当景元陷入<u>无法战斗状态</u>时【神君】消失。\\n当景元受到<u>控制类负面状态</u>影响时【神君】也无法行动。",
-			"talentIcon": "SpriteOutput/SkillIcons/1204/SkillIcon_1204_Passive.png",
-			"talentShortIcon": "SkillIcon_1204_Passive",
-			"talentId": 120404,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -2890,13 +3427,7 @@
 				"113001": 9,
 				"113002": 13,
 				"113003": 7
-			},
-			"techName": "摄召威灵",
-			"techTag": "强化",
-			"techDesc": "使用秘技后，下一次战斗开始时【神君】第1回合的攻击段数增加<unbreak>#1[i]</unbreak>段。",
-			"techIcon": "SpriteOutput/SkillIcons/1204/SkillIcon_1204_Maze.png",
-			"techShortIcon": "SkillIcon_1204_Maze",
-			"techId": 120407
+			}
 		},
 		"avatarType": "Mage",
 		"promotion": {
@@ -2935,14 +3466,72 @@
 		"shortIcon": "1205",
 		"rarity": "SuperRare",
 		"element": "Wind",
-		"skills": {
-			"basicName": "支离剑",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于刃<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量风属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Normal.png",
-			"basicShortIcon": "SkillIcon_1205_Normal",
-			"basicId": 120501,
+		"skills": [
+			{
+				"name": "支离剑",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于刃<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的风属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 120501
+			},
+			{
+				"name": "地狱变",
+				"tag": "强化",
+				"type": "战技",
+				"description": "消耗等同于刃生命上限<unbreak>#1[i]%</unbreak>的生命值，进入【地狱变】状态。\\n处于【地狱变】状态时无法施放战技，同时使自身造成的伤害提高<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，普攻【支离剑】强化为【无间剑树】，持续<unbreak>#2[i]</unbreak>回合。\\n若当前生命值不足，施放战技时刃的当前生命值降低至1点。\\n该战技无法恢复能量。施放该战技后，本回合不会结束。",
+				"regen": null,
+				"er": null,
+				"id": 120502
+			},
+			{
+				"name": "大辟万死",
+				"tag": "扩散",
+				"type": "终结技",
+				"description": "将刃的当前生命值转化为生命上限的<unbreak>50%</unbreak>，并对敌方单体造成等同于刃<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>本场战斗中累计已损失生命值的风属性伤害，同时对其相邻目标造成等同于刃<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#6[i]%</unbreak></color>本场战斗中累计已损失生命值的风属性伤害。\\n本场战斗中累计已损失生命值最高不超过刃生命上限的<unbreak>#7[i]%</unbreak>，施放终结技后会清空并进行重新累计。",
+				"regen": 5,
+				"er": 130,
+				"id": 120503
+			},
+			{
+				"name": "倏忽恩赐",
+				"tag": "群攻",
+				"type": "天赋",
+				"description": "刃受到伤害或消耗生命值时，获得1层充能，最多叠加5层。该效果每次受到攻击最多叠加1层。\\n当充能叠加至上限时，立即对敌方全体施放1次<u>追加攻击</u>，造成等同于刃<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>生命上限的风属性伤害并回复等同于刃生命上限<unbreak>#3[i]%</unbreak>的生命值，施放追加攻击后，消耗所有充能。",
+				"regen": 10,
+				"er": null,
+				"id": 120504
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 120506
+			},
+			{
+				"name": "业途风",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后消耗等同于刃生命上限<unbreak>#2[i]%</unbreak>的生命值，同时对敌方全体造成等同于刃生命上限<unbreak>#1[i]%</unbreak>的风属性伤害。\\n若当前生命值不足，施放秘技时刃的当前生命值降低至1点。",
+				"regen": null,
+				"er": null,
+				"id": 120507
+			},
+			{
+				"name": "无间剑树",
+				"tag": "扩散",
+				"type": "普攻",
+				"description": "消耗等同于刃生命上限<unbreak>#1[i]%</unbreak>的生命值，对指定敌方单体造成等同于刃<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>生命上限的风属性伤害，同时对其相邻目标造成等同于刃<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>生命上限的风属性伤害。\\n若当前生命值不足，施放【无间剑树】时刃的当前生命值降低至1点。\\n【无间剑树】无法恢复战技点。",
+				"regen": 30,
+				"er": null,
+				"id": 120508
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110111": 3,
@@ -2952,13 +3541,6 @@
 				"113002": 7,
 				"113003": 7
 			},
-			"skillName": "地狱变",
-			"skillTag": "强化",
-			"skillDesc": "消耗等同于刃生命上限<unbreak>#1[i]%</unbreak>的生命值，进入【地狱变】状态。\\n处于【地狱变】状态时无法施放战技，同时使自身造成的伤害提高<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，普攻【支离剑】强化为【无间剑树】，持续<unbreak>#2[i]</unbreak>回合。\\n若当前生命值不足，施放战技时刃的当前生命值降低至1点。\\n该战技无法恢复能量。施放该战技后，本回合不会结束。",
-			"skillSimpleDesc": "消耗自身生命值，获得强化普攻，且本回合不会结束。",
-			"skillIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_BP.png",
-			"skillShortIcon": "SkillIcon_1205_BP",
-			"skillId": 120502,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -2970,14 +3552,6 @@
 				"113002": 13,
 				"113003": 7
 			},
-			"ultName": "大辟万死",
-			"ultTag": "扩散",
-			"ultDesc": "将刃的当前生命值转化为生命上限的<unbreak>50%</unbreak>，并对敌方单体造成等同于刃<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>本场战斗中累计已损失生命值的风属性伤害，同时对其相邻目标造成等同于刃<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#6[i]%</unbreak></color>本场战斗中累计已损失生命值的风属性伤害。\\n本场战斗中累计已损失生命值最高不超过刃生命上限的<unbreak>#7[i]%</unbreak>，施放终结技后会清空并进行重新累计。",
-			"ultSimpleDesc": "将当前生命值转化为生命上限的<unbreak>50%</unbreak>，并对敌方单体造成大量风属性伤害，对相邻目标造成风属性伤害。",
-			"ultIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Ultra.png",
-			"ultShortIcon": "SkillIcon_1205_Ultra",
-			"ultER": 130,
-			"ultId": 120503,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -2989,13 +3563,6 @@
 				"113002": 13,
 				"113003": 7
 			},
-			"talentName": "倏忽恩赐",
-			"talentTag": "群攻",
-			"talentDesc": "刃受到伤害或消耗生命值时，获得1层充能，最多叠加5层。该效果每次受到攻击最多叠加1层。\\n当充能叠加至上限时，立即对敌方全体施放1次<u>追加攻击</u>，造成等同于刃<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>生命上限的风属性伤害并回复等同于刃生命上限<unbreak>#3[i]%</unbreak>的生命值，施放追加攻击后，消耗所有充能。",
-			"talentSimpleDesc": "刃的生命值降低时，获得1层充能。当充能叠加至上限时，立即对敌方全体造成风属性伤害并回复生命值，随后消耗所有充能。",
-			"talentIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Passive.png",
-			"talentShortIcon": "SkillIcon_1205_Passive",
-			"talentId": 120504,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3006,14 +3573,7 @@
 				"113001": 9,
 				"113002": 13,
 				"113003": 7
-			},
-			"techName": "业途风",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后消耗等同于刃生命上限<unbreak>#2[i]%</unbreak>的生命值，同时对敌方全体造成等同于刃生命上限<unbreak>#1[i]%</unbreak>的风属性伤害。\\n若当前生命值不足，施放秘技时刃的当前生命值降低至1点。",
-			"techSimpleDesc": "攻击敌人，进战后消耗自身生命值，并对敌方全体造成风属性伤害。",
-			"techIcon": "SpriteOutput/SkillIcons/1205/SkillIcon_1205_Maze.png",
-			"techShortIcon": "SkillIcon_1205_Maze",
-			"techId": 120507
+			}
 		},
 		"avatarType": "Warrior",
 		"promotion": {
@@ -3052,14 +3612,63 @@
 		"shortIcon": "1206",
 		"rarity": "VeryRare",
 		"element": "Physical",
-		"skills": {
-			"basicName": "云骑剑经 • 素霓",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于素裳<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量物理属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1206/SkillIcon_1206_Normal.png",
-			"basicShortIcon": "SkillIcon_1206_Normal",
-			"basicId": 120601,
+		"skills": [
+			{
+				"name": "云骑剑经 • 素霓",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于素裳<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 120601
+			},
+			{
+				"name": "云骑剑经 • 山倾",
+				"tag": "单攻",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于素裳<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。同时最后一击后有<unbreak>#3[i]%</unbreak>概率发动【剑势】，对目标造成等同于素裳<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性<u>附加伤害</u>。\\n若该目标处于<u>弱点击破状态</u>，则【剑势】必定发动。",
+				"regen": 30,
+				"er": null,
+				"id": 120602
+			},
+			{
+				"name": "太虚形蕴 • 烛夜",
+				"tag": "单攻",
+				"type": "终结技",
+				"description": "对指定敌方单体造成等同于素裳<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，并使素裳立即行动。同时使其攻击力提高<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，且施放战技时额外增加2次【剑势】的发动判定，持续<unbreak>#2[i]</unbreak>回合。\\n通过额外判定发动的【剑势】伤害为原伤害的<unbreak>#3[i]%</unbreak>。",
+				"regen": 5,
+				"er": 120,
+				"id": 120603
+			},
+			{
+				"name": "游刃若水",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "当场上有敌方目标的弱点被击破，素裳的速度提高<color=#f29e38ff><unbreak>#1[f2]%</unbreak></color>，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 120604
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 120606
+			},
+			{
+				"name": "云骑剑经 • 叩阵",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后对敌方全体造成等同于素裳<unbreak>#1[i]%</unbreak>攻击力的物理属性伤害。",
+				"regen": null,
+				"er": null,
+				"id": 120607
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110121": 2,
@@ -3069,13 +3678,6 @@
 				"113012": 5,
 				"113013": 5
 			},
-			"skillName": "云骑剑经 • 山倾",
-			"skillTag": "单攻",
-			"skillDesc": "对指定敌方单体造成等同于素裳<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。同时最后一击后有<unbreak>#3[i]%</unbreak>概率发动【剑势】，对目标造成等同于素裳<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性<u>附加伤害</u>。\\n若该目标处于<u>弱点击破状态</u>，则【剑势】必定发动。",
-			"skillSimpleDesc": "对敌方单体造成物理属性伤害，有<color=#f29e38ff>小概率发动【剑势】</color>。若目标处于<u>弱点击破状态</u>则<color=#f29e38ff>【剑势】必定发动</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1206/SkillIcon_1206_BP.png",
-			"skillShortIcon": "SkillIcon_1206_BP",
-			"skillId": 120602,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -3087,14 +3689,6 @@
 				"113012": 10,
 				"113013": 5
 			},
-			"ultName": "太虚形蕴 • 烛夜",
-			"ultTag": "单攻",
-			"ultDesc": "对指定敌方单体造成等同于素裳<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，并使素裳立即行动。同时使其攻击力提高<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，且施放战技时额外增加2次【剑势】的发动判定，持续<unbreak>#2[i]</unbreak>回合。\\n通过额外判定发动的【剑势】伤害为原伤害的<unbreak>#3[i]%</unbreak>。",
-			"ultSimpleDesc": "对敌方单体造成大量物理属性伤害，强化【剑势】效果并<color=#f29e38ff>立即行动</color>。",
-			"ultIcon": "SpriteOutput/SkillIcons/1206/SkillIcon_1206_Ultra.png",
-			"ultShortIcon": "SkillIcon_1206_Ultra",
-			"ultER": 120,
-			"ultId": 120603,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -3106,13 +3700,6 @@
 				"113012": 10,
 				"113013": 5
 			},
-			"talentName": "游刃若水",
-			"talentTag": "强化",
-			"talentDesc": "当场上有敌方目标的弱点被击破，素裳的速度提高<color=#f29e38ff><unbreak>#1[f2]%</unbreak></color>，持续<unbreak>#2[i]</unbreak>回合。",
-			"talentSimpleDesc": "当场上有敌人的弱点被击破时，自身速度提高。",
-			"talentIcon": "SpriteOutput/SkillIcons/1206/SkillIcon_1206_Passive.png",
-			"talentShortIcon": "SkillIcon_1206_Passive",
-			"talentId": 120604,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -3123,14 +3710,7 @@
 				"113011": 6,
 				"113012": 10,
 				"113013": 5
-			},
-			"techName": "云骑剑经 • 叩阵",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后对敌方全体造成等同于素裳<unbreak>#1[i]%</unbreak>攻击力的物理属性伤害。",
-			"techSimpleDesc": "攻击敌人，进战后对敌方全体造成少量物理属性伤害。",
-			"techIcon": "SpriteOutput/SkillIcons/1206/SkillIcon_1206_Maze.png",
-			"techShortIcon": "SkillIcon_1206_Maze",
-			"techId": 120607
+			}
 		},
 		"avatarType": "Rogue",
 		"promotion": {
@@ -3169,14 +3749,63 @@
 		"shortIcon": "1207",
 		"rarity": "VeryRare",
 		"element": "Imaginary",
-		"skills": {
-			"basicName": "流镝",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于驭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量虚数属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_Normal.png",
-			"basicShortIcon": "SkillIcon_1207_Normal",
-			"basicId": 120701,
+		"skills": [
+			{
+				"name": "流镝",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于驭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 120701
+			},
+			{
+				"name": "天阙鸣弦",
+				"tag": "辅助",
+				"type": "战技",
+				"description": "获得<unbreak>#1[i]</unbreak>层【鸣弦号令】，最多持有不超过2层。当驭空持有【鸣弦号令】时，我方全体攻击力提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，且每次我方目标回合结束时，移除驭空1层【鸣弦号令】。\\n驭空施放战技获得【鸣弦号令】的回合，不会移除【鸣弦号令】。",
+				"regen": 30,
+				"er": null,
+				"id": 120702
+			},
+			{
+				"name": "贯云饮羽",
+				"tag": "单攻",
+				"type": "终结技",
+				"description": "施放终结技时，若驭空持有【鸣弦号令】，则额外使我方全体暴击率提高<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>，暴击伤害提高<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。同时对指定敌方单体造成等同于驭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。",
+				"regen": 5,
+				"er": 130,
+				"id": 120703
+			},
+			{
+				"name": "箭彻七札",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "施放普攻可额外造成等同于驭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，并使本次攻击的削韧伤害提高<unbreak>#2[i]%</unbreak>，该效果在<unbreak>#3[i]</unbreak>回合后可再次触发。",
+				"regen": null,
+				"er": null,
+				"id": 120704
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 120706
+			},
+			{
+				"name": "云鸢逐风",
+				"tag": "强化",
+				"type": "秘技",
+				"description": "使用秘技后进入持续<unbreak>#1[i]</unbreak>秒的冲刺状态。冲刺状态下自身移动速度提高<unbreak>#2[i]%</unbreak>，且主动攻击敌人进入战斗时，驭空获得<unbreak>#3[i]</unbreak>层【鸣弦号令】。",
+				"regen": null,
+				"er": null,
+				"id": 120707
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110161": 2,
@@ -3186,13 +3815,6 @@
 				"113012": 5,
 				"113013": 5
 			},
-			"skillName": "天阙鸣弦",
-			"skillTag": "辅助",
-			"skillDesc": "获得<unbreak>#1[i]</unbreak>层【鸣弦号令】，最多持有不超过2层。当驭空持有【鸣弦号令】时，我方全体攻击力提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，且每次我方目标回合结束时，移除驭空1层【鸣弦号令】。\\n驭空施放战技获得【鸣弦号令】的回合，不会移除【鸣弦号令】。",
-			"skillSimpleDesc": "获得2层【鸣弦号令】，自身持有【鸣弦号令】时我方全体<color=#f29e38ff>攻击力提高</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_BP.png",
-			"skillShortIcon": "SkillIcon_1207_BP",
-			"skillId": 120702,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -3204,14 +3826,6 @@
 				"113012": 10,
 				"113013": 5
 			},
-			"ultName": "贯云饮羽",
-			"ultTag": "单攻",
-			"ultDesc": "施放终结技时，若驭空持有【鸣弦号令】，则额外使我方全体暴击率提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，暴击伤害提高<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。同时对指定敌方单体造成等同于驭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。",
-			"ultSimpleDesc": "自身持有【鸣弦号令】时我方全体<color=#f29e38ff>暴击率和暴击伤害提高</color>，并对敌方单体造成大量虚数属性伤害。",
-			"ultIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_Ultra.png",
-			"ultShortIcon": "SkillIcon_1207_Ultra",
-			"ultER": 130,
-			"ultId": 120703,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -3223,13 +3837,6 @@
 				"113012": 10,
 				"113013": 5
 			},
-			"talentName": "箭彻七札",
-			"talentTag": "强化",
-			"talentDesc": "施放普攻可额外造成等同于驭空<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，并使本次攻击的削韧伤害提高<unbreak>#2[i]%</unbreak>，该效果在<unbreak>#3[i]</unbreak>回合后可再次触发。",
-			"talentSimpleDesc": "使普攻额外造成少量伤害并提高本次普攻削韧伤害。该效果1回合后可再次触发。",
-			"talentIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_Passive.png",
-			"talentShortIcon": "SkillIcon_1207_Passive",
-			"talentId": 120704,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -3240,14 +3847,7 @@
 				"113011": 6,
 				"113012": 10,
 				"113013": 5
-			},
-			"techName": "云鸢逐风",
-			"techTag": "强化",
-			"techDesc": "使用秘技后进入持续<unbreak>#1[i]</unbreak>秒的冲刺状态。冲刺状态下自身移动速度提高<unbreak>#2[i]%</unbreak>，且主动攻击敌人进入战斗时，驭空获得<unbreak>#3[i]</unbreak>层【鸣弦号令】。",
-			"techSimpleDesc": "使自身<color=#f29e38ff>移动速度提高</color>。攻击敌人进战后获得2层【鸣弦号令】。",
-			"techIcon": "SpriteOutput/SkillIcons/1207/SkillIcon_1207_Maze.png",
-			"techShortIcon": "SkillIcon_1207_Maze",
-			"techId": 120707
+			}
 		},
 		"avatarType": "Shaman",
 		"promotion": {
@@ -3286,14 +3886,63 @@
 		"shortIcon": "1208",
 		"rarity": "SuperRare",
 		"element": "Quantum",
-		"skills": {
-			"basicName": "始击岁星",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于符玄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的量子属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量量子属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Normal.png",
-			"basicShortIcon": "SkillIcon_1208_Normal",
-			"basicId": 120801,
+		"skills": [
+			{
+				"name": "始击岁星",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于符玄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的量子属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 120801
+			},
+			{
+				"name": "太微行棋，灵台示影",
+				"tag": "防御",
+				"type": "战技",
+				"description": "开启【穷观阵】，使符玄队友所承受的未受护盾抵挡之前的伤害的<unbreak>#1[i]%</unbreak><u>分摊</u>给符玄，持续<unbreak>#3[i]</unbreak>回合。\\n处于【穷观阵】的我方全体获得【鉴知】。【鉴知】状态下的我方目标生命上限提高，提高数值等同于符玄生命上限的<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>，暴击率提高<color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>。\\n当符玄陷入<u>无法战斗状态</u>时，【穷观阵】也会被解除。",
+				"regen": 30,
+				"er": null,
+				"id": 120802
+			},
+			{
+				"name": "天律大衍，历劫归一",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于符玄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的量子属性伤害，并获得1次符玄天赋生命回复的触发次数。",
+				"regen": 5,
+				"er": 135,
+				"id": 120803
+			},
+			{
+				"name": "乾清坤夷，否极泰来",
+				"tag": "回复",
+				"type": "天赋",
+				"description": "当符玄处于可战斗状态时，为我方全体附加【避厄】。【避厄】状态下的我方目标受到的伤害降低<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>。\\n当符玄当前生命值百分比小于等于<unbreak>#2[i]%</unbreak>时触发生命回复，使自身回复等同于已损失生命值<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>的生命值，受到致命攻击时无法触发该效果。该效果初始拥有1次触发次数，最多可拥有2次触发次数。",
+				"regen": null,
+				"er": null,
+				"id": 120804
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 120806
+			},
+			{
+				"name": "岁记否泰，固守四郭",
+				"tag": "防御",
+				"type": "秘技",
+				"description": "使用秘技后，我方全体获得持续<unbreak>#1[i]</unbreak>秒的屏障。该屏障可抵挡敌人的所有攻击，不会进入战斗。屏障持续期间进入战斗时符玄自动开启【穷观阵】，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 120807
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110141": 3,
@@ -3303,13 +3952,6 @@
 				"113012": 7,
 				"113013": 7
 			},
-			"skillName": "太微行棋，灵台示影",
-			"skillTag": "防御",
-			"skillDesc": "开启【穷观阵】，使符玄队友所承受的未受护盾抵挡之前的伤害的<unbreak>#1[i]%</unbreak><u>分摊</u>给符玄，持续<unbreak>#3[i]</unbreak>回合。\\n处于【穷观阵】的我方全体获得【鉴知】。【鉴知】状态下的我方目标生命上限提高，提高数值等同于符玄生命上限的<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>，暴击率提高<color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>。\\n当符玄陷入<u>无法战斗状态</u>时，【穷观阵】也会被解除。",
-			"skillSimpleDesc": "开启【穷观阵】，队友<color=#f29e38ff>所受伤害<u>分摊</u></color>给符玄。并使我方全体生命上限、<color=#f29e38ff>暴击率提高</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_BP.png",
-			"skillShortIcon": "SkillIcon_1208_BP",
-			"skillId": 120802,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3321,14 +3963,6 @@
 				"113012": 13,
 				"113013": 7
 			},
-			"ultName": "天律大衍，历劫归一",
-			"ultTag": "群攻",
-			"ultDesc": "对敌方全体造成等同于符玄<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的量子属性伤害，并获得1次符玄天赋生命回复的触发次数。",
-			"ultSimpleDesc": "对敌方全体造成量子属性伤害，增加符玄天赋的触发次数。",
-			"ultIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Ultra.png",
-			"ultShortIcon": "SkillIcon_1208_Ultra",
-			"ultER": 135,
-			"ultId": 120803,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3340,13 +3974,6 @@
 				"113012": 13,
 				"113013": 7
 			},
-			"talentName": "乾清坤夷，否极泰来",
-			"talentTag": "回复",
-			"talentDesc": "当符玄处于可战斗状态时，为我方全体附加【避厄】。【避厄】状态下的我方目标受到的伤害降低<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>。\\n当符玄当前生命值百分比小于等于<unbreak>#2[i]%</unbreak>时触发生命回复，使自身回复等同于已损失生命值<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>的生命值，受到致命攻击时无法触发该效果。该效果初始拥有1次触发次数，最多可拥有2次触发次数。",
-			"talentSimpleDesc": "当符玄处于可战斗状态时，我方全体受到的伤害降低。\\n生命值较低时<color=#f29e38ff>自动</color>按已损失生命值百分比<color=#f29e38ff>回复自身生命</color>。该效果最多拥有2次触发次数。",
-			"talentIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Passive.png",
-			"talentShortIcon": "SkillIcon_1208_Passive",
-			"talentId": 120804,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3357,14 +3984,7 @@
 				"113011": 9,
 				"113012": 13,
 				"113013": 7
-			},
-			"techName": "岁记否泰，固守四郭",
-			"techTag": "防御",
-			"techDesc": "使用秘技后，我方全体获得持续<unbreak>#1[i]</unbreak>秒的屏障。该屏障可抵挡敌人的所有攻击，不会进入战斗。屏障持续期间进入战斗时符玄自动开启【穷观阵】，持续<unbreak>#2[i]</unbreak>回合。",
-			"techSimpleDesc": "开启屏障，受到敌人攻击时不会进入战斗。进战后自动开启【穷观阵】。",
-			"techIcon": "SpriteOutput/SkillIcons/1208/SkillIcon_1208_Maze.png",
-			"techShortIcon": "SkillIcon_1208_Maze",
-			"techId": 120807
+			}
 		},
 		"avatarType": "Knight",
 		"promotion": {
@@ -3403,14 +4023,63 @@
 		"shortIcon": "1209",
 		"rarity": "SuperRare",
 		"element": "Ice",
-		"skills": {
-			"basicName": "霜锋点寒芒",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于彦卿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量冰属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1209/SkillIcon_1209_Normal.png",
-			"basicShortIcon": "SkillIcon_1209_Normal",
-			"basicId": 120901,
+		"skills": [
+			{
+				"name": "霜锋点寒芒",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于彦卿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 120901
+			},
+			{
+				"name": "遥击三尺水",
+				"tag": "单攻",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于彦卿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害，并为彦卿附加【智剑连心】，持续1回合。",
+				"regen": 30,
+				"er": null,
+				"id": 120902
+			},
+			{
+				"name": "快雨燕相逐",
+				"tag": "单攻",
+				"type": "终结技",
+				"description": "提高自身<unbreak>#1[i]%</unbreak>暴击率，若彦卿处于【智剑连心】效果，则使其暴击伤害额外提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，<u>增益效果</u>持续1回合。随后对指定敌方单体造成等同于彦卿<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的冰属性伤害。",
+				"regen": 5,
+				"er": 140,
+				"id": 120903
+			},
+			{
+				"name": "呼剑如影",
+				"tag": "单攻",
+				"type": "天赋",
+				"description": "彦卿处于【智剑连心】效果时，受到攻击的概率降低，并为自身提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>暴击率和<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>暴击伤害。对敌方目标施放攻击后，有<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>的<u>固定概率</u>发动<u>追加攻击</u>，对目标造成等同于彦卿<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的冰属性伤害，并有<unbreak>#6[i]%</unbreak>的<u>基础概率</u>使其陷入冻结状态，持续1回合。\\n冻结状态下，敌方目标不能行动，同时每回合开始时受到等同于彦卿<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>攻击力的冰属性<u>附加伤害</u>。\\n当彦卿受到伤害后，【智剑连心】将会消失。",
+				"regen": 10,
+				"er": null,
+				"id": 120904
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 120906
+			},
+			{
+				"name": "御剑真诀",
+				"tag": "强化",
+				"type": "秘技",
+				"description": "使用秘技后，下一次战斗开始时彦卿对当前生命值百分比大于等于<unbreak>#1[i]%</unbreak>的敌方目标造成的伤害提高<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 120907
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110121": 3,
@@ -3420,13 +4089,6 @@
 				"111012": 7,
 				"111013": 7
 			},
-			"skillName": "遥击三尺水",
-			"skillTag": "单攻",
-			"skillDesc": "对指定敌方单体造成等同于彦卿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害，并为彦卿附加【智剑连心】，持续1回合。",
-			"skillSimpleDesc": "对敌方单体造成冰属性伤害，并为自身附加【智剑连心】。",
-			"skillIcon": "SpriteOutput/SkillIcons/1209/SkillIcon_1209_BP.png",
-			"skillShortIcon": "SkillIcon_1209_BP",
-			"skillId": 120902,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3438,14 +4100,6 @@
 				"111012": 13,
 				"111013": 7
 			},
-			"ultName": "快雨燕相逐",
-			"ultTag": "单攻",
-			"ultDesc": "提高自身<unbreak>#1[i]%</unbreak>暴击率，若彦卿处于【智剑连心】效果，则使其暴击伤害额外提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，<u>增益效果</u>持续1回合。随后对指定敌方单体造成等同于彦卿<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的冰属性伤害。",
-			"ultSimpleDesc": "提高自身暴击率，并强化【智剑连心】，对敌方单体造成大量冰属性伤害。",
-			"ultIcon": "SpriteOutput/SkillIcons/1209/SkillIcon_1209_Ultra.png",
-			"ultShortIcon": "SkillIcon_1209_Ultra",
-			"ultER": 140,
-			"ultId": 120903,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3457,13 +4111,6 @@
 				"111012": 13,
 				"111013": 7
 			},
-			"talentName": "呼剑如影",
-			"talentTag": "单攻",
-			"talentDesc": "彦卿处于【智剑连心】效果时，受到攻击的概率降低，并为自身提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>暴击率和<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>暴击伤害。对敌方目标施放攻击后，有<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>的<u>固定概率</u>发动<u>追加攻击</u>，对目标造成等同于彦卿<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的冰属性伤害，并有<unbreak>#6[i]%</unbreak>的<u>基础概率</u>使其陷入冻结状态，持续1回合。\\n冻结状态下，敌方目标不能行动，同时每回合开始时受到等同于彦卿<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>攻击力的冰属性<u>附加伤害</u>。\\n当彦卿受到伤害后，【智剑连心】将会消失。",
-			"talentSimpleDesc": "<color=#f29e38ff>处于【智剑连心】时</color>受到攻击的概率降低，自身<color=#f29e38ff>暴击率和暴击伤害提高</color>。对敌方目标<color=#f29e38ff>施放攻击后</color>，有概率发动<u>追加攻击</u>，对其造成冰属性伤害并有概率使其陷入冻结状态。\\n自身受到伤害后，【智剑连心】消失。",
-			"talentIcon": "SpriteOutput/SkillIcons/1209/SkillIcon_1209_Passive.png",
-			"talentShortIcon": "SkillIcon_1209_Passive",
-			"talentId": 120904,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3474,14 +4121,7 @@
 				"111011": 9,
 				"111012": 13,
 				"111013": 7
-			},
-			"techName": "御剑真诀",
-			"techTag": "强化",
-			"techDesc": "使用秘技后，下一次战斗开始时彦卿对当前生命值百分比大于等于<unbreak>#1[i]%</unbreak>的敌方目标造成的伤害提高<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。",
-			"techSimpleDesc": "使用秘技，下一次战斗开始时自身对生命值百分比大于等于<unbreak>50%</unbreak>的敌方目标造成的伤害提高。",
-			"techIcon": "SpriteOutput/SkillIcons/1209/SkillIcon_1209_Maze.png",
-			"techShortIcon": "SkillIcon_1209_Maze",
-			"techId": 120907
+			}
 		},
 		"avatarType": "Rogue",
 		"promotion": {
@@ -3520,14 +4160,63 @@
 		"shortIcon": "1210",
 		"rarity": "VeryRare",
 		"element": "Fire",
-		"skills": {
-			"basicName": "劈头满堂彩",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于桂乃芬<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量火属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Normal.png",
-			"basicShortIcon": "SkillIcon_1210_Normal",
-			"basicId": 121001,
+		"skills": [
+			{
+				"name": "劈头满堂彩",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于桂乃芬<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 121001
+			},
+			{
+				"name": "迎面开门红",
+				"tag": "扩散",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于桂乃芬<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，并对相邻目标造成等同于桂乃芬<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的火属性伤害，有<unbreak>#3[i]%</unbreak>的<u>基础概率</u>使目标与相邻目标陷入灼烧状态。灼烧状态下，敌方目标每回合开始时受到等同于桂乃芬<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的火属性持续伤害，持续<unbreak>#5[i]</unbreak>回合。",
+				"regen": 30,
+				"er": null,
+				"id": 121002
+			},
+			{
+				"name": "给您来段看家戏",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于桂乃芬<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>攻击力的火属性伤害，若目标处于灼烧状态，使其当前承受的灼烧状态立即产生相当于原伤害<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的伤害。",
+				"regen": 5,
+				"er": 120,
+				"id": 121003
+			},
+			{
+				"name": "古来君子养艺人",
+				"tag": "妨害",
+				"type": "天赋",
+				"description": "桂乃芬在场时，敌方受到的灼烧状态触发伤害后，有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>陷入【吞火】状态，【吞火】状态下敌方目标受到的伤害提高<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>，持续<unbreak>#5[i]</unbreak>回合，最多叠加<unbreak>#6[i]</unbreak>层。",
+				"regen": null,
+				"er": null,
+				"id": 121004
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 121006
+			},
+			{
+				"name": "耍耍把式卖卖艺",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后造成<unbreak>#2[i]</unbreak>次伤害，每次伤害对敌方随机单体造成等同于桂乃芬<unbreak>#1[i]%</unbreak>攻击力的火属性伤害并有<unbreak>#3[i]%</unbreak>的<u>基础概率</u>使目标陷入【吞火】状态。",
+				"regen": null,
+				"er": null,
+				"id": 121007
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110151": 2,
@@ -3537,13 +4226,6 @@
 				"113012": 5,
 				"113013": 5
 			},
-			"skillName": "迎面开门红",
-			"skillTag": "扩散",
-			"skillDesc": "对指定敌方单体造成等同于桂乃芬<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害,并对相邻目标造成等同于桂乃芬<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的火属性伤害，有<unbreak>#3[i]%</unbreak>的<u>基础概率</u>使目标与相邻目标陷入灼烧状态。灼烧状态下，敌方目标每回合开始时受到等同于桂乃芬<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>攻击力的火属性持续伤害，持续<unbreak>#5[i]</unbreak>回合。",
-			"skillSimpleDesc": "对敌方单体造成火属性伤害，对相邻目标造成少量火属性伤害，大概率施加<color=#f29e38ff>灼烧状态</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_BP.png",
-			"skillShortIcon": "SkillIcon_1210_BP",
-			"skillId": 121002,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -3555,14 +4237,6 @@
 				"113012": 10,
 				"113013": 5
 			},
-			"ultName": "给您来段看家戏",
-			"ultTag": "群攻",
-			"ultDesc": "对敌方全体造成等同于桂乃芬<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>攻击力的火属性伤害，若目标处于灼烧状态，使其当前承受的灼烧状态立即产生相当于原伤害<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>的伤害。",
-			"ultSimpleDesc": "对敌方全体造成火属性伤害，若敌方目标处于灼烧状态，则使灼烧状态额外产生1次伤害。",
-			"ultIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Ultra.png",
-			"ultShortIcon": "SkillIcon_1210_Ultra",
-			"ultER": 120,
-			"ultId": 121003,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -3574,13 +4248,6 @@
 				"113012": 10,
 				"113013": 5
 			},
-			"talentName": "古来君子养艺人",
-			"talentTag": "妨害",
-			"talentDesc": "桂乃芬在场时，敌方受到的灼烧状态触发伤害后，有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>陷入【吞火】状态，【吞火】状态下敌方目标受到的伤害提高<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>，持续<unbreak>#5[i]</unbreak>回合，最多叠加<unbreak>#6[i]</unbreak>层。",
-			"talentSimpleDesc": "敌方受到的<color=#f29e38ff>灼烧状态触发伤害后</color>，大概率施加<color=#f29e38ff>【吞火】状态</color>。",
-			"talentIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Passive.png",
-			"talentShortIcon": "SkillIcon_1210_Passive",
-			"talentId": 121004,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -3591,14 +4258,7 @@
 				"113011": 6,
 				"113012": 10,
 				"113013": 5
-			},
-			"techName": "耍耍把式卖卖艺",
-			"techTag": "",
-			"techDesc": "立即攻击敌人，进入战斗后造成<unbreak>#2[i]</unbreak>次伤害，每次伤害对敌方随机单体造成等同于桂乃芬<unbreak>#1[i]%</unbreak>攻击力的火属性伤害并有<unbreak>#3[i]%</unbreak>的<u>基础概率</u>使目标陷入【吞火】状态。",
-			"techSimpleDesc": "攻击敌人，进战后对敌方单体造成少量火属性伤害并施加<color=#f29e38ff>【吞火】状态</color>，共弹射4次。",
-			"techIcon": "SpriteOutput/SkillIcons/1210/SkillIcon_1210_Maze.png",
-			"techShortIcon": "SkillIcon_1210_Maze",
-			"techId": 121007
+			}
 		},
 		"avatarType": "Warlock",
 		"promotion": {
@@ -3637,14 +4297,63 @@
 		"shortIcon": "1211",
 		"rarity": "SuperRare",
 		"element": "Thunder",
-		"skills": {
-			"basicName": "望 、闻、问…蹴！",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于白露<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量雷属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1211/SkillIcon_1211_Normal.png",
-			"basicShortIcon": "SkillIcon_1211_Normal",
-			"basicId": 121101,
+		"skills": [
+			{
+				"name": "望 、闻、问…蹴！",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于白露<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的雷属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 121101
+			},
+			{
+				"name": "云吟乍涌坠珠露",
+				"tag": "回复",
+				"type": "战技",
+				"description": "立即为指定我方单体回复等同于白露<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值，然后白露随机为我方单体进行<unbreak>#4[i]</unbreak>次治疗，每提供1次治疗，下一次治疗回复的生命值会降低<unbreak>#3[i]%</unbreak>。",
+				"regen": 30,
+				"er": null,
+				"id": 121102
+			},
+			{
+				"name": "匏蛟跃渊先雷音",
+				"tag": "回复",
+				"type": "终结技",
+				"description": "立即为我方全体回复等同于白露<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值。\\n对于没有【生息】的我方目标，白露使其附上【生息】，对于已拥有【生息】的我方目标，白露使其已有的【生息】持续时间延长1回合。\\n【生息】可持续<unbreak>#3[i]</unbreak>回合，该效果不可叠加。",
+				"regen": 5,
+				"er": 100,
+				"id": 121103
+			},
+			{
+				"name": "奔走悬壶济世长",
+				"tag": "回复",
+				"type": "天赋",
+				"description": "拥有【生息】的我方目标，在受到攻击后会回复等同于白露<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值，该效果可以触发<unbreak>#5[i]</unbreak>次。\\n当白露的队友受到致命攻击时，不会陷入<u>无法战斗状态</u>，白露会立即为其提供治疗，回复等同于白露<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值。该效果单场战斗中可以触发1次。",
+				"regen": null,
+				"er": null,
+				"id": 121104
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 121106
+			},
+			{
+				"name": "徜徉灵泽病恙短",
+				"tag": "回复",
+				"type": "秘技",
+				"description": "使用秘技后，下一次战斗开始时为我方全体附上【生息】，持续<unbreak>#1[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 121107
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110171": 3,
@@ -3654,13 +4363,6 @@
 				"111002": 7,
 				"111003": 7
 			},
-			"skillName": "云吟乍涌坠珠露",
-			"skillTag": "回复",
-			"skillDesc": "立即为指定我方单体回复等同于白露<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值，然后白露随机为我方单体进行<unbreak>#4[i]</unbreak>次治疗，每提供1次治疗，下一次治疗回复的生命值会降低<unbreak>#3[i]%</unbreak>。",
-			"skillSimpleDesc": "为我方单体回复生命值，然后随机治疗我方单体。",
-			"skillIcon": "SpriteOutput/SkillIcons/1211/SkillIcon_1211_BP.png",
-			"skillShortIcon": "SkillIcon_1211_BP",
-			"skillId": 121102,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3672,14 +4374,6 @@
 				"111002": 13,
 				"111003": 7
 			},
-			"ultName": "匏蛟跃渊先雷音",
-			"ultTag": "回复",
-			"ultDesc": "立即为我方全体回复等同于白露<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值。\\n对于没有【生息】的我方目标，白露使其附上【生息】，对于已拥有【生息】的我方目标，白露使其已有的【生息】持续时间延长1回合。\\n【生息】可持续<unbreak>#3[i]</unbreak>回合，该效果不可叠加。",
-			"ultSimpleDesc": "为我方全体回复生命值，并附上【生息】，或延长【生息】持续时间。",
-			"ultIcon": "SpriteOutput/SkillIcons/1211/SkillIcon_1211_Ultra.png",
-			"ultShortIcon": "SkillIcon_1211_Ultra",
-			"ultER": 100,
-			"ultId": 121103,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3691,13 +4385,6 @@
 				"111002": 13,
 				"111003": 7
 			},
-			"talentName": "奔走悬壶济世长",
-			"talentTag": "回复",
-			"talentDesc": "拥有【生息】的我方目标，在受到攻击后会回复等同于白露<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值，该效果可以触发<unbreak>#5[i]</unbreak>次。\\n当白露的队友受到致命攻击时，不会陷入<u>无法战斗状态</u>，白露会立即为其提供治疗，回复等同于白露<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值。该效果单场战斗中可以触发1次。",
-			"talentSimpleDesc": "拥有<color=#f29e38ff>【生息】</color>的我方目标受到攻击后会<color=#f29e38ff>回复生命值</color>。\\n当队友<color=#f29e38ff>受到致命攻击时</color>，白露<color=#f29e38ff>立即为其回复生命值</color>。该效果单场战斗中可以触发1次。",
-			"talentIcon": "SpriteOutput/SkillIcons/1211/SkillIcon_1211_Passive.png",
-			"talentShortIcon": "SkillIcon_1211_Passive",
-			"talentId": 121104,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3708,14 +4395,7 @@
 				"111001": 9,
 				"111002": 13,
 				"111003": 7
-			},
-			"techName": "徜徉灵泽病恙短",
-			"techTag": "回复",
-			"techDesc": "使用秘技后，下一次战斗开始时为我方全体附上【生息】，持续<unbreak>#1[i]</unbreak>回合。",
-			"techSimpleDesc": "使用秘技，下一次战斗开始时为我方全体附上【生息】。",
-			"techIcon": "SpriteOutput/SkillIcons/1211/SkillIcon_1211_Maze.png",
-			"techShortIcon": "SkillIcon_1211_Maze",
-			"techId": 121107
+			}
 		},
 		"avatarType": "Priest",
 		"promotion": {
@@ -3754,14 +4434,72 @@
 		"shortIcon": "1212",
 		"rarity": "SuperRare",
 		"element": "Ice",
-		"skills": {
-			"basicName": "流影方晖",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于镜流<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
-			"basicSimpleDesc": "对指定敌方单体造成少量冰属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Normal.png",
-			"basicShortIcon": "SkillIcon_1212_Normal",
-			"basicId": 121201,
+		"skills": [
+			{
+				"name": "流影方晖",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于镜流<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 121201
+			},
+			{
+				"name": "无罅飞光",
+				"tag": "单攻",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于镜流<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害，并获得<unbreak>#2[i]</unbreak>层【朔望】。",
+				"regen": 20,
+				"er": null,
+				"id": 121202
+			},
+			{
+				"name": "昙华生灭，天河泻梦",
+				"tag": "扩散",
+				"type": "终结技",
+				"description": "对指定敌方单体造成等同于镜流<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害，并对其相邻目标造成等同于镜流<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的冰属性伤害。攻击结束后获得<unbreak>#2[i]</unbreak>层【朔望】。",
+				"regen": 5,
+				"er": 140,
+				"id": 121203
+			},
+			{
+				"name": "澹月转魄",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "当拥有<unbreak>#5[i]</unbreak>层【朔望】时，镜流将进入【转魄】状态，并使行动提前<unbreak>#6[i]%</unbreak>、暴击率提高<color=#f29e38ff><unbreak>#7[i]%</unbreak></color>，随后战技【无罅飞光】强化为【寒川映月】且仅能使用该战技。【转魄】状态下施放攻击时，消耗队友<unbreak>#2[i]%</unbreak>生命上限的生命值（最多消耗到每位队友生命值等于1）。根据本次我方全体生命值消耗总量的<unbreak>#3[i]%</unbreak>提高镜流攻击力，最高不超过镜流基础攻击力的<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，持续至本次攻击结束。【转魄】状态结束前无法再次进入【转魄】状态。【朔望】最多可累计3层，当【朔望】层数为0时，退出【转魄】状态。",
+				"regen": null,
+				"er": null,
+				"id": 121204
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 121206
+			},
+			{
+				"name": "古镜照神",
+				"tag": "妨害",
+				"type": "秘技",
+				"description": "使用秘技后，在自身周围制造1片持续<unbreak>#3[i]</unbreak>秒的特殊领域，处于特殊领域内的敌人陷入冻结状态。与处于特殊领域内的敌人进入战斗后，立即为自身恢复<unbreak>#6[i]</unbreak>点能量、获得<unbreak>#1[i]</unbreak>层【朔望】并有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使敌方目标陷入冻结状态，持续<unbreak>#4[i]</unbreak>回合。冻结状态下，敌方目标无法行动，且每回合开始时受到等同于镜流<unbreak>#5[i]%</unbreak>攻击力的冰属性<u>附加伤害</u>。我方制造的领域效果最多存在1个。",
+				"regen": null,
+				"er": null,
+				"id": 121207
+			},
+			{
+				"name": "寒川映月",
+				"tag": "扩散",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于镜流<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害，并对其相邻目标造成等同于镜流<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的冰属性伤害。消耗<unbreak>#2[i]</unbreak>层【朔望】。施放本技能不消耗战技点。",
+				"regen": 30,
+				"er": null,
+				"id": 121209
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110111": 3,
@@ -3771,13 +4509,6 @@
 				"113002": 7,
 				"113003": 7
 			},
-			"skillName": "无罅飞光",
-			"skillTag": "单攻",
-			"skillDesc": "对指定敌方单体造成等同于镜流<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害，并获得<unbreak>#2[i]</unbreak>层【朔望】。",
-			"skillSimpleDesc": "对指定敌方单体造成冰属性伤害，并获得<color=#f29e38ff>1层【朔望】</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_BP.png",
-			"skillShortIcon": "SkillIcon_1212_BP",
-			"skillId": 121202,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3789,14 +4520,6 @@
 				"113002": 13,
 				"113003": 7
 			},
-			"ultName": "昙华生灭，天河泻梦",
-			"ultTag": "扩散",
-			"ultDesc": "对指定敌方单体造成等同于镜流<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的冰属性伤害，并对其相邻目标造成等同于镜流<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的冰属性伤害。攻击结束后获得<unbreak>#2[i]</unbreak>层【朔望】。",
-			"ultSimpleDesc": "对指定敌方单体造成大量冰属性伤害，对相邻目标造成冰属性伤害，并<color=#f29e38ff>获得1层【朔望】</color>。",
-			"ultIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Ultra.png",
-			"ultShortIcon": "SkillIcon_1212_Ultra",
-			"ultER": 140,
-			"ultId": 121203,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3808,13 +4531,6 @@
 				"113002": 13,
 				"113003": 7
 			},
-			"talentName": "澹月转魄",
-			"talentTag": "强化",
-			"talentDesc": "当拥有<unbreak>#5[i]</unbreak>层【朔望】时，镜流将进入【转魄】状态，并使行动提前<unbreak>#6[i]%</unbreak>、暴击率提高<color=#f29e38ff><unbreak>#7[i]%</unbreak></color>，随后战技【无罅飞光】强化为【寒川映月】且仅能使用该战技。【转魄】状态下施放攻击时，消耗队友<unbreak>#2[i]%</unbreak>生命上限的生命值（最多消耗到每位队友生命值等于1）。根据本次我方全体生命值消耗总量的<unbreak>#3[i]%</unbreak>提高镜流攻击力，最高不超过镜流基础攻击力的<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>，持续至本次攻击结束。【转魄】状态结束前无法再次进入【转魄】状态。【朔望】最多可累计3层，当【朔望】层数为0时，退出【转魄】状态。",
-			"talentSimpleDesc": "当拥有<color=#f29e38ff><unbreak>#5[i]</unbreak></color>层【朔望】时，进入【转魄】状态，<color=#f29e38ff>使行动提前<unbreak>100%</unbreak></color>、提高自身暴击率，并获得<color=#f29e38ff>强化战技</color>。施放攻击时，消耗队友的生命值并根据消耗总量<color=#f29e38ff>提升镜流的攻击力</color>。当【朔望】层数为0时，退出【转魄】状态。",
-			"talentIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Passive.png",
-			"talentShortIcon": "SkillIcon_1212_Passive",
-			"talentId": 121204,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3825,14 +4541,7 @@
 				"113001": 9,
 				"113002": 13,
 				"113003": 7
-			},
-			"techName": "古镜照神",
-			"techTag": "妨害",
-			"techDesc": "使用秘技后，在自身周围制造1片持续<unbreak>#3[i]</unbreak>秒的特殊领域，处于特殊领域内的敌人陷入冻结状态。与处于特殊领域内的敌人进入战斗后，立即为自身恢复<unbreak>#6[i]</unbreak>点能量、获得<unbreak>#1[i]</unbreak>层【朔望】并有<unbreak>#2[i]%</unbreak>的<u>基础概率</u>使敌方目标陷入冻结状态，持续<unbreak>#4[i]</unbreak>回合。冻结状态下，敌方目标无法行动，且每回合开始时受到等同于镜流<unbreak>#5[i]%</unbreak>攻击力的冰属性<u>附加伤害</u>。我方制造的领域效果最多存在1个。",
-			"techSimpleDesc": "在自身周围制造特殊领域。领域内敌人陷入<color=#f29e38ff>冻结状态</color>。与领域内敌人进入战斗后，恢复能量、获得1层朔望并大概率使敌方目标陷入<color=#f29e38ff>冻结状态</color>。",
-			"techIcon": "SpriteOutput/SkillIcons/1212/SkillIcon_1212_Maze.png",
-			"techShortIcon": "SkillIcon_1212_Maze",
-			"techId": 121207
+			}
 		},
 		"avatarType": "Warrior",
 		"promotion": {
@@ -3871,14 +4580,99 @@
 		"shortIcon": "1213",
 		"rarity": "SuperRare",
 		"element": "Imaginary",
-		"skills": {
-			"basicName": "泽芝",
-			"basicTag": "单攻",
-			"basicDesc": "施放2段攻击对指定敌方单体造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量虚数属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Normal.png",
-			"basicShortIcon": "SkillIcon_1213_Normal",
-			"basicId": 121301,
+		"skills": [
+			{
+				"name": "泽芝",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "施放2段攻击对指定敌方单体造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 121301
+			},
+			{
+				"name": "龙力自在",
+				"tag": "强化",
+				"type": "战技",
+				"description": "使普攻的效果得到强化，最多可连续强化3次，施放本技能不消耗战技点且不视为使用战技。\\n强化1次，【泽芝】变为【瞬华】。\\n强化2次，【泽芝】变为【天矢阴】。\\n强化3次，【泽芝】变为【盘拏耀跃】。\\n施放【天矢阴】或【盘拏耀跃】时，从第4段攻击开始每段攻击前获得1层【叱咤】，使丹恒•饮月的暴击伤害提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，该效果最多叠加<unbreak>#2[i]</unbreak>层，持续至自身回合结束。",
+				"regen": null,
+				"er": null,
+				"id": 121302
+			},
+			{
+				"name": "苍龙傲睨，劫水濯世",
+				"tag": "扩散",
+				"type": "终结技",
+				"description": "施放3段攻击对指定敌方单体造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，同时对其相邻目标造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的虚数属性伤害。并使自身获得<unbreak>#3[i]</unbreak>个【逆鳞】。\\n【逆鳞】最多持有<unbreak>#4[i]</unbreak>个，可用来抵扣丹恒•饮月的战技点消耗。消耗【逆鳞】视为消耗战技点。",
+				"regen": 5,
+				"er": 140,
+				"id": 121303
+			},
+			{
+				"name": "亢心",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "丹恒•饮月施放每段攻击后获得1层【亢心】，使自身造成的伤害提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，该效果可以叠加<unbreak>#2[i]</unbreak>层，持续至自身回合结束。",
+				"regen": null,
+				"er": null,
+				"id": 121304
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 121306
+			},
+			{
+				"name": "掣空如虹",
+				"tag": "强化",
+				"type": "秘技",
+				"description": "使用秘技后进入持续<unbreak>#2[i]</unbreak>秒的【蟠跃】状态。【蟠跃】状态下使用攻击会快速向前移动一段距离并攻击接触到的敌人，在快速移动的过程中可抵挡敌人的所有攻击。【蟠跃】状态下主动攻击敌人进入战斗后，对敌方全体造成等同于丹恒•饮月<unbreak>#3[i]%</unbreak>攻击力的虚数属性伤害，并使自身获得<unbreak>#1[i]</unbreak>个【逆鳞】。",
+				"regen": null,
+				"er": null,
+				"id": 121307
+			},
+			{
+				"name": "瞬华",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "施放3段攻击对指定敌方单体造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 121308
+			},
+			{
+				"name": "取消",
+				"tag": "取消",
+				"type": "战技",
+				"description": "取消强化。",
+				"regen": null,
+				"er": null,
+				"id": 121309
+			},
+			{
+				"name": "天矢阴",
+				"tag": "扩散",
+				"type": "普攻",
+				"description": "施放5段攻击对指定敌方单体造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。从第4段攻击开始同时对其相邻目标造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的虚数属性伤害。",
+				"regen": 35,
+				"er": null,
+				"id": 121310
+			},
+			{
+				"name": "盘拏耀跃",
+				"tag": "扩散",
+				"type": "普攻",
+				"description": "施放7段攻击对指定敌方单体造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害。从第4段攻击开始同时对其相邻目标造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的虚数属性伤害。",
+				"regen": 40,
+				"er": null,
+				"id": 121312
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 240000,
 				"110111": 3,
@@ -3888,13 +4682,6 @@
 				"113002": 7,
 				"113003": 7
 			},
-			"skillName": "龙力自在",
-			"skillTag": "强化",
-			"skillDesc": "使普攻的效果得到强化，最多可连续强化3次，施放本技能不消耗战技点且不视为使用战技。\\n强化1次，【泽芝】变为【瞬华】。\\n强化2次，【泽芝】变为【天矢阴】。\\n强化3次，【泽芝】变为【盘拏耀跃】。\\n施放【天矢阴】或【盘拏耀跃】时，从第4段攻击开始每段攻击前获得1层【叱咤】，使丹恒•饮月的暴击伤害提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，该效果最多叠加<unbreak>#2[i]</unbreak>层，持续至自身回合结束。",
-			"skillSimpleDesc": "使普攻【泽芝】<color=#f29e38ff>分别强化为【瞬华】</color>、<color=#f29e38ff>【天矢阴】或【盘拏耀跃】</color>。",
-			"skillIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_BP.png",
-			"skillShortIcon": "SkillIcon_1213_BP",
-			"skillId": 121302,
 			"skillPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3906,14 +4693,6 @@
 				"113002": 13,
 				"113003": 7
 			},
-			"ultName": "苍龙傲睨，劫水濯世",
-			"ultTag": "扩散",
-			"ultDesc": "施放3段攻击对指定敌方单体造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的虚数属性伤害，同时对其相邻目标造成等同于丹恒•饮月<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的虚数属性伤害。并使自身获得<unbreak>#3[i]</unbreak>个【逆鳞】。\\n【逆鳞】最多持有<unbreak>#4[i]</unbreak>个，可用来抵扣丹恒•饮月的战技点消耗。消耗【逆鳞】视为消耗战技点。",
-			"ultSimpleDesc": "对敌方单体造成大量虚数属性伤害，对相邻目标造成虚数属性伤害。获得2个【逆鳞】：可<color=#f29e38ff>抵扣</color>丹恒•饮月的<color=#f29e38ff>战技点消耗</color>且视为消耗战技点。",
-			"ultIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Ultra.png",
-			"ultShortIcon": "SkillIcon_1213_Ultra",
-			"ultER": 140,
-			"ultId": 121303,
 			"ultPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3925,13 +4704,6 @@
 				"113002": 13,
 				"113003": 7
 			},
-			"talentName": "亢心",
-			"talentTag": "强化",
-			"talentDesc": "丹恒•饮月施放每段攻击后获得1层【亢心】，使自身造成的伤害提高<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>，该效果可以叠加<unbreak>#2[i]</unbreak>层，持续至自身回合结束。",
-			"talentSimpleDesc": "施放每段攻击后，使自身造成的伤害提高，该效果可以叠加并持续至自身回合结束。",
-			"talentIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Passive.png",
-			"talentShortIcon": "SkillIcon_1213_Passive",
-			"talentId": 121304,
 			"talentPromo": {
 				"2": 652500,
 				"241": 2,
@@ -3942,14 +4714,7 @@
 				"113001": 9,
 				"113002": 13,
 				"113003": 7
-			},
-			"techName": "掣空如虹",
-			"techTag": "强化",
-			"techDesc": "使用秘技后进入持续<unbreak>#2[i]</unbreak>秒的【蟠跃】状态。【蟠跃】状态下使用攻击会快速向前移动一段距离并攻击接触到的敌人，在快速移动的过程中可抵挡敌人的所有攻击。【蟠跃】状态下主动攻击敌人进入战斗后，对敌方全体造成等同于丹恒•饮月<unbreak>#3[i]%</unbreak>攻击力的虚数属性伤害，并使自身获得<unbreak>#1[i]</unbreak>个【逆鳞】。",
-			"techSimpleDesc": "进入【蟠跃】状态，使用攻击会快速向前移动一段距离并攻击接触到的敌人。攻击敌人进战后，对敌方全体造成虚数属性伤害，并获得1个【逆鳞】。",
-			"techIcon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Maze.png",
-			"techShortIcon": "SkillIcon_1213_Maze",
-			"techId": 121307
+			}
 		},
 		"avatarType": "Warrior",
 		"promotion": {
@@ -3973,6 +4738,426 @@
 		"exp": 5797920,
 		"id": "1213"
 	},
+	"1215": {
+		"name": "寒鸦",
+		"stats": {
+			"maxHP": 917,
+			"maxATK": 564,
+			"maxDEF": 353,
+			"SPD": 110,
+			"TNT": 100,
+			"CR": 0.05,
+			"CDMG": 0.5
+		},
+		"icon": "SpriteOutput/AvatarRoundIcon/1215.png",
+		"shortIcon": "1215",
+		"rarity": "VeryRare",
+		"element": "Physical",
+		"skills": [
+			{
+				"name": "冥谶天笔",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于寒鸦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 121501
+			},
+			{
+				"name": "生灭系缚",
+				"tag": "单攻",
+				"type": "战技",
+				"description": "对指定敌方单体造成等同于寒鸦<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，然后使其陷入【承负】状态。\\n每当我方目标对【承负】状态下的敌方目标施放2次普攻、战技、终结技后，立即为我方恢复1个战技点。【承负】仅对最新被施加的目标生效，并会在触发3次战技点恢复效果后自动解除。",
+				"regen": 30,
+				"er": null,
+				"id": 121502
+			},
+			{
+				"name": "十王敕令，遍土遵行",
+				"tag": "强化",
+				"type": "终结技",
+				"description": "使指定我方单体速度提高，提高数值等同于寒鸦速度的<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>，并使该目标攻击力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": 5,
+				"er": 140,
+				"id": 121503
+			},
+			{
+				"name": "罚恶",
+				"tag": "辅助",
+				"type": "天赋",
+				"description": "我方目标对陷入【承负】状态下的敌方目标施放普攻、战技、终结技时，造成的伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 121504
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 121506
+			},
+			{
+				"name": "判冥",
+				"tag": "",
+				"type": "秘技",
+				"description": "立即攻击敌人，进入战斗后对敌方随机单体附上等同于战技效果的【承负】。",
+				"regen": null,
+				"er": null,
+				"id": 121507
+			}
+		],
+		"promos": {
+			"basicPromo": {
+				"2": 192000,
+				"110161": 2,
+				"110162": 6,
+				"110163": 8,
+				"113011": 4,
+				"113012": 5,
+				"113013": 5
+			},
+			"skillPromo": {
+				"2": 522000,
+				"241": 1,
+				"110161": 2,
+				"110162": 12,
+				"110163": 23,
+				"110503": 3,
+				"113011": 6,
+				"113012": 10,
+				"113013": 5
+			},
+			"ultPromo": {
+				"2": 522000,
+				"241": 1,
+				"110161": 2,
+				"110162": 12,
+				"110163": 23,
+				"110503": 3,
+				"113011": 6,
+				"113012": 10,
+				"113013": 5
+			},
+			"talentPromo": {
+				"2": 522000,
+				"241": 1,
+				"110161": 2,
+				"110162": 12,
+				"110163": 23,
+				"110503": 3,
+				"113011": 6,
+				"113012": 10,
+				"113013": 5
+			}
+		},
+		"avatarType": "Shaman",
+		"promotion": {
+			"2": 246400,
+			"110411": 50,
+			"113011": 12,
+			"113012": 13,
+			"113013": 12
+		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110161": 4,
+			"110162": 12,
+			"110163": 28,
+			"110503": 3,
+			"113011": 6,
+			"113012": 7,
+			"113013": 22
+		},
+		"exp": 5797920,
+		"id": "1215"
+	},
+	"1217": {
+		"name": "藿藿",
+		"stats": {
+			"maxHP": 1358,
+			"maxATK": 602,
+			"maxDEF": 509,
+			"SPD": 98,
+			"TNT": 100,
+			"CR": 0.05,
+			"CDMG": 0.5
+		},
+		"icon": "SpriteOutput/AvatarRoundIcon/1217.png",
+		"shortIcon": "1217",
+		"rarity": "SuperRare",
+		"element": "Wind",
+		"skills": [
+			{
+				"name": "令旗•征风召雨",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于藿藿<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>生命上限的风属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 121701
+			},
+			{
+				"name": "灵符•保命护身",
+				"tag": "回复",
+				"type": "战技",
+				"description": "解除指定我方单体的<unbreak>#5[i]</unbreak>个<u>负面效果</u>，立即为指定我方单体回复等同于藿藿<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#2[i]</unbreak></color>的生命值，同时为其相邻目标回复等同于藿藿<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>的生命值。",
+				"regen": 30,
+				"er": null,
+				"id": 121702
+			},
+			{
+				"name": "尾巴•遣神役鬼",
+				"tag": "回复",
+				"type": "终结技",
+				"description": "为除自身以外的队友恢复等同于各自<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>能量上限的能量，同时使其攻击力提高<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": 5,
+				"er": 140,
+				"id": 121703
+			},
+			{
+				"name": "凭附•气通天真",
+				"tag": "回复",
+				"type": "天赋",
+				"description": "施放战技后藿藿获得<unbreak>#1[i]</unbreak>层【禳命】。当藿藿拥有【禳命】时，我方目标回合开始或施放终结技时消耗1层【禳命】，回复自身等同于藿藿<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>生命上限+<color=#f29e38ff><unbreak>#5[i]</unbreak></color>的生命值，同时对每个生命值小于等于<unbreak>#6[i]%</unbreak>的我方目标各产生1次回复效果并消耗对应层数的【禳命】。",
+				"regen": null,
+				"er": null,
+				"id": 121704
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 121706
+			},
+			{
+				"name": "凶煞•劾压鬼物",
+				"tag": "妨害",
+				"type": "秘技",
+				"description": "藿藿恐吓周围的敌人，使其陷入【魄散】状态。【魄散】状态下的敌人会向远离藿藿的方向逃跑，持续<unbreak>#4[i]</unbreak>秒。与陷入【魄散】状态的敌人进入战斗后，有<unbreak>#1[i]%</unbreak>的<u>基础概率</u>使敌方目标攻击力降低<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 121707
+			}
+		],
+		"promos": {
+			"basicPromo": {
+				"2": 240000,
+				"110171": 3,
+				"110172": 8,
+				"110173": 11,
+				"113001": 6,
+				"113002": 7,
+				"113003": 7
+			},
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"110171": 3,
+				"110172": 15,
+				"110173": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"110171": 3,
+				"110172": 15,
+				"110173": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"110171": 3,
+				"110172": 15,
+				"110173": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			}
+		},
+		"avatarType": "Priest",
+		"promotion": {
+			"2": 308000,
+			"110415": 65,
+			"113001": 15,
+			"113002": 15,
+			"113003": 15
+		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110171": 6,
+			"110172": 16,
+			"110173": 38,
+			"110503": 3,
+			"113001": 8,
+			"113002": 10,
+			"113003": 30
+		},
+		"exp": 5797920,
+		"id": "1217"
+	},
+	"1302": {
+		"name": "银枝",
+		"stats": {
+			"maxHP": 1048,
+			"maxATK": 737,
+			"maxDEF": 364,
+			"SPD": 103,
+			"TNT": 75,
+			"CR": 0.05,
+			"CDMG": 0.5
+		},
+		"icon": "SpriteOutput/AvatarRoundIcon/1302.png",
+		"shortIcon": "1302",
+		"rarity": "SuperRare",
+		"element": "Physical",
+		"skills": [
+			{
+				"name": "芬芳一现",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于银枝<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 130201
+			},
+			{
+				"name": "公正，此处盛放",
+				"tag": "群攻",
+				"type": "战技",
+				"description": "对敌方全体造成等同于银枝<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 130202
+			},
+			{
+				"name": "驻于花庭，赐与尽美",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "消耗<unbreak>#2[i]</unbreak>点能量，对敌方全体造成等同于银枝<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 5,
+				"er": 90,
+				"id": 130203
+			},
+			{
+				"name": "崇高的客体",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "施放普攻、战技、终结技时，每击中1个敌方目标，为银枝恢复<unbreak>#1[i]</unbreak>点能量并获得1层【升格】，使银枝暴击率提高<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>，该效果最多叠加<unbreak>#3[i]</unbreak>层。",
+				"regen": null,
+				"er": null,
+				"id": 130204
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 130206
+			},
+			{
+				"name": "纯粹高洁宣言",
+				"tag": "妨害",
+				"type": "秘技",
+				"description": "使用秘技后使一定区域内的敌人陷入<unbreak>#1[i]</unbreak>秒的晕眩状态，晕眩状态下敌人不会主动攻击我方目标。\\n若主动攻击陷入晕眩状态的敌人，进入战斗时，对敌方全体造成等同于银枝<unbreak>#2[i]%</unbreak>攻击力的物理属性伤害，并使银枝恢复<unbreak>#3[i]</unbreak>点能量。",
+				"regen": null,
+				"er": null,
+				"id": 130207
+			},
+			{
+				"name": "驻「我」华庭，授予至勋",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "消耗<unbreak>#4[i]</unbreak>点能量，对敌方全体造成等同于银枝<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，并额外造成<unbreak>#2[i]</unbreak>次伤害，每次伤害对敌方随机单体造成等同于银枝<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 5,
+				"er": 180,
+				"id": 130214
+			}
+		],
+		"promos": {
+			"basicPromo": {
+				"2": 240000,
+				"110131": 3,
+				"110132": 8,
+				"110133": 11,
+				"111001": 6,
+				"111002": 7,
+				"111003": 7
+			},
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"110131": 3,
+				"110132": 15,
+				"110133": 30,
+				"110503": 3,
+				"111001": 9,
+				"111002": 13,
+				"111003": 7
+			},
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"110131": 3,
+				"110132": 15,
+				"110133": 30,
+				"110503": 3,
+				"111001": 9,
+				"111002": 13,
+				"111003": 7
+			},
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"110131": 3,
+				"110132": 15,
+				"110133": 30,
+				"110503": 3,
+				"111001": 9,
+				"111002": 13,
+				"111003": 7
+			}
+		},
+		"avatarType": "Mage",
+		"promotion": {
+			"2": 308000,
+			"110411": 65,
+			"111001": 15,
+			"111002": 15,
+			"111003": 15
+		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110131": 6,
+			"110132": 16,
+			"110133": 38,
+			"110503": 3,
+			"111001": 8,
+			"111002": 10,
+			"111003": 30
+		},
+		"exp": 5797920,
+		"id": "1302"
+	},
 	"8001": {
 		"name": "Physical Trailblazer Boy",
 		"stats": {
@@ -3988,14 +5173,81 @@
 		"shortIcon": "8001",
 		"rarity": "SuperRare",
 		"element": "Physical",
-		"skills": {
-			"basicName": "再见安打",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量物理属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Normal.png",
-			"basicShortIcon": "SkillIcon_8001_Normal",
-			"basicId": 800101,
+		"skills": [
+			{
+				"name": "再见安打",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 800101
+			},
+			{
+				"name": "安息全垒打",
+				"tag": "扩散",
+				"type": "战技",
+				"description": "对指定敌方单体及其相邻目标造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 800102
+			},
+			{
+				"name": "星尘王牌",
+				"tag": "强化",
+				"type": "终结技",
+				"description": "在两种攻击模式中选择其一挥出全力一击。\\n【全胜•再见安打】：对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。\\n【全胜•安息全垒打】：对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性伤害，并对其相邻目标造成等同于开拓者<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 5,
+				"er": 120,
+				"id": 800103
+			},
+			{
+				"name": "牵制盗垒",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "每次击破敌方目标的弱点后，攻击力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，该效果最多叠加<unbreak>#2[i]</unbreak>层。",
+				"regen": null,
+				"er": null,
+				"id": 800104
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 800106
+			},
+			{
+				"name": "不灭三振",
+				"tag": "回复",
+				"type": "秘技",
+				"description": "使用秘技后立即为我方全体回复等同于各自生命上限<unbreak>#1[i]%</unbreak>的生命值。",
+				"regen": null,
+				"er": null,
+				"id": 800107
+			},
+			{
+				"name": "全胜•再见安打",
+				"tag": "单攻",
+				"type": "终结技",
+				"description": "对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 5,
+				"er": 120,
+				"id": 800108
+			},
+			{
+				"name": "全胜•安息全垒打",
+				"tag": "扩散",
+				"type": "终结技",
+				"description": "对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，同时对其相邻目标造成等同于开拓者<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 5,
+				"er": 120,
+				"id": 800109
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110111": 2,
@@ -4005,13 +5257,6 @@
 				"111012": 5,
 				"111013": 5
 			},
-			"skillName": "安息全垒打",
-			"skillTag": "扩散",
-			"skillDesc": "对指定敌方单体及其相邻目标造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
-			"skillSimpleDesc": "对敌方单体以及相邻目标造成物理属性伤害。",
-			"skillIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_BP.png",
-			"skillShortIcon": "SkillIcon_8001_BP",
-			"skillId": 800102,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -4023,14 +5268,6 @@
 				"111012": 10,
 				"111013": 5
 			},
-			"ultName": "星尘王牌",
-			"ultTag": "强化",
-			"ultDesc": "在两种攻击模式中选择其一挥出全力一击。\\n【全胜•再见安打】：对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。\\n【全胜•安息全垒打】：对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性伤害，并对其相邻目标造成等同于开拓者<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的物理属性伤害。",
-			"ultSimpleDesc": "选择单攻或扩散的攻击方式，挥出全力一击。",
-			"ultIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Ultra.png",
-			"ultShortIcon": "SkillIcon_8001_Ultra",
-			"ultER": 120,
-			"ultId": 800103,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -4042,12 +5279,6 @@
 				"111012": 10,
 				"111013": 5
 			},
-			"talentName": "牵制盗垒",
-			"talentTag": "强化",
-			"talentDesc": "每次击破敌方目标的弱点后，攻击力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，该效果最多叠加<unbreak>#2[i]</unbreak>层。",
-			"talentIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Passive.png",
-			"talentShortIcon": "SkillIcon_8001_Passive",
-			"talentId": 800104,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -4058,13 +5289,7 @@
 				"111011": 6,
 				"111012": 10,
 				"111013": 5
-			},
-			"techName": "不灭三振",
-			"techTag": "回复",
-			"techDesc": "使用秘技后立即为我方全体回复等同于各自生命上限<unbreak>#1[i]%</unbreak>的生命值。",
-			"techIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Maze.png",
-			"techShortIcon": "SkillIcon_8001_Maze",
-			"techId": 800107
+			}
 		},
 		"avatarType": "Warrior",
 		"promotion": {
@@ -4103,14 +5328,81 @@
 		"shortIcon": "8002",
 		"rarity": "SuperRare",
 		"element": "Physical",
-		"skills": {
-			"basicName": "再见安打",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
-			"basicSimpleDesc": "对敌方单体造成少量物理属性伤害。",
-			"basicIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Normal.png",
-			"basicShortIcon": "SkillIcon_8001_Normal",
-			"basicId": 800201,
+		"skills": [
+			{
+				"name": "再见安打",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 20,
+				"er": null,
+				"id": 800201
+			},
+			{
+				"name": "安息全垒打",
+				"tag": "扩散",
+				"type": "战技",
+				"description": "对指定敌方单体及其相邻目标造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 800202
+			},
+			{
+				"name": "星尘王牌",
+				"tag": "强化",
+				"type": "终结技",
+				"description": "在两种攻击模式中选择其一挥出全力一击。\\n【全胜•再见安打】：对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。\\n【全胜•安息全垒打】：对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性伤害，并对其相邻目标造成等同于开拓者<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 5,
+				"er": 120,
+				"id": 800203
+			},
+			{
+				"name": "牵制盗垒",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "每次击破敌方目标的弱点后，攻击力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，该效果最多叠加<unbreak>#2[i]</unbreak>层。",
+				"regen": null,
+				"er": null,
+				"id": 800204
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 800206
+			},
+			{
+				"name": "不灭三振",
+				"tag": "回复",
+				"type": "秘技",
+				"description": "使用秘技后立即为我方全体回复等同于各自生命上限<unbreak>#1[i]%</unbreak>的生命值。",
+				"regen": null,
+				"er": null,
+				"id": 800207
+			},
+			{
+				"name": "全胜•再见安打",
+				"tag": "单攻",
+				"type": "终结技",
+				"description": "对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 5,
+				"er": 120,
+				"id": 800208
+			},
+			{
+				"name": "全胜•安息全垒打",
+				"tag": "扩散",
+				"type": "终结技",
+				"description": "对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害，同时对其相邻目标造成等同于开拓者<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性伤害。",
+				"regen": 5,
+				"er": 120,
+				"id": 800209
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110111": 2,
@@ -4120,13 +5412,6 @@
 				"111012": 5,
 				"111013": 5
 			},
-			"skillName": "安息全垒打",
-			"skillTag": "扩散",
-			"skillDesc": "对指定敌方单体及其相邻目标造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。",
-			"skillSimpleDesc": "对敌方单体以及相邻目标造成物理属性伤害。",
-			"skillIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_BP.png",
-			"skillShortIcon": "SkillIcon_8001_BP",
-			"skillId": 800202,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -4138,14 +5423,6 @@
 				"111012": 10,
 				"111013": 5
 			},
-			"ultName": "星尘王牌",
-			"ultTag": "强化",
-			"ultDesc": "在两种攻击模式中选择其一挥出全力一击。\\n【全胜•再见安打】：对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的物理属性伤害。\\n【全胜•安息全垒打】：对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的物理属性伤害，并对其相邻目标造成等同于开拓者<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>攻击力的物理属性伤害。",
-			"ultSimpleDesc": "选择单攻或扩散的攻击方式，挥出全力一击。",
-			"ultIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Ultra.png",
-			"ultShortIcon": "SkillIcon_8001_Ultra",
-			"ultER": 120,
-			"ultId": 800203,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -4157,12 +5434,6 @@
 				"111012": 10,
 				"111013": 5
 			},
-			"talentName": "牵制盗垒",
-			"talentTag": "强化",
-			"talentDesc": "每次击破敌方目标的弱点后，攻击力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>，该效果最多叠加<unbreak>#2[i]</unbreak>层。",
-			"talentIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Passive.png",
-			"talentShortIcon": "SkillIcon_8001_Passive",
-			"talentId": 800204,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -4173,13 +5444,7 @@
 				"111011": 6,
 				"111012": 10,
 				"111013": 5
-			},
-			"techName": "不灭三振",
-			"techTag": "回复",
-			"techDesc": "使用秘技后立即为我方全体回复等同于各自生命上限<unbreak>#1[i]%</unbreak>的生命值。",
-			"techIcon": "SpriteOutput/SkillIcons/8001/SkillIcon_8001_Maze.png",
-			"techShortIcon": "SkillIcon_8001_Maze",
-			"techId": 800207
+			}
 		},
 		"avatarType": "Warrior",
 		"promotion": {
@@ -4218,14 +5483,72 @@
 		"shortIcon": "8003",
 		"rarity": "SuperRare",
 		"element": "Fire",
-		"skills": {
-			"basicName": "穿彻坚冰的烈芒",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害并叠加1层【灼热意志】。",
-			"basicSimpleDesc": "对敌方单体造成少量火属性伤害，获得【灼热意志】。",
-			"basicIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Normal.png",
-			"basicShortIcon": "SkillIcon_8003_Normal",
-			"basicId": 800301,
+		"skills": [
+			{
+				"name": "穿彻坚冰的烈芒",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害并叠加1层【灼热意志】。",
+				"regen": 20,
+				"er": null,
+				"id": 800301
+			},
+			{
+				"name": "炽燃不灭的琥珀",
+				"tag": "防御",
+				"type": "战技",
+				"description": "施放战技后，开拓者受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>并叠加1层【灼热意志】，此外有<unbreak>#2[i]%</unbreak><u>基础概率</u>使敌方全体陷入嘲讽状态，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": 30,
+				"er": null,
+				"id": 800302
+			},
+			{
+				"name": "陷阵无回的炎枪",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>防御力的火属性伤害。下一次施放普攻时，自动获得强化且不消耗【灼热意志】。",
+				"regen": 5,
+				"er": 120,
+				"id": 800303
+			},
+			{
+				"name": "筑城者遗宝",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "每受到1次攻击，叠加1层【灼热意志】，最多可叠加<unbreak>#3[i]</unbreak>层。\\n【灼热意志】层数不低于4时，普攻将获得强化，对指定敌方单体及其相邻目标同时造成伤害。\\n开拓者施放普攻、战技、终结技后，为我方全体提供能够抵消等同于开拓者<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>防御力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>伤害的护盾，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 800304
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 800306
+			},
+			{
+				"name": "守护者召令",
+				"tag": "防御",
+				"type": "秘技",
+				"description": "使用秘技后，下一次战斗开始时给自身提供能够抵消等同于开拓者<unbreak>#1[i]%</unbreak>防御力+<unbreak>#2[i]</unbreak>伤害的护盾，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 800307
+			},
+			{
+				"name": "穿彻坚冰的烈芒",
+				"tag": "扩散",
+				"type": "普攻",
+				"description": "消耗4层【灼热意志】，强化普攻。对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，同时对其相邻目标造成等同于开拓者<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的火属性伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 800308
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110141": 2,
@@ -4235,13 +5558,6 @@
 				"111012": 5,
 				"111013": 5
 			},
-			"skillName": "炽燃不灭的琥珀",
-			"skillTag": "防御",
-			"skillDesc": "施放战技后，开拓者受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>并叠加1层【灼热意志】，此外有<unbreak>#2[i]%</unbreak><u>基础概率</u>使敌方全体陷入嘲讽状态，持续<unbreak>#3[i]</unbreak>回合。",
-			"skillSimpleDesc": "降低自身受到的伤害，并获得【灼热意志】，大概率使敌方全体陷入嘲讽状态。",
-			"skillIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_BP.png",
-			"skillShortIcon": "SkillIcon_8003_BP",
-			"skillId": 800302,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -4253,14 +5569,6 @@
 				"111012": 10,
 				"111013": 5
 			},
-			"ultName": "陷阵无回的炎枪",
-			"ultTag": "群攻",
-			"ultDesc": "对敌方全体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>防御力的火属性伤害。下一次施放普攻时，自动获得强化且不消耗【灼热意志】。",
-			"ultSimpleDesc": "对敌方全体造成火属性伤害，强化下一次的普攻。",
-			"ultIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Ultra.png",
-			"ultShortIcon": "SkillIcon_8003_Ultra",
-			"ultER": 120,
-			"ultId": 800303,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -4272,12 +5580,6 @@
 				"111012": 10,
 				"111013": 5
 			},
-			"talentName": "筑城者遗宝",
-			"talentTag": "强化",
-			"talentDesc": "每受到1次攻击，叠加1层【灼热意志】，最多可叠加<unbreak>#3[i]</unbreak>层。\\n【灼热意志】层数不低于4时，普攻将获得强化，对指定敌方单体及其相邻目标同时造成伤害。\\n开拓者施放普攻、战技、终结技后，为我方全体提供能够抵消等同于开拓者<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>防御力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>伤害的护盾，持续<unbreak>#2[i]</unbreak>回合。",
-			"talentIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Passive.png",
-			"talentShortIcon": "SkillIcon_8003_Passive",
-			"talentId": 800304,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -4288,13 +5590,7 @@
 				"111011": 6,
 				"111012": 10,
 				"111013": 5
-			},
-			"techName": "守护者召令",
-			"techTag": "防御",
-			"techDesc": "使用秘技后，下一次战斗开始时给自身提供能够抵消等同于开拓者<unbreak>#1[i]%</unbreak>防御力+<unbreak>#2[i]</unbreak>伤害的护盾，持续<unbreak>#3[i]</unbreak>回合。",
-			"techIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Maze.png",
-			"techShortIcon": "SkillIcon_8003_Maze",
-			"techId": 800307
+			}
 		},
 		"avatarType": "Knight",
 		"promotion": {
@@ -4333,14 +5629,72 @@
 		"shortIcon": "8004",
 		"rarity": "SuperRare",
 		"element": "Fire",
-		"skills": {
-			"basicName": "穿彻坚冰的烈芒",
-			"basicTag": "单攻",
-			"basicDesc": "对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害并叠加1层【灼热意志】。",
-			"basicSimpleDesc": "对敌方单体造成少量火属性伤害，获得【灼热意志】。",
-			"basicIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Normal.png",
-			"basicShortIcon": "SkillIcon_8003_Normal",
-			"basicId": 800401,
+		"skills": [
+			{
+				"name": "穿彻坚冰的烈芒",
+				"tag": "单攻",
+				"type": "普攻",
+				"description": "对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害并叠加1层【灼热意志】。",
+				"regen": 20,
+				"er": null,
+				"id": 800401
+			},
+			{
+				"name": "炽燃不灭的琥珀",
+				"tag": "防御",
+				"type": "战技",
+				"description": "施放战技后，开拓者受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>并叠加1层【灼热意志】，此外有<unbreak>#2[i]%</unbreak><u>基础概率</u>使敌方全体陷入嘲讽状态，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": 30,
+				"er": null,
+				"id": 800402
+			},
+			{
+				"name": "陷阵无回的炎枪",
+				"tag": "群攻",
+				"type": "终结技",
+				"description": "对敌方全体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>防御力的火属性伤害。下一次施放普攻时，自动获得强化且不消耗【灼热意志】。",
+				"regen": 5,
+				"er": 120,
+				"id": 800403
+			},
+			{
+				"name": "筑城者遗宝",
+				"tag": "强化",
+				"type": "天赋",
+				"description": "每受到1次攻击，叠加1层【灼热意志】，最多可叠加<unbreak>#3[i]</unbreak>层。\\n【灼热意志】层数不低于4时，普攻将获得强化，对指定敌方单体及其相邻目标同时造成伤害。\\n开拓者施放普攻、战技、终结技后，为我方全体提供能够抵消等同于开拓者<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>防御力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>伤害的护盾，持续<unbreak>#2[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 800404
+			},
+			{
+				"name": "攻击",
+				"tag": "",
+				"type": "dev_连携",
+				"description": "攻击敌人，进入战斗后削弱敌方目标对应属性韧性。",
+				"regen": null,
+				"er": null,
+				"id": 800406
+			},
+			{
+				"name": "守护者召令",
+				"tag": "防御",
+				"type": "秘技",
+				"description": "使用秘技后，下一次战斗开始时给自身提供能够抵消等同于开拓者<unbreak>#1[i]%</unbreak>防御力+<unbreak>#2[i]</unbreak>伤害的护盾，持续<unbreak>#3[i]</unbreak>回合。",
+				"regen": null,
+				"er": null,
+				"id": 800407
+			},
+			{
+				"name": "穿彻坚冰的烈芒",
+				"tag": "扩散",
+				"type": "普攻",
+				"description": "消耗4层【灼热意志】，强化普攻。对指定敌方单体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力的火属性伤害，同时对其相邻目标造成等同于开拓者<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>攻击力的火属性伤害。",
+				"regen": 30,
+				"er": null,
+				"id": 800408
+			}
+		],
+		"promos": {
 			"basicPromo": {
 				"2": 192000,
 				"110141": 2,
@@ -4350,13 +5704,6 @@
 				"111012": 5,
 				"111013": 5
 			},
-			"skillName": "炽燃不灭的琥珀",
-			"skillTag": "防御",
-			"skillDesc": "施放战技后，开拓者受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>并叠加1层【灼热意志】，此外有<unbreak>#2[i]%</unbreak><u>基础概率</u>使敌方全体陷入嘲讽状态，持续<unbreak>#3[i]</unbreak>回合。",
-			"skillSimpleDesc": "降低自身受到的伤害，并获得【灼热意志】，大概率使敌方全体陷入嘲讽状态。",
-			"skillIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_BP.png",
-			"skillShortIcon": "SkillIcon_8003_BP",
-			"skillId": 800402,
 			"skillPromo": {
 				"2": 522000,
 				"241": 1,
@@ -4368,14 +5715,6 @@
 				"111012": 10,
 				"111013": 5
 			},
-			"ultName": "陷阵无回的炎枪",
-			"ultTag": "群攻",
-			"ultDesc": "对敌方全体造成等同于开拓者<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>攻击力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>防御力的火属性伤害。下一次施放普攻时，自动获得强化且不消耗【灼热意志】。",
-			"ultSimpleDesc": "对敌方全体造成火属性伤害，强化下一次的普攻。",
-			"ultIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Ultra.png",
-			"ultShortIcon": "SkillIcon_8003_Ultra",
-			"ultER": 120,
-			"ultId": 800403,
 			"ultPromo": {
 				"2": 522000,
 				"241": 1,
@@ -4387,12 +5726,6 @@
 				"111012": 10,
 				"111013": 5
 			},
-			"talentName": "筑城者遗宝",
-			"talentTag": "强化",
-			"talentDesc": "每受到1次攻击，叠加1层【灼热意志】，最多可叠加<unbreak>#3[i]</unbreak>层。\\n【灼热意志】层数不低于4时，普攻将获得强化，对指定敌方单体及其相邻目标同时造成伤害。\\n开拓者施放普攻、战技、终结技后，为我方全体提供能够抵消等同于开拓者<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>防御力+<color=#f29e38ff><unbreak>#4[i]</unbreak></color>伤害的护盾，持续<unbreak>#2[i]</unbreak>回合。",
-			"talentIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Passive.png",
-			"talentShortIcon": "SkillIcon_8003_Passive",
-			"talentId": 800404,
 			"talentPromo": {
 				"2": 522000,
 				"241": 1,
@@ -4403,13 +5736,7 @@
 				"111011": 6,
 				"111012": 10,
 				"111013": 5
-			},
-			"techName": "守护者召令",
-			"techTag": "防御",
-			"techDesc": "使用秘技后，下一次战斗开始时给自身提供能够抵消等同于开拓者<unbreak>#1[i]%</unbreak>防御力+<unbreak>#2[i]</unbreak>伤害的护盾，持续<unbreak>#3[i]</unbreak>回合。",
-			"techIcon": "SpriteOutput/SkillIcons/8003/SkillIcon_8003_Maze.png",
-			"techShortIcon": "SkillIcon_8003_Maze",
-			"techId": 800407
+			}
 		},
 		"avatarType": "Knight",
 		"promotion": {

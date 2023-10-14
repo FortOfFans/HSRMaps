@@ -593,7 +593,7 @@
 		"shortIcon": "21007",
 		"rarity": "VeryRare",
 		"weaponType": "Priest",
-		"refinements": "装備キャラの治癒量+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが戦闘スキルを発動した時、味方全体のEPを<color=#f29e38ff><unbreak>#2[i]</unbreak></color>回復する。",
+		"refinements": "装備キャラの治癒量+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが戦闘スキルを発動した時、味方全体のEPを<color=#f29e38ff><unbreak>#2[f1]</unbreak></color>回復する。",
 		"maxHP": 953,
 		"maxATK": 423,
 		"maxDEF": 397,
@@ -1196,6 +1196,27 @@
 		},
 		"id": "22000"
 	},
+	"22001": {
+		"name": "よぉ、ここにいるぜ",
+		"icon": "SpriteOutput/LightConeMediumIcon/22001.png",
+		"shortIcon": "22001",
+		"rarity": "VeryRare",
+		"weaponType": "Priest",
+		"refinements": "装備キャラの最大HP+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが戦闘スキルを発動した時、治癒量+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<unbreak>#3[i]</unbreak>ターン継続。",
+		"maxHP": 953,
+		"maxATK": 423,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 308000,
+			"110171": 3,
+			"110172": 9,
+			"110173": 12,
+			"113011": 15,
+			"113012": 15,
+			"113013": 12
+		},
+		"id": "22001"
+	},
 	"23000": {
 		"name": "銀河鉄道の夜",
 		"icon": "SpriteOutput/LightConeMediumIcon/23000.png",
@@ -1496,7 +1517,7 @@
 		"shortIcon": "23014",
 		"rarity": "SuperRare",
 		"weaponType": "Warrior",
-		"refinements": "装備キャラの戦闘スキルの与ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。必殺技を発動した時、EPを<color=#f29e38ff><unbreak>#2[i]</unbreak></color>回復し、装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>、<unbreak>#4[i]</unbreak>ターン継続。",
+		"refinements": "装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。自身以外の味方が攻撃を受ける、またはHPを消費した後、装備キャラは「月蝕」を1層獲得する。この効果は最大で<unbreak>#2[i]</unbreak>層累積できる。「月蝕」1層につき、装備キャラの次の攻撃の与ダメージ+<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>。「月蝕」が上限の<unbreak>#2[i]</unbreak>層に累積した時、その回の攻撃は敵の防御力を<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>無視する。この効果は装備キャラが攻撃を行った後に解除される。",
 		"maxHP": 1164,
 		"maxATK": 582,
 		"maxDEF": 397,
@@ -1538,7 +1559,7 @@
 		"shortIcon": "23016",
 		"rarity": "SuperRare",
 		"weaponType": "Rogue",
-		"refinements": "装備キャラの会心率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、追加攻撃の与ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。装備キャラが追加攻撃を行うと、敵を「従順」状態にする。この効果は最大で<unbreak>#4[i]</unbreak>層累積できる。味方が「従順」状態の敵に攻撃する時、「従順」1層につき与える会心ダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。",
+		"refinements": "装備キャラの会心率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、追加攻撃の与ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。装備キャラが追加攻撃を行った後、敵を「従順」状態にする。この効果は最大で<unbreak>#4[i]</unbreak>層累積できる。味方の攻撃が「従順」状態の敵に命中した時、「従順」1層につき与える会心ダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。",
 		"maxHP": 1058,
 		"maxATK": 582,
 		"maxDEF": 463,
@@ -1552,6 +1573,48 @@
 			"112003": 14
 		},
 		"id": "23016"
+	},
+	"23017": {
+		"name": "驚魂の夜",
+		"icon": "SpriteOutput/LightConeMediumIcon/23017.png",
+		"shortIcon": "23017",
+		"rarity": "SuperRare",
+		"weaponType": "Priest",
+		"refinements": "装備キャラのEP回復効率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。味方が必殺技を発動した時、その味方の最大HP<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>分のHPを回復させる。装備キャラが味方に治癒を行った時、ターゲットの攻撃力+<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>、この効果は最大で<unbreak>#4[i]</unbreak>層累積できる、<unbreak>#5[i]</unbreak>ターン継続。",
+		"maxHP": 1164,
+		"maxATK": 476,
+		"maxDEF": 529,
+		"promotion": {
+			"2": 385000,
+			"110171": 4,
+			"110172": 12,
+			"110173": 15,
+			"113001": 20,
+			"113002": 20,
+			"113003": 14
+		},
+		"id": "23017"
+	},
+	"23018": {
+		"name": "その一刻、目に焼き付けて",
+		"icon": "SpriteOutput/LightConeMediumIcon/23018.png",
+		"shortIcon": "23018",
+		"rarity": "SuperRare",
+		"weaponType": "Mage",
+		"refinements": "装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが必殺技を発動した時、装備キャラの最大EPに応じて装備キャラの必殺技の与ダメージをアップする。1EPにつき+<color=#f29e38ff><unbreak>#2[f2]%</unbreak></color>、最大で<unbreak>#3[i]</unbreak>までカウントされる。",
+		"maxHP": 1058,
+		"maxATK": 582,
+		"maxDEF": 463,
+		"promotion": {
+			"2": 385000,
+			"110131": 4,
+			"110132": 12,
+			"110133": 15,
+			"111001": 20,
+			"111002": 20,
+			"111003": 14
+		},
+		"id": "23018"
 	},
 	"24000": {
 		"name": "とある星神の殞落を記す",
