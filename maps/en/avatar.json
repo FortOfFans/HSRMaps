@@ -2699,7 +2699,7 @@
 				"name": "Outdoor Survival Experience",
 				"tag": "Restore",
 				"type": "Talent",
-				"description": "When using Lynx's Skill or Ultimate, applies continuous healing to the target ally for <unbreak>#1[i]</unbreak> turn(s), restoring the target ally's HP by an amount equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#3[i]</unbreak></color> at the start of each turn. If the target has \"Survival Response\", the continuous healing effect additionally restores HP by an amount equal to <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#5[i]</unbreak></color>.",
+				"description": "When using Lynx's Skill or Ultimate, applies continuous healing to the target ally for <unbreak>#1[i]</unbreak> turn(s), restoring the target ally's HP by an amount equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#3[i]</unbreak></color> at the start of each turn. If the target has \"Survival Response,\" the continuous healing effect additionally restores HP by an amount equal to <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> of Lynx's Max HP plus <color=#f29e38ff><unbreak>#5[i]</unbreak></color>.",
 				"regen": null,
 				"er": null,
 				"icon": "SpriteOutput/SkillIcons/1110/SkillIcon_1110_Passive.png",
@@ -2952,7 +2952,7 @@
 		"id": "1111"
 	},
 	"1112": {
-		"name": "Topaz and Numby",
+		"name": "Topaz & Numby",
 		"stats": {
 			"maxHP": 931,
 			"maxATK": 621,
@@ -5083,6 +5083,152 @@
 		"exp": 5797920,
 		"id": "1213"
 	},
+	"1214": {
+		"name": "Xueyi",
+		"stats": {
+			"maxHP": 1058,
+			"maxATK": 600,
+			"maxDEF": 397,
+			"SPD": 103,
+			"TNT": 125,
+			"CR": 0.05,
+			"CDMG": 0.5
+		},
+		"icon": "SpriteOutput/AvatarRoundIcon/1214.png",
+		"shortIcon": "1214",
+		"rarity": "VeryRare",
+		"element": "Quantum",
+		"skills": [
+			{
+				"name": "Marasunder Awl",
+				"tag": "Single Target",
+				"type": "Basic ATK",
+				"description": "Deals <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Xueyi's ATK as Quantum DMG to a target enemy.",
+				"regen": 20,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Normal.png",
+				"shortIcon": "SkillIcon_1214_Normal",
+				"id": 121401
+			},
+			{
+				"name": "Obliteration of the Evil",
+				"tag": "Blast",
+				"type": "Skill",
+				"description": "Deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Xueyi's ATK to a single enemy, and deals Quantum DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Xueyi's ATK to any adjacent enemies.",
+				"regen": 30,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png",
+				"shortIcon": "SkillIcon_1214_BP",
+				"id": 121402
+			},
+			{
+				"name": "Divine Punishment",
+				"tag": "Single Target",
+				"type": "Ultimate",
+				"description": "Deals Quantum DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Xueyi's ATK to a single enemy. This attack ignores Weakness Types and depletes the target's Toughness. When the enemy's Weakness is Broken, the Quantum Weakness Break effect is triggered.\\nThe more Toughness is depleted the higher the DMG dealt for this attack, up to a max of <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>.",
+				"regen": 5,
+				"er": 120,
+				"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png",
+				"shortIcon": "SkillIcon_1214_Ultra",
+				"id": 121403
+			},
+			{
+				"name": "Ten-Lords' Verdict of Karmic Atonement",
+				"tag": "Bounce",
+				"type": "Talent",
+				"description": "Add stacks of \"Karma\" when Xueyi's attacks depletes a target's Toughness, with more stacks added in relation to the amount of Toughness depleted, for a max of <unbreak>#1[i]</unbreak> stacks.\\nWhen Xueyi's allies deplete a target's Toughness with an attack, she will gain <unbreak>#3[i]</unbreak> stacks of \"Karma.\"\\nWhen \"Karma\" reaches the max number of stacks, a <u>follow-up attack</u> will be inflicted on a target, dealing Quantum DMG for 3 times, with each hit of DMG inflicted on a single enemy target equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Xueyi's ATK. This follow-up attack will not add \"Karma\" stacks.",
+				"regen": 2,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Passive.png",
+				"shortIcon": "SkillIcon_1214_Passive",
+				"id": 121404
+			},
+			{
+				"name": "Attack",
+				"description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
+				"regen": null,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Normal.png",
+				"shortIcon": "SkillIcon_1214_Normal",
+				"id": 121406
+			},
+			{
+				"name": "Immediate Execution",
+				"type": "Technique",
+				"description": "Immediately attacks the enemy. After entering combat, deals <unbreak>#1[i]%</unbreak> of Xueyi's ATK as Quantum DMG to all enemies.",
+				"regen": null,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Maze.png",
+				"shortIcon": "SkillIcon_1214_Maze",
+				"id": 121407
+			}
+		],
+		"promos": {
+			"basicPromo": {
+				"2": 192000,
+				"110111": 2,
+				"110112": 6,
+				"110113": 8,
+				"111001": 4,
+				"111002": 5,
+				"111003": 5
+			},
+			"skillPromo": {
+				"2": 522000,
+				"241": 1,
+				"110111": 2,
+				"110112": 12,
+				"110113": 23,
+				"110504": 3,
+				"111001": 6,
+				"111002": 10,
+				"111003": 5
+			},
+			"ultPromo": {
+				"2": 522000,
+				"241": 1,
+				"110111": 2,
+				"110112": 12,
+				"110113": 23,
+				"110504": 3,
+				"111001": 6,
+				"111002": 10,
+				"111003": 5
+			},
+			"talentPromo": {
+				"2": 522000,
+				"241": 1,
+				"110111": 2,
+				"110112": 12,
+				"110113": 23,
+				"110504": 3,
+				"111001": 6,
+				"111002": 10,
+				"111003": 5
+			}
+		},
+		"avatarType": "Warrior",
+		"promotion": {
+			"2": 246400,
+			"110416": 50,
+			"111001": 12,
+			"111002": 13,
+			"111003": 12
+		},
+		"treePromotion": {
+			"2": 642000,
+			"241": 2,
+			"110111": 4,
+			"110112": 12,
+			"110113": 28,
+			"110504": 3,
+			"111001": 6,
+			"111002": 7,
+			"111003": 22
+		},
+		"exp": 5797920,
+		"id": "1214"
+	},
 	"1215": {
 		"name": "Hanya",
 		"stats": {
@@ -5114,7 +5260,7 @@
 				"name": "Samsara, Locked",
 				"tag": "Single Target",
 				"type": "Skill",
-				"description": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hanya's ATK to a single enemy, then applies Burden to them.\\nEvery time an ally uses 2 Basic Attacks, Skills, or Ultimates on an enemy with Burden, they will <color=#f29e38ff>recover 1 Skill Point</color>. Burden only affects the newest target its applied to, and will be dispelled automatically after triggering Hanya's Talent's Skill Point recovery effect 3 times.",
+				"description": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hanya's ATK to a single target enemy, then applies Burden to them.\\nFor every 2 Basic ATKs, Skills, or Ultimates allies use on an enemy with Burden, allies will immediately recover 1 Skill Point. Burden is only active on the latest target it is applied to, and will be dispelled automatically after the Skill Point recovery effect has been triggered <unbreak>#2[i]</unbreak> times.",
 				"regen": 30,
 				"er": null,
 				"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_BP.png",
@@ -5125,7 +5271,7 @@
 				"name": "Ten-Lords' Decree, All Shall Obey",
 				"tag": "Enhance",
 				"type": "Ultimate",
-				"description": "Increases the SPD of a target ally by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> of Hanya's SPD and the ally's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, lasting for <unbreak>#2[i]</unbreak> turn(s).",
+				"description": "Increases the SPD of a target ally by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> of Hanya's SPD and increases the same target ally's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, lasting for <unbreak>#2[i]</unbreak> turn(s).",
 				"regen": 5,
 				"er": 140,
 				"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Ultra.png",
@@ -5136,7 +5282,7 @@
 				"name": "Sanction",
 				"tag": "Support",
 				"type": "Talent",
-				"description": "When an ally uses a Basic ATK, Skill, or Ultimate on an enemy inflicted with Burden, increases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> for <unbreak>#2[i]</unbreak> turns.",
+				"description": "When an ally uses a Basic ATK, Skill, or Ultimate on an enemy inflicted with Burden, the DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, lasting for <unbreak>#2[i]</unbreak> turn(s).",
 				"regen": null,
 				"er": null,
 				"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Passive.png",
@@ -5145,7 +5291,7 @@
 			},
 			{
 				"name": "Attack",
-				"description": "After attacking an enemy and entering battle, the enemy target's corresponding Type Toughness will be Weakened.",
+				"description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
 				"regen": null,
 				"er": null,
 				"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Normal.png",
@@ -5260,7 +5406,7 @@
 				"name": "Talisman: Protection",
 				"tag": "Restore",
 				"type": "Skill",
-				"description": "Dispels <unbreak>#5[i]</unbreak> <u>debuff(s)</u> from an ally and immediately restores HP to them equal to <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of Huohuo's Max HP plus <color=#f29e38ff><unbreak>#2[i]</unbreak></color>. At the same time, restores HP to the target ally's adjacent allies equal to <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> of Huohuo's Max HP plus <color=#f29e38ff><unbreak>#4[i]</unbreak></color>.",
+				"description": "Dispels <unbreak>#5[i]</unbreak> <u>debuff(s)</u> from a single target ally and immediately restores this ally's HP by an amount equal to <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of Huohuo's Max HP plus <color=#f29e38ff><unbreak>#2[i]</unbreak></color>. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> of Huohuo's Max HP plus <color=#f29e38ff><unbreak>#4[i]</unbreak></color>.",
 				"regen": 30,
 				"er": null,
 				"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_BP.png",
@@ -5269,9 +5415,9 @@
 			},
 			{
 				"name": "Tail: Spiritual Domination",
-				"tag": "Restore",
+				"tag": "Support",
 				"type": "Ultimate",
-				"description": "Regenerates Energy for all allies (other than this character) equal to <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of their respective Max Energy. At the same time, increases ATK by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> for <unbreak>#3[i]</unbreak> turn(s).",
+				"description": "Regenerates Energy for all allies (excluding this character) by an amount equal to <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> of their respective Max Energy. At the same time, increases their ATK by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> for <unbreak>#3[i]</unbreak> turn(s).",
 				"regen": 5,
 				"er": 140,
 				"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Ultra.png",
@@ -5282,7 +5428,7 @@
 				"name": "Possession: Ethereal Metaflow",
 				"tag": "Restore",
 				"type": "Talent",
-				"description": "After using her Skill, Huohuo receives <unbreak>#1[i]</unbreak> stack(s) of Sacrificed Life. While Huohuo possessed Sacrificed Life stacks, 1 stack of Sacrificed Life is consumed at the start of every ally's turn or when an Ultimate is unleashed, restoring HP to the acting ally equal to <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> of Huohuo's Max HP plus <color=#f29e38ff><unbreak>#5[i]</unbreak></color>. At the same time, all allies with HP less than or equal to <unbreak>#6[i]%</unbreak> will be healed once, and a corresponding number of Sacrificed Life stacks will be consumed.",
+				"description": "After using her Skill, Huohuo gains Divine Provision, lasting for <unbreak>#1[i]</unbreak> turn(s). This duration decreases by 1 turn at the start of each Huohuo's turn. If Huohuo has Divine Provision when an ally's turn starts or when an ally uses their Ultimate, restores HP for that ally by an amount equal to <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> of Huohuo's Max HP plus <color=#f29e38ff><unbreak>#5[i]</unbreak></color>. At the same time, every ally with <unbreak>#6[i]%</unbreak> HP or lower receives healing once.\\nWhen Divine Provision is triggered to heal an ally, dispel <unbreak>#2[i]</unbreak> <u>debuff(s)</u> from that ally. This effect can be triggered up to <unbreak>#7[i]</unbreak> time(s). Using the skill again resets the effect's trigger count.",
 				"regen": null,
 				"er": null,
 				"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Passive.png",
@@ -5291,7 +5437,7 @@
 			},
 			{
 				"name": "Attack",
-				"description": "After attacking an enemy and entering battle, the enemy target's corresponding Type Toughness will be Weakened.",
+				"description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
 				"regen": null,
 				"er": null,
 				"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Normal.png",
@@ -5302,7 +5448,7 @@
 				"name": "Fiend: Impeachment of Evil",
 				"tag": "Impair",
 				"type": "Technique",
-				"description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee from Huohuo for <unbreak>#4[i]</unbreak> second(s). When entering battle with enemies in Horror-Struck, there is a <unbreak>#1[i]%</unbreak> <u>base chance</u> of reducing the enemies' ATK by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
+				"description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for <unbreak>#4[i]</unbreak> second(s). When entering battle with enemies in Horror-Struck, there is a <unbreak>#1[i]%</unbreak> <u>base chance</u> of reducing every single enemy's ATK by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
 				"regen": null,
 				"er": null,
 				"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Maze.png",
@@ -5396,7 +5542,7 @@
 				"name": "Fleeting Fragrance",
 				"tag": "Single Target",
 				"type": "Basic ATK",
-				"description": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Argenti's ATK to a single enemy.",
+				"description": "Deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Argenti's ATK to a single target enemy.",
 				"regen": 20,
 				"er": null,
 				"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Normal.png",
@@ -5415,7 +5561,7 @@
 				"id": 130202
 			},
 			{
-				"name": "For In This Garden Supreme Beauty Bestows",
+				"name": "For In This Garden, Supreme Beauty Bestows",
 				"tag": "AoE",
 				"type": "Ultimate",
 				"description": "Consumes <unbreak>#2[i]</unbreak> Energy and deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Argenti's ATK to all enemies.",
@@ -5429,7 +5575,7 @@
 				"name": "Sublime Object",
 				"tag": "Enhance",
 				"type": "Talent",
-				"description": "When Argenti uses his Basic Attack, Skill, or Ultimate, every enemy hit will regenerate Argenti's Energy by <unbreak>#1[i]</unbreak>, grant him a stack of Ascend, as well as increasing his CRIT Rate by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>. This effect can stack up to <unbreak>#3[i]</unbreak> time(s).",
+				"description": "For every enemy hit when Argenti uses his Basic Attack, Skill, or Ultimate, regenerates Argenti's Energy by <unbreak>#1[i]</unbreak>, and grants him a stack of Apotheosis, increasing his CRIT Rate by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>. This effect can stack up to <unbreak>#3[i]</unbreak> time(s).",
 				"regen": null,
 				"er": null,
 				"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Passive.png",
@@ -5438,7 +5584,7 @@
 			},
 			{
 				"name": "Attack",
-				"description": "After attacking an enemy and entering battle, the enemy target's corresponding Type Toughness will be Weakened.",
+				"description": "Attack an enemy, and when the battle starts, reduce their Toughness of the corresponding Type.",
 				"regen": null,
 				"er": null,
 				"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Normal.png",
@@ -5449,7 +5595,7 @@
 				"name": "Manifesto of Purest Virtue",
 				"tag": "Impair",
 				"type": "Technique",
-				"description": "After using the Technique, enemies in a set area are inflicted with Daze for <unbreak>#1[i]</unbreak> second(s). Dazed enemies will not actively attack your team.\\nWhen initiating combat against a Dazed enemy, deals Physical DMG to all enemies equal to <unbreak>#2[i]%</unbreak> of Argenti's ATK and regenerates his Energy by <unbreak>#3[i]</unbreak>.",
+				"description": "After using the Technique, enemies in a set area are inflicted with Daze for <unbreak>#1[i]</unbreak> second(s). Dazed enemies will not actively attack the team.\\nWhen attacking a Dazed enemy to enter combat, deals Physical DMG to all enemies equal to <unbreak>#2[i]%</unbreak> of Argenti's ATK and regenerates his Energy by <unbreak>#3[i]</unbreak>.",
 				"regen": null,
 				"er": null,
 				"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Maze.png",
@@ -5460,7 +5606,7 @@
 				"name": "Merit Bestowed in \"My\" Garden",
 				"tag": "AoE",
 				"type": "Ultimate",
-				"description": "Consumes <unbreak>#4[i]</unbreak> Energy and deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Argenti's ATK to all enemies, and further deals DMG for <unbreak>#2[i]</unbreak> extra time(s), with each time dealing Physical DMG equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of Argenti's ATK to a random enemy.",
+				"description": "Consumes <unbreak>#4[i]</unbreak> Energy and deals Physical DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Argenti's ATK to all enemies. And further deals DMG for <unbreak>#2[i]</unbreak> extra time(s), with each time dealing Physical DMG equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of Argenti's ATK to a random enemy.",
 				"regen": 5,
 				"er": 180,
 				"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Ultra02.png",
@@ -5533,6 +5679,418 @@
 		},
 		"exp": 5797920,
 		"id": "1302"
+	},
+	"1303": {
+		"name": "Ruan Mei",
+		"stats": {
+			"maxHP": 1087,
+			"maxATK": 660,
+			"maxDEF": 485,
+			"SPD": 104,
+			"TNT": 100,
+			"CR": 0.05,
+			"CDMG": 0.5
+		},
+		"icon": "SpriteOutput/AvatarRoundIcon/1303.png",
+		"shortIcon": "1303",
+		"rarity": "SuperRare",
+		"element": "Ice",
+		"skills": [
+			{
+				"name": "An Orchid Needle",
+				"tag": "Single Target",
+				"type": "Basic ATK",
+				"description": "Deals Ice DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Ruan Mei's ATK to a single enemy.",
+				"regen": 20,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Normal.png",
+				"shortIcon": "SkillIcon_1303_Normal",
+				"id": 130301
+			},
+			{
+				"name": "Strings Sing in Slow Twirls",
+				"tag": "Support",
+				"type": "Skill",
+				"description": "After using her Skill, Ruan Mei gains \"Overtone\" that lasts for <unbreak>#3[i]</unbreak> turn(s). The duration of this state decreases by 1 at the start of Ruan Mei's each turn. When Ruan Mei has \"Overtone,\" all allies' SPD increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> and Weakness Break Efficiency increases by <unbreak>#2[i]%</unbreak>.",
+				"regen": 30,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png",
+				"shortIcon": "SkillIcon_1303_BP",
+				"id": 130302
+			},
+			{
+				"name": "Shake the Flow, Cling the Cloth",
+				"tag": "Support",
+				"type": "Ultimate",
+				"description": "Ruan Mei opens up a field that lasts for <unbreak>#2[i]</unbreak> turns and reduces by 1 at the start of each turn.\\nIncreases All-Type PEN for all allies inside the field by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>, applying Seamrend to every enemy hit.\\nSeamrend extends Weakness Break duration for enemies trying to recover from it, plus also delays action for <unbreak>#3[i]%</unbreak> of Ruan Mei's Break Effect + <unbreak>#4[i]%</unbreak> while dealing <u>additional Ice DMG</u> equal to <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of Ruan Mei's Ice Break DMG.\\nEnemy targets cannot have Seamrend re-applied until recovering from Weakness Break.",
+				"regen": 5,
+				"er": 130,
+				"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png",
+				"shortIcon": "SkillIcon_1303_Ultra",
+				"id": 130303
+			},
+			{
+				"name": "Somatotypical Helix",
+				"tag": "Support",
+				"type": "Talent",
+				"description": "DMG for all allies increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. After Breaking an enemy's Weakness or attacking a Weakness Broken enemy, additionally deals <u>Additional Ice DMG</u> equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of Ruan Mei's Ice Break DMG.",
+				"regen": null,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Passive.png",
+				"shortIcon": "SkillIcon_1303_Passive",
+				"id": 130304
+			},
+			{
+				"name": "Attack",
+				"description": "Attack an enemy. When the battle starts, the enemy's Toughness of the corresponding Type reduces.",
+				"regen": null,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Normal.png",
+				"shortIcon": "SkillIcon_1303_Normal",
+				"id": 130306
+			},
+			{
+				"name": "Wipe the Strings, and Sweep the Sleeves",
+				"tag": "Enhance",
+				"type": "Technique",
+				"description": "Obtains \"Wipe the Strings, and Sweep the Sleeves\" after using the Technique. At the start of the next battle, automatically triggers for <unbreak>#1[i]</unbreak> time(s) an effect equal to her Skill. Triggering this effect does not consume Skill Points.\\nWhen Ruan Mei has \"Wipe the Strings, and Sweep the Sleeves,\" actively attacking a target in Simulated Universe to enter battle will be regarded as attacking their Weakness to enter battle, and this attack can deplete Toughness regardless of Weakness types for all enemies. When inflicting Weakness Break in this way, triggers Break Effect corresponding to the Weakness Type of the attack. With every Blessing in possession, increases Toughness DMG of this attack by <unbreak>#2[i]%</unbreak>. At the same time, increase Break DMG equal to <unbreak>#3[i]%</unbreak> of Ruan Mei's Ice Break DMG.",
+				"regen": null,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Maze.png",
+				"shortIcon": "SkillIcon_1303_Maze",
+				"id": 130307
+			}
+		],
+		"promos": {
+			"basicPromo": {
+				"2": 240000,
+				"110161": 3,
+				"110162": 8,
+				"110163": 11,
+				"113001": 6,
+				"113002": 7,
+				"113003": 7
+			},
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"110161": 3,
+				"110162": 15,
+				"110163": 30,
+				"110504": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"110161": 3,
+				"110162": 15,
+				"110163": 30,
+				"110504": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"110161": 3,
+				"110162": 15,
+				"110163": 30,
+				"110504": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			}
+		},
+		"avatarType": "Shaman",
+		"promotion": {
+			"2": 308000,
+			"110413": 65,
+			"113001": 15,
+			"113002": 15,
+			"113003": 15
+		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110161": 6,
+			"110162": 16,
+			"110163": 38,
+			"110504": 3,
+			"113001": 8,
+			"113002": 10,
+			"113003": 30
+		},
+		"exp": 5797920,
+		"id": "1303"
+	},
+	"1305": {
+		"name": "Dr. Ratio",
+		"stats": {
+			"maxHP": 1048,
+			"maxATK": 699,
+			"maxDEF": 461,
+			"SPD": 106,
+			"TNT": 75,
+			"CR": 0.05,
+			"CDMG": 0.5
+		},
+		"icon": "SpriteOutput/AvatarRoundIcon/1305.png",
+		"shortIcon": "1305",
+		"rarity": "SuperRare",
+		"element": "Imaginary",
+		"skills": [
+			{
+				"name": "Mind is Might",
+				"tag": "Single Target",
+				"type": "Basic ATK",
+				"description": "Deals Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Dr. Ratio's ATK to a single enemy.",
+				"regen": 20,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Normal.png",
+				"shortIcon": "SkillIcon_1305_Normal",
+				"id": 130501
+			},
+			{
+				"name": "Method of Cognitive Enhancement",
+				"tag": "Single Target",
+				"type": "Skill",
+				"description": "Triggers Talent effect 1 time. Every debuff the target has additionally triggers the Talent once, up to a max of <unbreak>#1[i]</unbreak> times. Then, deals Imaginary DMG worth <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Dr. Ratio's ATK to the target.",
+				"regen": 30,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png",
+				"shortIcon": "SkillIcon_1305_BP",
+				"id": 130502
+			},
+			{
+				"name": "Three-Step Paradox",
+				"tag": "Single Target",
+				"type": "Ultimate",
+				"description": "Deals <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Dr. Ratio's ATK in Imaginary DMG to a target enemy unit, causing Folly of Sages. Allies attacking targets affected by Folly of Sages give Dr. Ratio an extra <unbreak>#2[i]%</unbreak> fixed chance to launch a Talent <u>follow-up attack</u>.\\nFolly of Sages stacks up to <unbreak>#3[i]</unbreak> times, and unleashing your Ultimate resets the trigger count for <u>follow-up attack</u>. Folly of Sages only affects the most recent target of Dr. Ratio's Ultimate.",
+				"regen": 5,
+				"er": 150,
+				"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png",
+				"shortIcon": "SkillIcon_1305_Ultra",
+				"id": 130503
+			},
+			{
+				"name": "Cogito Ergo Sum",
+				"tag": "Enhance",
+				"type": "Talent",
+				"description": "Randomly gain 1 of 5 buffs:\\nLaunches a <u>follow-up attack</u> on the enemy target if not eliminated or on a random enemy target if eliminated, dealing Imaginary DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Dr. Ratio's ATK. This effect can only be triggered once per attack.\\nIncreases ATK by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>; stacks up to <unbreak>#7[i]</unbreak> times.\\nIncreases CRIT Rate by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>; stacks up to <unbreak>#7[i]</unbreak> times.\\nIncreases CRIT DMG by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>; stacks up to <unbreak>#7[i]</unbreak> times.\\nIncreases SPD by <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>; stacks up to <unbreak>#7[i]</unbreak> times.\\nBuff effects last for <unbreak>#6[i]</unbreak> turns.",
+				"regen": 5,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Passive.png",
+				"shortIcon": "SkillIcon_1305_Passive",
+				"id": 130504
+			},
+			{
+				"name": "Attack",
+				"description": "Attack an enemy. When the battle starts, the enemy's Toughness of the corresponding Type reduces.",
+				"regen": null,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Normal.png",
+				"shortIcon": "SkillIcon_1305_Normal",
+				"id": 130506
+			},
+			{
+				"name": "Mold of Idolatry",
+				"tag": "Impair",
+				"type": "Technique",
+				"description": "After using Technique, creates a special dimension that Taunts nearby enemies, lasting <unbreak>#1[i]</unbreak> second(s). After entering battle with enemies in the dimension, there is a <unbreak>#2[i]%</unbreak> <u>base chance</u> to inflict <unbreak>#3[i]%</unbreak> SPD Reduction on enemies for <unbreak>#4[i]</unbreak> turn(s). Only 1 dimension created by allies can exist at the same time.",
+				"regen": null,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Maze.png",
+				"shortIcon": "SkillIcon_1305_Maze",
+				"id": 130507
+			}
+		],
+		"promos": {
+			"basicPromo": {
+				"2": 240000,
+				"110121": 3,
+				"110122": 8,
+				"110123": 11,
+				"111011": 6,
+				"111012": 7,
+				"111013": 7
+			},
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"110121": 3,
+				"110122": 15,
+				"110123": 30,
+				"110504": 3,
+				"111011": 9,
+				"111012": 13,
+				"111013": 7
+			},
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"110121": 3,
+				"110122": 15,
+				"110123": 30,
+				"110504": 3,
+				"111011": 9,
+				"111012": 13,
+				"111013": 7
+			},
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"110121": 3,
+				"110122": 15,
+				"110123": 30,
+				"110504": 3,
+				"111011": 9,
+				"111012": 13,
+				"111013": 7
+			}
+		},
+		"avatarType": "Rogue",
+		"promotion": {
+			"2": 308000,
+			"110417": 65,
+			"111011": 15,
+			"111012": 15,
+			"111013": 15
+		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"110121": 6,
+			"110122": 16,
+			"110123": 38,
+			"110504": 3,
+			"111011": 8,
+			"111012": 10,
+			"111013": 30
+		},
+		"exp": 5797920,
+		"id": "1305"
+	},
+	"1311": {
+		"name": "Screwllum",
+		"stats": {
+			"maxHP": 1164,
+			"maxATK": 815,
+			"maxDEF": 437,
+			"SPD": 97,
+			"TNT": 75,
+			"CR": 0.05,
+			"CDMG": 0.5
+		},
+		"icon": "SpriteOutput/AvatarRoundIcon/1311.png",
+		"shortIcon": "1311",
+		"rarity": "SuperRare",
+		"element": "Imaginary",
+		"skills": [
+			{
+				"tag": "Single Target",
+				"type": "Basic ATK",
+				"regen": 20,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1311/SkillIcon_1311_Normal.png",
+				"shortIcon": "SkillIcon_1311_Normal",
+				"id": 131101
+			},
+			{
+				"tag": "Blast",
+				"type": "Skill",
+				"regen": 30,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1311/SkillIcon_1311_BP.png",
+				"shortIcon": "SkillIcon_1311_BP",
+				"id": 131102
+			},
+			{
+				"tag": "AoE",
+				"type": "Ultimate",
+				"regen": 5,
+				"er": 110,
+				"icon": "SpriteOutput/SkillIcons/1311/SkillIcon_1311_Ultra.png",
+				"shortIcon": "SkillIcon_1311_Ultra",
+				"id": 131103
+			},
+			{
+				"tag": "Blast",
+				"type": "Talent",
+				"regen": null,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1311/SkillIcon_1311_Passive.png",
+				"shortIcon": "SkillIcon_1311_Passive",
+				"id": 131104
+			},
+			{
+				"name": "Attack",
+				"regen": null,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1311/SkillIcon_1311_Normal.png",
+				"shortIcon": "SkillIcon_1311_Normal",
+				"id": 131106
+			},
+			{
+				"type": "Technique",
+				"regen": null,
+				"er": null,
+				"icon": "SpriteOutput/SkillIcons/1311/SkillIcon_1311_Maze.png",
+				"shortIcon": "SkillIcon_1311_Maze",
+				"id": 131107
+			}
+		],
+		"promos": {
+			"basicPromo": {
+				"2": 240000,
+				"999": 20,
+				"110131": 3,
+				"110132": 8,
+				"110133": 11
+			},
+			"skillPromo": {
+				"2": 652500,
+				"241": 2,
+				"999": 32,
+				"110131": 3,
+				"110132": 15,
+				"110133": 30
+			},
+			"ultPromo": {
+				"2": 652500,
+				"241": 2,
+				"999": 32,
+				"110131": 3,
+				"110132": 15,
+				"110133": 30
+			},
+			"talentPromo": {
+				"2": 652500,
+				"241": 2,
+				"999": 32,
+				"110131": 3,
+				"110132": 15,
+				"110133": 30
+			}
+		},
+		"avatarType": "Mage",
+		"promotion": {
+			"2": 308000,
+			"999": 110
+		},
+		"treePromotion": {
+			"2": 802500,
+			"241": 2,
+			"999": 51,
+			"110131": 6,
+			"110132": 16,
+			"110133": 38
+		},
+		"exp": 5797920,
+		"id": "1311"
 	},
 	"8001": {
 		"name": "Physical Trailblazer Boy",

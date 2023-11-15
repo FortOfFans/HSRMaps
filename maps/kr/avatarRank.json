@@ -633,7 +633,7 @@
 	},
 	"110102": {
 		"name": "빠른 행군",
-		"description": "전투 스킬의 발동 시 지정된 아군은 행동 후 속도가 <unbreak>#1[i]%</unbreak> 증가한다. 지속 시간: 1턴",
+		"description": "전투 스킬 발동 시 지정된 아군은 행동 후 속도가 <unbreak>#1[i]%</unbreak> 증가한다. 지속 시간: 1턴",
 		"icon": "SpriteOutput/SkillIcons/1101/SkillIcon_1101_Rank2.png",
 		"shortIcon": "SkillIcon_1101_Rank2",
 		"numbers": [
@@ -2359,9 +2359,78 @@
 		"sall": {},
 		"id": "121306"
 	},
+	"121401": {
+		"name": "심마 속박",
+		"description": "특성의 추가 공격으로 가하는 피해가 <unbreak>#1[i]%</unbreak> 증가한다",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank1.png",
+		"shortIcon": "SkillIcon_1214_Rank1",
+		"numbers": [
+			0.4
+		],
+		"sall": {},
+		"id": "121401"
+	},
+	"121402": {
+		"name": "오진(五塵) 타파",
+		"description": "특성의 추가 공격이 약점 속성을 무시하고 적의 강인성을 소모시키며, 동시에 설의의 HP 최대치 <unbreak>#1[i]%</unbreak>만큼 HP를 회복한다. 약점 격파 시 양자 속성의 약점 격파 효과가 발동한다",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank2.png",
+		"shortIcon": "SkillIcon_1214_Rank2",
+		"numbers": [
+			0.05
+		],
+		"sall": {},
+		"id": "121402"
+	},
+	"121403": {
+		"name": "고재(苦諦)의 끝",
+		"description": "전투 스킬 레벨+2, 최대 Lv.<unbreak>15</unbreak>. 일반 공격 레벨+1, 최대 Lv.<unbreak>10</unbreak>",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png",
+		"shortIcon": "SkillIcon_1214_BP",
+		"numbers": [],
+		"sall": {
+			"121401": 1,
+			"121402": 2
+		},
+		"id": "121403"
+	},
+	"121404": {
+		"name": "악의 근절",
+		"description": "필살기 발동 시 격파 특수효과가 <unbreak>#1[i]%</unbreak> 증가한다. 지속 시간: <unbreak>#2[i]</unbreak>턴",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank4.png",
+		"shortIcon": "SkillIcon_1214_Rank4",
+		"numbers": [
+			0.4,
+			2
+		],
+		"sall": {},
+		"id": "121404"
+	},
+	"121405": {
+		"name": "가다듬은 정신",
+		"description": "필살기 레벨+2, 최대 Lv.<unbreak>15</unbreak>. 특성 레벨+2, 최대 Lv.<unbreak>15</unbreak>",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png",
+		"shortIcon": "SkillIcon_1214_Ultra",
+		"numbers": [],
+		"sall": {
+			"121403": 2,
+			"121404": 2
+		},
+		"id": "121405"
+	},
+	"121406": {
+		"name": "생사 주관",
+		"description": "[악보]의 스택수 최대치가 <unbreak>#1[i]</unbreak>스택으로 감소한다",
+		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank6.png",
+		"shortIcon": "SkillIcon_1215_Rank6",
+		"numbers": [
+			6
+		],
+		"sall": {},
+		"id": "121406"
+	},
 	"121501": {
-		"name": "일심",
-		"description": "필살기 효과를 보유한 아군이 적 처치 시, 한아의 행동 게이지가 <unbreak>#1[i]%</unbreak> 증가한다. 해당 효과는 턴마다 <unbreak>#2[i]</unbreak>회만 발동할 수 있다",
+		"name": "일심(一心)",
+		"description": "필살기 효과를 보유한 아군이 적 처치 시, 한아의 행동 게이지가 <unbreak>#1[i]%</unbreak> 증가한다. 해당 효과는 턴마다 <unbreak>#2[i]</unbreak>회만 발동한다",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank1.png",
 		"shortIcon": "SkillIcon_1215_Rank1",
 		"numbers": [
@@ -2372,7 +2441,7 @@
 		"id": "121501"
 	},
 	"121502": {
-		"name": "이관",
+		"name": "이관(二觀)",
 		"description": "전투 스킬 발동 후 속도가 <unbreak>#1[i]%</unbreak> 증가한다. 지속 시간: <unbreak>#2[i]</unbreak>턴",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank2.png",
 		"shortIcon": "SkillIcon_1215_Rank2",
@@ -2384,7 +2453,7 @@
 		"id": "121502"
 	},
 	"121503": {
-		"name": "삼진",
+		"name": "삼진(三塵)",
 		"description": "전투 스킬 레벨+2, 최대 Lv.<unbreak>15</unbreak>. 일반 공격 레벨+1, 최대 Lv.<unbreak>10</unbreak>",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_BP.png",
 		"shortIcon": "SkillIcon_1215_BP",
@@ -2396,7 +2465,7 @@
 		"id": "121503"
 	},
 	"121504": {
-		"name": "사제",
+		"name": "사제(四諦)",
 		"description": "필살기 지속 시간이 추가로 <unbreak>#1[i]</unbreak>턴 증가한다",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank4.png",
 		"shortIcon": "SkillIcon_1215_Rank4",
@@ -2407,7 +2476,7 @@
 		"id": "121504"
 	},
 	"121505": {
-		"name": "오음",
+		"name": "오음(五陰)",
 		"description": "필살기 레벨+2, 최대 Lv.<unbreak>15</unbreak>. 특성 레벨+2, 최대 Lv.<unbreak>15</unbreak>",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Ultra.png",
 		"shortIcon": "SkillIcon_1215_Ultra",
@@ -2419,23 +2488,23 @@
 		"id": "121505"
 	},
 	"121506": {
-		"name": "육정",
-		"description": "전투 스킬을 발동해 [부담] 상태의 적 명중 시 추가로 전투 스킬 포인트를 <unbreak>#1[i]</unbreak>pt 회복한다",
+		"name": "육정(六正)",
+		"description": "특성의 피해 증가 효과가 추가로 <unbreak>#1[i]%</unbreak> 증가한다",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank6.png",
 		"shortIcon": "SkillIcon_1215_Rank6",
 		"numbers": [
-			1
+			0.1
 		],
 		"sall": {},
 		"id": "121506"
 	},
 	"121701": {
 		"name": "세양의 기생, 요괴의 숙주",
-		"description": "전투 스킬 발동 시 모든 아군의 속도가 <unbreak>#1[i]%</unbreak> 증가한다. 지속 시간: <unbreak>#2[i]</unbreak>턴. 필살기 발동 후 다음번 전투 스킬 발동은 전투 스킬 포인트를 소모하지 않는다",
+		"description": "특성으로 발동한 [양명]의 지속 시간이 <unbreak>#2[i]</unbreak>턴 연장되고, 곽향이 [양명]을 보유할 시 모든 아군의 속도가 <unbreak>#1[i]%</unbreak> 증가한다",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank1.png",
 		"shortIcon": "SkillIcon_1217_Rank1",
 		"numbers": [
-			0.2,
+			0.12,
 			1
 		],
 		"sall": {},
@@ -2443,11 +2512,12 @@
 	},
 	"121702": {
 		"name": "판관의 부적, 영혼의 속박",
-		"description": "특성을 발동해 아군에게 치유 제공 시 목표의 디버프 효과를 <unbreak>#1[i]</unbreak>개 해제한다",
+		"description": "곽향이 [양명]을 보유할 시, 아군이 치명적인 공격을 받아도 전투 불능 상태에 빠지지 않으며, 즉시 자신의 HP 최대치 <unbreak>#1[i]%</unbreak>만큼 HP를 회복하고 [양명]의 지속 시간을 1턴 감소시킨다. 해당 효과는 단일 전투에서 <unbreak>#2[i]</unbreak>회 발동할 수 있다",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank2.png",
 		"shortIcon": "SkillIcon_1217_Rank2",
 		"numbers": [
-			1
+			0.5,
+			2
 		],
 		"sall": {},
 		"id": "121702"
@@ -2466,7 +2536,7 @@
 	},
 	"121704": {
 		"name": "떠나지 않는 악귀, 불안정한 갈등",
-		"description": "전투 스킬 또는 특성을 발동해 아군에게 치유 제공 시, 목표의 현재 HP가 낮을수록 치유량이 증가한다. 곽향이 제공하는 치유량을 최대 <unbreak>#1[i]%</unbreak> 증가시킨다",
+		"description": "전투 스킬 또는 특성을 발동해 아군에게 치유 제공 시, 목표의 현재 HP가 낮을수록 치유량이 증가하며, 곽향이 제공하는 치유량이 최대 <unbreak>#1[i]%</unbreak> 증가한다",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank4.png",
 		"shortIcon": "SkillIcon_1217_Rank4",
 		"numbers": [
@@ -2489,7 +2559,7 @@
 	},
 	"121706": {
 		"name": "동고동락, 언제나 함께",
-		"description": "전투 스킬 또는 특성을 발동해 아군에게 치유 제공 시, 목표가 가하는 피해가 <unbreak>#1[i]%</unbreak> 증가한다. 지속 시간: <unbreak>#2[i]</unbreak>턴",
+		"description": "아군에게 치유 제공 시, 목표가 가하는 피해가 <unbreak>#1[i]%</unbreak> 증가한다. 지속 시간: <unbreak>#2[i]</unbreak>턴",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank6.png",
 		"shortIcon": "SkillIcon_1217_Rank6",
 		"numbers": [
@@ -2512,7 +2582,7 @@
 	},
 	"130202": {
 		"name": "아게이트의 겸손",
-		"description": "필살기 발동 시, 적이 <unbreak>#1[i]</unbreak>기 이상일 시 공격력이 <unbreak>#2[i]%</unbreak> 증가한다. 지속 시간: <unbreak>#3[i]</unbreak>턴",
+		"description": "필살기 발동 시 적이 <unbreak>#1[i]</unbreak>기 이상일 경우 공격력이 <unbreak>#2[i]%</unbreak> 증가한다. 지속 시간: <unbreak>#3[i]</unbreak>턴",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank2.png",
 		"shortIcon": "SkillIcon_1302_Rank2",
 		"numbers": [
@@ -2537,7 +2607,7 @@
 	},
 	"130204": {
 		"name": "나팔의 헌신",
-		"description": "전투 시작 시 [승격]을 <unbreak>#1[i]</unbreak>스택 획득하고, 특성의 효과 중첩 최대치가 <unbreak>#2[i]</unbreak>스택 증가한다",
+		"description": "전투 시작 시 [승격]을 <unbreak>#1[i]</unbreak>스택 획득하고, 특성의 효과 최대 중첩수가 <unbreak>#2[i]</unbreak>스택 증가한다",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank4.png",
 		"shortIcon": "SkillIcon_1302_Rank4",
 		"numbers": [
@@ -2555,12 +2625,13 @@
 		"numbers": [],
 		"sall": {
 			"130201": 1,
-			"130203": 2
+			"130203": 2,
+			"130214": 2
 		},
 		"id": "130205"
 	},
 	"130206": {
-		"name": "「그대」의 빛",
+		"name": "「그분」의 빛",
 		"description": "필살기 발동 시 적의 방어력을 <unbreak>#1[i]%</unbreak> 무시한다",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank6.png",
 		"shortIcon": "SkillIcon_1302_Rank6",
@@ -2569,6 +2640,152 @@
 		],
 		"sall": {},
 		"id": "130206"
+	},
+	"130301": {
+		"name": "신경 모방 자수",
+		"description": "[현외음]의 지속 시간이 <unbreak>#1[i]</unbreak>턴 연장된다. 완•매가 [현외음]을 보유할 때 모든 아군의 공격력이 <unbreak>#2[i]%</unbreak> 증가한다",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank1.png",
+		"shortIcon": "SkillIcon_1303_Rank1",
+		"numbers": [
+			1,
+			0.4
+		],
+		"sall": {},
+		"id": "130301"
+	},
+	"130302": {
+		"name": "갈대밭 유영",
+		"description": "적의 약점이 격파될 시 완•매의 격파 특수효과가 <unbreak>#1[i]%</unbreak> 증가한다. 지속 시간: <unbreak>#2[i]</unbreak>턴",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank2.png",
+		"shortIcon": "SkillIcon_1303_Rank2",
+		"numbers": [
+			1,
+			2
+		],
+		"sall": {},
+		"id": "130302"
+	},
+	"130303": {
+		"name": "흔들리는 비단",
+		"description": "필살기 레벨+2, 최대 Lv.<unbreak>15</unbreak>. 특성 레벨+2, 최대 Lv.<unbreak>15</unbreak>",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png",
+		"shortIcon": "SkillIcon_1303_Ultra",
+		"numbers": [],
+		"sall": {
+			"130303": 2,
+			"130304": 2
+		},
+		"id": "130303"
+	},
+	"130304": {
+		"name": "청동 거울 찾기 전",
+		"description": "완•매가 필드에 있을 때, 모든 아군이 약점 격파 상태의 적에게 피해를 줄 때 치명타 피해가 <unbreak>#1[i]%</unbreak> 증가한다",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank4.png",
+		"shortIcon": "SkillIcon_1303_Rank4",
+		"numbers": [
+			0.4
+		],
+		"sall": {},
+		"id": "130304"
+	},
+	"130305": {
+		"name": "영롱한 비녀",
+		"description": "전투 스킬 레벨+2, 최대 Lv.<unbreak>15</unbreak>. 일반 공격 레벨+1, 최대 Lv.<unbreak>10</unbreak>",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png",
+		"shortIcon": "SkillIcon_1303_BP",
+		"numbers": [],
+		"sall": {
+			"130301": 1,
+			"130302": 2
+		},
+		"id": "130305"
+	},
+	"130306": {
+		"name": "수건 부채질",
+		"description": "필살기로 친 결계의 지속 시간이 <unbreak>#1[i]</unbreak>턴 연장된다. 전투 중 완•매의 격파 특수효과가 <unbreak>#2[i]%</unbreak>보다 클 때, <unbreak>#3[i]%</unbreak>를 초과할 때마다 필살기로 인한 추가 피해 배율이 <unbreak>#4[i]%</unbreak> 증가한다. 최대 <unbreak>#5[i]%</unbreak>를 초과할 수 없다",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank6.png",
+		"shortIcon": "SkillIcon_1303_Rank6",
+		"numbers": [
+			1,
+			1.8,
+			0.1,
+			0.24,
+			2.4
+		],
+		"sall": {},
+		"id": "130306"
+	},
+	"130501": {
+		"name": "건방진 재앙",
+		"description": "전투가 시작되면 특성의 버프 효과를 획득하며 각 버프 효과는 <unbreak>#3[i]</unbreak>스택을 획득한다. 특성의 버프 효과 중첩 스택 수는 <unbreak>#1[i]</unbreak>스택 증가하며 지속 턴은 <unbreak>#2[i]</unbreak>턴 증가한다",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank1.png",
+		"shortIcon": "SkillIcon_1305_Rank1",
+		"numbers": [
+			2,
+			1,
+			2
+		],
+		"sall": {},
+		"id": "130501"
+	},
+	"130502": {
+		"name": "미세함과 심오함",
+		"description": "특성의 추가 공격이 대상을 명중했을 시 목표가 보유한 디버프 1개당 Dr. 레이시오 공격력의 <unbreak>#1[i]%</unbreak>만큼 허수 속성 추가 피해를 준다. 해당 효과는 추가 공격마다 최대 <unbreak>#2[i]</unbreak>회 발동된다",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank2.png",
+		"shortIcon": "SkillIcon_1305_Rank2",
+		"numbers": [
+			0.2,
+			4
+		],
+		"sall": {},
+		"id": "130502"
+	},
+	"130503": {
+		"name": "너 자신을 알라",
+		"description": "필살기 레벨+2, 최대 Lv.<unbreak>15</unbreak>. 일반 공격 레벨+1, 최대 Lv.<unbreak>10</unbreak>",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png",
+		"shortIcon": "SkillIcon_1305_Ultra",
+		"numbers": [],
+		"sall": {
+			"130501": 1,
+			"130503": 2
+		},
+		"id": "130503"
+	},
+	"130504": {
+		"name": "맹목적인 어리석음",
+		"description": "전투 스킬 발동으로 버프 효과를 획득할 시 Dr. 레이시오가 에너지를 <unbreak>#1[i]</unbreak>pt 추가 획득한다",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank4.png",
+		"shortIcon": "SkillIcon_1305_Rank4",
+		"numbers": [
+			3
+		],
+		"sall": {},
+		"id": "130504"
+	},
+	"130505": {
+		"name": "광활한 바다의 노 없는 배",
+		"description": "전투 스킬 레벨+2, 최대 Lv.<unbreak>15</unbreak>. 특성 레벨+2, 최대 Lv.<unbreak>15</unbreak>",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png",
+		"shortIcon": "SkillIcon_1305_BP",
+		"numbers": [],
+		"sall": {
+			"130502": 2,
+			"130504": 2
+		},
+		"id": "130505"
+	},
+	"130506": {
+		"name": "영원한 진리",
+		"description": "[현인의 단견]의 발동 효과가 <unbreak>#1[i]</unbreak>회 추가 증가하고, [현인의 단견] 발동 특성의 추가 공격 효과로 가하는 피해가 <unbreak>#2[i]%</unbreak> 증가한다",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank6.png",
+		"shortIcon": "SkillIcon_1305_Rank6",
+		"numbers": [
+			1,
+			0.5
+		],
+		"sall": {},
+		"id": "130506"
 	},
 	"800101": {
 		"name": "만계에 떨어진 별빛",

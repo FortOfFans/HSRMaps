@@ -1391,7 +1391,7 @@
 	},
 	"111201": {
 		"name": "Marché à terme",
-		"description": "Lorsque des ennemis affectés par Reconnaissance de dette subissent des attaques de suivi, ils entrent dans l'état Débiteur. Cet effet ne peut s'activer qu'une fois par action.\\nDébiteur augmente les DGT critiques des attaques de suivi infligées aux cibles ennemies de <unbreak>#1[i]%</unbreak>, cumulable jusqu'à <unbreak>#2[i]</unbreak> fois. Débiteur se dissipe en même temps que Reconnaissance de dette.",
+		"description": "Lorsque des ennemis affectés par Reconnaissance de dette subissent des attaques de suivi, ils entrent dans l'état Débiteur. Cet effet ne peut s'activer qu'une fois par attaque.\\nDébiteur augmente les DGT critiques des attaques de suivi infligées aux cibles ennemies de <unbreak>#1[i]%</unbreak>, cumulable jusqu'à <unbreak>#2[i]</unbreak> fois. Débiteur se dissipe en même temps que Reconnaissance de dette.",
 		"icon": "SpriteOutput/SkillIcons/1112/SkillIcon_1112_Rank1.png",
 		"shortIcon": "SkillIcon_1112_Rank1",
 		"numbers": [
@@ -1472,7 +1472,7 @@
 	},
 	"120102": {
 		"name": "Repos sur l'échiquier",
-		"description": "Chaque fois que Qingque pioche une tuile, elle régénère immédiatement <unbreak>#1[i]</unbreak> point d'énergie.",
+		"description": "Chaque fois que Qingque pioche une tuile, elle régénère immédiatement <unbreak>#1[i]</unbreak> point d'énergie.",
 		"icon": "SpriteOutput/SkillIcons/1201/SkillIcon_1201_Rank2.png",
 		"shortIcon": "SkillIcon_1201_Rank2",
 		"numbers": [
@@ -1585,7 +1585,7 @@
 	},
 	"120206": {
 		"name": "Paix et richesse pour tous",
-		"description": "L'ultime régénère <unbreak>#1[i]</unbreak> points d'énergie supplémentaires à la cible alliée.",
+		"description": "L'ultime régénère <unbreak>#1[i]</unbreak> points d'énergie supplémentaires à la cible alliée.",
 		"icon": "SpriteOutput/SkillIcons/1202/SkillIcon_1202_Rank6.png",
 		"shortIcon": "SkillIcon_1202_Rank6",
 		"numbers": [
@@ -2160,7 +2160,7 @@
 	},
 	"121102": {
 		"name": "Repos sylphique",
-		"description": "Après utilisation de son ultime, les soins prodigués par Bailu augmentent de <unbreak>#1[i]%</unbreak> supplémentaires pendant <unbreak>#2[i]</unbreak> tours.",
+		"description": "Après utilisation de son ultime, les soins prodigués par Bailu augmentent de <unbreak>#1[i]%</unbreak> supplémentaires pendant <unbreak>#2[i]</unbreak> tours.",
 		"icon": "SpriteOutput/SkillIcons/1211/SkillIcon_1211_Rank2.png",
 		"shortIcon": "SkillIcon_1211_Rank2",
 		"numbers": [
@@ -2359,7 +2359,76 @@
 		"sall": {},
 		"id": "121306"
 	},
+	"121401": {
+		"name": "Démons intérieurs enchaînés",
+		"description": "Augmente les DGT infligés par les attaques de suivi du talent de <unbreak>#1[i]%</unbreak>.",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank1.png",
+		"shortIcon": "SkillIcon_1214_Rank1",
+		"numbers": [
+			0.4
+		],
+		"sall": {},
+		"id": "121401"
+	},
+	"121402": {
+		"name": "Annihilation du désir",
+		"description": "L'attaque de suivi du talent épuise la robustesse, quel que soit le type de faiblesse, tout en rendant à Xueyi un montant de PV équivalent à <unbreak>#1[i]%</unbreak> de ses PV max. Un effet de Rupture quantique se déclenche lorsqu'elle inflige une Rupture de faiblesse.",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank2.png",
+		"shortIcon": "SkillIcon_1214_Rank2",
+		"numbers": [
+			0.05
+		],
+		"sall": {},
+		"id": "121402"
+	},
+	"121403": {
+		"name": "Cessation de Dukkha",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png",
+		"shortIcon": "SkillIcon_1214_BP",
+		"numbers": [],
+		"sall": {
+			"121401": 1,
+			"121402": 2
+		},
+		"id": "121403"
+	},
+	"121404": {
+		"name": "Élimination de l'infâme progéniture",
+		"description": "L'effet de Rupture du personnage augmente de <unbreak>#1[i]%</unbreak> pendant <unbreak>#2[i]</unbreak> tour(s) après utilisation de son ultime.",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank4.png",
+		"shortIcon": "SkillIcon_1214_Rank4",
+		"numbers": [
+			0.4,
+			2
+		],
+		"sall": {},
+		"id": "121404"
+	},
+	"121405": {
+		"name": "Cheffe des esprits",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png",
+		"shortIcon": "SkillIcon_1214_Ultra",
+		"numbers": [],
+		"sall": {
+			"121403": 2,
+			"121404": 2
+		},
+		"id": "121405"
+	},
+	"121406": {
+		"name": "Maîtresse de la vie et de la mort",
+		"description": "Réduit le nombre maximum de cumuls de Karma à <unbreak>#1[i]</unbreak>.",
+		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank6.png",
+		"shortIcon": "SkillIcon_1215_Rank6",
+		"numbers": [
+			6
+		],
+		"sall": {},
+		"id": "121406"
+	},
 	"121501": {
+		"name": "Une seule pensée",
+		"description": "Lorsqu'un allié qui bénéficie de l'effet de l'ultime de Hanya élimine un ennemi, l'action de Hanya est avancée de <unbreak>#1[i]%</unbreak>. Cet effet ne peut être déclenché que <unbreak>#2[i]</unbreak> fois par tour.",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank1.png",
 		"shortIcon": "SkillIcon_1215_Rank1",
 		"numbers": [
@@ -2370,6 +2439,8 @@
 		"id": "121501"
 	},
 	"121502": {
+		"name": "Deux vérités",
+		"description": "La VIT du personnage augmente de <unbreak>#1[i]%</unbreak> pendant <unbreak>#2[i]</unbreak> tour après avoir utilisé sa compétence.",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank2.png",
 		"shortIcon": "SkillIcon_1215_Rank2",
 		"numbers": [
@@ -2380,6 +2451,8 @@
 		"id": "121502"
 	},
 	"121503": {
+		"name": "Trois poussières",
+		"description": "Niv. de la compétence +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. de l'ATQ normale +1, jusqu'au Niv. <unbreak>10</unbreak> maximum.",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_BP.png",
 		"shortIcon": "SkillIcon_1215_BP",
 		"numbers": [],
@@ -2390,6 +2463,8 @@
 		"id": "121503"
 	},
 	"121504": {
+		"name": "Quatre vérités",
+		"description": "L'ultime dure <unbreak>#1[i]</unbreak> tour supplémentaire.",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank4.png",
 		"shortIcon": "SkillIcon_1215_Rank4",
 		"numbers": [
@@ -2399,6 +2474,8 @@
 		"id": "121504"
 	},
 	"121505": {
+		"name": "Cinq skandhas",
+		"description": "Niv. de l'ultime +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. du talent +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Ultra.png",
 		"shortIcon": "SkillIcon_1215_Ultra",
 		"numbers": [],
@@ -2409,34 +2486,43 @@
 		"id": "121505"
 	},
 	"121506": {
+		"name": "Six destinées",
+		"description": "Améliore l'effet d'augmentation de DGT du talent de <unbreak>#1[i]%</unbreak> supplémentaires.",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank6.png",
 		"shortIcon": "SkillIcon_1215_Rank6",
 		"numbers": [
-			1
+			0.1
 		],
 		"sall": {},
 		"id": "121506"
 	},
 	"121701": {
+		"name": "Abri maudit possédé",
+		"description": "Augmente de <unbreak>#2[i]</unbreak> tour la durée de l'effet Intervention divine du talent. Lorsque Huohuo bénéficie d'Intervention divine, la VIT de tous les alliés augmente de <unbreak>#1[i]%</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank1.png",
 		"shortIcon": "SkillIcon_1217_Rank1",
 		"numbers": [
-			0.2,
+			0.12,
 			1
 		],
 		"sall": {},
 		"id": "121701"
 	},
 	"121702": {
+		"name": "Queue de l'esprit scellée",
+		"description": "Si Huohuo bénéficie d'Intervention divine alors qu'un allié subit un coup fatal, l'allié ne tombe par à terre, et restaure immédiatement des PV à hauteur de <unbreak>#1[i]%</unbreak> de ses PV max, ce qui réduit la durée d'Intervention divine de 1 tour. Cet effet ne peut être déclenché que <unbreak>#2[i]</unbreak> fois par combat.",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank2.png",
 		"shortIcon": "SkillIcon_1217_Rank2",
 		"numbers": [
-			1
+			0.5,
+			2
 		],
 		"sall": {},
 		"id": "121702"
 	},
 	"121703": {
+		"name": "Malédiction à laquelle les papillons ont cédé",
+		"description": "Niv. de l'ultime +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. du talent +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Ultra.png",
 		"shortIcon": "SkillIcon_1217_Ultra",
 		"numbers": [],
@@ -2447,6 +2533,8 @@
 		"id": "121703"
 	},
 	"121704": {
+		"name": "Cœurs qui s'emballent mais pourtant liés",
+		"description": "Les soins prodigués à une cible alliée par la compétence ou le talent de Huohuo gagnent en efficacité plus les PV de la cible sont bas. L'augmentation maximale de l'efficacité des soins prodigués par Huohuo est de <unbreak>#1[i]%</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank4.png",
 		"shortIcon": "SkillIcon_1217_Rank4",
 		"numbers": [
@@ -2456,6 +2544,8 @@
 		"id": "121704"
 	},
 	"121705": {
+		"name": "Mandatée par décret, maux évincés",
+		"description": "Niv. de la compétence +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. de l'ATQ normale +1, jusqu'au Niv. <unbreak>10</unbreak> maximum.",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_BP.png",
 		"shortIcon": "SkillIcon_1217_BP",
 		"numbers": [],
@@ -2466,6 +2556,8 @@
 		"id": "121705"
 	},
 	"121706": {
+		"name": "Destins en osmose à jamais",
+		"description": "Lorsque Huohuo soigne une cible alliée, les DGT de la cible alliée augmentent de <unbreak>#1[i]%</unbreak> pendant <unbreak>#2[i]</unbreak> tours.",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank6.png",
 		"shortIcon": "SkillIcon_1217_Rank6",
 		"numbers": [
@@ -2476,6 +2568,8 @@
 		"id": "121706"
 	},
 	"130201": {
+		"name": "Imperfection au royaume de l'esthétisme",
+		"description": "Chaque cumul d'Ascension augmente les DGT critiques de <unbreak>#1[i]%</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank1.png",
 		"shortIcon": "SkillIcon_1302_Rank1",
 		"numbers": [
@@ -2485,6 +2579,8 @@
 		"id": "130201"
 	},
 	"130202": {
+		"name": "Humilité de l'agate",
+		"description": "L'ATQ du personnage augmente de <unbreak>#2[i]%</unbreak> pendant <unbreak>#3[i]</unbreak> tour lorsque vous utilisez l'ultime avec <unbreak>#1[i]</unbreak> ennemis ou plus sur le champ de bataille.",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank2.png",
 		"shortIcon": "SkillIcon_1302_Rank2",
 		"numbers": [
@@ -2496,6 +2592,7 @@
 		"id": "130202"
 	},
 	"130203": {
+		"name": "Gloire du chemin d'épines",
 		"description": "Niv. de la compétence +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. du talent +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_BP.png",
 		"shortIcon": "SkillIcon_1302_BP",
@@ -2507,6 +2604,8 @@
 		"id": "130203"
 	},
 	"130204": {
+		"name": "Dévotion des trompettes de la guerre",
+		"description": "Le personnage gagne <unbreak>#1[i]</unbreak> cumuls d'Ascension en début de combat, et le nombre de cumuls maximum de l'effet de son talent passe à <unbreak>#2[i]</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank4.png",
 		"shortIcon": "SkillIcon_1302_Rank4",
 		"numbers": [
@@ -2517,17 +2616,21 @@
 		"id": "130204"
 	},
 	"130205": {
+		"name": "Merveille de l'univers",
 		"description": "Niv. de l'ultime +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. de l'ATQ normale +1, jusqu'au Niv. <unbreak>10</unbreak> maximum.",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Ultra.png",
 		"shortIcon": "SkillIcon_1302_Ultra",
 		"numbers": [],
 		"sall": {
 			"130201": 1,
-			"130203": 2
+			"130203": 2,
+			"130214": 2
 		},
 		"id": "130205"
 	},
 	"130206": {
+		"name": "Resplendissance",
+		"description": "L'ultime ignore <unbreak>#1[i]%</unbreak> de la DÉF de la cible ennemie.",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank6.png",
 		"shortIcon": "SkillIcon_1302_Rank6",
 		"numbers": [
@@ -2535,6 +2638,148 @@
 		],
 		"sall": {},
 		"id": "130206"
+	},
+	"130301": {
+		"name": "Implant de réplication neuronale",
+		"description": "La durée de Tonalité est prolongée de <unbreak>#1[i]</unbreak> tour(s). L'ATQ de tous les alliés augmente de <unbreak>#2[i]%</unbreak> quand Ruan Mei bénéficie de Tonalité.",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank1.png",
+		"shortIcon": "SkillIcon_1303_Rank1",
+		"numbers": [
+			1,
+			0.4
+		],
+		"sall": {},
+		"id": "130301"
+	},
+	"130302": {
+		"name": "Promenade au milieu des roseaux",
+		"description": "L'effet de Rupture de Ruan Mei augmente de <unbreak>#1[i]%</unbreak> pendant <unbreak>#2[i]</unbreak> tour(s) en cas de rupture de la faiblesse d'un ennemi.",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank2.png",
+		"shortIcon": "SkillIcon_1303_Rank2",
+		"numbers": [
+			1,
+			2
+		],
+		"sall": {},
+		"id": "130302"
+	},
+	"130303": {
+		"name": "La fumée s'élève, la viridescence oscille",
+		"description": "Niv. de l'ultime +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. du talent +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png",
+		"shortIcon": "SkillIcon_1303_Ultra",
+		"numbers": [],
+		"sall": {
+			"130303": 2,
+			"130304": 2
+		},
+		"id": "130303"
+	},
+	"130304": {
+		"name": "Divinité du miroir de bronze",
+		"description": "Augmente de <unbreak>#1[i]%</unbreak> les DGT critiques infligés par les alliés aux ennemis qui sont en état de Rupture de faiblesse lorsque Ruan Mei est sur le champ de bataille.",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank4.png",
+		"shortIcon": "SkillIcon_1303_Rank4",
+		"numbers": [
+			0.4
+		],
+		"sall": {},
+		"id": "130304"
+	},
+	"130305": {
+		"name": "Épingle à cheveux de l'artisan languissant",
+		"description": "Niv. de la compétence +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. de l'ATQ normale +1, jusqu'au Niv. <unbreak>10</unbreak> maximum.",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png",
+		"shortIcon": "SkillIcon_1303_BP",
+		"numbers": [],
+		"sall": {
+			"130301": 1,
+			"130302": 2
+		},
+		"id": "130305"
+	},
+	"130306": {
+		"name": "Le voile s'envole, l'éventail tombe",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank6.png",
+		"shortIcon": "SkillIcon_1303_Rank6",
+		"numbers": [
+			1,
+			1.8,
+			0.1,
+			0.24,
+			2.4
+		],
+		"sall": {},
+		"id": "130306"
+	},
+	"130501": {
+		"name": "Malheur de l'arrogance",
+		"description": "Gagne des bonus équivalents à ceux fournis par le talent en début de combat. Reçoit <unbreak>#3[i]</unbreak> cumul(s) pour chaque type de bonus. Le nombre de cumuls de bonus du talent augmente de <unbreak>#1[i]</unbreak>, et leur durée de <unbreak>#2[i]</unbreak> tour(s).",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank1.png",
+		"shortIcon": "SkillIcon_1305_Rank1",
+		"numbers": [
+			2,
+			1,
+			2
+		],
+		"sall": {},
+		"id": "130501"
+	},
+	"130502": {
+		"description": "Inflige des DGT imaginaires additionnels équivalents à <unbreak>#1[i]%</unbreak> de l'ATQ de Dr Ratio pour chaque malus subi par la cible ennemie lorsque l'attaque de suivi de son talent touche une cible. Cet effet peut être déclenché au maximum <unbreak>#2[i]</unbreak> fois pendant chaque attaque de suivi.",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank2.png",
+		"shortIcon": "SkillIcon_1305_Rank2",
+		"numbers": [
+			0.2,
+			4
+		],
+		"sall": {},
+		"id": "130502"
+	},
+	"130503": {
+		"name": "Connaissance du soi",
+		"description": "Niv. de l'ultime +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. de l'ATQ normale +1, jusqu'au Niv. <unbreak>10</unbreak> maximum.",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png",
+		"shortIcon": "SkillIcon_1305_Ultra",
+		"numbers": [],
+		"sall": {
+			"130501": 1,
+			"130503": 2
+		},
+		"id": "130503"
+	},
+	"130504": {
+		"name": "Avec l'ignorance vient la folie",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank4.png",
+		"shortIcon": "SkillIcon_1305_Rank4",
+		"numbers": [
+			3
+		],
+		"sall": {},
+		"id": "130504"
+	},
+	"130505": {
+		"name": "À la dérive dans l'immensité",
+		"description": "Niv. de la compétence +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. du talent +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png",
+		"shortIcon": "SkillIcon_1305_BP",
+		"numbers": [],
+		"sall": {
+			"130502": 2,
+			"130504": 2
+		},
+		"id": "130505"
+	},
+	"130506": {
+		"name": "Vérité éternelle",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank6.png",
+		"shortIcon": "SkillIcon_1305_Rank6",
+		"numbers": [
+			1,
+			0.5
+		],
+		"sall": {},
+		"id": "130506"
 	},
 	"800101": {
 		"name": "Étoile tombée du ciel",

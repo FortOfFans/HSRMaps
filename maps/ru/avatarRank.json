@@ -2293,7 +2293,7 @@
 	},
 	"121301": {
 		"name": "Окутанный небесами",
-		"description": "Увеличивает макс. уровень складывания статуса Праведное сердце до <unbreak>#1[i]</unbreak>. Каждый удар даёт 1 доп. уровень этого статуса.",
+		"description": "Увеличивает макс. уровень складывания статуса Праведное сердце на <unbreak>#1[i]</unbreak>. Каждый удар даёт 1 доп. уровень этого статуса.",
 		"icon": "SpriteOutput/SkillIcons/1213/SkillIcon_1213_Rank1.png",
 		"shortIcon": "SkillIcon_1213_Rank1",
 		"numbers": [
@@ -2359,8 +2359,72 @@
 		"sall": {},
 		"id": "121306"
 	},
+	"121401": {
+		"name": "Скованные внутренние демоны",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank1.png",
+		"shortIcon": "SkillIcon_1214_Rank1",
+		"numbers": [
+			0.4
+		],
+		"sall": {},
+		"id": "121401"
+	},
+	"121402": {
+		"name": "Уничтожение желания",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank2.png",
+		"shortIcon": "SkillIcon_1214_Rank2",
+		"numbers": [
+			0.05
+		],
+		"sall": {},
+		"id": "121402"
+	},
+	"121403": {
+		"name": "Дукка",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png",
+		"shortIcon": "SkillIcon_1214_BP",
+		"numbers": [],
+		"sall": {
+			"121401": 1,
+			"121402": 2
+		},
+		"id": "121403"
+	},
+	"121404": {
+		"name": "Уничтожение порождения зла",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank4.png",
+		"shortIcon": "SkillIcon_1214_Rank4",
+		"numbers": [
+			0.4,
+			2
+		],
+		"sall": {},
+		"id": "121404"
+	},
+	"121405": {
+		"name": "Повелитель духов",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png",
+		"shortIcon": "SkillIcon_1214_Ultra",
+		"numbers": [],
+		"sall": {
+			"121403": 2,
+			"121404": 2
+		},
+		"id": "121405"
+	},
+	"121406": {
+		"name": "Скульптор жизни и смерти",
+		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank6.png",
+		"shortIcon": "SkillIcon_1215_Rank6",
+		"numbers": [
+			6
+		],
+		"sall": {},
+		"id": "121406"
+	},
 	"121501": {
 		"name": "Одно сердце",
+		"description": "Когда союзник с эффектом сверхспособности Ханья побеждает противника, её действие продвигается вперёд на <unbreak>#1[i]%</unbreak>. Этот эффект может сработать только <unbreak>#2[i]</unbreak> раз за ход.",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank1.png",
 		"shortIcon": "SkillIcon_1215_Rank1",
 		"numbers": [
@@ -2372,6 +2436,7 @@
 	},
 	"121502": {
 		"name": "Два взгляда",
+		"description": "Использование навыка повышает скорость персонажа на <unbreak>#1[i]%</unbreak> на <unbreak>#2[i]</unbreak> ход.",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank2.png",
 		"shortIcon": "SkillIcon_1215_Rank2",
 		"numbers": [
@@ -2383,6 +2448,7 @@
 	},
 	"121503": {
 		"name": "Три искушения",
+		"description": "Уровень навыка повышается на 2, максимальный уровень - <unbreak>15</unbreak>. Уровень базовой атаки повышается на 1, максимальный уровень - <unbreak>10</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_BP.png",
 		"shortIcon": "SkillIcon_1215_BP",
 		"numbers": [],
@@ -2394,6 +2460,7 @@
 	},
 	"121504": {
 		"name": "Четыре истины",
+		"description": "Длительность сверхспособности дополнительно увеличивается на <unbreak>#1[i]</unbreak> ход.",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank4.png",
 		"shortIcon": "SkillIcon_1215_Rank4",
 		"numbers": [
@@ -2404,6 +2471,7 @@
 	},
 	"121505": {
 		"name": "Пять скандх",
+		"description": "Уровень сверхспособности повышается на 2, максимальный уровень - <unbreak>15</unbreak>. Уровень таланта повышается на 2, максимальный уровень - <unbreak>15</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Ultra.png",
 		"shortIcon": "SkillIcon_1215_Ultra",
 		"numbers": [],
@@ -2415,37 +2483,42 @@
 	},
 	"121506": {
 		"name": "Шесть заслуг",
+		"description": "Эффект повышения урона, описанный в таланте персонажа, дополнительно повышает урон на <unbreak>#1[i]%</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank6.png",
 		"shortIcon": "SkillIcon_1215_Rank6",
 		"numbers": [
-			1
+			0.1
 		],
 		"sall": {},
 		"id": "121506"
 	},
 	"121701": {
 		"name": "Одержимость хелиоби, пристанище зла",
+		"description": "Длительность вызванного талантом статуса Жертвенность жизни увеличивается на <unbreak>#2[i]</unbreak> ход. Пока Хохо имеет этот статус, скорость всех союзников повышается на <unbreak>#1[i]%</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank1.png",
 		"shortIcon": "SkillIcon_1217_Rank1",
 		"numbers": [
-			0.2,
+			0.12,
 			1
 		],
 		"sall": {},
 		"id": "121701"
 	},
 	"121702": {
-		"name": "Дух в хвосте, запечатанный судьями",
+		"name": "В хвосте дух, запечатанный судьями",
+		"description": "Если союзник Хохо получает добивающий удар, пока она имеет статус Жертвенность жизни, он не становится неспособным сражаться. Вместо этого Хохо немедленно восстанавливает <unbreak>#1[i]%</unbreak> HP этого союзника, после чего длительность Жертвенности жизни уменьшается на 1 ход. Этот эффект может сработать до <unbreak>#2[i]</unbreak> раз за бой.",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank2.png",
 		"shortIcon": "SkillIcon_1217_Rank2",
 		"numbers": [
-			1
+			0.5,
+			2
 		],
 		"sall": {},
 		"id": "121702"
 	},
 	"121703": {
-		"name": "Разрушительная плоть, словно пламя для мотыльков",
+		"name": "Проклятая судьбой, словно пламя для мотыльков",
+		"description": "Уровень сверхспособности повышается на 2, максимальный уровень - <unbreak>15</unbreak>. Уровень таланта повышается на 2, максимальный уровень - <unbreak>15</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Ultra.png",
 		"shortIcon": "SkillIcon_1217_Ultra",
 		"numbers": [],
@@ -2456,7 +2529,8 @@
 		"id": "121703"
 	},
 	"121704": {
-		"name": "В извечном конфликте, не расставаясь",
+		"name": "Извечный конфликт, сплетённая жизнь",
+		"description": "Когда Хохо исцеляет союзника при помощи навыка или активации эффекта таланта, её исходящее исцеление повышается пропорционально тому, насколько низко текущее HP цели, до макс. <unbreak>#1[i]%</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank4.png",
 		"shortIcon": "SkillIcon_1217_Rank4",
 		"numbers": [
@@ -2467,6 +2541,7 @@
 	},
 	"121705": {
 		"name": "Избавление от зла, указом десяти владык",
+		"description": "Уровень навыка повышается на 2, максимальный уровень - <unbreak>15</unbreak>. Уровень базовой атаки повышается на 1, максимальный уровень - <unbreak>10</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_BP.png",
 		"shortIcon": "SkillIcon_1217_BP",
 		"numbers": [],
@@ -2477,7 +2552,8 @@
 		"id": "121705"
 	},
 	"121706": {
-		"name": "Общая цель, совместная судьба",
+		"name": "Единая цель, общая судьба",
+		"description": "Когда Хохо исцеляет союзника, наносимый им урон повышается на <unbreak>#1[i]%</unbreak> на <unbreak>#2[i]</unbreak> хода.",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank6.png",
 		"shortIcon": "SkillIcon_1217_Rank6",
 		"numbers": [
@@ -2488,6 +2564,8 @@
 		"id": "121706"
 	},
 	"130201": {
+		"name": "Изъян в царстве эстетики",
+		"description": "Каждый уровень статуса Апофеоз дополнительно повышает крит. урон на <unbreak>#1[i]%</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank1.png",
 		"shortIcon": "SkillIcon_1302_Rank1",
 		"numbers": [
@@ -2497,6 +2575,8 @@
 		"id": "130201"
 	},
 	"130202": {
+		"name": "Смирение агата",
+		"description": "Если во время использования сверхспособности количество противников на поле боя выше или равно <unbreak>#1[i]</unbreak>, то сила атаки персонажа повышается на <unbreak>#2[i]%</unbreak> на <unbreak>#3[i]</unbreak> ход.",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank2.png",
 		"shortIcon": "SkillIcon_1302_Rank2",
 		"numbers": [
@@ -2508,6 +2588,8 @@
 		"id": "130202"
 	},
 	"130203": {
+		"name": "Тернистый путь к славе",
+		"description": "Уровень навыка повышается на 2, максимальный уровень - <unbreak>15</unbreak>. Уровень таланта повышается на 2, максимальный уровень - <unbreak>15</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_BP.png",
 		"shortIcon": "SkillIcon_1302_BP",
 		"numbers": [],
@@ -2518,6 +2600,8 @@
 		"id": "130203"
 	},
 	"130204": {
+		"name": "Подношение горна",
+		"description": "В начале боя персонаж получает <unbreak>#1[i]</unbreak> ур. статуса Апофеоз, а макс. количество уровней эффекта таланта персонажа увеличивается на <unbreak>#2[i]</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank4.png",
 		"shortIcon": "SkillIcon_1302_Rank4",
 		"numbers": [
@@ -2528,16 +2612,21 @@
 		"id": "130204"
 	},
 	"130205": {
+		"name": "Где-то во вселенной идёт снег",
+		"description": "Уровень сверхспособности повышается на 2, максимальный уровень - <unbreak>15</unbreak>. Уровень базовой атаки повышается на 1, максимальный уровень - <unbreak>10</unbreak>.",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Ultra.png",
 		"shortIcon": "SkillIcon_1302_Ultra",
 		"numbers": [],
 		"sall": {
 			"130201": 1,
-			"130203": 2
+			"130203": 2,
+			"130214": 2
 		},
 		"id": "130205"
 	},
 	"130206": {
+		"name": "«Твоё» великолепие",
+		"description": "Использование сверхспособности игнорирует <unbreak>#1[i]%</unbreak> защиты противника.",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank6.png",
 		"shortIcon": "SkillIcon_1302_Rank6",
 		"numbers": [
@@ -2545,6 +2634,128 @@
 		],
 		"sall": {},
 		"id": "130206"
+	},
+	"130301": {
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank1.png",
+		"shortIcon": "SkillIcon_1303_Rank1",
+		"numbers": [
+			1,
+			0.4
+		],
+		"sall": {},
+		"id": "130301"
+	},
+	"130302": {
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank2.png",
+		"shortIcon": "SkillIcon_1303_Rank2",
+		"numbers": [
+			1,
+			2
+		],
+		"sall": {},
+		"id": "130302"
+	},
+	"130303": {
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png",
+		"shortIcon": "SkillIcon_1303_Ultra",
+		"numbers": [],
+		"sall": {
+			"130303": 2,
+			"130304": 2
+		},
+		"id": "130303"
+	},
+	"130304": {
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank4.png",
+		"shortIcon": "SkillIcon_1303_Rank4",
+		"numbers": [
+			0.4
+		],
+		"sall": {},
+		"id": "130304"
+	},
+	"130305": {
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png",
+		"shortIcon": "SkillIcon_1303_BP",
+		"numbers": [],
+		"sall": {
+			"130301": 1,
+			"130302": 2
+		},
+		"id": "130305"
+	},
+	"130306": {
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank6.png",
+		"shortIcon": "SkillIcon_1303_Rank6",
+		"numbers": [
+			1,
+			1.8,
+			0.1,
+			0.24,
+			2.4
+		],
+		"sall": {},
+		"id": "130306"
+	},
+	"130501": {
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank1.png",
+		"shortIcon": "SkillIcon_1305_Rank1",
+		"numbers": [
+			2,
+			1,
+			2
+		],
+		"sall": {},
+		"id": "130501"
+	},
+	"130502": {
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank2.png",
+		"shortIcon": "SkillIcon_1305_Rank2",
+		"numbers": [
+			0.2,
+			4
+		],
+		"sall": {},
+		"id": "130502"
+	},
+	"130503": {
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png",
+		"shortIcon": "SkillIcon_1305_Ultra",
+		"numbers": [],
+		"sall": {
+			"130501": 1,
+			"130503": 2
+		},
+		"id": "130503"
+	},
+	"130504": {
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank4.png",
+		"shortIcon": "SkillIcon_1305_Rank4",
+		"numbers": [
+			3
+		],
+		"sall": {},
+		"id": "130504"
+	},
+	"130505": {
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png",
+		"shortIcon": "SkillIcon_1305_BP",
+		"numbers": [],
+		"sall": {
+			"130502": 2,
+			"130504": 2
+		},
+		"id": "130505"
+	},
+	"130506": {
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank6.png",
+		"shortIcon": "SkillIcon_1305_Rank6",
+		"numbers": [
+			1,
+			0.5
+		],
+		"sall": {},
+		"id": "130506"
 	},
 	"800101": {
 		"name": "Падающая звезда",

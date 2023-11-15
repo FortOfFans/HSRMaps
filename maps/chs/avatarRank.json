@@ -2359,6 +2359,75 @@
 		"sall": {},
 		"id": "121306"
 	},
+	"121401": {
+		"name": "缚心魔",
+		"description": "天赋的追加攻击造成的伤害提高<unbreak>#1[i]%</unbreak>。",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank1.png",
+		"shortIcon": "SkillIcon_1214_Rank1",
+		"numbers": [
+			0.4
+		],
+		"sall": {},
+		"id": "121401"
+	},
+	"121402": {
+		"name": "破五尘",
+		"description": "天赋的追加攻击无视弱点属性削减敌方的韧性，同时为自身恢复等同于雪衣<unbreak>#1[i]%</unbreak>生命上限的生命值。击破弱点时，触发量子属性的弱点击破效果。",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank2.png",
+		"shortIcon": "SkillIcon_1214_Rank2",
+		"numbers": [
+			0.05
+		],
+		"sall": {},
+		"id": "121402"
+	},
+	"121403": {
+		"name": "止苦谛",
+		"description": "战技等级+2，最多不超过<unbreak>15</unbreak>级；普攻等级+1，最多不超过<unbreak>10</unbreak>级。",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png",
+		"shortIcon": "SkillIcon_1214_BP",
+		"numbers": [],
+		"sall": {
+			"121401": 1,
+			"121402": 2
+		},
+		"id": "121403"
+	},
+	"121404": {
+		"name": "断业根",
+		"description": "施放终结技时，击破特攻提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank4.png",
+		"shortIcon": "SkillIcon_1214_Rank4",
+		"numbers": [
+			0.4,
+			2
+		],
+		"sall": {},
+		"id": "121404"
+	},
+	"121405": {
+		"name": "勾灵神",
+		"description": "终结技等级+2，最多不超过<unbreak>15</unbreak>级；天赋等级+2，最多不超过<unbreak>15</unbreak>级。",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png",
+		"shortIcon": "SkillIcon_1214_Ultra",
+		"numbers": [],
+		"sall": {
+			"121403": 2,
+			"121404": 2
+		},
+		"id": "121405"
+	},
+	"121406": {
+		"name": "司死生",
+		"description": "【恶报】的层数上限降低至<unbreak>#1[i]</unbreak>层。",
+		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank6.png",
+		"shortIcon": "SkillIcon_1215_Rank6",
+		"numbers": [
+			6
+		],
+		"sall": {},
+		"id": "121406"
+	},
 	"121501": {
 		"name": "一心",
 		"description": "持有终结技效果的我方目标消灭敌方目标时，寒鸦行动提前<unbreak>#1[i]%</unbreak>，该效果每回合只能触发<unbreak>#2[i]</unbreak>次。",
@@ -2420,22 +2489,22 @@
 	},
 	"121506": {
 		"name": "六正",
-		"description": "施放战技击中处于【承负】状态下的目标时，额外恢复<unbreak>#1[i]</unbreak>个战技点。",
+		"description": "天赋的伤害提高效果额外提高<unbreak>#1[i]%</unbreak>。",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank6.png",
 		"shortIcon": "SkillIcon_1215_Rank6",
 		"numbers": [
-			1
+			0.1
 		],
 		"sall": {},
 		"id": "121506"
 	},
 	"121701": {
 		"name": "岁阳寄体，妖邪依凭",
-		"description": "施放战技时使我方全体提高<unbreak>#1[i]%</unbreak>的速度，持续<unbreak>#2[i]</unbreak>回合；施放终结技后，下次施放战技不消耗战技点。",
+		"description": "天赋产生的【禳命】持续时间延长<unbreak>#2[i]</unbreak>回合，且当藿藿拥有【禳命】时我方全体提高<unbreak>#1[i]%</unbreak>的速度。",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank1.png",
 		"shortIcon": "SkillIcon_1217_Rank1",
 		"numbers": [
-			0.2,
+			0.12,
 			1
 		],
 		"sall": {},
@@ -2443,11 +2512,12 @@
 	},
 	"121702": {
 		"name": "判官书符，镇尾锁灵",
-		"description": "触发天赋为我方目标提供治疗时，解除目标<unbreak>#1[i]</unbreak>个负面效果。",
+		"description": "当藿藿拥有【禳命】时，若我方目标受到致命攻击，不会陷入无法战斗状态，并立即回复等同于其自身生命上限<unbreak>#1[i]%</unbreak>的生命值，使【禳命】的持续回合数减1。该效果单场战斗中可以触发<unbreak>#2[i]</unbreak>次。",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank2.png",
 		"shortIcon": "SkillIcon_1217_Rank2",
 		"numbers": [
-			1
+			0.5,
+			2
 		],
 		"sall": {},
 		"id": "121702"
@@ -2489,7 +2559,7 @@
 	},
 	"121706": {
 		"name": "同休共戚，相须而行",
-		"description": "施放战技或触发天赋为我方目标提供治疗时，使目标造成的伤害提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。",
+		"description": "为我方目标提供治疗时，使目标造成的伤害提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank6.png",
 		"shortIcon": "SkillIcon_1217_Rank6",
 		"numbers": [
@@ -2555,7 +2625,8 @@
 		"numbers": [],
 		"sall": {
 			"130201": 1,
-			"130203": 2
+			"130203": 2,
+			"130214": 2
 		},
 		"id": "130205"
 	},
@@ -2569,6 +2640,152 @@
 		],
 		"sall": {},
 		"id": "130206"
+	},
+	"130301": {
+		"name": "神经仿绣图",
+		"description": "【弦外音】的持续时间延长<unbreak>#1[i]</unbreak>回合。当阮梅拥有【弦外音】时，我方全体攻击力提高<unbreak>#2[i]%</unbreak>。",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank1.png",
+		"shortIcon": "SkillIcon_1303_Rank1",
+		"numbers": [
+			1,
+			0.4
+		],
+		"sall": {},
+		"id": "130301"
+	},
+	"130302": {
+		"name": "芦前漫步",
+		"description": "当敌方目标的弱点被击破时，阮•梅自身击破特攻提高<unbreak>#1[i]%</unbreak>，持续<unbreak>#2[i]</unbreak>回合。",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank2.png",
+		"shortIcon": "SkillIcon_1303_Rank2",
+		"numbers": [
+			1,
+			2
+		],
+		"sall": {},
+		"id": "130302"
+	},
+	"130303": {
+		"name": "彩缎烟衫绿婆娑",
+		"description": "终结技等级+2，最多不超过<unbreak>15</unbreak>级；天赋等级+2，最多不超过<unbreak>15</unbreak>级。",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png",
+		"shortIcon": "SkillIcon_1303_Ultra",
+		"numbers": [],
+		"sall": {
+			"130303": 2,
+			"130304": 2
+		},
+		"id": "130303"
+	},
+	"130304": {
+		"name": "寻神铜镜前",
+		"description": "当阮•梅在场，我方全体对处于弱点击破状态的敌方目标造成伤害时，暴击伤害提高<unbreak>#1[i]%</unbreak>。",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank4.png",
+		"shortIcon": "SkillIcon_1303_Rank4",
+		"numbers": [
+			0.4
+		],
+		"sall": {},
+		"id": "130304"
+	},
+	"130305": {
+		"name": "手弄慵鬟玲珑钗",
+		"description": "战技等级+2，最多不超过<unbreak>15</unbreak>级；普攻等级+1，最多不超过<unbreak>10</unbreak>级。",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png",
+		"shortIcon": "SkillIcon_1303_BP",
+		"numbers": [],
+		"sall": {
+			"130301": 1,
+			"130302": 2
+		},
+		"id": "130305"
+	},
+	"130306": {
+		"name": "半脱纱巾落团扇",
+		"description": "终结技展开的结界持续时间延长<unbreak>#1[i]</unbreak>回合。阮•梅在战斗中击破特攻大于<unbreak>#2[i]%</unbreak>时，每超过<unbreak>#3[i]%</unbreak>，终结技造成的附加伤害倍率提高<unbreak>#4[i]%</unbreak>，最高不超过<unbreak>#5[i]%</unbreak>。",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank6.png",
+		"shortIcon": "SkillIcon_1303_Rank6",
+		"numbers": [
+			1,
+			1.8,
+			0.1,
+			0.24,
+			2.4
+		],
+		"sall": {},
+		"id": "130306"
+	},
+	"130501": {
+		"name": "倨傲生祸患",
+		"description": "战斗开始时，获得天赋的增益效果，每种增益效果各获得<unbreak>#3[i]</unbreak>层。天赋的增益效果的叠加层数增加<unbreak>#1[i]</unbreak>层，持续回合增加<unbreak>#2[i]</unbreak>回合。",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank1.png",
+		"shortIcon": "SkillIcon_1305_Rank1",
+		"numbers": [
+			2,
+			1,
+			2
+		],
+		"sall": {},
+		"id": "130501"
+	},
+	"130502": {
+		"name": "显微而阐幽",
+		"description": "天赋的追加攻击击中目标时，目标每有1个负面效果，则额外造成等同于真理医生<unbreak>#1[i]%</unbreak>攻击力的虚数属性附加伤害。该效果在每次追加攻击中最多触发<unbreak>#2[i]</unbreak>次。",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank2.png",
+		"shortIcon": "SkillIcon_1305_Rank2",
+		"numbers": [
+			0.2,
+			4
+		],
+		"sall": {},
+		"id": "130502"
+	},
+	"130503": {
+		"name": "认识你自己",
+		"description": "终结技等级+2，最多不超过<unbreak>15</unbreak>级；普攻等级+1，最多不超过<unbreak>10</unbreak>级。",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png",
+		"shortIcon": "SkillIcon_1305_Ultra",
+		"numbers": [],
+		"sall": {
+			"130501": 1,
+			"130503": 2
+		},
+		"id": "130503"
+	},
+	"130504": {
+		"name": "盲目造痴愚",
+		"description": "施放战技每次获得增益效果时，真理医生额外获得<unbreak>#1[i]</unbreak>点能量。",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank4.png",
+		"shortIcon": "SkillIcon_1305_Rank4",
+		"numbers": [
+			3
+		],
+		"sall": {},
+		"id": "130504"
+	},
+	"130505": {
+		"name": "海阔舟无楫",
+		"description": "战技等级+2，最多不超过<unbreak>15</unbreak>级；天赋等级+2，最多不超过<unbreak>15</unbreak>级。",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png",
+		"shortIcon": "SkillIcon_1305_BP",
+		"numbers": [],
+		"sall": {
+			"130502": 2,
+			"130504": 2
+		},
+		"id": "130505"
+	},
+	"130506": {
+		"name": "永恒唯真理",
+		"description": "【智者的短见】的触发效果额外增加<unbreak>#1[i]</unbreak>次，【智者的短见】触发天赋的追加攻击效果造成的伤害提高<unbreak>#2[i]%</unbreak>。",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank6.png",
+		"shortIcon": "SkillIcon_1305_Rank6",
+		"numbers": [
+			1,
+			0.5
+		],
+		"sall": {},
+		"id": "130506"
 	},
 	"800101": {
 		"name": "坠临万界的星芒",

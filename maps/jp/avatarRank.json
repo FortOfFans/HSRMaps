@@ -196,7 +196,7 @@
 	},
 	"100306": {
 		"name": "開拓！",
-		"description": "必殺技のヒット数+2、1ヒットごとにランダムな敵単体に、本来のダメージ<unbreak>#1[i]%</unbreak>分の炎属性ダメージを与える。",
+		"description": "必殺技を発動した時、さらに2ヒットし、1ヒットごとにランダムな敵単体に本来のダメージ<unbreak>#1[i]%</unbreak>分の炎属性ダメージを与える。",
 		"icon": "SpriteOutput/SkillIcons/1003/SkillIcon_1003_Rank6.png",
 		"shortIcon": "SkillIcon_1003_Rank6",
 		"numbers": [
@@ -275,7 +275,7 @@
 	},
 	"100501": {
 		"name": "無窮に動く！無窮に",
-		"description": "天賦効果により追加攻撃を行う時、<unbreak>#1[i]%</unbreak>の基礎確率でターゲットの持続被ダメージ+<unbreak>#2[i]%</unbreak>、<unbreak>#3[i]</unbreak>ターン継続。",
+		"description": "天賦効果により追加攻撃を行った時、<unbreak>#1[i]%</unbreak>の基礎確率でターゲットの持続被ダメージ+<unbreak>#2[i]%</unbreak>、<unbreak>#3[i]</unbreak>ターン継続。",
 		"icon": "SpriteOutput/SkillIcons/1005/SkillIcon_1005_Rank1.png",
 		"shortIcon": "SkillIcon_1005_Rank1",
 		"numbers": [
@@ -381,7 +381,7 @@
 	},
 	"100604": {
 		"name": "バウンス攻撃",
-		"description": "必殺技で敵を攻撃した後、その敵にあるデバフ1つにつき、さらに銀狼の攻撃力<unbreak>#1[i]%</unbreak>分の量子属性付加ダメージを与える。この効果は1回の必殺技で、最大で<unbreak>#2[i]</unbreak>回触発できる。",
+		"description": "必殺技で敵を攻撃した後、その敵にあるデバフ1つにつき、さらに銀狼の攻撃力<unbreak>#1[i]%</unbreak>分の量子属性付加ダメージを与える。この効果は1回の必殺技で、最大で<unbreak>#2[i]</unbreak>回発動できる。",
 		"icon": "SpriteOutput/SkillIcons/1006/SkillIcon_1006_Rank4.png",
 		"shortIcon": "SkillIcon_1006_Rank4",
 		"numbers": [
@@ -656,7 +656,7 @@
 	},
 	"110104": {
 		"name": "不意打ち",
-		"description": "他の味方が、弱点が風属性の敵に通常攻撃を行った後、ブローニャは追加攻撃を発動し、その敵に通常攻撃のダメージ<unbreak>#1[i]%</unbreak>分の風属性ダメージを与える、この効果はターンが回ってくるたびに1回発動できる。",
+		"description": "他の味方が、弱点が風属性の敵に通常攻撃を行った後、ブローニャは追加攻撃を行い、その敵に通常攻撃のダメージ<unbreak>#1[i]%</unbreak>分の風属性ダメージを与える、この効果はターンが回ってくるたびに1回発動できる。",
 		"icon": "SpriteOutput/SkillIcons/1101/SkillIcon_1101_Rank4.png",
 		"shortIcon": "SkillIcon_1101_Rank4",
 		"numbers": [
@@ -886,7 +886,7 @@
 	},
 	"110406": {
 		"name": "不屈の決意",
-		"description": "天賦触発時、ジェパードが即座に行動し、HPの回復量がさらに自身の最大HP<unbreak>#1[i]%</unbreak>分アップする。",
+		"description": "天賦発動時、ジェパードが即座に行動し、HPの回復量がさらに自身の最大HP<unbreak>#1[i]%</unbreak>分アップする。",
 		"icon": "SpriteOutput/SkillIcons/1104/SkillIcon_1104_Rank6.png",
 		"shortIcon": "SkillIcon_1104_Rank6",
 		"numbers": [
@@ -2359,9 +2359,78 @@
 		"sall": {},
 		"id": "121306"
 	},
+	"121401": {
+		"name": "心魔縛り",
+		"description": "天賦の追加攻撃の与ダメージ+<unbreak>#1[i]%</unbreak>。",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank1.png",
+		"shortIcon": "SkillIcon_1214_Rank1",
+		"numbers": [
+			0.4
+		],
+		"sall": {},
+		"id": "121401"
+	},
+	"121402": {
+		"name": "五塵破り",
+		"description": "天賦の追加攻撃は敵の弱点を無視して靭性を削り、自身の最大HP<unbreak>#1[i]%</unbreak>分のHPを回復する。敵を弱点撃破した時、量子属性の弱点撃破効果を触発する。",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank2.png",
+		"shortIcon": "SkillIcon_1214_Rank2",
+		"numbers": [
+			0.05
+		],
+		"sall": {},
+		"id": "121402"
+	},
+	"121403": {
+		"name": "苦諦止め",
+		"description": "戦闘スキルのLv.+2、最大Lv.<unbreak>15</unbreak>まで。通常攻撃のLv.+1、最大Lv.<unbreak>10</unbreak>まで。",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_BP.png",
+		"shortIcon": "SkillIcon_1214_BP",
+		"numbers": [],
+		"sall": {
+			"121401": 1,
+			"121402": 2
+		},
+		"id": "121403"
+	},
+	"121404": {
+		"name": "業根断ち",
+		"description": "必殺技を発動した時、撃破特効+<unbreak>#1[i]%</unbreak>、<unbreak>#2[i]</unbreak>ターン継続。",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Rank4.png",
+		"shortIcon": "SkillIcon_1214_Rank4",
+		"numbers": [
+			0.4,
+			2
+		],
+		"sall": {},
+		"id": "121404"
+	},
+	"121405": {
+		"name": "霊神勾え",
+		"description": "必殺技のLv.+2、最大Lv.<unbreak>15</unbreak>まで。天賦のLv.+2、最大Lv.<unbreak>15</unbreak>まで。",
+		"icon": "SpriteOutput/SkillIcons/1214/SkillIcon_1214_Ultra.png",
+		"shortIcon": "SkillIcon_1214_Ultra",
+		"numbers": [],
+		"sall": {
+			"121403": 2,
+			"121404": 2
+		},
+		"id": "121405"
+	},
+	"121406": {
+		"name": "生死司る",
+		"description": "「悪業」の累積上限が<unbreak>#1[i]</unbreak>層になる。",
+		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank6.png",
+		"shortIcon": "SkillIcon_1215_Rank6",
+		"numbers": [
+			6
+		],
+		"sall": {},
+		"id": "121406"
+	},
 	"121501": {
 		"name": "一心",
-		"description": "必殺技効果を持つ味方が敵を倒した時、寒鴉の行動順が<unbreak>#1[i]%</unbreak>早まる。この効果はターンが回ってくるたびに<unbreak>#2[i]</unbreak>回まで発動できる。",
+		"description": "寒鴉の必殺技のバフを持つ味方が敵を倒した時、寒鴉の行動順が<unbreak>#1[i]%</unbreak>早まる。この効果はターンが回ってくるたびに<unbreak>#2[i]</unbreak>回まで発動できる。",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank1.png",
 		"shortIcon": "SkillIcon_1215_Rank1",
 		"numbers": [
@@ -2397,7 +2466,7 @@
 	},
 	"121504": {
 		"name": "四諦",
-		"description": "さらに必殺技の継続時間+<unbreak>#1[i]</unbreak>ターン。",
+		"description": "必殺技の継続時間+<unbreak>#1[i]</unbreak>ターン。",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank4.png",
 		"shortIcon": "SkillIcon_1215_Rank4",
 		"numbers": [
@@ -2420,34 +2489,35 @@
 	},
 	"121506": {
 		"name": "六正",
-		"description": "戦闘スキルが「承負」を持つ敵に命中した時、さらにSPを<unbreak>#1[i]</unbreak>回復する。",
+		"description": "天賦のダメージアップ効果がさらに<unbreak>#1[i]%</unbreak>アップ。",
 		"icon": "SpriteOutput/SkillIcons/1215/SkillIcon_1215_Rank6.png",
 		"shortIcon": "SkillIcon_1215_Rank6",
 		"numbers": [
-			1
+			0.1
 		],
 		"sall": {},
 		"id": "121506"
 	},
 	"121701": {
 		"name": "歳陽の拠り所",
-		"description": "戦闘スキルを発動した時、味方全体の速度+<unbreak>#1[i]%</unbreak>、<unbreak>#2[i]</unbreak>ターン継続。必殺技を発動した後、次の戦闘スキルがSPを消費しなくなる。",
+		"description": "天賦による「厄払い」の継続時間+<unbreak>#2[i]</unbreak>ターン。フォフォに「厄払い」がある時、味方全体の速度+<unbreak>#1[i]%</unbreak>。",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank1.png",
 		"shortIcon": "SkillIcon_1217_Rank1",
 		"numbers": [
-			0.2,
+			0.12,
 			1
 		],
 		"sall": {},
 		"id": "121701"
 	},
 	"121702": {
-		"name": "邪霊納める尻尾",
-		"description": "天賦を発動して味方を治癒した時、その味方のデバフを<unbreak>#1[i]</unbreak>つ解除する。",
+		"name": "邪霊を宿した尻尾",
+		"description": "フォフォに「厄払い」がある時、味方はHPが0になるダメージを受けても戦闘不能状態にならず、自身の最大HP<unbreak>#1[i]%</unbreak>分のHPを回復する。この効果を発動した後、「厄払い」の継続時間-1ターン。この効果は一度の戦闘で<unbreak>#2[i]</unbreak>回まで発動できる。",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank2.png",
 		"shortIcon": "SkillIcon_1217_Rank2",
 		"numbers": [
-			1
+			0.5,
+			2
 		],
 		"sall": {},
 		"id": "121702"
@@ -2465,8 +2535,8 @@
 		"id": "121703"
 	},
 	"121704": {
-		"name": "離れぬ悪鬼、止まぬ揉め事",
-		"description": "戦闘スキルまたは天賦を発動し、味方を治癒した時、ターゲットの残りHPが少ないほど治癒量がアップする、最大でフォフォの治癒量+<unbreak>#1[i]%</unbreak>。",
+		"name": "離れぬ悪鬼\\n絶えぬ揉め事",
+		"description": "戦闘スキルまたは天賦を発動し、味方に治癒を行った時、その味方の残りHPが少ないほど治癒量がアップする、最大でフォフォの治癒量+<unbreak>#1[i]%</unbreak>。",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank4.png",
 		"shortIcon": "SkillIcon_1217_Rank4",
 		"numbers": [
@@ -2489,7 +2559,7 @@
 	},
 	"121706": {
 		"name": "苦楽を共にする仲間",
-		"description": "戦闘スキルまたは天賦を発動し、味方を治癒した時、その味方の与ダメージ+<unbreak>#1[i]%</unbreak>、<unbreak>#2[i]</unbreak>ターン継続。",
+		"description": "味方に治癒を行った時、その味方の与ダメージ+<unbreak>#1[i]%</unbreak>、<unbreak>#2[i]</unbreak>ターン継続。",
 		"icon": "SpriteOutput/SkillIcons/1217/SkillIcon_1217_Rank6.png",
 		"shortIcon": "SkillIcon_1217_Rank6",
 		"numbers": [
@@ -2511,8 +2581,8 @@
 		"id": "130201"
 	},
 	"130202": {
-		"name": "瑪瑙の謙虚",
-		"description": "必殺技を発動する時、敵が<unbreak>#1[i]</unbreak>体以上の時、攻撃力+<unbreak>#2[i]%</unbreak>、<unbreak>#3[i]</unbreak>ターン継続。",
+		"name": "メノウの謙遜",
+		"description": "必殺技を発動した時、フィールド上の敵が<unbreak>#1[i]</unbreak>体以上の場合、攻撃力+<unbreak>#2[i]%</unbreak>、<unbreak>#3[i]</unbreak>ターン継続。",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank2.png",
 		"shortIcon": "SkillIcon_1302_Rank2",
 		"numbers": [
@@ -2524,7 +2594,7 @@
 		"id": "130202"
 	},
 	"130203": {
-		"name": "イバラの道の栄光",
+		"name": "荊棘の道の栄光",
 		"description": "戦闘スキルのLv.+2、最大Lv.<unbreak>15</unbreak>まで。天賦のLv.+2、最大Lv.<unbreak>15</unbreak>まで。",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_BP.png",
 		"shortIcon": "SkillIcon_1302_BP",
@@ -2555,12 +2625,13 @@
 		"numbers": [],
 		"sall": {
 			"130201": 1,
-			"130203": 2
+			"130203": 2,
+			"130214": 2
 		},
 		"id": "130205"
 	},
 	"130206": {
-		"name": "「あなた」の輝き",
+		"name": "「貴女」の輝き",
 		"description": "必殺技を発動した時、敵の防御力を<unbreak>#1[i]%</unbreak>無視する。",
 		"icon": "SpriteOutput/SkillIcons/1302/SkillIcon_1302_Rank6.png",
 		"shortIcon": "SkillIcon_1302_Rank6",
@@ -2569,6 +2640,152 @@
 		],
 		"sall": {},
 		"id": "130206"
+	},
+	"130301": {
+		"name": "神経刺繍図",
+		"description": "「弦外の音」の継続時間+<unbreak>#1[i]</unbreak>ターン。ルアン・メェイに「弦外の音」がある時、味方全体の攻撃力+<unbreak>#2[i]%</unbreak>。",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank1.png",
+		"shortIcon": "SkillIcon_1303_Rank1",
+		"numbers": [
+			1,
+			0.4
+		],
+		"sall": {},
+		"id": "130301"
+	},
+	"130302": {
+		"name": "通りし芒の道",
+		"description": "敵が弱点撃破された時、ルアン・メェイの撃破特効+<unbreak>#1[i]%</unbreak>、<unbreak>#2[i]</unbreak>ターン継続。",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank2.png",
+		"shortIcon": "SkillIcon_1303_Rank2",
+		"numbers": [
+			1,
+			2
+		],
+		"sall": {},
+		"id": "130302"
+	},
+	"130303": {
+		"name": "煙衫を綾取る緑意",
+		"description": "必殺技のLv.+2、最大Lv.<unbreak>15</unbreak>まで。天賦のLv.+2、最大Lv.<unbreak>15</unbreak>まで。",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Ultra.png",
+		"shortIcon": "SkillIcon_1303_Ultra",
+		"numbers": [],
+		"sall": {
+			"130303": 2,
+			"130304": 2
+		},
+		"id": "130303"
+	},
+	"130304": {
+		"name": "銅鏡前の神探し",
+		"description": "ルアン・メェイがフィールド上にいる場合、弱点撃破状態の敵に対する味方全体の会心ダメージ+<unbreak>#1[i]%</unbreak>。",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank4.png",
+		"shortIcon": "SkillIcon_1303_Rank4",
+		"numbers": [
+			0.4
+		],
+		"sall": {},
+		"id": "130304"
+	},
+	"130305": {
+		"name": "気怠く弄る玲瓏釵",
+		"description": "戦闘スキルのLv.+2、最大Lv.<unbreak>15</unbreak>まで。通常攻撃のLv.+1、最大Lv.<unbreak>10</unbreak>まで。",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_BP.png",
+		"shortIcon": "SkillIcon_1303_BP",
+		"numbers": [],
+		"sall": {
+			"130301": 1,
+			"130302": 2
+		},
+		"id": "130305"
+	},
+	"130306": {
+		"name": "紗巾脱ぎて団扇に落ちる",
+		"description": "必殺技を発動して展開する結界の継続時間+<unbreak>#1[i]</unbreak>ターン。戦闘中にルアン・メェイの撃破特効が<unbreak>#2[i]%</unbreak>を超える時、<unbreak>#3[i]%</unbreak>超過するごとに、必殺技の付加ダメージの倍率+<unbreak>#4[i]%</unbreak>、最大で+<unbreak>#5[i]%</unbreak>。",
+		"icon": "SpriteOutput/SkillIcons/1303/SkillIcon_1303_Rank6.png",
+		"shortIcon": "SkillIcon_1303_Rank6",
+		"numbers": [
+			1,
+			1.8,
+			0.1,
+			0.24,
+			2.4
+		],
+		"sall": {},
+		"id": "130306"
+	},
+	"130501": {
+		"name": "傲慢は災いを生む",
+		"description": "戦闘開始時、天賦のバフをそれぞれ<unbreak>#3[i]</unbreak>層獲得する。天賦のバフの累積可能層数+<unbreak>#1[i]</unbreak>、継続時間+<unbreak>#2[i]</unbreak>ターン。",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank1.png",
+		"shortIcon": "SkillIcon_1305_Rank1",
+		"numbers": [
+			2,
+			1,
+			2
+		],
+		"sall": {},
+		"id": "130501"
+	},
+	"130502": {
+		"name": "微にして幽なるものを露わにす",
+		"description": "天賦の追加攻撃が命中した時、敵にあるデバフ1つにつき、さらにDr.レイシオの攻撃力<unbreak>#1[i]%</unbreak>の虚数属性付加ダメージを与える。この効果は1回の追加攻撃で<unbreak>#2[i]</unbreak>回まで発動できる。",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank2.png",
+		"shortIcon": "SkillIcon_1305_Rank2",
+		"numbers": [
+			0.2,
+			4
+		],
+		"sall": {},
+		"id": "130502"
+	},
+	"130503": {
+		"name": "己を認識せよ",
+		"description": "必殺技のLv.+2、最大Lv.<unbreak>15</unbreak>まで。通常攻撃のLv.+1、最大Lv.<unbreak>10</unbreak>まで。",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Ultra.png",
+		"shortIcon": "SkillIcon_1305_Ultra",
+		"numbers": [],
+		"sall": {
+			"130501": 1,
+			"130503": 2
+		},
+		"id": "130503"
+	},
+	"130504": {
+		"name": "盲目は愚者を造る",
+		"description": "戦闘スキルを発動してバフを獲得するたびに、Dr.レイシオはさらにEPを<unbreak>#1[i]</unbreak>回復する。",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank4.png",
+		"shortIcon": "SkillIcon_1305_Rank4",
+		"numbers": [
+			3
+		],
+		"sall": {},
+		"id": "130504"
+	},
+	"130505": {
+		"name": "櫂無き舟に海は渡れず",
+		"description": "戦闘スキルのLv.+2、最大Lv.<unbreak>15</unbreak>まで。天賦のLv.+2、最大Lv.<unbreak>15</unbreak>まで。",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_BP.png",
+		"shortIcon": "SkillIcon_1305_BP",
+		"numbers": [],
+		"sall": {
+			"130502": 2,
+			"130504": 2
+		},
+		"id": "130505"
+	},
+	"130506": {
+		"name": "ただ真理のみが永遠",
+		"description": "「智者の短慮」の効果を発動する時、追加で<unbreak>#1[i]</unbreak>回発動する。「智者の短慮」によって発動した天賦の追加攻撃の与ダメージ+<unbreak>#2[i]%</unbreak>。",
+		"icon": "SpriteOutput/SkillIcons/1305/SkillIcon_1305_Rank6.png",
+		"shortIcon": "SkillIcon_1305_Rank6",
+		"numbers": [
+			1,
+			0.5
+		],
+		"sall": {},
+		"id": "130506"
 	},
 	"800101": {
 		"name": "万界に墜臨した星芒",

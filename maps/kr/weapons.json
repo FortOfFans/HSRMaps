@@ -1197,12 +1197,12 @@
 		"id": "22000"
 	},
 	"22001": {
-		"name": "저기, 나 여기 있어",
+		"name": "나 여기 있어",
 		"icon": "SpriteOutput/LightConeMediumIcon/22001.png",
 		"shortIcon": "22001",
 		"rarity": "VeryRare",
 		"weaponType": "Priest",
-		"refinements": "장착한 캐릭터의 HP 최대치<color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 전투 스킬 발동 시 치유량이 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다. 지속 시간: <unbreak>#3[i]</unbreak>턴",
+		"refinements": "장착한 캐릭터의 HP 최대치가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 전투 스킬 발동 시 치유량이 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다. 지속 시간: <unbreak>#3[i]</unbreak>턴",
 		"maxHP": 953,
 		"maxATK": 423,
 		"maxDEF": 397,
@@ -1580,7 +1580,7 @@
 		"shortIcon": "23017",
 		"rarity": "SuperRare",
 		"weaponType": "Priest",
-		"refinements": "장착한 캐릭터의 에너지 회복효율이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 장착한 캐릭터가 아군에게 필살기 발동 시 해당 대상은 HP 최대치의 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼 해당 목표의 HP를 회복한다. 장착한 캐릭터가 아군에게 치유 제공 시, 해당 목표의 공격력이 <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> 증가한다. 해당 효과 최대 중첩수: <unbreak>#4[i]</unbreak>스택, 지속 시간: <unbreak>#5[i]</unbreak>턴",
+		"refinements": "장착한 캐릭터의 에너지 회복효율이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 아군이 필살기 발동 시, 장착한 캐릭터는 현재 HP 백분율이 가장 낮은 아군의 HP를 대상 HP 최대치의 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>만큼 회복시킨다. 장착한 캐릭터가 아군에게 치유 제공 시, 해당 아군의 공격력이 <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> 증가한다. 해당 효과 최대 중첩수: <unbreak>#4[i]</unbreak>스택. 지속 시간: <unbreak>#5[i]</unbreak>턴",
 		"maxHP": 1164,
 		"maxATK": 476,
 		"maxDEF": 529,
@@ -1601,7 +1601,7 @@
 		"shortIcon": "23018",
 		"rarity": "SuperRare",
 		"weaponType": "Mage",
-		"refinements": "장착한 캐릭터의 치명타 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 필살기 발동 시 장착한 캐릭터의 에너지 최대치에 따라 장착한 캐릭터가 필살기로 가하는 피해가 증가한다: 에너지 1pt당 <color=#f29e38ff><unbreak>#2[f2]%</unbreak></color> 증가. 최대 <unbreak>#3[i]</unbreak>까지 계산한다",
+		"refinements": "장착한 캐릭터의 치명타 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 필살기 발동 시 자신의 에너지 최대치에 따라 자신이 필살기로 가하는 피해가 증가한다. (에너지 1pt당 <color=#f29e38ff><unbreak>#2[f2]%</unbreak></color> 증가, 최대 <unbreak>#3[i]</unbreak>pt까지 계산)",
 		"maxHP": 1058,
 		"maxATK": 582,
 		"maxDEF": 463,
@@ -1615,6 +1615,48 @@
 			"111003": 14
 		},
 		"id": "23018"
+	},
+	"23019": {
+		"name": "거울 속 지난날의 나",
+		"icon": "SpriteOutput/LightConeMediumIcon/23019.png",
+		"shortIcon": "23019",
+		"rarity": "SuperRare",
+		"weaponType": "Shaman",
+		"refinements": "웨이브 시작 시마다 장착한 캐릭터가 즉시 에너지 <color=#f29e38ff><unbreak>#1[f1]</unbreak></color>pt를 회복한다. 장착한 캐릭터가 전투 스킬을 발동하면 모든 아군이 가하는 피해가 <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> 증가하고, 가속 상태인 아군의 모든 속성 관통이 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가한다. 지속 시간: <unbreak>#4[i]</unbreak>턴",
+		"maxHP": 1058,
+		"maxATK": 529,
+		"maxDEF": 529,
+		"promotion": {
+			"2": 385000,
+			"110161": 4,
+			"110162": 12,
+			"110163": 15,
+			"113001": 20,
+			"113002": 20,
+			"113003": 14
+		},
+		"id": "23019"
+	},
+	"23020": {
+		"name": "순수 사유의 세례",
+		"icon": "SpriteOutput/LightConeMediumIcon/23020.png",
+		"shortIcon": "23020",
+		"rarity": "SuperRare",
+		"weaponType": "Rogue",
+		"refinements": "장착한 캐릭터의 치명타 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 적이 디버프 효과 1개를 보유할 때마다 장착한 캐릭터가 가하는 치명타 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 추가 증가하고, 최대 <unbreak>#3[i]</unbreak>스택 중첩된다. 필살기로 적 공격 시 장착한 캐릭터가 [변론] 효과를 획득해 가하는 피해가 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> 증가하고, 추가 공격은 목표의 방어력 <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>를 무시한다. 해당 효과는 <unbreak>#6[i]</unbreak>턴 지속된다",
+		"maxHP": 953,
+		"maxATK": 582,
+		"maxDEF": 529,
+		"promotion": {
+			"2": 385000,
+			"110121": 4,
+			"110122": 12,
+			"110123": 15,
+			"111011": 20,
+			"111012": 20,
+			"111013": 14
+		},
+		"id": "23020"
 	},
 	"24000": {
 		"name": "어떤 에이언즈의 몰락",
