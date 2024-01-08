@@ -1,14 +1,25 @@
 {
 	"101": {
+		"name": "Скиталец блуждающего облака",
 		"setID": "101",
 		"twopc": "Повышает исходящее исцеление на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "В начале боя восстанавливает 1 очко навыков.",
 		"numbers2": [
 			0.1
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "HealRatioBase",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71000.png"
 	},
 	"102": {
+		"name": "Стрелок дикой пшеницы",
 		"setID": "102",
 		"twopc": "Повышает силу атаки на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Повышает скорость владельца на <unbreak>#1[i]%</unbreak>, также повышает урон его базовой атаки на <unbreak>#2[i]%</unbreak>.",
@@ -19,9 +30,26 @@
 			0.06,
 			0.1
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			],
+			[
+				{
+					"active": 4,
+					"type": "SpeedAddedRatio",
+					"value": 0.06
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71001.png"
 	},
 	"103": {
+		"name": "Рыцарь дворца чистоты",
 		"setID": "103",
 		"twopc": "Повышает защиту на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Повышает урон, поглощаемый созданным владельцем Щитом, на <unbreak>#1[i]%</unbreak>.",
@@ -31,9 +59,19 @@
 		"numbers4": [
 			0.2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "DefenceAddedRatio",
+					"value": 0.15
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71002.png"
 	},
 	"104": {
+		"name": "Охотник ледникового леса",
 		"setID": "104",
 		"twopc": "Повышает ледяной урон на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Когда владелец использует сверхспособность, его крит. урон повышается на <unbreak>#1[i]%</unbreak> на <unbreak>#2[i]</unbreak> хода.",
@@ -44,9 +82,19 @@
 			0.25,
 			2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "IceAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71003.png"
 	},
 	"105": {
+		"name": "Чемпион уличного бокса",
 		"setID": "105",
 		"twopc": "Повышает физический урон на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "После того как владелец выполняет или получает атаку, его сила атаки повышается на <unbreak>#1[i]%</unbreak>. Этот эффект может складываться до <unbreak>#2[i]</unbreak> раз.",
@@ -57,9 +105,19 @@
 			0.05,
 			5
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "PhysicalAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71004.png"
 	},
 	"106": {
+		"name": "Страж снежной метели",
 		"setID": "106",
 		"twopc": "Понижает получаемый урон на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "В начале хода, если текущее HP владельца ниже или равно <unbreak>#1[i]%</unbreak>, восстанавливает <unbreak>#2[i]%</unbreak> HP и <unbreak>#3[i]</unbreak> ед. энергии владельца.",
@@ -71,9 +129,11 @@
 			0.08,
 			5
 		],
+		"props": [],
 		"setIcon": "spriteoutput/itemfigures/71005.png"
 	},
 	"107": {
+		"name": "Кузнец огня и лавы",
 		"setID": "107",
 		"twopc": "Повышает огненный урон на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Повышает урон, наносимый навыком владельца, на <unbreak>#1[i]%</unbreak>, а также повышает огненный урон следующей атаки владельца после использования сверхспособности на <unbreak>#2[i]%</unbreak>.",
@@ -84,9 +144,19 @@
 			0.12,
 			0.12
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "FireAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71006.png"
 	},
 	"108": {
+		"name": "Гений бриллиантовых звёзд",
 		"setID": "108",
 		"twopc": "Повышает квантовый урон на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "При нанесении урона владелец игнорирует <unbreak>#1[i]%</unbreak> защиты противника. Если у выбранного противника есть квантовая уязвимость, владелец игнорирует доп. <unbreak>#2[i]%</unbreak> защиты.",
@@ -97,9 +167,19 @@
 			0.1,
 			0.1
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "QuantumAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71007.png"
 	},
 	"109": {
+		"name": "Бэнд испепеляющего грома",
 		"setID": "109",
 		"twopc": "Повышает электрический урон на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Когда владелец использует навык, его сила атаки повышается на <unbreak>#1[i]%</unbreak> на <unbreak>#2[i]</unbreak> ход.",
@@ -110,9 +190,19 @@
 			0.2,
 			1
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "ThunderAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71008.png"
 	},
 	"110": {
+		"name": "Орёл сумеречного рубежа",
 		"setID": "110",
 		"twopc": "Повышает ветряной урон на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "После использования сверхспособности действие владельца продвигается вперёд на <unbreak>#1[i]%</unbreak>.",
@@ -122,9 +212,19 @@
 		"numbers4": [
 			0.25
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "WindAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71009.png"
 	},
 	"111": {
+		"name": "Вор падающего метеора",
 		"setID": "111",
 		"twopc": "Повышает эффект пробития на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Повышает эффект пробития владельца на <unbreak>#1[i]%</unbreak>. Когда владелец пробивает уязвимость противника, восстанавливает <unbreak>#2[i]</unbreak> ед. энергии.",
@@ -135,9 +235,26 @@
 			0.16,
 			3
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.16
+				}
+			],
+			[
+				{
+					"active": 4,
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.16
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71010.png"
 	},
 	"112": {
+		"name": "Головорез бандитской пустыни",
 		"setID": "112",
 		"twopc": "Повышает мнимый урон на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Когда владелец наносит урон противнику с ослаблениями, его крит. шанс повышается на <unbreak>#1[i]%</unbreak>, а когда владелец наносит урон противнику со статусом Заключение, его крит. урон повышается на <unbreak>#2[i]%</unbreak>.",
@@ -148,9 +265,19 @@
 			0.1,
 			0.2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "ImaginaryAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71011.png"
 	},
 	"113": {
+		"name": "Долгоживущий ученик",
 		"setID": "113",
 		"twopc": "Повышает макс. HP владельца на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Когда владелец получает атаку или когда союзник расходует его HP, крит. шанс владельца повышается на <unbreak>#1[i]%</unbreak> на <unbreak>#2[i]</unbreak> хода. Этот эффект может складываться до <unbreak>#3[i]</unbreak> раз.",
@@ -162,9 +289,19 @@
 			2,
 			2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "HPAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71020.png"
 	},
 	"114": {
+		"name": "Вестник, блуждающий в хакерском пространстве",
 		"setID": "114",
 		"twopc": "Повышает скорость на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Повышает скорость всех союзников на <unbreak>#1[i]%</unbreak>, когда владелец применяет сверхспособность к союзнику, на <unbreak>#2[i]</unbreak> ход. Эффект не складывается.",
@@ -175,9 +312,19 @@
 			0.12,
 			1
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "SpeedAddedRatio",
+					"value": 0.06
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71021.png"
 	},
 	"115": {
+		"name": "Сжигающий дотла герцог",
 		"setID": "115",
 		"twopc": "Повышает урон бонус-атаки на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Когда владелец выполняет бонус-атаку, его сила атаки повышается на <unbreak>#1[i]%</unbreak> каждый раз, когда эта бонус-атака наносит урон. Этот эффект может складываться до <unbreak>#2[i]</unbreak> раз и длится <unbreak>#3[i]</unbreak> хода. Эффект снимается при следующем выполнении бонус-атаки владельцем.",
@@ -189,9 +336,11 @@
 			8,
 			3
 		],
+		"props": [],
 		"setIcon": "spriteoutput/itemfigures/71024.png"
 	},
 	"116": {
+		"name": "Пленник мрачной темницы",
 		"setID": "116",
 		"twopc": "Повышает силу атаки на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "За каждый имеющийся у противника эффект с периодическим уроном (до макс. <unbreak>#2[i]</unbreak>) при нанесении урона владелец игнорирует <unbreak>#1[i]%</unbreak> от защиты этого противника.",
@@ -202,9 +351,19 @@
 			0.06,
 			3
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71025.png"
 	},
 	"117": {
+		"name": "Первооткрыватель мёртвых вод",
 		"setID": "117",
 		"twopc": "Повышает урон по противникам с ослаблениями на <unbreak>#1[i]%</unbreak>.",
 		"numbers2": [
@@ -218,9 +377,19 @@
 			4,
 			1
 		],
+		"props": [
+			[
+				{
+					"active": 4,
+					"type": "CriticalChanceBase",
+					"value": 0.04
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71028.png"
 	},
 	"118": {
+		"name": "Часовщик грёзных механизмов",
 		"setID": "118",
 		"twopc": "Повышает эффект пробития на <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Повышает эффект пробития всех союзников на <unbreak>#1[i]%</unbreak>, когда владелец применяет сверхспособность к союзнику, на <unbreak>#2[i]</unbreak> ход(а). Эффект не складывается.",
@@ -231,9 +400,19 @@
 			0.24,
 			2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.16
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71029.png"
 	},
 	"301": {
+		"name": "Запечатывающая космос станция",
 		"setID": "301",
 		"twopc": "Повышает силу атаки владельца на <unbreak>#1[i]%</unbreak>. Если скорость владельца выше или равна <unbreak>#2[i]</unbreak> ед., то его сила атаки повышается на доп. <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -241,9 +420,19 @@
 			120,
 			0.12
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71012.png"
 	},
 	"302": {
+		"name": "Флот нестареющих",
 		"setID": "302",
 		"twopc": "Повышает макс. HP владельца на <unbreak>#1[i]%</unbreak>. Если скорость владельца выше или равна <unbreak>#2[i]</unbreak> ед., то сила атаки всех союзников повышается на доп. <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -251,9 +440,19 @@
 			120,
 			0.08
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "HPAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71013.png"
 	},
 	"303": {
+		"name": "Пангалактическое коммерческое предприятие",
 		"setID": "303",
 		"twopc": "Повышает шанс попадания эффектов владельца на <unbreak>#1[i]%</unbreak>. Также повышает силу атаки владельца на <unbreak>#2[i]%</unbreak> от текущего шанса попадания эффектов. Этот эффект может складываться до <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -261,9 +460,19 @@
 			0.25,
 			0.25
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "StatusProbabilityBase",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71014.png"
 	},
 	"304": {
+		"name": "Белобог Архитекторов",
 		"setID": "304",
 		"twopc": "Повышает защиту владельца на <unbreak>#1[i]%</unbreak>. Если шанс попадания эффектов владельца выше или равен <unbreak>#2[i]%</unbreak>, то его защита повышается на доп. <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -271,9 +480,19 @@
 			0.5,
 			0.15
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "DefenceAddedRatio",
+					"value": 0.15
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71015.png"
 	},
 	"305": {
+		"name": "Небесный дифференциатор",
 		"setID": "305",
 		"twopc": "Повышает крит. урон владельца на <unbreak>#1[i]%</unbreak>. Если крит. урон владельца выше или равен <unbreak>#2[i]%</unbreak>, то в начале боя крит. шанс владельца повышается на <unbreak>#3[i]%</unbreak> до конца его первой атаки.",
 		"numbers2": [
@@ -281,9 +500,19 @@
 			1.2,
 			0.6
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "CriticalDamageBase",
+					"value": 0.16
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71016.png"
 	},
 	"306": {
+		"name": "Замершее Салсотто",
 		"setID": "306",
 		"twopc": "Повышает крит. шанс владельца на <unbreak>#1[i]%</unbreak>. Если крит. шанс владельца выше или равен <unbreak>#2[i]%</unbreak>, то урон его сверхспособности и бонус-атаки повышается на <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -291,9 +520,19 @@
 			0.5,
 			0.15
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "CriticalChanceBase",
+					"value": 0.08
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71017.png"
 	},
 	"307": {
+		"name": "Талия - край бандитов",
 		"setID": "307",
 		"twopc": "Повышает эффект пробития владельца на <unbreak>#1[i]%</unbreak>. Если скорость владельца выше или равна <unbreak>#2[i]</unbreak> ед., то его эффект пробития повышается на доп. <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -301,9 +540,19 @@
 			145,
 			0.2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.16
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71018.png"
 	},
 	"308": {
+		"name": "Живой Вонвак",
 		"setID": "308",
 		"twopc": "Повышает скорость восстановления энергии владельца на <unbreak>#1[i]%</unbreak>. Если скорость владельца выше или равна <unbreak>#2[i]</unbreak> ед., то в начале боя его действие продвигается вперёд на <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -311,9 +560,19 @@
 			120,
 			0.4
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "SPRatioBase",
+					"value": 0.05
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71019.png"
 	},
 	"309": {
+		"name": "Звездистая арена",
 		"setID": "309",
 		"twopc": "Повышает крит. шанс владельца на <unbreak>#1[i]%</unbreak>. Если крит. шанс владельца не меньше <unbreak>#2[i]%</unbreak>, урон от его базовой атаки и навыка повышается на <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -321,9 +580,19 @@
 			0.7,
 			0.2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "CriticalChanceBase",
+					"value": 0.08
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71022.png"
 	},
 	"310": {
+		"name": "Сломанный киль",
 		"setID": "310",
 		"twopc": "Повышает сопротивление эффектам владельца на <unbreak>#1[i]%</unbreak>. Если сопротивление эффектам владельца выше или равно <unbreak>#2[i]%</unbreak>, крит. урон всех союзников повышается на <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -331,9 +600,19 @@
 			0.3,
 			0.1
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "StatusResistanceBase",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71023.png"
 	},
 	"311": {
+		"name": "Небесный фронт Глатирамер",
 		"setID": "311",
 		"twopc": "Повышает силу атаки владельца на <unbreak>#1[i]%</unbreak>. Если скорость владельца выше или равна <unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak> ед., то наносимый им урон повышается на <unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>.",
 		"numbers2": [
@@ -343,14 +622,33 @@
 			0.12,
 			0.18
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71026.png"
 	},
 	"312": {
+		"name": "Земля грёз Пенакония",
 		"setID": "312",
 		"twopc": "Повышает скорость восстановления энергии на <unbreak>#1[i]%</unbreak>. Увеличивает урон, наносимый союзниками одного типа с владельцем, на <unbreak>#2[i]%</unbreak>.",
 		"numbers2": [
 			0.05,
 			0.1
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "SPRatioBase",
+					"value": 0.05
+				}
+			]
 		],
 		"setIcon": "spriteoutput/itemfigures/71027.png"
 	}

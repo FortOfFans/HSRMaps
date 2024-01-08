@@ -1,14 +1,25 @@
 {
 	"101": {
+		"name": "Transeúnte de la nube pasajera",
 		"setID": "101",
 		"twopc": "Curación realizada +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Al entrar en combate, el equipo recupera inmediatamente 1 pt. de habilidad básica.",
 		"numbers2": [
 			0.1
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "HealRatioBase",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71000.png"
 	},
 	"102": {
+		"name": "Pistolera de la espiga silvestre",
 		"setID": "102",
 		"twopc": "ATQ +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "La VEL del portador aumenta en un <unbreak>#1[i]%</unbreak> y el daño de sus ATQ básicos aumenta en un <unbreak>#2[i]%</unbreak>.",
@@ -19,9 +30,26 @@
 			0.06,
 			0.1
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			],
+			[
+				{
+					"active": 4,
+					"type": "SpeedAddedRatio",
+					"value": 0.06
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71001.png"
 	},
 	"103": {
+		"name": "Paladina de la Iglesia de la Corte Inmaculada",
 		"setID": "103",
 		"twopc": "DEF +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "El efecto de escudo otorgado por el portador aumenta en un <unbreak>#1[i]%</unbreak>.",
@@ -31,9 +59,19 @@
 		"numbers4": [
 			0.2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "DefenceAddedRatio",
+					"value": 0.15
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71002.png"
 	},
 	"104": {
+		"name": "Cazador del bosque glacial",
 		"setID": "104",
 		"twopc": "Daño de Hielo +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Cuando el portador usa la habilidad definitiva, el Daño CRIT aumenta en un <unbreak>#1[i]%</unbreak> durante <unbreak>#2[i]</unbreak> turnos.",
@@ -44,9 +82,19 @@
 			0.25,
 			2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "IceAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71003.png"
 	},
 	"105": {
+		"name": "Campeona de boxeo callejero",
 		"setID": "105",
 		"twopc": "Daño Físico +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Cuando el portador ataca o recibe un ataque, su ATQ aumenta en un <unbreak>#1[i]%</unbreak> durante la batalla actual. Puede acumularse hasta <unbreak>#2[i]</unbreak> veces.",
@@ -57,9 +105,19 @@
 			0.05,
 			5
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "PhysicalAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71004.png"
 	},
 	"106": {
+		"name": "Guardia de la nieve borrascosa",
 		"setID": "106",
 		"twopc": "Daño recibido -<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Al comienzo del turno, si el portador tiene un porcentaje de PV igual o inferior al <unbreak>#1[i]%</unbreak>, regenera una cantidad de PV equivalente al <unbreak>#2[i]%</unbreak> de sus PV máx. y recupera <unbreak>#3[i]</unbreak> pts. de energía.",
@@ -71,9 +129,11 @@
 			0.08,
 			5
 		],
+		"props": [],
 		"setIcon": "spriteoutput/itemfigures/71005.png"
 	},
 	"107": {
+		"name": "Forjador de lava",
 		"setID": "107",
 		"twopc": "Daño de Fuego +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "El daño de la habilidad básica del portador aumenta en un <unbreak>#1[i]%</unbreak>. Además, tras usar la habilidad definitiva, el Daño de Fuego que inflija en el siguiente ataque aumenta en un <unbreak>#2[i]%</unbreak>.",
@@ -84,9 +144,19 @@
 			0.12,
 			0.12
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "FireAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71006.png"
 	},
 	"108": {
+		"name": "Genio de las estrellas relucientes",
 		"setID": "108",
 		"twopc": "Daño Cuántico +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Cuando el portador inflige daño a un objetivo enemigo, ignora el <unbreak>#1[i]%</unbreak> de su DEF. Si el objetivo tiene Debilidad Cuántica, ignora un <unbreak>#2[i]%</unbreak> adicional de su DEF.",
@@ -97,9 +167,19 @@
 			0.1,
 			0.1
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "QuantumAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71007.png"
 	},
 	"109": {
+		"name": "Banda del trueno crepitante",
 		"setID": "109",
 		"twopc": "Daño de Rayo +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Cuando el portador utiliza la habilidad básica, su ATQ aumenta en un <unbreak>#1[i]%</unbreak> durante <unbreak>#2[i]</unbreak> turno.",
@@ -110,9 +190,19 @@
 			0.2,
 			1
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "ThunderAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71008.png"
 	},
 	"110": {
+		"name": "Águila del crepúsculo",
 		"setID": "110",
 		"twopc": "Daño de Viento +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Cuando el portador utiliza la habilidad definitiva, su acción se adelanta un <unbreak>#1[i]%</unbreak>.",
@@ -122,9 +212,19 @@
 		"numbers4": [
 			0.25
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "WindAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71009.png"
 	},
 	"111": {
+		"name": "Ladrón del rastro meteórico",
 		"setID": "111",
 		"twopc": "Efecto de Ruptura +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "El efecto de Ruptura del portador aumenta en un <unbreak>#1[i]%</unbreak>. Cuando rompe la Debilidad del enemigo, recupera <unbreak>#2[i]</unbreak> pts. de energía.",
@@ -135,9 +235,26 @@
 			0.16,
 			3
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.16
+				}
+			],
+			[
+				{
+					"active": 4,
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.16
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71010.png"
 	},
 	"112": {
+		"name": "Habitante del yermo de los bandidos",
 		"setID": "112",
 		"twopc": "Daño Imaginario +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Al infligir daño a enemigos afectados por estados negativos, la Prob. CRIT del portador aumenta en un <unbreak>#1[i]%</unbreak>. Si el objetivo está afectado por Prisión, el Daño CRIT aumenta en un <unbreak>#2[i]%</unbreak>.",
@@ -148,9 +265,19 @@
 			0.1,
 			0.2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "ImaginaryAddedRatio",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71011.png"
 	},
 	"113": {
+		"name": "Discípula longeva",
 		"setID": "113",
 		"twopc": "PV máx. +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Cuando el portador recibe un ataque o un aliado (incluyendo el portador) consume PV del portador, la Prob. CRIT aumenta en un <unbreak>#1[i]%</unbreak> durante <unbreak>#2[i]</unbreak> turnos. Este efecto se puede acumular hasta <unbreak>#3[i]</unbreak> veces.",
@@ -162,9 +289,19 @@
 			2,
 			2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "HPAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71020.png"
 	},
 	"114": {
+		"name": "Mensajero del espacio hackeado",
 		"setID": "114",
 		"twopc": "VEL +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Cuando el portador usa su habilidad definitiva sobre un aliado, la VEL de todos los aliados aumenta en un <unbreak>#1[i]%</unbreak> durante <unbreak>#2[i]</unbreak> turno. Este efecto no se puede acumular.",
@@ -175,9 +312,19 @@
 			0.12,
 			1
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "SpeedAddedRatio",
+					"value": 0.06
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71021.png"
 	},
 	"115": {
+		"name": "Gran duque incinerador",
 		"setID": "115",
 		"twopc": "El daño de los ataques adicionales aumenta en un <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Cuando el portador lanza un ataque adicional, el ATQ del portador aumenta en un <unbreak>#1[i]%</unbreak> por cada vez que haya infligido daño con el ataque adicional. Se puede acumular hasta <unbreak>#2[i]</unbreak> veces y dura <unbreak>#3[i]</unbreak> turnos. Este efecto se disipa la siguiente vez que el portador lance un ataque adicional.",
@@ -189,9 +336,11 @@
 			8,
 			3
 		],
+		"props": [],
 		"setIcon": "spriteoutput/itemfigures/71024.png"
 	},
 	"116": {
+		"name": "Prisionero aislado",
 		"setID": "116",
 		"twopc": "ATQ +<unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Por cada estado de Daño con el tiempo que tenga el objetivo, el portador ignora un <unbreak>#1[i]%</unbreak> de su DEF cuando le inflige daño, hasta un máximo de <unbreak>#2[i]</unbreak> estados de Daño con el tiempo.",
@@ -202,9 +351,19 @@
 			0.06,
 			3
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71025.png"
 	},
 	"117": {
+		"name": "Buceadora pionera del agua muerta",
 		"setID": "117",
 		"twopc": "El daño infligido a los enemigos afectados por estados negativos aumenta en un <unbreak>#1[i]%</unbreak>.",
 		"numbers2": [
@@ -218,9 +377,19 @@
 			4,
 			1
 		],
+		"props": [
+			[
+				{
+					"active": 4,
+					"type": "CriticalChanceBase",
+					"value": 0.04
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71028.png"
 	},
 	"118": {
+		"name": "Relojero de maquinaciones oníricas",
 		"setID": "118",
 		"twopc": "El efecto de Ruptura aumenta en un <unbreak>#1[i]%</unbreak>.",
 		"fourpc": "Cuando el portador usa su habilidad definitiva sobre un aliado, el efecto de Ruptura de todos los aliados aumenta en un <unbreak>#1[i]%</unbreak> durante <unbreak>#2[i]</unbreak> turno(s). Este efecto no se puede acumular.",
@@ -231,9 +400,19 @@
 			0.24,
 			2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.16
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71029.png"
 	},
 	"301": {
+		"name": "Estación sellaespacios",
 		"setID": "301",
 		"twopc": "El ATQ del portador aumenta en un <unbreak>#1[i]%</unbreak>. Cuando su VEL es igual o superior a <unbreak>#2[i]</unbreak>, el ATQ aumenta en un <unbreak>#3[i]%</unbreak> adicional.",
 		"numbers2": [
@@ -241,9 +420,19 @@
 			120,
 			0.12
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71012.png"
 	},
 	"302": {
+		"name": "Flota de los eternos",
 		"setID": "302",
 		"twopc": "Los PV máx. del portador aumentan en un <unbreak>#1[i]%</unbreak>. Cuando su VEL es igual o superior a <unbreak>#2[i]</unbreak>, el ATQ de todos los aliados aumenta en un <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -251,9 +440,19 @@
 			120,
 			0.08
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "HPAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71013.png"
 	},
 	"303": {
+		"name": "Entidad comercial pangaláctica",
 		"setID": "303",
 		"twopc": "El acierto de efecto del portador aumenta en un <unbreak>#1[i]%</unbreak> y su ATQ aumenta en una cantidad equivalente al <unbreak>#2[i]%</unbreak> del acierto de efecto actual, hasta un máximo de un <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -261,9 +460,19 @@
 			0.25,
 			0.25
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "StatusProbabilityBase",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71014.png"
 	},
 	"304": {
+		"name": "La Belobog de los Arquitectos",
 		"setID": "304",
 		"twopc": "La DEF del portador aumenta en un <unbreak>#1[i]%</unbreak>. Cuando su acierto de efecto es igual o superior al <unbreak>#2[i]%</unbreak>, la DEF aumenta en un <unbreak>#3[i]%</unbreak> adicional.",
 		"numbers2": [
@@ -271,9 +480,19 @@
 			0.5,
 			0.15
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "DefenceAddedRatio",
+					"value": 0.15
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71015.png"
 	},
 	"305": {
+		"name": "Diferenciador celestial",
 		"setID": "305",
 		"twopc": "El Daño CRIT del portador aumenta en un <unbreak>#1[i]%</unbreak>. Cuando su Daño CRIT es igual o superior al <unbreak>#2[i]%</unbreak>, tras entrar en combate su Prob. CRIT aumenta en un <unbreak>#3[i]%</unbreak> hasta que termine su primer ataque.",
 		"numbers2": [
@@ -281,9 +500,19 @@
 			1.2,
 			0.6
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "CriticalDamageBase",
+					"value": 0.16
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71016.png"
 	},
 	"306": {
+		"name": "Salsotto inerte",
 		"setID": "306",
 		"twopc": "La Prob. CRIT del portador aumenta en un <unbreak>#1[i]%</unbreak>. Cuando su Prob. CRIT es igual o superior al <unbreak>#2[i]%</unbreak>, el daño que infligen su habilidad definitiva y sus ataques adicionales aumenta en un <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -291,9 +520,19 @@
 			0.5,
 			0.15
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "CriticalChanceBase",
+					"value": 0.08
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71017.png"
 	},
 	"307": {
+		"name": "Talia, paraíso de los forajidos",
 		"setID": "307",
 		"twopc": "El efecto de Ruptura del portador aumenta en un <unbreak>#1[i]%</unbreak>. Cuando su VEL es igual o superior a <unbreak>#2[i]</unbreak>, el efecto especial de Ruptura aumenta en un <unbreak>#3[i]%</unbreak> adicional.",
 		"numbers2": [
@@ -301,9 +540,19 @@
 			145,
 			0.2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.16
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71018.png"
 	},
 	"308": {
+		"name": "Vonwacq el vivaz",
 		"setID": "308",
 		"twopc": "La recuperación de energía del portador aumenta en un <unbreak>#1[i]%</unbreak>. Cuando su VEL es igual o superior a <unbreak>#2[i]</unbreak>, su acción se adelanta un <unbreak>#3[i]%</unbreak> al entrar en combate.",
 		"numbers2": [
@@ -311,9 +560,19 @@
 			120,
 			0.4
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "SPRatioBase",
+					"value": 0.05
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71019.png"
 	},
 	"309": {
+		"name": "Arena rutilante",
 		"setID": "309",
 		"twopc": "La Prob. CRIT del portador aumenta en un <unbreak>#1[i]%</unbreak>. Cuando su Prob. CRIT es igual o superior al <unbreak>#2[i]%</unbreak>, el daño que infligen su ATQ básico y su habilidad básica aumenta en un <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -321,9 +580,19 @@
 			0.7,
 			0.2
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "CriticalChanceBase",
+					"value": 0.08
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71022.png"
 	},
 	"310": {
+		"name": "Quilla rota",
 		"setID": "310",
 		"twopc": "La RES a efecto del portador aumenta en un <unbreak>#1[i]%</unbreak>. Cuando su RES a efecto es igual o superior al <unbreak>#2[i]%</unbreak>, el Daño CRIT de todos los aliados aumenta en un <unbreak>#3[i]%</unbreak>.",
 		"numbers2": [
@@ -331,9 +600,19 @@
 			0.3,
 			0.1
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "StatusResistanceBase",
+					"value": 0.1
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71023.png"
 	},
 	"311": {
+		"name": "Glamoth, frente del firmamento",
 		"setID": "311",
 		"twopc": "El ATQ del portador aumenta en un <unbreak>#1[i]%</unbreak>. Cuando su VEL es igual o superior a <unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak>, el daño que inflige aumenta en un <unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>.",
 		"numbers2": [
@@ -343,14 +622,33 @@
 			0.12,
 			0.18
 		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71026.png"
 	},
 	"312": {
+		"name": "Colonipenal, la tierra de los sueños",
 		"setID": "312",
 		"twopc": "La recuperación de energía del portador aumenta en un <unbreak>#1[i]%</unbreak>. Aumenta en un <unbreak>#2[i]%</unbreak> el daño que infligen los demás aliados que sean del mismo tipo que el portador.",
 		"numbers2": [
 			0.05,
 			0.1
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "SPRatioBase",
+					"value": 0.05
+				}
+			]
 		],
 		"setIcon": "spriteoutput/itemfigures/71027.png"
 	}
