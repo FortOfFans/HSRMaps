@@ -56582,7 +56582,7 @@
 		"element": "Quantum",
 		"skills": [
 			{
-				"name": "One Woman Show",
+				"name": "Monodrama",
 				"tag": "Single Target",
 				"type": "Basic ATK",
 				"description": "Mengakibatkan Quantum DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Sparkle pada 1 target musuh.",
@@ -56626,7 +56626,7 @@
 				"name": "Dreamdiver",
 				"tag": "Support",
 				"type": "Skill",
-				"description": "Meningkatkan CRIT DMG 1 rekan tim yang ditargetkan, peningkatannya sebesar <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> dari CRIT DMG Sparkle + <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>, berlangsung selama <unbreak>#3[i]</unbreak> giliran, dan mendahulukan aksi target tersebut sebesar <unbreak>#4[i]%</unbreak>.\\nSaat Sparkle melancarkan kemampuan ini pada dirinya sendiri, efek pendahuluan aksi tidak akan terpicu.",
+				"description": "Meningkatkan CRIT DMG 1 rekan tim yang ditargetkan, peningkatannya sebesar <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> CRIT DMG Sparkle + <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>, berlangsung selama <unbreak>#3[i]</unbreak> giliran, dan mendahulukan aksi target tersebut sebesar <unbreak>#4[i]%</unbreak>.\\nSaat Sparkle melancarkan kemampuan ini pada dirinya sendiri, efek pendahuluan aksi tidak akan terpicu.",
 				"regen": 30,
 				"er": 0,
 				"icon": "spriteoutput/skillicons/1306/SkillIcon_1306_BP.png",
@@ -56727,10 +56727,10 @@
 				"id": 130602
 			},
 			{
-				"name": "Triumphs by the Thousand",
+				"name": "The Hero with a Thousand Faces",
 				"tag": "Support",
 				"type": "Ultimate",
-				"description": "Memulihkan <unbreak>#2[i]</unbreak> Poin Skill untuk rekan tim dan memberikan \"Beriddle\" pada seluruh rekan tim. Rekan tim yang memiliki \"Beriddle\" akan memperoleh peningkatan ekstra <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> DMG dari efek peningkatan DMG dari terpicunya Talent Sparkle.",
+				"description": "Memulihkan <unbreak>#2[i]</unbreak> Poin Skill untuk rekan tim dan memberikan \"Beriddle\" pada seluruh rekan tim. Rekan tim dengan \"Beriddle\" akan membuat setiap lapis efek peningkatan DMG dari Talent yang dipicu oleh Sparkle meningkat ekstra sebesar <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color> selama <unbreak>#4[i]</unbreak> giliran.",
 				"regen": 5,
 				"er": 110,
 				"icon": "spriteoutput/skillicons/1306/SkillIcon_1306_Ultra.png",
@@ -56831,10 +56831,10 @@
 				"id": 130603
 			},
 			{
-				"name": "Narrative Duplicity",
+				"name": "Red Herring",
 				"tag": "Support",
 				"type": "Talent",
-				"description": "Saat Sparkle berada di medan pertempuran, jumlah batas maksimal Poin Skill akan meningkat <unbreak>#3[i]</unbreak>. Setiap kali rekan tim mengonsumsi 1 Poin Skill, DMG yang diakibatkan seluruh rekan tim akan meningkat <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> selama <unbreak>#1[i]</unbreak> giliran dan efek ini dapat ditumpuk hingga <unbreak>#4[i]</unbreak> lapis.",
+				"description": "Saat Sparkle berada di medan pertempuran, jumlah batas maksimal Poin Skill meningkat <unbreak>#3[i]</unbreak>. Setiap kali rekan tim mengonsumsi 1 Poin Skill, DMG yang diakibatkan oleh seluruh rekan tim akan meningkat <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> selama <unbreak>#1[i]</unbreak> giliran. Efek ini dapat ditumpuk hingga <unbreak>#4[i]</unbreak> lapis.",
 				"regen": 0,
 				"er": 0,
 				"icon": "spriteoutput/skillicons/1306/SkillIcon_1306_Passive.png",
@@ -56935,7 +56935,8 @@
 				"id": 130604
 			},
 			{
-				"description": "Setelah menyerang musuh dan memasuki pertempuran, mengurangi Toughness target musuh sesuai dengan tipe Toughness-nya.",
+				"name": "Attack",
+				"description": "Setelah menyerang musuh dan memasuki pertempuran, akan mengurangi Toughness target musuh sesuai dengan tipe Toughness-nya.",
 				"regen": 0,
 				"er": 0,
 				"icon": "spriteoutput/skillicons/1306/SkillIcon_1306_Normal.png",
@@ -56956,7 +56957,7 @@
 				"shortIcon": "SkillIcon_1306_Maze",
 				"params": {
 					"lv1": [
-						1,
+						3,
 						20
 					],
 					"id": "130607"
@@ -57139,7 +57140,7 @@
 			},
 			{
 				"name": "Almanac",
-				"description": "Saat melancarkan Basic Attack, akan memulihkan ekstra **10** Energy.",
+				"description": "Saat melancarkan Basic Attack, akan memulihkan **10** Energy tambahan.",
 				"avatar": 1306,
 				"type": 3,
 				"pos": "Point06",
@@ -57193,13 +57194,14 @@
 					0.05,
 					0.15,
 					0.3,
-					0.05
+					0.15
 				],
 				"status": [],
 				"baseSkill": [],
 				"id": "1306103"
 			},
 			{
+				"name": "Peningkatan HP",
 				"avatar": 1306,
 				"type": 1,
 				"pos": "Point09",
@@ -57220,6 +57222,7 @@
 				"id": "1306201"
 			},
 			{
+				"name": "Peningkatan CRIT DMG",
 				"avatar": 1306,
 				"type": 1,
 				"pos": "Point10",
@@ -57241,6 +57244,7 @@
 				"id": "1306202"
 			},
 			{
+				"name": "Peningkatan HP",
 				"avatar": 1306,
 				"type": 1,
 				"pos": "Point11",
@@ -57262,6 +57266,7 @@
 				"id": "1306203"
 			},
 			{
+				"name": "Peningkatan Effect RES",
 				"avatar": 1306,
 				"type": 1,
 				"pos": "Point12",
@@ -57283,6 +57288,7 @@
 				"id": "1306204"
 			},
 			{
+				"name": "Peningkatan HP",
 				"avatar": 1306,
 				"type": 1,
 				"pos": "Point13",
@@ -57304,6 +57310,7 @@
 				"id": "1306205"
 			},
 			{
+				"name": "Peningkatan CRIT DMG",
 				"avatar": 1306,
 				"type": 1,
 				"pos": "Point14",
@@ -57325,6 +57332,7 @@
 				"id": "1306206"
 			},
 			{
+				"name": "Peningkatan HP",
 				"avatar": 1306,
 				"type": 1,
 				"pos": "Point15",
@@ -57346,6 +57354,7 @@
 				"id": "1306207"
 			},
 			{
+				"name": "Peningkatan Effect RES",
 				"avatar": 1306,
 				"type": 1,
 				"pos": "Point16",
@@ -57367,6 +57376,7 @@
 				"id": "1306208"
 			},
 			{
+				"name": "Peningkatan CRIT DMG",
 				"avatar": 1306,
 				"type": 1,
 				"pos": "Point17",
@@ -57388,6 +57398,7 @@
 				"id": "1306209"
 			},
 			{
+				"name": "Peningkatan HP",
 				"avatar": 1306,
 				"type": 1,
 				"pos": "Point18",
@@ -57415,7 +57426,7 @@
 				"icon": "spriteoutput/skillicons/1306/SkillIcon_1306_Rank1.png",
 				"shortIcon": "SkillIcon_1306_Rank1",
 				"numbers": [
-					0.12
+					0.25
 				],
 				"skillUpgrades": {},
 				"id": "130601"
@@ -57425,7 +57436,7 @@
 				"icon": "spriteoutput/skillicons/1306/SkillIcon_1306_Rank2.png",
 				"shortIcon": "SkillIcon_1306_Rank2",
 				"numbers": [
-					0.03
+					0.08
 				],
 				"skillUpgrades": {},
 				"id": "130602"
@@ -57465,7 +57476,7 @@
 				"icon": "spriteoutput/skillicons/1306/SkillIcon_1306_Rank6.png",
 				"shortIcon": "SkillIcon_1306_Rank6",
 				"numbers": [
-					0.4
+					0.2
 				],
 				"skillUpgrades": {},
 				"id": "130606"
@@ -58299,7 +58310,8 @@
 						3,
 						0.72,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv2": [
 						1.104,
@@ -58308,7 +58320,8 @@
 						3,
 						0.828,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv3": [
 						1.248,
@@ -58317,7 +58330,8 @@
 						3,
 						0.936,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv4": [
 						1.392,
@@ -58326,7 +58340,8 @@
 						3,
 						1.044,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv5": [
 						1.536,
@@ -58335,7 +58350,8 @@
 						3,
 						1.152,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv6": [
 						1.68,
@@ -58344,7 +58360,8 @@
 						3,
 						1.26,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv7": [
 						1.86,
@@ -58353,7 +58370,8 @@
 						3,
 						1.395,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv8": [
 						2.04,
@@ -58362,7 +58380,8 @@
 						3,
 						1.53,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv9": [
 						2.22,
@@ -58371,7 +58390,8 @@
 						3,
 						1.665,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv10": [
 						2.4,
@@ -58380,7 +58400,8 @@
 						3,
 						1.8,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv11": [
 						2.52,
@@ -58389,7 +58410,8 @@
 						3,
 						1.89,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv12": [
 						2.64,
@@ -58398,7 +58420,8 @@
 						3,
 						1.98,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv13": [
 						2.76,
@@ -58407,7 +58430,8 @@
 						3,
 						2.07,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv14": [
 						2.88,
@@ -58416,7 +58440,8 @@
 						3,
 						2.16,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"lv15": [
 						3,
@@ -58425,7 +58450,8 @@
 						3,
 						2.25,
 						7,
-						0.2
+						0.2,
+						50
 					],
 					"id": "130704"
 				},
@@ -64186,8 +64212,8 @@
 				"description": "Mengonsumsi 4 lapis \"Magma Will\" untuk memperkuat Basic Attack, mengakibatkan Fire DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Trailblazer pada 1 target musuh, dan di saat bersamaan mengakibatkan Fire DMG sebesar <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> ATK Trailblazer pada musuh di sekitar target.",
 				"regen": 30,
 				"er": 0,
-				"icon": "spriteoutput/skillicons/8003/SkillIcon_8003_Normal02.png",
-				"shortIcon": "SkillIcon_8003_Normal02",
+				"icon": "spriteoutput/skillicons/8003/SkillIcon_8003_Normal.png",
+				"shortIcon": "SkillIcon_8003_Normal",
 				"params": {
 					"lv1": [
 						0.9,
@@ -65633,8 +65659,8 @@
 				"description": "Mengonsumsi 4 lapis \"Magma Will\" untuk memperkuat Basic Attack, mengakibatkan Fire DMG sebesar <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ATK Trailblazer pada 1 target musuh, dan di saat bersamaan mengakibatkan Fire DMG sebesar <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> ATK Trailblazer pada musuh di sekitar target.",
 				"regen": 30,
 				"er": 0,
-				"icon": "spriteoutput/skillicons/8003/SkillIcon_8003_Normal02.png",
-				"shortIcon": "SkillIcon_8003_Normal02",
+				"icon": "spriteoutput/skillicons/8003/SkillIcon_8003_Normal.png",
+				"shortIcon": "SkillIcon_8003_Normal",
 				"params": {
 					"lv1": [
 						0.9,
