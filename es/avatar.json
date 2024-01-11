@@ -453,6 +453,7 @@
 		"tree": [
 			{
 				"name": "Flecha helada",
+				"description": "Inflige un ****1[i]%**** del ATQ de Siete de Marzo como Daño de Hielo a un enemigo.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point01",
@@ -467,7 +468,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100101
@@ -476,6 +479,7 @@
 			},
 			{
 				"name": "El poder de la belleza",
+				"description": "Otorga a un aliado un escudo que absorbe un daño equivalente al ****1[i]%**** de la DEF de Siete de Marzo + ****4[i]**** durante **2[i]** turnos.\nSi el porcentaje de PV de ese aliado es igual o superior al **3[i]%**, la probabilidad de que reciba un ataque enemigo será mucho mayor.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point02",
@@ -492,7 +496,13 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.38,
+					3,
+					0.3,
+					190,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					100102
@@ -501,6 +511,7 @@
 			},
 			{
 				"name": "Lluvia glacial",
+				"description": "Inflige un ****1[i]%**** del ATQ de Siete de Marzo como Daño de Hielo a todos los enemigos. Cada enemigo atacado tiene un **2[i]%** de **probabilidad base** de ser afectado por Congelación durante **3[i]** turno.\nLos enemigos congelados no pueden actuar, y al principio de cada turno reciben un ****4[i]%**** del ATQ de Siete de Marzo como Daño de Hielo **adicional**.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point03",
@@ -517,7 +528,12 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.9,
+					0.5,
+					1,
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					100103
@@ -526,6 +542,7 @@
 			},
 			{
 				"name": "Poder femenino",
+				"description": "Cuando un aliado con un escudo recibe un ataque enemigo, Siete de Marzo lanza inmediatamente un **contraataque** contra dicho enemigo y le inflige un ****1[i]%**** de su ATQ como Daño de Hielo. Este efecto puede activarse **2[i]** veces en cada turno.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point04",
@@ -542,7 +559,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100104
@@ -551,13 +571,18 @@
 			},
 			{
 				"name": "Belleza heladora",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. Tiene un **1[i]%** de **probabilidad base** de afectar con Congelación a un enemigo al azar durante **2[i]** turno.\nLos enemigos congelados no pueden actuar, y al principio de cada turno reciben un **3[i]%** del ATQ de Siete de Marzo como Daño de Hielo **adicional**.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
 				"shortIcon": "SkillIcon_1001_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					1,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100107
@@ -1832,6 +1857,7 @@
 		"tree": [
 			{
 				"name": "Lanza del Nimbocaballero: Viento del norte",
+				"description": "Inflige un ****1[i]%**** del ATQ de Dan Heng como Daño de Viento a un enemigo.",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point01",
@@ -1846,7 +1872,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100201
@@ -1855,6 +1883,7 @@
 			},
 			{
 				"name": "Lanza del Nimbocaballero: Torrente",
+				"description": "Inflige un ****1[i]%**** del ATQ de Dan Heng como Daño de Viento a un enemigo.\nCuando el daño infligido por la habilidad básica causa un golpe CRIT, hay una **probabilidad base** del **4[i]%** de reducir la VEL del objetivo en un **2[i]%** durante **3[i]** turnos.",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point02",
@@ -1871,7 +1900,12 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.3,
+					0.12,
+					2,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					100202
@@ -1880,6 +1914,7 @@
 			},
 			{
 				"name": "Sueño etéreo",
+				"description": "Inflige un ****1[i]%**** del ATQ de Dan Heng como Daño de Viento a un enemigo. Cuando el objetivo está afectado por Ralentización, el multiplicador de daño de la habilidad definitiva de Dan Heng aumenta en un ****2[i]%****.",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point03",
@@ -1896,7 +1931,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					2.4,
+					0.72
+				],
 				"status": [],
 				"baseSkill": [
 					100203
@@ -1905,6 +1943,7 @@
 			},
 			{
 				"name": "Alcance superior",
+				"description": "Cuando Dan Heng es el objetivo de la habilidad de un aliado, la **PEN de la RES** a Viento de su siguiente ataque aumenta en un ****1[i]%****. Este efecto puede volver a activarse después de **2[i]** turnos.",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point04",
@@ -1921,7 +1960,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.18,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100204
@@ -1930,13 +1972,17 @@
 			},
 			{
 				"name": "Lanza perforadora",
+				"description": "Tras usar la técnica, al comenzar la siguiente batalla, el ATQ de Dan Heng aumenta en un **1[i]%** durante **2[i]** turnos.",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1002/SkillIcon_1002_Maze.png",
 				"shortIcon": "SkillIcon_1002_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.4,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100207
@@ -3182,6 +3228,7 @@
 		"tree": [
 			{
 				"name": "Afinación de sierra",
+				"description": "Inflige un ****1[i]%**** del ATQ de Himeko como Daño de Fuego a un enemigo.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point01",
@@ -3196,7 +3243,9 @@
 					"111002": 7,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100301
@@ -3205,6 +3254,7 @@
 			},
 			{
 				"name": "Detonación fundida",
+				"description": "Himeko inflige un ****1[i]%**** de su ATQ como Daño de Fuego a un enemigo y un ****2[i]%**** de su ATQ como Daño de Fuego a los enemigos adyacentes.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point02",
@@ -3221,7 +3271,10 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					1,
+					0.4
+				],
 				"status": [],
 				"baseSkill": [
 					100302
@@ -3230,6 +3283,7 @@
 			},
 			{
 				"name": "Llamas celestiales",
+				"description": "Inflige un ****1[i]%**** del ATQ de Himeko como Daño de Fuego a todos los enemigos. Por cada enemigo eliminado, Himeko recupera **2[i]** pts. de energía adicionales.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point03",
@@ -3246,7 +3300,10 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					1.38,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					100303
@@ -3255,6 +3312,7 @@
 			},
 			{
 				"name": "Carrera de la victoria",
+				"description": "Cuando se rompe la Debilidad de un enemigo, Himeko consigue una carga (hasta un máximo de **2[i]**).\nDespués de que un aliado ataque, si Himeko ha acumulado el máximo de cargas, lanza inmediatamente un **ataque adicional** que inflige a todos los enemigos un Daño de Fuego equivalente al ****1[i]%**** del ATQ de Himeko y consume todas sus cargas.\nAl comenzar la batalla obtiene 1 carga.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point04",
@@ -3271,7 +3329,10 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.7,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100304
@@ -3280,13 +3341,19 @@
 			},
 			{
 				"name": "Combustión incompleta",
+				"description": "Tras usar la técnica, crea una zona especial que dura **4[i]** s. Al entrar en combate con enemigos dentro de la zona especial, tiene una **probabilidad base** del **1[i]%** de que los objetivos enemigos reciban un **2[i]%** más de Daño de Fuego durante **3[i]** turnos. Solo puede haber 1 zona especial creada por los aliados a la vez.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1003/SkillIcon_1003_Maze.png",
 				"shortIcon": "SkillIcon_1003_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.1,
+					2,
+					15
+				],
 				"status": [],
 				"baseSkill": [
 					100307
@@ -4591,6 +4658,7 @@
 		"tree": [
 			{
 				"name": "Supresión de la gravedad",
+				"description": "Inflige un ****1[i]%**** del ATQ de Welt como Daño Imaginario a un enemigo.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point01",
@@ -4605,7 +4673,9 @@
 					"112002": 7,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100401
@@ -4614,6 +4684,7 @@
 			},
 			{
 				"name": "Filo del vacío",
+				"description": "Inflige un ****1[i]%**** del ATQ de Welt como Daño Imaginario a un enemigo e inflige daño 2 veces más. Cada golpe inflige un ****1[i]%**** del ATQ de Welt como Daño Imaginario a un enemigo al azar. Al acertar a un enemigo, hay una **probabilidad base** del ****2[i]%**** de reducir la VEL del objetivo atacado en un **3[i]%** durante **4[i]** turnos.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point02",
@@ -4630,7 +4701,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.36,
+					0.65,
+					0.1,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100402
@@ -4639,6 +4715,7 @@
 			},
 			{
 				"name": "Agujero negro artificial",
+				"description": "Inflige un ****1[i]%**** del ATQ de Welt como Daño Imaginario a todos los enemigos y tiene una **probabilidad base** del **3[i]%** de afectar con Prisión a los enemigos atacados durante 1 turno.\nLas acciones de los enemigos aprisionados se **retrasan** un ****2[f1]%**** y su VEL se reduce en un **4[i]%**.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point03",
@@ -4655,7 +4732,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.9,
+					0.32,
+					1,
+					0.1
+				],
 				"status": [],
 				"baseSkill": [
 					100403
@@ -4664,6 +4746,7 @@
 			},
 			{
 				"name": "Distorsión temporal",
+				"description": "Al golpear a un objetivo ya afectado por Ralentización, inflige un ****1[i]%**** del ATQ de Welt como Daño Imaginario **adicional**.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point04",
@@ -4680,7 +4763,9 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					100404
@@ -4689,13 +4774,20 @@
 			},
 			{
 				"name": "Prisión gravitacional",
+				"description": "Tras usar la técnica, crea una zona especial que dura **4[i]** s. La VEL de movimiento de los enemigos que estén en la zona especial se reduce en un **5[i]%**. Tras entrar en combate con enemigos en la zona especial, tiene una **probabilidad base** del **1[i]%** de afectarlos con Prisión durante 1 turno.\nLas acciones de los enemigos aprisionados se **retrasan** un **2[i]%** y su VEL se reduce en un **3[i]%**. Solo puede haber 1 zona especial creada por los aliados a la vez.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1004/SkillIcon_1004_Maze.png",
 				"shortIcon": "SkillIcon_1004_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.2,
+					0.1,
+					15,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100407
@@ -6024,6 +6116,7 @@
 		"tree": [
 			{
 				"name": "Tumulto a medianoche",
+				"description": "Inflige un ****1[i]%**** del ATQ de Kafka como Daño de Rayo a un enemigo.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point01",
@@ -6038,7 +6131,9 @@
 					"111012": 7,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100501
@@ -6047,6 +6142,7 @@
 			},
 			{
 				"name": "Luna acariciadora",
+				"description": "Kafka inflige un ****1[i]%**** de su ATQ como Daño de Rayo a un enemigo y un ****3[i]%**** de su ATQ como Daño de Rayo a los enemigos adyacentes.\nSi el objetivo principal está afectado por estados de Daño con el tiempo, todos los efectos de Daño con el tiempo que tenga producen inmediatamente un daño equivalente al ****2[i]%**** de su daño original.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point02",
@@ -6063,7 +6159,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.8,
+					0.6,
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					100502
@@ -6072,6 +6172,7 @@
 			},
 			{
 				"name": "Gorjeo del ocaso",
+				"description": "Inflige un ****1[i]%**** del ATQ de Kafka como Daño de Rayo a todos los enemigos y tiene una **probabilidad base** del **2[i]%** de afectar con Electrocución a los enemigos atacados durante **3[i]** turnos y hacer que reciban inmediatamente un ****5[i]%**** del daño original de Electrocución recibido.\nLos enemigos electrocutados reciben un Daño de Rayo con el tiempo equivalente al ****4[i]%**** del ATQ de Kafka al comienzo de cada turno.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point03",
@@ -6088,7 +6189,13 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.48,
+					1,
+					2,
+					1.16,
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					100503
@@ -6097,6 +6204,7 @@
 			},
 			{
 				"name": "Dulce pero cruel",
+				"description": "Cuando un aliado de Kafka usa su ATQ básico contra un enemigo, Kafka lanza inmediatamente un **ataque adicional** que inflige un ****1[i]%**** de su ATQ como Daño de Rayo a ese objetivo y tiene un **2[i]%** de **probabilidad base** de afectarlo con una Electrocución equivalente a la de la habilidad definitiva durante **3[i]** turnos. Este efecto solo puede activarse 1 vez por turno.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point04",
@@ -6113,7 +6221,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.42,
+					1,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100504
@@ -6122,13 +6234,18 @@
 			},
 			{
 				"name": "La clemencia no es perdón",
+				"description": "Ataca inmediatamente a todos los enemigos de un área determinada y entra en combate. Inflige un **3[i]%** del ATQ de Kafka como Daño de Rayo a todos los enemigos. Además, cada enemigo tiene una **probabilidad base** del **1[i]%** de ser afectado por una Electrocución equivalente a la de la habilidad definitiva durante **2[i]** turnos.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1005/SkillIcon_1005_Maze.png",
 				"shortIcon": "SkillIcon_1005_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					2,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100507
@@ -7529,6 +7646,7 @@
 		"tree": [
 			{
 				"name": "Alerta del sistema",
+				"description": "Inflige un ****1[i]%**** del ATQ de Silver Wolf como Daño Cuántico a un enemigo.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point01",
@@ -7543,7 +7661,9 @@
 					"112012": 7,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100601
@@ -7552,6 +7672,7 @@
 			},
 			{
 				"name": "¿Permitir los cambios?",
+				"description": "Tiene una **probabilidad base** del ****2[i]%**** de aplicar a un enemigo 1 Debilidad del mismo tipo que el de algún aliado en el campo de batalla y reducir su RES al tipo de esa Debilidad en un **4[i]%** durante **3[i]** turnos. Si el objetivo enemigo ya tenía ese tipo de Debilidad, entonces no se activará la reducción de RES al tipo correspondiente a esa Debilidad.\nSilver Wolf solo puede aplicar 1 Debilidad a un mismo objetivo. Si vuelve a aplicarle una Debilidad, el objetivo solo conservará la más reciente. \nAdemás, tiene una **probabilidad base** del **5[i]%** de reducir la RES a todos los tipos de ese mismo objetivo en un ****6[f1]%**** durante **7[i]** turnos.\nInflige un ****1[i]%**** del ATQ de Silver Wolf como Daño Cuántico a ese objetivo.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point02",
@@ -7568,7 +7689,15 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.98,
+					0.75,
+					2,
+					0.2,
+					1,
+					0.075,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100602
@@ -7577,6 +7706,7 @@
 			},
 			{
 				"name": "Cuenta baneada",
+				"description": "Tiene una **probabilidad base** del ****2[i]%**** de reducir la DEF de un enemigo en un ****3[f1]%**** durante **4[i]** turnos. Además, inflige un ****1[i]%**** del ATQ de Silver Wolf como Daño Cuántico a ese objetivo.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point03",
@@ -7593,7 +7723,12 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					2.28,
+					0.85,
+					0.36,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100603
@@ -7602,6 +7737,7 @@
 			},
 			{
 				"name": "Esperando a que el programa responda...",
+				"description": "Silver Wolf puede crear 3 tipos de errores: hacer que el ATQ se reduzca en un ****1[f1]%****; hacer que la DEF se reduzca en un ****2[f1]%****; hacer que la VEL se reduzca en un ****3[f1]%****.\nCada vez que Silver Wolf lanza un ataque, tiene una **probabilidad base** del ****4[i]%**** de implantar 1 error al azar al objetivo durante **5[i]** turnos.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point04",
@@ -7618,7 +7754,13 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.05,
+					0.04,
+					0.03,
+					0.6,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100604
@@ -7627,13 +7769,16 @@
 			},
 			{
 				"name": "Cierre forzoso del proceso",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. Inflige un **1[i]%** del ATQ de Silver Wolf como Daño Cuántico a todos los enemigos y reduce su Firmeza ignorando sus tipos de Debilidad. Al romper la Debilidad de un enemigo, activa el efecto de Ruptura Cuántica.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1006/SkillIcon_1006_Maze.png",
 				"shortIcon": "SkillIcon_1006_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					100607
@@ -8873,6 +9018,7 @@
 		"tree": [
 			{
 				"name": "Velocidad del rayo",
+				"description": "Inflige un ****1[i]%**** del ATQ de Arlan como Daño de Rayo a un enemigo.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point01",
@@ -8887,7 +9033,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100801
@@ -8896,6 +9044,7 @@
 			},
 			{
 				"name": "Rompeataduras",
+				"description": "Arlan consume una cantidad de PV equivalente al **1[i]%** de sus PV máx. e inflige un ****2[i]%**** de su ATQ como Daño de Rayo a un enemigo. Si no hay suficientes PV, al usar la habilidad básica los PV actuales de Arlan se reducen a 1.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point02",
@@ -8912,7 +9061,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.15,
+					1.2
+				],
 				"status": [],
 				"baseSkill": [
 					100802
@@ -8921,6 +9073,7 @@
 			},
 			{
 				"name": "Castigo furibundo",
+				"description": "Arlan inflige un ****1[i]%**** de su ATQ como Daño de Rayo a un enemigo y un ****2[i]%**** de su ATQ como Daño de Rayo a los enemigos adyacentes.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point03",
@@ -8937,7 +9090,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.92,
+					0.96
+				],
 				"status": [],
 				"baseSkill": [
 					100803
@@ -8946,6 +9102,7 @@
 			},
 			{
 				"name": "Ira y dolor",
+				"description": "Arlan obtiene una bonificación de daño según el porcentaje de PV que haya perdido hasta el momento. Como máximo puede infligir un ****1[i]%**** más de daño.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point04",
@@ -8962,7 +9119,9 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.36
+				],
 				"status": [],
 				"baseSkill": [
 					100804
@@ -8971,13 +9130,16 @@
 			},
 			{
 				"name": "Cosecha rápida",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. Inflige un **1[i]%** del ATQ de Arlan como Daño de Rayo a todos los enemigos.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1008/SkillIcon_1008_Maze.png",
 				"shortIcon": "SkillIcon_1008_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					100807
@@ -10219,6 +10381,7 @@
 		"tree": [
 			{
 				"name": "Haz espectral",
+				"description": "Inflige un ****1[i]%**** del ATQ de Asta como Daño de Fuego a un enemigo.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point01",
@@ -10233,7 +10396,9 @@
 					"112002": 5,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100901
@@ -10242,6 +10407,7 @@
 			},
 			{
 				"name": "Tormenta de meteoritos",
+				"description": "Inflige un ****1[i]%**** del ATQ de Asta como Daño de Fuego a un enemigo y después inflige daño 4 veces más. Cada golpe inflige un ****1[i]%**** del ATQ de Asta como Daño de Fuego a un enemigo al azar.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point02",
@@ -10258,7 +10424,9 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					100902
@@ -10267,6 +10435,7 @@
 			},
 			{
 				"name": "Bendición astral",
+				"description": "La VEL de todos los aliados aumenta en ****1[i]**** pts. durante **2[i]** turnos.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point03",
@@ -10283,7 +10452,10 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					36,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100903
@@ -10292,6 +10464,7 @@
 			},
 			{
 				"name": "Astrometría",
+				"description": "Obtiene una acumulación de Recarga por cada objetivo distinto golpeado. Si el objetivo tiene Debilidad de Fuego, obtiene una acumulación adicional.\nPor cada acumulación de Recarga que tenga Asta, el ATQ de todos los aliados aumenta en un ****1[f1]%****. Este efecto se puede acumular hasta **2[i]** veces.\nA partir de su segundo turno, Asta pierde **3[i]** acumulaciones de Recarga al principio de cada turno.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point04",
@@ -10308,7 +10481,11 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.07,
+					5,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100904
@@ -10317,13 +10494,16 @@
 			},
 			{
 				"name": "Destello milagroso",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. Inflige un **1[i]%** del ATQ de Asta como Daño de Fuego a todos los enemigos.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1009/SkillIcon_1009_Maze.png",
 				"shortIcon": "SkillIcon_1009_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100907
@@ -11568,6 +11748,7 @@
 		"tree": [
 			{
 				"name": "¿Y tú qué miras?",
+				"description": "Inflige un ****1[i]%**** del ATQ de Herta como Daño de Hielo a un enemigo.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point01",
@@ -11582,7 +11763,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					101301
@@ -11591,6 +11774,7 @@
 			},
 			{
 				"name": "Oferta única",
+				"description": "Inflige un ****1[i]%**** del ATQ de Herta como Daño de Hielo a todos los enemigos. Si el porcentaje de PV del enemigo es igual o superior al **2[i]%**, el daño infligido a ese objetivo aumenta en un **3[i]%**.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point02",
@@ -11607,7 +11791,11 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					0.5,
+					0.2
+				],
 				"status": [],
 				"baseSkill": [
 					101302
@@ -11616,6 +11804,7 @@
 			},
 			{
 				"name": "Es magia, le puse algo de magia",
+				"description": "Inflige un ****1[i]%**** del ATQ de Herta como Daño de Hielo a todos los enemigos.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point03",
@@ -11632,7 +11821,9 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.2
+				],
 				"status": [],
 				"baseSkill": [
 					101303
@@ -11641,6 +11832,7 @@
 			},
 			{
 				"name": "Mejor lo hago yo",
+				"description": "Cuando el ataque de un aliado reduce el porcentaje de PV del objetivo al **1[i]%** o menos, Herta lanza un **ataque adicional** que inflige un ****2[i]%**** de su ATQ como Daño de Hielo a todos los enemigos.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point04",
@@ -11657,7 +11849,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					101304
@@ -11666,13 +11861,17 @@
 			},
 			{
 				"name": "Todavía se puede optimizar",
+				"description": "Tras usar la técnica, al comenzar la siguiente batalla, el ATQ de Herta aumenta en un **1[i]%** durante **2[i]** turnos.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1013/SkillIcon_1013_Maze.png",
 				"shortIcon": "SkillIcon_1013_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.4,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					101307
@@ -12964,6 +13163,7 @@
 		"tree": [
 			{
 				"name": "Bala del vendaval",
+				"description": "Inflige un ****1[i]%**** del ATQ de Bronya como Daño de Viento a un enemigo.",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point01",
@@ -12978,7 +13178,9 @@
 					"112002": 7,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110101
@@ -12987,6 +13189,7 @@
 			},
 			{
 				"name": "Reorganización del combate",
+				"description": "Elimina un **estado negativo** de un aliado, hace que realice una acción inmediatamente y aumenta el daño que inflige en un ****1[i]%**** durante **3[i]** turno.\nSi utiliza esta habilidad consigo misma, no se activará la acción inmediata.",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point02",
@@ -13003,7 +13206,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.33,
+					0,
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					110102
@@ -13012,6 +13220,7 @@
 			},
 			{
 				"name": "Marcha de Belobog",
+				"description": "El ATQ de todos los aliados aumenta en un ****1[i]%**** y el Daño CRIT se incrementa en un ****2[f1]%**** del Daño CRIT de Bronya + ****3[f1]%**** durante **4[i]** turnos.",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point03",
@@ -13028,7 +13237,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.33,
+					0.12,
+					0.12,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110103
@@ -13037,6 +13251,7 @@
 			},
 			{
 				"name": "Liderazgo",
+				"description": "Tras usar el ATQ básico, la siguiente acción de Bronya se **adelanta** un ****1[i]%****.",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point04",
@@ -13053,7 +13268,9 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					110104
@@ -13062,13 +13279,17 @@
 			},
 			{
 				"name": "Estandarte de mando",
+				"description": "Tras usar la técnica, al comenzar la siguiente batalla, el ATQ de todos los aliados aumenta en un **1[i]%** durante **2[i]** turnos.",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1101/SkillIcon_1101_Maze.png",
 				"shortIcon": "SkillIcon_1101_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110107
@@ -14318,6 +14539,7 @@
 		"tree": [
 			{
 				"name": "Trancazo",
+				"description": "Inflige un ****1[i]%**** del ATQ de Seele como Daño Cuántico a un enemigo.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point01",
@@ -14332,7 +14554,9 @@
 					"111012": 7,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110201
@@ -14341,6 +14565,7 @@
 			},
 			{
 				"name": "Hoja envainada",
+				"description": "Seele aumenta su VEL en un **2[i]%** durante **3[i]** turnos e inflige un ****1[i]%**** de su ATQ como Daño Cuántico a un enemigo.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point02",
@@ -14357,7 +14582,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					1.1,
+					0.25,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110202
@@ -14366,6 +14595,7 @@
 			},
 			{
 				"name": "Mariposa desbocada",
+				"description": "Seele entra en un estado potenciado e inflige un ****1[i]%**** de su ATQ como Daño Cuántico a un enemigo.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point03",
@@ -14382,7 +14612,9 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					2.55
+				],
 				"status": [],
 				"baseSkill": [
 					110203
@@ -14391,6 +14623,7 @@
 			},
 			{
 				"name": "Reaparición",
+				"description": "Al eliminar a un objetivo enemigo usando su ATQ básico, habilidad básica o habilidad definitiva, obtiene inmediatamente un **turno adicional** y entra en un estado potenciado. Este estado hace que el daño de los ataques de Seele aumente en un ****1[i]%**** durante **2[i]** turno.\nLos enemigos eliminados durante el **turno adicional** obtenido con su talento Reaparición no activarán el talento otra vez.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point04",
@@ -14407,7 +14640,10 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.4,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					110204
@@ -14416,13 +14652,16 @@
 			},
 			{
 				"name": "Ilusión fantasmal",
+				"description": "Tras usar la técnica, Seele obtiene Invisibilidad durante **1[i]** s. Mientras está en el estado de Invisibilidad, Seele no puede ser detectada por los enemigos. Al entrar en combate tras atacar a un enemigo, Seele entra en el estado potenciado inmediatamente.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1102/SkillIcon_1102_Maze.png",
 				"shortIcon": "SkillIcon_1102_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					110207
@@ -15708,6 +15947,7 @@
 		"tree": [
 			{
 				"name": "Trueno ensordecedor",
+				"description": "Inflige un ****1[i]%**** del ATQ de Serval como Daño de Rayo a un enemigo.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point01",
@@ -15722,7 +15962,9 @@
 					"112002": 5,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110301
@@ -15731,6 +15973,7 @@
 			},
 			{
 				"name": "Relámpago deslumbrante",
+				"description": "Serval inflige un ****1[i]%**** de su ATQ como Daño de Rayo a un enemigo y un ****2[i]%**** de su ATQ como Daño de Rayo a los enemigos adyacentes. Además, tiene una **probabilidad base** del **3[i]%** de afectar con Electrocución a los enemigos atacados durante **4[i]** turnos.\nLos enemigos electrocutados reciben un Daño de Rayo con el tiempo equivalente al ****5[i]%**** del ATQ de Serval al comienzo de cada turno.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point02",
@@ -15747,7 +15990,13 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.7,
+					0.3,
+					0.8,
+					2,
+					0.4
+				],
 				"status": [],
 				"baseSkill": [
 					110302
@@ -15756,6 +16005,7 @@
 			},
 			{
 				"name": "¡Fiebre Mecánica está aquí!",
+				"description": "Inflige un ****1[i]%**** del ATQ de Serval como Daño de Rayo a todos los enemigos y alarga en **2[i]** turnos la duración de Electrocución en los enemigos afectados por este estado.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point03",
@@ -15772,7 +16022,10 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					1.08,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110303
@@ -15781,6 +16034,7 @@
 			},
 			{
 				"name": "Cuerdas ardientes",
+				"description": "Tras lanzar un ataque, inflige un ****1[i]%**** del ATQ de Serval como Daño de Rayo **adicional** a todos los enemigos afectados por Electrocución.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point04",
@@ -15797,7 +16051,9 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.36
+				],
 				"status": [],
 				"baseSkill": [
 					110304
@@ -15806,13 +16062,19 @@
 			},
 			{
 				"name": "Buenas noches, Belobog",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. Inflige un **4[i]%** del ATQ de Serval como Daño de Rayo a un enemigo al azar. Además, cada enemigo tiene una **probabilidad base** del **1[i]%** de ser afectado por Electrocución durante **3[i]** turnos.\nLos enemigos electrocutados reciben un Daño de Rayo con el tiempo equivalente al **2[i]%** del ATQ de Serval al comienzo de cada turno.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1103/SkillIcon_1103_Maze.png",
 				"shortIcon": "SkillIcon_1103_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.5,
+					3,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110307
@@ -17088,6 +17350,7 @@
 		"tree": [
 			{
 				"name": "Puño de la convicción",
+				"description": "Inflige un ****1[i]%**** del ATQ de Gepard como Daño de Hielo a un enemigo.",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point01",
@@ -17102,7 +17365,9 @@
 					"112002": 7,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110401
@@ -17111,6 +17376,7 @@
 			},
 			{
 				"name": "Golpe sobrecogedor",
+				"description": "Inflige un ****1[i]%**** del ATQ de Gepard como Daño de Hielo a un enemigo. Tiene un **2[i]%** de **probabilidad base** de afectar con Congelación al enemigo atacado durante **3[i]** turno.\nEl enemigo congelado no puede actuar, y al comienzo de cada turno recibe un ****4[i]%**** del ATQ de Gepard como Daño de Hielo **adicional**.",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point02",
@@ -17127,7 +17393,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					1,
+					0.65,
+					1,
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					110402
@@ -17136,6 +17407,7 @@
 			},
 			{
 				"name": "Bastión duradero",
+				"description": "Otorga a todos los aliados un escudo que absorbe un daño equivalente al ****1[i]%**** de la DEF de Gepard + ****3[i]**** durante **2[i]** turnos.",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point03",
@@ -17152,7 +17424,11 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.3,
+					3,
+					150
+				],
 				"status": [],
 				"baseSkill": [
 					110403
@@ -17161,6 +17437,7 @@
 			},
 			{
 				"name": "Voluntad de hierro",
+				"description": "Al recibir un golpe letal, en vez de caer **derrotado**, Gepard regenera un ****1[i]%**** de sus PV máx. Este efecto solo se puede activar una vez en cada batalla.",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point04",
@@ -17177,7 +17454,9 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					110404
@@ -17186,13 +17465,18 @@
 			},
 			{
 				"name": "Camaradería",
+				"description": "Tras usar la técnica, al comenzar la siguiente batalla otorga un escudo a todos los aliados que absorbe un daño equivalente al **1[i]%** de la DEF de Gepard + **3[i]** durante **2[i]** turnos.",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1104/SkillIcon_1104_Maze.png",
 				"shortIcon": "SkillIcon_1104_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.24,
+					2,
+					150
+				],
 				"status": [],
 				"baseSkill": [
 					110407
@@ -18489,6 +18773,7 @@
 		"tree": [
 			{
 				"name": "Tras la amabilidad",
+				"description": "Inflige un ****1[i]%**** del ATQ de Natasha como Daño Físico a un enemigo.",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point01",
@@ -18503,7 +18788,9 @@
 					"112012": 5,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110501
@@ -18512,6 +18799,7 @@
 			},
 			{
 				"name": "Amor, curación y decisiones",
+				"description": "Cura inmediatamente a un aliado con una cantidad de PV equivalente al ****1[f1]%**** de los PV máx. de Natasha + ****4[i]****. Al comienzo de los siguientes **3[i]** turnos, ese mismo aliado regenera una cantidad de PV equivalente al ****2[f1]%**** de los PV máx. de Natasha + ****5[i]****.",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point02",
@@ -18528,7 +18816,13 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.07,
+					0.048,
+					2,
+					70,
+					48
+				],
 				"status": [],
 				"baseSkill": [
 					110502
@@ -18537,6 +18831,7 @@
 			},
 			{
 				"name": "Don del renacimiento",
+				"description": "Cura inmediatamente a todos los aliados con una cantidad de PV equivalente al ****1[f1]%**** de los PV máx. de Natasha + ****2[i]****.",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point03",
@@ -18553,7 +18848,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.092,
+					92
+				],
 				"status": [],
 				"baseSkill": [
 					110503
@@ -18562,6 +18860,7 @@
 			},
 			{
 				"name": "Inervación",
+				"description": "La curación realizada por Natasha aumenta en un ****2[i]%**** para los objetivos aliados que tengan un porcentaje de PV igual o inferior al **1[i]%**. También aplica a la curación continua.",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point04",
@@ -18578,7 +18877,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.3,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					110504
@@ -18587,13 +18889,19 @@
 			},
 			{
 				"name": "Investigación sobre hipnosis",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. Inflige un **4[i]%** del ATQ de Natasha como Daño Físico a un enemigo al azar. Además, cada enemigo tiene una **probabilidad base** del **1[i]%** de ser afectado por Debilitación.\nEl daño que infligen los enemigos debilitados se reduce en un **2[i]%** durante **3[i]** turno.",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1105/SkillIcon_1105_Maze.png",
 				"shortIcon": "SkillIcon_1105_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.3,
+					1,
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					110507
@@ -19858,6 +20166,7 @@
 		"tree": [
 			{
 				"name": "Disparo helado",
+				"description": "Inflige un ****1[i]%**** del ATQ de Pela como Daño de Hielo a un enemigo.",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point01",
@@ -19872,7 +20181,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110601
@@ -19881,6 +20192,7 @@
 			},
 			{
 				"name": "Escarcha",
+				"description": "Elimina **2[i]** **efecto positivo** de un enemigo y le inflige un ****1[i]%**** del ATQ de Pela como Daño de Hielo.",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point02",
@@ -19897,7 +20209,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.05,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					110602
@@ -19906,6 +20221,7 @@
 			},
 			{
 				"name": "Supresión de área",
+				"description": "Cada enemigo tiene una **probabilidad base** del **1[i]%** de ser afectado por Desprotección. Además, inflige un ****4[i]%**** del ATQ de Pela como Daño de Hielo a todos los enemigos.\nLa DEF de los enemigos afectados por Desprotección se reduce en un ****2[i]%**** durante **3[i]** turnos.",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point03",
@@ -19922,7 +20238,12 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0.3,
+					2,
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					110603
@@ -19931,6 +20252,7 @@
 			},
 			{
 				"name": "Recopilación de datos",
+				"description": "Si después de atacar, el objetivo enemigo está afectado por algún **estado negativo**, Pela recupera ****1[f1]**** pts. de energía adicionales. Este efecto solo puede activarse 1 vez con cada ataque.",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point04",
@@ -19947,7 +20269,9 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					110604
@@ -19956,13 +20280,19 @@
 			},
 			{
 				"name": "Iniciadora",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. Inflige un **4[i]%** del ATQ de Pela como Daño de Hielo a un enemigo al azar. Además, cada enemigo tiene una **probabilidad base** del **1[i]%** de ver reducida su DEF en un **2[i]%** durante **3[i]** turnos.",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1106/SkillIcon_1106_Maze.png",
 				"shortIcon": "SkillIcon_1106_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.2,
+					2,
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					110607
@@ -21269,6 +21599,7 @@
 		"tree": [
 			{
 				"name": "Quiero ayudar",
+				"description": "Inflige un ****1[i]%**** del ATQ de Clara como Daño Físico a un enemigo.",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point01",
@@ -21283,7 +21614,9 @@
 					"112012": 7,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110701
@@ -21292,6 +21625,7 @@
 			},
 			{
 				"name": "Svarog te vigila",
+				"description": "Clara inflige un ****1[i]%**** de su ATQ como Daño Físico a todos los enemigos, y además inflige un ****2[i]%**** de su ATQ como Daño Físico extra a los objetivos que tengan la Marca de represalia de Svarog.\nTras usar la habilidad básica, se eliminan todas las Marcas de represalia.",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point02",
@@ -21308,7 +21642,10 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.6,
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					110702
@@ -21317,6 +21654,7 @@
 			},
 			{
 				"name": "Es una promesa, no una orden",
+				"description": "Tras usar su habilidad definitiva, el daño que recibe Clara se reduce en un ****4[i]%**** adicional y la probabilidad de ser atacada aumenta enormemente durante **3[i]** turnos.\nAdemás, el efecto de **contraataque** de Svarog se potencia. Cuando un aliado recibe un ataque, Svarog lanza un **contraataque** inmediatamente, su multiplicador de daño aumenta en un ****2[i]%**** e inflige un **50%** del daño que reciba el objetivo principal a los enemigos adyacentes. El efecto de potenciación se puede activar **5[i]** veces.",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point03",
@@ -21333,7 +21671,13 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					5,
+					0.96,
+					2,
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110703
@@ -21342,6 +21686,7 @@
 			},
 			{
 				"name": "Porque somos familia",
+				"description": "Clara está bajo la protección de Svarog y el daño que recibe de los ataques enemigos se reduce en un **3[i]%**. Svarog marca a los enemigos que ataquen a Clara con su Marca de represalia y se venga con un **contraataque** que inflige un ****2[i]%**** del ATQ de Clara como Daño Físico.",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point04",
@@ -21358,7 +21703,11 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					1,
+					0.8,
+					0.1
+				],
 				"status": [],
 				"baseSkill": [
 					110704
@@ -21367,13 +21716,17 @@
 			},
 			{
 				"name": "Un pequeño precio por la victoria",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. La probabilidad de que Clara reciba un ataque enemigo aumenta durante **1[i]** turnos.",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1107/SkillIcon_1107_Maze.png",
 				"shortIcon": "SkillIcon_1107_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					2,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					110707
@@ -22686,6 +23039,7 @@
 		"tree": [
 			{
 				"name": "Filos cegadores",
+				"description": "Inflige un ****1[i]%**** del ATQ de Sampo como Daño de Viento a un enemigo.",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point01",
@@ -22700,7 +23054,9 @@
 					"112012": 5,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110801
@@ -22709,6 +23065,7 @@
 			},
 			{
 				"name": "Amor que rebota",
+				"description": "Inflige un ****2[i]%**** del ATQ de Sampo como Daño de Viento a un enemigo. También inflige daño **1[i]** veces más, y cada vez inflige un Daño de Viento equivalente al ****2[i]%**** del ATQ de Sampo a un enemigo al azar.",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point02",
@@ -22725,7 +23082,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					4,
+					0.28
+				],
 				"status": [],
 				"baseSkill": [
 					110802
@@ -22734,6 +23094,7 @@
 			},
 			{
 				"name": "Regalo sorpresa",
+				"description": "Inflige un ****1[i]%**** del ATQ de Sampo como Daño de Viento a todos los enemigos y tiene una **probabilidad base** del **4[i]%** de aumentar el Daño con el tiempo que reciben los enemigos atacados en un ****2[i]%**** durante **3[i]** turnos.",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point03",
@@ -22750,7 +23111,12 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.96,
+					0.2,
+					2,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					110803
@@ -22759,6 +23125,7 @@
 			},
 			{
 				"name": "Viento cortante",
+				"description": "Cuando Sampo golpea a un enemigo, tiene una **probabilidad base** del **1[i]%** de afectar al objetivo golpeado con Intemperie durante **3[i]** turnos.\nEn el estado de Intemperie, los objetivos enemigos reciben un Daño de Viento con el tiempo equivalente al ****2[i]%**** del ATQ de Sampo al comienzo de cada turno. Intemperie se puede acumular **4[i]** veces como máximo.",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point04",
@@ -22775,7 +23142,12 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.65,
+					0.2,
+					3,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					110804
@@ -22784,13 +23156,18 @@
 			},
 			{
 				"name": "Brillo resplandeciente",
+				"description": "Tras usar la técnica, los enemigos de un área determinada quedan afectados por Ceguera durante **1[i]** s, lo que les impide detectar a los aliados.\nAl iniciar combate contra enemigos cegados, cada enemigo tiene una **probabilidad fija** del **2[i]%** de que su acción se retrase en un **3[i]%**.",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1108/SkillIcon_1108_Maze.png",
 				"shortIcon": "SkillIcon_1108_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					10,
+					1,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					110807
@@ -24171,6 +24548,7 @@
 		"tree": [
 			{
 				"name": "¡Oye, no te quemes!",
+				"description": "Inflige un ****1[i]%**** del ATQ de Hook como Daño de Fuego a un enemigo.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point01",
@@ -24185,7 +24563,9 @@
 					"112012": 5,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110901
@@ -24194,6 +24574,7 @@
 			},
 			{
 				"name": "Hey, ¿te acuerdas de Hook?",
+				"description": "Inflige un ****1[i]%**** del ATQ de Hook como Daño de Fuego a un enemigo. Además, tiene un **2[i]%** de **probabilidad base** de afectar con Quemadura al enemigo atacado durante **3[i]** turnos.\nLos enemigos quemados reciben al principio de cada turno un ****4[i]%**** del ATQ de Hook como Daño de Fuego con el tiempo.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point02",
@@ -24210,7 +24591,12 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					1.2,
+					1,
+					2,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					110902,
@@ -24220,6 +24606,7 @@
 			},
 			{
 				"name": "¡Bum! ¡Aquí viene el fuego!",
+				"description": "Inflige un ****1[i]%**** del ATQ de Hook como Daño de Fuego a un enemigo.\nTras usar la habilidad definitiva, potencia la habilidad básica la siguiente vez que se use. La habilidad básica potenciada inflige daño a un enemigo y a los enemigos adyacentes.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point03",
@@ -24236,7 +24623,9 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					2.4
+				],
 				"status": [],
 				"baseSkill": [
 					110903
@@ -24245,6 +24634,7 @@
 			},
 			{
 				"name": "¡Ja! ¡Leña al fuego!",
+				"description": "Al atacar a un enemigo afectado por Quemadura, inflige un ****1[i]%**** del ATQ de Hook como Daño de Fuego **adicional** y recupera **2[i]** pts. de energía adicionales.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point04",
@@ -24261,7 +24651,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					110904
@@ -24270,13 +24663,19 @@
 			},
 			{
 				"name": "¡Vaya, qué desastre!",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. Inflige un **4[i]%** del ATQ de Hook como Daño de Fuego a un enemigo al azar. Además, cada enemigo tiene un **1[i]%** de **probabilidad base** de ser afectado por Quemadura durante **3[i]** turnos.\nLos enemigos quemados reciben un Daño de Fuego con el tiempo equivalente al **2[i]%** del ATQ de Hook al comienzo de cada turno.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1109/SkillIcon_1109_Maze.png",
 				"shortIcon": "SkillIcon_1109_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.5,
+					3,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110907
@@ -25642,6 +26041,7 @@
 		"tree": [
 			{
 				"name": "Técnica de crampón",
+				"description": "Inflige un Daño Cuántico equivalente al ****1[i]%**** de sus PV máx. a un enemigo.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point01",
@@ -25656,7 +26056,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					111001
@@ -25665,6 +26067,7 @@
 			},
 			{
 				"name": "Latas de acampada",
+				"description": "Aplica Reacción de supervivencia a un aliado y aumenta sus PV máx. en una cantidad equivalente al ****1[f1]%**** de los PV máx. de Lynx + ****2[i]****. Si el aliado es de la Vía de la Destrucción o de la Conservación, aumenta en gran medida la probabilidad de que reciba un ataque enemigo. Reacción de supervivencia dura **3[i]** turnos.\nEl objetivo aliado regenera una cantidad de PV equivalente al ****4[f1]%**** de los PV máx. de Lynx + ****5[i]****.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point02",
@@ -25681,7 +26084,14 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.05,
+					50,
+					2,
+					0.08,
+					80,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					111002
@@ -25690,6 +26100,7 @@
 			},
 			{
 				"name": "Botiquín de las llanuras nevadas",
+				"description": "Elimina **1[i]** **estado negativo** de todos los aliados y todos los aliados regeneran una cantidad de PV equivalente al ****2[f1]%**** de los PV máx. de Lynx + ****3[i]****.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point03",
@@ -25706,7 +26117,11 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0.09,
+					90
+				],
 				"status": [],
 				"baseSkill": [
 					111003
@@ -25715,6 +26130,7 @@
 			},
 			{
 				"name": "Supervivencia al aire libre",
+				"description": "Al usar la habilidad básica o la habilidad definitiva, un objetivo aliado obtiene un efecto de curación continua durante **1[i]** turnos. Al comenzar cada turno, el objetivo regenera una cantidad de PV equivalente al ****2[f1]%**** de los PV máx. de Lynx + ****3[i]****. Si el objetivo está afectado por Reacción de supervivencia, el efecto de curación continua regenera de forma adicional una cantidad de PV equivalente al ****4[f1]%**** de los PV máx. de Lynx + ****5[i]****.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point04",
@@ -25731,7 +26147,13 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					2,
+					0.024,
+					24,
+					0.03,
+					30
+				],
 				"status": [],
 				"baseSkill": [
 					111004
@@ -25740,13 +26162,16 @@
 			},
 			{
 				"name": "Barrita energética de chocolate",
+				"description": "Tras usar la técnica, al comenzar la siguiente batalla, se aplica el efecto de curación continua del talento de Lynx a todos los aliados durante **1[i]** turnos.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1110/SkillIcon_1110_Maze.png",
 				"shortIcon": "SkillIcon_1110_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					111007
@@ -27132,6 +27557,7 @@
 		"tree": [
 			{
 				"name": "Puño certero",
+				"description": "Inflige un ****1[i]%**** del ATQ de Luka como Daño Físico a un enemigo.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point01",
@@ -27146,7 +27572,9 @@
 					"112012": 5,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					111101,
@@ -27156,6 +27584,7 @@
 			},
 			{
 				"name": "¡Puño, fuera!",
+				"description": "Inflige un ****1[i]%**** del ATQ de Luka como Daño Físico a un enemigo y después tiene un **2[i]%** de **probabilidad base** de afectar con Sangrado al objetivo durante **5[i]** turnos.\nEl enemigo afectado por Sangrado recibe un Daño Físico con el tiempo equivalente al **3[f1]%** de sus PV máx. al comienzo de cada turno, hasta un máximo del ****4[i]%**** del ATQ de Luka.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point02",
@@ -27172,7 +27601,13 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.6,
+					1,
+					0.24,
+					1.3,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					111102
@@ -27181,6 +27616,7 @@
 			},
 			{
 				"name": "Golpe de gracia",
+				"description": "Obtiene **5[i]** acumulaciones de Voluntad luchadora y tiene una **probabilidad base** del **2[i]%** de aumentar en un ****3[f1]%**** el daño que recibe un enemigo durante **4[i]** turnos. Después inflige un ****1[i]%**** del ATQ de Luka como Daño Físico a ese objetivo.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point03",
@@ -27197,7 +27633,13 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					1.98,
+					1,
+					0.12,
+					3,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					111103
@@ -27206,6 +27648,7 @@
 			},
 			{
 				"name": "Chispas por todas partes",
+				"description": "Luka obtiene **1[i]** acumulación de Voluntad luchadora después de usar el ATQ básico Puño certero o la habilidad básica ¡Puño, fuera!, hasta un máximo de 4 acumulaciones. Si tiene 2 o más acumulaciones de Voluntad luchadora, el ATQ básico Puño certero se potencia y se convierte en Puño rompecielos certero. Tras golpear con el Puño rompecielos de su ATQ básico potenciado a un enemigo afectado por Sangrado, el estado de Sangrado inflige inmediatamente 1 vez un daño equivalente al ****2[i]%**** del daño de Sangrado original. Al comenzar la batalla, Luka obtiene 1 acumulación de Voluntad luchadora.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point04",
@@ -27222,7 +27665,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0.68
+				],
 				"status": [],
 				"baseSkill": [
 					111104
@@ -27231,13 +27677,17 @@
 			},
 			{
 				"name": "Anticipación",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. Inflige un **1[i]%** del ATQ de Luka como Daño Físico a un enemigo al azar y tiene un **2[i]%** de **probabilidad base** de afectarlo con un estado de Sangrado equivalente al de la habilidad básica. Después, Luka obtiene 1 acumulación adicional de Voluntad luchadora.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1111/SkillIcon_1111_Maze.png",
 				"shortIcon": "SkillIcon_1111_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.5,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					111107
@@ -28529,6 +28979,7 @@
 		"tree": [
 			{
 				"name": "Déficit",
+				"description": "Inflige un ****1[i]%**** del ATQ de Topaz como Daño de Fuego a un enemigo.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point01",
@@ -28543,7 +28994,9 @@
 					"112002": 7,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					111201
@@ -28552,6 +29005,7 @@
 			},
 			{
 				"name": "¿Problemas con el pago?",
+				"description": "Hace que un enemigo entre en el estado Certificado de deuda y aumenta el daño que recibe de los **ataques adicionales** en un ****2[i]%****. Certificado de deuda solo tiene efecto en el último objetivo al que se le haya aplicado. Al inicio del turno de un aliado o durante la acción de los aliados, si en el campo de batalla no hay ningún enemigo con Certificado de deuda, Topaz se lo aplica a un enemigo al azar.\nConti inflige a ese objetivo un ****1[i]%**** del ATQ de Topaz como Daño de Fuego. Lanzar esta habilidad básica e infligir daño se considera como lanzar un **ataque adicional**.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point02",
@@ -28568,7 +29022,10 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.75,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					111202
@@ -28577,6 +29034,7 @@
 			},
 			{
 				"name": "De pérdida a ganancia",
+				"description": "Conti entra en el estado Subida increíble. Su multiplicador de daño aumenta en un ****1[i]%**** y su Daño CRIT en un ****2[i]%****. Además, cuando un enemigo afectado por Certificado de deuda recibe el ataque de un ATQ básico, habilidad básica o habilidad definitiva de un aliado, la acción de Conti se adelanta un **3[i]%**. Conti sale del estado Subida increíble después de lanzar **4[i]** ataques.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point03",
@@ -28593,7 +29051,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.75,
+					0.125,
+					0.5,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					111203
@@ -28602,6 +29065,7 @@
 			},
 			{
 				"name": "¡¿Mercado diagonalista?!",
+				"description": "Invoca a Conti al principio de la batalla. Conti tiene **1[i]** pts. de VEL por defecto. Al realizar una acción, Conti lanza un **ataque adicional** e inflige un ****2[i]%**** del ATQ de Topaz como Daño de Fuego a un enemigo afectado por Certificado de deuda.\nCuando el enemigo afectado por Certificado de deuda recibe un ataque adicional de un aliado, la acción de Conti se adelanta un **3[i]%**. El efecto de adelanto de la acción no se puede activar durante el turno de Conti.\nCuando Topaz es **derrotada**, Conti desaparece.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point04",
@@ -28618,7 +29082,11 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					80,
+					0.75,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					111204
@@ -28627,13 +29095,17 @@
 			},
 			{
 				"name": "Subsidio explícito",
+				"description": "Topaz invoca a Conti al entrar en el mapa. Conti busca automáticamente los tesoros normales y Chanchitos que haya en un área determinada.\nUsar la técnica de forma proactiva hace que, después de que Conti lance su primer ataque en la siguiente batalla, Topaz recupere **1[i]** pts. de energía.\nTras usar la técnica de forma proactiva y ganar una batalla contra los monstruos del mapa, si Topaz sigue en el equipo, se obtiene una pequeña cantidad adicional de créditos al conseguir créditos. Solo se pueden obtener **2[i]** créditos adicionales cada día natural.\nTras usar la técnica de forma proactiva y ganar una batalla contra los enemigos en el Universo Simulado, se obtiene una pequeña cantidad de fragmentos cósmicos y hay una pequeña probabilidad de obtener 1 objeto raro al azar.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1112/SkillIcon_1112_Maze.png",
 				"shortIcon": "SkillIcon_1112_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					60,
+					10000
+				],
 				"status": [],
 				"baseSkill": [
 					111207
@@ -29919,6 +30391,7 @@
 		"tree": [
 			{
 				"name": "Combinación oculta",
+				"description": "Lanza 1 ficha de jade del palo que menos fichas tenga e inflige un ****1[i]%**** del ATQ de Qingque como Daño Cuántico a un enemigo.",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point01",
@@ -29933,7 +30406,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120101,
@@ -29943,6 +30418,7 @@
 			},
 			{
 				"name": "Última ficha posible",
+				"description": "Roba **1[i]** fichas de jade e inflige un ****2[i]%**** más de daño hasta que termine el turno. Este efecto se puede acumular hasta **3[i]** veces. Tras usar esta habilidad básica, el turno no termina.",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point02",
@@ -29959,7 +30435,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					2,
+					0.14,
+					4
+				],
 				"status": [],
 				"baseSkill": [
 					120102
@@ -29968,6 +30448,7 @@
 			},
 			{
 				"name": "¿Cuatro peces ocultos? ¡Victoria!",
+				"description": "Inflige un ****1[i]%**** del ATQ de Qingque como Daño Cuántico a todos los enemigos y obtiene 4 fichas de jade del mismo palo.",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point03",
@@ -29984,7 +30465,9 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					1.2
+				],
 				"status": [],
 				"baseSkill": [
 					120103
@@ -29993,6 +30476,7 @@
 			},
 			{
 				"name": "Jade celestial",
+				"description": "Cuando un aliado comienza su turno, Qingque roba 1 ficha de jade al azar de entre 3 fichas de palos distintos. Puede tener 4 fichas de jade como máximo.\nSi Qingque tiene 4 fichas de jade del mismo palo al comenzar su turno, consume todas las fichas y entra en el estado de Cuarteto oculto.\nEn este estado, Qingque no puede volver a utilizar la habilidad básica y su ATQ aumenta en un ****1[i]%****, su ATQ básico \"Combinación oculta\" se potencia y se convierte en \"¡Fuera la ficha del muro muerto!\". Cuarteto oculto termina cuando se usa \"¡Fuera la ficha del muro muerto!\".",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point04",
@@ -30009,7 +30493,9 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.36
+				],
 				"status": [],
 				"baseSkill": [
 					120104
@@ -30018,13 +30504,16 @@
 			},
 			{
 				"name": "Desafío a mí misma",
+				"description": "Tras usar la técnica, al entrar en combate Qingque roba **1[i]** fichas de jade.",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1201/SkillIcon_1201_Maze.png",
 				"shortIcon": "SkillIcon_1201_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120107
@@ -31294,6 +31783,7 @@
 		"tree": [
 			{
 				"name": "Expulsión",
+				"description": "Inflige un ****1[i]%**** del ATQ de Tingyun como Daño de Rayo a un enemigo.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point01",
@@ -31308,7 +31798,9 @@
 					"113002": 5,
 					"113003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120201
@@ -31317,6 +31809,7 @@
 			},
 			{
 				"name": "Melodía tranquilizadora",
+				"description": "Otorga una Gracia a un aliado y aumenta el ATQ de ese aliado en un ****2[i]%**** (sin superar el ****4[i]%**** del ATQ actual de Tingyun).\nCuando el aliado que ha recibido la Gracia lanza un ataque, inflige un Daño de Rayo **adicional** equivalente al ****1[i]%**** de su ATQ.\nLa Gracia dura **3[i]** turnos y solo tiene efecto en el último aliado que haya sido objetivo de la habilidad básica de Tingyun.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point02",
@@ -31333,7 +31826,12 @@
 					"113002": 10,
 					"113003": 5
 				},
-				"params": [],
+				"params": [
+					0.2,
+					0.25,
+					3,
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					120202
@@ -31342,6 +31840,7 @@
 			},
 			{
 				"name": "Ritual de la nube auspiciosa",
+				"description": "Hace que un aliado recupere **1[i]** pts. de energía e inflija un ****3[i]%**** más de daño durante **2[i]** turnos.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point03",
@@ -31358,7 +31857,11 @@
 					"113002": 10,
 					"113003": 5
 				},
-				"params": [],
+				"params": [
+					50,
+					2,
+					0.2
+				],
 				"status": [],
 				"baseSkill": [
 					120203
@@ -31367,6 +31870,7 @@
 			},
 			{
 				"name": "Ciclón de chispas violetas",
+				"description": "Cuando un enemigo recibe un ataque de Tingyun, el aliado que tiene la Gracia le inflige inmediatamente un ****1[i]%**** de su ATQ como Daño de Rayo **adicional**.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point04",
@@ -31383,7 +31887,9 @@
 					"113002": 10,
 					"113003": 5
 				},
-				"params": [],
+				"params": [
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					120204
@@ -31392,13 +31898,16 @@
 			},
 			{
 				"name": "Brisa acariciadora",
+				"description": "Tras usar la técnica, Tingyun recupera **1[i]** pts. de energía.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1202/SkillIcon_1202_Maze.png",
 				"shortIcon": "SkillIcon_1202_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					50
+				],
 				"status": [],
 				"baseSkill": [
 					120207
@@ -32699,6 +33208,7 @@
 		"tree": [
 			{
 				"name": "Espinas del abismo",
+				"description": "Inflige un ****1[i]%**** del ATQ de Luocha como Daño Imaginario a un enemigo.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point01",
@@ -32713,7 +33223,9 @@
 					"113012": 7,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120301
@@ -32722,6 +33234,7 @@
 			},
 			{
 				"name": "Oración de la flor abisal",
+				"description": "Tras usar la habilidad básica, regenera a un aliado determinado una cantidad de PV equivalente al ****1[i]%**** del ATQ de Luocha + ****2[i]****. Luocha obtiene una acumulación de Flor abisal.\nCuando cualquiera de los aliados tiene un porcentaje de PV igual o inferior al **3[i]%**, Luocha le aplica una vez un efecto igual al de su habilidad básica y no consume pts. de habilidad básica. Este efecto se puede volver a activar después de **4[i]** turnos.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point02",
@@ -32738,7 +33251,12 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.4,
+					200,
+					0.5,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120302
@@ -32747,6 +33265,7 @@
 			},
 			{
 				"name": "Deseo de muerte",
+				"description": "Elimina **2[i]** **efecto positivo** de todos los enemigos y les inflige un Daño Imaginario equivalente al ****1[i]%**** del ATQ de Luocha. Además, Luocha obtiene 1 acumulación de Flor abisal.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point03",
@@ -32763,7 +33282,10 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					1.2,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					120303
@@ -32772,6 +33294,7 @@
 			},
 			{
 				"name": "Ciclo vital",
+				"description": "Cuando se alcanzan **1[i]** acumulaciones de Flor abisal, Luocha las consume todas y genera un campo.\nCuando un objetivo enemigo que está dentro del campo recibe un ataque, el aliado atacante regenera una cantidad de PV equivalente al ****2[f1]%**** del ATQ de Luocha + ****4[i]****.\nEl campo dura **3[i]** turnos. Cuando Luocha es **derrotado**, el campo desaparece.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point04",
@@ -32788,7 +33311,12 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					2,
+					0.12,
+					2,
+					60
+				],
 				"status": [],
 				"baseSkill": [
 					120304
@@ -32797,6 +33325,7 @@
 			},
 			{
 				"name": "Compasión del necio",
+				"description": "Tras usar la técnica, el talento se activa inmediatamente al comenzar la siguiente batalla.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point05",
@@ -34120,6 +34649,7 @@
 		"tree": [
 			{
 				"name": "Luz reluciente",
+				"description": "Inflige un ****1[i]%**** del ATQ de Jing Yuan como Daño de Rayo a un enemigo.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point01",
@@ -34134,7 +34664,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120401
@@ -34143,6 +34675,7 @@
 			},
 			{
 				"name": "Cénit agrietador",
+				"description": "Inflige un ****1[i]%**** del ATQ de Jing Yuan como Daño de Rayo a todos los enemigos e incrementa en **2[i]** los golpes por acción del caballero divino en su siguiente turno.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point02",
@@ -34159,7 +34692,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120402
@@ -34168,6 +34704,7 @@
 			},
 			{
 				"name": "Alumbrador",
+				"description": "Inflige un ****1[i]%**** del ATQ de Jing Yuan como Daño de Rayo a todos los enemigos e incrementa en **2[i]** los golpes por acción del caballero divino en su siguiente turno.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point03",
@@ -34184,7 +34721,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					1.2,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					120403
@@ -34193,6 +34733,7 @@
 			},
 			{
 				"name": "Extirpación del prana",
+				"description": "Invoca al caballero divino al comenzar la batalla. El caballero divino tiene inicialmente **1[i]** pts. de VEL y **4[i]** golpes por acción. Los golpes que inflige durante su acción se consideran **ataques adicionales**. Cada golpe inflige un ****2[i]%**** del ATQ de Jing Yuan como Daño de Rayo a un enemigo aleatorio, y los enemigos adyacentes reciben un Daño de Rayo equivalente al **5[i]%** del que recibe el objetivo principal.\nEl caballero divino puede acumular **6[i]** golpes por acción como máximo. Cada vez que sus golpes por acción se incrementan en 1, su VEL aumenta en **3[i]** pts. Cuando finaliza su acción, su VEL y sus golpes por acción regresan al valor original.\nCuando Jing Yuan es **derrotado**, el caballero divino desaparece.\nCuando Jing Yuan está afectado por **estados negativos de Control**, el caballero divino tampoco puede realizar ninguna acción.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point04",
@@ -34209,7 +34750,14 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					60,
+					0.33,
+					10,
+					3,
+					0.25,
+					10
+				],
 				"status": [],
 				"baseSkill": [
 					120404
@@ -34218,13 +34766,16 @@
 			},
 			{
 				"name": "Invocación del espíritu",
+				"description": "Tras usar la técnica, al comenzar la siguiente batalla, los golpes por acción del caballero divino en su primer turno se incrementan en **1[i]**.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1204/SkillIcon_1204_Maze.png",
 				"shortIcon": "SkillIcon_1204_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					120407
@@ -35691,6 +36242,7 @@
 		"tree": [
 			{
 				"name": "Espada fragmentada",
+				"description": "Inflige un ****1[i]%**** del ATQ de Blade como Daño de Viento a un enemigo.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point01",
@@ -35705,7 +36257,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120501,
@@ -35715,6 +36269,7 @@
 			},
 			{
 				"name": "Panorama infernal",
+				"description": "Consume un **1[i]%** de los PV máx. de Blade y entra en el estado Panorama infernal.\nEn el estado Panorama infernal no se puede usar la habilidad básica y el daño que inflige Blade aumenta en un ****4[i]%****. El ATQ básico Espada fragmentada se potencia y se transforma en Bosque de espadas durante **2[i]** turnos.\nSi Blade no tiene suficientes PV, al usar la habilidad básica sus PV se reducen a 1.\nEsta habilidad básica no recupera energía. Tras usar esta habilidad básica, el turno no termina.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point02",
@@ -35731,7 +36286,12 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.3,
+					3,
+					1,
+					0.12
+				],
 				"status": [],
 				"baseSkill": [
 					120502
@@ -35740,6 +36300,7 @@
 			},
 			{
 				"name": "Sentencia de muerte",
+				"description": "Los PV actuales de Blade se establecen en el **50%** de sus PV máx. e inflige a un enemigo un Daño de Viento equivalente al ****1[i]%**** del ATQ de Blade + ****2[i]%**** de sus PV máx. + ****5[i]%**** del recuento de PV que ha perdido en esta batalla. También inflige a los enemigos adyacentes un Daño de Viento equivalente al ****3[f1]%**** del ATQ de Blade + ****4[i]%**** de sus PV máx. + ****6[i]%**** del recuento de PV que ha perdido en esta batalla.\nEl recuento de PV perdidos en esta batalla no puede superar el **7[i]%** de los PV máx. de Blade. Al usar su habilidad definitiva, este recuento se reinicia.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point03",
@@ -35756,7 +36317,15 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.24,
+					0.6,
+					0.096,
+					0.24,
+					0.6,
+					0.24,
+					0.9
+				],
 				"status": [],
 				"baseSkill": [
 					120503
@@ -35765,6 +36334,7 @@
 			},
 			{
 				"name": "Regalo de Shuhu",
+				"description": "Cuando Blade recibe daño o consume PV, obtiene 1 acumulación de carga, hasta un máximo de 5 acumulaciones. Cada vez que recibe un ataque obtiene 1 acumulación como máximo gracias a este efecto.\nCuando las acumulaciones llegan al máximo, lanza un **ataque adicional** a todos los enemigos que inflige un Daño de Viento equivalente al ****2[i]%**** del ATQ de Blade + ****4[i]%**** de sus PV máx. Además, Blade regenera el **3[i]%** de sus PV máx. Tras lanzar el ataque adicional se consumen todas las acumulaciones de carga.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point04",
@@ -35781,7 +36351,12 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					3,
+					0.22,
+					0.25,
+					0.55
+				],
 				"status": [],
 				"baseSkill": [
 					120504
@@ -35790,13 +36365,17 @@
 			},
 			{
 				"name": "Viento kármico",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. Blade consume una cantidad de PV equivalente al **2[i]%** de sus PV máx. e inflige un **1[i]%** de sus PV máx. como Daño de Viento a todos los enemigos.\nSi no tiene suficientes PV, al usar la técnica los PV de Blade se reducen a 1.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1205/SkillIcon_1205_Maze.png",
 				"shortIcon": "SkillIcon_1205_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.4,
+					0.2
+				],
 				"status": [],
 				"baseSkill": [
 					120507
@@ -37095,6 +37674,7 @@
 		"tree": [
 			{
 				"name": "Técnica de espada de la Nimbocaballera: Halo estelar",
+				"description": "Inflige un ****1[i]%**** del ATQ de Sushang como Daño Físico a un enemigo.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point01",
@@ -37109,7 +37689,9 @@
 					"113012": 5,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120601
@@ -37118,6 +37700,7 @@
 			},
 			{
 				"name": "Técnica de espada de la Nimbocaballera: Caída",
+				"description": "Inflige un ****1[i]%**** del ATQ de Sushang como Daño Físico a un enemigo. Además, hay una probabilidad del **3[i]%** de activar Postura espadachina tras el último golpe e infligir al objetivo un Daño Físico **adicional** equivalente al ****2[i]%**** del ATQ de Sushang.\nSi el objetivo está afectado por **Ruptura de Debilidad**, la activación de Postura espadachina estará garantizada.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point02",
@@ -37134,7 +37717,11 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					1.05,
+					0.5,
+					0.33
+				],
 				"status": [],
 				"baseSkill": [
 					120602
@@ -37143,6 +37730,7 @@
 			},
 			{
 				"name": "Forma de Taixu: Heraldo del alba",
+				"description": "Sushang inflige un ****1[i]%**** de su ATQ como Daño Físico a un enemigo y vuelve a actuar inmediatamente. Además, su ATQ aumenta en un ****4[i]%**** y al usar la habilidad básica tiene 2 oportunidades extra de activar Postura espadachina durante **2[i]** turnos.\nSi Postura espadachina se activa con las oportunidades extra, el daño que inflige es un **3[i]%** del daño original.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point03",
@@ -37159,7 +37747,12 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					1.92,
+					2,
+					0.5,
+					0.18
+				],
 				"status": [],
 				"baseSkill": [
 					120603
@@ -37168,6 +37761,7 @@
 			},
 			{
 				"name": "Filo fluido",
+				"description": "Cuando se rompe la Debilidad de un enemigo en la batalla, la VEL de Sushang aumenta en un ****1[f2]%**** durante **2[i]** turnos.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point04",
@@ -37184,7 +37778,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120604
@@ -37193,13 +37790,16 @@
 			},
 			{
 				"name": "Técnica de espada de la Nimbocaballera: Premura",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. Inflige un **1[i]%** del ATQ de Sushang como Daño Físico a todos los enemigos.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1206/SkillIcon_1206_Maze.png",
 				"shortIcon": "SkillIcon_1206_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					120607
@@ -38472,6 +39072,7 @@
 		"tree": [
 			{
 				"name": "Lanzaflechas",
+				"description": "Inflige un ****1[i]%**** del ATQ de Yukong como Daño Imaginario a un enemigo.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point01",
@@ -38486,7 +39087,9 @@
 					"113012": 5,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120701
@@ -38495,6 +39098,7 @@
 			},
 			{
 				"name": "Salva alentadora",
+				"description": "Obtiene **1[i]** acumulaciones de Sonido de cuerda (se pueden tener 2 como máximo). Cuando Yukong tiene Sonido de cuerda, el ATQ de todos los aliados aumenta en un ****2[i]%****. Cada vez que un aliado termina su turno, Yukong pierde 1 acumulación de Sonido de cuerda.\nDurante el turno en el que Yukong usa su habilidad básica y obtiene Sonido de cuerda, no pierde ninguna acumulación de Sonido de cuerda.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point02",
@@ -38511,7 +39115,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					2,
+					0.4
+				],
 				"status": [],
 				"baseSkill": [
 					120702
@@ -38520,6 +39127,7 @@
 			},
 			{
 				"name": "Cernícalo en picado",
+				"description": "Tras usar la habilidad definitiva, si Yukong tiene Sonido de cuerda, la Prob. CRIT de todos los aliados aumenta en un ****2[f1]%**** y el Daño CRIT en un ****3[i]%****. Además, inflige a un enemigo un Daño Imaginario equivalente al ****1[i]%**** del ATQ de Yukong.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point03",
@@ -38536,7 +39144,11 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					2.28,
+					0.21,
+					0.39
+				],
 				"status": [],
 				"baseSkill": [
 					120703
@@ -38545,6 +39157,7 @@
 			},
 			{
 				"name": "Una flecha por siete capas",
+				"description": "El ATQ básico inflige de forma adicional un ****1[i]%**** del ATQ de Yukong como Daño Imaginario. Además, el daño a la Firmeza del ataque actual aumenta en un **2[i]%**. Este efecto se puede volver a activar después de **3[i]** turno.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point04",
@@ -38561,7 +39174,11 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.4,
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					120704
@@ -38570,13 +39187,18 @@
 			},
 			{
 				"name": "Persiguiendo el viento",
+				"description": "Tras usar la técnica, entra en modo de esprintar durante **1[i]** s. En este estado, su VEL de movimiento aumenta en un **2[i]%**. Además, al entrar en combate tras atacar a un enemigo, Yukong obtiene **3[i]** acumulaciones de Sonido de cuerda.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1207/SkillIcon_1207_Maze.png",
 				"shortIcon": "SkillIcon_1207_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					20,
+					0.35,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120707
@@ -39866,6 +40488,7 @@
 		"tree": [
 			{
 				"name": "Novaestallido",
+				"description": "Inflige un Daño Cuántico equivalente al ****1[i]%**** de los PV máx. de Fu Xuan a un enemigo.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point01",
@@ -39880,7 +40503,9 @@
 					"113012": 7,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					120801
@@ -39889,6 +40514,7 @@
 			},
 			{
 				"name": "Maravilla astronómica",
+				"description": "Activa Matriz del Presagio y todos los aliados de Fu Xuan **traspasan** un **1[i]%** del daño que reciben (antes de que un escudo mitigue el daño) a Fu Xuan durante **3[i]** turnos.\nMientras están afectados por Matriz del Presagio, todos los aliados obtienen Conocimiento. En este estado, los PV máx. de los aliados aumentan en una cantidad equivalente al ****4[f1]%**** de los PV máx. de Fu Xuan y su Prob. CRIT aumenta en un ****5[f1]%****.\nCuando Fu Xuan es **derrotada**, Matriz del Presagio se disipa.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point02",
@@ -39905,7 +40531,13 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.65,
+					0,
+					3,
+					0.03,
+					0.06
+				],
 				"status": [],
 				"baseSkill": [
 					120802
@@ -39914,6 +40546,7 @@
 			},
 			{
 				"name": "Evolución definitiva",
+				"description": "Inflige un ****1[i]%**** de los PV máx. de Fu Xuan como Daño Cuántico a todos los enemigos y obtiene 1 activación adicional de la regeneración de PV del talento de Fu Xuan.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point03",
@@ -39930,7 +40563,9 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					120803
@@ -39939,6 +40574,7 @@
 			},
 			{
 				"name": "Tras la adversidad viene la felicidad",
+				"description": "Mientras Fu Xuan no haya sido derrotada, todos los aliados obtienen Escape del infortunio. En este estado, el daño que reciben todos los aliados se reduce en un ****1[f1]%****.\nFu Xuan regenera sus PV cuando tiene un porcentaje de PV inferior o igual al **2[i]%**. Este efecto regenera un ****3[i]%**** de los PV que le falten en ese momento, y no puede activarse cuando recibe un golpe letal. Al inicio, este efecto cuenta con 1 activación, y se pueden tener un máximo de 2 activaciones.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point04",
@@ -39955,7 +40591,11 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.1,
+					0.5,
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					120804
@@ -39964,13 +40604,17 @@
 			},
 			{
 				"name": "De la fortuna viene el destino",
+				"description": "Tras usar la técnica, todos los aliados obtienen una barrera durante **1[i]** segundos. Esta barrera bloquea los ataques de los enemigos e impide que se entre en combate al recibir un ataque. Si se entra en combate mientras la barrera está activa, Fu Xuan activa automáticamente Matriz del Presagio durante **2[i]** turnos.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1208/SkillIcon_1208_Maze.png",
 				"shortIcon": "SkillIcon_1208_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					20,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120807
@@ -41283,6 +41927,7 @@
 		"tree": [
 			{
 				"name": "Luz fría, filo helado",
+				"description": "Inflige un ****1[i]%**** del ATQ de Yanqing como Daño de Hielo a un enemigo.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point01",
@@ -41297,7 +41942,9 @@
 					"111012": 7,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120901
@@ -41306,6 +41953,7 @@
 			},
 			{
 				"name": "Arista apedreadracos",
+				"description": "Inflige un ****1[i]%**** del ATQ de Yanqing como Daño de Hielo a un enemigo y activa Estocada empática durante 1 turno.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point02",
@@ -41322,7 +41970,9 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					1.1
+				],
 				"status": [],
 				"baseSkill": [
 					120902
@@ -41331,6 +41981,7 @@
 			},
 			{
 				"name": "Persecución pluvial de la golondrina",
+				"description": "Aumenta su Prob. CRIT en un **1[i]%**. Cuando Estocada empática está activa, su Daño CRIT aumenta en un ****2[i]%**** adicional. Estos **efectos positivos** duran 1 turno. A continuación, inflige un ****3[i]%**** del ATQ de Yanqing como Daño de Hielo a un enemigo.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point03",
@@ -41347,7 +41998,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.6,
+					0.3,
+					2.1
+				],
 				"status": [],
 				"baseSkill": [
 					120903
@@ -41356,6 +42011,7 @@
 			},
 			{
 				"name": "Compañera afilada",
+				"description": "Cuando Estocada empática está activa, Yanqing tiene menos probabilidades de recibir un ataque. Además, su Prob. CRIT aumenta en un ****1[f1]%**** y su Daño CRIT en un ****2[i]%****. Tras atacar a un enemigo, tiene un ****3[i]%**** de **probabilidad fija** de activar un **ataque adicional** que inflige un ****4[i]%**** del ATQ de Yanqing como Daño de Hielo y tiene una **probabilidad base** del **6[i]%** de afectar con Congelación al objetivo durante 1 turno.\nLos enemigos congelados no pueden actuar, y al principio de cada turno reciben un ****5[i]%**** del ATQ de Yanqing como Daño de Hielo **adicional**.\nEstocada empática se elimina cuando Yanqing recibe daño.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point04",
@@ -41372,7 +42028,14 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.15,
+					0.15,
+					0.5,
+					0.25,
+					0.25,
+					0.65
+				],
 				"status": [],
 				"baseSkill": [
 					120904
@@ -41381,13 +42044,18 @@
 			},
 			{
 				"name": "Maestría de espada",
+				"description": "Tras usar la técnica, al comenzar la siguiente batalla, Yanqing inflige un **2[i]%** más de daño durante **3[i]** turnos a los enemigos que tengan un porcentaje de PV igual o superior al **1[i]%**.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1209/SkillIcon_1209_Maze.png",
 				"shortIcon": "SkillIcon_1209_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.5,
+					0.3,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120907
@@ -42744,6 +43412,7 @@
 		"tree": [
 			{
 				"name": "Gran ovación",
+				"description": "Inflige un ****1[i]%**** del ATQ de Guinaifen como Daño de Fuego a un enemigo.",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point01",
@@ -42758,7 +43427,9 @@
 					"113012": 5,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121001
@@ -42767,6 +43438,7 @@
 			},
 			{
 				"name": "Calurosa bienvenida",
+				"description": "Inflige un ****1[i]%**** del ATQ de Guinaifen como Daño de Fuego a un enemigo e inflige un ****2[i]%**** del ATQ de Guinaifen como Daño de Fuego a los enemigos adyacentes. Tiene una **probabilidad base** del **3[i]%** de afectar con Quemadura al objetivo y a los enemigos adyacentes. Los enemigos afectados por Quemadura reciben al principio de cada turno un ****4[i]%**** del ATQ de Guinaifen como Daño de Fuego con el tiempo durante **5[i]** turnos.",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point02",
@@ -42783,7 +43455,13 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.6,
+					0.2,
+					1,
+					0.839,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121002
@@ -42792,6 +43470,7 @@
 			},
 			{
 				"name": "Espectáculo de primera",
+				"description": "Inflige un ****1[f1]%**** del ATQ de Guinaifen como Daño de Fuego a todos los enemigos. Si los objetivos están afectados por Quemadura, el estado actual de Quemadura inflige inmediatamente un daño equivalente al ****2[i]%**** de su daño original.",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point03",
@@ -42808,7 +43487,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.72,
+					0.72
+				],
 				"status": [],
 				"baseSkill": [
 					121003
@@ -42817,6 +43499,7 @@
 			},
 			{
 				"name": "Beneficios del mecenas",
+				"description": "Cuando Guinaifen está en el campo de batalla, hay una **probabilidad base** del **1[i]%** de afectar con Beso ardiente al enemigo después de que reciba daño de Quemadura. En el estado de Beso ardiente, el daño que recibe el enemigo aumenta en un ****4[f1]%**** durante **5[i]** turnos. Se puede acumular hasta **6[i]** veces.",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point04",
@@ -42833,7 +43516,14 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0,
+					0,
+					0.04,
+					3,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					121004
@@ -42842,13 +43532,18 @@
 			},
 			{
 				"name": "Demostración de habilidades",
+				"description": "Ataca inmediatamente al enemigo y entra en combate. Inflige daño **2[i]** veces y cada vez inflige un **1[i]%** del ATQ de Guinaifen como Daño de Fuego a un enemigo al azar. Además, tiene una **probabilidad base** del **3[i]%** de afectar con Beso ardiente al objetivo.",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1210/SkillIcon_1210_Maze.png",
 				"shortIcon": "SkillIcon_1210_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.5,
+					4,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121007
@@ -44183,6 +44878,7 @@
 		"tree": [
 			{
 				"name": "Patada diagnóstica",
+				"description": "Inflige un ****1[i]%**** del ATQ de Bailu como Daño de Rayo a un enemigo.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point01",
@@ -44197,7 +44893,9 @@
 					"111002": 7,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121101
@@ -44206,6 +44904,7 @@
 			},
 			{
 				"name": "Cantando entre las nubes",
+				"description": "Cura a un aliado con una cantidad de PV equivalente al ****1[f1]%**** de los PV máx. de Bailu + ****2[i]****. Después, Bailu cura **4[i]** veces a aliados al azar. Cada vez que cura, los PV que regenera la siguiente curación realizada se reducen en un **3[i]%**.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point02",
@@ -44222,7 +44921,12 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.078,
+					78,
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121102
@@ -44231,6 +44935,7 @@
 			},
 			{
 				"name": "Salto del dragón del marjal",
+				"description": "Cura a todos los aliados con una cantidad de PV equivalente al ****1[f1]%**** de los PV máx. de Bailu + ****2[i]****.\nAplica Vigor a los aliados que no lo tienen y alarga el efecto en 1 turno a los que lo tienen.\nVigor dura **3[i]** turnos y no se puede acumular.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point03",
@@ -44247,7 +44952,11 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.09,
+					90,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121103
@@ -44256,6 +44965,7 @@
 			},
 			{
 				"name": "Calabaza de elixir",
+				"description": "Cuando un aliado con Vigor recibe un ataque, regenera una cantidad de PV equivalente al ****1[f1]%**** de los PV máx. de Bailu + ****2[i]****. Este efecto se puede activar **5[i]** veces.\nCuando un aliado de Bailu recibe un golpe letal, no es **derrotado**, sino que Bailu lo cura inmediatamente con una cantidad de PV equivalente al ****3[f1]%**** de los PV máx. de Bailu + ****4[i]****. Este efecto se puede activar una vez en cada batalla.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point04",
@@ -44272,7 +44982,13 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.036,
+					36,
+					0.12,
+					120,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121104
@@ -44281,13 +44997,16 @@
 			},
 			{
 				"name": "Paseando bajo la lluvia",
+				"description": "Tras usar la técnica, al comenzar la siguiente batalla, todos los aliados obtienen Vigor durante **1[i]** turnos.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1211/SkillIcon_1211_Maze.png",
 				"shortIcon": "SkillIcon_1211_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121107
@@ -45741,6 +46460,7 @@
 		"tree": [
 			{
 				"name": "Brillo resplandeciente",
+				"description": "Inflige un ****1[i]%**** del ATQ de Jingliu como Daño de Hielo a un enemigo.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point01",
@@ -45755,7 +46475,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121201
@@ -45764,6 +46486,7 @@
 			},
 			{
 				"name": "Destello trascendental",
+				"description": "Inflige un ****1[i]%**** del ATQ de Jingliu como Daño de Hielo a un enemigo y obtiene **2[i]** acumulación de Sizigia.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point02",
@@ -45780,7 +46503,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121202,
@@ -45790,6 +46516,7 @@
 			},
 			{
 				"name": "Sueño de flores efímeras",
+				"description": "Inflige un ****1[i]%**** del ATQ de Jingliu como Daño de Hielo a un enemigo y un ****3[i]%**** del ATQ de Jingliu como Daño de Hielo a los enemigos adyacentes. Cuando termina el ataque, obtiene **2[i]** acumulación de Sizigia.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point03",
@@ -45806,7 +46533,12 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					1.8,
+					1,
+					0.9,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121203
@@ -45815,6 +46547,7 @@
 			},
 			{
 				"name": "Transmigración creciente",
+				"description": "Cuando Jingliu tiene **5[i]** acumulaciones de Sizigia, entra en el estado de Transmigración espectral, su acción se adelanta un **6[i]%** y su Prob. CRIT aumenta en un ****7[i]%****. Después, la habilidad básica Destello trascendental se potencia y se convierte en Reflejo helado de la luna (solo puede usar esta habilidad básica). Al lanzar un ataque en el estado de Transmigración espectral, consume un **2[i]%** de los PV máx. de los aliados (como máximo, consume PV hasta que a cada aliado solo le quede 1). El ATQ de Jingliu aumenta en un **3[i]%** de la cantidad total de PV consumidos a todos los aliados, hasta un máximo del ****4[i]%**** del ATQ base de Jingliu. Dura hasta que termine el ataque actual. No puede volver a entrar en el estado de Transmigración espectral antes de que este acabe. Sizigia se puede acumular hasta 3 veces. Cuando no quedan acumulaciones de Sizigia, sale del estado de Transmigración espectral.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point04",
@@ -45831,7 +46564,15 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.3,
+					0.04,
+					5.4,
+					0.9,
+					2,
+					1,
+					0.4
+				],
 				"status": [],
 				"baseSkill": [
 					121204
@@ -45840,13 +46581,21 @@
 			},
 			{
 				"name": "Resplandor de la verdad",
+				"description": "Tras usar la técnica, crea una zona especial a su alrededor que dura **3[i]** segundos. Los enemigos que estén en la zona especial son afectados con Congelación. Al entrar en combate con los enemigos dentro de la zona, recupera **6[i]** pts. de energía, obtiene **1[i]** acumulación de Sizigia y tiene una **probabilidad base** del **2[i]%** de congelar a los enemigos durante **4[i]** turno. Los enemigos congelados no se pueden mover y al principio de cada turno reciben un Daño de Hielo **adicional** equivalente al **5[i]%** del ATQ de Jingliu. Solo puede haber una zona especial creada por los aliados a la vez.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1212/SkillIcon_1212_Maze.png",
 				"shortIcon": "SkillIcon_1212_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					1,
+					20,
+					1,
+					0.8,
+					15
+				],
 				"status": [],
 				"baseSkill": [
 					121207
@@ -47290,6 +48039,7 @@
 		"tree": [
 			{
 				"name": "Loto benéfico",
+				"description": "Lanza un ataque de 2 golpes e inflige un ****1[i]%**** del ATQ de Dan Heng - Imbibitor Lunae como Daño Imaginario a un enemigo.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point01",
@@ -47304,7 +48054,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121301,
@@ -47316,6 +48068,7 @@
 			},
 			{
 				"name": "Libre de ataduras",
+				"description": "Potencia el ATQ básico un máximo de 3 veces consecutivas. Esta habilidad no consume pts. de habilidad básica y no se considera como un uso de la habilidad básica.\nAl potenciarse 1 vez, Loto benéfico se transforma en Trascendencia.\nAl potenciarse 2 veces, Loto benéfico se transforma en Lanza divina.\nAl potenciarse 3 veces, Loto benéfico se transforma en Salto fulgurante.\nAl lanzar Lanza divina o Salto fulgurante, a partir del 4.º golpe obtiene 1 acumulación de Rugido dominante antes de cada golpe. Rugido dominante hace que el Daño CRIT de Dan Heng - Imbibitor Lunae aumente en un ****1[f1]%****. Este efecto se puede acumular un máximo de **2[i]** veces y dura hasta el final de su turno.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point02",
@@ -47332,7 +48085,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.06,
+					4
+				],
 				"status": [],
 				"baseSkill": [
 					121302
@@ -47341,6 +48097,7 @@
 			},
 			{
 				"name": "Purificación del mundo",
+				"description": "Realiza un ataque de 3 golpes e inflige un ****1[i]%**** del ATQ de Dan Heng - Imbibitor Lunae como Daño Imaginario a un enemigo y un ****2[i]%**** de su ATQ como Daño Imaginario a los enemigos adyacentes. Además, obtiene **3[i]** acumulaciones de Escama sacrosanta.\nPuede tener hasta **4[i]** acumulaciones de Escama sacrosanta como máximo y se pueden utilizar para compensar el consumo de pts. de habilidad básica de Dan Heng - Imbibitor Lunae. Consumir Escama sacrosanta se considera equivalente a consumir pts. de habilidad básica.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point03",
@@ -47357,7 +48114,12 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					1.8,
+					0.84,
+					2,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					121303
@@ -47366,6 +48128,7 @@
 			},
 			{
 				"name": "Corazón justo",
+				"description": "Dan Heng - Imbibitor Lunae obtiene 1 acumulación de Corazón justo después de cada golpe y el daño que inflige aumenta en un ****1[f1]%****. Este efecto se puede acumular un máximo de **2[i]** veces y dura hasta el final de su turno.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point04",
@@ -47382,7 +48145,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.05,
+					6
+				],
 				"status": [],
 				"baseSkill": [
 					121304
@@ -47391,13 +48157,18 @@
 			},
 			{
 				"name": "Prismadragón atraviesacielos",
+				"description": "Tras usar la técnica, Dan Heng - Imbibitor Lunae entra en el estado de Salto en espiral durante **2[i]** segundos. En este estado, al lanzar un ataque, avanza rápidamente una cierta distancia, ataca a todos los enemigos con los que entra en contacto y bloquea sus ataques. Al entrar en combate tras atacar a un enemigo en el estado Salto en espiral, inflige un Daño Imaginario equivalente al **3[i]%** de su ATQ a todos los enemigos y obtiene **1[i]** acumulación de Escama sacrosanta.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1213/SkillIcon_1213_Maze.png",
 				"shortIcon": "SkillIcon_1213_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					20,
+					1.2
+				],
 				"status": [],
 				"baseSkill": [
 					121307
@@ -48677,6 +49448,7 @@
 		"tree": [
 			{
 				"name": "Azote de Mara",
+				"description": "Inflige un ****1[i]%**** del ATQ de Xueyi como Daño Cuántico a un enemigo.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point01",
@@ -48691,7 +49463,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121401
@@ -48700,6 +49474,7 @@
 			},
 			{
 				"name": "Aniquilación del mal",
+				"description": "Inflige un ****1[i]%**** del ATQ de Xueyi como Daño Cuántico a un enemigo y un ****2[i]%**** del ATQ de Xueyi como Daño Cuántico a los enemigos adyacentes.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point02",
@@ -48716,7 +49491,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.7,
+					0.35
+				],
 				"status": [],
 				"baseSkill": [
 					121402
@@ -48725,6 +49503,7 @@
 			},
 			{
 				"name": "Castigo divino",
+				"description": "Inflige un Daño Cuántico equivalente al ****1[i]%**** del ATQ de Xueyi a un enemigo. Este ataque ignora los tipos de Debilidad y consume la Firmeza del objetivo. Al romper la Debilidad, se activa el efecto de Ruptura Cuántica.\nDurante este ataque, cuanta más Firmeza consuma, más daño inflige, hasta un aumento máximo de un ****3[f1]%****.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point03",
@@ -48741,7 +49520,11 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.5,
+					0.09,
+					0.36
+				],
 				"status": [],
 				"baseSkill": [
 					121403
@@ -48750,6 +49533,7 @@
 			},
 			{
 				"name": "Perpetuación kármica",
+				"description": "Xueyi acumula Karma cuando su ataque consume la Firmeza del enemigo. Cuanta más Firmeza consuma, más Karma acumulará, hasta un máximo de **1[i]** acumulaciones.\nCuando un aliado de Xueyi ataca y consume la Firmeza del enemigo, Xueyi obtiene **3[i]** acumulación de Karma.\nCuando las acumulaciones de Karma llegan al máximo, las consume todas y lanza un **ataque adicional** a un enemigo que inflige daño 3 veces. Cada vez inflige a un enemigo al azar un Daño Cuántico equivalente al ****2[i]%**** del ATQ de Xueyi. Este ataque adicional no acumula Karma.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point04",
@@ -48766,7 +49550,11 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					8,
+					0.45,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121404
@@ -48775,13 +49563,16 @@
 			},
 			{
 				"name": "Ejecución sumaria",
+				"description": "Ataca inmediatamente a un enemigo y entra en combate. Inflige un **1[i]%** del ATQ de Xueyi como Daño Cuántico a todos los enemigos.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1214/SkillIcon_1214_Maze.png",
 				"shortIcon": "SkillIcon_1214_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					121407
@@ -50039,6 +50830,7 @@
 		"tree": [
 			{
 				"name": "Pincel del oráculo",
+				"description": "Inflige un ****1[i]%**** del ATQ de Hanya como Daño Físico a un enemigo.",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point01",
@@ -50053,7 +50845,9 @@
 					"113012": 5,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121501
@@ -50062,6 +50856,7 @@
 			},
 			{
 				"name": "Samsara, bloqueado",
+				"description": "Inflige un ****1[i]%**** del ATQ de Hanya como Daño Físico a un enemigo y lo afecta con Lastre.\nCada vez que un aliado ataca 2 veces con un ATQ básico, una habilidad básica o una habilidad definitiva a un enemigo con Lastre, el equipo recupera 1 pt. de habilidad básica. Lastre solo tiene efecto en el último enemigo al que se le haya aplicado y se disipa automáticamente una vez que se haya activado **2[i]** veces el efecto de recuperación de pts. de habilidad básica.",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point02",
@@ -50078,7 +50873,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					1.2,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121502
@@ -50087,6 +50885,7 @@
 			},
 			{
 				"name": "Decreto de los Diez Líderes, todos obedecerán",
+				"description": "Aumenta la VEL de un aliado en un ****3[f1]%**** de la VEL de Hanya, y el ATQ de ese aliado en un ****1[i]%**** durante **2[i]** turnos.",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point03",
@@ -50103,7 +50902,11 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.36,
+					2,
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					121503
@@ -50112,6 +50915,7 @@
 			},
 			{
 				"name": "Castigo",
+				"description": "Cuando un aliado usa el ATQ básico, la habilidad básica o la habilidad definitiva contra un enemigo afectado por Lastre, el daño que inflige aumenta en un ****1[i]%**** durante **2[i]** turnos.",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point04",
@@ -50128,7 +50932,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121504
@@ -50137,6 +50944,7 @@
 			},
 			{
 				"name": "Juicio del inframundo",
+				"description": "Ataca al enemigo y entra en combate. Aplica un Lastre equivalente al aplicado por la habilidad básica a un enemigo al azar.",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point05",
@@ -51528,6 +52336,7 @@
 		"tree": [
 			{
 				"name": "Estandarte: Llamatormentas",
+				"description": "Inflige un ****1[i]%**** de los PV máx. de Huohuo como Daño de Viento a un enemigo.",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point01",
@@ -51542,7 +52351,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					121701
@@ -51551,6 +52362,7 @@
 			},
 			{
 				"name": "Talismán: Protección",
+				"description": "Elimina **5[i]** **estado negativo** de un aliado y regenera inmediatamente una cantidad de PV equivalente al ****1[f1]%**** de los PV máx. de Huohuo + ****2[i]**** para ese aliado. Al mismo tiempo, regenera a los aliados adyacentes una cantidad de PV equivalente al ****3[f1]%**** de los PV máx. de Huohuo + ****4[i]****.",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point02",
@@ -51567,7 +52379,13 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.14,
+					140,
+					0.112,
+					112,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121702
@@ -51576,6 +52394,7 @@
 			},
 			{
 				"name": "Cola: Dominación espiritual",
+				"description": "Recupera para todos los demás aliados (excepto Huohuo) una cantidad de energía equivalente al ****1[f1]%**** de su respectiva energía máx. y aumenta su ATQ en un ****2[f1]%**** durante **3[i]** turnos.",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point03",
@@ -51592,7 +52411,11 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.15,
+					0.24,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121703
@@ -51601,6 +52424,7 @@
 			},
 			{
 				"name": "Posesión: Conexión metafísica",
+				"description": "Tras usar su habilidad básica, Huohuo obtiene Vida sacrificada durante **1[i]** turnos y, al comenzar cada turno, la duración se reduce en 1 turno. Mientras Huohuo tenga Vida sacrificada, al inicio del turno de un aliado o al usar una habilidad definitiva, ese aliado regenera una cantidad de PV equivalente al ****3[f1]%**** de los PV máx. de Huohuo + ****5[i]****. Al mismo tiempo, todos los aliados que tengan un porcentaje de PV del **6[i]%** o menos regeneran PV una vez.\nCuando Vida sacrificada se activa para regenerar los PV de un aliado, se disipa **2[i]** **estado negativo** de ese objetivo. Este efecto se puede activar **7[i]** veces y el contador de activaciones se reinicia tras volver a usar la habilidad básica.",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point04",
@@ -51617,7 +52441,15 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					2,
+					1,
+					0.03,
+					0,
+					30,
+					0.5,
+					6
+				],
 				"status": [],
 				"baseSkill": [
 					121704
@@ -51626,13 +52458,19 @@
 			},
 			{
 				"name": "Demonio: Destitución del mal",
+				"description": "Huohuo asusta a los enemigos cercanos y los afecta con Terror. Los enemigos aterrorizados huirán de Huohuo durante **4[i]** s. Al entrar en combate con enemigos afectados por Terror, hay un **1[i]%** de **probabilidad base** de reducir el ATQ de cada enemigo en un **2[i]%** durante **3[i]** turnos.",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1217/SkillIcon_1217_Maze.png",
 				"shortIcon": "SkillIcon_1217_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.25,
+					2,
+					10
+				],
 				"status": [],
 				"baseSkill": [
 					121707
@@ -52992,6 +53830,7 @@
 		"tree": [
 			{
 				"name": "Fragancia fugaz",
+				"description": "Inflige un ****1[i]%**** del ATQ de Argenti como Daño Físico a un enemigo.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point01",
@@ -53006,7 +53845,9 @@
 					"111002": 7,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130201
@@ -53015,6 +53856,7 @@
 			},
 			{
 				"name": "Florecimiento de la justicia",
+				"description": "Inflige un ****1[i]%**** del ATQ de Argenti como Daño Físico a todos los enemigos.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point02",
@@ -53031,7 +53873,9 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					130202
@@ -53040,6 +53884,7 @@
 			},
 			{
 				"name": "Este jardín otorga la belleza suprema",
+				"description": "Consume **2[i]** pts. de energía e inflige un ****1[i]%**** del ATQ de Argenti como Daño Físico a todos los enemigos.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point03",
@@ -53056,7 +53901,10 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.96,
+					90
+				],
 				"status": [],
 				"baseSkill": [
 					130203,
@@ -53066,6 +53914,7 @@
 			},
 			{
 				"name": "Objeto sublime",
+				"description": "Por cada enemigo que golpee con su ATQ básico, habilidad básica o habilidad definitiva, Argenti recupera **1[i]** pts. de energía y obtiene 1 acumulación de Elevación, que aumenta su Prob. CRIT en un ****2[f1]%****. Este efecto se puede acumular hasta **3[i]** veces.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point04",
@@ -53082,7 +53931,11 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					3,
+					0.01,
+					10
+				],
 				"status": [],
 				"baseSkill": [
 					130204
@@ -53091,13 +53944,18 @@
 			},
 			{
 				"name": "Manifiesto de la virtud pura",
+				"description": "Tras usar la técnica, los enemigos de una zona determinada quedan afectados por Mareo durante **1[i]** s, lo que les impide atacar activamente a los aliados.\nAl entrar en combate tras atacar a un enemigo mareado, inflige a todos los enemigos un Daño Físico equivalente al **2[i]%** del ATQ de Argenti y recupera **3[i]** pts. de energía.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1302/SkillIcon_1302_Maze.png",
 				"shortIcon": "SkillIcon_1302_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					10,
+					0.8,
+					15
+				],
 				"status": [],
 				"baseSkill": [
 					130207
@@ -54416,6 +55274,7 @@
 		"tree": [
 			{
 				"name": "Aguja de orquídea",
+				"description": "Inflige un ****1[i]%**** del ATQ de Ruan Mei como Daño de Hielo a un enemigo.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point01",
@@ -54430,7 +55289,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130301
@@ -54439,6 +55300,7 @@
 			},
 			{
 				"name": "Las cuerdas cantan con giros suaves",
+				"description": "Tras usar su habilidad básica, Ruan Mei obtiene Sobretono durante **3[i]** turnos. Esta duración se reduce en 1 al comienzo del turno de Ruan Mei. Cuando Ruan Mei tiene Sobretono, el daño de todos los aliados aumenta en un ****1[f1]%**** y la eficiencia de la Ruptura de Debilidad aumenta en un **2[i]%**.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point02",
@@ -54455,7 +55317,11 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.16,
+					0.5,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					130302
@@ -54464,6 +55330,7 @@
 			},
 			{
 				"name": "Flor delicada sobre el agua",
+				"description": "Ruan Mei crea un campo que dura **2[i]** turnos. Al comienzo de cada turno de Ruan Mei, los turnos del campo disminuyen en 1.\nDentro del campo, la PEN de la RES a todos los tipos de todos los aliados aumenta en un ****1[f1]%**** y los ataques aplican al enemigo golpeado Flores de ciruelo rotas.\nFlores de ciruelo rotas se activará cuando el objetivo enemigo intente recuperarse del estado de Ruptura de Debilidad. Esto prolongará dicho estado y retrasará su acción en una cantidad equivalente al **3[i]%** del efecto de Ruptura de Ruan Mei + **4[i]%**. Además, inflige un ****5[i]%**** del Daño de Ruptura de Hielo de Ruan Mei como Daño de Ruptura.\nEl objetivo enemigo no puede volver a ser afectado por Flores de ciruelo rotas hasta que no se recupere del estado de Ruptura de Debilidad.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point03",
@@ -54480,7 +55347,13 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.15,
+					2,
+					0.2,
+					0.1,
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					130303
@@ -54489,6 +55362,7 @@
 			},
 			{
 				"name": "Espiral somatotípica",
+				"description": "La VEL de todos los aliados (excepto Ruan Mei) aumenta en un ****1[f1]%****. Cuando los aliados rompen la Debilidad de un enemigo, Ruan Mei le inflige un ****2[f1]%**** de su Daño de Ruptura de Hielo como Daño de Ruptura.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point04",
@@ -54505,7 +55379,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.08,
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					130304
@@ -54514,13 +55391,19 @@
 			},
 			{
 				"name": "Serenata sedosa",
+				"description": "Tras usar la técnica, obtiene Serenata sedosa. Al comenzar la siguiente batalla, se activa automáticamente **1[i]** vez la habilidad básica sin consumir pts. de habilidad básica.\nEn el Universo Simulado, cuando Ruan Mei tiene Serenata sedosa, si un aliado ataca de forma proactiva a un enemigo, se considerará como atacar su Debilidad para entrar en combate. Además, este ataque ignora el tipo de Debilidad y reduce la Firmeza de todos los enemigos. Al romper la Debilidad, se activa el efecto de Ruptura de Debilidad del tipo correspondiente del atacante. Por cada bendición que tengas (hasta un máximo de **4[i]**), el daño a la Firmeza que inflige este ataque aumenta en un **2[i]%** adicional. Tras romper la Debilidad del enemigo, Ruan Mei le inflige de forma adicional un Daño de Ruptura equivalente al **3[i]%** de su Daño de Ruptura de Hielo.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1303/SkillIcon_1303_Maze.png",
 				"shortIcon": "SkillIcon_1303_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					1,
+					1,
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					130307
@@ -55779,6 +56662,7 @@
 		"tree": [
 			{
 				"name": "El conocimiento es poder",
+				"description": "Inflige un ****1[i]%**** del ATQ del Dr. Ratio como Daño Imaginario a un enemigo.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point01",
@@ -55793,7 +56677,9 @@
 					"111012": 7,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130501
@@ -55802,6 +56688,7 @@
 			},
 			{
 				"name": "Método de refuerzo cognitivo",
+				"description": "Inflige un ****1[i]%**** del ATQ del Dr. Ratio como Daño Imaginario a un enemigo.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point02",
@@ -55818,7 +56705,9 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.75
+				],
 				"status": [],
 				"baseSkill": [
 					130502
@@ -55827,6 +56716,7 @@
 			},
 			{
 				"name": "Paradoja silogística",
+				"description": "Inflige un ****1[i]%**** del ATQ del Dr. Ratio como Daño Imaginario a un enemigo y le aplica Locura de los sabios. Cuando un aliado del Dr. Ratio ataca a un objetivo afectado por Locura de los sabios, el Dr. Ratio lanza el **ataque adicional** del talento contra dicho objetivo.\nLocura de los sabios se puede activar hasta **2[i]** veces y solo afecta al último objetivo afectado por la habilidad definitiva del Dr. Ratio. Tras usar la habilidad definitiva, se reinicia el contador de activaciones.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point03",
@@ -55843,7 +56733,10 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					1.44,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					130503
@@ -55852,6 +56745,7 @@
 			},
 			{
 				"name": "Pienso, luego existo",
+				"description": "Al usar su habilidad básica, el Dr. Ratio tiene una **probabilidad fija** del **2[i]%** de lanzar un **ataque adicional** contra el objetivo e infligir un Daño Imaginario equivalente al ****1[i]%**** de su ATQ. Por cada estado negativo que tenga el objetivo, la **probabilidad fija** de lanzar el **ataque adicional** aumenta en un **3[i]%**. Si el objetivo es derrotado antes de que se lance el **ataque adicional**, el **ataque adicional** se dirige contra otro enemigo al azar.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point04",
@@ -55868,7 +56762,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					1.35,
+					0.4,
+					0.2
+				],
 				"status": [],
 				"baseSkill": [
 					130504
@@ -55877,13 +56775,19 @@
 			},
 			{
 				"name": "Molde de la idolatría",
+				"description": "Tras usar la técnica, crea una zona especial que afecta con Provocación a los enemigos cercanos durante **1[i]** s. Al entrar en combate con los enemigos dentro de la zona especial, hay una **probabilidad base** del **2[i]%** de que la VEL de cada enemigo se reduzca en un **3[i]%** durante **4[i]** turnos. Solo puedes tener una zona especial creada por los aliados a la vez.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1305/SkillIcon_1305_Maze.png",
 				"shortIcon": "SkillIcon_1305_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					10,
+					1,
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					130507
@@ -57232,6 +58136,7 @@
 		"tree": [
 			{
 				"name": "Espectáculo en solitario",
+				"description": "Inflige un ****1[i]%**** del ATQ de Sparkle como Daño Cuántico a un enemigo.",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point01",
@@ -57246,7 +58151,9 @@
 					"114012": 7,
 					"114013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130601
@@ -57255,6 +58162,7 @@
 			},
 			{
 				"name": "Buceadora de sueños",
+				"description": "Aumenta el Daño CRIT de un aliado en un valor equivalente al ****1[f1]%**** del Daño CRIT de Sparkle + ****2[f1]%**** durante **3[i]** turno(s) y adelanta la acción de ese aliado en un **4[i]%**.\nSi Sparkle usa esta habilidad consigo misma, no adelanta su acción.",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point02",
@@ -57271,7 +58179,12 @@
 					"114012": 13,
 					"114013": 7
 				},
-				"params": [],
+				"params": [
+					0.18,
+					0.08,
+					1,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130602
@@ -57280,6 +58193,7 @@
 			},
 			{
 				"name": "Miles de triunfos",
+				"description": "Recupera **2[i]** pts. de habilidad básica para el equipo y otorga Adivinanza a los aliados. Cuando un aliado con Adivinanza activa el efecto de aumento de daño del talento de Sparkle, este aumento se incrementa de forma adicional en un ****3[f1]%**** durante **4[i]** turno(s).",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point03",
@@ -57296,7 +58210,12 @@
 					"114012": 13,
 					"114013": 7
 				},
-				"params": [],
+				"params": [
+					2,
+					4,
+					0.06,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					130603
@@ -57305,6 +58224,7 @@
 			},
 			{
 				"name": "Truco narrativo",
+				"description": "Cuando Sparkle está en el campo de batalla, el límite de pts. de habilidad básica aumenta en **3[i]**. Cuando un aliado consume 1 pt. de habilidad básica, el daño de todos los aliados aumenta en un ****2[f1]%**** durante **1[i]** turno(s). Se puede acumular hasta **4[i]** veces.",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point04",
@@ -57321,7 +58241,12 @@
 					"114012": 13,
 					"114013": 7
 				},
-				"params": [],
+				"params": [
+					2,
+					0.03,
+					2,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					130604
@@ -57336,7 +58261,10 @@
 				"icon": "spriteoutput/skillicons/1306/SkillIcon_1306_Maze.png",
 				"shortIcon": "SkillIcon_1306_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					3,
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					130607
@@ -58774,7 +59702,11 @@
 					"111002": 7,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.3,
+					0.5,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130701
@@ -58783,6 +59715,7 @@
 			},
 			{
 				"name": "Decadencia, falso crepúsculo",
+				"description": "Inflige un Daño de Viento equivalente al ****1[i]%**** del ATQ de Cisne Negro a un enemigo y a los enemigos adyacentes. Tiene una **probabilidad base** del **2[i]%** de aplicar 1 acumulación de **Sacramento** a los enemigos atacados y una **probabilidad base** del **3[i]%** de reducir la DEF de los enemigos atacados en un ****4[f1]%**** durante **5[i]** turno(s).",
 				"avatar": 1307,
 				"type": 2,
 				"pos": "Point02",
@@ -58799,7 +59732,13 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.45,
+					1,
+					1,
+					0.148,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					130702
@@ -58824,7 +59763,12 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.72,
+					2,
+					0.15,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					130703
@@ -58849,7 +59793,16 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.96,
+					0.5,
+					0.048,
+					3,
+					0.72,
+					7,
+					0.2,
+					50
+				],
 				"status": [],
 				"baseSkill": [
 					130704
@@ -58864,7 +59817,10 @@
 				"icon": "spriteoutput/skillicons/1307/SkillIcon_1307_Maze.png",
 				"shortIcon": "SkillIcon_1307_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1.5,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130707
@@ -60181,7 +61137,9 @@
 					"114002": 5,
 					"114003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					131201
@@ -60205,7 +61163,11 @@
 					"114002": 10,
 					"114003": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0.4,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					131202
@@ -60229,7 +61191,13 @@
 					"114002": 10,
 					"114003": 5
 				},
-				"params": [],
+				"params": [
+					3,
+					0.36,
+					0.12,
+					0.18,
+					10
+				],
 				"status": [],
 				"baseSkill": [
 					131203
@@ -60253,7 +61221,10 @@
 					"114002": 10,
 					"114003": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					131204
@@ -60267,7 +61238,10 @@
 				"icon": "spriteoutput/skillicons/1312/SkillIcon_1312_Maze.png",
 				"shortIcon": "SkillIcon_1312_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					131207
@@ -61620,6 +62594,7 @@
 		"tree": [
 			{
 				"name": "Golpe de despedida",
+				"description": "Inflige un ****1[i]%**** del ATQ {Fde la{Mdel Trazacaminos como Daño Físico a un enemigo.",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point01",
@@ -61634,7 +62609,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					800101
@@ -61643,6 +62620,7 @@
 			},
 			{
 				"name": "Carrera final",
+				"description": "Inflige un ****1[i]%**** del ATQ {Fde la{Mdel Trazacaminos como Daño Físico a un objetivo y a los enemigos adyacentes.",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point02",
@@ -61659,7 +62637,9 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.625
+				],
 				"status": [],
 				"baseSkill": [
 					800102
@@ -61668,6 +62648,7 @@
 			},
 			{
 				"name": "As estelar",
+				"description": "Elige entre dos formas de dar un fuerte golpe.\nVictoria total: Golpe de despedida inflige un ****1[i]%**** del ATQ {Fde la{Mdel Trazacaminos como Daño Físico a un enemigo.\nVictoria total: Carrera final inflige un ****2[i]%**** del ATQ {Fde la{Mdel Trazacaminos como Daño Físico a un objetivo y un ****3[i]%**** del ATQ {Fde la{Mdel Trazacaminos como Daño Físico a los enemigos adyacentes.",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point03",
@@ -61684,7 +62665,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					3,
+					1.8,
+					1.08
+				],
 				"status": [],
 				"baseSkill": [
 					800103,
@@ -61695,6 +62680,7 @@
 			},
 			{
 				"name": "Recogida perfecta",
+				"description": "Cada Ruptura de Debilidad que inflige al objetivo enemigo aumenta el ATQ {Fde la{Mdel Trazacaminos en un ****1[i]%****. Este efecto puede acumularse hasta **2[i]** veces.",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point04",
@@ -61711,7 +62697,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.1,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					800104
@@ -61720,13 +62709,16 @@
 			},
 			{
 				"name": "Tercer golpe inmortal",
+				"description": "Tras usar la técnica, todos los aliados regeneran un **1[i]%** de sus respectivos PV máx.",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/8001/SkillIcon_8001_Maze.png",
 				"shortIcon": "SkillIcon_8001_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					800107
@@ -63104,6 +64096,7 @@
 		"tree": [
 			{
 				"name": "Golpe de despedida",
+				"description": "Inflige un ****1[i]%**** del ATQ {Fde la{Mdel Trazacaminos como Daño Físico a un enemigo.",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point01",
@@ -63118,7 +64111,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					800201
@@ -63127,6 +64122,7 @@
 			},
 			{
 				"name": "Carrera final",
+				"description": "Inflige un ****1[i]%**** del ATQ {Fde la{Mdel Trazacaminos como Daño Físico a un objetivo y a los enemigos adyacentes.",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point02",
@@ -63143,7 +64139,9 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.625
+				],
 				"status": [],
 				"baseSkill": [
 					800202
@@ -63152,6 +64150,7 @@
 			},
 			{
 				"name": "As estelar",
+				"description": "Elige entre dos formas de dar un fuerte golpe.\nVictoria total: Golpe de despedida inflige un ****1[i]%**** del ATQ {Fde la{Mdel Trazacaminos como Daño Físico a un enemigo.\nVictoria total: Carrera final inflige un ****2[i]%**** del ATQ {Fde la{Mdel Trazacaminos como Daño Físico a un objetivo y un ****3[i]%**** del ATQ {Fde la{Mdel Trazacaminos como Daño Físico a los enemigos adyacentes.",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point03",
@@ -63168,7 +64167,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					3,
+					1.8,
+					1.08
+				],
 				"status": [],
 				"baseSkill": [
 					800203,
@@ -63179,6 +64182,7 @@
 			},
 			{
 				"name": "Recogida perfecta",
+				"description": "Cada Ruptura de Debilidad que inflige al objetivo enemigo aumenta el ATQ {Fde la{Mdel Trazacaminos en un ****1[i]%****. Este efecto puede acumularse hasta **2[i]** veces.",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point04",
@@ -63195,7 +64199,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.1,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					800204
@@ -63204,13 +64211,16 @@
 			},
 			{
 				"name": "Tercer golpe inmortal",
+				"description": "Tras usar la técnica, todos los aliados regeneran un **1[i]%** de sus respectivos PV máx.",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/8001/SkillIcon_8001_Maze.png",
 				"shortIcon": "SkillIcon_8001_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					800207
@@ -64552,6 +65562,7 @@
 		"tree": [
 			{
 				"name": "Luz rompehielos",
+				"description": "Inflige un ****1[i]%**** del ATQ {Fde la{Mdel Trazacaminos como Daño de Fuego a un enemigo y obtiene una acumulación de Voluntad magmática.",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point01",
@@ -64566,7 +65577,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					800301,
@@ -64576,6 +65589,7 @@
 			},
 			{
 				"name": "Ámbar inextinguible",
+				"description": "Tras usar la habilidad básica, el daño que recibe {Fla{Mel Trazacaminos se reduce en un ****1[i]%**** y obtiene una acumulación de Voluntad magmática. Además, tiene un **2[i]%** de **probabilidad base** de afectar a todos los enemigos con Provocación durante **3[i]** turno.",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point02",
@@ -64592,7 +65606,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.4,
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					800302
@@ -64601,6 +65619,7 @@
 			},
 			{
 				"name": "Lanza llameante tras las líneas enemigas",
+				"description": "Inflige a todos los enemigos un Daño de Fuego equivalente al ****1[i]%**** del ATQ + ****2[i]%**** de la DEF {Fde la{Mdel Trazacaminos. La siguiente vez que se use el ATQ básico, gana automáticamente una potenciación sin consumir Voluntad magmática.",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point03",
@@ -64617,7 +65636,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					0.75
+				],
 				"status": [],
 				"baseSkill": [
 					800303
@@ -64626,6 +65648,7 @@
 			},
 			{
 				"name": "Tesoro de los Arquitectos",
+				"description": "Por cada ataque recibido, obtiene 1 acumulación de Voluntad magmática (puede tener hasta **3[i]** acumulaciones).\nCuando tiene 4 o más, el ATQ básico se potencia e inflige daño tanto al objetivo como a los enemigos adyacentes.\nDespués de que {Fla{Mel Trazacaminos use el ATQ básico, la habilidad básica o la habilidad definitiva, todos los aliados obtienen un escudo que absorbe un daño equivalente al ****1[f1]%**** de la DEF {Fde la{Mdel Trazacaminos + ****4[i]**** durante **2[i]** turnos.",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point04",
@@ -64642,7 +65665,12 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.04,
+					2,
+					8,
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					800304
@@ -64651,13 +65679,18 @@
 			},
 			{
 				"name": "Llamada del guardián",
+				"description": "Tras usar la técnica, al comenzar la siguiente batalla obtiene un escudo que absorbe un daño equivalente al **1[i]%** de la DEF {Fde la{Mdel Trazacaminos + **2[i]** durante **3[i]** turno.",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/8003/SkillIcon_8003_Maze.png",
 				"shortIcon": "SkillIcon_8003_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.3,
+					384,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					800307
@@ -66004,6 +67037,7 @@
 		"tree": [
 			{
 				"name": "Luz rompehielos",
+				"description": "Inflige un ****1[i]%**** del ATQ {Fde la{Mdel Trazacaminos como Daño de Fuego a un enemigo y obtiene una acumulación de Voluntad magmática.",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point01",
@@ -66018,7 +67052,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					800401,
@@ -66028,6 +67064,7 @@
 			},
 			{
 				"name": "Ámbar inextinguible",
+				"description": "Tras usar la habilidad básica, el daño que recibe {Fla{Mel Trazacaminos se reduce en un ****1[i]%**** y obtiene una acumulación de Voluntad magmática. Además, tiene un **2[i]%** de **probabilidad base** de afectar a todos los enemigos con Provocación durante **3[i]** turno.",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point02",
@@ -66044,7 +67081,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.4,
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					800402
@@ -66053,6 +67094,7 @@
 			},
 			{
 				"name": "Lanza llameante tras las líneas enemigas",
+				"description": "Inflige a todos los enemigos un Daño de Fuego equivalente al ****1[i]%**** del ATQ + ****2[i]%**** de la DEF {Fde la{Mdel Trazacaminos. La siguiente vez que se use el ATQ básico, gana automáticamente una potenciación sin consumir Voluntad magmática.",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point03",
@@ -66069,7 +67111,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					0.75
+				],
 				"status": [],
 				"baseSkill": [
 					800403
@@ -66078,6 +67123,7 @@
 			},
 			{
 				"name": "Tesoro de los Arquitectos",
+				"description": "Por cada ataque recibido, obtiene 1 acumulación de Voluntad magmática (puede tener hasta **3[i]** acumulaciones).\nCuando tiene 4 o más, el ATQ básico se potencia e inflige daño tanto al objetivo como a los enemigos adyacentes.\nDespués de que {Fla{Mel Trazacaminos use el ATQ básico, la habilidad básica o la habilidad definitiva, todos los aliados obtienen un escudo que absorbe un daño equivalente al ****1[f1]%**** de la DEF {Fde la{Mdel Trazacaminos + ****4[i]**** durante **2[i]** turnos.",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point04",
@@ -66094,7 +67140,12 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.04,
+					2,
+					8,
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					800404
@@ -66103,13 +67154,18 @@
 			},
 			{
 				"name": "Llamada del guardián",
+				"description": "Tras usar la técnica, al comenzar la siguiente batalla obtiene un escudo que absorbe un daño equivalente al **1[i]%** de la DEF {Fde la{Mdel Trazacaminos + **2[i]** durante **3[i]** turno.",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/8003/SkillIcon_8003_Maze.png",
 				"shortIcon": "SkillIcon_8003_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.3,
+					384,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					800407

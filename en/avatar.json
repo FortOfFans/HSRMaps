@@ -453,6 +453,7 @@
 		"tree": [
 			{
 				"name": "Frigid Cold Arrow",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of March 7th's ATK to a single enemy.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point01",
@@ -467,7 +468,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100101
@@ -476,6 +479,7 @@
 			},
 			{
 				"name": "The Power of Cuteness",
+				"description": "Provides a single ally with a Shield that can absorb DMG equal to ****1[i]%**** of March 7th's DEF plus ****4[i]**** for **2[i]** turn(s).\nIf the ally's current HP percentage is **3[i]%** or higher, greatly increases the chance of enemies attacking that ally.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point02",
@@ -492,7 +496,13 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.38,
+					3,
+					0.3,
+					190,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					100102
@@ -501,6 +511,7 @@
 			},
 			{
 				"name": "Glacial Cascade",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of March 7th's ATK to all enemies. Hit enemies have a **2[i]%** **base chance** to be Frozen for **3[i]** turn(s).\nWhile Frozen, enemies cannot take action and will receive **Additional** Ice DMG equal to ****4[i]%**** of March 7th's ATK at the beginning of each turn.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point03",
@@ -517,7 +528,12 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.9,
+					0.5,
+					1,
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					100103
@@ -526,6 +542,7 @@
 			},
 			{
 				"name": "Girl Power",
+				"description": "After a Shielded ally is attacked by an enemy, March 7th immediately **Counters**, dealing Ice DMG equal to ****1[i]%**** of her ATK. This effect can be triggered **2[i]** time(s) each turn.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point04",
@@ -542,7 +559,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100104
@@ -551,13 +571,18 @@
 			},
 			{
 				"name": "Freezing Beauty",
+				"description": "Immediately attacks the enemy. After entering battle, there is a **1[i]%** **base chance** to Freeze a random enemy for **2[i]** turn(s).\nWhile Frozen, the enemy cannot take action and will take **Additional** Ice DMG equal to **3[i]%** of March 7th's ATK at the beginning of each turn.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
 				"shortIcon": "SkillIcon_1001_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					1,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100107
@@ -1832,6 +1857,7 @@
 		"tree": [
 			{
 				"name": "Cloudlancer Art: North Wind",
+				"description": "Deals Wind DMG equal to ****1[i]%**** of Dan Heng's ATK to a single enemy.",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point01",
@@ -1846,7 +1872,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100201
@@ -1855,6 +1883,7 @@
 			},
 			{
 				"name": "Cloudlancer Art: Torrent",
+				"description": "Deals Wind DMG equal to ****1[i]%**** of Dan Heng's ATK to a single enemy.\nOn a CRIT Hit, there is a **4[i]%** **base chance** to reduce the target's SPD by **2[i]%** for **3[i]** turn(s).",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point02",
@@ -1871,7 +1900,12 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.3,
+					0.12,
+					2,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					100202
@@ -1880,6 +1914,7 @@
 			},
 			{
 				"name": "Ethereal Dream",
+				"description": "Deals Wind DMG equal to ****1[i]%**** of Dan Heng's ATK to a single enemy. If the enemy is Slowed, the Ultimate's DMG multiplier increases by ****2[i]%****.",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point03",
@@ -1896,7 +1931,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					2.4,
+					0.72
+				],
 				"status": [],
 				"baseSkill": [
 					100203
@@ -1905,6 +1943,7 @@
 			},
 			{
 				"name": "Superiority of Reach",
+				"description": "When Dan Heng is the target of an ally's ability, his next attack's Wind **RES PEN** increases by ****1[i]%****. This effect can be triggered again after **2[i]** turn(s).",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point04",
@@ -1921,7 +1960,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.18,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100204
@@ -1930,13 +1972,17 @@
 			},
 			{
 				"name": "Splitting Spearhead",
+				"description": "After Dan Heng uses his Technique, his ATK increases by **1[i]%** at the start of the next battle for **2[i]** turn(s).",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1002/SkillIcon_1002_Maze.png",
 				"shortIcon": "SkillIcon_1002_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.4,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100207
@@ -3182,6 +3228,7 @@
 		"tree": [
 			{
 				"name": "Sawblade Tuning",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of Himeko's ATK to a single enemy.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point01",
@@ -3196,7 +3243,9 @@
 					"111002": 7,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100301
@@ -3205,6 +3254,7 @@
 			},
 			{
 				"name": "Molten Detonation",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of Himeko's ATK to a single enemy and Fire DMG equal to ****2[i]%**** of Himeko's ATK to enemies adjacent to it.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point02",
@@ -3221,7 +3271,10 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					1,
+					0.4
+				],
 				"status": [],
 				"baseSkill": [
 					100302
@@ -3230,6 +3283,7 @@
 			},
 			{
 				"name": "Heavenly Flare",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of Himeko's ATK to all enemies. Himeko regenerates **2[i]** extra Energy for each enemy defeated.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point03",
@@ -3246,7 +3300,10 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					1.38,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					100303
@@ -3255,6 +3312,7 @@
 			},
 			{
 				"name": "Victory Rush",
+				"description": "When an enemy is inflicted with Weakness Break, Himeko gains 1 point of Charge (max **2[i]** points).\nIf Himeko is fully Charged when an ally performs an attack, Himeko immediately performs 1 **follow-up attack** and deals Fire DMG equal to ****1[i]%**** of her ATK to all enemies, consuming all Charge points.\nAt the start of the battle, Himeko gains 1 point of Charge.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point04",
@@ -3271,7 +3329,10 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.7,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100304
@@ -3280,13 +3341,19 @@
 			},
 			{
 				"name": "Incomplete Combustion",
+				"description": "After using Technique, creates a dimension that lasts for **4[i]** second(s). After entering battle with enemies in the dimension, there is a **1[i]%** **base chance** to increase Fire DMG taken by enemies by **2[i]%** for **3[i]** turn(s). Only 1 dimension created by allies can exist at the same time.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1003/SkillIcon_1003_Maze.png",
 				"shortIcon": "SkillIcon_1003_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.1,
+					2,
+					15
+				],
 				"status": [],
 				"baseSkill": [
 					100307
@@ -4591,6 +4658,7 @@
 		"tree": [
 			{
 				"name": "Gravity Suppression",
+				"description": "Deals Imaginary DMG equal to ****1[i]%**** of Welt's ATK to a single enemy.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point01",
@@ -4605,7 +4673,9 @@
 					"112002": 7,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100401
@@ -4614,6 +4684,7 @@
 			},
 			{
 				"name": "Edge of the Void",
+				"description": "Deals Imaginary DMG equal to ****1[i]%**** of Welt's ATK to a single enemy and further deals DMG 2 extra times, with each time dealing Imaginary DMG equal to ****1[i]%**** of Welt's ATK to a random enemy. On hit, there is a ****2[i]%**** **base chance** to reduce the enemy's SPD by **3[i]%** for **4[i]** turn(s).",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point02",
@@ -4630,7 +4701,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.36,
+					0.65,
+					0.1,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100402
@@ -4639,6 +4715,7 @@
 			},
 			{
 				"name": "Synthetic Black Hole",
+				"description": "Deals Imaginary DMG equal to ****1[i]%**** of Welt's ATK to all enemies, with a **3[i]%** **base chance** for enemies hit by this ability to be Imprisoned for 1 turn.\nImprisoned enemies have their **actions delayed** by ****2[f1]%**** and SPD reduced by **4[i]%**.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point03",
@@ -4655,7 +4732,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.9,
+					0.32,
+					1,
+					0.1
+				],
 				"status": [],
 				"baseSkill": [
 					100403
@@ -4664,6 +4746,7 @@
 			},
 			{
 				"name": "Time Distortion",
+				"description": "When hitting an enemy that is already Slowed, Welt deals **Additional** Imaginary DMG equal to ****1[i]%**** of his ATK to the enemy.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point04",
@@ -4680,7 +4763,9 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					100404
@@ -4689,13 +4774,20 @@
 			},
 			{
 				"name": "Gravitational Imprisonment",
+				"description": "After using Welt's Technique, create a dimension that lasts for **4[i]** second(s). Enemies in this dimension have their Movement SPD reduced by **5[i]%**. After entering battle with enemies in the dimension, there is a **1[i]%** **base chance** to Imprison the enemies for 1 turn.\nImprisoned enemies have their **actions delayed** by **2[i]%** and SPD reduced by **3[i]%**. Only 1 dimension created by allies can exist at the same time.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1004/SkillIcon_1004_Maze.png",
 				"shortIcon": "SkillIcon_1004_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.2,
+					0.1,
+					15,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100407
@@ -6024,6 +6116,7 @@
 		"tree": [
 			{
 				"name": "Midnight Tumult",
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Kafka's ATK to a single enemy.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point01",
@@ -6038,7 +6131,9 @@
 					"111012": 7,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100501
@@ -6047,6 +6142,7 @@
 			},
 			{
 				"name": "Caressing Moonlight",
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Kafka's ATK to a target enemy and Lightning DMG equal to ****3[i]%**** of Kafka's ATK to enemies adjacent to it.\nIf the target enemy is currently receiving DoT, all DoTs currently placed on that enemy immediately produce DMG equal to ****2[i]%**** of their original DMG.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point02",
@@ -6063,7 +6159,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.8,
+					0.6,
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					100502
@@ -6072,6 +6172,7 @@
 			},
 			{
 				"name": "Twilight Trill",
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Kafka's ATK to all enemies, with a **2[i]%** **base chance** for enemies hit to become Shocked and immediately take DMG from their current Shock state, equal to ****5[i]%**** of its original DMG. Shock lasts for **3[i]** turn(s).\nWhile Shocked, enemies receive Lightning DoT equal to ****4[i]%**** of Kafka's ATK at the beginning of each turn.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point03",
@@ -6088,7 +6189,13 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.48,
+					1,
+					2,
+					1.16,
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					100503
@@ -6097,6 +6204,7 @@
 			},
 			{
 				"name": "Gentle but Cruel",
+				"description": "After an ally of Kafka's uses Basic ATK on an enemy target, Kafka immediately launches 1 **follow-up attack** and deals Lightning DMG equal to ****1[i]%**** of her ATK to that target, with a **2[i]%** **base chance** to inflict Shock equivalent to that applied by her Ultimate to the attacked enemy target, lasting for **3[i]** turns. This effect can only be triggered 1 time per turn.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point04",
@@ -6113,7 +6221,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.42,
+					1,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100504
@@ -6122,13 +6234,18 @@
 			},
 			{
 				"name": "Mercy Is Not Forgiveness",
+				"description": "Immediately attacks all enemies within a set range. After entering battle, deals Lightning DMG equal to **3[i]%** of Kafka's ATK to all enemies, with a **1[i]%** **base chance** to inflict Shock equivalent to that applied by her Ultimate on every enemy target for **2[i]** turn(s).",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1005/SkillIcon_1005_Maze.png",
 				"shortIcon": "SkillIcon_1005_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					2,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100507
@@ -7529,6 +7646,7 @@
 		"tree": [
 			{
 				"name": "System Warning",
+				"description": "Deals Quantum DMG equal to ****1[i]%**** of Silver Wolf's ATK to a single enemy.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point01",
@@ -7543,7 +7661,9 @@
 					"112012": 7,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100601
@@ -7552,6 +7672,7 @@
 			},
 			{
 				"name": "Allow Changes?",
+				"description": "There is a ****2[i]%**** **base chance** to add 1 Weakness of an on-field character's Type to the target enemy. This also reduces the enemy's DMG RES to that Weakness Type by **4[i]%** for **3[i]** turn(s). If the enemy already has that Type Weakness, the effect of DMG RES reduction to that Weakness Type will not be triggered.\nEach enemy can only have 1 Weakness implanted by Silver Wolf. When Silver Wolf implants another Weakness to the target, only the most recent implanted Weakness will be kept.\nIn addition, there is a **5[i]%** **base chance** to further reduce the All-Type RES of the enemy by ****6[f1]%**** for **7[i]** turn(s).\nDeals Quantum DMG equal to ****1[i]%**** of Silver Wolf's ATK to this enemy.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point02",
@@ -7568,7 +7689,15 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.98,
+					0.75,
+					2,
+					0.2,
+					1,
+					0.075,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100602
@@ -7577,6 +7706,7 @@
 			},
 			{
 				"name": "User Banned",
+				"description": "There's a ****2[i]%**** **base chance** to decrease the target enemy's DEF by ****3[f1]%**** for **4[i]** turn(s). And at the same time, deals Quantum DMG equal to ****1[i]%**** of Silver Wolf's ATK to the target enemy.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point03",
@@ -7593,7 +7723,12 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					2.28,
+					0.85,
+					0.36,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100603
@@ -7602,6 +7737,7 @@
 			},
 			{
 				"name": "Awaiting System Response...",
+				"description": "Silver Wolf can create three types of Bugs: reduce ATK by ****1[f1]%****, reduce DEF by ****2[f1]%****, and reduce SPD by ****3[f1]%****.\nEvery time Silver Wolf attacks, she has a ****4[i]%**** **base chance** to implant a random Bug that lasts for **5[i]** turn(s) in an enemy target.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point04",
@@ -7618,7 +7754,13 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.05,
+					0.04,
+					0.03,
+					0.6,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100604
@@ -7627,13 +7769,16 @@
 			},
 			{
 				"name": "Force Quit Program",
+				"description": "Immediately attacks the enemy. After entering battle, deals Quantum DMG equal to **1[i]%** of Silver Wolf's ATK to all enemies, and ignores Weakness Types and reduces Toughness from all enemies. Enemies with their Weakness Broken in this way will trigger the Quantum Weakness Break effect.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1006/SkillIcon_1006_Maze.png",
 				"shortIcon": "SkillIcon_1006_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					100607
@@ -8873,6 +9018,7 @@
 		"tree": [
 			{
 				"name": "Lightning Rush",
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Arlan's ATK to a single enemy.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point01",
@@ -8887,7 +9033,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100801
@@ -8896,6 +9044,7 @@
 			},
 			{
 				"name": "Shackle Breaker",
+				"description": "Consumes Arlan's HP equal to **1[i]%** of his Max HP to deal Lightning DMG equal to ****2[i]%**** of Arlan's ATK to a single enemy. If Arlan does not have sufficient HP, his HP will be reduced to 1 after using his Skill.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point02",
@@ -8912,7 +9061,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.15,
+					1.2
+				],
 				"status": [],
 				"baseSkill": [
 					100802
@@ -8921,6 +9073,7 @@
 			},
 			{
 				"name": "Frenzied Punishment",
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Arlan's ATK to a single enemy and Lightning DMG equal to ****2[i]%**** of Arlan's ATK to enemies adjacent to it.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point03",
@@ -8937,7 +9090,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.92,
+					0.96
+				],
 				"status": [],
 				"baseSkill": [
 					100803
@@ -8946,6 +9102,7 @@
 			},
 			{
 				"name": "Pain and Anger",
+				"description": "Increases Arlan's DMG for every percent of HP below his Max HP, up to a max of ****1[i]%**** more DMG.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point04",
@@ -8962,7 +9119,9 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.36
+				],
 				"status": [],
 				"baseSkill": [
 					100804
@@ -8971,13 +9130,16 @@
 			},
 			{
 				"name": "Swift Harvest",
+				"description": "Immediately attacks the enemy. After entering battle, deals Lightning DMG equal to **1[i]%** of Arlan's ATK to all enemies.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1008/SkillIcon_1008_Maze.png",
 				"shortIcon": "SkillIcon_1008_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					100807
@@ -10219,6 +10381,7 @@
 		"tree": [
 			{
 				"name": "Spectrum Beam",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of Asta's ATK to a single enemy.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point01",
@@ -10233,7 +10396,9 @@
 					"112002": 5,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100901
@@ -10242,6 +10407,7 @@
 			},
 			{
 				"name": "Meteor Storm",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of Asta's ATK to a single enemy and further deals DMG for 4 extra times, with each time dealing Fire DMG equal to ****1[i]%**** of Asta's ATK to a random enemy.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point02",
@@ -10258,7 +10424,9 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					100902
@@ -10267,6 +10435,7 @@
 			},
 			{
 				"name": "Astral Blessing",
+				"description": "Increases SPD of all allies by ****1[i]**** for **2[i]** turn(s).",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point03",
@@ -10283,7 +10452,10 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					36,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100903
@@ -10292,6 +10464,7 @@
 			},
 			{
 				"name": "Astrometry",
+				"description": "Gains 1 stack of Charging for every different enemy hit by Asta plus an extra stack if the enemy hit has Fire Weakness.\nFor every stack of Charging Asta has, all allies' ATK increases by ****1[f1]%****, up to **2[i]** time(s).\nStarting from her second turn, Asta's Charging stack count is reduced by **3[i]** at the beginning of every turn.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point04",
@@ -10308,7 +10481,11 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.07,
+					5,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100904
@@ -10317,13 +10494,16 @@
 			},
 			{
 				"name": "Miracle Flash",
+				"description": "Immediately attacks the enemy. After entering battle, deals Fire DMG equal to **1[i]%** of Asta's ATK to all enemies.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1009/SkillIcon_1009_Maze.png",
 				"shortIcon": "SkillIcon_1009_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100907
@@ -11568,6 +11748,7 @@
 		"tree": [
 			{
 				"name": "What Are You Looking At?",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Herta's ATK to a single enemy.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point01",
@@ -11582,7 +11763,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					101301
@@ -11591,6 +11774,7 @@
 			},
 			{
 				"name": "One-Time Offer",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Herta's ATK to all enemies. If the enemy's HP percentage is **2[i]%** or higher, DMG dealt to this target increases by **3[i]%**.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point02",
@@ -11607,7 +11791,11 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					0.5,
+					0.2
+				],
 				"status": [],
 				"baseSkill": [
 					101302
@@ -11616,6 +11804,7 @@
 			},
 			{
 				"name": "It's Magic, I Added Some Magic",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Herta's ATK to all enemies.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point03",
@@ -11632,7 +11821,9 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.2
+				],
 				"status": [],
 				"baseSkill": [
 					101303
@@ -11641,6 +11832,7 @@
 			},
 			{
 				"name": "Fine, I'll Do It Myself",
+				"description": "When an ally's attack causes an enemy's HP percentage to fall to **1[i]%** or lower, Herta will launch a **follow-up attack**, dealing Ice DMG equal to ****2[i]%**** of Herta's ATK to all enemies.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point04",
@@ -11657,7 +11849,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					101304
@@ -11666,13 +11861,17 @@
 			},
 			{
 				"name": "It Can Still Be Optimized",
+				"description": "After using her Technique, Herta's ATK increases by **1[i]%** for **2[i]** turn(s) at the beginning of the next battle.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1013/SkillIcon_1013_Maze.png",
 				"shortIcon": "SkillIcon_1013_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.4,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					101307
@@ -12964,6 +13163,7 @@
 		"tree": [
 			{
 				"name": "Windrider Bullet",
+				"description": "Deals Wind DMG equal to ****1[i]%**** of Bronya's ATK to a single enemy.",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point01",
@@ -12978,7 +13178,9 @@
 					"112002": 7,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110101
@@ -12987,6 +13189,7 @@
 			},
 			{
 				"name": "Combat Redeployment",
+				"description": "Dispels a **debuff** from a single ally, allows them to immediately take action, and increases their DMG by ****1[i]%**** for **3[i]** turn(s).\nWhen this Skill is used on Bronya herself, she cannot immediately take action again.",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point02",
@@ -13003,7 +13206,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.33,
+					0,
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					110102
@@ -13012,6 +13220,7 @@
 			},
 			{
 				"name": "The Belobog March",
+				"description": "Increases the ATK of all allies by ****1[i]%****, and increases their CRIT DMG equal to ****2[f1]%**** of Bronya's CRIT DMG plus ****3[f1]%**** for **4[i]** turn(s).",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point03",
@@ -13028,7 +13237,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.33,
+					0.12,
+					0.12,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110103
@@ -13037,6 +13251,7 @@
 			},
 			{
 				"name": "Leading the Way",
+				"description": "After using her Basic ATK, Bronya's next action will be **Advanced Forward** by ****1[i]%****.",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point04",
@@ -13053,7 +13268,9 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					110104
@@ -13062,13 +13279,17 @@
 			},
 			{
 				"name": "Banner of Command",
+				"description": "After using Bronya's Technique, at the start of the next battle, all allies' ATK increases by **1[i]%** for **2[i]** turn(s).",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1101/SkillIcon_1101_Maze.png",
 				"shortIcon": "SkillIcon_1101_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110107
@@ -14318,6 +14539,7 @@
 		"tree": [
 			{
 				"name": "Thwack",
+				"description": "Deals Quantum DMG equal to ****1[i]%**** of Seele's ATK to a single enemy.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point01",
@@ -14332,7 +14554,9 @@
 					"111012": 7,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110201
@@ -14341,6 +14565,7 @@
 			},
 			{
 				"name": "Sheathed Blade",
+				"description": "Increases Seele's SPD by **2[i]%** for **3[i]** turn(s) and deals Quantum DMG equal to ****1[i]%**** of Seele's ATK to a single enemy.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point02",
@@ -14357,7 +14582,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					1.1,
+					0.25,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110202
@@ -14366,6 +14595,7 @@
 			},
 			{
 				"name": "Butterfly Flurry",
+				"description": "Seele enters the buffed state and deals Quantum DMG equal to ****1[i]%**** of her ATK to a single enemy.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point03",
@@ -14382,7 +14612,9 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					2.55
+				],
 				"status": [],
 				"baseSkill": [
 					110203
@@ -14391,6 +14623,7 @@
 			},
 			{
 				"name": "Resurgence",
+				"description": "Enters the buffed state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an **extra turn**. While in the buffed state, the DMG of Seele's attacks increases by ****1[i]%**** for **2[i]** turn(s).\nEnemies defeated in the **extra turn** provided by \"Resurgence\" will not trigger another \"Resurgence.\"",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point04",
@@ -14407,7 +14640,10 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.4,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					110204
@@ -14416,13 +14652,16 @@
 			},
 			{
 				"name": "Phantom Illusion",
+				"description": "After using her Technique, Seele gains Stealth for **1[i]** second(s). While Stealth is active, Seele cannot be detected by enemies. And when entering battle by attacking enemies, Seele will immediately enter the buffed state.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1102/SkillIcon_1102_Maze.png",
 				"shortIcon": "SkillIcon_1102_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					110207
@@ -15708,6 +15947,7 @@
 		"tree": [
 			{
 				"name": "Roaring Thunderclap",
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Serval's ATK to a single enemy.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point01",
@@ -15722,7 +15962,9 @@
 					"112002": 5,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110301
@@ -15731,6 +15973,7 @@
 			},
 			{
 				"name": "Lightning Flash",
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Serval's ATK to a single enemy and Lightning DMG equal to ****2[i]%**** of Serval's ATK to enemies adjacent to it, with a **3[i]%** **base chance** for enemies hit to become Shocked for **4[i]** turn(s).\nWhile Shocked, enemies take Lightning DoT equal to ****5[i]%**** of Serval's ATK at the beginning of each turn.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point02",
@@ -15747,7 +15990,13 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.7,
+					0.3,
+					0.8,
+					2,
+					0.4
+				],
 				"status": [],
 				"baseSkill": [
 					110302
@@ -15756,6 +16005,7 @@
 			},
 			{
 				"name": "Here Comes the Mechanical Fever",
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Serval's ATK to all enemies. Enemies already Shocked will extend the duration of their Shock state by **2[i]** turn(s).",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point03",
@@ -15772,7 +16022,10 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					1.08,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110303
@@ -15781,6 +16034,7 @@
 			},
 			{
 				"name": "Galvanic Chords",
+				"description": "After Serval attacks, deals **Additional** Lightning DMG equal to ****1[i]%**** of Serval's ATK to all Shocked enemies.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point04",
@@ -15797,7 +16051,9 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.36
+				],
 				"status": [],
 				"baseSkill": [
 					110304
@@ -15806,13 +16062,19 @@
 			},
 			{
 				"name": "Good Night, Belobog",
+				"description": "Immediately attacks the enemy. After entering battle, deals Lightning DMG equal to **4[i]%** of Serval's ATK to a random enemy, with a **1[i]%** **base chance** for all enemies to become Shocked for **3[i]** turn(s).\nWhile Shocked, enemies will take Lightning DoT equal to **2[i]%** of Serval's ATK at the beginning of each turn.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1103/SkillIcon_1103_Maze.png",
 				"shortIcon": "SkillIcon_1103_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.5,
+					3,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110307
@@ -17088,6 +17350,7 @@
 		"tree": [
 			{
 				"name": "Fist of Conviction",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Gepard's ATK to a single enemy.",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point01",
@@ -17102,7 +17365,9 @@
 					"112002": 7,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110401
@@ -17111,6 +17376,7 @@
 			},
 			{
 				"name": "Daunting Smite",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Gepard's ATK to a single enemy, with a **2[i]%** **base chance** to Freeze the enemy for **3[i]** turn(s).\nWhile Frozen, the enemy cannot take action and will take **Additional** Ice DMG equal to ****4[i]%**** of Gepard's ATK at the beginning of each turn.",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point02",
@@ -17127,7 +17393,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					1,
+					0.65,
+					1,
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					110402
@@ -17136,6 +17407,7 @@
 			},
 			{
 				"name": "Enduring Bulwark",
+				"description": "Applies a Shield to all allies, absorbing DMG equal to ****1[i]%**** of Gepard's DEF plus ****3[i]**** for **2[i]** turn(s).",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point03",
@@ -17152,7 +17424,11 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.3,
+					3,
+					150
+				],
 				"status": [],
 				"baseSkill": [
 					110403
@@ -17161,6 +17437,7 @@
 			},
 			{
 				"name": "Unyielding Will",
+				"description": "When struck with a killing blow, instead of becoming **knocked down**, Gepard's HP immediately restores to ****1[i]%**** of his Max HP. This effect can only trigger once per battle.",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point04",
@@ -17177,7 +17454,9 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					110404
@@ -17186,13 +17465,18 @@
 			},
 			{
 				"name": "Comradery",
+				"description": "After Gepard uses his Technique, when the next battle begins, a Shield will be applied to all allies, absorbing DMG equal to **1[i]%** of Gepard's DEF plus **3[i]** for **2[i]** turn(s).",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1104/SkillIcon_1104_Maze.png",
 				"shortIcon": "SkillIcon_1104_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.24,
+					2,
+					150
+				],
 				"status": [],
 				"baseSkill": [
 					110407
@@ -18489,6 +18773,7 @@
 		"tree": [
 			{
 				"name": "Behind the Kindness",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of Natasha's ATK to a single enemy.",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point01",
@@ -18503,7 +18788,9 @@
 					"112012": 5,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110501
@@ -18512,6 +18799,7 @@
 			},
 			{
 				"name": "Love, Heal, and Choose",
+				"description": "Restores a single ally for ****1[f1]%**** of Natasha's Max HP plus ****4[i]****. Restores the ally for another ****2[f1]%**** of Natasha's Max HP plus ****5[i]**** at the beginning of each turn for **3[i]** turn(s).",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point02",
@@ -18528,7 +18816,13 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.07,
+					0.048,
+					2,
+					70,
+					48
+				],
 				"status": [],
 				"baseSkill": [
 					110502
@@ -18537,6 +18831,7 @@
 			},
 			{
 				"name": "Gift of Rebirth",
+				"description": "Heals all allies for ****1[f1]%**** of Natasha's Max HP plus ****2[i]****.",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point03",
@@ -18553,7 +18848,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.092,
+					92
+				],
 				"status": [],
 				"baseSkill": [
 					110503
@@ -18562,6 +18860,7 @@
 			},
 			{
 				"name": "Innervation",
+				"description": "When healing allies with HP percentage at **1[i]%** or lower, increases Natasha's Outgoing Healing by ****2[i]%****. This effect also works on continuous healing.",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point04",
@@ -18578,7 +18877,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.3,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					110504
@@ -18587,13 +18889,19 @@
 			},
 			{
 				"name": "Hypnosis Research",
+				"description": "Immediately attacks the enemy. After entering battle, deals Physical DMG equal to **4[i]%** of Natasha's ATK to a random enemy, with a **1[i]%** **base chance** to Weaken all enemies.\nWhile Weakened, enemies deal **2[i]%** less DMG to allies for **3[i]** turn(s).",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1105/SkillIcon_1105_Maze.png",
 				"shortIcon": "SkillIcon_1105_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.3,
+					1,
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					110507
@@ -19858,6 +20166,7 @@
 		"tree": [
 			{
 				"name": "Frost Shot",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Pela's ATK to a single target enemy.",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point01",
@@ -19872,7 +20181,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110601
@@ -19881,6 +20192,7 @@
 			},
 			{
 				"name": "Frostbite",
+				"description": "Removes **2[i]** **buff(s)** and deals Ice DMG equal to ****1[i]%**** of Pela's ATK to a single target enemy.",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point02",
@@ -19897,7 +20209,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.05,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					110602
@@ -19906,6 +20221,7 @@
 			},
 			{
 				"name": "Zone Suppression",
+				"description": "Deals Ice DMG equal to ****4[i]%**** of Pela's ATK to all enemies, with a **1[i]%** **base chance** to inflict Exposed on all enemies.\nWhen Exposed, enemies' DEF is reduced by ****2[i]%**** for **3[i]** turn(s).",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point03",
@@ -19922,7 +20238,12 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0.3,
+					2,
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					110603
@@ -19931,6 +20252,7 @@
 			},
 			{
 				"name": "Data Collecting",
+				"description": "If the enemy is **debuffed** after Pela's attack, Pela will restore ****1[f1]**** additional Energy. This effect can only be triggered 1 time per attack.",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point04",
@@ -19947,7 +20269,9 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					110604
@@ -19956,13 +20280,19 @@
 			},
 			{
 				"name": "Preemptive Strike",
+				"description": "Immediately attacks the enemy. Upon entering battle, Pela deals Ice DMG equal to **4[i]%** of her ATK to a random enemy, with a **1[i]%** **base chance** of lowering the DEF of all enemies by **2[i]%** for **3[i]** turn(s).",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1106/SkillIcon_1106_Maze.png",
 				"shortIcon": "SkillIcon_1106_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.2,
+					2,
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					110607
@@ -21269,6 +21599,7 @@
 		"tree": [
 			{
 				"name": "I Want to Help",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of Clara's ATK to a single enemy.",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point01",
@@ -21283,7 +21614,9 @@
 					"112012": 7,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110701
@@ -21292,6 +21625,7 @@
 			},
 			{
 				"name": "Svarog Watches Over You",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of Clara's ATK to all enemies, and additionally deals Physical DMG equal to ****2[i]%**** of Clara's ATK to enemies marked by Svarog with a Mark of Counter.\nAll Marks of Counter will be removed after this Skill is used.",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point02",
@@ -21308,7 +21642,10 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.6,
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					110702
@@ -21317,6 +21654,7 @@
 			},
 			{
 				"name": "Promise, Not Command",
+				"description": "After Clara uses Ultimate, DMG dealt to her is reduced by an extra ****4[i]%****, and she has greatly increased chances of being attacked by enemies for **3[i]** turn(s).\nIn addition, Svarog's **Counter** is enhanced. When an ally is attacked, Svarog immediately launches a **Counter**, and its DMG multiplier against the enemy increases by ****2[i]%****. Enemies adjacent to it take **50%** of the DMG dealt to the target enemy. Enhanced **Counter(s)** can take effect **5[i]** time(s).",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point03",
@@ -21333,7 +21671,13 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					5,
+					0.96,
+					2,
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110703
@@ -21342,6 +21686,7 @@
 			},
 			{
 				"name": "Because We're Family",
+				"description": "Under the protection of Svarog, DMG taken by Clara when hit by enemy attacks is reduced by **3[i]%**. Svarog will mark enemies who attack Clara with his Mark of Counter and retaliate with a **Counter**, dealing Physical DMG equal to ****2[i]%**** of Clara's ATK.",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point04",
@@ -21358,7 +21703,11 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					1,
+					0.8,
+					0.1
+				],
 				"status": [],
 				"baseSkill": [
 					110704
@@ -21367,13 +21716,17 @@
 			},
 			{
 				"name": "A Small Price for Victory",
+				"description": "Immediately attacks the enemy. Upon entering battle, the chance Clara will be attacked by enemies increases for **1[i]** turn(s).",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1107/SkillIcon_1107_Maze.png",
 				"shortIcon": "SkillIcon_1107_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					2,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					110707
@@ -22686,6 +23039,7 @@
 		"tree": [
 			{
 				"name": "Dazzling Blades",
+				"description": "Deals Wind DMG equal to ****1[i]%**** of Sampo's ATK to a single enemy.",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point01",
@@ -22700,7 +23054,9 @@
 					"112012": 5,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110801
@@ -22709,6 +23065,7 @@
 			},
 			{
 				"name": "Ricochet Love",
+				"description": "Deals Wind DMG equal to ****2[i]%**** of Sampo's ATK to a single enemy, and further deals DMG for **1[i]** extra time(s), with each time dealing Wind DMG equal to ****2[i]%**** of Sampo's ATK to a random enemy.",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point02",
@@ -22725,7 +23082,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					4,
+					0.28
+				],
 				"status": [],
 				"baseSkill": [
 					110802
@@ -22734,6 +23094,7 @@
 			},
 			{
 				"name": "Surprise Present",
+				"description": "Deals Wind DMG equal to ****1[i]%**** of Sampo's ATK to all enemies, with a **4[i]%** **base chance** to increase the targets' DoT taken by ****2[i]%**** for **3[i]** turn(s).",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point03",
@@ -22750,7 +23111,12 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.96,
+					0.2,
+					2,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					110803
@@ -22759,6 +23125,7 @@
 			},
 			{
 				"name": "Windtorn Dagger",
+				"description": "Sampo's attacks have a **1[i]%** **base chance** to inflict Wind Shear for **3[i]** turn(s).\nEnemies inflicted with Wind Shear will take Wind DoT equal to ****2[i]%**** of Sampo's ATK at the beginning of each turn. Wind Shear can stack up to **4[i]** time(s).",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point04",
@@ -22775,7 +23142,12 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.65,
+					0.2,
+					3,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					110804
@@ -22784,13 +23156,18 @@
 			},
 			{
 				"name": "Shining Bright",
+				"description": "After Sampo uses his Technique, enemies in a set area are inflicted with Blind for **1[i]** second(s). Blinded enemies cannot detect your team.\nWhen initiating combat against a Blinded enemy, there is a **2[i]%** **fixed chance** to delay all enemies' action by **3[i]%**.",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1108/SkillIcon_1108_Maze.png",
 				"shortIcon": "SkillIcon_1108_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					10,
+					1,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					110807
@@ -24171,6 +24548,7 @@
 		"tree": [
 			{
 				"name": "Hehe! Don't Get Burned!",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of Hook's ATK to a single enemy.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point01",
@@ -24185,7 +24563,9 @@
 					"112012": 5,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110901
@@ -24194,6 +24574,7 @@
 			},
 			{
 				"name": "Hey! Remember Hook?",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of Hook's ATK to a single enemy. In addition, there is a **2[i]%** **base chance** to inflict Burn for **3[i]** turn(s).\nWhen afflicted with Burn, enemies will take Fire DoT equal to ****4[i]%**** of Hook's ATK at the beginning of each turn.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point02",
@@ -24210,7 +24591,12 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					1.2,
+					1,
+					2,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					110902,
@@ -24220,6 +24606,7 @@
 			},
 			{
 				"name": "Boom! Here Comes the Fire!",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of Hook's ATK to a single enemy.\nAfter using Ultimate, the next Skill to be used is Enhanced, which deals DMG to a single enemy and enemies adjacent to it.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point03",
@@ -24236,7 +24623,9 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					2.4
+				],
 				"status": [],
 				"baseSkill": [
 					110903
@@ -24245,6 +24634,7 @@
 			},
 			{
 				"name": "Ha! Oil to the Flames!",
+				"description": "When attacking a target afflicted with Burn, deals **Additional** Fire DMG equal to ****1[i]%**** of Hook's ATK and regenerates **2[i]** extra Energy.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point04",
@@ -24261,7 +24651,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					110904
@@ -24270,13 +24663,19 @@
 			},
 			{
 				"name": "Ack! Look at This Mess!",
+				"description": "Immediately attacks the enemy. Upon entering battle, Hook deals Fire DMG equal to **4[i]%** of her ATK to a random enemy. In addition, there is a **1[i]%** **base chance** to inflict Burn on every enemy for **3[i]** turn(s).\nWhen afflicted with Burn, enemies will take Fire DoT equal to **2[i]%** of Hook's ATK at the beginning of each turn.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1109/SkillIcon_1109_Maze.png",
 				"shortIcon": "SkillIcon_1109_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.5,
+					3,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110907
@@ -25642,6 +26041,7 @@
 		"tree": [
 			{
 				"name": "Ice Crampon Technique",
+				"description": "Deals Quantum DMG equal to ****1[i]%**** of this character's Max HP to a single enemy.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point01",
@@ -25656,7 +26056,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					111001
@@ -25665,6 +26067,7 @@
 			},
 			{
 				"name": "Salted Camping Cans",
+				"description": "Applies \"Survival Response\" to a single target ally and increases their Max HP by ****1[f1]%**** of Lynx's Max HP plus ****2[i]****. If the target ally is a character on the Path of Destruction or Preservation, the chance of them being attacked by enemies will greatly increase. \"Survival Response\" lasts for **3[i]** turn(s).\nRestores the target's HP by ****4[f1]%**** of Lynx's Max HP plus ****5[i]****.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point02",
@@ -25681,7 +26084,14 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.05,
+					50,
+					2,
+					0.08,
+					80,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					111002
@@ -25690,6 +26100,7 @@
 			},
 			{
 				"name": "Snowfield First Aid",
+				"description": "Dispels **1[i]** **debuff(s)** from all allies and immediately restores their respective HP by an amount equal to ****2[f1]%**** of Lynx's Max HP plus ****3[i]****.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point03",
@@ -25706,7 +26117,11 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0.09,
+					90
+				],
 				"status": [],
 				"baseSkill": [
 					111003
@@ -25715,6 +26130,7 @@
 			},
 			{
 				"name": "Outdoor Survival Experience",
+				"description": "When using Lynx's Skill or Ultimate, applies continuous healing to the target ally for **1[i]** turn(s), restoring the target ally's HP by an amount equal to ****2[f1]%**** of Lynx's Max HP plus ****3[i]**** at the start of each turn. If the target has \"Survival Response,\" the continuous healing effect additionally restores HP by an amount equal to ****4[f1]%**** of Lynx's Max HP plus ****5[i]****.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point04",
@@ -25731,7 +26147,13 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					2,
+					0.024,
+					24,
+					0.03,
+					30
+				],
 				"status": [],
 				"baseSkill": [
 					111004
@@ -25740,13 +26162,16 @@
 			},
 			{
 				"name": "Chocolate Energy Bar",
+				"description": "After Lynx uses her Technique, at the start of the next battle, all allies are granted her Talent's continuous healing effect, lasting for **1[i]** turn(s).",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1110/SkillIcon_1110_Maze.png",
 				"shortIcon": "SkillIcon_1110_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					111007
@@ -27132,6 +27557,7 @@
 		"tree": [
 			{
 				"name": "Direct Punch",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of Luka's ATK to a single enemy.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point01",
@@ -27146,7 +27572,9 @@
 					"112012": 5,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					111101,
@@ -27156,6 +27584,7 @@
 			},
 			{
 				"name": "Lacerating Fist",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of Luka's ATK to a single enemy target. In addition, there is a **2[i]%** **base chance** to inflict Bleed on them, lasting for **5[i]** turn(s).\nWhile Bleeding, the enemy will take **3[f1]%** of their Max HP as Physical DoT at the start of each turn. This DMG will not exceed more than ****4[i]%**** of Luka's ATK.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point02",
@@ -27172,7 +27601,13 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.6,
+					1,
+					0.24,
+					1.3,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					111102
@@ -27181,6 +27616,7 @@
 			},
 			{
 				"name": "Coup de Grâce",
+				"description": "Receives **5[i]** stack(s) of Fighting Will, with a **2[i]%** **base chance** to increase a single enemy target's DMG received by ****3[f1]%**** for **4[i]** turn(s). Then, deals Physical DMG equal to ****1[i]%**** of Luka's ATK to the target.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point03",
@@ -27197,7 +27633,13 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					1.98,
+					1,
+					0.12,
+					3,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					111103
@@ -27206,6 +27648,7 @@
 			},
 			{
 				"name": "Flying Sparks",
+				"description": "After Luka uses his Basic ATK \"Direct Punch\" or Skill \"Lacerating Fist,\" he receives **1[i]** stack of Fighting Will, up to 4 stacks. When he has 2 or more stacks of Fighting Will, his Basic ATK \"Direct Punch\" is enhanced to \"Sky-Shatter Fist.\" After his Enhanced Basic ATK's \"Rising Uppercut\" hits a Bleeding enemy target, the Bleed status will immediately deal DMG for 1 time equal to ****2[i]%**** of the original DMG to the target. At the start of battle, Luka will possess 1 stack of Fighting Will.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point04",
@@ -27222,7 +27665,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0.68
+				],
 				"status": [],
 				"baseSkill": [
 					111104
@@ -27231,13 +27677,17 @@
 			},
 			{
 				"name": "Anticipator",
+				"description": "Immediately attacks the enemy. Upon entering battle, Luka deals Physical DMG equal to **1[i]%** of his ATK to a random single enemy with a **2[i]%** **base chance** to inflict his Skill's Bleed effect on the target. Then, Luka gains 1 additional stack of Fighting Will.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1111/SkillIcon_1111_Maze.png",
 				"shortIcon": "SkillIcon_1111_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.5,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					111107
@@ -28529,6 +28979,7 @@
 		"tree": [
 			{
 				"name": "Deficit...",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of Topaz's ATK to a single enemy.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point01",
@@ -28543,7 +28994,9 @@
 					"112002": 7,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					111201
@@ -28552,6 +29005,7 @@
 			},
 			{
 				"name": "Difficulty Paying?",
+				"description": "Inflicts a single target enemy with a Proof of Debt status, increasing the DMG it takes from **follow-up attacks** by ****2[i]%****. Proof of Debt only takes effect on the most recent target it is applied to. If there are no enemies inflicted with Proof of Debt on the field when an ally's turn starts or when an ally takes action, Topaz will inflict a random enemy with Proof of Debt.\nNumby deals Fire DMG equal to ****1[i]%**** of Topaz's ATK to this target. Using this Skill to deal DMG is considered as launching a **follow-up attack**.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point02",
@@ -28568,7 +29022,10 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.75,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					111202
@@ -28577,6 +29034,7 @@
 			},
 			{
 				"name": "Turn a Profit!",
+				"description": "Numby enters the Windfall Bonanza! state and its DMG multiplier increases by ****1[i]%**** and CRIT DMG increases by ****2[i]%****. Also, when enemies with Proof of Debt are hit by an ally's Basic ATK, Skill, or Ultimate, Numby's action is Advanced Forward by **3[i]%**. Numby exits the Windfall Bonanza! state after using **4[i]** attacks.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point03",
@@ -28593,7 +29051,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.75,
+					0.125,
+					0.5,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					111203
@@ -28602,6 +29065,7 @@
 			},
 			{
 				"name": "Trotter Market!?",
+				"description": "Summons Numby at the start of battle. Numby has **1[i]** SPD by default. When taking action, Numby launches **follow-up attacks** on a single enemy target afflicted with Proof of Debt, dealing Fire DMG equal to ****2[i]%**** of Topaz's ATK.\nWhen enemies afflicted with Proof of Debt receive an ally's follow-up attacks, Numby's action is Advanced Forward by **3[i]%**. The action Advance Forward effect cannot be triggered during Numby's own turn.\nWhen Topaz is **downed**, Numby disappears.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point04",
@@ -28618,7 +29082,11 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					80,
+					0.75,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					111204
@@ -28627,13 +29095,17 @@
 			},
 			{
 				"name": "Explicit Subsidy",
+				"description": "Summons Numby when Topaz enters the overworld. Numby will automatically search for Basic Treasures and Trotters within a set radius.\nUsing her Technique will regenerate **1[i]** Energy for Topaz after Numby's first attack in the next battle.\nIf Topaz is still in the team after using her Technique and defeating overworld enemies, a small bonus amount of credits will be added to the earned credits. A maximum of **2[i]** bonus credits can be received per calendar day.\nAfter using her Technique and defeating enemies in Simulated Universe, additionally receive a small amount of Cosmic Fragments with a small chance to obtain 1 random Curio.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1112/SkillIcon_1112_Maze.png",
 				"shortIcon": "SkillIcon_1112_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					60,
+					10000
+				],
 				"status": [],
 				"baseSkill": [
 					111207
@@ -29919,6 +30391,7 @@
 		"tree": [
 			{
 				"name": "Flower Pick",
+				"description": "Tosses 1 jade tile from the suit with the fewest tiles in hand to deal Quantum DMG equal to ****1[i]%**** of Qingque's ATK to a single enemy.",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point01",
@@ -29933,7 +30406,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120101,
@@ -29943,6 +30418,7 @@
 			},
 			{
 				"name": "A Scoop of Moon",
+				"description": "Immediately draws **1[i]** jade tile(s) and increases DMG by ****2[i]%**** until the end of the current turn. This effect can stack up to **3[i]** time(s). The turn will not end after this Skill is used.",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point02",
@@ -29959,7 +30435,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					2,
+					0.14,
+					4
+				],
 				"status": [],
 				"baseSkill": [
 					120102
@@ -29968,6 +30448,7 @@
 			},
 			{
 				"name": "A Quartet? Woo-hoo!",
+				"description": "Deals Quantum DMG equal to ****1[i]%**** of Qingque's ATK to all enemies, and obtains 4 jade tiles of the same suit.",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point03",
@@ -29984,7 +30465,9 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					1.2
+				],
 				"status": [],
 				"baseSkill": [
 					120103
@@ -29993,6 +30476,7 @@
 			},
 			{
 				"name": "Celestial Jade",
+				"description": "When an ally's turn starts, Qingque randomly draws 1 tile from 3 different suits and can hold up to 4 tiles at one time.\nIf Qingque starts her turn with 4 tiles of the same suit, she consumes all tiles to enter the \"Hidden Hand\" state.\nWhile in this state, Qingque cannot use her Skill again. At the same time, Qingque's ATK increases by ****1[i]%****, and her Basic ATK \"Flower Pick\" is enhanced, becoming \"Cherry on Top!\" The \"Hidden Hand\" state ends after using \"Cherry on Top!\".",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point04",
@@ -30009,7 +30493,9 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.36
+				],
 				"status": [],
 				"baseSkill": [
 					120104
@@ -30018,13 +30504,16 @@
 			},
 			{
 				"name": "Game Solitaire",
+				"description": "After using Technique, Qingque draws **1[i]** jade tile(s) when the battle starts.",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1201/SkillIcon_1201_Maze.png",
 				"shortIcon": "SkillIcon_1201_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120107
@@ -31294,6 +31783,7 @@
 		"tree": [
 			{
 				"name": "Dislodged",
+				"description": "Tingyun deals Lightning DMG equal to ****1[i]%**** of her ATK to a single enemy.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point01",
@@ -31308,7 +31798,9 @@
 					"113002": 5,
 					"113003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120201
@@ -31317,6 +31809,7 @@
 			},
 			{
 				"name": "Soothing Melody",
+				"description": "Grants a single ally with Benediction to increase their ATK by ****2[i]%****, up to ****4[i]%**** of Tingyun's current ATK.\nWhen the ally with Benediction attacks, they will deal **Additional** Lightning DMG equal to ****1[i]%**** of that ally's ATK for 1 time.\nBenediction lasts for **3[i]** turn(s) and is only effective on the most recent receiver of Tingyun's Skill.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point02",
@@ -31333,7 +31826,12 @@
 					"113002": 10,
 					"113003": 5
 				},
-				"params": [],
+				"params": [
+					0.2,
+					0.25,
+					3,
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					120202
@@ -31342,6 +31840,7 @@
 			},
 			{
 				"name": "Amidst the Rejoicing Clouds",
+				"description": "Regenerates **1[i]** Energy for a single ally and increases the target's DMG by ****3[i]%**** for **2[i]** turn(s).",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point03",
@@ -31358,7 +31857,11 @@
 					"113002": 10,
 					"113003": 5
 				},
-				"params": [],
+				"params": [
+					50,
+					2,
+					0.2
+				],
 				"status": [],
 				"baseSkill": [
 					120203
@@ -31367,6 +31870,7 @@
 			},
 			{
 				"name": "Violet Sparknado",
+				"description": "When an enemy is attacked by Tingyun, the ally with Benediction immediately deals **Additional** Lightning DMG equal to ****1[i]%**** of that ally's ATK to the same enemy.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point04",
@@ -31383,7 +31887,9 @@
 					"113002": 10,
 					"113003": 5
 				},
-				"params": [],
+				"params": [
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					120204
@@ -31392,13 +31898,16 @@
 			},
 			{
 				"name": "Gentle Breeze",
+				"description": "Tingyun immediately regenerates **1[i]** Energy upon using her Technique.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1202/SkillIcon_1202_Maze.png",
 				"shortIcon": "SkillIcon_1202_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					50
+				],
 				"status": [],
 				"baseSkill": [
 					120207
@@ -32699,6 +33208,7 @@
 		"tree": [
 			{
 				"name": "Thorns of the Abyss",
+				"description": "Deals Imaginary DMG equal to ****1[i]%**** of Luocha's ATK to a single enemy.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point01",
@@ -32713,7 +33223,9 @@
 					"113012": 7,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120301
@@ -32722,6 +33234,7 @@
 			},
 			{
 				"name": "Prayer of Abyss Flower",
+				"description": "After using his Skill, Luocha immediately restores the target ally's HP equal to ****1[i]%**** of Luocha's ATK plus ****2[i]****. Meanwhile, Luocha gains 1 stack of Abyss Flower.\nWhen any ally's HP percentage drops to **3[i]%** or lower, an effect equivalent to Luocha's Skill will immediately be triggered and applied to this ally for one time (without consuming Skill Points). This effect can be triggered again after **4[i]** turn(s).",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point02",
@@ -32738,7 +33251,12 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.4,
+					200,
+					0.5,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120302
@@ -32747,6 +33265,7 @@
 			},
 			{
 				"name": "Death Wish",
+				"description": "Removes **2[i]** **buff(s)** from all enemies and deals all enemies Imaginary DMG equal to ****1[i]%**** of Luocha's ATK. At the same time, Luocha gains 1 stack of Abyss Flower.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point03",
@@ -32763,7 +33282,10 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					1.2,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					120303
@@ -32772,6 +33294,7 @@
 			},
 			{
 				"name": "Cycle of Life",
+				"description": "When Abyss Flower reaches **1[i]** stacks, Luocha consumes all stacks of Abyss Flower to deploy a Field against the enemy.\nWhen any enemy in the Field is attacked by an ally, the attacking ally's HP is immediately restored by an amount equal to ****2[f1]%**** of Luocha's ATK plus ****4[i]****.\nThe Field's effect lasts for **3[i]** turns. When Luocha is **knocked down**, the Field will be dispelled.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point04",
@@ -32788,7 +33311,12 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					2,
+					0.12,
+					2,
+					60
+				],
 				"status": [],
 				"baseSkill": [
 					120304
@@ -32797,6 +33325,7 @@
 			},
 			{
 				"name": "Mercy of a Fool",
+				"description": "After the Technique is used, the Talent will be immediately triggered at the start of the next battle.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point05",
@@ -34120,6 +34649,7 @@
 		"tree": [
 			{
 				"name": "Glistening Light",
+				"description": "Jing Yuan deals Lightning DMG equal to ****1[i]%**** of his ATK to a single enemy.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point01",
@@ -34134,7 +34664,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120401
@@ -34143,6 +34675,7 @@
 			},
 			{
 				"name": "Rifting Zenith",
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Jing Yuan's ATK to all enemies and increases Lightning-Lord's Hits Per Action by **2[i]** for the next turn.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point02",
@@ -34159,7 +34692,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120402
@@ -34168,6 +34704,7 @@
 			},
 			{
 				"name": "Lightbringer",
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Jing Yuan's ATK to all enemies and increases Lightning-Lord's Hits Per Action by **2[i]** for the next turn.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point03",
@@ -34184,7 +34721,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					1.2,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					120403
@@ -34193,6 +34733,7 @@
 			},
 			{
 				"name": "Prana Extirpated",
+				"description": "Summons Lightning-Lord at the start of the battle. Lightning-Lord has **1[i]** base SPD and **4[i]** base Hits Per Action. When the Lightning-Lord takes action, its hits are considered as **follow-up attacks**, with each hit dealing Lightning DMG equal to ****2[i]%**** of Jing Yuan's ATK to a random single enemy, and enemies adjacent to it also receive Lightning DMG equal to **5[i]%** of the DMG dealt to the target enemy.\nThe Lightning-Lord's Hits Per Action can reach a max of **6[i]**. Every time Lightning-Lord's Hits Per Action increases by 1, its SPD increases by **3[i]**. After the Lightning-Lord's action ends, its SPD and Hits Per Action return to their base values.\nWhen Jing Yuan is **knocked down**, the Lightning-Lord will disappear.\nWhen Jing Yuan is affected by **Crowd Control debuff**, the Lightning-Lord is unable to take action.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point04",
@@ -34209,7 +34750,14 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					60,
+					0.33,
+					10,
+					3,
+					0.25,
+					10
+				],
 				"status": [],
 				"baseSkill": [
 					120404
@@ -34218,13 +34766,16 @@
 			},
 			{
 				"name": "Spirit Invocation",
+				"description": "After the Technique is used, the Lightning-Lord's Hits Per Action in the first turn increases by **1[i]** at the start of the next battle.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1204/SkillIcon_1204_Maze.png",
 				"shortIcon": "SkillIcon_1204_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					120407
@@ -35691,6 +36242,7 @@
 		"tree": [
 			{
 				"name": "Shard Sword",
+				"description": "Deals ****1[i]%**** of Blade's ATK as Wind DMG to a target enemy.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point01",
@@ -35705,7 +36257,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120501,
@@ -35715,6 +36269,7 @@
 			},
 			{
 				"name": "Hellscape",
+				"description": "Consumes HP equal to **1[i]%** of Blade's Max HP to enter the Hellscape state.\nWhen Hellscape is active, his Skill cannot be used, his DMG dealt increases by ****4[i]%****, and his Basic ATK Shard Sword is enhanced to Forest of Swords for **2[i]** turn(s).\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when he uses his Skill.\nThis Skill does not regenerate Energy. Using this Skill does not end the current turn.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point02",
@@ -35731,7 +36286,12 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.3,
+					3,
+					1,
+					0.12
+				],
 				"status": [],
 				"baseSkill": [
 					120502
@@ -35740,6 +36300,7 @@
 			},
 			{
 				"name": "Death Sentence",
+				"description": "Sets Blade's current HP to **50%** of his Max HP and deals Wind DMG to a single enemy equal to the sum of ****1[i]%**** of his ATK, ****2[i]%**** of his Max HP, and ****5[i]%**** of the tally of Blade's HP loss in the current battle. At the same time, deals Wind DMG to adjacent targets equal to the sum of ****3[f1]%**** of his ATK, ****4[i]%**** of his Max HP, and ****6[i]%**** of the tally of his HP loss in the current battle.\nThe tally of Blade's HP loss in the current battle is capped at **7[i]%** of his Max HP. This value will be reset and re-accumulated after his Ultimate has been used.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point03",
@@ -35756,7 +36317,15 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.24,
+					0.6,
+					0.096,
+					0.24,
+					0.6,
+					0.24,
+					0.9
+				],
 				"status": [],
 				"baseSkill": [
 					120503
@@ -35765,6 +36334,7 @@
 			},
 			{
 				"name": "Shuhu's Gift",
+				"description": "When Blade sustains DMG or consumes his HP, he gains 1 stack of Charge, stacking up to 5 times. A max of 1 Charge stack can be gained every time he is attacked.\nWhen Charge stack reaches maximum, immediately launches a **follow-up attack** on all enemies, dealing Wind DMG equal to ****2[i]%**** of Blade's ATK plus ****4[i]%**** of his Max HP. At the same time, restores Blade's HP by **3[i]%** of his Max HP. After the follow-up attack, all Charges are consumed.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point04",
@@ -35781,7 +36351,12 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					3,
+					0.22,
+					0.25,
+					0.55
+				],
 				"status": [],
 				"baseSkill": [
 					120504
@@ -35790,13 +36365,17 @@
 			},
 			{
 				"name": "Karma Wind",
+				"description": "Immediately attacks the enemy. After entering combat, consumes **2[i]%** of Blade's Max HP while dealing Wind DMG equal to **1[i]%** of his Max HP to all enemies.\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when this Technique is used.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1205/SkillIcon_1205_Maze.png",
 				"shortIcon": "SkillIcon_1205_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.4,
+					0.2
+				],
 				"status": [],
 				"baseSkill": [
 					120507
@@ -37095,6 +37674,7 @@
 		"tree": [
 			{
 				"name": "Cloudfencer Art: Starshine",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of Sushang's ATK to a single enemy.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point01",
@@ -37109,7 +37689,9 @@
 					"113012": 5,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120601
@@ -37118,6 +37700,7 @@
 			},
 			{
 				"name": "Cloudfencer Art: Mountainfall",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of Sushang's ATK to a single enemy. In addition, there is a **3[i]%** chance to trigger Sword Stance on the final hit, dealing **Additional** Physical DMG equal to ****2[i]%**** of Sushang's ATK to the enemy.\nIf the enemy is inflicted with **Weakness Break**, Sword Stance is guaranteed to trigger.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point02",
@@ -37134,7 +37717,11 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					1.05,
+					0.5,
+					0.33
+				],
 				"status": [],
 				"baseSkill": [
 					120602
@@ -37143,6 +37730,7 @@
 			},
 			{
 				"name": "Shape of Taixu: Dawn Herald",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of Sushang's ATK to a single enemy target, and she immediately takes action again. In addition, Sushang's ATK increases by ****4[i]%**** and using her Skill has 2 extra chances to trigger Sword Stance for **2[i]** turn(s).\nSword Stance triggered from the extra chances deals **3[i]%** of the original DMG.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point03",
@@ -37159,7 +37747,12 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					1.92,
+					2,
+					0.5,
+					0.18
+				],
 				"status": [],
 				"baseSkill": [
 					120603
@@ -37168,6 +37761,7 @@
 			},
 			{
 				"name": "Dancing Blade",
+				"description": "When an enemy has their Weakness Broken on the field, Sushang's SPD increases by ****1[f2]%**** for **2[i]** turn(s).",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point04",
@@ -37184,7 +37778,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120604
@@ -37193,13 +37790,16 @@
 			},
 			{
 				"name": "Cloudfencer Art: Warcry",
+				"description": "Immediately attacks the enemy. Upon entering battle, Sushang deals Physical DMG equal to **1[i]%** of her ATK to all enemies.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1206/SkillIcon_1206_Maze.png",
 				"shortIcon": "SkillIcon_1206_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					120607
@@ -38472,6 +39072,7 @@
 		"tree": [
 			{
 				"name": "Arrowslinger",
+				"description": "Deals ****1[i]%**** of Yukong's ATK as Imaginary DMG to a target enemy.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point01",
@@ -38486,7 +39087,9 @@
 					"113012": 5,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120701
@@ -38495,6 +39098,7 @@
 			},
 			{
 				"name": "Emboldening Salvo",
+				"description": "Obtains **1[i]** stack(s) of \"Roaring Bowstrings\" (to a maximum of 2 stacks). When \"Roaring Bowstrings\" is active, the ATK of all allies increases by ****2[i]%****, and every time an ally's turn (including Yukong's) ends, Yukong loses 1 stack of \"Roaring Bowstrings.\"\nWhen it's the turn where Yukong gains \"Roaring Bowstrings\" by using Skill, \"Roaring Bowstrings\" will not be removed.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point02",
@@ -38511,7 +39115,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					2,
+					0.4
+				],
 				"status": [],
 				"baseSkill": [
 					120702
@@ -38520,6 +39127,7 @@
 			},
 			{
 				"name": "Diving Kestrel",
+				"description": "If \"Roaring Bowstrings\" is active on Yukong when her Ultimate is used, additionally increases all allies' CRIT Rate by ****2[f1]%**** and CRIT DMG by ****3[i]%****. At the same time, deals Imaginary DMG equal to ****1[i]%**** of Yukong's ATK to a single enemy.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point03",
@@ -38536,7 +39144,11 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					2.28,
+					0.21,
+					0.39
+				],
 				"status": [],
 				"baseSkill": [
 					120703
@@ -38545,6 +39157,7 @@
 			},
 			{
 				"name": "Seven Layers, One Arrow",
+				"description": "Basic ATK additionally deals Imaginary DMG equal to ****1[i]%**** of Yukong's ATK, and increases the Toughness-Reducing DMG of this attack by **2[i]%**. This effect can be triggered again after **3[i]** turn(s).",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point04",
@@ -38561,7 +39174,11 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.4,
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					120704
@@ -38570,13 +39187,18 @@
 			},
 			{
 				"name": "Chasing the Wind",
+				"description": "After using her Technique, Yukong enters Sprint mode for **1[i]** seconds. In Sprint mode, her Movement SPD increases by **2[i]%**, and Yukong gains **3[i]** stack(s) of \"Roaring Bowstrings\" when she enters battle by attacking enemies.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1207/SkillIcon_1207_Maze.png",
 				"shortIcon": "SkillIcon_1207_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					20,
+					0.35,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120707
@@ -39866,6 +40488,7 @@
 		"tree": [
 			{
 				"name": "Novaburst",
+				"description": "Deals Quantum DMG equal to ****1[i]%**** of Fu Xuan's Max HP to a single enemy.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point01",
@@ -39880,7 +40503,9 @@
 					"113012": 7,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					120801
@@ -39889,6 +40514,7 @@
 			},
 			{
 				"name": "Known by Stars, Shown by Hearts",
+				"description": "Activates Matrix of Prescience, via which other team members will **Distribute** **1[i]%** of the DMG they receive (before this DMG is mitigated by any Shields) to Fu Xuan for **3[i]** turn(s).\nWhile affected by Matrix of Prescience, all team members gain the Knowledge effect, which increases their respective Max HP by ****4[f1]%**** of Fu Xuan's Max HP, and increases CRIT Rate by ****5[f1]%****.\nWhen Fu Xuan is **knocked down**, the Matrix of Prescience will be dispelled.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point02",
@@ -39905,7 +40531,13 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.65,
+					0,
+					3,
+					0.03,
+					0.06
+				],
 				"status": [],
 				"baseSkill": [
 					120802
@@ -39914,6 +40546,7 @@
 			},
 			{
 				"name": "Woes of Many Morphed to One",
+				"description": "Deals Quantum DMG equal to ****1[i]%**** of Fu Xuan's Max HP to all enemies and obtains 1 trigger count for the HP Restore effect granted by Fu Xuan's Talent.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point03",
@@ -39930,7 +40563,9 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					120803
@@ -39939,6 +40574,7 @@
 			},
 			{
 				"name": "Bleak Breeds Bliss",
+				"description": "While Fu Xuan is still active in battle, Misfortune Avoidance is applied to the entire team. With Misfortune Avoidance, allies take ****1[f1]%**** less DMG.\nWhen Fu Xuan's current HP falls to **2[i]%** of her Max HP or less, HP Restore will be triggered for Fu Xuan, restoring her HP by ****3[i]%**** of the amount of HP she is currently missing. This effect cannot be triggered if she receives a killing blow. This effect has 1 trigger count by default and can hold up to a maximum of 2 trigger counts.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point04",
@@ -39955,7 +40591,11 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.1,
+					0.5,
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					120804
@@ -39964,13 +40604,17 @@
 			},
 			{
 				"name": "Of Fortune Comes Fate",
+				"description": "After the Technique is used, all team members receive a Barrier, lasting for **1[i]** seconds. This Barrier can block all enemy attacks, and the team will not enter battle when attacked. Entering battle while the Barrier is active will have Fu Xuan automatically activate Matrix of Prescience at the start of the battle, lasting for **2[i]** turn(s).",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1208/SkillIcon_1208_Maze.png",
 				"shortIcon": "SkillIcon_1208_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					20,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120807
@@ -41283,6 +41927,7 @@
 		"tree": [
 			{
 				"name": "Frost Thorn",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Yanqing's ATK to a single enemy.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point01",
@@ -41297,7 +41942,9 @@
 					"111012": 7,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120901
@@ -41306,6 +41953,7 @@
 			},
 			{
 				"name": "Darting Ironthorn",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Yanqing's ATK to a single enemy and activates Soulsteel Sync for 1 turn.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point02",
@@ -41322,7 +41970,9 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					1.1
+				],
 				"status": [],
 				"baseSkill": [
 					120902
@@ -41331,6 +41981,7 @@
 			},
 			{
 				"name": "Amidst the Raining Bliss",
+				"description": "Increases Yanqing's CRIT Rate by **1[i]%**. When Soulsteel Sync is active, increases Yanqing's CRIT DMG by an extra ****2[i]%****. This **buff** lasts for one turn. Afterwards, deals Ice DMG equal to ****3[i]%**** of Yanqing's ATK to a single enemy.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point03",
@@ -41347,7 +41998,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.6,
+					0.3,
+					2.1
+				],
 				"status": [],
 				"baseSkill": [
 					120903
@@ -41356,6 +42011,7 @@
 			},
 			{
 				"name": "One With the Sword",
+				"description": "When Soulsteel Sync is active, Yanqing is less likely to be attacked by enemies. Yanqing's CRIT Rate increases by ****1[f1]%**** and his CRIT DMG increases by ****2[i]%****. After Yanqing attacks an enemy, there is a ****3[i]%**** **fixed chance** to perform a **follow-up attack**, dealing Ice DMG equal to ****4[i]%**** of Yanqing's ATK to the enemy, which has a **6[i]%** **base chance** to Freeze the enemy for 1 turn.\nThe Frozen target cannot take action and receives **Additional** Ice DMG equal to ****5[i]%**** of Yanqing's ATK at the beginning of each turn.\nWhen Yanqing receives DMG, the Soulsteel Sync effect will disappear.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point04",
@@ -41372,7 +42028,14 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.15,
+					0.15,
+					0.5,
+					0.25,
+					0.25,
+					0.65
+				],
 				"status": [],
 				"baseSkill": [
 					120904
@@ -41381,13 +42044,18 @@
 			},
 			{
 				"name": "The One True Sword",
+				"description": "After using his Technique, at the start of the next battle, Yanqing deals **2[i]%** more DMG for **3[i]** turn(s) to enemies whose current HP is **1[i]%** or higher.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1209/SkillIcon_1209_Maze.png",
 				"shortIcon": "SkillIcon_1209_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.5,
+					0.3,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120907
@@ -42744,6 +43412,7 @@
 		"tree": [
 			{
 				"name": "Standing Ovation",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of Guinaifen's ATK to a single enemy.",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point01",
@@ -42758,7 +43427,9 @@
 					"113012": 5,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121001
@@ -42767,6 +43438,7 @@
 			},
 			{
 				"name": "Blazing Welcome",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of Guinaifen's ATK to a single enemy and Fire DMG equal to ****2[i]%**** of Guinaifen's ATK to any adjacent enemies, with a **3[i]%** **base chance** to Burn the target and adjacent targets. When Burned, enemies will take a Fire DoT equal to ****4[i]%**** of Guinaifen's ATK at the beginning of each turn, lasting for **5[i]** turn(s).",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point02",
@@ -42783,7 +43455,13 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.6,
+					0.2,
+					1,
+					0.839,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121002
@@ -42792,6 +43470,7 @@
 			},
 			{
 				"name": "Watch This Showstopper",
+				"description": "Deals Fire DMG equal to ****1[f1]%**** of Guinaifen's ATK to all enemies. If the target enemy is currently inflicted with Burn, then their Burn status immediately produces DMG equal to ****2[i]%**** of their original DMG.",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point03",
@@ -42808,7 +43487,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.72,
+					0.72
+				],
 				"status": [],
 				"baseSkill": [
 					121003
@@ -42817,6 +43499,7 @@
 			},
 			{
 				"name": "PatrAeon Benefits",
+				"description": "When Guinaifen is on the field, there is a **1[i]%** **base chance** to apply Firekiss to an enemy after their Burn status causes DMG. While inflicted with Firekiss, the enemy receives ****4[f1]%**** increased DMG, which lasts for **5[i]** turn(s) and can stack up to **6[i]** time(s).",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point04",
@@ -42833,7 +43516,14 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0,
+					0,
+					0.04,
+					3,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					121004
@@ -42842,13 +43532,18 @@
 			},
 			{
 				"name": "Skill Showcase",
+				"description": "Immediately attacks the enemy. After entering battle, deals DMG for **2[i]** time(s), dealing Fire DMG equal to **1[i]%** of Guinaifen's ATK to a random single enemy target each time, with a **3[i]%** **base chance** of inflicting Firekiss on them.",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1210/SkillIcon_1210_Maze.png",
 				"shortIcon": "SkillIcon_1210_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.5,
+					4,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121007
@@ -44183,6 +44878,7 @@
 		"tree": [
 			{
 				"name": "Diagnostic Kick",
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Bailu's ATK to a single enemy.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point01",
@@ -44197,7 +44893,9 @@
 					"111002": 7,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121101
@@ -44206,6 +44904,7 @@
 			},
 			{
 				"name": "Singing Among Clouds",
+				"description": "Heals a single ally for ****1[f1]%**** of Bailu's Max HP plus ****2[i]****. Bailu then heals random allies **4[i]** time(s). After each healing, HP restored from the next healing is reduced by **3[i]%**.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point02",
@@ -44222,7 +44921,12 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.078,
+					78,
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121102
@@ -44231,6 +44935,7 @@
 			},
 			{
 				"name": "Felicitous Thunderleap",
+				"description": "Heals all allies for ****1[f1]%**** of Bailu's Max HP plus ****2[i]****.\nBailu applies Invigoration to allies that are not already Invigorated. For those already Invigorated, Bailu extends the duration of their Invigoration by 1 turn.\nThe effect of Invigoration can last for **3[i]** turn(s). This effect cannot stack.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point03",
@@ -44247,7 +44952,11 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.09,
+					90,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121103
@@ -44256,6 +44965,7 @@
 			},
 			{
 				"name": "Gourdful of Elixir",
+				"description": "After an ally with Invigoration is hit, restores the ally's HP for ****1[f1]%**** of Bailu's Max HP plus ****2[i]****. This effect can trigger **5[i]** time(s).\nWhen an ally receives a killing blow, they will not be **knocked down**. Bailu immediately heals the ally for ****3[f1]%**** of Bailu's Max HP plus ****4[i]**** HP. This effect can be triggered 1 time per battle.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point04",
@@ -44272,7 +44982,13 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.036,
+					36,
+					0.12,
+					120,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121104
@@ -44281,13 +44997,16 @@
 			},
 			{
 				"name": "Saunter in the Rain",
+				"description": "After Technique is used, at the start of the next battle, all allies are granted Invigoration for **1[i]** turn(s).",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1211/SkillIcon_1211_Maze.png",
 				"shortIcon": "SkillIcon_1211_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121107
@@ -45741,6 +46460,7 @@
 		"tree": [
 			{
 				"name": "Lucent Moonglow",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Jingliu's ATK to a single enemy.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point01",
@@ -45755,7 +46475,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121201
@@ -45764,6 +46486,7 @@
 			},
 			{
 				"name": "Transcendent Flash",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Jingliu's ATK to a single enemy and obtains **2[i]** stack(s) of Syzygy.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point02",
@@ -45780,7 +46503,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121202,
@@ -45790,6 +46516,7 @@
 			},
 			{
 				"name": "Florephemeral Dreamflux",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Jingliu's ATK to a single enemy, and deals Ice DMG equal to ****3[i]%**** of Jingliu's ATK to any adjacent enemies. Gains **2[i]** stack(s) of Syzygy after attack ends.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point03",
@@ -45806,7 +46533,12 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					1.8,
+					1,
+					0.9,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121203
@@ -45815,6 +46547,7 @@
 			},
 			{
 				"name": "Crescent Transmigration",
+				"description": "When Jingliu has **5[i]** stack(s) of Syzygy, she enters the Spectral Transmigration state with her Action Advanced by **6[i]%** and her CRIT Rate increases by ****7[i]%****. Then, Jingliu's Skill \"Transcendent Flash\" is enhanced to \"Moon On Glacial River,\" and only this enhanced Skill is available for use in battle. When Jingliu uses an attack in the Spectral Transmigration state, she consumes HP from all other allies equal to **2[i]%** of their respective Max HP (this cannot reduce allies' HP to lower than 1). Jingliu's ATK increases by **3[i]%** of the total HP consumed from all allies in this attack, capped at ****4[i]%**** of her base ATK, lasting until the current attack ends. Jingliu cannot enter the Spectral Transmigration state again until the current Spectral Transmigration state ends. Syzygy can stack up to 3 times. When Syzygy stacks become 0, Jingliu will exit the Spectral Transmigration state.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point04",
@@ -45831,7 +46564,15 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.3,
+					0.04,
+					5.4,
+					0.9,
+					2,
+					1,
+					0.4
+				],
 				"status": [],
 				"baseSkill": [
 					121204
@@ -45840,13 +46581,21 @@
 			},
 			{
 				"name": "Shine of Truth",
+				"description": "After using this Technique, creates a dimension around Jingliu that lasts for **3[i]** seconds, and all enemies in this dimension will become Frozen. After entering combat with enemies in the dimension, Jingliu immediately regenerates **6[i]** Energy and obtains **1[i]** stack(s) of Syzygy, with a **2[i]%** **base chance** of Freezing enemy targets for **4[i]** turn(s). While Frozen, enemy targets cannot take action, and receive Ice **Additional DMG** equal to **5[i]%** of Jingliu's ATK at the start of every turn. Only 1 dimension created by allies can exist at the same time.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1212/SkillIcon_1212_Maze.png",
 				"shortIcon": "SkillIcon_1212_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					1,
+					20,
+					1,
+					0.8,
+					15
+				],
 				"status": [],
 				"baseSkill": [
 					121207
@@ -47290,6 +48039,7 @@
 		"tree": [
 			{
 				"name": "Beneficent Lotus",
+				"description": "Uses a 2-hit attack and deals Imaginary DMG equal to ****1[i]%**** of Dan Heng • Imbibitor Lunae's ATK to a single enemy target.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point01",
@@ -47304,7 +48054,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121301,
@@ -47316,6 +48068,7 @@
 			},
 			{
 				"name": "Dracore Libre",
+				"description": "Enhances Basic ATK. Enhancements may be applied up to 3 times consecutively. Using this ability does not consume Skill Points and is not considered as using a Skill.\nEnhanced once, Beneficent Lotus becomes Transcendence.\nEnhanced twice, Beneficent Lotus becomes Divine Spear.\nEnhanced thrice, Beneficent Lotus becomes Fulgurant Leap.\nWhen using Divine Spear or Fulgurant Leap, starting from the fourth hit, 1 stack of Outroar is gained before every hit. Each stack of Outroar increases Dan Heng • Imbibitor Lunae's CRIT DMG by ****1[f1]%****, for a max of **2[i]** stacks. These stacks last until the end of his turn.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point02",
@@ -47332,7 +48085,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.06,
+					4
+				],
 				"status": [],
 				"baseSkill": [
 					121302
@@ -47341,6 +48097,7 @@
 			},
 			{
 				"name": "Azure's Aqua Ablutes All",
+				"description": "Uses a 3-hit attack and deals Imaginary DMG equal to ****1[i]%**** of Dan Heng • Imbibitor Lunae's ATK to a single enemy target. At the same time, deals Imaginary DMG equal to ****2[i]%**** of Dan Heng • Imbibitor Lunae's ATK to adjacent targets. Then, obtains **3[i]** Squama Sacrosancta.\nIt's possible to hold up to **4[i]** Squama Sacrosancta, which can be used to offset Dan Heng • Imbibitor Lunae's consumption of skill points. Consuming Squama Sacrosancta is considered equivalent to consuming skill points.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point03",
@@ -47357,7 +48114,12 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					1.8,
+					0.84,
+					2,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					121303
@@ -47366,6 +48128,7 @@
 			},
 			{
 				"name": "Righteous Heart",
+				"description": "After each hit dealt during an attack, Dan Heng • Imbibitor Lunae gains 1 stack of Righteous Heart, increasing his DMG by ****1[f1]%****. This effect can stack up to **2[i]** time(s), lasting until the end of his turn.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point04",
@@ -47382,7 +48145,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.05,
+					6
+				],
 				"status": [],
 				"baseSkill": [
 					121304
@@ -47391,13 +48157,18 @@
 			},
 			{
 				"name": "Heaven-Quelling Prismadrakon",
+				"description": "After using his Technique, Dan Heng • Imbibitor Lunae enters the Leaping Dragon state for **2[i]** seconds. While in the Leaping Dragon state, using his attack enables him to move forward rapidly for a set distance, attacking all enemies he touches and blocking all incoming attacks. After entering combat via attacking enemies in the Leaping Dragon state, Dan Heng • Imbibitor Lunae deals Imaginary DMG equal to **3[i]%** of his ATK to all enemies, and gains **1[i]** Squama Sacrosancta.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1213/SkillIcon_1213_Maze.png",
 				"shortIcon": "SkillIcon_1213_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					20,
+					1.2
+				],
 				"status": [],
 				"baseSkill": [
 					121307
@@ -48677,6 +49448,7 @@
 		"tree": [
 			{
 				"name": "Mara-Sunder Awl",
+				"description": "Deals ****1[i]%**** of Xueyi's ATK as Quantum DMG to a single target enemy.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point01",
@@ -48691,7 +49463,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121401
@@ -48700,6 +49474,7 @@
 			},
 			{
 				"name": "Iniquity Obliteration",
+				"description": "Deals Quantum DMG equal to ****1[i]%**** of Xueyi's ATK to a single enemy, and Quantum DMG equal to ****2[i]%**** of Xueyi's ATK to any adjacent enemies.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point02",
@@ -48716,7 +49491,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.7,
+					0.35
+				],
 				"status": [],
 				"baseSkill": [
 					121402
@@ -48725,6 +49503,7 @@
 			},
 			{
 				"name": "Divine Castigation",
+				"description": "Deals Quantum DMG equal to ****1[i]%**** of Xueyi's ATK to a single target enemy. This attack ignores Weakness Types and reduces the enemy's Toughness. When the enemy's Weakness is Broken, the Quantum Weakness Break effect is triggered.\nIn this attack, the more Toughness is reduced, the higher the DMG will be dealt, up to a max of ****3[f1]%**** increase.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point03",
@@ -48741,7 +49520,11 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.5,
+					0.09,
+					0.36
+				],
 				"status": [],
 				"baseSkill": [
 					121403
@@ -48750,6 +49533,7 @@
 			},
 			{
 				"name": "Karmic Perpetuation",
+				"description": "When Xueyi reduces enemy Toughness with attacks, Karma will be stacked. The more Toughness is reduced, the more stacks of Karma are added, up to **1[i]** stacks.\nWhen Xueyi's allies reduce enemy Toughness with attacks, Xueyi gains **3[i]** stack(s) of Karma.\nWhen Karma reaches the max number of stacks, consumes all current Karma stacks and immediately launches a **follow-up attack** against an enemy target, dealing DMG for 3 times, with each time dealing Quantum DMG equal to ****2[i]%**** of Xueyi's ATK to a single random enemy. This follow-up attack will not add Karma stacks.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point04",
@@ -48766,7 +49550,11 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					8,
+					0.45,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121404
@@ -48775,13 +49563,16 @@
 			},
 			{
 				"name": "Summary Execution",
+				"description": "Immediately attacks the enemy. After entering combat, deals **1[i]%** of Xueyi's ATK as Quantum DMG to all enemies.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1214/SkillIcon_1214_Maze.png",
 				"shortIcon": "SkillIcon_1214_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					121407
@@ -50039,6 +50830,7 @@
 		"tree": [
 			{
 				"name": "Oracle Brush",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of Hanya's ATK to a single enemy.",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point01",
@@ -50053,7 +50845,9 @@
 					"113012": 5,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121501
@@ -50062,6 +50856,7 @@
 			},
 			{
 				"name": "Samsara, Locked",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of Hanya's ATK to a single target enemy, then applies Burden to them.\nFor every 2 Basic ATKs, Skills, or Ultimates allies use on an enemy with Burden, allies will immediately recover 1 Skill Point. Burden is only active on the latest target it is applied to, and will be dispelled automatically after the Skill Point recovery effect has been triggered **2[i]** times.",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point02",
@@ -50078,7 +50873,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					1.2,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121502
@@ -50087,6 +50885,7 @@
 			},
 			{
 				"name": "Ten-Lords' Decree, All Shall Obey",
+				"description": "Increases the SPD of a target ally by ****3[f1]%**** of Hanya's SPD and increases the same target ally's ATK by ****1[i]%****, lasting for **2[i]** turn(s).",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point03",
@@ -50103,7 +50902,11 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.36,
+					2,
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					121503
@@ -50112,6 +50915,7 @@
 			},
 			{
 				"name": "Sanction",
+				"description": "When an ally uses a Basic ATK, Skill, or Ultimate on an enemy inflicted with Burden, the DMG dealt increases by ****1[i]%****, lasting for **2[i]** turn(s).",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point04",
@@ -50128,7 +50932,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121504
@@ -50137,6 +50944,7 @@
 			},
 			{
 				"name": "Netherworld Judgment",
+				"description": "Immediately attacks the enemy. After entering battle, applies Burden equivalent to that applied by the Skill to a random enemy.",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point05",
@@ -51528,6 +52336,7 @@
 		"tree": [
 			{
 				"name": "Banner: Stormcaller",
+				"description": "Deals Wind DMG equal to ****1[i]%**** of Huohuo's Max HP to a target enemy.",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point01",
@@ -51542,7 +52351,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					121701
@@ -51551,6 +52362,7 @@
 			},
 			{
 				"name": "Talisman: Protection",
+				"description": "Dispels **5[i]** **debuff(s)** from a single target ally and immediately restores this ally's HP by an amount equal to ****1[f1]%**** of Huohuo's Max HP plus ****2[i]****. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to ****3[f1]%**** of Huohuo's Max HP plus ****4[i]****.",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point02",
@@ -51567,7 +52379,13 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.14,
+					140,
+					0.112,
+					112,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121702
@@ -51576,6 +52394,7 @@
 			},
 			{
 				"name": "Tail: Spiritual Domination",
+				"description": "Regenerates Energy for all allies (excluding this character) by an amount equal to ****1[f1]%**** of their respective Max Energy. At the same time, increases their ATK by ****2[f1]%**** for **3[i]** turn(s).",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point03",
@@ -51592,7 +52411,11 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.15,
+					0.24,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121703
@@ -51601,6 +52424,7 @@
 			},
 			{
 				"name": "Possession: Ethereal Metaflow",
+				"description": "After using her Skill, Huohuo gains Divine Provision, lasting for **1[i]** turn(s). This duration decreases by 1 turn at the start of each Huohuo's turn. If Huohuo has Divine Provision when an ally's turn starts or when an ally uses their Ultimate, restores HP for that ally by an amount equal to ****3[f1]%**** of Huohuo's Max HP plus ****5[i]****. At the same time, every ally with **6[i]%** HP or lower receives healing once.\nWhen Divine Provision is triggered to heal an ally, dispel **2[i]** **debuff(s)** from that ally. This effect can be triggered up to **7[i]** time(s). Using the skill again resets the effect's trigger count.",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point04",
@@ -51617,7 +52441,15 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					2,
+					1,
+					0.03,
+					0,
+					30,
+					0.5,
+					6
+				],
 				"status": [],
 				"baseSkill": [
 					121704
@@ -51626,13 +52458,19 @@
 			},
 			{
 				"name": "Fiend: Impeachment of Evil",
+				"description": "Huohuo terrorizes surrounding enemies, afflicting Horror-Struck on them. Enemies in Horror-Struck will flee away from Huohuo for **4[i]** second(s). When entering battle with enemies in Horror-Struck, there is a **1[i]%** **base chance** of reducing every single enemy's ATK by **2[i]%** for **3[i]** turn(s).",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1217/SkillIcon_1217_Maze.png",
 				"shortIcon": "SkillIcon_1217_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.25,
+					2,
+					10
+				],
 				"status": [],
 				"baseSkill": [
 					121707
@@ -52992,6 +53830,7 @@
 		"tree": [
 			{
 				"name": "Fleeting Fragrance",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of Argenti's ATK to a single target enemy.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point01",
@@ -53006,7 +53845,9 @@
 					"111002": 7,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130201
@@ -53015,6 +53856,7 @@
 			},
 			{
 				"name": "Justice, Hereby Blooms",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of Argenti's ATK to all enemies.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point02",
@@ -53031,7 +53873,9 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					130202
@@ -53040,6 +53884,7 @@
 			},
 			{
 				"name": "For In This Garden, Supreme Beauty Bestows",
+				"description": "Consumes **2[i]** Energy and deals Physical DMG equal to ****1[i]%**** of Argenti's ATK to all enemies.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point03",
@@ -53056,7 +53901,10 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.96,
+					90
+				],
 				"status": [],
 				"baseSkill": [
 					130203,
@@ -53066,6 +53914,7 @@
 			},
 			{
 				"name": "Sublime Object",
+				"description": "For every enemy hit when Argenti uses his Basic Attack, Skill, or Ultimate, regenerates Argenti's Energy by **1[i]**, and grants him a stack of Apotheosis, increasing his CRIT Rate by ****2[f1]%****. This effect can stack up to **3[i]** time(s).",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point04",
@@ -53082,7 +53931,11 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					3,
+					0.01,
+					10
+				],
 				"status": [],
 				"baseSkill": [
 					130204
@@ -53091,13 +53944,18 @@
 			},
 			{
 				"name": "Manifesto of Purest Virtue",
+				"description": "After using the Technique, enemies in a set area are inflicted with Daze for **1[i]** second(s). Dazed enemies will not actively attack the team.\nWhen attacking a Dazed enemy to enter combat, deals Physical DMG to all enemies equal to **2[i]%** of Argenti's ATK and regenerates his Energy by **3[i]**.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1302/SkillIcon_1302_Maze.png",
 				"shortIcon": "SkillIcon_1302_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					10,
+					0.8,
+					15
+				],
 				"status": [],
 				"baseSkill": [
 					130207
@@ -54416,6 +55274,7 @@
 		"tree": [
 			{
 				"name": "Threading Fragrance",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Ruan Mei's ATK to a single target enemy.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point01",
@@ -54430,7 +55289,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130301
@@ -54439,6 +55300,7 @@
 			},
 			{
 				"name": "String Sings Slow Swirls",
+				"description": "After using her Skill, Ruan Mei gains Overtone, lasting for **3[i]** turn(s). This duration decreases by 1 at the start of Ruan Mei's turn. When Ruan Mei has Overtone, all allies' DMG increases by ****1[f1]%**** and Weakness Break Efficiency increases by **2[i]%**.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point02",
@@ -54455,7 +55317,11 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.16,
+					0.5,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					130302
@@ -54464,6 +55330,7 @@
 			},
 			{
 				"name": "Petals to Stream, Repose in Dream",
+				"description": "Ruan Mei deploys a field that lasts for **2[i]** turns. The field's duration decreases by 1 at the start of her turn.\nWhile inside the field, all allies' All-Type RES PEN increases by ****1[f1]%**** and their attacks apply Thanatoplum Rebloom to the enemies hit.\nWhen these enemies attempt to recover from Weakness Break, Thanatoplum Rebloom is triggered, extending the duration of their Weakness Break, delaying their action by an amount equal to **3[i]%** of Ruan Mei's Break Effect plus **4[i]%**, and dealing Break DMG equal to ****5[i]%**** of Ruan Mei's Ice Break DMG.\nEnemy targets cannot have Thanatoplum Rebloom re-applied to them until they recover from Weakness Break.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point03",
@@ -54480,7 +55347,13 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.15,
+					2,
+					0.2,
+					0.1,
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					130303
@@ -54489,6 +55362,7 @@
 			},
 			{
 				"name": "Somatotypical Helix",
+				"description": "Increases SPD by ****1[f1]%**** for the team (excluding this character). When allies Break an enemy target's Weakness, Ruan Mei deals to this enemy target Break DMG equal to ****2[f1]%**** of her Ice Break DMG.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point04",
@@ -54505,7 +55379,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.08,
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					130304
@@ -54514,13 +55391,19 @@
 			},
 			{
 				"name": "Silken Serenade",
+				"description": "After using the Technique, gains Silken Serenade. At the start of the next battle, automatically triggers the Skill for **1[i]** time(s) without consuming Skill Points.\nIn Simulated Universe, when Ruan Mei has Silken Serenade, the team actively attacking enemies will always be regarded as attacking their Weakness to enter battle, and this attack can reduce all enemies' Toughness regardless of Weakness types. When breaking Weakness, triggers Weakness Break Effect corresponding to the attacker's Type. For every Blessing in possession (up to a maximum of **4[i]** Blessings), additionally increases the Toughness-Reducing DMG of this attack by **2[i]%**. After breaking an enemy target's Weakness, additionally deals to the enemy target Break DMG equal to **3[i]%** of Ruan Mei's Ice Break DMG.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1303/SkillIcon_1303_Maze.png",
 				"shortIcon": "SkillIcon_1303_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					1,
+					1,
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					130307
@@ -55779,6 +56662,7 @@
 		"tree": [
 			{
 				"name": "Mind is Might",
+				"description": "Deals Imaginary DMG equal to ****1[i]%**** of Dr. Ratio's ATK to a single target enemy.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point01",
@@ -55793,7 +56677,9 @@
 					"111012": 7,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130501
@@ -55802,6 +56688,7 @@
 			},
 			{
 				"name": "Intellectual Midwifery",
+				"description": "Deals Imaginary DMG equal to ****1[i]%**** of Dr. Ratio's ATK to a single target enemy.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point02",
@@ -55818,7 +56705,9 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.75
+				],
 				"status": [],
 				"baseSkill": [
 					130502
@@ -55827,6 +56716,7 @@
 			},
 			{
 				"name": "Syllogistic Paradox",
+				"description": "Deals Imaginary DMG equal to ****1[i]%**** of Dr. Ratio's ATK to a single target enemy and applies Wiseman's Folly. When Dr. Ratio's allies attack a target afflicted with Wiseman's Folly, Dr. Ratio launches his Talent's **follow-up attack** for 1 time against this target.\nWiseman's Folly can be triggered for up to **2[i]** times and only affects the most recent target of Dr. Ratio's Ultimate. This trigger count resets after Dr. Ratio's Ultimate is used.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point03",
@@ -55843,7 +56733,10 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					1.44,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					130503
@@ -55852,6 +56745,7 @@
 			},
 			{
 				"name": "Cogito, Ergo Sum",
+				"description": "When using his Skill, Dr. Ratio has a **2[i]%** **fixed chance** of launching a **follow-up attack** against his target for 1 time, dealing Imaginary DMG equal to ****1[i]%**** of Dr. Ratio's ATK. For each debuff the target enemy has, the **fixed chance** of launching **follow-up attack** increases by **3[i]%**. If the target enemy is defeated before the **follow-up attack** triggers, the **follow-up attack** will be directed at a single random enemy instead.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point04",
@@ -55868,7 +56762,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					1.35,
+					0.4,
+					0.2
+				],
 				"status": [],
 				"baseSkill": [
 					130504
@@ -55877,13 +56775,19 @@
 			},
 			{
 				"name": "Mold of Idolatry",
+				"description": "After using Technique, creates a special dimension that Taunts nearby enemies, lasting for **1[i]** second(s). After entering battle with enemies in this special dimension, there is a **2[i]%** **base chance** to reduce each single enemy target's SPD by **3[i]%** for **4[i]** turn(s). Only 1 dimension created by allies can exist at the same time.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1305/SkillIcon_1305_Maze.png",
 				"shortIcon": "SkillIcon_1305_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					10,
+					1,
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					130507
@@ -57234,6 +58138,7 @@
 		"tree": [
 			{
 				"name": "Monodrama",
+				"description": "Deals Quantum DMG equal to ****1[i]%**** of Sparkle's ATK to a single target enemy.",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point01",
@@ -57248,7 +58153,9 @@
 					"114012": 7,
 					"114013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130601
@@ -57257,6 +58164,7 @@
 			},
 			{
 				"name": "Dreamdiver",
+				"description": "Increases the CRIT DMG of an ally by ****1[f1]%**** of Sparkle's CRIT DMG +****2[f1]%**** for **3[i]** turn(s), and also Advances the unit's action Forward by **4[i]%**.\nWhen Sparkle uses this ability on herself, the Action Advance effect will not trigger.",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point02",
@@ -57273,7 +58181,12 @@
 					"114012": 13,
 					"114013": 7
 				},
-				"params": [],
+				"params": [
+					0.18,
+					0.08,
+					1,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130602
@@ -57282,6 +58195,7 @@
 			},
 			{
 				"name": "The Hero with a Thousand Faces",
+				"description": "Recovers **2[i]** Skill Points for allies and grants them Cipher. Every ally with Cipher will increase the DMG dealt by Sparkle's Talent for an additional ****3[f1]%**** per stack for **4[i]** turns.",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point03",
@@ -57298,7 +58212,12 @@
 					"114012": 13,
 					"114013": 7
 				},
-				"params": [],
+				"params": [
+					2,
+					4,
+					0.06,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					130603
@@ -57307,6 +58226,7 @@
 			},
 			{
 				"name": "Red Herring",
+				"description": "When Sparkle is on the battlefield, increases the max number of Skill Points additionally by **3[i]**. When an ally consumes 1 Skill Point, it will increase the DMG of all allies by ****2[f1]%**** for **1[i]** turn(s). This effect can be stacked up to **4[i]** times.",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point04",
@@ -57323,7 +58243,12 @@
 					"114012": 13,
 					"114013": 7
 				},
-				"params": [],
+				"params": [
+					2,
+					0.03,
+					2,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					130604
@@ -57332,13 +58257,17 @@
 			},
 			{
 				"name": "Unreliable Narrator",
+				"description": "Using the Technique grants all allies Stealth for **2[i]**s. Characters in Stealth will not be detected by enemies, and entering battle while in Stealth recovers **1[i]** Skill Point(s) for all allies.",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1306/SkillIcon_1306_Maze.png",
 				"shortIcon": "SkillIcon_1306_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					3,
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					130607
@@ -58773,6 +59702,7 @@
 		"tree": [
 			{
 				"name": "Percipience, Silent Dawn",
+				"description": "Deals Wind DMG equal to ****1[i]%**** of Black Swan's ATK on a single enemy unit, with a ****2[i]%**** **base chance** of inflicting 1 stack of **Sacrament** on the attacked enemy unit. Should the hit target currently have Wind Shear, Bleed, Burn, or Shock applied to them, each will have a ****3[i]%**** **base chance** of additionally applying 1 stack of **Sacrament** on the enemy.",
 				"avatar": 1307,
 				"type": 2,
 				"pos": "Point01",
@@ -58787,7 +59717,11 @@
 					"111002": 7,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.3,
+					0.5,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130701
@@ -58796,6 +59730,7 @@
 			},
 			{
 				"name": "Decadence, False Twilight",
+				"description": "Deals Wind DMG equal to ****1[i]%**** of Black Swan's ATK to a single enemy and any adjacent targets, with a **2[i]%** **base chance** to inflict 1 stack of **Sacrament** to the attacked enemies and a **3[i]%** **base chance** to lower the attacked enemies' DEF by ****4[f1]%****, lasting for **5[i]** turns.",
 				"avatar": 1307,
 				"type": 2,
 				"pos": "Point02",
@@ -58812,7 +59747,13 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.45,
+					1,
+					1,
+					0.148,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					130702
@@ -58821,6 +59762,7 @@
 			},
 			{
 				"name": "Bliss of Otherworld's Embrace",
+				"description": "Inflicts Epiphany on all enemies for **2[i]** turn(s).\nEnemies affected by Epiphany take ****3[i]%**** more DMG in their turn, and their **Sacrament** effect is regarded as Wind Shear, Bleed, Burn, and Shock effects. In addition, when their **Sacrament** effect is triggered at the beginning of the next turn, the **Sacrament** stacks are not reset. The stack non-reset effect can be triggered up to **4[i]** time(s) in Epiphany's duration, and its charges are replenished when Epiphany is applied again.\nDeals Wind DMG equal to ****1[i]%**** of Black Swan's ATK to all enemies.",
 				"avatar": 1307,
 				"type": 2,
 				"pos": "Point03",
@@ -58837,7 +59779,12 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.72,
+					2,
+					0.15,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					130703
@@ -58846,6 +59793,7 @@
 			},
 			{
 				"name": "Loom of Fate's Caprice",
+				"description": "Every time an enemy target receives DoT at the start of each turn, there is a ****2[i]%**** **base chance** for it to be inflicted with **Sacrament**.\nWhile afflicted with **Sacrament**, enemy targets receive Wind DoT equal to ****1[i]%**** of Black Swan's ATK. Each stack of **Sacrament** increases this DMG multiplier by ****3[f1]%****. Then **Sacrament** resets to 1 stack. **Sacrament** can stack up to **8[i]** times.\nOnly when **Sacrament** deals DMG at the start of an enemy target's turn, Black Swan triggers additional effects based on the number of **Sacrament** stacks inflicted on the target:\nWhen having **4[i]** or more **Sacrament** stacks, deals Wind DoT equal to ****5[i]%**** of Black Swan's ATK to adjacent targets, with a ****2[i]%**** **base chance** of inflicting 1 stack of **Sacrament** on adjacent targets.\nWhen having **6[i]** or more **Sacrament** stacks, enables the current DoT dealt this time to ignore **7[i]%** of the target's DEF and adjacent targets' DEF.",
 				"avatar": 1307,
 				"type": 2,
 				"pos": "Point04",
@@ -58862,7 +59810,16 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.96,
+					0.5,
+					0.048,
+					3,
+					0.72,
+					7,
+					0.2,
+					50
+				],
 				"status": [],
 				"baseSkill": [
 					130704
@@ -58871,13 +59828,17 @@
 			},
 			{
 				"name": "From Façade to Vérité",
+				"description": "After using this Technique, at the start of the next battle, there is a **1[i]%** **base chance** to inflict 1 stack of **Sacrament** to each enemy. For each successful application of **Sacrament**, inflict 1 additional stack of **Sacrament** on the enemy, repeating until **Sacrament** fails to be inflicted. For each successive application of **Sacrament**, the **base chance** of success is equal to **2[i]%** of the **base chance** of the previous successful infliction of **Sacrament** on that target.",
 				"avatar": 1307,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1307/SkillIcon_1307_Maze.png",
 				"shortIcon": "SkillIcon_1307_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1.5,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130707
@@ -60196,6 +61157,7 @@
 		"tree": [
 			{
 				"name": "E—Excuse Me, Please!",
+				"description": "Deals Ice DMG equal to ****1[i]%**** of Misha's ATK to an enemy.",
 				"avatar": 1312,
 				"type": 2,
 				"pos": "Point01",
@@ -60210,7 +61172,9 @@
 					"114002": 5,
 					"114003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					131201
@@ -60219,6 +61183,7 @@
 			},
 			{
 				"name": "R—Room Service",
+				"description": "Increases the Hits Per Action for Misha's next Ultimate by **3[i]** hits. Deals Ice DMG equal to ****1[i]%**** of Misha's ATK to an enemy, and Ice DMG equal to****2[i]%**** of Misha's ATK to enemies adjacent to them.",
 				"avatar": 1312,
 				"type": 2,
 				"pos": "Point02",
@@ -60235,7 +61200,11 @@
 					"114002": 10,
 					"114003": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0.4,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					131202
@@ -60244,6 +61213,7 @@
 			},
 			{
 				"name": "G—Gonna Be Late!",
+				"description": "Misha's Ultimate strikes **1[i]** Hits Per Action by default. Initially, Misha strikes the target enemy with 1 hit, dealing Ice DMG equal to ****2[i]%**** of Misha's ATK. For the rest of the hits, Misha strikes random enemies, each dealing Ice DMG equal to ****2[i]%**** of Misha's ATK. Each hit has a ****3[f1]%**** **base chance** to Freeze the target before the attack lands, lasting for 1 turn.\nFrozen enemies cannot take any actions and take **additional Ice DMG** equal to ****4[i]%**** of Misha's ATK at the beginning of their turn.\nMisha's Ultimate can possess up to **5[i]** Hits Per Action. After his Ultimate is used, its Hits Per Action will be restored to the default level.",
 				"avatar": 1312,
 				"type": 2,
 				"pos": "Point03",
@@ -60260,7 +61230,13 @@
 					"114002": 10,
 					"114003": 5
 				},
-				"params": [],
+				"params": [
+					3,
+					0.36,
+					0.12,
+					0.18,
+					10
+				],
 				"status": [],
 				"baseSkill": [
 					131203
@@ -60269,6 +61245,7 @@
 			},
 			{
 				"name": "Horological Escapement",
+				"description": "Whenever an ally consumes a Skill Point, Misha's next Ultimate delivers **2[i]** more Hits Per Action and Misha regenerates ****1[f1]**** Energy.",
 				"avatar": 1312,
 				"type": 2,
 				"pos": "Point04",
@@ -60285,7 +61262,10 @@
 					"114002": 10,
 					"114003": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					131204
@@ -60294,13 +61274,17 @@
 			},
 			{
 				"name": "Wait, You Are So Beautiful!",
+				"description": "Using the Technique creates a dimension, lasting for **1[i]** seconds. Enemies caught in the dimension are affected by Dream Prison and stop all their actions. Upon entering battle against enemies affected by Dream Prison, Misha's next Ultimate deals **2[i]** more Hits Per Action. Only one dimension created by allies can exist at one time.",
 				"avatar": 1312,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1312/SkillIcon_1312_Maze.png",
 				"shortIcon": "SkillIcon_1312_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					131207
@@ -61681,6 +62665,7 @@
 		"tree": [
 			{
 				"name": "Farewell Hit",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of the Trailblazer's ATK to a single enemy.",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point01",
@@ -61695,7 +62680,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					800101
@@ -61704,6 +62691,7 @@
 			},
 			{
 				"name": "RIP Home Run",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of the Trailblazer's ATK to a single enemy and enemies adjacent to it.",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point02",
@@ -61720,7 +62708,9 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.625
+				],
 				"status": [],
 				"baseSkill": [
 					800102
@@ -61729,6 +62719,7 @@
 			},
 			{
 				"name": "Stardust Ace",
+				"description": "Choose between two attack modes to deliver a full strike.\nBlowout: Farewell Hit deals Physical DMG equal to ****1[i]%**** of the Trailblazer's ATK to a single enemy.\nBlowout: RIP Home Run deals Physical DMG equal to ****2[i]%**** of the Trailblazer's ATK to a single enemy, and Physical DMG equal to ****3[i]%**** of the Trailblazer's ATK to enemies adjacent to it.",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point03",
@@ -61745,7 +62736,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					3,
+					1.8,
+					1.08
+				],
 				"status": [],
 				"baseSkill": [
 					800103,
@@ -61756,6 +62751,7 @@
 			},
 			{
 				"name": "Perfect Pickoff",
+				"description": "Each time after this character inflicts Weakness Break on an enemy, ATK increases by ****1[i]%****. This effect stacks up to **2[i]** time(s).",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point04",
@@ -61772,7 +62768,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.1,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					800104
@@ -61781,13 +62780,16 @@
 			},
 			{
 				"name": "Immortal Third Strike",
+				"description": "Immediately heals all allies for **1[i]%** of their respective Max HP after using this Technique.",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/8001/SkillIcon_8001_Maze.png",
 				"shortIcon": "SkillIcon_8001_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					800107
@@ -63165,6 +64167,7 @@
 		"tree": [
 			{
 				"name": "Farewell Hit",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of the Trailblazer's ATK to a single enemy.",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point01",
@@ -63179,7 +64182,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					800201
@@ -63188,6 +64193,7 @@
 			},
 			{
 				"name": "RIP Home Run",
+				"description": "Deals Physical DMG equal to ****1[i]%**** of the Trailblazer's ATK to a single enemy and enemies adjacent to it.",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point02",
@@ -63204,7 +64210,9 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.625
+				],
 				"status": [],
 				"baseSkill": [
 					800202
@@ -63213,6 +64221,7 @@
 			},
 			{
 				"name": "Stardust Ace",
+				"description": "Choose between two attack modes to deliver a full strike.\nBlowout: Farewell Hit deals Physical DMG equal to ****1[i]%**** of the Trailblazer's ATK to a single enemy.\nBlowout: RIP Home Run deals Physical DMG equal to ****2[i]%**** of the Trailblazer's ATK to a single enemy, and Physical DMG equal to ****3[i]%**** of the Trailblazer's ATK to enemies adjacent to it.",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point03",
@@ -63229,7 +64238,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					3,
+					1.8,
+					1.08
+				],
 				"status": [],
 				"baseSkill": [
 					800203,
@@ -63240,6 +64253,7 @@
 			},
 			{
 				"name": "Perfect Pickoff",
+				"description": "Each time after this character inflicts Weakness Break on an enemy, ATK increases by ****1[i]%****. This effect stacks up to **2[i]** time(s).",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point04",
@@ -63256,7 +64270,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.1,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					800204
@@ -63265,13 +64282,16 @@
 			},
 			{
 				"name": "Immortal Third Strike",
+				"description": "Immediately heals all allies for **1[i]%** of their respective Max HP after using this Technique.",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/8001/SkillIcon_8001_Maze.png",
 				"shortIcon": "SkillIcon_8001_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					800207
@@ -64613,6 +65633,7 @@
 		"tree": [
 			{
 				"name": "Ice-Breaking Light",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of the Trailblazer's ATK to a single enemy and gains 1 stack of Magma Will.",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point01",
@@ -64627,7 +65648,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					800301,
@@ -64637,6 +65660,7 @@
 			},
 			{
 				"name": "Ever-Burning Amber",
+				"description": "Increases the Trailblazer's DMG Reduction by ****1[i]%**** and gains 1 stack of Magma Will, with a **2[i]%** **base chance** to Taunt all enemies for **3[i]** turn(s).",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point02",
@@ -64653,7 +65677,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.4,
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					800302
@@ -64662,6 +65690,7 @@
 			},
 			{
 				"name": "War-Flaming Lance",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of the Trailblazer's ATK plus ****2[i]%**** of the Trailblazer's DEF to all enemies. The next Basic ATK will be automatically enhanced and does not cost Magma Will.",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point03",
@@ -64678,7 +65707,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					0.75
+				],
 				"status": [],
 				"baseSkill": [
 					800303
@@ -64687,6 +65719,7 @@
 			},
 			{
 				"name": "Treasure of the Architects",
+				"description": "Each time the Trailblazer is hit, they gain 1 stack of Magma Will for a max of **3[i]** stack(s).\nWhen Magma Will has no fewer than 4 stacks, the Trailblazer's Basic ATK becomes enhanced, dealing DMG to a single enemy and enemies adjacent to it.\nWhen the Trailblazer uses Basic ATK, Skill, or Ultimate, apply a Shield to all allies that absorbs DMG equal to ****1[f1]%**** of the Trailblazer's DEF plus ****4[i]****. The Shield lasts for **2[i]** turn(s).",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point04",
@@ -64703,7 +65736,12 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.04,
+					2,
+					8,
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					800304
@@ -64712,13 +65750,18 @@
 			},
 			{
 				"name": "Call of the Guardian",
+				"description": "After using Technique, at the start of the next battle, gains a Shield that absorbs DMG equal to **1[i]%** of the Trailblazer's DEF plus **2[i]** for **3[i]** turn(s).",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/8003/SkillIcon_8003_Maze.png",
 				"shortIcon": "SkillIcon_8003_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.3,
+					384,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					800307
@@ -66065,6 +67108,7 @@
 		"tree": [
 			{
 				"name": "Ice-Breaking Light",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of the Trailblazer's ATK to a single enemy and gains 1 stack of Magma Will.",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point01",
@@ -66079,7 +67123,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					800401,
@@ -66089,6 +67135,7 @@
 			},
 			{
 				"name": "Ever-Burning Amber",
+				"description": "Increases the Trailblazer's DMG Reduction by ****1[i]%**** and gains 1 stack of Magma Will, with a **2[i]%** **base chance** to Taunt all enemies for **3[i]** turn(s).",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point02",
@@ -66105,7 +67152,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.4,
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					800402
@@ -66114,6 +67165,7 @@
 			},
 			{
 				"name": "War-Flaming Lance",
+				"description": "Deals Fire DMG equal to ****1[i]%**** of the Trailblazer's ATK plus ****2[i]%**** of the Trailblazer's DEF to all enemies. The next Basic ATK will be automatically enhanced and does not cost Magma Will.",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point03",
@@ -66130,7 +67182,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					0.75
+				],
 				"status": [],
 				"baseSkill": [
 					800403
@@ -66139,6 +67194,7 @@
 			},
 			{
 				"name": "Treasure of the Architects",
+				"description": "Each time the Trailblazer is hit, they gain 1 stack of Magma Will for a max of **3[i]** stack(s).\nWhen Magma Will has no fewer than 4 stacks, the Trailblazer's Basic ATK becomes enhanced, dealing DMG to a single enemy and enemies adjacent to it.\nWhen the Trailblazer uses Basic ATK, Skill, or Ultimate, apply a Shield to all allies that absorbs DMG equal to ****1[f1]%**** of the Trailblazer's DEF plus ****4[i]****. The Shield lasts for **2[i]** turn(s).",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point04",
@@ -66155,7 +67211,12 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.04,
+					2,
+					8,
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					800404
@@ -66164,13 +67225,18 @@
 			},
 			{
 				"name": "Call of the Guardian",
+				"description": "After using Technique, at the start of the next battle, gains a Shield that absorbs DMG equal to **1[i]%** of the Trailblazer's DEF plus **2[i]** for **3[i]** turn(s).",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/8003/SkillIcon_8003_Maze.png",
 				"shortIcon": "SkillIcon_8003_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.3,
+					384,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					800407

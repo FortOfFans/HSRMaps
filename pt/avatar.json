@@ -453,6 +453,7 @@
 		"tree": [
 			{
 				"name": "Flecha Glacial",
+				"description": "Causa Dano de Gelo equivalente a ****1[i]%**** do ATQ de 7 de Março a um único inimigo.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point01",
@@ -467,7 +468,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100101
@@ -476,6 +479,7 @@
 			},
 			{
 				"name": "O Poder da Fofura",
+				"description": "Concede a um único aliado um Escudo que pode absorver Dano igual a ****1[i]%**** da DEF de 7 de Março + ****4[i]**** por **2[i]** rodada(s).\nSe esse aliado tiver **3[i]%** ou mais de PV, aumenta significativamente a chance de inimigos atacarem esse aliado.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point02",
@@ -492,7 +496,13 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.38,
+					3,
+					0.3,
+					190,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					100102
@@ -501,6 +511,7 @@
 			},
 			{
 				"name": "Cascata Glacial",
+				"description": "Causa Dano de Gelo igual a ****1[i]%**** do ATQ de 7 de Março a todos os inimigos. Ao serem atingidos, os inimigos têm **2[i]%** de **chance-base** de sofrer Congelamento por **3[i]** rodada(s).\nDurante o Congelamento, os inimigos não podem agir e recebem **Dano de Gelo Adicional** igual a ****4[i]%**** do ATQ de 7 de Março no início de cada rodada.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point03",
@@ -517,7 +528,12 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.9,
+					0.5,
+					1,
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					100103
@@ -526,6 +542,7 @@
 			},
 			{
 				"name": "Poder Feminino",
+				"description": "Quando um aliado com Escudo é atacado por um inimigo, 7 de Março **Contra-Ataca** imediatamente, causando Dano de Gelo igual a ****1[i]%**** do ATQ dela. Esse efeito pode ser ativado **2[i]** vez(es) por rodada.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point04",
@@ -542,7 +559,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100104
@@ -551,13 +571,18 @@
 			},
 			{
 				"name": "Beleza Glacial",
+				"description": "Ataca o inimigo imediatamente. Após entrar na batalha, tem **1[i]%** de **chance-base** de causar Congelamento a um inimigo aleatório por **2[i]** rodada(s).\nDurante o Congelamento, o inimigo não pode agir e recebe **3[i]%** do ATQ de 7 de Março como Dano de Gelo **Adicional** no início de cada rodada.",
 				"avatar": 1001,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
 				"shortIcon": "SkillIcon_1001_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					1,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100107
@@ -1832,6 +1857,7 @@
 		"tree": [
 			{
 				"name": "Arte de Lanceiro das Nuvens: Ventos do Norte",
+				"description": "Causa Dano de Vento igual a ****1[i]%**** do ATQ de Dan Heng a um único inimigo.",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point01",
@@ -1846,7 +1872,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100201
@@ -1855,6 +1883,7 @@
 			},
 			{
 				"name": "Arte de Lanceiro das Nuvens: Enxurrada",
+				"description": "Causa ****1[i]%**** do ATQ de Dan Heng como Dano de Vento a um único inimigo.\nAo realizar um Acerto CRIT, há **4[i]%** de **chance-base** de reduzir a VEL do alvo em **2[i]%** por **3[i]** rodada(s).",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point02",
@@ -1871,7 +1900,12 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.3,
+					0.12,
+					2,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					100202
@@ -1880,6 +1914,7 @@
 			},
 			{
 				"name": "Sonho Etéreo",
+				"description": "Causa ****1[i]%**** do ATQ de Dan Heng como Dano de Vento a um único inimigo. Se o inimigo estiver sofrendo de Lentidão, o multiplicador de Dano da Perícia Suprema aumenta em ****2[i]%****.",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point03",
@@ -1896,7 +1931,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					2.4,
+					0.72
+				],
 				"status": [],
 				"baseSkill": [
 					100203
@@ -1905,6 +1943,7 @@
 			},
 			{
 				"name": "Superioridade de Alcance",
+				"description": "Quando Dan Heng é alvo da habilidade de um aliado, a **PEN de RES** a Vento de seu próximo ataque recebe um aumento de ****1[i]%****. Este efeito pode ser ativado novamente depois de **2[i]** rodada(s).",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point04",
@@ -1921,7 +1960,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.18,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100204
@@ -1930,13 +1972,17 @@
 			},
 			{
 				"name": "Ponta de Lança Divisora",
+				"description": "Após Dan Heng usar a sua Técnica, seu ATQ aumenta em **1[i]%** no início da próxima batalha por **2[i]** rodada(s).",
 				"avatar": 1002,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1002/SkillIcon_1002_Maze.png",
 				"shortIcon": "SkillIcon_1002_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.4,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100207
@@ -3182,6 +3228,7 @@
 		"tree": [
 			{
 				"name": "Ajuste de Lâmina de Serra",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ de Himeko a um único inimigo.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point01",
@@ -3196,7 +3243,9 @@
 					"111002": 7,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100301
@@ -3205,6 +3254,7 @@
 			},
 			{
 				"name": "Detonação por Fusão",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ de Himeko a um único inimigo e ****2[i]%**** do ATQ de Himeko como Dano de Fogo aos inimigos adjacentes a ele.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point02",
@@ -3221,7 +3271,10 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					1,
+					0.4
+				],
 				"status": [],
 				"baseSkill": [
 					100302
@@ -3230,6 +3283,7 @@
 			},
 			{
 				"name": "Chama Celestial",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ de Himeko a todos os inimigos. Além disso, Himeko regenera **2[i]** de Energia extra para cada inimigo derrotado.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point03",
@@ -3246,7 +3300,10 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					1.38,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					100303
@@ -3255,6 +3312,7 @@
 			},
 			{
 				"name": "Corrida da Vitória",
+				"description": "Quando um inimigo é infligido com Quebra de Fraqueza, Himeko ganha 1 ponto de Carga (máximo de **2[i]** pontos).\nSe Himeko estiver com carga total quando um aliado atacar, ela imediatamente realiza 1 **Ataque Extra** e causa ****1[i]%**** do ATQ dela como Dano de Fogo a todos os inimigos, consumindo todos os pontos de Carga.\nNo início da batalha, Himeko ganha 1 ponto de Carga.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point04",
@@ -3271,7 +3329,10 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.7,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100304
@@ -3280,13 +3341,19 @@
 			},
 			{
 				"name": "Combustão Incompleta",
+				"description": "Após usar a Técnica, cria uma dimensão que dura **4[i]**s. Depois de entrar em batalha com inimigos na dimensão, há **1[i]%** de **chance-base** de aumentar o Dano de Fogo que os inimigos recebem em **2[i]%** por **3[i]** rodada(s). Só 1 dimensão criada por aliados pode existir ao mesmo tempo.",
 				"avatar": 1003,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1003/SkillIcon_1003_Maze.png",
 				"shortIcon": "SkillIcon_1003_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.1,
+					2,
+					15
+				],
 				"status": [],
 				"baseSkill": [
 					100307
@@ -4591,6 +4658,7 @@
 		"tree": [
 			{
 				"name": "Supressão Gravitacional",
+				"description": "Causa Dano Imaginário igual a ****1[i]%**** do ATQ de Welt a um único inimigo.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point01",
@@ -4605,7 +4673,9 @@
 					"112002": 7,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100401
@@ -4614,6 +4684,7 @@
 			},
 			{
 				"name": "Borda do Vazio",
+				"description": "Causa Dano Imaginário igual a ****1[i]%**** do ATQ de Welt a um único inimigo e causa Dano mais 2 vezes, causando Dano Imaginário igual a ****1[i]%**** do ATQ de Welt por acerto a um inimigo aleatório. Ao acertar, há uma **chance-base** de ****2[i]%**** de reduzir em **3[i]%** a VEL do inimigo por **4[i]** rodada(s).",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point02",
@@ -4630,7 +4701,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.36,
+					0.65,
+					0.1,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100402
@@ -4639,6 +4715,7 @@
 			},
 			{
 				"name": "Buraco Negro Sintético",
+				"description": "Causa ****1[i]%**** do ATQ de Welt como Dano Imaginário a todos os inimigos, com **3[i]%** de **chance-base** de que inimigos atingidos por esta habilidade sejam afetados por Aprisionamento por 1 rodada.\nInimigos aprisionados têm **ações atrasadas** em ****2[f1]%**** e VEL reduzida em **4[i]%**.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point03",
@@ -4655,7 +4732,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.9,
+					0.32,
+					1,
+					0.1
+				],
 				"status": [],
 				"baseSkill": [
 					100403
@@ -4664,6 +4746,7 @@
 			},
 			{
 				"name": "Distorção Temporal",
+				"description": "Ao atingir um inimigo que já está sob Lentidão, Welt causa um **Adicional** de ****1[i]%**** do seu ATQ como Dano Imaginário ao inimigo.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point04",
@@ -4680,7 +4763,9 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					100404
@@ -4689,13 +4774,20 @@
 			},
 			{
 				"name": "Aprisionamento Gravitacional",
+				"description": "Após Welt usar sua Técnica, cria uma dimensão que dura **4[i]**s. Inimigos nessa dimensão têm a VEL de Movimento reduzida em **5[i]%**. Depois de entrar em batalha com inimigos na dimensão, há **1[i]%** de **chance-base** de Aprisionar os inimigos por 1 rodada.\nInimigos aprisionados têm **ações atrasadas** em **2[i]%** e a VEL reduzida em **3[i]%**. Só 1 dimensão criada por aliados pode existir ao mesmo tempo.",
 				"avatar": 1004,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1004/SkillIcon_1004_Maze.png",
 				"shortIcon": "SkillIcon_1004_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.2,
+					0.1,
+					15,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100407
@@ -6024,6 +6116,7 @@
 		"tree": [
 			{
 				"name": "Tumulto da Meia-noite",
+				"description": "Causa Dano de Raio igual a ****1[i]%**** do ATQ de Kafka a um único inimigo.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point01",
@@ -6038,7 +6131,9 @@
 					"111012": 7,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100501
@@ -6047,6 +6142,7 @@
 			},
 			{
 				"name": "Luar Carinhoso",
+				"description": "Causa ****1[i]%**** do ATQ de Kafka como Dano de Raio a um inimigo-alvo e ****3[i]%**** do ATQ de Kafka como Dano de Raio aos inimigos adjacentes a ele.\nSe o inimigo-alvo estiver recebendo Dano Contínuo, todos os Danos Contínuos sobre aquele inimigo causarão imediatamente Dano de ****2[i]%**** do seu Dano original.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point02",
@@ -6063,7 +6159,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.8,
+					0.6,
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					100502
@@ -6072,6 +6172,7 @@
 			},
 			{
 				"name": "Vibração do Crepúsculo",
+				"description": "Causa ****1[i]%**** do ATQ de Kafka como Dano de Raio a todos os inimigos. Há **2[i]%** de **chance-base** de os inimigos atingidos serem afligidos com Choque e imediatamente receberem Dano do estado de Choque atual igual a ****5[i]%**** do Dano original. Choque dura **3[i]** rodada(s).\nEnquanto em Choque, inimigos recebem ****4[i]%**** do ATQ de Kafka como Dano de Raio Contínuo no início de cada rodada.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point03",
@@ -6088,7 +6189,13 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.48,
+					1,
+					2,
+					1.16,
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					100503
@@ -6097,6 +6204,7 @@
 			},
 			{
 				"name": "Gentil, Mas Cruel",
+				"description": "Após um aliado de Kafka usar um ATQ Básico em um inimigo-alvo, Kafka imediatamente realiza 1 **Ataque Extra** e causa Dano de Raio igual a ****1[i]%**** do seu ATQ ao alvo, com **2[i]%** de **chance-base** de infligir Choque equivalente àquele aplicado pela Perícia Suprema dela ao inimigo-alvo atacado, durando por **3[i]** rodadas. Este efeito só pode ser ativado 1 vez por rodada.",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point04",
@@ -6113,7 +6221,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.42,
+					1,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100504
@@ -6122,13 +6234,18 @@
 			},
 			{
 				"name": "Misericórdia Não É Perdão",
+				"description": "Ataca imediatamente todos os inimigos dentro de um alcance específico. Depois de entrar em batalha, causa Dano de Raio igual a **3[i]%** do ATQ de Kafka a todos os inimigos, com uma **chance-base** de **1[i]%** de infligir Choque equivalente àquele aplicado pela Perícia Suprema dela a todos os inimigos-alvo por **2[i]** rodada(s).",
 				"avatar": 1005,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1005/SkillIcon_1005_Maze.png",
 				"shortIcon": "SkillIcon_1005_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					2,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100507
@@ -7529,6 +7646,7 @@
 		"tree": [
 			{
 				"name": "Aviso do Sistema",
+				"description": "Causa Dano Quântico igual a ****1[i]%**** do ATQ da Loba Prateada a um único inimigo.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point01",
@@ -7543,7 +7661,9 @@
 					"112012": 7,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100601
@@ -7552,6 +7672,7 @@
 			},
 			{
 				"name": "Permitir Mudanças?",
+				"description": "Tem ****2[i]%**** de **chance-base** de adicionar 1 Fraqueza do Tipo de um personagem em campo ao inimigo-alvo. Isso também reduz a RES a Dano do inimigo a este Tipo de Fraqueza em **4[i]%** por **3[i]** rodada(s). Se o inimigo já possui Fraqueza a este Tipo, o efeito de redução da RES a Dano a este Tipo de Fraqueza não será ativado.\nCada inimigo pode ter apenas 1 Fraqueza implantada pela Loba Prateada. Quando Loba Prateada implanta outra Fraqueza ao alvo, apenas a última Fraqueza implantada será mantida. Adicionalmente, existe **5[i]%** de **chance-base** de reduzir mais ainda a RES a Todos os Tipos do inimigo em ****6[f1]%**** por **7[i]** rodada(s).\nCausa Dano Quântico igual a ****1[i]%**** do ATQ da Loba Prateada a um único inimigo-alvo.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point02",
@@ -7568,7 +7689,15 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.98,
+					0.75,
+					2,
+					0.2,
+					1,
+					0.075,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100602
@@ -7577,6 +7706,7 @@
 			},
 			{
 				"name": "Usuário Banido",
+				"description": "Tem uma **chance-base** de ****2[i]%**** de diminuir a DEF do inimigo-alvo em ****3[f1]%**** por **4[i]** rodada(s). E, ao mesmo tempo, causa ****1[i]%**** do ATQ da Loba Prateada como Dano Quântico ao inimigo-alvo.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point03",
@@ -7593,7 +7723,12 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					2.28,
+					0.85,
+					0.36,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100603
@@ -7602,6 +7737,7 @@
 			},
 			{
 				"name": "Esperando Resposta do Sistema...",
+				"description": "Loba Prateada pode criar três tipos de Erros: reduzir em ****1[f1]%**** o ATQ, reduzir em ****2[f1]%**** a DEF e reduzir em ****3[f1]%**** a VEL.\nSempre que Loba Prateada ataca, ela tem uma **chance-base** de ****4[i]%**** de implantar a um inimigo-alvo um Erro aleatório que dura **5[i]** rodada(s).",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point04",
@@ -7618,7 +7754,13 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.05,
+					0.04,
+					0.03,
+					0.6,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100604
@@ -7627,13 +7769,16 @@
 			},
 			{
 				"name": "Fechar o Programa",
+				"description": "Ataca o inimigo imediatamente. Após entrar na batalha, causa Dano Quântico igual a **1[i]%** do ATQ da Loba Prateada a todos os inimigos, ignora os Tipos de Fraqueza e reduz a Tenacidade de todos os inimigos. Inimigos com suas Fraquezas Quebradas desta forma ativarão o efeito de Quebra de Fraqueza contra Quântico.",
 				"avatar": 1006,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1006/SkillIcon_1006_Maze.png",
 				"shortIcon": "SkillIcon_1006_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					100607
@@ -8873,6 +9018,7 @@
 		"tree": [
 			{
 				"name": "Descarga de Raio",
+				"description": "Causa Dano de Raio igual a ****1[i]%**** do ATQ de Arlan a um único inimigo.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point01",
@@ -8887,7 +9033,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100801
@@ -8896,6 +9044,7 @@
 			},
 			{
 				"name": "Quebra-Grilhões",
+				"description": "Consome os PV de Arlan, com valor equivalente a **1[i]%** de seus PV máximos, para causar ****2[i]%**** do ATQ de Arlan como Dano de Raio a um único inimigo. Se os PV de Arlan forem insuficientes, os seus PV serão reduzidos a 1 depois de usar a Perícia.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point02",
@@ -8912,7 +9061,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.15,
+					1.2
+				],
 				"status": [],
 				"baseSkill": [
 					100802
@@ -8921,6 +9073,7 @@
 			},
 			{
 				"name": "Punição Frenética",
+				"description": "Causa Dano de Raio igual a ****1[i]%**** do ATQ de Arlan a um único inimigo e ****2[i]%**** do ATQ de Arlan como Dano de Raio aos inimigos adjacentes a ele.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point03",
@@ -8937,7 +9090,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.92,
+					0.96
+				],
 				"status": [],
 				"baseSkill": [
 					100803
@@ -8946,6 +9102,7 @@
 			},
 			{
 				"name": "Dor e Raiva",
+				"description": "Aumenta o Dano de Arlan com base na porcentagem de PV reduzidos de seus PV máximos, até um máximo de ****1[i]%**** a mais de Dano.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point04",
@@ -8962,7 +9119,9 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.36
+				],
 				"status": [],
 				"baseSkill": [
 					100804
@@ -8971,13 +9130,16 @@
 			},
 			{
 				"name": "Colheita Rápida",
+				"description": "Ataca o inimigo imediatamente. Depois de entrar na batalha, causa **1[i]%** do ATQ de Arlan como Dano de Raio a todos os inimigos.",
 				"avatar": 1008,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1008/SkillIcon_1008_Maze.png",
 				"shortIcon": "SkillIcon_1008_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					100807
@@ -10219,6 +10381,7 @@
 		"tree": [
 			{
 				"name": "Raio Espectral",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ de Asta a um único inimigo.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point01",
@@ -10233,7 +10396,9 @@
 					"112002": 5,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100901
@@ -10242,6 +10407,7 @@
 			},
 			{
 				"name": "Tempestade de Meteoros",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ de Asta a um único inimigo e causa Dano mais 4 vezes, com cada acerto causando Dano de Fogo igual a ****1[i]%**** do ATQ de Asta a um inimigo aleatório.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point02",
@@ -10258,7 +10424,9 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					100902
@@ -10267,6 +10435,7 @@
 			},
 			{
 				"name": "Bênção Astral",
+				"description": "Aumenta a VEL de todos os aliados em ****1[i]**** por **2[i]** rodada(s).",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point03",
@@ -10283,7 +10452,10 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					36,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					100903
@@ -10292,6 +10464,7 @@
 			},
 			{
 				"name": "Astrometria",
+				"description": "Ganha 1 acúmulo de Carga para cada inimigo diferente que Asta atingir, além de um acúmulo extra se o inimigo atingido tiver Fraqueza contra Fogo.\nPara cada acúmulo de Carga que Asta tiver, aumenta em ****1[f1]%**** o ATQ de todos os aliados, até **2[i]** vez(es).\nA partir da segunda rodada, reduz em **3[i]** a contagem de acúmulos de Carga de Asta no início de cada rodada.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point04",
@@ -10308,7 +10481,11 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.07,
+					5,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					100904
@@ -10317,13 +10494,16 @@
 			},
 			{
 				"name": "Lampejo Milagroso",
+				"description": "Ataca o inimigo imediatamente. Depois de entrar na batalha, causa **1[i]%** do ATQ de Asta como Dano de Fogo a todos os inimigos.",
 				"avatar": 1009,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1009/SkillIcon_1009_Maze.png",
 				"shortIcon": "SkillIcon_1009_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					100907
@@ -11568,6 +11748,7 @@
 		"tree": [
 			{
 				"name": "Está Olhando o Quê?",
+				"description": "Causa Dano de Gelo igual a ****1[i]%**** do ATQ de Herta a um único inimigo.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point01",
@@ -11582,7 +11763,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					101301
@@ -11591,6 +11774,7 @@
 			},
 			{
 				"name": "Oferta Única",
+				"description": "Causa ****1[i]%**** do ATQ de Herta como Dano de Gelo a todos os inimigos. Se o alvo estiver com **2[i]%** de PV ou mais, o Dano causado a esse alvo aumenta em **3[i]%**.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point02",
@@ -11607,7 +11791,11 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					0.5,
+					0.2
+				],
 				"status": [],
 				"baseSkill": [
 					101302
@@ -11616,6 +11804,7 @@
 			},
 			{
 				"name": "É Magia, Eu Adicionei Magia",
+				"description": "Causa Dano de Gelo igual a ****1[i]%**** do ATQ de Herta a todos os inimigos.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point03",
@@ -11632,7 +11821,9 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.2
+				],
 				"status": [],
 				"baseSkill": [
 					101303
@@ -11641,6 +11832,7 @@
 			},
 			{
 				"name": "Está Bem, Eu Cuido Disso",
+				"description": "Quando um ataque de um aliado reduzir os PV de um inimigo a **1[i]%** ou menos, Herta usa um **Ataque Extra**, causando ****2[i]%**** do ATQ de Herta como Dano de Gelo a todos os inimigos.",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point04",
@@ -11657,7 +11849,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					101304
@@ -11666,13 +11861,17 @@
 			},
 			{
 				"name": "Ainda É Possível Otimizar",
+				"description": "Após usar sua Técnica, no início da próxima batalha o ATQ de Herta aumenta em **1[i]%** por **2[i]** rodada(s).",
 				"avatar": 1013,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1013/SkillIcon_1013_Maze.png",
 				"shortIcon": "SkillIcon_1013_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.4,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					101307
@@ -12964,6 +13163,7 @@
 		"tree": [
 			{
 				"name": "Munição de Ventos Fortes",
+				"description": "Causa Dano de Vento igual a ****1[i]%**** do ATQ de Bronya a um único inimigo.",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point01",
@@ -12978,7 +13178,9 @@
 					"112002": 7,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110101
@@ -12987,6 +13189,7 @@
 			},
 			{
 				"name": "Redistribuição de Combate",
+				"description": "Dissipa uma **penalidade** de um único aliado, permite que ele aja imediatamente, e aumenta seu Dano em ****1[i]%**** por **3[i]** rodada(s).\nQuando esta Perícia é usada na própria Bronya, ela não pode agir imediatamente novamente.",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point02",
@@ -13003,7 +13206,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.33,
+					0,
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					110102
@@ -13012,6 +13220,7 @@
 			},
 			{
 				"name": "A Marcha de Belobog",
+				"description": "Aumenta o ATQ de todos os aliados em ****1[i]%**** e aumenta o Dano CRIT em ****2[f1]%**** do Dano CRIT de Bronya mais ****3[f1]%**** por **4[i]** rodada(s).",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point03",
@@ -13028,7 +13237,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.33,
+					0.12,
+					0.12,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110103
@@ -13037,6 +13251,7 @@
 			},
 			{
 				"name": "Liderança",
+				"description": "Após usar o ATQ Básico, a próxima ação de Bronya será **Avançada Adiante** em ****1[i]%****.",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point04",
@@ -13053,7 +13268,9 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					110104
@@ -13062,13 +13279,17 @@
 			},
 			{
 				"name": "Bandeira de Comando",
+				"description": "Após Bronya usar sua Técnica, no início da próxima batalha, o ATQ de todos os aliados aumenta em **1[i]%** por **2[i]** rodada(s).",
 				"avatar": 1101,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1101/SkillIcon_1101_Maze.png",
 				"shortIcon": "SkillIcon_1101_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110107
@@ -14318,6 +14539,7 @@
 		"tree": [
 			{
 				"name": "Agressão",
+				"description": "Causa Dano Quântico igual a ****1[i]%**** do ATQ de Seele a um único inimigo.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point01",
@@ -14332,7 +14554,9 @@
 					"111012": 7,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110201
@@ -14341,6 +14565,7 @@
 			},
 			{
 				"name": "Lâmina Embainhada",
+				"description": "Aumenta a VEL de Seele em **2[i]%** por **3[i]** rodada(s) e causa Dano Quântico equivalente a ****1[i]%**** do ATQ de Seele a um inimigo.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point02",
@@ -14357,7 +14582,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					1.1,
+					0.25,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110202
@@ -14366,6 +14595,7 @@
 			},
 			{
 				"name": "Enxurrada de Borboletas",
+				"description": "Seele entra no modo melhorado e causa Dano Quântico igual a ****1[i]%**** do ATQ dela a um único inimigo.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point03",
@@ -14382,7 +14612,9 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					2.55
+				],
 				"status": [],
 				"baseSkill": [
 					110203
@@ -14391,6 +14623,7 @@
 			},
 			{
 				"name": "Ressurgimento",
+				"description": "Entra no modo melhorado ao derrotar um inimigo com ATQ Básico, Perícia ou Perícia Suprema, e recebe uma **rodada extra**. Enquanto estiver nesse modo, o Dano dos ataques de Seele aumenta em ****1[i]%**** por **2[i]** rodada(s).\nInimigos derrotados durante a **rodada extra** concedida pelo efeito de \"Ressurgimento\" não ativarão outro \"Ressurgimento\".",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point04",
@@ -14407,7 +14640,10 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.4,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					110204
@@ -14416,13 +14652,16 @@
 			},
 			{
 				"name": "Ilusão Factícia",
+				"description": "Após usar a sua Técnica, Seele ganha Furtividade por **1[i]**s. Enquanto o efeito de Furtividade estiver ativo, Seele não pode ser detectada por inimigos. Ao entrar em uma batalha atacando inimigos, Seele entrará no modo melhorado imediatamente.",
 				"avatar": 1102,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1102/SkillIcon_1102_Maze.png",
 				"shortIcon": "SkillIcon_1102_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					110207
@@ -15708,6 +15947,7 @@
 		"tree": [
 			{
 				"name": "Trovoada Estrondosa",
+				"description": "Causa Dano de Raio igual a ****1[i]%**** do ATQ de Serval a um único inimigo.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point01",
@@ -15722,7 +15962,9 @@
 					"112002": 5,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110301
@@ -15731,6 +15973,7 @@
 			},
 			{
 				"name": "Clarão de Raio",
+				"description": "Causa ****1[i]%**** do ATQ de Serval como Dano de Raio a um único inimigo e ****2[i]%**** do ATQ de Serval como Dano de Raio aos inimigos adjacentes a ele, com **3[i]%** de **chance-base** de os inimigos atingidos receberem Choque por **4[i]** rodada(s).\nQuando em Choque, inimigos recebem Dano de Raio Contínuo igual a ****5[i]%**** do ATQ de Serval no início de cada rodada.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point02",
@@ -15747,7 +15990,13 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.7,
+					0.3,
+					0.8,
+					2,
+					0.4
+				],
 				"status": [],
 				"baseSkill": [
 					110302
@@ -15756,6 +16005,7 @@
 			},
 			{
 				"name": "A Febre Mecânica Ataca",
+				"description": "Causa Dano de Raio igual a ****1[i]%**** do ATQ de Serval a todos os inimigos. Inimigos com Choque terão esse estado prolongado por **2[i]** rodada(s).",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point03",
@@ -15772,7 +16022,10 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					1.08,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110303
@@ -15781,6 +16034,7 @@
 			},
 			{
 				"name": "Cordas Galvânicas",
+				"description": "Após Serval atacar, causa Dano de Raio **Adicional** igual a ****1[i]%**** do ATQ de Serval a todos os inimigos com Choque.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point04",
@@ -15797,7 +16051,9 @@
 					"112002": 10,
 					"112003": 5
 				},
-				"params": [],
+				"params": [
+					0.36
+				],
 				"status": [],
 				"baseSkill": [
 					110304
@@ -15806,13 +16062,19 @@
 			},
 			{
 				"name": "Boa Noite, Belobog",
+				"description": "Ataca o inimigo imediatamente. Após entrar na batalha, causa **4[i]%** do ATQ de Serval como Dano de Raio a um inimigo aleatório, com **1[i]%** de **chance-base** de todos os inimigos receberem Choque por **3[i]** rodada(s).\nQuando em Choque, inimigos recebem **2[i]%** do ATQ de Serval como Dano de Raio Contínuo no início de cada rodada.",
 				"avatar": 1103,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1103/SkillIcon_1103_Maze.png",
 				"shortIcon": "SkillIcon_1103_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.5,
+					3,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110307
@@ -17088,6 +17350,7 @@
 		"tree": [
 			{
 				"name": "Punho da Condenação",
+				"description": "Causa Dano de Gelo igual a ****1[i]%**** do ATQ de Gepard a um único inimigo.",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point01",
@@ -17102,7 +17365,9 @@
 					"112002": 7,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110401
@@ -17111,6 +17376,7 @@
 			},
 			{
 				"name": "Golpe Intimidador",
+				"description": "Causa Dano de Gelo igual a ****1[i]%**** do ATQ de Gepard a um único inimigo, com **2[i]%** de **chance-base** de o inimigo sofrer Congelamento por **3[i]** rodada(s).\nDurante o Congelamento, o inimigo não pode agir e sofre Dano **Adicional** de Gelo igual a ****4[i]%**** do ATQ de Gepard no início de cada rodada.",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point02",
@@ -17127,7 +17393,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					1,
+					0.65,
+					1,
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					110402
@@ -17136,6 +17407,7 @@
 			},
 			{
 				"name": "Muralha Resistente",
+				"description": "Aplica um Escudo a todos os aliados, absorvendo Dano igual a ****1[i]%** **da DEF de Gepard + ****3[i]** **por **2[i]** rodada(s).",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point03",
@@ -17152,7 +17424,11 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.3,
+					3,
+					150
+				],
 				"status": [],
 				"baseSkill": [
 					110403
@@ -17161,6 +17437,7 @@
 			},
 			{
 				"name": "Vontade Inabalável",
+				"description": "Ao ser alvo de um golpe fatal, ao invés de ser **derrubado**, Gepard restaura imediatamente ****1[i]%**** de seus PV máximos. Este efeito só pode ser ativado uma vez por batalha.",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point04",
@@ -17177,7 +17454,9 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					110404
@@ -17186,13 +17465,18 @@
 			},
 			{
 				"name": "Camaradagem",
+				"description": "Após Gepard usar sua Técnica, quando a próxima batalha começar, um Escudo será aplicado a todos os aliados, absorvendo Dano igual a **1[i]%** da DEF de Gepard + **3[i]** por **2[i]** rodada(s).",
 				"avatar": 1104,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1104/SkillIcon_1104_Maze.png",
 				"shortIcon": "SkillIcon_1104_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.24,
+					2,
+					150
+				],
 				"status": [],
 				"baseSkill": [
 					110407
@@ -18489,6 +18773,7 @@
 		"tree": [
 			{
 				"name": "Além da Bondade",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ de Natasha a um único inimigo.",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point01",
@@ -18503,7 +18788,9 @@
 					"112012": 5,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110501
@@ -18512,6 +18799,7 @@
 			},
 			{
 				"name": "Amor, Cura e Escolha",
+				"description": "Cura um único alvo em ****1[f1]%**** dos PV máximos de Natasha + ****4[i]****. Cura o aliado em mais ****2[f1]%**** dos PV máximos de Natasha mais ****5[i]**** no início de cada rodada por **3[i]** rodada(s).",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point02",
@@ -18528,7 +18816,13 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.07,
+					0.048,
+					2,
+					70,
+					48
+				],
 				"status": [],
 				"baseSkill": [
 					110502
@@ -18537,6 +18831,7 @@
 			},
 			{
 				"name": "Presente do Renascimento",
+				"description": "Cura todos os aliados em ****1[f1]%**** dos PV máximos de Natasha + ****2[i]****.",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point03",
@@ -18553,7 +18848,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.092,
+					92
+				],
 				"status": [],
 				"baseSkill": [
 					110503
@@ -18562,6 +18860,7 @@
 			},
 			{
 				"name": "Enervação",
+				"description": "Ao curar aliados com PV iguais ou abaixo de **1[i]%**, aumenta a Cura Realizada de Natasha em ****2[i]%****. Este efeito também funciona na cura contínua.",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point04",
@@ -18578,7 +18877,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.3,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					110504
@@ -18587,13 +18889,19 @@
 			},
 			{
 				"name": "Pesquisa Hipnótica",
+				"description": "Ataca o inimigo imediatamente. Após entrar na batalha, causa Dano Físico igual a **4[i]%** do ATQ de Natasha a um inimigo aleatório, com **1[i]%** de **chance-base** de causar Enfraquecimento a todos os inimigos.\nQuando enfraquecidos, inimigos causam **2[i]%** a menos de Dano a aliados por **3[i]** rodada(s).",
 				"avatar": 1105,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1105/SkillIcon_1105_Maze.png",
 				"shortIcon": "SkillIcon_1105_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.3,
+					1,
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					110507
@@ -19858,6 +20166,7 @@
 		"tree": [
 			{
 				"name": "Tiro Gélido",
+				"description": "Causa Dano de Gelo igual a ****1[i]%**** do ATQ de Pela a um único inimigo-alvo.",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point01",
@@ -19872,7 +20181,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110601
@@ -19881,6 +20192,7 @@
 			},
 			{
 				"name": "Geladura",
+				"description": "Remove **2[i]** **melhoria(s)** e causa Dano de Gelo igual a ****1[i]%**** do ATQ de Pela a um único inimigo-alvo.",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point02",
@@ -19897,7 +20209,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.05,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					110602
@@ -19906,6 +20221,7 @@
 			},
 			{
 				"name": "Supressão de Zona",
+				"description": "Causa Dano de Gelo igual a ****4[i]%**** do ATQ de Pela a todos os inimigos, com uma **chance-base** de **1[i]%** de infligir a condição Exposto em todos os inimigos.\nInimigos Expostos têm a DEF reduzida em ****2[i]%**** por **3[i]** rodada(s).",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point03",
@@ -19922,7 +20238,12 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0.3,
+					2,
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					110603
@@ -19931,6 +20252,7 @@
 			},
 			{
 				"name": "Coleta de Dados",
+				"description": "Se o inimigo estiver sofrendo uma **penalidade** depois do ataque de Pela, ela recuperará ****1[f1]**** de Energia adicional. Esse efeito só pode ser acionado uma vez por ataque.",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point04",
@@ -19947,7 +20269,9 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					110604
@@ -19956,13 +20280,19 @@
 			},
 			{
 				"name": "Ataque Premeditado",
+				"description": "Ataca o inimigo imediatamente. Ao entrar na batalha, Pela causa Dano de Gelo igual a **4[i]%** do seu ATQ a um inimigo aleatório, com **1[i]%** de **chance-base** de reduzir a DEF de todos os inimigos em **2[i]%** por **3[i]** rodada(s).",
 				"avatar": 1106,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1106/SkillIcon_1106_Maze.png",
 				"shortIcon": "SkillIcon_1106_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.2,
+					2,
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					110607
@@ -21269,6 +21599,7 @@
 		"tree": [
 			{
 				"name": "Eu Quero Ajudar",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ de Clara a um único inimigo.",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point01",
@@ -21283,7 +21614,9 @@
 					"112012": 7,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110701
@@ -21292,6 +21625,7 @@
 			},
 			{
 				"name": "Svarog Cuida de Você",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ de Clara a todos os inimigos e adicionalmente causa Dano Físico igual a ****2[i]%**** do ATQ de Clara a inimigos marcados por Svarog com uma Marca do Contra-Ataque.\nApós o uso desta Perícia, todas as Marcas do Contra-Ataque serão removidas.",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point02",
@@ -21308,7 +21642,10 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					0.6,
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					110702
@@ -21317,6 +21654,7 @@
 			},
 			{
 				"name": "É Uma Promessa, Não Uma Ordem",
+				"description": "Após Clara usar sua Perícia Suprema, o Dano causado a ela é reduzido em ****4[i]%**** extra, e ela terá muito mais chances de ser atacada por inimigos por **3[i]** rodada(s).\nAlém disso, o **Contra-Ataque** de Svarog é aprimorado. Quando um aliado é atacado, Svarog usa um **Contra-Ataque** imediatamente, e seu multiplicador de Dano contra o inimigo aumenta em ****2[i]%****. Inimigos adjacentes a ele sofrem **50%** do Dano causado ao inimigo-alvo. **Contra-Ataque(s)** aprimorado(s) podem entrar em vigor **5[i]** vez(es).",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point03",
@@ -21333,7 +21671,13 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					5,
+					0.96,
+					2,
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					110703
@@ -21342,6 +21686,7 @@
 			},
 			{
 				"name": "Porque Somos Uma Família",
+				"description": "Sob a proteção de Svarog, o Dano recebido por Clara ao ser atingida por ataques inimigos é reduzido em **3[i]%**. Svarog marca inimigos que atacarem Clara com sua Marca do Contra-Ataque e então **Contra-Ataca**, causando Dano Físico igual a ****2[i]%**** do ATQ de Clara.",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point04",
@@ -21358,7 +21703,11 @@
 					"112012": 13,
 					"112013": 7
 				},
-				"params": [],
+				"params": [
+					1,
+					0.8,
+					0.1
+				],
 				"status": [],
 				"baseSkill": [
 					110704
@@ -21367,13 +21716,17 @@
 			},
 			{
 				"name": "Um Preço Baixo pela Vitória",
+				"description": "Ataca o inimigo imediatamente. Ao entrar na batalha, a chance de Clara ser atacada por inimigos aumenta por **1[i]** rodada(s).",
 				"avatar": 1107,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1107/SkillIcon_1107_Maze.png",
 				"shortIcon": "SkillIcon_1107_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					2,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					110707
@@ -22686,6 +23039,7 @@
 		"tree": [
 			{
 				"name": "Lâminas Ofuscantes",
+				"description": "Causa Dano de Vento igual a ****1[i]%**** do ATQ de Sampo a um único inimigo.",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point01",
@@ -22700,7 +23054,9 @@
 					"112012": 5,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110801
@@ -22709,6 +23065,7 @@
 			},
 			{
 				"name": "Amor Ricochete",
+				"description": "Causa Dano de Vento igual a ****2[i]%**** do ATQ de Sampo a um único inimigo, e causa Dano mais **1[i]** vez(es) extra(s), com cada vez causando Dano de Vento igual a ****2[i]%**** do ATQ de Sampo a um inimigo aleatório.",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point02",
@@ -22725,7 +23082,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					4,
+					0.28
+				],
 				"status": [],
 				"baseSkill": [
 					110802
@@ -22734,6 +23094,7 @@
 			},
 			{
 				"name": "Presente Surpresa",
+				"description": "Causa Dano de Vento igual a ****1[i]%**** do ATQ de Sampo a todos os inimigos, com **4[i]%** de **chance-base** de aumentar o Dano Contínuo recebido pelo alvo em ****2[i]%**** por **3[i]** rodada(s).",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point03",
@@ -22750,7 +23111,12 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.96,
+					0.2,
+					2,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					110803
@@ -22759,6 +23125,7 @@
 			},
 			{
 				"name": "Adaga da Ventania",
+				"description": "Os ataques de Sampo têm **1[i]%** de **chance-base** de infligir Cisalhamento de Vento por **3[i]** rodada(s).\nInimigos infligidos com Cisalhamento de Vento recebem Dano de Vento Contínuo igual a ****2[i]%**** do ATQ de Sampo no início de cada rodada. Cisalhamento de Vento pode se acumular até **4[i]** vez(es).",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point04",
@@ -22775,7 +23142,12 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.65,
+					0.2,
+					3,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					110804
@@ -22784,13 +23156,18 @@
 			},
 			{
 				"name": "Brilho Ofuscante",
+				"description": "Após usar a Técnica de Sampo, inflige Cegueira em inimigos em uma área definida por **1[i]** segundos. Inimigos com Cegueira não conseguem detectar sua equipe.\nAo iniciar o combate contra um inimigo com Cegueira, há **2[i]%** de **chance fixa** de atrasar as ações de todos os inimigos em **3[i]%**.",
 				"avatar": 1108,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1108/SkillIcon_1108_Maze.png",
 				"shortIcon": "SkillIcon_1108_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					10,
+					1,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					110807
@@ -24171,6 +24548,7 @@
 		"tree": [
 			{
 				"name": "Hehe! Não Vai se Queimar!",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ de Hook a um único inimigo.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point01",
@@ -24185,7 +24563,9 @@
 					"112012": 5,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110901
@@ -24194,6 +24574,7 @@
 			},
 			{
 				"name": "Ei! Lembra da Hook?",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ de Hook a um inimigo-alvo. Além disso, há **2[i]%** de **chance-base** de infligir Queimadura por **3[i]** rodada(s).\nEnquanto tiverem Queimadura, inimigos recebem Dano de Fogo Contínuo igual a ****4[i]%**** do ATQ de Hook no início de cada rodada.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point02",
@@ -24210,7 +24591,12 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					1.2,
+					1,
+					2,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					110902,
@@ -24220,6 +24606,7 @@
 			},
 			{
 				"name": "Bum! Lá Vem Fogo!",
+				"description": "Causa ****1[i]%**** do ATQ de Hook como Dano de Fogo a um inimigo-alvo.\nApós usar a Perícia Suprema, a próxima Perícia usada é Aprimorada, causando Dano a um único inimigo e aos inimigos adjacentes a ele.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point03",
@@ -24236,7 +24623,9 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					2.4
+				],
 				"status": [],
 				"baseSkill": [
 					110903
@@ -24245,6 +24634,7 @@
 			},
 			{
 				"name": "Ha! Óleo nas Chamas!",
+				"description": "Ao atacar um alvo afetado com Queimadura, causa Dano de Fogo **Adicional** igual a ****1[i]%**** do ATQ de Hook e regenera **2[i]** de Energia extra.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point04",
@@ -24261,7 +24651,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					110904
@@ -24270,13 +24663,19 @@
 			},
 			{
 				"name": "Argh! Olha Essa Bagunça!",
+				"description": "Ataca imediatamente o inimigo. Ao entrar em batalha, Hook causa Dano de Fogo igual a **4[i]%** de seu ATQ a um inimigo aleatório. Além disso, há **1[i]%** de **chance-base** de infligir Queimadura em todos os inimigos por **3[i]** rodada(s).\nEnquanto tiverem Queimadura, inimigos recebem **2[i]%** do ATQ de Hook como Dano de Fogo Contínuo no início de cada rodada.",
 				"avatar": 1109,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1109/SkillIcon_1109_Maze.png",
 				"shortIcon": "SkillIcon_1109_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.5,
+					3,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					110907
@@ -25642,6 +26041,7 @@
 		"tree": [
 			{
 				"name": "Técnica de Grampos de Neve",
+				"description": "Causa Dano Quântico igual a ****1[i]%**** dos PV máximos deste personagem a um único inimigo.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point01",
@@ -25656,7 +26056,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					111001
@@ -25665,6 +26067,7 @@
 			},
 			{
 				"name": "Latas de Acampamento Salgadas",
+				"description": "Aplica \"Resposta de Sobrevivência\" em um único aliado-alvo e aumenta seus PV máximos em ****1[f1]%**** dos PV máximos de Lynx + ****2[i]****. Se o alvo for um personagem do Caminho da Destruição ou da Preservação, a chance de que ele seja atacado pelos inimigos aumentará drasticamente. A \"Resposta de Sobrevivência\" dura por **3[i]** rodada(s).\nRestaura os PV do alvo em ****4[f1]%**** dos PV máximos de Lynx + ****5[i]****.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point02",
@@ -25681,7 +26084,14 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.05,
+					50,
+					2,
+					0.08,
+					80,
+					5
+				],
 				"status": [],
 				"baseSkill": [
 					111002
@@ -25690,6 +26100,7 @@
 			},
 			{
 				"name": "Primeiros Socorros do Campo de Neve",
+				"description": "Remove **1[i]** **penalidade(s)** de todos os aliados e imediatamente restaura seus respectivos PV em uma quantidade igual a ****2[f1]%**** dos PV máximos de Lynx + ****3[i]****.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point03",
@@ -25706,7 +26117,11 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0.09,
+					90
+				],
 				"status": [],
 				"baseSkill": [
 					111003
@@ -25715,6 +26130,7 @@
 			},
 			{
 				"name": "Experiência de Sobrevivência na Neve",
+				"description": "Ao usar a Perícia ou a Perícia Suprema de Lynx, aplica cura contínua ao aliado-alvo por **1[i]** rodada(s), restaurando uma quantidade de PV do aliado-alvo igual a ****2[f1]%**** dos PV máximos de Lynx + ****3[i]**** no início de cada rodada do aliado. Se o alvo tiver \"Resposta de Sobrevivência\", o efeito da cura contínua restaura adicionalmente uma quantidade de PV igual a ****4[f1]%**** dos PV máximos de Lynx + ****5[i]****.",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point04",
@@ -25731,7 +26147,13 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					2,
+					0.024,
+					24,
+					0.03,
+					30
+				],
 				"status": [],
 				"baseSkill": [
 					111004
@@ -25740,13 +26162,16 @@
 			},
 			{
 				"name": "Barra de Chocolate Energética",
+				"description": "Depois que Lynx usa sua Técnica, no início da próxima batalha, todos os aliados recebem o efeito de cura contínua do Talento dela, durando por **1[i]** rodada(s).",
 				"avatar": 1110,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1110/SkillIcon_1110_Maze.png",
 				"shortIcon": "SkillIcon_1110_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					111007
@@ -27132,6 +27557,7 @@
 		"tree": [
 			{
 				"name": "Punho Certeiro",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ de Luka a um único inimigo.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point01",
@@ -27146,7 +27572,9 @@
 					"112012": 5,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					111101,
@@ -27156,6 +27584,7 @@
 			},
 			{
 				"name": "Punho Lacerante",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ de Luka a um único inimigo-alvo. Além disso, há uma **chance-base** de **2[i]%** de infligir Sangramento a ele, durando **5[i]** rodada(s).\nEnquanto estiver com Sangramento, o inimigo recebe **3[f1]%** de seus PV máximos como Dano Físico Contínuo ao início de cada rodada. Este Dano não pode exceder ****4[i]%**** do ATQ de Luka.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point02",
@@ -27172,7 +27601,13 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					0.6,
+					1,
+					0.24,
+					1.3,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					111102
@@ -27181,6 +27616,7 @@
 			},
 			{
 				"name": "Golpe de Misericórdia",
+				"description": "Recebe **5[i]** acúmulo(s) de Desejo de Lutar, com uma **chance-base** de **2[i]%** de aumentar o Dano recebido de um único inimigo-alvo em ****3[f1]%**** por **4[i]** rodada(s). Então, causa Dano Físico igual a ****1[i]%**** do ATQ de Luka ao alvo.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point03",
@@ -27197,7 +27633,13 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					1.98,
+					1,
+					0.12,
+					3,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					111103
@@ -27206,6 +27648,7 @@
 			},
 			{
 				"name": "Faíscas Voadoras",
+				"description": "Após Luka usar seu ATQ Básico \"Punho Certeiro\" ou sua Perícia \"Punho Lacerante\", ele recebe **1[i]** acúmulo de Desejo de Lutar, até um máximo de 4 acúmulos. Quando ele tiver 2 ou mais acúmulos de Desejo de Lutar, seu ATQ Básico \"Punho Certeiro\" é aprimorado para \"Punho Demolidor de Céus\". Depois que o \"Gancho Ascendente\" do seu ATQ Básico Aprimorado atinge um inimigo-alvo com Sangramento, o Sangramento causa Dano ao alvo imediatamente por 1 vez igual a ****2[i]%**** do Dano original. No início da batalha, Luka possuirá 1 acúmulo de Desejo de Lutar.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point04",
@@ -27222,7 +27665,10 @@
 					"112012": 10,
 					"112013": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0.68
+				],
 				"status": [],
 				"baseSkill": [
 					111104
@@ -27231,13 +27677,17 @@
 			},
 			{
 				"name": "Antecipador",
+				"description": "Ataca imediatamente o inimigo. Ao entrar em batalha, Luka causa Dano Físico igual a **1[i]%** de seu ATQ a um único inimigo aleatório, com **2[i]%** de **chance-base** de infligir o efeito de Sangramento da sua Perícia no alvo. Depois, Luka ganha 1 acúmulo adicional de Desejo de Lutar.",
 				"avatar": 1111,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1111/SkillIcon_1111_Maze.png",
 				"shortIcon": "SkillIcon_1111_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.5,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					111107
@@ -28529,6 +28979,7 @@
 		"tree": [
 			{
 				"name": "Déficit...",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ de Topaz a um único inimigo.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point01",
@@ -28543,7 +28994,9 @@
 					"112002": 7,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					111201
@@ -28552,6 +29005,7 @@
 			},
 			{
 				"name": "Dificuldade para Pagar?",
+				"description": "Inflige o status de Prova de Débito a um único inimigo-alvo, aumentando o Dano de **Ataques Extras** recebido pelo inimigo-alvo em ****2[i]%****. Prova de Débito só entra em efeito no alvo mais recente em que foi aplicado. Caso não existam inimigos afetados com Prova de Débito no campo quando a rodada de um aliado começar, ou quando um aliado agir, Topaz infligirá Prova de Débito a um inimigo aleatório.\nDinheirinho causa Dano de Fogo igual a ****1[i]%**** do ATQ de Topaz a este alvo. Usar esta Perícia para causar Dano é considerado realizar um **Ataque Extra**.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point02",
@@ -28568,7 +29022,10 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.75,
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					111202
@@ -28577,6 +29034,7 @@
 			},
 			{
 				"name": "Lucrar!",
+				"description": "Dinheirinho entra no estado de \"Bonança Inesperada!\", seu multiplicador de Dano aumenta em ****1[i]%**** e o Dano CRIT aumenta em ****2[i]%****. Além disso, quando inimigos com Prova de Débito são atingidos por um ATQ Básico, uma Perícia ou uma Perícia Suprema de um aliado, a ação de Dinheirinho é Avançada Adiante em **3[i]%**. Dinheirinho sai do estado de \"Bonança Inesperada!\" depois de usar **4[i]** ataques.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point03",
@@ -28593,7 +29051,12 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					0.75,
+					0.125,
+					0.5,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					111203
@@ -28602,6 +29065,7 @@
 			},
 			{
 				"name": "Mercado de Cofrinhos?!",
+				"description": "Invoca Dinheirinho no início da batalha. Dinheirinho tem **1[i]** de VEL por padrão. Ao agir, Dinheirinho realiza **Ataques Extras** em um único inimigo-alvo afligido com Prova de Débito, causando Dano de Fogo igual a ****2[i]%**** do ATQ de Topaz.\nQuando os inimigos afligidos com Prova de Débito recebem Ataques Extras de um aliado, a ação de Dinheirinho é Avançada Adiante em **3[i]%**. O efeito de Avançar Adiante da ação não pode ser ativado durante a rodada de Dinheirinho.\nQuando Topaz é **derrubada**, Dinheirinho desaparece.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point04",
@@ -28618,7 +29082,11 @@
 					"112002": 13,
 					"112003": 7
 				},
-				"params": [],
+				"params": [
+					80,
+					0.75,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					111204
@@ -28627,13 +29095,17 @@
 			},
 			{
 				"name": "Subsídio Explícito",
+				"description": "Invoca Dinheirinho quando Topaz entra no mapa. Dinheirinho buscará automaticamente por Tesouros Básicos e Cofrinhos dentro de um certo alcance.\nUsar sua Técnica regenera **1[i]** de Energia para Topaz após o primeiro ataque de Dinheirinho na próxima batalha.\nSe Topaz ainda estiver no time quando os inimigos do mapa forem derrotados, uma pequena quantidade de créditos adicionais será adicionada aos créditos obtidos. Um máximo de **2[i]** de créditos adicionais podem ser recebidos a cada dia do calendário.\nApós usar sua Técnica e derrotar inimigos no Universo Simulado, recebe adicionalmente uma pequena quantidade de Fragmentos Cósmicos com uma pequena chance de obter 1 Curio aleatória.",
 				"avatar": 1112,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1112/SkillIcon_1112_Maze.png",
 				"shortIcon": "SkillIcon_1112_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					60,
+					10000
+				],
 				"status": [],
 				"baseSkill": [
 					111207
@@ -29919,6 +30391,7 @@
 		"tree": [
 			{
 				"name": "Colher Flores",
+				"description": "Lança 1 peça de jade do naipe com o menor número de peças nas mãos para causar Dano Quântico igual a ****1[i]%**** do ATQ de Qingque a um único inimigo.",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point01",
@@ -29933,7 +30406,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120101,
@@ -29943,6 +30418,7 @@
 			},
 			{
 				"name": "Uma Colherada da Lua",
+				"description": "Pega **1[i]** peça(s) de jade imediatamente e aumenta o Dano em ****2[i]%**** até o fim da rodada atual. Esse efeito pode acumular até **3[i]** vez(es). A rodada não acaba após a utilização dessa Perícia.",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point02",
@@ -29959,7 +30435,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					2,
+					0.14,
+					4
+				],
 				"status": [],
 				"baseSkill": [
 					120102
@@ -29968,6 +30448,7 @@
 			},
 			{
 				"name": "Um Quarteto? Uhul!",
+				"description": "Causa Dano Quântico igual a ****1[i]%**** do ATQ de Qingque a todos os inimigos e obtém 4 peças de jade do mesmo naipe.",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point03",
@@ -29984,7 +30465,9 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					1.2
+				],
 				"status": [],
 				"baseSkill": [
 					120103
@@ -29993,6 +30476,7 @@
 			},
 			{
 				"name": "Jade Celestial",
+				"description": "Quando a rodada de um aliado começa, Qingque pega aleatoriamente 1 peça de 3 naipes diferentes. Até 4 peças podem ser seguradas por vez.\nSe Qingque começar sua rodada com 4 peças de um mesmo naipe, ela consumirá todas as peças para entrar no estado \"Mão Oculta\". Enquanto estiver neste estado, Qingque não pode usar sua Perícia novamente. Ao mesmo tempo, o ATQ de Qingque aumenta em ****1[i]%****, e o seu ATQ Básico \"Colher Flores\" é aprimorado, tornando-se \"Cereja do Bolo!\". O estado \"Mão Oculta\" acabará ao usar \"Cereja do Bolo!\".",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point04",
@@ -30009,7 +30493,9 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.36
+				],
 				"status": [],
 				"baseSkill": [
 					120104
@@ -30018,13 +30504,16 @@
 			},
 			{
 				"name": "Jogo de Paciência",
+				"description": "Após usar sua Técnica, Qingque pega **1[i]** peça(s) de jade quando a batalha começa.",
 				"avatar": 1201,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1201/SkillIcon_1201_Maze.png",
 				"shortIcon": "SkillIcon_1201_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120107
@@ -31294,6 +31783,7 @@
 		"tree": [
 			{
 				"name": "Expulsão",
+				"description": "Tingyun causa Dano de Raio igual a ****1[i]%**** de seu ATQ a um único inimigo.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point01",
@@ -31308,7 +31798,9 @@
 					"113002": 5,
 					"113003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120201
@@ -31317,6 +31809,7 @@
 			},
 			{
 				"name": "Melodia Calmante",
+				"description": "Concede Bênção a um único aliado e aumenta o ATQ dele em ****2[i]%****, até o máximo de ****4[i]%**** do ATQ atual de Tingyun.\nQuando o aliado com Bênção ataca, ele causa **Dano Adicional** de Raio igual a ****1[i]%**** do ATQ daquele aliado 1 vez.\nA Bênção dura por **3[i]** rodada(s) e só tem efeito no último aliado a receber a Perícia de Tingyun.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point02",
@@ -31333,7 +31826,12 @@
 					"113002": 10,
 					"113003": 5
 				},
-				"params": [],
+				"params": [
+					0.2,
+					0.25,
+					3,
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					120202
@@ -31342,6 +31840,7 @@
 			},
 			{
 				"name": "Em Meio às Nuvens Alegres",
+				"description": "Regenera **1[i]** de Energia de um aliado e aumenta o Dano dele em ****3[i]%**** por **2[i]** rodada(s).",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point03",
@@ -31358,7 +31857,11 @@
 					"113002": 10,
 					"113003": 5
 				},
-				"params": [],
+				"params": [
+					50,
+					2,
+					0.2
+				],
 				"status": [],
 				"baseSkill": [
 					120203
@@ -31367,6 +31870,7 @@
 			},
 			{
 				"name": "Tornafagulha Violeta",
+				"description": "Quando um inimigo é atacado por Tingyun, o aliado com Bênção causa imediatamente **Dano de Raio Adicional** igual a ****1[i]%**** do ATQ daquele aliado ao mesmo inimigo.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point04",
@@ -31383,7 +31887,9 @@
 					"113002": 10,
 					"113003": 5
 				},
-				"params": [],
+				"params": [
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					120204
@@ -31392,13 +31898,16 @@
 			},
 			{
 				"name": "Brisa Suave",
+				"description": "Tingyun regenera **1[i]** de Energia imediatamente após usar sua Técnica.",
 				"avatar": 1202,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1202/SkillIcon_1202_Maze.png",
 				"shortIcon": "SkillIcon_1202_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					50
+				],
 				"status": [],
 				"baseSkill": [
 					120207
@@ -32699,6 +33208,7 @@
 		"tree": [
 			{
 				"name": "Espinhos do Abismo",
+				"description": "Causa Dano Imaginário igual a ****1[i]%**** do ATQ de Luocha a um único inimigo.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point01",
@@ -32713,7 +33223,9 @@
 					"113012": 7,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120301
@@ -32722,6 +33234,7 @@
 			},
 			{
 				"name": "Prece da Flor do Abismo",
+				"description": "Após usar a sua Perícia, Luocha restaura os PV do aliado-alvo imediatamente em ****1[i]%**** do ATQ de Luocha + ****2[i]****. Enquanto isso, Luocha ganha 1 acúmulo de Flor do Abismo.\nQuando a porcentagem dos PV de qualquer aliado chega a **3[i]%** ou menos, um efeito equivalente à Perícia de Luocha será imediatamente ativado e aplicado a este aliado uma vez (sem consumir Pontos de Perícia). Este efeito pode ser ativado novamente após **4[i]** rodada(s).",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point02",
@@ -32738,7 +33251,12 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.4,
+					200,
+					0.5,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120302
@@ -32747,6 +33265,7 @@
 			},
 			{
 				"name": "Desejo de Morte",
+				"description": "Remove **2[i]** **melhoria(s)** de todos os inimigos e causa ****1[i]%**** do ATQ de Luocha como Dano Imaginário a todos os inimigos. Ao mesmo tempo, Luocha ganha 1 acúmulo de Flor do Abismo.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point03",
@@ -32763,7 +33282,10 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					1.2,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					120303
@@ -32772,6 +33294,7 @@
 			},
 			{
 				"name": "Ciclo da Vida",
+				"description": "Quando a Flor do Abismo alcança **1[i]** acúmulo(s), Luocha consome todos os acúmulos de Flor do Abismo para ativar um Campo contra o inimigo.\nQuando qualquer inimigo dentro do Campo é atacado por um aliado, o PV desse aliado é imediatamente restaurado em uma quantidade igual a ****2[f1]%**** do ATQ de Luocha mais ****4[i]****.\nO efeito do Campo dura **3[i]** rodadas. Quando Luocha é **derrubado**, o Campo é desativado.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point04",
@@ -32788,7 +33311,12 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					2,
+					0.12,
+					2,
+					60
+				],
 				"status": [],
 				"baseSkill": [
 					120304
@@ -32797,6 +33325,7 @@
 			},
 			{
 				"name": "Misericórdia dos Tolos",
+				"description": "Após a Técnica ser utilizada, o Talento será acionado imediatamente no início da próxima batalha.",
 				"avatar": 1203,
 				"type": 2,
 				"pos": "Point05",
@@ -34120,6 +34649,7 @@
 		"tree": [
 			{
 				"name": "Fulgor Radiante",
+				"description": "Jing Yuan causa Dano de Raio igual a ****1[i]%**** de seu ATQ a um único inimigo.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point01",
@@ -34134,7 +34664,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120401
@@ -34143,6 +34675,7 @@
 			},
 			{
 				"name": "Zênite Rompido",
+				"description": "Causa Dano de Raio igual a ****1[i]%**** do ATQ de Jing Yuan a todos os inimigos e aumenta os Golpes por Ação do Senhor dos Raios em **2[i]** na próxima rodada.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point02",
@@ -34159,7 +34692,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120402
@@ -34168,6 +34704,7 @@
 			},
 			{
 				"name": "Portador da Luz",
+				"description": "Causa Dano de Raio igual a ****1[i]%**** do ATQ de Jing Yuan a todos os inimigos e aumenta os Golpes por Ação do Senhor dos Raios em **2[i]** na próxima rodada.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point03",
@@ -34184,7 +34721,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					1.2,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					120403
@@ -34193,6 +34733,7 @@
 			},
 			{
 				"name": "Prana Extirpado",
+				"description": "Invoca o Senhor dos Raios no início da batalha. O Senhor dos Raios tem **1[i]** de VEL base e **4[i]** Golpes por Ação base. Quando o Senhor dos Raios age, seus golpes são considerados **Ataques Extras**, com cada golpe do Senhor dos Raios causando Dano de Raio igual a ****2[i]%**** do ATQ de Jing Yuan em um único inimigo aleatório, e inimigos adjacentes a ele também recebem Dano de Raio igual a **5[i]%** do Dano causado no inimigo-alvo.\nOs Golpes por Ação do Senhor dos Raios podem atingir o máximo de **6[i]**. Toda vez que os Golpes por Ação do Senhor dos Raios aumentam em 1, sua VEL aumenta em **3[i]**. Ao fim da ação do Senhor dos Raios, a sua VEL e Golpes por Ação voltam aos valores-base. \nQuando Jing Yuan é **derrubado**, o Senhor dos Raios desaparecerá.\nQuando Jing Yuan é afetado por penalidades de **Controle Negativo**, o Senhor dos Raios será incapaz de agir.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point04",
@@ -34209,7 +34750,14 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					60,
+					0.33,
+					10,
+					3,
+					0.25,
+					10
+				],
 				"status": [],
 				"baseSkill": [
 					120404
@@ -34218,13 +34766,16 @@
 			},
 			{
 				"name": "Invocação de Espírito",
+				"description": "Depois da Técnica ser utilizada, os Golpes por Ataque do Senhor dos Raios na primeira rodada aumentam em **1[i]** no início da próxima batalha.",
 				"avatar": 1204,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1204/SkillIcon_1204_Maze.png",
 				"shortIcon": "SkillIcon_1204_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					120407
@@ -35691,6 +36242,7 @@
 		"tree": [
 			{
 				"name": "Espada Fragmentada",
+				"description": "Causa ****1[i]%**** do ATQ de Blade como Dano de Vento a um inimigo-alvo.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point01",
@@ -35705,7 +36257,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120501,
@@ -35715,6 +36269,7 @@
 			},
 			{
 				"name": "Paisagem Infernal",
+				"description": "Consome PV igual a **1[i]%** dos PV máximos de Blade para entrar no estado de Paisagem Infernal.\nEnquanto a Paisagem Infernal estiver ativa, a Perícia dele não pode ser usada, seu Dano causado aumenta em ****4[i]%**** e aprimora o seu ATQ Básico Espada Fragmentada para Floresta de Espadas por **2[i]** rodada(s).\nSe os PV atuais de Blade não forem suficientes, seus PV serão reduzidos para 1 quando usar esta Perícia.\nEsta Perícia não regenera Energia. Usar esta Perícia não encerra a rodada atual.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point02",
@@ -35731,7 +36286,12 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.3,
+					3,
+					1,
+					0.12
+				],
 				"status": [],
 				"baseSkill": [
 					120502
@@ -35740,6 +36300,7 @@
 			},
 			{
 				"name": "Sentença de Morte",
+				"description": "Define os PV atuais de Blade em **50%** de seus PV máximos e causa Dano de Vento a um único inimigo igual à somatória de ****1[i]%**** de seu ATQ, ****2[i]%**** de seus PV máximos, e ****5[i]%**** do total de PV que ele perdeu na batalha atual. Ao mesmo tempo, causa Dano de Vento aos alvos adjacentes igual à somatória de ****3[f1]%**** de seu ATQ, ****4[i]%**** de seus PV máximos, e ****6[i]%**** do total de PV que ele perdeu na batalha atual.\nO total de PV que Blade perdeu na batalha atual tem um limite de **7[i]%** de seus PV máximos. Este valor será redefinido e reacumulado após usar sua Perícia Suprema.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point03",
@@ -35756,7 +36317,15 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.24,
+					0.6,
+					0.096,
+					0.24,
+					0.6,
+					0.24,
+					0.9
+				],
 				"status": [],
 				"baseSkill": [
 					120503
@@ -35765,6 +36334,7 @@
 			},
 			{
 				"name": "Presente de Shuhu",
+				"description": "Quando Blade toma Dano ou consome seus próprios PV, ele ganha 1 acúmulo de Carga, acumulando até 5 vezes. Um máximo de 1 Carga pode ser ganho cada vez que ele for atacado.\nQuando os acúmulos de Carga chegarem ao máximo, desfere imediatamente um **Ataque Extra** contra todos os inimigos, causando Dano de Vento igual a ****2[i]%**** do ATQ de Blade + ****4[i]%**** dos seus PV máximos, enquanto também restaura os PV de Blade em **3[i]%** de seus PV máximos. Todas as Cargas são consumidas após realizar o Ataque Extra.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point04",
@@ -35781,7 +36351,12 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					3,
+					0.22,
+					0.25,
+					0.55
+				],
 				"status": [],
 				"baseSkill": [
 					120504
@@ -35790,13 +36365,17 @@
 			},
 			{
 				"name": "Vento do Carma",
+				"description": "Imediatamente ataca o inimigo. Após entrar em combate, consome **2[i]%** dos PV máximos de Blade enquanto causa Dano de Vento igual a **1[i]%** dos seus PV máximos a todos os inimigos.\nSe os PV atuais de Blade forem insuficientes, seus PV serão reduzidos a 1 quando a Técnica é usada.",
 				"avatar": 1205,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1205/SkillIcon_1205_Maze.png",
 				"shortIcon": "SkillIcon_1205_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.4,
+					0.2
+				],
 				"status": [],
 				"baseSkill": [
 					120507
@@ -37095,6 +37674,7 @@
 		"tree": [
 			{
 				"name": "Arte do Espadachim das Nuvens: Brilho Estelar",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ de Sushang a um único inimigo.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point01",
@@ -37109,7 +37689,9 @@
 					"113012": 5,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120601
@@ -37118,6 +37700,7 @@
 			},
 			{
 				"name": "Arte do Espadachim das Nuvens: Queda Montanhosa",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ de Sushang a um inimigo. Além disso, há **3[i]%** de chance de ativar a Postura da Espada no último golpe, causando Dano Físico **Adicional** igual a ****2[i]%**** do ATQ de Sushang ao inimigo.\nSe o inimigo estiver infligido com **Quebra de Fraqueza**, a ativação da Postura da Espada é garantida.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point02",
@@ -37134,7 +37717,11 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					1.05,
+					0.5,
+					0.33
+				],
 				"status": [],
 				"baseSkill": [
 					120602
@@ -37143,6 +37730,7 @@
 			},
 			{
 				"name": "Forma de Taixu: Anúncio do Amanhecer",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ de Sushang a um único inimigo-alvo e ela age de novo imediatamente. Além disso, o ATQ de Sushang aumenta em ****4[i]%**** e usar sua Perícia concede 2 chances extras de ativar a Postura da Espada por **2[i]** rodada(s).\nQuando ativada graças às chances extras, a Postura da Espada causa **3[i]%** do Dano original.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point03",
@@ -37159,7 +37747,12 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					1.92,
+					2,
+					0.5,
+					0.18
+				],
 				"status": [],
 				"baseSkill": [
 					120603
@@ -37168,6 +37761,7 @@
 			},
 			{
 				"name": "Lâmina Dançante",
+				"description": "Quando um inimigo sofre Quebra de Fraqueza no campo, a VEL de Sushang aumenta em ****1[f2]%**** por **2[i]** rodada(s).",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point04",
@@ -37184,7 +37778,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120604
@@ -37193,13 +37790,16 @@
 			},
 			{
 				"name": "Arte do Espadachim das Nuvens: Grito de Guerra",
+				"description": "Ataca o inimigo imediatamente. Ao entrar na batalha, Sushang causa Dano Físico igual a **1[i]%** do ATQ dela a todos os inimigos.",
 				"avatar": 1206,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1206/SkillIcon_1206_Maze.png",
 				"shortIcon": "SkillIcon_1206_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					120607
@@ -38472,6 +39072,7 @@
 		"tree": [
 			{
 				"name": "Atiradora de Flechas",
+				"description": "Causa ****1[i]%**** do ATQ de Yukong como Dano Imaginário a um inimigo-alvo.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point01",
@@ -38486,7 +39087,9 @@
 					"113012": 5,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120701
@@ -38495,6 +39098,7 @@
 			},
 			{
 				"name": "Saudação Encorajadora",
+				"description": "Obtém **1[i]** acúmulo(s) de \"Arco Estrondoso\" (até um máximo de 2 acúmulos). Quando \"Arco Estrondoso\" está ativo, o ATQ de todos os aliados aumenta em ****2[i]%****, e sempre que a rodada de um aliado (incluindo a de Yukong) acaba, Yukong perde 1 acúmulo de \"Arco Estrondoso\".\nNa rodada na qual Yukong ganha \"Arco Estrondoso\" usando a Perícia, \"Arco Estrondoso\" não será removido.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point02",
@@ -38511,7 +39115,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					2,
+					0.4
+				],
 				"status": [],
 				"baseSkill": [
 					120702
@@ -38520,6 +39127,7 @@
 			},
 			{
 				"name": "Mergulho do Falcão",
+				"description": "Se o \"Arco Estrondoso\" estiver ativo em Yukong quando a sua Perícia Suprema for utilizada, a Chance de CRIT de todos os aliados aumenta adicionalmente em ****2[f1]%**** e o Dano CRIT aumenta em ****3[i]%****. Ao mesmo tempo, causa Dano Imaginário igual a ****1[i]%**** do ATQ de Yukong a um único inimigo.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point03",
@@ -38536,7 +39144,11 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					2.28,
+					0.21,
+					0.39
+				],
 				"status": [],
 				"baseSkill": [
 					120703
@@ -38545,6 +39157,7 @@
 			},
 			{
 				"name": "Sete Camadas, Uma Flecha",
+				"description": "O ATQ Básico causa adicionalmente Dano Imaginário igual a ****1[i]%**** do ATQ de Yukong, e aumenta o Dano de Redução de Tenacidade deste ataque em **2[i]%**. Este efeito pode ser ativado novamente após **3[i]** rodada(s).",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point04",
@@ -38561,7 +39174,11 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.4,
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					120704
@@ -38570,13 +39187,18 @@
 			},
 			{
 				"name": "Seguindo o Vento",
+				"description": "Após usar sua Técnica, Yukong entra no modo Corrida por **1[i]** segundos. Enquanto estiver no modo Corrida, a VEL de Movimento aumenta em **2[i]%**, e Yukong recebe **3[i]** acúmulo(s) do \"Arco Estrondoso\" ao entrar em batalha atacando inimigos.",
 				"avatar": 1207,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1207/SkillIcon_1207_Maze.png",
 				"shortIcon": "SkillIcon_1207_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					20,
+					0.35,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120707
@@ -39866,6 +40488,7 @@
 		"tree": [
 			{
 				"name": "Explosão Supernova",
+				"description": "Causa Dano Quântico igual a ****1[i]%**** dos PV máximos de Fu Xuan a um único inimigo.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point01",
@@ -39880,7 +40503,9 @@
 					"113012": 7,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					120801
@@ -39889,6 +40514,7 @@
 			},
 			{
 				"name": "Conhecida pelas Estrelas, Exibida pelos Corações",
+				"description": "Ativa a Matriz de Presciência através da qual outros membros da equipe vão **Distribuir** **1[i]%** do Dano que eles receberem (antes deste Dano ser mitigado por quaisquer Escudos) com Fu Xuan por **3[i]** rodada(s).\nEnquanto afetados pela Matriz de Presciência, todos os membros da equipe ganham o efeito de Conhecimento, que aumenta seus respectivos PV máximos em ****4[f1]%**** dos PV máximos de Fu Xuan, e aumenta a Chance de CRIT em ****5[f1]%****.\nQuando Fu Xuan é **derrubada**, a Matriz de Presciência é desfeita.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point02",
@@ -39905,7 +40531,13 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.65,
+					0,
+					3,
+					0.03,
+					0.06
+				],
 				"status": [],
 				"baseSkill": [
 					120802
@@ -39914,6 +40546,7 @@
 			},
 			{
 				"name": "Os Lamentos de Muitos Transformaram-se em Um",
+				"description": "Causa Dano Quântico igual a ****1[i]%**** dos PV máximos de Fu Xuan a todos os inimigos e obtém 1 contagem de ativação para o efeito de Restauração de PV concedido pelo Talento de Fu Xuan.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point03",
@@ -39930,7 +40563,9 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					120803
@@ -39939,6 +40574,7 @@
 			},
 			{
 				"name": "Das Sombras à Alegria",
+				"description": "Enquanto Fu Xuan estiver ativa em combate, a \"Prevenção de Infortúnio\" é aplicada a toda a equipe. Enquanto estiverem com Prevenção de Infortúnio, os aliados recebem ****1[f1]%**** a menos de Dano.\nQuando os PV atuais de Fu Xuan caírem para **2[i]%** ou menos dos seus PV máximos, a Restauração de PV será ativada para Fu Xuan, recuperando os PV dela em ****3[i]%**** da quantidade de PV perdida no momento. Este efeito não pode ser ativado se ela receber um golpe fatal. Este efeito possui 1 contagem de ativação por padrão, e pode possuir um máximo de 2 contagens de ativação.",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point04",
@@ -39955,7 +40591,11 @@
 					"113012": 13,
 					"113013": 7
 				},
-				"params": [],
+				"params": [
+					0.1,
+					0.5,
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					120804
@@ -39964,13 +40604,17 @@
 			},
 			{
 				"name": "Da Sorte Vem o Destino",
+				"description": "Depois que a Técnica é utilizada, todos os membros da equipe recebem uma Barreira que dura **1[i]** segundos. Esta Barreira pode bloquear todos os ataques inimigos e a equipe não entrará em batalha quando atacada. Entrar em batalha enquanto a Barreira estiver ativa fará com que Fu Xuan ative a Matriz de Presciência automaticamente no início da batalha por **2[i]** rodada(s).",
 				"avatar": 1208,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1208/SkillIcon_1208_Maze.png",
 				"shortIcon": "SkillIcon_1208_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					20,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120807
@@ -41283,6 +41927,7 @@
 		"tree": [
 			{
 				"name": "Espinho Congelado",
+				"description": "Causa Dano de Gelo igual a ****1[i]%**** do ATQ de Yanqing a um único inimigo.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point01",
@@ -41297,7 +41942,9 @@
 					"111012": 7,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					120901
@@ -41306,6 +41953,7 @@
 			},
 			{
 				"name": "Espinho de Ferro Veloz",
+				"description": "Causa Dano de Gelo igual a ****1[i]%**** do ATQ de Yanqing a um único inimigo e ativa a Sincronia d'Alma de Ferro por 1 rodada.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point02",
@@ -41322,7 +41970,9 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					1.1
+				],
 				"status": [],
 				"baseSkill": [
 					120902
@@ -41331,6 +41981,7 @@
 			},
 			{
 				"name": "Em Meio à Chuva de Bênçãos",
+				"description": "Aumenta a Chance de CRIT de Yanqing em **1[i]%**. Quando a Sincronia d'Alma de Ferro está ativa, aumenta o Dano CRIT de Yanqing em mais ****2[i]%****. Essa **melhoria** dura por uma rodada. Depois, causa Dano de Gelo igual a ****3[i]%**** do ATQ de Yanqing a um único inimigo.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point03",
@@ -41347,7 +41998,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.6,
+					0.3,
+					2.1
+				],
 				"status": [],
 				"baseSkill": [
 					120903
@@ -41356,6 +42011,7 @@
 			},
 			{
 				"name": "Eu e a Espada Somos Um",
+				"description": "Quando a Sincronia d'Alma de Ferro está ativa, Yanqing tem menos chance de ser atacado por inimigos. A Chance de CRIT de Yanqing aumenta em ****1[f1]%**** e o Dano CRIT em ****2[i]%****. Depois que Yanqing ataca um inimigo, há uma **chance fixa** de ****3[i]%** ** de executar um **Ataque Extra**, causando Dano de Gelo igual a ****4[i]%**** do ATQ de Yanqing ao alvo, com uma **chance-base** de **6[i]%** de causar Congelamento no alvo por 1 rodada.\nO alvo com Congelamento não pode realizar ações e sofre **Dano Adicional** de Gelo igual a ****5[i]%**** do ATQ de Yanqing no início de cada rodada. \nQuando Yanqing recebe Dano, o efeito da Sincronia d'Alma de Ferro desaparece.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point04",
@@ -41372,7 +42028,14 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.15,
+					0.15,
+					0.5,
+					0.25,
+					0.25,
+					0.65
+				],
 				"status": [],
 				"baseSkill": [
 					120904
@@ -41381,13 +42044,18 @@
 			},
 			{
 				"name": "A Verdadeira Espada",
+				"description": "Após usar sua Técnica, no início da próxima batalha, Yanqing causa **2[i]%** a mais de Dano por **3[i]** rodada(s) a inimigos que, no momento, têm PV igual ou superior a **1[i]%**.",
 				"avatar": 1209,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1209/SkillIcon_1209_Maze.png",
 				"shortIcon": "SkillIcon_1209_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.5,
+					0.3,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					120907
@@ -42744,6 +43412,7 @@
 		"tree": [
 			{
 				"name": "Chuva de Aplausos",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ de Guinaifen a um único inimigo.",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point01",
@@ -42758,7 +43427,9 @@
 					"113012": 5,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121001
@@ -42767,6 +43438,7 @@
 			},
 			{
 				"name": "Recepção Escaldante",
+				"description": "Causa ****1[i]%**** do ATQ de Guinaifen como Dano de Fogo a um único inimigo, além de ****2[i]%**** do ATQ de Guinaifen como Dano de Fogo a inimigos adjacentes, com **3[i]%** de **chance-base** de infligir Queimadura no alvo e alvos adjacentes. Enquanto estiverem afligidos com Queimadura, inimigos recebem ****4[i]%**** do ATQ de Guinaifen como um Dano de Fogo Contínuo no início de cada rodada, com duração de **5[i]** rodada(s).",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point02",
@@ -42783,7 +43455,13 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.6,
+					0.2,
+					1,
+					0.839,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121002
@@ -42792,6 +43470,7 @@
 			},
 			{
 				"name": "Se Liga Nisso",
+				"description": "Causa ****1[f1]%**** do ATQ de Guinaifen como Dano de Fogo a todos os inimigos. Se o inimigo-alvo já estiver com Queimadura no momento, o estado de Queimadura produz imediatamente ****2[i]%**** do seu Dano original.",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point03",
@@ -42808,7 +43487,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.72,
+					0.72
+				],
 				"status": [],
 				"baseSkill": [
 					121003
@@ -42817,6 +43499,7 @@
 			},
 			{
 				"name": "Benefícios do PatrAeon",
+				"description": "Quando Guinaifen estiver em campo, há **1[i]%** de **chance-base** de aplicar Beijo de Fogo em um inimigo após seu estado de Queimadura causar Dano. Enquanto estiver afligido com Beijo de Fogo, o inimigo recebe ****4[f1]%**** a mais de Dano por **5[i]** rodada(s), podendo acumular até **6[i]** vez(es).",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point04",
@@ -42833,7 +43516,14 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0,
+					0,
+					0.04,
+					3,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					121004
@@ -42842,13 +43532,18 @@
 			},
 			{
 				"name": "Demonstração de Habilidades",
+				"description": "Ataca o inimigo imediatamente. Depois de entrar na batalha, causa Dano **2[i]** vez(es), causando **1[i]%** do ATQ de Guinaifen como Dano de Fogo a um único inimigo-alvo aleatório a cada vez, com uma **chance-base** de **3[i]%** de infligir Beijo de Fogo a ele.",
 				"avatar": 1210,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1210/SkillIcon_1210_Maze.png",
 				"shortIcon": "SkillIcon_1210_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.5,
+					4,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121007
@@ -44183,6 +44878,7 @@
 		"tree": [
 			{
 				"name": "Chute de Diagnóstico",
+				"description": "Causa Dano de Raio igual a ****1[i]%**** do ATQ de Bailu a um único inimigo.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point01",
@@ -44197,7 +44893,9 @@
 					"111002": 7,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121101
@@ -44206,6 +44904,7 @@
 			},
 			{
 				"name": "Cantoria Entre as Nuvens",
+				"description": "Cura um aliado em ****1[f1]%**** dos PV máximos de Bailu + ****2[i]****. Bailu então cura aliados aleatórios **4[i]** vez(es). Após cada cura, os PV restaurados da próxima cura reduzem em **3[i]%**.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point02",
@@ -44222,7 +44921,12 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.078,
+					78,
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121102
@@ -44231,6 +44935,7 @@
 			},
 			{
 				"name": "Trovão Oportuno",
+				"description": "Cura todos os aliados em ****1[f1]%**** dos PV máximos de Bailu + ****2[i]****.\nBailu aplica Revigoramento nos aliados que ainda não tiverem Revigoramento. Para os que já possuírem Revigoramento, Bailu estende a sua duração em 1 rodada.\nO efeito de Revigoramento pode durar por **3[i]** rodada(s). Este efeito não pode acumular.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point03",
@@ -44247,7 +44952,11 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.09,
+					90,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121103
@@ -44256,6 +44965,7 @@
 			},
 			{
 				"name": "Cabaça Cheia de Elixir",
+				"description": "Depois que um aliado com Revigoramento é atingido, restaura ****1[f1]%**** dos PV máximos de Bailu + ****2[i]****. Este efeito pode ser ativado **5[i]** vez(es). Quando um aliado receber um golpe fatal, ele não será **derrubado**. Bailu o cura imediatamente em ****3[f1]%**** dos PV máximos de Bailu + ****4[i]**** de PV. Este efeito pode ser ativado uma vez por batalha.",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point04",
@@ -44272,7 +44982,13 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.036,
+					36,
+					0.12,
+					120,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121104
@@ -44281,13 +44997,16 @@
 			},
 			{
 				"name": "Passeio na Chuva",
+				"description": "Após usar sua Técnica, no início da próxima batalha, todos os aliados recebem Revigoramento por **1[i]** rodada(s).",
 				"avatar": 1211,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1211/SkillIcon_1211_Maze.png",
 				"shortIcon": "SkillIcon_1211_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121107
@@ -45741,6 +46460,7 @@
 		"tree": [
 			{
 				"name": "Brilho da Lua Luzente",
+				"description": "Causa ****1[i]%**** do ATQ de Jingliu como Dano de Gelo a um único inimigo.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point01",
@@ -45755,7 +46475,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121201
@@ -45764,6 +46486,7 @@
 			},
 			{
 				"name": "Clarão Transcendente",
+				"description": "Causa ****1[i]%**** do ATQ de Jingliu como Dano de Gelo a um único inimigo e obtém **2[i]** acúmulo(s) de Sizígia.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point02",
@@ -45780,7 +46503,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121202,
@@ -45790,6 +46516,7 @@
 			},
 			{
 				"name": "Fluxonírico Florefêmero",
+				"description": "Causa ****1[i]%**** do ATQ de Jingliu como Dano de Gelo a um único inimigo e ****3[i]%**** do ATQ de Jingliu como Dano de Gelo a inimigos adjacentes. Ganha **2[i]** acúmulo(s) de Sizígia depois que o ataque acaba.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point03",
@@ -45806,7 +46533,12 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					1.8,
+					1,
+					0.9,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121203
@@ -45815,6 +46547,7 @@
 			},
 			{
 				"name": "Transmigração Crescente",
+				"description": "Quando Jingliu alcança **5[i]** acúmulo(s) de Sizígia, ela entra no estado de Transmigração Espectral, Avançando sua Ação em **6[i]%** e aumentando sua Chance de CRIT em ****7[i]%****. Depois, a Perícia de Jingliu, \"Clarão Transcendente\", é aprimorada em \"Lua Sobre o Rio Glacial\", apenas esta Perícia aprimorada fica disponível na batalha. Quando Jingliu usa um ataque no estado de Transmigração Espectral, ela consome PV de todos os outros aliados igual a **2[i]%** dos respectivos PV máximos dos aliados (isso não pode reduzir os PV dos aliados para abaixo de 1). O ATQ de Jingliu aumenta em **3[i]%** da quantidade total dos PV consumidos de todos os aliados neste ataque, com um máximo de ****4[i]%**** de seu ATQ base e dura até o fim do ataque atual. Jingliu não pode entrar no estado de Transmigração Espectral novamente até que o estado atual de Transmigração Espectral tenha acabado. Sizígia pode acumular até 3 vezes. Quando o acúmulo de Sizígia chega a 0, Jingliu sai do estado de Transmigração Espectral.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point04",
@@ -45831,7 +46564,15 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.3,
+					0.04,
+					5.4,
+					0.9,
+					2,
+					1,
+					0.4
+				],
 				"status": [],
 				"baseSkill": [
 					121204
@@ -45840,13 +46581,21 @@
 			},
 			{
 				"name": "Brilho da Verdade",
+				"description": "Após usar esta Técnica, cria uma dimensão ao redor de Jingliu que dura por **3[i]** segundos, e todos os inimigos nesta dimensão sofrerão Congelamento. Após entrar em combate com os inimigos na dimensão, Jingliu recupera imediatamente **6[i]** de Energia e obtém **1[i]** acúmulo(s) de Sizígia, com uma **chance-base** de **2[i]%** de causar Congelamento nos inimigos-alvo por **4[i]** rodada(s). Enquanto estiverem com Congelamento, inimigos-alvo não podem agir, e recebem **Dano de Gelo Adicional** igual a **5[i]%** do ATQ de Jingliu no início de cada rodada. Somente 1 dimensão criada por aliados pode existir ao mesmo tempo.",
 				"avatar": 1212,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1212/SkillIcon_1212_Maze.png",
 				"shortIcon": "SkillIcon_1212_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					1,
+					20,
+					1,
+					0.8,
+					15
+				],
 				"status": [],
 				"baseSkill": [
 					121207
@@ -47290,6 +48039,7 @@
 		"tree": [
 			{
 				"name": "Lótus Beneficente",
+				"description": "Realiza um ataque de 2 golpes e causa Dano Imaginário igual a ****1[i]%**** do ATQ de Dan Heng - Embebidor Lunae a um único inimigo-alvo.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point01",
@@ -47304,7 +48054,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121301,
@@ -47316,6 +48068,7 @@
 			},
 			{
 				"name": "Dracore Libre",
+				"description": "Aprimora o ATQ Básico. Aprimoramentos podem ser aplicados até 3 vezes consecutivas. Usar esta habilidade não consome Pontos de Perícia e não é considerado como utilização de uma Perícia.\nAprimorado uma vez, Lótus Beneficente se torna Transcendência.\nAprimorado duas vezes, Lótus Beneficente se torna Lança Divina.\nAprimorado três vezes, Lótus Beneficente se torna Salto Fulgurante.\nAo utilizar Lança Divina ou Salto Fulgurante, começando do quarto golpe, 1 acúmulo de \"Rugido Soberano\" é concedido antes de cada golpe. Cada acúmulo de \"Rugido Soberano\" aumenta o Dano CRIT de Dan Heng - Embebidor Lunae em ****1[f1]%****, até um máximo de **2[i]** acúmulos. Estes acúmulos duram até o final da rodada dele.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point02",
@@ -47332,7 +48085,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.06,
+					4
+				],
 				"status": [],
 				"baseSkill": [
 					121302
@@ -47341,6 +48097,7 @@
 			},
 			{
 				"name": "A Água Celeste Ablui Tudo",
+				"description": "Realiza um ataque de 3 golpes e causa Dano Imaginário igual a ****1[i]%**** do ATQ de Dan Heng - Embebidor Lunae a um único inimigo-alvo. Ao mesmo tempo, causa Dano Imaginário igual a ****2[i]%**** do ATQ de Dan Heng - Embebidor Lunae a alvos adjacentes. Então, obtém **3[i]** Squama Sacrosancta.\nÉ possível possuir até **4[i]** Squama Sacrosancta, que podem ser usados para anular o consumo de Pontos de Perícia de Dan Heng - Embebidor Lunae. Consumir Squama Sacrosancta é considerado o equivalente a consumir Pontos de Perícia.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point03",
@@ -47357,7 +48114,12 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					1.8,
+					0.84,
+					2,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					121303
@@ -47366,6 +48128,7 @@
 			},
 			{
 				"name": "Coração Íntegro",
+				"description": "Depois de cada golpe realizado durante um ataque, Dan Heng - Embebidor Lunae ganha 1 acúmulo de Coração Íntegro, aumentando seu Dano em ****1[f1]%****. Este efeito pode acumular até **2[i]** vez(es), durando até o final da rodada dele.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point04",
@@ -47382,7 +48145,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.05,
+					6
+				],
 				"status": [],
 				"baseSkill": [
 					121304
@@ -47391,13 +48157,18 @@
 			},
 			{
 				"name": "Prismadracônico Amaina-Céus",
+				"description": "Após usar sua Técnica, Dan Heng - Embebidor Lunae entra no estado de Dragão Saltitante por **2[i]** segundos. Enquanto está no estado de Dragão Saltitante, usar o seu ataque permite que ele se mova para frente rapidamente por uma certa distância, atacando todos os inimigos nos quais ele tocar e bloqueando todos os ataques direcionados a ele. Após entrar no combate ao atacar inimigos no estado de Dragão Saltitante, Dan Heng - Embebidor Lunae causa Dano Imaginário igual a **3[i]%** do seu ATQ a todos os inimigos, e ganha **1[i]** Squama Sacrosancta.",
 				"avatar": 1213,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1213/SkillIcon_1213_Maze.png",
 				"shortIcon": "SkillIcon_1213_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					20,
+					1.2
+				],
 				"status": [],
 				"baseSkill": [
 					121307
@@ -48677,6 +49448,7 @@
 		"tree": [
 			{
 				"name": "Sovela Quebra-mara",
+				"description": "Causa ****1[i]%**** do ATQ de Xueyi como Dano Quântico a um único inimigo-alvo.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point01",
@@ -48691,7 +49463,9 @@
 					"111002": 5,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121401
@@ -48700,6 +49474,7 @@
 			},
 			{
 				"name": "Obliteração de Iniquidade",
+				"description": "Causa Dano Quântico igual a ****1[i]%**** do ATQ de Xueyi a um único inimigo e ****2[i]%**** do ATQ de Xueyi como Dano Quântico aos inimigos adjacentes.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point02",
@@ -48716,7 +49491,10 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					0.7,
+					0.35
+				],
 				"status": [],
 				"baseSkill": [
 					121402
@@ -48725,6 +49503,7 @@
 			},
 			{
 				"name": "Castigo Divino",
+				"description": "Causa Dano Quântico igual a ****1[i]%**** do ATQ de Xueyi a um único inimigo-alvo. Este ataque ignora os Tipos de Fraqueza e reduz a Tenacidade do inimigo. Quando o inimigo sofrer a Quebra de Fraqueza, o efeito Quebra de Fraqueza contra Quântico é ativado.\nNeste ataque, quanto mais Tenacidade for reduzida, maior será o Dano causado, até um máximo de ****3[f1]%**** de aumento.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point03",
@@ -48741,7 +49520,11 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					1.5,
+					0.09,
+					0.36
+				],
 				"status": [],
 				"baseSkill": [
 					121403
@@ -48750,6 +49533,7 @@
 			},
 			{
 				"name": "Perpetuação Cármica",
+				"description": "Quando Xueyi reduz a Tenacidade do inimigo com seus ataques, ela acumula Carma. Quando mais a Tenacidade é reduzida, mais acúmulos de Carma são adicionados, até **1[i]** acúmulos.\nQuando os aliados de Xueyi reduzem a Tenacidade do inimigo com seus ataques, Xueyi ganha **3[i]** acúmulo(s) de Carma.\nQuando o Carma atingir o número máximo de acúmulos e consumir todos os acúmulos de Carma atuais, imediatamente lança um **Ataque Extra** contra um inimigo-alvo, causando Dano por 3 vezes, com cada vez causando Dano Quântico igual a ****2[i]%**** do ATQ de Xueyi a um único inimigo aleatório. Este Ataque Extra não pode adicionar acúmulos de Carma.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point04",
@@ -48766,7 +49550,11 @@
 					"111002": 10,
 					"111003": 5
 				},
-				"params": [],
+				"params": [
+					8,
+					0.45,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121404
@@ -48775,13 +49563,16 @@
 			},
 			{
 				"name": "Execução Sumária",
+				"description": "Ataca o inimigo imediatamente. Depois de entrar no combate, causa **1[i]%** do ATQ de Xueyi como Dano Quântico a todos os inimigos.",
 				"avatar": 1214,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1214/SkillIcon_1214_Maze.png",
 				"shortIcon": "SkillIcon_1214_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.8
+				],
 				"status": [],
 				"baseSkill": [
 					121407
@@ -50039,6 +50830,7 @@
 		"tree": [
 			{
 				"name": "Pincel do Oráculo",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ de Hanya a um único inimigo.",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point01",
@@ -50053,7 +50845,9 @@
 					"113012": 5,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					121501
@@ -50062,6 +50856,7 @@
 			},
 			{
 				"name": "Samsara, Bloqueada",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ de Hanya a um único inimigo-alvo, então aplica Fardo a ele.\nA cada 2 ATQs Básicos, Perícias ou Perícias Supremas utilizados por aliados em um inimigo com Fardo, aliados recuperam imediatamente 1 Ponto de Perícia. Fardo só fica ativo no último alvo em que foi aplicado, e será removido automaticamente depois que o efeito de recuperação de Ponto de Perícia for ativado **2[i]** vezes.",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point02",
@@ -50078,7 +50873,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					1.2,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121502
@@ -50087,6 +50885,7 @@
 			},
 			{
 				"name": "Decreto dos Três Senhores, Todos Devem Obedecer",
+				"description": "Aumenta a VEL de um aliado-alvo em ****3[f1]%**** da VEL de Hanya e aumenta o ATQ do mesmo aliado-alvo em ****1[i]%**** por **2[i]** rodada(s).",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point03",
@@ -50103,7 +50902,11 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.36,
+					2,
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					121503
@@ -50112,6 +50915,7 @@
 			},
 			{
 				"name": "Sanção",
+				"description": "Quando um aliado usa um ATQ Básico, uma Perícia ou uma Perícia Suprema em um inimigo afligido com Fardo, o Dano causado aumenta em ****1[i]%**** durando por **2[i]** rodada(s).",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point04",
@@ -50128,7 +50932,10 @@
 					"113012": 10,
 					"113013": 5
 				},
-				"params": [],
+				"params": [
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121504
@@ -50137,6 +50944,7 @@
 			},
 			{
 				"name": "Julgamento do Submundo",
+				"description": "Ataca o inimigo imediatamente. Ao entrar na batalha, aplica Fardo equivalente ao aplicado pela Perícia a um inimigo aleatório.",
 				"avatar": 1215,
 				"type": 2,
 				"pos": "Point05",
@@ -51528,6 +52336,7 @@
 		"tree": [
 			{
 				"name": "Estandarte: Invoca-Tempestades",
+				"description": "Causa Dano de Vento igual a ****1[i]%**** dos PV máximos de Huohuo a um inimigo-alvo.",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point01",
@@ -51542,7 +52351,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.25
+				],
 				"status": [],
 				"baseSkill": [
 					121701
@@ -51551,6 +52362,7 @@
 			},
 			{
 				"name": "Talismã: Proteção",
+				"description": "Remove **5[i]** **penalidade(s)** de um único aliado-alvo e restaura imediatamente PV deste aliado em uma quantidade igual a ****1[f1]%**** dos PV máximos de Huohuo + ****2[i]****. Ao mesmo tempo, restaura PV dos aliados adjacentes a este aliado-alvo em uma quantidade igual a ****3[f1]%**** dos PV máximos de Huohuo + ****4[i]****.",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point02",
@@ -51567,7 +52379,13 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.14,
+					140,
+					0.112,
+					112,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					121702
@@ -51576,6 +52394,7 @@
 			},
 			{
 				"name": "Rabin: Dominação Espiritual",
+				"description": "Regenera Energia de todos os aliados (excluindo este personagem) em uma quantidade igual a ****1[f1]%**** de suas respectivas Energias máximas. Ao mesmo tempo, aumenta o ATQ deles em ****2[f1]%**** por **3[i]** rodada(s).",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point03",
@@ -51592,7 +52411,11 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.15,
+					0.24,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					121703
@@ -51601,6 +52424,7 @@
 			},
 			{
 				"name": "Possessão: Metafluxo Etéreo",
+				"description": "Após usar sua Perícia, Huohuo ganha Provisão Divina, durando por **1[i]** rodada(s). Esta duração diminui por 1 rodada no início de cada rodada de Huohuo. Se Huohuo tiver Provisão Divina quando a rodada de um aliado começa ou quando um aliado utiliza sua Perícia Suprema, restaura PV para aquele aliado em uma quantidade igual a ****3[f1]%**** dos PV máximos de Huohuo + ****5[i]****. Ao mesmo tempo, cada aliado com **6[i]%** de PV ou menos é curado uma vez.\nQuando Provisão Divina é ativada para curar um aliado, remove **2[i]** **penalidade(s)** daquele aliado. Este efeito pode ser ativado até um máximo de **7[i]** vez(es). Usar a habilidade novamente reinicia o efeito da contagem de ativação.",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point04",
@@ -51617,7 +52441,15 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					2,
+					1,
+					0.03,
+					0,
+					30,
+					0.5,
+					6
+				],
 				"status": [],
 				"baseSkill": [
 					121704
@@ -51626,13 +52458,19 @@
 			},
 			{
 				"name": "Demônio: Destituição do Mal",
+				"description": "Huohuo aterroriza inimigos próximos, deixando-os Horrorizados. Inimigos Horrorizados fogem de Huohuo por **4[i]** segundos. Ao entrar numa batalha com inimigos Horrorizados, há **1[i]%** de **chance-base** de reduzir o ATQ de todos os inimigos em **2[i]%** por **3[i]** rodada(s).",
 				"avatar": 1217,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1217/SkillIcon_1217_Maze.png",
 				"shortIcon": "SkillIcon_1217_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					0.25,
+					2,
+					10
+				],
 				"status": [],
 				"baseSkill": [
 					121707
@@ -52992,6 +53830,7 @@
 		"tree": [
 			{
 				"name": "Perfume Efêmero",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ de Argenti a um único inimigo-alvo.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point01",
@@ -53006,7 +53845,9 @@
 					"111002": 7,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130201
@@ -53015,6 +53856,7 @@
 			},
 			{
 				"name": "Justiça, Aqui Floresce",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ de Argenti a todos os inimigos.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point02",
@@ -53031,7 +53873,9 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					130202
@@ -53040,6 +53884,7 @@
 			},
 			{
 				"name": "Pois Neste Jardim, a Beleza Suprema Concede",
+				"description": "Consome **2[i]** de Energia e causa Dano Físico igual a ****1[i]%**** do ATQ de Argenti a todos os inimigos.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point03",
@@ -53056,7 +53901,10 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.96,
+					90
+				],
 				"status": [],
 				"baseSkill": [
 					130203,
@@ -53066,6 +53914,7 @@
 			},
 			{
 				"name": "Objeto Sublime",
+				"description": "Para cada inimigo atingido quando Argenti usa seu ATQ Básico, Perícia ou Perícia Suprema, regenera a Energia de Argenti em **1[i]**, e concede a ele um acúmulo de Apoteose, além de aumentar sua Chance de CRIT em ****2[f1]%****. Este efeito pode acumular até **3[i]** vez(es).",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point04",
@@ -53082,7 +53931,11 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					3,
+					0.01,
+					10
+				],
 				"status": [],
 				"baseSkill": [
 					130204
@@ -53091,13 +53944,18 @@
 			},
 			{
 				"name": "Manifesto da Mais Pura Virtude",
+				"description": "Após usar sua Técnica, inflige Confusão por **1[i]** segundo(s) aos inimigos dentro de uma área definida. Inimigos com Confusão não atacarão a equipe ativamente.\nAo atacar um inimigo com Confusão para entrar em combate, causa Dano Físico de **2[i]%** do ATQ de Argenti a todos os inimigos e regenera a Energia de Argenti em **3[i]**.",
 				"avatar": 1302,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1302/SkillIcon_1302_Maze.png",
 				"shortIcon": "SkillIcon_1302_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					10,
+					0.8,
+					15
+				],
 				"status": [],
 				"baseSkill": [
 					130207
@@ -54416,6 +55274,7 @@
 		"tree": [
 			{
 				"name": "Fios de Perfume",
+				"description": "Causa Dano de Gelo igual a ****1[i]%**** do ATQ de Ruan Mei a um único inimigo-alvo.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point01",
@@ -54430,7 +55289,9 @@
 					"113002": 7,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130301
@@ -54439,6 +55300,7 @@
 			},
 			{
 				"name": "Cordas Cantam Lentos Sons",
+				"description": "Após usar sua Perícia, Ruan Mei ganha Tom Acima, durando por **3[i]** rodada(s). Essa duração diminui em 1 no início da rodada de Ruan Mei. Quando Ruan Mei possui Tom Acima, o Dano de todos os aliados é aumentado em ****1[f1]%**** e a Eficiência de Quebra de Fraqueza deles aumenta em **2[i]%**.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point02",
@@ -54455,7 +55317,11 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.16,
+					0.5,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					130302
@@ -54464,6 +55330,7 @@
 			},
 			{
 				"name": "Pétalas na Corrente, Repouso Indolente",
+				"description": "Ruan Mei implanta um campo que dura por **2[i]** rodadas. A duração do campo diminui em 1 no início da rodada dela.\nEnquanto estiver dentro do campo, a PEN de RES a Todos os Tipos de todos os aliados aumenta em ****1[f1]%**** e os ataques deles aplicam Reflorescer da Ameixa aos inimigos atingidos.\nQuando esses inimigos tentam se recuperar da Quebra de Fraqueza, Reflorescer da Ameixa é ativado, estendendo a duração da sua Quebra de Fraqueza, atrasando sua ação em uma quantidade igual a **3[i]%** do Efeito de Quebra de Ruan Mei + **4[i]%**, e causando Dano de Quebra igual a ****5[i]%**** do Dano de Quebra de Gelo de Ruan Mei.\nReflorescer da Ameixa não pode ser aplicado novamente aos inimigos-alvo até eles se recuperarem da Quebra de Fraqueza.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point03",
@@ -54480,7 +55347,13 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.15,
+					2,
+					0.2,
+					0.1,
+					0.3
+				],
 				"status": [],
 				"baseSkill": [
 					130303
@@ -54489,6 +55362,7 @@
 			},
 			{
 				"name": "Hélice Somatotípica",
+				"description": "Aumenta a VEL em ****1[f1]%**** para a equipe (excluindo este personagem). Quando os aliados aplicam Quebra de Fraqueza a um inimigo-alvo, Ruan Mei causa Dano de Quebra a esse inimigo igual a ****2[f1]%**** de seu Dano de Quebra de Gelo.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point04",
@@ -54505,7 +55379,10 @@
 					"113002": 13,
 					"113003": 7
 				},
-				"params": [],
+				"params": [
+					0.08,
+					0.6
+				],
 				"status": [],
 				"baseSkill": [
 					130304
@@ -54514,13 +55391,19 @@
 			},
 			{
 				"name": "Serenata de Seda",
+				"description": "Depois de usar a Técnica, ganha Serenata de Seda. No início da próxima batalha, ativa automaticamente a Perícia **1[i]** vez(es) sem consumir Pontos de Perícia.\nNo Universo Simulado, quando Ruan Mei possuir Serenata de Seda, a equipe atacando inimigos será considerada como se sempre estivesse atacando sua Fraqueza para entrar em batalha, e este ataque pode reduzir a Tenacidade de todos os inimigos independente dos Tipos de Fraqueza. Ao aplicar Quebra de Fraqueza, ativa o Efeito de Quebra de Fraqueza correspondente ao Tipo do atacante. Para cada Bênção em posse (até **4[i]** Bênçãos), adicionalmente aumenta o Dano de Redução de Tenacidade deste ataque em **2[i]%**. Após aplicar a Quebra de Fraqueza a um inimigo-alvo, causa adicionalmente Dano de Quebra igual a **3[i]%** do Dano de Quebra de Gelo de Ruan Mei ao inimigo-alvo.",
 				"avatar": 1303,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1303/SkillIcon_1303_Maze.png",
 				"shortIcon": "SkillIcon_1303_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1,
+					1,
+					1,
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					130307
@@ -55779,6 +56662,7 @@
 		"tree": [
 			{
 				"name": "A Mente É Poderosa",
+				"description": "Causa Dano Imaginário igual a ****1[i]%**** do ATQ do Dr. Ratio a um único inimigo-alvo.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point01",
@@ -55793,7 +56677,9 @@
 					"111012": 7,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130501
@@ -55802,6 +56688,7 @@
 			},
 			{
 				"name": "Obstetrícia Intelectual",
+				"description": "Causa Dano Imaginário igual a ****1[i]%**** do ATQ do Dr. Ratio a um único inimigo.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point02",
@@ -55818,7 +56705,9 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					0.75
+				],
 				"status": [],
 				"baseSkill": [
 					130502
@@ -55827,6 +56716,7 @@
 			},
 			{
 				"name": "Paradoxo Silogístico",
+				"description": "Causa Dano Imaginário igual a ****1[i]%**** do ATQ do Dr. Ratio a um único inimigo-alvo e aplica a Tolice do Sábio. Quando os aliados do Dr. Ratio atacam um alvo afligido com Tolice do Sábio, o Dr. Ratio realiza o **Ataque Extra** do seu Talento 1 vez contra o alvo.\nA Tolice do Sábio pode ser ativada até **2[i]** vezes e só afeta o alvo mais recente da Perícia Suprema do Dr. Ratio. Essa contagem de ativação reinicia depois que a Perícia Suprema do Dr. Ratio é utilizada.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point03",
@@ -55843,7 +56733,10 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					1.44,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					130503
@@ -55852,6 +56745,7 @@
 			},
 			{
 				"name": "Cogito, Ergo Sum",
+				"description": "Ao usar a sua Perícia, o Dr. Ratio tem uma **chance fixa** de **2[i]%** de realizar um **Ataque Extra** contra o alvo 1 vez, causando Dano Imaginário igual a ****1[i]%**** do ATQ do Dr. Ratio. Para cada penalidade que o inimigo possui, a **chance fixa** de realizar o **Ataque Extra** aumenta em **3[i]%**. Se o inimigo-alvo for derrotado antes da ativação do **Ataque Extra**, o **Ataque Extra** será direcionado a um único inimigo aleatório ao invés disso.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point04",
@@ -55868,7 +56762,11 @@
 					"111012": 13,
 					"111013": 7
 				},
-				"params": [],
+				"params": [
+					1.35,
+					0.4,
+					0.2
+				],
 				"status": [],
 				"baseSkill": [
 					130504
@@ -55877,13 +56775,19 @@
 			},
 			{
 				"name": "Molde da Idolatria",
+				"description": "Após usar a Técnica, cria uma dimensão especial que causa Provocação nos inimigos próximos, durando por **1[i]** segundo(s). Após entrar em combate com inimigos nesta dimensão especial, há uma **chance-base** de **2[i]%** de reduzir a VEL de cada inimigo-alvo em **3[i]%** por **4[i]** rodada(s). Apenas 1 dimensão criada pelos aliados pode existir ao mesmo tempo.",
 				"avatar": 1305,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1305/SkillIcon_1305_Maze.png",
 				"shortIcon": "SkillIcon_1305_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					10,
+					1,
+					0.15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					130507
@@ -57232,6 +58136,7 @@
 		"tree": [
 			{
 				"name": "Monodrama",
+				"description": "Causa Dano Quântico igual a ****1[i]%**** do ATQ de Sparkle a um único inimigo-alvo.",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point01",
@@ -57246,7 +58151,9 @@
 					"114012": 7,
 					"114013": 7
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130601
@@ -57255,6 +58162,7 @@
 			},
 			{
 				"name": "Mergulhadora de Sonhos",
+				"description": "Aumenta o Dano CRIT de um aliado em ****1[f1]%**** do Dano CRIT de Sparkle + ****2[f1]%**** por **3[i]** rodada(s), também Avança Adiante a ação de uma unidade em **4[i]%**.\nQuando Sparkle usa essa habilidade em si, sua ação não será Avançada Adiante.",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point02",
@@ -57271,7 +58179,12 @@
 					"114012": 13,
 					"114013": 7
 				},
-				"params": [],
+				"params": [
+					0.18,
+					0.08,
+					1,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130602
@@ -57296,7 +58209,12 @@
 					"114012": 13,
 					"114013": 7
 				},
-				"params": [],
+				"params": [
+					2,
+					4,
+					0.06,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					130603
@@ -57305,6 +58223,7 @@
 			},
 			{
 				"name": "Pista Falsa",
+				"description": "Quando Sparkle estiver no campo de batalha, aumenta o número máximo de Pontos de Perícia adicionalmente em **3[i]**. Quando um aliado consome 1 Ponto de Perícia, o Dano de todos os aliados será aumentado em ****2[f1]%**** por **1[i]** rodada(s). Esse efeito pode ser acumulado até **4[i]** vezes.",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point04",
@@ -57321,7 +58240,12 @@
 					"114012": 13,
 					"114013": 7
 				},
-				"params": [],
+				"params": [
+					2,
+					0.03,
+					2,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					130604
@@ -57330,13 +58254,17 @@
 			},
 			{
 				"name": "Narradora Nada Confiável",
+				"description": "Usar a Técnica oferece a todos os aliados Furtividade por **2[i]**s. Personagens em Furtividade não serão detectados por inimigos, e entrar em batalha enquanto em Furtividade recupera **1[i]** Ponto(s) de Perícia para todos os aliados.",
 				"avatar": 1306,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1306/SkillIcon_1306_Maze.png",
 				"shortIcon": "SkillIcon_1306_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					3,
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					130607
@@ -58761,6 +59689,7 @@
 		"tree": [
 			{
 				"name": "Percepção, Amanhecer Silencioso",
+				"description": "Causa Dano de Vento igual a ****1[i]%**** do ATQ de Cisne Negro em uma única unidade inimiga, com uma **chance-base** de ****2[i]%**** de infligir 1 acúmulo de **Sacramento** na unidade inimiga atacada, e caso o alvo tenha Cisalhamento de Vento, Sangramento, Queimadura ou Choque aplicado, cada um terá uma **chance-base** de ****3[i]%**** de adicionalmente aplicar 1 acúmulo de **Sacramento** no inimigo.",
 				"avatar": 1307,
 				"type": 2,
 				"pos": "Point01",
@@ -58775,7 +59704,11 @@
 					"111002": 7,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.3,
+					0.5,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130701
@@ -58784,6 +59717,7 @@
 			},
 			{
 				"name": "Decadência, Falso Crepúsculo",
+				"description": "Causa Dano de Vento igual a ****1[i]%**** do ATQ de Cisne Negro a um único inimigo e quaisquer alvos adjacentes, com uma **chance-base** de **2[i]%** de infligir 1 acúmulo de **Sacramento** a inimigos atacados e uma **chance-base** de **3[i]%** de diminuir a DEF dos inimigos atacados em ****4[f1]%****, durando **5[i]** rodadas.",
 				"avatar": 1307,
 				"type": 2,
 				"pos": "Point02",
@@ -58800,7 +59734,13 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.45,
+					1,
+					1,
+					0.148,
+					3
+				],
 				"status": [],
 				"baseSkill": [
 					130702
@@ -58825,7 +59765,12 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.72,
+					2,
+					0.15,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					130703
@@ -58850,7 +59795,16 @@
 					"111002": 13,
 					"111003": 7
 				},
-				"params": [],
+				"params": [
+					0.96,
+					0.5,
+					0.048,
+					3,
+					0.72,
+					7,
+					0.2,
+					50
+				],
 				"status": [],
 				"baseSkill": [
 					130704
@@ -58859,13 +59813,17 @@
 			},
 			{
 				"name": "De Farsa à Verdade",
+				"description": "Após usar essa Técnica, no início da próxima batalha há uma **chance-base** de **1[i]%** de infligir 1 acúmulo de **Sacramento** a cada inimigo. Para cada aplicação bem-sucedida de **Sacramento**, inflige 1 acúmulo adicional de **Sacramento** no inimigo, repetindo até que **Sacramento** falhe em ser infligido. Para cada aplicação bem-sucedida de **Sacramento**, a **chance-base** de sucesso é igual a **2[i]%** da **chance-base** da inflição bem-sucedida anterior de **Sacramento** naquele alvo.",
 				"avatar": 1307,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1307/SkillIcon_1307_Maze.png",
 				"shortIcon": "SkillIcon_1307_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					1.5,
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					130707
@@ -60182,6 +61140,7 @@
 		"tree": [
 			{
 				"name": "C-com Licença, Por Favor!",
+				"description": "Causa Dano de Gelo igual a ****1[i]%**** do ATQ de Misha a um inimigo.",
 				"avatar": 1312,
 				"type": 2,
 				"pos": "Point01",
@@ -60196,7 +61155,9 @@
 					"114002": 5,
 					"114003": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					131201
@@ -60205,6 +61166,7 @@
 			},
 			{
 				"name": "S-serviço de Quarto",
+				"description": "Aumenta os Golpes por Ação para a próxima Perícia Suprema de Misha em **3[i]** golpes. Causa Dano de Gelo igual a ****1[i]%**** do ATQ de Misha a um inimigo, e Dano de Gelo igual a ****2[i]%**** do ATQ de Misha a inimigos adjacentes a ele.",
 				"avatar": 1312,
 				"type": 2,
 				"pos": "Point02",
@@ -60221,7 +61183,11 @@
 					"114002": 10,
 					"114003": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					0.4,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					131202
@@ -60230,6 +61196,7 @@
 			},
 			{
 				"name": "V-Vai Se Atrasar!",
+				"description": "A Perícia Suprema de Misha desfere **1[i]** Golpes por Ação. Inicialmente, Misha golpeia o inimigo-alvo com 1 golpe, causando Dano de Gelo igual a ****2[i]%**** do ATQ de Misha. Para o resto dos golpes, Misha ataca inimigos aleatórios, cada golpe causando Dano de Gelo igual a ****2[i]%**** do ATQ de Misha. Cada golpe tem uma **chance-base** de ****3[f1]%**** de infligir Congelamento no alvo antes que o ataque acerte, durando por uma 1 rodada.\nInimigos com Congelamento não podem realizar ações e sofrem **Dano de Gelo adicional** igual a ****4[i]%**** do ATQ de Misha no início de sua rodada.\nA Perícia Suprema de Misha pode possuir até **5[i]** Golpes por Ação. Após a Perícia Suprema dele ser usada, seus Golpes por Ação serão restaurados ao nível padrão.",
 				"avatar": 1312,
 				"type": 2,
 				"pos": "Point03",
@@ -60246,7 +61213,13 @@
 					"114002": 10,
 					"114003": 5
 				},
-				"params": [],
+				"params": [
+					3,
+					0.36,
+					0.12,
+					0.18,
+					10
+				],
 				"status": [],
 				"baseSkill": [
 					131203
@@ -60255,6 +61228,7 @@
 			},
 			{
 				"name": "Escapada Horológica",
+				"description": "Sempre que um aliado consumir um Ponto de Perícia, a próxima Perícia Suprema de Misha desfere **2[i]** mais Golpes por Ação e Misha regenera ****1[f1]**** de Energia.",
 				"avatar": 1312,
 				"type": 2,
 				"pos": "Point04",
@@ -60271,7 +61245,10 @@
 					"114002": 10,
 					"114003": 5
 				},
-				"params": [],
+				"params": [
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					131204
@@ -60280,13 +61257,17 @@
 			},
 			{
 				"name": "Espere, Você É Tão Linda!",
+				"description": "Usar a Técnica cria uma dimensão, durando por **1[i]** segundos. Inimigos pegos na dimensão são afetados pela Prisão Onírica e todas as suas ações são paradas. Ao entrar em batalha contra inimigos afetados pela Prisão Onírica, a próxima Perícia Suprema de Misha causa **2[i]** mais Golpes por Ação. Apenas uma dimensão criada por aliados pode existir ao mesmo tempo.",
 				"avatar": 1312,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/1312/SkillIcon_1312_Maze.png",
 				"shortIcon": "SkillIcon_1312_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					15,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					131207
@@ -61666,6 +62647,7 @@
 		"tree": [
 			{
 				"name": "Golpe de Despedida",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ {Fda Desbravadora{Mdo Desbravador a um único inimigo.",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point01",
@@ -61680,7 +62662,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					800101
@@ -61689,6 +62673,7 @@
 			},
 			{
 				"name": "Home Run Fatal",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ {Fda Desbravadora{Mdo Desbravador a um único inimigo e inimigos adjacentes.",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point02",
@@ -61705,7 +62690,9 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.625
+				],
 				"status": [],
 				"baseSkill": [
 					800102
@@ -61714,6 +62701,7 @@
 			},
 			{
 				"name": "Ás de Poeira Estelar",
+				"description": "Escolha entre dois modos de ataque para desferir um golpe completo.\nRuptura: Golpe de Despedida causa Dano Físico igual a ****1[i]%**** do ATQ {Fda{Mdo Desbrava{Mdor{Fdora a um único inimigo.\nRuptura: Home Run Fatal causa Dano Físico igual a ****2[i]%**** do ATQ {Fda{Mdo Desbrava{Mdor{Fdora a um único inimigo, e Dano Físico igual a ****3[i]%**** do ATQ {Fda{Mdo Desbrava{Mdor{Fdora aos inimigos adjacentes a ele",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point03",
@@ -61730,7 +62718,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					3,
+					1.8,
+					1.08
+				],
 				"status": [],
 				"baseSkill": [
 					800103,
@@ -61741,6 +62733,7 @@
 			},
 			{
 				"name": "Arremesso Perfeito",
+				"description": "Sempre depois que este personagem inflige uma Quebra de Fraqueza a um inimigo, o ATQ aumenta em ****1[i]%****. Este efeito pode acumular até **2[i]** vez(es).",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point04",
@@ -61757,7 +62750,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.1,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					800104
@@ -61766,13 +62762,16 @@
 			},
 			{
 				"name": "Terceiro Golpe Imortal",
+				"description": "Imediatamente cura todos os aliados em **1[i]%** de seus PV máximos depois de usar esta Técnica.",
 				"avatar": 8001,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/8001/SkillIcon_8001_Maze.png",
 				"shortIcon": "SkillIcon_8001_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					800107
@@ -63150,6 +64149,7 @@
 		"tree": [
 			{
 				"name": "Golpe de Despedida",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ {Fda Desbravadora{Mdo Desbravador a um único inimigo.",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point01",
@@ -63164,7 +64164,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					800201
@@ -63173,6 +64175,7 @@
 			},
 			{
 				"name": "Home Run Fatal",
+				"description": "Causa Dano Físico igual a ****1[i]%**** do ATQ {Fda Desbravadora{Mdo Desbravador a um único inimigo e inimigos adjacentes.",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point02",
@@ -63189,7 +64192,9 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.625
+				],
 				"status": [],
 				"baseSkill": [
 					800202
@@ -63198,6 +64203,7 @@
 			},
 			{
 				"name": "Ás de Poeira Estelar",
+				"description": "Escolha entre dois modos de ataque para desferir um golpe completo.\nRuptura: Golpe de Despedida causa Dano Físico igual a ****1[i]%**** do ATQ {Fda{Mdo Desbrava{Mdor{Fdora a um único inimigo.\nRuptura: Home Run Fatal causa Dano Físico igual a ****2[i]%**** do ATQ {Fda{Mdo Desbrava{Mdor{Fdora a um único inimigo, e Dano Físico igual a ****3[i]%**** do ATQ {Fda{Mdo Desbrava{Mdor{Fdora aos inimigos adjacentes a ele",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point03",
@@ -63214,7 +64220,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					3,
+					1.8,
+					1.08
+				],
 				"status": [],
 				"baseSkill": [
 					800203,
@@ -63225,6 +64235,7 @@
 			},
 			{
 				"name": "Arremesso Perfeito",
+				"description": "Sempre depois que este personagem inflige uma Quebra de Fraqueza a um inimigo, o ATQ aumenta em ****1[i]%****. Este efeito pode acumular até **2[i]** vez(es).",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point04",
@@ -63241,7 +64252,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.1,
+					2
+				],
 				"status": [],
 				"baseSkill": [
 					800204
@@ -63250,13 +64264,16 @@
 			},
 			{
 				"name": "Terceiro Golpe Imortal",
+				"description": "Imediatamente cura todos os aliados em **1[i]%** de seus PV máximos depois de usar esta Técnica.",
 				"avatar": 8002,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/8001/SkillIcon_8001_Maze.png",
 				"shortIcon": "SkillIcon_8001_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.15
+				],
 				"status": [],
 				"baseSkill": [
 					800207
@@ -64598,6 +65615,7 @@
 		"tree": [
 			{
 				"name": "Luz Quebra-Gelo",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ {Fda Desbravadora{Mdo Desbravador a um único inimigo e ganha 1 acúmulo de Vontade de Magma.",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point01",
@@ -64612,7 +65630,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					800301,
@@ -64622,6 +65642,7 @@
 			},
 			{
 				"name": "Âmbar Ardente",
+				"description": "Aumenta a Redução de Dano {Fda Desbravadora{Mdo Desbravador em ****1[i]%**** e ganha 1 acúmulo da Vontade de Magma, com **2[i]%** de **chance-base** de Provocar todos os inimigos por **3[i]** rodada(s).",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point02",
@@ -64638,7 +65659,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.4,
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					800302
@@ -64647,6 +65672,7 @@
 			},
 			{
 				"name": "Lança das Chamas da Guerra",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ {Fda Desbravadora{Mdo Desbravador mais ****2[i]%**** da DEF {Fda Desbravadora{Mdo Desbravador a todos os inimigos. O próximo ATQ Básico será automaticamente aprimorado e não custará Vontade de Magma.",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point03",
@@ -64663,7 +65689,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					0.75
+				],
 				"status": [],
 				"baseSkill": [
 					800303
@@ -64672,6 +65701,7 @@
 			},
 			{
 				"name": "Tesouro dos Arquitetos",
+				"description": "Sempre que {Fa Desbravadora{Mo Desbravador sofre um golpe, ganha 1 acúmulo de Vontade de Magma até **3[i]** vez(es).\nQuando Vontade de Magma tiver pelo menos 4 acúmulos, o ATQ Básico {Fda Desbravadora{Mdo Desbravador é aprimorado, causando Dano a um único inimigo e aos inimigos adjacentes a ele.\nQuando {Fa Desbravadora{Mo Desbravador usar ATQ Básico, Perícia ou Perícia Suprema, um Escudo que absorve Dano igual a ****1[f1]%**** da DEF {Fda Desbravadora{Mdo Desbravador + ****4[i]**** será concedido a todos os aliados. O Escudo dura **2[i]** rodada(s).",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point04",
@@ -64688,7 +65718,12 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.04,
+					2,
+					8,
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					800304
@@ -64697,13 +65732,18 @@
 			},
 			{
 				"name": "Chamado do Guardião",
+				"description": "Após usar Técnica, no início da próxima batalha, ganha um Escudo que absorve Dano igual a **1[i]%** da DEF {Fda Desbravadora{Mdo Desbravador mais **2[i]** por **3[i]** rodada(s).",
 				"avatar": 8003,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/8003/SkillIcon_8003_Maze.png",
 				"shortIcon": "SkillIcon_8003_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.3,
+					384,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					800307
@@ -66050,6 +67090,7 @@
 		"tree": [
 			{
 				"name": "Luz Quebra-Gelo",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ {Fda Desbravadora{Mdo Desbravador a um único inimigo e ganha 1 acúmulo de Vontade de Magma.",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point01",
@@ -66064,7 +67105,9 @@
 					"111012": 5,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5
+				],
 				"status": [],
 				"baseSkill": [
 					800401,
@@ -66074,6 +67117,7 @@
 			},
 			{
 				"name": "Âmbar Ardente",
+				"description": "Aumenta a Redução de Dano {Fda Desbravadora{Mdo Desbravador em ****1[i]%**** e ganha 1 acúmulo da Vontade de Magma, com **2[i]%** de **chance-base** de Provocar todos os inimigos por **3[i]** rodada(s).",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point02",
@@ -66090,7 +67134,11 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.4,
+					1,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					800402
@@ -66099,6 +67147,7 @@
 			},
 			{
 				"name": "Lança das Chamas da Guerra",
+				"description": "Causa Dano de Fogo igual a ****1[i]%**** do ATQ {Fda Desbravadora{Mdo Desbravador mais ****2[i]%**** da DEF {Fda Desbravadora{Mdo Desbravador a todos os inimigos. O próximo ATQ Básico será automaticamente aprimorado e não custará Vontade de Magma.",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point03",
@@ -66115,7 +67164,10 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.5,
+					0.75
+				],
 				"status": [],
 				"baseSkill": [
 					800403
@@ -66124,6 +67176,7 @@
 			},
 			{
 				"name": "Tesouro dos Arquitetos",
+				"description": "Sempre que {Fa Desbravadora{Mo Desbravador sofre um golpe, ganha 1 acúmulo de Vontade de Magma até **3[i]** vez(es).\nQuando Vontade de Magma tiver pelo menos 4 acúmulos, o ATQ Básico {Fda Desbravadora{Mdo Desbravador é aprimorado, causando Dano a um único inimigo e aos inimigos adjacentes a ele.\nQuando {Fa Desbravadora{Mo Desbravador usar ATQ Básico, Perícia ou Perícia Suprema, um Escudo que absorve Dano igual a ****1[f1]%**** da DEF {Fda Desbravadora{Mdo Desbravador + ****4[i]**** será concedido a todos os aliados. O Escudo dura **2[i]** rodada(s).",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point04",
@@ -66140,7 +67193,12 @@
 					"111012": 10,
 					"111013": 5
 				},
-				"params": [],
+				"params": [
+					0.04,
+					2,
+					8,
+					20
+				],
 				"status": [],
 				"baseSkill": [
 					800404
@@ -66149,13 +67207,18 @@
 			},
 			{
 				"name": "Chamado do Guardião",
+				"description": "Após usar Técnica, no início da próxima batalha, ganha um Escudo que absorve Dano igual a **1[i]%** da DEF {Fda Desbravadora{Mdo Desbravador mais **2[i]** por **3[i]** rodada(s).",
 				"avatar": 8004,
 				"type": 2,
 				"pos": "Point05",
 				"icon": "spriteoutput/skillicons/8003/SkillIcon_8003_Maze.png",
 				"shortIcon": "SkillIcon_8003_Maze",
 				"promotion": {},
-				"params": [],
+				"params": [
+					0.3,
+					384,
+					1
+				],
 				"status": [],
 				"baseSkill": [
 					800407
