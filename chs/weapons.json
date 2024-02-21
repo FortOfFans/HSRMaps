@@ -8314,7 +8314,7 @@
 		"shortIcon": "21036",
 		"rarity": "VeryRare",
 		"weaponType": "Shaman",
-		"refinements": "裝備者發動普攻、戰技、終結技中某一類型的技能後，為我方全體附加【童心】，【童心】可以使我方目標對應類型的技能所造成的傷害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。【童心】僅對裝備者最新使用的技能類型生效，且不可疊加。",
+		"refinements": "裝備者發動普通攻擊、戰技、終結技中某一類型的技能後，為我方全體附加【童心】，【童心】可以使我方目標對應類型的技能所造成的傷害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。【童心】僅對裝備者最新使用的技能類型生效，且不可疊加。",
 		"maxHP": 953,
 		"maxATK": 423,
 		"maxDEF": 397,
@@ -9442,6 +9442,175 @@
 		],
 		"beta": true,
 		"id": "21042"
+	},
+	"21043": {
+		"name": "兩個人的演唱會",
+		"icon": "spriteoutput/lightconemediumicon/21043.png",
+		"shortIcon": "21043",
+		"rarity": "VeryRare",
+		"weaponType": "Knight",
+		"refinements": "使裝備者的防禦力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。場上每有一名持有護盾的角色，裝備者造成的傷害便提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+		"maxHP": 847,
+		"maxATK": 370,
+		"maxDEF": 529,
+		"promotion": {
+			"2": 308000,
+			"110211": 3,
+			"110212": 9,
+			"110213": 12,
+			"114011": 15,
+			"114012": 15,
+			"114013": 12
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 4000
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 5
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 8000
+				},
+				{
+					"ItemID": 110211,
+					"ItemNum": 3
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 10
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 16000
+				},
+				{
+					"ItemID": 110212,
+					"ItemNum": 3
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 40000
+				},
+				{
+					"ItemID": 110212,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 9
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 80000
+				},
+				{
+					"ItemID": 110213,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 5
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 160000
+				},
+				{
+					"ItemID": 110213,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 7
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.16,
+				0.04
+			],
+			"R2": [
+				0.2,
+				0.05
+			],
+			"R3": [
+				0.24,
+				0.06
+			],
+			"R4": [
+				0.28,
+				0.07
+			],
+			"R5": [
+				0.32,
+				0.08
+			],
+			"id": "21043"
+		},
+		"passives": [
+			[
+				{
+					"type": "DefenceAddedRatio",
+					"value": 0.16,
+					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "DefenceAddedRatio",
+					"value": 0.2,
+					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "DefenceAddedRatio",
+					"value": 0.24,
+					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "DefenceAddedRatio",
+					"value": 0.28,
+					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "DefenceAddedRatio",
+					"value": 0.32,
+					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+					"flat": false
+				}
+			]
+		],
+		"id": "21043"
 	},
 	"22000": {
 		"name": "新手任務開始前",
@@ -13959,6 +14128,369 @@
 		],
 		"beta": true,
 		"id": "23022"
+	},
+	"23023": {
+		"name": "命運從未公平",
+		"icon": "spriteoutput/lightconemediumicon/23023.png",
+		"shortIcon": "23023",
+		"rarity": "SuperRare",
+		"weaponType": "Knight",
+		"refinements": "使裝備者的防禦力提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。當裝備者為我方目標提供護盾時，使裝備者的暴擊傷害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，持續<unbreak>#3[i]</unbreak>回合。當裝備者發動追加攻擊時，有<unbreak>#4[i]%</unbreak>的基礎機率使受到攻擊的敵方目標受到的傷害提高<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>，持續<unbreak>#6[i]</unbreak>回合。",
+		"maxHP": 1058,
+		"maxATK": 423,
+		"maxDEF": 662,
+		"promotion": {
+			"2": 385000,
+			"110211": 4,
+			"110212": 12,
+			"110213": 15,
+			"114011": 20,
+			"114012": 20,
+			"114013": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110211,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110212,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110212,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110213,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110213,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.36,
+				0.4,
+				2,
+				1,
+				0.08,
+				2
+			],
+			"R2": [
+				0.42,
+				0.46,
+				2,
+				1,
+				0.09,
+				2
+			],
+			"R3": [
+				0.48,
+				0.52,
+				2,
+				1,
+				0.1,
+				2
+			],
+			"R4": [
+				0.54,
+				0.58,
+				2,
+				1,
+				0.11,
+				2
+			],
+			"R5": [
+				0.6,
+				0.64,
+				2,
+				1,
+				0.12,
+				2
+			],
+			"id": "23023"
+		},
+		"passives": [
+			[
+				{
+					"type": "DefenceAddedRatio",
+					"value": 0.36,
+					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "DefenceAddedRatio",
+					"value": 0.42,
+					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "DefenceAddedRatio",
+					"value": 0.48,
+					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "DefenceAddedRatio",
+					"value": 0.54,
+					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "DefenceAddedRatio",
+					"value": 0.6,
+					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+					"flat": false
+				}
+			]
+		],
+		"id": "23023"
+	},
+	"23024": {
+		"name": "行於流逝的岸",
+		"icon": "spriteoutput/lightconemediumicon/23024.png",
+		"shortIcon": "23024",
+		"rarity": "SuperRare",
+		"weaponType": "Warlock",
+		"refinements": "使裝備者的暴擊傷害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。當裝備者命中敵方目標時，有<unbreak>100%</unbreak>的基礎機率使敵方陷入【泡影】狀態，持續1回合。裝備者每次攻擊時，對每個目標只可觸發1次。裝備者對陷入【泡影】狀態的目標造成的傷害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>，終結技造成的傷害額外提高<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。",
+		"maxHP": 1058,
+		"maxATK": 635,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 385000,
+			"110221": 4,
+			"110222": 12,
+			"110223": 15,
+			"114001": 20,
+			"114002": 20,
+			"114003": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 114001,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110221,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114001,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110222,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114002,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110222,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 114002,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110223,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 114003,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110223,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 114003,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.36,
+				0.24,
+				0.24
+			],
+			"R2": [
+				0.42,
+				0.28,
+				0.28
+			],
+			"R3": [
+				0.48,
+				0.32,
+				0.32
+			],
+			"R4": [
+				0.54,
+				0.36,
+				0.36
+			],
+			"R5": [
+				0.6,
+				0.4,
+				0.4
+			],
+			"id": "23024"
+		},
+		"passives": [
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.36,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.42,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.48,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.54,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.6,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			]
+		],
+		"id": "23024"
 	},
 	"24000": {
 		"name": "記一位星神的殞落",
