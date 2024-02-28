@@ -591,7 +591,7 @@
 		"id": "1002030"
 	},
 	"1002040": {
-		"name": "シルバーメイン・{RUBY_B#きんえい}近衛{RUBY_E#}",
+		"name": "シルバーメイン・{RUBY_B#このえ}近衛{RUBY_E#}",
 		"description": "ベロブルグの戍衛部隊である「シルバーメイン」の近衛戦士、敵の陣地に突入する役割を果たしている。\n戦闘中、シルバーメイン・近衛の攻撃は味方の防御力をダウンさせる。",
 		"icon": "spriteoutput/monsterfigure/Monster_1002040.png",
 		"shortIcon": "Monster_1001010",
@@ -1084,6 +1084,87 @@
 			"Quantum"
 		],
 		"id": "1003013"
+	},
+	"1003014": {
+		"icon": "spriteoutput/monsterfigure/Monster_1003010.png",
+		"shortIcon": "Monster_1003010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1488,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 100301401
+			},
+			{
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 100301402
+			},
+			{
+				"tag": "その他",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 100301403
+			},
+			{
+				"tag": "召喚",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 100301404
+			},
+			{
+				"tag": "強化",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 100301405
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Thunder",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"id": "1003014"
 	},
 	"1004010": {
 		"name": "カカリア",
@@ -2322,7 +2403,7 @@
 				"name": "完璧な攻防",
 				"tag": "天賦",
 				"type": "スキル",
-				"description": "ブローニャとジェパードは交互にメインアタック状態とサポート状態に入る。メインアタック状態の時は、自身の靭性保護を解除し通常通りに攻撃する。差p－ト状態に入ると、自身の速度をダウンさせ、靭性保護を獲得し「包囲攻撃」を発動する。",
+				"description": "ブローニャとジェパードは交互にメインアタック状態とサポート状態に入る。メインアタック状態の時は、自身の靭性保護を解除し通常通りに攻撃する。サポート状態に入ると、自身の速度をダウンさせ、靭性保護を獲得し「包囲攻撃」を発動する。",
 				"element": "Wind",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -2333,7 +2414,7 @@
 				"name": "完璧な攻防",
 				"tag": "天賦",
 				"type": "天賦",
-				"description": "ブローニャとジェパードは交互にメインアタック状態とサポート状態に入る。メインアタック状態の時は、自身の靭性保護を解除し通常通りに攻撃する。差p－ト状態に入ると、自身の速度をダウンさせ、靭性保護を獲得し「戍衛のオーラ」と「包囲攻撃」を発動する。",
+				"description": "ブローニャとジェパードは交互にメインアタック状態とサポート状態に入る。メインアタック状態の時は、自身の靭性保護を解除し通常通りに攻撃する。サポート状態に入ると、自身の速度をダウンさせ、靭性保護を獲得し「戍衛のオーラ」と「包囲攻撃」を発動する。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -2634,7 +2715,7 @@
 				"name": "コンビネーション",
 				"tag": "天賦",
 				"type": "スキル",
-				"description": "ブローニャとジェパードは交互にメインアタック状態とサポート状態に入る。メインアタック状態の時は、自身の靭性保護を解除し通常通りに攻撃する。差p－ト状態に入ると、自身の速度をダウンさせ、靭性保護を獲得し「増援協力」または「作戦再展開」を発動する。",
+				"description": "ブローニャとジェパードは交互にメインアタック状態とサポート状態に入る。メインアタック状態の時は、自身の靭性保護を解除し通常通りに攻撃する。サポート状態に入ると、自身の速度をダウンさせ、靭性保護を獲得し「増援協力」または「作戦再展開」を発動する。",
 				"element": "Wind",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -5620,6 +5701,189 @@
 		],
 		"id": "1014012"
 	},
+	"1014013": {
+		"name": "スヴァローグ",
+		"icon": "spriteoutput/monsterfigure/Monster_1014010.png",
+		"shortIcon": "Monster_1004020",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 697.5,
+			"type": "LittleBoss"
+		},
+		"skills": [
+			{
+				"name": "追放の拳",
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"description": "指定した味方単体に物理ダメージを与える。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401101
+			},
+			{
+				"name": "バーニングビーム",
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"description": "指定した味方単体に物理ダメージを与え、攻撃を受けた味方の行動順を遅延させる。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401102
+			},
+			{
+				"name": "巨大なる掌",
+				"tag": "妨害",
+				"type": "スキル",
+				"description": "指定した味方単体を「束縛」状態にする、「束縛」状態では行動できず、攻撃のターゲットにもされない。マニピュレーターユニットが弱点撃破されると、味方の束縛状態が解除される。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401103
+			},
+			{
+				"name": "過飽和爆撃",
+				"tag": "全体攻撃",
+				"type": "スキル",
+				"description": "味方全体に大量の物理ダメージを与え、高確率で攻撃を受けた味方の防御力をダウンする。このデバフは累積できる。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401104
+			},
+			{
+				"name": "制御起爆",
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"description": "マニピュレーターユニットが爆発し、指定した味方単体に大量の物理ダメージを与える。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401105
+			},
+			{
+				"name": "過負荷警告",
+				"tag": "チャージ",
+				"type": "スキル",
+				"description": "マニピュレーターユニットが「過負荷時間制限」状態になる。この状態に入ると次の行動で「制御起爆」を発動する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401106
+			},
+			{
+				"name": "有効配置",
+				"tag": "召喚",
+				"type": "スキル",
+				"description": "「マニピュレーターユニット」を召喚する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401107
+			},
+			{
+				"tag": "その他",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401108
+			},
+			{
+				"tag": "天賦",
+				"type": "天賦",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401109
+			},
+			{
+				"tag": "天賦",
+				"type": "天賦",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401110
+			},
+			{
+				"tag": "天賦",
+				"type": "天賦",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401111
+			},
+			{
+				"name": "ダメージ増幅",
+				"tag": "強化",
+				"type": "スキル",
+				"description": "敵全体の与ダメージを小幅アップする、与ダメージアップ効果は累積できる。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401112
+			},
+			{
+				"name": "応急支援",
+				"tag": "召喚",
+				"type": "スキル",
+				"description": "ランダムに「自動機兵・ジューク」と「自動機兵・サバーカ」を召喚する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401113
+			},
+			{
+				"name": "戦術支援",
+				"tag": "召喚",
+				"type": "スキル",
+				"description": "「自動機兵・ヴォルク」を召喚する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401114
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"id": "1014013"
+	},
 	"1022010": {
 		"name": "{RUBY_B#えいとう}永冬{RUBY_E#}の{RUBY_B#さいえい}災影{RUBY_E#}",
 		"description": "寒波が訪れた後、裂界を彷徨う影。それは歪んだ形でシルバーメインの外見を模倣し、甲冑はベロブルグの戦士と変わりないが、頭は目鼻立ちのない氷でできている。\n戦闘中、永冬の災影は氷を斧を振る舞い敵の行動を緩める。",
@@ -6172,6 +6436,51 @@
 			"Quantum"
 		],
 		"id": "1023021"
+	},
+	"1023022": {
+		"icon": "spriteoutput/monsterfigure/Monster_1023020.png",
+		"shortIcon": "Monster_1023020",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1116,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"element": "Ice",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 102302201
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.4
+			},
+			{
+				"element": "Wind",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"id": "1023022"
 	},
 	"2002010": {
 		"name": "{RUBY_B#うんきぐん}雲騎軍{RUBY_E#}・{RUBY_B#みまわりへいし}見廻兵士{RUBY_E#}",
@@ -9748,6 +10057,7 @@
 				"name": "回生",
 				"tag": "回復",
 				"type": "スキル",
+				"description": "建木のエネルギーを吸い、HPを全回復する。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -10566,7 +10876,7 @@
 				"name": "賽を投げる",
 				"tag": "単体攻撃",
 				"type": "スキル",
-				"description": "指定した味方単体に少量の物理属性ダメージを与え、確率で攻撃を受けた味方の効果抵抗をダウンさせる。",
+				"description": "指定した味方単体に少量の物理ダメージを与え、確率で攻撃を受けた味方の効果抵抗をダウンさせる。",
 				"element": "Physical",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -10681,7 +10991,7 @@
 				"name": "びっくりニュース",
 				"tag": "全体攻撃",
 				"type": "スキル",
-				"description": "味方全体に少量の量子属性ダメージを与え、味方全体のEPが減少する。「びっくりチャンネル」状態のみ使用可能。",
+				"description": "味方全体に少量の量子属性ダメージを与え、さらに味方全体のEPを減少させる。「パニックチャンネル」状態でしか使用できない。",
 				"element": "Quantum",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -10760,10 +11070,10 @@
 				"id": 300203001
 			},
 			{
-				"name": "甘さを浴びろ",
+				"name": "甘みを浴びろ",
 				"tag": "天賦",
 				"type": "天賦",
-				"description": "HPが0になる攻撃を受けた後、隣接する敵の行動順を早め、裂創状態にする。",
+				"description": "HPが0になる攻撃を受けた後、隣接する敵に物理ダメージを与え、速度をアップさせ、裂創状態にする。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -10806,6 +11116,80 @@
 			"Wind"
 		],
 		"id": "3002030"
+	},
+	"3002040": {
+		"name": "ナイトメア劇団・ゼンマイ暴徒",
+		"description": "ピノコニーのサービスロボット。夢境での感情の干渉により、暴走してしまった。\n本来はホテル・レバリーの従業員だった。暴走した後も時間知らせの職務を全うしており、一番ストレートな方法で人々を夢から覚ます。",
+		"icon": "spriteoutput/monsterfigure/Monster_3002040.png",
+		"shortIcon": "Monster_3002040",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 162.75,
+			"type": "MinionLv2"
+		},
+		"skills": [
+			{
+				"name": "アラーム設定",
+				"tag": "チャージ",
+				"type": "スキル",
+				"description": "チャージ状態に入り、次の行動で「目覚ましノイズ」を発動する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300204001
+			},
+			{
+				"name": "目覚ましノイズ",
+				"tag": "サポート",
+				"type": "スキル",
+				"description": "自身以外の敵を即座に行動させる。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300204002
+			},
+			{
+				"name": "目覚めの鉄拳",
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"description": "指定した味方単体に物理ダメージを与える。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300204003
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Fire",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Wind",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Thunder",
+			"Quantum"
+		],
+		"id": "3002040"
 	},
 	"3002050": {
 		"name": "{RUBY_B#おう}王{RUBY_E#}のゴミ{RUBY_B#ばこ}箱{RUBY_E#}",
@@ -11000,7 +11384,7 @@
 			},
 			{
 				"name": "コンロ点火",
-				"tag": "その他",
+				"tag": "チャージ",
 				"type": "スキル",
 				"description": "チャージ状態に入る。次の行動時に「コンロ加熱」が一定層数に達してない場合、「爆裂炒め」を発動し、「コンロ加熱」の層数を全部リセットする。",
 				"element": "Fire",
@@ -11022,7 +11406,7 @@
 			},
 			{
 				"name": "厨房事故",
-				"tag": "その他",
+				"tag": "天賦",
 				"type": "スキル",
 				"description": "チャージ状態に入った後、「コンロ加熱」が一定層数に達した時、敵全体に大量の炎属性ダメージを与え、自身の防御力をダウンさせ、「コンロ加熱」の層数を全部リセットする。",
 				"element": "Fire",
@@ -11115,7 +11499,7 @@
 			},
 			{
 				"name": "コンロ点火",
-				"tag": "その他",
+				"tag": "チャージ",
 				"type": "スキル",
 				"description": "チャージ状態に入り、次の行動で「爆裂炒め」を発動。",
 				"element": "Fire",
@@ -11137,7 +11521,7 @@
 			},
 			{
 				"name": "厨房事故",
-				"tag": "その他",
+				"tag": "天賦",
 				"type": "スキル",
 				"description": "チャージ状態に入った後、「コンロ加熱」が一定層数に達した時、敵全体に大量の炎属性ダメージを与え、自身の防御力をダウンさせ、味方全体のEPを回復する。",
 				"element": "Fire",
@@ -11176,6 +11560,121 @@
 			"Wind"
 		],
 		"id": "3003011"
+	},
+	"3003012": {
+		"name": "ナイトメア劇団・エクセスウェルダン（バグ）",
+		"description": "コードが影響を受けた後、バグってしまった投影。夢境での感情の干渉により、暴走してしまったピノコニーのサービスロボットを参照にしている。\n本来は料理ロボットだった。暴走した後も食材を炙るために炎を吐き続け、客人さえも黒焦げにしようと企んでいる。",
+		"icon": "spriteoutput/monsterfigure/Monster_3003010.png",
+		"shortIcon": "Monster_3003010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 2511,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"name": "全力鍋振り",
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"description": "味方単体に炎属性ダメージを与える。",
+				"element": "Fire",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301201
+			},
+			{
+				"name": "旋風鍋振り",
+				"tag": "拡散攻撃",
+				"type": "スキル",
+				"description": "味方単体および隣接する味方に少量の炎属性ダメージを与える。",
+				"element": "Fire",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301202
+			},
+			{
+				"name": "かまど爆発",
+				"tag": "チャージ",
+				"type": "スキル",
+				"description": "チャージ状態に入り、速度が上昇する。「かまど加温」を一定数累積するまで、行動するごとに「強炎炒め」を発動する。",
+				"element": "Fire",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301203
+			},
+			{
+				"name": "爆裂炒め",
+				"tag": "全体攻撃",
+				"type": "スキル",
+				"description": "味方全体に大量の炎属性ダメージを与える。",
+				"element": "Fire",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301204
+			},
+			{
+				"name": "厨房事故",
+				"tag": "天賦",
+				"type": "スキル",
+				"description": "チャージ状態に入った後、「コンロ加熱」が一定層数に達した時、敵全体に大量の炎属性ダメージを与え、自身の防御力をダウンさせ、「コンロ加熱」の層数を全部リセットする。",
+				"element": "Fire",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301205
+			},
+			{
+				"name": "ファイヤーグルメ",
+				"tag": "天賦",
+				"type": "天賦",
+				"description": "チャージ状態でないとき、「かまど加温」を一定数まで累積するとただちに行動し、「かまど爆発」を発動する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301206
+			},
+			{
+				"name": "猛火コンロ",
+				"tag": "天賦",
+				"type": "天賦",
+				"description": "自身が攻撃を行う時、確率で味方に減速状態を付与する。自身が攻撃を受ける、または持続ダメージを受ける時、「コンロ加熱」を1層獲得する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301207
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"id": "3003012"
 	},
 	"3003020": {
 		"name": "ナイトメア{RUBY_B#げきだん}劇団{RUBY_E#}・スウィート・ゴリラ",
@@ -11275,7 +11774,7 @@
 				"name": "フリードリンク（数量限定）",
 				"tag": "単体攻撃",
 				"type": "スキル",
-				"description": "指定した味方単体に氷属性ダメージを与える。ターゲットにバリアがある場合、ダメージを与えた後、自身も氷属性ダメージを受け、高確率で自身の防御力がダウンする。",
+				"description": "指定した味方単体に氷属性ダメージを与え、その味方の行動順を早める。ターゲットにバリアがある場合、ダメージを与えた後、自身も氷属性ダメージを受け、高確率で自身の防御力がダウンする。",
 				"element": "Ice",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -11284,7 +11783,7 @@
 			},
 			{
 				"name": "フリードリンク（飲み放題）",
-				"tag": "バウンド",
+				"tag": "単体攻撃",
 				"type": "スキル",
 				"description": "警戒ターゲットとしてマークした味方単体に氷属性ダメージを4回与え、その味方の行動順を早める。ターゲットにバリアがある場合、ダメージを与えた後、ランダムな敵単体に氷属性ダメージを与え、高確率でダメージを受けた敵単体の防御力をダウンさせる。",
 				"element": "Ice",
@@ -11341,9 +11840,91 @@
 		],
 		"id": "3003021"
 	},
+	"3003022": {
+		"name": "ナイトメア劇団のスウィート・ゴリラ（バグ）",
+		"description": "コードが影響を受けた後、バグってしまった投影。夢境での感情の干渉により、暴走してしまったピノコニーのサービスロボットを参照にしている。\n本来は「スラーダ」の搬送員だった。暴走した後も職務を放棄せず、来客たちにプレゼントを投げ捨てている。",
+		"icon": "spriteoutput/monsterfigure/Monster_3003020.png",
+		"shortIcon": "Monster_3003020",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1953,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"name": "数量無制限の試飲",
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"description": "指定した味方1人に氷属性のダメージを与え、攻撃を受けたバリアを持っていないターゲットを低確率で凍結状態にする。相手がバリアを持っている場合、ダメージを与えた後、自身に氷属性のダメージを与え、高確率で自身の防御力を低下させる。",
+				"element": "Ice",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300302201
+			},
+			{
+				"name": "狂気の飲み放題",
+				"tag": "バウンド",
+				"type": "スキル",
+				"description": "味方1人にランダムで氷属性のダメージを4回与え、攻撃を受けたバリアを持っていないターゲットを高確率で凍結状態にする。相手がバリアを持っている場合、ダメージを与えた後、自身に氷属性のダメージを与え、高確率で自身の防御力を低下させる。",
+				"element": "Ice",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300302202
+			},
+			{
+				"name": "スラーダパーティ",
+				"tag": "召喚",
+				"type": "スキル",
+				"description": "「ソーダドッグ」を2体召喚する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300302203
+			},
+			{
+				"name": "スラーダ噴水",
+				"tag": "チャージ",
+				"type": "スキル",
+				"description": "チャージ状態になり、靭性保護を獲得し、次の行動時に「狂気の飲み放題」を発動する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300302204
+			}
+		],
+		"resistance": [
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Thunder",
+				"value": 0.2
+			},
+			{
+				"element": "Wind",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"id": "3003022"
+	},
 	"3011010": {
-		"name": "{RUBY_B#きおくいき}記憶域{RUBY_E#}ミーム「{RUBY_B#へんざい}偏在{RUBY_E#}する{RUBY_B#しせん}視線{RUBY_E#}」",
-		"description": "特定の認識を含む実体。記憶域にある潜在意識の欠片が積み重なってできたもの。\n注目する、振り返る、見極める...生命の生存行為と自身の生存に対する理解の中で、「目視」と「観測」の記憶が影のようにまとわりつき、最終的に命そのものとなる。",
+		"name": "{RUBY_B#きおくいき}記憶域{RUBY_E#}ミーム「{RUBY_B#へんざい}遍在{RUBY_E#}する{RUBY_B#しせん}視線{RUBY_E#}」",
+		"description": "特定の認識を含む実体。記憶域にある潜在意識の欠片が積み重なってできたもの。\n注目する、振り返る、見極める…生命の生存行為と自身の生存に対する理解の中で、「目視」と「観測」の記憶が影のようにまとわりつき、最終的に命そのものとなる。",
 		"icon": "spriteoutput/monsterfigure/Monster_3011010.png",
 		"shortIcon": "Monster_3011010",
 		"stats": {
@@ -11392,6 +11973,64 @@
 			"Thunder"
 		],
 		"id": "3011010"
+	},
+	"3012010": {
+		"name": "記憶域ミーム「鏡に隠れるのは何物」",
+		"description": "特定の認識を含む実体で、記憶域の潜在意識の欠片が積み重なって構成されている。\n命は鏡像を通じて世界を認識し、自我認識を構築する。目に見えないミームは鏡の中で映し出され、多様に変化する謎の影を残す。",
+		"icon": "spriteoutput/monsterfigure/Monster_3012010.png",
+		"shortIcon": "Monster_3012010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 148.8,
+			"type": "MinionLv2"
+		},
+		"skills": [
+			{
+				"name": "鏡像のアイデンティティー",
+				"tag": "その他",
+				"type": "スキル",
+				"description": "他の敵に変身し、変身対象のスキルをコピーする。変身後、自身の基礎ステータスを継承する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301201001
+			},
+			{
+				"tag": "その他",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301201002
+			}
+		],
+		"resistance": [
+			{
+				"element": "Fire",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Thunder",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"id": "3012010"
 	},
 	"3012020": {
 		"name": "{RUBY_B#きおくいき}記憶域{RUBY_E#}ミーム「{RUBY_B#くだ}砕{RUBY_E#}け{RUBY_B#ち}散{RUBY_E#}った{RUBY_B#こころ}心{RUBY_E#}」",
@@ -11455,7 +12094,7 @@
 	},
 	"3012030": {
 		"name": "永眠の墓碑",
-		"description": "砕けた命が終焉の符号として集まる。彼岸の魂は未だに此岸を見つめ、その眼に忘却と別れの碑文を映す。\n無辜の魂が永眠の墓碑の中に眠る。永眠の墓碑を倒すと、彼らを呼び覚ませる。",
+		"description": "砕け散った命が集まって終焉の印を作り、彼岸の魂は依然としてこちらを見つめている。その目には忘却と離別の碑文が映っている。\n無辜の魂は永眠の墓碑で眠っている。永眠の墓碑を消し去れば彼らを目覚めさせることができる。",
 		"icon": "spriteoutput/monsterfigure/Monster_3012030.png",
 		"shortIcon": "Monster_3012030",
 		"stats": {
@@ -11491,7 +12130,7 @@
 				"name": "永遠に溶け入る継続",
 				"tag": "天賦",
 				"type": "天賦",
-				"description": "永眠の墓碑は回数HPを持っている。攻撃を受ける、弱点撃破される、または持続ダメージを受ける時、HPが1減る。",
+				"description": "永眠の墓碑は固定のマス数を持つ「回数HP」を持っている。攻撃を受ける、弱点撃破される、または持続ダメージを受ける時、HPが1マス減る。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -11526,7 +12165,7 @@
 	},
 	"3012031": {
 		"name": "永眠の墓碑",
-		"description": "砕けた命が終焉の符号として集まる。彼岸の魂は未だに此岸を見つめ、その眼に忘却と別れの碑文を映す。\n無辜の魂が永眠の墓碑の中に眠る。永眠の墓碑を倒すと、彼らを呼び覚ませる。",
+		"description": "砕け散った命が集まって終焉の印を作り、彼岸の魂は依然としてこちらを見つめている。その目には忘却と離別の碑文が映っている。\n無辜の魂は永眠の墓碑で眠っている。永眠の墓碑を消し去れば彼らを目覚めさせることができる。",
 		"icon": "spriteoutput/monsterfigure/Monster_3012030.png",
 		"shortIcon": "Monster_3012030",
 		"stats": {
@@ -11562,7 +12201,7 @@
 				"name": "永遠に溶け入る継続",
 				"tag": "天賦",
 				"type": "天賦",
-				"description": "永眠の墓碑は回数HPを持っている。攻撃を受ける、弱点撃破される、または持続ダメージを受ける時、HPが1減る。",
+				"description": "永眠の墓碑は固定のマス数を持つ「回数HP」を持っている。攻撃を受ける、弱点撃破される、または持続ダメージを受ける時、HPが1マス減る。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -11594,6 +12233,192 @@
 			"Imaginary"
 		],
 		"id": "3012031"
+	},
+	"3013010": {
+		"name": "記憶域ミーム「怒りが脱却した殻」",
+		"description": "特定の認識を持つ実体。記憶域にある潜在意識の欠片が積み重なってできたもの。\n悲しみと苦しみの記憶は豪華のように心を焼く。苦難が過ぎた後、無限なる怒りを携えて、恨みが化した生命が灰燼の中から誕生する。",
+		"icon": "spriteoutput/monsterfigure/Monster_3013010.png",
+		"shortIcon": "Monster_3013010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1302,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"name": "恨みを抱いた礼",
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"description": "指定した味方単体に量子属性のダメージを与える。さらに自身が「怒りの炎」を1層獲得する。",
+				"element": "Quantum",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301001
+			},
+			{
+				"name": "雷霆の如く叱咤",
+				"tag": "強化",
+				"type": "スキル",
+				"description": "自身に「怒りの炎」を3層付与する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301002
+			},
+			{
+				"name": "宿怨は波の如く逆巻く",
+				"tag": "全体攻撃",
+				"type": "スキル",
+				"description": "味方全体に少量の量子属性のダメージを与える。さらに自身が「怒りの炎」を1層獲得する。",
+				"element": "Quantum",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301003
+			},
+			{
+				"name": "骨刺す嫌悪",
+				"tag": "バウンド",
+				"type": "スキル",
+				"description": "ランダムな味方単体に少量の量子属性のダメージを連続して与える。「怒りの炎」1層につき、追加で1回ダメージを与える。",
+				"element": "Quantum",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301004
+			},
+			{
+				"name": "ヒステリックボディ",
+				"tag": "天賦",
+				"type": "天賦",
+				"description": "「守備」状態に入る。弱点撃破状態でない時の被ダメージがダウンする。弱点撃破された時の行動順遅延量がアップし、弱点撃破状態の時の被ダメージがアップする。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301005
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Fire",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Wind",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Thunder",
+			"Quantum",
+			"Imaginary"
+		],
+		"id": "3013010"
+	},
+	"3013011": {
+		"name": "記憶域ミーム「怒りが消えた後の殻」",
+		"description": "特定の認識を含む実体で、記憶域の潜在意識の欠片が積み重なって構成されている。\n悲しみの記憶は心を焼いているかのようで、苦しみが消え去った後、恨みが変化した命が灰の中から生まれ、無限の怒りを蓄積する。",
+		"icon": "spriteoutput/monsterfigure/Monster_3013010.png",
+		"shortIcon": "Monster_3013010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1302,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"name": "恨みの礼",
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"description": "指定した味方単体に量子属性のダメージを与える。さらに自身が「怒りの炎」を1層獲得する。",
+				"element": "Quantum",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301101
+			},
+			{
+				"name": "雷鳴のごとき怒鳴り声",
+				"tag": "強化",
+				"type": "スキル",
+				"description": "自身が「怒りの炎」を1層獲得する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301102
+			},
+			{
+				"name": "根深い恨み",
+				"tag": "全体攻撃",
+				"type": "スキル",
+				"description": "味方全体に少量の量子属性のダメージを与える。さらに自身が「怒りの炎」を1層獲得する。",
+				"element": "Quantum",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301103
+			},
+			{
+				"name": "骨に突き刺さる痛み",
+				"tag": "バウンド",
+				"type": "スキル",
+				"description": "ランダムな味方単体に少量の量子属性のダメージを連続して与える。「怒りの炎」1層につき、追加で1回ダメージを与える。",
+				"element": "Quantum",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301104
+			},
+			{
+				"name": "ヒステリーの肉体",
+				"tag": "天賦",
+				"type": "天賦",
+				"description": "「守備」状態になり、弱点が撃破されていないとき、被ダメージが減少する。撃破されたときは行動がさらに遅延し、撃破された後の被ダメージが増加する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301105
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Fire",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Wind",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Thunder",
+			"Quantum",
+			"Imaginary"
+		],
+		"id": "3013011"
 	},
 	"3014020": {
 		"name": "{RUBY_B#きおくいき}記憶域{RUBY_E#}ミーム「{RUBY_B#し}死{RUBY_E#}へ{RUBY_B#む}向{RUBY_E#}かうのは{RUBY_B#なにもの}何物{RUBY_E#}」",
@@ -11864,6 +12689,141 @@
 			"Imaginary"
 		],
 		"id": "3014021"
+	},
+	"3014022": {
+		"name": "記憶域ミーム「死へ向かうのは何物」（スペック）",
+		"description": "コードが影響を受けた後の正常な投影。記憶域にある潜在意識の欠片が積み重なってできた、特定の認識を持つ実体を参照にしている。\n神秘的で危険な記憶域ミーム。夢の中では存在しないはずの「死亡」と見なされている。それは十二の刻を彷徨い、鋭い刃で悪夢を散布し、死の影で美しき夢を覆う。この記憶域ミームが至るところには、必ず災禍が降りかかる。",
+		"icon": "spriteoutput/monsterfigure/Monster_3014020.png",
+		"shortIcon": "Monster_3014020",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1023,
+			"type": "LittleBoss"
+		},
+		"skills": [
+			{
+				"name": "葬儀の接吻",
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"description": "味方単体に物理ダメージを与える。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402201
+			},
+			{
+				"name": "死の黒雨",
+				"tag": "全体攻撃",
+				"type": "スキル",
+				"description": "味方全体に物理ダメージを与える。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402202
+			},
+			{
+				"name": "悲惨な弔辞",
+				"tag": "強化",
+				"type": "スキル",
+				"description": "自身の与ダメージを超大幅アップする、1ターン継続。この効果は弱点撃破された後に解除される。毎回本スキル発動後に1層の与ダメージアップを獲得し、その後に召喚される「永眠の墓碑」のHPを1マス増やす。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402203
+			},
+			{
+				"name": "消える光明",
+				"tag": "ロックオン",
+				"type": "スキル",
+				"description": "「日没」状態に入る。キャラが自発的に行動するたびに1層獲得する。3層に達した時、一つ前に行動したキャラに対して「黄昏に色褪せて」を発動する。「黄昏に色褪せて」を1回発動した後、または弱点撃破された後に、この状態は解除される。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402204
+			},
+			{
+				"name": "黄昏に色褪せて",
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"description": "一つ前に行動したキャラに、致命攻撃を行う。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402205
+			},
+			{
+				"name": "良い夜へ",
+				"tag": "チャージ",
+				"type": "スキル",
+				"description": "「夜の降臨」状態に入り、「弱点無効」効果を獲得する。「夜の降臨」状態の間で先に行動した味方2名をロックオンし、次の行動で「水が水に消え逝くように」を発動する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402206
+			},
+			{
+				"name": "水が水に消え逝くように",
+				"tag": "全体攻撃",
+				"type": "スキル",
+				"description": "ロックオンしたすべての味方に、致命攻撃を行う。ロックオンされた味方がない場合、ランダムで味方2名をロックオンする。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402207
+			},
+			{
+				"tag": "召喚",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402208
+			},
+			{
+				"name": "弔えぬ荒涼",
+				"tag": "天賦",
+				"type": "天賦",
+				"description": "味方が「夢死」状態になった時、対応する「永眠の墓碑」を1体召喚する。味方全体が「夢死」状態になる、または戦闘不能状態になると、戦闘失敗になる。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402209
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Thunder",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"id": "3014022"
 	},
 	"3021020": {
 		"name": "「叙勲」",
@@ -12654,7 +13614,7 @@
 				"id": 302402005
 			},
 			{
-				"name": "SGE-溶火フィールド",
+				"name": "SGE-熔火フィールド",
 				"tag": "天賦",
 				"type": "天賦",
 				"description": "「二次燃焼」状態に入った後、フィールドと味方のSPを燃やす。味方が燃えるSPを消費するとHPを消費し、さらに敵に本来のダメージ一定割合分の炎属性固定ダメージを与える。他の味方に治癒される時の回復量が大幅にダウンする。",
@@ -12665,10 +13625,10 @@
 				"id": 302402006
 			},
 			{
-				"name": "SGE-溶火エンジン",
+				"name": "SGE-熔火エンジン",
 				"tag": "天賦",
 				"type": "天賦",
-				"description": "「二次燃焼」のサムは「溶火エネルギー」を持つ。サムが燃えるSPを消費する攻撃を受ける時、対応する数の「溶火エネルギー」が減り、「溶火エネルギー」が0%になると「二次燃焼」が解除される。「二次燃焼」を解除した時、サムの被ダメージがアップし、味方のSPがすべて回復する。",
+				"description": "「二次燃焼」のサムは「熔火エネルギー」を持つ。サムが燃えるSPを消費する攻撃を受ける時、対応する数の「熔火エネルギー」が減り、「熔火エネルギー」が尽きる、または弱点を撃破されたとき、「二次燃焼」が解除される。「二次燃焼」を解除した時、サムの被ダメージがアップし、味方のSPがすべて回復する。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -12686,18 +13646,18 @@
 				"value": 0.2
 			},
 			{
-				"element": "Wind",
+				"element": "Ice",
 				"value": 0.2
 			},
 			{
-				"element": "Imaginary",
+				"element": "Wind",
 				"value": 0.2
 			}
 		],
 		"weakness": [
-			"Ice",
 			"Thunder",
-			"Quantum"
+			"Quantum",
+			"Imaginary"
 		],
 		"id": "3024020"
 	},
@@ -12769,7 +13729,7 @@
 				"id": 302402105
 			},
 			{
-				"name": "SGE-溶火フィールド",
+				"name": "SGE-熔火フィールド",
 				"tag": "天賦",
 				"type": "天賦",
 				"description": "「二次燃焼」状態に入った後、フィールドと味方のSPを燃やす。味方が燃えるSPを消費するとHPを消費し、さらに敵に本来のダメージ一定割合分の炎属性固定ダメージを与える。他の味方に治癒される時の回復量が大幅にダウンする。",
@@ -12780,10 +13740,10 @@
 				"id": 302402106
 			},
 			{
-				"name": "SGE-溶火エンジン",
+				"name": "SGE-熔火エンジン",
 				"tag": "天賦",
 				"type": "天賦",
-				"description": "「二次燃焼」のサムは「溶火エネルギー」を持つ。サムが燃えるSPを消費する攻撃を受ける時、対応する数の「溶火エネルギー」が減り、「溶火エネルギー」が0%になると「二次燃焼」が解除される。「二次燃焼」を解除した時、サムの被ダメージがアップし、味方のSPがすべて回復する。",
+				"description": "「二次燃焼」のサムは「熔火エネルギー」を持つ。サムが燃えるSPを消費する攻撃を受ける時、対応する数の「熔火エネルギー」が減り、「熔火エネルギー」が尽きる、または弱点を撃破されたとき、「二次燃焼」が解除される。「二次燃焼」を解除した時、サムの被ダメージがアップし、味方のSPがすべて回復する。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -12801,18 +13761,18 @@
 				"value": 0.2
 			},
 			{
-				"element": "Wind",
+				"element": "Ice",
 				"value": 0.2
 			},
 			{
-				"element": "Imaginary",
+				"element": "Wind",
 				"value": 0.2
 			}
 		],
 		"weakness": [
-			"Ice",
 			"Thunder",
-			"Quantum"
+			"Quantum",
+			"Imaginary"
 		],
 		"id": "3024021"
 	},
@@ -21119,6 +22079,141 @@
 		],
 		"id": "8024012"
 	},
+	"8024013": {
+		"icon": "spriteoutput/monsterfigure/Monster_8024010.png",
+		"shortIcon": "Monster_8024010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1674,
+			"type": "LittleBoss"
+		},
+		"skills": [
+			{
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401301
+			},
+			{
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401302
+			},
+			{
+				"tag": "全体攻撃",
+				"type": "スキル",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401303
+			},
+			{
+				"tag": "召喚",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401304
+			},
+			{
+				"tag": "チャージ",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401305
+			},
+			{
+				"tag": "全体攻撃",
+				"type": "スキル",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401306
+			},
+			{
+				"tag": "全体攻撃",
+				"type": "スキル",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401307
+			},
+			{
+				"tag": "天賦",
+				"type": "天賦",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401308
+			},
+			{
+				"tag": "天賦",
+				"type": "天賦",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401309
+			},
+			{
+				"tag": "拡散攻撃",
+				"type": "スキル",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401310
+			},
+			{
+				"tag": "召喚",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401311
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Fire",
+				"value": 0.2
+			},
+			{
+				"element": "Thunder",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"id": "8024013"
+	},
 	"8025010": {
 		"name": "{RUBY_B#さいせいおうちゅう}砕星王虫{RUBY_E#}・スキャラカバズ（{RUBY_B#もぞう}模造{RUBY_E#}）",
 		"description": "ルアン・メェイが育てた「繁殖」の使令の複製体。欠けた姿でこの世界にしばし出現した。原型は蟲の王の顎を継承した巨大な蟲。口器に天体を引き裂く死の光を集め、砕いた星を子孫を育てる温床とする。かつては宇宙の蝗害における諸界の悪夢の1つであった。",
@@ -21391,6 +22486,34 @@
 		],
 		"id": "8032020"
 	},
+	"8032030": {
+		"name": "「オール・オア・ナッシング」",
+		"description": "「博戯の砂金」が化した博戯のサイコロ。賭けのステージで、博徒たちの運命を裁断する。",
+		"icon": "spriteoutput/monsterfigure/Monster_8032030.png",
+		"shortIcon": "Monster_8032030",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 46.5,
+			"type": "MinionLv2"
+		},
+		"skills": [
+			{
+				"name": "測り難き運数",
+				"tag": "天賦",
+				"type": "天賦",
+				"description": "ダメージを受けない。ギャンブルデュエルに入ったユニットの攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803203001
+			}
+		],
+		"resistance": [],
+		"weakness": [],
+		"id": "8032030"
+	},
 	"8033010": {
 		"name": "ベテラン{RUBY_B#しゃいん}社員{RUBY_E#}・チームリーダー",
 		"description": "「スターピースカンパニー」のベテラン社員。階級は少なくともプロジェクトチームのリーダー程度はある。操縦しているメカは公有財産で、壊したら自費で弁償しなければならない。給料はまあまあで、カンパニー傘下の企業艦に1LDKの物件を借りられる。",
@@ -21632,6 +22755,245 @@
 		],
 		"id": "8033011"
 	},
+	"8033013": {
+		"icon": "spriteoutput/monsterfigure/Monster_8033010.png",
+		"shortIcon": "Monster_8033010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1767,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301301
+			},
+			{
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301302
+			},
+			{
+				"tag": "チャージ",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301303
+			},
+			{
+				"tag": "全体攻撃",
+				"type": "スキル",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301304
+			},
+			{
+				"tag": "強化",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301305
+			},
+			{
+				"tag": "召喚",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301306
+			},
+			{
+				"tag": "召喚",
+				"type": "スキル",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301307
+			},
+			{
+				"tag": "天賦",
+				"type": "天賦",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301308
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Thunder",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"id": "8033013"
+	},
+	"8034010": {
+		"name": "「十の石心」博戯の砂金石",
+		"description": "スターピースカンパニー「戦略投資部」の高級幹部であり、「十の石心」の一人。基石を通して「存護」の使令の権能を分けてもらった。その身をサイコロとして、死地に立ってから生を手にする。",
+		"icon": "spriteoutput/monsterfigure/Monster_8034010.png",
+		"shortIcon": "Monster_8034010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 2232,
+			"type": "LittleBoss"
+		},
+		"skills": [
+			{
+				"name": "一か八か",
+				"tag": "単体攻撃",
+				"type": "スキル",
+				"description": "指定した味方単体に虚数属性ダメージを与える。",
+				"element": "Imaginary",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401001
+			},
+			{
+				"name": "分散投資",
+				"tag": "バウンド",
+				"type": "スキル",
+				"description": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+				"element": "Imaginary",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401002
+			},
+			{
+				"name": "サイコロ噴泉",
+				"tag": "妨害",
+				"type": "スキル",
+				"description": "味方全体に少量の虚数属性ダメージを与え、味方それぞれのEPを減らす。",
+				"element": "Imaginary",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401003
+			},
+			{
+				"name": "ギャンブルタイム",
+				"tag": "召喚",
+				"type": "スキル",
+				"description": "「オール・オア・ナッシング」を召喚し、味方1人を賭けに参加させる。各「オール・オア・ナッシング」は賭けに参加している味方からの攻撃を受けるたびに、1～6のポイントをランダムで獲得する。賭けに参加している味方1人のターン終了時、ポイントが博戯の砂金よりも低い味方は、賭けに負けたと見なされて攻撃を受ける。ポイントが博戯の砂金よりも高い場合は、賭けに勝ったと見なされて追加で1ターン行動でき、味方のSPを1回復する。また、賭けに参加していない味方は「無言観戦」状態になり、賭けが終了した後に解除される。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401004
+			},
+			{
+				"name": "博打の宴",
+				"tag": "召喚",
+				"type": "スキル",
+				"description": "「オール・オア・ナッシング」を召喚し、味方全体を賭けに参加させる。各「オール・オア・ナッシング」が攻撃を受けるたびに、攻撃をした味方が1～6のポイントをランダムで獲得する。次に博戯の砂金が行動するとき、ポイントが博戯の砂金よりも低い味方は、賭けに負けたと見なされて攻撃を受ける。ポイントが博戯の砂金よりも高い味方は、賭けに勝ったと見なされて追加で1ターン行動でき、味方のSPを1回復する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401005
+			},
+			{
+				"name": "敗者の退席",
+				"tag": "妨害",
+				"type": "スキル",
+				"description": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+				"element": "Imaginary",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401006
+			},
+			{
+				"name": "勝者総取り",
+				"tag": "全体攻撃",
+				"type": "スキル",
+				"description": "ギャンブルデュエルに負けたすべての味方に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+				"element": "Imaginary",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401007
+			},
+			{
+				"name": "博戯ギャンブル",
+				"tag": "天賦",
+				"type": "天賦",
+				"description": "毎回賭けに勝った味方は「幸運到来」の効果を獲得し、与ダメージが増加する。毎回賭けに負けた味方は「時運そろわず」の効果を獲得し、被ダメージが増加する。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401008
+			},
+			{
+				"tag": "単体攻撃",
+				"type": "天賦",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401009
+			}
+		],
+		"resistance": [
+			{
+				"element": "Wind",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.4
+			}
+		],
+		"weakness": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"id": "8034010"
+	},
 	"9003020": {
 		"name": "造物エンジン",
 		"icon": "spriteoutput/monsterfigure/Monster_9003020.png",
@@ -21656,29 +23018,5 @@
 		"resistance": [],
 		"weakness": [],
 		"id": "9003020"
-	},
-	"9004600": {
-		"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
-		"shortIcon": "Monster_8013010",
-		"stats": {
-			"baseAttack": 18,
-			"baseDefense": 210,
-			"baseHealth": 1395,
-			"type": "LittleBoss"
-		},
-		"skills": [
-			{
-				"tag": "天賦",
-				"type": "天賦",
-				"element": "Quantum",
-				"attackType": "Normal",
-				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
-				"shortIcon": "SkillIcon_1001_Maze",
-				"id": 900460001
-			}
-		],
-		"resistance": [],
-		"weakness": [],
-		"id": "9004600"
 	}
 }

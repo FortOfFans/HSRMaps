@@ -1085,6 +1085,99 @@
 		],
 		"id": "1003013"
 	},
+	"1003014": {
+		"name": "dev_银鬃尉官（错误）",
+		"description": "dev_代码受到影响后的错误投影。参照本体为贝洛伯格的戍卫部队「银鬃铁卫」分队的领导者。\n战斗中，只要敌方还有队友存在，银鬃尉官会一直架起巨盾。攻击架盾状态下的银鬃尉官，会立即遭到强力的反击。",
+		"icon": "spriteoutput/monsterfigure/Monster_1003010.png",
+		"shortIcon": "Monster_1003010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1488,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"name": "突击",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对指定我方单体造成物理属性伤害。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 100301401
+			},
+			{
+				"name": "穿刺",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对指定我方单体造成大量物理属性伤害。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 100301402
+			},
+			{
+				"name": "盾反",
+				"tag": "其他",
+				"type": "技能",
+				"description": "进入反击状态，在受到我方单体攻击后获得1个额外回合，对该目标造成物理属性伤害。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 100301403
+			},
+			{
+				"name": "增援",
+				"tag": "召唤",
+				"type": "技能",
+				"description": "召唤【银鬃近卫】或【银鬃射手】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 100301404
+			},
+			{
+				"name": "鼓劲",
+				"tag": "强化",
+				"type": "技能",
+				"description": "使敌方除【银鬃尉官（错误）】外的目标攻击力提高并立即行动。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 100301405
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Thunder",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"id": "1003014"
+	},
 	"1004010": {
 		"name": "可可利亚",
 		"description": "贝洛伯格的守护者，永屹之城贝洛伯格无可质疑的统治者。\n可可利亚秉持传承自历代守护者的神迹权能，在战斗中号令冰雪的力量冻结敌人。",
@@ -5720,6 +5813,198 @@
 		],
 		"id": "1014012"
 	},
+	"1014013": {
+		"name": "史瓦罗",
+		"description": "代码受到影响后的完整投影。参照本体为旧世界的古老遗物，地髓开拓团的时代遗留下的自动控制单元。与大部分无智、只接受指令的机器不同，史瓦罗具有复杂的思考能力。\n在战斗中，史瓦罗（完整）能召唤各种类型的机械并操控机械臂抓取和控制敌人，对目标进行沉重的打击。",
+		"icon": "spriteoutput/monsterfigure/Monster_1014010.png",
+		"shortIcon": "Monster_1004020",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 697.5,
+			"type": "LittleBoss"
+		},
+		"skills": [
+			{
+				"name": "驱逐拳击",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对指定我方单体造成物理属性伤害。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401101
+			},
+			{
+				"name": "延烧光束",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对指定我方单体造成物理属性伤害，并使受到攻击的我方目标行动延后。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401102
+			},
+			{
+				"name": "巨掌之间",
+				"tag": "妨害",
+				"type": "技能",
+				"description": "使指定我方单体陷入【拘束】状态，【拘束】状态下无法行动也无法被指定为目标。当辅助机械臂单元被弱点击破时我方目标的【拘束】状态立即解除。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401103
+			},
+			{
+				"name": "过饱和轰炸",
+				"tag": "群攻",
+				"type": "技能",
+				"description": "对我方全体造成大量物理伤害，并有大概率使受到攻击的我方目标防御力降低，该负面效果可叠加。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401104
+			},
+			{
+				"name": "控场起爆",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "辅助机械臂单元发生爆炸，对指定我方单体造成大量物理属性伤害。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401105
+			},
+			{
+				"name": "过载警告",
+				"tag": "蓄力",
+				"type": "技能",
+				"description": "辅助机械臂单元进入【过载时限】状态，进入该状态后下次行动施放【控场起爆】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401106
+			},
+			{
+				"name": "增效部署",
+				"tag": "召唤",
+				"type": "技能",
+				"description": "召唤【辅助机械臂单元】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401107
+			},
+			{
+				"name": "dev_待机",
+				"tag": "其他",
+				"type": "技能",
+				"description": "dev_待机。不显示。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401108
+			},
+			{
+				"name": "dev_血量触发",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "dev_当辅助机械臂单元存在于场上时，史瓦罗受到的伤害降低。不显示。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401109
+			},
+			{
+				"name": "dev_弱点击破减速",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "dev_当被弱点击破时，自身速度降低，持续1回合。不显示。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401110
+			},
+			{
+				"name": "dev_击飞免疫",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "dev_不显示。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401111
+			},
+			{
+				"name": "输出增幅",
+				"tag": "强化",
+				"type": "技能",
+				"description": "使敌方全体造成的伤害小幅提高，伤害提高效果可叠加。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401112
+			},
+			{
+				"name": "应急支援",
+				"tag": "召唤",
+				"type": "技能",
+				"description": "随机召唤【自动机兵•甲虫】和【自动机兵•战犬】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401113
+			},
+			{
+				"name": "战术支援",
+				"tag": "召唤",
+				"type": "技能",
+				"description": "召唤【自动机兵•齿狼】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 101401114
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"id": "1014013"
+	},
 	"1022010": {
 		"name": "永冬灾影",
 		"description": "寒潮降临后逡巡在裂界中的虚影。它扭曲地模仿着银鬃铁卫的身形，其甲胄着装与贝洛伯格的战士们同样严整，头颅却被没有五官的冰棱所取代。\n战斗中永冬灾影会挥舞冰造的斧刃，延缓敌人的行动。",
@@ -6277,6 +6562,55 @@
 			"Quantum"
 		],
 		"id": "1023021"
+	},
+	"1023022": {
+		"name": "dev_深寒徘徊者",
+		"description": "dev_徘徊在裂界中的机械单元，但毫无疑问这并非人类技术造就的产物，而是裂界扭曲的力量模仿而成的怪物。\n深寒徘徊者会吸引永冬灾影，同时能降低我方的速度与冰属性抗性。",
+		"icon": "spriteoutput/monsterfigure/Monster_1023020.png",
+		"shortIcon": "Monster_1023020",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1116,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"name": "dev_吞噬衍生物",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "dev_吞噬衍生物，若失败减防御",
+				"element": "Ice",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 102302201
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.4
+			},
+			{
+				"element": "Wind",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Fire",
+			"Thunder",
+			"Quantum"
+		],
+		"id": "1023022"
 	},
 	"2002010": {
 		"name": "云骑巡防士卒",
@@ -10834,7 +11168,7 @@
 				"name": "惊吓播报",
 				"tag": "群攻",
 				"type": "技能",
-				"description": "对我方全体造成少量量子属性伤害，并使我方全体损失能量。只能在【惊吓频道】状态下使用。",
+				"description": "对我方全体造成少量量子属性伤害，并使我方全体能量减少。只能在【惊吓频道】状态下使用。",
 				"element": "Quantum",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -10960,6 +11294,80 @@
 		],
 		"id": "3002030"
 	},
+	"3002040": {
+		"name": "惊梦剧团的发条暴徒",
+		"description": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是「白日梦」酒店的服务生，失控后仍在履行报时的职责，用最直接的方式将睡梦惊醒。",
+		"icon": "spriteoutput/monsterfigure/Monster_3002040.png",
+		"shortIcon": "Monster_3002040",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 162.75,
+			"type": "MinionLv2"
+		},
+		"skills": [
+			{
+				"name": "预定闹钟",
+				"tag": "蓄力",
+				"type": "技能",
+				"description": "进入蓄力状态，下次行动时施放【起床铃声】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300204001
+			},
+			{
+				"name": "起床铃声",
+				"tag": "辅助",
+				"type": "技能",
+				"description": "使除自身外的敌方全体立即行动。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300204002
+			},
+			{
+				"name": "清醒铁拳",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对指定我方单体造成物理属性伤害。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300204003
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Fire",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Wind",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Thunder",
+			"Quantum"
+		],
+		"id": "3002040"
+	},
 	"3002050": {
 		"name": "王下一桶",
 		"description": "于虚构中诞生的古怪之物，它的故事记录于无名的史书：孤高悍勇的一桶承载着垃圾之王的使命，寻觅强而有力的战士，扫除危害世间的废料。",
@@ -10987,7 +11395,7 @@
 				"name": "桶的磨砺",
 				"tag": "强化",
 				"type": "技能",
-				"description": "提高自身的攻击力。该效果可叠加，且不可被驱散。",
+				"description": "提高自身的攻击力。该效果可叠加，且不可被解除。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -11037,7 +11445,7 @@
 				"name": "桶的磨砺",
 				"tag": "强化",
 				"type": "技能",
-				"description": "提高自身的攻击力。该效果可叠加，且不可被驱散。",
+				"description": "提高自身的攻击力。该效果可叠加，且不可被解除。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -11158,7 +11566,7 @@
 			},
 			{
 				"name": "点燃炉灶",
-				"tag": "其他",
+				"tag": "蓄力",
 				"type": "技能",
 				"description": "进入蓄力状态。若在下次行动时未将【炉灶加温】叠加至一定层数，则释放【烈焰爆炒】，并清除所有【炉灶加温】层数。",
 				"element": "Fire",
@@ -11180,7 +11588,7 @@
 			},
 			{
 				"name": "厨房事故",
-				"tag": "其他",
+				"tag": "天赋",
 				"type": "技能",
 				"description": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
 				"element": "Fire",
@@ -11193,7 +11601,7 @@
 				"name": "火炼佳肴",
 				"tag": "天赋",
 				"type": "天赋",
-				"description": "当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+				"description": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -11204,7 +11612,7 @@
 				"name": "猛火炉灶",
 				"tag": "天赋",
 				"type": "天赋",
-				"description": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加一层【炉灶加温】。",
+				"description": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -11273,7 +11681,7 @@
 			},
 			{
 				"name": "点燃炉灶",
-				"tag": "其他",
+				"tag": "蓄力",
 				"type": "技能",
 				"description": "进入蓄力状态，下次行动时释放【烈焰爆炒】。",
 				"element": "Fire",
@@ -11295,7 +11703,7 @@
 			},
 			{
 				"name": "厨房事故",
-				"tag": "其他",
+				"tag": "天赋",
 				"type": "技能",
 				"description": "进入蓄力状态后，当【炉灶加温】叠加到一定层数时，立即对敌方全体目标造成大量火属性伤害，使自身防御力降低，并为我方全体目标恢复能量。",
 				"element": "Fire",
@@ -11308,7 +11716,7 @@
 				"name": "火炼佳肴",
 				"tag": "天赋",
 				"type": "天赋",
-				"description": "当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+				"description": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -11319,7 +11727,7 @@
 				"name": "猛火炉灶",
 				"tag": "天赋",
 				"type": "天赋",
-				"description": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加一层【炉灶加温】。",
+				"description": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
 				"element": "Unknow",
 				"attackType": "Normal",
 				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
@@ -11334,6 +11742,121 @@
 			"Wind"
 		],
 		"id": "3003011"
+	},
+	"3003012": {
+		"name": "惊梦剧团的十七分熟（错误）",
+		"description": "代码受到影响后的错误投影。参照本体为匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是烹饪食物的料理机器，失控后仍在喷吐炙烤食材的烈焰，企图将食客一同烧成焦炭。",
+		"icon": "spriteoutput/monsterfigure/Monster_3003010.png",
+		"shortIcon": "Monster_3003010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 2511,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"name": "大力颠勺",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对我方单体造成火属性伤害。",
+				"element": "Fire",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301201
+			},
+			{
+				"name": "旋风翻锅",
+				"tag": "扩散",
+				"type": "技能",
+				"description": "对我方单体及相邻目标造成少量火属性伤害。",
+				"element": "Fire",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301202
+			},
+			{
+				"name": "引爆炉灶",
+				"tag": "蓄力",
+				"type": "技能",
+				"description": "进入蓄力状态，速度提高，在【炉灶加温】叠加至一定层数前，每次行动都会释放【烈焰爆炒】。",
+				"element": "Fire",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301203
+			},
+			{
+				"name": "烈焰爆炒",
+				"tag": "群攻",
+				"type": "技能",
+				"description": "对我方全体造成大量火属性伤害。",
+				"element": "Fire",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301204
+			},
+			{
+				"name": "厨房事故",
+				"tag": "天赋",
+				"type": "技能",
+				"description": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+				"element": "Fire",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301205
+			},
+			{
+				"name": "火炼佳肴",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【引爆炉灶】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301206
+			},
+			{
+				"name": "猛火炉灶",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "自身在攻击时有大概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300301207
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Fire",
+			"Thunder",
+			"Wind"
+		],
+		"id": "3003012"
 	},
 	"3003020": {
 		"name": "惊梦剧团的甜猿泰山",
@@ -11442,7 +11965,7 @@
 			},
 			{
 				"name": "无限畅饮",
-				"tag": "弹射",
+				"tag": "单攻",
 				"type": "技能",
 				"description": "对被标记为监视目标的我方单体造成4次冰属性伤害，并使其行动提前。如果目标身上拥有护盾，则造成伤害后还会对随机敌方单体造成冰属性伤害，并大概率使受到攻击的敌方目标防御力降低。",
 				"element": "Ice",
@@ -11499,6 +12022,88 @@
 		],
 		"id": "3003021"
 	},
+	"3003022": {
+		"name": "惊梦剧团的甜猿泰山（错误）",
+		"description": "代码受到影响后的错误投影。参照本体为匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是「苏乐达」汽水的运输工，失控后仍在分享背负的美味，向路过的宾客抛掷它的礼物。",
+		"icon": "spriteoutput/monsterfigure/Monster_3003020.png",
+		"shortIcon": "Monster_3003020",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1953,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"name": "不限量赠饮",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对指定我方单体造成冰属性伤害，有小概率使受到攻击且没有护盾的目标陷入冻结状态，如果目标身上拥有护盾，则造成伤害后还会对自身造成冰属性伤害，并大概率使自身防御力降低。",
+				"element": "Ice",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300302201
+			},
+			{
+				"name": "疯狂畅饮",
+				"tag": "弹射",
+				"type": "技能",
+				"description": "对我方随机单体造成4次冰属性伤害，有大概率使受到攻击且没有护盾的目标陷入冻结状态，如果目标身上拥有护盾，则造成伤害后还会对自身造成冰属性伤害，并大概率使自身防御力降低。",
+				"element": "Ice",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300302202
+			},
+			{
+				"name": "苏乐达派对",
+				"tag": "召唤",
+				"type": "技能",
+				"description": "召唤2只【气泡锂犬】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300302203
+			},
+			{
+				"name": "酬宾喷泉",
+				"tag": "蓄力",
+				"type": "技能",
+				"description": "进入蓄力状态，获得韧性保护，下次行动时施放【疯狂畅饮】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 300302204
+			}
+		],
+		"resistance": [
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Thunder",
+				"value": 0.2
+			},
+			{
+				"element": "Wind",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Physical",
+			"Fire",
+			"Imaginary"
+		],
+		"id": "3003022"
+	},
 	"3011010": {
 		"name": "忆域迷因「视线无处不在」",
 		"description": "蕴含特定认知的实体，由忆域中的潜意识碎片堆积而成。\n注目、回望、审视…在生命的生存行为和对自身生存的领悟中，「视」与「看」的记忆如影随形，最终成为生命本身。",
@@ -11550,6 +12155,66 @@
 			"Thunder"
 		],
 		"id": "3011010"
+	},
+	"3012010": {
+		"name": "忆域迷因「何物藏于镜中」",
+		"description": "蕴含特定认知的实体，由忆域中的潜意识碎片堆积而成。\n生命通过镜像认知世界，建构自我的认知。无形的模因在镜中倒映，留下千变万化的迷影。",
+		"icon": "spriteoutput/monsterfigure/Monster_3012010.png",
+		"shortIcon": "Monster_3012010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 148.8,
+			"type": "MinionLv2"
+		},
+		"skills": [
+			{
+				"name": "镜像认同",
+				"tag": "其他",
+				"type": "技能",
+				"description": "变身为其他敌方单位，并复制其技能。变身后继承自身的基础属性。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301201001
+			},
+			{
+				"name": "",
+				"tag": "其他",
+				"type": "技能",
+				"description": "",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301201002
+			}
+		],
+		"resistance": [
+			{
+				"element": "Fire",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Thunder",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Physical",
+			"Wind",
+			"Imaginary"
+		],
+		"id": "3012010"
 	},
 	"3012020": {
 		"name": "忆域迷因「我心支离破碎」",
@@ -11752,6 +12417,192 @@
 			"Imaginary"
 		],
 		"id": "3012031"
+	},
+	"3013010": {
+		"name": "忆域迷因「狂怒褪去之壳」",
+		"description": "蕴含特定认知的实体，由忆域中的潜意识碎片堆积而成。\n哀苦的回忆如炽焰灼心，当苦难褪去，怨恨化作的生命便会于灰烬中诞生，积聚无穷的盛怒。",
+		"icon": "spriteoutput/monsterfigure/Monster_3013010.png",
+		"shortIcon": "Monster_3013010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1302,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"name": "怀恨礼",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对指定我方单体造成量子属性伤害。并使自身获得1层【无明火】。",
+				"element": "Quantum",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301001
+			},
+			{
+				"name": "怒叱如雷轰鸣",
+				"tag": "强化",
+				"type": "技能",
+				"description": "自身获得3层【无明火】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301002
+			},
+			{
+				"name": "宿怨如浪翻涌",
+				"tag": "群攻",
+				"type": "技能",
+				"description": "对我方全体造成少量量子属性伤害。并使自身获得1层【无明火】。",
+				"element": "Quantum",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301003
+			},
+			{
+				"name": "痛恶如刺剔骨",
+				"tag": "弹射",
+				"type": "技能",
+				"description": "连续对我方随机单体造成少量量子属性伤害。每层【无明火】额外造成1段伤害。",
+				"element": "Quantum",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301004
+			},
+			{
+				"name": "癔症身壳",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "进入【守备】状态，弱点未被击破时受到的伤害降低，被击破时行动额外延后，被击破后受到的伤害提高。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301005
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Fire",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Wind",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Thunder",
+			"Quantum",
+			"Imaginary"
+		],
+		"id": "3013010"
+	},
+	"3013011": {
+		"name": "忆域迷因「狂怒褪去之壳」",
+		"description": "蕴含特定认知的实体，由忆域中的潜意识碎片堆积而成。\n哀苦的回忆如炽焰灼心，当苦难褪去，怨恨化作的生命便会于灰烬中诞生，积聚无穷的盛怒。",
+		"icon": "spriteoutput/monsterfigure/Monster_3013010.png",
+		"shortIcon": "Monster_3013010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1302,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"name": "怀恨礼",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对指定我方单体造成量子属性伤害。并使自身获得1层【无明火】。",
+				"element": "Quantum",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301101
+			},
+			{
+				"name": "怒叱如雷轰鸣",
+				"tag": "强化",
+				"type": "技能",
+				"description": "自身获得3层【无明火】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301102
+			},
+			{
+				"name": "宿怨如浪翻涌",
+				"tag": "群攻",
+				"type": "技能",
+				"description": "对我方全体造成少量量子属性伤害。并使自身获得1层【无明火】。",
+				"element": "Quantum",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301103
+			},
+			{
+				"name": "痛恶如刺剔骨",
+				"tag": "弹射",
+				"type": "技能",
+				"description": "连续对我方随机单体造成少量量子属性伤害。每层【无明火】额外造成1段伤害。",
+				"element": "Quantum",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301104
+			},
+			{
+				"name": "癔症身壳",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "进入【守备】状态，弱点未被击破时受到的伤害降低，被击破时行动额外延后，被击破后受到的伤害提高。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301301105
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Fire",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Wind",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Thunder",
+			"Quantum",
+			"Imaginary"
+		],
+		"id": "3013011"
 	},
 	"3014020": {
 		"name": "忆域迷因「何物朝向死亡」",
@@ -12026,6 +12877,143 @@
 			"Imaginary"
 		],
 		"id": "3014021"
+	},
+	"3014022": {
+		"name": "忆域迷因「何物朝向死亡」（完整）",
+		"description": "代码受到影响后的完整投影。参照本体为蕴含特定认知的实体，由忆域中的潜意识碎片堆积而成。\n神秘危险的忆域迷因，被视作梦中不应存在的「死亡」。它的邪影游荡于十二时分，所及之处必有不测之祸，以利刃散布噩耗，以死荫笼罩美梦。",
+		"icon": "spriteoutput/monsterfigure/Monster_3014020.png",
+		"shortIcon": "Monster_3014020",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1023,
+			"type": "LittleBoss"
+		},
+		"skills": [
+			{
+				"name": "葬仪之吻",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对指定我方单体造成物理属性伤害。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402201
+			},
+			{
+				"name": "沦没黑雨",
+				"tag": "群攻",
+				"type": "技能",
+				"description": "对我方全体造成物理属性伤害。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402202
+			},
+			{
+				"name": "彻心悼词",
+				"tag": "强化",
+				"type": "技能",
+				"description": "提升自身造成的伤害，持续1回合，陷入弱点击破状态后解除。每次释放时获得1层伤害提高，并使后续召唤的【永眠墓碣】生命值增加1格。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402203
+			},
+			{
+				"name": "光明消歇",
+				"tag": "锁定",
+				"type": "技能",
+				"description": "进入【白日西沉】状态。每当我方施放普攻、战技、终结技时叠加1层，当【白日西沉】叠加至3层时，立即对上一个行动的我方施放【已在黄昏失色】。施放过一次【已在黄昏失色】或被弱点击破后解除该状态。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402204
+			},
+			{
+				"name": "已在黄昏失色",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "立即对上一名施放普攻、战技、终结技的我方目标发动致命攻击，使其陷入【梦死】状态。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402205
+			},
+			{
+				"name": "步入良夜",
+				"tag": "蓄力",
+				"type": "技能",
+				"description": "进入【夜幕降临】状态并获得【弱点无效】效果，期间会锁定2名最先行动的我方目标。下次行动时使用【如水逝于水中】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402206
+			},
+			{
+				"name": "如水逝于水中",
+				"tag": "群攻",
+				"type": "技能",
+				"description": "立即对所有被锁定的我方目标发动致命攻击，使其陷入【梦死】状态。如果没有被锁定的目标，则随机对2名我方目标发动致命攻击并使其陷入【梦死】状态。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402207
+			},
+			{
+				"name": "",
+				"tag": "召唤",
+				"type": "技能",
+				"description": "",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402208
+			},
+			{
+				"name": "无从凭吊的荒场",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "每当我方目标陷入【梦死】状态时，召唤一个对应的【永眠墓碣】；当我方全体陷入【梦死】状态或无法战斗状态时，战斗失败。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 301402209
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Ice",
+				"value": 0.2
+			},
+			{
+				"element": "Thunder",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Fire",
+			"Wind",
+			"Imaginary"
+		],
+		"id": "3014022"
 	},
 	"3021020": {
 		"name": "「授勋」",
@@ -12850,18 +13838,18 @@
 				"value": 0.2
 			},
 			{
-				"element": "Wind",
+				"element": "Ice",
 				"value": 0.2
 			},
 			{
-				"element": "Imaginary",
+				"element": "Wind",
 				"value": 0.2
 			}
 		],
 		"weakness": [
-			"Ice",
 			"Thunder",
-			"Quantum"
+			"Quantum",
+			"Imaginary"
 		],
 		"id": "3024020"
 	},
@@ -12965,18 +13953,18 @@
 				"value": 0.2
 			},
 			{
-				"element": "Wind",
+				"element": "Ice",
 				"value": 0.2
 			},
 			{
-				"element": "Imaginary",
+				"element": "Wind",
 				"value": 0.2
 			}
 		],
 		"weakness": [
-			"Ice",
 			"Thunder",
-			"Quantum"
+			"Quantum",
+			"Imaginary"
 		],
 		"id": "3024021"
 	},
@@ -21331,6 +22319,165 @@
 		],
 		"id": "8024012"
 	},
+	"8024013": {
+		"name": "dev_虫群•真蛰虫",
+		"description": "dev_成熟体的真蛰虫；博识学会的杜卢伊爵士遨游星海，曾写下三十卷《诸界异虫札记》。书中详实记载了迄今为止被确认的十几种蠹虫种类，以及星系间数之不尽的亚种。",
+		"icon": "spriteoutput/monsterfigure/Monster_8024010.png",
+		"shortIcon": "Monster_8024010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1674,
+			"type": "LittleBoss"
+		},
+		"skills": [
+			{
+				"name": "作战时刻",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对指定我方单体造成少量风属性伤害，并大概率使受到攻击的我方目标陷入2层风化状态。",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401301
+			},
+			{
+				"name": "战争兵器",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对指定我方单体造成少量风属性伤害。如受到攻击的目标正处于风化状态，则直接造成1次风化伤害。",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401302
+			},
+			{
+				"name": "飓风",
+				"tag": "群攻",
+				"type": "技能",
+				"description": "对我方全体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401303
+			},
+			{
+				"name": "繁殖",
+				"tag": "召唤",
+				"type": "技能",
+				"description": "繁殖真蛰虫群。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401304
+			},
+			{
+				"name": "指挥准备",
+				"tag": "蓄力",
+				"type": "技能",
+				"description": "进入蓄力状态，下次行动施放【虫群突袭】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401305
+			},
+			{
+				"name": "虫群突袭",
+				"tag": "群攻",
+				"type": "技能",
+				"description": "解除场上所有真蛰虫群的控制类负面状态与弱点击破状态，并对我方目标造成风属性伤害，使我方目标每次受到攻击时大概率陷入1层风化状态。",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401306
+			},
+			{
+				"name": "虫群突袭",
+				"tag": "群攻",
+				"type": "技能",
+				"description": "解除场上所有真蛰虫群的控制类负面状态与弱点击破状态，并对我方目标造成风属性伤害，使我方目标每次受到攻击时大概率陷入1层风化状态。",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401307
+			},
+			{
+				"name": "传衍信息素",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "场上每繁殖出1个真蛰虫群，所有真蛰虫群获得1层伤害提高。场上仅能有1个【传衍信息素】效果生效。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401308
+			},
+			{
+				"name": "蛰亡语",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "受到致命攻击时，对敌方全体造成风属性伤害，并大概率使受到攻击的敌方目标受到的伤害小幅提高。",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401309
+			},
+			{
+				"name": "",
+				"tag": "扩散",
+				"type": "技能",
+				"description": "",
+				"element": "Wind",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401310
+			},
+			{
+				"name": "繁殖",
+				"tag": "召唤",
+				"type": "技能",
+				"description": "繁殖真蛰虫群。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 802401311
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Fire",
+				"value": 0.2
+			},
+			{
+				"element": "Thunder",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Ice",
+			"Wind",
+			"Imaginary"
+		],
+		"id": "8024013"
+	},
 	"8025010": {
 		"name": "碎星王虫•斯喀拉卡巴兹（拟造）",
 		"description": "阮•梅培育的「繁育」令使复制体，以残缺的姿态短暂现世。原型为继承虫皇之颚的巨蠹，能以口器凝聚裂解天体的死光，将破碎的群星作为诞育子嗣的温床，曾是寰宇蝗灾中的诸界噩梦之一。",
@@ -21613,6 +22760,34 @@
 		],
 		"id": "8032020"
 	},
+	"8032030": {
+		"name": "「所有或一无所有」",
+		"description": "「诡弈砂金」所化博弈之骰，于赌局中裁断博徒们的命运。",
+		"icon": "spriteoutput/monsterfigure/Monster_8032030.png",
+		"shortIcon": "Monster_8032030",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 46.5,
+			"type": "MinionLv2"
+		},
+		"skills": [
+			{
+				"name": "运数莫测",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "不会受到伤害，受到进入赌局的目标攻击时使其获得1个随机1到6的点数。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803203001
+			}
+		],
+		"resistance": [],
+		"weakness": [],
+		"id": "8032030"
+	},
 	"8033010": {
 		"name": "资深员工•组长",
 		"description": "「星际和平公司」的资深员工，级别至少是项目组的小组长。驾驶的机甲属于公有资产，一旦损坏需要自费赔偿。工资尚可，足够在公司旗下的企业舰上租下一室一厅的单间。",
@@ -21854,6 +23029,265 @@
 		],
 		"id": "8033011"
 	},
+	"8033013": {
+		"name": "dev_资深员工•组长（错误）",
+		"description": "dev_代码受到影响后的错误投影。参照本体为「星际和平公司」的资深员工，级别至少是项目组的小组长。驾驶的机甲属于公有资产，一旦损坏需要自费赔偿。工资尚可，足够在公司旗下的企业舰上租下一室一厅的单间。",
+		"icon": "spriteoutput/monsterfigure/Monster_8033010.png",
+		"shortIcon": "Monster_8033010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 1767,
+			"type": "Elite"
+		},
+		"skills": [
+			{
+				"name": "dev_处分",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "dev_对指定我方单体造成少量物理属性伤害。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301301
+			},
+			{
+				"name": "dev_降本增效",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "dev_对指定我方单体造成物理属性伤害。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301302
+			},
+			{
+				"name": "dev_培训中…",
+				"tag": "蓄力",
+				"type": "技能",
+				"description": "dev_进入蓄力状态，下次行动施放【企业文化冲击】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301303
+			},
+			{
+				"name": "dev_企业文化冲击",
+				"tag": "群攻",
+				"type": "技能",
+				"description": "dev_对我方全体造成物理属性伤害。",
+				"element": "Physical",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301304
+			},
+			{
+				"name": "dev_<unbreak>720</unbreak>度考核",
+				"tag": "强化",
+				"type": "技能",
+				"description": "dev_夺取所有【基层员工•外勤】和【基层员工•安保】的【绩效点】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301305
+			},
+			{
+				"name": "dev_末位淘汰",
+				"tag": "召唤",
+				"type": "技能",
+				"description": "dev_消灭1名没有【绩效点】的【基层员工•外勤】或【基层员工•安保】，并召唤至多4名【基层员工•外勤】或【基层员工•安保】，同时使场上所有【基层员工•外勤】和【基层员工•安保】获得1个【绩效点】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301306
+			},
+			{
+				"name": "dev_末位淘汰",
+				"tag": "召唤",
+				"type": "技能",
+				"description": "dev_消灭1名没有【绩效点】的【基层员工•外勤】或【基层员工•安保】，并召唤至多4名【基层员工•外勤】或【基层员工•安保】，同时使场上所有【基层员工•外勤】和【基层员工•安保】获得1个【绩效点】。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301307
+			},
+			{
+				"name": "dev_提升业绩",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "dev_每次施放攻击后获得1个【绩效点】。【绩效点】可在自身弱点被击破或受到致命攻击时被攻击者夺取。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803301308
+			}
+		],
+		"resistance": [
+			{
+				"element": "Physical",
+				"value": 0.2
+			},
+			{
+				"element": "Thunder",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.2
+			}
+		],
+		"weakness": [
+			"Fire",
+			"Ice",
+			"Wind"
+		],
+		"id": "8033013"
+	},
+	"8034010": {
+		"name": "「石心十人」诡弈砂金",
+		"description": "星际和平公司「战略投资部」的高级干部，「石心十人」之一。借由基石分得「存护」令使的权能，以身作骰，置之死地而后生。",
+		"icon": "spriteoutput/monsterfigure/Monster_8034010.png",
+		"shortIcon": "Monster_8034010",
+		"stats": {
+			"baseAttack": 18,
+			"baseDefense": 210,
+			"baseHealth": 2232,
+			"type": "LittleBoss"
+		},
+		"skills": [
+			{
+				"name": "押以重注",
+				"tag": "单攻",
+				"type": "技能",
+				"description": "对指定我方单体造成虚数属性伤害。",
+				"element": "Imaginary",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401001
+			},
+			{
+				"name": "分散投资",
+				"tag": "弹射",
+				"type": "技能",
+				"description": "连续对我方随机单体造成少量虚数属性伤害。",
+				"element": "Imaginary",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401002
+			},
+			{
+				"name": "点数喷泉",
+				"tag": "妨害",
+				"type": "技能",
+				"description": "对我方全体造成少量虚数属性伤害，并减少我方全体的能量。",
+				"element": "Imaginary",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401003
+			},
+			{
+				"name": "对赌时刻",
+				"tag": "召唤",
+				"type": "技能",
+				"description": "召唤【「所有或一无所有」】并使我方单体进入赌局，每个【「所有或一无所有」】每次受到进入赌局的我方目标攻击时，会使其获得1个随机1到6的点数。进入赌局的我方单体回合结束时，点数低于诡弈砂金视为输掉赌局并受到攻击；点数高于诡弈砂金视为赢得赌局且终结技被激活。同时使没有进入赌局的我方目标陷入【观局勿语】状态，赌局结束后解除。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401004
+			},
+			{
+				"name": "豪赌盛宴",
+				"tag": "召唤",
+				"type": "技能",
+				"description": "召唤【「所有或一无所有」】并使我方全体进入赌局，每个【「所有或一无所有」】每次受到攻击时会使进行攻击的我方目标获得1个随机1到6的点数。下次诡弈砂金行动时，点数低于诡弈砂金的我方目标视为输掉赌局并受到攻击；点数高于诡弈砂金的我方目标视为赢得赌局且终结技被激活。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401005
+			},
+			{
+				"name": "败者退席",
+				"tag": "妨害",
+				"type": "技能",
+				"description": "对输掉赌局的我方单体造成虚数属性伤害，并大概率使受到攻击的我方单体陷入禁锢状态。",
+				"element": "Imaginary",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401006
+			},
+			{
+				"name": "胜者通杀",
+				"tag": "群攻",
+				"type": "技能",
+				"description": "对所有输掉赌局的我方目标造成大量虚数属性伤害，并大概率使受到攻击的我方目标陷入禁锢状态。",
+				"element": "Imaginary",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401007
+			},
+			{
+				"name": "诡弈赌约",
+				"tag": "天赋",
+				"type": "天赋",
+				"description": "每次赢得赌局的我方目标获得【鸿运当头】效果，造成的伤害提高；每次输掉赌局的我方目标获得【时运不济】效果，受到的伤害提高。",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401008
+			},
+			{
+				"name": "",
+				"tag": "单攻",
+				"type": "天赋",
+				"description": "",
+				"element": "Unknow",
+				"attackType": "Normal",
+				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
+				"shortIcon": "SkillIcon_1001_Maze",
+				"id": 803401009
+			}
+		],
+		"resistance": [
+			{
+				"element": "Wind",
+				"value": 0.2
+			},
+			{
+				"element": "Quantum",
+				"value": 0.2
+			},
+			{
+				"element": "Imaginary",
+				"value": 0.4
+			}
+		],
+		"weakness": [
+			"Physical",
+			"Ice",
+			"Thunder"
+		],
+		"id": "8034010"
+	},
 	"9003020": {
 		"name": "造物引擎",
 		"description": "dev_暴风雪领域",
@@ -21881,31 +23315,5 @@
 		"resistance": [],
 		"weakness": [],
 		"id": "9003020"
-	},
-	"9004600": {
-		"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
-		"shortIcon": "Monster_8013010",
-		"stats": {
-			"baseAttack": 18,
-			"baseDefense": 210,
-			"baseHealth": 1395,
-			"type": "LittleBoss"
-		},
-		"skills": [
-			{
-				"name": "dev_被动",
-				"tag": "天赋",
-				"type": "天赋",
-				"description": "dev_自身无法被选择和攻击，场上怪物被击杀时会扣血",
-				"element": "Quantum",
-				"attackType": "Normal",
-				"icon": "spriteoutput/skillicons/1001/SkillIcon_1001_Maze.png",
-				"shortIcon": "SkillIcon_1001_Maze",
-				"id": 900460001
-			}
-		],
-		"resistance": [],
-		"weakness": [],
-		"id": "9004600"
 	}
 }
