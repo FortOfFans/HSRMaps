@@ -714,20 +714,29 @@
 		"setIcon": "spriteoutput/itemfigures/71027.png"
 	},
 	"313": {
-		"name": "荒涼の惑星ツガンニヤ",
+		"name": "{RUBY_B#こうりょう}荒涼{RUBY_E#}の{RUBY_B#わくせい}惑星{RUBY_E#}ツガンニヤ",
 		"setID": "313",
-		"twopc": "敵が倒された時、装備キャラの会心ダメージ+<unbreak>#1[i]%</unbreak>、最大で<unbreak>#2[i]</unbreak>回累積できる。",
+		"twopc": "装備キャラの会心率+<unbreak>#3[i]%</unbreak>。敵が倒された時、装備キャラの会心ダメージ+<unbreak>#1[i]%</unbreak>、最大で<unbreak>#2[i]</unbreak>回累積できる。",
 		"param": [
 			[
 				0.04,
-				10
+				10,
+				0.04
 			]
 		],
-		"props": [],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "CriticalChanceBase",
+					"value": 0.04
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71030.png"
 	},
 	"314": {
-		"name": "出雲顕世と高天神国",
+		"name": "{RUBY_B#けんせ}顕世{RUBY_E#}の{RUBY_B#いずも}出雲{RUBY_E#}と{RUBY_B#たかま}高天{RUBY_E#}の{RUBY_B#しんこく}神国{RUBY_E#}",
 		"setID": "314",
 		"twopc": "装備キャラの攻撃力+<unbreak>#1[i]%</unbreak>。戦闘に入る時、装備キャラと同じ運命のキャラが他に存在する場合、装備キャラの会心率+<unbreak>#2[i]%</unbreak>。",
 		"param": [

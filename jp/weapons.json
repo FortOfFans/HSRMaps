@@ -5084,7 +5084,7 @@
 		"shortIcon": "21015",
 		"rarity": "VeryRare",
 		"weaponType": "Warlock",
-		"refinements": "装備キャラの攻撃が敵に命中した時、その敵が「陥落」状態でない場合、<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>の基礎確率で敵を「陥落」状態にする。「陥落」状態の敵は防御力-<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<unbreak>#3[i]</unbreak>ターン継続。",
+		"refinements": "装備キャラの攻撃が敵に命中する時、その敵が「陥落」状態でない場合、<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>の基礎確率で敵を「陥落」状態にする。「陥落」状態の敵は防御力-<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<unbreak>#3[i]</unbreak>ターン継続。",
 		"maxHP": 953,
 		"maxATK": 476,
 		"maxDEF": 331,
@@ -9436,15 +9436,15 @@
 		"id": "21042"
 	},
 	"21043": {
-		"name": "二人だけのコンサート",
+		"name": "{RUBY_B#ふたり}二人{RUBY_E#}だけのコンサート",
 		"icon": "spriteoutput/lightconemediumicon/21043.png",
 		"shortIcon": "21043",
 		"rarity": "VeryRare",
 		"weaponType": "Knight",
 		"refinements": "装備キャラの防御力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。フィールド上にいるバリアを持つ味方1名につき、装備キャラの与ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
-		"maxHP": 847,
+		"maxHP": 953,
 		"maxATK": 370,
-		"maxDEF": 529,
+		"maxDEF": 463,
 		"promotion": {
 			"2": 308000,
 			"110211": 3,
@@ -9604,6 +9604,173 @@
 		],
 		"beta": true,
 		"id": "21043"
+	},
+	"21044": {
+		"name": "限りなき舞踏",
+		"icon": "spriteoutput/lightconemediumicon/21044.png",
+		"shortIcon": "21044",
+		"rarity": "VeryRare",
+		"weaponType": "Warlock",
+		"refinements": "装備キャラの会心率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。防御力ダウン状態または減速状態の敵に対する、装備キャラが与える会心ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+		"maxHP": 953,
+		"maxATK": 476,
+		"maxDEF": 331,
+		"promotion": {
+			"0": 42,
+			"2": 308000,
+			"110221": 3,
+			"110222": 9,
+			"110223": 12
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 4000
+				},
+				{
+					"ItemID": 0,
+					"ItemNum": 5
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 8000
+				},
+				{
+					"ItemID": 110221,
+					"ItemNum": 3
+				},
+				{
+					"ItemID": 0,
+					"ItemNum": 10
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 16000
+				},
+				{
+					"ItemID": 110222,
+					"ItemNum": 3
+				},
+				{
+					"ItemID": 0,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 40000
+				},
+				{
+					"ItemID": 110222,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 0,
+					"ItemNum": 9
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 80000
+				},
+				{
+					"ItemID": 110223,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 0,
+					"ItemNum": 5
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 160000
+				},
+				{
+					"ItemID": 110223,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 0,
+					"ItemNum": 7
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.08,
+				0.24
+			],
+			"R2": [
+				0.1,
+				0.3
+			],
+			"R3": [
+				0.12,
+				0.36
+			],
+			"R4": [
+				0.14,
+				0.42
+			],
+			"R5": [
+				0.16,
+				0.48
+			],
+			"id": "21044"
+		},
+		"passives": [
+			[
+				{
+					"type": "CriticalChanceBase",
+					"value": 0.08,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalChanceBase",
+					"value": 0.1,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalChanceBase",
+					"value": 0.12,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalChanceBase",
+					"value": 0.14,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalChanceBase",
+					"value": 0.16,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+					"flat": false
+				}
+			]
+		],
+		"id": "21044"
 	},
 	"22000": {
 		"name": "{RUBY_B#はじ}初{RUBY_E#}めてのクエストの{RUBY_B#まえ}前{RUBY_E#}に",
@@ -9947,6 +10114,180 @@
 			]
 		],
 		"id": "22001"
+	},
+	"22002": {
+		"name": "明日の旅のために",
+		"icon": "spriteoutput/lightconemediumicon/22002.png",
+		"shortIcon": "22002",
+		"rarity": "VeryRare",
+		"weaponType": "Shaman",
+		"refinements": "装備キャラの攻撃力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが必殺技を発動した後、与ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<unbreak>#3[i]</unbreak>ターン継続。",
+		"maxHP": 953,
+		"maxATK": 476,
+		"maxDEF": 331,
+		"promotion": {
+			"2": 308000,
+			"110231": 3,
+			"110232": 9,
+			"110233": 12,
+			"114001": 15,
+			"114002": 15,
+			"114003": 12
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 4000
+				},
+				{
+					"ItemID": 114001,
+					"ItemNum": 5
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 8000
+				},
+				{
+					"ItemID": 110231,
+					"ItemNum": 3
+				},
+				{
+					"ItemID": 114001,
+					"ItemNum": 10
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 16000
+				},
+				{
+					"ItemID": 110232,
+					"ItemNum": 3
+				},
+				{
+					"ItemID": 114002,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 40000
+				},
+				{
+					"ItemID": 110232,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 114002,
+					"ItemNum": 9
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 80000
+				},
+				{
+					"ItemID": 110233,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114003,
+					"ItemNum": 5
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 160000
+				},
+				{
+					"ItemID": 110233,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 114003,
+					"ItemNum": 7
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.16,
+				0.18,
+				1
+			],
+			"R2": [
+				0.2,
+				0.21,
+				1
+			],
+			"R3": [
+				0.24,
+				0.24,
+				1
+			],
+			"R4": [
+				0.28,
+				0.27,
+				1
+			],
+			"R5": [
+				0.32,
+				0.3,
+				1
+			],
+			"id": "22002"
+		},
+		"passives": [
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.16,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.2,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.24,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.28,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.32,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			]
+		],
+		"id": "22002"
 	},
 	"23000": {
 		"name": "{RUBY_B#ぎんがてつどう}銀河鉄道{RUBY_E#}の{RUBY_B#よる}夜{RUBY_E#}",
@@ -10968,7 +11309,7 @@
 		"shortIcon": "23006",
 		"rarity": "SuperRare",
 		"weaponType": "Warlock",
-		"refinements": "装備キャラの与ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。装備キャラが攻撃を行った後、速度+<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>、最大で<unbreak>#4[i]</unbreak>層累積できる。\\n装備キャラの攻撃が敵に命中した時、その敵が「遊糸」状態でない場合、<unbreak>100%</unbreak>の基礎確率で敵を「遊糸」状態にする。敵が「遊糸」状態の時、感電状態と見なされる。「遊糸」状態の敵はターンが回ってくるたびに、装備キャラの攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の雷属性持続ダメージを受ける、<unbreak>#5[i]</unbreak>ターン継続。",
+		"refinements": "装備キャラの与ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。装備キャラが攻撃を行った後、速度+<color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>、最大で<unbreak>#4[i]</unbreak>層累積できる。\\n装備キャラの攻撃が敵に命中する時、その敵が「遊糸」状態でない場合、<unbreak>100%</unbreak>の基礎確率で敵を「遊糸」状態にする。敵が「遊糸」状態の時、感電状態と見なされる。「遊糸」状態の敵はターンが回ってくるたびに、装備キャラの攻撃力<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>分の雷属性持続ダメージを受ける、<unbreak>#5[i]</unbreak>ターン継続。",
 		"maxHP": 1058,
 		"maxATK": 582,
 		"maxDEF": 463,
@@ -14121,12 +14462,12 @@
 		"id": "23022"
 	},
 	"23023": {
-		"name": "運命は常に不公平",
+		"name": "{RUBY_B#うんめい}運命{RUBY_E#}は{RUBY_B#つね}常{RUBY_E#}に{RUBY_B#ふこうへい}不公平{RUBY_E#}",
 		"icon": "spriteoutput/lightconemediumicon/23023.png",
 		"shortIcon": "23023",
 		"rarity": "SuperRare",
 		"weaponType": "Knight",
-		"refinements": "装備キャラの防御力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが味方にバリアを付与する時、装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<unbreak>#3[i]</unbreak>ターン継続。装備キャラが追加攻撃を行う時、<unbreak>#4[i]%</unbreak>の基礎確率で攻撃を受ける敵の被ダメージ+<color=#f29e38ff><unbreak>#5[i]%</unbreak></color>、<unbreak>#6[i]</unbreak>ターン継続。",
+		"refinements": "装備キャラの防御力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが味方にバリアを付与する時、装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<unbreak>#3[i]</unbreak>ターン継続。装備キャラの追加攻撃が敵に命中する時、<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>の基礎確率で攻撃を受ける敵の被ダメージを<color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>アップさせる、<unbreak>#6[i]</unbreak>ターン継続。",
 		"maxHP": 1058,
 		"maxATK": 423,
 		"maxDEF": 662,
@@ -14224,43 +14565,43 @@
 		],
 		"params": {
 			"R1": [
-				0.36,
 				0.4,
-				2,
-				1,
-				0.08,
-				2
-			],
-			"R2": [
-				0.42,
-				0.46,
-				2,
-				1,
-				0.09,
-				2
-			],
-			"R3": [
-				0.48,
-				0.52,
+				0.4,
 				2,
 				1,
 				0.1,
 				2
 			],
+			"R2": [
+				0.46,
+				0.46,
+				2,
+				1.15,
+				0.115,
+				2
+			],
+			"R3": [
+				0.52,
+				0.52,
+				2,
+				1.3,
+				0.13,
+				2
+			],
 			"R4": [
-				0.54,
+				0.58,
 				0.58,
 				2,
-				1,
-				0.11,
+				1.45,
+				0.145,
 				2
 			],
 			"R5": [
-				0.6,
+				0.64,
 				0.64,
 				2,
-				1,
-				0.12,
+				1.6,
+				0.16,
 				2
 			],
 			"id": "23023"
@@ -14269,7 +14610,7 @@
 			[
 				{
 					"type": "DefenceAddedRatio",
-					"value": 0.36,
+					"value": 0.4,
 					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
 					"flat": false
 				}
@@ -14277,7 +14618,7 @@
 			[
 				{
 					"type": "DefenceAddedRatio",
-					"value": 0.42,
+					"value": 0.46,
 					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
 					"flat": false
 				}
@@ -14285,7 +14626,7 @@
 			[
 				{
 					"type": "DefenceAddedRatio",
-					"value": 0.48,
+					"value": 0.52,
 					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
 					"flat": false
 				}
@@ -14293,7 +14634,7 @@
 			[
 				{
 					"type": "DefenceAddedRatio",
-					"value": 0.54,
+					"value": 0.58,
 					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
 					"flat": false
 				}
@@ -14301,7 +14642,7 @@
 			[
 				{
 					"type": "DefenceAddedRatio",
-					"value": 0.6,
+					"value": 0.64,
 					"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
 					"flat": false
 				}
@@ -14311,12 +14652,12 @@
 		"id": "23023"
 	},
 	"23024": {
-		"name": "流れ逝く岸を歩いて",
+		"name": "{RUBY_B#なが}流{RUBY_E#}れ{RUBY_B#ゆ}逝{RUBY_E#}く{RUBY_B#きし}岸{RUBY_E#}を{RUBY_B#ある}歩{RUBY_E#}いて",
 		"icon": "spriteoutput/lightconemediumicon/23024.png",
 		"shortIcon": "23024",
 		"rarity": "SuperRare",
 		"weaponType": "Warlock",
-		"refinements": "装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラの攻撃が敵に命中した後、敵を「泡影」状態にする、1ターン継続。この効果は装備キャラが攻撃を行うたびに、敵それぞれに1回まで発動できる。「泡影」状態の敵に対する装備キャラの与ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、さらに必殺技の与ダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。",
+		"refinements": "装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラの攻撃が敵に命中する時、敵を「泡影」状態にする、1ターン継続。この効果は装備キャラが攻撃を行うたびに、敵それぞれに1回まで発動できる。「泡影」状態の敵に対する装備キャラの与ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、さらに必殺技の与ダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。",
 		"maxHP": 1058,
 		"maxATK": 635,
 		"maxDEF": 397,
@@ -14483,6 +14824,334 @@
 			]
 		],
 		"id": "23024"
+	},
+	"23026": {
+		"name": "光あふれる夜",
+		"icon": "spriteoutput/lightconemediumicon/23026.png",
+		"shortIcon": "23026",
+		"rarity": "SuperRare",
+		"weaponType": "Shaman",
+		"refinements": "味方が攻撃を行うたび、装備キャラは「朗唱」を1層獲得する。「朗唱」1層につき、装備キャラのEP回復効率+<color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>、最大で<unbreak>#2[i]</unbreak>層累積できる。装備キャラが必殺技を発動する時、「朗唱」を解除し「華彩」を獲得する。「華彩」がある時、装備キャラの攻撃力+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>、味方全体の与ダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>、<unbreak>#5[i]</unbreak>ターン継続。",
+		"maxHP": 953,
+		"maxATK": 635,
+		"maxDEF": 463,
+		"promotion": {
+			"2": 385000,
+			"110231": 4,
+			"110232": 12,
+			"110233": 15,
+			"114001": 20,
+			"114002": 20,
+			"114003": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 114001,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110231,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114001,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110232,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114002,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110232,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 114002,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110233,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 114003,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110233,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 114003,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.03,
+				5,
+				0.24,
+				0.48,
+				1
+			],
+			"R2": [
+				0.035,
+				5,
+				0.28,
+				0.56,
+				1
+			],
+			"R3": [
+				0.04,
+				5,
+				0.32,
+				0.64,
+				1
+			],
+			"R4": [
+				0.045,
+				5,
+				0.36,
+				0.72,
+				1
+			],
+			"R5": [
+				0.05,
+				5,
+				0.4,
+				0.8,
+				1
+			],
+			"id": "23026"
+		},
+		"passives": [
+			[],
+			[],
+			[],
+			[],
+			[]
+		],
+		"id": "23026"
+	},
+	"23027": {
+		"name": "二度目の命に向かって",
+		"icon": "spriteoutput/lightconemediumicon/23027.png",
+		"shortIcon": "23027",
+		"rarity": "SuperRare",
+		"weaponType": "Rogue",
+		"refinements": "装備キャラの撃破特効+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、与える弱点撃破ダメージが敵の防御力を<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>無視する。装備キャラの攻撃が敵に命中する時、その敵の被ダメージ+<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>、最大で<unbreak>#4[i]</unbreak>層累積できる。この効果は装備キャラの攻撃が最後に命中した敵に対してのみ発揮する。",
+		"maxHP": 1058,
+		"maxATK": 582,
+		"maxDEF": 463,
+		"promotion": {
+			"2": 385000,
+			"110191": 4,
+			"110192": 12,
+			"110193": 15,
+			"114011": 20,
+			"114012": 20,
+			"114013": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110191,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110192,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110192,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110193,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110193,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.6,
+				0.01,
+				0.2,
+				6
+			],
+			"R2": [
+				0.7,
+				0.0115,
+				0.23,
+				6
+			],
+			"R3": [
+				0.8,
+				0.013,
+				0.26,
+				6
+			],
+			"R4": [
+				0.9,
+				0.0145,
+				0.29,
+				6
+			],
+			"R5": [
+				1,
+				0.016,
+				0.32,
+				6
+			],
+			"id": "23027"
+		},
+		"passives": [
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.6,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.7,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.8,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.9,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 1,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			]
+		],
+		"id": "23027"
 	},
 	"24000": {
 		"name": "とある{RUBY_B#アイオーン}星神{RUBY_E#}の{RUBY_B#うんらく}殞落{RUBY_E#}を{RUBY_B#しる}記{RUBY_E#}す",
