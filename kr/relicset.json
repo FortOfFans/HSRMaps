@@ -502,6 +502,66 @@
 		"setIcon": "spriteoutput/itemfigures/71029.png",
 		"planarSet": false
 	},
+	"119": {
+		"name": "곤충 재앙을 잠재우는 철기군",
+		"setID": "119",
+		"two": "격파특수효과 **16%** 증가",
+		"twopc": "격파 특수효과 <unbreak>#1[i]%</unbreak> 증가",
+		"four": "장착한캐릭터의 격파 특수효과가 **150%**/**250%** 이상이면, 적에게 격파 피해를 가할 시 적의 방어력을 **10%**/**18%** 무시한다",
+		"fourpc": "장착한 캐릭터의 격파 특수효과가 <unbreak>#1[i]%</unbreak>/<unbreak>#2[i]%</unbreak> 이상이면, 적에게 격파 피해를 가할 시 적의 방어력을 <unbreak>#3[i]%</unbreak>/<unbreak>#4[i]%</unbreak> 무시한다",
+		"params": [
+			[
+				0.16
+			],
+			[
+				1.5,
+				2.5,
+				0.1,
+				0.18
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.16
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71032.png",
+		"planarSet": false,
+		"beta": true
+	},
+	"120": {
+		"name": "바람과 구름을 가르는 용맹함",
+		"setID": "120",
+		"two": "공격력**12%** 증가",
+		"twopc": "공격력 <unbreak>#1[i]%</unbreak> 증가",
+		"four": "장착한캐릭터가 필살기 또는 추가 공격을 발동할 시 장착한 캐릭터가 가하는 피해가 **20%** 증가한다. 해당 효과는 최대 **2**스택 중첩되며, 장착한 캐릭터의 턴 종료 시 해제된다",
+		"fourpc": "장착한 캐릭터가 필살기 또는 추가 공격을 발동할 시 장착한 캐릭터가 가하는 피해가 <unbreak>#1[i]%</unbreak> 증가한다. 해당 효과는 최대 <unbreak>#2[i]</unbreak>스택 중첩되며, 장착한 캐릭터의 턴 종료 시 해제된다",
+		"params": [
+			[
+				0.12
+			],
+			[
+				0.2,
+				2
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71033.png",
+		"planarSet": false,
+		"beta": true
+	},
 	"301": {
 		"name": "우주 봉인 정거장",
 		"setID": "301",
@@ -837,5 +897,47 @@
 		],
 		"setIcon": "spriteoutput/itemfigures/71031.png",
 		"planarSet": true
+	},
+	"315": {
+		"name": "질주하는 늑대의 도람 왕조",
+		"setID": "315",
+		"two": "아군캐릭터가 추가 공격 발동 시 장착한 캐릭터가 [공훈] 1스택을 획득한다, 최대 중첩수: **6**스택. [공훈] 1스택마다 장착한 캐릭터가 추가 공격으로 가하는 피해가 **4%** 증가하고, **6**스택까지 중첩 시 장착한 캐릭터의 치명타 피해가 추가로 **24%** 증가한다",
+		"twopc": "아군 캐릭터가 추가 공격 발동 시 장착한 캐릭터가 [공훈] 1스택을 획득한다, 최대 중첩수: <unbreak>#1[i]</unbreak>스택. [공훈] 1스택마다 장착한 캐릭터가 추가 공격으로 가하는 피해가 <unbreak>#2[i]%</unbreak> 증가하고, <unbreak>#1[i]</unbreak>스택까지 중첩 시 장착한 캐릭터의 치명타 피해가 추가로 <unbreak>#3[i]%</unbreak> 증가한다",
+		"params": [
+			[
+				6,
+				0.04,
+				0.24
+			]
+		],
+		"props": [],
+		"setIcon": "spriteoutput/itemfigures/71034.png",
+		"planarSet": true,
+		"beta": true
+	},
+	"316": {
+		"name": "겁화 연등의 연마궁",
+		"setID": "316",
+		"two": "장착한캐릭터의 속도가 **6%** 증가한다. 장착한 캐릭터가 화염 속성 약점을 보유한 적을 명중하면 격파 특수효과가 **40%** 증가한다, 지속 시간: **1**턴",
+		"twopc": "장착한 캐릭터의 속도가 <unbreak>#1[i]%</unbreak> 증가한다. 장착한 캐릭터가 화염 속성 약점을 보유한 적을 명중하면 격파 특수효과가 <unbreak>#2[i]%</unbreak> 증가한다, 지속 시간: <unbreak>#3[i]</unbreak>턴",
+		"params": [
+			[
+				0.06,
+				0.4,
+				1
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "SpeedAddedRatio",
+					"value": 0.06
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71035.png",
+		"planarSet": true,
+		"beta": true
 	}
 }

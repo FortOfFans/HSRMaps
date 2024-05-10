@@ -502,6 +502,66 @@
 		"setIcon": "spriteoutput/itemfigures/71029.png",
 		"planarSet": false
 	},
+	"119": {
+		"name": "蝗害一掃せし機械騎士",
+		"setID": "119",
+		"two": "撃破特効+**16%**。",
+		"twopc": "撃破特効+<unbreak>#1[i]%</unbreak>。",
+		"four": "装備キャラの撃破特効が**150%**/**250%**以上のとき、敵に弱点撃破ダメージを与える時、敵の防御力を**10%**/**18%**無視する。",
+		"fourpc": "装備キャラの撃破特効が<unbreak>#1[i]%</unbreak>/<unbreak>#2[i]%</unbreak>以上のとき、敵に弱点撃破ダメージを与える時、敵の防御力を<unbreak>#3[i]%</unbreak>/<unbreak>#4[i]%</unbreak>無視する。",
+		"params": [
+			[
+				0.16
+			],
+			[
+				1.5,
+				2.5,
+				0.1,
+				0.18
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.16
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71032.png",
+		"planarSet": false,
+		"beta": true
+	},
+	"120": {
+		"name": "風吹き雲飛ぶ勇烈",
+		"setID": "120",
+		"two": "攻撃力+**12%**。",
+		"twopc": "攻撃力+<unbreak>#1[i]%</unbreak>。",
+		"four": "装備キャラが必殺技または追加攻撃を発動する時、装備キャラの与ダメージ+**20%**。この効果は最大で**2**層まで累積でき、装備キャラのターンが終了すると解除される。",
+		"fourpc": "装備キャラが必殺技または追加攻撃を発動する時、装備キャラの与ダメージ+<unbreak>#1[i]%</unbreak>。この効果は最大で<unbreak>#2[i]</unbreak>層まで累積でき、装備キャラのターンが終了すると解除される。",
+		"params": [
+			[
+				0.12
+			],
+			[
+				0.2,
+				2
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71033.png",
+		"planarSet": false,
+		"beta": true
+	},
 	"301": {
 		"name": "宇宙封印ステーション",
 		"setID": "301",
@@ -837,5 +897,47 @@
 		],
 		"setIcon": "spriteoutput/itemfigures/71031.png",
 		"planarSet": true
+	},
+	"315": {
+		"name": "奔狼の都藍王朝",
+		"setID": "315",
+		"two": "味方が追加攻撃を行った時、装備キャラが「勲功」を1層獲得する。最大で**6**層累積できる。「勲功」1層につき、装備キャラの追加攻撃の与ダメージ+**4%**。**6**層まで累積した時、装備キャラの会心ダメージ+**24%**。",
+		"twopc": "味方が追加攻撃を行った時、装備キャラが「勲功」を1層獲得する。最大で<unbreak>#1[i]</unbreak>層累積できる。「勲功」1層につき、装備キャラの追加攻撃の与ダメージ+<unbreak>#2[i]%</unbreak>。<unbreak>#1[i]</unbreak>層まで累積した時、装備キャラの会心ダメージ+<unbreak>#3[i]%</unbreak>。",
+		"params": [
+			[
+				6,
+				0.04,
+				0.24
+			]
+		],
+		"props": [],
+		"setIcon": "spriteoutput/itemfigures/71034.png",
+		"planarSet": true,
+		"beta": true
+	},
+	"316": {
+		"name": "劫火蓮灯の鋳煉宮",
+		"setID": "316",
+		"two": "装備キャラの速度+**6%**。炎属性の弱点を持つ敵に装備キャラの攻撃が命中した時、撃破特効+**40%**、**1**ターン継続。",
+		"twopc": "装備キャラの速度+<unbreak>#1[i]%</unbreak>。炎属性の弱点を持つ敵に装備キャラの攻撃が命中した時、撃破特効+<unbreak>#2[i]%</unbreak>、<unbreak>#3[i]</unbreak>ターン継続。",
+		"params": [
+			[
+				0.06,
+				0.4,
+				1
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "SpeedAddedRatio",
+					"value": 0.06
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71035.png",
+		"planarSet": true,
+		"beta": true
 	}
 }

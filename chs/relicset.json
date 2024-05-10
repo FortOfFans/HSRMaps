@@ -502,6 +502,66 @@
 		"setIcon": "spriteoutput/itemfigures/71029.png",
 		"planarSet": false
 	},
+	"119": {
+		"name": "荡除蠹灾的铁骑",
+		"setID": "119",
+		"two": "击破特攻提高**16%**。",
+		"twopc": "击破特攻提高<unbreak>#1[i]%</unbreak>。",
+		"four": "当装备者的击破特攻大于等于**150%**/**250%**时，对敌方目标造成击破伤害时无视其**10%**/**18%**的防御力。",
+		"fourpc": "当装备者的击破特攻大于等于<unbreak>#1[i]%</unbreak>/<unbreak>#2[i]%</unbreak>时，对敌方目标造成击破伤害时无视其<unbreak>#3[i]%</unbreak>/<unbreak>#4[i]%</unbreak>的防御力。",
+		"params": [
+			[
+				0.16
+			],
+			[
+				1.5,
+				2.5,
+				0.1,
+				0.18
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.16
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71032.png",
+		"planarSet": false,
+		"beta": true
+	},
+	"120": {
+		"name": "风举云飞的勇烈",
+		"setID": "120",
+		"two": "攻击力提高**12%**。",
+		"twopc": "攻击力提高<unbreak>#1[i]%</unbreak>。",
+		"four": "装备者施放终结技或发动追加攻击时，使装备者造成的伤害提高**20%**，该效果最多叠加**2**层，在装备者的回合结束时解除。",
+		"fourpc": "装备者施放终结技或发动追加攻击时，使装备者造成的伤害提高<unbreak>#1[i]%</unbreak>，该效果最多叠加<unbreak>#2[i]</unbreak>层，在装备者的回合结束时解除。",
+		"params": [
+			[
+				0.12
+			],
+			[
+				0.2,
+				2
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71033.png",
+		"planarSet": false,
+		"beta": true
+	},
 	"301": {
 		"name": "太空封印站",
 		"setID": "301",
@@ -837,5 +897,47 @@
 		],
 		"setIcon": "spriteoutput/itemfigures/71031.png",
 		"planarSet": true
+	},
+	"315": {
+		"name": "奔狼的都蓝王朝",
+		"setID": "315",
+		"two": "我方角色施放追加攻击时，装备者获得一层【功勋】，最多叠加**6**层，每层【功勋】使装备者追加攻击造成的伤害提高**4%**，叠满**6**层时，额外使装备者的暴击伤害提高**24%**。",
+		"twopc": "我方角色施放追加攻击时，装备者获得一层【功勋】，最多叠加<unbreak>#1[i]</unbreak>层，每层【功勋】使装备者追加攻击造成的伤害提高<unbreak>#2[i]%</unbreak>，叠满<unbreak>#1[i]</unbreak>层时，额外使装备者的暴击伤害提高<unbreak>#3[i]%</unbreak>。",
+		"params": [
+			[
+				6,
+				0.04,
+				0.24
+			]
+		],
+		"props": [],
+		"setIcon": "spriteoutput/itemfigures/71034.png",
+		"planarSet": true,
+		"beta": true
+	},
+	"316": {
+		"name": "劫火莲灯铸炼宫",
+		"setID": "316",
+		"two": "使装备者的速度提高**6%**。当装备者击中拥有火属性弱点的敌方目标时，击破特攻提高**40%**，持续**1**回合。",
+		"twopc": "使装备者的速度提高<unbreak>#1[i]%</unbreak>。当装备者击中拥有火属性弱点的敌方目标时，击破特攻提高<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。",
+		"params": [
+			[
+				0.06,
+				0.4,
+				1
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "SpeedAddedRatio",
+					"value": 0.06
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71035.png",
+		"planarSet": true,
+		"beta": true
 	}
 }

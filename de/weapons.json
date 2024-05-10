@@ -4205,7 +4205,7 @@
 		"shortIcon": "21010",
 		"rarity": "VeryRare",
 		"weaponType": "Rogue",
-		"refinements": "Jedes Mal, wenn der Träger dasselbe Ziel trifft, wird der zugefügte SCH um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> erhöht. Dieser Effekt ist bis zu <unbreak>#2[i]</unbreak>-mal stapelbar. Wechselt der Träger das Ziel, wird dieser Buff unmittelbar entfernt.",
+		"refinements": "Jedes Mal, wenn der Träger dasselbe Ziel trifft, wird der verursachte SCH um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> erhöht. Dieser Effekt ist bis zu <unbreak>#2[i]</unbreak>-fach stapelbar. Wechselt der Träger das Angriffsziel, wird dieser Buff unmittelbar entfernt.",
 		"maxHP": 953,
 		"maxATK": 476,
 		"maxDEF": 331,
@@ -4620,7 +4620,7 @@
 		"shortIcon": "21013",
 		"rarity": "VeryRare",
 		"weaponType": "Mage",
-		"refinements": "Stellt beim Kampfeintritt sofort <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Pkt. Energie wieder her und erhöht den durch Ultimate verursachten SCH um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"refinements": "Stellt beim Kampfeintritt sofort <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Pkt. Energie des Trägers wieder her und erhöht den durch Ultimate verursachten SCH um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"maxHP": 847,
 		"maxATK": 476,
 		"maxDEF": 397,
@@ -9365,10 +9365,12 @@
 		"id": "21043"
 	},
 	"21044": {
+		"name": "Grenzenloser Tanz",
 		"icon": "spriteoutput/lightconemediumicon/21044.png",
 		"shortIcon": "21044",
 		"rarity": "VeryRare",
 		"weaponType": "Warlock",
+		"refinements": "Erhöht die KRIT-Rate des Trägers um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Der Träger verursacht <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> mehr SCH bei Gegnern, die verringerte VTD besitzen oder verlangsamt sind.",
 		"maxHP": 953,
 		"maxATK": 476,
 		"maxDEF": 331,
@@ -9529,8 +9531,180 @@
 				}
 			]
 		],
-		"beta": true,
 		"id": "21044"
+	},
+	"21045": {
+		"icon": "spriteoutput/lightconemediumicon/21045.png",
+		"shortIcon": "21045",
+		"rarity": "VeryRare",
+		"weaponType": "Mage",
+		"maxHP": 847,
+		"maxATK": 476,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 308000,
+			"110201": 3,
+			"110202": 9,
+			"110203": 12,
+			"114011": 15,
+			"114012": 15,
+			"114013": 12
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 4000
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 5
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 8000
+				},
+				{
+					"ItemID": 110201,
+					"ItemNum": 3
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 10
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 16000
+				},
+				{
+					"ItemID": 110202,
+					"ItemNum": 3
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 40000
+				},
+				{
+					"ItemID": 110202,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 9
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 80000
+				},
+				{
+					"ItemID": 110203,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 5
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 160000
+				},
+				{
+					"ItemID": 110203,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 7
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.28,
+				0.08,
+				2
+			],
+			"R2": [
+				0.35,
+				0.1,
+				2
+			],
+			"R3": [
+				0.42,
+				0.12,
+				2
+			],
+			"R4": [
+				0.49,
+				0.14,
+				2
+			],
+			"R5": [
+				0.56,
+				0.16,
+				2
+			],
+			"id": "21045"
+		},
+		"passives": [
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.28,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.35,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.42,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.49,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.56,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			]
+		],
+		"beta": true,
+		"id": "21045"
 	},
 	"22000": {
 		"name": "Bevor das Tutorial beginnt",
@@ -9876,10 +10050,12 @@
 		"id": "22001"
 	},
 	"22002": {
+		"name": "Für die Reise von morgen",
 		"icon": "spriteoutput/lightconemediumicon/22002.png",
 		"shortIcon": "22002",
 		"rarity": "VeryRare",
 		"weaponType": "Shaman",
+		"refinements": "Erhöht den ANG des Trägers um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Nachdem der Träger seinen Ultimate eingesetzt hat, wird der verursachte SCH für <unbreak>#3[i]</unbreak> Rd. um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
 		"maxHP": 953,
 		"maxATK": 476,
 		"maxDEF": 331,
@@ -10045,7 +10221,6 @@
 				}
 			]
 		],
-		"beta": true,
 		"id": "22002"
 	},
 	"23000": {
@@ -14214,7 +14389,7 @@
 		"shortIcon": "23023",
 		"rarity": "SuperRare",
 		"weaponType": "Knight",
-		"refinements": "Erhöht die VTD des Trägers um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Wenn der Träger Verbündeten einen Schild erzeugt, wird der KRIT-SCH des Trägers für <unbreak>#3[i]</unbreak> Rd. um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht. Wenn der Träger mit Folgeangriffe einen Gegner trifft, besteht eine Grundchance von <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, dass der vom angegriffenen Gegner erlittene SCH für <unbreak>#6[i]</unbreak> Rd. um <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color> erhöht wird.",
+		"refinements": "Erhöht die VTD des Trägers um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Wenn der Träger Verbündeten einen Schild erzeugt, wird der KRIT-SCH des Trägers für <unbreak>#3[i]</unbreak> Rd. um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht. Wenn der Träger einen Gegner durch Folgeangriff trifft, besteht eine Grundchance von <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, dass der vom angegriffenen Gegner erlittene SCH für <unbreak>#6[i]</unbreak> Rd. um <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color> erhöht wird.",
 		"maxHP": 1058,
 		"maxATK": 423,
 		"maxDEF": 662,
@@ -14571,11 +14746,191 @@
 		],
 		"id": "23024"
 	},
+	"23025": {
+		"icon": "spriteoutput/lightconemediumicon/23025.png",
+		"shortIcon": "23025",
+		"rarity": "SuperRare",
+		"weaponType": "Warrior",
+		"maxHP": 847,
+		"maxATK": 635,
+		"maxDEF": 529,
+		"promotion": {
+			"2": 385000,
+			"110181": 4,
+			"110182": 12,
+			"110183": 15,
+			"114011": 20,
+			"114012": 20,
+			"114013": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110181,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110182,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110182,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110183,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110183,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.6,
+				0.15,
+				0.15,
+				2
+			],
+			"R2": [
+				0.7,
+				0.175,
+				0.15,
+				2
+			],
+			"R3": [
+				0.8,
+				0.2,
+				0.15,
+				2
+			],
+			"R4": [
+				0.9,
+				0.225,
+				0.15,
+				2
+			],
+			"R5": [
+				1,
+				0.25,
+				0.15,
+				2
+			],
+			"id": "23025"
+		},
+		"passives": [
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.6,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.7,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.8,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 0.9,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "BreakDamageAddedRatioBase",
+					"value": 1,
+					"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+					"flat": false
+				}
+			]
+		],
+		"beta": true,
+		"id": "23025"
+	},
 	"23026": {
+		"name": "Schillernde Nacht",
 		"icon": "spriteoutput/lightconemediumicon/23026.png",
 		"shortIcon": "23026",
 		"rarity": "SuperRare",
 		"weaponType": "Shaman",
+		"refinements": "Jedes Mal, wenn ein Verbündeter angreift, erhält der Träger eine Stapelung „Gesang“. Jede Stapelung Gesang erhöht die Energie-Wiederherstellungsrate des Trägers um <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>, bis zu <unbreak>#2[i]</unbreak> Stapelungen. Wenn der Träger den Ultimate einsetzt, wird Gesang entfernt und er erhält „Farbenpracht“. Farbenpracht erhöht für <unbreak>#5[i]</unbreak> Rd. den ANG des Trägers um <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> und den verursachten SCH aller Verbündeten um <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
 		"maxHP": 953,
 		"maxATK": 635,
 		"maxDEF": 463,
@@ -14710,14 +15065,15 @@
 			"id": "23026"
 		},
 		"passives": [],
-		"beta": true,
 		"id": "23026"
 	},
 	"23027": {
+		"name": "Auf zu einem zweiten Leben",
 		"icon": "spriteoutput/lightconemediumicon/23027.png",
 		"shortIcon": "23027",
 		"rarity": "SuperRare",
 		"weaponType": "Rogue",
+		"refinements": "Erhöht den Brucheffekt des Trägers um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Vom Träger verursachter Bruch-SCH ignoriert <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> der VTD des Ziels. Wenn der Brucheffekt des Trägers im Kampf <unbreak>#2[i]%</unbreak> oder mehr beträgt, wird seine GES um <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> erhöht.",
 		"maxHP": 1058,
 		"maxATK": 582,
 		"maxDEF": 463,
@@ -14888,8 +15244,200 @@
 				}
 			]
 		],
-		"beta": true,
 		"id": "23027"
+	},
+	"23028": {
+		"icon": "spriteoutput/lightconemediumicon/23028.png",
+		"shortIcon": "23028",
+		"rarity": "SuperRare",
+		"weaponType": "Mage",
+		"maxHP": 953,
+		"maxATK": 582,
+		"maxDEF": 529,
+		"promotion": {
+			"2": 385000,
+			"110201": 4,
+			"110202": 12,
+			"110203": 15,
+			"114001": 20,
+			"114002": 20,
+			"114003": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 114001,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110201,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114001,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110202,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114002,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110202,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 114002,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110203,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 114003,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110203,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 114003,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.16,
+				1.2,
+				0.2,
+				0.16,
+				4,
+				0.16,
+				2
+			],
+			"R2": [
+				0.19,
+				1.2,
+				0.2,
+				0.19,
+				4,
+				0.19,
+				2
+			],
+			"R3": [
+				0.22,
+				1.2,
+				0.2,
+				0.22,
+				4,
+				0.22,
+				2
+			],
+			"R4": [
+				0.25,
+				1.2,
+				0.2,
+				0.25,
+				4,
+				0.25,
+				2
+			],
+			"R5": [
+				0.28,
+				1.2,
+				0.2,
+				0.28,
+				4,
+				0.28,
+				2
+			],
+			"id": "23028"
+		},
+		"passives": [
+			[
+				{
+					"type": "CriticalChanceBase",
+					"value": 0.16,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalChanceBase",
+					"value": 0.19,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalChanceBase",
+					"value": 0.22,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalChanceBase",
+					"value": 0.25,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalChanceBase",
+					"value": 0.28,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+					"flat": false
+				}
+			]
+		],
+		"beta": true,
+		"id": "23028"
 	},
 	"24000": {
 		"name": "Der Niedergang eines Äons",
@@ -15575,5 +16123,188 @@
 			]
 		],
 		"id": "24003"
+	},
+	"24004": {
+		"icon": "spriteoutput/lightconemediumicon/24004.png",
+		"shortIcon": "24004",
+		"rarity": "SuperRare",
+		"weaponType": "Mage",
+		"maxHP": 1058,
+		"maxATK": 529,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 385000,
+			"110201": 4,
+			"110202": 12,
+			"110203": 15,
+			"111001": 20,
+			"111002": 20,
+			"111003": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 111001,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110201,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 111001,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110202,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 111002,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110202,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 111002,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110203,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 111003,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110203,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 111003,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.08,
+				0.04,
+				3,
+				0.08,
+				1
+			],
+			"R2": [
+				0.09,
+				0.05,
+				3,
+				0.1,
+				1
+			],
+			"R3": [
+				0.1,
+				0.06,
+				3,
+				0.12,
+				1
+			],
+			"R4": [
+				0.11,
+				0.07,
+				3,
+				0.14,
+				1
+			],
+			"R5": [
+				0.12,
+				0.08,
+				3,
+				0.16,
+				1
+			],
+			"id": "24004"
+		},
+		"passives": [
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.08,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.09,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.1,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.11,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.12,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			]
+		],
+		"beta": true,
+		"id": "24004"
 	}
 }
