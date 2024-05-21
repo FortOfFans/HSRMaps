@@ -2976,7 +2976,7 @@
 		"shortIcon": "21002",
 		"rarity": "VeryRare",
 		"weaponType": "Knight",
-		"refinements": "装備キャラの防御力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。戦闘に入った後、味方全体の全耐性+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。同系統のスキルは重ね掛け不可。",
+		"refinements": "装備キャラの防御力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。戦闘に入った後、味方全体の全属性耐性+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。同系統のスキルは重ね掛け不可。",
 		"maxHP": 953,
 		"maxATK": 370,
 		"maxDEF": 463,
@@ -9539,7 +9539,7 @@
 		"shortIcon": "21045",
 		"rarity": "VeryRare",
 		"weaponType": "Mage",
-		"refinements": "装備キャラの撃破特効+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが必殺技を発動した後、速度+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。この効果は<unbreak>#3[i]</unbreak>ターン継続。",
+		"refinements": "装備キャラの撃破特効+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが必殺技を発動した後、速度+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<unbreak>#3[i]</unbreak>ターン継続。",
 		"maxHP": 847,
 		"maxATK": 476,
 		"maxDEF": 397,
@@ -14749,14 +14749,14 @@
 		"id": "23024"
 	},
 	"23025": {
-		"name": "夢はどこへ帰るべきか",
+		"name": "夢が帰り着く場所",
 		"icon": "spriteoutput/lightconemediumicon/23025.png",
 		"shortIcon": "23025",
 		"rarity": "SuperRare",
 		"weaponType": "Warrior",
-		"refinements": "装備キャラの撃破特効+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが敵に弱点撃破ダメージを与えると敵を「敗走」状態にし、<unbreak>#4[i]</unbreak>ターン継続。「敗走」状態の敵の被ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、速度-<unbreak>#3[i]%</unbreak>。同系統のスキルは重ね掛け不可。",
-		"maxHP": 847,
-		"maxATK": 635,
+		"refinements": "装備キャラの撃破特効+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが敵に弱点撃破ダメージを与える時、敵に「敗走」状態を付与する、<unbreak>#4[i]</unbreak>ターン継続。装備キャラに対する、「敗走」状態の敵が受ける弱点撃破ダメージ+<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>、速度-<unbreak>#3[i]%</unbreak>。",
+		"maxHP": 1164,
+		"maxATK": 476,
 		"maxDEF": 529,
 		"promotion": {
 			"2": 385000,
@@ -14853,32 +14853,32 @@
 		"params": {
 			"R1": [
 				0.6,
-				0.15,
-				0.15,
+				0.24,
+				0.2,
 				2
 			],
 			"R2": [
 				0.7,
-				0.175,
-				0.15,
+				0.28,
+				0.2,
 				2
 			],
 			"R3": [
 				0.8,
+				0.32,
 				0.2,
-				0.15,
 				2
 			],
 			"R4": [
 				0.9,
-				0.225,
-				0.15,
+				0.36,
+				0.2,
 				2
 			],
 			"R5": [
 				1,
-				0.25,
-				0.15,
+				0.4,
+				0.2,
 				2
 			],
 			"id": "23025"
@@ -15251,12 +15251,12 @@
 		"id": "23027"
 	},
 	"23028": {
-		"name": "よりによって希望は無価",
+		"name": "されど希望の銘は無価値",
 		"icon": "spriteoutput/lightconemediumicon/23028.png",
 		"shortIcon": "23028",
 		"rarity": "SuperRare",
 		"weaponType": "Mage",
-		"refinements": "装備キャラの会心率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。戦闘中、装備キャラ会心ダメージが<unbreak>#2[i]%</unbreak>より大きい場合、<unbreak>#3[i]%</unbreak>を超えるごとに、追加攻撃の与ダメージ+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>。この効果は<unbreak>#5[i]</unbreak>層まで累積できる。戦闘開始時および装備キャラが通常攻撃を行った後、必殺技および追加攻撃はターゲットの防御力を<color=#f29e38ff><unbreak>#6[i]%</unbreak></color>無視し、<unbreak>#7[i]</unbreak>ターン継続。",
+		"refinements": "装備キャラの会心率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。戦闘中、装備キャラの会心ダメージが<unbreak>#2[i]%</unbreak>を超えた時、超えた会心ダメージ<unbreak>#3[i]%</unbreak>につき、追加攻撃の与ダメージ+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>。この効果は最大で<unbreak>#5[i]</unbreak>層累積できる。戦闘開始時および装備キャラが通常攻撃を行った後、必殺技と追加攻撃はターゲットの防御力を<color=#f29e38ff><unbreak>#6[i]%</unbreak></color>無視する、<unbreak>#7[i]</unbreak>ターン継続。",
 		"maxHP": 953,
 		"maxATK": 582,
 		"maxDEF": 529,
@@ -15357,45 +15357,45 @@
 				0.16,
 				1.2,
 				0.2,
-				0.16,
+				0.12,
 				4,
-				0.16,
+				0.2,
 				2
 			],
 			"R2": [
 				0.19,
 				1.2,
 				0.2,
-				0.19,
+				0.14,
 				4,
-				0.19,
+				0.24,
 				2
 			],
 			"R3": [
 				0.22,
 				1.2,
 				0.2,
-				0.22,
+				0.16,
 				4,
-				0.22,
+				0.28,
 				2
 			],
 			"R4": [
 				0.25,
 				1.2,
 				0.2,
-				0.25,
+				0.18,
 				4,
-				0.25,
+				0.32,
 				2
 			],
 			"R5": [
 				0.28,
 				1.2,
 				0.2,
-				0.28,
+				0.2,
 				4,
-				0.28,
+				0.36,
 				2
 			],
 			"id": "23028"
@@ -16131,12 +16131,12 @@
 		"id": "24003"
 	},
 	"24004": {
-		"name": "止まらない計算",
+		"name": "絶え間ない演算",
 		"icon": "spriteoutput/lightconemediumicon/24004.png",
 		"shortIcon": "24004",
 		"rarity": "SuperRare",
 		"weaponType": "Mage",
-		"refinements": "装備キャラの攻撃力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。攻撃を行った後、敵1体に命中するごとに、さらに攻撃力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。この効果は最大5回まで累積でき、次の攻撃後まで継続。攻撃が<unbreak>#3[i]</unbreak>体以上の敵に命中した場合は、自身の速度+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>、<unbreak>#5[i]</unbreak>ターン継続。",
+		"refinements": "装備キャラの攻撃力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。攻撃を行った後、命中した敵1体につき、さらに攻撃力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。この効果は最大で5回累積でき、次の攻撃を行った後まで継続。攻撃が<unbreak>#3[i]</unbreak>体以上の敵に命中した場合、自身の速度+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>、<unbreak>#5[i]</unbreak>ターン継続。",
 		"maxHP": 1058,
 		"maxATK": 529,
 		"maxDEF": 397,
