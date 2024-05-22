@@ -13,7 +13,7 @@ This repository contains game data for Honkai: Star Rail for all kinds of stuff:
   https://raw.githubusercontent.com/FortOfFans/HSRMaps/master/{lang}/{type}.json
 ```
 
-> Data Types: 
+> Types: 
 > - avatar 
 > - weapons
 > - relics
