@@ -3,6 +3,11 @@
 
 This repository contains game data for Honkai: Star Rail for all kinds of stuff: Characters, LightCones, Relics, Items etc...
 
+> Beta Version: 2.2.53
+
+
+
+
 
 ## API Reference
 
