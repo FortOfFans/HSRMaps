@@ -11,32 +11,9 @@ This repository contains game data for Honkai: Star Rail for all kinds of stuff:
 
 ## API Reference
 
-#### Get Character data
+#### Get data
 
 ```http
-  https://raw.githubusercontent.com/FortOfFans/HSRMaps/master/en/avatar.json
+  https://raw.githubusercontent.com/FortOfFans/HSRMaps/master/{lang(en/de/fr...)}/{dataType(avatar/weapons/items/relics...)}.json
 ```
 
-#### Get LightCone data
-
-```http
-  https://raw.githubusercontent.com/FortOfFans/HSRMaps/master/en/weapons.json
-```
-
-#### Get Relics data
-
-```http
-  https://raw.githubusercontent.com/FortOfFans/HSRMaps/master/en/relics.json
-```
-
-#### Get Items data
-
-```http
-  https://raw.githubusercontent.com/FortOfFans/HSRMaps/master/en/items.json
-```
-
-#### Get Monster data
-
-```http
-  https://raw.githubusercontent.com/FortOfFans/HSRMaps/master/en/monster.json
-```
