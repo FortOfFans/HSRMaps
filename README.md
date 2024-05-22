@@ -5,10 +5,6 @@ This repository contains game data for Honkai: Star Rail for all kinds of stuff:
 
 > Beta Version: 2.2.53
 
-
-
-
-
 ## API Reference
 
 #### Get data
