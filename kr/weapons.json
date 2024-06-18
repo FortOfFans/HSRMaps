@@ -9539,7 +9539,7 @@
 		"shortIcon": "21045",
 		"rarity": "VeryRare",
 		"weaponType": "Mage",
-		"refinements": "장착한 캐릭터의 격파 특수효과가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 필살기 발동 후 속도가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다. 지속 시간: <unbreak>#3[i]</unbreak>턴",
+		"refinements": "장착한 캐릭터의 격파 특수효과가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 필살기 발동 후 속도가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다, 지속 시간: <unbreak>#3[i]</unbreak>턴",
 		"maxHP": 847,
 		"maxATK": 476,
 		"maxDEF": 397,
@@ -9705,8 +9705,177 @@
 				}
 			]
 		],
-		"beta": true,
 		"id": "21045"
+	},
+	"21046": {
+		"name": "만개를 기다리는 꽃",
+		"icon": "spriteoutput/lightconemediumicon/21046.png",
+		"shortIcon": "21046",
+		"rarity": "VeryRare",
+		"weaponType": "Shaman",
+		"refinements": "장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 전투 진입 시 운명의 길이 같은 아군 캐릭터가 2명 이상일 경우, 해당 캐릭터들의 치명타 피해가 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다. 같은 유형의 스킬 효과는 중복 적용되지 않는다",
+		"maxHP": 953,
+		"maxATK": 423,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 308000,
+			"110231": 3,
+			"110232": 9,
+			"110233": 12,
+			"114001": 15,
+			"114002": 15,
+			"114003": 12
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 4000
+				},
+				{
+					"ItemID": 114001,
+					"ItemNum": 5
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 8000
+				},
+				{
+					"ItemID": 110231,
+					"ItemNum": 3
+				},
+				{
+					"ItemID": 114001,
+					"ItemNum": 10
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 16000
+				},
+				{
+					"ItemID": 110232,
+					"ItemNum": 3
+				},
+				{
+					"ItemID": 114002,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 40000
+				},
+				{
+					"ItemID": 110232,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 114002,
+					"ItemNum": 9
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 80000
+				},
+				{
+					"ItemID": 110233,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114003,
+					"ItemNum": 5
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 160000
+				},
+				{
+					"ItemID": 110233,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 114003,
+					"ItemNum": 7
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.16,
+				0.16
+			],
+			"R2": [
+				0.2,
+				0.2
+			],
+			"R3": [
+				0.24,
+				0.24
+			],
+			"R4": [
+				0.28,
+				0.28
+			],
+			"R5": [
+				0.32,
+				0.32
+			],
+			"id": "21046"
+		},
+		"passives": [
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.16,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.2,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.24,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.28,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.32,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			]
+		],
+		"beta": true,
+		"id": "21046"
 	},
 	"22000": {
 		"name": "초보자 임무 시작 전",
@@ -14754,7 +14923,7 @@
 		"shortIcon": "23025",
 		"rarity": "SuperRare",
 		"weaponType": "Warrior",
-		"refinements": "장착한 캐릭터의 격파 특수효과가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 적에게 격파 피해를 가할 시 적을 [궤멸] 상태에 빠트린다, 지속 시간: <unbreak>#4[i]</unbreak>턴. [궤멸] 상태에서 목표가 장착한 캐릭터로부터 받는 격파 피해가 <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> 증가하고 속도가 <unbreak>#3[i]%</unbreak> 감소한다",
+		"refinements": "장착한 캐릭터의 격파 특수효과가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 적에게 격파 피해를 가할 시 적을 [궤멸] 상태에 빠트린다, 지속 시간: <unbreak>#4[i]</unbreak>턴. [궤멸] 상태에서 목표가 장착한 캐릭터로부터 받는 격파 피해가 <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> 증가하고 속도가 <unbreak>#3[i]%</unbreak> 감소하며, 같은 유형의 효과는 중첩되지 않는다",
 		"maxHP": 1164,
 		"maxATK": 476,
 		"maxDEF": 529,
@@ -14925,7 +15094,6 @@
 				}
 			]
 		],
-		"beta": true,
 		"id": "23025"
 	},
 	"23026": {
@@ -15256,7 +15424,7 @@
 		"shortIcon": "23028",
 		"rarity": "SuperRare",
 		"weaponType": "Mage",
-		"refinements": "장착한 캐릭터의 치명타 확률이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 전투 중 장착한 캐릭터의 치명타 피해가 <unbreak>#2[i]%</unbreak> 초과 시 <unbreak>#3[i]%</unbreak>를 초과할 때마다 추가 공격으로 가하는 피해가 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> 증가하며, 해당 효과는 <unbreak>#5[i]</unbreak>스택 중첩 가능하다. 전투 시작 시 및 장착한 캐릭터가 일반 공격 발동 후, 필살기와 추가 공격이 목표의 방어력을 <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> 무시한다, 지속 시간: <unbreak>#7[i]</unbreak>턴",
+		"refinements": "장착한 캐릭터의 치명타 확률이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 전투 중 장착한 캐릭터의 치명타 피해가 <unbreak>#2[i]%</unbreak> 초과 시 <unbreak>#3[i]%</unbreak>를 초과할 때마다 추가 공격으로 가하는 피해가 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> 증가하며, 해당 효과는 <unbreak>#5[i]</unbreak>스택 중첩 가능하다. 전투 시작 시 및 장착한 캐릭터가 일반 공격 발동 후, 필살기 또는 추가 공격이 가하는 피해는 목표의 방어력을 <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> 무시한다, 지속 시간: <unbreak>#7[i]</unbreak>턴",
 		"maxHP": 953,
 		"maxATK": 582,
 		"maxDEF": 529,
@@ -15442,8 +15610,377 @@
 				}
 			]
 		],
-		"beta": true,
 		"id": "23028"
+	},
+	"23029": {
+		"name": "그 수많은 봄날",
+		"icon": "spriteoutput/lightconemediumicon/23029.png",
+		"shortIcon": "23029",
+		"rarity": "SuperRare",
+		"weaponType": "Warlock",
+		"refinements": "장착한 캐릭터의 효과 명중이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 장착한 캐릭터가 일반 공격, 전투 스킬, 필살기로 적 공격 시 해당 목표가 장착한 캐릭터가 부여한 [무장해제] 상태가 아닐 경우, <unbreak>#2[i]%</unbreak>의 기본 확률로 목표를 [무장해제] 상태에 빠뜨린다. [무장해제] 상태에서는 적이 받는 피해가 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가한다, 지속 시간: <unbreak>#4[i]</unbreak>턴. 장착한 캐릭터가 자신이 부여한 [무장해제] 상태의 적에게 추가 피해를 가할 시 <unbreak>#5[i]%</unbreak>의 기본 확률로 자신이 부여한 [무장해제] 상태를 [궁지 몰이] 상태로 업그레이드하고, 적이 받는 피해를 추가로 <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> 증가시킨다",
+		"maxHP": 953,
+		"maxATK": 582,
+		"maxDEF": 529,
+		"promotion": {
+			"2": 385000,
+			"110221": 4,
+			"110222": 12,
+			"110223": 15,
+			"114011": 20,
+			"114012": 20,
+			"114013": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110221,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110222,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110222,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110223,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110223,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.6,
+				0.6,
+				0.1,
+				2,
+				0.6,
+				0.18
+			],
+			"R2": [
+				0.7,
+				0.6,
+				0.12,
+				2,
+				0.6,
+				0.21
+			],
+			"R3": [
+				0.8,
+				0.6,
+				0.14,
+				2,
+				0.6,
+				0.24
+			],
+			"R4": [
+				0.9,
+				0.6,
+				0.16,
+				2,
+				0.6,
+				0.27
+			],
+			"R5": [
+				1,
+				0.6,
+				0.18,
+				2,
+				0.6,
+				0.3
+			],
+			"id": "23029"
+		},
+		"passives": [
+			[
+				{
+					"type": "StatusProbabilityBase",
+					"value": 0.6,
+					"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "StatusProbabilityBase",
+					"value": 0.7,
+					"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "StatusProbabilityBase",
+					"value": 0.8,
+					"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "StatusProbabilityBase",
+					"value": 0.9,
+					"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "StatusProbabilityBase",
+					"value": 1,
+					"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+					"flat": false
+				}
+			]
+		],
+		"beta": true,
+		"id": "23029"
+	},
+	"23030": {
+		"name": "해 질 무렵 시작되는 춤",
+		"icon": "spriteoutput/lightconemediumicon/23030.png",
+		"shortIcon": "23030",
+		"rarity": "SuperRare",
+		"weaponType": "Warrior",
+		"refinements": "장착한 캐릭터가 피격될 확률이 대폭 증가하고, 치명타 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 필살기를 발동하면 [화염의 춤]을 1스택 획득한다. 지속 시간: 2턴. 최대 중첩수: <unbreak>#2[i]</unbreak>스택. [화염의 춤] 스택마다 장착한 캐릭터의 추가 공격으로 가하는 피해가 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가한다",
+		"maxHP": 1058,
+		"maxATK": 582,
+		"maxDEF": 463,
+		"promotion": {
+			"2": 385000,
+			"110181": 4,
+			"110182": 12,
+			"110183": 15,
+			"114001": 20,
+			"114002": 20,
+			"114003": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 114001,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110181,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114001,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110182,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 114002,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110182,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 114002,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110183,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 114003,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110183,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 114003,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.36,
+				2,
+				0.36,
+				5
+			],
+			"R2": [
+				0.42,
+				2,
+				0.42,
+				5
+			],
+			"R3": [
+				0.48,
+				2,
+				0.48,
+				5
+			],
+			"R4": [
+				0.54,
+				2,
+				0.54,
+				5
+			],
+			"R5": [
+				0.6,
+				2,
+				0.6,
+				5
+			],
+			"id": "23030"
+		},
+		"passives": [
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.36,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.42,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.48,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.54,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.6,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			]
+		],
+		"beta": true,
+		"id": "23030"
 	},
 	"24000": {
 		"name": "어떤 에이언즈의 몰락",
@@ -16136,7 +16673,7 @@
 		"shortIcon": "24004",
 		"rarity": "SuperRare",
 		"weaponType": "Mage",
-		"refinements": "장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 공격 발동 후 적 1기를 명중할 때마다 공격력이 추가로 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다, 최대 중첩수: 5회, 다음 공격 후까지 지속된다. <unbreak>#3[i]</unbreak>기 이상의 적을 명중하면 자신의 속도가 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> 증가한다, 지속 시간: <unbreak>#5[i]</unbreak>턴",
+		"refinements": "장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 공격 발동 후 적을 1기 명중할 때마다 공격력이 추가로 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가하며(최대 중첩수: 5회), 다음 공격 후까지 지속된다. <unbreak>#3[i]</unbreak>기 이상의 적을 명중하면 자신의 속도가 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> 증가한다, 지속 시간: <unbreak>#5[i]</unbreak>턴",
 		"maxHP": 1058,
 		"maxATK": 529,
 		"maxDEF": 397,
@@ -16312,7 +16849,6 @@
 				}
 			]
 		],
-		"beta": true,
 		"id": "24004"
 	}
 }
