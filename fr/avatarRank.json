@@ -417,7 +417,7 @@
 	},
 	"100801": {
 		"name": "Jusqu'au-boutiste",
-		"description": "Lorsque les PV du personnage sont inférieurs ou égaux à <unbreak>50</unbreak> % de ses PV max, augmente les DGT infligés par la compétence de <unbreak>#1[i]%</unbreak>.",
+		"description": "Lorsque le pourcentage de PV du personnage est inférieur ou égal à <unbreak>50</unbreak> % de ses PV max, augmente les DGT infligés par la compétence de <unbreak>#1[i]%</unbreak>.",
 		"icon": "spriteoutput/skillicons/avatar/1008/SkillIcon_1008_Rank1.png",
 		"shortIcon": "SkillIcon_1008_Rank1",
 		"params": [
@@ -473,7 +473,7 @@
 	},
 	"100806": {
 		"name": "Abnégation",
-		"description": "Lorsque les PV du personnage sont inférieurs ou égaux à <unbreak>50</unbreak> % de ses PV max, l'ultime inflige <unbreak>#1[i]%</unbreak> de DGT supplémentaires. Le multiplicateur de DGT de la cible principale s'applique également aux ennemis adjacents.",
+		"description": "Lorsque le pourcentage de PV actuels du personnage est inférieur ou égal à <unbreak>50</unbreak> % de ses PV max, l'ultime inflige <unbreak>#1[i]%</unbreak> de DGT supplémentaires, et le multiplicateur de DGT de la cible principale s'applique également aux ennemis adjacents.",
 		"icon": "spriteoutput/skillicons/avatar/1008/SkillIcon_1008_Rank6.png",
 		"shortIcon": "SkillIcon_1008_Rank6",
 		"params": [
@@ -2629,7 +2629,7 @@
 	},
 	"121806": {
 		"name": "Feu des neufs transformations",
-		"description": "Lorsqu'une cible ennemie est éliminée, ses cumuls de Charbons ardents accumulés sont transférés à l'ennemi ayant le moins de cumuls de Charbons ardents sur le champ de bataille. La limite de cumuls de Charbons ardents passe à <unbreak>#2[i]</unbreak>. Chaque cumul de Charbons ardents réduit toutes les RÉS de type de la cible de <unbreak>#3[i]%</unbreak>.",
+		"description": "Lorsqu'une cible ennemie est éliminée, ses cumuls de Charbons ardents sont transférés à l'ennemi ayant le moins de cumuls de Charbons ardents sur le champ de bataille. La limite de cumuls de Charbons ardents passe à <unbreak>#2[i]</unbreak>. Chaque cumul de Charbons ardents réduit toutes les RÉS de type de la cible de <unbreak>#3[i]%</unbreak>.",
 		"icon": "spriteoutput/skillicons/avatar/1218/SkillIcon_1218_Rank6.png",
 		"shortIcon": "SkillIcon_1218_Rank6",
 		"params": [
@@ -2639,6 +2639,81 @@
 		],
 		"skillUpgrades": {},
 		"id": "121806"
+	},
+	"122001": {
+		"name": "Apaisement des cieux",
+		"description": "Après avoir lancé Éclair tonitruant des étoiles ou Hache de guerre céleste, les DGT d'ultime infligés par Feixiao augmentent d'un montant équivalent à <unbreak>#1[i]%</unbreak> des DGT initiaux. Cet effet est cumulable jusqu'à <unbreak>#2[i]</unbreak> fois et dure jusqu'à la fin de l'action de l'ultime.",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Rank1.png",
+		"shortIcon": "SkillIcon_1220_Rank1",
+		"params": [
+			0.1,
+			5
+		],
+		"skillUpgrades": {},
+		"id": "122001"
+	},
+	"122002": {
+		"name": "Prière à la Lune",
+		"description": "Dans l'effet du talent, chaque fois qu'une cible alliée déclenche 1 instance de l'attaque de suivi, Feixiao obtient 1 point de Chimère volante. Cet effet peut se déclencher jusqu'à <unbreak>#1[i]</unbreak> fois par tour.",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Rank2.png",
+		"shortIcon": "SkillIcon_1220_Rank2",
+		"params": [
+			6
+		],
+		"skillUpgrades": {},
+		"id": "122002"
+	},
+	"122003": {
+		"name": "Étoile de prospérité",
+		"description": "Niv. de l'ultime +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. de l'ATQ normale +1, jusqu'au Niv. <unbreak>10</unbreak> maximum.",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Ultra.png",
+		"shortIcon": "SkillIcon_1220_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"122001": 1,
+			"122003": 2,
+			"122008": 2,
+			"122009": 2,
+			"122014": 2
+		},
+		"id": "122003"
+	},
+	"122004": {
+		"name": "Chant de la tempête",
+		"description": "La réduction de robustesse de l'attaque de suivi du talent augmente de <unbreak>#1[i]%</unbreak>, et la VIT du personnage augmente de <unbreak>#2[i]%</unbreak> pendant <unbreak>#3[i]</unbreak> tours lorsqu'elle se déclenche.",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Rank4.png",
+		"shortIcon": "SkillIcon_1220_Rank4",
+		"params": [
+			1,
+			0.08,
+			2
+		],
+		"skillUpgrades": {},
+		"id": "122004"
+	},
+	"122005": {
+		"name": "Ascension céleste",
+		"description": "Niv. de la compétence +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. du talent +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_BP.png",
+		"shortIcon": "SkillIcon_1220_BP",
+		"params": [],
+		"skillUpgrades": {
+			"122002": 2,
+			"122004": 2
+		},
+		"id": "122005"
+	},
+	"122006": {
+		"name": "Retour à la terre ancestrale",
+		"description": "Augmente la PÉN de RÉS à tous les types des DGT d'ultime infligés par Feixiao de <unbreak>#1[i]%</unbreak>. Les DGT de l'attaque de suivi du talent sont également considérés comme des DGT d'ultime, et son multiplicateur de DGT augmente de <unbreak>#2[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Rank6.png",
+		"shortIcon": "SkillIcon_1220_Rank6",
+		"params": [
+			0.2,
+			1.4
+		],
+		"skillUpgrades": {},
+		"id": "122006"
 	},
 	"122101": {
 		"name": "Pureté de la lame forgée",
@@ -2710,6 +2785,149 @@
 		],
 		"skillUpgrades": {},
 		"id": "122106"
+	},
+	"122201": {
+		"name": "Fumée destructrice",
+		"description": "L'efficacité de Rupture de faiblesse de Lingsha augmente de <unbreak>#2[i]%</unbreak>. Lorsqu'une unité ennemie subit une Rupture de faiblesse, sa DÉF est réduite de <unbreak>#1[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Rank1.png",
+		"shortIcon": "SkillIcon_1222_Rank1",
+		"params": [
+			0.2,
+			0.5
+		],
+		"skillUpgrades": {},
+		"id": "122201"
+	},
+	"122202": {
+		"name": "Volutes écarlates",
+		"description": "L'effet de Rupture de tous les alliés augmente de <unbreak>#1[i]%</unbreak> pendant <unbreak>#2[i]</unbreak> tours lors de l'utilisation de l'ultime.",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Rank2.png",
+		"shortIcon": "SkillIcon_1222_Rank2",
+		"params": [
+			0.4,
+			3
+		],
+		"skillUpgrades": {},
+		"id": "122202"
+	},
+	"122203": {
+		"name": "Mèche parfumée",
+		"description": "Niv. de l'ultime +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. du talent +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Ultra.png",
+		"shortIcon": "SkillIcon_1222_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"122203": 2,
+			"122204": 2
+		},
+		"id": "122203"
+	},
+	"122204": {
+		"name": "Senteurs feutrées",
+		"description": "Lors de l'action de Fuyuan, restaure un montant de PV équivalent à <unbreak>#1[i]%</unbreak> de l'ATQ de Lingsha à l'allié ayant les PV les plus bas actuellement.",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Rank4.png",
+		"shortIcon": "SkillIcon_1222_Rank4",
+		"params": [
+			0.4
+		],
+		"skillUpgrades": {},
+		"id": "122204"
+	},
+	"122205": {
+		"name": "Plénitude intérieure",
+		"description": "Niv. de la compétence +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. de l'ATQ normale +1, jusqu'au Niv. <unbreak>10</unbreak> maximum.",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_BP.png",
+		"shortIcon": "SkillIcon_1222_BP",
+		"params": [],
+		"skillUpgrades": {
+			"122201": 1,
+			"122202": 2
+		},
+		"id": "122205"
+	},
+	"122206": {
+		"name": "Paradis de l'isolement",
+		"description": "Réduit toutes les RÉS de type de tous les ennemis de <unbreak>#1[i]%</unbreak> lorsque Fuyuan est sur le champ de bataille. Fuyuan inflige <unbreak>#2[i]</unbreak> instances de DGT supplémentaires lors de son attaque, chacune infligeant des DGT de feu équivalents à <unbreak>#3[i]%</unbreak> de l'ATQ de Lingsha et réduisant la robustesse d'un ennemi unique aléatoire de <unbreak>#4[i]</unbreak>. Les cibles dont la robustesse est supérieure à 0 et qui ont une Faiblesse au feu sont touchées en priorité.",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Rank6.png",
+		"shortIcon": "SkillIcon_1222_Rank6",
+		"params": [
+			0.2,
+			4,
+			0.5,
+			5
+		],
+		"skillUpgrades": {},
+		"id": "122206"
+	},
+	"122301": {
+		"name": "Gardien du serment",
+		"description": "Moze gagne <unbreak>#2[i]</unbreak> points d'énergie après être entré en combat et <unbreak>#1[i]</unbreak> points d'énergie chaque fois que les DGT additionnels de son talent sont déclenchés.",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Rank1.png",
+		"shortIcon": "SkillIcon_1223_Rank1",
+		"params": [
+			2,
+			20
+		],
+		"skillUpgrades": {},
+		"id": "122301"
+	},
+	"122302": {
+		"name": "Héraut du châtiment",
+		"description": "Augmente de <unbreak>#1[i]%</unbreak> les DGT critiques lorsque tous les alliés infligent des DGT à une cible ennemie marquée comme Proie.",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Rank2.png",
+		"shortIcon": "SkillIcon_1223_Rank2",
+		"params": [
+			0.4
+		],
+		"skillUpgrades": {},
+		"id": "122302"
+	},
+	"122303": {
+		"name": "Justicier implacable",
+		"description": "Niv. de l'ultime +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. du talent +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Ultra.png",
+		"shortIcon": "SkillIcon_1223_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"122303": 2,
+			"122304": 2
+		},
+		"id": "122303"
+	},
+	"122304": {
+		"name": "Rôdeur des ombres",
+		"description": "Les DGT infligés par Moze augmentent de <unbreak>#1[f1]%</unbreak> pendant <unbreak>#2[i]</unbreak> tours lors de l'utilisation de l'ultime.",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Rank4.png",
+		"shortIcon": "SkillIcon_1223_Rank4",
+		"params": [
+			0.3,
+			2
+		],
+		"skillUpgrades": {},
+		"id": "122304"
+	},
+	"122305": {
+		"name": "Manipulateur de vérité",
+		"description": "Niv. de la compétence +2, jusqu'au Niv. <unbreak>15</unbreak> maximum.\\nNiv. de l'ATQ normale +1, jusqu'au Niv. <unbreak>10</unbreak> maximum.",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_BP.png",
+		"shortIcon": "SkillIcon_1223_BP",
+		"params": [],
+		"skillUpgrades": {
+			"122301": 1,
+			"122302": 2
+		},
+		"id": "122305"
+	},
+	"122306": {
+		"name": "Rassembleur de loyauté",
+		"description": "Le multiplicateur de DGT de l'attaque de suivi du talent augmente de <unbreak>#1[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Rank6.png",
+		"shortIcon": "SkillIcon_1223_Rank6",
+		"params": [
+			0.25
+		],
+		"skillUpgrades": {},
+		"id": "122306"
 	},
 	"122401": {
 		"name": "Fulgurance du succès",

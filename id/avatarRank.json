@@ -196,7 +196,7 @@
 	},
 	"100306": {
 		"name": "Trailblaze!",
-		"description": "Ultimate mengakibatkan 2 kali DMG tambahan pada musuh secara acak, masing-masing mengakibatkan Fire DMG sebesar <unbreak>#1[i]%</unbreak> dari DMG awal.",
+		"description": "Ultimate mengakibatkan 2 kali tambahan DMG pada musuh secara acak, masing-masing mengakibatkan Fire DMG sebesar <unbreak>#1[i]%</unbreak> dari DMG aslinya.",
 		"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Rank6.png",
 		"shortIcon": "SkillIcon_1003_Rank6",
 		"params": [
@@ -1145,7 +1145,7 @@
 	},
 	"110804": {
 		"name": "The Deeper the Love, the Stronger the Hate",
-		"description": "Saat Skill mengenai target musuh yang jumlah lapisan status Wind Shear-nya lebih dari atau sama dengan <unbreak>#1[i]</unbreak> lapis, status Wind Shear yang dimilikinya saat itu akan segera mengakibatkan DMG sebesar <unbreak>#2[i]%</unbreak> DMG Wind Shear.",
+		"description": "Saat Skill mengenai target musuh yang jumlah lapisan status Wind Shear-nya lebih dari atau sama dengan <unbreak>#1[i]</unbreak> lapis, maka status Wind Shear yang dimilikinya saat ini akan segera mengakibatkan DMG sebesar <unbreak>#2[i]%</unbreak> dari DMG aslinya.",
 		"icon": "spriteoutput/skillicons/avatar/1108/SkillIcon_1108_Rank4.png",
 		"shortIcon": "SkillIcon_1108_Rank4",
 		"params": [
@@ -1380,7 +1380,7 @@
 	},
 	"111106": {
 		"name": "A Champion's Applause",
-		"description": "Setelah \"Rising Uppercut\" dari Enhanced Basic Attack mengenai target musuh berstatus Bleed, maka setiap 1 serangan \"Direct Punch\" yang dilancarkan Enhanced Basic Attack kali ini akan membuat status Bleed musuh segera menghasilkan 1 kali DMG sebesar <unbreak>#1[i]%</unbreak> DMG awal Bleed.",
+		"description": "Setelah \"Rising Uppercut\" dari Enhanced Basic Attack mengenai target musuh berstatus Bleed, maka setiap 1 serangan \"Direct Punch\" yang dilancarkan Enhanced Basic Attack kali ini akan membuat status Bleed musuh segera menghasilkan 1 kali DMG sebesar <unbreak>#1[i]%</unbreak> dari DMG aslinya.",
 		"icon": "spriteoutput/skillicons/avatar/1111/SkillIcon_1111_Rank6.png",
 		"shortIcon": "SkillIcon_1111_Rank6",
 		"params": [
@@ -2640,6 +2640,81 @@
 		"skillUpgrades": {},
 		"id": "121806"
 	},
+	"122001": {
+		"name": "Skyward I Quell",
+		"description": "Setelah melancarkan \"Boltsunder Blitz\" atau \"Waraxe Skyward\", Ultimate DMG yang diakibatkan Feixiao akan meningkat ekstra, peningkatannya adalah sebesar <unbreak>#1[i]%</unbreak> dari DMG aslinya. Efek ini maksimal dapat ditumpuk hingga <unbreak>#2[i]</unbreak> lapis, dan berlangsung hingga aksi Ultimate berakhir.",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Rank1.png",
+		"shortIcon": "SkillIcon_1220_Rank1",
+		"params": [
+			0.1,
+			5
+		],
+		"skillUpgrades": {},
+		"id": "122001"
+	},
+	"122002": {
+		"name": "Moonward I Wish",
+		"description": "Pada efek Talent, setiap kali rekan tim melancarkan 1 kali Serangan Lanjutan akan membuat Feixiao memperoleh 1 poin \"Flying Aureus\". Efek ini maksimal dapat dipicu <unbreak>#1[i]</unbreak> kali setiap giliran.",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Rank2.png",
+		"shortIcon": "SkillIcon_1220_Rank2",
+		"params": [
+			6
+		],
+		"skillUpgrades": {},
+		"id": "122002"
+	},
+	"122003": {
+		"name": "Starward I Bode",
+		"description": "Level Ultimate +2, maksimal Lv. <unbreak>15</unbreak>. Level Basic Attack +1, maksimal Lv. <unbreak>10</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Ultra.png",
+		"shortIcon": "SkillIcon_1220_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"122001": 1,
+			"122003": 2,
+			"122008": 2,
+			"122009": 2,
+			"122014": 2
+		},
+		"id": "122003"
+	},
+	"122004": {
+		"name": "Stormward I Hear",
+		"description": "Pengurangan Toughness dari Serangan Lanjutan Talent meningkat <unbreak>#1[i]%</unbreak>, dan saat melancarkannya, SPD diri sendiri akan meningkat <unbreak>#2[i]%</unbreak> selama <unbreak>#3[i]</unbreak> giliran.",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Rank4.png",
+		"shortIcon": "SkillIcon_1220_Rank4",
+		"params": [
+			1,
+			0.08,
+			2
+		],
+		"skillUpgrades": {},
+		"id": "122004"
+	},
+	"122005": {
+		"name": "Heavenward I Leap",
+		"description": "Level Skill +2, maksimal Lv. <unbreak>15</unbreak>. Level Talent +2, maksimal Lv. <unbreak>15</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_BP.png",
+		"shortIcon": "SkillIcon_1220_BP",
+		"params": [],
+		"skillUpgrades": {
+			"122002": 2,
+			"122004": 2
+		},
+		"id": "122005"
+	},
+	"122006": {
+		"name": "Homeward I Near",
+		"description": "RES PEN Seluruh Tipe dari Ultimate DMG yang diakibatkan Feixiao meningkat <unbreak>#1[i]%</unbreak>. DMG Serangan Lanjutan yang diakibatkan Talent akan dianggap sebagai Ultimate DMG, dan DMG Multiplier-nya meningkat <unbreak>#2[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Rank6.png",
+		"shortIcon": "SkillIcon_1220_Rank6",
+		"params": [
+			0.2,
+			1.4
+		],
+		"skillUpgrades": {},
+		"id": "122006"
+	},
 	"122101": {
 		"name": "Weathered Blade Does Not Sully",
 		"description": "DMG yang diakibatkan \"Intuit: Slash\" dan \"Intuit: Cull\" meningkat <unbreak>#1[i]%</unbreak>, jumlah tambahan DMG dari \"Intuit: Cull\" bertambah <unbreak>#2[i]</unbreak>.",
@@ -2710,6 +2785,149 @@
 		],
 		"skillUpgrades": {},
 		"id": "122106"
+	},
+	"122201": {
+		"name": "Bloom on Vileward Bouquet",
+		"description": "Weakness Break Efficiency Lingsha meningkat <unbreak>#2[i]%</unbreak>. Saat ada unit musuh yang terkena Weakness Break, DEF musuh tersebut akan berkurang <unbreak>#1[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Rank1.png",
+		"shortIcon": "SkillIcon_1222_Rank1",
+		"params": [
+			0.2,
+			0.5
+		],
+		"skillUpgrades": {},
+		"id": "122201"
+	},
+	"122202": {
+		"name": "Leisure in Carmine Smokeveil",
+		"description": "Saat melancarkan Ultimate, Break Effect seluruh rekan tim meningkat <unbreak>#1[i]%</unbreak>, berlangsung selama <unbreak>#2[i]</unbreak> giliran.",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Rank2.png",
+		"shortIcon": "SkillIcon_1222_Rank2",
+		"params": [
+			0.4,
+			3
+		],
+		"skillUpgrades": {},
+		"id": "122202"
+	},
+	"122203": {
+		"name": "Shine of Floral Wick",
+		"description": "Level Ultimate +2, maksimal Lv. <unbreak>15</unbreak>. Level Talent +2, maksimal Lv. <unbreak>15</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Ultra.png",
+		"shortIcon": "SkillIcon_1222_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"122203": 2,
+			"122204": 2
+		},
+		"id": "122203"
+	},
+	"122204": {
+		"name": "Redolence from Canopied Banquet",
+		"description": "Saat \"Fuyuan\" beraksi, akan memulihkan HP rekan tim yang HP-nya saat ini paling rendah sebesar <unbreak>#1[i]%</unbreak> ATK Lingsha.",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Rank4.png",
+		"shortIcon": "SkillIcon_1222_Rank4",
+		"params": [
+			0.4
+		],
+		"skillUpgrades": {},
+		"id": "122204"
+	},
+	"122205": {
+		"name": "Poise Atop Twists and Turns",
+		"description": "Level Skill +2, maksimal Lv. <unbreak>15</unbreak>. Level Basic Attack +1, maksimal Lv. <unbreak>10</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_BP.png",
+		"shortIcon": "SkillIcon_1222_BP",
+		"params": [],
+		"skillUpgrades": {
+			"122201": 1,
+			"122202": 2
+		},
+		"id": "122205"
+	},
+	"122206": {
+		"name": "Arcadia Under Deep Seclusion",
+		"description": "Saat \"Fuyuan\" berada di medan pertempuran, RES Seluruh Tipe milik seluruh musuh berkurang <unbreak>#1[i]%</unbreak>. Saat \"Fuyuan\" menyerang, akan mengakibatkan ekstra <unbreak>#2[i]</unbreak> kali DMG, yang setiap DMG-nya akan mengakibatkan Fire DMG sebesar <unbreak>#3[i]%</unbreak> ATK Lingsha dan Pengurangan Toughness sebesar <unbreak>#4[i]</unbreak> pada musuh acak, memprioritaskan target yang Toughness-nya lebih dari 0 dan memiliki Fire Weakness.",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Rank6.png",
+		"shortIcon": "SkillIcon_1222_Rank6",
+		"params": [
+			0.2,
+			4,
+			0.5,
+			5
+		],
+		"skillUpgrades": {},
+		"id": "122206"
+	},
+	"122301": {
+		"name": "Oathkeeper",
+		"description": "Setelah memasuki pertempuran, Moze akan memulihkan <unbreak>#2[i]</unbreak> poin Energy. Setiap memicu 1 kali DMG Tambahan dari Talent miliknya, Moze akan memulihkan <unbreak>#1[i]</unbreak> poin Energy.",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Rank1.png",
+		"shortIcon": "SkillIcon_1223_Rank1",
+		"params": [
+			2,
+			20
+		],
+		"skillUpgrades": {},
+		"id": "122301"
+	},
+	"122302": {
+		"name": "Wrathbearer",
+		"description": "Saat rekan tim mengakibatkan DMG pada target musuh yang menjadi \"Prey\", CRIT DMG akan meningkat <unbreak>#1[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Rank2.png",
+		"shortIcon": "SkillIcon_1223_Rank2",
+		"params": [
+			0.4
+		],
+		"skillUpgrades": {},
+		"id": "122302"
+	},
+	"122303": {
+		"name": "Deathchaser",
+		"description": "Level Ultimate +2, maksimal Lv. <unbreak>15</unbreak>. Level Talent +2, maksimal Lv. <unbreak>15</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Ultra.png",
+		"shortIcon": "SkillIcon_1223_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"122303": 2,
+			"122304": 2
+		},
+		"id": "122303"
+	},
+	"122304": {
+		"name": "Heathprowler",
+		"description": "Saat melancarkan Ultimate, DMG yang diakibatkan Moze meningkat <unbreak>#1[f1]%</unbreak>, berlangsung selama <unbreak>#2[i]</unbreak> giliran.",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Rank4.png",
+		"shortIcon": "SkillIcon_1223_Rank4",
+		"params": [
+			0.3,
+			2
+		],
+		"skillUpgrades": {},
+		"id": "122304"
+	},
+	"122305": {
+		"name": "Truthbender",
+		"description": "Level Skill +2, maksimal Lv. <unbreak>15</unbreak>. Level Basic Attack +1, maksimal Lv. <unbreak>10</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_BP.png",
+		"shortIcon": "SkillIcon_1223_BP",
+		"params": [],
+		"skillUpgrades": {
+			"122301": 1,
+			"122302": 2
+		},
+		"id": "122305"
+	},
+	"122306": {
+		"name": "Faithbinder",
+		"description": "DMG Multiplier Serangan Lanjutan dari Talent meningkat <unbreak>#1[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Rank6.png",
+		"shortIcon": "SkillIcon_1223_Rank6",
+		"params": [
+			0.25
+		],
+		"skillUpgrades": {},
+		"id": "122306"
 	},
 	"122401": {
 		"name": "My Sword Stirs Starlight",
@@ -3701,7 +3919,7 @@
 	},
 	"131506": {
 		"name": "Crowbar Hotel's Raccoon",
-		"description": "Saat memicu Break DMG yang diakibatkan Talent, akan mengakibatkan Break DMG tambahan pada target sebesar <unbreak>#1[i]%</unbreak> dari DMG Multiplier awal, dan mengakibatkan Break DMG tambahan pada musuh di sekitar target sebesar <unbreak>#2[i]%</unbreak> dari DMG Multiplier awal.",
+		"description": "Saat memicu Break DMG yang diakibatkan Talent, akan mengakibatkan Break DMG tambahan pada target sebesar <unbreak>#1[i]%</unbreak> dari DMG Multiplier aslinya, dan mengakibatkan Break DMG tambahan pada musuh di sekitar target sebesar <unbreak>#2[i]%</unbreak> dari DMG Multiplier aslinya.",
 		"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Rank6.png",
 		"shortIcon": "SkillIcon_1315_Rank6",
 		"params": [

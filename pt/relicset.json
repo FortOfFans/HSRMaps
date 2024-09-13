@@ -146,8 +146,8 @@
 		"setID": "106",
 		"two": "Reduz o Dano recebido em **8%**.",
 		"twopc": "Reduz o Dano recebido em <unbreak>#1[i]%</unbreak>.",
-		"four": "No início da rodada, se os PV do usuário forem iguais ou inferiores a **50%**, restaura PV igual a **8%** de seus PV máximos e regenera **5** de Energia.",
-		"fourpc": "No início da rodada, se os PV do usuário forem iguais ou inferiores a <unbreak>#1[i]%</unbreak>, restaura PV igual a <unbreak>#2[i]%</unbreak> de seus PV máximos e regenera <unbreak>#3[i]</unbreak> de Energia.",
+		"four": "No início da rodada, se a porcentagem dos PV do usuário for igual ou inferior a **50%**, restaura PV igual a **8%** de seus PV máximos e regenera **5** de Energia.",
+		"fourpc": "No início da rodada, se a porcentagem dos PV do usuário for igual ou inferior a <unbreak>#1[i]%</unbreak>, restaura PV igual a <unbreak>#2[i]%</unbreak> de seus PV máximos e regenera <unbreak>#3[i]</unbreak> de Energia.",
 		"params": [
 			[
 				0.08
@@ -398,8 +398,8 @@
 		"setID": "115",
 		"two": "Aumenta o Dano causado pelos Ataques Extras em **20%**.",
 		"twopc": "Aumenta o Dano causado pelos Ataques Extras em <unbreak>#1[i]%</unbreak>.",
-		"four": "Quando o usuário usa Ataques Extras, aumenta o ATQ do usuário em **6%** a cada vez que o Ataque Extra causa Dano. Este efeito pode ser acumulado até o máximo de **8** vez(es) e dura por **3** rodada(s). Este efeito é removido da próxima vez que o usuário utilizar um Ataque Extra.",
-		"fourpc": "Quando o usuário usa Ataques Extras, aumenta o ATQ do usuário em <unbreak>#1[i]%</unbreak> a cada vez que o Ataque Extra causa Dano. Este efeito pode ser acumulado até o máximo de <unbreak>#2[i]</unbreak> vez(es) e dura por <unbreak>#3[i]</unbreak> rodada(s). Este efeito é removido da próxima vez que o usuário utilizar um Ataque Extra.",
+		"four": "Quando o usuário usa um Ataque Extra, aumenta o ATQ do usuário em **6%** a cada vez que o Ataque Extra causa Dano. Este efeito pode ser chegar até um máximo de **8** acúmulo(s) e dura por **3** rodada(s). Este efeito é removido na próxima vez que o usuário utilizar um Ataque Extra.",
+		"fourpc": "Quando o usuário usa um Ataque Extra, aumenta o ATQ do usuário em <unbreak>#1[i]%</unbreak> a cada vez que o Ataque Extra causa Dano. Este efeito pode ser chegar até um máximo de <unbreak>#2[i]</unbreak> acúmulo(s) e dura por <unbreak>#3[i]</unbreak> rodada(s). Este efeito é removido na próxima vez que o usuário utilizar um Ataque Extra.",
 		"params": [
 			[
 				0.2
@@ -907,8 +907,8 @@
 	"315": {
 		"name": "Duran, Dinastia dos Lobos Errantes",
 		"setID": "315",
-		"two": "Quando um aliado utilizam um Ataque Extra, o usuário recebe 1 acúmulo de Mérito, acumulando até **5** vez(es). Cada acúmulo de Mérito aumenta o Dano causado pelos Ataques Extras do usuário em **5%**. Quando há **5** acúmulos, aumenta adicionalmente o Dano CRIT do usuário em **25%**.",
-		"twopc": "Quando um aliado utilizam um Ataque Extra, o usuário recebe 1 acúmulo de Mérito, acumulando até <unbreak>#1[i]</unbreak> vez(es). Cada acúmulo de Mérito aumenta o Dano causado pelos Ataques Extras do usuário em <unbreak>#2[i]%</unbreak>. Quando há <unbreak>#1[i]</unbreak> acúmulos, aumenta adicionalmente o Dano CRIT do usuário em <unbreak>#3[i]%</unbreak>.",
+		"two": "Quando um aliado utiliza um Ataque Extra, o usuário recebe 1 acúmulo de Mérito, acumulando até **5** vez(es). Cada acúmulo de Mérito aumenta o Dano causado pelos Ataques Extras do usuário em **5%**. Com **5** acúmulos, aumenta adicionalmente o Dano CRIT do usuário em **25%**.",
+		"twopc": "Quando um aliado utiliza um Ataque Extra, o usuário recebe 1 acúmulo de Mérito, acumulando até <unbreak>#1[i]</unbreak> vez(es). Cada acúmulo de Mérito aumenta o Dano causado pelos Ataques Extras do usuário em <unbreak>#2[i]%</unbreak>. Com <unbreak>#1[i]</unbreak> acúmulos, aumenta adicionalmente o Dano CRIT do usuário em <unbreak>#3[i]%</unbreak>.",
 		"params": [
 			[
 				5,
@@ -942,6 +942,52 @@
 			]
 		],
 		"setIcon": "spriteoutput/itemfigures/71035.png",
+		"planarSet": true
+	},
+	"317": {
+		"name": "Lushaka, os Mares Submersos",
+		"setID": "317",
+		"two": "Aumenta a Taxa de Regeneração de Energia do usuário em **5%**. Se o usuário não for o primeiro personagem na Formação de Equipe, então aumenta o ATQ do primeiro personagem na Formação de Equipe em **12%**.",
+		"twopc": "Aumenta a Taxa de Regeneração de Energia do usuário em <unbreak>#1[i]%</unbreak>. Se o usuário não for o primeiro personagem na Formação de Equipe, então aumenta o ATQ do primeiro personagem na Formação de Equipe em <unbreak>#2[i]%</unbreak>.",
+		"params": [
+			[
+				0.05,
+				0.12
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "SPRatioBase",
+					"value": 0.05
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71036.png",
+		"planarSet": true
+	},
+	"318": {
+		"name": "O Maravilhoso Parque Bananalândia",
+		"setID": "318",
+		"two": "Aumenta o Dano CRIT do usuário em **16%**. Quando um alvo invocado pelo usuário está em campo, o Dano CRIT aumenta adicionalmente em **32%**.",
+		"twopc": "Aumenta o Dano CRIT do usuário em <unbreak>#1[i]%</unbreak>. Quando um alvo invocado pelo usuário está em campo, o Dano CRIT aumenta adicionalmente em <unbreak>#2[i]%</unbreak>.",
+		"params": [
+			[
+				0.16,
+				0.32
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "CriticalDamageBase",
+					"value": 0.16
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71037.png",
 		"planarSet": true
 	}
 }

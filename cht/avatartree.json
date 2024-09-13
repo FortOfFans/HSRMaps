@@ -17232,6 +17232,468 @@
 		"baseSkill": [],
 		"id": "1218210"
 	},
+	"1220001": {
+		"name": "閃裂",
+		"description": "對指定敵方單體造成等同於飛霄****1[i]%****攻擊力的風屬性傷害。",
+		"avatar": 1220,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Normal.png",
+		"shortIcon": "SkillIcon_1220_Normal",
+		"promotion": {
+			"2": 240000,
+			"110191": 3,
+			"110192": 8,
+			"110193": 11,
+			"113011": 6,
+			"113012": 7,
+			"113013": 7
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122001
+		],
+		"id": "1220001"
+	},
+	"1220002": {
+		"name": "鉞貫",
+		"description": "對指定敵方單體造成等同於飛霄****1[i]%****攻擊力的風屬性傷害，隨後立即對該目標額外發動1次天賦的**追加攻擊**。",
+		"avatar": 1220,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_BP.png",
+		"shortIcon": "SkillIcon_1220_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110191": 3,
+			"110192": 15,
+			"110193": 30,
+			"110503": 3,
+			"113011": 9,
+			"113012": 13,
+			"113013": 7
+		},
+		"params": [
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122002
+		],
+		"id": "1220002"
+	},
+	"1220003": {
+		"name": "鑿破大荒",
+		"description": "對指定敵方單體造成最多等同於飛霄****4[i]%****攻擊力的風屬性傷害，期間可無視弱點屬性削減目標韌性，目標未處於**弱點擊破狀態**時飛霄的弱點擊破效率提高**2[i]%**。\n其中，飛霄先對該目標發動【閃裂刃舞】或【鉞貫天衝】，總計**3[i]**次。最後對該目標造成等同於飛霄****1[i]%****攻擊力的風屬性傷害。",
+		"avatar": 1220,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Ultra.png",
+		"shortIcon": "SkillIcon_1220_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110191": 3,
+			"110192": 15,
+			"110193": 30,
+			"110503": 3,
+			"113011": 9,
+			"113012": 13,
+			"113013": 7
+		},
+		"params": [
+			0.96,
+			1,
+			6,
+			4.02
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122003,
+			122008,
+			122009,
+			122014
+		],
+		"id": "1220003"
+	},
+	"1220004": {
+		"name": "雷狩",
+		"description": "【飛黃】達到**3[i]**點時可啟動終結技，最多累積**4[i]**點。我方目標每發動**2[i]**次攻擊，飛霄便獲得1點【飛黃】，飛霄的終結技攻擊不計入次數。\n當飛霄的隊友對敵方目標發動攻擊後，飛霄立即對主目標發動**追加攻擊**，造成等同於飛霄****1[i]%****攻擊力的風屬性傷害。若沒有可攻擊的主目標，則攻擊敵方隨機單體。該效果每回合最多觸發1次，飛霄回合開始時重置可觸發次數。發動此攻擊時使自身造成的傷害提高****5[i]%****，持續**6[i]**回合。",
+		"avatar": 1220,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Passive.png",
+		"shortIcon": "SkillIcon_1220_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110191": 3,
+			"110192": 15,
+			"110193": 30,
+			"110503": 3,
+			"113011": 9,
+			"113012": 13,
+			"113013": 7
+		},
+		"params": [
+			0.55,
+			2,
+			6,
+			12,
+			0.3,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122004
+		],
+		"id": "1220004"
+	},
+	"1220007": {
+		"name": "嵐身",
+		"description": "使用秘技後進入持續**1[i]**秒的【陷鋒】狀態。【陷鋒】狀態下會牽引一定範圍內的敵人，並且自身移動速度提高**2[i]%**，進入戰鬥後獲得**4[i]**點【飛黃】。\n【陷鋒】狀態下主動攻擊會使所有牽引的敵人進入戰鬥。進入戰鬥後，每個波次開始時對敵方全體造成等同於飛霄**3[i]%**攻擊力的風屬性傷害，該傷害必定造成暴擊。若牽引了超過1個敵人，每超過1個敵人，該傷害的倍率便提高**5[i]%**，最多提高至**6[i]%**。",
+		"avatar": 1220,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Maze.png",
+		"shortIcon": "SkillIcon_1220_Maze",
+		"promotion": {},
+		"params": [
+			20,
+			0.5,
+			2,
+			1,
+			1,
+			10
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			122007
+		],
+		"id": "1220007"
+	},
+	"1220101": {
+		"name": "天通",
+		"description": "戰鬥開始時，獲得**3**點【飛黃】。\n回合開始時，若上回合未透過天賦發動追加攻擊，計入1次獲得【飛黃】所需的攻擊次數。",
+		"avatar": 1220,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_SkillTree1.png",
+		"shortIcon": "SkillIcon_1220_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110191": 3,
+			"110503": 1
+		},
+		"params": [
+			3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1220101"
+	},
+	"1220102": {
+		"name": "解形",
+		"description": "施放終結技對敵方目標造成傷害時，被視為發動了追加攻擊。追加攻擊的暴擊傷害提高**36%**。",
+		"avatar": 1220,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_SkillTree2.png",
+		"shortIcon": "SkillIcon_1220_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110192": 5,
+			"110503": 1
+		},
+		"params": [
+			0.36
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1220102"
+	},
+	"1220103": {
+		"name": "電舉",
+		"description": "施放戰技時，攻擊力提高**48%**，持續**3**回合。",
+		"avatar": 1220,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_SkillTree3.png",
+		"shortIcon": "SkillIcon_1220_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110193": 8,
+			"110503": 1
+		},
+		"params": [
+			0.48,
+			3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1220103"
+	},
+	"1220201": {
+		"name": "攻擊強化",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 2500,
+			"113011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1220201"
+	},
+	"1220202": {
+		"name": "暴擊率強化",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 5000,
+			"110191": 3,
+			"113011": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.026999999
+			}
+		],
+		"baseSkill": [],
+		"id": "1220202"
+	},
+	"1220203": {
+		"name": "攻擊強化",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 10000,
+			"110192": 3,
+			"113012": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1220203"
+	},
+	"1220204": {
+		"name": "防禦強化",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 10000,
+			"110192": 3,
+			"113012": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.05
+			}
+		],
+		"baseSkill": [],
+		"id": "1220204"
+	},
+	"1220205": {
+		"name": "攻擊強化",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 20000,
+			"110192": 5,
+			"113012": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1220205"
+	},
+	"1220206": {
+		"name": "暴擊率強化",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 45000,
+			"110193": 3,
+			"113013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1220206"
+	},
+	"1220207": {
+		"name": "攻擊強化",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 45000,
+			"110193": 3,
+			"113013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1220207"
+	},
+	"1220208": {
+		"name": "防禦強化",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 160000,
+			"110193": 8,
+			"113013": 8
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.075
+			}
+		],
+		"baseSkill": [],
+		"id": "1220208"
+	},
+	"1220209": {
+		"name": "暴擊率強化",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 160000,
+			"110193": 8,
+			"113013": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1220209"
+	},
+	"1220210": {
+		"name": "攻擊強化",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 160000,
+			"110193": 8,
+			"113013": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1220210"
+	},
 	"1221001": {
 		"name": "翻風轉日",
 		"description": "對指定敵方單體造成等同於雲璃****1[i]%****攻擊力的物理屬性傷害。",
@@ -17687,6 +18149,922 @@
 		],
 		"baseSkill": [],
 		"id": "1221210"
+	},
+	"1222001": {
+		"name": "肅香",
+		"description": "對指定敵方單體造成等同於靈砂****1[i]%****攻擊力的火屬性傷害。",
+		"avatar": 1222,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Normal.png",
+		"shortIcon": "SkillIcon_1222_Normal",
+		"promotion": {
+			"2": 240000,
+			"110241": 3,
+			"110242": 8,
+			"110243": 11,
+			"113001": 6,
+			"113002": 7,
+			"113003": 7
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122201
+		],
+		"id": "1222001"
+	},
+	"1222002": {
+		"name": "識煙飛彩",
+		"description": "對敵方全體造成等同於靈砂****1[i]%****攻擊力的火屬性傷害，同時為我方全體回復等同於靈砂****2[f1]%****攻擊力+****3[i]****的生命值，使【浮元】**行動提前****4[i]%**。",
+		"avatar": 1222,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_BP.png",
+		"shortIcon": "SkillIcon_1222_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110241": 3,
+			"110242": 15,
+			"110243": 30,
+			"110506": 3,
+			"113001": 9,
+			"113002": 13,
+			"113003": 7
+		},
+		"params": [
+			0.4,
+			0.1,
+			105,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122202
+		],
+		"id": "1222002"
+	},
+	"1222003": {
+		"name": "幔亭繚霞",
+		"description": "使敵方全體陷入【醇醉】狀態，【醇醉】狀態下，使目標受到的**擊破傷害**提高****4[i]%****，持續**5[i]**回合。\n對敵方全體造成等同於靈砂****1[i]%****攻擊力的火屬性傷害，同時為我方全體回復等同於靈砂****2[f1]%****攻擊力+****3[i]****的生命值，使【浮元】**行動提前****6[i]%**。",
+		"avatar": 1222,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Ultra.png",
+		"shortIcon": "SkillIcon_1222_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110241": 3,
+			"110242": 15,
+			"110243": 30,
+			"110506": 3,
+			"113001": 9,
+			"113002": 13,
+			"113003": 7
+		},
+		"params": [
+			0.9,
+			0.08,
+			90,
+			0.15,
+			2,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122203
+		],
+		"id": "1222003"
+	},
+	"1222004": {
+		"name": "煙斜霧橫，氛氳化生",
+		"description": "施放戰技時召喚【浮元】，初始擁有**1[i]**點速度以及**7[i]**次行動次數。\n【浮元】行動時發動**追加攻擊**，對敵方全體造成等同於靈砂****2[i]%****攻擊力的火屬性傷害。額外對隨機敵方單體造成等同於靈砂****8[i]%****攻擊力的火屬性傷害，本次傷害優先選擇韌性值大於0且有火屬性弱點的目標。解除我方全體的**6[i]**個**負面效果**，並回復等同於靈砂****3[f1]%****攻擊力+****4[i]****的生命值。\n【浮元】最多累積**5[i]**次行動次數，當次數為0或靈砂陷入**無法戰鬥狀態**時【浮元】消失。\n【浮元】在場時，施放戰技會增加**7[i]**次【浮元】的行動次數。",
+		"avatar": 1222,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Passive.png",
+		"shortIcon": "SkillIcon_1222_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110241": 3,
+			"110242": 15,
+			"110243": 30,
+			"110506": 3,
+			"113001": 9,
+			"113002": 13,
+			"113003": 7
+		},
+		"params": [
+			90,
+			0.375,
+			0.08,
+			90,
+			5,
+			1,
+			3,
+			0.375
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122204
+		],
+		"id": "1222004"
+	},
+	"1222007": {
+		"name": "流翠散雲",
+		"description": "使用秘技後，下一次戰鬥開始時立即召喚【浮元】，並使敵方全體陷入【醇醉】狀態，持續**1[i]**回合。",
+		"avatar": 1222,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Maze.png",
+		"shortIcon": "SkillIcon_1222_Maze",
+		"promotion": {},
+		"params": [
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			122207
+		],
+		"id": "1222007"
+	},
+	"1222101": {
+		"name": "朱燎",
+		"description": "使自身攻擊力/治療量提高，提高數值等同於擊破特攻的**25%**/**10%**，最多使攻擊力/治療量提高**50%**/**20%**。",
+		"avatar": 1222,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_SkillTree1.png",
+		"shortIcon": "SkillIcon_1222_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110241": 3,
+			"110506": 1
+		},
+		"params": [
+			0.25,
+			0.1,
+			0.5,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1222101"
+	},
+	"1222102": {
+		"name": "蘭煙",
+		"description": "發動普通攻擊時額外恢復**10**點能量。",
+		"avatar": 1222,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_SkillTree2.png",
+		"shortIcon": "SkillIcon_1222_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110242": 5,
+			"110506": 1
+		},
+		"params": [
+			10
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1222102"
+	},
+	"1222103": {
+		"name": "遺爇",
+		"description": "【浮元】在場時，我方任意角色受到傷害或消耗生命值時，若隊伍中有存在現有生命值百分比小於等於**60%**的角色，【浮元】會立即對敵人發動天賦的追加攻擊，此次觸發不消耗【浮元】行動次數，該效果在**2**回合後可再次觸發。",
+		"avatar": 1222,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_SkillTree3.png",
+		"shortIcon": "SkillIcon_1222_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110243": 8,
+			"110506": 1
+		},
+		"params": [
+			0.6,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1222103"
+	},
+	"1222201": {
+		"name": "擊破強化",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+		"shortIcon": "IconBreakUp",
+		"promotion": {
+			"2": 2500,
+			"113001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "BreakDamageAddedRatioBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1222201"
+	},
+	"1222202": {
+		"name": "生命強化",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 5000,
+			"110241": 3,
+			"113001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1222202"
+	},
+	"1222203": {
+		"name": "擊破強化",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+		"shortIcon": "IconBreakUp",
+		"promotion": {
+			"2": 10000,
+			"110242": 3,
+			"113002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "BreakDamageAddedRatioBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1222203"
+	},
+	"1222204": {
+		"name": "攻擊強化",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 10000,
+			"110242": 3,
+			"113002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1222204"
+	},
+	"1222205": {
+		"name": "擊破強化",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+		"shortIcon": "IconBreakUp",
+		"promotion": {
+			"2": 20000,
+			"110242": 5,
+			"113002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "BreakDamageAddedRatioBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1222205"
+	},
+	"1222206": {
+		"name": "生命強化",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 45000,
+			"110243": 3,
+			"113003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1222206"
+	},
+	"1222207": {
+		"name": "擊破強化",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+		"shortIcon": "IconBreakUp",
+		"promotion": {
+			"2": 45000,
+			"110243": 3,
+			"113003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "BreakDamageAddedRatioBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1222207"
+	},
+	"1222208": {
+		"name": "攻擊強化",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 160000,
+			"110243": 8,
+			"113003": 8
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1222208"
+	},
+	"1222209": {
+		"name": "生命強化",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 160000,
+			"110243": 8,
+			"113003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1222209"
+	},
+	"1222210": {
+		"name": "擊破強化",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+		"shortIcon": "IconBreakUp",
+		"promotion": {
+			"2": 160000,
+			"110243": 8,
+			"113003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "BreakDamageAddedRatioBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "1222210"
+	},
+	"1223001": {
+		"name": "飛鐃",
+		"description": "對指定敵方單體造成等同於貊澤****1[i]%****攻擊力的雷屬性傷害。",
+		"avatar": 1223,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Normal.png",
+		"shortIcon": "SkillIcon_1223_Normal",
+		"promotion": {
+			"2": 192000,
+			"110191": 2,
+			"110192": 6,
+			"110193": 8,
+			"113011": 4,
+			"113012": 5,
+			"113013": 5
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122301
+		],
+		"id": "1223001"
+	},
+	"1223002": {
+		"name": "迅羽掠襲",
+		"description": "使指定敵方單體目標成為【獵物】，並對其造成等同於貊澤****1[i]%****攻擊力的雷屬性傷害，並獲得**2[i]**點充能。\n當場上沒有可以戰鬥的其他角色時，貊澤無法使用戰技，並解除敵人的【獵物】狀態。",
+		"avatar": 1223,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_BP.png",
+		"shortIcon": "SkillIcon_1223_BP",
+		"promotion": {
+			"2": 522000,
+			"241": 1,
+			"110191": 2,
+			"110192": 12,
+			"110193": 23,
+			"110506": 3,
+			"113011": 6,
+			"113012": 10,
+			"113013": 5
+		},
+		"params": [
+			0.75,
+			9
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122302
+		],
+		"id": "1223002"
+	},
+	"1223003": {
+		"name": "鋒入幽渺，影出凌厲",
+		"description": "對指定敵方單體造成等同於貊澤****1[i]%****攻擊力的雷屬性傷害，並對該目標發動天賦的**追加攻擊**。若本次**追加攻擊**發動前目標被消滅則對敵方隨機單體發動**追加攻擊**。",
+		"avatar": 1223,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Ultra.png",
+		"shortIcon": "SkillIcon_1223_Ultra",
+		"promotion": {
+			"2": 522000,
+			"241": 1,
+			"110191": 2,
+			"110192": 12,
+			"110193": 23,
+			"110506": 3,
+			"113011": 6,
+			"113012": 10,
+			"113013": 5
+		},
+		"params": [
+			1.62
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122303
+		],
+		"id": "1223003"
+	},
+	"1223004": {
+		"name": "伸天卑飛，折翅為芒",
+		"description": "場上存在【獵物】時，貊澤會進入**離場**狀態。\n我方目標攻擊【獵物】後，貊澤會額外造成1次等同於自身****1[i]%****攻擊力的雷屬性**附加傷害**，並消耗1點充能。每消耗**2[i]**點充能，貊澤便會對【獵物】發動1次**追加攻擊**，造成等同於自身****3[i]%****攻擊力的雷屬性傷害，當充能為0時，解除目標【獵物】狀態，並重置計入發動**追加攻擊**所需的充能點數。天賦的**追加攻擊**不會消耗充能。",
+		"avatar": 1223,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Passive.png",
+		"shortIcon": "SkillIcon_1223_Passive",
+		"promotion": {
+			"2": 522000,
+			"241": 1,
+			"110191": 2,
+			"110192": 12,
+			"110193": 23,
+			"110506": 3,
+			"113011": 6,
+			"113012": 10,
+			"113013": 5
+		},
+		"params": [
+			0.15,
+			3,
+			0.8
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122304
+		],
+		"id": "1223004"
+	},
+	"1223007": {
+		"name": "脅翼匿跡",
+		"description": "使用秘技後進入持續**1[i]**秒的隱身狀態。隱身狀態下不會被敵人發現，貊澤在隱身狀態下攻擊敵人進入戰鬥時傷害提高**2[i]%**，持續**3[i]**回合。",
+		"avatar": 1223,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Maze.png",
+		"shortIcon": "SkillIcon_1223_Maze",
+		"promotion": {},
+		"params": [
+			20,
+			0.3,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			122307
+		],
+		"id": "1223007"
+	},
+	"1223101": {
+		"name": "墨毫繡衣",
+		"description": "發動天賦的追加攻擊後，恢復**1**個戰技點，該效果在**1**回合後可再次觸發。",
+		"avatar": 1223,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_SkillTree1.png",
+		"shortIcon": "SkillIcon_1223_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110191": 2,
+			"110506": 1
+		},
+		"params": [
+			1,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1223101"
+	},
+	"1223102": {
+		"name": "手奮匕尺",
+		"description": "貊澤解除離場狀態時，行動提前**20%**。每個波次開始時，貊澤行動便提前**30%**。",
+		"avatar": 1223,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_SkillTree2.png",
+		"shortIcon": "SkillIcon_1223_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110192": 4,
+			"110506": 1
+		},
+		"params": [
+			0.2,
+			0.3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1223102"
+	},
+	"1223103": {
+		"name": "不折鏌干",
+		"description": "施放終結技造成傷害時，被視為發動了追加攻擊。【獵物】受到的追加攻擊傷害提高**25%**。",
+		"avatar": 1223,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_SkillTree3.png",
+		"shortIcon": "SkillIcon_1223_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110193": 6,
+			"110506": 1
+		},
+		"params": [
+			0.25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1223103"
+	},
+	"1223201": {
+		"name": "暴擊傷害強化",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 2000,
+			"113011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1223201"
+	},
+	"1223202": {
+		"name": "攻擊強化",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 4000,
+			"110191": 2,
+			"113011": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1223202"
+	},
+	"1223203": {
+		"name": "暴擊傷害強化",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 8000,
+			"110192": 2,
+			"113012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1223203"
+	},
+	"1223204": {
+		"name": "生命強化",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 8000,
+			"110192": 2,
+			"113012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1223204"
+	},
+	"1223205": {
+		"name": "暴擊傷害強化",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 16000,
+			"110192": 4,
+			"113012": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1223205"
+	},
+	"1223206": {
+		"name": "攻擊強化",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 36000,
+			"110193": 2,
+			"113013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1223206"
+	},
+	"1223207": {
+		"name": "暴擊傷害強化",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 36000,
+			"110193": 2,
+			"113013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1223207"
+	},
+	"1223208": {
+		"name": "生命強化",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 128000,
+			"110193": 6,
+			"113013": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1223208"
+	},
+	"1223209": {
+		"name": "攻擊強化",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 128000,
+			"110193": 6,
+			"113013": 6
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1223209"
+	},
+	"1223210": {
+		"name": "暴擊傷害強化",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 128000,
+			"110193": 6,
+			"113013": 6
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "1223210"
 	},
 	"1224001": {
 		"name": "蕩滌妖邪琉璃劍",

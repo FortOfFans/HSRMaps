@@ -1847,7 +1847,7 @@
 	},
 	"1005002": {
 		"name": "Caressing Moonlight",
-		"description": "Mengakibatkan Lightning DMG sebesar ****1[i]%**** ATK Kafka pada 1 target musuh, serta mengakibatkan Lightning DMG sebesar ****3[i]%**** ATK Kafka pada musuh di sekitar target.\nJika target musuh sedang terkena DoT, seluruh DoT yang diterimanya akan segera mengakibatkan DMG sebesar ****2[i]%**** DMG awal DoT Debuff-nya.",
+		"description": "Mengakibatkan Lightning DMG sebesar ****1[i]%**** ATK Kafka pada 1 musuh yang ditargetkan, serta mengakibatkan Lightning DMG sebesar ****3[i]%**** ATK Kafka pada musuh di sekitar target.\nJika musuh yang ditargetkan sedang berstatus DoT, maka seluruh DoT yang dimilikinya akan segera mengakibatkan DMG sebesar ****2[i]%**** dari DMG aslinya.",
 		"avatar": 1005,
 		"type": 2,
 		"pos": "Point02",
@@ -1879,7 +1879,7 @@
 	},
 	"1005003": {
 		"name": "Twilight Trill",
-		"description": "Mengakibatkan Lightning DMG sebesar ****1[i]%**** ATK Kafka pada seluruh musuh. Musuh yang terkena serangan memiliki **2[i]%** **peluang dasar** untuk memasuki status Shock, dan membuat semua status Shock yang saat ini dimiliki oleh target segera mengakibatkan DMG sebesar ****5[i]%**** DMG awal DoT-nya.\nSaat dalam status Shock, target musuh akan menerima Lightning DoT sebesar ****4[i]%**** ATK Kafka saat setiap gilirannya dimulai.",
+		"description": "Mengakibatkan Lightning DMG sebesar ****1[i]%**** ATK Kafka pada seluruh musuh. Musuh yang terkena serangan memiliki **2[i]%** **peluang dasar** untuk memasuki status Shock, dan membuat semua status Shock yang saat ini dimiliki oleh target segera mengakibatkan DMG sebesar ****5[i]%**** dari DMG aslinya. Status Shock berlangsung selama **3[i]** giliran.\nSaat dalam status Shock, target musuh akan menerima Lightning DoT sebesar ****4[i]%**** ATK Kafka setiap saat gilirannya dimulai.",
 		"avatar": 1005,
 		"type": 2,
 		"pos": "Point03",
@@ -8703,7 +8703,7 @@
 	},
 	"1111004": {
 		"name": "Flying Sparks",
-		"description": "Setelah Luka melancarkan Basic Attack \"Direct Punch\" atau Skill \"Lacerating Fist\", Luka akan memperoleh **1[i]** lapis \"Fighting Will\", maksimal 4 lapis. Saat \"Fighting Will\" yang dimiliki lebih dari atau sama dengan 2, Basic Attack Luka \"Direct Punch\" akan meningkat menjadi \"Sky-Shatter Fist\". Saat \"Rising Uppercut\" dari Enhanced Basic Attack mengenai target musuh dengan status Bleed, maka status Bleed tersebut akan membuat target musuh segera menerima 1 kali DMG sebesar ****2[i]%**** DMG awal. Saat pertempuran dimulai, Luka akan memiliki 1 lapis \"Fighting Will\".",
+		"description": "Setelah Luka melancarkan Basic Attack \"Direct Punch\" atau Skill \"Lacerating Fist\", Luka akan memperoleh **1[i]** lapis \"Fighting Will\", maksimal 4 lapis. Saat \"Fighting Will\" yang dimiliki lebih dari atau sama dengan 2, Basic Attack Luka \"Direct Punch\" akan meningkat menjadi \"Sky-Shatter Fist\". Saat \"Rising Uppercut\" dari Enhanced Basic Attack mengenai target musuh dengan status Bleed, maka status Bleed tersebut akan membuat target musuh segera menerima 1 kali DMG sebesar ****2[i]%**** dari DMG aslinya. Saat pertempuran dimulai, Luka akan memiliki 1 lapis \"Fighting Will\".",
 		"avatar": 1111,
 		"type": 2,
 		"pos": "Point04",
@@ -11833,7 +11833,7 @@
 	},
 	"1206003": {
 		"name": "Shape of Taixu: Dawn Herald",
-		"description": "Mengakibatkan Physical DMG sebesar ****1[i]%**** ATK Sushang pada 1 target musuh dan membuat Sushang segera beraksi lagi. Selain itu, ATK Sushang meningkat ****4[i]%****. Saat melancarkan Skill, akan ada 2 kesempatan tambahan untuk memicu \"Sword Stance\", berlangsung selama **2[i]** giliran.\n\"Sword Stance\" yang dilancarkan dari kesempatan tambahan akan mengakibatkan DMG sebesar **3[i]%** dari DMG awal.",
+		"description": "Mengakibatkan Physical DMG sebesar ****1[i]%**** ATK Sushang pada 1 target musuh dan membuat Sushang segera beraksi lagi. Selain itu, ATK Sushang meningkat ****4[i]%****. Saat melancarkan Skill, akan ada 2 kesempatan tambahan untuk memicu \"Sword Stance\", berlangsung selama **2[i]** giliran.\n\"Sword Stance\" yang dilancarkan dari kesempatan tambahan akan mengakibatkan DMG sebesar **3[i]%** dari DMG aslinya.",
 		"avatar": 1206,
 		"type": 2,
 		"pos": "Point03",
@@ -13646,7 +13646,7 @@
 	},
 	"1210003": {
 		"name": "Watch This Showstopper",
-		"description": "Mengakibatkan Fire DMG sebesar ****1[f1]%**** ATK Guinaifen pada seluruh musuh. Jika target berstatus Burn, maka status Burn tersebut akan segera mengakibatkan DMG sebesar ****2[i]%**** DMG awal.",
+		"description": "Mengakibatkan Fire DMG sebesar ****1[f1]%**** ATK Guinaifen pada seluruh musuh. Jika target berstatus Burn, maka status Burn tersebut akan segera mengakibatkan DMG sebesar ****2[i]%**** dari DMG aslinya.",
 		"avatar": 1210,
 		"type": 2,
 		"pos": "Point03",
@@ -17232,6 +17232,468 @@
 		"baseSkill": [],
 		"id": "1218210"
 	},
+	"1220001": {
+		"name": "Boltsunder",
+		"description": "Mengakibatkan Wind DMG sebesar ****1[i]%**** ATK Feixiao pada 1 musuh yang ditargetkan.",
+		"avatar": 1220,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Normal.png",
+		"shortIcon": "SkillIcon_1220_Normal",
+		"promotion": {
+			"2": 240000,
+			"110191": 3,
+			"110192": 8,
+			"110193": 11,
+			"113011": 6,
+			"113012": 7,
+			"113013": 7
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122001
+		],
+		"id": "1220001"
+	},
+	"1220002": {
+		"name": "Waraxe",
+		"description": "Mengakibatkan Wind DMG sebesar ****1[i]%**** ATK Feixiao pada 1 musuh yang ditargetkan. Setelah itu, akan segera melancarkan 1 kali **Serangan Lanjutan** dari Talent pada target tersebut.",
+		"avatar": 1220,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_BP.png",
+		"shortIcon": "SkillIcon_1220_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110191": 3,
+			"110192": 15,
+			"110193": 30,
+			"110503": 3,
+			"113011": 9,
+			"113012": 13,
+			"113013": 7
+		},
+		"params": [
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122002
+		],
+		"id": "1220002"
+	},
+	"1220003": {
+		"name": "Terrasplit",
+		"description": "Mengakibatkan Wind DMG maksimal hingga sebesar ****4[i]%**** ATK Feixiao pada 1 musuh yang ditargetkan, yang dapat mengurangi Toughness target tanpa memedulikan tipe Weakness-nya. Saat target tidak **berstatus Weakness Break**, maka Weakness Break Efficiency Feixiao akan meningkat **2[i]%**.\nSaat serangan berlangsung, Feixiao akan terlebih dulu melancarkan \"Boltsunder Blitz\" atau \"Waraxe Skyward\" pada target tersebut, total **3[i]** kali. Lalu terakhir, akan mengakibatkan Wind DMG sebesar ****1[i]%**** ATK Feixiao pada target tersebut.",
+		"avatar": 1220,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Ultra.png",
+		"shortIcon": "SkillIcon_1220_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110191": 3,
+			"110192": 15,
+			"110193": 30,
+			"110503": 3,
+			"113011": 9,
+			"113012": 13,
+			"113013": 7
+		},
+		"params": [
+			0.96,
+			1,
+			6,
+			4.02
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122003,
+			122008,
+			122009,
+			122014
+		],
+		"id": "1220003"
+	},
+	"1220004": {
+		"name": "Thunderhunt",
+		"description": "Ultimate dapat diaktifkan saat \"Flying Aureus\" mencapai **3[i]** poin, maksimal dapat mengakumulasi hingga **4[i]** poin. Setiap kali rekan tim melancarkan **2[i]** kali serangan, Feixiao akan memperoleh 1 poin \"Flying Aureus\" (serangan dari Ultimate Feixiao tidak dihitung).\nSaat setelah rekan tim Feixiao melancarkan serangan pada target musuh, Feixiao akan segera melancarkan **Serangan Lanjutan** pada target utama, yang mengakibatkan Wind DMG sebesar ****1[i]%**** ATK Feixiao. Jika tidak ada target utama yang dapat diserang, maka akan menyerang 1 musuh secara acak. Efek ini maksimal dapat terpicu 1 kali di setiap giliran, dan jumlah pemicuan akan direset saat giliran Feixiao dimulai. Saat melancarkan serangan ini, DMG yang diakibatkan diri sendiri akan meningkat ****5[i]%****, berlangsung selama **6[i]** giliran.",
+		"avatar": 1220,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Passive.png",
+		"shortIcon": "SkillIcon_1220_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110191": 3,
+			"110192": 15,
+			"110193": 30,
+			"110503": 3,
+			"113011": 9,
+			"113012": 13,
+			"113013": 7
+		},
+		"params": [
+			0.55,
+			2,
+			6,
+			12,
+			0.3,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122004
+		],
+		"id": "1220004"
+	},
+	"1220007": {
+		"name": "Stormborn",
+		"description": "Setelah menggunakan Technique, akan memasuki status \"Onrush\" selama **1[i]** detik. Saat berstatus \"Onrush\", Feixiao akan menarik musuh dalam jangkauan tertentu dan meningkatkan **2[i]%** Movement SPD dirinya, serta memperoleh **4[i]** poin \"Flying Aureus\" setelah memasuki pertempuran.\nMenyerang secara aktif saat berstatus \"Onrush\" akan membuat semua musuh yang tertarik memasuki pertempuran. Setelah memasuki pertempuran, saat setiap gelombang pertempuran dimulai, akan mengakibatkan Wind DMG sebesar **3[i]%** ATK Feixiao pada seluruh musuh, dan DMG ini dijamin akan mengakibatkan CRIT Hit. Jika menarik lebih dari 1 musuh, Multiplier dari DMG tersebut akan meningkat **5[i]%** untuk setiap ekstra 1 musuh yang tertarik, maksimal meningkat hingga **6[i]%**.",
+		"avatar": 1220,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_Maze.png",
+		"shortIcon": "SkillIcon_1220_Maze",
+		"promotion": {},
+		"params": [
+			20,
+			0.5,
+			2,
+			1,
+			1,
+			10
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			122007
+		],
+		"id": "1220007"
+	},
+	"1220101": {
+		"name": "Heavenpath",
+		"description": "Saat pertempuran dimulai, memperoleh **3** poin \"Flying Aureus\".\nSaat giliran dimulai, jika pada giliran sebelumnya tidak melancarkan Serangan Lanjutan dari Talent, maka hal tersebut akan dihitung sebagai 1 kali serangan yang diperlukan untuk memperoleh \"Flying Aureus\".",
+		"avatar": 1220,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_SkillTree1.png",
+		"shortIcon": "SkillIcon_1220_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110191": 3,
+			"110503": 1
+		},
+		"params": [
+			3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1220101"
+	},
+	"1220102": {
+		"name": "Formshift",
+		"description": "Saat melancarkan Ultimate untuk mengakibatkan DMG pada target musuh, akan dianggap melancarkan Serangan Lanjutan. CRIT DMG dari Serangan Lanjutan meningkat **36%**.",
+		"avatar": 1220,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_SkillTree2.png",
+		"shortIcon": "SkillIcon_1220_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110192": 5,
+			"110503": 1
+		},
+		"params": [
+			0.36
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1220102"
+	},
+	"1220103": {
+		"name": "Boltcatch",
+		"description": "Saat melancarkan Skill, meningkatkan **48%** ATK selama **3** giliran.",
+		"avatar": 1220,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1220/SkillIcon_1220_SkillTree3.png",
+		"shortIcon": "SkillIcon_1220_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110193": 8,
+			"110503": 1
+		},
+		"params": [
+			0.48,
+			3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1220103"
+	},
+	"1220201": {
+		"name": "Peningkatan ATK",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 2500,
+			"113011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1220201"
+	},
+	"1220202": {
+		"name": "Peningkatan CRIT Rate",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 5000,
+			"110191": 3,
+			"113011": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.026999999
+			}
+		],
+		"baseSkill": [],
+		"id": "1220202"
+	},
+	"1220203": {
+		"name": "Peningkatan ATK",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 10000,
+			"110192": 3,
+			"113012": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1220203"
+	},
+	"1220204": {
+		"name": "Peningkatan DEF",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 10000,
+			"110192": 3,
+			"113012": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.05
+			}
+		],
+		"baseSkill": [],
+		"id": "1220204"
+	},
+	"1220205": {
+		"name": "Peningkatan ATK",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 20000,
+			"110192": 5,
+			"113012": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1220205"
+	},
+	"1220206": {
+		"name": "Peningkatan CRIT Rate",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 45000,
+			"110193": 3,
+			"113013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1220206"
+	},
+	"1220207": {
+		"name": "Peningkatan ATK",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 45000,
+			"110193": 3,
+			"113013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1220207"
+	},
+	"1220208": {
+		"name": "Peningkatan DEF",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 160000,
+			"110193": 8,
+			"113013": 8
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.075
+			}
+		],
+		"baseSkill": [],
+		"id": "1220208"
+	},
+	"1220209": {
+		"name": "Peningkatan CRIT Rate",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 160000,
+			"110193": 8,
+			"113013": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1220209"
+	},
+	"1220210": {
+		"name": "Peningkatan ATK",
+		"avatar": 1220,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 160000,
+			"110193": 8,
+			"113013": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1220210"
+	},
 	"1221001": {
 		"name": "Galespin Summersault",
 		"description": "Mengakibatkan Physical DMG sebesar ****1[i]%**** ATK Yunli pada 1 musuh yang ditargetkan.",
@@ -17295,7 +17757,7 @@
 	},
 	"1221003": {
 		"name": "Earthbind, Etherbreak",
-		"description": "Mengonsumsi **8[i]** Energy. Yunli akan memperoleh \"Parry\" dan membuat seluruh musuh memasuki status Taunt, berlangsung hingga akhir giliran salah satu rekan tim atau musuh yang berikutnya. Selain itu, CRIT DMG yang diakibatkan Serangan Balasan Yunli yang berikutnya akan meningkat ****2[i]%****, dan saat memicu efek Serangan Balasan dari Talent, akan diganti menjadi melancarkan **Serangan Balasan** \"Intuit: Cull\", dan di saat bersamaan juga menghapus efek \"Parry\". Jika selama berstatus \"Parry\" tidak memicu Serangan Balasan, maka saat status berakhir, Yunli akan segera melancarkan **Serangan Balasan** \"Intuit: Slash\" pada target musuh acak.\n\n\"Intuit: Slash\": Mengakibatkan Physical DMG sebesar ****1[i]%**** ATK Yunli pada target, dan mengakibatkan Physical DMG sebesar ****6[i]%**** ATK Yunli pada target di sekitarnya.\n\n\"Intuit: Cull\": Mengakibatkan Physical DMG sebesar ****1[i]%**** ATK Yunli pada target, dan mengakibatkan Physical DMG sebesar ****6[i]%**** ATK Yunli pada target di sekitarnya, lalu mengakibatkan ekstra **4[i]** kali DMG, yang setiap DMG-nya mengakibatkan Physical DMG sebesar ****7[i]%**** ATK Yunli pada musuh acak.\n\nSaat Yunli mengakibatkan DMG melalui kemampuan ini, akan dianggap mengakibatkan Ultimate DMG.",
+		"description": "Mengonsumsi **8[i]** Energy. Yunli akan memperoleh \"Parry\" dan membuat seluruh musuh memasuki status Taunt, berlangsung hingga akhir giliran dari rekan tim atau musuh yang berikutnya. Selain itu, CRIT DMG yang diakibatkan Serangan Balasan Yunli yang berikutnya akan meningkat ****2[i]%****, dan saat memicu efek Serangan Balasan dari Talent, akan diganti menjadi melancarkan **Serangan Balasan** \"Intuit: Cull\", dan di saat bersamaan juga menghapus efek \"Parry\". Jika selama berstatus \"Parry\" tidak memicu Serangan Balasan, maka saat status berakhir, Yunli akan segera melancarkan **Serangan Balasan** \"Intuit: Slash\" pada target musuh acak.\n\n\"Intuit: Slash\": Mengakibatkan Physical DMG sebesar ****1[i]%**** ATK Yunli pada target, dan mengakibatkan Physical DMG sebesar ****6[i]%**** ATK Yunli pada target di sekitarnya.\n\n\"Intuit: Cull\": Mengakibatkan Physical DMG sebesar ****1[i]%**** ATK Yunli pada target, dan mengakibatkan Physical DMG sebesar ****6[i]%**** ATK Yunli pada target di sekitarnya, lalu mengakibatkan ekstra **4[i]** kali DMG, yang setiap DMG-nya mengakibatkan Physical DMG sebesar ****7[i]%**** ATK Yunli pada musuh acak.\n\nSaat Yunli mengakibatkan DMG melalui kemampuan ini, akan dianggap mengakibatkan Ultimate DMG.",
 		"avatar": 1221,
 		"type": 2,
 		"pos": "Point03",
@@ -17687,6 +18149,922 @@
 		],
 		"baseSkill": [],
 		"id": "1221210"
+	},
+	"1222001": {
+		"name": "Votive Incense",
+		"description": "Mengakibatkan Fire DMG sebesar ****1[i]%**** ATK Lingsha pada 1 musuh yang ditargetkan.",
+		"avatar": 1222,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Normal.png",
+		"shortIcon": "SkillIcon_1222_Normal",
+		"promotion": {
+			"2": 240000,
+			"110241": 3,
+			"110242": 8,
+			"110243": 11,
+			"113001": 6,
+			"113002": 7,
+			"113003": 7
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122201
+		],
+		"id": "1222001"
+	},
+	"1222002": {
+		"name": "Smoke and Splendor",
+		"description": "Mengakibatkan Fire DMG sebesar ****1[i]%**** ATK Lingsha pada seluruh musuh. Pada saat yang bersamaan, memulihkan HP seluruh rekan tim sebesar ****2[f1]%**** ATK Lingsha + ****3[i]****, serta **mendahulukan aksi** \"Fuyuan\" sebesar **4[i]%**.",
+		"avatar": 1222,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_BP.png",
+		"shortIcon": "SkillIcon_1222_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110241": 3,
+			"110242": 15,
+			"110243": 30,
+			"110506": 3,
+			"113001": 9,
+			"113002": 13,
+			"113003": 7
+		},
+		"params": [
+			0.4,
+			0.1,
+			105,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122202
+		],
+		"id": "1222002"
+	},
+	"1222003": {
+		"name": "Dripping Mistscape",
+		"description": "Membuat seluruh musuh memasuki status \"Befog\". Saat berstatus \"Befog\", **Break DMG** yang diterima target akan meningkat ****4[i]%**** selama **5[i]** giliran.\nMengakibatkan Fire DMG sebesar ****1[i]%**** ATK Lingsha pada seluruh musuh. Pada saat yang bersamaan, memulihkan HP seluruh rekan tim sebesar ****2[f1]%**** ATK Lingsha + ****3[i]****, serta **mendahulukan aksi** \"Fuyuan\" sebesar **6[i]%**.",
+		"avatar": 1222,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Ultra.png",
+		"shortIcon": "SkillIcon_1222_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110241": 3,
+			"110242": 15,
+			"110243": 30,
+			"110506": 3,
+			"113001": 9,
+			"113002": 13,
+			"113003": 7
+		},
+		"params": [
+			0.9,
+			0.08,
+			90,
+			0.15,
+			2,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122203
+		],
+		"id": "1222003"
+	},
+	"1222004": {
+		"name": "Mistdance Manifest",
+		"description": "Memanggil \"Fuyuan\" saat melancarkan Skill. \"Fuyuan\" memiliki SPD dasar sebesar **1[i]** dan jumlah aksi dasar sebanyak **7[i]** kali.\nSaat \"Fuyuan\" beraksi, akan melancarkan **Serangan Lanjutan**, mengakibatkan Fire DMG sebesar ****2[i]%**** ATK Lingsha pada seluruh musuh. Mengakibatkan tambahan Fire DMG sebesar ****8[i]%**** ATK Lingsha pada 1 musuh acak, dan DMG ini memprioritaskan target yang Toughness-nya lebih dari 0 dan memiliki Fire Weakness. Menghapus masing-masing **6[i]** **efek Debuff** dari seluruh rekan tim, serta memulihkan HP seluruh rekan tim sebesar ****3[f1]%**** ATK Lingsha + ****4[i]****.\n\"Fuyuan\" maksimal dapat mengakumulasi **5[i]** kali jumlah aksi. Saat jumlah aksi mencapai 0 atau Lingsha **gugur**, \"Fuyuan\" akan menghilang.\nSaat \"Fuyuan\" berada di medan pertempuran, melancarkan Skill Lingsha dapat menambah **7[i]** kali jumlah aksi \"Fuyuan\".",
+		"avatar": 1222,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Passive.png",
+		"shortIcon": "SkillIcon_1222_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110241": 3,
+			"110242": 15,
+			"110243": 30,
+			"110506": 3,
+			"113001": 9,
+			"113002": 13,
+			"113003": 7
+		},
+		"params": [
+			90,
+			0.375,
+			0.08,
+			90,
+			5,
+			1,
+			3,
+			0.375
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122204
+		],
+		"id": "1222004"
+	},
+	"1222007": {
+		"name": "Wisps of Aurora",
+		"description": "Setelah menggunakan Technique, akan segera memanggil \"Fuyuan\" saat pertempuran berikutnya dimulai, serta membuat seluruh musuh memasuki status \"Befog\", berlangsung selama **1[i]** giliran.",
+		"avatar": 1222,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Maze.png",
+		"shortIcon": "SkillIcon_1222_Maze",
+		"promotion": {},
+		"params": [
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			122207
+		],
+		"id": "1222007"
+	},
+	"1222101": {
+		"name": "Vermilion Waft",
+		"description": "Meningkatkan ATK/Outgoing Healing karakter ini, peningkatannya adalah sebesar **25%**/**10%** dari Break Effect, peningkatannya maksimal hingga **50%**/**20%**.",
+		"avatar": 1222,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_SkillTree1.png",
+		"shortIcon": "SkillIcon_1222_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110241": 3,
+			"110506": 1
+		},
+		"params": [
+			0.25,
+			0.1,
+			0.5,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1222101"
+	},
+	"1222102": {
+		"name": "Sylvan Smoke",
+		"description": "Saat melancarkan Basic Attack, akan memulihkan **10** Energy tambahan.",
+		"avatar": 1222,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_SkillTree2.png",
+		"shortIcon": "SkillIcon_1222_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110242": 5,
+			"110506": 1
+		},
+		"params": [
+			10
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1222102"
+	},
+	"1222103": {
+		"name": "Ember's Echo",
+		"description": "Saat \"Fuyuan\" ada di medan pertempuran, ketika karakter mana pun menerima DMG atau mengonsumsi HP: Jika ada karakter dalam tim yang persentase HP-nya saat ini kurang dari atau sama dengan **60%**, maka \"Fuyuan\" akan segera melancarkan Serangan Lanjutan dari Talent pada musuh, dan pelancaran kali ini tidak akan mengonsumsi jumlah aksi \"Fuyuan\". Efek ini dapat dipicu lagi setelah **2** giliran.",
+		"avatar": 1222,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_SkillTree3.png",
+		"shortIcon": "SkillIcon_1222_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110243": 8,
+			"110506": 1
+		},
+		"params": [
+			0.6,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1222103"
+	},
+	"1222201": {
+		"name": "Peningkatan Break",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+		"shortIcon": "IconBreakUp",
+		"promotion": {
+			"2": 2500,
+			"113001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "BreakDamageAddedRatioBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1222201"
+	},
+	"1222202": {
+		"name": "Peningkatan HP",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 5000,
+			"110241": 3,
+			"113001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1222202"
+	},
+	"1222203": {
+		"name": "Peningkatan Break",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+		"shortIcon": "IconBreakUp",
+		"promotion": {
+			"2": 10000,
+			"110242": 3,
+			"113002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "BreakDamageAddedRatioBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1222203"
+	},
+	"1222204": {
+		"name": "Peningkatan ATK",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 10000,
+			"110242": 3,
+			"113002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1222204"
+	},
+	"1222205": {
+		"name": "Peningkatan Break",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+		"shortIcon": "IconBreakUp",
+		"promotion": {
+			"2": 20000,
+			"110242": 5,
+			"113002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "BreakDamageAddedRatioBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1222205"
+	},
+	"1222206": {
+		"name": "Peningkatan HP",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 45000,
+			"110243": 3,
+			"113003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1222206"
+	},
+	"1222207": {
+		"name": "Peningkatan Break",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+		"shortIcon": "IconBreakUp",
+		"promotion": {
+			"2": 45000,
+			"110243": 3,
+			"113003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "BreakDamageAddedRatioBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1222207"
+	},
+	"1222208": {
+		"name": "Peningkatan ATK",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 160000,
+			"110243": 8,
+			"113003": 8
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1222208"
+	},
+	"1222209": {
+		"name": "Peningkatan HP",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 160000,
+			"110243": 8,
+			"113003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1222209"
+	},
+	"1222210": {
+		"name": "Peningkatan Break",
+		"avatar": 1222,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+		"shortIcon": "IconBreakUp",
+		"promotion": {
+			"2": 160000,
+			"110243": 8,
+			"113003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "BreakDamageAddedRatioBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "1222210"
+	},
+	"1223001": {
+		"name": "Hurlthorn",
+		"description": "Mengakibatkan Lightning DMG sebesar ****1[i]%**** ATK Moze pada 1 musuh yang ditargetkan.",
+		"avatar": 1223,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Normal.png",
+		"shortIcon": "SkillIcon_1223_Normal",
+		"promotion": {
+			"2": 192000,
+			"110191": 2,
+			"110192": 6,
+			"110193": 8,
+			"113011": 4,
+			"113012": 5,
+			"113013": 5
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122301
+		],
+		"id": "1223001"
+	},
+	"1223002": {
+		"name": "Fleetwinged Raid",
+		"description": "Menjadikan 1 musuh yang ditargetkan sebagai \"Prey\" dan mengakibatkan Lightning DMG sebesar ****1[i]%**** ATK Moze pada musuh tersebut, serta memperoleh **2[i]** poin Charge.\nSaat tidak ada karakter lain yang siap bertempur di medan pertempuran, Moze tidak bisa menggunakan Skill dan status \"Prey\" musuh akan dihapus.",
+		"avatar": 1223,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_BP.png",
+		"shortIcon": "SkillIcon_1223_BP",
+		"promotion": {
+			"2": 522000,
+			"241": 1,
+			"110191": 2,
+			"110192": 12,
+			"110193": 23,
+			"110506": 3,
+			"113011": 6,
+			"113012": 10,
+			"113013": 5
+		},
+		"params": [
+			0.75,
+			9
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122302
+		],
+		"id": "1223002"
+	},
+	"1223003": {
+		"name": "Dash In, Gash Out",
+		"description": "Mengakibatkan Lightning DMG sebesar ****1[i]%**** ATK Moze pada 1 musuh yang ditargetkan, serta melancarkan **Serangan Lanjutan** dari Talent pada target tersebut. Jika target dikalahkan sebelum melancarkan **Serangan Lanjutan** kali ini, maka Moze akan melancarkan **Serangan Lanjutan** pada 1 musuh acak.",
+		"avatar": 1223,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Ultra.png",
+		"shortIcon": "SkillIcon_1223_Ultra",
+		"promotion": {
+			"2": 522000,
+			"241": 1,
+			"110191": 2,
+			"110192": 12,
+			"110193": 23,
+			"110506": 3,
+			"113011": 6,
+			"113012": 10,
+			"113013": 5
+		},
+		"params": [
+			1.62
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122303
+		],
+		"id": "1223003"
+	},
+	"1223004": {
+		"name": "Cascading Featherblade",
+		"description": "Saat terdapat \"Prey\" di medan pertempuran, Moze akan memasuki status **Departed**.\nSetelah rekan tim menyerang \"Prey\", Moze akan mengakibatkan 1 kali Lightning **DMG Tambahan** sebesar ****1[i]%**** ATK dirinya, serta mengonsumsi 1 poin Charge. Setiap mengonsumsi **2[i]** poin Charge, Moze akan melancarkan 1 kali **Serangan Lanjutan** pada \"Prey\", mengakibatkan Lightning DMG sebesar ****3[i]%**** ATK dirinya. Saat poin Charge berjumlah 0, akan menghapus status \"Prey\" dari target, serta mereset perhitungan Poin Charge yang dibutuhkan untuk melancarkan **Serangan Lanjutan**. **Serangan Lanjutan** dari Talent tidak akan mengonsumsi Charge.",
+		"avatar": 1223,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Passive.png",
+		"shortIcon": "SkillIcon_1223_Passive",
+		"promotion": {
+			"2": 522000,
+			"241": 1,
+			"110191": 2,
+			"110192": 12,
+			"110193": 23,
+			"110506": 3,
+			"113011": 6,
+			"113012": 10,
+			"113013": 5
+		},
+		"params": [
+			0.15,
+			3,
+			0.8
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			122304
+		],
+		"id": "1223004"
+	},
+	"1223007": {
+		"name": "Bated Wings",
+		"description": "Setelah menggunakan Technique, Moze akan memasuki status Stealth selama **1[i]** detik. Selama berstatus Stealth, Moze tidak akan terdeteksi musuh. Jika Moze menyerang musuh saat berstatus Stealth untuk memasuki pertempuran, maka DMG yang diakibatkan Moze akan meningkat **2[i]%**, berlangsung selama **3[i]** giliran.",
+		"avatar": 1223,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Maze.png",
+		"shortIcon": "SkillIcon_1223_Maze",
+		"promotion": {},
+		"params": [
+			20,
+			0.3,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			122307
+		],
+		"id": "1223007"
+	},
+	"1223101": {
+		"name": "Nightfeather",
+		"description": "Setelah melancarkan Serangan Lanjutan dari Talent, akan memulihkan **1** Poin Skill. Efek ini dapat dipicu kembali setelah **1** giliran.",
+		"avatar": 1223,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_SkillTree1.png",
+		"shortIcon": "SkillIcon_1223_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110191": 2,
+			"110506": 1
+		},
+		"params": [
+			1,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1223101"
+	},
+	"1223102": {
+		"name": "Daggerhold",
+		"description": "Saat Moze menghapus status Departed, aksinya akan didahulukan sebesar **20%**. Saat setiap gelombang pertempuran dimulai, aksi Moze akan didahulukan sebesar **30%**.",
+		"avatar": 1223,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_SkillTree2.png",
+		"shortIcon": "SkillIcon_1223_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110192": 4,
+			"110506": 1
+		},
+		"params": [
+			0.2,
+			0.3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1223102"
+	},
+	"1223103": {
+		"name": "Vengewise",
+		"description": "Saat melancarkan Ultimate untuk mengakibatkan DMG, akan dianggap sebagai Serangan Lanjutan. DMG Serangan Lanjutan yang diterima \"Prey\" meningkat **25%**.",
+		"avatar": 1223,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_SkillTree3.png",
+		"shortIcon": "SkillIcon_1223_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110193": 6,
+			"110506": 1
+		},
+		"params": [
+			0.25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1223103"
+	},
+	"1223201": {
+		"name": "Peningkatan CRIT DMG",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 2000,
+			"113011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1223201"
+	},
+	"1223202": {
+		"name": "Peningkatan ATK",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 4000,
+			"110191": 2,
+			"113011": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1223202"
+	},
+	"1223203": {
+		"name": "Peningkatan CRIT DMG",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 8000,
+			"110192": 2,
+			"113012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1223203"
+	},
+	"1223204": {
+		"name": "Peningkatan HP",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 8000,
+			"110192": 2,
+			"113012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1223204"
+	},
+	"1223205": {
+		"name": "Peningkatan CRIT DMG",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 16000,
+			"110192": 4,
+			"113012": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1223205"
+	},
+	"1223206": {
+		"name": "Peningkatan ATK",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 36000,
+			"110193": 2,
+			"113013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1223206"
+	},
+	"1223207": {
+		"name": "Peningkatan CRIT DMG",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 36000,
+			"110193": 2,
+			"113013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1223207"
+	},
+	"1223208": {
+		"name": "Peningkatan HP",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 128000,
+			"110193": 6,
+			"113013": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1223208"
+	},
+	"1223209": {
+		"name": "Peningkatan ATK",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 128000,
+			"110193": 6,
+			"113013": 6
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1223209"
+	},
+	"1223210": {
+		"name": "Peningkatan CRIT DMG",
+		"avatar": 1223,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 128000,
+			"110193": 6,
+			"113013": 6
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "1223210"
 	},
 	"1224001": {
 		"name": "My Sword Zaps Demons",
@@ -21517,7 +22895,7 @@
 	},
 	"1308102": {
 		"name": "The Abyss",
-		"description": "Saat di dalam tim terdapat 1/2 karakter dengan Path \"Nihility\" selain Acheron, maka DMG yang diakibatkan Basic Attack, Skill, dan Ultimate Acheron adalah **115%**/**160%** dari DMG awalnya.",
+		"description": "Saat di dalam tim terdapat 1/2 karakter dengan Path \"Nihility\" selain Acheron, maka DMG yang diakibatkan Basic Attack, Skill, dan Ultimate Acheron adalah **115%**/**160%** dari DMG aslinya.",
 		"avatar": 1308,
 		"type": 3,
 		"pos": "Point07",
