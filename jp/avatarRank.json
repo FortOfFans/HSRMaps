@@ -2788,7 +2788,7 @@
 	},
 	"122201": {
 		"name": "{RUBY_B#はじゃ}破邪{RUBY_E#}の{RUBY_B#かお}香{RUBY_E#}り",
-		"description": "霊砂の弱点撃破効率+<unbreak>#2[i]%</unbreak>。敵を弱点撃破した時、その敵の防御力-<unbreak>#1[i]%</unbreak>。",
+		"description": "霊砂の弱点撃破効率+<unbreak>#2[i]%</unbreak>。敵が弱点撃破される時、その敵の防御力-<unbreak>#1[i]%</unbreak>。",
 		"icon": "spriteoutput/skillicons/avatar/1222/SkillIcon_1222_Rank1.png",
 		"shortIcon": "SkillIcon_1222_Rank1",
 		"params": [
@@ -3158,7 +3158,7 @@
 		"id": "130301"
 	},
 	"130302": {
-		"name": "{RUBY_B#とおり}通{RUBY_E#}りし{RUBY_B#すすき}芒{RUBY_E#}の{RUBY_B#みち}道{RUBY_E#}",
+		"name": "{RUBY_B#とお}通{RUBY_E#}りし{RUBY_B#すすき}芒{RUBY_E#}の{RUBY_B#みち}道{RUBY_E#}",
 		"description": "ルアン・メェイがフィールド上にいる場合、弱点撃破状態の敵に対する味方全体の攻撃力+<unbreak>#1[i]%</unbreak>。",
 		"icon": "spriteoutput/skillicons/avatar/1303/SkillIcon_1303_Rank2.png",
 		"shortIcon": "SkillIcon_1303_Rank2",
@@ -3928,6 +3928,80 @@
 		],
 		"skillUpgrades": {},
 		"id": "131506"
+	},
+	"131701": {
+		"name": "{RUBY_B#トコヨ}常世{RUBY_E#}ノ{RUBY_B#ミチ}道{RUBY_E#}、\\n{RUBY_B#サンズ}三途{RUBY_E#}ニ{RUBY_B#ロクモンセンナ}六文銭無{RUBY_E#}シ",
+		"description": "必殺技を発動し「結印」状態となっている間、乱破が与えるダメージは敵の防御力を<unbreak>#1[i]%</unbreak>無視する。また、「結印」状態が終了した後、EPを<unbreak>#2[i]</unbreak>回復する。",
+		"icon": "spriteoutput/skillicons/avatar/1317/SkillIcon_1317_Rank1.png",
+		"shortIcon": "SkillIcon_1317_Rank1",
+		"params": [
+			0.15,
+			20
+		],
+		"skillUpgrades": {},
+		"id": "131701"
+	},
+	"131702": {
+		"name": "{RUBY_B#ハイク}俳句{RUBY_E#}ノ{RUBY_B#アンキ}暗記{RUBY_E#}、\\n{RUBY_B#ユウシキ}有識{RUBY_E#}ニ{RUBY_B#ケイゲナ}罣礙無{RUBY_E#}シ",
+		"description": "指定した敵単体に対する、強化通常攻撃の1、2段目の削靭値+<unbreak>#1[i]%</unbreak>。",
+		"icon": "spriteoutput/skillicons/avatar/1317/SkillIcon_1317_Rank2.png",
+		"shortIcon": "SkillIcon_1317_Rank2",
+		"params": [
+			0.5
+		],
+		"skillUpgrades": {},
+		"id": "131702"
+	},
+	"131703": {
+		"name": "{RUBY_B#ガラン}伽藍{RUBY_E#}ノ{RUBY_B#ドウ}堂{RUBY_E#}、\\n{RUBY_B#ムゲンゴク}無間獄{RUBY_E#}ニ{RUBY_B#ショウホウナ}正法無{RUBY_E#}シ",
+		"description": "戦闘スキルのLv.+2、最大Lv.<unbreak>15</unbreak>まで。天賦のLv.+2、最大Lv.<unbreak>15</unbreak>まで。",
+		"icon": "spriteoutput/skillicons/avatar/1317/SkillIcon_1317_BP.png",
+		"shortIcon": "SkillIcon_1317_BP",
+		"params": [],
+		"skillUpgrades": {
+			"131702": 2,
+			"131704": 2
+		},
+		"id": "131703"
+	},
+	"131704": {
+		"name": "{RUBY_B#ケイネンレッカ}経年劣化{RUBY_E#}、\\n{RUBY_B#ニンキョウ}任侠{RUBY_E#}ニ{RUBY_B#ニンギナ}忍義無{RUBY_E#}シ",
+		"description": "「結印」状態の間、味方全体の速度+<unbreak>#1[i]%</unbreak>。",
+		"icon": "spriteoutput/skillicons/avatar/1317/SkillIcon_1317_Rank4.png",
+		"shortIcon": "SkillIcon_1317_Rank4",
+		"params": [
+			0.12
+		],
+		"skillUpgrades": {},
+		"id": "131704"
+	},
+	"131705": {
+		"name": "{RUBY_B#イッシンフラン}一心不乱{RUBY_E#}、\\n{RUBY_B#メイゲン}鳴弦{RUBY_E#}ニ{RUBY_B#アダヤナ}徒矢無{RUBY_E#}シ",
+		"description": "必殺技のLv.+2、最大Lv.<unbreak>15</unbreak>まで。通常攻撃のLv.+1、最大Lv.<unbreak>10</unbreak>まで。",
+		"icon": "spriteoutput/skillicons/avatar/1317/SkillIcon_1317_Ultra.png",
+		"shortIcon": "SkillIcon_1317_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"131701": 1,
+			"131703": 2,
+			"131708": 1,
+			"131710": 1,
+			"131712": 1,
+			"131718": 1
+		},
+		"id": "131705"
+	},
+	"131706": {
+		"name": "{RUBY_B#ハジャケンショウ}破邪顕正{RUBY_E#}、\\n{RUBY_B#アクト}悪徒{RUBY_E#}ニ{RUBY_B#ジヒナ}慈悲無{RUBY_E#}シ",
+		"description": "天賦の効果で獲得できるチャージを戦闘開始時に<unbreak>#1[i]</unbreak>獲得し、さらに上限を+<unbreak>#2[i]</unbreak>する。また、「忍具・降魔の花弁」の3段目の攻撃を行った後、チャージ+<unbreak>#1[i]</unbreak>。",
+		"icon": "spriteoutput/skillicons/avatar/1317/SkillIcon_1317_Rank6.png",
+		"shortIcon": "SkillIcon_1317_Rank6",
+		"params": [
+			5,
+			5
+		],
+		"skillUpgrades": {},
+		"id": "131706"
 	},
 	"800101": {
 		"name": "{RUBY_B#まんかい}万界{RUBY_E#}に{RUBY_B#ついりん}墜臨{RUBY_E#}した{RUBY_B#せいぼう}星芒{RUBY_E#}",
