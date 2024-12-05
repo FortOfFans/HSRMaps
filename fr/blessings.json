@@ -1919,9 +1919,9 @@
 	},
 	"612742": {
 		"name": "Cavité métabolique",
-		"desc": "Réduit les DGT subis par tous les alliés de **1%** pour chaque **spore** possédée par l'ensemble des ennemis. Après l'explosion des **spores**, soigne l'allié ayant le moins de PV à hauteur de **12%** de ses PV max.",
-		"shortDesc": "Réduit les DGT subis par un personnage en fonction du nombre total de **spores** appliqué aux ennemis. Après l'explosion des **spores**, le personnage dont le pourcentage de PV est le plus bas restaure des PV.",
-		"battleDesc": "Réduit les DGT subis par tous les alliés de **1%** pour chaque **spore** possédée par l'ensemble des ennemis. Après l'explosion des **spores**, soigne l'allié ayant le moins de PV à hauteur de **12%** de ses PV max.",
+		"desc": "Réduit les DGT subis par tous les alliés de **1%** pour chaque **spore** possédée par l'ensemble des ennemis. Après l'explosion des **spores**, soigne l'allié dont le pourcentage de PV est le plus bas à hauteur de **12%** de ses PV max.",
+		"shortDesc": "Réduit les DGT subis par un personnage en fonction du nombre total de **spores** appliqué aux ennemis. Après l'explosion des **spores**, restaure des PV au personnage dont le pourcentage de PV est le plus bas.",
+		"battleDesc": "Réduit les DGT subis par tous les alliés de **1%** pour chaque **spore** possédée par l'ensemble des ennemis. Après l'explosion des **spores**, soigne l'allié dont le pourcentage de PV est le plus bas à hauteur de **12%** de ses PV max.",
 		"icon": "SpriteOutput/Rogue/Buff/IconRoguePropagation05.png",
 		"shortIcon": "IconRoguePropagation05",
 		"rarity": "VeryRare",
@@ -3882,12 +3882,21 @@
 	},
 	"670010": {
 		"name": "Restaurateur de ville",
-		"desc": "Noyau de comète apparaît dans l'ordre d'action. À chacune de ses actions, il absorbe les boucliers de tous les alliés, réduisant leur valeur à 1 et transforme les valeurs absorbées en son propre bouclier. Puis, il inflige des DGT physiques équivalents à **2500%** de la valeur de son bouclier plus **1000%****les DGT de base** à tous les ennemis, avec **75%** de chances de base d'infliger Gelé aux ennemis pendant **1** tour(s). Le bouclier du Noyau de comète est épuisé en premier lorsqu'un personnage subit des DGT. Lorsque des DGT de **Séisme** sont déclenchés, **70%** du bouclier du Noyau de comète est considéré comme le bouclier du personnage.",
+		"desc": "Noyau de comète apparaît dans l'ordre d'action. À chacune de ses actions, il absorbe les boucliers de tous les alliés, réduisant leur valeur à 1 et transforme les valeurs absorbées en son propre bouclier. Puis, il inflige des DGT physiques équivalents à **2500%** de la valeur de son bouclier plus **1000%** des **DGT de base** à tous les ennemis, avec **100%** de chances de base d'infliger Gelé aux ennemis pendant **1** tour(s). Le bouclier du Noyau de comète est épuisé en premier lorsqu'un personnage subit des DGT. Lorsque des DGT de **Séisme** sont déclenchés, **80%** du bouclier du Noyau de comète est considéré comme le bouclier du personnage.",
 		"shortDesc": "Un Noyau de comète apparaît dans l'ordre d'action et bloque les DGT pour l'équipe. Lors de son tour, il absorbe les boucliers des alliés pour infliger des DGT physiques à tous les ennemis, avec une chance de les geler.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "670010"
+	},
+	"670060": {
+		"name": "Géant impitoyable",
+		"desc": "Les DGT de **Séisme** sont considérés comme des DGT d'ATQ de suivi. Lorsqu'un personnage lance une ATQ de suivi, tous les alliés gagnent 1 cumul de Composant mécanique, jusqu'à un maximum de **77** cumuls. Lorsqu'un personnage qui bénéficie d'un bouclier subit une attaque, il consomme tous ses cumuls de Composant mécanique pour infliger **7** instances de DGT de **Séisme** de type aléatoire équivalents à **177%** de la valeur de bouclier actuelle. Chaque cumul consommé augmente ces DGT de **7%**.",
+		"shortDesc": "Les DGT de **Séisme** sont considérés comme des DGT d'ATQ de suivi. Lorsqu'un personnage lance une ATQ de suivi, tous les alliés bénéficient de Composant mécanique. Lorsqu'un allié subit une attaque, il consomme Composant mécanique pour infliger des DGT de **Séisme** en fonction de la quantité de cumuls consommés et de la valeur de bouclier actuelle.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670060"
 	},
 	"670140": {
 		"name": "Chasseur silencieux",
@@ -3907,6 +3916,15 @@
 		"rarity": "VeryRare",
 		"id": "670150"
 	},
+	"670210": {
+		"name": "Réplicateur relatif",
+		"desc": "Lorsque **Suspicion**, Gelé ou un effet de dégâts sur la durée est appliqué à une cible ennemie, il y a **150%** de chances de base de propager cet effet aux cibles adjacentes. S'il n'y a pas de cible adjacente, l'effet est propagé à la cible initiale. Un même effet ne peut être propagé qu'une seule fois par action à une même cible. Lorsqu'un effet se propage sur une cible ennemie **20** fois ou qu'elle est éliminée, cette dernière et les cibles adjacentes subissent **1200%** de **DGT de base** de glace, et ont **60%** de chances de base de se voir appliqué Gelé pendant **1** tours.",
+		"shortDesc": "Lorsqu'une cible ennemie est affectée par **Suspicion**, Gelé ou un effet de dégâts sur la durée, il y a de fortes chances que l'effet se propage aux cibles adjacentes. Après plusieurs propagations, inflige des DGT à la cible et aux cibles adjacentes, avec une chance de leur infliger l'effet Gelé.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670210"
+	},
 	"670280": {
 		"name": "Institut d'autodétermination",
 		"desc": "Lorsque **Suspicion** atteint **99** cumuls, l'effet est consommé et se transforme en 1 cumul d'Auto-négation, ce qui augmente les dégâts sur la durée infligés par les assaillants de cette unité de **70%**. Chaque cumul augmente les DGT sur la durée infligés de **10%**, cumulable jusqu'à **50** fois. Les ennemis subissent des dégâts de foudre sur la durée équivalents à **135%** des **DGT de base** au début de leur tour, et les cibles adjacentes subissent des dégâts de foudre sur la durée équivalents à **20%** du multiplicateur de DGT initial. À partir de **2** cumuls, régénère **20%** de **Cerveau dans une cuve** au début du tour pour un personnage aléatoire. À partir de **3** cumuls, régénère **10%** de **Cerveau dans une cuve** pour tous les alliés au début du tour.",
@@ -3915,6 +3933,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "670280"
+	},
+	"670320": {
+		"name": "Herboriste",
+		"desc": "Les cibles ennemies entrent en combat avec l'état Omni-soin. Lorsque **Goutte de rosée** se brise, charge l'Omni-soin des cibles attaquées de **5%** de la charge de Goutte de rosée, jusqu'à un maximum de **100%** du total des PV max des personnages. Au début du tour des cibles ennemies, consomme les charges et leur inflige des dégâts de vent sur la durée équivalents à **200%** des **DGT de base** et restaure des PV à tous les alliés à hauteur de **5%** de leurs PV max. Pour chaque valeur de charge qui équivaut à 1 % de la somme des PV max de tous les personnages, ces DGT augmentent de **8%** et le montant de PV restaurés de **4%**.",
+		"shortDesc": "Les cibles ennemies entrent en combat avec l'état Omni-soin, qui se charge lorsque Goutte de rosée se brise. Au début du tour des cibles ennemies, inflige des dégâts sur la durée en fonction du pourcentage de charge et restaure des PV à tous les alliés.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670320"
 	},
 	"670350": {
 		"name": "Borissien",
@@ -3954,7 +3981,7 @@
 	},
 	"670580": {
 		"name": "Érudit de l'Annihilation",
-		"desc": "Lorsqu'un personnage est attaqué, lui accorde **2** Formule(s) d'extinction. Après avoir lancé un contre, lui accorde **1** Formule(s) d'extinction. Lorsque des personnages cumulent **6** Formules d'extinction, supprime toutes les Formules d'extinction et augmente les DGT d'ultime infligés de **150%** jusqu'à la fin du tour, en plus d'infliger des DGT additionnels équivalents à **650%** de l'ATQ du personnage à tous les ennemis. Ces DGT sont considérés comme des DGT d'ultime.",
+		"desc": "Lorsqu'un personnage est attaqué, lui accorde **2** Formule(s) d'extinction. Après avoir lancé un contre, lui accorde **1** Formule(s) d'extinction. Lorsque des personnages cumulent **6** Formules d'extinction, supprime toutes les Formules d'extinction et augmente les DGT d'ultime infligés de **150%** pendant **2** tours, en plus d'infliger des DGT additionnels équivalents à **650%** de l'ATQ du personnage à tous les ennemis. Ces DGT sont considérés comme des DGT d'ultime.",
 		"shortDesc": "Lorsqu'un personnage subit une attaque ou qu'il lance un contre, accorde des Formules d'extinction. Lorsque des personnages cumulent **6** Formules d'extinction, retire toutes les Formules d'extinction et augmente les DGT d'ultime infligés, en plus d'infliger des DGT d'ultime à tous les ennemis.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -3979,9 +4006,18 @@
 		"rarity": "VeryRare",
 		"id": "670640"
 	},
+	"670700": {
+		"name": "Ver stellaire",
+		"desc": "Les DGT d'ATQ normale et de compétence subis par les ennemis augmentent de **100%**. Lorsque Progéniture de la ruche apparaît dans l'ordre d'action, à chaque fois que des cibles alliées gagnent ou consomment des points de compétence, elles gagnent 1 frappe par action pour leur prochaine attaque. Au début du tour, chaque frappe par action inflige **500%** **de DGT de base de vent** à une cible ennemie unique aléatoire pour chaque frappe par action et accorde à toutes les cibles alliées un bouclier équivalent à **3%** de ses PV max. Le total de frappes par action de Progéniture de la ruche ne peut pas être inférieur à **10**.",
+		"shortDesc": "Augmente les DGT d'ATQ normale et de compétence subis par les cibles ennemies. Un compte à rebours Progéniture de la ruche apparaît dans l'ordre d'action. Utiliser une attaque, consommer ou récupérer des points de compétence au début du tour augmente son nombre de frappes par action. Accorde un bouclier à tous les alliés en fonction de son nombre de frappes par action après avoir attaqué.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670700"
+	},
 	"670720": {
 		"name": "Enfant de la calamité",
-		"desc": "Les cibles ennemies obtiennent Trou de ver lorsqu'elles entrent en combat. Trou de ver enregistre le nombre de **spores** accumulées par le porteur. Après avoir accumulé **18** spores, inflige des DGT quantiques équivalents à **1800%** des **DGT de base** à tous les ennemis. Pour chaque malus subi par les ennemis, ces DGT augmentent de **10%**, jusqu'à une augmentation de **100%**. Toutes les spores sont ensuite supprimées.",
+		"desc": "Les cibles ennemies obtiennent Trou de ver lorsqu'elles entrent en combat. Trou de ver enregistre le nombre de **spores** accumulées par le porteur. Après avoir accumulé **18** spores, inflige des DGT quantiques équivalents à **2200%** des **DGT de base** à tous les ennemis. Pour chaque malus subi par les ennemis, ces DGT augmentent de **10%**, jusqu'à une augmentation de **100%**. Toutes les spores sont ensuite supprimées.",
 		"shortDesc": "Les ennemis subissent Trou de ver en entrant en combat : Trou de ver enregistre toutes les **spores** accumulées par le porteur et inflige des DGT quantiques à tous les ennemis. Plus les ennemis subissent de malus, plus les DGT augmentent.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -3999,7 +4035,7 @@
 	},
 	"670870": {
 		"name": "Agrégateur",
-		"desc": "Lorsque les personnages alliés ont utilisé leurs ultimes **2** fois, inflige **2** instances de DGT de vent équivalents à **400%** des **DGT de base** à un ennemi aléatoire et lui applique **1** **spore**. Ces DGT infligent des DGT équivalents à **30%** des DGT initiaux aux ennemis adjacents. À chaque activation de cet effet, augmente le nombre d'instances de 1 pour ce combat et augmente les DGT d'ultime infligés par les personnages de **5%**, cumulable jusqu'à **20** fois.",
+		"desc": "Lorsque les personnages alliés ont utilisé leurs ultimes **2** fois, inflige **2** instances de DGT de vent équivalents à **400%** des **DGT de base** à un ennemi aléatoire et lui applique **1** **spore**. Ces DGT infligent des DGT équivalents à **30%** des DGT initiaux aux ennemis adjacents. À chaque activation de cet effet, augmente le nombre d'instances de 1 pour ce combat et augmente les DGT d'ultime infligés par les personnages de **7%**, cumulable jusqu'à **20** fois.",
 		"shortDesc": "Lorsque les personnages alliés ont utilisé leurs ultimes **2** fois, inflige des DGT de vent à frappes multiples qui appliquent des **Spores** à une cible ennemie aléatoire et aux unités adjacentes. Chaque fois que cet effet est déclenché, les frappes par action augmentent de 1 pour ce combat, et les DGT d'ultime infligés par les personnages sont augmentés.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4024,6 +4060,15 @@
 		"rarity": "VeryRare",
 		"id": "671030"
 	},
+	"671060": {
+		"name": "Gardien sentimental",
+		"desc": "Augmente les DGT d'ATQ de suivi subis par les cibles ennemies de **60%**. Lorsqu'un personnage élimine une cible ennemie, tous les DGT subis par les alliés sont neutralisés, à l'exception des dégâts sur la durée. Cet effet est supprimé après que les alliés sont attaqués pendant **2** tours.",
+		"shortDesc": "Augmente les DGT d'ATQ de suivi subis par les cibles ennemies. Lorsqu'un personnage élimine une cible ennemie, tous les DGT subis par les alliés sont neutralisés, à l'exception des dégâts sur la durée. Cet effet est supprimé après avoir subi une attaque.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671060"
+	},
 	"671080": {
 		"name": "Correspondance de civilisation",
 		"desc": "Lorsqu'un personnage utilise son ultime, il gagne un bouclier capable d'absorber des DGT équivalents à **30%** de ses PV max, pendant **3** tours. Après avoir infligé des DGT d'ultime avec une attaque, inflige des DGT de **Séisme** équivalents à **600%** de la valeur de bouclier actuelle du personnage lors de l'attaque.",
@@ -4033,10 +4078,19 @@
 		"rarity": "VeryRare",
 		"id": "671080"
 	},
+	"671120": {
+		"name": "Écrivain",
+		"desc": "Lorsqu'une cible ennemie est gelée, applique **10** cumuls de **Suspicion**. Lorsqu'une cible subit des dégâts sur la durée, il y a **20%** de chances de base de lui appliquer l'effet Gelé pendant **1** tours. Chaque cible ennemie ne peut devenir gelée qu'une fois tous les **2** tours de cette manière.",
+		"shortDesc": "Applique **Suspicion** aux cibles ennemies gelées. Les dégâts sur la durée ont une chance d'appliquer l'effet Gelé aux cibles ennemies.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671120"
+	},
 	"671130": {
 		"name": "Médecin de la mémoire",
-		"desc": "Après qu'un personnage a lancé une attaque, **Goutte de rosée** inflige des DGT de **Goutte de rosée** supplémentaires équivalents à **250%** du multiplicateur de DGT de **Goutte de rosée** initial à toutes les cibles ennemies gelées 1 fois. Chaque cible ennemie gelée augmente le multiplicateur de DGT de **25%**.",
-		"shortDesc": "Après qu'un personnage a lancé une attaque, **Goutte de rosée** inflige des DGT supplémentaires à toutes les cibles ennemies gelées 1 fois. Plus il y a de cibles gelées, plus les DGT sont importants.",
+		"desc": "Augmente l'efficacité de charge de **Goutte de rosée** de **50%**. Lorsqu'un personnage lance une attaque, **Goutte de rosée** inflige 1 fois des DGT supplémentaires équivalents à **250%** du multiplicateur de DGT d'origine de **Goutte de rosée** à toutes les cibles ennemies gelées.",
+		"shortDesc": "Augmente l'efficacité de charge de **Goutte de rosée**. Lorsqu'un personnage lance une attaque, **Goutte de rosée** inflige des DGT supplémentaires 1 fois à toutes les cibles ennemies gelées.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
@@ -4044,7 +4098,7 @@
 	},
 	"671170": {
 		"name": "Créature mémorielle errante",
-		"desc": "Augmente les DGT d'ATQ normale infligés par les personnages de **160%**. Lors de l'utilisation de l'ATQ normale pour attaquer, les ennemis en état de Rupture de faiblesse sont considérés comme gelés.",
+		"desc": "Augmente les DGT d'ATQ normale infligés par les personnages de **200%**. Lors de l'utilisation de l'ATQ normale pour attaquer, les ennemis en état de Rupture de faiblesse sont considérés comme gelés.",
 		"shortDesc": "Les DGT d'ATQ normale des personnages augmente. Lors de l'utilisation d'une ATQ normale pour attaquer, les ennemis en état de Rupture de faiblesse sont considérés comme Gelés.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4078,6 +4132,15 @@
 		"rarity": "VeryRare",
 		"id": "671230"
 	},
+	"671240": {
+		"name": "Exécuteur de représailles",
+		"desc": "Lorsqu'un personnage lance une attaque, applique **3** cumuls de **Suspicion** à la cible attaquée. **Suspicion** augmente la Vulnérabilité de **20%**. Lorsqu'un personnage touche une cible ennemie avec **Suspicion**, augmente les DGT critiques qu'il inflige à hauteur de **80%** de la valeur de Vulnérabilité causée par **Suspicion**.",
+		"shortDesc": "Lorsqu'un personnage utilise une attaque, inflige **Suspicion** à la cible attaquée. **Suspicion** augmente la Vulnérabilité de la cible et les DGT critiques infligés par les personnages en fonction de son nombre de cumuls.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671240"
+	},
 	"671260": {
 		"name": "Bouffon d'Anatta",
 		"desc": "Lorsqu'un personnage lance une attaque de suivi, il y a **150%** de chances de base d'appliquer 1 malus aléatoire sur la cible attaquée, qui dure pendant **2** tours. Le malus aléatoire inclut : réduction des DGT infligés de **15%**, réduction de la DÉF de **30%** et réduction de la VIT de **20%**.",
@@ -4095,6 +4158,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "671340"
+	},
+	"671350": {
+		"name": "Pyromancien",
+		"desc": "Augmente les PV max des personnages de **50%**. La **Goutte de rosée** de tous les alliés se charge de **3%** toutes les **10** réductions de robustesse infligées. La **Goutte de rosée** de tous les alliés se charge de **6%** à chaque attaque subie par une cible ennemie en état de Rupture de faiblesse.",
+		"shortDesc": "Augmente les PV max des personnages. Charge la **Goutte de rosée** de tous les alliés en cas de réduction de robustesse réelle ou d'attaque sur des ennemis en état de Rupture de faiblesse charge.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671350"
 	},
 	"671360": {
 		"name": "Fanatique de la mort",
@@ -4122,6 +4194,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "671400"
+	},
+	"671410": {
+		"name": "Arbitre de fiction",
+		"desc": "À chaque fois que l'action actuelle d'un personnage est avancée de **1%**, les DGT qu'il inflige au tour suivant augmentent de **2%**. L'action avancée prise en compte peut aller jusqu'à **100%**. Cet effet est majoré de **50%** contre les cibles ennemies gelées.",
+		"shortDesc": "Lorsqu'une cible alliée bénéficie du véritable effet d'avancement d'action, les DGT qu'elle inflige au prochain tour augmentent. L'effet augmente encore contre les cibles ennemies gelées.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671410"
 	},
 	"671450": {
 		"name": "Patio de l'homogénéité",
@@ -4168,9 +4249,18 @@
 		"rarity": "VeryRare",
 		"id": "671520"
 	},
+	"671570": {
+		"name": "Auto-trahison",
+		"desc": "Restaure **2** point(s) de compétence à chaque fois qu'un personnage inflige une Rupture de faiblesse à une cible ennemie. Selon le nombre de cumuls d'Esprit combatif sur tous les alliés, pour chaque **5** cumul(s) d'**Esprit combatif**, augmente les DGT de rupture infligés par tous les alliés de **2%**.",
+		"shortDesc": "Lorsqu'un personnage inflige une Rupture de faiblesse à un ennemi, il récupère des points de compétence. Plus l'équipe a de cumuls d'**Esprit combatif**, plus les DGT de rupture infligés par les personnages sont élevés.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671570"
+	},
 	"671610": {
 		"name": "Artiste du souvenir",
-		"desc": "**Arrière-goût** a **3%** de chances de base de geler les cibles ennemies qui ne souffrent pas déjà de cet état pendant **1** tour. Cet effet peut être appliqué jusqu'à **5** fois par attaque. Augmente le multiplicateur de DGT d'**Arrière-goût** infligés aux cibles gelées à hauteur de **150%** du multiplicateur initial.",
+		"desc": "**Arrière-goût** a **4%** de chances de base de geler les cibles ennemies qui ne souffrent pas déjà de cet état pendant **1** tour. Cet effet peut être appliqué jusqu'à **5** fois par attaque par cible ennemie. Augmente le multiplicateur de DGT d'**Arrière-goût** infligés aux cibles gelées à hauteur de **150%** du multiplicateur initial.",
 		"shortDesc": "**Les DGT d'Arrière-goût** ont une chance de geler les cibles ennemies. Le multiplicateur de DGT d'**Arrière-goût** augmente contre les ennemis gelés.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4195,6 +4285,15 @@
 		"rarity": "VeryRare",
 		"id": "671670"
 	},
+	"671680": {
+		"name": "Joueur d'échecs frénétique",
+		"desc": "Augmente les DGT critiques infligés par les ATQ de suivi des personnages de **100%**. Lors de l'utilisation de **Cerveau dans une cuve** pour lancer un ultime et infliger des DGT à des cibles ennemies, il est considéré comme une ATQ de suivi.",
+		"shortDesc": "Augmente les DGT critiques infligés par les ATQ de suivi des personnages. Les ultimes utilisés via **Cerveau dans une cuve** sont considérés comme des ATQ de suivi.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671680"
+	},
 	"671700": {
 		"name": "Porteur de calamité",
 		"desc": "Lorsqu'un personnage obtient un bouclier, **2** cibles ennemies aléatoires gagnent 1 **spore**. Augmente le multiplicateur de DGT de **Spore** de **75%** du multiplicateur initial.",
@@ -4204,9 +4303,18 @@
 		"rarity": "VeryRare",
 		"id": "671700"
 	},
+	"671730": {
+		"name": "Progéniture de la calamité",
+		"desc": "Accorde 1 cumul de Miellat à tous les alliés à chaque consommation ou excédent de point de compétence, jusqu'à un maximum de **10** cumuls. Lorsqu'un personnage utilise une attaque, il consomme tous ses cumuls de Miellat. Pour chaque cumul consommé, inflige des DGT supplémentaires équivalents à **80%** de ses PV max. Ces DGT sont considérés comme des DGT d'ATQ normale.",
+		"shortDesc": "Chaque fois qu'1 point de compétence est utilisé ou en excédent, tous les alliés infligent des DGT d'ATQ normale supplémentaires lors de leur prochaine attaque en fonction de leurs PV max respectifs.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671730"
+	},
 	"671740": {
 		"name": "Employé diabolique",
-		"desc": "Lorsqu'un personnage utilise une attaque, applique **Spores** à des cibles ennemies aléatoires parmi celles attaquées. Lorsque les alliés agissent **1** / **2** / **3** fois consécutives ou plus, le nombre de **Spores** appliquées passe à **2** / **4** / **6**.",
+		"desc": "Lorsqu'un personnage utilise une attaque, applique **Spores** à des cibles ennemies aléatoires parmi celles attaquées. Lorsque les alliés agissent **1** / **2** / **3** fois consécutives ou plus, le nombre de **Spores** appliquées passe à **4** / **5** / **6**.",
 		"shortDesc": "Lorsqu'un personnage utilise une attaque, applique **Spores** à des cibles ennemies aléatoires parmi celles attaquées. Plus les alliés effectuent d'actions à la suite, plus il y a de **Spores** appliquées.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4221,6 +4329,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "671780"
+	},
+	"671800": {
+		"name": "Praticien en écologie astrale",
+		"desc": "Augmente les DGT d'ultime subis par les cibles ennemies de **75%**. Charge **Cerveau dans une cuve** de **12%** lorsqu'un personnage avec un bouclier est attaqué.",
+		"shortDesc": "Augmente les DGT d'ultime subis par les cibles ennemies. Charge **Cerveau dans une cuve** lorsqu'un personnage qui bénéficie d'un bouclier est attaqué.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671800"
 	},
 	"671820": {
 		"name": "Constructeur de blocs",
@@ -4257,6 +4374,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672010"
+	},
+	"672020": {
+		"name": "Gardien des tombes",
+		"desc": "Augmente la RÉS aux effets des personnages de **25%** et les DGT de **Séisme** infligés de **50%**. Lorsqu'un personnage résiste à un malus, il inflige des DGT de Séisme équivalents à **400%** de sa valeur de bouclier actuelle à la cible.",
+		"shortDesc": "Augmente la RÉS aux effets des personnages et les DGT de **Séisme** infligés. Lorsqu'ils résistent aux malus qu'ils subissent, ils infligent des DGT de **Séisme** à la cible.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672020"
 	},
 	"672030": {
 		"name": "Purificateur planétaire",
@@ -4303,6 +4429,15 @@
 		"rarity": "VeryRare",
 		"id": "672140"
 	},
+	"672150": {
+		"name": "Purificateur",
+		"desc": "Augmente de 1 tour la durée de l'effet Gelé appliqué aux cibles ennemies dont les PV actuels sont supérieurs à **60%** de leurs PV max. Les DGT subis par les cibles ennemies gelées augmentent de **30%**.",
+		"shortDesc": "Lorsque le pourcentage de PV d'une cible ennemie est supérieur à **60%**, la durée de l'état Gelé augmente de 1 tour. Les ennemis gelés subissent des DGT supplémentaires.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672150"
+	},
 	"672160": {
 		"name": "Biographe",
 		"desc": "Après qu'un personnage a attaqué une cible gelée, inflige des DGT d'**Arrière-goût** équivalents à **240%** de l'ATQ du personnage à la cible 1 fois.",
@@ -4329,6 +4464,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672200"
+	},
+	"672230": {
+		"name": "Docteurs du chaos",
+		"desc": "Augmente les dégâts sur la durée infligés par les personnages de **50%**. Les cibles ennemies entrent en combat avec l'état Conscience et subissent des dégâts de feu sur la durée équivalents à **300%** du total des PV max de tous les alliés au début du tour.",
+		"shortDesc": "Augmente les dégâts sur la durée infligés par les personnages. Les cibles ennemies entrent en combat avec l'état Conscience et subissent des dégâts de feu sur la durée au début de chaque tour, en fonction du total des PV max de tous les alliés.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672230"
 	},
 	"672240": {
 		"name": "Adorateur de péchés",
@@ -4359,7 +4503,7 @@
 	},
 	"672340": {
 		"name": "Texalitis",
-		"desc": "Lorsqu'une cible ennemie est éliminée, augmente l'efficacité de charge de **Goutte de rosée** de **10%** jusqu'à un maximum de **10** cumuls. Rend également à tous les alliés un montant de PV équivalent à **50%** de leurs PV max respectifs.",
+		"desc": "Lorsqu'une cible ennemie est éliminée, augmente l'efficacité de charge de **Goutte de rosée** de **20%** jusqu'à un maximum de **4** cumuls. Rend également à tous les alliés un montant de PV équivalent à **50%** de leurs PV max respectifs.",
 		"shortDesc": "Lorsqu'une cible ennemie est éliminée, augmente l'efficacité de charge de **Goutte de rosée**. Rend également des PV à tous les alliés.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4375,6 +4519,15 @@
 		"rarity": "VeryRare",
 		"id": "672350"
 	},
+	"672360": {
+		"name": "Médecin étrange",
+		"desc": "Augmente la limite max de **Goutte de rosée** de **50%**. Lorsqu'un personnage lance une ATQ de suivi, restaure des PV équivalents à **10%** de ses PV max au personnage dont le pourcentage de PV actuel est le plus bas.",
+		"shortDesc": "Augmente la limite max de **Goutte de rosée**. Lorsqu'un personnage lance une ATQ de suivi, restaure des PV au personnage dont le pourcentage de PV est le plus bas.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672360"
+	},
 	"672370": {
 		"name": "Organisme symbiotique",
 		"desc": "Augmente la restauration de PV du personnage de **35%**. Il y a **50%** de chances fixes de récupérer 1 point de compétence après avoir soigné des alliés. Cet effet ne peut être déclenché qu'1 seule fois par action de personnage.",
@@ -4386,7 +4539,7 @@
 	},
 	"672371": {
 		"name": "Arbre du débarras",
-		"desc": "Augmente les soins prodigués par les personnages de **30%**. Applique **1** **Spore** à une cible ennemie aléatoire après avoir prodigué des soins à une cible alliée.",
+		"desc": "Augmente les soins prodigués par les personnages de **30%**. Applique **2** **Spore** à une cible ennemie aléatoire après avoir prodigué des soins à une cible alliée.",
 		"shortDesc": "Augmente les soins prodigués par les personnages. Après avoir soigné une cible alliée, applique **Spores** à une cible ennemie aléatoire.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4419,6 +4572,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672430"
+	},
+	"672470": {
+		"name": "Vagabond errant",
+		"desc": "Augmente les DGT critiques d'ATQ normale et de compétence infligés par les personnages de **100%**. L'excès de cumuls d'**Amélioration critique** est rendu au début du tour du personnage.",
+		"shortDesc": "Augmente les DGT critiques d'ATQ normale et de compétence des personnages. L'excès de cumuls d'**Amélioration critique** est rendu au début du tour du personnage.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672470"
 	},
 	"672480": {
 		"name": "Récidiviste",
@@ -4455,6 +4617,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672530"
+	},
+	"672540": {
+		"name": "Explorateur des sables",
+		"desc": "Augmente l'efficacité de Rupture de faiblesse des personnages de **20%**. Après avoir infligé une Rupture de faiblesse à une cible ennemie, la VIT augmente de **25%** pendant **3** tours.",
+		"shortDesc": "Augmente l'efficacité de Rupture de faiblesse des personnages, et leur VIT augmente après avoir infligé une Rupture de faiblesse à une cible ennemie.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672540"
 	},
 	"672580": {
 		"name": "Forgefeu",
@@ -4501,6 +4672,24 @@
 		"rarity": "VeryRare",
 		"id": "672670"
 	},
+	"672680": {
+		"name": "Vocaliste de la création",
+		"desc": "Lorsqu'un personnage utilise son ultime, inflige **2** instances de DGT d'**Arrière-goût** à la cible attaquée après la prochaine attaque. Chacune des instances inflige des DGT équivalents à **150%** de l'ATQ du personnage.",
+		"shortDesc": "Lorsqu'un personnage utilise son ultime, sa prochaine attaque inflige des DGT d'**Arrière-goût**.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672680"
+	},
+	"672700": {
+		"name": "Larve spectrale",
+		"desc": "Augmente les DGT d'ATQ normale et de compétence de **60%**. Les DGT infligés augmentent à hauteur de **100%** de la valeur du bouclier collectif lors de l'explosion des **spores**.",
+		"shortDesc": "Augmente les DGT d'ATQ normale et de compétence. Les DGT infligés augmentent en fonction de la valeur du bouclier collectif lors de l'explosion des **spores**.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672700"
+	},
 	"672710": {
 		"name": "Ravageur fantôme",
 		"desc": "Les DGT de **Spore** subis par les cibles ennemies augmentent de **35%**. Réduit la RÉS aux effets des ennemis de **10%** pour chaque cumul de **Spore** possédé.",
@@ -4530,12 +4719,21 @@
 	},
 	"672750": {
 		"name": "Ravageur d'étoiles",
-		"desc": "Les DGT des ATQ normales des personnages augmentent de **50%**. Lorsqu'un personnage utilise une ATQ normale et que son pourcentage de PV est supérieur ou égal à **50%**, il consomme un montant de PV équivalent à **5%** de ses PV max et récupère 1 point de compétence supplémentaire.",
+		"desc": "Les DGT des ATQ normales des personnages augmentent de **80%**. Lorsqu'un personnage utilise une ATQ normale et que son pourcentage de PV est supérieur ou égal à **50%**, il consomme un montant de PV équivalent à **5%** de ses PV max et récupère 1 point de compétence supplémentaire.",
 		"shortDesc": "Les DGT infligés par les attaques normales des personnages augmentent. Lorsqu'un personnage utilise une ATQ normale et que son pourcentage de PV est supérieur ou égal à **50%**, il consomme des PV max et récupère des points de compétence supplémentaires.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672750"
+	},
+	"672810": {
+		"name": "Inspecteur candélagraphe",
+		"desc": "Lorsqu'un personnage utilise son ultime, pour chaque tranche de **10** points d'énergie consommée, augmente l'ATQ de **4%** et les chances d'appliquer des effets de **2%**. Cet effet peut être cumulé jusqu'à**20** fois et dure **2** tours. Le total de points d'énergie consommés lors de l'utilisation d'un ultime est considéré comme s'élevant au minimum à **80**.",
+		"shortDesc": "Lorsqu'un personnage utilise son ultime, son ATQ et ses chances d'appliquer des effets augmentent en fonction de la quantité d'énergie consommée.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672810"
 	},
 	"672840": {
 		"name": "Écrivain",
@@ -4566,7 +4764,7 @@
 	},
 	"672870": {
 		"name": "Kolchis",
-		"desc": "Chaque point de compétence consommé par les personnages augmente les DGT d'ultime de **45%**, jusqu'à un maximum de **135%**. Dure jusqu'à la fin de l'utilisation de l'ultime.",
+		"desc": "Chaque point de compétence consommé par les personnages augmente les DGT d'ultime de **65%**, jusqu'à un maximum de **130%**. Dure jusqu'à la fin de l'utilisation de l'ultime.",
 		"shortDesc": "Plus les personnages utilisent de points de compétence, plus ils infligent de DGT d'ultime.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",

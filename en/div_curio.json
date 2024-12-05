@@ -817,7 +817,7 @@
 	},
 	"6305": {
 		"name": "Memory Cycle",
-		"desc": "Immediately obtains <unbreak>#1[i]</unbreak> random Equation(s). When entering a domain, all Equations are replaced with random Equations. When entering battle, obtains the effects of all Equations that have not been expanded",
+		"desc": "Immediately obtains <unbreak>#1[i]</unbreak> random Equation(s). When entering a domain, all Equations are replaced with random Equations of the same rarity. When entering battle, obtains the effects of all Equations that have not been expanded",
 		"icon": "spriteoutput/rogue/miraclefigureicon/1086.png",
 		"shortIcon": "1086",
 		"param": [
@@ -956,7 +956,7 @@
 		"param": [
 			1,
 			1,
-			3
+			10
 		],
 		"id": "6409"
 	},
@@ -1183,7 +1183,7 @@
 		"param": [
 			1,
 			30,
-			3
+			5
 		],
 		"id": "6506"
 	},
@@ -1244,9 +1244,9 @@
 		"icon": "spriteoutput/rogue/miraclefigureicon/1094.png",
 		"shortIcon": "1094",
 		"param": [
-			0.5,
-			1,
-			25
+			0.75,
+			5,
+			99
 		],
 		"id": "6512"
 	},
@@ -1269,7 +1269,7 @@
 		"shortIcon": "1095",
 		"param": [
 			0.5,
-			0.2
+			0.5
 		],
 		"id": "6514"
 	},
@@ -1301,7 +1301,7 @@
 		"shortIcon": "1124",
 		"param": [
 			1.5,
-			4,
+			6,
 			3,
 			2
 		],
@@ -1485,6 +1485,188 @@
 			250
 		],
 		"id": "6613"
+	},
+	"6614": {
+		"name": "Road of Prayers",
+		"desc": "When characters from Paths of <color=#f29e38ff>The Hunt</color> or <color=#f29e38ff>Erudition</color> use their Skill, if there are currentloy <unbreak>#1[i]</unbreak> Skill Point(s) or more, <unbreak>#2[i]</unbreak> Skill Point(s) will be additionally consumed to increase the CRIT DMG of the instance of Skill by <unbreak>#3[i]%</unbreak>. Additionally recovers <unbreak>#4[i]</unbreak> Skill Point(s) when ally characters use Basic ATK",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1145.png",
+		"shortIcon": "1145",
+		"param": [
+			5,
+			1,
+			1.5,
+			1
+		],
+		"id": "6614"
+	},
+	"6615": {
+		"name": "Automated Experience",
+		"desc": "When characters from Paths of <color=#f29e38ff>Destruction</color> or <color=#f29e38ff>Nihility</color> use an attack, the attacked enemy target's action advances by <unbreak>#1[i]%</unbreak> and the DMG they deal reduces by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s)",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1149.png",
+		"shortIcon": "1149",
+		"param": [
+			0.2,
+			0.3,
+			1
+		],
+		"id": "6615"
+	},
+	"6616": {
+		"name": "High-Calorie Diet",
+		"desc": "When entering battle, receives a random Boundary Equation's effect. After achieving victory <unbreak>#1[i]</unbreak> time(s) in battle, this Curio is destroyed. This does not overwrite any activated Boundary Equation's effects",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1141.png",
+		"shortIcon": "1141",
+		"param": [
+			1
+		],
+		"id": "6616"
+	},
+	"6617": {
+		"name": "Peace Box",
+		"desc": "After expanding <unbreak>#1[i]</unbreak> Equation(s) of <unbreak>#2[i]</unbreak>-star(s) or rarer, obtains <unbreak>#3[i]</unbreak> random Blessing(s)",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1143.png",
+		"shortIcon": "1143",
+		"param": [
+			1,
+			2,
+			1
+		],
+		"id": "6617"
+	},
+	"6618": {
+		"name": "The Story Presently",
+		"desc": "For each character on the Path of <color=#f29e38ff>Harmony</color>, <color=#f29e38ff>Abundance</color>, or <color=#f29e38ff>Preservation</color> on the team, CRIT Rate increases by <unbreak>#1[i]%</unbreak> and CRIT DMG increases by <unbreak>#2[i]%</unbreak> for the characters on those Paths. After using an attack, deals Additional DMG equal to <unbreak>#3[i]%</unbreak> the sum of Max HP, DEF, and ATK against the attacked target.",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1142.png",
+		"shortIcon": "1142",
+		"param": [
+			0.15,
+			0.25,
+			0.75
+		],
+		"id": "6618"
+	},
+	"6619": {
+		"name": "Genius Society's Dangerous Gossip",
+		"desc": "Unable to obtain Cosmic Fragments. For each <unbreak>#1[i]</unbreak> Cosmic Fragments lost because of the Curio's effect, obtains <unbreak>#2[i]</unbreak> random Curio(s) of <unbreak>#3[i]</unbreak>- to <unbreak>#4[i]</unbreak>-stars. The Curio is destroyed after obtaining a total of <unbreak>#5[i]</unbreak> Curio(s) in this way",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1146.png",
+		"shortIcon": "1146",
+		"param": [
+			80,
+			1,
+			1,
+			3,
+			5
+		],
+		"id": "6619"
+	},
+	"6620": {
+		"name": "Hero's Triumphant Return",
+		"desc": "When entering battle, deals DMG equal to <unbreak>#1[i]%</unbreak> of its Max HP to the enemy target with the highest HP and obtains <unbreak>#2[i]</unbreak> Cosmic Fragments. This DMG dealt is halved in Boss Domains",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1148.png",
+		"shortIcon": "1148",
+		"param": [
+			1,
+			88
+		],
+		"id": "6620"
+	},
+	"6621": {
+		"name": "Unmanned Comms",
+		"desc": "When a Curio is destroyed, it is immediately repaired. After the effect is triggered <unbreak>#1[i]</unbreak> time(s), this Curio is destroyed",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1147.png",
+		"shortIcon": "1147",
+		"param": [
+			2
+		],
+		"id": "6621"
+	},
+	"6622": {
+		"name": "Doomsday Compound Eye — Early Access Version",
+		"desc": "When obtaining this Curio, immediately obtains <unbreak>#1[i]</unbreak> Blessing(s) from the Path with the most Blessings in possession. Cosmic Fragments required to overwrite Blessings and Equations increase by <unbreak>#2[i]%</unbreak>",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1144.png",
+		"shortIcon": "1144",
+		"param": [
+			4,
+			10
+		],
+		"id": "6622"
+	},
+	"6623": {
+		"name": "Towat Cards",
+		"desc": "Under the guidance of the Towat Cards, the path ahead reveals a destiny that has already been recognized as \"certain\"",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1140.png",
+		"shortIcon": "1140",
+		"id": "6623"
+	},
+	"6624": {
+		"name": "Towat Cards",
+		"desc": "The Third Plane's boss is \"Argenti (Complete).\" When entering battle in the Third Plane's Boss Domain, DMG dealt by all allies increases by <unbreak>#1[i]%</unbreak>",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1140.png",
+		"shortIcon": "1140",
+		"param": [
+			0.5
+		],
+		"id": "6624"
+	},
+	"6625": {
+		"name": "Towat Cards",
+		"desc": "The Third Plane's boss is \"Cirrus (Complete).\" When entering battle in the Third Plane's Boss Domain, DMG dealt by all allies increases by <unbreak>#1[i]%</unbreak>",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1140.png",
+		"shortIcon": "1140",
+		"param": [
+			0.5
+		],
+		"id": "6625"
+	},
+	"6626": {
+		"name": "Towat Cards",
+		"desc": "The Third Plane's boss is \"Swarm: True Sting (Complete).\" When entering battle in the Third Plane's Boss Domain, DMG dealt by all allies increases by <unbreak>#1[i]%</unbreak>",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1140.png",
+		"shortIcon": "1140",
+		"param": [
+			0.5
+		],
+		"id": "6626"
+	},
+	"6627": {
+		"name": "Towat Cards",
+		"desc": "The Third Plane's boss is \"The Past, Present, and Eternal Show (Complete).\" When entering battle in the Third Plane's Boss Domain, DMG dealt by all allies increases by <unbreak>#1[i]%</unbreak>",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1140.png",
+		"shortIcon": "1140",
+		"param": [
+			0.5
+		],
+		"id": "6627"
+	},
+	"6629": {
+		"name": "Towat Cards",
+		"desc": "The Third Plane's boss is \"Borisin Warhead: Hoolay (Complete).\" When entering battle in the Third Plane's Boss Domain, DMG dealt by all allies increases by <unbreak>#1[i]%</unbreak>",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1140.png",
+		"shortIcon": "1140",
+		"param": [
+			0.5
+		],
+		"id": "6629"
+	},
+	"6901": {
+		"name": "High-Calorie Diet (Decrypted)",
+		"desc": "When entering battle, receives a random Boundary Equation's effect. This does not overwrite any activated Boundary Equation's effects",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1141.png",
+		"shortIcon": "1141",
+		"param": [
+			1
+		],
+		"id": "6901"
+	},
+	"6902": {
+		"name": "Unmanned Comms (Decrypted)",
+		"desc": "When a Curio is destroyed, it is immediately repaired. After the effect is triggered <unbreak>#1[i]</unbreak> time(s), this Curio is destroyed",
+		"icon": "spriteoutput/rogue/miraclefigureicon/1147.png",
+		"shortIcon": "1147",
+		"param": [
+			6
+		],
+		"id": "6902"
 	},
 	"16234": {
 		"name": "Tawot Cards",

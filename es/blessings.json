@@ -3246,7 +3246,7 @@
 	},
 	"615546": {
 		"name": "Mercado al alza regresivo",
-		"desc": "Cuando un personaje entra en combate, obtiene **18** acumulaciones de **Coraje**.",
+		"desc": "Cuando un personaje entra en combate, obtiene **18** acumulaciones de **Espíritu combativo**.",
 		"shortDesc": "Cuando un personaje entra en combate, obtiene **Coraje**.",
 		"icon": "SpriteOutput/Rogue/Buff/IconRogueWarrior03.png",
 		"shortIcon": "IconRogueWarrior03",
@@ -3882,12 +3882,21 @@
 	},
 	"670010": {
 		"name": "Especialista en restauración urbana",
-		"desc": "En el orden de acción aparecerá un Núcleo de cometa. Cada vez que realiza una acción, absorbe los escudos de todos los aliados hasta reducirlos a 1 pt. y convierte los valores absorbidos en su propio valor de escudo. Además, inflige un Daño Físico equivalente al **2500%** + **1000%** del **daño base** a todos los enemigos, y tiene una probabilidad base del **75%** de afectar a los enemigos con Congelación durante **1** turno(s). Cuando el personaje recibe daño, consume primero el valor de escudo del Núcleo de cometa, y cuando inflige daño de **Sismo**, el **70%** del valor de escudo de Núcleo de cometa se considera como escudo del personaje.",
+		"desc": "En el orden de acción aparecerá un Núcleo de cometa. Cada vez que realiza una acción, absorbe los escudos de todos los aliados hasta reducirlos a 1 pt. y convierte los valores absorbidos en su propio valor de escudo. Además, inflige un Daño Físico equivalente al **2500%** + **1000%** del **daño base** a todos los enemigos, y tiene una probabilidad base del **100%** de afectar a los enemigos con Congelación durante **1** turno(s). Cuando el personaje recibe daño, consume primero el valor de escudo del Núcleo de cometa, y cuando inflige daño de **Sismo**, el **80%** del valor de escudo de Núcleo de cometa se considera como escudo del personaje.",
 		"shortDesc": "En el orden de acción aparecerá un Núcleo de cometa que puede absorber el daño de todos los aliados. Durante su acción, absorbe los escudos de todos los aliados e inflige Daño Físico a todos los enemigos, con cierta probabilidad de congelarlos.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "670010"
+	},
+	"670060": {
+		"name": "Coloso desalmado",
+		"desc": "El daño de **Sismo** se considera daño de ataque adicional. Después de que un personaje lance un ataque adicional, todos los aliados obtienen 1 acumulación de Componente mecánico, hasta un máximo de **77**. Después de que un personaje con escudo reciba un ataque, este consume todas sus acumulaciones de Componente mecánico e inflige al objetivo atacado un daño de **Sismo** de un tipo al azar equivalente al **177%** del efecto de escudo actual **7** veces. Por cada acumulación consumida, este daño aumenta en un **7%**.",
+		"shortDesc": "El daño de **Sismo** se considera daño de ataque adicional. Después de que el personaje lance un ataque adicional, todos los aliados obtienen Componente mecánico: después de recibir un ataque, se consume Componente mecánico y se inflige daño de **Sismo** al objetivo atacado según la cantidad de acumulaciones consumidas y el efecto de escudo actual.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670060"
 	},
 	"670140": {
 		"name": "Cazador taciturno",
@@ -3907,6 +3916,15 @@
 		"rarity": "VeryRare",
 		"id": "670150"
 	},
+	"670210": {
+		"name": "Rastreador relativo",
+		"desc": "Cuando un enemigo está afectado por **Sospecha**, Congelación o un estado de Daño con el tiempo, hay una probabilidad base del **150%** de que ese estado se extienda a los objetivos adyacentes. Si no hay objetivos adyacentes, se extiende a sí mismo. Cada efecto solo puede extenderse a cada objetivo 1 vez durante una misma acción. Cuando un estado se extiende **20** veces a un enemigo o este es eliminado, ese objetivo y los objetivos adyacentes reciben un **1200%** del **daño base** como Daño de Hielo y tienen un **60%** de probabilidad base de congelarse durante **1** turno(s).",
+		"shortDesc": "Cuando un enemigo está afectado por **Sospecha**, Congelación o un estado de Daño con el tiempo, hay una gran probabilidad de que el estado se extienda a los objetivos adyacentes. Tras extenderse varias veces, inflige daño al objetivo y a los objetivos adyacentes, y tiene cierta probabilidad de afectarlos con Congelación.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670210"
+	},
 	"670280": {
 		"name": "Sociedad Autodidacta",
 		"desc": "Cuando **Sospecha** llega a **99** acumulaciones, se consume y se convierte en 1 acumulación de Autonegación: el Daño con el tiempo que inflige el atacante aumenta en un **70%**. Cada acumulación aumenta adicionalmente este Daño con el tiempo en un **10%**, hasta un máximo de **50** acumulaciones. Cuando comienza el turno del enemigo, recibe Daño de Rayo con el tiempo equivalente al **135%** del **daño base**, y los objetivos adyacentes reciben un Daño de Rayo con el tiempo equivalente al **20%** del multiplicador de daño original. Cuando las acumulaciones son iguales o superiores a **2**: al comenzar el turno, 1 personaje al azar recupera un **20%** del **Cerebro en una cubeta**. Cuando las acumulaciones son superiores o iguales a **3**: al comenzar el turno, todos los aliados recuperan un **10%** del **Cerebro en una cubeta**.",
@@ -3915,6 +3933,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "670280"
+	},
+	"670320": {
+		"name": "Herborista",
+		"desc": "Cuando un enemigo entra en combate, es afectado con Elixir total: cuando se rompe **Gota de rocío**, carga un **5%** del Elixir total del objetivo atacado, hasta un máximo del **100%** de los PV máx. del personaje. Cuando comienza el turno del objetivo enemigo, consume la carga y recibe un Daño de Viento con el tiempo equivalente al **200%** del **daño base**, y todos los aliados regeneran un **5%** de sus PV máx. Por cada cantidad de carga equivalente al 1% de los PV máx. del personaje, el daño aumenta en un **8%** y la regeneración de PV aumenta en un **4%**.",
+		"shortDesc": "Cuando un enemigo entra en combate, es afectado con Elixir total: cuando Gota de rocío se rompe, Elixir total se carga. Al inicio de cada turno del enemigo, inflige Daño con el tiempo según el porcentaje de carga y regenera PV de todos los aliados.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670320"
 	},
 	"670350": {
 		"name": "Borisin",
@@ -3954,7 +3981,7 @@
 	},
 	"670580": {
 		"name": "Erudito de la extinción",
-		"desc": "Después de que un personaje reciba un ataque, obtiene **2** Fórmula(s) de extinción. Tras lanzar un contraataque, obtiene **1** Fórmula(s) de extinción. Cuando posee **6** Fórmula(s) de extinción, se consumen todas y aumenta el daño de habilidad definitiva infligido en un **150%** hasta el final del turno. Además, inflige un daño adicional equivalente al **650%** del ATQ a todos los enemigos. Este daño adicional se considera como daño de habilidad definitiva.",
+		"desc": "Después de que un personaje reciba un ataque, obtiene **2** Fórmula(s) de extinción. Tras lanzar un contraataque, obtiene **1** Fórmula(s) de extinción. Cuando posee **6** Fórmula(s) de extinción, se consumen todas y aumenta el daño de habilidad definitiva infligido en un **150%** durante **2** turno(s). Además, inflige un daño adicional equivalente al **650%** del ATQ a todos los enemigos. Este daño adicional se considera como daño de habilidad definitiva.",
 		"shortDesc": "Después de que un personaje reciba un ataque o lance un contraataque, obtiene Fórmula de extinción. Cuando posee **6** acumulaciones de Fórmula de extinción, se consumen todas las acumulaciones y aumenta el daño que inflige la habilidad definitiva. Además, inflige daño de habilidad definitiva a todos los enemigos.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -3979,9 +4006,18 @@
 		"rarity": "VeryRare",
 		"id": "670640"
 	},
+	"670700": {
+		"name": "Gusano formaestrellas",
+		"desc": "El daño de ATQ básico y el daño de habilidad básica que recibe el enemigo aumenta en un **100%**. En el orden de acción aparece Hueva de insecto: cuando un aliado recupera o consume pts. de habilidad básica, incrementa en 1 los golpes por acción de su siguiente ataque. Al comenzar el turno, cada golpe por acción inflige a un enemigo al azar un **500%** del **daño base** como Daño de Viento y todos los aliados obtienen un escudo por un **3%** de los PV máx. Los golpes por acción de Hueva de insecto no pueden ser menos de **10**.",
+		"shortDesc": "Aumenta el daño de ATQ básico y el daño de habilidad básica que recibe el enemigo. En el orden de acción aparece Hueva de insecto: cuando comience el turno, aumentan sus golpes por acción al lanzar un ataque y gastar o recuperar pts. de habilidad básica. Tras atacar, otorga un escudo a todos los aliados según la cantidad de golpes por acción.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670700"
+	},
 	"670720": {
 		"name": "Progenie nutredesastres",
-		"desc": "Cuando un enemigo entra en combate, obtiene Pozo de perforación. El Pozo de perforación registra todas las **Esporas** acumuladas por el poseedor y, cuando acumula **18** en total, inflige un Daño Cuántico equivalente al **1800%** del **daño base** a todos los enemigos. Por cada estado negativo, ese daño aumenta en un **10%**, hasta un máximo del **100%**. Después, la cantidad registrada se reinicia.",
+		"desc": "Cuando un enemigo entra en combate, obtiene Pozo de perforación. El Pozo de perforación registra todas las **Esporas** acumuladas por el poseedor y, cuando acumula **18** en total, inflige un Daño Cuántico equivalente al **2200%** del **daño base** a todos los enemigos. Por cada estado negativo, ese daño aumenta en un **10%**, hasta un máximo del **100%**. Después, la cantidad registrada se reinicia.",
 		"shortDesc": "Cuando un enemigo entra en combate, obtiene Pozo de perforación. El Pozo de perforación registra todas las **Esporas** acumuladas por el poseedor, e inflige Daño Cuántico a todos los enemigos. Cuantos más estados negativos haya activos, mayor es este daño.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -3999,7 +4035,7 @@
 	},
 	"670870": {
 		"name": "Agregador",
-		"desc": "Después de que todos los aliados hayan lanzado la habilidad definitiva **2** veces, se inflige **2** vez(es) un Daño de Viento equivalente al **400%** del **daño base** a un enemigo al azar, y se le aplica **1** **Espora(s)**. Este daño inflige un daño equivalente al **30%** del daño original a las unidades adyacentes. Cada vez que se activa este efecto, las veces que se inflige daño aumentan en 1 durante esta batalla y aumenta el daño de habilidad definitiva que infligen los personajes en un **5%**. Puede acumularse como máximo **20** veces.",
+		"desc": "Después de que todos los aliados hayan lanzado la habilidad definitiva **2** veces, se inflige **2** vez(es) un Daño de Viento equivalente al **400%** del **daño base** a un enemigo al azar, y se le aplica **1** **Espora(s)**. Este daño inflige un daño equivalente al **30%** del daño original a las unidades adyacentes. Cada vez que se activa este efecto, las veces que se inflige daño aumentan en 1 durante esta batalla y aumenta el daño de habilidad definitiva que infligen los personajes en un **7%**. Puede acumularse como máximo **20** veces.",
 		"shortDesc": "Después de que todos los aliados hayan lanzado **2** habilidades definitivas en total, inflige Daño de Viento varias veces y aplica **Esporas** a un enemigo al azar y a los enemigos adyacentes. Cada vez que se activa este efecto, las veces que inflige daño aumentan en 1 durante esta batalla y aumenta el daño de habilidad definitiva que infligen los personajes.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4024,6 +4060,15 @@
 		"rarity": "VeryRare",
 		"id": "671030"
 	},
+	"671060": {
+		"name": "Defensor emocional",
+		"desc": "El daño de ataque adicional que reciben los enemigos aumenta en un **60%**. Después de que un personaje elimine a un enemigo, todos los aliados pueden resistir todos los tipos de daño, excepto el Daño con el tiempo. Este efecto dura **2** turno(s) y se disipa después de recibir un ataque.",
+		"shortDesc": "El daño de ataque adicional que reciben los enemigos aumenta. Después de que un personaje elimine a un enemigo, todos los aliados pueden resistir todos los tipos de daño, excepto el Daño con el tiempo. Este efecto se disipa después de recibir un ataque.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671060"
+	},
 	"671080": {
 		"name": "Correspondencia civilizada",
 		"desc": "Cuando un personaje lanza la habilidad definitiva, obtiene un escudo capaz de absorber un daño equivalente al **30%** de sus PV máx. durante **3** turno(s). Tras lanzar un ataque e infligir daño de habilidad definitiva, inflige un daño de **Sismo** equivalente al **600%** del efecto de escudo actual a los objetivos atacados.",
@@ -4033,10 +4078,19 @@
 		"rarity": "VeryRare",
 		"id": "671080"
 	},
+	"671120": {
+		"name": "Escritor",
+		"desc": "Cuando el enemigo está congelado, lo afecta con **10** acumulación(es) de **Sospecha**. Tras recibir Daño con el tiempo, hay un **20%** de probabilidad base de que el objetivo se congele durante **1** turno(s). Cada enemigo solo puede congelarse de esta manera una vez cada **2** turno(s).",
+		"shortDesc": "Cuando el enemigo está congelado, se le aplica **Sospecha**. El Daño con el tiempo tiene cierta probabilidad de afectar con Congelación al enemigo.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671120"
+	},
 	"671130": {
 		"name": "Médic{Fa{Mo de recuerdos",
-		"desc": "Después de que el personaje ataque, **Gota de rocío** inflige 1 vez adicional un daño de **Gota de rocío** equivalente al **250%** del multiplicador de daño original de **Gota de rocío** a todos los enemigos afectados con Congelación. Por cada enemigo congelado, el multiplicador de daño aumenta adicionalmente en un **25%**.",
-		"shortDesc": "Después de que el personaje ataque, **Gota de rocío** inflige daño 1 vez a los objetivos enemigos que estén afectados con Congelación. Cuantos más objetivos haya congelados, más daño inflige.",
+		"desc": "La recuperación de energía de **Gota de rocío** aumenta en un **50%**. Después de que un personaje ataque, **Gota de rocío** inflige 1 vez un daño de **Gota de rocío** equivalente al **250%** del multiplicador de daño original de **Gota de rocío** a los enemigos en el campo de batalla que estén afectados con Congelación.",
+		"shortDesc": "La recuperación de energía de **Gota de rocío** aumenta. Después de que el personaje ataque, **Gota de rocío** inflige daño 1 vez a los objetivos enemigos que estén afectados con Congelación.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
@@ -4044,7 +4098,7 @@
 	},
 	"671170": {
 		"name": "Meme errante",
-		"desc": "El daño de ATQ básico que infligen los personajes aumenta en un **160%**. Al lanzar un ATQ básico, los enemigos con Ruptura de Debilidad se consideran afectados por Congelación.",
+		"desc": "El daño de ATQ básico que infligen los personajes aumenta en un **200%**. Al lanzar un ATQ básico, los enemigos con Ruptura de Debilidad se consideran afectados por Congelación.",
 		"shortDesc": "El daño de ATQ básico que infligen los personajes aumenta. Al lanzar un ATQ básico, los enemigos con Ruptura de Debilidad se consideran afectados por Congelación.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4078,6 +4132,15 @@
 		"rarity": "VeryRare",
 		"id": "671230"
 	},
+	"671240": {
+		"name": "Reemplazo de venganza",
+		"desc": "Después de que un personaje lance un ataque, afecta al objetivo atacado con **3** acumulación(es) de **Sospecha**. El efecto de Vulnerabilidad que otorga **Sospecha** aumenta en un **20%**. Cuando un personaje golpea a un enemigo afectado por **Sospecha**, el Daño CRIT que inflige el personaje aumenta según en un **80%** de la cantidad de Vulnerabilidad de **Sospecha**.",
+		"shortDesc": "Después de que un personaje lance un ataque, afecta al objetivo del ataque con **Sospecha**. El efecto de Vulnerabilidad que otorga **Sospecha** aumenta, y el Daño CRIT que inflige el personaje aumenta según el número de acumulaciones.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671240"
+	},
 	"671260": {
 		"name": "Buf{Fona{Món de Anatta",
 		"desc": "Cuando un personaje lanza un ataque adicional, tiene una probabilidad base del **150%** de afectar al objetivo con 1 estado negativo al azar durante **2** turnos. Los estados negativos al azar incluyen: el daño infligido se reduce en un **15%**, la DEF se reduce en un **30%** o la VEL se reduce en un **20%**.",
@@ -4095,6 +4158,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "671340"
+	},
+	"671350": {
+		"name": "Pirotécnico",
+		"desc": "Los PV máx. del personaje aumentan en un **50%**. Por cada **10** pts. de Reducción de Firmeza real, **Gota de rocío** de todos los aliados se carga un **3%**. Al atacar a enemigos con Ruptura de Debilidad, **Gota de rocío** de todos los aliados se carga un **6%**.",
+		"shortDesc": "Los PV máx. del personaje aumentan. Cuando inflige Reducción de Firmeza real o cuando ataca a enemigos con Ruptura de Debilidad, se carga **Gota de rocío** de todos los aliados.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671350"
 	},
 	"671360": {
 		"name": "Demente hacia la muerte",
@@ -4122,6 +4194,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "671400"
+	},
+	"671410": {
+		"name": "Árbitro imaginario",
+		"desc": "Por cada **1%** de efecto de acción adelantada real que reciba el personaje, el daño que inflige en el siguiente turno aumenta en un **2%**, hasta un máximo del **100%** de acción adelantada. Si el enemigo está congelado, este efecto aumenta su daño de forma adicional en un **50%**.",
+		"shortDesc": "Cuando un aliado recibe un efecto de acción adelantada real, aumenta el daño que inflige durante el siguiente turno. Este efecto aumenta adicionalmente contra enemigos congelados.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671410"
 	},
 	"671450": {
 		"name": "Tribunal de la homogeneidad",
@@ -4168,9 +4249,18 @@
 		"rarity": "VeryRare",
 		"id": "671520"
 	},
+	"671570": {
+		"name": "Autotraidor",
+		"desc": "Cuando un personaje rompe la Debilidad de un enemigo, recupera **2** pt(s). de habilidad básica. En función de las acumulaciones totales de Coraje que tengan todos los aliados, el Daño de Ruptura que infligen todos los aliados aumenta en un **2%** por cada **5** acumulaciones de **Coraje**.",
+		"shortDesc": "Cuando un personaje rompe la Debilidad del enemigo, recupera pts. de habilidad básica. Cuantas más acumulaciones de **Espíritu combativo** tenga el equipo, mayor es el Daño de Ruptura que inflige el personaje.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671570"
+	},
 	"671610": {
 		"name": "Artista reminiscente",
-		"desc": "**Regusto** tiene una probabilidad base del **3%** de afectar con Congelación a los objetivos enemigos que no estén congelados durante **1** turno(s). Este efecto se puede activar hasta **5** vez(es) con cada ataque. El multiplicador del daño que **Regusto** inflige a los enemigos congelados aumenta en un **150%** del multiplicador original.",
+		"desc": "**Regusto** tiene una probabilidad base del **4%** de afectar con Congelación a los enemigos que no estén congelados durante **1** turno(s). Este efecto se puede activar hasta **5** vez(es) por cada enemigo atacado. El multiplicador del daño que **Regusto** inflige a los enemigos congelados aumenta en un **150%** del multiplicador original.",
 		"shortDesc": "El daño de **Regusto** tiene una probabilidad afectar al enemigo con Congelación. **Regusto** aumenta el multiplicador de daño de los enemigos congelados.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4195,6 +4285,15 @@
 		"rarity": "VeryRare",
 		"id": "671670"
 	},
+	"671680": {
+		"name": "Estratega fanático",
+		"desc": "El Daño CRIT que inflige el ataque adicional de los personajes aumenta en un **100%**. Cuando un personaje lanza la habilidad definitiva mediante **Cerebro en una cubeta** e inflige daño al enemigo, se considera como un ataque adicional.",
+		"shortDesc": "Aumenta el Daño CRIT que inflige el ataque adicional de los personajes. Cuando un personaje lanza la habilidad definitiva mediante **Cerebro en una cubeta**, se considera como un ataque adicional.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671680"
+	},
 	"671700": {
 		"name": "Obrer{Fa{Mo nutredesastres",
 		"desc": "Cuando el personaje obtiene un escudo, hace que **2** enemigos al azar obtengan 1 **Espora**. El multiplicador de daño de las **Esporas** aumenta en un **75%** del multiplicador original.",
@@ -4204,9 +4303,18 @@
 		"rarity": "VeryRare",
 		"id": "671700"
 	},
+	"671730": {
+		"name": "Vestigios de la catástrofe",
+		"desc": "Cada vez que se consume o se excede 1 pt. de habilidad básica, todos los aliados obtienen 1 acumulación de Ligamaza, hasta un máximo de **10** acumulaciones. Cuando un personaje lanza un ataque, consume todas sus acumulaciones de Ligamaza e inflige un daño adicional equivalente al **80%** de sus PV máx. por cada acumulación consumida. Este daño se considera daño de ATQ básico.",
+		"shortDesc": "Cada vez que se consume o se excede 1 pt. de habilidad básica, el siguiente ataque de todos los aliados inflige adicionalmente daño de ATQ básico según sus PV máx.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671730"
+	},
 	"671740": {
 		"name": "Obrero diabólico",
-		"desc": "Después de que un personaje ataque, se añaden **Esporas** en un enemigo al azar. Cuando los aliados realizan acciones consecutivas **1**/**2**/**3** vez(es) o más, la cantidad de **Esporas** añadidas pasa a ser **2**/**4**/**6**.",
+		"desc": "Después de que un personaje ataque, se añaden **Esporas** en un enemigo al azar. Cuando los aliados realizan acciones consecutivas **1**/**2**/**3** vez(es) o más, la cantidad de **Esporas** añadidas pasa a ser **4**/**5**/**6**.",
 		"shortDesc": "Después de que un personaje ataque, se aplican **Esporas** a un enemigo al azar. Cuantas más veces los aliados realizan acciones consecutivas, mayor es la cantidad de **Esporas** aplicadas.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4221,6 +4329,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "671780"
+	},
+	"671800": {
+		"name": "Protección de la ecología astral",
+		"desc": "El daño de habilidad definitiva que reciben los enemigos aumenta en un **75%**. Cuando un personaje con escudo recibe un ataque, carga el **Cerebro en una cubeta** en un **12%**.",
+		"shortDesc": "El daño de habilidad definitiva que reciben los enemigos aumenta. Carga el **Cerebro en una cubeta** cuando un personaje con escudo recibe un ataque.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671800"
 	},
 	"671820": {
 		"name": "Constructor de bloques",
@@ -4257,6 +4374,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672010"
+	},
+	"672020": {
+		"name": "Guardián de tumbas",
+		"desc": "La RES a efecto del personaje aumenta en un **25%** y el daño de **Sismo** infligido aumenta en un **50%**. Al resistir un estado negativo, inflige al objetivo un daño de **Sismo** equivalente al **400%** del efecto de escudo actual.",
+		"shortDesc": "La RES a efecto del personaje aumenta y el daño de **Sismo** infligido aumenta. Al resistir un estado negativo, inflige daño de **Sismo** al objetivo.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672020"
 	},
 	"672030": {
 		"name": "Purificador planetario",
@@ -4303,6 +4429,15 @@
 		"rarity": "VeryRare",
 		"id": "672140"
 	},
+	"672150": {
+		"name": "Purificador",
+		"desc": "Cuando los PV actuales del enemigo son superiores al **60%** de sus PV máx., la duración del estado de Congelación aumenta en 1 turno. El daño que reciben los enemigos congelados aumenta en un **30%**.",
+		"shortDesc": "Cuando el porcentaje de PV del enemigo es superior al **60%**, la duración del estado de Congelación aumenta en 1 turno. Aumenta el daño recibido por los enemigos congelados.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672150"
+	},
 	"672160": {
 		"name": "Biógraf{Fa{Mo",
 		"desc": "Después de que el personaje ataque a un objetivo afectado con Congelación, le inflige 1 vez un **240%** de su ATQ como daño de **Regusto**.",
@@ -4329,6 +4464,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672200"
+	},
+	"672230": {
+		"name": "Doctores del Caos",
+		"desc": "El Daño con el tiempo que inflige el personaje aumenta en un **50%**. Cuando un enemigo entra en combate, es afectado por Percepción y recibe un Daño de Fuego con el tiempo equivalente al **300%** de los PV máx. de todos los aliados al inicio del turno.",
+		"shortDesc": "Aumenta el Daño con el tiempo que inflige el personaje. Cuando un enemigo entra en combate, es afectado por Percepción: al inicio del turno, recibe Daño de Fuego con el tiempo según los PV máx. de todos los aliados.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672230"
 	},
 	"672240": {
 		"name": "Espíritu de Venganza",
@@ -4359,7 +4503,7 @@
 	},
 	"672340": {
 		"name": "Tejealas",
-		"desc": "Cuando un enemigo es derrotado, la recuperación de energía de **Gota de rocío** aumenta en un **10%**. Puede acumularse hasta **10**. Además, todos los aliados regeneran un **50%** de sus PV máx.",
+		"desc": "Cuando un enemigo es derrotado, la recuperación de energía de **Gota de rocío** aumenta en un **20%**. Puede acumularse hasta **4**. Además, todos los aliados regeneran un **50%** de sus PV máx.",
 		"shortDesc": "Cuando un enemigo es derrotado, aumenta la recuperación de energía de **Gota de rocío** y todos los aliados regeneran PV.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4375,6 +4519,15 @@
 		"rarity": "VeryRare",
 		"id": "672350"
 	},
+	"672360": {
+		"name": "Sanación peculiar",
+		"desc": "El límite máximo de **Gota de rocío** aumenta en **50%**. Después de que un personaje lance un ataque adicional, el personaje con menor porcentaje de PV regenera un **10%** de sus PV máx.",
+		"shortDesc": "Aumenta el límite máximo de **Gota de rocío**. Después de que el personaje lance un ataque adicional, regenera los PV del personaje con menor porcentaje de PV.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672360"
+	},
 	"672370": {
 		"name": "Simbionte",
 		"desc": "La curación recibida del personaje aumenta en un **35%**. Tras ofrecer curación a objetivos aliados, tiene una probabilidad fija del **50%** de recuperar 1 pt. de habilidad básica. Este efecto solo puede activarse 1 vez cada vez que actúa el personaje.",
@@ -4386,7 +4539,7 @@
 	},
 	"672371": {
 		"name": "Árbol del abandono",
-		"desc": "Aumenta la curación realizada del personaje en un **30%**. Tras realizar una curación a un objetivo aliado, un enemigo al azar obtiene **1** **Espora(s)**.",
+		"desc": "Aumenta la curación realizada del personaje en un **30%**. Tras realizar una curación a un objetivo aliado, un enemigo al azar obtiene **2** **Espora(s)**.",
 		"shortDesc": "Aumenta la curación realizada del personaje. Tras realizar una curación a un objetivo aliado, un enemigo al azar obtiene **Esporas**.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4419,6 +4572,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672430"
+	},
+	"672470": {
+		"name": "Caminante descarriado",
+		"desc": "El Daño CRIT del ATQ básico y de la habilidad básica del personaje aumenta en un **100%**. Las acumulaciones en exceso de **Empujón crítico** se vuelven a obtener al comienzo del turno del personaje.",
+		"shortDesc": "Aumenta el Daño CRIT del ATQ básico y de la habilidad básica del personaje. Las acumulaciones en exceso de **Empujón crítico** se vuelven a obtener al comienzo del turno del personaje.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672470"
 	},
 	"672480": {
 		"name": "Ensayador",
@@ -4455,6 +4617,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672530"
+	},
+	"672540": {
+		"name": "Trazado de la arena",
+		"desc": "La eficiencia de la Ruptura de Debilidad de los personajes aumenta en un **20%**. Tras romper la Debilidad de un enemigo, la VEL aumenta en un **25%** durante **3** turno(s).",
+		"shortDesc": "La eficiencia de la Ruptura de Debilidad de los personajes aumenta. Tras romper la Debilidad de un enemigo, la VEL aumenta.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672540"
 	},
 	"672580": {
 		"name": "Forjado{Fra{Mr",
@@ -4501,6 +4672,24 @@
 		"rarity": "VeryRare",
 		"id": "672670"
 	},
+	"672680": {
+		"name": "Vocalista de la creación",
+		"desc": "Cuando un personaje lanza su habilidad definitiva, el siguiente ataque inflige al enemigo un daño de **Regusto** equivalente al **150%** del ATQ del personaje **2** veces.",
+		"shortDesc": "Después de que el personaje lance su habilidad definitiva, inflige daño de **Regusto** tras lanzar el siguiente ataque.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672680"
+	},
+	"672700": {
+		"name": "Vestigios de fantasmas",
+		"desc": "El daño de ATQ básico y el daño de habilidad básica que infligen los personajes aumenta en un **60%**. Cuando estallan las **Esporas**, el daño infligido aumenta en una cantidad equivalente al **100%** del Escudo colectivo de todos los aliados.",
+		"shortDesc": "Aumenta el daño de ATQ básico y el daño de habilidad básica que inflige el personaje. Cuando estallan las **Esporas**, el daño infligido aumenta según el escudo total de todos los aliados.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672700"
+	},
 	"672710": {
 		"name": "Obrer{Fa{Mo fantasma",
 		"desc": "El daño de **Esporas** que reciben los enemigos aumenta en un **35%**. La RES a efecto del objetivo enemigo se reduce en un **10%** por cada acumulación de **Esporas** que tenga.",
@@ -4530,12 +4719,21 @@
 	},
 	"672750": {
 		"name": "Obrer{Fa{Mo trituraestrellas",
-		"desc": "El daño de ATQ básico que inflige el personaje aumenta en un **50%**. Si el porcentaje de PV del personaje es igual o superior al **50%** cuando lanza el ATQ básico, consume un **5%** de sus PV máx. y recupera 1 pt. de habilidad básica.",
+		"desc": "El daño de ATQ básico que inflige el personaje aumenta en un **80%**. Si el porcentaje de PV del personaje es igual o superior al **50%** cuando lanza el ATQ básico, consume un **5%** de sus PV máx. y recupera 1 pt. de habilidad básica.",
 		"shortDesc": "El daño de ATQ básico que inflige el personaje aumenta. Si el porcentaje de PV del personaje es igual o superior al **50%** cuando lanza el ATQ básico, consume PV y recupera pts. de habilidad básica.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672750"
+	},
+	"672810": {
+		"name": "Inspector candelógrafo",
+		"desc": "Cuando un personaje lanza su habilidad definitiva, por cada **10** pts. de energía consumidos, el ATQ aumenta en un **4%** y el acierto de efecto aumenta en un **2%**. Se puede acumular hasta **20** veces y dura **2** turno(s). Cada vez que se lanza una habilidad definitiva, se considera que consume al menos **80** pts. de energía.",
+		"shortDesc": "Cuando el personaje usa la habilidad definitiva, su ATQ y acierto de efecto aumenta según la cantidad de energía consumida.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672810"
 	},
 	"672840": {
 		"name": "Escriba",
@@ -4566,7 +4764,7 @@
 	},
 	"672870": {
 		"name": "Kolchian{Fa{Mo",
-		"desc": "Por cada pt. de habilidad básica que consume el personaje, el daño de habilidad definitiva que inflige aumenta en un **45%**, hasta un máximo del **135%**. Dura hasta después de lanzar la habilidad definitiva.",
+		"desc": "Por cada pt. de habilidad básica que consume el personaje, el daño de habilidad definitiva que inflige aumenta en un **65%**, hasta un máximo del **130%**. Dura hasta después de lanzar la habilidad definitiva.",
 		"shortDesc": "Cuantos más pts. de habilidad básica consume el personaje, más daño de habilidad definitiva inflige.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",

@@ -68,7 +68,7 @@
 	},
 	"612027": {
 		"name": "Versetzter Aufstieg",
-		"desc": "Der Einsatz von Ultimates erhöht die physische WDS-DUR der nächsten Pfadresonanz um **8%**, bis zu **8**-fach stapelbar.",
+		"desc": "Der Einsatz von Ultimates erhöht die physische WDS-DUR der nächsten Pfadresonanz um **8%**, bis zu **8**-mal stapelbar.",
 		"shortDesc": "Der Einsatz von Ultimates erhöht die physische WDS-DUR der nächsten Pfadresonanz.",
 		"icon": "SpriteOutput/Rogue/Buff/IconRogueKnight09.png",
 		"shortIcon": "IconRogueKnight09",
@@ -3882,12 +3882,21 @@
 	},
 	"670010": {
 		"name": "Stadtrestaurator",
-		"desc": "„Kometenkern“ erscheint in der Aktionsreihenfolge. Bei jeder Aktion absorbiert er die Schilde aller Verbündeten, wobei die Schildmenge auf 1 reduziert wird, verwandelt sie in seine eigene Schildmenge und verursacht bei allen Gegnern physischen SCH in Höhe von **2500%** der absorbierten Schildmenge + **1000%** des **Basis-SCH**. Es besteht eine Grundchance von **75%**, Gegner für **1** Rd. einzufrieren. Wenn Figuren SCH erleiden, wird die Schildmenge des Kometenkerns zuerst verbraucht. Wenn **Beben-SCH** verursacht wird, werden **70%** der Schildmenge von Kometenkern als Schild der Figur angesehen.",
+		"desc": "„Kometenkern“ erscheint in der Aktionsreihenfolge. Bei jeder Aktion absorbiert er die Schilde aller Verbündeten, wobei die Schildmenge auf 1 reduziert wird, verwandelt sie in seine eigene Schildmenge und verursacht bei allen Gegnern physischen SCH in Höhe von **2500%** der absorbierten Schildmenge + **1000%** des **Basis-SCH**. Es besteht eine Grundchance von **100%**, Gegner für **1** Rd. einzufrieren. Wenn Figuren SCH erleiden, wird die Schildmenge des Kometenkerns zuerst verbraucht. Wenn **Beben-SCH** verursacht wird, werden **80%** der Schildmenge von Kometenkern als Schild der Figur angesehen.",
 		"shortDesc": "Ein „Kometenkern“ erscheint in der Aktionsreihenfolge, der SCH für alle Verbündeten blockiert. Während seiner Aktion absorbiert er Schilde von Verbündeten, um allen Gegnern physischen SCH zuzufügen, wobei auch eine Chance besteht, die Ziele einzufrieren.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "670010"
+	},
+	"670060": {
+		"name": "Herzloser Riese",
+		"desc": "**Beben-SCH** wird als Folgeangriff-SCH betrachtet. Nachdem eine Figur einen Folgeangriff gestartet hat, erhalten alle Verbündeten 1 Stapelung „Mechanisches Teil“, bis zu **77** Stapelungen. Nachdem eine Figur mit Schild angegriffen wurde, werden alle Stapelungen von Mechanisches Teil dieser Einheit verbraucht und **7**-mal **Beben-SCH** eines zufälligen Typs in Höhe von **177%** der aktuellen Schildmenge verursacht. Für jede verbrauchte Stapelung wird dieser SCH um **7%** erhöht.",
+		"shortDesc": "**Beben-SCH** wird als Folgeangriff-SCH betrachtet. Nachdem eine Figur einen Folgeangriff gestartet hat, erhalten alle Verbündeten „Mechanisches Teil“: Nach dem Erleiden von Angriffen wird „Mechanisches Teil“ verbraucht und basierend auf dieser verbrauchten Stapelzahl sowie der aktuellen Schildmenge dem Angriffsziel **Beben-SCH** zugefügt.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670060"
 	},
 	"670140": {
 		"name": "Schweigsamer Jäger",
@@ -3907,6 +3916,15 @@
 		"rarity": "VeryRare",
 		"id": "670150"
 	},
+	"670210": {
+		"name": "Relativer Nachzeichner",
+		"desc": "Wenn ein Gegner mit **Verdacht**, Gefroren oder DoT-Status belegt ist, besteht eine Grundchance von **150%**, diese Status auf angrenzende Einheiten auszudehnen. Sind keine angrenzenden Einheiten vorhanden, wird der Status auf das ursprüngliche Ziel ausgedehnt. Jeder Status kann auf ein Ziel nur 1-mal pro Aktion ausgedehnt werden. Jedes Mal, wenn ein Gegner **20**-mal eine Ausdehnung erlitten hat, oder besiegt wird, erleiden er und angrenzende Einheiten Eis-SCH in Höhe von **1200%** des **Basis-SCH**, wobei eine Grundchance von **60%** besteht, die Ziele für **1** Rd. einzufrieren.",
+		"shortDesc": "Wenn ein Gegner mit **Verdacht**, Gefroren oder DoT-Status belegt ist, besteht eine hohe Chance, diese Status auf angrenzende Einheiten auszudehnen. Nach mehrfachem Ausdehnen wird dem Ziel und angrenzenden Einheiten SCH zugefügt, wobei eine Chance besteht, sie einzufrieren.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670210"
+	},
 	"670280": {
 		"name": "Institut für Selbstzertifikation",
 		"desc": "Wenn **Verdacht** **99** Stapelungen erreicht, werden diese verbraucht und zu 1 Stapelung „Selbstverleugnung“ umgewandelt: Erhöht den vom Angreifer an der Einheit verursachten DoT um **70%**. Jede Stapelung erhöht ihn zusätzlich um **10%**, bis zu **50** Stapelungen. Der Gegner erleidet zu Beginn seiner Runde Blitz-DoT in Höhe von **135%** des **Basis-SCH** und angrenzende Einheiten erleiden Blitz-DoT in Höhe von **20%** des ursprünglichen SCH-Multiplikators. Bei **2** oder mehr Stapelungen: Stellt zu Beginn der Runde für 1 zufällige Figur **20%** von **Gehirn im Tank** wieder her. Bei **3** oder mehr Stapelungen: Stellt zu Beginn der Runde für alle Verbündeten **10%** von **Gehirn im Tank** wieder her.",
@@ -3915,6 +3933,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "670280"
+	},
+	"670320": {
+		"name": "Kräutersammler",
+		"desc": "Beim Kampfeintritt erhalten Gegner „Allheilmittel“: Wenn **Tautropfen** bricht, wird Allheilmittel des Angriffsziels um **5%** aufgeladen, bis zu **100%** der Gesamtsumme der max. LP aller Figuren. Zu Beginn der Runde des Gegners wird Aufladung verbraucht, er erleidet Wind-DoT in Höhe von **200%** des **Basis-SCH** und alle Verbündeten stellen LP in Höhe von **5%** der max. LP wieder her. Für je 1 % Aufladung, die der Gesamtsumme der max. LP aller Verbündeten entspricht, wird dieser SCH um **8%** und die wiederhergestellten LP um **4%** erhöht.",
+		"shortDesc": "Beim Kampfeintritt erhalten Gegner „Allheilmittel“: Wird aufgeladen, wenn der Tautropfen bricht. Verursacht zu Beginn jeder Runde des Gegners basierend auf dem Prozentsatz der Aufladung DoT und stellt bei allen Verbündeten LP wieder her.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670320"
 	},
 	"670350": {
 		"name": "Borisin",
@@ -3954,7 +3981,7 @@
 	},
 	"670580": {
 		"name": "Gelehrter der Auslöschung",
-		"desc": "Nachdem eine Figur getroffen wurde, erhält sie **2** Auslöschungsformel(n); nach dem Einsatz eines Konters erhält sie **1** Auslöschungsformel(n). Wenn die Figur **6** Auslöschungsformeln besitzt, werden alle Auslöschungsformeln entfernt und der Ultimate-SCH bis zum Ende der Runde um **150%** erhöht. Fügt außerdem allen Gegnern zusätzlichen SCH in Höhe von **650%** des ANG der Figur zu. Dieser SCH wird als Ultimate-SCH angesehen.",
+		"desc": "Nachdem eine Figur getroffen wurde, erhält sie **2** Auslöschungsformel(n); nach dem Einsatz eines Konters erhält sie **1** Auslöschungsformel(n). Wenn die Figur **6** Auslöschungsformeln besitzt, werden alle Auslöschungsformeln entfernt und der Ultimate-SCH für **2** Rd. um **150%** erhöht. Fügt außerdem allen Gegnern zusätzlichen SCH in Höhe von **650%** des ANG der Figur zu. Dieser SCH wird als Ultimate-SCH angesehen.",
 		"shortDesc": "Nachdem eine Figur getroffen wurde oder einen Konter ausführt hat, erhält sie Auslöschungsformel(n). Wenn die Figur **6** Auslöschungsformel(n) besitzt, werden alle Auslöschungsformeln entfernt und der durch Ultimates verursachte SCH wird erhöht. Außerdem wird allen Gegnern Ultimate-SCH zugefügt.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -3979,9 +4006,18 @@
 		"rarity": "VeryRare",
 		"id": "670640"
 	},
+	"670700": {
+		"name": "Sternwickler-Wurm",
+		"desc": "Erhöht den von Gegnern erlittenen Standardangriff- und Fertigkeits-SCH um **100%**. „Schwarm-Erben“ erscheint in der Aktionsreihenfolge: Wenn Verbündete Fertigkeitspunkte erhalten oder verbrauchen, erhalten sie für ihren nächsten Angriff 1 zusätzlichen Treffer. Zu Beginn einer Runde fügen sie für jeden Treffer einem zufälligen Gegner Wind-SCH in Höhe von **500%** des **Basis-SCH** zu und gewähren allen Verbündeten einen Schild in Höhe von **3%** der max. LP. Die Trefferzahl von Schwarm-Erben beträgt mindestens **10**.",
+		"shortDesc": "Erhöht den von Gegnern erlittenen Standardangriff- und Fertigkeits-SCH. „Schwarm-Erben“ erscheint in der Aktionsreihenfolge: Der Einsatz von Angriffen und das Verbrauchen sowie Wiederherstellen von Fertigkeitspunkten zu Beginn der Runde erhöht die Trefferzahl. Gewährt nach einem Angriff allen Verbündeten basierend auf der Trefferzahl einen Schild.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670700"
+	},
 	"670720": {
 		"name": "Kind des Unheils",
-		"desc": "Gegner erhalten beim Kampfeintritt „Aushöhlung“: Aushöhlung zeichnet die Anzahl von **Sporen** auf, mit denen die betroffene Einheit belegt ist. Wenn **18** Sporen angesammelt sind, fügen sie allen Gegnern Quanten-SCH in Höhe von **1800%** des **Basis-SCH** zu. Für jeden Debuff wird dieser SCH um **10%** erhöht, bis zu **100%**. Dann wird die aufgezeichnete Anzahl zurückgesetzt.",
+		"desc": "Gegner erhalten beim Kampfeintritt „Aushöhlung“: Aushöhlung zeichnet die Anzahl von **Sporen** auf, mit denen die betroffene Einheit belegt ist. Wenn **18** Sporen angesammelt sind, fügen sie allen Gegnern Quanten-SCH in Höhe von **2200%** des **Basis-SCH** zu. Für jeden Debuff wird dieser SCH um **10%** erhöht, bis zu **100%**. Dann wird die aufgezeichnete Anzahl zurückgesetzt.",
 		"shortDesc": "Gegner erhalten beim Kampfeintritt „Aushöhlung“: Aushöhlung zeichnet die Anzahl von **Sporen** auf, mit denen die betroffene Einheit belegt ist, und fügt allen Gegnern Quanten-SCH zu. Je mehr Debuffs belegt werden, desto höher wird dieser SCH.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -3999,7 +4035,7 @@
 	},
 	"670870": {
 		"name": "Aggregator",
-		"desc": "Nachdem alle Verbündeten insgesamt **2**-mal ihre Ultimates eingesetzt haben, erleidet ein zufälliger Gegner **2** Treffer, die jeweils Wind-SCH in Höhe von **400%** des **Basis-SCH** verursachen, und wird mit **1** **Spore** belegt. Außerdem erleiden angrenzende Einheiten SCH in Höhe von **30%** des ursprünglichen SCH. Jedes Mal, wenn dieser Effekt ausgelöst wird, wird die Trefferzahl in diesem Kampf um 1 und der von Figuren verursachte Ultimate-SCH um **5%** erhöht. Dieser Effekt ist bis zu **20**-fach stapelbar.",
+		"desc": "Nachdem alle Verbündeten insgesamt **2**-mal ihre Ultimates eingesetzt haben, erleidet ein zufälliger Gegner **2** Treffer, die jeweils Wind-SCH in Höhe von **400%** des **Basis-SCH** verursachen, und wird mit **1** **Spore** belegt. Außerdem erleiden angrenzende Einheiten SCH in Höhe von **30%** des ursprünglichen SCH. Jedes Mal, wenn dieser Effekt ausgelöst wird, wird die Trefferzahl in diesem Kampf um 1 und der von Figuren verursachte Ultimate-SCH um **7%** erhöht. Dieser Effekt ist bis zu **20**-mal stapelbar.",
 		"shortDesc": "Nachdem alle Verbündeten insgesamt **2**-mal ihre Ultimates eingesetzt haben, wird einem zufälligen Gegner und angrenzenden Einheiten mehrfacher Wind-SCH zugefügt und sie werden mit **Sporen** belegt. Jedes Mal, wenn dieser Effekt ausgelöst wird, wird die Trefferzahl in diesem Kampf um 1 und der von Figuren verursachte Ultimate-SCH erhöht.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4024,6 +4060,15 @@
 		"rarity": "VeryRare",
 		"id": "671030"
 	},
+	"671060": {
+		"name": "Sentimentale Wache",
+		"desc": "Erhöht den von Gegnern erlittenen Folgeangriff-SCH um **60%**. Wenn ein Gegner von einer Figur besiegt wird, wird für alle Verbündeten aller eingehender SCH außer DoT widerstanden. Dieser Effekt wird nach einem erlittenen Angriff entfernt und hält **2** Rd. an.",
+		"shortDesc": "Erhöht den von Gegnern erlittenen Folgeangriff-SCH. Wenn ein Gegner von einer Figur besiegt wird, wird für alle Verbündeten aller eingehender SCH außer DoT widerstanden. Dieser Effekt wird nach einem erlittenen Angriff entfernt.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671060"
+	},
 	"671080": {
 		"name": "Korrespondenzlehrer für Zivilisation",
 		"desc": "Wenn eine Figur ihren Ultimate einsetzt, erhält sie für **3** Rd. einen Schild, der SCH in Höhe von **30%** ihrer max. LP absorbiert. Nachdem die Figur durch einen Angriff Ultimate-SCH verursacht, wird dem Ziel **Beben-SCH** in Höhe von **600%** der aktuellen Schildmenge der Figur zugefügt.",
@@ -4033,10 +4078,19 @@
 		"rarity": "VeryRare",
 		"id": "671080"
 	},
+	"671120": {
+		"name": "Schriftsteller",
+		"desc": "Wenn ein Gegner eingefroren wird, wird er mit **10** Stapelung(en) **Verdacht** belegt. Nachdem er DoT erlitten hat, besteht eine Grundchance von **20%**, dass er für **1** Rd. eingefroren wird. Jeder Gegner kann auf diese Art nur 1-mal pro **2** Rd. eingefroren werden.",
+		"shortDesc": "Wenn Gegner eingefroren werden, werden sie mit **Verdacht** belegt. DoT hat eine geringe Chance, Gegner einzufrieren.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671120"
+	},
 	"671130": {
 		"name": "Arzt des Gedächtnisses",
-		"desc": "Nachdem eine Figur angegriffen hat, verursacht **Tautropfen** bei allen eingefrorenen Gegnern 1-mal zusätzlich **Tautropfen-SCH** in Höhe von **250%** des ursprünglichen SCH-Multiplikators. Für jeden eingefrorenen Gegner wird der SCH-Multiplikator zusätzlich um **25%** erhöht.",
-		"shortDesc": "Nachdem eine Figur angegriffen hat, verursacht **Tautropfen** 1-mal zusätzlichen SCH bei allen eingefrorenen Gegnern. Je mehr Gegner eingefroren sind, desto höher wird der SCH.",
+		"desc": "Erhöht die Aufladeeffizienz von **Tautropfen** um **50%**. Nachdem eine Figur angegriffen hat, verursacht **Tautropfen** 1-mal zusätzlichen SCH in Höhe von **250%** des ursprünglichen SCH-Multiplikators von **Tautropfen** bei allen eingefrorenen Gegnern auf dem Feld.",
+		"shortDesc": "Erhöht die Aufladeeffizienz von **Tautropfen**. Nachdem eine Figur angegriffen hat, verursacht **Tautropfen** 1-mal zusätzlichen SCH bei eingefrorenen Gegnern.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
@@ -4044,7 +4098,7 @@
 	},
 	"671170": {
 		"name": "Gemächliches Mem",
-		"desc": "Erhöht den von Figuren verursachten Standardangriff-SCH um **160%**. Wenn die Figur einen Standardangriff ausführt, werden Gegner mit Schwächebruch als Gefroren angesehen.",
+		"desc": "Erhöht den von Figuren verursachten Standardangriff-SCH um **200%**. Wenn die Figur einen Standardangriff ausführt, werden Gegner mit Schwächebruch als Gefroren angesehen.",
 		"shortDesc": "Erhöht den von Figuren verursachten Standardangriff-SCH. Wenn die Figur einen Standardangriff ausführt, werden Gegner mit Schwächebruch als Gefroren angesehen.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4078,6 +4132,15 @@
 		"rarity": "VeryRare",
 		"id": "671230"
 	},
+	"671240": {
+		"name": "Stellvertreter der Vergeltung",
+		"desc": "Nachdem eine Figur einen Angriff ausgeführt hat, wird das Ziel mit **3** Stapelung(en) **Verdacht** belegt. Die durch **Verdacht** verliehene Anfälligkeit wird um **20%** erhöht. Wenn Figuren Gegner mit **Verdacht** treffen, wird basierend auf **80%** der Stapelzahl von **Verdacht** ihr verursachter KRIT-SCH erhöht.",
+		"shortDesc": "Nachdem eine Figur einen Angriff ausgeführt hat, wird das Ziel mit **Verdacht** belegt. Die durch **Verdacht** verliehene Anfälligkeit wird erhöht und der von Figuren verursachte KRIT-SCH wird basierend auf der Stapelzahl erhöht.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671240"
+	},
 	"671260": {
 		"name": "Possenreißer von Anatta",
 		"desc": "Nachdem eine Figur einen Folgeangriff gestartet hat, besteht eine Grundchance von **150%**, das angegriffene Ziel für **2** Rd. mit 1 zufälligem Debuff zu belegen. Die möglichen Debuffs sind folgende: Reduzierung des verursachten SCH um **15%**, VTD-Reduzierung um **30%** und GES-Reduzierung um **20%**.",
@@ -4095,6 +4158,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "671340"
+	},
+	"671350": {
+		"name": "Feuermeister",
+		"desc": "Erhöht die max. LP von Figuren um **50%**. Für je **10** Pkt. verursachter tatsächlichen WDS-Reduzierung wird der **Tautropfen** aller Verbündeten um **3%** aufgeladen. Wenn Gegner mit Schwächebruch angegriffen werden, wird der **Tautropfen** aller Verbündeten um **6%** aufgeladen.",
+		"shortDesc": "Erhöht die max. LP von Figuren. Wenn tatsächliche WDS-Reduzierung verursacht wird oder Gegner mit Schwächebruch angegriffen werden, wird der **Tautropfen** aller Verbündeten aufgeladen.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671350"
 	},
 	"671360": {
 		"name": "Todesvernarrter",
@@ -4122,6 +4194,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "671400"
+	},
+	"671410": {
+		"name": "Erfundener Richter",
+		"desc": "Für je **1%** erhaltenen echten Aktionsvorzug der Figuren wird der verursachte SCH in der nächsten Runde um **2%** erhöht. Bis zu **100%** Aktionsvorzug wird gezählt. Bei gefrorenen Gegnern wird dieser Effekt zusätzlich um **50%** erhöht.",
+		"shortDesc": "Wenn Verbündete einen echten Aktionsvorzug erhalten, wird ihr verursachter SCH in der nächsten Runde erhöht. Der Effekt wird gegen eingefrorene Gegner zusätzlich erhöht.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671410"
 	},
 	"671450": {
 		"name": "Gerichtshof des Homomorphismus",
@@ -4168,9 +4249,18 @@
 		"rarity": "VeryRare",
 		"id": "671520"
 	},
+	"671570": {
+		"name": "Selbstverräter",
+		"desc": "Wenn eine Figur einem Gegner Schwächebruch zufügt, stellt sie **2** Fertigkeitspunkt(e) wieder her. Basierend auf der Gesamtzahl der Stapelungen von Kampfgeist aller Verbündeten wird für je **5** Stapelung(en) **Kampfgeist** der verursachte Bruch-SCH aller Verbündeten um **2%** erhöht.",
+		"shortDesc": "Verursacht eine Figur Schwächebruch bei einem Gegner, werden Fertigkeitspunkte wiederhergestellt. Je mehr Stapelungen **Kampfgeist** das Team besitzt, desto höher ist der von Figuren verursachte Bruch-SCH.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671570"
+	},
 	"671610": {
 		"name": "Erinnerung eines Künstlers",
-		"desc": "**Nachgeschmack** hat eine Grundchance von **3%**, zuvor nicht eingefrorene Gegner für **1** Rd. einzufrieren. Dieser Effekt kann bei jedem Angriff bis zu **5**-mal wirksam sein. Erhöht den SCH-Multiplikator von **Nachgeschmack** auf eingefrorene Gegner um **150%** des ursprünglichen SCH-Multiplikators.",
+		"desc": "**Nachgeschmack** hat eine Grundchance von **4%**, zuvor nicht eingefrorene Gegner für **1** Rd. einzufrieren. Dieser Effekt kann bei jedem Angriff auf jeden Gegner bis zu **5**-mal wirksam sein. Erhöht den SCH-Multiplikator von **Nachgeschmack** auf eingefrorene Gegner um **150%** des ursprünglichen SCH-Multiplikators.",
 		"shortDesc": "**Nachgeschmack** hat eine Chance, den Gegner einzufrieren. Der SCH-Multiplikator von **Nachgeschmack** wird auf eingefrorene Gegner erhöht.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4195,6 +4285,15 @@
 		"rarity": "VeryRare",
 		"id": "671670"
 	},
+	"671680": {
+		"name": "Taktik-Fanatiker",
+		"desc": "Erhöht den durch Folgeangriffe der Figuren verursachten KRIT-SCH um **100%**. Ultimates, die mit **Gehirn im Tank** eingesetzt werden und Gegnern SCH zufügen, werden als Folgeangriffe betrachtet.",
+		"shortDesc": "Erhöht den durch Folgeangriffe der Figuren verursachten KRIT-SCH. Ultimates, die mit **Gehirn im Tank** eingesetzt werden, werden als Folgeangriffe betrachtet.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671680"
+	},
 	"671700": {
 		"name": "Drohne des Unheils",
 		"desc": "Wenn eine Figur einen Schild erhält, wird bei **2** zufälligen Gegnern 1 **Spore** verursacht. Erhöht den SCH-Multiplikator von **Sporen** um **75%** des ursprünglichen Multiplikators.",
@@ -4204,9 +4303,18 @@
 		"rarity": "VeryRare",
 		"id": "671700"
 	},
+	"671730": {
+		"name": "Überreste des Unheils",
+		"desc": "Jedes Mal, wenn 1 Fertigkeitspunkt verbraucht wird oder überschüssig ist, erhalten alle Verbündeten 1 Stapelung „Honigtau“, bis zu **10** Stapelung(en). Nachdem eine Figur einen Angriff ausgeführt hat, werden alle ihre Stapelungen von Honigtau verbraucht. Für jede verbrauchte Stapelung verursacht sie zusätzlichen SCH in Höhe von **80%** der max. LP. Dieser Angriff wird als Standardangriff-SCH betrachtet.",
+		"shortDesc": "Jedes Mal, wenn 1 Fertigkeitspunkt verbraucht wird oder überschüssig ist, verursachen alle Verbündeten bei ihrem nächsten Angriff basierend auf ihren max. LP zusätzlichen Standardangriff-SCH.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671730"
+	},
 	"671740": {
 		"name": "Drohendes Unheil",
-		"desc": "Nachdem eine Figur einen Angriff ausgeführt hat, wird ein zufälliges angegriffenes Ziel mit **Sporen** belegt. Wenn Verbündete **1**/**2**/**3**-mal oder mehr hintereinander eine Aktion ausführen, wird die hinzugefügte Anzahl von **Sporen** zu **2**/**4**/**6**.",
+		"desc": "Nachdem eine Figur einen Angriff ausgeführt hat, wird ein zufälliges angegriffenes Ziel mit **Sporen** belegt. Wenn Verbündete **1**/**2**/**3**-mal oder mehr hintereinander eine Aktion ausführen, wird die hinzugefügte Anzahl von **Sporen** zu **4**/**5**/**6**.",
 		"shortDesc": "Nachdem eine Figur einen Angriff ausgeführt hat, wird ein zufälliges angegriffenes Ziel mit **Sporen** belegt. Je mehr aufeinanderfolgende Aktionen Verbündete ausführen, desto höher wird die hinzugefügte Anzahl von **Sporen**.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4221,6 +4329,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "671780"
+	},
+	"671800": {
+		"name": "Pflegearbeiter der Astralökologie",
+		"desc": "Erhöht den von Gegnern erlittenen Ultimate-SCH um **75%**. Wenn Figuren mit Schild angegriffen werden, wird **Gehirn im Tank** um **12%** aufgeladen.",
+		"shortDesc": "Erhöht den von Gegnern erlittenen Ultimate-SCH. Wenn Figuren mit Schild angegriffen werden, wird **Gehirn im Tank** aufgeladen.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671800"
 	},
 	"671820": {
 		"name": "Bauklotzmeister",
@@ -4257,6 +4374,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672010"
+	},
+	"672020": {
+		"name": "Hüter des Mausoleums",
+		"desc": "Erhöht den Effekt-WDS von Figuren um **25%** und ihren verursachten **Beben-SCH** um **50%**. Beim Abwehren von erlittenen Debuffs wird dem Ziel Beben-SCH in Höhe von **400%** der aktuellen Schildmenge zugefügt.",
+		"shortDesc": "Erhöht den Effekt-WDS von Figuren und den verursachten **Beben-SCH**. Beim Abwehren von erlittenen Debuffs wird dem Ziel **Beben-SCH** zugefügt.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672020"
 	},
 	"672030": {
 		"name": "Planetensäuberer",
@@ -4303,6 +4429,15 @@
 		"rarity": "VeryRare",
 		"id": "672140"
 	},
+	"672150": {
+		"name": "Reinigender",
+		"desc": "Wenn die aktuellen LP von Gegnern **60%** ihrer max. LP übersteigen, wird die Dauer von Gefroren bei ihnen um 1 Rd. verlängert. Erhöht den von eingefrorenen Gegnern erlittenen SCH um **30%**.",
+		"shortDesc": "Wenn der LP-Prozentsatz von Gegnern **60%** übersteigt, wird die Dauer von Gefroren bei ihnen um 1 Rd. verlängert. Erhöht den von eingefrorenen Gegnern erlittenen SCH.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672150"
+	},
 	"672160": {
 		"name": "Biograf",
 		"desc": "Verursacht nach dem Angriff auf eingefrorene Gegner 1-mal **Nachgeschmack-SCH** in Höhe von **240%** des ANG der Figur.",
@@ -4329,6 +4464,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672200"
+	},
+	"672230": {
+		"name": "Doktoren des Chaos",
+		"desc": "Erhöht den von Figuren verursachten DoT um **50%**. Gegner werden beim Kampfeintritt mit „Beobachtung“ belegt. Zu Beginn der Runde erleiden sie Feuer-DoT in Höhe von **300%** der gesamten max. LP aller Verbündeten.",
+		"shortDesc": "Erhöht den von Figuren verursachten DoT. Gegner werden beim Kampfeintritt mit „Beobachtung“ belegt. Zu Beginn der Runde erleiden sie basierend auf den gesamten max. LP aller Verbündeten Feuer-DoT.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672230"
 	},
 	"672240": {
 		"name": "Sündendurstiger",
@@ -4359,7 +4503,7 @@
 	},
 	"672340": {
 		"name": "Flügelschwinger",
-		"desc": "Wenn ein Gegner besiegt wird, wird die Aufladeeffizienz von **Tautropfen** um **10%** erhöht. Dieser Effekt ist bis zu **10**-fach stapelbar. Außerdem werden bei allen Verbündeten LP in Höhe von **50%** ihrer max. LP wiederhergestellt.",
+		"desc": "Wenn ein Gegner besiegt wird, wird die Aufladeeffizienz von **Tautropfen** um **20%** erhöht. Dieser Effekt ist bis zu **4**-fach stapelbar. Außerdem werden bei allen Verbündeten LP in Höhe von **50%** ihrer max. LP wiederhergestellt.",
 		"shortDesc": "Wenn ein Gegner besiegt wird, wird die Aufladeeffizienz von **Tautropfen** erhöht. Außerdem werden bei allen Verbündeten LP wiederhergestellt.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4375,6 +4519,15 @@
 		"rarity": "VeryRare",
 		"id": "672350"
 	},
+	"672360": {
+		"name": "Merkwürdiger Mediziner",
+		"desc": "Erhöht die Obergrenze von **Tautropfen** um **50%**. Stellt nach dem Ausführen von Folgeangriffen bei der Figur mit dem niedrigsten LP-Prozentsatz LP in Höhe von **10%** ihrer max. LP wieder her.",
+		"shortDesc": "Erhöht die Obergrenze von **Tautropfen**. Stellt nach dem Ausführen von Folgeangriffen die LP der Figur mit dem niedrigsten LP-Prozentsatz wieder her.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672360"
+	},
 	"672370": {
 		"name": "Symbiose",
 		"desc": "Erhöht die Wiederherstellung von Figuren um **35%**. Nachdem Verbündeten Heilung geleistet wurde, besteht eine feste Chance von **50%**, 1 Fertigkeitspunkt wiederherzustellen. Dieser Effekt kann höchstens 1-mal pro Aktion der Figur ausgelöst werden.",
@@ -4386,7 +4539,7 @@
 	},
 	"672371": {
 		"name": "Baum des Verderbens",
-		"desc": "Erhöht die bewirkte Heilung von Figuren um **30%**. Nachdem sie Verbündete geheilt haben, wird ein zufälliger Gegner mit **1** **Spore(n)** belegt.",
+		"desc": "Erhöht die bewirkte Heilung von Figuren um **30%**. Nachdem sie Verbündete geheilt haben, wird ein zufälliger Gegner mit **2** **Spore(n)** belegt.",
 		"shortDesc": "Erhöht die bewirkte Heilung von Figuren. Nachdem sie Verbündete geheilt haben, wird ein zufälliger Gegner mit **Sporen** belegt.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4419,6 +4572,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672430"
+	},
+	"672470": {
+		"name": "Umherstreifender Wanderer",
+		"desc": "Erhöht den Standardangriff- und Fertigkeits-KRIT-SCH von Figuren um **100%**. Überschüssige Stapelungen **Kritischer Boost** werden zu Beginn der Runde einer Figur erneut erhalten.",
+		"shortDesc": "Erhöht den Standardangriff- und Fertigkeits-KRIT-SCH von Figuren. Überschüssige Stapelungen **Kritischer Boost** werden zu Beginn der Runde einer Figur erneut erhalten.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672470"
 	},
 	"672480": {
 		"name": "Probender",
@@ -4455,6 +4617,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672530"
+	},
+	"672540": {
+		"name": "Stromaufwärts mit dem Sand",
+		"desc": "Erhöht die Schwächebruch-Effizienz der Figuren um **20%**. Nach dem Verursachen von Schwächebruch wird ihre GES für **3** Rd. um **25%** erhöht.",
+		"shortDesc": "Erhöht die Schwächebruch-Effizienz von Figuren. Erhöht nach dem Schwächebruch eines Gegners ihre GES.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672540"
 	},
 	"672580": {
 		"name": "Feuerschmied",
@@ -4501,6 +4672,24 @@
 		"rarity": "VeryRare",
 		"id": "672670"
 	},
+	"672680": {
+		"name": "Schöpfungssänger",
+		"desc": "Nachdem Figuren ihren Ultimate eingesetzt haben, wird **2**-mal **Nachgeschmack-SCH** in Höhe von **150%** des ANG der Figur nach dem nächsten Angriff verursacht.",
+		"shortDesc": "Nachdem Figuren ihren Ultimate eingesetzt haben, wird nach ihrem nächsten Angriff **Nachgeschmack-SCH** verursacht.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672680"
+	},
+	"672700": {
+		"name": "Überreste des Phantoms",
+		"desc": "Erhöht den von Figuren verursachten Standardangriff- und Fertigkeits-SCH um **60%**. Wenn **Sporen** platzen, wird der verursachte SCH um **100%** der gesamten Schildmenge aller Verbündeten erhöht.",
+		"shortDesc": "Erhöht den von Figuren verursachten Standardangriff- und Fertigkeits-SCH. Wenn **Sporen** platzen, wird der verursachte SCH basierend auf der gesamten Schildmenge aller Verbündeten erhöht.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672700"
+	},
 	"672710": {
 		"name": "Drohne des Phantoms",
 		"desc": "Erhöht den von Gegnern erlittenen **Sporen-SCH** um **35%**. Reduziert für jede Stapelung **Spore** ihren Effekt-WDS um **10%**.",
@@ -4530,12 +4719,21 @@
 	},
 	"672750": {
 		"name": "Drohne des Sternenbrechers",
-		"desc": "Erhöht den von Figuren verursachten Standardangriff-SCH um **50%**. Wenn eine Figur ihren Standardangriff einsetzt und ihr LP-Prozentsatz **50%** oder mehr beträgt, werden LP in Höhe von **5%** ihrer max. LP verbraucht und 1 zusätzlicher Fertigkeitspunkt wiederhergestellt.",
+		"desc": "Erhöht den von Figuren verursachten Standardangriff-SCH um **80%**. Wenn eine Figur ihren Standardangriff einsetzt und ihr LP-Prozentsatz **50%** oder mehr beträgt, werden LP in Höhe von **5%** ihrer max. LP verbraucht und 1 zusätzlicher Fertigkeitspunkt wiederhergestellt.",
 		"shortDesc": "Der Standardangriff-SCH von Figuren wird erhöht. Wenn eine Figur ihren Standardangriff einsetzt und ihr LP-Prozentsatz **50%** oder mehr beträgt, werden LP verbraucht und Fertigkeitspunkte wiederhergestellt.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672750"
+	},
+	"672810": {
+		"name": "Candelagraph-Kontrolleur",
+		"desc": "Wenn Figuren ihren Ultimate einsetzen, wird für je **10** Pkt. verbrauchter Energie ihr ANG um **4%** und ihre Effekt-Trefferrate um **2%** erhöht. Dieser Effekt ist bis zu **20**-fach stapelbar und hält **2** Rd. an. Jeder Einsatz des Ultimates wird als mindestens **80** Pkt. verbrauchte Energie betrachtet.",
+		"shortDesc": "Wenn Figuren ihren Ultimate einsetzen, werden ihr ANG und ihre Effekt-Trefferrate basierend auf der verbrauchten Energie erhöht.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672810"
 	},
 	"672840": {
 		"name": "Schreiberling",
@@ -4566,7 +4764,7 @@
 	},
 	"672870": {
 		"name": "Kolchis",
-		"desc": "Mit jedem Fertigkeitspunkt, den eine Figur verbraucht, wird ihr verursachter Ultimate-SCH um **45%** erhöht, bis zu **135%**. Dieser Effekt hält bis nach dem Einsatz des Ultimates an.",
+		"desc": "Mit jedem Fertigkeitspunkt, den eine Figur verbraucht, wird ihr verursachter Ultimate-SCH um **65%** erhöht, bis zu **130%**. Dieser Effekt hält bis nach dem Einsatz des Ultimates an.",
 		"shortDesc": "Je mehr Fertigkeitspunkte eine Figur verbraucht, desto mehr Ultimate-SCH verursacht sie.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",

@@ -884,7 +884,7 @@
 		"id": "612340"
 	},
 	"612341": {
-		"name": "Mortals of the Buddha-Field",
+		"name": "The Blessed Many",
 		"desc": "When a character's HP is full, increases the Charging Efficiency for **Dewdrop** by **120%**.",
 		"shortDesc": "When a character's HP is full, **Dewdrop**'s Charging Efficiency increases.",
 		"battleDesc": "When a character's HP is full, increases the Charging Efficiency for **Dewdrop** by **120%**.",
@@ -3882,12 +3882,21 @@
 	},
 	"670010": {
 		"name": "City Restorer",
-		"desc": "Comet Nucleus appears in the Action Order: Each time it takes a turn, absorbs all allies' Shields, reducing their values to 1, and turning the absorbed values into its own Shield. Then, it deals Physical DMG equal to **2500%** of its Shield value plus **1000%** **base DMG** to all enemies, with a **75%** base chance to Freeze enemies for **1** turn(s). When characters take damage, Comet Nucleus's Shield will be consumed first. When **Quake** DMG is triggered, **70%** of Comet Nucleus's Shield will be considered as the character's Shield.",
+		"desc": "Comet Nucleus appears in the Action Order: Each time it takes a turn, absorbs all allies' Shields, reducing their values to 1, and turning the absorbed values into its own Shield. Then, it deals Physical DMG equal to **2500%** of its Shield value plus **1000%** **base DMG** to all enemies, with a **100%** base chance to Freeze enemies for **1** turn(s). When characters take damage, Comet Nucleus's Shield will be consumed first. When **Quake** DMG is triggered, **80%** of Comet Nucleus's Shield will be considered as the character's Shield.",
 		"shortDesc": "A Comet Nucleus appears in the Action Order to block DMG for the team. During its action, it absorbs Shields from allies to deal Physical DMG to all enemies, with a chance to Freeze them.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "670010"
+	},
+	"670060": {
+		"name": "Heartless Giant",
+		"desc": "\"**Quake**\" DMG is considered as Follow-up ATK DMG. After a character launches Follow-up ATKs, all allies gain 1 \"Mechacore Component\" stack, up to **77** stack(s). After a character with a Shield is attacked, consumes all of their \"Mechacore Component\" to deal **7** instances(s) of random-Type \"**Quake**\" DMG equal to **177%** of the current Shield Effect. Every stack consumed increases this DMG by **7%**.",
+		"shortDesc": "\"**Quake**\" DMG is considered as Follow-up ATK DMG. After a character launches Follow-up ATKs, all allies gain the \"Mechacore Component\" state. After being attacked, consumes \"Mechacore Component\" to deal \"**Quake**\" DMG based on the amount consumed and the current Shield Effect.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670060"
 	},
 	"670140": {
 		"name": "Silent Hunter",
@@ -3907,6 +3916,15 @@
 		"rarity": "VeryRare",
 		"id": "670150"
 	},
+	"670210": {
+		"name": "Relative Tracer",
+		"desc": "When an enemy target is afflicted with \"**Suspicion**,\" Freeze, or DoT states, there is a **150%** base chance of Blasting the state to adjacent targets. When there are no adjacent targets, the state is Blasted to the original target. Each state can only be Blasted by the same target once in a single action. When one enemy target has Blasted a total of **20** time(s) or is defeated, deals Ice DMG equal to **1200%** **base DMG** to that target and adjacent targets, with a **60%** base chance to inflict Frozen that lasts for **1** turn(s).",
+		"shortDesc": "When an enemy target is afflicted with \"**Suspicion**,\" Freeze, or DoT states, there is a high chance of Blasting the state to adjacent targets. After Blasting multiple times, deals DMG to the target and adjacent targets, with a chance to inflict Frozen on them.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670210"
+	},
 	"670280": {
 		"name": "Self-Proof Institute",
 		"desc": "After **Suspicion** reaches **99** stacks, it will be consumed and turned into 1 stack of Self-Negation: Increases DoT dealt by attackers to this unit by **70%**. Each stack additionally increases DoT dealt by **10%**, stacking up to **50** time(s). At the start of an enemy's turn, they take Lightning DoT equal to **135%** of **base DMG** and cause adjacent targets to take Lightning DoT equal to **20%** of the original DMG multiplier. At **2** or more stacks: At the start of the turn, regenerates **20%** of **Brain in a Vat** for a random character. At **3** or more stacks: At the start of the turn, regenerates **10%** of **Brain in a Vat** for all allies.",
@@ -3915,6 +3933,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "670280"
+	},
+	"670320": {
+		"name": "Herb Plucker",
+		"desc": "Inflicts \"Panacea\" on enemy targets when they enter battle: When \"**Dewdrop**\" breaks, charges the attacked target's \"Panacea\" by **5%** of the Dewdrop's charge, up to **100%** of the sum of all characters' Max HP. At the start of the enemy target's turn, consumes the Charge value, deals Wind DoT equal to **200%** **base DMG**, and restores all allies' HP by **5%** of Max HP. For every Charge value that equals 1% of the sum of all characters' Max HP, increases this DMG by **8%** and the restored HP amount by **4%**.",
+		"shortDesc": "When enemy targets enter battle, they receive \"Panacea,\" which Charges when Dewdrop is broken. At the start of the enemy target's turn, deals DoT based on Charge percentage and restores HP to all allies.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670320"
 	},
 	"670350": {
 		"name": "Borisin",
@@ -3954,7 +3981,7 @@
 	},
 	"670580": {
 		"name": "Annihilation Scholar",
-		"desc": "After characters are attacked, receives **2** Annihilation Form(s). After launching a Counter, receives **1** Annihilation Form(s). When a character possesses **6** Annihilation Form(s), removes all Annihilation Forms from them and increases their Ultimate DMG dealt by **150%** until the end of the turn, as well as dealing Additional DMG equal to **650%** of the character's ATK to all enemies. This DMG is considered as Ultimate DMG.",
+		"desc": "After characters are attacked, receives **2** Annihilation Form(s). After launching a Counter, receives **1** Annihilation Form(s). When a character possesses **6** Annihilation Form(s), removes all Annihilation Forms from them and increases their Ultimate DMG dealt by **150%** for **2** turn(s), as well as dealing Additional DMG equal to **650%** of the character's ATK to all enemies. This DMG is considered as Ultimate DMG.",
 		"shortDesc": "After characters are attacked or have launched a Counter, they receive Annihilation Form(s). When characters possess **6** Annihilation Form(s), removes all Annihilation Forms and increases the DMG dealt by Ultimate, as well as dealing Ultimate DMG to all enemies.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -3979,9 +4006,18 @@
 		"rarity": "VeryRare",
 		"id": "670640"
 	},
+	"670700": {
+		"name": "Star-Molding Worm",
+		"desc": "Basic ATK and Skill DMG taken by enemy targets increase by **100%**. \"Hivespawn\" appears on the Action Order: when ally targets gain or consume Skill Points, \"Hivespawn\" gains 1 Hits Per Action for the next attack. At the start of the turn, \"Hivespawn\" deals Wind DMG equal to **500%** **base DMG** to one random enemy for each Hit Per Action, and grants a Shield equal to **3%** of respective Max HP for all allies. \"Hivespawn\"'s Hits Per Action will not be less than **10**.",
+		"shortDesc": "Basic ATK and Skill DMG taken by enemy targets Increase. A \"Hivespawn\" countdown appears on the Action Order. Using an attack, consuming Skill Points, or recovering Skill Points at the start of the turn will increase its Hits Per Action. After attacking, provides a Shield to all allies based on Hits Per Action.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "670700"
+	},
 	"670720": {
 		"name": "Child of Calamity",
-		"desc": "Enemy target obtains Borehole when entering battle: Borehole will record all **Spores** numbers accumulated by the holder. After accumulating **18** Spores, deals Quantum DMG to all enemies equal to **1800%** of **base DMG**. For every debuff the enemy has, this DMG increases by **10%**, up to an increase of **100%**. Then, the accumulated spore count is cleared.",
+		"desc": "Enemy target obtains Borehole when entering battle: Borehole will record all **Spores** numbers accumulated by the holder. After accumulating **18** Spores, deals Quantum DMG to all enemies equal to **2200%** of **base DMG**. For every debuff the enemy has, this DMG increases by **10%**, up to an increase of **100%**. Then, the accumulated spore count is cleared.",
 		"shortDesc": "Enemy target obtains Borehole when entering battle: Borehole will record all **Spores** accumulated by the holder and deals Quantum DMG to all enemies. The more debuffs active, the higher the DMG.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -3999,7 +4035,7 @@
 	},
 	"670870": {
 		"name": "Aggregator",
-		"desc": "After allies use their Ultimates a total of **2** times, deals **2** instances of Wind DMG equal to **400%** of **base DMG** to a random enemy and applies **1** **Spore(s)** to it. This DMG will deal DMG equal to **30%** of the original DMG to adjacent enemies. Every time this effect is triggered, increases the number of instances in this battle by 1 and increases the Ultimate DMG dealt by characters by **5%**, to a maximum of **20** times.",
+		"desc": "After allies use their Ultimates a total of **2** times, deals **2** instances of Wind DMG equal to **400%** of **base DMG** to a random enemy and applies **1** **Spore(s)** to it. This DMG will deal DMG equal to **30%** of the original DMG to adjacent enemies. Every time this effect is triggered, increases the number of instances in this battle by 1 and increases the Ultimate DMG dealt by characters by **7%**, to a maximum of **20** times.",
 		"shortDesc": "After a total of **2** Ultimates are used across all allies, deals multiple instances of Wind DMG and apply **Spores** to a random enemy target and their adjacent units. Each time this effect is triggered, the number of instances for this DMG increases by 1 in this battle and increases the Ultimate DMG dealt by the characters.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4024,6 +4060,15 @@
 		"rarity": "VeryRare",
 		"id": "671030"
 	},
+	"671060": {
+		"name": "Sentimental Guardian",
+		"desc": "The Follow-up ATK DMG taken by enemy target increases by **60%**. After the character defeats the enemy target, all allies will nullify all DMG received except for DoT. This effect is removed after allies are attacked, lasting for **2** turn(s).",
+		"shortDesc": "The Follow-up ATK DMG taken by enemy target increases. After the character defeats the enemy target, all allies will nullify all DMG received except for DoT. This effect is removed after allies are attacked.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671060"
+	},
 	"671080": {
 		"name": "Civilization Correspondent",
 		"desc": "When characters use their Ultimate, they gain a Shield that can offset DMG equal to **30%** of their Max HP, lasting for **3** turn(s). After dealing Ultimate DMG with an attack, deals **Quake** DMG equal to **600%** of the character's current Shield Effect to the attacked targets.",
@@ -4033,10 +4078,19 @@
 		"rarity": "VeryRare",
 		"id": "671080"
 	},
+	"671120": {
+		"name": "Bookwriter",
+		"desc": "When enemy targets are Frozen, inflicts **10** stack(s) of \"**Suspicion**.\" After suffering DoT, there is a **20%** base chance the target will enter the Frozen state for **1** turn(s). Every enemy target can only enter the Frozen state through this method 1 time every **2** turn(s).",
+		"shortDesc": "When enemy targets are Frozen, apply \"**Suspicion**\" on them. DoT has a chance to inflict Freeze on enemy targets.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671120"
+	},
 	"671130": {
 		"name": "Memory Doctor",
-		"desc": "After a character launches an attack, **Dewdrop** will additionally deal **Dewdrop** DMG 1 time equal to **250%** of the original **Dewdrop** DMG multiplier to all Frozen enemy targets. Every Frozen enemy target additionally increases the DMG multiplier by **25%**.",
-		"shortDesc": "After a character uses an attack, **Dewdrop** will additionally deal DMG to all Frozen enemy targets 1 time. The more enemy targets are Frozen, the higher the DMG.",
+		"desc": "\"**Dewdrop**\"'s Charging Efficiency increases by **50%**. After a character launches an attack, \"**Dewdrop**\" will additionally deal \"**Dewdrop**\" DMG 1 time equal to **250%** of the original \"**Dewdrop**\" DMG multiplier to all Frozen enemy targets.",
+		"shortDesc": "\"**Dewdrop**\"'s Charging Efficiency increases. After a character launches an attack, \"**Dewdrop**\" will additionally deal DMG 1 time to all Frozen enemy targets.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
@@ -4044,7 +4098,7 @@
 	},
 	"671170": {
 		"name": "Wandering Meme",
-		"desc": "Increases characters' Basic ATK DMG dealt by **160%**. When using Basic ATK to launch an attack, enemies in the Weakness Broken state will be considered Frozen.",
+		"desc": "Increases characters' Basic ATK DMG dealt by **200%**. When using Basic ATK to launch an attack, enemies in the Weakness Broken state will be considered Frozen.",
 		"shortDesc": "Characters' Basic ATK DMG dealt increases. When using a Basic ATK to attack, Weakness Broken enemies will be considered as being Frozen.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4078,6 +4132,15 @@
 		"rarity": "VeryRare",
 		"id": "671230"
 	},
+	"671240": {
+		"name": "Executor of Vengeance",
+		"desc": "After a character uses an attack, inflicts **3** stack(s) of \"**Suspicion**\" on the attacked target. Increases Vulnerability provided by \"**Suspicion**\" by **20%**. When characters hit enemy targets afflicted with \"**Suspicion**,\" increase CRIT DMG dealt based on **80%** of the Vulnerability provided by \"**Suspicion**.\"",
+		"shortDesc": "After a character uses an attack, inflicts \"**Suspicion**\" to the attacked target. Vulnerability provided by \"**Suspicion**\" increases, and CRIT DMG dealt by characters increases based on its stack.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671240"
+	},
 	"671260": {
 		"name": "Jester of Anatta",
 		"desc": "When a character launches a follow-up attack, there is a **150%** base chance to apply 1 random debuff on the attacked target, lasting for **2** turn(s). The random debuffs include: Decrease DMG dealt by **15%**, decrease DEF by **30%**, and decrease SPD by **20%**.",
@@ -4095,6 +4158,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "671340"
+	},
+	"671350": {
+		"name": "Pyromancer",
+		"desc": "Characters' Max HP increases by **50%**. For every **10** of actual Toughness Reduction dealt, Charges all allies' \"**Dewdrop**\" by **3%**. When attacking Weakness Broken enemy targets, charges all allies' \"**Dewdrop**\" by **6%**.",
+		"shortDesc": "Characters' Max HP increases. When dealing actual Toughness Reduction or when attacking Weakness Broken enemy targets, charges all allies' \"**Dewdrop**.\"",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671350"
 	},
 	"671360": {
 		"name": "Graveward Lunatic",
@@ -4122,6 +4194,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "671400"
+	},
+	"671410": {
+		"name": "Fiction's Arbiter",
+		"desc": "Increases DMG dealt in the next turn by **2%** for each **1%** actual action advance effect the character receives, up to a max of **100%** action advance. This effect is additionally increased against Frozen enemy targets by **50%**.",
+		"shortDesc": "When an ally target is subjected to the actual advance action effect, their DMG dealt in the next turn increases. The effect additionally increases against Frozen enemy targets.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671410"
 	},
 	"671450": {
 		"name": "Court of Homogeneity",
@@ -4168,9 +4249,18 @@
 		"rarity": "VeryRare",
 		"id": "671520"
 	},
+	"671570": {
+		"name": "Self-Betrayer",
+		"desc": "When a character Breaks an enemy target's Weakness, recovers **2** Skill Point(s). Based on the total number of Grit stacks on all allies, for every **5** stack(s) of \"**Grit**,\" increases all allies' Break DMG dealt by **2%**.",
+		"shortDesc": "When a character Breaks an enemy target's Weakness, recovers Skill Points. The higher the team \"**Grit**\" stacks, the higher the Break DMG dealt by characters.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671570"
+	},
 	"671610": {
 		"name": "Reminiscence Artist",
-		"desc": "**Aftertaste** has a **3%** base chance of causing enemy targets that are not Frozen to become Frozen, lasting for **1** turn(s). Each attack can cause this effect to be calculated for a max of **5** time(s). Increases the DMG multiplier of **Aftertaste** against Frozen enemies by **150%** of the original multiplier.",
+		"desc": "\"**Aftertaste**\" has a **4%** base chance of causing enemy targets that are not Frozen to become Frozen, lasting for **1** turn(s). Each attack against each enemy target can cause this effect to be calculated for a max of **5** time(s). Increases the DMG multiplier of \"**Aftertaste**\" against Frozen enemies by **150%** of the original multiplier.",
 		"shortDesc": "**Aftertaste** DMG has a chance of Freezing enemy targets. **Aftertaste** DMG multiplier increases against Frozen enemies.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4195,6 +4285,15 @@
 		"rarity": "VeryRare",
 		"id": "671670"
 	},
+	"671680": {
+		"name": "Maniacal Chess Player",
+		"desc": "Increase CRIT DMG dealt by characters' Follow-up ATKs by **100%**. When using \"**Brain in a Vat**\" to launch Ultimate and deal DMG to enemy targets, it is considered as a Follow-up ATK.",
+		"shortDesc": "CRIT DMG dealt by characters' Follow-up ATKs increases. Ultimates used via \"**Brain in a Vat**\" is considered to be Follow-up ATKs.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671680"
+	},
 	"671700": {
 		"name": "Calamity Worker",
 		"desc": "When a character gains a Shield, causes **2** random enemy target(s) to gain 1 **Spore**. **Spore's** DMG multiplier increases by **75%** of the original multiplier.",
@@ -4204,9 +4303,18 @@
 		"rarity": "VeryRare",
 		"id": "671700"
 	},
+	"671730": {
+		"name": "Calamity Remnant",
+		"desc": "Each time 1 Skill Point is consumed or overflowed, all allies gain 1 stack of \"Honeydew,\" up to **10** stack(s). After a character uses an attack, they consume all their \"Honeydew\" stacks. For each stack consumed, deals Additional DMG equal to **80%** Max HP. This attack is considered as Basic ATK DMG.",
+		"shortDesc": "Each time 1 Skill Point is consumed or overflowed, all allies additionally deal Basic ATK DMG in their next attack based on their Max HP.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671730"
+	},
 	"671740": {
 		"name": "Diabolical Worker",
-		"desc": "After a character uses an attack, apply **Spores** to random enemy targets that were attacked. When allies take consecutive action for **1** / **2** / **3** times or more, the added number of **Spores** becomes **2** / **4** / **6**.",
+		"desc": "After a character uses an attack, apply **Spores** to random enemy targets that were attacked. When allies take consecutive action for **1** / **2** / **3** times or more, the added number of **Spores** becomes **4** / **5** / **6**.",
 		"shortDesc": "After a character uses an attack, apply **Spores** to random enemy targets that were attacked. The more consecutive actions allies take, the more **Spores** will be applied.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4221,6 +4329,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "671780"
+	},
+	"671800": {
+		"name": "Astral Ecology Care Worker",
+		"desc": "Increases Ultimate DMG taken by enemy targets by **75%**. Charges \"**Brain in a Vat**\" by **12%** when Shielded characters are attacked.",
+		"shortDesc": "Increases Ultimate DMG taken by enemy targets. Charges \"**Brain in a Vat**\" when Shielded characters are attacked.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "671800"
 	},
 	"671820": {
 		"name": "Block Builder",
@@ -4257,6 +4374,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672010"
+	},
+	"672020": {
+		"name": "Tomb Keeper",
+		"desc": "Characters' Effect RES increases by **25%** and \"**Quake**\" DMG dealt increases by **50%**. When resisting debuffs inflicted on them, deals Quake DMG equal to **400%** of the current Shield Effect to the target.",
+		"shortDesc": "Characters' Effect RES increases and \"**Quake**\" DMG dealt increases. When resisting debuffs inflicted on them, deals \"**Quake**\" DMG to the target.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672020"
 	},
 	"672030": {
 		"name": "Planetary Purifier",
@@ -4303,6 +4429,15 @@
 		"rarity": "VeryRare",
 		"id": "672140"
 	},
+	"672150": {
+		"name": "Purifier",
+		"desc": "When enemy target's current HP is greater than **60%** of Max HP, their duration of being Frozen increases by 1 turn. DMG received by Frozen enemy targets increases by **30%**.",
+		"shortDesc": "When enemy target's HP percentage is greater than **60%**, their duration of being Frozen increases by 1 turn. DMG received by Frozen enemy targets increases.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672150"
+	},
 	"672160": {
 		"name": "Biographer",
 		"desc": "After a character attacks a Frozen target, deals **Aftertaste** DMG 1 time equal to **240%** of the character's ATK to the target.",
@@ -4329,6 +4464,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672200"
+	},
+	"672230": {
+		"name": "Doctor of Chaos",
+		"desc": "Increases DoT dealt by characters by **50%**. When enemy targets enter battle, they become afflicted with the \"Observed\" state and receive Fire DoT equal to **300%** of the total Max HP of all allies at the start of the turn.",
+		"shortDesc": "DoT dealt by characters increases. When enemy targets enter battle, they become afflicted with the \"Observed\" state and receive Fire DoT based on the total Max HP of all allies at the start of the turn.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672230"
 	},
 	"672240": {
 		"name": "Sin Thirster",
@@ -4359,7 +4503,7 @@
 	},
 	"672340": {
 		"name": "Wingweaver",
-		"desc": "When an enemy target is defeated, increase the Charging Efficiency of **Dewdrop** by **10%** up to a maximum of **10** stack(s). Also restores HP for all allies equal to **50%** of their respective Max HP.",
+		"desc": "When an enemy target is defeated, increase the Charging Efficiency of **Dewdrop** by **20%** up to a maximum of **4** stack(s). Also restores HP for all allies equal to **50%** of their respective Max HP.",
 		"shortDesc": "When an enemy target is defeated, increases the Charging Efficiency of **Dewdrop**. Also, restores HP for all allies.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4375,6 +4519,15 @@
 		"rarity": "VeryRare",
 		"id": "672350"
 	},
+	"672360": {
+		"name": "Peculiar Physician",
+		"desc": "Increases maximum limit of \"**Dewdrop**\" by **50%**. After characters launch Follow-up ATKs, restores HP equal to **10%** of Max HP to the character with the lowest current HP percentage.",
+		"shortDesc": "Maximum limit of \"**Dewdrop**\" increases. After characters launch Follow-up ATKs, restores HP to the character with the lowest HP percentage.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672360"
+	},
 	"672370": {
 		"name": "Symbiote",
 		"desc": "Increases character's HP restoration by **35%**. After providing healing to allies, there is a **50%** fixed chance to recover 1 Skill Point. This effect can trigger 1 time per character action.",
@@ -4386,7 +4539,7 @@
 	},
 	"672371": {
 		"name": "Tree of Discard",
-		"desc": "Increases characters' Outgoing Healing by **30%**. After providing healing to an allied target, inflicts **1** **Spore(s)** to a random enemy target.",
+		"desc": "Increases characters' Outgoing Healing by **30%**. After providing healing to an allied target, inflicts **2** **Spore(s)** to a random enemy target.",
 		"shortDesc": "Increases characters' Outgoing Healing. After providing healing to an allied target, inflict **Spores** to a random enemy target.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
@@ -4419,6 +4572,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672430"
+	},
+	"672470": {
+		"name": "Departing Wanderer",
+		"desc": "Increases characters' Basic ATK and Skill CRIT DMG dealt by **100%**. The excess \"**Critical Boost**\" stacks will be regained at the start of the character's turn.",
+		"shortDesc": "Characters' Basic ATK and Skill CRIT DMG increase. The excess \"**Critical Boost**\" stacks will be regained at the start of the character's turn.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672470"
 	},
 	"672480": {
 		"name": "Rehearser",
@@ -4455,6 +4617,15 @@
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672530"
+	},
+	"672540": {
+		"name": "Sand Retrograder",
+		"desc": "Increases characters' Weakness Break Efficiency by **20%**. After Weakness Breaking an enemy target, increases SPD by **25%**, lasting for **3** turn(s).",
+		"shortDesc": "Increases characters' Weakness Break Efficiency. After Weakness Breaking an enemy target, increases SPD.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672540"
 	},
 	"672580": {
 		"name": "Firesmith",
@@ -4501,6 +4672,24 @@
 		"rarity": "VeryRare",
 		"id": "672670"
 	},
+	"672680": {
+		"name": "Creation Vocalist",
+		"desc": "After characters use their Ultimate, then after their next attack, deals **2** instance(s) of \"**Aftertaste**\" DMG to the attacked target, with each instance equal to **150%** of the character's ATK.",
+		"shortDesc": "After characters use their Ultimates, deal \"**Aftertaste**\" DMG after their next attack.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672680"
+	},
+	"672700": {
+		"name": "Phantom Larva",
+		"desc": "Increases Basic ATK and Skill DMG dealt by characters by **60%**. When \"**Spores**\" burst, the DMG dealt increases by **100%** of the total Collective Shield effect.",
+		"shortDesc": "Basic ATK and Skill DMG dealt by characters increase. When \"**Spore**\" burst, the DMG dealt increases based on the total Collective Shield effect.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672700"
+	},
 	"672710": {
 		"name": "Phantom Worker",
 		"desc": "The **Spore** DMG received by enemy targets increases by **35%**. Reduces enemies' Effect RES by **10%** for each **Spore** stack they have.",
@@ -4530,12 +4719,21 @@
 	},
 	"672750": {
 		"name": "Starcrusher Worker",
-		"desc": "The characters' Basic ATK DMG increases by **50%**. When a character uses a Basic ATK and their HP percentage is larger than or equal to **50%**, consumes HP equal to **5%** of their Max HP and additionally recovers 1 Skill Point.",
+		"desc": "The characters' Basic ATK DMG increases by **80%**. When a character uses a Basic ATK and their HP percentage is larger than or equal to **50%**, consumes HP equal to **5%** of their Max HP and additionally recovers 1 Skill Point.",
 		"shortDesc": "The Basic ATK DMG dealt by the characters increases. When a character uses Basic ATK and their HP percentage is larger than or equal to **50%**, they consume HP and additionally recover Skill Points.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
 		"rarity": "VeryRare",
 		"id": "672750"
+	},
+	"672810": {
+		"name": "Candelagraph Inspector",
+		"desc": "When characters use their Ultimate, for each **10** Energy consumed, increases ATK by **4%** and Effect Hit Rate by **2%**. This effect can stack up to **20** times, lasting for **2** turn(s). Each time an Ultimate is used, it will be considered as having consumed at least **80** Energy.",
+		"shortDesc": "When characters use Ultimate, their ATK and Effect Hit Rate increase based on the amount of Energy consumed.",
+		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
+		"shortIcon": "BgPathsKnight",
+		"rarity": "VeryRare",
+		"id": "672810"
 	},
 	"672840": {
 		"name": "Penman",
@@ -4566,7 +4764,7 @@
 	},
 	"672870": {
 		"name": "Kolchis",
-		"desc": "For every 1 Skill Point consumed by characters, increases their Ultimate DMG dealt by **45%**, up to a max of **135%** and lasting until after using the Ultimate.",
+		"desc": "For every 1 Skill Point consumed by characters, increases their Ultimate DMG dealt by **65%**, up to a max of **130%** and lasting until after using the Ultimate.",
 		"shortDesc": "The more Skill Points characters consume, the more Ultimate DMG they deal.",
 		"icon": "SpriteOutput/AvatarProfessionTattoo/Profession/BgPathsKnight.png",
 		"shortIcon": "BgPathsKnight",
