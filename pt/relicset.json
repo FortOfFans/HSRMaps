@@ -313,8 +313,8 @@
 		"setID": "112",
 		"two": "Aumenta o Dano Imaginário em **10%**.",
 		"twopc": "Aumenta o Dano Imaginário em <unbreak>#1[i]%</unbreak>.",
-		"four": "Ao atacar inimigos com penalidades, a Chance de CRIT do usuário aumenta em **10%**, e seu Dano CRIT aumenta em **20%** contra inimigos Aprisionados.",
-		"fourpc": "Ao atacar inimigos com penalidades, a Chance de CRIT do usuário aumenta em <unbreak>#1[i]%</unbreak>, e seu Dano CRIT aumenta em <unbreak>#2[i]%</unbreak> contra inimigos Aprisionados.",
+		"four": "Ao causar Dano a inimigos-alvo afligidos com penalidades, o usuário tem sua Chance de CRIT aumentada em **10%**. E quando ele causa Dano a inimigos-alvo afligidos com Aprisionamento, sua Chance de CRIT aumenta em **20%**.",
+		"fourpc": "Ao causar Dano a inimigos-alvo afligidos com penalidades, o usuário tem sua Chance de CRIT aumentada em <unbreak>#1[i]%</unbreak>. E quando ele causa Dano a inimigos-alvo afligidos com Aprisionamento, sua Chance de CRIT aumenta em <unbreak>#2[i]%</unbreak>.",
 		"params": [
 			[
 				0.1
@@ -623,6 +623,74 @@
 			]
 		],
 		"setIcon": "spriteoutput/itemfigures/71039.png",
+		"planarSet": false
+	},
+	"123": {
+		"name": "Herói da Melodia Triunfante",
+		"setID": "123",
+		"two": "Aumenta o ATQ em **12%**.",
+		"twopc": "Aumenta o ATQ em <unbreak>#1[i]%</unbreak>.",
+		"four": "Enquanto o Memoespírito do usuário está em campo, aumenta a VEL do usuário em **6%**. Quando o Memoespírito do usuário ataca, aumenta o Dano CRIT do usuário e do Memoespírito em **30%** por **2** rodada(s).",
+		"fourpc": "Enquanto o Memoespírito do usuário está em campo, aumenta a VEL do usuário em <unbreak>#1[i]%</unbreak>. Quando o Memoespírito do usuário ataca, aumenta o Dano CRIT do usuário e do Memoespírito em <unbreak>#2[i]%</unbreak> por <unbreak>#3[i]</unbreak> rodada(s).",
+		"params": [
+			[
+				0.12
+			],
+			[
+				0.06,
+				0.3,
+				2
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71040.png",
+		"planarSet": false
+	},
+	"124": {
+		"name": "Poetisa do Colapso Enlutada",
+		"setID": "124",
+		"two": "Aumenta o Dano Quântico causado em **10%**.",
+		"twopc": "Aumenta o Dano Quântico causado em <unbreak>#1[i]%</unbreak>.",
+		"four": "Reduz a VEL do usuário em **8%**. Antes de entrar em batalha, se a VEL do usuário estiver abaixo de **110**/**95**, aumenta a Chance de CRIT do usuário em **20%**/**32%**. Este efeito também se aplica no Memoespírito do usuário.",
+		"fourpc": "Reduz a VEL do usuário em <unbreak>#6[i]%</unbreak>. Antes de entrar em batalha, se a VEL do usuário estiver abaixo de <unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak>, aumenta a Chance de CRIT do usuário em <unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>. Este efeito também se aplica no Memoespírito do usuário.",
+		"params": [
+			[
+				0.1
+			],
+			[
+				-0.08,
+				110,
+				95,
+				0.2,
+				0.32,
+				0.08
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "QuantumAddedRatio",
+					"value": 0.1
+				}
+			],
+			[
+				{
+					"active": 4,
+					"type": "SpeedAddedRatio",
+					"value": -0.08
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71041.png",
 		"planarSet": false
 	},
 	"301": {

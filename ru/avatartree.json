@@ -19098,7 +19098,7 @@
 	},
 	"1224002": {
 		"name": "Учитель, пора пить чай!",
-		"description": "Выбирает одного союзника (кроме себя) в качестве Учителя и повышает его скорость на ****1[f1]%****. Только последний союзник, ставший целью навыка Март 7, может считаться её Учителем.\nИспользование базовой атаки или нанесение урона от 1 удара усиленной базовой атаки активирует один из следующих эффектов, который зависит от Пути Учителя:\nЭрудиция, Разрушение или Охота: наносит **дополнительный урон** сходного с Учителем типа, равный ****2[i]%**** от силы атаки Март 7.\nГармония, Небытие, Сохранение или Изобилие: урон стойкости этой атаки повышается на **3[i]%**.",
+		"description": "Выбирает одного союзника (кроме себя) в качестве Учителя и повышает его скорость на ****1[f1]%****. Только последний союзник, ставший целью навыка Март 7, может считаться её Учителем.\nИспользование базовой атаки или нанесение урона от 1 удара усиленной базовой атаки активирует один из следующих эффектов, который зависит от Пути Учителя:\nЭрудиция, Разрушение, Охота или Память: наносит **дополнительный урон** сходного с Учителем типа, равный ****2[i]%**** от силы атаки Март 7.\nГармония, Небытие, Сохранение или Изобилие: урон стойкости этой атаки повышается на **3[i]%**.",
 		"avatar": 1224,
 		"type": 2,
 		"pos": "Point02",
@@ -19551,7 +19551,7 @@
 	},
 	"1225002": {
 		"name": "Даруя благодать",
-		"description": "Фуга накладывает на выбранного союзника статус Молитва лисы и переходит в состояние Неистовый ожог на **1[i]** хода. Длительность этого состояния уменьшается на 1 ход в начале каждого хода Фуги, и статус Молитва лисы действует только на последнюю цель навыка Фуги.\nСтатус Молитва лисы повышает эффект пробития союзника на ****2[i]%**** и позволяет его атакам истощать стойкость противников без соответствующего типа уязвимости. Этот эффект равен **6[i]%** от изначального урона стойкости, и он не может складываться с другими эффектами, игнорирующими типы уязвимости цели.\nСостояние Неистовый ожог усиливает базовую атаку Фуги. Когда союзник со статусом Молитва лисы выполняет атаку, Фуги имеет **базовый шанс** **3[i]%** понизить защиту атакованного противника на ****4[i]%**** на **5[i]** хода.",
+		"description": "Фуга накладывает на выбранного союзника статус Молитва лисы и переходит в состояние Неистовый ожог на **1[i]** хода. Длительность этого состояния уменьшается на 1 ход в начале каждого хода Фуги, и статус Молитва лисы действует только на последнюю цель навыка Фуги.\nСтатус Молитва лисы повышает эффект пробития союзника на ****2[i]%**** и позволяет его атакам истощать стойкость противников без соответствующего типа уязвимости. Этот эффект равен **6[i]%** от изначального урона стойкости, и он не может складываться с другими эффектами, игнорирующими типы уязвимости цели.\nСостояние Неистовый ожог усиливает базовую атаку Фуги. Когда союзник со статусом Молитва лисы выполняет атаку, Фуга имеет **базовый шанс** **3[i]%** понизить защиту атакованного противника на ****4[i]%**** на **5[i]** хода.",
 		"avatar": 1225,
 		"type": 2,
 		"pos": "Point02",
@@ -26536,7 +26536,7 @@
 	},
 	"1317101": {
 		"name": "Свиток ниндзя: Грешный рай",
-		"description": "Пробитие уязвимости элитного или более сильного противника дополнительно восстанавливает **1** ед. заряда Раппы и **10** ед. её энергии.",
+		"description": "Пробитие уязвимости противника элитного ранга и выше дополнительно восстанавливает **1** ед. заряда Раппы и **10** ед. её энергии.",
 		"avatar": 1317,
 		"type": 3,
 		"pos": "Point06",
@@ -26845,6 +26845,991 @@
 		],
 		"baseSkill": [],
 		"id": "1317210"
+	},
+	"1401001": {
+		"name": "Понимаешь?",
+		"description": "Наносит выбранному противнику ледяной урон, равный ****1[i]%**** от силы атаки Великой Герты.",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Normal.png",
+		"shortIcon": "SkillIcon_1401_Normal",
+		"promotion": {
+			"2": 240000,
+			"110201": 3,
+			"110202": 8,
+			"110203": 11,
+			"111001": 6,
+			"111002": 7,
+			"111003": 7
+		},
+		"params": [
+			0.5,
+			3,
+			1,
+			0.3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140101
+		],
+		"id": "1401001"
+	},
+	"1401002": {
+		"name": "Открытие разума",
+		"description": "Наносит выбранному противнику ледяной урон, равный ****1[i]%**** от силы атаки Великой Герты, и накладывает на него **2[i]** ур. статуса Интерпретация. Наносит поражённой этим навыком цели и соседним целям ледяной урон, равный ****1[i]%**** от силы атаки Великой Герты. Этот эффект может повторяться 2 раза.",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_BP.png",
+		"shortIcon": "SkillIcon_1401_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			0.35,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140102,
+			140109
+		],
+		"id": "1401002"
+	},
+	"1401003": {
+		"name": "Говорила ведь, что это магия",
+		"description": "Перераспределяет количество уровней статуса Интерпретация всех противников и передаёт более высокое количество уровней этого статуса противнику элитного ранга и выше, а также наносит всем противникам ледяной урон, равный ****1[i]%**** от силы атаки Великой Герты. Использование сверхспособности повышает силу атаки Великой Герты на ****4[i]%**** на **5[i]** хода. После использования этого умения Великая Герта может действовать немедленно и получает 1 ур. статуса Вдохновение до макс. **6[i]** ур. Пока персонаж имеет этот статус, его навык усиливается до умения У меня появилась безумная идея.",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Ultra.png",
+		"shortIcon": "SkillIcon_1401_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			1,
+			2,
+			1,
+			0.4,
+			3,
+			4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140103
+		],
+		"id": "1401003"
+	},
+	"1401004": {
+		"name": "Отдай мне",
+		"description": "Когда противник вступает в бой, Великая Герта накладывает на него 1 ур. статуса Интерпретация. В начале каждой волны накладывает на случайного противника **6[i]** ур. статуса Интерпретация, отдавая предпочтение целям элитного ранга и выше. Пока основная цель усиленного навыка имеет статус Интерпретация, множитель наносимого ей и остальным целям урона повышается на ****1[f1]%**** и ****2[f1]%**** за каждый уровень статуса соответственно. Если количество персонажей Пути Эрудиции в отряде выше или равно 2, то этот эффект дополнительно повышается на ****1[f1]%**** и ****2[f1]%**** за каждый уровень статуса соответственно. Статус Интерпретация может складываться до **3[i]** раз. Использование усиленного навыка сбрасывает имеющийся у основной цели статус Интерпретация до 1 ур. Когда противник покидает поле боя или становится побеждён, статус Интерпретация в первую очередь передаётся цели элитного ранга и выше.",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Passive.png",
+		"shortIcon": "SkillIcon_1401_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			0.04,
+			0.02,
+			42,
+			1,
+			42,
+			25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140104
+		],
+		"id": "1401004"
+	},
+	"1401007": {
+		"name": "Взглянем на кое-что хорошее",
+		"description": "Использование техники повышает силу атаки Великой Герты в начале следующего боя на **1[i]%** на **2[i]** хода.\nЕсли в текущей локации есть обычные сундуки, то использование техники отмечает местоположение до **3[i]** обычных сундуков.\nЕсли использовать технику в Виртуальной вселенной или Расходящейся вселенной для начала боя, то в начале каждой волны персонаж наносит противникам ниже элитного ранга **истинный урон**, равный **4[i]%** от их макс. НР, а также наносит противникам элитного ранга и выше **истинный урон**, равный **5[i]%** от их макс. НР.",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Maze.png",
+		"shortIcon": "SkillIcon_1401_Maze",
+		"promotion": {},
+		"params": [
+			0.6,
+			2,
+			3,
+			0.99,
+			0.3,
+			25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			140107
+		],
+		"id": "1401007"
+	},
+	"1401101": {
+		"name": "Равнодушная честность",
+		"description": "Атаки союзников накладывают на поражённых противников 1 ур. статуса Интерпретация. После атаки Великая Герта восстанавливает **3** ед. энергии за каждого поражённого этой атакой противника до макс. 5 целей. Если при использовании усиленного навыка количество уровней имеющегося у основной цели статуса Интерпретация достигает **42**, то наносимый Великой Гертой урон повышается на **50%** до окончания текущей атаки.",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree1.png",
+		"shortIcon": "SkillIcon_1401_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110201": 3,
+			"110506": 1
+		},
+		"params": [
+			3,
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401101"
+	},
+	"1401102": {
+		"name": "Письмо из-за горизонта событий",
+		"description": "Если в начале боя количество персонажей Пути Эрудиции в отряде выше или равно 2, то крит. урон всех союзников повышается на **80%**. При подсчёте числа поражённых целей След Равнодушная честность засчитывает как минимум **3** цели. После атаки добавляет поражённой цели с наибольшим количеством уровней статуса Интерпретация **1** ур. этого статуса. Если атакующий - персонаж Пути Эрудиции, то цель дополнительно получает **2** ур. статуса Интерпретация.",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree2.png",
+		"shortIcon": "SkillIcon_1401_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110202": 5,
+			"110506": 1
+		},
+		"params": [
+			0.8,
+			3,
+			1,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401102"
+	},
+	"1401103": {
+		"name": "Изголодавшийся пейзаж",
+		"description": "Каждый раз, когда противник получает 1 ур. статуса Интерпретация, Великая Герта получает 1 ур. статуса Ответ до макс. **99** ур. Во время использования сверхспособности её множитель урона повышается на **1%** за каждый уровень статуса Ответ.",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree3.png",
+		"shortIcon": "SkillIcon_1401_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110203": 8,
+			"110506": 1
+		},
+		"params": [
+			0.01,
+			99
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401103"
+	},
+	"1401201": {
+		"name": "Усиление ледяного урона",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 2500,
+			"111001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1401201"
+	},
+	"1401202": {
+		"name": "Усиление атаки",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 5000,
+			"110201": 3,
+			"111001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1401202"
+	},
+	"1401203": {
+		"name": "Усиление ледяного урона",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 10000,
+			"110202": 3,
+			"111002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1401203"
+	},
+	"1401204": {
+		"name": "Усиление скорости",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 10000,
+			"110202": 3,
+			"111002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 2
+			}
+		],
+		"baseSkill": [],
+		"id": "1401204"
+	},
+	"1401205": {
+		"name": "Усиление ледяного урона",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 20000,
+			"110202": 5,
+			"111002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1401205"
+	},
+	"1401206": {
+		"name": "Усиление атаки",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 45000,
+			"110203": 3,
+			"111003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1401206"
+	},
+	"1401207": {
+		"name": "Усиление ледяного урона",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110203": 3,
+			"111003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1401207"
+	},
+	"1401208": {
+		"name": "Усиление скорости",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 3
+			}
+		],
+		"baseSkill": [],
+		"id": "1401208"
+	},
+	"1401209": {
+		"name": "Усиление атаки",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1401209"
+	},
+	"1401210": {
+		"name": "Усиление ледяного урона",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.064
+			}
+		],
+		"baseSkill": [],
+		"id": "1401210"
+	},
+	"1402001": {
+		"name": "Колючий нектар",
+		"description": "Наносит выбранному противнику электрический урон, равный ****1[i]%**** от силы атаки Аглаи.",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Normal.png",
+		"shortIcon": "SkillIcon_1402_Normal",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140201,
+			140208
+		],
+		"id": "1402001"
+	},
+	"1402002": {
+		"name": "Восстань, возвышенная слава",
+		"description": "Восстанавливает ****1[i]%**** НР Швеи. Если на поле боя нет Швеи, то **призывает духа памяти** Швею и позволяет себе выполнить действие немедленно.",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_BP.png",
+		"shortIcon": "SkillIcon_1402_BP",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.25,
+			0,
+			5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140202,
+			140209
+		],
+		"id": "1402002"
+	},
+	"1402003": {
+		"name": "Танцуй, рождённая быть швеёй",
+		"description": "**Призывает духа памяти** Швею. Если Швея уже находится на поле боя, то её НР восстанавливается до макс. значения. Аглая переходит в состояние Высшая форма и выполняет действие немедленно.\nВ этом состоянии Аглая получает уровни усиления скорости, описанные в таланте духа памяти Швеи. Каждый уровень повышает её скорость на ****1[f1]%****. Её базовая атака усиливается до атаки Порезы тысячекратного поцелуя, и она не может использовать свой навык. Швея получает иммунитет к **эффектам контроля**.\nНа панели порядка действий появляется обратный отсчёт, который имеет фиксированную скорость, равную **4[i]**. Использование сверхспособности сбрасывает имеющийся на панели порядка действий обратный отсчёт. В начале хода обратного отсчёта Швея самоуничтожается. Когда Швея исчезает, Аглая выходит из состояния Высшая форма.",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Ultra.png",
+		"shortIcon": "SkillIcon_1402_Ultra",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.1,
+			0,
+			0,
+			100,
+			0,
+			0
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140203
+		],
+		"id": "1402003"
+	},
+	"1402004": {
+		"name": "Пальцы из роз",
+		"description": "Изначально скорость духа памяти Швеи равна **4[i]%** от скорости Аглаи, а её макс. НР равно ****5[i]%**** от макс. НР Аглаи плюс ****6[i]**** ед. Пока Швея находится на поле боя, атаки Аглаи накладывают на цель статус Связующая нить. После атаки противника со статусом Связующая нить наносит ему **доп. электрический урон**, равный ****1[i]%**** от силы атаки Аглаи. Этот статус остаётся только на последнем противнике, на которого он был наложен.",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Passive.png",
+		"shortIcon": "SkillIcon_1402_Passive",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.12,
+			0,
+			0,
+			0.35,
+			0.44,
+			180
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140204
+		],
+		"id": "1402004"
+	},
+	"1402007": {
+		"name": "Звёздные лезвия",
+		"description": "**Призывает духа памяти** Швею и выполняет совместную атаку. В начале боя восстанавливает **2[i]** ед. энергии и наносит всем противникам электрический урон, равный **1[i]%** от силы атаки Аглаи, а затем накладывает на случайного противника статус Связующая нить.",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Maze.png",
+		"shortIcon": "SkillIcon_1402_Maze",
+		"promotion": {},
+		"params": [
+			1,
+			30
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			140207
+		],
+		"id": "1402007"
+	},
+	"1402101": {
+		"name": "Кара недальновидности",
+		"description": "В состоянии Высшая форма сила атаки Аглаи и Швеи повышается на **720%** от скорости Аглаи плюс **360%** от скорости Швеи.",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree1.png",
+		"shortIcon": "SkillIcon_1402_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110251": 3,
+			"110506": 1
+		},
+		"params": [
+			7.2,
+			3.6
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402101"
+	},
+	"1402102": {
+		"name": "Последняя нить судьбы",
+		"description": "Когда Швея исчезает, усиление скорости, описанное в таланте духа памяти, сохраняет **1** ур. Будучи призванной ещё раз, Швея получает соответствующее количество уровней эффекта усиления скорости.",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree2.png",
+		"shortIcon": "SkillIcon_1402_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402102"
+	},
+	"1402103": {
+		"name": "Скоротечное солнце",
+		"description": "Если в начале боя энергия Аглаи ниже **50%**, то она восстанавливает её до **50%**.",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree3.png",
+		"shortIcon": "SkillIcon_1402_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110253": 8,
+			"110506": 1
+		},
+		"params": [
+			0.5,
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402103"
+	},
+	"1402201": {
+		"name": "Усиление электрического урона",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 2500,
+			"115001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1402201"
+	},
+	"1402202": {
+		"name": "Усиление крит. шанса",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 4000,
+			"110251": 3,
+			"115001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.026999999
+			}
+		],
+		"baseSkill": [],
+		"id": "1402202"
+	},
+	"1402203": {
+		"name": "Усиление электрического урона",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 9000,
+			"110252": 3,
+			"115002": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1402203"
+	},
+	"1402204": {
+		"name": "Усиление защиты",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 9000,
+			"110252": 3,
+			"115002": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.05
+			}
+		],
+		"baseSkill": [],
+		"id": "1402204"
+	},
+	"1402205": {
+		"name": "Усиление электрического урона",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 19000,
+			"110252": 4,
+			"115002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1402205"
+	},
+	"1402206": {
+		"name": "Усиление крит. шанса",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 45000,
+			"110253": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1402206"
+	},
+	"1402207": {
+		"name": "Усиление электрического урона",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110253": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1402207"
+	},
+	"1402208": {
+		"name": "Усиление защиты",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 140000,
+			"110253": 7,
+			"115003": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.075
+			}
+		],
+		"baseSkill": [],
+		"id": "1402208"
+	},
+	"1402209": {
+		"name": "Усиление крит. шанса",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 160000,
+			"110253": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1402209"
+	},
+	"1402210": {
+		"name": "Усиление электрического урона",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110253": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.064
+			}
+		],
+		"baseSkill": [],
+		"id": "1402210"
+	},
+	"1402301": {
+		"name": "Колючая ловушка",
+		"avatar": 1402,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_11402_Servant01.png",
+		"shortIcon": "SkillIcon_11402_Servant01",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1140201
+		],
+		"id": "1402301"
+	},
+	"1402302": {
+		"name": "Тело, вылитое из слёз",
+		"avatar": 1402,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_11402_ServantPassive.png",
+		"shortIcon": "SkillIcon_11402_ServantPassive",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1140203,
+			1140205,
+			1140206
+		],
+		"id": "1402302"
 	},
 	"8001001": {
 		"name": "Прощальный удар",
@@ -29565,5 +30550,1025 @@
 		],
 		"baseSkill": [],
 		"id": "8006210"
+	},
+	"8007001": {
+		"name": "Это я могу!",
+		"description": "Наносит выбранному противнику ледяной урон, равный ****1[i]%**** от силы атаки Первопроходца.",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal.png",
+		"shortIcon": "SkillIcon_8007_Normal",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800701
+		],
+		"id": "8007001"
+	},
+	"8007002": {
+		"name": "Это будешь ты!",
+		"description": "**Призывает духа памяти** Мемо. Если Мемо уже находится на поле боя, то это умение восстанавливает ****1[i]%**** её макс. НР и **2[i]%** её заряда.",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_BP.png",
+		"shortIcon": "SkillIcon_8007_BP",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			0.3,
+			0.1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800702,
+			800709
+		],
+		"id": "8007002"
+	},
+	"8007003": {
+		"name": "Вместе, Мемо!",
+		"description": "**Призывает духа памяти** Мемо. Восстанавливает **2[i]%** заряда Мемо, после чего позволяет ей нанести всем противникам ледяной урон, равный ****1[i]%**** от её силы атаки.",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Ultra.png",
+		"shortIcon": "SkillIcon_8007_Ultra",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			1.2,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800703
+		],
+		"id": "8007003"
+	},
+	"8007004": {
+		"name": "Всемогущий компаньон",
+		"description": "Изначально скорость духа памяти Мемо равна **1[i]**, а макс. НР - ****2[i]%**** от макс. НР Первопроходца плюс ****4[i]**** ед. Каждый раз, когда все союзники восстанавливают в общем **3[i]** ед. энергии, Мемо восстанавливает 1% своего заряда.",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Passive.png",
+		"shortIcon": "SkillIcon_8007_Passive",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			130,
+			0.5,
+			10,
+			400
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800704
+		],
+		"id": "8007004"
+	},
+	"8007007": {
+		"name": "Эхо воспоминаний",
+		"description": "Использование техники создаёт пространство, которое существует **1[i]** сек. Противники, попавшие в это пространство, получают статус Остановка времени, который прекращает все их действия.\nЕсли бой начинается с противником со статусом Остановка времени, действия всех противников **задерживаются** на **2[i]%**, после чего все противники получают ледяной урон, равный **3[i]%** от силы атаки Первопроходца.\nОдновременно может существовать только одно пространство, созданное союзниками.",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Maze.png",
+		"shortIcon": "SkillIcon_8007_Maze",
+		"promotion": {},
+		"params": [
+			10,
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			800707
+		],
+		"id": "8007007"
+	},
+	"8007101": {
+		"name": "Скипетр рапсода",
+		"description": "В начале боя действие Первопроходца **продвигается вперёд** на **30%**. Во время первого призыва Мемо получает **40%** заряда.",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree1.png",
+		"shortIcon": "SkillIcon_8007_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110251": 2,
+			"110506": 1
+		},
+		"params": [
+			0.3,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007101"
+	},
+	"8007102": {
+		"name": "Крохотная притча",
+		"description": "При использовании умения «Злодеи! Проблемы!» Мемо немедленно получает **5%** заряда.",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree2.png",
+		"shortIcon": "SkillIcon_8007_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			0.05
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007102"
+	},
+	"8007103": {
+		"name": "Магниты и длинные цепи",
+		"description": "Если макс. энергия союзника со статусом Поддержка Мемо выше **100** ед., то каждые превышающие это значение **10** ед. энергии дополнительно повышают множитель наносимого с помощью статуса Поддержка Мемо **истинного урона** на **2%** до макс. **20%**.",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree3.png",
+		"shortIcon": "SkillIcon_8007_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110253": 6,
+			"110506": 1
+		},
+		"params": [
+			100,
+			10,
+			0.02,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007103"
+	},
+	"8007201": {
+		"name": "Усиление крит. урона",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 2000,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8007201"
+	},
+	"8007202": {
+		"name": "Усиление атаки",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 3200,
+			"110251": 1,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8007202"
+	},
+	"8007203": {
+		"name": "Усиление крит. урона",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8007203"
+	},
+	"8007204": {
+		"name": "Усиление атаки",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8007204"
+	},
+	"8007205": {
+		"name": "Усиление крит. урона",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 15200,
+			"110252": 5,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007205"
+	},
+	"8007206": {
+		"name": "Усиление НР",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8007206"
+	},
+	"8007207": {
+		"name": "Усиление крит. урона",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007207"
+	},
+	"8007208": {
+		"name": "Усиление атаки",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 112000,
+			"110253": 5,
+			"111013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8007208"
+	},
+	"8007209": {
+		"name": "Усиление НР",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007209"
+	},
+	"8007210": {
+		"name": "Усиление крит. урона",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "8007210"
+	},
+	"8007301": {
+		"name": "Злодеи! Проблемы!",
+		"avatar": 8007,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_Servant01.png",
+		"shortIcon": "SkillIcon_18007_Servant01",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800701,
+			1800707
+		],
+		"id": "8007301"
+	},
+	"8007302": {
+		"name": "Друзья! Вместе!",
+		"avatar": 8007,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_ServantPassive.png",
+		"shortIcon": "SkillIcon_18007_ServantPassive",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800703,
+			1800705,
+			1800706
+		],
+		"id": "8007302"
+	},
+	"8008001": {
+		"name": "Это я могу!",
+		"description": "Наносит выбранному противнику ледяной урон, равный ****1[i]%**** от силы атаки Первопроходца.",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal.png",
+		"shortIcon": "SkillIcon_8007_Normal",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800801
+		],
+		"id": "8008001"
+	},
+	"8008002": {
+		"name": "Это будешь ты!",
+		"description": "**Призывает духа памяти** Мемо. Если Мемо уже находится на поле боя, то это умение восстанавливает ****1[i]%**** её макс. НР и **2[i]%** её заряда.",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_BP.png",
+		"shortIcon": "SkillIcon_8007_BP",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			0.3,
+			0.1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800802,
+			800809
+		],
+		"id": "8008002"
+	},
+	"8008003": {
+		"name": "Вместе, Мемо!",
+		"description": "**Призывает духа памяти** Мемо. Восстанавливает **2[i]%** заряда Мемо, после чего позволяет ей нанести всем противникам ледяной урон, равный ****1[i]%**** от её силы атаки.",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Ultra.png",
+		"shortIcon": "SkillIcon_8007_Ultra",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			1.2,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800803
+		],
+		"id": "8008003"
+	},
+	"8008004": {
+		"name": "Всемогущий компаньон",
+		"description": "Изначально скорость духа памяти Мемо равна **1[i]**, а макс. НР - ****2[i]%**** от макс. НР Первопроходца плюс ****4[i]**** ед. Каждый раз, когда все союзники восстанавливают в общем **3[i]** ед. энергии, Мемо восстанавливает 1% своего заряда.",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Passive.png",
+		"shortIcon": "SkillIcon_8007_Passive",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			130,
+			0.5,
+			10,
+			400
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800804
+		],
+		"id": "8008004"
+	},
+	"8008007": {
+		"name": "Эхо воспоминаний",
+		"description": "Использование техники создаёт пространство, которое существует **1[i]** сек. Противники, попавшие в это пространство, получают статус Остановка времени, который прекращает все их действия.\nЕсли бой начинается с противником со статусом Остановка времени, действия всех противников **задерживаются** на **2[i]%**, после чего все противники получают ледяной урон, равный **3[i]%** от силы атаки Первопроходца.\nОдновременно может существовать только одно пространство, созданное союзниками.",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Maze.png",
+		"shortIcon": "SkillIcon_8007_Maze",
+		"promotion": {},
+		"params": [
+			10,
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			800807
+		],
+		"id": "8008007"
+	},
+	"8008101": {
+		"name": "Скипетр рапсода",
+		"description": "В начале боя действие Первопроходца **продвигается вперёд** на **30%**. Во время первого призыва Мемо получает **40%** заряда.",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree1.png",
+		"shortIcon": "SkillIcon_8007_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110251": 2,
+			"110506": 1
+		},
+		"params": [
+			0.3,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008101"
+	},
+	"8008102": {
+		"name": "Крохотная притча",
+		"description": "При использовании умения «Злодеи! Проблемы!» Мемо немедленно получает **5%** заряда.",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree2.png",
+		"shortIcon": "SkillIcon_8007_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			0.05
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008102"
+	},
+	"8008103": {
+		"name": "Магниты и длинные цепи",
+		"description": "Если макс. энергия союзника со статусом Поддержка Мемо выше **100** ед., то каждые превышающие это значение **10** ед. энергии дополнительно повышают множитель наносимого с помощью статуса Поддержка Мемо **истинного урона** на **2%** до макс. **20%**.",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree3.png",
+		"shortIcon": "SkillIcon_8007_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110253": 6,
+			"110506": 1
+		},
+		"params": [
+			100,
+			10,
+			0.02,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008103"
+	},
+	"8008201": {
+		"name": "Усиление крит. урона",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 2000,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8008201"
+	},
+	"8008202": {
+		"name": "Усиление атаки",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 3200,
+			"110251": 1,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8008202"
+	},
+	"8008203": {
+		"name": "Усиление крит. урона",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8008203"
+	},
+	"8008204": {
+		"name": "Усиление атаки",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8008204"
+	},
+	"8008205": {
+		"name": "Усиление крит. урона",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 15200,
+			"110252": 5,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008205"
+	},
+	"8008206": {
+		"name": "Усиление НР",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8008206"
+	},
+	"8008207": {
+		"name": "Усиление крит. урона",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008207"
+	},
+	"8008208": {
+		"name": "Усиление атаки",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 112000,
+			"110253": 5,
+			"111013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8008208"
+	},
+	"8008209": {
+		"name": "Усиление НР",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008209"
+	},
+	"8008210": {
+		"name": "Усиление крит. урона",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "8008210"
+	},
+	"8008301": {
+		"name": "Злодеи! Проблемы!",
+		"avatar": 8008,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_Servant01.png",
+		"shortIcon": "SkillIcon_18007_Servant01",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800701,
+			1800707
+		],
+		"id": "8008301"
+	},
+	"8008302": {
+		"name": "Друзья! Вместе!",
+		"avatar": 8008,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_ServantPassive.png",
+		"shortIcon": "SkillIcon_18007_ServantPassive",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800703,
+			1800705,
+			1800706
+		],
+		"id": "8008302"
 	}
 }

@@ -313,8 +313,8 @@
 		"setID": "112",
 		"two": "Augmente les DGT imaginaires de **10%**.",
 		"twopc": "Augmente les DGT imaginaires de <unbreak>#1[i]%</unbreak>.",
-		"four": "Les chances de coup critique du porteur augmentent de **10%** contre les ennemis subissant des malus, et ses DGT critiques augmentent de **20%** contre les ennemis emprisonnés.",
-		"fourpc": "Les chances de coup critique du porteur augmentent de <unbreak>#1[i]%</unbreak> contre les ennemis subissant des malus, et ses DGT critiques augmentent de <unbreak>#2[i]%</unbreak> contre les ennemis emprisonnés.",
+		"four": "Les chances de coup critique du porteur augmentent de **10%** quand celui-ci inflige des DGT aux cibles ennemies subissant des malus, et ses DGT critiques augmentent de **20%** quand il inflige des DGT aux cibles ennemies emprisonnées.",
+		"fourpc": "Les chances de coup critique du porteur augmentent de <unbreak>#1[i]%</unbreak> quand celui-ci inflige des DGT aux cibles ennemies subissant des malus, et ses DGT critiques augmentent de <unbreak>#2[i]%</unbreak> quand il inflige des DGT aux cibles ennemies emprisonnées.",
 		"params": [
 			[
 				0.1
@@ -623,6 +623,74 @@
 			]
 		],
 		"setIcon": "spriteoutput/itemfigures/71039.png",
+		"planarSet": false
+	},
+	"123": {
+		"name": "Héros de la chanson triomphale",
+		"setID": "123",
+		"two": "Augmente l'ATQ de **12%**.",
+		"twopc": "Augmente l'ATQ de <unbreak>#1[i]%</unbreak>.",
+		"four": "Augmente la VIT du porteur de **6%** tant que son mnémesprit est sur le champ de bataille. Lorsque le mnémesprit attaque, ses DGT critiques ainsi que ceux du porteur augmentent de **30%** pendant **2** tours.",
+		"fourpc": "Augmente la VIT du porteur de <unbreak>#1[i]%</unbreak> tant que son mnémesprit est sur le champ de bataille. Lorsque le mnémesprit attaque, ses DGT critiques ainsi que ceux du porteur augmentent de <unbreak>#2[i]%</unbreak> pendant <unbreak>#3[i]</unbreak> tours.",
+		"params": [
+			[
+				0.12
+			],
+			[
+				0.06,
+				0.3,
+				2
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71040.png",
+		"planarSet": false
+	},
+	"124": {
+		"name": "Poétesse du déclin funèbre",
+		"setID": "124",
+		"two": "Augmente les DGT quantiques infligés de **10%**.",
+		"twopc": "Augmente les DGT quantiques infligés de <unbreak>#1[i]%</unbreak>.",
+		"four": "Réduit la VIT du porteur de **8%**. Si sa VIT est inférieure à **110**/**95** en entrant en combat, ses chances de coup critique augmentent de **20%**/**32%**. Cet effet s'applique également au mnémesprit du porteur.",
+		"fourpc": "Réduit la VIT du porteur de <unbreak>#6[i]%</unbreak>. Si sa VIT est inférieure à <unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak> en entrant en combat, ses chances de coup critique augmentent de <unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>. Cet effet s'applique également au mnémesprit du porteur.",
+		"params": [
+			[
+				0.1
+			],
+			[
+				-0.08,
+				110,
+				95,
+				0.2,
+				0.32,
+				0.08
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "QuantumAddedRatio",
+					"value": 0.1
+				}
+			],
+			[
+				{
+					"active": 4,
+					"type": "SpeedAddedRatio",
+					"value": -0.08
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71041.png",
 		"planarSet": false
 	},
 	"301": {

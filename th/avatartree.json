@@ -6365,7 +6365,7 @@
 	},
 	"1106002": {
 		"name": "Frostbite",
-		"description": "ลบ**เอฟเฟกต์ Buff** **2[i]** เอฟเฟกต์ ของศัตรูที่กำหนดหนึ่งตัว พร้อมทั้งสร้าง DMG น้ำแข็ง ****1[i]%**** ของ ATK ของ Pela",
+		"description": "ลบ **เอฟเฟกต์ Buff** **2[i]** เอฟเฟกต์ ของศัตรูที่กำหนดหนึ่งตัว พร้อมทั้งสร้าง DMG น้ำแข็ง ****1[i]%**** ของ ATK ของ Pela",
 		"avatar": 1106,
 		"type": 2,
 		"pos": "Point02",
@@ -19098,7 +19098,7 @@
 	},
 	"1224002": {
 		"name": "Master, It's Tea Time!",
-		"description": "ทำให้เป้าหมายฝ่ายเราที่กำหนดหนึ่งตัว (ยกเว้นตัวเอง) กลายเป็น \"อาจารย์\" และความเร็วของ \"อาจารย์\" จะเพิ่มขึ้น ****1[f1]%**** และมีเพียงเป้าหมายล่าสุด ของการปล่อยสกิลต่อสู้เท่านั้น ที่ถูกมองว่าเป็น \"อาจารย์\" ของ March 7th\nทุกครั้งที่ปล่อยการโจมตีปกติ หรือสร้าง DMG จากการโจมตีปกติแบบเสริมพลัง 1 ครั้ง หากในการต่อสู้มี \"อาจารย์\" ใน Path ที่กำหนด ก็จะเกิดเอฟเฟกต์ที่สอดคล้องกัน ดังนี้\nปัญญา/ ทำลายล้าง/ ล่าสังหาร: จะสร้าง **DMG เพิ่มเติม** ตามประเภทของ \"อาจารย์\" เท่ากับ ****2[i]%**** ของ ATK ของ March 7th\nประสาน/ ลบล้าง/ อนุรักษ์/ เฟื่องฟู: การลดค่าความทนทานของ DMG ในครั้งนี้จะเพิ่มขึ้น **3[i]%**",
+		"description": "ทำให้เป้าหมายฝ่ายเราที่กำหนดหนึ่งตัว (ยกเว้นตัวเอง) กลายเป็น \"อาจารย์\" และความเร็วของ \"อาจารย์\" จะเพิ่มขึ้น ****1[f1]%**** และมีเพียงเป้าหมายล่าสุด ของการปล่อยสกิลต่อสู้เท่านั้น ที่ถูกมองว่าเป็น \"อาจารย์\" ของ March 7th\nทุกครั้งที่ปล่อยการโจมตีปกติ หรือสร้าง DMG จากการโจมตีปกติแบบเสริมพลัง 1 ครั้ง หากในการต่อสู้มี \"อาจารย์\" ใน Path ที่กำหนด ก็จะเกิดเอฟเฟกต์ที่สอดคล้องกัน ดังนี้\nปัญญา/ ทำลายล้าง/ ล่าสังหาร/ ความทรงจำ: จะสร้าง **DMG เพิ่มเติม** ตามประเภทของ \"อาจารย์\" เท่ากับ ****2[i]%**** ของ ATK ของ March 7th\nประสาน/ ลบล้าง/ อนุรักษ์/ เฟื่องฟู: การลดค่าความทนทานของ DMG ในครั้งนี้จะเพิ่มขึ้น **3[i]%**",
 		"avatar": 1224,
 		"type": 2,
 		"pos": "Point02",
@@ -26846,6 +26846,991 @@
 		"baseSkill": [],
 		"id": "1317210"
 	},
+	"1401001": {
+		"name": "Did You Get It",
+		"description": "สร้าง DMG น้ำแข็ง ****1[i]%**** ของ ATK ของท่าน Herta แก่ศัตรูที่กำหนดหนึ่งตัว",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Normal.png",
+		"shortIcon": "SkillIcon_1401_Normal",
+		"promotion": {
+			"2": 240000,
+			"110201": 3,
+			"110202": 8,
+			"110203": 11,
+			"111001": 6,
+			"111002": 7,
+			"111003": 7
+		},
+		"params": [
+			0.5,
+			3,
+			1,
+			0.3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140101
+		],
+		"id": "1401001"
+	},
+	"1401002": {
+		"name": "Big Brain Energy",
+		"description": "สร้าง DMG น้ำแข็ง ****1[i]%**** ของ ATK ของท่าน Herta แก่ศัตรูที่กำหนดหนึ่งตัว และเพิ่ม \"ตีความ\" **2[i]** ชั้น อีกทั้งสร้าง DMG น้ำแข็งเท่ากับ ****1[i]%**** ของ ATK ของท่าน Herta แก่เป้าหมายที่ถูกสกิลต่อสู้ในครั้งนี้โจมตี รวมถึงตัวที่อยู่ใกล้เคียง กับเป้าหมายดังกล่าว โดยเอฟเฟกต์นี้สามารถเกิดซ้ำได้ 2 ครั้ง",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_BP.png",
+		"shortIcon": "SkillIcon_1401_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			0.35,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140102,
+			140109
+		],
+		"id": "1401002"
+	},
+	"1401003": {
+		"name": "Told Ya! Magic Happens",
+		"description": "เรียงลำดับจำนวนชั้น \"ตีความ\" ของศัตรูทั้งหมดอีกครั้ง โดย \"ตีความ\" ที่มีจำนวนชั้นค่อนข้างสูง จะถูกโอนย้ายไปยังเป้าหมาย ตั้งแต่ระดับสูงขึ้นไปก่อน และสร้าง DMG น้ำแข็ง ****1[i]%**** ของ ATK ของท่าน Herta แก่ศัตรูทั้งหมด เมื่อปล่อยท่าไม้ตาย จะทำให้ ATK ของท่าน Herta เพิ่มขึ้น ****4[i]%**** เป็นเวลา **5[i]** เทิร์น หลังจากปล่อยแล้ว จะทำให้ท่าน Herta พร้อมแอ็กชันทันที และได้รับ \"แรงบันดาลใจ\" 1 ชั้น โดย \"แรงบันดาลใจ\" จะมีได้มากสุด **6[i]** ชั้น ทั้งนี้เมื่อมี \"แรงบันดาลใจ\" อยู่ สกิลต่อสู้จะถูกเสริมพลังเป็น \"Hear Me Out\"",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Ultra.png",
+		"shortIcon": "SkillIcon_1401_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			1,
+			2,
+			1,
+			0.4,
+			3,
+			4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140103
+		],
+		"id": "1401003"
+	},
+	"1401004": {
+		"name": "Hand Them Over",
+		"description": "เมื่อศัตรูเป้าหมายเข้าสู่การต่อสู้ ท่าน Herta จะเพิ่ม \"ตีความ\" ให้กับตัวดังกล่าว 1 ชั้น โดยเมื่อเริ่มต้นในแต่ละ Wave จะเพิ่ม \"ตีความ\" **6[i]** ชั้น ให้แก่ศัตรูแบบสุ่มเป้าหมาย โดยจะเพิ่มให้กับเป้าหมายตั้งแต่ระดับสูงขึ้นไป ก่อนเป็นอันดับแรก และเมื่อเป้าหมายหลัก ของสกิลต่อสู้แบบเสริมพลังมี \"ตีความ\" อยู่ จะสร้างตัวคูณ DMG เพิ่มขึ้น โดยแต่ละชั้นจะเพิ่มให้เป้าหมายหลัก/ เป้าหมายอื่นๆ ****1[f1]%****/ ****2[f1]%**** หากในทีมมีตัวละคร Path \"ปัญญา\" มากกว่าหรือเท่ากับ 2 ตัว แต่ละชั้นจะเพิ่มให้เป้าหมายหลัก/ เป้าหมายอื่นๆ อีก ****1[f1]%****/ ****2[f1]%**** ทั้งนี้ \"ตีความ\" สามารถซ้อนทับได้มากสุด **3[i]** ชั้น เมื่อใช้สกิลต่อสู้แบบเสริมพลัง จะรีเซ็ตจำนวนชั้น \"ตีความ\" ของเป้าหมายหลัก เป็น 1 ชั้น หลังจากศัตรูเป้าหมายออกจากการต่อสู้ หรือถูกตัวใดตัวหนึ่งกำจัดแล้ว \"ตีความ\" จะถูกย้ายไปยังเป้าหมายตั้งแต่ระดับสูงขึ้นไป ก่อนเป็นอันดับแรก",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Passive.png",
+		"shortIcon": "SkillIcon_1401_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			0.04,
+			0.02,
+			42,
+			1,
+			42,
+			25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140104
+		],
+		"id": "1401004"
+	},
+	"1401007": {
+		"name": "Vibe Checker",
+		"description": "หลังจากใช้เทคนิคแล้ว เมื่อเริ่มการต่อสู้ครั้งถัดไป ATK ของท่าน Herta จะเพิ่มขึ้น **1[i]%** เป็นเวลา **2[i]** เทิร์น\nหากในฉากปัจจุบัน มีสมบัติธรรมดาอยู่ หลังจากใช้เทคนิคแล้ว จะทำเครื่องหมายตำแหน่งของสมบัติธรรมดา ได้มากสุด **3[i]** จุด\nหลังจากใช้เทคนิคใน Simulated Universe, จักรวาลต่างมิติ และเข้าสู่การต่อสู้แล้ว เมื่อเริ่มต้นในแต่ละ Wave จะสร้าง **DMG จริง** แก่ศัตรูเป้าหมายที่ต่ำกว่าระดับสูง เท่ากับ **4[i]%** ของ HP สูงสุดของเป้าหมาย และสร้าง **DMG จริง** แก่ศัตรูเป้าหมายตั้งแต่ระดับสูงขึ้นไป เท่ากับ **5[i]%** ของ HP สูงสุดของเป้าหมาย",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Maze.png",
+		"shortIcon": "SkillIcon_1401_Maze",
+		"promotion": {},
+		"params": [
+			0.6,
+			2,
+			3,
+			0.99,
+			0.3,
+			25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			140107
+		],
+		"id": "1401007"
+	},
+	"1401101": {
+		"name": "Aloofly Honest",
+		"description": "หลังจากเป้าหมายฝ่ายเราทำการโจมตี จะเพิ่ม \"ตีความ\" 1 ชั้น แก่ศัตรูเป้าหมายที่โจมตีโดน โดยหลังจากที่โจมตี เป้าหมายทุก 1 ตัวที่โจมตีโดนในครั้งนี้ จะทำให้ท่าน Herta ฟื้นฟูพลังงานคงที่ **3** หน่วย โดยจะคำนวณเป้าหมายสูงสุดที่ 5 ตัว เมื่อปล่อยสกิลต่อสู้แบบเสริมพลัง หากจำนวนชั้น \"ตีความ\" ของเป้าหมายหลักถึง **42** ชั้น จะทำให้ท่าน Herta สร้าง DMG เพิ่มขึ้น **50%** จนกว่าการโจมตีครั้งนี้จะสิ้นสุดลง",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree1.png",
+		"shortIcon": "SkillIcon_1401_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110201": 3,
+			"110506": 1
+		},
+		"params": [
+			3,
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401101"
+	},
+	"1401102": {
+		"name": "Message From Beyond the Veil",
+		"description": "เมื่อเข้าสู่การต่อสู้ หากมีตัวละคร Path \"ปัญญา\" อยู่ในทีมมากกว่าหรือเท่ากับ 2 ตัว จะทำให้ DMG คริติคอลของฝ่ายเราทั้งหมด เพิ่มขึ้น **80%** เมื่อ Trace \"Aloofly Honest\" คำนวณจำนวนเป้าหมายที่โจมตีโดน ก็จะคำนวณเป้าหมายอย่างน้อย **3** ตัว ซึ่งหลังจากทำการโจมตีแล้ว จะเพิ่ม \"ตีความ\" **1** ชั้น แก่ศัตรูเป้าหมายที่มีจำนวนชั้น \"ตีความ\" สูงที่สุด ในบรรดาศัตรูที่โดนโจมตี แต่หากผู้โจมตีเป็นตัวละคร Path \"ปัญญา\" ก็จะเพิ่มอีก **2** ชั้น",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree2.png",
+		"shortIcon": "SkillIcon_1401_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110202": 5,
+			"110506": 1
+		},
+		"params": [
+			0.8,
+			3,
+			1,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401102"
+	},
+	"1401103": {
+		"name": "Starved Landscape of Vacua",
+		"description": "เมื่อศัตรูเป้าหมายถูกเพิ่ม \"ตีความ\" ทุก 1 ชั้น ท่าน Herta จะได้รับ \"คำตอบของปริศนา\" 1 ชั้น โดยสามารถซ้อนทับได้มากสุด **99** ชั้น และเมื่อปล่อยท่าไม้ตาย \"คำตอบของปริศนา\" ทุกๆ 1 ชั้นที่มี จะทำให้ตัวคูณ DMG ของท่าไม้ตายในครั้งนี้เพิ่มขึ้น **1%**",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree3.png",
+		"shortIcon": "SkillIcon_1401_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110203": 8,
+			"110506": 1
+		},
+		"params": [
+			0.01,
+			99
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401103"
+	},
+	"1401201": {
+		"name": "เสริม DMG - น้ำแข็ง",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 2500,
+			"111001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1401201"
+	},
+	"1401202": {
+		"name": "เสริมการโจมตี",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 5000,
+			"110201": 3,
+			"111001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1401202"
+	},
+	"1401203": {
+		"name": "เสริม DMG - น้ำแข็ง",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 10000,
+			"110202": 3,
+			"111002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1401203"
+	},
+	"1401204": {
+		"name": "เสริมความเร็ว",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 10000,
+			"110202": 3,
+			"111002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 2
+			}
+		],
+		"baseSkill": [],
+		"id": "1401204"
+	},
+	"1401205": {
+		"name": "เสริม DMG - น้ำแข็ง",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 20000,
+			"110202": 5,
+			"111002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1401205"
+	},
+	"1401206": {
+		"name": "เสริมการโจมตี",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 45000,
+			"110203": 3,
+			"111003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1401206"
+	},
+	"1401207": {
+		"name": "เสริม DMG - น้ำแข็ง",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110203": 3,
+			"111003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1401207"
+	},
+	"1401208": {
+		"name": "เสริมความเร็ว",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 3
+			}
+		],
+		"baseSkill": [],
+		"id": "1401208"
+	},
+	"1401209": {
+		"name": "เสริมการโจมตี",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1401209"
+	},
+	"1401210": {
+		"name": "เสริม DMG - น้ำแข็ง",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.064
+			}
+		],
+		"baseSkill": [],
+		"id": "1401210"
+	},
+	"1402001": {
+		"name": "Thorned Nectar",
+		"description": "สร้าง DMG สายฟ้า ****1[i]%**** ของ ATK ของ Aglaea แก่ศัตรูที่กำหนดหนึ่งตัว",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Normal.png",
+		"shortIcon": "SkillIcon_1402_Normal",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140201,
+			140208
+		],
+		"id": "1402001"
+	},
+	"1402002": {
+		"name": "Rise, Exalted Renown",
+		"description": "ฟื้นฟู HP ให้กับหุ่นตัดชุดเท่ากับ ****1[i]%**** ของ HP สูงสุดของตัวดังกล่าว หากหุ่นตัดชุดไม่อยู่ในการต่อสู้ จะ **อัญเชิญภูตความทรงจำ** \"หุ่นตัดชุด\" และทำให้ตัวเองพร้อมแอ็กชันทันที",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_BP.png",
+		"shortIcon": "SkillIcon_1402_BP",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.25,
+			0,
+			5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140202,
+			140209
+		],
+		"id": "1402002"
+	},
+	"1402003": {
+		"name": "Dance, Destined Weaveress",
+		"description": "**อัญเชิญภูตความทรงจำ** \"หุ่นตัดชุด\" หากหุ่นตัดชุดอยู่ในการต่อสู้แล้ว จะทำให้ HP ของตัวดังกล่าวฟื้นฟูจนถึงขีดสูงสุด อีกทั้งทำให้ Aglaea เข้าสู่สถานะ \"ท่วงท่าอันสูงส่ง\" และพร้อมแอ็กชันทันที\nเมื่ออยู่ในสถานะ \"ท่วงท่าอันสูงส่ง\" Aglaea จะได้รับจำนวนชั้นสถานะเพิ่มความเร็ว จากพรสวรรค์ภูตความทรงจำของหุ่นตัดชุด โดยแต่ละชั้นจะทำให้ ความเร็วของตัวเองเพิ่มขึ้น ****1[f1]%**** และการโจมตีปกติ จะเสริมพลังเป็น \"Slash by a Thousandfold Kiss\" รวมถึงไม่สามารถปล่อยสกิลต่อสู้ได้ อีกทั้งหุ่นตัดชุดจะต้านทาน **สถานะ Debuff ประเภทควบคุม**\nเมื่อการนับถอยหลัง ปรากฏขึ้นบนลำดับแอ็กชัน ความเร็วคงที่ของการนับถอยหลัง จะอยู่ที่ **4[i]** หากปล่อยท่าไม้ตายอีกครั้ง ขณะที่มีการนับถอยหลังอยู่ ก็จะรีเซ็ตการนับถอยหลัง เมื่อถึงเทิร์นของการนับถอยหลัง หุ่นตัดชุดจะทำลายตัวเอง และ Aglaea จะลบสถานะ \"ท่วงท่าอันสูงส่ง\" เมื่อหุ่นตัดชุดหายไป",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Ultra.png",
+		"shortIcon": "SkillIcon_1402_Ultra",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.1,
+			0,
+			0,
+			100,
+			0,
+			0
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140203
+		],
+		"id": "1402003"
+	},
+	"1402004": {
+		"name": "Rosy-Fingered",
+		"description": "ภูตความทรงจำหุ่นตัดชุด มีความเร็วเริ่มต้นเท่ากับ **4[i]%** ของความเร็วของ Aglaea และมี HP สูงสุดเท่ากับ ****5[i]%**** ของ HP สูงสุดของ Aglaea +****6[i]**** เมื่อ Aglaea ปล่อยการโจมตี ขณะที่มีหุ่นตัดชุดอยู่ในการต่อสู้ จะทำให้เป้าหมายติดสถานะ \"ถักทอช่องว่าง\" หลังจากโจมตีศัตรูที่อยู่ในสถานะ \"ถักทอช่องว่าง\" จะสร้าง **DMG เพิ่มเติมสายฟ้าอีก** ****1[i]%**** ของ ATK ของ Aglaea โดยที่ \"ถักทอช่องว่าง\" จะมีผลกับเป้าหมายล่าสุด ที่ถูกเพิ่มสถานะใส่เท่านั้น",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Passive.png",
+		"shortIcon": "SkillIcon_1402_Passive",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.12,
+			0,
+			0,
+			0.35,
+			0.44,
+			180
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140204
+		],
+		"id": "1402004"
+	},
+	"1402007": {
+		"name": "Meteoric Sunder",
+		"description": "**อัญเชิญภูตความทรงจำ** \"หุ่นตัดชุด\" และปล่อยการโจมตีไปข้างหน้าพร้อมกัน หลังจากเข้าสู่การต่อสู้แล้ว จะฟื้นฟูพลังงาน **2[i]** หน่วย และสร้าง DMG สายฟ้า **1[i]%** ของ ATK ของ Aglaea แก่ศัตรูทั้งหมด จากนั้นจะทำให้ศัตรูติดสถานะ \"ถักทอช่องว่าง\" แบบสุ่มเป้าหมาย",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Maze.png",
+		"shortIcon": "SkillIcon_1402_Maze",
+		"promotion": {},
+		"params": [
+			1,
+			30
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			140207
+		],
+		"id": "1402007"
+	},
+	"1402101": {
+		"name": "The Myopic's Doom",
+		"description": "เมื่ออยู่ในสถานะ \"ท่วงท่าอันสูงส่ง\" ATK ของ Aglaea และหุ่นตัดชุดจะเพิ่มขึ้น โดยค่าที่เพิ่มขึ้นจะเท่ากับ **720%** ของความเร็วของ Aglaea + **360%** ของความเร็วของหุ่นตัดชุด",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree1.png",
+		"shortIcon": "SkillIcon_1402_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110251": 3,
+			"110506": 1
+		},
+		"params": [
+			7.2,
+			3.6
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402101"
+	},
+	"1402102": {
+		"name": "Last Thread of Fate",
+		"description": "เมื่อหุ่นตัดชุดหายไป จำนวนชั้นสถานะเพิ่มความเร็ว จากพรสวรรค์ภูตความทรงจำ จะเก็บได้สูงสุดที่ **1** ชั้น และเมื่อหุ่นตัดชุดถูกอัญเชิญอีกครั้ง จะได้รับเอฟเฟกต์เพิ่มความเร็ว ในจำนวนชั้นที่สอดคล้อง",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree2.png",
+		"shortIcon": "SkillIcon_1402_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402102"
+	},
+	"1402103": {
+		"name": "The Speeding Sol",
+		"description": "เมื่อเริ่มต้นการต่อสู้ หากพลังงานของตัวเองไม่ถึง **50%** ก็จะฟื้นฟูพลังงานของตัวเองจนถึง **50%**",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree3.png",
+		"shortIcon": "SkillIcon_1402_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110253": 8,
+			"110506": 1
+		},
+		"params": [
+			0.5,
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402103"
+	},
+	"1402201": {
+		"name": "เสริม DMG - สายฟ้า",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 2500,
+			"115001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1402201"
+	},
+	"1402202": {
+		"name": "เสริมอัตราคริติคอล",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 4000,
+			"110251": 3,
+			"115001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.026999999
+			}
+		],
+		"baseSkill": [],
+		"id": "1402202"
+	},
+	"1402203": {
+		"name": "เสริม DMG - สายฟ้า",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 9000,
+			"110252": 3,
+			"115002": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1402203"
+	},
+	"1402204": {
+		"name": "เสริมการป้องกัน",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 9000,
+			"110252": 3,
+			"115002": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.05
+			}
+		],
+		"baseSkill": [],
+		"id": "1402204"
+	},
+	"1402205": {
+		"name": "เสริม DMG - สายฟ้า",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 19000,
+			"110252": 4,
+			"115002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1402205"
+	},
+	"1402206": {
+		"name": "เสริมอัตราคริติคอล",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 45000,
+			"110253": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1402206"
+	},
+	"1402207": {
+		"name": "เสริม DMG - สายฟ้า",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110253": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1402207"
+	},
+	"1402208": {
+		"name": "เสริมการป้องกัน",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 140000,
+			"110253": 7,
+			"115003": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.075
+			}
+		],
+		"baseSkill": [],
+		"id": "1402208"
+	},
+	"1402209": {
+		"name": "เสริมอัตราคริติคอล",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 160000,
+			"110253": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1402209"
+	},
+	"1402210": {
+		"name": "เสริม DMG - สายฟ้า",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110253": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.064
+			}
+		],
+		"baseSkill": [],
+		"id": "1402210"
+	},
+	"1402301": {
+		"name": "Thorned Snare",
+		"avatar": 1402,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_11402_Servant01.png",
+		"shortIcon": "SkillIcon_11402_Servant01",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1140201
+		],
+		"id": "1402301"
+	},
+	"1402302": {
+		"name": "A Body Brewed by Tears",
+		"avatar": 1402,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_11402_ServantPassive.png",
+		"shortIcon": "SkillIcon_11402_ServantPassive",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1140203,
+			1140205,
+			1140206
+		],
+		"id": "1402302"
+	},
 	"8001001": {
 		"name": "Farewell Hit",
 		"description": "สร้าง DMG กายภาพ ****1[i]%**** ของ ATK ของผู้บุกเบิก แก่ศัตรูที่กำหนดหนึ่งตัว",
@@ -29565,5 +30550,1025 @@
 		],
 		"baseSkill": [],
 		"id": "8006210"
+	},
+	"8007001": {
+		"name": "Leave It to me!",
+		"description": "สร้าง DMG น้ำแข็ง ****1[i]%**** ของ ATK ของผู้บุกเบิก แก่ศัตรูที่กำหนดหนึ่งตัว",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal.png",
+		"shortIcon": "SkillIcon_8007_Normal",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800701
+		],
+		"id": "8007001"
+	},
+	"8007002": {
+		"name": "I Choose You!",
+		"description": "**อัญเชิญภูตความทรงจำ** Mem หาก Mem อยู่ในการต่อสู้อยู่แล้ว จะฟื้นฟู HP เท่ากับ ****1[i]%**** ของ HP สูงสุดของ Mem และทำให้ Mem ได้รับการชาร์จพลัง **2[i]%**",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_BP.png",
+		"shortIcon": "SkillIcon_8007_BP",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			0.3,
+			0.1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800702,
+			800709
+		],
+		"id": "8007002"
+	},
+	"8007003": {
+		"name": "Together, Mem!",
+		"description": "**อัญเชิญภูตความทรงจำ** Mem ทำให้ Mem ได้รับการชาร์จพลัง **2[i]%** และจากนั้นทำให้ Mem สร้าง DMG น้ำแข็ง ****1[i]%**** ของ ATK ของ Mem แก่ศัตรูทั้งหมด",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Ultra.png",
+		"shortIcon": "SkillIcon_8007_Ultra",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			1.2,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800703
+		],
+		"id": "8007003"
+	},
+	"8007004": {
+		"name": "Almighty Companion",
+		"description": "ภูตความทรงจำ Mem จะมีความเร็วเริ่มต้น **1[i]** หน่วย และ HP สูงสุดเท่ากับ ****2[i]%**** ของ HP สูงสุดของผู้บุกเบิก +****4[i]**** เมื่อฝ่ายเราทั้งหมด ฟื้นฟูพลังงานสะสมทุกๆ **3[i]** หน่วย Mem จะได้รับการชาร์จพลัง 1%",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Passive.png",
+		"shortIcon": "SkillIcon_8007_Passive",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			130,
+			0.5,
+			10,
+			400
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800704
+		],
+		"id": "8007004"
+	},
+	"8007007": {
+		"name": "Memories Back as Echoes",
+		"description": "หลังจากใช้เทคนิคแล้ว จะสร้างพื้นที่พิเศษขึ้นมา 1 จุดเป็นเวลา **1[i]** วินาที และศัตรูที่อยู่ในพื้นที่พิเศษ จะติดสถานะหยุดเวลา โดยศัตรูที่ติดสถานะดังกล่าว จะหยุดการเคลื่อนไหวทั้งหมด\nหลังจากเข้าสู่การต่อสู้ กับศัตรูที่ติดสถานะหยุดเวลาจะ **หน่วงแอ็กชัน** ของศัตรูทั้งหมด **2[i]%** จากนั้นจะสร้าง DMG น้ำแข็ง **3[i]%** ของ ATK ของผู้บุกเบิกแก่ศัตรูทั้งหมด\nโดยเอฟเฟกต์พื้นที่พิเศษที่ฝ่ายเราสร้าง จะมีได้มากสุดเพียง 1 จุด",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Maze.png",
+		"shortIcon": "SkillIcon_8007_Maze",
+		"promotion": {},
+		"params": [
+			10,
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			800707
+		],
+		"id": "8007007"
+	},
+	"8007101": {
+		"name": "Rhapsode's Scepter",
+		"description": "เมื่อเริ่มการต่อสู้จะ **เร่งแอ็กชัน** ของผู้บุกเบิกขึ้น **30%** เมื่ออัญเชิญ Mem เป็นครั้งแรก จะทำให้ Mem ได้รับการชาร์จพลัง **40%**",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree1.png",
+		"shortIcon": "SkillIcon_8007_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110251": 2,
+			"110506": 1
+		},
+		"params": [
+			0.3,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007101"
+	},
+	"8007102": {
+		"name": "Petite Parable",
+		"description": "เมื่อ Mem ปล่อย \"Baddies! Trouble!\" จะได้รับการชาร์จพลังทันที **5%**",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree2.png",
+		"shortIcon": "SkillIcon_8007_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			0.05
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007102"
+	},
+	"8007103": {
+		"name": "Magnets and Long Chains",
+		"description": "เมื่อเป้าหมายฝ่ายเราที่มี \"การสนับสนุนจาก Mem\" มีพลังงานสูงสุดมากกว่า **100** หน่วย ทุกๆ **10** หน่วยที่เกินออกมา จะสร้างตัวคูณ **DMG จริง** ผ่าน \"การสนับสนุนจาก Mem\" เพิ่มขึ้นอีก **2%** โดยสามารถเพิ่มได้มากสุดที่ **20%**",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree3.png",
+		"shortIcon": "SkillIcon_8007_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110253": 6,
+			"110506": 1
+		},
+		"params": [
+			100,
+			10,
+			0.02,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007103"
+	},
+	"8007201": {
+		"name": "เสริม DMG คริติคอล",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 2000,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8007201"
+	},
+	"8007202": {
+		"name": "เสริมการโจมตี",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 3200,
+			"110251": 1,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8007202"
+	},
+	"8007203": {
+		"name": "เสริม DMG คริติคอล",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8007203"
+	},
+	"8007204": {
+		"name": "เสริมการโจมตี",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8007204"
+	},
+	"8007205": {
+		"name": "เสริม DMG คริติคอล",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 15200,
+			"110252": 5,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007205"
+	},
+	"8007206": {
+		"name": "เสริม HP",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8007206"
+	},
+	"8007207": {
+		"name": "เสริม DMG คริติคอล",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007207"
+	},
+	"8007208": {
+		"name": "เสริมการโจมตี",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 112000,
+			"110253": 5,
+			"111013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8007208"
+	},
+	"8007209": {
+		"name": "เสริม HP",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007209"
+	},
+	"8007210": {
+		"name": "เสริม DMG คริติคอล",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "8007210"
+	},
+	"8007301": {
+		"name": "Baddies! Trouble!",
+		"avatar": 8007,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_Servant01.png",
+		"shortIcon": "SkillIcon_18007_Servant01",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800701,
+			1800707
+		],
+		"id": "8007301"
+	},
+	"8007302": {
+		"name": "Friends! Together!",
+		"avatar": 8007,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_ServantPassive.png",
+		"shortIcon": "SkillIcon_18007_ServantPassive",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800703,
+			1800705,
+			1800706
+		],
+		"id": "8007302"
+	},
+	"8008001": {
+		"name": "Leave It to me!",
+		"description": "สร้าง DMG น้ำแข็ง ****1[i]%**** ของ ATK ของผู้บุกเบิก แก่ศัตรูที่กำหนดหนึ่งตัว",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal.png",
+		"shortIcon": "SkillIcon_8007_Normal",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800801
+		],
+		"id": "8008001"
+	},
+	"8008002": {
+		"name": "I Choose You!",
+		"description": "**อัญเชิญภูตความทรงจำ** Mem หาก Mem อยู่ในการต่อสู้อยู่แล้ว จะฟื้นฟู HP เท่ากับ ****1[i]%**** ของ HP สูงสุดของ Mem และทำให้ Mem ได้รับการชาร์จพลัง **2[i]%**",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_BP.png",
+		"shortIcon": "SkillIcon_8007_BP",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			0.3,
+			0.1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800802,
+			800809
+		],
+		"id": "8008002"
+	},
+	"8008003": {
+		"name": "Together, Mem!",
+		"description": "**อัญเชิญภูตความทรงจำ** Mem ทำให้ Mem ได้รับการชาร์จพลัง **2[i]%** และจากนั้นทำให้ Mem สร้าง DMG น้ำแข็ง ****1[i]%**** ของ ATK ของ Mem แก่ศัตรูทั้งหมด",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Ultra.png",
+		"shortIcon": "SkillIcon_8007_Ultra",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			1.2,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800803
+		],
+		"id": "8008003"
+	},
+	"8008004": {
+		"name": "Almighty Companion",
+		"description": "ภูตความทรงจำ Mem จะมีความเร็วเริ่มต้น **1[i]** หน่วย และ HP สูงสุดเท่ากับ ****2[i]%**** ของ HP สูงสุดของผู้บุกเบิก +****4[i]**** เมื่อฝ่ายเราทั้งหมด ฟื้นฟูพลังงานสะสมทุกๆ **3[i]** หน่วย Mem จะได้รับการชาร์จพลัง 1%",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Passive.png",
+		"shortIcon": "SkillIcon_8007_Passive",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			130,
+			0.5,
+			10,
+			400
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800804
+		],
+		"id": "8008004"
+	},
+	"8008007": {
+		"name": "Memories Back as Echoes",
+		"description": "หลังจากใช้เทคนิคแล้ว จะสร้างพื้นที่พิเศษขึ้นมา 1 จุดเป็นเวลา **1[i]** วินาที และศัตรูที่อยู่ในพื้นที่พิเศษ จะติดสถานะหยุดเวลา โดยศัตรูที่ติดสถานะดังกล่าว จะหยุดการเคลื่อนไหวทั้งหมด\nหลังจากเข้าสู่การต่อสู้ กับศัตรูที่ติดสถานะหยุดเวลาจะ **หน่วงแอ็กชัน** ของศัตรูทั้งหมด **2[i]%** จากนั้นจะสร้าง DMG น้ำแข็ง **3[i]%** ของ ATK ของผู้บุกเบิกแก่ศัตรูทั้งหมด\nโดยเอฟเฟกต์พื้นที่พิเศษที่ฝ่ายเราสร้าง จะมีได้มากสุดเพียง 1 จุด",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Maze.png",
+		"shortIcon": "SkillIcon_8007_Maze",
+		"promotion": {},
+		"params": [
+			10,
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			800807
+		],
+		"id": "8008007"
+	},
+	"8008101": {
+		"name": "Rhapsode's Scepter",
+		"description": "เมื่อเริ่มการต่อสู้จะ **เร่งแอ็กชัน** ของผู้บุกเบิกขึ้น **30%** เมื่ออัญเชิญ Mem เป็นครั้งแรก จะทำให้ Mem ได้รับการชาร์จพลัง **40%**",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree1.png",
+		"shortIcon": "SkillIcon_8007_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110251": 2,
+			"110506": 1
+		},
+		"params": [
+			0.3,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008101"
+	},
+	"8008102": {
+		"name": "Petite Parable",
+		"description": "เมื่อ Mem ปล่อย \"Baddies! Trouble!\" จะได้รับการชาร์จพลังทันที **5%**",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree2.png",
+		"shortIcon": "SkillIcon_8007_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			0.05
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008102"
+	},
+	"8008103": {
+		"name": "Magnets and Long Chains",
+		"description": "เมื่อเป้าหมายฝ่ายเราที่มี \"การสนับสนุนจาก Mem\" มีพลังงานสูงสุดมากกว่า **100** หน่วย ทุกๆ **10** หน่วยที่เกินออกมา จะสร้างตัวคูณ **DMG จริง** ผ่าน \"การสนับสนุนจาก Mem\" เพิ่มขึ้นอีก **2%** โดยสามารถเพิ่มได้มากสุดที่ **20%**",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree3.png",
+		"shortIcon": "SkillIcon_8007_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110253": 6,
+			"110506": 1
+		},
+		"params": [
+			100,
+			10,
+			0.02,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008103"
+	},
+	"8008201": {
+		"name": "เสริม DMG คริติคอล",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 2000,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8008201"
+	},
+	"8008202": {
+		"name": "เสริมการโจมตี",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 3200,
+			"110251": 1,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8008202"
+	},
+	"8008203": {
+		"name": "เสริม DMG คริติคอล",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8008203"
+	},
+	"8008204": {
+		"name": "เสริมการโจมตี",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8008204"
+	},
+	"8008205": {
+		"name": "เสริม DMG คริติคอล",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 15200,
+			"110252": 5,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008205"
+	},
+	"8008206": {
+		"name": "เสริม HP",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8008206"
+	},
+	"8008207": {
+		"name": "เสริม DMG คริติคอล",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008207"
+	},
+	"8008208": {
+		"name": "เสริมการโจมตี",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 112000,
+			"110253": 5,
+			"111013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8008208"
+	},
+	"8008209": {
+		"name": "เสริม HP",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008209"
+	},
+	"8008210": {
+		"name": "เสริม DMG คริติคอล",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "8008210"
+	},
+	"8008301": {
+		"name": "Baddies! Trouble!",
+		"avatar": 8008,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_Servant01.png",
+		"shortIcon": "SkillIcon_18007_Servant01",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800701,
+			1800707
+		],
+		"id": "8008301"
+	},
+	"8008302": {
+		"name": "Friends! Together!",
+		"avatar": 8008,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_ServantPassive.png",
+		"shortIcon": "SkillIcon_18007_ServantPassive",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800703,
+			1800705,
+			1800706
+		],
+		"id": "8008302"
 	}
 }

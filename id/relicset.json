@@ -625,6 +625,74 @@
 		"setIcon": "spriteoutput/itemfigures/71039.png",
 		"planarSet": false
 	},
+	"123": {
+		"name": "Hero of Triumphant Song",
+		"setID": "123",
+		"two": "ATK +**12%**.",
+		"twopc": "ATK +<unbreak>#1[i]%</unbreak>.",
+		"four": "Saat Memosprite pengguna ada di medan pertempuran, SPD pengguna meningkat **6%**. Saat Memosprite pengguna menyerang, CRIT DMG pengguna dan Memosprite miliknya akan meningkat **30%**, berlangsung selama **2** giliran.",
+		"fourpc": "Saat Memosprite pengguna ada di medan pertempuran, SPD pengguna meningkat <unbreak>#1[i]%</unbreak>. Saat Memosprite pengguna menyerang, CRIT DMG pengguna dan Memosprite miliknya akan meningkat <unbreak>#2[i]%</unbreak>, berlangsung selama <unbreak>#3[i]</unbreak> giliran.",
+		"params": [
+			[
+				0.12
+			],
+			[
+				0.06,
+				0.3,
+				2
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71040.png",
+		"planarSet": false
+	},
+	"124": {
+		"name": "Poet of Mourning Collapse",
+		"setID": "124",
+		"two": "Quantum DMG +**10%**.",
+		"twopc": "Quantum DMG +<unbreak>#1[i]%</unbreak>.",
+		"four": "Mengurangi **8%** SPD pengguna. Sebelum memasuki pertempuran, jika SPD pengguna kurang dari **110**/**95**, CRIT Rate pengguna akan meningkat **20%**/**32%**. Efek ini juga berlaku pada Memosprite pengguna.",
+		"fourpc": "Mengurangi <unbreak>#6[i]%</unbreak> SPD pengguna. Sebelum memasuki pertempuran, jika SPD pengguna kurang dari <unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak>, CRIT Rate pengguna akan meningkat <unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>. Efek ini juga berlaku pada Memosprite pengguna.",
+		"params": [
+			[
+				0.1
+			],
+			[
+				-0.08,
+				110,
+				95,
+				0.2,
+				0.32,
+				0.08
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "QuantumAddedRatio",
+					"value": 0.1
+				}
+			],
+			[
+				{
+					"active": 4,
+					"type": "SpeedAddedRatio",
+					"value": -0.08
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71041.png",
+		"planarSet": false
+	},
 	"301": {
 		"name": "Space Sealing Station",
 		"setID": "301",

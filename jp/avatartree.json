@@ -4140,7 +4140,7 @@
 	},
 	"1101003": {
 		"name": "ベロブルグ{RUBY_B#こうしんきょく}行進曲{RUBY_E#}",
-		"description": "味方全体の攻撃力+****1[i]%****、会心ダメージがブローニャの会心ダメージの****2[f1]%****+****3[f1]%****アップする、**4[i]**ターン継続。",
+		"description": "味方全体の攻撃力+****1[i]%****、会心ダメージがブローニャの会心ダメージ****2[f1]%****分+****3[f1]%****アップする、**4[i]**ターン継続。",
 		"avatar": 1101,
 		"type": 2,
 		"pos": "Point03",
@@ -19098,7 +19098,7 @@
 	},
 	"1224002": {
 		"name": "{RUBY_B#ししょう}師匠{RUBY_E#}、お{RUBY_B#ちゃ}茶{RUBY_E#}をどうぞ！",
-		"description": "指定した自身以外の味方単体を「師匠」にする。「師匠」の速度+****1[f1]%****。戦闘スキルで最後に指定したターゲットのみ、三月なのかの「師匠」と見なされる。\n通常攻撃を行う、または強化通常攻撃「一に眉間、二に心臓」によるダメージを1段与える時、フィールド上に特定の運命を歩む「師匠」が存在する場合、「師匠」の歩む運命に応じて特定の効果を発動する。\n\n「師匠」の歩む運命が「知恵」、「壊滅」または「巡狩」の場合：三月なのかの攻撃力****2[i]%****分の、「師匠」の属性に応じた**付加ダメージ**を与える。\n\n「師匠」の歩む運命が「調和」、「虚無」、「存護」または「豊穣」の場合：その回の攻撃の削靭値+**3[i]%**。",
+		"description": "指定した自身以外の味方単体を「師匠」にする。「師匠」の速度+****1[f1]%****。戦闘スキルで最後に指定したターゲットのみ、三月なのかの「師匠」と見なされる。\n通常攻撃を行う、または強化通常攻撃「一に眉間、二に心臓」によるダメージを1段与える時、フィールド上に特定の運命を歩む「師匠」が存在する場合、「師匠」の歩む運命に応じて特定の効果を発動する。\n\n「師匠」の歩む運命が「知恵」、「壊滅」、「巡狩」または記憶の場合：三月なのかの攻撃力****2[i]%****分の、「師匠」の属性に応じた**付加ダメージ**を与える。\n\n「師匠」の歩む運命が「調和」、「虚無」、「存護」または「豊穣」の場合：その回の攻撃の削靭値+**3[i]%**。",
 		"avatar": 1224,
 		"type": 2,
 		"pos": "Point02",
@@ -19716,7 +19716,7 @@
 	},
 	"1225103": {
 		"name": "{RUBY_B#せいき}璣星{RUBY_E#}の{RUBY_B#たいそ}太素{RUBY_E#}",
-		"description": "敵が弱点撃破される時、自身以外の味方キャラの撃破特効+**6%**。帰忘の流離人の撃破特効が**220%**以上の場合、さらに撃破特効+**12%**。この効果は**2**ターン継続、最大で**2**層累積できる。",
+		"description": "敵が弱点撃破される時、自身以外の味方キャラの撃破特効+**6%**。帰忘の流離人の撃破特効が**220%**以上の場合、撃破特効アップの効果がさらに+**12%**。この効果は**2**ターン継続、最大で**2**層累積できる。",
 		"avatar": 1225,
 		"type": 3,
 		"pos": "Point08",
@@ -22288,7 +22288,7 @@
 	},
 	"1306002": {
 		"name": "{RUBY_B#ゆめ}夢{RUBY_E#}を{RUBY_B#およ}泳{RUBY_E#}ぐ{RUBY_B#さかな}魚{RUBY_E#}",
-		"description": "指定した味方単体の会心ダメージを、花火の会心ダメージ****1[f1]%****+****2[f1]%****分アップする、**3[i]**ターン継続。その味方の行動順を**4[i]%**早める。\n自身に対してこのスキルを発動した時、行動順を早める効果は発動しない。",
+		"description": "指定した味方単体の会心ダメージを、花火の会心ダメージ****1[f1]%****分+****2[f1]%****アップする、**3[i]**ターン継続。その味方の行動順を**4[i]%**早める。\n自身に対してこのスキルを発動した時、行動順を早める効果は発動しない。",
 		"avatar": 1306,
 		"type": 2,
 		"pos": "Point02",
@@ -26846,6 +26846,991 @@
 		"baseSkill": [],
 		"id": "1317210"
 	},
+	"1401001": {
+		"name": "これでわかった？",
+		"description": "指定した敵単体にマダム・ヘルタの攻撃力****1[i]%****分の氷属性ダメージを与える。",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Normal.png",
+		"shortIcon": "SkillIcon_1401_Normal",
+		"promotion": {
+			"2": 240000,
+			"110201": 3,
+			"110202": 8,
+			"110203": 11,
+			"111001": 6,
+			"111002": 7,
+			"111003": 7
+		},
+		"params": [
+			0.5,
+			3,
+			1,
+			0.3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140101
+		],
+		"id": "1401001"
+	},
+	"1401002": {
+		"name": "{RUBY_B#しや}視野{RUBY_E#}が{RUBY_B#せま}狭{RUBY_E#}いよ",
+		"description": "指定した敵単体にマダム・ヘルタの攻撃力****1[i]%****分の氷属性ダメージを与え、「解読」を**2[i]**層付与する。\nその回の戦闘スキルが命中した敵および隣接する敵に、マダム・ヘルタの攻撃力****1[i]%****分の氷属性ダメージを与える。2回繰り返す。",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_BP.png",
+		"shortIcon": "SkillIcon_1401_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			0.35,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140102,
+			140109
+		],
+		"id": "1401002"
+	},
+	"1401003": {
+		"name": "{RUBY_B#まほう}魔法{RUBY_E#}だって{RUBY_B#い}言{RUBY_E#}ったでしょ",
+		"description": "敵それぞれが持つ「解読」の層数を並び替える。なお、精鋭エネミー以上の敵にはより多い層数を優先的に転移させる。\nまた、敵全体にマダム・ヘルタの攻撃力****1[i]%****分の氷属性ダメージを与え、必殺技を発動する時、マダム・ヘルタの攻撃力+****4[i]%****、**5[i]**ターン継続。必殺技を発動した後、マダム・ヘルタが即座に行動し、「第六感」を1層獲得する。「第六感」は最大で**6[i]**層累積できる。「第六感」を持つ時、戦闘スキル「視野が狭いよ」が「大胆なアイデア」に強化される。",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Ultra.png",
+		"shortIcon": "SkillIcon_1401_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			1,
+			2,
+			1,
+			0.4,
+			3,
+			4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140103
+		],
+		"id": "1401003"
+	},
+	"1401004": {
+		"name": "{RUBY_B#わたし}私{RUBY_E#}がもらうね",
+		"description": "敵が戦闘に入る時、マダム・ヘルタはその敵に「解読」を1層付与する。各ウェーブ開始時、ランダムな敵1体に「解読」を**6[i]**層付与する。この時、「解読」は精鋭エネミー以上の敵に優先的に付与される。\n強化戦闘スキルのメインターゲットに「解読」がある時、強化戦闘スキルのダメージ倍率がアップする。「解読」1層につき、メインターゲットに対するダメージ倍率+****1[f1]%****、他のターゲットに対するダメージ倍率+****2[f1]%****。パーティ内の「知恵」の運命を歩むキャラクターが2名以上の場合、さらに「解読」1層につき、メインターゲットに対するダメージ倍率+****1[f1]%****、他のターゲットに対するダメージ倍率+****2[f1]%****。\n「解読」は最大で**3[i]**層累積できる。強化戦闘スキルを発動した後、メインターゲットの「解読」層数を1層にリセットし、敵が一時離脱、あるいは任意のユニットに倒された後、「解読」が転移する。なお、「解読」は精鋭エネミー以上の敵を優先して転移する。",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Passive.png",
+		"shortIcon": "SkillIcon_1401_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			0.04,
+			0.02,
+			42,
+			1,
+			42,
+			25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140104
+		],
+		"id": "1401004"
+	},
+	"1401007": {
+		"name": "{RUBY_B#おもしろ}面白{RUBY_E#}いの{RUBY_B#み}見{RUBY_E#}せてよ",
+		"description": "秘技を使用した後、次の戦闘開始時、マダム・ヘルタの攻撃力+**1[i]%**、**2[i]**ターン継続。\nマップ内に普通の戦利品がある場合、秘技を使用すると普通の戦利品の位置を最大で**3[i]**箇所マークする。\n模擬宇宙、または階差宇宙で秘技を使用して戦闘に入った後、各ウェーブ開始時に通常エネミーそれぞれに、その敵の最大HP**4[i]%**分の**確定ダメージ**を与え、精鋭エネミー以上の敵それぞれに、その敵の最大HP**5[i]%**分の**確定ダメージ**を与える。",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Maze.png",
+		"shortIcon": "SkillIcon_1401_Maze",
+		"promotion": {},
+		"params": [
+			0.6,
+			2,
+			3,
+			0.99,
+			0.3,
+			25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			140107
+		],
+		"id": "1401007"
+	},
+	"1401101": {
+		"name": "{RUBY_B#つめ}冷{RUBY_E#}たい{RUBY_B#しんじつ}真実{RUBY_E#}",
+		"description": "味方が攻撃を行う時、攻撃が命中する敵に「解読」を1層付与する。攻撃を行った後、その回の攻撃で命中した敵1体につき、マダム・ヘルタはEPを固定で**3**回復する。カウントされる敵は最大5体まで。強化戦闘スキルを発動する時、メインターゲットの「解読」が**42**層に達している場合、マダム・ヘルタの与ダメージ+**50%**。この強化はその回の攻撃が終了するまで継続する。",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree1.png",
+		"shortIcon": "SkillIcon_1401_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110201": 3,
+			"110506": 1
+		},
+		"params": [
+			3,
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401101"
+	},
+	"1401102": {
+		"name": "{RUBY_B#きょうかい}境界{RUBY_E#}からの{RUBY_B#たよ}便{RUBY_E#}り",
+		"description": "戦闘に入る時、パーティに「知恵」の運命を歩むキャラが2名以上いる場合、以下の効果が発動される。\n味方全体の会心ダメージ+**80%**、軌跡「冷たい真実」で命中した敵の数を計算する時、少なくとも**3**体を計算に加える。攻撃を行った後、命中した敵の中で「解読」層数が最も多い敵に「解読」を**1**層付与する。攻撃者が「知恵」の運命を歩むキャラである場合、追加で「解読」を**2**層付与する。",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree2.png",
+		"shortIcon": "SkillIcon_1401_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110202": 5,
+			"110506": 1
+		},
+		"params": [
+			0.8,
+			3,
+			1,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401102"
+	},
+	"1401103": {
+		"name": "{RUBY_B#う}飢{RUBY_E#}えた{RUBY_B#ちけい}地景{RUBY_E#}",
+		"description": "敵に「解読」が1層付与されるたびに、マダム・ヘルタは「回答」を1層獲得する、最大で**99**層累積できる。必殺技を発動する時、「回答」1層につき、その回の必殺技のダメージ倍率+**1%**。",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree3.png",
+		"shortIcon": "SkillIcon_1401_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110203": 8,
+			"110506": 1
+		},
+		"params": [
+			0.01,
+			99
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401103"
+	},
+	"1401201": {
+		"name": "ダメージ強化・氷",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 2500,
+			"111001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1401201"
+	},
+	"1401202": {
+		"name": "攻撃強化",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 5000,
+			"110201": 3,
+			"111001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1401202"
+	},
+	"1401203": {
+		"name": "ダメージ強化・氷",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 10000,
+			"110202": 3,
+			"111002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1401203"
+	},
+	"1401204": {
+		"name": "速度強化",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 10000,
+			"110202": 3,
+			"111002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 2
+			}
+		],
+		"baseSkill": [],
+		"id": "1401204"
+	},
+	"1401205": {
+		"name": "ダメージ強化・氷",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 20000,
+			"110202": 5,
+			"111002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1401205"
+	},
+	"1401206": {
+		"name": "攻撃強化",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 45000,
+			"110203": 3,
+			"111003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1401206"
+	},
+	"1401207": {
+		"name": "ダメージ強化・氷",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110203": 3,
+			"111003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1401207"
+	},
+	"1401208": {
+		"name": "速度強化",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 3
+			}
+		],
+		"baseSkill": [],
+		"id": "1401208"
+	},
+	"1401209": {
+		"name": "攻撃強化",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1401209"
+	},
+	"1401210": {
+		"name": "ダメージ強化・氷",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.064
+			}
+		],
+		"baseSkill": [],
+		"id": "1401210"
+	},
+	"1402001": {
+		"name": "サイフォスの{RUBY_B#みつ}蜜{RUBY_E#}",
+		"description": "指定した敵単体にアグライアの攻撃力****1[i]%****分の雷属性ダメージを与える。",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Normal.png",
+		"shortIcon": "SkillIcon_1402_Normal",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140201,
+			140208
+		],
+		"id": "1402001"
+	},
+	"1402002": {
+		"name": "{RUBY_B#かか}掲{RUBY_E#}げよ、{RUBY_B#しょうか}昇華{RUBY_E#}せし{RUBY_B#な}名{RUBY_E#}を",
+		"description": "ラフトラのHPを最大HP****1[i]%****分回復する。ラフトラがフィールド上にいない場合、**記憶の精霊**ラフトラを**召喚**し、自身が即座に行動する。",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_BP.png",
+		"shortIcon": "SkillIcon_1402_BP",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.25,
+			0,
+			5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140202,
+			140209
+		],
+		"id": "1402002"
+	},
+	"1402003": {
+		"name": "{RUBY_B#とも}共{RUBY_E#}に{RUBY_B#ま}舞{RUBY_E#}え、{RUBY_B#うんめい}運命{RUBY_E#}のラフトラ",
+		"description": "**記憶の精霊**「ラフトラ」を**召喚**する。ラフトラがフィールド上にいる場合、そのHPを最大値まで回復する。アグライアは「至高の姿」状態に入り、即座に行動する。\n「至高の姿」状態のアグライアは、ラフトラの天賦の速度アップ効果を獲得する（層数はラフトラと同じ）。1層につき、自身の速度+****1[f1]%****。通常攻撃「サイフォスの蜜」が「剣先より千の口付けを」に強化され、戦闘スキルが発動できなくなる。また、ラフトラが**行動制限系デバフ**に抵抗するようになる。\nアクションバーにカウントダウンが出現する。カウントダウンの速度は**4[i]**に固定される。カウントダウンの間に必殺技を発動すると、カウントダウンがリセットされる。カウントダウンのターンが回ってきた時、ラフトラは自滅し、アグライアは「至高の姿」状態を解除する。",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Ultra.png",
+		"shortIcon": "SkillIcon_1402_Ultra",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.1,
+			0,
+			0,
+			100,
+			0,
+			0
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140203
+		],
+		"id": "1402003"
+	},
+	"1402004": {
+		"name": "{RUBY_B#ばらいろ}薔薇色{RUBY_E#}の{RUBY_B#ゆびさき}指先{RUBY_E#}",
+		"description": "記憶の精霊「ラフトラ」の初期速度は、アグライアの速度の**4[i]%**分となり、初期最大HPは、アグライアの最大HP****5[i]%****分+****6[i]****となる。\nラフトラがフィールド上にいる場合、アグライアが攻撃を行う時、敵に「隙を縫う糸」状態を付与する。「隙を縫う糸」状態の敵を攻撃した後、追加でアグライアの攻撃力****1[i]%****分の雷属性**付加ダメージ**を与える。「隙を縫う糸」状態は最後に付与されたターゲットにのみ効果を発揮する。",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Passive.png",
+		"shortIcon": "SkillIcon_1402_Passive",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.12,
+			0,
+			0,
+			0.35,
+			0.44,
+			180
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140204
+		],
+		"id": "1402004"
+	},
+	"1402007": {
+		"name": "{RUBY_B#ほし}星{RUBY_E#}を{RUBY_B#まと}纏{RUBY_E#}いし{RUBY_B#れっけん}烈剣{RUBY_E#}",
+		"description": "**記憶の精霊**「ラフトラ」を召喚し、共に攻撃する。戦闘に入った後、EPを**2[i]**回復し、敵全体にアグライアの攻撃力**1[i]%**分の雷属性ダメージを与え、ランダムな敵を「隙を縫う糸」状態にする。",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Maze.png",
+		"shortIcon": "SkillIcon_1402_Maze",
+		"promotion": {},
+		"params": [
+			1,
+			30
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			140207
+		],
+		"id": "1402007"
+	},
+	"1402101": {
+		"name": "{RUBY_B#たんけん}短見{RUBY_E#}への{RUBY_B#さば}裁{RUBY_E#}き",
+		"description": "「至高の姿」状態の時、アグライアおよびラフトラの攻撃力が、アグライアの速度**720%**分+ラフトラの速度**360%**分アップする。",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree1.png",
+		"shortIcon": "SkillIcon_1402_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110251": 3,
+			"110506": 1
+		},
+		"params": [
+			7.2,
+			3.6
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402101"
+	},
+	"1402102": {
+		"name": "{RUBY_B#さいご}最後{RUBY_E#}の{RUBY_B#しきうん}織運{RUBY_E#}",
+		"description": "ラフトラが退場する時、精霊天賦の速度アップ効果の層数を最大で**1**層まで保持する。ラフトラが再度召喚された時、保持していた層数分の速度アップ効果を獲得する。",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree2.png",
+		"shortIcon": "SkillIcon_1402_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402102"
+	},
+	"1402103": {
+		"name": "{RUBY_B#せつな}刹那{RUBY_E#}の{RUBY_B#ようこう}陽光{RUBY_E#}",
+		"description": "戦闘開始時、自身のEPが**50%**未満の場合、EPを**50%**まで回復する。",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree3.png",
+		"shortIcon": "SkillIcon_1402_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110253": 8,
+			"110506": 1
+		},
+		"params": [
+			0.5,
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402103"
+	},
+	"1402201": {
+		"name": "ダメージ強化・雷",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 2500,
+			"115001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1402201"
+	},
+	"1402202": {
+		"name": "会心率強化",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 4000,
+			"110251": 3,
+			"115001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.026999999
+			}
+		],
+		"baseSkill": [],
+		"id": "1402202"
+	},
+	"1402203": {
+		"name": "ダメージ強化・雷",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 9000,
+			"110252": 3,
+			"115002": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1402203"
+	},
+	"1402204": {
+		"name": "防御強化",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 9000,
+			"110252": 3,
+			"115002": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.05
+			}
+		],
+		"baseSkill": [],
+		"id": "1402204"
+	},
+	"1402205": {
+		"name": "ダメージ強化・雷",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 19000,
+			"110252": 4,
+			"115002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1402205"
+	},
+	"1402206": {
+		"name": "会心率強化",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 45000,
+			"110253": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1402206"
+	},
+	"1402207": {
+		"name": "ダメージ強化・雷",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110253": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1402207"
+	},
+	"1402208": {
+		"name": "防御強化",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 140000,
+			"110253": 7,
+			"115003": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.075
+			}
+		],
+		"baseSkill": [],
+		"id": "1402208"
+	},
+	"1402209": {
+		"name": "会心率強化",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 160000,
+			"110253": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1402209"
+	},
+	"1402210": {
+		"name": "ダメージ強化・雷",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110253": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.064
+			}
+		],
+		"baseSkill": [],
+		"id": "1402210"
+	},
+	"1402301": {
+		"name": "サイフォスの{RUBY_B#わな}罠{RUBY_E#}",
+		"avatar": 1402,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_11402_Servant01.png",
+		"shortIcon": "SkillIcon_11402_Servant01",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1140201
+		],
+		"id": "1402301"
+	},
+	"1402302": {
+		"name": "{RUBY_B#なみだ}涙{RUBY_E#}で{RUBY_B#きた}鍛{RUBY_E#}えし{RUBY_B#たくみ}匠{RUBY_E#}の{RUBY_B#むくろ}躯{RUBY_E#}",
+		"avatar": 1402,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_11402_ServantPassive.png",
+		"shortIcon": "SkillIcon_11402_ServantPassive",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1140203,
+			1140205,
+			1140206
+		],
+		"id": "1402302"
+	},
 	"8001001": {
 		"name": "サヨナラ{RUBY_B#あんだ}安打{RUBY_E#}",
 		"description": "指定した敵単体に開拓者の攻撃力****1[i]%****分の物理属性ダメージを与える。",
@@ -29565,5 +30550,1025 @@
 		],
 		"baseSkill": [],
 		"id": "8006210"
+	},
+	"8007001": {
+		"name": "お{RUBY_B#まか}任{RUBY_E#}せあれ！",
+		"description": "指定した敵単体に開拓者の攻撃力****1[i]%****分の氷属性ダメージを与える。",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal.png",
+		"shortIcon": "SkillIcon_8007_Normal",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800701
+		],
+		"id": "8007001"
+	},
+	"8007002": {
+		"name": "ミュリオンに{RUBY_B#き}決{RUBY_E#}めた！",
+		"description": "**記憶の精霊**「ミュリオン」を**召喚**する。ミュリオンがすでにフィールド上にいる場合、ミュリオンはHPを最大HP****1[i]%****分回復し、チャージを**2[i]%**獲得する。",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_BP.png",
+		"shortIcon": "SkillIcon_8007_BP",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			0.3,
+			0.1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800702,
+			800709
+		],
+		"id": "8007002"
+	},
+	"8007003": {
+		"name": "やっちゃえミュリオン！",
+		"description": "**記憶の精霊**「ミュリオン」を**召喚**する。ミュリオンがチャージを**2[i]%**獲得し、その後、ミュリオンが敵全体に攻撃力****1[i]%****分の氷属性ダメージを与える。",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Ultra.png",
+		"shortIcon": "SkillIcon_8007_Ultra",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			1.2,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800703
+		],
+		"id": "8007003"
+	},
+	"8007004": {
+		"name": "なんでもできる{RUBY_B#なかま}仲間{RUBY_E#}",
+		"description": "記憶の精霊「ミュリオン」の初期速度は**1[i]**となり、初期最大HPは、開拓者の最大HP****2[i]%****分+****4[i]****となる。味方全体でEPを**3[i]**回復するたびに、ミュリオンがチャージを1%獲得する。",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Passive.png",
+		"shortIcon": "SkillIcon_8007_Passive",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			130,
+			0.5,
+			10,
+			400
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800704
+		],
+		"id": "8007004"
+	},
+	"8007007": {
+		"name": "こだまする{RUBY_B#きおく}記憶{RUBY_E#}",
+		"description": "秘技を使用した後、**1[i]**秒間継続する特殊領域を作り出す。特殊領域内にいる敵はタイムストップ状態を付与され、タイムストップ状態の敵は行動を停止する。\nタイムストップ状態の敵と戦闘に入った後、敵全体の**行動順**を**2[i]%****遅延**させ、敵全体に開拓者の攻撃力**3[i]%**分の氷属性ダメージを与える。\n味方が作り出した領域は1つまで存在できる。",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Maze.png",
+		"shortIcon": "SkillIcon_8007_Maze",
+		"promotion": {},
+		"params": [
+			10,
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			800707
+		],
+		"id": "8007007"
+	},
+	"8007101": {
+		"name": "{RUBY_B#ついおく}追憶{RUBY_E#}の{RUBY_B#つえ}杖{RUBY_E#}",
+		"description": "戦闘開始時、開拓者の**行動順**が**30%****早まる**。ミュリオンを初めて召喚した時、ミュリオンがチャージを**40%**獲得する。",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree1.png",
+		"shortIcon": "SkillIcon_8007_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110251": 2,
+			"110506": 1
+		},
+		"params": [
+			0.3,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007101"
+	},
+	"8007102": {
+		"name": "{RUBY_B#しょうじょう}掌上{RUBY_E#}の{RUBY_B#じょじし}叙事詩{RUBY_E#}",
+		"description": "ミュリオンが「厄介な悪者さん！」を発動する時、即座にチャージを**5%**獲得する。",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree2.png",
+		"shortIcon": "SkillIcon_8007_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			0.05
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007102"
+	},
+	"8007103": {
+		"name": "{RUBY_B#じしゃく}磁石{RUBY_E#}と{RUBY_B#ちょうさ}長鎖{RUBY_E#}",
+		"description": "「ミュリオンの応援」を持つ味方の最大EPが**100**を超えている場合、超過分**10**につき、「ミュリオンの応援」による**確定ダメージ**の倍率がさらに+**2%**、最大で**20%**アップできる。",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree3.png",
+		"shortIcon": "SkillIcon_8007_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110253": 6,
+			"110506": 1
+		},
+		"params": [
+			100,
+			10,
+			0.02,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007103"
+	},
+	"8007201": {
+		"name": "会心ダメージ強化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 2000,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8007201"
+	},
+	"8007202": {
+		"name": "攻撃強化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 3200,
+			"110251": 1,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8007202"
+	},
+	"8007203": {
+		"name": "会心ダメージ強化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8007203"
+	},
+	"8007204": {
+		"name": "攻撃強化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8007204"
+	},
+	"8007205": {
+		"name": "会心ダメージ強化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 15200,
+			"110252": 5,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007205"
+	},
+	"8007206": {
+		"name": "HP強化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8007206"
+	},
+	"8007207": {
+		"name": "会心ダメージ強化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007207"
+	},
+	"8007208": {
+		"name": "攻撃強化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 112000,
+			"110253": 5,
+			"111013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8007208"
+	},
+	"8007209": {
+		"name": "HP強化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007209"
+	},
+	"8007210": {
+		"name": "会心ダメージ強化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "8007210"
+	},
+	"8007301": {
+		"name": "{RUBY_B#やっかい}厄介{RUBY_E#}な{RUBY_B#わるもの}悪者{RUBY_E#}さん！",
+		"avatar": 8007,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_Servant01.png",
+		"shortIcon": "SkillIcon_18007_Servant01",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800701,
+			1800707
+		],
+		"id": "8007301"
+	},
+	"8007302": {
+		"name": "{RUBY_B#なかま}仲間{RUBY_E#}と{RUBY_B#いっしょ}一緒{RUBY_E#}に！",
+		"avatar": 8007,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_ServantPassive.png",
+		"shortIcon": "SkillIcon_18007_ServantPassive",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800703,
+			1800705,
+			1800706
+		],
+		"id": "8007302"
+	},
+	"8008001": {
+		"name": "お{RUBY_B#まか}任{RUBY_E#}せあれ！",
+		"description": "指定した敵単体に開拓者の攻撃力****1[i]%****分の氷属性ダメージを与える。",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal.png",
+		"shortIcon": "SkillIcon_8007_Normal",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800801
+		],
+		"id": "8008001"
+	},
+	"8008002": {
+		"name": "ミュリオンに{RUBY_B#き}決{RUBY_E#}めた！",
+		"description": "**記憶の精霊**「ミュリオン」を**召喚**する。ミュリオンがすでにフィールド上にいる場合、ミュリオンはHPを最大HP****1[i]%****分回復し、チャージを**2[i]%**獲得する。",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_BP.png",
+		"shortIcon": "SkillIcon_8007_BP",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			0.3,
+			0.1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800802,
+			800809
+		],
+		"id": "8008002"
+	},
+	"8008003": {
+		"name": "やっちゃえミュリオン！",
+		"description": "**記憶の精霊**「ミュリオン」を**召喚**する。ミュリオンはチャージを**2[i]%**獲得し、その後、敵全体に攻撃力****1[i]%****分の氷属性ダメージを与える。",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Ultra.png",
+		"shortIcon": "SkillIcon_8007_Ultra",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			1.2,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800803
+		],
+		"id": "8008003"
+	},
+	"8008004": {
+		"name": "なんでもできる{RUBY_B#なかま}仲間{RUBY_E#}",
+		"description": "記憶の精霊「ミュリオン」の初期速度は**1[i]**となり、初期最大HPは、開拓者の最大HP****2[i]%****分+****4[i]****となる。味方全体でEPを**3[i]**回復するたびに、ミュリオンがチャージを1%獲得する。",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Passive.png",
+		"shortIcon": "SkillIcon_8007_Passive",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			130,
+			0.5,
+			10,
+			400
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800804
+		],
+		"id": "8008004"
+	},
+	"8008007": {
+		"name": "こだまする{RUBY_B#きおく}記憶{RUBY_E#}",
+		"description": "秘技を使用した後、**1[i]**秒間継続する特殊領域を作り出す。特殊領域内にいる敵はタイムストップ状態を付与され、タイムストップ状態の敵は行動を停止する。\nタイムストップ状態の敵と戦闘に入った後、敵全体の**行動順**を**2[i]%****遅延**させ、敵全体に開拓者の攻撃力**3[i]%**分の氷属性ダメージを与える。\n味方が作り出した領域は1つまで存在できる。",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Maze.png",
+		"shortIcon": "SkillIcon_8007_Maze",
+		"promotion": {},
+		"params": [
+			10,
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			800807
+		],
+		"id": "8008007"
+	},
+	"8008101": {
+		"name": "{RUBY_B#ついおく}追憶{RUBY_E#}の{RUBY_B#つえ}杖{RUBY_E#}",
+		"description": "戦闘開始時、開拓者の**行動順**が**30%****早まる**。ミュリオンを初めて召喚した時、ミュリオンがチャージを**40%**獲得する。",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree1.png",
+		"shortIcon": "SkillIcon_8007_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110251": 2,
+			"110506": 1
+		},
+		"params": [
+			0.3,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008101"
+	},
+	"8008102": {
+		"name": "{RUBY_B#しょうじょう}掌上{RUBY_E#}の{RUBY_B#じょじし}叙事詩{RUBY_E#}",
+		"description": "ミュリオンが「厄介な悪者さん！」を発動する時、即座にチャージを**5%**獲得する。",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree2.png",
+		"shortIcon": "SkillIcon_8007_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			0.05
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008102"
+	},
+	"8008103": {
+		"name": "{RUBY_B#じしゃく}磁石{RUBY_E#}と{RUBY_B#ちょうさ}長鎖{RUBY_E#}",
+		"description": "「ミュリオンの応援」を持つ味方の最大EPが**100**を超えている場合、超過分**10**につき、「ミュリオンの応援」による**確定ダメージ**の倍率がさらに+**2%**、最大で**20%**アップできる。",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree3.png",
+		"shortIcon": "SkillIcon_8007_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110253": 6,
+			"110506": 1
+		},
+		"params": [
+			100,
+			10,
+			0.02,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008103"
+	},
+	"8008201": {
+		"name": "会心ダメージ強化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 2000,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8008201"
+	},
+	"8008202": {
+		"name": "攻撃強化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 3200,
+			"110251": 1,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8008202"
+	},
+	"8008203": {
+		"name": "会心ダメージ強化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8008203"
+	},
+	"8008204": {
+		"name": "攻撃強化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8008204"
+	},
+	"8008205": {
+		"name": "会心ダメージ強化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 15200,
+			"110252": 5,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008205"
+	},
+	"8008206": {
+		"name": "HP強化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8008206"
+	},
+	"8008207": {
+		"name": "会心ダメージ強化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008207"
+	},
+	"8008208": {
+		"name": "攻撃強化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 112000,
+			"110253": 5,
+			"111013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8008208"
+	},
+	"8008209": {
+		"name": "HP強化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008209"
+	},
+	"8008210": {
+		"name": "会心ダメージ強化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "8008210"
+	},
+	"8008301": {
+		"name": "{RUBY_B#やっかい}厄介{RUBY_E#}な{RUBY_B#わるもの}悪者{RUBY_E#}さん！",
+		"avatar": 8008,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_Servant01.png",
+		"shortIcon": "SkillIcon_18007_Servant01",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800701,
+			1800707
+		],
+		"id": "8008301"
+	},
+	"8008302": {
+		"name": "{RUBY_B#なかま}仲間{RUBY_E#}と{RUBY_B#いっしょ}一緒{RUBY_E#}に！",
+		"avatar": 8008,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_ServantPassive.png",
+		"shortIcon": "SkillIcon_18007_ServantPassive",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800703,
+			1800705,
+			1800706
+		],
+		"id": "8008302"
 	}
 }

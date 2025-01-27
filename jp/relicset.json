@@ -313,8 +313,8 @@
 		"setID": "112",
 		"two": "虚数属性ダメージ+**10%**。",
 		"twopc": "虚数属性ダメージ+<unbreak>#1[i]%</unbreak>。",
-		"four": "デバフ状態の敵にダメージを与えた時、装備キャラの会心率+**10%**。禁錮状態の敵にダメージを与えた時、会心ダメージ+**20%**。",
-		"fourpc": "デバフ状態の敵にダメージを与えた時、装備キャラの会心率+<unbreak>#1[i]%</unbreak>。禁錮状態の敵にダメージを与えた時、会心ダメージ+<unbreak>#2[i]%</unbreak>。",
+		"four": "デバフ状態の敵にダメージを与える時、装備キャラの会心率+**10%**。禁錮状態の敵にダメージを与える時、会心ダメージ+**20%**。",
+		"fourpc": "デバフ状態の敵にダメージを与える時、装備キャラの会心率+<unbreak>#1[i]%</unbreak>。禁錮状態の敵にダメージを与える時、会心ダメージ+<unbreak>#2[i]%</unbreak>。",
 		"params": [
 			[
 				0.1
@@ -623,6 +623,74 @@
 			]
 		],
 		"setIcon": "spriteoutput/itemfigures/71039.png",
+		"planarSet": false
+	},
+	"123": {
+		"name": "凱歌を揚げる英雄",
+		"setID": "123",
+		"two": "攻撃力+**12%**。",
+		"twopc": "攻撃力+<unbreak>#1[i]%</unbreak>。",
+		"four": "装備キャラの記憶の精霊がフィールドにいる時、装備キャラの速度+**6%**。装備キャラの記憶の精霊が攻撃を行う時、装備キャラおよびその記憶の精霊の会心ダメージ+**30%**、**2**ターン継続。",
+		"fourpc": "装備キャラの記憶の精霊がフィールドにいる時、装備キャラの速度+<unbreak>#1[i]%</unbreak>。装備キャラの記憶の精霊が攻撃を行う時、装備キャラおよびその記憶の精霊の会心ダメージ+<unbreak>#2[i]%</unbreak>、<unbreak>#3[i]</unbreak>ターン継続。",
+		"params": [
+			[
+				0.12
+			],
+			[
+				0.06,
+				0.3,
+				2
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71040.png",
+		"planarSet": false
+	},
+	"124": {
+		"name": "亡国の悲哀を詠う詩人",
+		"setID": "124",
+		"two": "量子属性ダメージ+**10%**。",
+		"twopc": "量子属性ダメージ+<unbreak>#1[i]%</unbreak>。",
+		"four": "装備キャラの速度‑**8%**。戦闘に入る前、装備キャラの速度が**110**/**95**を下回る時、装備キャラの会心率+**20%**/**32%**。この効果は装備キャラの記憶の精霊にも有効。",
+		"fourpc": "装備キャラの速度‑<unbreak>#6[i]%</unbreak>。戦闘に入る前、装備キャラの速度が<unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak>を下回る時、装備キャラの会心率+<unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>。この効果は装備キャラの記憶の精霊にも有効。",
+		"params": [
+			[
+				0.1
+			],
+			[
+				-0.08,
+				110,
+				95,
+				0.2,
+				0.32,
+				0.08
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "QuantumAddedRatio",
+					"value": 0.1
+				}
+			],
+			[
+				{
+					"active": 4,
+					"type": "SpeedAddedRatio",
+					"value": -0.08
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71041.png",
 		"planarSet": false
 	},
 	"301": {

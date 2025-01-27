@@ -19098,7 +19098,7 @@
 	},
 	"1224002": {
 		"name": "师父，请喝茶！",
-		"description": "使除自身以外的我方指定单体成为【师父】，【师父】的速度提高****1[f1]%****。仅战技最新的施放目标被视为三月七的【师父】。\n每当施放普攻或造成1段强化普攻的伤害时，若场上存在指定命途的【师父】，则触发对应效果：\n「智识」、「毁灭」、「巡猎」：额外造成等同于三月七****2[i]%****攻击力的基于【师父】属性的**附加伤害**。\n「同谐」、「虚无」、「存护」、「丰饶」：本次伤害的削韧值提高**3[i]%**。",
+		"description": "使除自身以外的我方指定单体成为【师父】，【师父】的速度提高****1[f1]%****。仅战技最新的施放目标被视为三月七的【师父】。\n每当施放普攻或造成1段强化普攻的伤害时，若场上存在指定命途的【师父】，则触发对应效果：\n「智识」、「毁灭」、「巡猎」、「记忆」：额外造成等同于三月七****2[i]%****攻击力的基于【师父】属性的**附加伤害**。\n「同谐」、「虚无」、「存护」、「丰饶」：本次伤害的削韧值提高**3[i]%**。",
 		"avatar": 1224,
 		"type": 2,
 		"pos": "Point02",
@@ -26846,6 +26846,991 @@
 		"baseSkill": [],
 		"id": "1317210"
 	},
+	"1401001": {
+		"name": "开窍了吗",
+		"description": "对指定敌方单体造成等同于大黑塔****1[i]%****攻击力的冰属性伤害。",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Normal.png",
+		"shortIcon": "SkillIcon_1401_Normal",
+		"promotion": {
+			"2": 240000,
+			"110201": 3,
+			"110202": 8,
+			"110203": 11,
+			"111001": 6,
+			"111002": 7,
+			"111003": 7
+		},
+		"params": [
+			0.5,
+			3,
+			1,
+			0.3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140101
+		],
+		"id": "1401001"
+	},
+	"1401002": {
+		"name": "格局打开",
+		"description": "对指定敌方单体造成等同于大黑塔****1[i]%****攻击力的冰属性伤害并施加**2[i]**层【解读】。对本次战技命中过的目标及其相邻目标造成等同于大黑塔****1[i]%****攻击力的冰属性伤害，该效果可重复2次。",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_BP.png",
+		"shortIcon": "SkillIcon_1401_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			0.35,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140102,
+			140109
+		],
+		"id": "1401002"
+	},
+	"1401003": {
+		"name": "早说了是魔法吧",
+		"description": "将敌方全体的【解读】层数重新排序，较高层数的【解读】将优先转移到精英级别及以上的目标，并对敌方全体造成等同于大黑塔****1[i]%****攻击力的冰属性伤害。终结技施放时，使大黑塔攻击力提高****4[i]%****，持续**5[i]**回合，施放后使大黑塔立即行动，并获得1层【灵感】。【灵感】最多持有**6[i]**层，持有【灵感】时，战技强化为【我有一个大胆的想法】。",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Ultra.png",
+		"shortIcon": "SkillIcon_1401_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			1,
+			2,
+			1,
+			0.4,
+			3,
+			4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140103
+		],
+		"id": "1401003"
+	},
+	"1401004": {
+		"name": "拿来吧你",
+		"description": "敌方目标进入战斗时，大黑塔对其施加1层【解读】。每个波次开始时，对一个随机敌方目标施加**6[i]**层【解读】，优先施加给精英级别及以上的目标。强化战技的主目标持有【解读】时，造成的伤害倍率提高，每层对主目标/其他目标提高****1[f1]%****/****2[f1]%****，若队伍中的「智识」命途角色大于等于2名，每层额外对主目标/其他目标提高****1[f1]%****/****2[f1]%****。【解读】最多可叠加**3[i]**层，使用强化战技时，将主目标的【解读】重置为1层。敌方目标离场或被任意单位消灭后，【解读】会被转移，优先转移到精英级别及以上的目标。",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Passive.png",
+		"shortIcon": "SkillIcon_1401_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			0.04,
+			0.02,
+			42,
+			1,
+			42,
+			25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140104
+		],
+		"id": "1401004"
+	},
+	"1401007": {
+		"name": "看看好看的",
+		"description": "使用秘技后，下一次战斗开始时大黑塔攻击力提高**1[i]%**，持续**2[i]**回合。\n若当前场景存在普通战利品，使用秘技后标记最多**3[i]**个普通战利品的位置。\n在模拟宇宙、差分宇宙中使用秘技进入战斗后，每个波次开始时对精英级别以下的敌方目标造成等同于目标**4[i]%**生命上限的**真实伤害**，对精英级别及以上的目标造成等同于目标**5[i]%**生命上限的**真实伤害**。",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Maze.png",
+		"shortIcon": "SkillIcon_1401_Maze",
+		"promotion": {},
+		"params": [
+			0.6,
+			2,
+			3,
+			0.99,
+			0.3,
+			25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			140107
+		],
+		"id": "1401007"
+	},
+	"1401101": {
+		"name": "冷漠的诚实",
+		"description": "我方目标攻击时，对被击中的敌方目标施加1层【解读】。攻击后，本次攻击每击中1个目标就使大黑塔固定恢复**3**点能量，最多计算5个目标。施放强化战技时，若主目标的【解读】层数达到**42**，使大黑塔造成的伤害提高**50%**，持续到本次攻击结束。",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree1.png",
+		"shortIcon": "SkillIcon_1401_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110201": 3,
+			"110506": 1
+		},
+		"params": [
+			3,
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401101"
+	},
+	"1401102": {
+		"name": "视界外来信",
+		"description": "进入战斗时，若队伍中的「智识」命途角色大于等于2名，使我方全体暴击伤害提高**80%**，行迹【冷漠的诚实】计算击中目标数时至少计算**3**个目标，攻击后对被击中的敌方目标中【解读】层数最高的目标施加**1**层【解读】，若攻击者为「智识」命途角色则额外施加**2**层【解读】。",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree2.png",
+		"shortIcon": "SkillIcon_1401_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110202": 5,
+			"110506": 1
+		},
+		"params": [
+			0.8,
+			3,
+			1,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401102"
+	},
+	"1401103": {
+		"name": "饥饿的地景",
+		"description": "敌方目标每被施加1层【解读】，大黑塔获得1层【谜底】，最多叠加**99**层。施放终结技时，每持有1层【谜底】，使本次终结技的伤害倍率提高**1%**。",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree3.png",
+		"shortIcon": "SkillIcon_1401_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110203": 8,
+			"110506": 1
+		},
+		"params": [
+			0.01,
+			99
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401103"
+	},
+	"1401201": {
+		"name": "伤害强化•冰",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 2500,
+			"111001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1401201"
+	},
+	"1401202": {
+		"name": "攻击强化",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 5000,
+			"110201": 3,
+			"111001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1401202"
+	},
+	"1401203": {
+		"name": "伤害强化•冰",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 10000,
+			"110202": 3,
+			"111002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1401203"
+	},
+	"1401204": {
+		"name": "速度强化",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 10000,
+			"110202": 3,
+			"111002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 2
+			}
+		],
+		"baseSkill": [],
+		"id": "1401204"
+	},
+	"1401205": {
+		"name": "伤害强化•冰",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 20000,
+			"110202": 5,
+			"111002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1401205"
+	},
+	"1401206": {
+		"name": "攻击强化",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 45000,
+			"110203": 3,
+			"111003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1401206"
+	},
+	"1401207": {
+		"name": "伤害强化•冰",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110203": 3,
+			"111003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1401207"
+	},
+	"1401208": {
+		"name": "速度强化",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 3
+			}
+		],
+		"baseSkill": [],
+		"id": "1401208"
+	},
+	"1401209": {
+		"name": "攻击强化",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1401209"
+	},
+	"1401210": {
+		"name": "伤害强化•冰",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.064
+			}
+		],
+		"baseSkill": [],
+		"id": "1401210"
+	},
+	"1402001": {
+		"name": "刺纹之蜜",
+		"description": "对指定敌方单体造成等同于阿格莱雅****1[i]%****攻击力的雷属性伤害。",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Normal.png",
+		"shortIcon": "SkillIcon_1402_Normal",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140201,
+			140208
+		],
+		"id": "1402001"
+	},
+	"1402002": {
+		"name": "高举吧，升华的名讳",
+		"description": "为衣匠回复等同于其****1[i]%****生命上限的生命值。若衣匠不在场，则**召唤忆灵**衣匠，并使自身立即行动。",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_BP.png",
+		"shortIcon": "SkillIcon_1402_BP",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.25,
+			0,
+			5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140202,
+			140209
+		],
+		"id": "1402002"
+	},
+	"1402003": {
+		"name": "共舞吧，命定的衣匠",
+		"description": "**召唤忆灵**衣匠，若衣匠已在场，则使其生命值回复至上限。阿格莱雅进入【至高之姿】状态并使自身立即行动。\n【至高之姿】状态下，阿格莱雅获得衣匠忆灵天赋的速度提高层数，每层使自身速度提高****1[f1]%****，普通攻击强化为【孤锋千吻】并且无法施放战技，衣匠免疫**控制类负面状态**。\n行动序列上出现倒计时，倒计时固定拥有**4[i]**速度，倒计时存在期间再次施放终结技将重置倒计时，回合开始时使衣匠自毁。衣匠消失时阿格莱雅解除【至高之姿】状态。",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Ultra.png",
+		"shortIcon": "SkillIcon_1402_Ultra",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.1,
+			0,
+			0,
+			100,
+			0,
+			0
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140203
+		],
+		"id": "1402003"
+	},
+	"1402004": {
+		"name": "金玫之指",
+		"description": "忆灵衣匠初始拥有等同于阿格莱雅**4[i]%**速度的速度以及等同于阿格莱雅****5[i]%****生命上限+****6[i]****的生命上限。衣匠在场时，阿格莱雅施放攻击时使目标陷入【间隙织线】状态，攻击处于【间隙织线】状态下的敌人后，额外造成等同于阿格莱雅攻击力****1[i]%****的雷属性**附加伤害**。【间隙织线】仅对最新被施加的目标生效。",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Passive.png",
+		"shortIcon": "SkillIcon_1402_Passive",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.12,
+			0,
+			0,
+			0.35,
+			0.44,
+			180
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140204
+		],
+		"id": "1402004"
+	},
+	"1402007": {
+		"name": "披星百裂",
+		"description": "**召唤忆灵**衣匠并一同向前发起攻击，进入战斗后，恢复**2[i]**点能量，并对敌方全体目标造成等同于阿格莱雅**1[i]%**攻击力的雷属性伤害，随后使敌方随机目标陷入【间隙织线】状态。",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Maze.png",
+		"shortIcon": "SkillIcon_1402_Maze",
+		"promotion": {},
+		"params": [
+			1,
+			30
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			140207
+		],
+		"id": "1402007"
+	},
+	"1402101": {
+		"name": "短视之惩",
+		"description": "处于【至高之姿】状态时，阿格莱雅与衣匠的攻击力提高，提高数值等同于阿格莱雅速度的**720%**+衣匠速度的**360%**。",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree1.png",
+		"shortIcon": "SkillIcon_1402_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110251": 3,
+			"110506": 1
+		},
+		"params": [
+			7.2,
+			3.6
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402101"
+	},
+	"1402102": {
+		"name": "织运之竭",
+		"description": "衣匠消失时，忆灵天赋的速度提高层数最多保留**1**层，衣匠再次被召唤时获得对应层数的速度提高效果。",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree2.png",
+		"shortIcon": "SkillIcon_1402_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402102"
+	},
+	"1402103": {
+		"name": "飞驰之阳",
+		"description": "战斗开始时，若自身能量不足**50%**，恢复自身能量至**50%**。",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree3.png",
+		"shortIcon": "SkillIcon_1402_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110253": 8,
+			"110506": 1
+		},
+		"params": [
+			0.5,
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402103"
+	},
+	"1402201": {
+		"name": "伤害强化•雷",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 2500,
+			"115001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1402201"
+	},
+	"1402202": {
+		"name": "暴击率强化",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 4000,
+			"110251": 3,
+			"115001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.026999999
+			}
+		],
+		"baseSkill": [],
+		"id": "1402202"
+	},
+	"1402203": {
+		"name": "伤害强化•雷",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 9000,
+			"110252": 3,
+			"115002": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1402203"
+	},
+	"1402204": {
+		"name": "防御强化",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 9000,
+			"110252": 3,
+			"115002": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.05
+			}
+		],
+		"baseSkill": [],
+		"id": "1402204"
+	},
+	"1402205": {
+		"name": "伤害强化•雷",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 19000,
+			"110252": 4,
+			"115002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1402205"
+	},
+	"1402206": {
+		"name": "暴击率强化",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 45000,
+			"110253": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1402206"
+	},
+	"1402207": {
+		"name": "伤害强化•雷",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110253": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1402207"
+	},
+	"1402208": {
+		"name": "防御强化",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 140000,
+			"110253": 7,
+			"115003": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.075
+			}
+		],
+		"baseSkill": [],
+		"id": "1402208"
+	},
+	"1402209": {
+		"name": "暴击率强化",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 160000,
+			"110253": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1402209"
+	},
+	"1402210": {
+		"name": "伤害强化•雷",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110253": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.064
+			}
+		],
+		"baseSkill": [],
+		"id": "1402210"
+	},
+	"1402301": {
+		"name": "刺纹之陷",
+		"avatar": 1402,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_11402_Servant01.png",
+		"shortIcon": "SkillIcon_11402_Servant01",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1140201
+		],
+		"id": "1402301"
+	},
+	"1402302": {
+		"name": "泪水锻造的匠躯",
+		"avatar": 1402,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_11402_ServantPassive.png",
+		"shortIcon": "SkillIcon_11402_ServantPassive",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1140203,
+			1140205,
+			1140206
+		],
+		"id": "1402302"
+	},
 	"8001001": {
 		"name": "再见安打",
 		"description": "对指定敌方单体造成等同于开拓者****1[i]%****攻击力的物理属性伤害。",
@@ -29565,5 +30550,1025 @@
 		],
 		"baseSkill": [],
 		"id": "8006210"
+	},
+	"8007001": {
+		"name": "包在我身上！",
+		"description": "对指定敌方单体造成等同于开拓者****1[i]%****攻击力的冰属性伤害。",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal.png",
+		"shortIcon": "SkillIcon_8007_Normal",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800701
+		],
+		"id": "8007001"
+	},
+	"8007002": {
+		"name": "就决定是你了！",
+		"description": "**召唤忆灵**迷迷。若迷迷已在场，为迷迷回复等同于迷迷生命上限****1[i]%****的生命值，并且使迷迷获得**2[i]%**充能。",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_BP.png",
+		"shortIcon": "SkillIcon_8007_BP",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			0.3,
+			0.1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800702,
+			800709
+		],
+		"id": "8007002"
+	},
+	"8007003": {
+		"name": "一起上吧，迷迷！",
+		"description": "**召唤忆灵**迷迷。使迷迷获得**2[i]%**充能，随后使迷迷对敌方全体造成等同于迷迷****1[i]%****攻击力的冰属性伤害。",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Ultra.png",
+		"shortIcon": "SkillIcon_8007_Ultra",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			1.2,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800703
+		],
+		"id": "8007003"
+	},
+	"8007004": {
+		"name": "无所不能的伙伴",
+		"description": "忆灵迷迷初始拥有**1[i]**点速度和等同于开拓者****2[i]%****生命上限+****4[i]****的生命上限。我方全体每累计恢复**3[i]**点能量，迷迷都会获得1%充能。",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Passive.png",
+		"shortIcon": "SkillIcon_8007_Passive",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			130,
+			0.5,
+			10,
+			400
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800704
+		],
+		"id": "8007004"
+	},
+	"8007007": {
+		"name": "记忆如往日重现",
+		"description": "使用秘技后，制造1片持续**1[i]**秒的特殊领域。处于特殊领域内的敌人陷入时停状态。时停状态下的敌人会停止所有行动。\n与处于时停状态下的敌人进入战斗后，使敌方全体**行动延后****2[i]%**，随后对敌方全体造成等同于开拓者**3[i]%**攻击力的冰属性伤害。\n我方制造的领域效果最多存在1个。",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Maze.png",
+		"shortIcon": "SkillIcon_8007_Maze",
+		"promotion": {},
+		"params": [
+			10,
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			800707
+		],
+		"id": "8007007"
+	},
+	"8007101": {
+		"name": "追念之权杖",
+		"description": "战斗开始时，开拓者的**行动提前****30%**。首次召唤迷迷时，使迷迷获得**40%**充能。",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree1.png",
+		"shortIcon": "SkillIcon_8007_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110251": 2,
+			"110506": 1
+		},
+		"params": [
+			0.3,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007101"
+	},
+	"8007102": {
+		"name": "袖珍的事诗",
+		"description": "迷迷施放【坏人！麻烦！】时，立即获得**5%**充能。",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree2.png",
+		"shortIcon": "SkillIcon_8007_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			0.05
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007102"
+	},
+	"8007103": {
+		"name": "磁石与长链",
+		"description": "持有【迷迷的声援】的我方目标能量上限大于**100**点时，每超过**10**点，通过【迷迷的声援】造成的**真实伤害**倍率额外提高**2%**，最多提高**20%**。",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree3.png",
+		"shortIcon": "SkillIcon_8007_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110253": 6,
+			"110506": 1
+		},
+		"params": [
+			100,
+			10,
+			0.02,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007103"
+	},
+	"8007201": {
+		"name": "暴击伤害强化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 2000,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8007201"
+	},
+	"8007202": {
+		"name": "攻击强化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 3200,
+			"110251": 1,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8007202"
+	},
+	"8007203": {
+		"name": "暴击伤害强化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8007203"
+	},
+	"8007204": {
+		"name": "攻击强化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8007204"
+	},
+	"8007205": {
+		"name": "暴击伤害强化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 15200,
+			"110252": 5,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007205"
+	},
+	"8007206": {
+		"name": "生命强化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8007206"
+	},
+	"8007207": {
+		"name": "暴击伤害强化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007207"
+	},
+	"8007208": {
+		"name": "攻击强化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 112000,
+			"110253": 5,
+			"111013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8007208"
+	},
+	"8007209": {
+		"name": "生命强化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007209"
+	},
+	"8007210": {
+		"name": "暴击伤害强化",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "8007210"
+	},
+	"8007301": {
+		"name": "坏人！麻烦！",
+		"avatar": 8007,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_Servant01.png",
+		"shortIcon": "SkillIcon_18007_Servant01",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800701,
+			1800707
+		],
+		"id": "8007301"
+	},
+	"8007302": {
+		"name": "伙伴！一起！",
+		"avatar": 8007,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_ServantPassive.png",
+		"shortIcon": "SkillIcon_18007_ServantPassive",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800703,
+			1800705,
+			1800706
+		],
+		"id": "8007302"
+	},
+	"8008001": {
+		"name": "包在我身上！",
+		"description": "对指定敌方单体造成等同于开拓者****1[i]%****攻击力的冰属性伤害。",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal.png",
+		"shortIcon": "SkillIcon_8007_Normal",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800801
+		],
+		"id": "8008001"
+	},
+	"8008002": {
+		"name": "就决定是你了！",
+		"description": "**召唤忆灵**迷迷。若迷迷已在场，为迷迷回复等同于迷迷生命上限****1[i]%****的生命值，并且使迷迷获得**2[i]%**充能。",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_BP.png",
+		"shortIcon": "SkillIcon_8007_BP",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			0.3,
+			0.1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800802,
+			800809
+		],
+		"id": "8008002"
+	},
+	"8008003": {
+		"name": "一起上吧，迷迷！",
+		"description": "**召唤忆灵**迷迷。使迷迷获得**2[i]%**充能，随后使迷迷对敌方全体造成等同于迷迷****1[i]%****攻击力的冰属性伤害。",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Ultra.png",
+		"shortIcon": "SkillIcon_8007_Ultra",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			1.2,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800803
+		],
+		"id": "8008003"
+	},
+	"8008004": {
+		"name": "无所不能的伙伴",
+		"description": "忆灵迷迷初始拥有**1[i]**点速度和等同于开拓者****2[i]%****生命上限+****4[i]****的生命上限。我方全体每累计恢复**3[i]**点能量，迷迷都会获得1%充能。",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Passive.png",
+		"shortIcon": "SkillIcon_8007_Passive",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			130,
+			0.5,
+			10,
+			400
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800804
+		],
+		"id": "8008004"
+	},
+	"8008007": {
+		"name": "记忆如往日重现",
+		"description": "使用秘技后，制造1片持续**1[i]**秒的特殊领域。处于特殊领域内的敌人陷入时停状态。时停状态下的敌人会停止所有行动。\n与处于时停状态下的敌人进入战斗后，使敌方全体**行动延后****2[i]%**，随后对敌方全体造成等同于开拓者**3[i]%**攻击力的冰属性伤害。\n我方制造的领域效果最多存在1个。",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Maze.png",
+		"shortIcon": "SkillIcon_8007_Maze",
+		"promotion": {},
+		"params": [
+			10,
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			800807
+		],
+		"id": "8008007"
+	},
+	"8008101": {
+		"name": "追念之权杖",
+		"description": "战斗开始时，开拓者的**行动提前****30%**。首次召唤迷迷时，使迷迷获得**40%**充能。",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree1.png",
+		"shortIcon": "SkillIcon_8007_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110251": 2,
+			"110506": 1
+		},
+		"params": [
+			0.3,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008101"
+	},
+	"8008102": {
+		"name": "袖珍的事诗",
+		"description": "迷迷施放【坏人！麻烦！】时，立即获得**5%**充能。",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree2.png",
+		"shortIcon": "SkillIcon_8007_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			0.05
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008102"
+	},
+	"8008103": {
+		"name": "磁石与长链",
+		"description": "持有【迷迷的声援】的我方目标能量上限大于**100**点时，每超过**10**点，通过【迷迷的声援】造成的**真实伤害**倍率额外提高**2%**，最多提高**20%**。",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree3.png",
+		"shortIcon": "SkillIcon_8007_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110253": 6,
+			"110506": 1
+		},
+		"params": [
+			100,
+			10,
+			0.02,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008103"
+	},
+	"8008201": {
+		"name": "暴击伤害强化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 2000,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8008201"
+	},
+	"8008202": {
+		"name": "攻击强化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 3200,
+			"110251": 1,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8008202"
+	},
+	"8008203": {
+		"name": "暴击伤害强化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8008203"
+	},
+	"8008204": {
+		"name": "攻击强化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8008204"
+	},
+	"8008205": {
+		"name": "暴击伤害强化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 15200,
+			"110252": 5,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008205"
+	},
+	"8008206": {
+		"name": "生命强化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8008206"
+	},
+	"8008207": {
+		"name": "暴击伤害强化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008207"
+	},
+	"8008208": {
+		"name": "攻击强化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 112000,
+			"110253": 5,
+			"111013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8008208"
+	},
+	"8008209": {
+		"name": "生命强化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008209"
+	},
+	"8008210": {
+		"name": "暴击伤害强化",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "8008210"
+	},
+	"8008301": {
+		"name": "坏人！麻烦！",
+		"avatar": 8008,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_Servant01.png",
+		"shortIcon": "SkillIcon_18007_Servant01",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800701,
+			1800707
+		],
+		"id": "8008301"
+	},
+	"8008302": {
+		"name": "伙伴！一起！",
+		"avatar": 8008,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_ServantPassive.png",
+		"shortIcon": "SkillIcon_18007_ServantPassive",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800703,
+			1800705,
+			1800706
+		],
+		"id": "8008302"
 	}
 }

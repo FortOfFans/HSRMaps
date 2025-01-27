@@ -625,6 +625,74 @@
 		"setIcon": "spriteoutput/itemfigures/71039.png",
 		"planarSet": false
 	},
+	"123": {
+		"name": "凯歌祝捷的英豪",
+		"setID": "123",
+		"two": "攻击力提高**12%**。",
+		"twopc": "攻击力提高<unbreak>#1[i]%</unbreak>。",
+		"four": "装备者的忆灵在场时，装备者的速度提高**6%**，装备者的忆灵攻击时，装备者和忆灵的暴击伤害提高**30%**，持续**2**回合。",
+		"fourpc": "装备者的忆灵在场时，装备者的速度提高<unbreak>#1[i]%</unbreak>，装备者的忆灵攻击时，装备者和忆灵的暴击伤害提高<unbreak>#2[i]%</unbreak>，持续<unbreak>#3[i]</unbreak>回合。",
+		"params": [
+			[
+				0.12
+			],
+			[
+				0.06,
+				0.3,
+				2
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71040.png",
+		"planarSet": false
+	},
+	"124": {
+		"name": "哀歌覆国的诗人",
+		"setID": "124",
+		"two": "量子属性伤害提高**10%**。",
+		"twopc": "量子属性伤害提高<unbreak>#1[i]%</unbreak>。",
+		"four": "使装备者的速度降低**8%**。进入战斗前，若装备者的速度小于**110**/**95**，使装备者的暴击率提高**20%**/**32%**。该效果同时对装备者的忆灵生效。",
+		"fourpc": "使装备者的速度降低<unbreak>#6[i]%</unbreak>。进入战斗前，若装备者的速度小于<unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak>，使装备者的暴击率提高<unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak>。该效果同时对装备者的忆灵生效。",
+		"params": [
+			[
+				0.1
+			],
+			[
+				-0.08,
+				110,
+				95,
+				0.2,
+				0.32,
+				0.08
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "QuantumAddedRatio",
+					"value": 0.1
+				}
+			],
+			[
+				{
+					"active": 4,
+					"type": "SpeedAddedRatio",
+					"value": -0.08
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71041.png",
+		"planarSet": false
+	},
 	"301": {
 		"name": "太空封印站",
 		"setID": "301",

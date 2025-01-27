@@ -625,6 +625,74 @@
 		"setIcon": "spriteoutput/itemfigures/71039.png",
 		"planarSet": false
 	},
+	"123": {
+		"name": "개선가를 울리는 영웅",
+		"setID": "123",
+		"two": "공격력**12%** 증가",
+		"twopc": "공격력 <unbreak>#1[i]%</unbreak> 증가",
+		"four": "장착한캐릭터의 기억 정령이 필드에 있을 시 장착한 캐릭터의 속도가 **6%** 증가하고, 장착한 캐릭터의 기억 정령이 공격 시 장착한 캐릭터와 기억 정령의 치명타 피해가 **30%** 증가한다, 지속 시간: **2**턴",
+		"fourpc": "장착한 캐릭터의 기억 정령이 필드에 있을 시 장착한 캐릭터의 속도가 <unbreak>#1[i]%</unbreak> 증가하고, 장착한 캐릭터의 기억 정령이 공격 시 장착한 캐릭터와 기억 정령의 치명타 피해가 <unbreak>#2[i]%</unbreak> 증가한다, 지속 시간: <unbreak>#3[i]</unbreak>턴",
+		"params": [
+			[
+				0.12
+			],
+			[
+				0.06,
+				0.3,
+				2
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71040.png",
+		"planarSet": false
+	},
+	"124": {
+		"name": "망국을 애도하는 시인",
+		"setID": "124",
+		"two": "양자속성 피해 **10%** 증가",
+		"twopc": "양자 속성 피해 <unbreak>#1[i]%</unbreak> 증가",
+		"four": "장착한캐릭터의 속도가 **8%** 감소한다. 전투 진입 전 장착한 캐릭터의 속도가 **110**/**95** 미만이면, 장착한 캐릭터의 치명타 확률이 **20%**/**32%** 증가한다. 해당 효과는 장착한 캐릭터의 기억 정령에게도 동시에 적용된다",
+		"fourpc": "장착한 캐릭터의 속도가 <unbreak>#6[i]%</unbreak> 감소한다. 전투 진입 전 장착한 캐릭터의 속도가 <unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak> 미만이면, 장착한 캐릭터의 치명타 확률이 <unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak> 증가한다. 해당 효과는 장착한 캐릭터의 기억 정령에게도 동시에 적용된다",
+		"params": [
+			[
+				0.1
+			],
+			[
+				-0.08,
+				110,
+				95,
+				0.2,
+				0.32,
+				0.08
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "QuantumAddedRatio",
+					"value": 0.1
+				}
+			],
+			[
+				{
+					"active": 4,
+					"type": "SpeedAddedRatio",
+					"value": -0.08
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71041.png",
+		"planarSet": false
+	},
 	"301": {
 		"name": "우주 봉인 정거장",
 		"setID": "301",

@@ -625,6 +625,74 @@
 		"setIcon": "spriteoutput/itemfigures/71039.png",
 		"planarSet": false
 	},
+	"123": {
+		"name": "Held des Lobgesangs",
+		"setID": "123",
+		"two": "Erhöht ANG um **12%**.",
+		"twopc": "Erhöht ANG um <unbreak>#1[i]%</unbreak>.",
+		"four": "Während der Memogeist des Trägers sich auf dem Kampffeld befindet, wird die GES des Trägers um **6%** erhöht. Wenn der Memogeist des Trägers angreift, wird der KRIT-SCH von Träger und Memogeist für **2** Rd. um **30%** erhöht.",
+		"fourpc": "Während der Memogeist des Trägers sich auf dem Kampffeld befindet, wird die GES des Trägers um <unbreak>#1[i]%</unbreak> erhöht. Wenn der Memogeist des Trägers angreift, wird der KRIT-SCH von Träger und Memogeist für <unbreak>#3[i]</unbreak> Rd. um <unbreak>#2[i]%</unbreak> erhöht.",
+		"params": [
+			[
+				0.12
+			],
+			[
+				0.06,
+				0.3,
+				2
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "AttackAddedRatio",
+					"value": 0.12
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71040.png",
+		"planarSet": false
+	},
+	"124": {
+		"name": "Klagende Dichterin",
+		"setID": "124",
+		"two": "Erhöht Quanten-SCH um **10%**.",
+		"twopc": "Erhöht Quanten-SCH um <unbreak>#1[i]%</unbreak>.",
+		"four": "Reduziert die GES des Trägers um **8%**. Wenn die GES des Trägers vor dem Kampfeintritt unter **110**/**95** liegt, wird die KRIT-Rate des Trägers um **20%**/**32%** erhöht. Dieser Effekt wirkt auch auf den Memogeist des Trägers.",
+		"fourpc": "Reduziert die GES des Trägers um <unbreak>#6[i]%</unbreak>. Wenn die GES des Trägers vor dem Kampfeintritt unter <unbreak>#2[i]</unbreak>/<unbreak>#3[i]</unbreak> liegt, wird die KRIT-Rate des Trägers um <unbreak>#4[i]%</unbreak>/<unbreak>#5[i]%</unbreak> erhöht. Dieser Effekt wirkt auch auf den Memogeist des Trägers.",
+		"params": [
+			[
+				0.1
+			],
+			[
+				-0.08,
+				110,
+				95,
+				0.2,
+				0.32,
+				0.08
+			]
+		],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "QuantumAddedRatio",
+					"value": 0.1
+				}
+			],
+			[
+				{
+					"active": 4,
+					"type": "SpeedAddedRatio",
+					"value": -0.08
+				}
+			]
+		],
+		"setIcon": "spriteoutput/itemfigures/71041.png",
+		"planarSet": false
+	},
 	"301": {
 		"name": "Raumstation für Versiegelung",
 		"setID": "301",

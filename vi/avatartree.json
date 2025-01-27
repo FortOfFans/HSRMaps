@@ -17292,7 +17292,7 @@
 	},
 	"1220003": {
 		"name": "Trảm Phá Đại Địa",
-		"description": "Gây Sát Thương Phong tối đa bằng ****4[i]%**** Tấn Công của Feixao cho 1 kẻ địch chỉ định, trong thời gian đó có thể bỏ qua Điểm Yếu làm giảm Sức Bền của mục tiêu. Khi mục tiêu trong **trạng thái Phá Vỡ Điểm Yếu**, Hiệu Suất Phá Vỡ Điểm Yếu của Feixiao tăng **2[i]%**.\nTrong đó, Feixiao sẽ phát động Vũ Điệu Lưỡi Đao Chớp Nhoáng hoặc Chém Tách Trời Xanh lên mục tiêu này trước, tổng cộng **3[i]** lần. Cuối cùng gây Sát Thương Phong bằng ****1[i]%**** Tấn Công của Feixiao lên mục tiêu này.",
+		"description": "Gây Sát Thương Phong tối đa bằng ****4[i]%**** Tấn Công của Feixao cho 1 kẻ địch chỉ định, trong thời gian đó có thể bỏ qua Điểm Yếu làm giảm Sức Bền của mục tiêu. Khi mục tiêu không trong **trạng thái Phá Vỡ Điểm Yếu**, Hiệu Suất Phá Vỡ Điểm Yếu của Feixiao tăng **2[i]%**.\nTrong đó, Feixiao sẽ phát động Vũ Điệu Lưỡi Đao Chớp Nhoáng hoặc Chém Tách Trời Xanh lên mục tiêu này trước, tổng cộng **3[i]** lần. Cuối cùng gây Sát Thương Phong bằng ****1[i]%**** Tấn Công của Feixiao lên mục tiêu này.",
 		"avatar": 1220,
 		"type": 2,
 		"pos": "Point03",
@@ -19098,7 +19098,7 @@
 	},
 	"1224002": {
 		"name": "Sư Phụ, Mời Uống Trà!",
-		"description": "Giúp 1 đồng đội phe ta (ngoại trừ bản thân) trở thành Sư Phụ, tốc độ của Sư Phụ tăng ****1[f1]%****. Chỉ mục tiêu thi triển gần đây nhất của Chiến Kỹ được xem là Sư Phụ của March 7th.\nMỗi khi Tấn Công Thường hoặc gây ra 1 đòn sát thương Tấn Công Thường Cường Hóa, nếu trong trận có Sư Phụ thuộc Vận Mệnh được chỉ định, thì sẽ kích hoạt hiệu ứng tương ứng:\nTri Thức, Hủy Diệt, Săn Bắn: Gây thêm **Sát Thương Kèm Theo** tùy theo thuộc tính của Sư Phụ và bằng ****2[i]%**** Tấn Công của March 7th.\nHòa Hợp, Hư Vô, Bảo Hộ, Trù Phú: Tăng **3[i]%** điểm Giảm Sức Bền của lần sát thương này.",
+		"description": "Giúp 1 đồng đội chỉ định (ngoại trừ bản thân) trở thành Sư Phụ, Tốc Độ của Sư Phụ tăng ****1[f1]%****. Chỉ mục tiêu thi triển gần đây nhất của Chiến Kỹ được xem là Sư Phụ của March 7th.\nMỗi khi Tấn Công Thường hoặc gây ra 1 đòn sát thương Tấn Công Thường Cường Hóa, nếu trong trận có Sư Phụ thuộc Vận Mệnh được chỉ định, thì sẽ kích hoạt hiệu ứng tương ứng:\nTri Thức, Hủy Diệt, Săn Bắn, Ký Ức: Gây thêm **Sát Thương Kèm Theo** dựa theo thuộc tính của Sư Phụ và bằng ****2[i]%**** Tấn Công của March 7th.\nHòa Hợp, Hư Vô, Bảo Hộ, Trù Phú: Tăng **3[i]%** điểm Giảm Sức Bền của lần sát thương này.",
 		"avatar": 1224,
 		"type": 2,
 		"pos": "Point02",
@@ -26846,6 +26846,991 @@
 		"baseSkill": [],
 		"id": "1317210"
 	},
+	"1401001": {
+		"name": "Thông Suốt Chưa",
+		"description": "Gây Sát Thương Băng cho 1 kẻ địch chỉ định tương đương ****1[i]%**** Tấn Công của Đại Herta.",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Normal.png",
+		"shortIcon": "SkillIcon_1401_Normal",
+		"promotion": {
+			"2": 240000,
+			"110201": 3,
+			"110202": 8,
+			"110203": 11,
+			"111001": 6,
+			"111002": 7,
+			"111003": 7
+		},
+		"params": [
+			0.5,
+			3,
+			1,
+			0.3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140101
+		],
+		"id": "1401001"
+	},
+	"1401002": {
+		"name": "Mở Rộng Tâm Trí",
+		"description": "Gây Sát Thương Băng cho 1 kẻ địch chỉ định tương đương ****1[i]%**** Tấn Công của Đại Herta và thi triển **2[i]** tầng Diễn Giải. Gây sát thương Băng bằng ****1[i]%**** Tấn Công của Đại Herta cho mục tiêu mà Chiến Kỹ đánh trúng lần này và các mục tiêu lân cận, hiệu ứng này có thể lặp lại 2 lần.",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_BP.png",
+		"shortIcon": "SkillIcon_1401_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			0.35,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140102,
+			140109
+		],
+		"id": "1401002"
+	},
+	"1401003": {
+		"name": "Đã Nói Là Phép Thuật Mà",
+		"description": "Sắp xếp lại số tầng Diễn Giải của toàn bộ phe địch, Diễn Giải có số tầng tương đối cao sẽ ưu tiên chuyển đến mục tiêu cấp Tinh Anh trở lên, đồng thời gây Sát Thương Băng bằng ****1[i]%**** Tấn Công của Đại Herta cho toàn bộ phe địch. Khi thi triển Tuyệt Kỹ, khiến Tấn Công của Đại Herta tăng ****4[i]%****, duy trì **5[i]** hiệp. Sau khi thi triển Tuyệt Kỹ, khiến Đại Herta lập tức hành động, và nhận 1 tầng Cảm Hứng. Cảm Hứng tối đa có **6[i]** tầng, khi có Cảm Hứng, cường hóa Chiến Kỹ thành \"Tôi Có Một Suy Nghĩ Táo Bạo\".",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Ultra.png",
+		"shortIcon": "SkillIcon_1401_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			1,
+			2,
+			1,
+			0.4,
+			3,
+			4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140103
+		],
+		"id": "1401003"
+	},
+	"1401004": {
+		"name": "Đưa Đây Đi Nào",
+		"description": "Khi mục tiêu phe địch vào chiến đấu, Đại Herta sẽ thi triển 1 tầng Diễn Giải lên kẻ đó. Khi bắt đầu mỗi đợt sẽ thi triển **6[i]** tầng Diễn Giải lên 1 mục tiêu phe địch ngẫu nhiên, ưu tiên thi triển cho mục tiêu cấp Tinh Anh trở lên. Khi mục tiêu chính của Chiến Kỹ Cường Hóa có Diễn Giải, Bội Số Sát Thương gây ra sẽ tăng, mỗi tầng tăng ****1[f1]%****/****2[f1]%**** cho mục tiêu chính/mục tiêu khác. Nếu nhân vật vận mệnh Tri Thức trong đội từ 2 người trở lên, mỗi tầng tăng thêm ****1[f1]%****/****2[f1]%**** cho mục tiêu chính/mục tiêu khác. Diễn Giải tối đa có thể cộng dồn **3[i]** tầng. Khi sử dụng Chiến Kỹ Cường Hóa, sẽ thiết lập lại Diễn Giải của mục tiêu chính thành 1 tầng. Sau khi mục tiêu phe địch rời trận hoặc bị đơn vị bất kỳ tiêu diệt, Diễn Giải sẽ bị chuyển dời, ưu tiên chuyển sang mục tiêu cấp Tinh Anh trở lên.",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Passive.png",
+		"shortIcon": "SkillIcon_1401_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110201": 3,
+			"110202": 15,
+			"110203": 30,
+			"110506": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"params": [
+			0.04,
+			0.02,
+			42,
+			1,
+			42,
+			25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140104
+		],
+		"id": "1401004"
+	},
+	"1401007": {
+		"name": "Ngắm Nhìn Thứ Đẹp Đẽ",
+		"description": "Sau khi sử dụng Bí Kỹ, khi bắt đầu lần chiến đấu tiếp theo, Tấn Công của Đại Herta tăng **1[i]%**, duy trì **2[i]** hiệp.\nNếu khung cảnh hiện tại có Chiến Lợi Phẩm Thường, sau khi sử dụng Bí Kỹ sẽ đánh dấu tối đa vị trí của **3[i]** Chiến Lợi Phẩm Thường.\nTrong Vũ Trụ Mô Phỏng, Vũ Trụ Sai Phân, sau khi sử dụng Bí Kỹ vào chiến đấu, khi bắt đầu mỗi đợt sẽ gây cho mục tiêu phe địch dưới cấp Tinh Anh **Sát Thương Chuẩn** bằng **4[i]%** Giới Hạn HP của mục tiêu, gây cho mục tiêu phe địch cấp Tinh Anh trở lên **Sát Thương Chuẩn** bằng **5[i]%** Giới Hạn HP của mục tiêu.",
+		"avatar": 1401,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_Maze.png",
+		"shortIcon": "SkillIcon_1401_Maze",
+		"promotion": {},
+		"params": [
+			0.6,
+			2,
+			3,
+			0.99,
+			0.3,
+			25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			140107
+		],
+		"id": "1401007"
+	},
+	"1401101": {
+		"name": "Sự Thành Thật Lạnh Nhạt",
+		"description": "Khi mục tiêu phe ta tấn công, sẽ thi triển 1 tầng Diễn Giải cho mục tiêu phe địch bị đánh trúng. Sau khi tấn công, trong lần tấn công này, cứ đánh trúng 1 mục tiêu thì sẽ hồi cố định cho Đại Herta **3** điểm Năng Lượng, tối đa tính 5 mục tiêu. Khi thi triển Chiến Kỹ Cường Hóa, nếu số tầng Diễn Giải của mục tiêu chính đạt **42**, sẽ khiến sát thương Đại Herta gây ra tăng **50%**, duy trì đến khi kết thúc lần tấn công này.",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree1.png",
+		"shortIcon": "SkillIcon_1401_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110201": 3,
+			"110506": 1
+		},
+		"params": [
+			3,
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401101"
+	},
+	"1401102": {
+		"name": "Thông Điệp Bên Ngoài Tầm Nhìn",
+		"description": "Khi vào chiến đấu, nếu trong đội có từ 2 nhân vật vận mệnh Tri Thức trở lên, sẽ khiến sát thương bạo kích của toàn phe ta tăng **80%**, khi tính số lượng mục tiêu trúng đòn của Vết Tích \"Sự Thành Thật Lạnh Nhạt\", tối thiểu tính **3** mục tiêu, sau khi tấn công, đối với các mục tiêu phe địch bị trúng đòn, thi triển **1** tầng Diễn Giải lên mục tiêu có số tầng Diễn Giải cao nhất, nếu người tấn công là nhân vật vận mệnh Tri Thức, sẽ thi triển thêm **2** tầng Diễn Giải.",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree2.png",
+		"shortIcon": "SkillIcon_1401_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110202": 5,
+			"110506": 1
+		},
+		"params": [
+			0.8,
+			3,
+			1,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401102"
+	},
+	"1401103": {
+		"name": "Địa Cảnh Đói Khát",
+		"description": "Mỗi khi mục tiêu phe địch bị thi triển 1 tầng Diễn Giải, Đại Herta sẽ nhận 1 tầng Đáp Án, tối đa cộng dồn **99** tầng. Khi thi triển Tuyệt Kỹ, cứ mỗi 1 tầng Đáp Án đang có sẽ khiến Bội Số Sát Thương của lần Tuyệt Kỹ này tăng **1%**.",
+		"avatar": 1401,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1401/SkillIcon_1401_SkillTree3.png",
+		"shortIcon": "SkillIcon_1401_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110203": 8,
+			"110506": 1
+		},
+		"params": [
+			0.01,
+			99
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1401103"
+	},
+	"1401201": {
+		"name": "Cường Hóa Sát Thương - Băng",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 2500,
+			"111001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1401201"
+	},
+	"1401202": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 5000,
+			"110201": 3,
+			"111001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1401202"
+	},
+	"1401203": {
+		"name": "Cường Hóa Sát Thương - Băng",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 10000,
+			"110202": 3,
+			"111002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1401203"
+	},
+	"1401204": {
+		"name": "Cường Hóa Tốc Độ",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 10000,
+			"110202": 3,
+			"111002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 2
+			}
+		],
+		"baseSkill": [],
+		"id": "1401204"
+	},
+	"1401205": {
+		"name": "Cường Hóa Sát Thương - Băng",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 20000,
+			"110202": 5,
+			"111002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1401205"
+	},
+	"1401206": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 45000,
+			"110203": 3,
+			"111003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1401206"
+	},
+	"1401207": {
+		"name": "Cường Hóa Sát Thương - Băng",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110203": 3,
+			"111003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1401207"
+	},
+	"1401208": {
+		"name": "Cường Hóa Tốc Độ",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 3
+			}
+		],
+		"baseSkill": [],
+		"id": "1401208"
+	},
+	"1401209": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1401209"
+	},
+	"1401210": {
+		"name": "Cường Hóa Sát Thương - Băng",
+		"avatar": 1401,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconIceAddedRatio.png",
+		"shortIcon": "IconIceAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110203": 8,
+			"111003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "IceAddedRatio",
+				"Value": 0.064
+			}
+		],
+		"baseSkill": [],
+		"id": "1401210"
+	},
+	"1402001": {
+		"name": "Mật Hoa Có Gai",
+		"description": "Gây Sát Thương Lôi cho 1 kẻ địch chỉ định tương đương ****1[i]%**** Tấn Công của Aglaea.",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Normal.png",
+		"shortIcon": "SkillIcon_1402_Normal",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140201,
+			140208
+		],
+		"id": "1402001"
+	},
+	"1402002": {
+		"name": "Lên Nào, Danh Tiếng Thăng Hoa",
+		"description": "Giúp Thợ May Hồi HP bằng ****1[i]%**** Giới Hạn HP của mình. Nếu Thợ May không ở trong trận, thì sẽ **triệu hồi Linh Hồn Ký Ức** Thợ May, và khiến bản thân lập tức hành động.",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_BP.png",
+		"shortIcon": "SkillIcon_1402_BP",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.25,
+			0,
+			5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140202,
+			140209
+		],
+		"id": "1402002"
+	},
+	"1402003": {
+		"name": "Cùng Nhảy Múa Nào, Thợ May Định Mệnh",
+		"description": "**Triệu hồi Linh Hồn Ký Ức** Thợ May, nếu Thợ May đã ở trong trận, thì sẽ hồi HP của đối tượng này đến mức tối đa. Aglaea vào trạng thái Tư Thế Tối Cao và khiến bản thân lập tức hành động.\nỞ trạng thái Tư Thế Tối Cao, Aglaea sẽ nhận được số tầng tăng Tốc Độ của Thiên Phú Linh Hồn Ký Ức Thợ May, mỗi tầng khiến Tốc Độ của bản thân tăng ****1[f1]%****, Cường Hóa Tấn Công Thường thành Ngàn Nụ Hôn Trên Lưỡi Kiếm và không thể thi triển Chiến Kỹ, Thợ May miễn dịch **Hiệu Ứng Xấu loại khống chế**.\nKhi trên thứ tự hành động xuất hiện đếm ngược, thì đếm ngược cố định có **4[i]** Tốc Độ, trong thời gian vẫn còn đếm ngược thi triển Tuyệt Kỹ lần nữa sẽ tái lập đếm ngược, Thợ May sẽ tự hủy khi bắt đầu hiệp. Khi Thợ May biến mất, Aglaea sẽ giải trừ trạng thái Tư Thế Tối Cao.",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Ultra.png",
+		"shortIcon": "SkillIcon_1402_Ultra",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.1,
+			0,
+			0,
+			100,
+			0,
+			0
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140203
+		],
+		"id": "1402003"
+	},
+	"1402004": {
+		"name": "Ngón Tay Hoa Hồng Vàng",
+		"description": "Thợ May Linh Hồn Ký Ức ban đầu có Tốc Độ bằng **4[i]%** Tốc Độ của Aglaea và Giới Hạn HP bằng ****5[i]%**** Giới Hạn HP của Aglaea +****6[i]****. Khi Thợ May trong trận, Aglaea tấn công sẽ khiến mục tiêu rơi vào trạng thái Đường Khâu, sau khi tấn công kẻ địch ở trạng thái Đường Khâu sẽ gây thêm **Sát Thương Lôi Kèm Theo** bằng ****1[i]%**** Tấn Công của Aglaea. Đường Khâu chỉ có hiệu lực với mục tiêu được thi triển mới nhất.",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Passive.png",
+		"shortIcon": "SkillIcon_1402_Passive",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110506": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.12,
+			0,
+			0,
+			0.35,
+			0.44,
+			180
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140204
+		],
+		"id": "1402004"
+	},
+	"1402007": {
+		"name": "Ngôi Sao Vụn Vỡ",
+		"description": "**Triệu hồi Linh Hồn Ký Ức** Thợ May và cùng tấn công về phía trước. Sau khi vào chiến đấu, hồi **2[i]** điểm Năng Lượng, đồng thời gây Sát Thương Lôi bằng **1[i]%** Tấn Công của Aglaea cho toàn bộ mục tiêu phe địch, sau đó khiến mục tiêu phe địch ngẫu nhiên rơi vào trạng thái \"Đường Khâu\".",
+		"avatar": 1402,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_Maze.png",
+		"shortIcon": "SkillIcon_1402_Maze",
+		"promotion": {},
+		"params": [
+			1,
+			30
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			140207
+		],
+		"id": "1402007"
+	},
+	"1402101": {
+		"name": "Trừng Phạt Tầm Nhìn Hạn Hẹp",
+		"description": "Khi ở trạng thái Tư Thế Tối Cao, Tấn Công của Aglaea và Thợ May tăng. Mức tăng bằng **720%** Tốc Độ của Aglaea + **360%** Tốc Độ của Thợ May.",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree1.png",
+		"shortIcon": "SkillIcon_1402_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110251": 3,
+			"110506": 1
+		},
+		"params": [
+			7.2,
+			3.6
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402101"
+	},
+	"1402102": {
+		"name": "Kết Thúc Dệt Vận Mệnh",
+		"description": "Khi Thợ May biến mất, số tầng tăng Tốc Độ của Thiên Phú Linh Hồn Ký Ức tối đa bảo lưu **1** tầng. Khi Thợ May bị triệu hồi lần nữa, sẽ nhận được hiệu ứng tăng Tốc Độ số tầng tương ứng.",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree2.png",
+		"shortIcon": "SkillIcon_1402_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402102"
+	},
+	"1402103": {
+		"name": "Mặt Trời Lao Vun Vút",
+		"description": "Khi bắt đầu chiến đấu, nếu Năng Lượng của bản thân không đủ **50%**, sẽ hồi Năng Lượng của bản thân đến **50%**.",
+		"avatar": 1402,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_1402_SkillTree3.png",
+		"shortIcon": "SkillIcon_1402_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110253": 8,
+			"110506": 1
+		},
+		"params": [
+			0.5,
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1402103"
+	},
+	"1402201": {
+		"name": "Cường Hóa Sát Thương - Lôi",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 2500,
+			"115001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1402201"
+	},
+	"1402202": {
+		"name": "Cường Hóa Tỷ Lệ Bạo Kích",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 4000,
+			"110251": 3,
+			"115001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.026999999
+			}
+		],
+		"baseSkill": [],
+		"id": "1402202"
+	},
+	"1402203": {
+		"name": "Cường Hóa Sát Thương - Lôi",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 9000,
+			"110252": 3,
+			"115002": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1402203"
+	},
+	"1402204": {
+		"name": "Cường Hóa Phòng Thủ",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 9000,
+			"110252": 3,
+			"115002": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.05
+			}
+		],
+		"baseSkill": [],
+		"id": "1402204"
+	},
+	"1402205": {
+		"name": "Cường Hóa Sát Thương - Lôi",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 19000,
+			"110252": 4,
+			"115002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1402205"
+	},
+	"1402206": {
+		"name": "Cường Hóa Tỷ Lệ Bạo Kích",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 45000,
+			"110253": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1402206"
+	},
+	"1402207": {
+		"name": "Cường Hóa Sát Thương - Lôi",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110253": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1402207"
+	},
+	"1402208": {
+		"name": "Cường Hóa Phòng Thủ",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+		"shortIcon": "IconDefence",
+		"promotion": {
+			"2": 140000,
+			"110253": 7,
+			"115003": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "DefenceAddedRatio",
+				"Value": 0.075
+			}
+		],
+		"baseSkill": [],
+		"id": "1402208"
+	},
+	"1402209": {
+		"name": "Cường Hóa Tỷ Lệ Bạo Kích",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+		"shortIcon": "IconCriticalChance",
+		"promotion": {
+			"2": 160000,
+			"110253": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalChanceBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "1402209"
+	},
+	"1402210": {
+		"name": "Cường Hóa Sát Thương - Lôi",
+		"avatar": 1402,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconThunderAddedRatio.png",
+		"shortIcon": "IconThunderAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110253": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "ThunderAddedRatio",
+				"Value": 0.064
+			}
+		],
+		"baseSkill": [],
+		"id": "1402210"
+	},
+	"1402301": {
+		"name": "Bẫy Gai",
+		"avatar": 1402,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_11402_Servant01.png",
+		"shortIcon": "SkillIcon_11402_Servant01",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1140201
+		],
+		"id": "1402301"
+	},
+	"1402302": {
+		"name": "Thân Thể Rèn Từ Nước Mắt",
+		"avatar": 1402,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/1402/SkillIcon_11402_ServantPassive.png",
+		"shortIcon": "SkillIcon_11402_ServantPassive",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1140203,
+			1140205,
+			1140206
+		],
+		"id": "1402302"
+	},
 	"8001001": {
 		"name": "Trận Đánh Chia Tay",
 		"description": "Gây Sát Thương Vật Lý cho 1 kẻ địch chỉ định tương đương ****1[i]%**** Tấn Công của Nhà Khai Phá.",
@@ -29565,5 +30550,1025 @@
 		],
 		"baseSkill": [],
 		"id": "8006210"
+	},
+	"8007001": {
+		"name": "Cứ Để Tôi Lo!",
+		"description": "Gây Sát Thương Băng cho 1 kẻ địch chỉ định tương đương ****1[i]%**** Tấn Công của Nhà Khai Phá.",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal.png",
+		"shortIcon": "SkillIcon_8007_Normal",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800701
+		],
+		"id": "8007001"
+	},
+	"8007002": {
+		"name": "Tôi Chọn Em!",
+		"description": "**Triệu hồi Linh Hồn Ký Ức** Mem. Nếu Mem đã xuất hiện trong trận, sẽ hồi cho Mem lượng HP bằng ****1[i]%**** Giới Hạn HP của Mem, và khiến Mem nhận **2[i]%** Nạp Năng Lượng.",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_BP.png",
+		"shortIcon": "SkillIcon_8007_BP",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			0.3,
+			0.1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800702,
+			800709
+		],
+		"id": "8007002"
+	},
+	"8007003": {
+		"name": "Cùng Lên Nào, Mem!",
+		"description": "**Triệu hồi Linh Hồn Ký Ức** Mem. Khiến Mem nhận **2[i]%**Nạp Năng Lượng, sau đó khiến Mem gây sát thương Băng bằng ****1[i]%**** Tấn Công của Mem cho toàn phe địch.",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Ultra.png",
+		"shortIcon": "SkillIcon_8007_Ultra",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			1.2,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800703
+		],
+		"id": "8007003"
+	},
+	"8007004": {
+		"name": "Đồng Đội Vạn Năng",
+		"description": "Linh Hồn Ký Ức Mem ban đầu có **1[i]** điểm Tốc Độ và Giới Hạn HP bằng ****2[i]%**** Giới Hạn HP của Nhà Khai Phá +****4[i]****. Toàn bộ phe ta mỗi khi tích lũy hồi **3[i]** điểm Năng Lượng, Mem đều sẽ nhận được 1% Nạp Năng Lượng.",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Passive.png",
+		"shortIcon": "SkillIcon_8007_Passive",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			130,
+			0.5,
+			10,
+			400
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800704
+		],
+		"id": "8007004"
+	},
+	"8007007": {
+		"name": "Ký Ức Như Quá Khứ Tái Hiện",
+		"description": "Sau khi dùng Bí Kỹ, tạo 1 vùng đặc biệt duy trì **1[i]** giây. Kẻ địch trong vùng đặc biệt sẽ rơi vào trạng thái Dừng Thời Gian. Kẻ địch ở trạng thái Dừng Thời Gian sẽ dừng mọi hành động.\nSau khi vào chiến đấu với kẻ địch ở trạng thái Dừng Thời Gian, sẽ khiến toàn phe địch **Trì Hoãn Hành Động** **2[i]%**, sau đó gây cho toàn phe địch Sát Thương Băng bằng **3[i]%** Tấn Công của Nhà Khai Phá.\nHiệu ứng khu vực mà phe ta tạo ra tối đa tồn tại 1 cái.",
+		"avatar": 8007,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Maze.png",
+		"shortIcon": "SkillIcon_8007_Maze",
+		"promotion": {},
+		"params": [
+			10,
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			800707
+		],
+		"id": "8007007"
+	},
+	"8007101": {
+		"name": "Quyền Trượng Hoài Niệm",
+		"description": "Khi bắt đầu trận, Nhà Khai Phá **Ưu Tiên Hành Động** **30%**. Khi lần đầu triệu hồi Mem, sẽ khiến Mem nhận được **40%** Nạp Năng Lượng.",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree1.png",
+		"shortIcon": "SkillIcon_8007_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110251": 2,
+			"110506": 1
+		},
+		"params": [
+			0.3,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007101"
+	},
+	"8007102": {
+		"name": "Truyện Ngụ Ngôn Nho Nhỏ",
+		"description": "Khi Mem thi triển \"Kẻ Xấu! Rắc Rối!\", sẽ lập tức nhận **5%** Nạp Năng Lượng.",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree2.png",
+		"shortIcon": "SkillIcon_8007_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			0.05
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007102"
+	},
+	"8007103": {
+		"name": "Nam Châm Và Dây Xích",
+		"description": "Khi mục tiêu phe ta sở hữu \"Mem Cổ Vũ\" có Giới Hạn Năng Lượng trên **100** điểm, thì cứ mỗi **10** điểm vượt quá, bội số **Sát Thương Chuẩn** gây ra thông qua \"Mem Cổ Vũ\" sẽ tăng thêm **2%**, tối đa tăng **20%**.",
+		"avatar": 8007,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree3.png",
+		"shortIcon": "SkillIcon_8007_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110253": 6,
+			"110506": 1
+		},
+		"params": [
+			100,
+			10,
+			0.02,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "8007103"
+	},
+	"8007201": {
+		"name": "Cường Hóa Sát Thương Bạo Kích",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 2000,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8007201"
+	},
+	"8007202": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 3200,
+			"110251": 1,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8007202"
+	},
+	"8007203": {
+		"name": "Cường Hóa Sát Thương Bạo Kích",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8007203"
+	},
+	"8007204": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8007204"
+	},
+	"8007205": {
+		"name": "Cường Hóa Sát Thương Bạo Kích",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 15200,
+			"110252": 5,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007205"
+	},
+	"8007206": {
+		"name": "Cường Hóa HP",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8007206"
+	},
+	"8007207": {
+		"name": "Cường Hóa Sát Thương Bạo Kích",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007207"
+	},
+	"8007208": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 112000,
+			"110253": 5,
+			"111013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8007208"
+	},
+	"8007209": {
+		"name": "Cường Hóa HP",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8007209"
+	},
+	"8007210": {
+		"name": "Cường Hóa Sát Thương Bạo Kích",
+		"avatar": 8007,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "8007210"
+	},
+	"8007301": {
+		"name": "Kẻ Xấu! Rắc Rối!",
+		"avatar": 8007,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_Servant01.png",
+		"shortIcon": "SkillIcon_18007_Servant01",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800701,
+			1800707
+		],
+		"id": "8007301"
+	},
+	"8007302": {
+		"name": "Đồng Đội! Cùng Nhau!",
+		"avatar": 8007,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_ServantPassive.png",
+		"shortIcon": "SkillIcon_18007_ServantPassive",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800703,
+			1800705,
+			1800706
+		],
+		"id": "8007302"
+	},
+	"8008001": {
+		"name": "Cứ Để Tôi Lo!",
+		"description": "Gây Sát Thương Băng cho 1 kẻ địch chỉ định tương đương ****1[i]%**** Tấn Công của Nhà Khai Phá.",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal.png",
+		"shortIcon": "SkillIcon_8007_Normal",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800801
+		],
+		"id": "8008001"
+	},
+	"8008002": {
+		"name": "Tôi Chọn Em!",
+		"description": "**Triệu hồi Linh Hồn Ký Ức** Mem. Nếu Mem đã xuất hiện trong trận, sẽ hồi cho Mem lượng HP bằng ****1[i]%**** Giới Hạn HP của Mem, và khiến Mem nhận **2[i]%** Nạp Năng Lượng.",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_BP.png",
+		"shortIcon": "SkillIcon_8007_BP",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			0.3,
+			0.1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800802,
+			800809
+		],
+		"id": "8008002"
+	},
+	"8008003": {
+		"name": "Cùng Lên Nào, Mem!",
+		"description": "**Triệu hồi Linh Hồn Ký Ức** Mem. Khiến Mem nhận **2[i]%**Nạp Năng Lượng, sau đó khiến Mem gây sát thương Băng bằng ****1[i]%**** Tấn Công của Mem cho toàn phe địch.",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Ultra.png",
+		"shortIcon": "SkillIcon_8007_Ultra",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			1.2,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800803
+		],
+		"id": "8008003"
+	},
+	"8008004": {
+		"name": "Đồng Đội Vạn Năng",
+		"description": "Linh Hồn Ký Ức Mem ban đầu có **1[i]** điểm Tốc Độ và Giới Hạn HP bằng ****2[i]%**** Giới Hạn HP của Nhà Khai Phá +****4[i]****. Toàn bộ phe ta mỗi khi tích lũy hồi **3[i]** điểm Năng Lượng, Mem đều sẽ nhận được 1% Nạp Năng Lượng.",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Passive.png",
+		"shortIcon": "SkillIcon_8007_Passive",
+		"promotion": {
+			"2": 431200,
+			"241": 1,
+			"110251": 1,
+			"110252": 9,
+			"110253": 19,
+			"110506": 3,
+			"111011": 5,
+			"111012": 8,
+			"111013": 4
+		},
+		"params": [
+			130,
+			0.5,
+			10,
+			400
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			800804
+		],
+		"id": "8008004"
+	},
+	"8008007": {
+		"name": "Ký Ức Như Quá Khứ Tái Hiện",
+		"description": "Sau khi dùng Bí Kỹ, tạo 1 vùng đặc biệt duy trì **1[i]** giây. Kẻ địch trong vùng đặc biệt sẽ rơi vào trạng thái Dừng Thời Gian. Kẻ địch ở trạng thái Dừng Thời Gian sẽ dừng mọi hành động.\nSau khi vào chiến đấu với kẻ địch ở trạng thái Dừng Thời Gian, sẽ khiến toàn phe địch **Trì Hoãn Hành Động** **2[i]%**, sau đó gây cho toàn phe địch Sát Thương Băng bằng **3[i]%** Tấn Công của Nhà Khai Phá.\nHiệu ứng khu vực mà phe ta tạo ra tối đa tồn tại 1 cái.",
+		"avatar": 8008,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Maze.png",
+		"shortIcon": "SkillIcon_8007_Maze",
+		"promotion": {},
+		"params": [
+			10,
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			800807
+		],
+		"id": "8008007"
+	},
+	"8008101": {
+		"name": "Quyền Trượng Hoài Niệm",
+		"description": "Khi bắt đầu trận, Nhà Khai Phá **Ưu Tiên Hành Động** **30%**. Khi lần đầu triệu hồi Mem, sẽ khiến Mem nhận được **40%** Nạp Năng Lượng.",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree1.png",
+		"shortIcon": "SkillIcon_8007_SkillTree1",
+		"promotion": {
+			"2": 4000,
+			"110251": 2,
+			"110506": 1
+		},
+		"params": [
+			0.3,
+			0.4
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008101"
+	},
+	"8008102": {
+		"name": "Truyện Ngụ Ngôn Nho Nhỏ",
+		"description": "Khi Mem thi triển \"Kẻ Xấu! Rắc Rối!\", sẽ lập tức nhận **5%** Nạp Năng Lượng.",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree2.png",
+		"shortIcon": "SkillIcon_8007_SkillTree2",
+		"promotion": {
+			"2": 16000,
+			"241": 1,
+			"110252": 5,
+			"110506": 1
+		},
+		"params": [
+			0.05
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008102"
+	},
+	"8008103": {
+		"name": "Nam Châm Và Dây Xích",
+		"description": "Khi mục tiêu phe ta sở hữu \"Mem Cổ Vũ\" có Giới Hạn Năng Lượng trên **100** điểm, thì cứ mỗi **10** điểm vượt quá, bội số **Sát Thương Chuẩn** gây ra thông qua \"Mem Cổ Vũ\" sẽ tăng thêm **2%**, tối đa tăng **20%**.",
+		"avatar": 8008,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_SkillTree3.png",
+		"shortIcon": "SkillIcon_8007_SkillTree3",
+		"promotion": {
+			"2": 128000,
+			"241": 1,
+			"110253": 6,
+			"110506": 1
+		},
+		"params": [
+			100,
+			10,
+			0.02,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "8008103"
+	},
+	"8008201": {
+		"name": "Cường Hóa Sát Thương Bạo Kích",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 2000,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8008201"
+	},
+	"8008202": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 3200,
+			"110251": 1,
+			"111011": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8008202"
+	},
+	"8008203": {
+		"name": "Cường Hóa Sát Thương Bạo Kích",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.053
+			}
+		],
+		"baseSkill": [],
+		"id": "8008203"
+	},
+	"8008204": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 7200,
+			"110252": 2,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "8008204"
+	},
+	"8008205": {
+		"name": "Cường Hóa Sát Thương Bạo Kích",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 15200,
+			"110252": 5,
+			"111012": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008205"
+	},
+	"8008206": {
+		"name": "Cường Hóa HP",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8008206"
+	},
+	"8008207": {
+		"name": "Cường Hóa Sát Thương Bạo Kích",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 36000,
+			"110253": 2,
+			"111013": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008207"
+	},
+	"8008208": {
+		"name": "Cường Hóa Tấn Công",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 112000,
+			"110253": 5,
+			"111013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "8008208"
+	},
+	"8008209": {
+		"name": "Cường Hóa HP",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "8008209"
+	},
+	"8008210": {
+		"name": "Cường Hóa Sát Thương Bạo Kích",
+		"avatar": 8008,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+		"shortIcon": "IconCriticalDamage",
+		"promotion": {
+			"2": 128000,
+			"110253": 6,
+			"111013": 6
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "CriticalDamageBase",
+				"Value": 0.107
+			}
+		],
+		"baseSkill": [],
+		"id": "8008210"
+	},
+	"8008301": {
+		"name": "Kẻ Xấu! Rắc Rối!",
+		"avatar": 8008,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_Servant01.png",
+		"shortIcon": "SkillIcon_18007_Servant01",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800701,
+			1800707
+		],
+		"id": "8008301"
+	},
+	"8008302": {
+		"name": "Đồng Đội! Cùng Nhau!",
+		"avatar": 8008,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_18007_ServantPassive.png",
+		"shortIcon": "SkillIcon_18007_ServantPassive",
+		"promotion": {
+			"2": 161200,
+			"110251": 1,
+			"110252": 4,
+			"110253": 7,
+			"111011": 3,
+			"111012": 3,
+			"111013": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1800703,
+			1800705,
+			1800706
+		],
+		"id": "8008302"
 	}
 }
