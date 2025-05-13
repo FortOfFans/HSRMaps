@@ -2679,7 +2679,7 @@
 		"shortIcon": "20021",
 		"rarity": "Rare",
 		"weaponType": "Memory",
-		"refinements": "When the wearer summons memosprite for the first time in battle, recovers <unbreak>#1[i]</unbreak> Skill Point(s) and regenerates <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Energy for this unit.",
+		"refinements": "When the wearer summons memosprite for the first time, recovers <unbreak>#1[i]</unbreak> Skill Point(s) and regenerates <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Energy for this unit.",
 		"maxHP": 847,
 		"maxATK": 318,
 		"maxDEF": 265,
@@ -2807,7 +2807,7 @@
 		"shortIcon": "20022",
 		"rarity": "Rare",
 		"weaponType": "Memory",
-		"refinements": "When memosprite's turn starts, the wearer and the memosprite each gain 1 stack of \"Commemoration.\" Each stack increases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <unbreak>#2[i]</unbreak> time(s). \"Commemoration\" is removed from the wearer and the memosprite when the memosprite disappears.",
+		"refinements": "When memosprite's turn starts, the wearer and memosprite each gain 1 stack of \"Commemoration.\" Each stack increases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <unbreak>#2[i]</unbreak> time(s). When memosprite disappears, removes \"Commemoration\" from the wearer and memosprite.",
 		"maxHP": 635,
 		"maxATK": 423,
 		"maxDEF": 265,
@@ -3862,7 +3862,7 @@
 		"shortIcon": "21006",
 		"rarity": "VeryRare",
 		"weaponType": "Mage",
-		"refinements": "Increases DMG dealt by the wearer's follow-up attacks by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. If the current HP percentage of the target enemy is below or equal to <unbreak>#2[i]%</unbreak>, increases DMG dealt by follow-up attacks by an extra <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+		"refinements": "Increases DMG dealt by the wearer's Follow-up ATKs by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. If the current HP percentage of the target enemy is below or equal to <unbreak>#2[i]%</unbreak>, increases DMG dealt by Follow-up ATKs by an extra <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
 		"maxHP": 953,
 		"maxATK": 476,
 		"maxDEF": 331,
@@ -10481,7 +10481,7 @@
 		"shortIcon": "21050",
 		"rarity": "VeryRare",
 		"weaponType": "Memory",
-		"refinements": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer's memosprite uses an ability on any ally target, increases all ally targets' DMG dealt by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <unbreak>#3[i]</unbreak> turn(s).",
+		"refinements": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer's memosprite uses an ability on an ally target, increases the DMG dealt by all ally targets by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <unbreak>#3[i]</unbreak> turn(s).",
 		"maxHP": 847,
 		"maxATK": 476,
 		"maxDEF": 397,
@@ -10655,7 +10655,7 @@
 		"shortIcon": "21051",
 		"rarity": "VeryRare",
 		"weaponType": "Memory",
-		"refinements": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After the wearer uses their Ultimate, additionally increases the wearer and their memosprite's Basic ATK DMG dealt by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> for <unbreak>#3[i]</unbreak> turn(s).",
+		"refinements": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After the wearer uses Ultimate, increases the Basic ATK DMG dealt by the wearer and their memosprite by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <unbreak>#3[i]</unbreak> turn(s).",
 		"maxHP": 953,
 		"maxATK": 476,
 		"maxDEF": 331,
@@ -10829,7 +10829,7 @@
 		"shortIcon": "21052",
 		"rarity": "VeryRare",
 		"weaponType": "Memory",
-		"refinements": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer's memosprite is on the field, increases the wearer and their memosprite's DMG dealt by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"refinements": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer's memosprite is on the field, increases the DMG dealt by the wearer and their memosprite by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
 		"maxHP": 1058,
 		"maxATK": 529,
 		"maxDEF": 198,
@@ -11682,6 +11682,175 @@
 			]
 		],
 		"id": "22003"
+	},
+	"22004": {
+		"name": "The Great Cosmic Enterprise",
+		"icon": "spriteoutput/lightconemediumicon/22004.png",
+		"shortIcon": "22004",
+		"rarity": "VeryRare",
+		"weaponType": "Mage",
+		"refinements": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. For every 1 different Weakness Type an enemy target has, increases the DMG dealt to it by the wearer by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Up to a max of 7 Weakness Types can be taken into account for this effect.",
+		"maxHP": 953,
+		"maxATK": 476,
+		"maxDEF": 331,
+		"promotion": {
+			"2": 308000,
+			"110201": 3,
+			"110202": 9,
+			"110203": 12,
+			"115001": 15,
+			"115002": 15,
+			"115003": 12
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 4000
+				},
+				{
+					"ItemID": 115001,
+					"ItemNum": 5
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 8000
+				},
+				{
+					"ItemID": 110201,
+					"ItemNum": 3
+				},
+				{
+					"ItemID": 115001,
+					"ItemNum": 10
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 16000
+				},
+				{
+					"ItemID": 110202,
+					"ItemNum": 3
+				},
+				{
+					"ItemID": 115002,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 40000
+				},
+				{
+					"ItemID": 110202,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 115002,
+					"ItemNum": 9
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 80000
+				},
+				{
+					"ItemID": 110203,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 115003,
+					"ItemNum": 5
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 160000
+				},
+				{
+					"ItemID": 110203,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 115003,
+					"ItemNum": 7
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.08,
+				0.04
+			],
+			"R2": [
+				0.1,
+				0.05
+			],
+			"R3": [
+				0.12,
+				0.06
+			],
+			"R4": [
+				0.14,
+				0.07
+			],
+			"R5": [
+				0.16,
+				0.08
+			],
+			"id": "22004"
+		},
+		"passives": [
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.08,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.1,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.12,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.14,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "AttackAddedRatio",
+					"value": 0.16,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+					"flat": false
+				}
+			]
+		],
+		"id": "22004"
 	},
 	"23000": {
 		"name": "Night on the Milky Way",
@@ -13437,7 +13606,7 @@
 		"shortIcon": "23010",
 		"rarity": "SuperRare",
 		"weaponType": "Mage",
-		"refinements": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Increases DMG dealt by the wearer's Skill and Ultimate by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. After the wearer uses Skill or Ultimate, gains Somnus Corpus. Upon triggering a follow-up attack, consumes Somnus Corpus, and increases DMG dealt by follow-up attack by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+		"refinements": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Increases DMG dealt by the wearer's Skill and Ultimate by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. After the wearer uses Skill or Ultimate, gains Somnus Corpus. Upon triggering a Follow-up ATK, consumes Somnus Corpus, and increases DMG dealt by Follow-up ATK by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
 		"maxHP": 1058,
 		"maxATK": 582,
 		"maxDEF": 463,
@@ -14571,7 +14740,7 @@
 		"shortIcon": "23016",
 		"rarity": "SuperRare",
 		"weaponType": "Rogue",
-		"refinements": "Increase the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and increases DMG dealt by follow-up attack by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. After the wearer uses a follow-up attack, inflicts the target with the Tame state, stacking up to <unbreak>#4[i]</unbreak> time(s). When allies hit enemy targets under the Tame state, each Tame stack increases the CRIT DMG dealt by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+		"refinements": "Increase the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and increases DMG dealt by Follow-up ATK by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. After the wearer uses a Follow-up ATK, inflicts the target with the Tame state, stacking up to <unbreak>#4[i]</unbreak> time(s). When allies hit enemy targets under the Tame state, each Tame stack increases the CRIT DMG dealt by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
 		"maxHP": 1058,
 		"maxATK": 582,
 		"maxDEF": 463,
@@ -15292,7 +15461,7 @@
 		"shortIcon": "23020",
 		"rarity": "SuperRare",
 		"weaponType": "Rogue",
-		"refinements": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. For every debuff on the enemy target, the wearer's CRIT DMG dealt against this target additionally increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, stacking up to <unbreak>#3[i]</unbreak> times. When using Ultimate to attack the enemy target, the wearer receives the Disputation effect, which increases DMG dealt by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> and enables their follow-up attacks to ignore <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of the target's DEF. This effect lasts for <unbreak>#6[i]</unbreak> turns.",
+		"refinements": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. For every debuff on the enemy target, the wearer's CRIT DMG dealt against this target additionally increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, stacking up to <unbreak>#3[i]</unbreak> times. When using Ultimate to attack the enemy target, the wearer receives the Disputation effect, which increases DMG dealt by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> and enables their Follow-up ATKs to ignore <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of the target's DEF. This effect lasts for <unbreak>#6[i]</unbreak> turns.",
 		"maxHP": 953,
 		"maxATK": 582,
 		"maxDEF": 529,
@@ -15849,7 +16018,7 @@
 		"shortIcon": "23023",
 		"rarity": "SuperRare",
 		"weaponType": "Knight",
-		"refinements": "Increases the wearer's DEF by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer provides a Shield to an ally, the wearer's CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <unbreak>#3[i]</unbreak> turn(s). When the wearer's follow-up attack hits an enemy target, there is a <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> base chance to increase the DMG taken by the attacked enemy target by <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>, lasting for <unbreak>#6[i]</unbreak> turn(s).",
+		"refinements": "Increases the wearer's DEF by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer provides a Shield to an ally, the wearer's CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <unbreak>#3[i]</unbreak> turn(s). When the wearer's Follow-up ATK hits an enemy target, there is a <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> base chance to increase the DMG taken by the attacked enemy target by <color=#f29e38ff><unbreak>#5[f1]%</unbreak></color>, lasting for <unbreak>#6[i]</unbreak> turn(s).",
 		"maxHP": 1058,
 		"maxATK": 423,
 		"maxDEF": 662,
@@ -16713,7 +16882,7 @@
 		"shortIcon": "23028",
 		"rarity": "SuperRare",
 		"weaponType": "Mage",
-		"refinements": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. While the wearer is in battle, for every <unbreak>#3[i]%</unbreak> CRIT DMG that exceeds <unbreak>#2[i]%</unbreak>, the DMG dealt by follow-up attack increases by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>. This effect can stack up to <unbreak>#5[i]</unbreak> time(s). When the battle starts or after the wearer uses their Basic ATK, enables the DMG dealt by Ultimate or follow-up attack to ignore <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> of the target's DEF, lasting for <unbreak>#7[i]</unbreak> turn(s).",
+		"refinements": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. While the wearer is in battle, for every <unbreak>#3[i]%</unbreak> CRIT DMG that exceeds <unbreak>#2[i]%</unbreak>, the DMG dealt by Follow-up ATK increases by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>. This effect can stack up to <unbreak>#5[i]</unbreak> time(s). When the battle starts or after the wearer uses their Basic ATK, enables the DMG dealt by Ultimate or Follow-up ATK to ignore <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> of the target's DEF, lasting for <unbreak>#7[i]</unbreak> turn(s).",
 		"maxHP": 953,
 		"maxATK": 582,
 		"maxDEF": 529,
@@ -17096,7 +17265,7 @@
 		"shortIcon": "23030",
 		"rarity": "SuperRare",
 		"weaponType": "Warrior",
-		"refinements": "Greatly increases the wearer's chance of getting attacked and increases CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After the wearer uses Ultimate, receives 1 stack of Firedance, lasting for 2 turns and stacking up to <unbreak>#2[i]</unbreak> time(s). Each stack of Firedance increases the DMG dealt by the wearer's follow-up attack by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+		"refinements": "Greatly increases the wearer's chance of getting attacked and increases CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After the wearer uses Ultimate, receives 1 stack of Firedance, lasting for 2 turns and stacking up to <unbreak>#2[i]</unbreak> time(s). Each stack of Firedance increases the DMG dealt by the wearer's Follow-up ATK by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
 		"maxHP": 1058,
 		"maxATK": 582,
 		"maxDEF": 463,
@@ -17275,7 +17444,7 @@
 		"shortIcon": "23031",
 		"rarity": "SuperRare",
 		"weaponType": "Rogue",
-		"refinements": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. When the wearer launches a follow-up attack, gains 1 stack of \"Luminflux,\" stacking up to <unbreak>#3[i]</unbreak> time(s). Each stack of \"Luminflux\" enables the Ultimate DMG dealt by the wearer to ignore <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the target's DEF. When the wearer's turn ends, removes 1 stack of \"Luminflux.\"",
+		"refinements": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. When the wearer launches a Follow-up ATK, gains 1 stack of \"Luminflux,\" stacking up to <unbreak>#3[i]</unbreak> time(s). Each stack of \"Luminflux\" enables the Ultimate DMG dealt by the wearer to ignore <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the target's DEF. When the wearer's turn ends, removes 1 stack of \"Luminflux.\"",
 		"maxHP": 953,
 		"maxATK": 635,
 		"maxDEF": 463,
@@ -18134,7 +18303,7 @@
 		"shortIcon": "23036",
 		"rarity": "SuperRare",
 		"weaponType": "Memory",
-		"refinements": "Increases the wearer's base SPD by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>. After the wearer and the wearer's memosprite attacks, the wearer gains 1 stack of \"Brocade.\" Each stack of \"Brocade\" increases the wearer and their memosprite's CRIT DMG by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>, stacking up to <unbreak>#2[i]</unbreak> time(s). When reaching maximum stacks, each \"Brocade\" stack will additionally increase Basic ATK DMG dealt by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>.",
+		"refinements": "Increases the wearer's base SPD by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>. After the wearer and the wearer's memosprite attacks, the wearer gains 1 stack of \"Brocade.\" Each stack of \"Brocade\" increases the wearer's and their memosprite's CRIT DMG by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>, stacking up to <unbreak>#2[i]</unbreak> time(s). When reaching maximum stacks, each \"Brocade\" stack additionally increases Basic ATK DMG dealt by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>.",
 		"maxHP": 1058,
 		"maxATK": 635,
 		"maxDEF": 397,
@@ -18313,7 +18482,7 @@
 		"shortIcon": "23037",
 		"rarity": "SuperRare",
 		"weaponType": "Mage",
-		"refinements": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer uses their Ultimate, increases DMG dealt by the wearer's Skill and Ultimate by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, lasting for <unbreak>#5[i]</unbreak> turn(s). After the wearer uses their Ultimate, if this Ultimate consumed <unbreak>#3[i]</unbreak> or more Energy, recovers 1 Skill Point.",
+		"refinements": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer uses their Ultimate, increases the wearer's Skill DMG and Ultimate DMG dealt by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, lasting for <unbreak>#5[i]</unbreak> turn(s). After the wearer uses their Ultimate, if this Ultimate consumed <unbreak>#3[i]</unbreak> or more Energy, recovers 1 Skill Point.",
 		"maxHP": 953,
 		"maxATK": 635,
 		"maxDEF": 463,
@@ -18491,6 +18660,736 @@
 		],
 		"id": "23037"
 	},
+	"23038": {
+		"name": "If Time Were a Flower",
+		"icon": "spriteoutput/lightconemediumicon/23038.png",
+		"shortIcon": "23038",
+		"rarity": "SuperRare",
+		"weaponType": "Shaman",
+		"refinements": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After the wearer launches Follow-up ATK, additionally regenerates <unbreak>#2[i]</unbreak> Energy and gains \"Presage,\" lasting for <unbreak>#3[i]</unbreak> turn(s). While the wearer has \"Presage,\" all ally targets' CRIT DMG increases by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>. When entering battle, the wearer regenerates <unbreak>#5[i]</unbreak> Energy and gains \"Presage,\" lasting for <unbreak>#6[i]</unbreak> turn(s).",
+		"maxHP": 1270,
+		"maxATK": 529,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 385000,
+			"110231": 4,
+			"110232": 12,
+			"110233": 15,
+			"115001": 20,
+			"115002": 20,
+			"115003": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 115001,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110231,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 115001,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110232,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 115002,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110232,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 115002,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110233,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 115003,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110233,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 115003,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.36,
+				12,
+				2,
+				0.48,
+				21,
+				2
+			],
+			"R2": [
+				0.42,
+				12,
+				2,
+				0.6,
+				21,
+				2
+			],
+			"R3": [
+				0.48,
+				12,
+				2,
+				0.72,
+				21,
+				2
+			],
+			"R4": [
+				0.54,
+				12,
+				2,
+				0.84,
+				21,
+				2
+			],
+			"R5": [
+				0.6,
+				12,
+				2,
+				0.96,
+				21,
+				2
+			],
+			"id": "23038"
+		},
+		"passives": [
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.36,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.42,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.48,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.54,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "CriticalDamageBase",
+					"value": 0.6,
+					"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+					"flat": false
+				}
+			]
+		],
+		"id": "23038"
+	},
+	"23039": {
+		"name": "Flame of Blood, Blaze My Path",
+		"icon": "spriteoutput/lightconemediumicon/23039.png",
+		"shortIcon": "23039",
+		"rarity": "SuperRare",
+		"weaponType": "Warrior",
+		"refinements": "Increases the wearer's Max HP by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Incoming Healing by <color=#f29e38ff><unbreak>#6[i]%</unbreak></color>. When using Skill or Ultimate, consumes HP equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of the wearer's Max HP and increases the DMG dealt by this attack by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>. If this effect's consumed HP is greater than <unbreak>#4[i]</unbreak>, the DMG additionally increases by <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>.\\nIf the current HP is not sufficient, this effect reduces the wearer's current HP down to 1.",
+		"maxHP": 1376,
+		"maxATK": 476,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 385000,
+			"110181": 4,
+			"110182": 12,
+			"110183": 15,
+			"115001": 20,
+			"115002": 20,
+			"115003": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 115001,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110181,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 115001,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110182,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 115002,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110182,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 115002,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110183,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 115003,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110183,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 115003,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.18,
+				0.06,
+				0.3,
+				500,
+				0.3,
+				0.2
+			],
+			"R2": [
+				0.21,
+				0.065,
+				0.35,
+				500,
+				0.35,
+				0.25
+			],
+			"R3": [
+				0.24,
+				0.07,
+				0.4,
+				500,
+				0.4,
+				0.3
+			],
+			"R4": [
+				0.27,
+				0.075,
+				0.45,
+				500,
+				0.45,
+				0.35
+			],
+			"R5": [
+				0.3,
+				0.08,
+				0.5,
+				500,
+				0.5,
+				0.4
+			],
+			"id": "23039"
+		},
+		"passives": [
+			[
+				{
+					"type": "HPAddedRatio",
+					"value": 0.18,
+					"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+					"flat": false
+				},
+				{
+					"type": "HealTakenRatio",
+					"value": 0.2,
+					"icon": "spriteoutput/ui/avatar/icon/IconHealRatio.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "HPAddedRatio",
+					"value": 0.21,
+					"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+					"flat": false
+				},
+				{
+					"type": "HealTakenRatio",
+					"value": 0.25,
+					"icon": "spriteoutput/ui/avatar/icon/IconHealRatio.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "HPAddedRatio",
+					"value": 0.24,
+					"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+					"flat": false
+				},
+				{
+					"type": "HealTakenRatio",
+					"value": 0.3,
+					"icon": "spriteoutput/ui/avatar/icon/IconHealRatio.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "HPAddedRatio",
+					"value": 0.27,
+					"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+					"flat": false
+				},
+				{
+					"type": "HealTakenRatio",
+					"value": 0.35,
+					"icon": "spriteoutput/ui/avatar/icon/IconHealRatio.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "HPAddedRatio",
+					"value": 0.3,
+					"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+					"flat": false
+				},
+				{
+					"type": "HealTakenRatio",
+					"value": 0.4,
+					"icon": "spriteoutput/ui/avatar/icon/IconHealRatio.png",
+					"flat": false
+				}
+			]
+		],
+		"id": "23039"
+	},
+	"23040": {
+		"name": "Make Farewells More Beautiful",
+		"icon": "spriteoutput/lightconemediumicon/23040.png",
+		"shortIcon": "23040",
+		"rarity": "SuperRare",
+		"weaponType": "Memory",
+		"refinements": "Increases the wearer's Max HP by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer or their memosprite loses HP during their own turn, the wearer gains \"Death Flower.\" \"Death Flower\" allows the wearer and their memosprite to ignore <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the target's DEF when dealing DMG, lasting for <unbreak>#3[i]</unbreak> turn(s).\\nWhen the wearer's memosprite disappears, advances the wearer's action by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>. This effect can only trigger up to 1 time, and the trigger count resets every time the wearer uses Ultimate.",
+		"maxHP": 1270,
+		"maxATK": 529,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 385000,
+			"110251": 4,
+			"110252": 12,
+			"110253": 15,
+			"115011": 20,
+			"115012": 20,
+			"115013": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 115011,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110251,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 115011,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110252,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 115012,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110252,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 115012,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110253,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 115013,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110253,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 115013,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.3,
+				0.3,
+				2,
+				0.12
+			],
+			"R2": [
+				0.375,
+				0.35,
+				2,
+				0.15
+			],
+			"R3": [
+				0.45,
+				0.4,
+				2,
+				0.18
+			],
+			"R4": [
+				0.525,
+				0.45,
+				2,
+				0.21
+			],
+			"R5": [
+				0.6,
+				0.5,
+				2,
+				0.24
+			],
+			"id": "23040"
+		},
+		"passives": [
+			[
+				{
+					"type": "HPAddedRatio",
+					"value": 0.3,
+					"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "HPAddedRatio",
+					"value": 0.38,
+					"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "HPAddedRatio",
+					"value": 0.45,
+					"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "HPAddedRatio",
+					"value": 0.53,
+					"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "HPAddedRatio",
+					"value": 0.6,
+					"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+					"flat": false
+				}
+			]
+		],
+		"id": "23040"
+	},
+	"23041": {
+		"name": "Life Should Be Cast to Flames",
+		"icon": "spriteoutput/lightconemediumicon/23041.png",
+		"shortIcon": "23041",
+		"rarity": "SuperRare",
+		"weaponType": "Mage",
+		"refinements": "When the wearer's turn starts, regenerates <unbreak>#5[i]</unbreak> Energy. If the enemy target has a Weakness implanted by the wearer, increases the wearer's DMG dealt to it by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.\\nWhen an enemy target gets attacked by the wearer, the wearer decreases the target's DEF by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <unbreak>#4[i]</unbreak> turn(s). The same types of effects cannot stack.",
+		"maxHP": 953,
+		"maxATK": 582,
+		"maxDEF": 529,
+		"promotion": {
+			"2": 385000,
+			"110201": 4,
+			"110202": 12,
+			"110203": 15,
+			"115011": 20,
+			"115012": 20,
+			"115013": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 115011,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110201,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 115011,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110202,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 115012,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110202,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 115012,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110203,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 115013,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110203,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 115013,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0,
+				0.12,
+				0.6,
+				2,
+				10
+			],
+			"R2": [
+				0,
+				0.15,
+				0.7,
+				2,
+				10
+			],
+			"R3": [
+				0,
+				0.18,
+				0.8,
+				2,
+				10
+			],
+			"R4": [
+				0,
+				0.21,
+				0.9,
+				2,
+				10
+			],
+			"R5": [
+				0,
+				0.24,
+				1,
+				2,
+				10
+			],
+			"id": "23041"
+		},
+		"passives": [],
+		"id": "23041"
+	},
 	"24000": {
 		"name": "On the Fall of an Aeon",
 		"icon": "spriteoutput/lightconemediumicon/24000.png",
@@ -18635,7 +19534,7 @@
 		"shortIcon": "24001",
 		"rarity": "SuperRare",
 		"weaponType": "Rogue",
-		"refinements": "Increases the wearer's CRIT rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, and increases their CRIT rate against enemies with HP percentage less than or equal to <unbreak>#2[i]%</unbreak> by an extra <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>. When the wearer defeats an enemy, their ATK is increased by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> for <unbreak>#5[i]</unbreak> turn(s).",
+		"refinements": "Increases the wearer's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, and increases their CRIT Rate against enemies with HP percentage <unbreak>#2[i]%</unbreak> or less by an extra <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>. When the wearer defeats an enemy, their ATK is increased by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> for <unbreak>#5[i]</unbreak> turn(s).",
 		"maxHP": 953,
 		"maxATK": 529,
 		"maxDEF": 463,
@@ -19359,5 +20258,174 @@
 			]
 		],
 		"id": "24004"
+	},
+	"24005": {
+		"name": "Memory's Curtain Never Falls",
+		"icon": "spriteoutput/lightconemediumicon/24005.png",
+		"shortIcon": "24005",
+		"rarity": "SuperRare",
+		"weaponType": "Memory",
+		"refinements": "Increases the wearer's SPD by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. After the wearer uses Skill, increases the DMG dealt by all allies by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <unbreak>#3[i]</unbreak> turn(s).",
+		"maxHP": 1058,
+		"maxATK": 529,
+		"maxDEF": 397,
+		"promotion": {
+			"2": 385000,
+			"110251": 4,
+			"110252": 12,
+			"110253": 15,
+			"111001": 20,
+			"111002": 20,
+			"111003": 14
+		},
+		"promo": [
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 5000
+				},
+				{
+					"ItemID": 111001,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 10000
+				},
+				{
+					"ItemID": 110251,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 111001,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 20000
+				},
+				{
+					"ItemID": 110252,
+					"ItemNum": 4
+				},
+				{
+					"ItemID": 111002,
+					"ItemNum": 8
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 50000
+				},
+				{
+					"ItemID": 110252,
+					"ItemNum": 8
+				},
+				{
+					"ItemID": 111002,
+					"ItemNum": 12
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 100000
+				},
+				{
+					"ItemID": 110253,
+					"ItemNum": 5
+				},
+				{
+					"ItemID": 111003,
+					"ItemNum": 6
+				}
+			],
+			[
+				{
+					"ItemID": 2,
+					"ItemNum": 200000
+				},
+				{
+					"ItemID": 110253,
+					"ItemNum": 10
+				},
+				{
+					"ItemID": 111003,
+					"ItemNum": 8
+				}
+			],
+			[]
+		],
+		"params": {
+			"R1": [
+				0.06,
+				0.08,
+				3
+			],
+			"R2": [
+				0.075,
+				0.1,
+				3
+			],
+			"R3": [
+				0.09,
+				0.12,
+				3
+			],
+			"R4": [
+				0.105,
+				0.14,
+				3
+			],
+			"R5": [
+				0.12,
+				0.16,
+				3
+			],
+			"id": "24005"
+		},
+		"passives": [
+			[
+				{
+					"type": "SpeedAddedRatio",
+					"value": 0.06,
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "SpeedAddedRatio",
+					"value": 0.08,
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "SpeedAddedRatio",
+					"value": 0.09,
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "SpeedAddedRatio",
+					"value": 0.11,
+					"flat": false
+				}
+			],
+			[
+				{
+					"type": "SpeedAddedRatio",
+					"value": 0.12,
+					"flat": false
+				}
+			]
+		],
+		"id": "24005"
 	}
 }
