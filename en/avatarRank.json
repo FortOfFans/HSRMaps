@@ -196,7 +196,7 @@
 	},
 	"100306": {
 		"name": "Trailblaze!",
-		"description": "Ultimate deals DMG 2 extra times, each of which deals Fire DMG equal to <unbreak>#1[i]%</unbreak> of the original DMG to a random enemy.",
+		"description": "Ultimate deals 2 extra instances of Fire DMG equal to <unbreak>#1[i]%</unbreak> of the original DMG to one random enemy.",
 		"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Rank6.png",
 		"shortIcon": "SkillIcon_1003_Rank6",
 		"params": [
@@ -4515,6 +4515,80 @@
 		"skillUpgrades": {},
 		"id": "140506"
 	},
+	"140601": {
+		"name": "Read the Room, Seek the Glee",
+		"description": "Cipher's tally of DMG is <unbreak>#3[i]%</unbreak> of its original value. When using the Talent's <u>Follow-up ATK</u>, increases Cipher's ATK by <unbreak>#1[i]%</unbreak>, lasting for <unbreak>#2[i]</unbreak> turn(s).",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_Rank1.png",
+		"shortIcon": "SkillIcon_1406_Rank1",
+		"params": [
+			0.8,
+			2,
+			1.5
+		],
+		"skillUpgrades": {},
+		"id": "140601"
+	},
+	"140602": {
+		"name": "In the Fray, Nab On a Spree",
+		"description": "When Cipher hits an enemy target, there is a <unbreak>#2[i]%</unbreak> <u>base chance</u> to increase the DMG it receives by <unbreak>#3[i]%</unbreak>, lasting for <unbreak>#1[i]</unbreak> turn(s).",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_Rank2.png",
+		"shortIcon": "SkillIcon_1406_Rank2",
+		"params": [
+			2,
+			1.2,
+			0.3
+		],
+		"skillUpgrades": {},
+		"id": "140602"
+	},
+	"140603": {
+		"name": "From Thin Air, Hard to Foresee",
+		"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_Ultra.png",
+		"shortIcon": "SkillIcon_1406_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"140601": 1,
+			"140603": 2
+		},
+		"id": "140603"
+	},
+	"140604": {
+		"name": "The Jig Is Up, Quick to Flee",
+		"description": "After the \"Patron\" gets attacked by an ally target, Cipher deals Quantum <u>Additional DMG</u> to it equal to <unbreak>#1[i]%</unbreak> of Cipher's ATK.",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_Rank4.png",
+		"shortIcon": "SkillIcon_1406_Rank4",
+		"params": [
+			0.5
+		],
+		"skillUpgrades": {},
+		"id": "140604"
+	},
+	"140605": {
+		"name": "Safe in Numbers, Light as a Bee",
+		"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_BP.png",
+		"shortIcon": "SkillIcon_1406_BP",
+		"params": [],
+		"skillUpgrades": {
+			"140602": 2,
+			"140604": 2
+		},
+		"id": "140605"
+	},
+	"140606": {
+		"name": "The Thief's Game, Unsung and Free",
+		"description": "The DMG dealt by <u>Follow-up ATK</u> from Cipher's Talent increases by <unbreak>#2[i]%</unbreak>. During the tally, an additional <unbreak>#3[i]%</unbreak> of non-Overflow DMG dealt by this attack is tallied. After the tally is cleared by using Ultimate, <unbreak>#1[i]%</unbreak> of the cleared tally is returned.",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_Rank6.png",
+		"shortIcon": "SkillIcon_1406_Rank6",
+		"params": [
+			0.2,
+			3.5,
+			0.16
+		],
+		"skillUpgrades": {},
+		"id": "140606"
+	},
 	"140701": {
 		"name": "Snowbound Maiden, Memory to Tomb",
 		"description": "When the enemy target's current HP is <unbreak>#1[i]%</unbreak>/<unbreak>#2[i]%</unbreak> of Max HP or lower, the DMG dealt to it by \"Boneclaw, Doomdrake's Embrace,\" \"Claw Splits the Veil,\" \"Breath Scorches the Shadow,\" and \"Wings Sweep the Ruins\" is <unbreak>#3[i]%</unbreak>/<unbreak>#4[i]%</unbreak> of the original DMG respectively.",
@@ -4560,7 +4634,7 @@
 	},
 	"140704": {
 		"name": "Rest in Songs of Gloom",
-		"description": "While Castorice is on the field, all allies' Incoming Healing during HP restoration increases by <unbreak>#1[i]%</unbreak>.",
+		"description": "While Castorice is on the field, all allies' HP restored when receiving healing increases by <unbreak>#1[i]%</unbreak>.",
 		"icon": "spriteoutput/skillicons/avatar/1407/SkillIcon_1407_Rank4.png",
 		"shortIcon": "SkillIcon_1407_Rank4",
 		"params": [
@@ -4595,6 +4669,82 @@
 		],
 		"skillUpgrades": {},
 		"id": "140706"
+	},
+	"140901": {
+		"name": "Cradle the Candle of Night",
+		"description": "While Hyacine is in the \"After Rain\" state, all ally targets additionally increase their Max HP by <unbreak>#1[i]%</unbreak>, and after using an attack, immediately restore HP by an amount equal to <unbreak>#2[i]%</unbreak> of Hyacine's Max HP.",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_Rank1.png",
+		"shortIcon": "SkillIcon_1409_Rank1",
+		"params": [
+			0.5,
+			0.08
+		],
+		"skillUpgrades": {},
+		"id": "140901"
+	},
+	"140902": {
+		"name": "Come Sit in My Courtyard",
+		"description": "When an ally target's HP decreases, SPD increases by <unbreak>#1[i]%</unbreak>, lasting for <unbreak>#2[i]</unbreak> turn(s).",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_Rank2.png",
+		"shortIcon": "SkillIcon_1409_Rank2",
+		"params": [
+			0.3,
+			2
+		],
+		"skillUpgrades": {},
+		"id": "140902"
+	},
+	"140903": {
+		"name": "Depart, Unto the Sun!",
+		"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.\\nMemosprite Skill Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_Ultra.png",
+		"shortIcon": "SkillIcon_1409_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"140901": 1,
+			"140903": 2,
+			"1140901": 1
+		},
+		"id": "140903"
+	},
+	"140904": {
+		"name": "Sunlit Amber, Yours to Keep",
+		"description": "The \"Tempestuous Halt\" Trace gets enhanced: For every <unbreak>#1[i]</unbreak> excess SPD, additionally increases Hyacine's and Little Ica's CRIT DMG by <unbreak>#2[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_Rank4.png",
+		"shortIcon": "SkillIcon_1409_Rank4",
+		"params": [
+			1,
+			0.02
+		],
+		"skillUpgrades": {},
+		"id": "140904"
+	},
+	"140905": {
+		"name": "Twilight Drapes the Tide",
+		"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nMemosprite Talent Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_BP.png",
+		"shortIcon": "SkillIcon_1409_BP",
+		"params": [],
+		"skillUpgrades": {
+			"140902": 2,
+			"140904": 2,
+			"1140903": 1,
+			"1140905": 1,
+			"1140906": 1
+		},
+		"id": "140905"
+	},
+	"140906": {
+		"name": "O Sky, Heed My Plea",
+		"description": "When Little Ica uses Memosprite Skill, the amount cleared from the tally of healing is changed to <unbreak>#1[i]%</unbreak>. While Little Ica is on the field, all ally targets' All-Type <u>RES PEN</u> increases by <unbreak>#2[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_Rank6.png",
+		"shortIcon": "SkillIcon_1409_Rank6",
+		"params": [
+			0.12,
+			0.2
+		],
+		"skillUpgrades": {},
+		"id": "140906"
 	},
 	"800101": {
 		"name": "A Falling Star",

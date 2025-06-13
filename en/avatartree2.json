@@ -11715,7 +11715,7 @@
 	},
 	"1205101": {
 		"name": "Vita Infinita",
-		"description": "When Blade's current HP percentage is at **50%** of Max HP or lower, Incoming Healing increases by **20%**.",
+		"description": "When Blade's current HP percentage is at **50%** of Max HP or lower, the HP restored when receiving healing increases by **20%**.",
 		"avatar": 1205,
 		"type": 3,
 		"pos": "Point06",
@@ -29105,7 +29105,7 @@
 	},
 	"1404103": {
 		"name": "Bloodied Chiton",
-		"description": "When battle starts, if Mydei's Max HP exceeds **4000**, for every **100** excess HP, Mydei's CRIT Rate increases by **1.2%**, his Charge ratio from enemy targets' DMG increases by **2.5%**, and his Incoming Healing increases by **5[f2]%**. Up to **4000** excess HP can be taken into account for this effect.",
+		"description": "When battle starts, if Mydei's Max HP exceeds **4000**, for every **100** excess HP, Mydei's CRIT Rate increases by **1.2%**, his Charge ratio from enemy targets' DMG increases by **2.5%**, and his HP restored when receiving healing increases by **5[f2]%**. Up to **4000** excess HP can be taken into account for this effect.",
 		"avatar": 1404,
 		"type": 3,
 		"pos": "Point08",
@@ -29841,6 +29841,479 @@
 		"baseSkill": [],
 		"id": "1405210"
 	},
+	"1406001": {
+		"name": "Oops, a Missed Catch",
+		"description": "Deals Quantum DMG equal to ****1[i]%**** of Cipher's ATK to one designated enemy.",
+		"avatar": 1406,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_Normal.png",
+		"shortIcon": "SkillIcon_1406_Normal",
+		"promotion": {
+			"2": 240000,
+			"110221": 3,
+			"110222": 8,
+			"110223": 11,
+			"115011": 6,
+			"115012": 7,
+			"115013": 7
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140601
+		],
+		"id": "1406001"
+	},
+	"1406002": {
+		"name": "Hey, Jackpot for the Taking",
+		"description": "Has a **6[i]%** **base chance** to Weaken one designated enemy and its adjacent targets (decreasing their DMG dealt by **3[i]%**) and increases Cipher's ATK by **5[i]%**, lasting for **4[i]** turn(s). Moreover, deals Quantum DMG equal to ****1[i]%**** of Cipher's ATK to one designated enemy, and Quantum DMG equal to ****2[i]%**** of Cipher's ATK to the adjacent targets.",
+		"avatar": 1406,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_BP.png",
+		"shortIcon": "SkillIcon_1406_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110221": 3,
+			"110222": 15,
+			"110223": 30,
+			"110507": 3,
+			"115011": 9,
+			"115012": 13,
+			"115013": 7
+		},
+		"params": [
+			1,
+			0.5,
+			0.1,
+			2,
+			0.3,
+			1.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140602
+		],
+		"id": "1406002"
+	},
+	"1406003": {
+		"name": "Yours Truly, <unbreak>Kitty Phantom Thief!</unbreak>",
+		"description": "Deals Quantum DMG equal to ****1[i]%**** of Cipher's ATK to one designated enemy. Then, deals **True DMG** equal to **2[i]%** of the current tally kept by Talent to the one designated enemy. Moreover, deals Quantum DMG equal to ****4[i]%**** of Cipher's ATK alongside **True DMG** equal to **3[i]%** of the current tally kept by Talent to the one designated enemy and its adjacent targets. And this **True DMG** is distributed evenly among all targets of this ability.",
+		"avatar": 1406,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_Ultra.png",
+		"shortIcon": "SkillIcon_1406_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110221": 3,
+			"110222": 15,
+			"110223": 30,
+			"110507": 3,
+			"115011": 9,
+			"115012": 13,
+			"115013": 7
+		},
+		"params": [
+			0.6,
+			0.25,
+			0.75,
+			0.2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140603
+		],
+		"id": "1406003"
+	},
+	"1406004": {
+		"name": "The Hospitable Dolosian",
+		"description": "When there are no enemy targets in the \"Patron\" state on the battlefield, Cipher immediately causes one enemy target with the highest Max HP on the battlefield to become the \"Patron.\" When using Skill or Ultimate, the primary target becomes the \"Patron.\" The \"Patron\" state only takes effect on the most recent target.\nAfter the \"Patron\" gets attacked by other ally targets, Cipher immediately launches **Follow-up ATK** against the \"Patron,\" dealing Quantum DMG equal to ****1[i]%**** of Cipher's ATK. This effect can trigger up to **3[i]** time(s) per turn, and this trigger count resets at the start of Cipher's turn.\nCipher will tally **2[i]%** of the non-**True DMG** dealt by ally targets to the \"Patron.\" Overflow DMG will not be tallied. After using Ultimate, clears this tally.",
+		"avatar": 1406,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_Passive.png",
+		"shortIcon": "SkillIcon_1406_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110221": 3,
+			"110222": 15,
+			"110223": 30,
+			"110507": 3,
+			"115011": 9,
+			"115012": 13,
+			"115013": 7
+		},
+		"params": [
+			0.75,
+			0.12,
+			1,
+			5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140604
+		],
+		"id": "1406004"
+	},
+	"1406007": {
+		"name": "Puss in Boots",
+		"description": "Gains \"Zagreus's Blessing\" that lasts for **1[i]** second(s). During this time, Cipher will be undetectable by enemies and her movement speed increases by **50%**. When approaching an enemy in the overworld/Simulated Universe/Divergent Universe, can immediately gain a random Consumable. Consumables can be gained this way for up to **4[i]** time(s) in each Earth day.\nWhen entering battle with \"Zagreus's Blessing\" active, deals Quantum DMG equal to **3[i]%** of Cipher's ATK to all enemies. And the tallied amount Cipher gains from this instance of DMG increases by **2[i]%**.",
+		"avatar": 1406,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_Maze.png",
+		"shortIcon": "SkillIcon_1406_Maze",
+		"promotion": {},
+		"params": [
+			15,
+			2,
+			1,
+			50
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			140607
+		],
+		"id": "1406007"
+	},
+	"1406101": {
+		"name": "Empyrean Strides",
+		"description": "When Cipher's SPD is higher than or equal to **140**/**170**, CRIT Rate increases by **25%**/**50%**, and the gained tally increases by **50%**/**100%**.",
+		"avatar": 1406,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_SkillTree1.png",
+		"shortIcon": "SkillIcon_1406_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110221": 3,
+			"110507": 1
+		},
+		"params": [
+			0.25,
+			0.5,
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1406101"
+	},
+	"1406102": {
+		"name": "<unbreak>300</unbreak> Rogues",
+		"description": "Cipher can tally **8%** of the non-**True DMG** dealt by ally targets to the enemy targets other than the \"Patron.\" Overflow DMG is not tallied.",
+		"avatar": 1406,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_SkillTree2.png",
+		"shortIcon": "SkillIcon_1406_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110222": 5,
+			"110507": 1
+		},
+		"params": [
+			0.08
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1406102"
+	},
+	"1406103": {
+		"name": "Sleight of Sky",
+		"description": "Increases the CRIT DMG dealt by the Talent's **Follow-up ATK** by **100%**. When Cipher is on the battlefield, DMG received by all enemy targets increases by **40%**.",
+		"avatar": 1406,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1406/SkillIcon_1406_SkillTree3.png",
+		"shortIcon": "SkillIcon_1406_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110223": 8,
+			"110507": 1
+		},
+		"params": [
+			0.4,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1406103"
+	},
+	"1406201": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1406,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 2500,
+			"115011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 2
+			}
+		],
+		"baseSkill": [],
+		"id": "1406201"
+	},
+	"1406202": {
+		"name": "DMG Boost: Quantum",
+		"description": "",
+		"avatar": 1406,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconQuantumAddedRatio.png",
+		"shortIcon": "IconQuantumAddedRatio",
+		"promotion": {
+			"2": 5000,
+			"110221": 3,
+			"115011": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "QuantumAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1406202"
+	},
+	"1406203": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1406,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 10000,
+			"110222": 3,
+			"115012": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 2
+			}
+		],
+		"baseSkill": [],
+		"id": "1406203"
+	},
+	"1406204": {
+		"name": "Effect Hit Rate Boost",
+		"description": "",
+		"avatar": 1406,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+		"shortIcon": "IconStatusProbability",
+		"promotion": {
+			"2": 10000,
+			"110222": 3,
+			"115012": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "StatusProbabilityBase",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1406204"
+	},
+	"1406205": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1406,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 20000,
+			"110222": 5,
+			"115012": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 3
+			}
+		],
+		"baseSkill": [],
+		"id": "1406205"
+	},
+	"1406206": {
+		"name": "DMG Boost: Quantum",
+		"description": "",
+		"avatar": 1406,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconQuantumAddedRatio.png",
+		"shortIcon": "IconQuantumAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110223": 3,
+			"115013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "QuantumAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1406206"
+	},
+	"1406207": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1406,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 45000,
+			"110223": 3,
+			"115013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 3
+			}
+		],
+		"baseSkill": [],
+		"id": "1406207"
+	},
+	"1406208": {
+		"name": "Effect Hit Rate Boost",
+		"description": "",
+		"avatar": 1406,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+		"shortIcon": "IconStatusProbability",
+		"promotion": {
+			"2": 160000,
+			"110223": 8,
+			"115013": 8
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "StatusProbabilityBase",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1406208"
+	},
+	"1406209": {
+		"name": "DMG Boost: Quantum",
+		"description": "",
+		"avatar": 1406,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconQuantumAddedRatio.png",
+		"shortIcon": "IconQuantumAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110223": 8,
+			"115013": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "QuantumAddedRatio",
+				"Value": 0.064
+			}
+		],
+		"baseSkill": [],
+		"id": "1406209"
+	},
+	"1406210": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1406,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 160000,
+			"110223": 8,
+			"115013": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 4
+			}
+		],
+		"baseSkill": [],
+		"id": "1406210"
+	},
 	"1407001": {
 		"name": "Lament, Nethersea's Ripple",
 		"description": "Deals Quantum DMG equal to ****1[i]%**** of Castorice's Max HP to one designated enemy.",
@@ -30370,6 +30843,538 @@
 			1140705
 		],
 		"id": "1407302"
+	},
+	"1409001": {
+		"name": "When Breeze Kisses Cirrus",
+		"description": "Deals Wind DMG equal to ****1[i]%**** of Hyacine's Max HP to one designated enemy.",
+		"avatar": 1409,
+		"type": 2,
+		"pos": "Point01",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_Normal.png",
+		"shortIcon": "SkillIcon_1409_Normal",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [
+			0.25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140901
+		],
+		"id": "1409001"
+	},
+	"1409002": {
+		"name": "Love Over the Rainbow",
+		"description": "**Summons memosprite** Little Ica. Restores HP equal to ****1[f1]%**** of Hyacine's Max HP plus ****2[i]**** for all allies (except Little Ica), and restores HP equal to ****3[f1]%**** of Hyacine's Max HP plus ****4[i]**** for Little Ica.",
+		"avatar": 1409,
+		"type": 2,
+		"pos": "Point02",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_BP.png",
+		"shortIcon": "SkillIcon_1409_BP",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110505": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.04,
+			40,
+			0.05,
+			50
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140902
+		],
+		"id": "1409002"
+	},
+	"1409003": {
+		"name": "We Who Fly <unbreak>Into Twilight</unbreak>",
+		"description": "**Summons memosprite** Little Ica. Restores HP equal to ****1[f1]%**** of Hyacine's Max HP plus ****2[i]**** for all allies (except Little Ica), and restores HP equal to ****6[f1]%**** of Hyacine's Max HP plus ****7[i]**** for Little Ica. Hyacine enters the \"After Rain\" state, lasting for **5[i]** turn(s). This duration decreases by 1 at the start of Hyacine's every turn. While \"After Rain\" is active, all ally targets increase their Max HP by ****3[f1]%**** plus ****4[i]****.",
+		"avatar": 1409,
+		"type": 2,
+		"pos": "Point03",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_Ultra.png",
+		"shortIcon": "SkillIcon_1409_Ultra",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110505": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.05,
+			50,
+			0.15,
+			150,
+			3,
+			0.06,
+			60
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140903
+		],
+		"id": "1409003"
+	},
+	"1409004": {
+		"name": "First Light Heals the World",
+		"description": "The memosprite Little Ica initially has Max HP equal to **1[i]%** of Hyacine's Max HP. When Hyacine or Little Ica provides healing, increases Little Ica's DMG dealt by ****3[i]%**** for **4[i]** turn(s). Stacks up to **5[i]** time(s).",
+		"avatar": 1409,
+		"type": 2,
+		"pos": "Point04",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_Passive.png",
+		"shortIcon": "SkillIcon_1409_Passive",
+		"promotion": {
+			"2": 539000,
+			"241": 2,
+			"110251": 2,
+			"110252": 12,
+			"110253": 26,
+			"110505": 3,
+			"115001": 7,
+			"115002": 11,
+			"115003": 6
+		},
+		"params": [
+			0.5,
+			1,
+			0.4,
+			2,
+			3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			140904
+		],
+		"id": "1409004"
+	},
+	"1409007": {
+		"name": "Day So Right, Life So Fine!",
+		"description": "When the next battle starts, restores HP by an amount equal to **1[i]%** of Hyacine's Max HP plus **2[i]** for all allies and increases Max HP by **3[i]%**, lasting for **4[i]** turn(s).",
+		"avatar": 1409,
+		"type": 2,
+		"pos": "Point05",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_Maze.png",
+		"shortIcon": "SkillIcon_1409_Maze",
+		"promotion": {},
+		"params": [
+			0.3,
+			600,
+			0.2,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			140907
+		],
+		"id": "1409007"
+	},
+	"1409101": {
+		"name": "Gloomy Grin",
+		"description": "Increases Hyacine's and Little Ica's CRIT Rate by **100%**. When providing healing to an ally target whose current HP is equal to or less than **50%** of their Max HP, increases Hyacine's and Little Ica's Outgoing Healing by **25%**.",
+		"avatar": 1409,
+		"type": 3,
+		"pos": "Point06",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_SkillTree1.png",
+		"shortIcon": "SkillIcon_1409_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110251": 3,
+			"110505": 1
+		},
+		"params": [
+			1,
+			0.5,
+			0.25
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1409101"
+	},
+	"1409102": {
+		"name": "Stormy Caress",
+		"description": "Increases Hyacine's Effect RES by **50%**. When using Skill and Ultimate, dispels **1** **debuff(s)** from all ally targets.",
+		"avatar": 1409,
+		"type": 3,
+		"pos": "Point07",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_SkillTree2.png",
+		"shortIcon": "SkillIcon_1409_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110252": 5,
+			"110505": 1
+		},
+		"params": [
+			0.5,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1409102"
+	},
+	"1409103": {
+		"name": "Tempestuous Halt",
+		"description": "When Hyacine's SPD exceeds **200**, increases her and Little Ica's Max HP by **20%**. Then, for every **1** excess SPD, increases Hyacine's and Little Ica's Outgoing Healing by **1%**. Up to a max of **200** excess SPD can be taken into account for this effect.",
+		"avatar": 1409,
+		"type": 3,
+		"pos": "Point08",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_SkillTree3.png",
+		"shortIcon": "SkillIcon_1409_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110253": 8,
+			"110505": 1
+		},
+		"params": [
+			200,
+			0.2,
+			1,
+			0.01,
+			200
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1409103"
+	},
+	"1409201": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1409,
+		"type": 1,
+		"pos": "Point09",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 2500,
+			"115001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 2
+			}
+		],
+		"baseSkill": [],
+		"id": "1409201"
+	},
+	"1409202": {
+		"name": "Effect RES Boost",
+		"description": "",
+		"avatar": 1409,
+		"type": 1,
+		"pos": "Point10",
+		"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+		"shortIcon": "IconStatusResistance",
+		"promotion": {
+			"2": 4000,
+			"110251": 3,
+			"115001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "StatusResistanceBase",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1409202"
+	},
+	"1409203": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1409,
+		"type": 1,
+		"pos": "Point11",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 9000,
+			"110252": 3,
+			"115002": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 2
+			}
+		],
+		"baseSkill": [],
+		"id": "1409203"
+	},
+	"1409204": {
+		"name": "HP Boost",
+		"description": "",
+		"avatar": 1409,
+		"type": 1,
+		"pos": "Point12",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 9000,
+			"110252": 3,
+			"115002": 2
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1409204"
+	},
+	"1409205": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1409,
+		"type": 1,
+		"pos": "Point13",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 19000,
+			"110252": 4,
+			"115002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 3
+			}
+		],
+		"baseSkill": [],
+		"id": "1409205"
+	},
+	"1409206": {
+		"name": "Effect RES Boost",
+		"description": "",
+		"avatar": 1409,
+		"type": 1,
+		"pos": "Point14",
+		"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+		"shortIcon": "IconStatusResistance",
+		"promotion": {
+			"2": 45000,
+			"110253": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "StatusResistanceBase",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1409206"
+	},
+	"1409207": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1409,
+		"type": 1,
+		"pos": "Point15",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 45000,
+			"110253": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 3
+			}
+		],
+		"baseSkill": [],
+		"id": "1409207"
+	},
+	"1409208": {
+		"name": "HP Boost",
+		"description": "",
+		"avatar": 1409,
+		"type": 1,
+		"pos": "Point16",
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 140000,
+			"110253": 7,
+			"115003": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1409208"
+	},
+	"1409209": {
+		"name": "Effect RES Boost",
+		"description": "",
+		"avatar": 1409,
+		"type": 1,
+		"pos": "Point17",
+		"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+		"shortIcon": "IconStatusResistance",
+		"promotion": {
+			"2": 160000,
+			"110253": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "StatusResistanceBase",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1409209"
+	},
+	"1409210": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1409,
+		"type": 1,
+		"pos": "Point18",
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 160000,
+			"110253": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 4
+			}
+		],
+		"baseSkill": [],
+		"id": "1409210"
+	},
+	"1409301": {
+		"name": "Rainclouds, Time to Go!",
+		"description": "",
+		"avatar": 1409,
+		"type": 4,
+		"pos": "Point19",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_11409_Servant.png",
+		"shortIcon": "SkillIcon_11409_Servant",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1140901
+		],
+		"id": "1409301"
+	},
+	"1409302": {
+		"name": "Take Sky in Hand",
+		"description": "",
+		"avatar": 1409,
+		"type": 4,
+		"pos": "Point20",
+		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_11409_ServantPassive.png",
+		"shortIcon": "SkillIcon_11409_ServantPassive",
+		"promotion": {
+			"2": 201500,
+			"110251": 2,
+			"110252": 6,
+			"110253": 8,
+			"115001": 4,
+			"115002": 5,
+			"115003": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			1140903,
+			1140905,
+			1140906
+		],
+		"id": "1409302"
 	},
 	"8001001": {
 		"name": "Farewell Hit",
