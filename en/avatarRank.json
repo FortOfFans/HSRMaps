@@ -3700,7 +3700,7 @@
 	},
 	"130906": {
 		"name": "Moonless Midnight",
-		"description": "While the \"Concerto\" state is active, the CRIT DMG for the Physical <u>Additional DMG</u> caused by the Ultimate increases by <unbreak>#2[i]%</unbreak>. The effect of \"Moonless Midnight\" can trigger up to <unbreak>#1[i]</unbreak> time(s) and the trigger count is resets each time the Ultimate is used.",
+		"description": "While the \"Concerto\" state is active, the CRIT DMG for the Physical <u>Additional DMG</u> caused by the Ultimate increases by <unbreak>#2[i]%</unbreak>. The effect of \"Moonless Midnight\" can trigger up to <unbreak>#1[i]</unbreak> time(s) and the trigger count resets each time the Ultimate is used.",
 		"icon": "spriteoutput/skillicons/avatar/1309/SkillIcon_1309_Rank6.png",
 		"shortIcon": "SkillIcon_1309_Rank6",
 		"params": [
@@ -4670,9 +4670,87 @@
 		"skillUpgrades": {},
 		"id": "140706"
 	},
+	"140801": {
+		"name": "Fire and Light Bind Virtue and Vice",
+		"description": "The base SPD inheritance ratio for <u>Khaslana's extra turn</u> increases to <unbreak>#5[i]%</unbreak>. For every enemy target defeated in one battle, additionally increases this ratio by <unbreak>#1[f1]%</unbreak>, up to a max of <unbreak>#4[i]%</unbreak>.\\nWhen using Ultimate, increases CRIT DMG by <unbreak>#2[i]%</unbreak>, lasting for <unbreak>#3[i]</unbreak> turn(s).",
+		"icon": "spriteoutput/skillicons/avatar/1408/SkillIcon_1408_Rank1.png",
+		"shortIcon": "SkillIcon_1408_Rank1",
+		"params": [
+			0.015,
+			0.5,
+			3,
+			0.84,
+			0.66
+		],
+		"skillUpgrades": {},
+		"id": "140801"
+	},
+	"140802": {
+		"name": "Sky and Earth Churn Mortal Froth",
+		"description": "Khaslana's Physical <u>RES PEN</u> increases by <unbreak>#2[i]%</unbreak>. When one use of \"Foundation: Stardeath Verdict\" consumes <unbreak>#1[i]</unbreak> <u>\"Scourge\"</u> point(s), gains 1 <u>extra turn</u>.",
+		"icon": "spriteoutput/skillicons/avatar/1408/SkillIcon_1408_Rank2.png",
+		"shortIcon": "SkillIcon_1408_Rank2",
+		"params": [
+			4,
+			0.2
+		],
+		"skillUpgrades": {},
+		"id": "140802"
+	},
+	"140803": {
+		"name": "Depths of Quiet, Entombed in Ruin",
+		"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1408/SkillIcon_1408_Ultra.png",
+		"shortIcon": "SkillIcon_1408_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"140801": 1,
+			"140803": 2,
+			"140808": 1
+		},
+		"id": "140803"
+	},
+	"140804": {
+		"name": "Faces of Titans, Blurred by Time",
+		"description": "When using \"Calamity: Soulscorch Edict,\" additionally gains <unbreak>#1[i]</unbreak> stack(s) of \"Soulscorch.\"",
+		"icon": "spriteoutput/skillicons/avatar/1408/SkillIcon_1408_Rank4.png",
+		"shortIcon": "SkillIcon_1408_Rank4",
+		"params": [
+			4
+		],
+		"skillUpgrades": {},
+		"id": "140804"
+	},
+	"140805": {
+		"name": "The Wheel Spins Forevermore",
+		"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1408/SkillIcon_1408_BP.png",
+		"shortIcon": "SkillIcon_1408_BP",
+		"params": [],
+		"skillUpgrades": {
+			"140802": 2,
+			"140804": 2,
+			"140805": 2,
+			"140809": 2,
+			"140811": 2
+		},
+		"id": "140805"
+	},
+	"140806": {
+		"name": "Embers of Old Rise Still",
+		"description": "The number of overflow points allowed for \"Coreflame\" no longer has an upper limit. When the battle starts, gains <unbreak>#2[i]</unbreak> point(s) of \"Coreflame.\"\\nAfter using the attack from \"Foundation: Stardeath Verdict,\" additionally deals <u>True DMG</u> equal to <unbreak>#1[i]%</unbreak> of the total DMG dealt in this attack to the enemy target with the highest HP.",
+		"icon": "spriteoutput/skillicons/avatar/1408/SkillIcon_1408_Rank6.png",
+		"shortIcon": "SkillIcon_1408_Rank6",
+		"params": [
+			0.36,
+			6
+		],
+		"skillUpgrades": {},
+		"id": "140806"
+	},
 	"140901": {
 		"name": "Cradle the Candle of Night",
-		"description": "While Hyacine is in the \"After Rain\" state, all ally targets additionally increase their Max HP by <unbreak>#1[i]%</unbreak>, and after using an attack, immediately restore HP by an amount equal to <unbreak>#2[i]%</unbreak> of Hyacine's Max HP.",
+		"description": "While Hyacine is in the \"After Rain\" state, all ally targets additionally increase their Max HP by <unbreak>#1[i]%</unbreak>, and after using an attack, immediately restore their HP by an amount equal to <unbreak>#2[i]%</unbreak> of Hyacine's Max HP.",
 		"icon": "spriteoutput/skillicons/avatar/1409/SkillIcon_1409_Rank1.png",
 		"shortIcon": "SkillIcon_1409_Rank1",
 		"params": [
@@ -5319,5 +5397,291 @@
 		],
 		"skillUpgrades": {},
 		"id": "800806"
+	},
+	"1100501": {
+		"name": "Da Capo",
+		"description": "When using an attack, has a <unbreak>#1[i]%</unbreak> <u>base chance</u> to increase the DoT taken by the target by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
+		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_Rank1.png",
+		"shortIcon": "SkillIcon_1005_Rank1",
+		"params": [
+			1,
+			0.3,
+			2
+		],
+		"skillUpgrades": {},
+		"id": "1100501"
+	},
+	"1100502": {
+		"name": "Fortississimo",
+		"description": "While Kafka is on the field, DoT dealt by all allies increases by <unbreak>#1[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_Rank2.png",
+		"shortIcon": "SkillIcon_1005_Rank2",
+		"params": [
+			0.33
+		],
+		"skillUpgrades": {},
+		"id": "1100502"
+	},
+	"1100503": {
+		"name": "Capriccio",
+		"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_BP.png",
+		"shortIcon": "SkillIcon_1005_BP",
+		"params": [],
+		"skillUpgrades": {
+			"1100501": 1,
+			"1100502": 2
+		},
+		"id": "1100503"
+	},
+	"1100504": {
+		"name": "Recitativo",
+		"description": "When an enemy target takes DMG from the Shock status inflicted by Kafka, Kafka additionally regenerates <unbreak>#1[i]</unbreak> Energy.",
+		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_Rank4.png",
+		"shortIcon": "SkillIcon_1005_Rank4",
+		"params": [
+			2
+		],
+		"skillUpgrades": {},
+		"id": "1100504"
+	},
+	"1100505": {
+		"name": "Doloroso",
+		"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_Ultra.png",
+		"shortIcon": "SkillIcon_1005_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"1100503": 2,
+			"1100504": 2
+		},
+		"id": "1100505"
+	},
+	"1100506": {
+		"name": "Leggiero",
+		"description": "The Shock state inflicted on the enemy target by the Ultimate, Technique, or the Talent-triggered <u>Follow-up ATK</u> has a DMG multiplier increase of <unbreak>#1[i]%</unbreak> and lasts <unbreak>#2[i]</unbreak> turn(s) longer.",
+		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_Rank6.png",
+		"shortIcon": "SkillIcon_1005_Rank6",
+		"params": [
+			1.56,
+			1
+		],
+		"skillUpgrades": {},
+		"id": "1100506"
+	},
+	"1100601": {
+		"name": "Social Engineering",
+		"description": "After using Ultimate to attack an enemy target, Silver Wolf regenerates <unbreak>#1[i]</unbreak> Energy for every <u>debuff</u> on the target. This effect can trigger up to <unbreak>#2[i]</unbreak> time(s) in each use of Ultimate.",
+		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_Rank1.png",
+		"shortIcon": "SkillIcon_1006_Rank1",
+		"params": [
+			7,
+			5
+		],
+		"skillUpgrades": {},
+		"id": "1100601"
+	},
+	"1100602": {
+		"name": "Zombie Network",
+		"description": "When an enemy target enters battle, increases their DMG taken by <unbreak>#1[i]%</unbreak>. When an enemy target gets attacked by ally targets, Silver Wolf has a <unbreak>#2[i]%</unbreak> <u>base chance</u> to implant 1 random \"Bug\" on the attacked enemy target.",
+		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_Rank2.png",
+		"shortIcon": "SkillIcon_1006_Rank2",
+		"params": [
+			0.2,
+			1
+		],
+		"skillUpgrades": {},
+		"id": "1100602"
+	},
+	"1100603": {
+		"name": "Payload",
+		"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_BP.png",
+		"shortIcon": "SkillIcon_1006_BP",
+		"params": [],
+		"skillUpgrades": {
+			"1100602": 2,
+			"1100604": 2
+		},
+		"id": "1100603"
+	},
+	"1100604": {
+		"name": "Bounce Attack",
+		"description": "After using Ultimate to attack an enemy target, deals Quantum <u>Additional DMG</u> equal to <unbreak>#1[i]%</unbreak> of Silver Wolf's ATK for every <u>debuff</u> on the target. This effect can trigger up to <unbreak>#2[i]</unbreak> time(s) per target during each use of Ultimate.",
+		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_Rank4.png",
+		"shortIcon": "SkillIcon_1006_Rank4",
+		"params": [
+			0.2,
+			5
+		],
+		"skillUpgrades": {},
+		"id": "1100604"
+	},
+	"1100605": {
+		"name": "Brute Force Attack",
+		"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_Ultra.png",
+		"shortIcon": "SkillIcon_1006_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"1100601": 1,
+			"1100603": 2
+		},
+		"id": "1100605"
+	},
+	"1100606": {
+		"name": "Overlay Network",
+		"description": "For every <u>debuff</u> the enemy target has, the DMG dealt by Silver Wolf to it increases by <unbreak>#1[i]%</unbreak>, up to a max increase of <unbreak>#2[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_Rank6.png",
+		"shortIcon": "SkillIcon_1006_Rank6",
+		"params": [
+			0.2,
+			1
+		],
+		"skillUpgrades": {},
+		"id": "1100606"
+	},
+	"1120501": {
+		"name": "Blade Cuts the Deepest in Hell",
+		"description": "Enhanced Basic ATK and Ultimate deal additionally increased DMG to one designated enemy, with the increased amount equal to <unbreak>#1[i]%</unbreak> of the tally of HP loss from Ultimate.",
+		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_Rank1.png",
+		"shortIcon": "SkillIcon_1205_Rank1",
+		"params": [
+			1.5,
+			0.9
+		],
+		"skillUpgrades": {},
+		"id": "1120501"
+	},
+	"1120502": {
+		"name": "Ten Thousand Sorrows From One Broken Dream",
+		"description": "When Blade is in the \"Hellscape\" state, his CRIT Rate increases by <unbreak>#1[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_Rank2.png",
+		"shortIcon": "SkillIcon_1205_Rank2",
+		"params": [
+			0.15
+		],
+		"skillUpgrades": {},
+		"id": "1120502"
+	},
+	"1120503": {
+		"name": "Hardened Blade Bleeds Coldest Shade",
+		"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_Ultra.png",
+		"shortIcon": "SkillIcon_1205_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"1120503": 2,
+			"1120504": 2
+		},
+		"id": "1120503"
+	},
+	"1120504": {
+		"name": "Rejected by Death, Infected With Life",
+		"description": "When Blade's current HP percentage drops from above <unbreak>50%</unbreak> to <unbreak>50%</unbreak> of his Max HP or lower, increases his Max HP by <unbreak>#1[i]%</unbreak>. Stacks up to <unbreak>#2[i]</unbreak> time(s).",
+		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_Rank4.png",
+		"shortIcon": "SkillIcon_1205_Rank4",
+		"params": [
+			0.2,
+			2
+		],
+		"skillUpgrades": {},
+		"id": "1120504"
+	},
+	"1120505": {
+		"name": "Death By Ten Lords' Gaze",
+		"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_BP.png",
+		"shortIcon": "SkillIcon_1205_BP",
+		"params": [],
+		"skillUpgrades": {
+			"1120501": 1,
+			"1120502": 2,
+			"1120508": 1
+		},
+		"id": "1120505"
+	},
+	"1120506": {
+		"name": "Reborn Into an Empty Husk",
+		"description": "The maximum number of Charge stacks is reduced to 4. The <u>Follow-up ATK</u> triggered by Talent deals additionally increased DMG, with the increased amount equal to <unbreak>#1[i]%</unbreak> of Blade's Max HP.",
+		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_Rank6.png",
+		"shortIcon": "SkillIcon_1205_Rank6",
+		"params": [
+			0.5
+		],
+		"skillUpgrades": {},
+		"id": "1120506"
+	},
+	"1121201": {
+		"name": "Moon Crashes Tianguan Gate",
+		"description": "When using Ultimate or Enhanced Skill, Jingliu's CRIT DMG increases by <unbreak>#1[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s). Moreover, additionally deals 1 instance of Ice DMG equal to <unbreak>#2[i]%</unbreak> of Jingliu's Max HP to the primary target.",
+		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_Rank1.png",
+		"shortIcon": "SkillIcon_1212_Rank1",
+		"params": [
+			0.36,
+			0.8,
+			1
+		],
+		"skillUpgrades": {},
+		"id": "1121201"
+	},
+	"1121202": {
+		"name": "Crescent Shadows Qixing Dipper",
+		"description": "After using Ultimate, increases the DMG of the next Enhanced Skill by <unbreak>#1[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_Rank2.png",
+		"shortIcon": "SkillIcon_1212_Rank2",
+		"params": [
+			0.8
+		],
+		"skillUpgrades": {},
+		"id": "1121202"
+	},
+	"1121203": {
+		"name": "Halfmoon Gapes Mercurial Haze",
+		"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_Ultra.png",
+		"shortIcon": "SkillIcon_1212_Ultra",
+		"params": [],
+		"skillUpgrades": {
+			"1121203": 2,
+			"1121204": 2
+		},
+		"id": "1121203"
+	},
+	"1121204": {
+		"name": "Lunarlance Shines Skyward Dome",
+		"description": "During the \"Spectral Transmigration\" state, each \"Moonlight\" stack additionally increases CRIT DMG by <unbreak>#1[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_Rank4.png",
+		"shortIcon": "SkillIcon_1212_Rank4",
+		"params": [
+			0.2
+		],
+		"skillUpgrades": {},
+		"id": "1121204"
+	},
+	"1121205": {
+		"name": "Night Shades Astral Radiance",
+		"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_BP.png",
+		"shortIcon": "SkillIcon_1212_BP",
+		"params": [],
+		"skillUpgrades": {
+			"1121201": 1,
+			"1121202": 2,
+			"1121209": 2
+		},
+		"id": "1121205"
+	},
+	"1121206": {
+		"name": "Eclipse Hollows Corporeal Husk",
+		"description": "When Jingliu enters the \"Spectral Transmigration\" state, the \"Syzygy\" stack limit increases by 1, and Jingliu additionally gains <unbreak>#1[i]</unbreak> stack(s) of \"Syzygy.\" During the \"Spectral Transmigration\" state, her Ice <u>RES PEN</u> increases by <unbreak>#2[i]%</unbreak>.",
+		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_Rank6.png",
+		"shortIcon": "SkillIcon_1212_Rank6",
+		"params": [
+			2,
+			0.3
+		],
+		"skillUpgrades": {},
+		"id": "1121206"
 	}
 }
