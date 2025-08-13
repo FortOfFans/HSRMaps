@@ -2378,7 +2378,7 @@
 	},
 	"1006101": {
 		"name": "Generate",
-		"description": "\"Bug\"'s duration is extended for **1** turn(s). Every time an enemy is inflicted with Weakness Break, Silver Wolf has a **65%** **base chance** of implanting a random \"Bug\" in the enemy.",
+		"description": "The duration of \"Bug\" is extended by **1** turn(s). Every time an enemy is inflicted with Weakness Break, Silver Wolf has a **65%** **base chance** of implanting a random \"Bug\" on that target.",
 		"avatar": 1006,
 		"type": 3,
 		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_SkillTree1.png",
@@ -15235,7 +15235,7 @@
 	},
 	"1212004": {
 		"name": "Crescent Transmigration",
-		"description": "When Jingliu has **5[i]** stack(s) of Syzygy, she enters the Spectral Transmigration state with her action advanced by **6[i]%** and her CRIT Rate increases by ****7[i]%****. Then, Jingliu's Skill \"Transcendent Flash\" is enhanced to \"Moon On Glacial River,\" and only this enhanced Skill is available for use in battle. When Jingliu uses an attack in the Spectral Transmigration state, she consumes HP from her teammates equal to **2[i]%** of their respective Max HP (this cannot reduce teammates' HP to lower than 1). Jingliu's ATK increases by **3[i]%** of the total HP consumed from all allies in this attack, capped at ****4[i]%**** of her base ATK, lasting until the current attack ends. Jingliu cannot enter the Spectral Transmigration state again until the current Spectral Transmigration state ends. Syzygy can stack up to 3 times. When Syzygy stacks become 0, Jingliu will exit the Spectral Transmigration state.",
+		"description": "When Jingliu has **5[i]** stack(s) of Syzygy, she enters the Spectral Transmigration state with her action advanced by **6[i]%** and her CRIT Rate increased by ****7[i]%****. Then, Jingliu's Skill \"Transcendent Flash\" is enhanced to \"Moon On Glacial River,\" and only this enhanced Skill is available for use in battle. When Jingliu uses an attack in the Spectral Transmigration state, she consumes HP from her teammates equal to **2[i]%** of their respective Max HP (this cannot reduce teammates' HP to lower than 1). Jingliu's ATK increases by **3[i]%** of the total HP consumed from all allies in this attack, capped at ****4[i]%**** of her base ATK, lasting until the current attack ends. Jingliu cannot enter the Spectral Transmigration state again until the current Spectral Transmigration state ends. Syzygy can stack up to 3 times. When Syzygy stacks become 0, Jingliu will exit the Spectral Transmigration state.",
 		"avatar": 1212,
 		"type": 2,
 		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_Passive.png",
@@ -31525,6 +31525,912 @@
 		],
 		"id": "1409302"
 	},
+	"1410001": {
+		"name": "Aeolian Mode: Echoes in Still Waters",
+		"description": "Deals Physical DMG equal to ****1[i]%**** of Hysilens's ATK to one designated enemy.",
+		"avatar": 1410,
+		"type": 2,
+		"icon": "spriteoutput/skillicons/avatar/1410/SkillIcon_1410_Normal.png",
+		"shortIcon": "SkillIcon_1410_Normal",
+		"promotion": {
+			"2": 240000,
+			"110221": 3,
+			"110222": 8,
+			"110223": 11,
+			"115001": 6,
+			"115002": 7,
+			"115003": 7
+		},
+		"params": [
+			0.5,
+			1,
+			3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			141001
+		],
+		"id": "1410001"
+	},
+	"1410002": {
+		"name": "Overtone Hum: Chorus After Dark Tides",
+		"description": "Has a **2[i]%** **base chance** to increase the DMG taken by all enemies by ****3[i]%****, lasting for **4[i]** turn(s). At the same time, deals Physical DMG equal to ****1[i]%**** of Hysilens's ATK to all enemies.",
+		"avatar": 1410,
+		"type": 2,
+		"icon": "spriteoutput/skillicons/avatar/1410/SkillIcon_1410_BP.png",
+		"shortIcon": "SkillIcon_1410_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110221": 3,
+			"110222": 15,
+			"110223": 30,
+			"110507": 3,
+			"115001": 9,
+			"115002": 13,
+			"115003": 7
+		},
+		"params": [
+			0.7,
+			1,
+			0.1,
+			3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			141002
+		],
+		"id": "1410002"
+	},
+	"1410003": {
+		"name": "Maelstrom Rhapsody",
+		"description": "Hysilens deploys a Zone that reduces enemy targets' ATK by **6[f1]%** and DEF by ****3[f1]%****, and deals Physical DMG equal to ****1[i]%**** of Hysilens's ATK to all enemies.\nFor every 1 instance of DoT taken by an enemy target within the Zone, Hysilens deals Physical DoT equal to ****4[f1]%**** of her ATK to them. This damage triggers at the start of each turn or after one attack by an ally target, up to **5[i]** time(s). And it cannot repeatedly trigger this effect.\nThe Zone lasts for **2[i]** turn(s) and this duration decreases by 1 at the start of this unit's every turn. When Hysilens gets **knocked down**, the Zone will also be dispelled.",
+		"avatar": 1410,
+		"type": 2,
+		"icon": "spriteoutput/skillicons/avatar/1410/SkillIcon_1410_Ultra.png",
+		"shortIcon": "SkillIcon_1410_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110221": 3,
+			"110222": 15,
+			"110223": 30,
+			"110507": 3,
+			"115001": 9,
+			"115002": 13,
+			"115003": 7
+		},
+		"params": [
+			1.2,
+			3,
+			0.15,
+			0.32,
+			8,
+			0.15
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			141003
+		],
+		"id": "1410003"
+	},
+	"1410004": {
+		"name": "Sirenic Serenade",
+		"description": "When an ally target attacks, there is a **1[i]%** **base chance** for Hysilens to inflict the hit enemy target with one of the following states: Wind Shear, Bleed, Burn, or Shock. Priority is given to inflicting a different state.\nWhile in the Wind Shear/Burn/Shock state, at the start of each turn, the enemy target takes Wind/Fire/Lightning DoT equal to ****2[f1]%**** of Hysilens's ATK for **5[i]** turn(s).\nWhile in the Bleed state, at the start of each turn, the enemy target takes Physical DoT equal to **3[f1]%** of their Max HP, up to ****4[f1]%**** of Hysilens's ATK, lasting for **5[i]** turn(s).",
+		"avatar": 1410,
+		"type": 2,
+		"icon": "spriteoutput/skillicons/avatar/1410/SkillIcon_1410_Passive.png",
+		"shortIcon": "SkillIcon_1410_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110221": 3,
+			"110222": 15,
+			"110223": 30,
+			"110507": 3,
+			"115001": 9,
+			"115002": 13,
+			"115003": 7
+		},
+		"params": [
+			1,
+			0.1,
+			0.2,
+			0.1,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			141004
+		],
+		"id": "1410004"
+	},
+	"1410007": {
+		"name": "At Ocean's Abode",
+		"description": "After using Technique, creates a Special Dimension that lasts for **1[i]** seconds and automatically moves forward. Enemies within the Special Dimension enter the \"Soulstruck\" state. \"Soulstruck\" enemies will not attack ally targets and will follow the dimension while it persists.\nAfter entering combat with \"Soulstruck\" enemies, there is a **2[i]%** **base chance** to inflict each enemy target with **3[i]** of the following states: Wind Shear/Bleed/Burn/Shock, all of which are equivalent to those provided by Hysilens's Talent effect. Only 1 Dimension Effect created by allies can exist at the same time.",
+		"avatar": 1410,
+		"type": 2,
+		"icon": "spriteoutput/skillicons/avatar/1410/SkillIcon_1410_Maze.png",
+		"shortIcon": "SkillIcon_1410_Maze",
+		"promotion": {},
+		"params": [
+			20,
+			1,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			141007
+		],
+		"id": "1410007"
+	},
+	"1410101": {
+		"name": "The Gladius of Conquest",
+		"description": "At the start of combat, Hysilens deploys a Zone, equivalent to that provided by her Ultimate, lasting for **3** turn(s). Whenever Hysilens deploys a Zone, she recovers **1** Skill Point(s).",
+		"avatar": 1410,
+		"type": 3,
+		"icon": "spriteoutput/skillicons/avatar/1410/SkillIcon_1410_SkillTree1.png",
+		"shortIcon": "SkillIcon_1410_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110221": 3,
+			"110507": 1
+		},
+		"params": [
+			3,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1410101"
+	},
+	"1410102": {
+		"name": "The Bubble of Banquets",
+		"description": "When Hysilens uses Ultimate, if the enemy target is currently afflicted with DoT(s), all DoTs currently applied on the target will immediately produce DMG equal to **150%** of their original DMG.",
+		"avatar": 1410,
+		"type": 3,
+		"icon": "spriteoutput/skillicons/avatar/1410/SkillIcon_1410_SkillTree2.png",
+		"shortIcon": "SkillIcon_1410_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110222": 5,
+			"110507": 1
+		},
+		"params": [
+			1.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1410102"
+	},
+	"1410103": {
+		"name": "The Fiddle of Pearls",
+		"description": "For every **10%** of Hysilens's Effect Hit Rate that exceeds **60%**, increases her DMG dealt by **15%**, up to a max increase of **90%**.",
+		"avatar": 1410,
+		"type": 3,
+		"icon": "spriteoutput/skillicons/avatar/1410/SkillIcon_1410_SkillTree3.png",
+		"shortIcon": "SkillIcon_1410_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110223": 8,
+			"110507": 1
+		},
+		"params": [
+			0.6,
+			0.1,
+			0.15,
+			0.9
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1410103"
+	},
+	"1410201": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1410,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 2500,
+			"115001": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 2
+			}
+		],
+		"baseSkill": [],
+		"id": "1410201"
+	},
+	"1410202": {
+		"name": "ATK Boost",
+		"description": "",
+		"avatar": 1410,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 5000,
+			"110221": 3,
+			"115001": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1410202"
+	},
+	"1410203": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1410,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 10000,
+			"110222": 3,
+			"115002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 2
+			}
+		],
+		"baseSkill": [],
+		"id": "1410203"
+	},
+	"1410204": {
+		"name": "Effect Hit Rate Boost",
+		"description": "",
+		"avatar": 1410,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+		"shortIcon": "IconStatusProbability",
+		"promotion": {
+			"2": 10000,
+			"110222": 3,
+			"115002": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "StatusProbabilityBase",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1410204"
+	},
+	"1410205": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1410,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 20000,
+			"110222": 5,
+			"115002": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 3
+			}
+		],
+		"baseSkill": [],
+		"id": "1410205"
+	},
+	"1410206": {
+		"name": "ATK Boost",
+		"description": "",
+		"avatar": 1410,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 45000,
+			"110223": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1410206"
+	},
+	"1410207": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1410,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 45000,
+			"110223": 3,
+			"115003": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 3
+			}
+		],
+		"baseSkill": [],
+		"id": "1410207"
+	},
+	"1410208": {
+		"name": "Effect Hit Rate Boost",
+		"description": "",
+		"avatar": 1410,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+		"shortIcon": "IconStatusProbability",
+		"promotion": {
+			"2": 160000,
+			"110223": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "StatusProbabilityBase",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1410208"
+	},
+	"1410209": {
+		"name": "ATK Boost",
+		"description": "",
+		"avatar": 1410,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 160000,
+			"110223": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1410209"
+	},
+	"1410210": {
+		"name": "SPD Boost",
+		"description": "",
+		"avatar": 1410,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+		"shortIcon": "IconSpeed",
+		"promotion": {
+			"2": 160000,
+			"110223": 8,
+			"115003": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "SpeedDelta",
+				"Value": 4
+			}
+		],
+		"baseSkill": [],
+		"id": "1410210"
+	},
+	"1412001": {
+		"name": "King's Castling",
+		"description": "Deals Wind DMG equal to ****1[i]%**** of Cerydra's ATK to one designated enemy.",
+		"avatar": 1412,
+		"type": 2,
+		"icon": "spriteoutput/skillicons/avatar/1412/SkillIcon_1412_Normal.png",
+		"shortIcon": "SkillIcon_1412_Normal",
+		"promotion": {
+			"2": 240000,
+			"110231": 3,
+			"110232": 8,
+			"110233": 11,
+			"115011": 6,
+			"115012": 7,
+			"115013": 7
+		},
+		"params": [
+			0.5
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			141201
+		],
+		"id": "1412001"
+	},
+	"1412002": {
+		"name": "Pawn's Promotion",
+		"description": "Grants \"Military Merit\" to one designated ally character and gives Cerydra **2[i]** points of Charge. Charge is capped at **3[i]** points. When Charge reaches **4[i]** points, automatically upgrades the character's \"Military Merit\" to \"Peerage\" and dispels their **Crowd Control debuffs**. The character with \"Peerage\" is considered to have \"Military Merit\" simultaneously. The character with \"Peerage\" increases the CRIT DMG for their dealt Skill DMG by ****1[i]%****, increases their All-Type **RES PEN** by ****5[f1]%****, and triggers **Coup de Main** when using their Skill on enemy targets. After **Coup de Main** ends, consumes **4[i]** points of Charge to revert \"Peerage\" to \"Military Merit.\"",
+		"avatar": 1412,
+		"type": 2,
+		"icon": "spriteoutput/skillicons/avatar/1412/SkillIcon_1412_BP.png",
+		"shortIcon": "SkillIcon_1412_BP",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110231": 3,
+			"110232": 15,
+			"110233": 30,
+			"110507": 3,
+			"115011": 9,
+			"115012": 13,
+			"115013": 7
+		},
+		"params": [
+			0.36,
+			1,
+			8,
+			6,
+			0.08
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			141202
+		],
+		"id": "1412002"
+	},
+	"1412003": {
+		"name": "Scholar's Mate",
+		"description": "Gains **2[i]** Charge. Deals Wind DMG equal to ****1[i]%**** of Cerydra's ATK to all enemies. If no character on the field has \"Military Merit,\" prioritizes granting \"Military Merit\" to the first character in the current team.",
+		"avatar": 1412,
+		"type": 2,
+		"icon": "spriteoutput/skillicons/avatar/1412/SkillIcon_1412_Ultra.png",
+		"shortIcon": "SkillIcon_1412_Ultra",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110231": 3,
+			"110232": 15,
+			"110233": 30,
+			"110507": 3,
+			"115011": 9,
+			"115012": 13,
+			"115013": 7
+		},
+		"params": [
+			1.44,
+			2
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			141203
+		],
+		"id": "1412003"
+	},
+	"1412004": {
+		"name": "Ave Imperator",
+		"description": "The character with \"Military Merit\" increases ATK by an amount equal to ****2[f1]%**** of Cerydra's ATK. When the character uses Basic ATK or Skill, Cerydra gains **1[i]** Charge. During **Coup de Main**, Cerydra cannot gain Charge. After the character with \"Military Merit\" uses an attack, Cerydra additionally deals 1 instance of Wind **Additional DMG** equal to ****3[i]%**** of her ATK. This effect can trigger up to **4[i]** time(s). The trigger count resets every time Cerydra uses her Ultimate. \"Military Merit\" only takes effect on the most recent target. When the target changes, Cerydra's Charge is reset to 0.",
+		"avatar": 1412,
+		"type": 2,
+		"icon": "spriteoutput/skillicons/avatar/1412/SkillIcon_1412_Passive.png",
+		"shortIcon": "SkillIcon_1412_Passive",
+		"promotion": {
+			"2": 652500,
+			"241": 2,
+			"110231": 3,
+			"110232": 15,
+			"110233": 30,
+			"110507": 3,
+			"115011": 9,
+			"115012": 13,
+			"115013": 7
+		},
+		"params": [
+			1,
+			0.18,
+			0.3,
+			20
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [
+			141204
+		],
+		"id": "1412004"
+	},
+	"1412007": {
+		"name": "First-Move Advantage",
+		"description": "After using Technique, gains \"Military Merit.\" When switching the active character, \"Military Merit\" transfers to the current active character. At the start of the next battle, automatically uses Skill 1 time on the character with \"Military Merit\" without consuming any Skill Points.",
+		"avatar": 1412,
+		"type": 2,
+		"icon": "spriteoutput/skillicons/avatar/1412/SkillIcon_1412_Maze.png",
+		"shortIcon": "SkillIcon_1412_Maze",
+		"promotion": {},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 0,
+		"status": [],
+		"baseSkill": [
+			141207
+		],
+		"id": "1412007"
+	},
+	"1412101": {
+		"name": "Veni",
+		"description": "For every **100** of Cerydra's ATK that exceeds **2000**, increases her CRIT DMG by **18%**, up to a max increase of **360%**.",
+		"avatar": 1412,
+		"type": 3,
+		"icon": "spriteoutput/skillicons/avatar/1412/SkillIcon_1412_SkillTree1.png",
+		"shortIcon": "SkillIcon_1412_SkillTree1",
+		"promotion": {
+			"2": 5000,
+			"110231": 3,
+			"110507": 1
+		},
+		"params": [
+			2000,
+			100,
+			0.18,
+			3.6
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [],
+		"baseSkill": [],
+		"id": "1412101"
+	},
+	"1412102": {
+		"name": "Vidi",
+		"description": "Increases Cerydra's CRIT Rate by **100%**. While Cerydra's Charge is below its maximum, the character with \"Military Merit\" using their Ultimate grants Cerydra **1** Charge. This effect can trigger once per battle.",
+		"avatar": 1412,
+		"type": 3,
+		"icon": "spriteoutput/skillicons/avatar/1412/SkillIcon_1412_SkillTree2.png",
+		"shortIcon": "SkillIcon_1412_SkillTree2",
+		"promotion": {
+			"2": 20000,
+			"241": 1,
+			"110232": 5,
+			"110507": 1
+		},
+		"params": [
+			1,
+			1
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [],
+		"baseSkill": [],
+		"id": "1412102"
+	},
+	"1412103": {
+		"name": "Vici",
+		"description": "When using Skill, increases SPD by **20** for this unit and the teammate with \"Military Merit,\" lasting for **3** turn(s). When the character with \"Military Merit\" uses Basic ATK or Skill, regenerates **5** Energy for Cerydra.",
+		"avatar": 1412,
+		"type": 3,
+		"icon": "spriteoutput/skillicons/avatar/1412/SkillIcon_1412_SkillTree3.png",
+		"shortIcon": "SkillIcon_1412_SkillTree3",
+		"promotion": {
+			"2": 160000,
+			"241": 1,
+			"110233": 8,
+			"110507": 1
+		},
+		"params": [
+			5,
+			20,
+			3
+		],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [],
+		"baseSkill": [],
+		"id": "1412103"
+	},
+	"1412201": {
+		"name": "DMG Boost: Wind",
+		"description": "",
+		"avatar": 1412,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconWindAddedRatio.png",
+		"shortIcon": "IconWindAddedRatio",
+		"promotion": {
+			"2": 2500,
+			"115011": 2
+		},
+		"params": [],
+		"requiredLevel": 1,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "WindAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1412201"
+	},
+	"1412202": {
+		"name": "ATK Boost",
+		"description": "",
+		"avatar": 1412,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 5000,
+			"110231": 3,
+			"115011": 6
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 2,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1412202"
+	},
+	"1412203": {
+		"name": "DMG Boost: Wind",
+		"description": "",
+		"avatar": 1412,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconWindAddedRatio.png",
+		"shortIcon": "IconWindAddedRatio",
+		"promotion": {
+			"2": 10000,
+			"110232": 3,
+			"115012": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "WindAddedRatio",
+				"Value": 0.032
+			}
+		],
+		"baseSkill": [],
+		"id": "1412203"
+	},
+	"1412204": {
+		"name": "HP Boost",
+		"description": "",
+		"avatar": 1412,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 10000,
+			"110232": 3,
+			"115012": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 3,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.04
+			}
+		],
+		"baseSkill": [],
+		"id": "1412204"
+	},
+	"1412205": {
+		"name": "DMG Boost: Wind",
+		"description": "",
+		"avatar": 1412,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconWindAddedRatio.png",
+		"shortIcon": "IconWindAddedRatio",
+		"promotion": {
+			"2": 20000,
+			"110232": 5,
+			"115012": 4
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 4,
+		"status": [
+			{
+				"PropertyType": "WindAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1412205"
+	},
+	"1412206": {
+		"name": "ATK Boost",
+		"description": "",
+		"avatar": 1412,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 45000,
+			"110233": 3,
+			"115013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1412206"
+	},
+	"1412207": {
+		"name": "DMG Boost: Wind",
+		"description": "",
+		"avatar": 1412,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconWindAddedRatio.png",
+		"shortIcon": "IconWindAddedRatio",
+		"promotion": {
+			"2": 45000,
+			"110233": 3,
+			"115013": 3
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 5,
+		"status": [
+			{
+				"PropertyType": "WindAddedRatio",
+				"Value": 0.048
+			}
+		],
+		"baseSkill": [],
+		"id": "1412207"
+	},
+	"1412208": {
+		"name": "HP Boost",
+		"description": "",
+		"avatar": 1412,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+		"shortIcon": "IconMaxHP",
+		"promotion": {
+			"2": 160000,
+			"110233": 8,
+			"115013": 8
+		},
+		"params": [],
+		"requiredLevel": 0,
+		"requiredPromotion": 6,
+		"status": [
+			{
+				"PropertyType": "HPAddedRatio",
+				"Value": 0.06
+			}
+		],
+		"baseSkill": [],
+		"id": "1412208"
+	},
+	"1412209": {
+		"name": "ATK Boost",
+		"description": "",
+		"avatar": 1412,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+		"shortIcon": "IconAttack",
+		"promotion": {
+			"2": 160000,
+			"110233": 8,
+			"115013": 8
+		},
+		"params": [],
+		"requiredLevel": 75,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "AttackAddedRatio",
+				"Value": 0.08
+			}
+		],
+		"baseSkill": [],
+		"id": "1412209"
+	},
+	"1412210": {
+		"name": "DMG Boost: Wind",
+		"description": "",
+		"avatar": 1412,
+		"type": 1,
+		"icon": "spriteoutput/ui/avatar/icon/IconWindAddedRatio.png",
+		"shortIcon": "IconWindAddedRatio",
+		"promotion": {
+			"2": 160000,
+			"110233": 8,
+			"115013": 8
+		},
+		"params": [],
+		"requiredLevel": 80,
+		"requiredPromotion": 0,
+		"status": [
+			{
+				"PropertyType": "WindAddedRatio",
+				"Value": 0.064
+			}
+		],
+		"baseSkill": [],
+		"id": "1412210"
+	},
 	"8001001": {
 		"name": "Farewell Hit",
 		"description": "Deals Physical DMG equal to ****1[i]%**** of the Trailblazer's ATK to a single enemy.",
@@ -35206,8 +36112,8 @@
 		"description": "Deals Lightning DMG equal to ****1[i]%**** of Kafka's ATK to one designated enemy.",
 		"avatar": 1005,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_Normal.png",
-		"shortIcon": "SkillIcon_1005_Normal",
+		"icon": "spriteoutput/skillicons/avatar/11005/SkillIcon_11005_Normal.png",
+		"shortIcon": "SkillIcon_11005_Normal",
 		"promotion": {
 			"2": 240000,
 			"110151": 3,
@@ -35233,8 +36139,8 @@
 		"description": "Deals Lightning DMG equal to ****1[i]%**** of Kafka's ATK to one designated enemy and Lightning DMG equal to ****3[i]%**** of Kafka's ATK to adjacent targets.\nIf the designated enemy or the adjacent targets are currently afflicted with DoT, all DoTs currently placed on those enemies immediately produces DMG equal to ****2[i]%**** or ****4[i]%**** of the original DMG.",
 		"avatar": 1005,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_BP.png",
-		"shortIcon": "SkillIcon_1005_BP",
+		"icon": "spriteoutput/skillicons/avatar/11005/SkillIcon_11005_BP.png",
+		"shortIcon": "SkillIcon_11005_BP",
 		"promotion": {
 			"2": 652500,
 			"241": 2,
@@ -35265,8 +36171,8 @@
 		"description": "Deals Lightning DMG equal to ****1[i]%**** of Kafka's ATK to all enemies, with a **2[i]%** **base chance** for enemy targets hit to become Shocked and immediately take DMG from their current DoT debuff(s), equal to ****5[i]%**** of the original DMG. Shock lasts for **3[i]** turn(s).\nWhile Shocked, enemy targets receive Lightning DoT equal to ****4[i]%**** of Kafka's ATK at the beginning of each turn.",
 		"avatar": 1005,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_Ultra.png",
-		"shortIcon": "SkillIcon_1005_Ultra",
+		"icon": "spriteoutput/skillicons/avatar/11005/SkillIcon_11005_Ultra.png",
+		"shortIcon": "SkillIcon_11005_Ultra",
 		"promotion": {
 			"2": 652500,
 			"241": 2,
@@ -35298,8 +36204,8 @@
 		"description": "After Kafka's teammate uses an attack on an enemy target, Kafka immediately launches **Follow-up ATK** and deals Lightning DMG equal to ****1[i]%**** of Kafka's ATK to the primary target, with a **2[i]%** **base chance** to inflict Shock (equivalent to that applied by her Ultimate) on the attacked enemy target for **3[i]** turns. This effect can trigger up to **5[i]** time(s), **4[i]** of which can be regained at the end of Kafka's turn.",
 		"avatar": 1005,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_Passive.png",
-		"shortIcon": "SkillIcon_1005_Passive",
+		"icon": "spriteoutput/skillicons/avatar/11005/SkillIcon_11005_Passive.png",
+		"shortIcon": "SkillIcon_11005_Passive",
 		"promotion": {
 			"2": 652500,
 			"241": 2,
@@ -35331,8 +36237,8 @@
 		"description": "Immediately attacks all enemies within a set range. After entering combat, deals Lightning DMG equal to **3[i]%** of Kafka's ATK to all enemies, with a **1[i]%** **base chance** to inflict Shock (equivalent to that applied by her Ultimate) on every enemy target for **2[i]** turn(s).",
 		"avatar": 1005,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_Maze.png",
-		"shortIcon": "SkillIcon_1005_Maze",
+		"icon": "spriteoutput/skillicons/avatar/11005/SkillIcon_11005_Maze.png",
+		"shortIcon": "SkillIcon_11005_Maze",
 		"promotion": {},
 		"params": [
 			1,
@@ -35352,8 +36258,8 @@
 		"description": "When an ally target's Effect Hit Rate is **75%** or higher, Kafka increases that target's ATK by **100%**.",
 		"avatar": 1005,
 		"type": 3,
-		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_SkillTree1.png",
-		"shortIcon": "SkillIcon_1005_SkillTree1",
+		"icon": "spriteoutput/skillicons/avatar/11005/SkillIcon_11005_SkillTree1.png",
+		"shortIcon": "SkillIcon_11005_SkillTree1",
 		"promotion": {
 			"2": 5000,
 			"110151": 3,
@@ -35374,8 +36280,8 @@
 		"description": "If an enemy target is defeated while Shocked, Kafka additionally regenerates **5** Energy.",
 		"avatar": 1005,
 		"type": 3,
-		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_SkillTree2.png",
-		"shortIcon": "SkillIcon_1005_SkillTree2",
+		"icon": "spriteoutput/skillicons/avatar/11005/SkillIcon_11005_SkillTree2.png",
+		"shortIcon": "SkillIcon_11005_SkillTree2",
 		"promotion": {
 			"2": 20000,
 			"241": 1,
@@ -35396,8 +36302,8 @@
 		"description": "After using Ultimate, restores the triggerable count of Talent's **Follow-up ATK** by 1. And the Talent's **Follow-up ATK** can cause all DoTs debuffs currently on the target to immediately produce DMG equal to **80%** of the original DMG.",
 		"avatar": 1005,
 		"type": 3,
-		"icon": "spriteoutput/skillicons/avatar/1005/SkillIcon_1005_SkillTree3.png",
-		"shortIcon": "SkillIcon_1005_SkillTree3",
+		"icon": "spriteoutput/skillicons/avatar/11005/SkillIcon_11005_SkillTree3.png",
+		"shortIcon": "SkillIcon_11005_SkillTree3",
 		"promotion": {
 			"2": 160000,
 			"241": 1,
@@ -35657,8 +36563,8 @@
 		"description": "Deals Quantum DMG equal to ****1[i]%**** of Silver Wolf's ATK to one designated enemy.",
 		"avatar": 1006,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_Normal.png",
-		"shortIcon": "SkillIcon_1006_Normal",
+		"icon": "spriteoutput/skillicons/avatar/11006/SkillIcon_11006_Normal.png",
+		"shortIcon": "SkillIcon_11006_Normal",
 		"promotion": {
 			"2": 240000,
 			"110151": 3,
@@ -35684,8 +36590,8 @@
 		"description": "There is a ****2[i]%**** **base chance** to add 1 Weakness of an on-field ally target's Type to one designated enemy target (prioritizing the implant of a Weakness that matches the first character in the team lineup). This also reduces the enemy target's RES to that Weakness Type by **4[i]%** for **3[i]** turn(s). If the enemy target already has that Type of Weakness, the RES reduction effect to that Type will not be triggered.\nEach enemy target can only have 1 Weakness implanted by Silver Wolf. When Silver Wolf implants another Weakness to the target, only the most recent implanted Weakness will be retained.\nIn addition, there is a **5[i]%** **base chance** to further reduce the target's All-Type RES by ****6[f1]%**** for **7[i]** turn(s).\nDeals Quantum DMG equal to ****1[i]%**** of Silver Wolf's ATK to this target.",
 		"avatar": 1006,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_BP.png",
-		"shortIcon": "SkillIcon_1006_BP",
+		"icon": "spriteoutput/skillicons/avatar/11006/SkillIcon_11006_BP.png",
+		"shortIcon": "SkillIcon_11006_BP",
 		"promotion": {
 			"2": 652500,
 			"241": 2,
@@ -35719,8 +36625,8 @@
 		"description": "Has a ****2[i]%**** **base chance** to reduce the DEF of all enemies by ****3[f1]%**** for **4[i]** turn(s). At the same time, deals Quantum DMG equal to ****1[i]%**** of Silver Wolf's ATK to all enemies.",
 		"avatar": 1006,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_Ultra.png",
-		"shortIcon": "SkillIcon_1006_Ultra",
+		"icon": "spriteoutput/skillicons/avatar/11006/SkillIcon_11006_Ultra.png",
+		"shortIcon": "SkillIcon_11006_Ultra",
 		"promotion": {
 			"2": 652500,
 			"241": 2,
@@ -35751,8 +36657,8 @@
 		"description": "Silver Wolf can create three types of \"Bugs\": Reduce ATK by ****1[f1]%****, reduce DEF by ****2[f1]%****, and reduce SPD by ****3[f1]%****.\nAfter every attack launched by Silver Wolf, she has a ****4[i]%**** **base chance** to implant 1 random \"Bug\" that lasts for **5[i]** turn(s) in the attacked enemy target. \nWhen the enemy target gets defeated, the Weakness Silver Wolf implanted on it will be transferred to another surviving enemy on the field that hasn't been implanted with Weakness by Silver Wolf, prioritizing targets at Elite-level and above.",
 		"avatar": 1006,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_Passive.png",
-		"shortIcon": "SkillIcon_1006_Passive",
+		"icon": "spriteoutput/skillicons/avatar/11006/SkillIcon_11006_Passive.png",
+		"shortIcon": "SkillIcon_11006_Passive",
 		"promotion": {
 			"2": 652500,
 			"241": 2,
@@ -35784,8 +36690,8 @@
 		"description": "Immediately attacks the enemy. After entering combat, deals Quantum DMG equal to **1[i]%** of Silver Wolf's ATK to all enemies, and reduces Toughness of all enemies regardless of Weakness Types. Enemies with their Weakness Broken in this way will trigger the Quantum Weakness Break effect.",
 		"avatar": 1006,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_Maze.png",
-		"shortIcon": "SkillIcon_1006_Maze",
+		"icon": "spriteoutput/skillicons/avatar/11006/SkillIcon_11006_Maze.png",
+		"shortIcon": "SkillIcon_11006_Maze",
 		"promotion": {},
 		"params": [
 			0.8
@@ -35803,8 +36709,8 @@
 		"description": "The duration of \"Bug\" is extended by **1** turn(s). Every time an enemy's Weakness gets broken, Silver Wolf has a **100%** **base chance** of implanting a random \"Bug\" on that target.",
 		"avatar": 1006,
 		"type": 3,
-		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_SkillTree1.png",
-		"shortIcon": "SkillIcon_1006_SkillTree1",
+		"icon": "spriteoutput/skillicons/avatar/11006/SkillIcon_11006_SkillTree1.png",
+		"shortIcon": "SkillIcon_11006_SkillTree1",
 		"promotion": {
 			"2": 5000,
 			"110151": 3,
@@ -35825,8 +36731,8 @@
 		"description": "When the battle starts, immediately regenerates **20** Energy. When Silver Wolf's turn starts, she regenerates **5** Energy.",
 		"avatar": 1006,
 		"type": 3,
-		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_SkillTree2.png",
-		"shortIcon": "SkillIcon_1006_SkillTree2",
+		"icon": "spriteoutput/skillicons/avatar/11006/SkillIcon_11006_SkillTree2.png",
+		"shortIcon": "SkillIcon_11006_SkillTree2",
 		"promotion": {
 			"2": 20000,
 			"241": 1,
@@ -35848,8 +36754,8 @@
 		"description": "For every **10%** Effect Hit Rate that Silver Wolf has, additionally increases her ATK by **10%**, up to a max of **50%**.",
 		"avatar": 1006,
 		"type": 3,
-		"icon": "spriteoutput/skillicons/avatar/1006/SkillIcon_1006_SkillTree3.png",
-		"shortIcon": "SkillIcon_1006_SkillTree3",
+		"icon": "spriteoutput/skillicons/avatar/11006/SkillIcon_11006_SkillTree3.png",
+		"shortIcon": "SkillIcon_11006_SkillTree3",
 		"promotion": {
 			"2": 160000,
 			"241": 1,
@@ -36111,8 +37017,8 @@
 		"description": "Deals Wind DMG equal to ****1[i]%**** of Blade's Max HP to one designated enemy.",
 		"avatar": 1205,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_Normal.png",
-		"shortIcon": "SkillIcon_1205_Normal",
+		"icon": "spriteoutput/skillicons/avatar/11205/SkillIcon_11205_Normal.png",
+		"shortIcon": "SkillIcon_11205_Normal",
 		"promotion": {
 			"2": 240000,
 			"110111": 3,
@@ -36139,8 +37045,8 @@
 		"description": "Consumes HP equal to **1[i]%** of Blade's Max HP to enter the \"Hellscape\" state.\nWhile \"Hellscape\" is active, his Skill cannot be used, his DMG dealt increases by ****4[i]%****, his chance of getting attacked by enemy targets greatly increases, and his Basic ATK \"Shard Sword\" is enhanced to \"Forest of Swords\" for **2[i]** turn(s).\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when he uses his Skill.\nThis Skill does not regenerate Energy. Using this Skill does not end the current turn.",
 		"avatar": 1205,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_BP.png",
-		"shortIcon": "SkillIcon_1205_BP",
+		"icon": "spriteoutput/skillicons/avatar/11205/SkillIcon_11205_BP.png",
+		"shortIcon": "SkillIcon_11205_BP",
 		"promotion": {
 			"2": 652500,
 			"241": 2,
@@ -36172,8 +37078,8 @@
 		"description": "Sets Blade's current HP to **50%** of his Max HP and deals Wind DMG to one enemy equal to ****1[i]%**** of his Max HP plus ****5[i]%**** of the tally of Blade's HP loss in the current battle. At the same time, deals Wind DMG to adjacent targets equal to ****3[f1]%**** of his Max HP plus ****6[i]%**** of the tally of his HP loss in the current battle.\nThe tally of Blade's HP loss in the current battle is capped at **7[i]%** of his Max HP. This value will be reset and re-accumulated after his Ultimate has been used.",
 		"avatar": 1205,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_Ultra.png",
-		"shortIcon": "SkillIcon_1205_Ultra",
+		"icon": "spriteoutput/skillicons/avatar/11205/SkillIcon_11205_Ultra.png",
+		"shortIcon": "SkillIcon_11205_Ultra",
 		"promotion": {
 			"2": 652500,
 			"241": 2,
@@ -36207,8 +37113,8 @@
 		"description": "When Blade sustains DMG or consumes his HP, he gains 1 stack of Charge, stacking up to 5 times. A max of 1 Charge stack can be gained every time he is attacked.\nWhen Charge stack reaches maximum, immediately launches 1 instance of **Follow-up ATK** on all enemies, dealing Wind DMG equal to ****2[i]%**** of Blade's Max HP. At the same time, restores Blade's HP by **3[i]%** of his Max HP. After the Follow-up ATK, all Charges are consumed.",
 		"avatar": 1205,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_Passive.png",
-		"shortIcon": "SkillIcon_1205_Passive",
+		"icon": "spriteoutput/skillicons/avatar/11205/SkillIcon_11205_Passive.png",
+		"shortIcon": "SkillIcon_11205_Passive",
 		"promotion": {
 			"2": 652500,
 			"241": 2,
@@ -36239,8 +37145,8 @@
 		"description": "Immediately attacks the enemy. After entering combat, consumes **2[i]%** of Blade's Max HP while dealing Wind DMG equal to **1[i]%** of his Max HP to all enemies.\nIf Blade's current HP is insufficient, his HP will be reduced to 1 when this Technique is used.",
 		"avatar": 1205,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_Maze.png",
-		"shortIcon": "SkillIcon_1205_Maze",
+		"icon": "spriteoutput/skillicons/avatar/11205/SkillIcon_11205_Maze.png",
+		"shortIcon": "SkillIcon_11205_Maze",
 		"promotion": {},
 		"params": [
 			0.4,
@@ -36259,8 +37165,8 @@
 		"description": "When Blade uses Ultimate, the amount cleared from the tally of HP loss is changed to **50%**.",
 		"avatar": 1205,
 		"type": 3,
-		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_SkillTree1.png",
-		"shortIcon": "SkillIcon_1205_SkillTree1",
+		"icon": "spriteoutput/skillicons/avatar/11205/SkillIcon_11205_SkillTree1.png",
+		"shortIcon": "SkillIcon_11205_SkillTree1",
 		"promotion": {
 			"2": 5000,
 			"110111": 3,
@@ -36280,8 +37186,8 @@
 		"description": "HP restored from healing increases by **20%**. After receiving healing, converts **25%** of the healed amount to Ultimate's tally of HP loss.",
 		"avatar": 1205,
 		"type": 3,
-		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_SkillTree2.png",
-		"shortIcon": "SkillIcon_1205_SkillTree2",
+		"icon": "spriteoutput/skillicons/avatar/11205/SkillIcon_11205_SkillTree2.png",
+		"shortIcon": "SkillIcon_11205_SkillTree2",
 		"promotion": {
 			"2": 20000,
 			"241": 1,
@@ -36303,8 +37209,8 @@
 		"description": "Increases **Follow-up ATK** DMG from Talent by **20%** and additionally regenerates **15** Energy.",
 		"avatar": 1205,
 		"type": 3,
-		"icon": "spriteoutput/skillicons/avatar/1205/SkillIcon_1205_SkillTree3.png",
-		"shortIcon": "SkillIcon_1205_SkillTree3",
+		"icon": "spriteoutput/skillicons/avatar/11205/SkillIcon_11205_SkillTree3.png",
+		"shortIcon": "SkillIcon_11205_SkillTree3",
 		"promotion": {
 			"2": 160000,
 			"241": 1,
@@ -36565,8 +37471,8 @@
 		"description": "Deals Ice DMG equal to ****1[i]%**** of Jingliu's Max HP to one designated enemy.",
 		"avatar": 1212,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_Normal.png",
-		"shortIcon": "SkillIcon_1212_Normal",
+		"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_Normal.png",
+		"shortIcon": "SkillIcon_11212_Normal",
 		"promotion": {
 			"2": 240000,
 			"110111": 3,
@@ -36592,8 +37498,8 @@
 		"description": "Deals Ice DMG equal to ****1[i]%**** of Jingliu's Max HP to one designated enemy and gains **2[i]** stack(s) of \"Syzygy.\"",
 		"avatar": 1212,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_BP.png",
-		"shortIcon": "SkillIcon_1212_BP",
+		"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_BP.png",
+		"shortIcon": "SkillIcon_11212_BP",
 		"promotion": {
 			"2": 652500,
 			"241": 2,
@@ -36623,8 +37529,8 @@
 		"description": "Deals Ice DMG equal to ****1[i]%**** of Jingliu's Max HP to one designated enemy, and deals Ice DMG equal to ****3[i]%**** of Jingliu's Max HP to adjacent targets. Gains **2[i]** stack(s) of \"Syzygy\" after the attack ends.",
 		"avatar": 1212,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_Ultra.png",
-		"shortIcon": "SkillIcon_1212_Ultra",
+		"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_Ultra.png",
+		"shortIcon": "SkillIcon_11212_Ultra",
 		"promotion": {
 			"2": 652500,
 			"241": 2,
@@ -36655,8 +37561,8 @@
 		"description": "When Jingliu has **5[i]** stacks of \"Syzygy,\" she enters the \"Spectral Transmigration\" state with 1 extra stack of \"Syzygy\" gained, her action advanced by **6[i]%**, and her CRIT Rate increased by ****7[i]%****. Then, Jingliu's Skill \"Transcendent Flash\" is enhanced to \"Moon On Glacial River,\" and only this enhanced Skill is available for use in battle. When Jingliu uses an attack in the Spectral Transmigration state, she consumes HP from her teammates equal to **2[i]%** of their respective Max HP (this cannot reduce teammates' HP to lower than 1). During the \"Spectral Transmigration\" state, when ally targets receive DMG or consume HP, Jingliu gains 1 stack of \"Moonlight.\" Each \"Moonlight\" stack increases Jingliu's CRIT DMG by ****3[i]%****, stacking up to **4[i]** time(s). Jingliu cannot enter the \"Spectral Transmigration\" state again until the current \"Spectral Transmigration\" state ends. \"Syzygy\" can stack up to 4 times. When \"Syzygy\" stacks become 0, Jingliu will exit the \"Spectral Transmigration\" state and remove all \"Moonlight.\" After ally targets receive DMG or consume HP for a total of **8[i]** times, Jingliu gains 1 stack of \"Syzygy.\" Each attack received by each target is only counted once.",
 		"avatar": 1212,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_Passive.png",
-		"shortIcon": "SkillIcon_1212_Passive",
+		"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_Passive.png",
+		"shortIcon": "SkillIcon_11212_Passive",
 		"promotion": {
 			"2": 652500,
 			"241": 2,
@@ -36691,8 +37597,8 @@
 		"description": "After using Technique, creates a Special Dimension around this unit that lasts for **3[i]** seconds. All enemies in this Special Dimension will become Frozen. After entering combat with enemies in the Special Dimension, Jingliu immediately regenerates **6[i]** Energy and obtains **1[i]** stack(s) of \"Syzygy,\" with a **2[i]%** **base chance** of Freezing enemy targets for **4[i]** turn(s). While Frozen, enemy targets cannot take action, and take Ice **Additional DMG** equal to **5[i]%** of Jingliu's Max HP at the start of every turn. Only 1 Dimension Effect created by allies can exist at the same time.",
 		"avatar": 1212,
 		"type": 2,
-		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_Maze.png",
-		"shortIcon": "SkillIcon_1212_Maze",
+		"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_Maze.png",
+		"shortIcon": "SkillIcon_11212_Maze",
 		"promotion": {},
 		"params": [
 			1,
@@ -36715,8 +37621,8 @@
 		"description": "While in the \"Spectral Transmigration\" state, increases Effect RES by **35%**, and increases the Ultimate DMG dealt by **20%**.",
 		"avatar": 1212,
 		"type": 3,
-		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_SkillTree1.png",
-		"shortIcon": "SkillIcon_1212_SkillTree1",
+		"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_SkillTree1.png",
+		"shortIcon": "SkillIcon_11212_SkillTree1",
 		"promotion": {
 			"2": 5000,
 			"110111": 3,
@@ -36737,8 +37643,8 @@
 		"description": "After using \"Transcendent Flash,\" additionally regenerates **15** Energy. And after using \"Moon On Glacial River,\" additionally regenerates **8** Energy.",
 		"avatar": 1212,
 		"type": 3,
-		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_SkillTree2.png",
-		"shortIcon": "SkillIcon_1212_SkillTree2",
+		"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_SkillTree2.png",
+		"shortIcon": "SkillIcon_11212_SkillTree2",
 		"promotion": {
 			"2": 20000,
 			"241": 1,
@@ -36760,8 +37666,8 @@
 		"description": "Upon obtaining \"Syzygy,\" if its stack limit has been reached, Jingliu's next attack ignores **25%** of the target's DEF.",
 		"avatar": 1212,
 		"type": 3,
-		"icon": "spriteoutput/skillicons/avatar/1212/SkillIcon_1212_SkillTree3.png",
-		"shortIcon": "SkillIcon_1212_SkillTree3",
+		"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_SkillTree3.png",
+		"shortIcon": "SkillIcon_11212_SkillTree3",
 		"promotion": {
 			"2": 160000,
 			"241": 1,
