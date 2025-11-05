@@ -848,6 +848,22 @@
 			}
 		},
 		{
+			"name": "Together, We Script Tomorrow!",
+			"tag": "AoE",
+			"type": "Basic ATK",
+			"description": "Consumes 1 stack of \"Epic\" to dispel all **Crowd Control debuffs** on Mem. Trailblazer and Mem launch a **Joint ATK**, dealing Ice DMG to all enemies equal to ****1[i]%**** of Trailblazer's ATK and ****2[i]%**** of Mem's ATK respectively. Then, Mem gains **3[i]%** Charge.",
+			"regen": 30,
+			"er": 0,
+			"break": [
+				0,
+				30,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal02.png",
+			"shortIcon": "SkillIcon_8007_Normal02",
+			"id": "800808"
+		},
+		{
 			"name": "I Choose You!",
 			"tag": "Restore",
 			"type": "Skill",
@@ -1118,7 +1134,8 @@
 			"requiredPromotion": 6,
 			"status": [],
 			"baseSkill": [
-				800801
+				800801,
+				800808
 			],
 			"id": "8008001"
 		},
@@ -1690,6 +1707,27 @@
 				1800706
 			],
 			"id": "8008302"
+		},
+		{
+			"name": "Unfinished Epilogue",
+			"description": "After using Ultimate, gains 1 stack of \"Epic,\" up to **2** stacks. When this unit has \"Epic\" and Mem is on the field, Basic ATK gets enhanced to \"Together, We Script Tomorrow!\"",
+			"avatar": 8008,
+			"type": 5,
+			"pos": {
+				"point": "21",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal02.png",
+			"shortIcon": "SkillIcon_8007_Normal02",
+			"promotion": {},
+			"params": [
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [],
+			"id": "8008501"
 		}
 	],
 	"ranks": [
@@ -1753,6 +1791,7 @@
 			"skillUpgrades": {
 				"800801": 1,
 				"800803": 2,
+				"800808": 1,
 				"1800701": 1,
 				"1800707": 1
 			},

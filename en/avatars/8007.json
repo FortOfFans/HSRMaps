@@ -1093,6 +1093,22 @@
 			}
 		},
 		{
+			"name": "Together, We Script Tomorrow!",
+			"tag": "AoE",
+			"type": "Basic ATK",
+			"description": "Consumes 1 stack of \"Epic\" to dispel all **Crowd Control debuffs** on Mem. Trailblazer and Mem launch a **Joint ATK**, dealing Ice DMG to all enemies equal to ****1[i]%**** of Trailblazer's ATK and ****2[i]%**** of Mem's ATK respectively. Then, Mem gains **3[i]%** Charge.",
+			"regen": 30,
+			"er": 0,
+			"break": [
+				0,
+				30,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal02.png",
+			"shortIcon": "SkillIcon_8007_Normal02",
+			"id": "800708"
+		},
+		{
 			"name": "I Choose You!",
 			"tag": "Restore",
 			"type": "Skill",
@@ -1261,12 +1277,12 @@
 	],
 	"promos": {
 		"basicPromo": {
-			"2": 169600,
+			"2": 182400,
 			"110251": 2,
-			"110252": 5,
+			"110252": 8,
 			"110253": 7,
 			"111011": 6,
-			"111012": 4,
+			"111012": 6,
 			"111013": 4
 		},
 		"skillPromo": {
@@ -1322,15 +1338,15 @@
 		"111013": 19
 	},
 	"maxPromo": {
-		"2": 2332400,
+		"2": 2345200,
 		"241": 5,
 		"110251": 8,
-		"110252": 46,
+		"110252": 49,
 		"110253": 91,
 		"110400": 28,
 		"110506": 12,
 		"111011": 37,
-		"111012": 47,
+		"111012": 49,
 		"111013": 47
 	},
 	"exp": 5797920,
@@ -1363,7 +1379,8 @@
 			"requiredPromotion": 6,
 			"status": [],
 			"baseSkill": [
-				800701
+				800701,
+				800708
 			],
 			"id": "8007001"
 		},
@@ -1935,6 +1952,27 @@
 				1800706
 			],
 			"id": "8007302"
+		},
+		{
+			"name": "Unfinished Epilogue",
+			"description": "After using Ultimate, gains 1 stack of \"Epic,\" up to **2** stacks. When this unit has \"Epic\" and Mem is on the field, Basic ATK gets enhanced to \"Together, We Script Tomorrow!\"",
+			"avatar": 8007,
+			"type": 5,
+			"pos": {
+				"point": "21",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/8007/SkillIcon_8007_Normal02.png",
+			"shortIcon": "SkillIcon_8007_Normal02",
+			"promotion": {},
+			"params": [
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [],
+			"id": "8007501"
 		}
 	],
 	"ranks": [
@@ -1998,6 +2036,7 @@
 			"skillUpgrades": {
 				"800701": 1,
 				"800703": 2,
+				"800708": 1,
 				"1800701": 1,
 				"1800707": 1
 			},
