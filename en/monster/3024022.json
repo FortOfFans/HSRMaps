@@ -1,0 +1,169 @@
+{
+	"name": "Stellaron Hunter: Sam",
+	"description": "One of the Stellaron Hunters, a mysterious warrior donning formidable armor. The mech suit wields the power to unleash fiery onslaughts, engulfing the battlefield in flames.",
+	"icon": "spriteoutput/monsterfigure/Monster_3024020.png",
+	"shortIcon": "Monster_3024020",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7207.5,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "302402201",
+			"name": "BHF: Fiery Advance",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Fire DMG to a single target.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302402202",
+			"name": "BHF: Heavenly Fire",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals minor Fire DMG to a single target and any adjacent targets.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.2,
+				1.6,
+				2.4,
+				1.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302402203",
+			"name": "BBHF: Scorched Earth",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals minor Fire DMG to all targets.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302402204",
+			"name": "DHGDR: Secondary Combustion",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Consumes own HP to enter the Secondary Combustion state and dispels the Weakness Protected effect. Becomes significantly more powerful after entering the Secondary Combustion state, but all attacks consume own HP.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.03,
+				180,
+				0.28,
+				0.5,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302402205",
+			"name": "DHGDR: Supernova Overload",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Fire DMG to all targets, with a high chance to Burn them.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				5,
+				1.2,
+				3,
+				0.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302402206",
+			"name": "SGE: Molten Core",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "After entering Secondary Combustion, Combusts both the area and targets' Skill Points. When consuming Combusted Skill Points, targets lose HP and additionally deal a set amount of Fire DMG equal to a certain percentage of the original DMG. When they receive healing from sources other than oneself, the amount of HP restored is massively reduced.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.01,
+				1.5,
+				0.3,
+				2.4,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302402207",
+			"name": "SGE: Molten Engine",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "While in Secondary Combustion, Sam possesses Molten Energy. When Sam is attacked and the attack consumed Skill Points, a corresponding amount of Molten Energy is reduced. When Molten Energy is depleted or when the Weakness is Broken, dispels Secondary Combustion. When Secondary Combustion is dispelled, Sam receives increased DMG, and recovers all Skill Points for targets.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Fire",
+	"id": "3024022"
+}

@@ -1,0 +1,172 @@
+{
+	"name": "Frigid Prowler",
+	"description": "A machine unit prowling in the Fragmentum. Undoubtedly, this monstrosity is not a human creation, but one that was born out of the perversion of the Fragmentum.\nFrigid Prowlers will attract Everwinter Shadewalkers and reduce its enemy's SPD and Ice RES.",
+	"icon": "spriteoutput/monsterfigure/Monster_1023020.png",
+	"shortIcon": "Monster_1023020",
+	"stats": {
+		"baseAttack": 9,
+		"baseDefense": 210,
+		"baseHealth": 1116,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "102302001",
+			"name": "Ice Wheel Fist",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Ice DMG to a single target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "102302005",
+			"name": "Summon Otherling",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons Everwinter Shadewalker.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "102302006",
+			"name": "Frozen Storm",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Ice DMG to all targets, with a high chance to Deep Freeze the targets.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.12,
+				0.2,
+				1,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "102302007",
+			"name": "Devour Otherling",
+			"tag": "Lock On",
+			"type": "Ability",
+			"description": "Devours 1 Everwinter Shadewalker to increase ATK and Locks Onto a single target. If there are no Everwinter Shadewalkers on the field, DEF is decreased.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "102302008",
+			"name": "Devour Otherling",
+			"tag": "Lock On",
+			"type": "Ability",
+			"description": "Devours 1 Everwinter Shadewalker to increase ATK and Locks Onto a single target. If there are no Everwinter Shadewalkers on the field, DEF is decreased.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "102302009",
+			"name": "Ice Wheel Crusher",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Ice DMG to a single target, with a high chance to Deep Freeze the target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "102302010",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.4
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112011,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "102302004"
+}

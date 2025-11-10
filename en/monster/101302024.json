@@ -1,0 +1,126 @@
+{
+	"name": "Automaton Direwolf",
+	"description": "An automaton pieced together with Old World technology. This rare type of humanoid automaton is equipped with a chainsaw on its right arm, presumably used for mining or construction operations.\nIn combat, Automaton Direwolfs will use their chainsaw to Bleed enemies, dealing DoT.",
+	"icon": "spriteoutput/monsterfigure/Monster_1013020.png",
+	"shortIcon": "Monster_1013020",
+	"stats": {
+		"baseAttack": 7.2,
+		"baseDefense": 210,
+		"baseHealth": 1162.500372,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "101302001",
+			"name": "Felling Order",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals massive Physical DMG to a single target, with a chance to Bleed the hit target. If the hit target is not Shielded, then a random ally of theirs suffers \"Dismantle\" for 1 time.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.05,
+				4,
+				10
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101302002",
+			"name": "Lock On Target",
+			"tag": "Lock On",
+			"type": "Ability",
+			"description": "Locks Onto a single target. The next action on the target will cast \"Felling Order.\"",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101302003",
+			"name": "Disintegration Order",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to a single target, with a high chance to inflict 1 stack of Bleed.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101302004",
+			"name": "Dismantle",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to a single target, with a high chance to inflict 1 stack of Bleed.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112011,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "101302024"
+}

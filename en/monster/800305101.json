@@ -1,0 +1,205 @@
+{
+	"name": "Stormbringer (Bug)",
+	"description": "A false projection produced by compromised codes. The referent entity is a monster that underwent corrosion in the expanse of the Fragmentum. It has developed a more agile fighting style ever since its original form became distorted.\nThe Stormbringer utilizes the power of the wind to its advantage in battle, enabling it to fire arrows more rapidly. It can also summon Windspawn to aid in combat.",
+	"icon": "spriteoutput/monsterfigure/Monster_8003050.png",
+	"shortIcon": "Monster_8003050",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "800305101",
+			"name": "Watchful Meteor",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Wind DMG to a single target and has a high chance to inflict Wind Shear.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800305102",
+			"name": "Wind Walker",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals minor Wind DMG to the target and units adjacent to the target, with a chance to inflict Wind Shear.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800305103",
+			"name": "Wind-Twisting Crossbow",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charging state and locks on to all targets currently suffering Wind Shear. Cast Windfall Storm in the next action.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800305104",
+			"name": "Windfall Storm",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Wind DMG to targets afflicted with Wind Shear, with a chance to inflict the attacked targets with Wind Shear again. This ability fails if no one on the target team suffers Wind Shear.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800305105",
+			"name": "Storm Cyclone",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Slightly increases ATK after attacking a target afflicted with Wind Shear. This buff is dispelled upon Weakness Break.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.08,
+				2,
+				10,
+				0.75,
+				3,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800305106",
+			"name": "Windfall Storm",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Wind DMG to targets afflicted with Wind Shear. This ability fails if no one on the target team suffers Wind Shear.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800305107",
+			"name": "",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800305108",
+			"name": "",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800305109",
+			"name": "Willing Wind",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons Windspawn.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.4
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111001,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800305101"
+}

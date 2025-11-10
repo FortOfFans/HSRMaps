@@ -1,0 +1,89 @@
+{
+	"name": "Automaton Beetle",
+	"description": "An automaton pieced together with Old World technology. A signal light is placed on its legs, and the unit may have been used for mining or construction operations.\nIn combat, Automaton Beetles can create forcefields to shield themselves.",
+	"icon": "spriteoutput/monsterfigure/Monster_1012030.png",
+	"shortIcon": "Monster_1012030",
+	"stats": {
+		"baseAttack": 14.999994,
+		"baseDefense": 210,
+		"baseHealth": 130.2,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "101203001",
+			"name": "Unstable Forcefield",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to a single target, and grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice",
+		"Thunder",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112011,
+				"count": 1
+			},
+			{
+				"id": 181001,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "101203001"
+}

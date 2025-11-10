@@ -1,0 +1,103 @@
+{
+	"name": "Black Tide's Corroded Axe",
+	"description": "A creature warped by the black tide, driven solely by an insatiable thirst for bloodshed.\nWielding a massive axe weighing a thousand pounds, its charged strike can shatter even the hardest stone. Any living being that stands in its way is doomed to be crushed and corroded.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032030.png",
+	"shortIcon": "Monster_4032030",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 232.4999628,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "403203001",
+			"name": "Wrathful Blazing Axe",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Fire DMG to one designated target.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403203002",
+			"name": "Fire of Vengeance",
+			"tag": "Distribute",
+			"type": "Ability",
+			"description": "Deals Fire DMG to all targets. The DMG is <u>distributed evenly</u> among targets.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				14
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403203003",
+			"name": "Bitter Fracture",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When other friendly units are defeated, this unit immediately takes action and uses \"Fire of Vengeance\" once. When there are multiple \"Black Tide's Corroded Axe\" on the battlefield, only 1 \"Black Tide's Corroded Axe\"'s \"Bitter Fracture\" Talent can be triggered.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "403203001"
+}

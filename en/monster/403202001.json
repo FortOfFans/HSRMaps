@@ -1,0 +1,124 @@
+{
+	"name": "Long-Shattered Vessel",
+	"description": "Each and every clone summoned by the Flame Reaver using the Calamity Power is a seed of ruin harboring the will of destruction within.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032020.png",
+	"shortIcon": "Monster_4032020",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 223.2,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "403202001",
+			"name": "Mutual Sacrifice: Demise's Storm",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to one designated target and units adjacent to the target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.25
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403202002",
+			"name": "Mutual Sacrifice: Fading Fate",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to all targets. Converts a portion of the hit target's reduced HP to <u>\"Corrosion\"</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403202003",
+			"name": "Prayers For Me",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Resists Crowd Control debuffs. When \"Flame Reaver of the Deepest Dark\" uses \"Demise's Storm\" or \"Fading Fate\" again and if this unit was summoned by that attack type, then this unit will attack alongside \"Flame Reaver of the Deepest Dark.\" This unit is then absorbed by \"Flame Reaver of the Deepest Dark,\" restoring the HP that was converted to \"<u>Entangled By Agony,</u>\" and granting \"<u>Calamity Power</u>\" to the Flame Reaver.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.06
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403202004",
+			"name": "Libations For Me",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "After receiving a killing blow, if the number of \"<u>Calamity Power</u>\" stacks on \"Flame Reaver of the Deepest Dark\" is not 0, this unit is immediately resummoned. However, \"Flame Reaver of the Deepest Dark\" will lose 1 stack of \"<u>Calamity Power</u>\" and a certain percentage of HP. When \"Flame Reaver of the Deepest Dark\" uses \"Cry Not For The Discarded,\" this unit will be absorbed and the HP that was converted to \"<u>Entangled By Agony</u>\" will be restored.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.02
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "403202001"
+}

@@ -1,0 +1,106 @@
+{
+	"name": "The Long Arms of Sorrow",
+	"description": "All who wish to futilely escape the end must face the underworld's pursuit.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012070.png",
+	"shortIcon": "Monster_4012070",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 4.65,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "401207101",
+			"name": "The Living Shan't Flee",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Quantum DMG to one target.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401207102",
+			"name": "The Dead Shan't Avoid",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals minor Quantum DMG to one target and its adjacent targets. This DMG converts to Quantum \"<u>Atrophy DMG</u>\" against targets with HP above a certain percentage.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.05,
+				0.5,
+				0.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401207103",
+			"name": "Between Life and Death",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "While in the \"Overdue Obituary\" state, \"The Living Shan't Flee\" enhances to \"The Dead Shan't Avoid.\"",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "4012071"
+}

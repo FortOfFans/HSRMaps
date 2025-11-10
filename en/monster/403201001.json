@@ -1,0 +1,93 @@
+{
+	"name": "Tide-Eroded Blade",
+	"description": "A creature warped by the black tide, driven solely by an insatiable thirst for bloodshed.\nIts razor-sharp blades can cleave through anything in its path, while its figure moves like a specter, spreading decay and corrosion to every corner of the world.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032010.png",
+	"shortIcon": "Monster_4032010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 232.499907,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "403201001",
+			"name": "Tip of Destruction",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Physical DMG to one designated target and units adjacent to the target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				2.4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403201002",
+			"name": "Fated End",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When this unit's attack deals DMG to any target, converts a portion of the hit target's reduced HP to <u>\"Corrosion\"</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.2,
+				0,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "403201001"
+}

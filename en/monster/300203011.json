@@ -1,0 +1,111 @@
+{
+	"name": "Dreamjolt Troupe's Bubble Hound",
+	"description": "Penacony's service machinery that got out of control due to the emotional interference in the Dreamscape.\nOriginally a delivery robot of SoulGlad, it is still dispensing sweetness after losing control, inviting everyone to taste this delicacy.",
+	"icon": "spriteoutput/monsterfigure/Monster_3002030.png",
+	"shortIcon": "Monster_3002030",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 209.25,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "300203001",
+			"name": "Drink Invite",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to a single target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "300203002",
+			"name": "Libation of Sweetness",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Upon taking a killing blow, deals Physical DMG to adjacent friendly units, increases their SPD, and inflicts them with Bleed.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.3,
+				2,
+				0.025,
+				100,
+				0.01
+			],
+			"spGain": 0,
+			"delay": 0.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "300203003",
+			"name": "Hearty Revelry",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Upon being attacked or taking DMG from DoT effects, gains a stack of SoulGlad Revel. Each stack increases DMG dealt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 0,
+			"delay": 0.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Wind"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114001,
+				"count": 1
+			},
+			{
+				"id": 181016,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "300203011"
+}

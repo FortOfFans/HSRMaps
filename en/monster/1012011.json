@@ -1,0 +1,92 @@
+{
+	"name": "Automaton Hound",
+	"description": "An automaton pieced together with Old World technology. It looks like a transportation vehicle whose purpose has long been forgotten.\nIn combat, Automaton Hounds can provide support and restore HP to its allies.",
+	"icon": "spriteoutput/monsterfigure/Monster_1012010.png",
+	"shortIcon": "Monster_1012010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 65.1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "101201101",
+			"name": "Vertical Strike",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to a single target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101201102",
+			"name": "Self-Healing Module",
+			"tag": "Restore",
+			"type": "Ability",
+			"description": "Immediately recovers all friendly units' HP.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Thunder"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112011,
+				"count": 1
+			},
+			{
+				"id": 181001,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "1012011"
+}

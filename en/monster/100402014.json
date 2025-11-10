@@ -1,0 +1,122 @@
+{
+	"name": "Gepard",
+	"description": "Captain of the Silvermane Guards.\nGepard can command his soldiers to focus their attacks, and provide each of them with a barrier that blocks one attack.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004020.png",
+	"shortIcon": "Monster_1004020",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7672.5,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "100402001",
+			"name": "Fist of Conviction",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Ice DMG to a single target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402002",
+			"name": "Smite of Frost",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Ice DMG to a single target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402003",
+			"name": "Garrison Aura Field",
+			"tag": "Defense",
+			"type": "Ability",
+			"description": "Grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402004",
+			"name": "Frigid Waterfall",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Ice DMG to all targets.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402005",
+			"name": "Siege Support",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons Silvermane Gunners or Silvermane Cannoneers and Locks Onto a single target for all attacks.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.4
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "100402014"
+}

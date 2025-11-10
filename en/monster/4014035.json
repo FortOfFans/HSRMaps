@@ -1,0 +1,212 @@
+{
+	"name": "Pollux, Netherwing Husk, Ferry of Souls (Corrupted)",
+	"description": "Netherwing, slumbering dormant in the River of Souls, has been reawakened by an alchemical summoning and morphed into a thing of rot and decay.\nIt once was the Death Titan, swimming upstream in the River of Souls' currents, leaving the realm of non-existence and stranded in the mortal world. Once, they followed the tides of the River of Souls to drown the living lands, branding all things in Amphoreus with a fated end. All the existences that will die or have died will feel a shudder in the depths of their souls with the dragon's return.",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1162.5,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "401403501",
+			"name": "To Stay the Fallen",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Quantum DMG to one target. This DMG converts to Quantum \"<u>Atrophy DMG</u>\" against targets with HP above a certain percentage.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.1,
+				0.5,
+				1.75
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403502",
+			"name": "To Bury the Slumbered",
+			"tag": "Distribute",
+			"type": "Ability",
+			"description": "Deals massive Quantum DMG to all targets. The DMG is <u>distributed evenly</u> among all target units. Against targets with HP above a certain percentage, this DMG converts to Quantum \"<u>Atrophy DMG</u>.\"",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				10,
+				0.1,
+				0.5,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403503",
+			"name": "To Mourn the Departing",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Quantum \"<u>Atrophy DMG</u>\" to 3 random targets.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403504",
+			"name": "Bitterness Delivers Belated Evil News",
+			"tag": "Support",
+			"type": "Ability",
+			"description": "Causes \"The Long Arms of Sorrow\" to be enhanced and advances its action, lasting for 3 turns.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403505",
+			"name": "To Die in Aromatic Pain",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Enters the <u>\"Fragrance of Death\"</u> state and deals massive Quantum \"<u>Atrophy DMG</u>\" to all target characters. This DMG is \"<u>Non-fatal</u>\" and inflicts all target characters with <u>\"Indulging Slumber.\"</u> In the second phase and before this unit's next action, its Toughness cannot be reduced, and it is immune to action delay effects caused by targets.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1,
+				0.2,
+				8,
+				0.5,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403506",
+			"name": "Death Wishes For More Death",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Quantum \"<u>Atrophy DMG</u>\" to all targets. Deals additional Quantum \"<u>Atrophy DMG</u>\" to targets in the <u>\"Indulging Slumber\"</u> state, delaying their action with a high chance of inflicting Entanglement.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.15,
+				0.5,
+				1,
+				2,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403507",
+			"name": "Inky Fog of a Near-Death Dream",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Decreases the initial DMG this unit and \"The Long Arms of Sorrow\" receive. When targets lose HP, they accumulate \"Desperate Bubble.\" When \"Desperate Bubble\" reaches the limit, this unit immediately takes action and enters the <u>\"Fragrance of Death\"</u> state. At the same time, removes this unit's and \"The Long Arms of Sorrow\"'s DMG Reduction state. When <u>\"Fragrance of Death\"</u> is dispelled, this unit will take DMG and restore targets' HP.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				0.45,
+				1,
+				1,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403508",
+			"name": "Because I Could Not Stop For Death",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When \"Pollux\" or \"The Long Arms of Sorrow\" hits a target with an ability, applies a special Unremovable DoT DMG state to the target. While under this state, the higher the target's HP percentage is, the more DMG they take. This DMG is \"<u>Non-fatal</u>.\"",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.4,
+				1,
+				0.05,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403509",
+			"name": "Compassion in Death",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Black Mud will appear in battle to enhance the Boss. After enhancement, \"Pollux, Netherwing Husk, Ferry of Souls (Corrupted)\" will immediately enter the \"Fragrance of Death\" state and use \"To Die in Aromatic Pain.\"",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "4014035"
+}

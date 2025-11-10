@@ -1,0 +1,91 @@
+{
+	"name": "Eclipse Wolftrooper",
+	"description": "A borisin soldier from the Eclipse Pack. Infamous for their gluttonous urge to devour the flesh of their enemies.",
+	"icon": "spriteoutput/monsterfigure/Monster_2032020.png",
+	"shortIcon": "Monster_2032020",
+	"stats": {
+		"baseAttack": 12.000006,
+		"baseDefense": 210,
+		"baseHealth": 186,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "203202001",
+			"name": "Gnaw",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to a single target. If this unit is under the <u>Moon Rage</u> state, attacks the target and restores this unit's HP.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203202002",
+			"name": "Lupine Maw",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "After a friendly unit launches an attack, applies 1 stack of \"<u>Bloodlust</u>\" to <u>friendly units who can enter the \"Moon Rage\" effect</u>. When \"<u>Bloodlust</u>\" reaches a certain stack, the friendly unit enters the \"<u>Moon Rage</u>\" state.\nA \"Moon Rage\" countdown icon appears in the Action Order. When the countdown's turn begins, \"<u>Moon Rage</u>\" is dispelled across all friendly units.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.4,
+				6,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181013,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "203202004"
+}

@@ -1,0 +1,188 @@
+{
+	"name": "Ichor Memosprite: Judge of Oblivion",
+	"description": "A trace of lingering madness extracted and refined by Evernight from the countless corpses of ichor memosprites, then synthesized into more twisted and grotesque monsters.\nIt shall follow the creator's directive, determining what should be remembered and what should be forgotten, devouring redundant memories that serve no purpose and leaving them muted in the flow of time.\n\"If a new life is to be born, its seed has to be dead.\"",
+	"icon": "spriteoutput/monsterfigure/Monster_4064010.png",
+	"shortIcon": "Monster_4064010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2511,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "406401001",
+			"name": "Hemotort Teethgrind",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals massive Imaginary DMG to one designated target. If the target has Shield, reduce this unit's Toughness instead. This Toughness Reduction effect will not reduce Toughness below 1.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				180,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "406401002",
+			"name": "Execution in Place",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons \"Ichor Memosprite: Pheasant.\" For every summon eliminated, reduces this unit's Toughness.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				2,
+				180,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "406401003",
+			"name": "Hemotort Glower",
+			"tag": "Lock On",
+			"type": "Ability",
+			"description": "Locks on to one designated character, increases this unit's SPD, and uses \"Hemotort Teethgrind\" and \"Hemotort Saw\" on the target within several turns. Take 1 extra action after using this ability.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "406401004",
+			"name": "Hemotort Saw",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals massive Imaginary DMG to one designated target and converts a portion of the hit target's reduced HP into \"<u>Corrosion</u>.\" If the target has Shield, reduce this unit's Toughness instead. This Toughness Reduction effect will not reduce Toughness below 1.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				180
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "406401005",
+			"name": "Hemotort Clamps",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals massive Imaginary DMG to all targets and converts a portion of the targets' reduced HP to \"<u>Corrosion</u>.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.5,
+				0.2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "406401006",
+			"name": "Name the Culprit",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charging state. In the next action, uses \"Hemotort Decapitation.\" Selects 1 target to receive the highest DMG of \"Hemotort Decapitation\" and \"<u>Hemotort Corruption</u>.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "406401007",
+			"name": "Hemotort Decapitation",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Imaginary Type DMG to target characters not selected with \"Name the Culprit.\" Deals massive Imaginary Type DMG to target characters selected with \"Name the Culprit,\" and applies \"<u>Hemotort Corruption</u>\" based on the amount of DMG taken (not offset by Shield) to the selected characters.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				14,
+				4.5,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "406401008",
+			"name": "Expedite Verdict",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "Reduces DMG received when not Weakness Broken. When this unit is Weakness Broken, its action will be further delayed, and deals massive Imaginary DMG to this unit. While Weakness Broken, this unit receives increased DMG.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				2,
+				0.5,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "4064010"
+}

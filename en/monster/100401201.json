@@ -1,0 +1,163 @@
+{
+	"name": "Cocolia",
+	"description": "The Guardian of Belobog, and the indisputable ruler of the Towering Citadel, Belobog.\nCocolia possesses the divine authority passed down through the generations of Guardians, giving her command over ice and snow to freeze her enemies in battle.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004010.png",
+	"shortIcon": "Monster_1004010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1255.5,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "100401201",
+			"name": "Chill of Bone-Piercing Coagulation",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Ice DMG to a single target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401202",
+			"name": "Omen of Everlasting Freeze",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons Ice Edges.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401203",
+			"name": "Punishment of Endless Winter",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals massive Ice DMG to all targets.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.75
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401204",
+			"name": "Hoarfrost of Eternal Isolation",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Deals Ice DMG to a single target, with a high chance to Freeze the target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				1,
+				1.125
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401205",
+			"name": "Wrath of Winterland Saints",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charging state. The next action casts \"Punishment of Endless Winter\" on all targets.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401206",
+			"name": "Reverberating Ice",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Ice DMG to Frozen targets and units adjacent to the target. This also removes the primary target's Frozen state. If the adjacent units are frozen, then this ability is used again on the primary target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.75,
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401207",
+			"name": "Intensifying Cold",
+			"tag": "Enhance",
+			"type": "Talent",
+			"description": "The caster and all summoned objects gain increased DMG for each Frozen unit on their enemies' team.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				10,
+				1.125,
+				0.1,
+				1.66,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4
+		},
+		{
+			"element": "Ice",
+			"value": 0.6
+		},
+		{
+			"element": "Wind",
+			"value": 0.4
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Ice",
+	"id": "100401201"
+}

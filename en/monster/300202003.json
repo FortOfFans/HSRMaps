@@ -1,0 +1,139 @@
+{
+	"name": "Dreamjolt Troupe's Fortune Seller",
+	"description": "Penacony's service machinery that got out of control due to the emotional interference in the Dreamscape.\nOriginally a prize-drawing robot made to bring surprise to guests, it still bears all kinds of gifts even after losing control, and longs to prove the good luck of the guest by sacrificing itself.",
+	"icon": "spriteoutput/monsterfigure/Monster_3002020.png",
+	"shortIcon": "Monster_3002020",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 209.25,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "300202001",
+			"name": "Lottery Warmup",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to a single target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "300202002",
+			"name": "Dreamjolt Prizepool",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "When receiving a killing blow from the designated attack type, triggers different effects based on the attack type. When simultaneously receiving attacks of multiple types, the effects will be triggered in the following order of priority: Lost the <unbreak>50</unbreak>/<unbreak>50</unbreak>!, Hit the Guarantee!, and Jackpot!",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "300202003",
+			"name": "Lost the <unbreak>50</unbreak>/<unbreak>50</unbreak>!",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "After suffering a killing blow from a Basic ATK or DoT, recovers Skill Points for targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "300202004",
+			"name": "Hit the Guarantee!",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "After suffering a killing blow from a Skill, Memosprite Skill, or a Follow-up ATK, regenerates Energy for all targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				20
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "300202005",
+			"name": "Jackpot!",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "After suffering a killing blow from an Ultimate, regenerates Energy and Skill Points for all targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				20
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Wind"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114001,
+				"count": 1
+			},
+			{
+				"id": 181016,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "300202003"
+}

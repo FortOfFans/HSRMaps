@@ -1,0 +1,202 @@
+{
+	"name": "Gepard",
+	"description": "Captain of the Silvermane Guards.\nGepard can command his soldiers to focus their attacks, and provide each of them with a barrier that blocks one attack.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004020.png",
+	"shortIcon": "Monster_1004020",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1023,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "100402701",
+			"name": "Fist of Conviction",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Ice DMG to a single target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402702",
+			"name": "Smite of Frost",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Ice DMG to a single target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402703",
+			"name": "Garrison Aura Field",
+			"tag": "Defense",
+			"type": "Ability",
+			"description": "Unleashes the Collective Shield and absorbs DMG taken by all friendly units, as well as preventing all friendly units from receiving damage to their Toughness.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.5,
+				0.2,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402704",
+			"name": "Frigid Waterfall",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Ice DMG to all targets and slightly increases the DMG dealt. This DMG boosting effect is stackable.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.8,
+				0.12,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402705",
+			"name": "Besiege",
+			"tag": "Lock On",
+			"type": "Ability",
+			"description": "Gepard Locks On a single target, causing all friendly units to immediately launch attacks on the target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402707",
+			"name": "",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402708",
+			"name": "Tit for Tat",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "Goes into the Counter state for 1 turn. If attacked by a target while in this state, immediately use \"Smite of Frost\" on the attacker. This effect can only be triggered 1 time.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402709",
+			"name": "Support",
+			"tag": "Summon",
+			"type": "Talent",
+			"description": "When the phase starts, immediately summon Silvermane Soldiers or Silvermane Cannoneers.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402710",
+			"name": "Support",
+			"tag": "Summon",
+			"type": "Talent",
+			"description": "When the phase starts, immediately summons Silvermane Cannoneers.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402711",
+			"name": "Support",
+			"tag": "Summon",
+			"type": "Talent",
+			"description": "When the phase starts, immediately summons Silvermane Lieutenant (Complete).",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.4
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "1004027"
+}

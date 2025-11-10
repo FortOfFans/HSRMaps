@@ -1,0 +1,189 @@
+{
+	"name": "Automaton Direwolf (Complete)",
+	"description": "A complete projection produced by compromised codes. The referent entity is an automaton pieced together with Old World technology. This rare type of humanoid automaton is equipped with a chainsaw on its right arm, presumably used for mining or construction operations.\nIn combat, Automaton Direwolf (Complete) will use its chainsaw to Bleed enemies, dealing DoT.",
+	"icon": "spriteoutput/monsterfigure/Monster_1013020.png",
+	"shortIcon": "Monster_1013020",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 558,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "101302301",
+			"name": "Felling Order",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to a single target, with a chance to inflict Bleed with every hit to this target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.05,
+				4,
+				10
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101302302",
+			"name": "Lock On Target",
+			"tag": "Lock On",
+			"type": "Ability",
+			"description": "Locks Onto a single target. The next action on the target will cast \"Felling Order.\"",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101302303",
+			"name": "Targeting Order",
+			"tag": "Lock On",
+			"type": "Ability",
+			"description": "Locks on to 2 targets and casts Felling Order on them in the next action.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101302304",
+			"name": "Teamwork Order",
+			"tag": "Lock On",
+			"type": "Ability",
+			"description": "Locks Onto 2 targets and casts Felling Order on them in the next action. At the same time, makes Automaton Grizzly enter the Charging state, which will cast \"Purge Order\" on all targets in the next action.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101302305",
+			"name": "Disintegration Order",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to a single target, with a high chance to inflict 1 stack of Bleed.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101302306",
+			"name": "Dismantle",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to a single target, with a high chance to inflict 1 stack of Bleed.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101302307",
+			"name": "",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101302308",
+			"name": "Combat Speed-Up",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Greatly increases SPD. Every time Targeting Order is used, SPD is slightly increased further.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112011,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "1013023"
+}

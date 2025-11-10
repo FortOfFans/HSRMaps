@@ -1,0 +1,130 @@
+{
+	"name": "Dark Sun Gryphon",
+	"description": "Noontide Gryphon corroded by the black tide, driven solely by an insatiable thirst for bloodshed.\nEven after losing Aquila's blessings, the inexhaustible energy within the black tide has turned it into something even more horrifying.",
+	"icon": "spriteoutput/monsterfigure/Monster_4033030.png",
+	"shortIcon": "Monster_4033030",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "403303001",
+			"name": "Blacklight Emission",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Wind DMG to all targets. Converts a portion of the hit target's reduced HP to \"<u>Corrosion</u>.\"",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.2,
+				0,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403303002",
+			"name": "Icon of Evernight",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons an \"Archer of the Dark Sun.\" When \"Archer of the Dark Sun\" is defeated, this unit will lose a portion of HP. \"Archers of the Dark Sun\" will not actively take action. After this unit attacks, all summoned \"Archers of the Dark Sun\" will perform one attack.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.7,
+				0.8,
+				0.12
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403303003",
+			"name": "Prophecy of the Eclipse",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the \"The Dead Winds Cometh\" state. Uses \"Carol of Heat Death\" in the next action.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403303004",
+			"name": "Carol of Heat Death",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Wind DMG to all targets. The higher a target's <u>\"Corrosion\"</u> HP is, the higher the DMG dealt. All HP under the effect of <u>\"Corrosion\"</u> will also immediately be lost.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Wind",
+	"id": "4033030"
+}

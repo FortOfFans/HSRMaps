@@ -1,0 +1,216 @@
+{
+	"name": "Decimator, Karma of Daythunder, Eye of Twilight",
+	"description": "The image of the conqueror who once ruled the skies with absolute might, now consumed by the black tide. The rights and wrongs of their past may be difficult to judge, but at this moment, all that remains is a formless blaze of karmic destruction, seething with murderous intent.",
+	"icon": "spriteoutput/monsterfigure/Monster_4015020.png",
+	"shortIcon": "Monster_4015020",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 23250,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"id": "401502001",
+			"name": "Ashes to the Distant Shore",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "<u>Reinstates</u> the \"Languid Ethmoid Bone\" and deals a set amount of massive Imaginary DMG to one designated target, while inflicting \"<u>Rot</u>\" to them. \"<u>Rot</u>\" is stackable.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1,
+				500,
+				600,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401502002",
+			"name": "Extinguishment of the Savaged Star",
+			"tag": "Distribute",
+			"type": "Ability",
+			"description": "<u>Reinstates</u> the \"Dried Lacrimal Bone\" and deals a set amount of massive Imaginary DMG to all targets. The DMG is <u>distributed evenly</u> among the targets.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401502003",
+			"name": "Eye of Terror",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters \"The Dark Tides Cometh\" state. Uses \"Unmaking Ashes: Godsfall\" in the next action, and <u>reinstates</u> the \"Languid Ethmoid Bone\" and \"Dried Lacrimal Bone\".",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401502004",
+			"name": "Unmaking Ashes: Godsfall",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals a set amount of massive Imaginary DMG to all targets, and <u>reinstates</u> the \"Languid Ethmoid Bone\" and \"Dried Lacrimal Bone\".",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401502005",
+			"name": "Remnants",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "When inflicting DMG to \"Languid Ethmoid Bone\" or \"Dried Lacrimal Bone\" during this battle, an equal amount of HP will also be lost by \"Decimator, Karma of Daythunder, Eye of Twilight.\" When \"Languid Ethmoid Bone\" or \"Dried Lacrimal Bone\" receive a killing blow, \"Decimator, Karma of Daythunder, Eye of Twilight\" will receive Toughness DMG, and \"Languid Ethmoid Bone\" or \"Dried Lacrimal Bone\" will restore HP and cannot be selected.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				120,
+				1.4,
+				1.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401502006",
+			"name": "Black Tide",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "Adds \"Black Tide\" to Action Order. Every time the \"Black Tide\" takes action, inflicts all targets with \"<u>Rot</u>.\" \"<u>Rot</u>\" is stackable. When targets suffer killing blows, inflicts \"<u>Tide-Corrosion</u>\" on them and Charges \"Healing Rainbow.\" When all targets enter the \"<u>Tide-Corrosion</u>\" state or are downed, the battle ends in defeat.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				300,
+				1,
+				30,
+				0.8,
+				130,
+				150
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401502007",
+			"name": "Tides Below",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "During this battle, all DMG dealt by \"Decimator, Karma of Daythunder, Eye of Twilight\" will deal a set amount of DMG based on \"Black Tide Sync Rate.\" After a target uses an attack, additionally deals \"<u>Non-fatal</u>\" <u>True DMG</u> based on \"Black Tide Sync Rate.\" When \"Decimator, Karma of Daythunder, Eye of Twilight\" and \"Black Tide\" take action, increases \"Black Tide Sync Rate.\" When \"Languid Ethmoid Bone\" or \"Dried Lacrimal Bone\" is defeated, reduces \"Black Tide Sync Rate.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8,
+				16,
+				0.6,
+				1,
+				0.00070000044,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401502008",
+			"name": "",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				1,
+				2,
+				0,
+				0,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401502009",
+			"name": "",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				20,
+				0,
+				0,
+				40
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "401502001"
+}

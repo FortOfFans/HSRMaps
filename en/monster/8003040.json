@@ -1,0 +1,169 @@
+{
+	"name": "Decaying Shadow",
+	"description": "A shadow manifested by the power of a Stellaron, carrying out the Fragmentum's unceasing will to expand.\nA living being of energy born from the projection of the desires of sentient lifeforms into the Fragmentum, akin to a pearl created from a single grain of sand. However, the desire that drove it has long since been twisted and distorted.",
+	"icon": "spriteoutput/monsterfigure/Monster_8003040.png",
+	"shortIcon": "Monster_8003040",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "800304001",
+			"name": "",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800304002",
+			"name": "Fleeting Gilded Spikes",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to a single target.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800304003",
+			"name": "Fleeting Punishment",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals massive Imaginary DMG to a single target.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800304004",
+			"name": "Binding of the Golden Age",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charging state and gains 9 Gauge Recollection stacks. Casts Liberation of the Golden Age in the next action. Every time this unit is attacked, lose 1 stack of Gauge Recollection.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 2,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800304005",
+			"name": "Liberation of the Golden Age",
+			"tag": "Bounce",
+			"type": "Ability",
+			"description": "Deals successive minor Imaginary DMG to a random target. The number of attacks is equal to the \"Gauge Recollection\" stacks remaining. If there is no \"Gauge Recollection,\" this ability will fail.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.25
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800304006",
+			"name": "Fleeting Veil",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Slightly reduces the Basic ATK, Skill, Ultimate, and Follow-up ATK DMG received by this unit, with a small chance to inflict Imprisonment on the target attacked by Decaying Shadow.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				0.2,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800304007",
+			"name": "Liberation of the Golden Age",
+			"tag": "Bounce",
+			"type": "Ability",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111001,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "8003040"
+}

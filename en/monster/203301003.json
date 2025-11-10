@@ -1,0 +1,161 @@
+{
+	"name": "Howling Casket",
+	"description": "A combat machine developed by the Intelligentsia Guild, utilizing borisin biological tissues. These machines possess the tenacious vitality of long-life species and the \"Slaughter Algorithm\" evolved over countless ages.",
+	"icon": "spriteoutput/monsterfigure/Monster_2033010.png",
+	"shortIcon": "Monster_2033010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1116,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "203301001",
+			"name": "Bionic Claws",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to a single target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203301002",
+			"name": "Thunderous Roar",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to a single target and units adjacent to the target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.6,
+				1.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203301003",
+			"name": "Moon Rage Mimicry",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Enters the <u>Moon Rage</u> state.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203301004",
+			"name": "Lupitoxin Synthesis",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to all targets, with a high chance of inflicting \"<u>Terror Grip</u>\" on all allies.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0,
+				0,
+				1.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203301005",
+			"name": "Slaughter Algorithm",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Physical DMG to a single target and adjacent units. When the target enters the \"<u>Terror Grip</u>\" or \"<u>Terrified</u>\" state, additionally deals DMG.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.2,
+				1.8,
+				1.8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203301006",
+			"name": "Borisin Instinct",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "When entering battle, decreases the number of \"<u>Bloodlust</u>\" stacks needed to enter \"<u>Moon Rage</u>.\" After a friendly unit launches an attack, applies 1 stack of \"<u>Bloodlust</u>\" to <u>friendly units who can enter the \"Moon Rage\" effect</u>. When \"<u>Bloodlust</u>\" reaches a certain number of stacks, the friendly unit enters the \"<u>Moon Rage</u>\" state.\nA \"Moon Rage\" countdown icon appears in the Action Order. When the countdown's turn begins, \"<u>Moon Rage</u>\" is dispelled for all friendly units.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182008,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "203301003"
+}

@@ -1,0 +1,193 @@
+{
+	"name": "Bronya (Illusion)",
+	"description": "Successor to Belobog's Guardian, and commander of the Silvermane Guards.\nBronya can use various tactics to attack her enemies, and greatly enhance the battle prowess of friendly units. This entity is a phantom borne from your memories.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004030.png",
+	"shortIcon": "Monster_1004030",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3952.5,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "100403201",
+			"name": "Windrider Bullet",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Wind DMG to a single target.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100403202",
+			"name": "Combat Redeployment",
+			"tag": "Support",
+			"type": "Ability",
+			"description": "Dispels all debuffs on a friendly unit except Bronya, and causes this unit to take action immediately.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100403203",
+			"name": "Coordinated Reinforcement",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons Silvermane Cannoneers.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100403204",
+			"name": "Suppressive Fire",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Wind DMG to a single target and delays their action.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100403205",
+			"name": "Marching Orders",
+			"tag": "Support",
+			"type": "Ability",
+			"description": "Increases SPD of all friendly units.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				50,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100403206",
+			"name": "Carried By Inertia",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "Slightly increases Bronya's SPD and ATK at the start of her turn. This effect is stackable, but is dispelled when Bronya's Weakness is broken.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.03,
+				0.03,
+				0.05,
+				0.05
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100403207",
+			"name": "Shared Hatred",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "When Gepard is downed, Bronya immediately takes action and becomes Enhanced, increasing her SPD. When in this state, Bronya will summon even more Silvermane Cannoneers.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100403208",
+			"name": "Tacit Teamwork",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "Gepard and Bronya take turns switching between the Main Attacker and Support state. When in the Main Attacker state, their Toughness Protection is removed and they take normal actions. When in Support state, their SPD is reduced, they gain Toughness Protection, and they can only use Coordinated Reinforcement and Combat Redeployment.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100403209",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				50,
+				2,
+				1,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.6
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "1004032"
+}

@@ -1,0 +1,179 @@
+{
+	"name": "Searing Prowler (Bug)",
+	"description": "A false projection produced by compromised codes. The referent entity is a machine unit prowling in the Fragmentum. Undoubtedly, this monstrosity is not a human creation, but one that was born out of the perversion of the Fragmentum.\nThe attacks of Searing Prowler (Bug) will deal extra damage against Burned enemies.",
+	"icon": "spriteoutput/monsterfigure/Monster_1023010.png",
+	"shortIcon": "Monster_1023010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1302,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "102301101",
+			"name": "Crimson Blade",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Fire DMG to a single target, with a chance to Burn the target.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "102301102",
+			"name": "Combustion Slash",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Fire DMG to a single target and units adjacent to the target. This attack prioritizes targets afflicted with Burn.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "102301103",
+			"name": "High-Temperature Operation",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Slightly increases ATK and greatly increases SPD. This buff is dispelled upon Weakness Break.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				100
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "102301104",
+			"name": "Dancing Cinders",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Fire DMG to all targets. Targets suffering from Burn are dealt an extra Fire DMG. And at the same time, there's a chance to Burn any targets that are attacked.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "102301105",
+			"name": "Augury of Fireburst",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "The next action uses Scorching Burst.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "102301106",
+			"name": "Scorching Burst",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Fire DMG to all targets. Burned target will explode, subsequently dealing Fire DMG to the Burned target and units adjacent to the target. The Burn status will be removed afterward.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "102301107",
+			"name": "Melt",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "After attacking a Burned target, receives a DMG increase.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.06,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.4
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112011,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "1023011"
+}

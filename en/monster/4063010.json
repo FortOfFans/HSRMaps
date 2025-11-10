@@ -1,0 +1,159 @@
+{
+	"name": "Ichor Memosprite: Winged Serpent",
+	"description": "A distorted monster formed from the Garden of Recollection's memetic lifeform by the Destruction using golden ichor. It is in the rudimentary form of a flying snake, enough to intimidate its assailants.\nIts twisted rationality went completely mad in the black tide, and its intense self-protecting impulse imperceptibly took on a fantastical flavor.",
+	"icon": "spriteoutput/monsterfigure/Monster_4063010.png",
+	"shortIcon": "Monster_4063010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1488,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "406301001",
+			"name": "Hemotort Whip",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to one designated target.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "406301002",
+			"name": "Hemotort Spew",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to one designated target and adjacent targets.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "406301003",
+			"name": "Menacing Warning",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charging state and gains \"Whirl.\" If \"Whirl\" still persist during the next action, uses \"Hemotort Vortex.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "406301004",
+			"name": "Hemotort Vortex",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to all targets and converts a portion of the targets' reduced HP to \"Corrosion.\" The higher the \"Whirl\" stacks, the higher the DMG. Then, loses all \"Whirl\" stacks.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				0.5,
+				0.2,
+				0.5,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "406301005",
+			"name": "Torque Counter",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals minor Imaginary DMG to all targets and converts a portion of the hit target's reduced HP to \"Corrosion.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.5,
+				0.2,
+				0.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "406301006",
+			"name": "Corkscrew Charge",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "After being hit by attacks from target units, if the \"Whirl\" stack is not 0, uses \"Torque Counter\" and loses 1 stack of \"Whirl.\" During any unit's turn, each target unit can only trigger this effect once. When the \"Whirl\" stack reaches 0, the Charging state is dispelled.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "4063010"
+}

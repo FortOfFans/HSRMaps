@@ -1,0 +1,140 @@
+{
+	"name": "Ice Out of Space",
+	"description": "A strange being that does not belong to this world. Nurtured in the Fragmentum brought by the Stellaron, it feeds upon this world's root structures to obtain energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space will freeze targets it touches.",
+	"icon": "spriteoutput/monsterfigure/Monster_8003010.png",
+	"shortIcon": "Monster_8003010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7905,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "800301001",
+			"name": "Chilling Lament",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Ice DMG to a single target. Deals extra Ice DMG to the target if the target is currently Frozen and this unit is in the Freezing Point state.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				2.5,
+				1,
+				0,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800301002",
+			"name": "Frosty Absorption",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Enters the Freezing Point state. Everwinter Rain can be used in subsequent attacks.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				120
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800301003",
+			"name": "Everwinter Rain",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "This ability is only available while in the Freezing Point state. Deals minor Ice DMG to all targets, with a chance to Freeze the targets.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2,
+				0.6,
+				1,
+				1,
+				120
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800301004",
+			"name": "Chilling Lament",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Ice DMG to a single target. There is a chance to Freeze the target if the user is in the Freezing Point state.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				3,
+				1,
+				1,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.4
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111001,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800301014"
+}

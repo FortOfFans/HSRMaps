@@ -1,0 +1,150 @@
+{
+	"name": "Black Tide's Champion",
+	"description": "A creature warped by the black tide, driven solely by an insatiable thirst for bloodshed.\nIts dueling spirit, once fierce in life, has been twisted by the black tide. Wielding a massive greatsword as tall as its shoulders, it wanders aimlessly, seeking any target to destroy, offering yet more entropy to the chaos of the world.",
+	"icon": "spriteoutput/monsterfigure/Monster_4033020.png",
+	"shortIcon": "Monster_4033020",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930.000744,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "403302001",
+			"name": "Dreadtide",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Physical DMG to one designated target and adjacent targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403302002",
+			"name": "Fatal Clash",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Causes this unit, a designated target character, and the target character's summon to enter the <u>\"Duel\"</u> state. Uses \"Spirit Breaker\" after 3 turns, prioritizing the target with the most number of buffs.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.5,
+				0.5,
+				0.5,
+				0.2,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403302003",
+			"name": "Cast Marble",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals massive Physical DMG to one designated target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403302004",
+			"name": "Spirit Breaker",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals massive Physical DMG to all targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403302005",
+			"name": "Fated End",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "When this unit's attack deals DMG to any target, converts a portion of the hit target's reduced HP to <u>\"Corrosion\"</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.2,
+				0,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Wind"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "403302001"
+}

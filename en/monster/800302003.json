@@ -1,0 +1,136 @@
+{
+	"name": "Blaze Out of Space",
+	"description": "A strange being that does not belong to this world. Nurtured in the Fragmentum created by the Stellaron, it parasitize upon this world's root structures to obtain energy. Its armor burns with the blazing flames in the core of stars.\nIn combat, the Blaze Out of Space will incinerate anything it touches.",
+	"icon": "spriteoutput/monsterfigure/Monster_8003020.png",
+	"shortIcon": "Monster_8003020",
+	"stats": {
+		"baseAttack": 30.000006,
+		"baseDefense": 210,
+		"baseHealth": 976.5,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "800302001",
+			"name": "Bellowing Inferno",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Fire DMG to a single target and has a high chance to inflict Enkindle.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800302002",
+			"name": "Blazing Absorption",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Enters the Spontaneous Combustion state. Rain of Purifying Flames can be used in subsequent attacks.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				60,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800302003",
+			"name": "Rain of Purifying Flames",
+			"tag": "Bounce",
+			"type": "Ability",
+			"description": "Deals successive minor Fire DMG to a random single target, with a high chance to inflict Enkindle.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				2,
+				0.5,
+				5,
+				60
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800302004",
+			"name": "Molten Fusion",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Gains ATK. This buff is dispelled upon Weakness Break.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111001,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800302003"
+}

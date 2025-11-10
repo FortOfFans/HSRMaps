@@ -1,0 +1,91 @@
+{
+	"name": "Vagrant",
+	"description": "In order to survive, some Underworlders are desperate enough to venture deep into the Fragmentum in search of anything salvageable. Ancient machinery that they dug up has become their best helper.",
+	"icon": "spriteoutput/monsterfigure/Monster_1002020.png",
+	"shortIcon": "Monster_1002020",
+	"stats": {
+		"baseAttack": 9,
+		"baseDefense": 210,
+		"baseHealth": 139.5,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "100202001",
+			"name": "Shovel Attack",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to a single target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100202002",
+			"name": "Inspire",
+			"tag": "Support",
+			"type": "Ability",
+			"description": "Increases a friendly unit's ATK and causes them to act immediately.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112001,
+				"count": 1
+			},
+			{
+				"id": 181005,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "100202009"
+}

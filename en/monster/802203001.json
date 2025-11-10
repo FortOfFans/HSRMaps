@@ -1,0 +1,93 @@
+{
+	"name": "Gnaw Sting",
+	"description": "A subspecies of Stings that underwent mutations during reproduction, adept at using quantum toxins in their mandibles to corrode away the bodies of their prey.",
+	"icon": "spriteoutput/monsterfigure/Monster_8022030.png",
+	"shortIcon": "Monster_8022030",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 55.80006975,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "802203001",
+			"name": "Horn Clash",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Quantum DMG to a single target, prioritizing Entangled targets, and applies one extra stack of Entanglement.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "802203002",
+			"name": "Decay Eulogy",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When receiving a killing blow, deals Quantum DMG to all friendly units and increases their DMG received.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				1,
+				0.1,
+				3,
+				10,
+				30
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181006,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "802203001"
+}

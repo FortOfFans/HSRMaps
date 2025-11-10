@@ -1,0 +1,92 @@
+{
+	"name": "Lance of the Eternal Freeze",
+	"description": "A giant lance of ice summon by Cocolia. It's surrounded by an icy cold current that can tear through flesh like a blade.",
+	"icon": "spriteoutput/monsterfigure/Monster_1002014.png",
+	"shortIcon": "Monster_1002014",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 209.25,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "100201801",
+			"name": "Everwinter Reverberance",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals minor Ice DMG to all targets.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100201802",
+			"name": "Subzero Pursuit",
+			"tag": "Support",
+			"type": "Ability",
+			"description": "Locks on to a target. Some of Cocolia, Mother of Deception (Illusion)'s abilities will be released for one more time on the locked-on target until Lance of the Eternal Freeze (Illusion) had their Weakness Broken or defeated.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112001,
+				"count": 1
+			},
+			{
+				"id": 181005,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Ice",
+	"id": "1002018"
+}

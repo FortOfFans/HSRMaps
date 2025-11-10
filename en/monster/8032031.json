@@ -1,0 +1,82 @@
+{
+	"name": "\"All or Nothing\"",
+	"description": "A game die metamorphosed from the \"Aventurine of Stratagems,\" which shall decide the gamblers' destiny in the Gamble.",
+	"icon": "spriteoutput/monsterfigure/Monster_8032030.png",
+	"shortIcon": "Monster_8032030",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 186,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "803203101",
+			"name": "Fickle Fortune",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "HP cannot be reduced to lower than 1. When this unit is attacked by a target that has entered the Gamble, the target will receive a random number between 1 and 6. When HP is reduced to 1, gains the <u>Influx of Fortuity</u> effect. While under the <u>Influx of Fortuity</u> effect, this unit is guaranteed to receive the number 6 and uses Punishment of Defeat when the Gamble ends.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803203102",
+			"name": "Punishment of Defeat",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Self-destructs, dealing Imaginary DMG to Aventurine of Stratagems.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803203103",
+			"name": "Forever Concealed",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When this unit is attacked by a target that has entered the Gamble, the Gamble's odds are doubled.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				4,
+				8,
+				16
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [],
+	"weakness": [],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181010,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Imaginary",
+	"id": "8032031"
+}

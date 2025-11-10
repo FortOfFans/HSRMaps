@@ -1,0 +1,260 @@
+{
+	"name": "Annihilator of Desolation Mistral",
+	"description": "The Annihilator of Desolation Mistral possesses the divine authority passed down through the generations of Guardians, giving her command over ice and snow to freeze her enemies in battle.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004010.png",
+	"shortIcon": "Monster_1004010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 5812.5,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "100401401",
+			"name": "Chill of Bone-Piercing Coagulation",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Ice DMG to a single target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401402",
+			"name": "Omen of Everlasting Freeze",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons Ice Edges.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401403",
+			"name": "Punishment of Endless Winter",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals massive Ice DMG to all targets.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401404",
+			"name": "Hoarfrost of Eternal Isolation",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Ice DMG to a single target, with a high chance to Freeze the target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.8,
+				0.5,
+				1,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401405",
+			"name": "Wrath of Winterland Saints",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charging state. The next action casts \"Punishment of Endless Winter\" on all targets.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401406",
+			"name": "Reverberating Ice",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Ice DMG to Frozen targets and units adjacent to the target. This also removes the primary target's Frozen state. If the adjacent units are frozen, then this ability is used again on the primary target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401407",
+			"name": "Intensifying Cold",
+			"tag": "Enhance",
+			"type": "Talent",
+			"description": "For every target that gets Frozen, increases the DMG dealt by this unit and the summons.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				10,
+				1.125,
+				0,
+				1.66,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401409",
+			"name": "Shield of the Winterlands",
+			"tag": "Summon",
+			"type": "Talent",
+			"description": "Gepard joins the battle.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401410",
+			"name": "Unstoppable Momentum",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Damage received by Annihilator of Desolation Mistral is greatly reduced. However, after being Weakness Broken, its action is additionally delayed and it receives more DMG, as well as recovering allies' Skill Points and activating all allies' Ultimates.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401411",
+			"name": "Desolation Mistral",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "The Annihilator of Desolation Mistral will <u>transfer</u> their own Weakness-Type to \"Ice Edge.\" When \"Ice Edge\" is defeated, Annihilator of Desolation Mistral will take additional Toughness Reduction.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.2,
+				0.9,
+				60
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401412",
+			"name": "Nowhere to Escape",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When Annihilator of Desolation Mistral uses Chill of Bone-Piercing Coagulation or Hoarfrost of Eternal Isolation, these abilities will be <u>unleashed additional times</u> against targets locked on by Ice Edge.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401413",
+			"name": "Tenacious Resolve",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Reduces DMG received by all friendly units, but every Weakness-Type they have increases DMG received.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100401414",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4
+		},
+		{
+			"element": "Ice",
+			"value": 0.6
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.6
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Ice",
+	"id": "100401404"
+}

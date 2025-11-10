@@ -1,0 +1,92 @@
+{
+	"name": "Black Tide's Decrepit Bow",
+	"description": "A creature warped by the black tide, driven solely by an insatiable thirst for bloodshed.\nHolding a bow imbued with a curse, it can simultaneously attack targets in multiple directions while shooting. Any living being that enters its sight is doomed to face the inescapable aim of its arrows.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032050.png",
+	"shortIcon": "Monster_4032050",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 232.499907,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "403205001",
+			"name": "Arrow of the Foul Tide",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to all targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403205002",
+			"name": "Fated End",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When this unit's attack deals DMG to any target, converts a portion of the hit target's reduced HP to <u>\"Corrosion\"</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.2,
+				0,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "403205001"
+}

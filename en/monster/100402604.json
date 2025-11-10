@@ -1,0 +1,126 @@
+{
+	"name": "Gepard",
+	"description": "Captain of the Silvermane Guards.\nGepard will provide soldiers with a shield that can block DMG taken.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004020.png",
+	"shortIcon": "Monster_1004020",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2790,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "100402601",
+			"name": "Fist of Conviction",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Ice DMG to a single target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402602",
+			"name": "Smite of Frost",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Ice DMG to a single target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402603",
+			"name": "Garrison Aura Field",
+			"tag": "Defense",
+			"type": "Ability",
+			"description": "Unleashes the Collective Shield and absorbs DMG taken by all friendly units, as well as preventing all friendly units (except this unit) from receiving Reduction to their Toughness.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.48,
+				0.3,
+				0.5,
+				1.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402607",
+			"name": "",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100402608",
+			"name": "Tit for Tat",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "Goes into the Counter state for 1 turn. If attacked by a target while in this state, immediately use \"Smite of Frost\" on the attacker.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "100402604"
+}

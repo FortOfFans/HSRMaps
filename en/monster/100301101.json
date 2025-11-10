@@ -1,0 +1,138 @@
+{
+	"name": "Silvermane Lieutenant (Bug)",
+	"description": "A false projection produced by compromised codes. The referent entity is the leader of a squad of Belobog's Silvermane Guards.\nAs long as there are remaining friendly units, Silvermane Lieutenants will persistently raise a giant shield during combat. Attacking a Silvermane Lieutenant with their shield raised will result in a fierce counterattack.",
+	"icon": "spriteoutput/monsterfigure/Monster_1003010.png",
+	"shortIcon": "Monster_1003010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1488,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "100301101",
+			"name": "Assault",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to a single target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100301102",
+			"name": "Pierce",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals massive Physical DMG to a single target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100301103",
+			"name": "Shield Reflect",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "Goes into the Counter state. When attacked by a single character, gains 1 extra turn and deals Physical DMG to the target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100301104",
+			"name": "Reinforcement",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons Silvermane Soldiers or Silvermane Gunners",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100301105",
+			"name": "Rallying",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Increases ATK for all friendly units except Silvermane Lieutenant (Error) and causes them to act immediately.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Wind"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112001,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "100301101"
+}

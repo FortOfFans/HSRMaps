@@ -1,0 +1,187 @@
+{
+	"name": "Borisin Warhead: Hoolay",
+	"description": "A borisin leader who committed the Ten Unpardonable Sins, eternally imprisoned at the bottom of The Shackling Prison.\nBearing the hatred of seven centuries of bitter confinement, the Lord of Wolves challenges the entire Xianzhou Luofu upon breaking free from his cage. Yet, there seems to be another objective hidden behind his maddened actions...",
+	"icon": "spriteoutput/monsterfigure/Monster_2034010.png",
+	"shortIcon": "Monster_2034010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2325,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "203401301",
+			"name": "Broken Blades as Fang",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Lightning DMG to one designated target.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203401302",
+			"name": "Severed Iron as Claws",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Lightning DMG to one designated target and adjacent units.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1.8,
+				1.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203401303",
+			"name": "Barrenness of Earth Gouged",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Causes all targets (except this unit) to have their action delayed and deals minor Lightning DMG.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.3,
+				0.5,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203401304",
+			"name": "Decimation of Roaring Storms",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Lightning DMG to all targets.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203401305",
+			"name": "Lupine Chase Calls Bloody Gleam",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals massive Lightning DMG to one designated target, with a high chance of inflicting \"<u>Terror Grip</u>.\"",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				5,
+				1,
+				60
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203401306",
+			"name": "Warhead Moon Rage",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "After a friendly unit launches an attack, apply 1 stack of \"<u>Bloodlust</u>\" to <u>friendly units who can enter the \"Moon Rage\" state</u>. When \"<u>Bloodlust</u>\" reaches a certain number of stacks, the friendly unit enters the \"<u>Moon Rage</u>\" state.\nA \"Moon Rage\" countdown icon appears in the Action Order. When the countdown's turn begins, \"<u>Moon Rage</u>\" is dispelled across all friendly units.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.8,
+				4,
+				6,
+				0.8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203401307",
+			"name": "Moonhowl Lupus",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "While Hoolay is in the \"<u>Moon Rage</u>\" state, applies 1 stack of \"Irate\" to Hoolay after every attack launched by a friendly unit. If Hoolay uses an attack, additionally applies 1 stack of \"Irate.\" After every attack used by a target, reduce 1 stack of \"Irate.\" \"Irate\" will have an initial set of stacks. When a certain number of \"Irate\" stacks is reached, Hoolay will release \"Lupine Chase Calls Bloody Gleam\" and remove all \"Irate\" stacks. Whenever \"Irate\" stacks are reduced to 0 due to attacks from characters, Hoolay's Toughness will be reduced and reset \"Irate\" to a set number of stacks.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				8,
+				3,
+				180,
+				4,
+				0.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203401308",
+			"name": "To My Howls the Pack Obeys",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "Adds \"Summon the Pack\" to the Action Order. Whenever \"Summon the Pack\" takes action, summons \"Sableclaw Wolftrooper\" or \"Eclipse Wolftrooper.\" When a friendly unit enters the \"<u>Moon Rage</u>\" state, the action of \"Summon the Pack\" is delayed.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0.15,
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "2034013"
+}

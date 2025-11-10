@@ -1,0 +1,161 @@
+{
+	"name": "Furiae Praetor",
+	"description": "A Titankin sculpted by \"Strife.\" They are infused with Nikador's golden ichor. They are mighty constructs capable of housing a Titan's soul. With their greatswords, they stand ready to repel the rush of the black tide or turn their blade in a countering onslaught in times of war.\nFuriae Praetor will sacrifice their weaker kin, exchanging atrocity for divine punishments from the Titan.",
+	"icon": "spriteoutput/monsterfigure/Monster_4013010.png",
+	"shortIcon": "Monster_4013010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1674,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "401301001",
+			"name": "From Skyveil to Dawn",
+			"tag": "Sweep",
+			"type": "Ability",
+			"description": "Starting from the leftmost target, uses a sweeping attack on 3 consecutive targets, dealing minor Imaginary DMG.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401301002",
+			"name": "From Dawn to Skyveil",
+			"tag": "Sweep",
+			"type": "Ability",
+			"description": "Starting from the rightmost target, uses a sweeping attack on 3 consecutive targets, dealing minor Imaginary DMG.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401301003",
+			"name": "Resembling Furious Lion",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charging state. Uses \"Drowned in the Crimson Sea\" in the next turn.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401301004",
+			"name": "Drowned in the Crimson Sea",
+			"tag": "Distribute",
+			"type": "Ability",
+			"description": "Absorbs \"Furiae Warrior,\" then deals massive Imaginary DMG to all targets and inflicts Vulnerability on them. The DMG and Vulnerability states are <u>distributed evenly</u> among the targets. The more \"Furiae Warriors\" absorbed, the higher the DMG dealt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				12,
+				1.2,
+				4,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401301005",
+			"name": "Rise from the Grave",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons \"Furiae Warrior.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401301006",
+			"name": "Polis Protector",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Possesses a number of \"War Armor\" stacks, which decreases DMG taken. Loses 1 stack of \"War Armor\" on this unit after being attacked. When at 0 stacks, \"War Armor\" will be destroyed, dealing massive Imaginary DMG to this unit and delaying their action. The target that destroyed \"War Armor\" will regenerate Energy. After \"War Armor\" is destroyed, this unit will also additionally take minor Imaginary DMG when attacked. \"War Armor\" will be restored to maximum stacks at the end of this unit's turn.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				0.2,
+				0.1,
+				0.03,
+				0.15,
+				0.15
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "401301005"
+}

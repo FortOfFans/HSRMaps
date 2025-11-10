@@ -1,0 +1,311 @@
+{
+	"name": "Guide of Withering and Decay",
+	"description": "Netherwing, slumbering dormant in the River of Souls, has been reawakened by an alchemical summoning and morphed into a thing of rot and decay.\nIt once was the Death Titan, swimming upstream in the River of Souls' currents, leaving the realm of non-existence and stranded in the mortal world. Once, they followed the tides of the River of Souls to drown the living lands, branding all things in Amphoreus with a fated end. All the existences that will die or have died will feel a shudder in the depths of their souls with the dragon's return.",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 46500,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "401403601",
+			"name": "To Stay the Fallen",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Quantum DMG to one target. If \"Guide of Withering and Decay\" is in the <u>\"Fragrance of Death\"</u> state, additionally deals Quantum <u>\"Atrophy DMG\"</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.15
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403602",
+			"name": "To Bury the Slumbered",
+			"tag": "Distribute",
+			"type": "Ability",
+			"description": "Deals massive Quantum DMG to all targets, with the DMG <u>distributed evenly</u> among all target units. If \"Guide of Withering and Decay\" is in the <u>\"Fragrance of Death\"</u> state, additionally deals Quantum <u>\"Atrophy DMG\"</u> to each target.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				12,
+				0.15
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403603",
+			"name": "To Mourn the Departing",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Quantum \"<u>Atrophy DMG</u>\" to 3 random targets.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403604",
+			"name": "Bitterness Delivers Belated Evil News",
+			"tag": "Support",
+			"type": "Ability",
+			"description": "Causes all \"The Long Arms of Sorrow\" in the Weakness Broken state to dispel their Weakness Break, restore all Toughness, and immediately take action.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403605",
+			"name": "To Die in Aromatic Pain",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Enters the <u>\"Fragrance of Death\"</u> state and deals massive Quantum <u>\"Atrophy DMG\"</u> to all target characters.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1.2,
+				2,
+				5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403606",
+			"name": "Death Wishes For More Death",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Quantum <u>\"Atrophy DMG\"</u> to all targets. Deals fatal damage to targets in the <u>\"Death Rattle\"</u> state.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.8
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403607",
+			"name": "Inky Fog of a Near-Death Dream",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Decreases the initial DMG this unit receives, and grants Toughness Protection state. When targets lose HP, they accumulate \"Desperate Bubble.\" When \"Desperate Bubble\" reaches the maximum, this unit enters the <u>\"Fragrance of Death\"</u> state. Under that state, removes this unit's DMG Reduction and Toughness Protection states. When <u>\"Fragrance of Death\"</u> is dispelled, this unit takes DMG and enters Weakness Break state.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.8,
+				0.2,
+				1,
+				0,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403608",
+			"name": "Because I Could Not Stop For Death",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When \"Guide of Withering and Decay\" or \"The Long Arms of Sorrow\" attacks a target with an ability, applies a special Unremovable DoT state to the target. While under this state, the higher the target's HP percentage is, the more DMG they take.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.3,
+				0,
+				0.15,
+				0.9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403609",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403610",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403611",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403612",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403613",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403614",
+			"name": "Dying Struggle",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "All targets in the battle are inflicted with the <u>\"Overloadable\"</u> state. Targets in the <u>\"Death Rattle\"</u> state deal greatly reduced DMG and have greatly reduced Weakness Break Efficiency. If targets remain in the <u>\"Death Rattle\"</u> state for a certain number of turns, they will receive fatal damage.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.9,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403615",
+			"name": "Flesh-Corroding Retaliation",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When the \"Guide of Withering and Decay\" is in the \"Dream of Demise\" state, \"The Long Arms of Sorrow\" will gain the <u>\"Corrosive Retaliation\"</u> state.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				600
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403616",
+			"name": "Brilliance-Devouring Abyss",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "\"Guide of Withering and Decay\" has no Weakness. When \"The Long Arms of Sorrow\" is in the Weakness Broken state, its initial Weakness will be added to all other enemy targets until it recovers from the Weakness Broken state.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "401403603"
+}

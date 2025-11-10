@@ -1,0 +1,113 @@
+{
+	"name": "Furiae Troupe",
+	"description": "A Titankin sculpted by \"Strife.\" They are infused with Nikador's golden ichor. They are singers under the Lance of Fury. In their lyrics come praises for soldiers and the mad king, using divine spells to call upon Nikador's blessings.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012040.png",
+	"shortIcon": "Monster_4012040",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 446.40003720000004,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "401204001",
+			"name": "Praise Nikador",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Enters the \"War Song\" state. Increases max \"War Armor\" stacks for friendly units aside from this unit. When entering battle, immediately enters the \"War Song\" state.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401204002",
+			"name": "Into the Supple Fire",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to one designated target and adjacent targets.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401204003",
+			"name": "Polis Protector",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Possesses a number of \"War Armor\" stacks, which decreases DMG taken. Loses 1 stack of \"War Armor\" on this unit after being attacked. When at 0 stacks, \"War Armor\" will be destroyed, dealing massive Imaginary DMG to this unit and delaying their action. The target that destroyed \"War Armor\" will regenerate Energy. After \"War Armor\" is destroyed, this unit will also additionally take minor Imaginary DMG when attacked. \"War Armor\" will be restored to maximum stacks at the end of this unit's turn.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.3,
+				0.1,
+				0.1,
+				0.06,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Imaginary",
+	"id": "401204001"
+}

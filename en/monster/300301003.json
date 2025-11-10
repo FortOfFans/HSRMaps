@@ -1,0 +1,180 @@
+{
+	"name": "Dreamjolt Troupe's Beyond Overcooked",
+	"description": "Penacony's service machinery that got out of control due to the emotional interference in the Dreamscape.\nOriginally a culinary robot, it is still breathing fire for grilling ingredients after losing control, intending to burn the diners to crisps.",
+	"icon": "spriteoutput/monsterfigure/Monster_3003010.png",
+	"shortIcon": "Monster_3003010",
+	"stats": {
+		"baseAttack": 16.363637999999998,
+		"baseDefense": 210,
+		"baseHealth": 1674,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "300301001",
+			"name": "Ladle Swirl",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Fire DMG to a single target.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "300301002",
+			"name": "Tornado Toss",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals minor Fire DMG to a single target and adjacent targets.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.8,
+				2.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "300301003",
+			"name": "Ignite Stove",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charging state. In the next action, uses Flaming Stir-Fry if Stove Heating has not reached a certain number of stacks, then clears all Stove Heating stacks.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "300301004",
+			"name": "Flaming Stir-Fry",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals massive Fire DMG to all targets.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				6.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "300301005",
+			"name": "Kitchen Mishap",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "After entering the Charging state, deals massive Fire DMG to all friendly units and decreases this unit's DEF once Stove Heating has a certain number of stacks. Then, clears all Stove Heating stacks.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				6,
+				0.3,
+				0.05,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "300301006",
+			"name": "Flame-Forged Feast",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "While not under the Charging state, upon reaching a certain number of Stove Heating stacks, immediately takes action and uses Ignite Stove.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "300301007",
+			"name": "Inferno Stove",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When attacking, this unit has a chance to Slow the target. When this unit is attacked or takes DoT, gains 1 stack of Stove Heating.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.5,
+				0.2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114001,
+				"count": 1
+			},
+			{
+				"id": 182010,
+				"count": 1
+			},
+			{
+				"id": 183006,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "300301003"
+}

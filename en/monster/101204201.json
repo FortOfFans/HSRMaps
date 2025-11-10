@@ -1,0 +1,169 @@
+{
+	"name": "Auxiliary Robot Arm Unit",
+	"description": "A mechanical device controlled by Svarog.\nAfter being active on the battlefield for a certain number of turns, this robot arm will ruthlessly attack its targets.",
+	"icon": "spriteoutput/monsterfigure/Monster_1012040.png",
+	"shortIcon": "Monster_1012040",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 139.50002325,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "101204201",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101204202",
+			"name": "Oppressive Embrace",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Deals Restrained targets Physical DMG equal to a percentage of their Max HP.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101204203",
+			"name": "Awaiting Orders",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101204204",
+			"name": "Oppressive Embrace",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Restrains a single target, and deals Physical DMG 1 time. When this unit has their Weakness Broken or drops below a certain amount of HP, dispels the Restrain status from the target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101204205",
+			"name": "Disabling Field",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG equal to a percentage of their Max HP to Restrained targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101204206",
+			"name": "Controlled Blasting",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "The Auxiliary Robot Arm Unit explodes, dealing massive Physical DMG to a single target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				25
+			],
+			"spGain": 25,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "101204207",
+			"name": "Overload Warning",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Auxiliary Robot Arm Unit enters Overload mode and immediately removes Restrain status from friendly units. When entering this mode, Auxiliary Robot Arm Unit will cast Controlled Blasting in its next action.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112011,
+				"count": 1
+			},
+			{
+				"id": 181001,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "101204201"
+}

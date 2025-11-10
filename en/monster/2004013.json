@@ -1,0 +1,261 @@
+{
+	"name": "Stellaron Hunter: Kafka (Illusion)",
+	"description": "One of the Stellaron Hunters. A beautiful assassin wearing an enigmatic smile, she excels in manipulation and various weaponry. It was by her design that the Astral Express was led here, all of which was simply part of a certain plan... This entity is a phantom borne from your memories.",
+	"icon": "spriteoutput/monsterfigure/Monster_2004010.png",
+	"shortIcon": "Monster_2004010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 6510,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "200401301",
+			"name": "Midnight Tumult",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Lightning DMG to a single target, with a chance to Shock the target.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1,
+				3,
+				0.75
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "200401302",
+			"name": "Caressing Moonlight",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Lightning DMG to a single target and units adjacent to the target. If the primary target is Shocked, inflicts Shock on the secondary units as well.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "200401303",
+			"name": "Silent and Sharp Mockery",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Lightning DMG to all targets.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "200401304",
+			"name": "Spirit Whisper",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Has a high chance of Dominating a single target and Advancing their action forward to immediately use their Basic ATK on a random ally of theirs.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2.75,
+				1.5,
+				0.5,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "200401305",
+			"name": "",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "200401306",
+			"name": "Oppression",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Attaches Outsourcing to the Action Order. Every time Outsourcing takes action, summons <unbreak>1[i]</unbreak> IPC Workers. Up to <unbreak>2[i]</unbreak> IPC Workers can exist on the battlefield at one time.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "200401307",
+			"name": "Psychological Suggestion",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Applies Psychological Suggestion to multiple targets, and adds Revelation onto the Action Order. The next time Revelation takes action, any targets with Psychological Suggestion will become Dominated.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				2,
+				1.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "200401308",
+			"name": "Tremble",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "If the target is currently Shocked, immediately cause Shock DMG 1 time.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "200401309",
+			"name": "Cruelty",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When friendly units (apart from Kafka) or Dominated targets attack the Shocked primary target, unleash an extra Lightning attack.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "200401310",
+			"name": "Griever",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Every time a target becomes afflicted with Shock, Kafka's DMG increases.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.02,
+				0.4,
+				0.75,
+				1.66
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "200401311",
+			"name": "Oppression",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Attaches Outsourcing to the Action Order. Every time Outsourcing takes action, summons <unbreak>1[i]</unbreak> IPC Workers. Up to <unbreak>2[i]</unbreak> IPC Workers can exist on the battlefield at one time.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "200401312",
+			"name": "Deprivation",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "When Kafka acts, if any IPC Workers possess Performance Points, Kafka will seize the points and cast Caressing Moonlight. Seized Performance Points can greatly increase the DMG Kafka deals in this attack.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "200401313",
+			"name": "",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.6
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "2004013"
+}

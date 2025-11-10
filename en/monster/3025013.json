@@ -1,0 +1,364 @@
+{
+	"name": "Cacophonic Conductor",
+	"description": "Dominicus, the wisher of the Harmonious Choir, is one of the many embodiments of Xipe the Harmony. Due to the interferences from the Order, his appearance is different from before. Materialized as the Hive Mind's response to wishes, the hymns he conducts can reshape the world and create new laws per the wishes, and all who made this wish will become the source of his power.",
+	"icon": "spriteoutput/monsterfigure/Monster_3025010.png",
+	"shortIcon": "Monster_3025010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 16275,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"id": "302501301",
+			"name": "Grazioso",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Imaginary DMG to one designated target.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501302",
+			"name": "Maestoso",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to all targets.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501303",
+			"name": "Vaneggiando",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Makes one designated target have a high chance of entering \"<u>Alien Dream</u>.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501304",
+			"name": "Variation",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charging state. Uses \"Dancing in Dreams\" in the next turn.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501305",
+			"name": "Melisma",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charging state. Uses \"Singing in Rain\" in the next turn, while also restoring all \"Echoes of Faded Dreams\"' Toughness.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501306",
+			"name": "Dancing in Dreams",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to one designated target. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				240
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501307",
+			"name": "Dancing in Dreams",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to one designated target. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501308",
+			"name": "Singing in Rain",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to all targets, and makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to all targets. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				3,
+				0.5,
+				240
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501309",
+			"name": "Phonation Unbound",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Enters the \"One With the Light\" state, gains a Shield, and increases the DMG dealt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.09,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501310",
+			"name": "",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501311",
+			"name": "Im Anfang war das Wort",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charge state. After 7 turns, uses \"Im Anfang war die Tat.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501312",
+			"name": "Im Anfang war die Tat",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals massive Imaginary DMG to all targets. This DMG application ignores the targets' DEF.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501313",
+			"name": "Resonant Projection",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "While in the \"Im Anfang war die Kraft\" state, after every action taken by opposing targets, \"Cacophonic Conductor\" immediately takes action, and becomes immune to action delay effects caused by opposing targets. At the same time, the \"Im Anfang war die Tat\" tally will not be interrupted when this unit becomes Weakness Broken.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				10,
+				10,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501314",
+			"name": "Grand Dream's Awakening",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Cacophonic Conductor summons 4 Echoes of Faded Dreams. The DMG taken by the Echoes of Faded Dreams is completely redistributed to Cacophonic Conductor. At the same time, any currently Weakness Broken Echoes of Faded Dreams recover Toughness after turn taken by this unit. After each stack of this unit Toughness is depleted, applies \"<u>Walk in the Light</u>\" to the target team.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.25,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501315",
+			"name": "Grief and Joy Shared",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501316",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501317",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501318",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501319",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "302501320",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4
+		},
+		{
+			"element": "Ice",
+			"value": 0.4
+		},
+		{
+			"element": "Wind",
+			"value": 0.4
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "3025013"
+}

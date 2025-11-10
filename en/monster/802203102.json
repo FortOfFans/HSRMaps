@@ -1,0 +1,123 @@
+{
+	"name": "Gnaw Sting",
+	"description": "A subspecies of Stings that underwent mutations during reproduction, adept at using quantum toxins in their mandibles to corrode away the bodies of their prey.",
+	"icon": "spriteoutput/monsterfigure/Monster_8022030.png",
+	"shortIcon": "Monster_8022030",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1255.5,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "802203101",
+			"name": "Horn Clash",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Quantum DMG to one designated target, prioritizing Entangled targets, and applies one extra stack of Entanglement.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.6,
+				1,
+				0.5,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "802203102",
+			"name": "Decay Eulogy",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When receiving a killing blow, deals Quantum DMG to all friendly units and increases their DMG taken.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.08,
+				1,
+				0.1,
+				3,
+				10,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "802203103",
+			"name": "Sustenance",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Restores a minor amount of HP to all targets when this unit receives a killing blow.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "802203104",
+			"name": "Distract",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Every stack of \"Growth Hormones\" increases ATK by a certain amount, stacking up to 3 times. When 3 stacks are reached and if the target attacked by \"Horn Clash\" is not in the Entanglement state, there is a high chance of afflicting them with Entanglement.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181006,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "802203102"
+}

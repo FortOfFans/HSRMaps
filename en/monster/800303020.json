@@ -1,0 +1,189 @@
+{
+	"name": "Guardian Shadow",
+	"description": "A shadow manifested by the power of a Stellaron, carrying out the Fragmentum's unceasing will to expand.\nA living being of energy born from the projection of the desires of sentient lifeforms into the Fragmentum, akin to a pearl created from a single grain of sand. This energy wanders around aimlessly, acting only when executing the will of its master.",
+	"icon": "spriteoutput/monsterfigure/Monster_8003030.png",
+	"shortIcon": "Monster_8003030",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7672.5,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "800303001",
+			"name": "Lightning Recollection",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Lightning DMG to a single target.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800303002",
+			"name": "Lightning Condemnation",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals minor Lightning DMG to a single target and units adjacent to the target.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800303003",
+			"name": "Tranquil Ban",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Your team is imposed with a ban on attacking the Guardian Shadow. Should anyone do so, they immediately receive 1 attack.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800303004",
+			"name": "Disarm Ban",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Your team is imposed with a ban on using Basic ATK. Should anyone do so, they immediately receive 1 attack.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800303005",
+			"name": "Silent Ban",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Your team is imposed with a ban on using Skill. Should anyone do so, they immediately receive 1 attack.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800303006",
+			"name": "Thunderstorm Condemnation",
+			"tag": "Bounce",
+			"type": "Ability",
+			"description": "Deals successive minor Lightning DMG to a random target, with a chance to inflict Shock.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				8,
+				0.5,
+				0.5,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800303007",
+			"name": "Inevitable Punishment",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Lightning DMG to whoever violates the ban.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "800303008",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111001,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800303020"
+}

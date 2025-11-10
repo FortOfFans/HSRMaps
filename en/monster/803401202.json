@@ -1,0 +1,407 @@
+{
+	"name": "Daring Diceroller",
+	"description": "A senior manager in the IPC Strategic Investment Department and one of the Ten Stonehearts. Using his Cornerstone, he obtained a share of the authority of an Emanator of Preservation. He throws his own body into the game as a die, ready to face death in order to walk away alive.",
+	"icon": "spriteoutput/monsterfigure/Monster_8034010.png",
+	"shortIcon": "Monster_8034010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 8137.5,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "803401201",
+			"name": "Heavy Stakes",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to a single target.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401202",
+			"name": "Distributed Investment",
+			"tag": "Bounce",
+			"type": "Ability",
+			"description": "Deals successive minor Imaginary DMG to random targets.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.1,
+				5,
+				8
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401203",
+			"name": "Profit Cut",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Deals minor Imaginary DMG to all targets and reduce all targets' Energy. In Phase 2 of the battle, additionally reduces targets' Points.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401204",
+			"name": "Time For A Bet",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons \"All or Nothing\" and makes a single target enter the Gamble. Every time an \"All or Nothing\" is attacked by a target that is in the Gamble, the target will receive a random number between 1 and 6. After a target that is in the Gamble has finished their turn, targets with numbers lower than \"Aventurine of Stratagems\" are considered to have lost the Gamble and will be attacked, while those with a number higher than \"Aventurine of Stratagems\" are considered to have won the Gamble and will have their Ultimate activated. At the same time, targets that have not entered the Gamble are afflicted with the \"Look, Don't Speak\" status, which is dispelled when the Gamble ends.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401205",
+			"name": "Big Spenders' Mad Party",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons \"All or Nothing\" and makes all targets enter the gamble. Every time an \"All or Nothing\" is attacked, the target that launched the attack will receive a random number between 1 and 6. The next time \"Aventurine of Stratagems\" takes a turn, targets with numbers lower than \"Aventurine of Stratagems\" are considered to have lost the bet and will be attacked, while targets with numbers higher than \"Aventurine of Stratagems\" are considered to have won the bet and will have their Ultimates activated.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.2,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401206",
+			"name": "The Loser's Time Is Over",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to a target that lost the Gamble, with a high chance of inflicting Imprisonment on the attacked target.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.7,
+				1,
+				0.3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401207",
+			"name": "The Winner Takes It All",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to all targets that lost the Gamble, with a high chance of inflicting Imprisonment on the attacked targets.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.7,
+				1,
+				0.3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401208",
+			"name": "Stratagems' Wagering",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Every time a target wins the Gamble, they receive the \"Favored by Fortune\" effect that increases their DMG dealt. Every time a target loses the Gamble, they receive the \"Down on Your Luck\" effect that increases DMG taken.3",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401209",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401210",
+			"name": "Betting the Flop",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Activate two \"All or Nothing,\" locks on to a single target, and uses Daring Wager on the locked-on target in the next turn. Defeat all activated \"All or Nothing\" monsters to prevent the use of Daring Wager and to activate a single target's Ultimate.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.2,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401211",
+			"name": "Go All In",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Activates all \"All or Nothing\" and uses Doomed to Lose in the next action. Defeat all activated \"All or Nothing\" to prevent the use of Doomed to Lose and to activate all targets' Ultimate.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.2,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401212",
+			"name": "Daring Wager",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to a single locked-on target and has a high chance of inflicting Imprisonment.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401213",
+			"name": "Doomed to Lose",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to all targets and has a high chance of inflicting Imprisonment.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.25,
+				0.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401214",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.95,
+				0.01,
+				49,
+				99,
+				1.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401215",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401216",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401217",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.45
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401218",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.01
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401219",
+			"name": "Points",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "In the battle, all units gain a set number of Points that resets between Phases. When targets' Points are lower than friendly units', DMG received by friendly units is greatly reduced, and gains Toughness Protection. When targets' Points are equal to friendly units or more, DMG received by friendly units is increased.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401220",
+			"name": "Call",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "At the start of the Phase or when summons are defeated, summons up to <unbreak>1[i]</unbreak> \"All or Nothing.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401221",
+			"name": "Blind Bet",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "At the start of the Phase or when summons are defeated, summons up to <unbreak>1[i]</unbreak> \"All or Nothing\" or \"All or Nothing: Double Fortune.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				11
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803401222",
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Thunder",
+		"Wind"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "803401202"
+}

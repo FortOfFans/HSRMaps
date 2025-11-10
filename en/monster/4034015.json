@@ -1,0 +1,215 @@
+{
+	"name": "Dawn-Denied Khaslana",
+	"description": "A nameless swordsman, borne by the black tide to hunt Coreflames, wears a mask carved with the stoic visage of a deliverer... Yet his form crumbles like dying kindling.\n From the flames echoes hollowness: All is futility.",
+	"icon": "spriteoutput/monsterfigure/Monster_4034015.png",
+	"shortIcon": "Monster_4034015",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3022.5,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "403401501",
+			"name": "Demise's Storm",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Physical DMG to one designated target and adjacent targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				0.05,
+				8,
+				0.05
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403401502",
+			"name": "Fading Fate",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Physical DMG to all targets. Converts a portion of the hit target's reduced HP to \"<u>Corrosion</u>.\"",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403401503",
+			"name": "Roads Mingled",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Causes \"Long-Shattered Vessel\" to enter the \"Mutual Sacrifice\" state. Uses \"Underworld's Grief\" in a certain number of turns.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403401504",
+			"name": "Underworld's Grief",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Uses \"Demise's Storm\" or \"Fading Fate\" together with \"Long-Shattered Vessel.\" Then, absorbs \"Long-Shattered Vessel\" to heal this unit while obtaining <u>\"Calamity Power.\"</u>",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403401505",
+			"name": "Silent Sorrow",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Obtains <u>\"Calamity Power\"</u> and enters the \"Silent Sorrow\" state. Uses \"Cry Not for the Discarded\" in the next action.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.05,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403401506",
+			"name": "But Suffering is Essential",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Consumes all <u>\"Calamity Power\"</u> and deals several instances of minor Physical DMG to all targets. The more \"Calamity Power\" stacks are consumed, the more instances of DMG. Then, deals minor Physical DMG to all targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403401507",
+			"name": "Cry Not for the Discarded",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Physical DMG to all targets and consumes all <u>\"Calamity Power\"</u> to additionally deal several instances of minor Physical DMG. The more \"Calamity Power\" stacks are consumed, the more instances of DMG.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1.6,
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403401508",
+			"name": "Pain of Parting",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When using \"Demise's Storm\" or \"Fading Fate,\" consumes HP to summon \"Long-Shattered Vessel\" and convert the consumed HP into <u>\"Entangled By Agony.\"</u> If the \"Long-Shattered Vessel\" summoned by this attack is defeated, additionally deals Physical DMG to this unit. When this unit uses \"Demise's Storm\" or \"Fading Fate\" again, the \"Long-Shattered Vessel\" that was summoned by the attacking ability will attack together with this unit. This unit will then absorb the Vessel, restoring the HP that was converted to <u>\"Entangled By Agony\"</u> and granting <u>\"Calamity Power\"</u> to this unit.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				16
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403401509",
+			"name": "Lost Sacrifice",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When using \"Silent Sorrow,\" consumes HP to summon a \"Long-Shattered Vessel\" and converts the consumed HP into <u>\"Entangled By Agony.\"</u> When stacks of <u>\"Calamity Power\"</u> are not at 0 and if a \"Long-Shattered Vessel\" receives a killing blow, immediately consumes 1 stack of <u>\"Calamity Power\"</u> and a percentage of HP to resummon a \"Long-Shattered Vessel.\" When using \"Cry Not for the Discarded,\" absorbs any \"Long-Shattered Vessel\" and restores the HP that was converted to <u>\"Entangled By Agony.\"</u>",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.8,
+				0.3,
+				1,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "403401510",
+			"name": "Resolute Farewell",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Receives a certain number of stacks of \"DMG reduction,\" reducing DMG received by this unit. 1 stack is lost after defeating 1 \"Long-Shattered Vessel.\"",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "4034015"
+}

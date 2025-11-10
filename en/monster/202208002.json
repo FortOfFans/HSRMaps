@@ -1,0 +1,107 @@
+{
+	"name": "Twig of Marple Leaf",
+	"description": "A branch of Ambrosial Arbor created from the Ebon Deer's footprint",
+	"icon": "spriteoutput/monsterfigure/Monster_2022080.png",
+	"shortIcon": "Monster_2022080",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 186,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "202208001",
+			"name": "Engender",
+			"tag": "Support",
+			"type": "Ability",
+			"description": "Enhances the Abundant Ebon Deer and slightly increases its ATK.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "202208002",
+			"name": "Retaliation",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "Enters the Counter state: When attacked, immediately uses \"Leaf Hinging\" on the attacker.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "202208003",
+			"name": "Leaf Hinging",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Lightning DMG to a single target.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113001,
+				"count": 1
+			},
+			{
+				"id": 181004,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "202208002"
+}

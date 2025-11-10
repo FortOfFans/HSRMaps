@@ -1,0 +1,108 @@
+{
+	"name": "Silvermane Lieutenant",
+	"description": "The leader of a squad of Belobog's Silvermane Guards.\nSilvermane Lieutenants can raise a giant shield during combat and Enhance themselves. Attacking a Silvermane Lieutenant with their shield raised will immediately result in a fierce Counter.",
+	"icon": "spriteoutput/monsterfigure/Monster_1003010.png",
+	"shortIcon": "Monster_1003010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 37.2,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"id": "100301001",
+			"name": "Assault",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to a single target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100301002",
+			"name": "Pierce",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals massive Physical DMG to a single target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6.5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100301003",
+			"name": "Shield Reflect",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "Enters the Counter state. When attacked by a single character, acts immediately and casts \"Pierce\" on the attacker.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "100301004",
+			"name": "Reinforcement",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons Silvermane Soldiers or Silvermane Gunners",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice",
+		"Thunder",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 150,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112001,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "100301036"
+}

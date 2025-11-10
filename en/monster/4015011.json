@@ -1,0 +1,488 @@
+{
+	"name": "Sublime, Radiant, Avatar of the Sky",
+	"description": "The Sky Titan. Theos Synthetos. Conquered by and fused with humanity, they no longer govern Amphoreus' cycle of day and night, yet their aloof pride remains unchanged.\nIn their mind, the shattered world's mundane mortals are unsightly — compared to a world safeguarded by light, the mindless human masses seem more befitting of the black tide.",
+	"icon": "spriteoutput/monsterfigure/Monster_4015010.png",
+	"shortIcon": "Monster_4015010",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 11625,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"id": "401501101",
+			"name": "Three Thousand Leagues Ablaze",
+			"tag": "Barrage",
+			"type": "Ability",
+			"description": "Raises \"<u>Temperature</u>.\" Launches several attacks from the left side of the target team, and delivers a 1-time priority attack to each target, with the remaining attack counts attacking one random target each. Each attack deals Fire DMG based on the current \"<u>Temperature</u>,\" as well as <u>reinstates</u> \"Shoot of Hundred Eyes.\"",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.03,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501102",
+			"name": "Flame Beyond the Horizon",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Raises \"<u>Temperature</u>.\" Deals Fire DMG to all targets based on the current \"<u>Temperature</u>,\" and <u>reinstates</u> \"Twig of Hundred Eyes.\"",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.03,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501103",
+			"name": "Exhalation of the Month of Everday",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Raises \"<u>Temperature</u>.\" Deals Fire DMG to all targets based on the current \"<u>Temperature</u>.\" Delays all targets' actions based on the current \"<u>Temperature</u>,\" and <u>reinstates</u> \"Shoot of Hundred Eyes\" and \"Twig of Hundred Eyes.\"",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.03,
+				0.05,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501104",
+			"name": "Splendor, Like Clouds Cresting the Sky",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters a Charging state and uses \"Fury, Incineration of Dawn and Dusk\" with the next action. Applies \"<u>Helium Flash</u>\" to this unit and summons \"Daythunder Raven.\" When in this state, after a target uses an attack, reduces \"<u>Helium Flash</u>\" based on the number of friendly units hit in this attack.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				1,
+				10,
+				12,
+				1.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501105",
+			"name": "Fury, Incineration of Dawn and Dusk",
+			"tag": "Distribute",
+			"type": "Ability",
+			"description": "Deals massive Fire DMG to all targets based on this unit's current \"<u>Helium Flash</u>.\" The DMG is <u>distributed evenly</u> among targets while also raising the \"<u>Temperature</u>\" based on the current \"<u>Helium Flash</u>\" and <u>reinstating</u> \"Shoot of Hundred Eyes\" and \"Twig of Hundred Eyes.\"",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501106",
+			"name": "Thunder From the Distance",
+			"tag": "Barrage",
+			"type": "Ability",
+			"description": "Increases the \"<u>Thundercloud</u>\" stacks. Launches several attacks from the left side of the target team, and delivers a 1-time priority attack to each target, with the remaining attack counts attacking one random target each. Each attack deals Lightning DMG as well as <u>reinstates</u> \"Shoot of Hundred Eyes.\"",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501107",
+			"name": "Surge Across the Leagues",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Increases the \"<u>Thundercloud</u>\" stacks. Deals Lightning DMG to all targets and <u>reinstates</u> \"Twig of Hundred Eyes.\"",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501108",
+			"name": "Illumination of the Month of Fortune",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Increases the \"<u>Thundercloud</u>\" stacks. Deals Lightning DMG to all targets and <u>reinstates</u> \"Shoot of Hundred Eyes\" and \"Twig of Hundred Eyes.\"",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501109",
+			"name": "Thunderclap, Quake of Mount and Seas",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Increases \"<u>Thundercloud</u>\" stacks and enters Charging state. Uses \"Wrath, Rend of Eternal Sky\" in the next action. This unit gains \"<u>Ionization</u>\" and summons \"Daythunder Raven.\" In this state, after targets attack, they seize \"<u>Thundercloud</u>\" stacks based on the number of friendly units hit in this attack. When \"Daythunder Raven,\" \"Shoot of Hundred Eyes,\" or \"Twig of Hundred Eyes\" receives a killing blow, seizes a set number of \"<u>Thundercloud</u>\" stacks. If all \"<u>Thundercloud</u>\" stacks have been seized by the targets, this unit will enter the Weakness Break state. If this unit is Weakness Broken, all \"<u>Thunderclouds</u>\" are lost, and deals minor Lightning DMG from all the \"<u>Thundercloud</u>\" stacks.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				20
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501110",
+			"name": "Wrath, Rend of Eternal Sky",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Lightning DMG to all targets and consumes a certain amount \"<u>Thundercloud(s)</u>.\" Deals a corresponding amount of minor Lightning DMG to random target and <u>reinstates</u> \"Shoot of Hundred Eyes\" and \"Twig of Hundred Eyes.\" Afterward, deals a corresponding amount of minor Lightning Additional DMG to this unit based on the contested Thunderclouds between the targets and this unit.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				20
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501111",
+			"name": "Hundred Eyes",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "During this battle, upon inflicting DMG to \"Daythunder Raven,\" \"Shoot of Hundred Eyes,\" and \"Twig of Hundred Eyes,\" \"Sublime, Radiant, Avatar of the Sky\" will also lose an equivalent amount of HP. When \"Daythunder Raven,\" \"Shoot of Hundred Eyes,\" or \"Twig of Hundred Eyes\" receives a killing blow, \"Sublime, Radiant, Avatar of the Sky\" will also receive Toughness DMG, and \"Shoot of Hundred Eyes\" or \"Twig of Hundred Eyes\" will start healing and cannot be selected.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.4,
+				1.2,
+				0.2,
+				5,
+				0.8,
+				120
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501112",
+			"name": "Stormfall",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "When it storms, the environment will have \"<u>Thunderclouds</u>.\" When the \"Daythunder Raven,\" \"Shoot of Hundred Eyes,\" or \"Twig of Hundred Eyes\" receive a killing blow while \"Sublime, Radiant, Avatar of the Sky\" is not in \"<u>Ionization</u>\" state, reduces a certain amount of \"<u>Thundercloud</u>\" stacks and deal minor Lightning DMG to \"Sublime, Radiant, Avatar of the Sky.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.75,
+				0.005,
+				1,
+				3,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501113",
+			"name": "",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.75,
+				1.25,
+				0.25,
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501114",
+			"name": "The Sun Unyielding",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "When it is sunny, the environment will have \"<u>Temperature</u>.\" At the start of any target's turn, the \"<u>Temperature</u>\" rises. DMG dealt by targets will increase based on \"<u>Temperature</u>.\" All targets enter the \"Solar Storm\" state. At the start of a target's turn, deals Fire DMG based on the \"<u>Temperature</u>.\" This DMG is \"<u>Non-fatal</u>.\" When the \"Daythunder Raven,\" \"Shoot of Hundred Eyes,\" and \"Twig of Hundred Eyes\" receive a killing blow, \"<u>Temperature</u>\" will be lowered.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1,
+				0.01
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501115",
+			"name": "",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0,
+				40,
+				0.3,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501116",
+			"name": "Ashes to the Distant Shore",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "<u>Reinstates</u> the \"Languid Ethmoid Bone\" and deals a set amount of massive Imaginary DMG to one designated target, while inflicting \"<u>Rot</u>\" to them. \"<u>Rot</u>\" is stackable.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1,
+				500,
+				600,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501117",
+			"name": "Extinguishment of the Savaged Star",
+			"tag": "Distribute",
+			"type": "Ability",
+			"description": "<u>Reinstates</u> the \"Dried Lacrimal Bone\" and deals a set amount of massive Imaginary DMG to all targets. The DMG is <u>distributed evenly</u> among the targets.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501118",
+			"name": "Eye of Terror",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters \"The Dark Tides Cometh\" state. Uses \"Unmaking Ashes: Godsfall\" in the next action, and <u>reinstates</u> the \"Languid Ethmoid Bone\" and \"Dried Lacrimal Bone\".",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501119",
+			"name": "Unmaking Ashes: Godsfall",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals a set amount of massive Imaginary DMG to all targets, and <u>reinstates</u> the \"Languid Ethmoid Bone\" and \"Dried Lacrimal Bone\".",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501120",
+			"name": "Remnants",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "When inflicting DMG to \"Languid Ethmoid Bone\" or \"Dried Lacrimal Bone\" during this battle, an equal amount of HP will also be lost by \"Decimator, Karma of Daythunder, Eye of Twilight.\" When \"Languid Ethmoid Bone\" or \"Dried Lacrimal Bone\" receive a killing blow, \"Decimator, Karma of Daythunder, Eye of Twilight\" will receive Toughness DMG, and \"Languid Ethmoid Bone\" or \"Dried Lacrimal Bone\" will restore HP and cannot be selected.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1.2,
+				120,
+				1.4,
+				1.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501121",
+			"name": "Black Tide",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "Adds \"Black Tide\" to Action Order. Every time the \"Black Tide\" takes action, inflicts all targets with \"<u>Rot</u>.\" \"<u>Rot</u>\" is stackable. When targets suffer killing blows, inflicts \"<u>Tide-Corrosion</u>\" on them and Charges \"Healing Rainbow.\" When all targets enter the \"<u>Tide-Corrosion</u>\" state or are downed, the battle ends in defeat.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				300,
+				1,
+				30,
+				0.8,
+				130,
+				150
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501122",
+			"name": "Tides Below",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "During this battle, all DMG dealt by \"Decimator, Karma of Daythunder, Eye of Twilight\" will deal a set amount of DMG based on \"Black Tide Sync Rate.\" After a target uses an attack, additionally deals \"<u>Non-fatal</u>\" <u>True DMG</u> based on \"Black Tide Sync Rate.\" When \"Decimator, Karma of Daythunder, Eye of Twilight\" and \"Black Tide\" take action, increases \"Black Tide Sync Rate.\" When \"Languid Ethmoid Bone\" or \"Dried Lacrimal Bone\" is defeated, reduces \"Black Tide Sync Rate.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8,
+				16,
+				0.6,
+				1,
+				0.00070000044,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501123",
+			"name": "",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				1,
+				2,
+				0,
+				0,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401501124",
+			"name": "",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				20,
+				0,
+				0,
+				40
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "4015011"
+}

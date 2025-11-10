@@ -1,0 +1,81 @@
+{
+	"name": "\"All or Nothing: Double Fortune\"",
+	"description": "A game die metamorphosed from \"Daring Diceroller,\" which shall decide the gamblers' destiny in the Gamble.",
+	"icon": "spriteoutput/monsterfigure/Monster_8032034.png",
+	"shortIcon": "Monster_8032034",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 232.5,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "803203401",
+			"name": "Temporary Good Fortune",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "When taking action, this unit leaves the battle.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "803203402",
+			"name": "Double Bet",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "After being defeated, targets' Points will double. At the same time, reduces Daring Diceroller's Toughness, and causes them to lose a certain amount of HP.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				60,
+				0.03
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Thunder",
+		"Wind"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181010,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "803203403"
+}

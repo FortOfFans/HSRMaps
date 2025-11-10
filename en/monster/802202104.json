@@ -1,0 +1,157 @@
+{
+	"name": "Lesser Sting",
+	"description": "The youngling of a True Sting. Based on their growth stage, young True Stings can be further divided into Juvenile Stings and Lesser Stings.",
+	"icon": "spriteoutput/monsterfigure/Monster_8022020.png",
+	"shortIcon": "Monster_8022020",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1116,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "802202101",
+			"name": "Prepare to Fight",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charging state. Uses \"Bursting Detonation\" for the next action.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "802202102",
+			"name": "Bursting Detonation",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Detonates self and deals Wind DMG to a target and its adjacent targets, with a high chance to apply \"Outrage\" to the target.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.2,
+				2.2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "802202103",
+			"name": "",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				0.5,
+				3,
+				5,
+				0.08
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "802202104",
+			"name": "Entomon Eulogy",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When receiving a killing blow, deals Wind DMG to all friendly units, with a high chance to slightly increase their DMG received.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.08,
+				1,
+				0.1,
+				3,
+				10,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "802202105",
+			"name": "Nourishment",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Recover targets' Skill Points when receiving a killing blow.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "802202106",
+			"name": "Hyper Growth",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Every stack of \"Growth Hormones\" increases ATK by a certain amount, stacking up to 3 times. Immediately take action when 3 stacks are reached.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181006,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Wind",
+	"id": "802202104"
+}

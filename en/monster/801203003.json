@@ -1,0 +1,89 @@
+{
+	"name": "Voidranger: Eliminator",
+	"description": "Bodies that continued to be corroded by the Fragmentum after death. While their vital signs have changed, they continue to carry out their orders to eliminate.\nVoidranger: Eliminators will mark enemies they hit, causing them to take extra damage when attacked.",
+	"icon": "spriteoutput/monsterfigure/Monster_8012030.png",
+	"shortIcon": "Monster_8012030",
+	"stats": {
+		"baseAttack": 7.2,
+		"baseDefense": 210,
+		"baseHealth": 195.3,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "801203001",
+			"name": "Void Cannon",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to a single target, with a chance to afflict Detonated. This unit becomes Overloaded.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.75,
+				0.4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "801203002",
+			"name": "Thermal Barrier",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "Dispels this unit's Overloaded state.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 0.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		},
+		{
+			"element": "Wind",
+			"value": 0.2
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Quantum"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111011,
+				"count": 1
+			},
+			{
+				"id": 181003,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "801203003"
+}

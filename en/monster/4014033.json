@@ -1,0 +1,200 @@
+{
+	"name": "Castorice, Hand of Shadow",
+	"description": "The broken body of \"Death\" that remains in the limbo of life and death, they woke once again to fight against fate.\nThe demigod could not bear to witness a friend walk toward an end more cruel than Death, and thus reached out their long arm to stop the friend. Even though withered bones and rotting flesh are all they have left, their power and determination are not to be underestimated.",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 5580,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"id": "401403301",
+			"name": "To Stay the Fallen",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Quantum DMG to one target. This DMG converts to Quantum \"<u>Atrophy DMG</u>\" against targets with HP above a certain percentage.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.15,
+				0.5,
+				1,
+				0.2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403302",
+			"name": "To Bury the Slumbered",
+			"tag": "Distribute",
+			"type": "Ability",
+			"description": "Deals massive Quantum DMG to all targets. The DMG is <u>distributed evenly</u> among all target units. Against targets with HP above a certain percentage, this DMG converts to Quantum \"<u>Atrophy DMG</u>.\"",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.1,
+				0.5,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403303",
+			"name": "To Mourn the Departing",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Quantum \"<u>Atrophy DMG</u>\" to 3 random targets.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403304",
+			"name": "Bitterness Delivers Belated Evil News",
+			"tag": "Support",
+			"type": "Ability",
+			"description": "Causes \"The Long Arms of Sorrow\" to be enhanced and advances its action, lasting for 3 turns.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403305",
+			"name": "To Die in Aromatic Pain",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Enters the <u>\"Fragrance of Death\"</u> state and deals massive Quantum \"<u>Atrophy DMG</u>\" to all target characters. This DMG is \"<u>Non-fatal</u>\" and inflicts all target characters with <u>\"Indulging Slumber.\"</u>",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1,
+				0,
+				11,
+				0.5,
+				0.9
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403306",
+			"name": "Death Wishes For More Death",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Quantum \"<u>Atrophy DMG</u>\" to all targets. Deals additional Quantum \"<u>Atrophy DMG</u>\" to targets in the <u>\"Indulging Slumber\"</u> state, delaying their action with a high chance of inflicting Entanglement.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.15,
+				0.5,
+				1,
+				2,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403307",
+			"name": "Inky Fog of a Near-Death Dream",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Decreases the initial DMG this unit and \"The Long Arms of Sorrow\" receive. When targets lose HP, they accumulate \"Desperate Bubble.\" When \"Desperate Bubble\" reaches the limit, advances this unit's action and enters the <u>\"Fragrance of Death\"</u> state in its next turn. Under that state, removes this unit's and \"The Long Arms of Sorrow\"'s DMG Reduction state. When <u>\"Fragrance of Death\"</u> is dispelled, this unit will take DMG and restore targets' HP.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.6,
+				2.6,
+				1,
+				1,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "401403308",
+			"name": "Because I Could Not Stop For Death",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When \"Castorice, Hand of Shadow\" or \"The Long Arms of Sorrow\" hits a target with an ability, applies a special Unremovable DoT DMG state to the target. While under this state, the higher the target's HP percentage is, the more DMG they take. This DMG is \"<u>Non-fatal</u>.\"",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.5,
+				1,
+				0.12,
+				0.9,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2
+		},
+		{
+			"element": "Fire",
+			"value": 0.2
+		},
+		{
+			"element": "Ice",
+			"value": 0.2
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2
+		}
+	],
+	"weakness": [
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "4014033"
+}

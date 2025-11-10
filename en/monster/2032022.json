@@ -1,0 +1,85 @@
+{
+	"name": "Eclipse Wolftrooper",
+	"description": "A borisin soldier from the Eclipse Pack. Infamous for their gluttonous urge to devour the flesh of their enemies.",
+	"icon": "spriteoutput/monsterfigure/Monster_2032020.png",
+	"shortIcon": "Monster_2032020",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 372,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"id": "203202201",
+			"name": "Gnaw",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to one designated target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		},
+		{
+			"id": "203202202",
+			"name": "Lupine Maw",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "After a friendly unit launches an attack, applies 1 stack of \"<u>Bloodlust</u>\" to <u>friendly units that can enter the \"Lunar Devourer\" state</u>. When \"<u>Bloodlust</u>\" reaches a certain stack, the unit enters the \"<u>Lunar Devourer</u>\" state.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				0.4,
+				5,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
+			"shortIcon": "skillicon_1001_maze"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4
+		},
+		{
+			"element": "Ice",
+			"value": 0.4
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"drops": {
+		"avatarExpReward": 36,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181013,
+				"count": 1
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "2032022"
+}
