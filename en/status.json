@@ -306,7 +306,7 @@
 	"5531511": {
 		"id": "5531511",
 		"name": "Merit",
-		"desc": "Each stack increases DMG dealt by Follow-up ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect stacks up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s). When <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stack(s) are reached, additionally increases CRIT DMG by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+		"desc": "Each stack increases DMG dealt by Follow-Up ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect stacks up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s). When <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stack(s) are reached, additionally increases CRIT DMG by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
 		"effect": "Merit",
 		"modifier": "MRelic_315_Sub",
 		"type": "Buff",
@@ -425,7 +425,7 @@
 	"10060011": {
 		"id": "10060011",
 		"name": "Support",
-		"desc": "When a Supported allied unit attacks any target, the Silvermane Cannoneer will immediately launch a Follow-up ATK on the target.",
+		"desc": "When a Supported allied unit attacks any target, the Silvermane Cannoneer will immediately launch a Follow-Up ATK on the target.",
 		"effect": "Provide Support",
 		"modifier": "Avatar_Soldier04_00_IsSupporting",
 		"type": "Other",
@@ -3230,7 +3230,7 @@
 	"40230101": {
 		"id": "40230101",
 		"name": "Somnus Corpus",
-		"desc": "Increases DMG dealt by the next Follow-up ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"desc": "Increases DMG dealt by the next Follow-Up ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "MEquip_23010_Sub",
 		"type": "Buff",
@@ -3340,7 +3340,7 @@
 	"40230201": {
 		"id": "40230201",
 		"name": "Disputation",
-		"desc": "Increases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Follow-up ATKs ignore <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of target DEF.",
+		"desc": "Increases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Follow-Up ATKs ignore <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of target DEF.",
 		"effect": "Disputation",
 		"modifier": "MEquip_23020_Sub",
 		"type": "Buff",
@@ -3528,7 +3528,7 @@
 	"40230281": {
 		"id": "40230281",
 		"name": "Promise",
-		"desc": "The DMG dealt by Ultimate or Follow-up ATK ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF.",
+		"desc": "The DMG dealt by Ultimate or Follow-Up ATK ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF.",
 		"effect": "Promise",
 		"modifier": "MEquip_23028_Sub",
 		"type": "Buff",
@@ -3569,8 +3569,8 @@
 	"40230301": {
 		"id": "40230301",
 		"name": "Firedance",
-		"desc": "DMG dealt by Follow-up ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
-		"effect": "Follow-up ATK DMG Boost",
+		"desc": "DMG dealt by Follow-Up ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Follow-Up ATK DMG Boost",
 		"modifier": "MEquip_23030_Sub",
 		"type": "Buff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
@@ -3946,6 +3946,19 @@
 		"tagList": [],
 		"readParams": [
 			"MDF_Show"
+		]
+	},
+	"40230501": {
+		"id": "40230501",
+		"name": "Immolation",
+		"desc": "Increases Break DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Break DMG Boost",
+		"modifier": "MEquip_23050_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBreakDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
 		]
 	},
 	"40230511": {
@@ -5159,8 +5172,8 @@
 	},
 	"63046104": {
 		"id": "63046104",
-		"name": "Follow-up ATK DMG Boost",
-		"desc": "Increases Follow-up ATK DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"name": "Follow-Up ATK DMG Boost",
+		"desc": "Increases Follow-Up ATK DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "MStrongChallenge_Talent_StageAbility_0304_PLY",
 		"type": "Buff",
@@ -5408,6 +5421,59 @@
 		"readParams": [
 			"MDF_DefaultStanceBreakRatio",
 			"MDF_CriticalDamage"
+		]
+	},
+	"63046123": {
+		"id": "63046123",
+		"name": "Shatterstrike",
+		"desc": "Increases Break DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MStrongChallengeEX_Talent_StageAbility_PLY_077",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBreakDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue5"
+		]
+	},
+	"63046124": {
+		"id": "63046124",
+		"name": "Unto Apotheosis",
+		"desc": "Each stack increases CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect can stack up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "",
+		"modifier": "MStrongChallengeEX_Talent_StageAbility_PLY_079_Extra",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue",
+			"MDF_PropertyValue2"
+		]
+	},
+	"63046125": {
+		"id": "63046125",
+		"name": "Past Life: Shadowed Reverie",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MStrongChallengeEX_Talent_StageAbility_PLY_080",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63046126": {
+		"id": "63046126",
+		"name": "Whirlwind Turn",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MStrongChallengeEX_Talent_StageAbility_PLY_081_Extra",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue2"
 		]
 	},
 	"63047001": {
@@ -6096,7 +6162,7 @@
 	"63050085": {
 		"id": "63050085",
 		"name": "Team Bonus",
-		"desc": "DMG dealt by Follow-up ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"desc": "DMG dealt by Follow-Up ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "StageAbility_VS_Common_PLY_Enhance_Modifier_005",
 		"type": "Buff",
@@ -6225,9 +6291,9 @@
 	},
 	"63053004": {
 		"id": "63053004",
-		"name": "Follow-up ATK DMG Boost",
-		"desc": "Increases Follow-up ATK DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
-		"effect": "Follow-up ATK DMG Boost",
+		"name": "Follow-Up ATK DMG Boost",
+		"desc": "Increases Follow-Up ATK DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Follow-Up ATK DMG Boost",
 		"modifier": "Junk_BattleEvent_02_InsertDamageUp_PerLV",
 		"type": "Buff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpInsert.png",
@@ -6475,7 +6541,7 @@
 	"63054031": {
 		"id": "63054031",
 		"name": "Follow-Up Tally",
-		"desc": "Tallied number of Follow-up ATKs launched. Accumulate <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attacks to launch Raging Wildfire.",
+		"desc": "Tallied number of Follow-Up ATKs launched. Accumulate <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attacks to launch \"Raging Wildfire.\"",
 		"effect": "",
 		"modifier": "StageAbility_3121003_Modifier_Character_Count",
 		"type": "Other",
@@ -6554,7 +6620,7 @@
 	"63055105": {
 		"id": "63055105",
 		"name": "Afterburn",
-		"desc": "After being attacked, each stack causes this unit to further take True DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG. This effect can stack up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> times.",
+		"desc": "Each stack reduces the DMG dealt by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>. After being attacked, each stack causes this unit to further take True DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG. This effect can stack up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> times.",
 		"effect": "Afterburn",
 		"modifier": "MGridFight_Origin_2007_Debuff",
 		"type": "Debuff",
@@ -6562,7 +6628,8 @@
 		"tagList": [],
 		"readParams": [
 			"TrueDamageRatio",
-			"EffectMaxLayer"
+			"EffectMaxLayer",
+			"FatigueRatio"
 		]
 	},
 	"63055106": {
@@ -7966,7 +8033,7 @@
 		"effect": "Becomes the Bondmate",
 		"modifier": "MBattleEvent_GridFight_DanHengPT_00_LongLing",
 		"type": "Other",
-		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDotDamageAddedRatio.png",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1414Skill02.png",
 		"tagList": [],
 		"readParams": []
 	},
@@ -8291,32 +8358,6 @@
 		"tagList": [],
 		"readParams": [
 			"MDF_PropertyValue"
-		]
-	},
-	"63055353": {
-		"id": "63055353",
-		"name": "DMG Amplification Boost",
-		"desc": "DMG Amplification increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
-		"effect": "",
-		"modifier": "MGridFight_Origin_2011_Bonus_DamageAddForAll",
-		"type": "Buff",
-		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_IncreasedDamage.png",
-		"tagList": [],
-		"readParams": [
-			"TotalAddedRatio1"
-		]
-	},
-	"63055354": {
-		"id": "63055354",
-		"name": "Vulnerability",
-		"desc": "DMG received increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
-		"effect": "",
-		"modifier": "MGridFight_Origin_2003_LE_Enemy",
-		"type": "Debuff",
-		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
-		"tagList": [],
-		"readParams": [
-			"MDF_BossDamageTakenRatio"
 		]
 	},
 	"63055400": {
@@ -9006,6 +9047,19 @@
 		"tagList": [],
 		"readParams": [
 			"#ADF_2"
+		]
+	},
+	"63055536": {
+		"id": "63055536",
+		"name": "DMG Mitigation",
+		"desc": "DMG Mitigation increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_1003_Front_DamageReduce",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_ReduceInjuries.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
 		]
 	},
 	"63056001": {
@@ -10469,7 +10523,7 @@
 	"64000001": {
 		"id": "64000001",
 		"name": "Mysterious Message",
-		"desc": "Follow-up ATK DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"desc": "Follow-Up ATK DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "StageAbility_2050001_Modifier_Sub",
 		"type": "Buff",
@@ -11217,7 +11271,7 @@
 	"64996501": {
 		"id": "64996501",
 		"name": "Opportunism",
-		"desc": "Each stack increases Follow-up ATK DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"desc": "Each stack increases Follow-Up ATK DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "Opportunism",
 		"modifier": "Modifier_RogueMagic_NewMagic_Eject_686030_Sub",
 		"type": "Debuff",
@@ -11230,7 +11284,7 @@
 	"64996502": {
 		"id": "64996502",
 		"name": "Disorient",
-		"desc": "When receiving Follow-up ATK, for every debuff this unit is inflicted with, increases this attack's CRIT Rate by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> and CRIT DMG by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. A max of <color=#f29e38ff><unbreak>#3[i]</unbreak></color> debuff(s) are taken into account.",
+		"desc": "When receiving Follow-Up ATK, for every debuff this unit is inflicted with, increases this attack's CRIT Rate by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> and CRIT DMG by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. A max of <color=#f29e38ff><unbreak>#3[i]</unbreak></color> debuff(s) are taken into account.",
 		"effect": "Disorient",
 		"modifier": "Modifier_RogueMagic_NewMagic_Eject_686040_Sub",
 		"type": "Debuff",
@@ -11245,7 +11299,7 @@
 	"64996503": {
 		"id": "64996503",
 		"name": "Disgrace",
-		"desc": "After taking <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attack(s), additionally take 1 instance of Follow-up ATK DMG of a random Type equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> base DMG.",
+		"desc": "After taking <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attack(s), additionally take 1 instance of Follow-Up ATK DMG of a random Type equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> base DMG.",
 		"effect": "Disgrace",
 		"modifier": "Modifier_RogueMagic_NewMagic_Concentrate_686210",
 		"type": "Debuff",
@@ -11343,7 +11397,7 @@
 	"64996510": {
 		"id": "64996510",
 		"name": "Boundary: Projection",
-		"desc": "When any Scepter or ally target launches Follow-up ATK, increases their CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"desc": "When any Scepter or ally target launches Follow-Up ATK, increases their CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
 		"effect": "Boundary: Projection",
 		"modifier": "Modifier_RogueMagic_Module_688090_Controller",
 		"type": "Other",
@@ -11359,7 +11413,7 @@
 	"64996511": {
 		"id": "64996511",
 		"name": "Boundary: Condense",
-		"desc": "After any Scepter or ally target launches Follow-up ATK, additionally deals <color=#f29e38ff><unbreak>#1[i]</unbreak></color> instance(s) of Follow-up ATK DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> base DMG or <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the attacker's ATK.",
+		"desc": "After any Scepter or ally target launches Follow-Up ATK, additionally deals <color=#f29e38ff><unbreak>#1[i]</unbreak></color> instance(s) of Follow-Up ATK DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> base DMG or <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the attacker's ATK.",
 		"effect": "Boundary: Condense",
 		"modifier": "Modifier_RogueMagic_Module_688100_Controller",
 		"type": "Other",
@@ -11459,7 +11513,7 @@
 	"64996518": {
 		"id": "64996518",
 		"name": "Boundary: Annihilation",
-		"desc": "After any Scepter or ally target attacks, applies <color=#f29e38ff><unbreak>#1[i]</unbreak></color> stack(s) of \"Progress\" to all ally targets. If \"Progress\" reaches <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stack(s), then the ally character with the highest CRIT DMG receives <color=#f29e38ff><unbreak>#3[i]</unbreak></color> extra turn(s) and remove \"Progress\" from all ally targets. Increases DMG dealt by the character in these extra turn(s) by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, and after this character attacks, deals to the target(s) 5 instances of Follow-up ATK DMG of a random Type equal to <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of this character's ATK.",
+		"desc": "After any Scepter or ally target attacks, applies <color=#f29e38ff><unbreak>#1[i]</unbreak></color> stack(s) of \"Progress\" to all ally targets. If \"Progress\" reaches <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stack(s), then the ally character with the highest CRIT DMG receives <color=#f29e38ff><unbreak>#3[i]</unbreak></color> extra turn(s) and remove \"Progress\" from all ally targets. Increases DMG dealt by the character in these extra turn(s) by <color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, and after this character attacks, deals to the target(s) 5 instances of Follow-Up ATK DMG of a random Type equal to <color=#f29e38ff><unbreak>#5[i]%</unbreak></color> of this character's ATK.",
 		"effect": "Boundary: Annihilation",
 		"modifier": "Modifier_RogueMagic_Module_688180_Controller_LV2",
 		"type": "Other",
@@ -11489,7 +11543,7 @@
 	"64996520": {
 		"id": "64996520",
 		"name": "Slander",
-		"desc": "When receiving DMG, increases the DMG's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When receiving CRIT DMG from Follow-up ATK, additionally take DMG of a random Type equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> original DMG.",
+		"desc": "When receiving DMG, increases the DMG's CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When receiving CRIT DMG from Follow-Up ATK, additionally take DMG of a random Type equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> original DMG.",
 		"effect": "Slander",
 		"modifier": "Modifier_RogueMagic_NewMagic_AOE_686460",
 		"type": "Debuff",
@@ -12137,7 +12191,7 @@
 	"64997014": {
 		"id": "64997014",
 		"name": "Accumulated Damage",
-		"desc": "<color=#f29e38ff><unbreak>#1[i]</unbreak></color> HP has already lost. After launching a Follow-up ATK, deal Aftertaste DMG based on the value of HP lost and reset the lost HP count.",
+		"desc": "<color=#f29e38ff><unbreak>#1[i]</unbreak></color> HP has already lost. After launching a Follow-Up ATK, deal \"Aftertaste\" DMG based on the value of HP lost and reset the lost HP count.",
 		"effect": "",
 		"modifier": "Modifier_StageAbility_671650_Character",
 		"type": "Other",
@@ -12539,7 +12593,7 @@
 	"64997046": {
 		"id": "64997046",
 		"name": "<i>Vineyard: Against the Night</i>",
-		"desc": "When characters next launch Follow-up ATKs, deal additionally Aftertaste DMG <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s).",
+		"desc": "When characters next launch Follow-Up ATKs, additionally deals \"Aftertaste\" DMG <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s).",
 		"effect": "",
 		"modifier": "StageAbility_615630_Modifier_Sub",
 		"type": "Other",
@@ -12565,7 +12619,7 @@
 	"64997048": {
 		"id": "64997048",
 		"name": "DMG Boost",
-		"desc": "Each stack increases Follow-up ATK DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"desc": "Each stack increases Follow-Up ATK DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "DMG Boost",
 		"modifier": "StageAbility_615643_Modifier_Effect",
 		"type": "Buff",
@@ -12833,7 +12887,7 @@
 	"64997068": {
 		"id": "64997068",
 		"name": "Masked Fools",
-		"desc": "Basic ATK, Skill or Ultimate DMG will all be considered as Follow-up ATK DMG.",
+		"desc": "Basic ATK, Skill or Ultimate DMG will all be considered as Follow-Up ATK DMG.",
 		"effect": "Masked Fools",
 		"modifier": "MAvatar_RogueBattleevent_Elation_S1_PowerUp",
 		"type": "Buff",
@@ -14801,7 +14855,7 @@
 	"64997363": {
 		"id": "64997363",
 		"name": "Brewer of Bitter Memories",
-		"desc": "The next attack will be considered as a Follow-up ATK.",
+		"desc": "The next attack will be considered as a Follow-Up ATK.",
 		"effect": "",
 		"modifier": "Modifier_StageAbility_674160_Sub",
 		"type": "Buff",
@@ -16598,7 +16652,7 @@
 	"64997505": {
 		"id": "64997505",
 		"name": "Send-Off Carnival",
-		"desc": "For every type of debuff a target is afflicted with, increases the Follow-up ATK DMG the target receives by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, up to a max of <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"desc": "For every type of debuff a target is afflicted with, increases the Follow-Up ATK DMG the target receives by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, up to a max of <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "Modifier_StageAbility_675620_sub",
 		"type": "Debuff",
@@ -16638,7 +16692,7 @@
 	"64997508": {
 		"id": "64997508",
 		"name": "Joyspring Fount",
-		"desc": "Upon receiving DMG from a summon, every stack of \"Obsession\" allies have increases the Follow-up ATK and Additional DMG taken by the target by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"desc": "Upon receiving DMG from a summon, every stack of \"Obsession\" allies have increases the Follow-Up ATK and Additional DMG taken by the target by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "Modifier_StageAbility_675160_EnhanceMark",
 		"type": "Debuff",
@@ -16718,7 +16772,7 @@
 	"64997514": {
 		"id": "64997514",
 		"name": "Benediction Shard: Trickery",
-		"desc": "Based on the total number of stars of all currently possessed Blessings and Equations, increases Follow-up ATK DMG and Additional DMG dealt by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"desc": "Based on the total number of stars of all currently possessed Blessings and Equations, increases Follow-Up ATK DMG and Additional DMG dealt by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "StageAbility_633321_Modifier_Sub",
 		"type": "Buff",
@@ -16857,6 +16911,328 @@
 		"tagList": [],
 		"readParams": []
 	},
+	"64997525": {
+		"id": "64997525",
+		"name": "Charge Stack",
+		"desc": "\"Dirge\" current charge level is <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_673160_Modifier_Mark",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffS6_01_02.png",
+		"tagList": [],
+		"readParams": [
+			"Layer_Count"
+		]
+	},
+	"64997526": {
+		"id": "64997526",
+		"name": "Additional Fire Weakness",
+		"desc": "Additionally implanted Fire Weakness.",
+		"effect": "Implant Fire Weakness",
+		"modifier": "MStageAbility_673940_WeakType_Fire",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997527": {
+		"id": "64997527",
+		"name": "Additional Ice Weakness",
+		"desc": "Additionally implanted Ice Weakness.",
+		"effect": "Implant Ice Weakness",
+		"modifier": "MStageAbility_673940_WeakType_Ice",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997528": {
+		"id": "64997528",
+		"name": "Additional Wind Weakness",
+		"desc": "Additionally implanted Wind Weakness.",
+		"effect": "Implant Wind Weakness",
+		"modifier": "MStageAbility_673940_WeakType_Wind",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997529": {
+		"id": "64997529",
+		"name": "Additional Physical Weakness",
+		"desc": "Additionally implanted Physical Weakness.",
+		"effect": "Implant Physical Weakness",
+		"modifier": "MStageAbility_673940_WeakType_Physical",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997530": {
+		"id": "64997530",
+		"name": "Additional Lightning Weakness",
+		"desc": "Additionally implanted Lightning Weakness.",
+		"effect": "Implant Lightning Weakness",
+		"modifier": "MStageAbility_673940_WeakType_Thunder",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997531": {
+		"id": "64997531",
+		"name": "Additional Quantum Weakness",
+		"desc": "Additionally implanted Quantum Weakness.",
+		"effect": "Implant Quantum Weakness",
+		"modifier": "MStageAbility_673940_WeakType_Quantum",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997532": {
+		"id": "64997532",
+		"name": "Additional Imaginary Weakness",
+		"desc": "Additionally implanted Imaginary Weakness.",
+		"effect": "Implant Imaginary Weakness",
+		"modifier": "MStageAbility_673940_WeakType_Imaginary",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997533": {
+		"id": "64997533",
+		"name": "Dirge",
+		"desc": "After an ally character attacks, consume <color=#f29e38ff><unbreak>#1[i]</unbreak></color> stacks of Charge and deal <color=#f29e38ff><unbreak>#2[i]</unbreak></color> instances of \"Aftertaste\" DMG equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of the character's Max HP to the attacked enemy target. Exits this state when stacks are reduced to 0. Charge can still be accumulated while in the \"Dirge\" state.",
+		"effect": "",
+		"modifier": "StageAbility_673160_AfterTaste_Mark",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffS6_01_01.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_2",
+			"ADF_3",
+			"ADF_4"
+		]
+	},
+	"64997534": {
+		"id": "64997534",
+		"name": "Mortal Beings",
+		"desc": "While in the \"Butterfly Soul\" state, increases DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_673720_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"DamageTaken_Up"
+		]
+	},
+	"64997535": {
+		"id": "64997535",
+		"name": "Breach",
+		"desc": "Ultimate DMG dealt in this combat ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of target's DEF.",
+		"effect": "",
+		"modifier": "StageAbility_675580_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffIgnoreDefence.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2"
+		]
+	},
+	"64997536": {
+		"id": "64997536",
+		"name": "Bizarre Spell",
+		"desc": "Increases \"Blazar\" DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_675850_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997537": {
+		"id": "64997537",
+		"name": "Wicker School",
+		"desc": "Increases DoT taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_675260_Modifier_Enemy",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDotDeepen.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997538": {
+		"id": "64997538",
+		"name": "Ruin Strider",
+		"desc": "Increases \"Aftertaste\" DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_675610_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"DamageUp"
+		]
+	},
+	"64997539": {
+		"id": "64997539",
+		"name": "Trickster Knight",
+		"desc": "Each stack of \"Critical Boost\" additionally increases Follow-Up ATK DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_675460_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997540": {
+		"id": "64997540",
+		"name": "Interstellar Roaming Pager",
+		"desc": "Action is delayed and receives Additional Quantum DMG at the start of the next turn.\\nFor every enemy target Quantum characters attack, this Additional DMG will increase. This effect can stack up to <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s).",
+		"effect": "Entanglement",
+		"modifier": "StageAbility_633234_Modifier_Element_Entangle",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDotTangle.png",
+		"tagList": [],
+		"readParams": [
+			"Max_Count"
+		]
+	},
+	"64997541": {
+		"id": "64997541",
+		"name": "Absolute Sound Quality",
+		"desc": "Break Effect increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633233_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBreakDamage.png",
+		"tagList": [],
+		"readParams": [
+			"Extra_Break"
+		]
+	},
+	"64997542": {
+		"id": "64997542",
+		"name": "Winterfish Summerherb",
+		"desc": "Each stack increases CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "CRIT DMG Boost",
+		"modifier": "StageAbility_633231_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4",
+			"#ADF_5"
+		]
+	},
+	"64997543": {
+		"id": "64997543",
+		"name": "Frozen Virtue (Malicious)",
+		"desc": "Each stack increases CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "CRIT DMG Boost",
+		"modifier": "StageAbility_633230_Modifier_Effect2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2",
+			"#ADF_3"
+		]
+	},
+	"64997544": {
+		"id": "64997544",
+		"name": "Frozen Virtue (Virtuous)",
+		"desc": "Increases Max Shield Effect by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633230_Modifier_Effect1",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHealRatio.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997545": {
+		"id": "64997545",
+		"name": "Weakness Record",
+		"desc": "Weakness Record: Physical <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s), Fire <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s), Ice <color=#f29e38ff><unbreak>#3[i]</unbreak></color> time(s), Lightning <color=#f29e38ff><unbreak>#4[i]</unbreak></color> time(s), Wind <color=#f29e38ff><unbreak>#5[i]</unbreak></color> time(s), Quantum <color=#f29e38ff><unbreak>#6[i]</unbreak></color> time(s), Imaginary <color=#f29e38ff><unbreak>#7[i]</unbreak></color> time(s).",
+		"effect": "",
+		"modifier": "StageAbility_673940_Modifier_Enemy",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"ExtraPhysicalCount",
+			"ExtraFireCount",
+			"ExtraIceCount",
+			"ExtraThunderCount",
+			"ExtraWindCount",
+			"ExtraQuantumCount",
+			"ExtraImaginaryCount"
+		]
+	},
+	"64997553": {
+		"id": "64997553",
+		"name": "Transform!!!",
+		"desc": "Increases CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MLevel_StageAbility_633235_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997563": {
+		"id": "64997563",
+		"name": "Encouragement for You",
+		"desc": "The next <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attack(s) are considered as Follow-Up ATK.",
+		"effect": "",
+		"modifier": "StageAbility_633229_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"Remain_Count"
+		]
+	},
+	"64997596": {
+		"id": "64997596",
+		"name": "Selfless Giant Turtle",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_673890_Damage_Modifier",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_6"
+		]
+	},
 	"64998001": {
 		"id": "64998001",
 		"name": "Formation Extrapolation: Extreme Helium Flash",
@@ -16964,7 +17340,7 @@
 	"64998017": {
 		"id": "64998017",
 		"name": "Elation — Enhanced",
-		"desc": "The Follow-up ATK DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"desc": "Follow-Up ATK DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "MLevel_StageAbility_650106_Modifier_Sub",
 		"type": "Buff",
@@ -17083,7 +17459,7 @@
 	"64998027": {
 		"id": "64998027",
 		"name": "Vengeance",
-		"desc": "The Follow-up ATK DMG dealt ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF.",
+		"desc": "The Follow-Up ATK DMG dealt ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF.",
 		"effect": "",
 		"modifier": "StageAbility_650307_Modifier_Sub",
 		"type": "Buff",
@@ -17635,7 +18011,7 @@
 	"64999082": {
 		"id": "64999082",
 		"name": "Sensory Pursuit",
-		"desc": "Each stack increases the received Follow-up ATK DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"desc": "Each stack increases Follow-Up ATK DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "Sensory Pursuit",
 		"modifier": "MAvatar_RogueBattleevent126_LevelUp1_1",
 		"type": "Debuff",
@@ -18019,7 +18395,7 @@
 	"64999123": {
 		"id": "64999123",
 		"name": "Audience Die: Elation",
-		"desc": "DMG dealt by Follow-up ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"desc": "DMG dealt by Follow-Up ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "MLevel_StageAbility_641260_Modifier_Sub",
 		"type": "Buff",
@@ -18058,7 +18434,7 @@
 	"64999126": {
 		"id": "64999126",
 		"name": "Elation: Head Harbinger of Havoc",
-		"desc": "After an attack was used to deal DMG to enemy target(s), the attack will be considered as a Follow-up ATK.",
+		"desc": "After an attack was used to deal DMG to enemy target(s), the attack will be considered as a Follow-Up ATK.",
 		"effect": "",
 		"modifier": "MLevel_StageAbility_641261_Modifier_Sub",
 		"type": "Buff",
@@ -18598,7 +18974,7 @@
 	"65999015": {
 		"id": "65999015",
 		"name": "Vulnerability",
-		"desc": "In the current Cycle, receives <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> more DMG from Follow-up ATKs and Ultimates.",
+		"desc": "In the current Cycle, receives <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> more DMG from Follow-Up ATKs and Ultimates.",
 		"effect": "Vulnerability",
 		"modifier": "MLevel_BattleEventAbility_Challenge_Month_03",
 		"type": "Debuff",
@@ -19009,9 +19385,9 @@
 	},
 	"65999050": {
 		"id": "65999050",
-		"name": "Follow-up ATK Vulnerability",
-		"desc": "Increases the received Follow-up ATK DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
-		"effect": "Follow-up ATK Vulnerability",
+		"name": "Follow-Up ATK Vulnerability",
+		"desc": "Follow-Up ATK DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Follow-Up ATK Vulnerability",
 		"modifier": "Modifier_BattleEventAbility_Challenge_Month_23_RandomDebuff5",
 		"type": "Debuff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatio.png",
@@ -19267,7 +19643,7 @@
 	"65999070": {
 		"id": "65999070",
 		"name": "Picturesque",
-		"desc": "Follow-up ATK DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Follow-up ATKs' Weakness Break Efficiency increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"desc": "Follow-Up ATK DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Follow-Up ATKs' Weakness Break Efficiency increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "Modifier_FantasticStory_BaseAbility_0050_plus2_sub",
 		"type": "Buff",
@@ -19449,7 +19825,7 @@
 	"65999085": {
 		"id": "65999085",
 		"name": "False Promises",
-		"desc": "Follow-up ATK DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After launching a Follow-up ATK, deals a set amount of DMG to every attacked enemy target and adjacent target.",
+		"desc": "Follow-Up ATK DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After launching a Follow-Up ATK, deals a set amount of DMG to every attacked enemy target and adjacent target.",
 		"effect": "",
 		"modifier": "Modifier_FantasticStory_BaseAbility_2010_plus2_sub",
 		"type": "Buff",
@@ -19489,7 +19865,7 @@
 	"65999088": {
 		"id": "65999088",
 		"name": "Grit Mechanics: False Promises",
-		"desc": "After launching a Follow-up ATK, every enemy target attacked additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value.",
+		"desc": "After launching a Follow-Up ATK, every enemy target attacked additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value.",
 		"effect": "",
 		"modifier": "Modifier_FantasticStory_BaseAbility_2010_Plus2AddOn_ForShow",
 		"type": "Buff",
@@ -19616,7 +19992,7 @@
 	"65999098": {
 		"id": "65999098",
 		"name": "Grit Mechanics_Radiance",
-		"desc": "After launching a Follow-up ATK, every enemy target attacked additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value.",
+		"desc": "After launching a Follow-Up ATK, every enemy target attacked additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value.",
 		"effect": "",
 		"modifier": "Modifier_FantasticStory_BaseAbility_2060_Plus1AddOn_ForShow",
 		"type": "Buff",
@@ -19729,7 +20105,7 @@
 	"65999107": {
 		"id": "65999107",
 		"name": "Grit Mechanics: Evince",
-		"desc": "After using Skill or launching a Follow-up ATK, every enemy target hit additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value for allies.",
+		"desc": "After using Skill or launching a Follow-Up ATK, every enemy target hit additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value for allies.",
 		"effect": "",
 		"modifier": "Modifier_FantasticStory_BaseAbility_2110_Plus1AddOn_ForShow",
 		"type": "Buff",
@@ -19768,7 +20144,7 @@
 	"65999110": {
 		"id": "65999110",
 		"name": "Evince",
-		"desc": "Use Skills or launching a Follow-up ATK against enemy targets with \"Shatter\" can immediately trigger \"Shatter.\"",
+		"desc": "Use Skills or launching a Follow-Up ATK against enemy targets with \"Shatter\" can immediately trigger \"Shatter.\"",
 		"effect": "",
 		"modifier": "Modifier_FantasticStory_BaseAbility_2110_plus1_sub",
 		"type": "Buff",
@@ -20253,6 +20629,32 @@
 			"DV_FantasticStory_PlusAbility_2165_ADF_3"
 		]
 	},
+	"65999147": {
+		"id": "65999147",
+		"name": "Ravings",
+		"desc": "Increases Break DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2010_plus8_sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff142.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2018_ADF_2"
+		]
+	},
+	"65999148": {
+		"id": "65999148",
+		"name": "Grit Mechanics_Ravings",
+		"desc": "After attacking enemy targets, every enemy target who has their Weakness Broken additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2010_Plus8AddOn_ForShow",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff142.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2018_ADF_3"
+		]
+	},
 	"66000001": {
 		"id": "66000001",
 		"name": "Resilient Armor",
@@ -20283,7 +20685,7 @@
 	"66000003": {
 		"id": "66000003",
 		"name": "Inversion",
-		"desc": "Each time after being attacked, the attacker will lose HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of their own Max HP. This effect in Non-fatal.",
+		"desc": "Each time after being attacked, the attacker will lose HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of their own Max HP. This effect is Non-fatal.",
 		"effect": "",
 		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0003_02",
 		"type": "Other",
@@ -20335,7 +20737,7 @@
 	},
 	"66000007": {
 		"id": "66000007",
-		"name": "Infantry and Calvary",
+		"name": "Infantry and Cavalry",
 		"desc": "Ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF when using Ultimate. After Ultimate deals DMG, the next Skill ignores <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the target's DEF.",
 		"effect": "",
 		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0002_02",
@@ -20364,7 +20766,7 @@
 	"66000010": {
 		"id": "66000010",
 		"name": "Inversion+",
-		"desc": "Each time after being attacked, the attacker will lose HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of their own Max HP. This effect in Non-fatal.",
+		"desc": "Each time after being attacked, the attacker will lose HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of their own Max HP. This effect is Non-fatal.",
 		"effect": "",
 		"modifier": "Modifier_ChallengePeakBattle_EnhancedAbility_0003_02",
 		"type": "Other",
@@ -20420,7 +20822,7 @@
 	"66000014": {
 		"id": "66000014",
 		"name": "Inversion++",
-		"desc": "Each time after being attacked, the attacker will lose HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of their own Max HP. This effect in Non-fatal.",
+		"desc": "Each time after being attacked, the attacker will lose HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of their own Max HP. This effect is Non-fatal.",
 		"effect": "",
 		"modifier": "Modifier_ChallengePeakBattle_ExtremeAbility_0003_02",
 		"type": "Other",
@@ -20630,6 +21032,169 @@
 		"readParams": [
 			"ChallengePeakBattle_0009_ADF_1",
 			"ChallengePeakBattle_0009_ADF_2"
+		]
+	},
+	"66000030": {
+		"id": "66000030",
+		"name": "Resilient Armor+",
+		"desc": "Each stack reduces DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Loses 1 stack of \"Resilient Armor+\" each time Toughness is reduced to 0.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_EnhancedAbility_0001_03",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0001_ADF_1",
+			"ChallengePeakBattle_0001_ADF_2"
+		]
+	},
+	"66000031": {
+		"id": "66000031",
+		"name": "Resilient Armor++",
+		"desc": "Each stack reduces DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Loses 1 stack of \"Resilient Armor++\" each time Toughness is reduced to 0.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_ExtremeAbility_0001_03",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0001_ADF_1",
+			"ChallengePeakBattle_0001_ADF_2"
+		]
+	},
+	"66000039": {
+		"id": "66000039",
+		"name": "No Break No Rise",
+		"desc": "Each stack increases the Break DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect can stack up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0007_03",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff142.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0007_ADF_2",
+			"ChallengePeakBattle_Plugins_0007_ADF_3"
+		]
+	},
+	"66000040": {
+		"id": "66000040",
+		"name": "No Break No Rise",
+		"desc": "Break Effect increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0007_04",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff142.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0007_ADF_1"
+		]
+	},
+	"66000041": {
+		"id": "66000041",
+		"name": "Impassioned Spirits",
+		"desc": "Increases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0008_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0007.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0008_ADF_1"
+		]
+	},
+	"66000042": {
+		"id": "66000042",
+		"name": "Impassioned Spirits",
+		"desc": "Each stack increases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0008_03",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0007.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0008_ADF_2"
+		]
+	},
+	"66000043": {
+		"id": "66000043",
+		"name": "Seize the Moment",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After using an attack, applies a Weakness of this unit's Type to the enemy target. This effect is removed when the enemy target recovers from the Weakness Break state.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0009_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff109.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0009_ADF_1"
+		]
+	},
+	"66000044": {
+		"id": "66000044",
+		"name": "Unending Refinement",
+		"desc": "Each stack reduces DMG received by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG taken by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, stackable up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s). Stacks are cleared at the start of turn or when entering the Weakness Break state.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0012_03",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0003.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0012_ADF_1",
+			"ChallengePeakBattle_0012_ADF_2",
+			"ChallengePeakBattle_0012_ADF_3"
+		]
+	},
+	"66000045": {
+		"id": "66000045",
+		"name": "Unending Refinement+",
+		"desc": "Each stack reduces DMG received by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG taken by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, stackable up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s). Stacks are cleared at the start of turn or when entering the Weakness Break state.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_EnhancedAbility_0012_03",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0003.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0012_ADF_1",
+			"ChallengePeakBattle_0012_ADF_2",
+			"ChallengePeakBattle_0012_ADF_3"
+		]
+	},
+	"66000046": {
+		"id": "66000046",
+		"name": "Depowered",
+		"desc": "Decreases Energy Regeneration Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> outside this unit's turn.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0013_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0004.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0013_ADF_2"
+		]
+	},
+	"66000047": {
+		"id": "66000047",
+		"name": "Depowered+",
+		"desc": "Decreases Energy Regeneration Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> outside this unit's turn.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_EnhancedAbility_0013_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0004.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0013_ADF_2"
+		]
+	},
+	"66000048": {
+		"id": "66000048",
+		"name": "Depowered++",
+		"desc": "Decreases Energy Regeneration Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> outside this unit's turn.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_ExtremeAbility_0013_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0004.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0013_ADF_2"
 		]
 	},
 	"66000999": {
@@ -20842,7 +21407,7 @@
 		"effect": "",
 		"modifier": "MGridFight_MonsterTag_2009_Sub",
 		"type": "Debuff",
-		"icon": "spriteoutput/BuffIcon/Inlevel/IconDotCommon.png",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_Affix_3007.png",
 		"tagList": [],
 		"readParams": [
 			"#ADF_1"
@@ -20855,7 +21420,7 @@
 		"effect": "",
 		"modifier": "MGridFight_MonsterTag_2009_Sub2",
 		"type": "Buff",
-		"icon": "spriteoutput/BuffIcon/Inlevel/IconDotCommon.png",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_Affix_3007.png",
 		"tagList": [],
 		"readParams": [
 			"#ADF_2"
@@ -20896,7 +21461,7 @@
 		"effect": "",
 		"modifier": "MGridFight_MonsterTag_3003_Monster",
 		"type": "Other",
-		"icon": "spriteoutput/BuffIcon/Inlevel/IconDotCommon.png",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_Affix_3003.png",
 		"tagList": [],
 		"readParams": [
 			"#ADF_1"
@@ -20909,7 +21474,7 @@
 		"effect": "",
 		"modifier": "MGridFight_MonsterTag_3006_Sub",
 		"type": "Debuff",
-		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffBlackBlood.png",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHatredUp.png",
 		"tagList": [],
 		"readParams": []
 	},
@@ -20985,8 +21550,7 @@
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHealRatio.png",
 		"tagList": [],
 		"readParams": [
-			"ADF_1",
-			"#ADF_2"
+			"ADF_1"
 		]
 	},
 	"66001028": {
@@ -22860,7 +23424,7 @@
 	"70010134": {
 		"id": "70010134",
 		"name": "Chrysos Heir Dolium",
-		"desc": "The DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and the DMG dealt by Memosprite Skill additionally increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"desc": "The DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Memosprite Skill DMG dealt additionally increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "MItem_408438",
 		"type": "Buff",
@@ -23072,7 +23636,7 @@
 	"270020602": {
 		"id": "270020602",
 		"name": "Supported",
-		"desc": "After attacking, the Silvermane Cannoneer will launch a Follow-up ATK on the target.",
+		"desc": "After attacking, the Silvermane Cannoneer will launch a Follow-Up ATK on the target.",
 		"effect": "Supported",
 		"modifier": "Monster_AetherDivide_W1_Soldier04_00_SkillP01_Supported",
 		"type": "Other",
