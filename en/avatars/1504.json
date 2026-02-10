@@ -1,0 +1,134 @@
+{
+  "name": "Ashveil",
+  "description": "An inquisitor from the Church of the Seven Gills. She wanders the fog-laden streets, seeking the 'Bait' that will lead her to the ultimate truth. To Ashveil, the world is but a banquet, and someone must always pay the check.",
+  "rarity": "SuperRare",
+  "avatarType": "Rogue",
+  "element": "Thunder",
+  "stats": {
+    "maxHP": 1139.6,
+    "maxATK": 722.6,
+    "maxDEF": 462.0,
+    "SPD": 105,
+    "TNT": 75,
+    "CR": 0.05,
+    "CDMG": 0.5
+  },
+  "icon": "spriteoutput/avatardrawcard/1504.png",
+  "shortIcon": "1504",
+  "drawIcon": "spriteoutput/avatardrawcardresult/1504.png",
+  "skills": [
+    {
+      "name": "Talons: Induction of Etiquette",
+      "tag": "Single Target",
+      "type": "Basic ATK",
+      "description": "Deals Thunder DMG equal to ****1[i]%**** of Ashveil's ATK to one designated enemy.",
+      "regen": 20,
+      "er": 0,
+      "break": [30, 0, 0],
+      "icon": "spriteoutput/skillicons/avatar/1504/SkillIcon_1504_Normal.png",
+      "shortIcon": "SkillIcon_1504_Normal",
+      "id": "150401",
+      "params": {
+        "lv1": [0.5], "lv2": [0.6], "lv3": [0.7], "lv4": [0.8], "lv5": [0.9], "lv6": [1.0], "lv7": [1.1], "lv8": [1.2], "lv9": [1.3], "lv10": [1.4]
+      }
+    },
+    {
+      "name": "Flog: Purge the Vile Beasts",
+      "tag": "Single Target",
+      "type": "Skill",
+      "description": "Marks a designated enemy as \"Bait\" and deals Thunder DMG equal to ****1[i]%**** of Ashveil's ATK. If the target is already \"Bait,\" deals an additional instance of Thunder DMG equal to ****2[i]%**** of ATK and recovers 1 Skill Point. While \"Bait\" is on the field, all enemies' DEF is reduced by ****3[i]%****.",
+      "regen": 30,
+      "er": 0,
+      "break": [60, 0, 0],
+      "icon": "spriteoutput/skillicons/avatar/1504/SkillIcon_1504_BP.png",
+      "shortIcon": "SkillIcon_1504_BP",
+      "id": "150402",
+      "params": {
+        "lv1": [1.5, 0.4, 0.2], "lv10": [3.75, 1.0, 0.5]
+      }
+    },
+    {
+      "name": "Banquet: Infinite Eucharist",
+      "tag": "Single Target",
+      "type": "Ultimate",
+      "description": "Marks the target as \"Bait\" and deals Thunder DMG equal to ****1[i]%**** of ATK. Immediately launches 1 enhanced Follow-up ATK. Consumes all \"Gluttony\" stacks; for every stack consumed, deals 1 extra instance of Thunder DMG equal to ****2[i]%**** of ATK to a random enemy.",
+      "regen": 5,
+      "er": 160,
+      "break": [90, 0, 0],
+      "icon": "spriteoutput/skillicons/avatar/1504/SkillIcon_1504_Ultra.png",
+      "shortIcon": "SkillIcon_1504_Ultra",
+      "id": "150403",
+      "params": {
+        "lv1": [2.5, 0.45], "lv10": [6.25, 1.1]
+      }
+    },
+    {
+      "name": "Rancor: Retribution in Kind",
+      "tag": "Enhance",
+      "type": "Talent",
+      "description": "When an ally attacks the \"Bait,\" Ashveil consumes 1 Charge to launch a Follow-up ATK, dealing Thunder DMG equal to ****1[i]%**** of ATK and gaining 1 stack of \"Gluttony\" (Max ****2[i]**** stacks).",
+      "regen": 10,
+      "er": 0,
+      "break": [30, 0, 0],
+      "icon": "spriteoutput/skillicons/avatar/1504/SkillIcon_1504_Passive.png",
+      "shortIcon": "SkillIcon_1504_Passive",
+      "id": "150404",
+      "params": {
+        "lv1": [1.8, 12], "lv10": [4.5, 12]
+      }
+    }
+  ],
+  "ranks": [
+    {
+      "name": "Beware: Wander Not in Full Moon",
+      "description": "While Ashveil is on the field, increases DMG taken by all enemies by ****1[i]%****. When an enemy's HP is ****2[i]%**** or lower, this increases to ****3[i]%****.",
+      "params": [0.24, 0.8, 0.36],
+      "id": "150401"
+    },
+    {
+      "name": "Knock: Where Snickers Echo",
+      "description": "Increases Max \"Gluttony\" stacks to ****2[i]****. Talent Follow-up ATKs refund ****1[i]%**** of consumed stacks.",
+      "params": [0.35, 18],
+      "id": "150402"
+    },
+    {
+      "name": "Hush: Weight of Unspoken Truths",
+      "description": "Ultimate Lv. +2, Basic ATK Lv. +1.",
+      "params": [],
+      "id": "150403"
+    },
+    {
+      "name": "Heed: Truth Needs No Mastication",
+      "description": "Using Ultimate increases ATK by ****1[i]%**** for ****2[i]**** turns.",
+      "params": [0.4, 3],
+      "id": "150404"
+    },
+    {
+      "name": "Advisory: The Sleuth Is But the Slayer",
+      "description": "Skill Lv. +2, Talent Lv. +2.",
+      "params": [],
+      "id": "150405"
+    },
+    {
+      "name": "Finale: And Then There Were None",
+      "description": "Reduces all enemies' All-Type RES by ****1[i]%**** while \"Bait\" is present. Each stack of \"Gluttony\" further increases Ashveil's DMG by ****2[i]%****.",
+      "params": [0.2, 0.03],
+      "id": "150406"
+    }
+  ],
+  "statsArray": [
+    {
+      "HPBase": 155.04,
+      "AttackBase": 98.4,
+      "DefenceBase": 62.8,
+      "MaxLevel": 20
+    },
+    {
+      "HPBase": 1139.6,
+      "AttackBase": 722.6,
+      "DefenceBase": 462.0,
+      "MaxLevel": 80
+    }
+  ],
+  "id": "1504"
+}
