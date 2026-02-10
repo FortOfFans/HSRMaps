@@ -21,7 +21,7 @@
       "name": "Talons: Induction of Etiquette",
       "tag": "Single Target",
       "type": "Basic ATK",
-      "description": "Deals Thunder DMG equal to ****1[i]%**** of Ashveil's ATK to one designated enemy.",
+      "description": "Deals Thunder DMG equal to <unbreak>#1[i]%</unbreak> of Ashveil's ATK to one designated enemy.",
       "regen": 20,
       "er": 0,
       "break": [30, 0, 0],
@@ -29,14 +29,16 @@
       "shortIcon": "SkillIcon_1504_Normal",
       "id": "150401",
       "params": {
-        "lv1": [0.5], "lv2": [0.6], "lv3": [0.7], "lv4": [0.8], "lv5": [0.9], "lv6": [1.0], "lv7": [1.1], "lv8": [1.2], "lv9": [1.3], "lv10": [1.4]
+        "lv1": [0.5], "lv2": [0.6], "lv3": [0.7], "lv4": [0.8], "lv5": [0.9],
+        "lv6": [1.0], "lv7": [1.1], "lv8": [1.2], "lv9": [1.3], "lv10": [1.4],
+        "lv11": [1.5], "lv12": [1.6], "lv13": [1.7], "lv14": [1.8], "lv15": [1.9]
       }
     },
     {
       "name": "Flog: Purge the Vile Beasts",
       "tag": "Single Target",
       "type": "Skill",
-      "description": "Marks a designated enemy as \"Bait\" and deals Thunder DMG equal to ****1[i]%**** of Ashveil's ATK. If the target is already \"Bait,\" deals an additional instance of Thunder DMG equal to ****2[i]%**** of ATK and recovers 1 Skill Point. While \"Bait\" is on the field, all enemies' DEF is reduced by ****3[i]%****.",
+      "description": "Marks a designated enemy as <u>Bait</u> and deals Thunder DMG equal to <unbreak>#1[i]%</unbreak> of Ashveil's ATK. If the target is already <u>Bait</u>, deals an additional instance of Thunder DMG equal to <unbreak>#2[i]%</unbreak> of ATK and recovers <unbreak>1</unbreak> Skill Point(s). While <u>Bait</u> is on the field, all enemies' DEF is reduced by <unbreak>#3[i]%</unbreak>.",
       "regen": 30,
       "er": 0,
       "break": [60, 0, 0],
@@ -44,14 +46,18 @@
       "shortIcon": "SkillIcon_1504_BP",
       "id": "150402",
       "params": {
-        "lv1": [1.5, 0.4, 0.2], "lv10": [3.75, 1.0, 0.5]
+        "lv1": [1.5, 0.4, 0.2], "lv2": [1.75, 0.46, 0.23], "lv3": [2.0, 0.53, 0.26],
+        "lv4": [2.25, 0.6, 0.3], "lv5": [2.5, 0.66, 0.33], "lv6": [2.75, 0.73, 0.36],
+        "lv7": [3.0, 0.81, 0.4], "lv8": [3.25, 0.9, 0.45], "lv9": [3.5, 0.95, 0.47],
+        "lv10": [3.75, 1.0, 0.5], "lv11": [4.0, 1.06, 0.53], "lv12": [4.25, 1.13, 0.56],
+        "lv13": [4.5, 1.2, 0.6], "lv14": [4.75, 1.26, 0.63], "lv15": [5.0, 1.33, 0.66]
       }
     },
     {
       "name": "Banquet: Infinite Eucharist",
       "tag": "Single Target",
       "type": "Ultimate",
-      "description": "Marks the target as \"Bait\" and deals Thunder DMG equal to ****1[i]%**** of ATK. Immediately launches 1 enhanced Follow-up ATK. Consumes all \"Gluttony\" stacks; for every stack consumed, deals 1 extra instance of Thunder DMG equal to ****2[i]%**** of ATK to a random enemy.",
+      "description": "Marks the target as <u>Bait</u> and deals Thunder DMG equal to <unbreak>#1[i]%</unbreak> of ATK. Immediately launches <unbreak>1</unbreak> enhanced Follow-up ATK. Consumes all <u>Gluttony</u> stacks; for every stack consumed, deals 1 extra instance of Thunder DMG equal to <unbreak>#2[i]%</unbreak> of ATK to a random enemy.",
       "regen": 5,
       "er": 160,
       "break": [90, 0, 0],
@@ -59,14 +65,17 @@
       "shortIcon": "SkillIcon_1504_Ultra",
       "id": "150403",
       "params": {
-        "lv1": [2.5, 0.45], "lv10": [6.25, 1.1]
+        "lv1": [2.5, 0.45], "lv2": [2.75, 0.49], "lv3": [3.0, 0.53], "lv4": [3.25, 0.58],
+        "lv5": [3.5, 0.63], "lv6": [3.75, 0.67], "lv7": [4.12, 0.74], "lv8": [4.5, 0.81],
+        "lv9": [4.87, 0.87], "lv10": [5.25, 0.94], "lv11": [5.62, 1.01], "lv12": [6.0, 1.08],
+        "lv13": [6.37, 1.14], "lv14": [6.75, 1.21], "lv15": [7.12, 1.28]
       }
     },
     {
       "name": "Rancor: Retribution in Kind",
       "tag": "Enhance",
       "type": "Talent",
-      "description": "When an ally attacks the \"Bait,\" Ashveil consumes 1 Charge to launch a Follow-up ATK, dealing Thunder DMG equal to ****1[i]%**** of ATK and gaining 1 stack of \"Gluttony\" (Max ****2[i]**** stacks).",
+      "description": "When an ally attacks the <u>Bait</u>, Ashveil consumes <unbreak>1</unbreak> Charge to launch a Follow-up ATK, dealing Thunder DMG equal to <unbreak>#1[i]%</unbreak> of ATK and gaining <unbreak>1</unbreak> stack of <u>Gluttony</u> (Max <unbreak>#2[i]</unbreak> stacks).",
       "regen": 10,
       "er": 0,
       "break": [30, 0, 0],
@@ -74,45 +83,93 @@
       "shortIcon": "SkillIcon_1504_Passive",
       "id": "150404",
       "params": {
-        "lv1": [1.8, 12], "lv10": [4.5, 12]
+        "lv1": [1.8, 12], "lv2": [1.98, 12], "lv3": [2.16, 12], "lv4": [2.34, 12],
+        "lv5": [2.52, 12], "lv6": [2.7, 12], "lv7": [2.97, 12], "lv8": [3.24, 12],
+        "lv9": [3.51, 12], "lv10": [3.78, 12], "lv11": [4.05, 12], "lv12": [4.32, 12],
+        "lv13": [4.59, 12], "lv14": [4.86, 12], "lv15": [5.13, 12]
+      }
+    },
+    {
+      "name": "Devour: O Loathsome Hand",
+      "tag": "Impair",
+      "type": "Technique",
+      "description": "Immediately attacks the enemy. After entering combat via actively attacking a Dazed enemy, deals Thunder DMG to all enemies equal to <unbreak>#2[i]%</unbreak> of Ashveil's ATK and grants Ashveil <unbreak>#1[i]</unbreak> Charge(s).",
+      "regen": 0,
+      "er": 0,
+      "break": [0, 0, 0],
+      "icon": "spriteoutput/skillicons/avatar/1504/SkillIcon_1504_Maze.png",
+      "shortIcon": "SkillIcon_1504_Maze",
+      "id": "150407",
+      "params": {
+        "lv1": [1, 2]
       }
     }
   ],
   "ranks": [
     {
       "name": "Beware: Wander Not in Full Moon",
-      "description": "While Ashveil is on the field, increases DMG taken by all enemies by ****1[i]%****. When an enemy's HP is ****2[i]%**** or lower, this increases to ****3[i]%****.",
-      "params": [0.24, 0.8, 0.36],
+      "description": "While Ashveil is on the field, increases DMG taken by all enemies by <unbreak>#1[i]%</unbreak>. When an enemy target's current HP percentage is <unbreak>#2[i]%</unbreak> or lower, the DMG they take increases to <unbreak>#3[i]%</unbreak>.",
+      "icon": "spriteoutput/skillicons/avatar/1504/SkillIcon_1504_Rank1.png",
+      "rankIcon": "spriteoutput/textures/1504/1504_Rank_1.png",
+      "shortIcon": "SkillIcon_1504_Rank1",
+      "params": [0.24, 80, 0.36],
+      "skillUpgrades": {},
       "id": "150401"
     },
     {
       "name": "Knock: Where Snickers Echo",
-      "description": "Increases Max \"Gluttony\" stacks to ****2[i]****. Talent Follow-up ATKs refund ****1[i]%**** of consumed stacks.",
+      "description": "Increases Max <u>Gluttony</u> stacks to <unbreak>#2[i]</unbreak>. Talent Follow-up ATKs refund <unbreak>#1[i]%</unbreak> of consumed stacks.",
+      "icon": "spriteoutput/skillicons/avatar/1504/SkillIcon_1504_Rank2.png",
+      "rankIcon": "spriteoutput/textures/1504/1504_Rank_2.png",
+      "shortIcon": "SkillIcon_1504_Rank2",
       "params": [0.35, 18],
+      "skillUpgrades": {},
       "id": "150402"
     },
     {
       "name": "Hush: Weight of Unspoken Truths",
-      "description": "Ultimate Lv. +2, Basic ATK Lv. +1.",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+      "icon": "spriteoutput/skillicons/avatar/1504/SkillIcon_1504_Ultra.png",
+      "rankIcon": "spriteoutput/textures/1504/1504_Rank_3.png",
+      "shortIcon": "SkillIcon_1504_Ultra",
       "params": [],
+      "skillUpgrades": {
+        "150403": 2,
+        "150401": 1
+      },
       "id": "150403"
     },
     {
       "name": "Heed: Truth Needs No Mastication",
-      "description": "Using Ultimate increases ATK by ****1[i]%**** for ****2[i]**** turns.",
+      "description": "Using Ultimate increases this unit's ATK by <unbreak>#1[i]%</unbreak> for <unbreak>#2[i]</unbreak> turn(s).",
+      "icon": "spriteoutput/skillicons/avatar/1504/SkillIcon_1504_Rank4.png",
+      "rankIcon": "spriteoutput/textures/1504/1504_Rank_4.png",
+      "shortIcon": "SkillIcon_1504_Rank4",
       "params": [0.4, 3],
+      "skillUpgrades": {},
       "id": "150404"
     },
     {
       "name": "Advisory: The Sleuth Is But the Slayer",
-      "description": "Skill Lv. +2, Talent Lv. +2.",
+      "description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+      "icon": "spriteoutput/skillicons/avatar/1504/SkillIcon_1504_BP.png",
+      "rankIcon": "spriteoutput/textures/1504/1504_Rank_5.png",
+      "shortIcon": "SkillIcon_1504_BP",
       "params": [],
+      "skillUpgrades": {
+        "150402": 2,
+        "150404": 2
+      },
       "id": "150405"
     },
     {
       "name": "Finale: And Then There Were None",
-      "description": "Reduces all enemies' All-Type RES by ****1[i]%**** while \"Bait\" is present. Each stack of \"Gluttony\" further increases Ashveil's DMG by ****2[i]%****.",
+      "description": "While <u>Bait</u> is present, reduces All-Type RES of all enemies by <unbreak>#1[i]%</unbreak>. Additionally, for every 1 stack of <u>Gluttony</u> owned, increases Ashveil's DMG by <unbreak>#2[f1]%</unbreak>.",
+      "icon": "spriteoutput/skillicons/avatar/1504/SkillIcon_1504_Rank6.png",
+      "rankIcon": "spriteoutput/textures/1504/1504_Rank_6.png",
+      "shortIcon": "SkillIcon_1504_Rank6",
       "params": [0.2, 0.03],
+      "skillUpgrades": {},
       "id": "150406"
     }
   ],
