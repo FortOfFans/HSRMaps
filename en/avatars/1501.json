@@ -1,230 +1,2586 @@
 {
-  "name": "Sparxie",
-  "description": "Like! Follow! Stream! Views! Party till the world ends!\nSparxie and Sparkle, the Mask and the Fool are fundamentally the same.\nWhoever is seen, whoever is liked, is the correct answer!",
-  "rarity": "SuperRare",
-  "avatarType": "Joy",
-  "element": "Fire",
-  "stats": {
-    "maxHP": 1206.6,
-    "maxATK": 601.32,
-    "maxDEF": 485.1,
-    "SPD": 101,
-    "TNT": 75,
-    "CR": 0.05,
-    "CDMG": 0.5
-  },
-  "icon": "spriteoutput/avatardrawcard/1501.png",
-  "shortIcon": "1501",
-  "drawIcon": "spriteoutput/avatardrawcardresult/1501.png",
-  "skills": [
-    {
-      "name": "Cat Got Your Flametongue?",
-      "tag": "Single Target",
-      "type": "Basic ATK",
-      "description": "Deals Fire DMG equal to ****1[i]%**** of Sparxie's ATK to one designated enemy.",
-      "regen": 20,
-      "er": 0,
-      "break": [30, 0, 0],
-      "icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Normal.png",
-      "shortIcon": "SkillIcon_1501_Normal",
-      "id": "150101",
-      "params": {
-        "lv1": [0.5], "lv2": [0.6], "lv3": [0.7], "lv4": [0.8], "lv5": [0.9],
-        "lv6": [1], "lv7": [1.1], "lv8": [1.2], "lv9": [1.3], "lv10": [1.4],
-        "lv11": [1.5], "lv12": [1.6], "lv13": [1.7], "lv14": [1.8], "lv15": [1.9]
-      }
-    },
-    {
-      "name": "Boom! Sparxicle's Poppin'",
-      "tag": "Enhance",
-      "type": "Skill",
-      "description": "Start a livestream to turn Basic ATK into \"Bloom! Winner Takes All\" and trigger \"Engagement Farming\" 1 time. During this ability, \"Engagement Farming\" can be triggered repeatedly, up to ****1[i]**** time(s). Using this ability is not considered as using a Skill.",
-      "regen": 30,
-      "er": 0,
-      "break": [0, 0, 0],
-      "icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_BP.png",
-      "shortIcon": "SkillIcon_1501_BP",
-      "id": "150102",
-      "params": {
-        "lv1": [20, 28, 3, 7, 4], "lv2": [20, 28, 3, 7, 4], "lv3": [20, 28, 3, 7, 4],
-        "lv4": [20, 28, 3, 7, 4], "lv5": [20, 28, 3, 7, 4], "lv6": [20, 28, 3, 7, 4],
-        "lv7": [20, 28, 3, 7, 4], "lv8": [20, 28, 3, 7, 4], "lv9": [20, 28, 3, 7, 4],
-        "lv10": [20, 28, 3, 7, 4], "lv11": [20, 28, 3, 7, 4], "lv12": [20, 28, 3, 7, 4],
-        "lv13": [20, 28, 3, 7, 4], "lv14": [20, 28, 3, 7, 4], "lv15": [20, 28, 3, 7, 4]
-      }
-    },
-    {
-      "name": "Party's Wildin' and Camera's Rollin'",
-      "tag": "AoE",
-      "type": "Ultimate",
-      "description": "Gains ****1[i]**** Punchline point(s). Deals Fire DMG equal to (****3[f1]**** × Elation + ****2[f1]%****) of Sparxie's ATK to all enemies.",
-      "regen": 5,
-      "er": 120,
-      "break": [0, 60, 0],
-      "icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Ultra.png",
-      "shortIcon": "SkillIcon_1501_Ultra",
-      "id": "150103",
-      "params": {
-        "lv1": [2, 0.3, 0.6], "lv2": [2, 0.32, 0.6], "lv3": [2, 0.34, 0.6],
-        "lv4": [2, 0.36, 0.6], "lv5": [2, 0.38, 0.6], "lv6": [2, 0.4, 0.6],
-        "lv7": [2, 0.425, 0.6], "lv8": [2, 0.45, 0.6], "lv9": [2, 0.475, 0.6],
-        "lv10": [2, 0.5, 0.6], "lv11": [2, 0.52, 0.6], "lv12": [2, 0.54, 0.6],
-        "lv13": [2, 0.56, 0.6], "lv14": [2, 0.58, 0.6], "lv15": [2, 0.6, 0.6]
-      }
-    },
-    {
-      "name": "Sleight of Sparx Hand",
-      "tag": "Enhance",
-      "type": "Talent",
-      "description": "When Sparxie holds \"Certified Banger\": Using Enhanced Basic ATK deals ****3[i]%**** Fire Elation DMG to one designated enemy, and ****4[f1]%**** Fire Elation DMG to their adjacent targets. Additionally, for every 1 instance of \"Engagement Farming\" triggered, the Enhanced Basic ATK deals 1 extra instance of ****1[f1]%**** Fire Elation DMG to 1 random attacked enemy target. Using Ultimate deals ****2[i]%**** Fire Elation DMG to all enemies.",
-      "regen": 15,
-      "er": 0,
-      "break": [15, 0, 0],
-      "icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Passive.png",
-      "shortIcon": "SkillIcon_1501_Passive",
-      "id": "150104",
-      "params": {
-        "lv1": [0.1, 0.24, 0.2, 0.1], "lv2": [0.11, 0.264, 0.22, 0.11], "lv3": [0.12, 0.288, 0.24, 0.12],
-        "lv4": [0.13, 0.312, 0.26, 0.13], "lv5": [0.14, 0.336, 0.28, 0.14], "lv6": [0.15, 0.36, 0.3, 0.15],
-        "lv7": [0.1625, 0.39, 0.325, 0.1625], "lv8": [0.175, 0.42, 0.35, 0.175], "lv9": [0.1875, 0.45, 0.375, 0.1875],
-        "lv10": [0.2, 0.48, 0.4, 0.2], "lv11": [0.21, 0.504, 0.42, 0.21], "lv12": [0.22, 0.528, 0.44, 0.22],
-        "lv13": [0.23, 0.552, 0.46, 0.23], "lv14": [0.24, 0.576, 0.48, 0.24], "lv15": [0.25, 0.6, 0.5, 0.25]
-      }
-    },
-    {
-      "name": "Content Monetization",
-      "tag": "Impair",
-      "type": "Technique",
-      "description": "Immediately attacks the enemy. After entering combat via actively attacking a \"Blocked\" enemy, deals Fire DMG to all enemies equal to ****2[i]%**** of Sparxie's ATK and recovers ****1[i]**** Skill Point(s) for allies.",
-      "regen": 0,
-      "er": 0,
-      "break": [0, 0, 0],
-      "icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Maze.png",
-      "shortIcon": "SkillIcon_1501_Maze",
-      "id": "150107",
-      "params": {
-        "lv1": [2, 0.5, 10]
-      }
-    },
-    {
-      "name": "Signal Overflow: The Great Encore!",
-      "tag": "AoE",
-      "type": "Elation DMG",
-      "description": "Deals ****2[f1]%**** Fire Elation DMG to all enemies and deals ****3[i]**** additional instance(s) of DMG. Each instance deals ****1[f1]%**** Fire Elation DMG to one random enemy. Grants ****4[i]**** \"Thrill\" point(s) to Sparxie.",
-      "regen": 5,
-      "er": 0,
-      "break": [5, 20, 0],
-      "icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Extra.png",
-      "shortIcon": "SkillIcon_1501_Extra",
-      "id": "150120",
-      "params": {
-        "lv1": [0.125, 0.25, 20, 2], "lv2": [0.1375, 0.275, 20, 2], "lv3": [0.15, 0.3, 20, 2],
-        "lv4": [0.1625, 0.325, 20, 2], "lv5": [0.175, 0.35, 20, 2], "lv6": [0.1875, 0.375, 20, 2],
-        "lv7": [0.203125, 0.40625, 20, 2], "lv8": [0.21875, 0.4375, 20, 2], "lv9": [0.234375, 0.46875, 20, 2],
-        "lv10": [0.25, 0.5, 20, 2], "lv11": [0.2625, 0.525, 20, 2], "lv12": [0.275, 0.55, 20, 2],
-        "lv13": [0.2875, 0.575, 20, 2], "lv14": [0.3, 0.6, 20, 2], "lv15": [0.3125, 0.625, 20, 2]
-      }
-    }
-  ],
-  "ranks": [
-    {
-      "name": "#GoingViral #WhoIsShe",
-      "description": "When Aha Instant ends, gains <unbreak>#1[i]</unbreak> <u>Punchline</u>. For every 1 <u>Punchline</u> owned, increases <u>All-Type RES PEN</u> for all allies by <unbreak>#2[f1]%</unbreak>, up to a max increase of <unbreak>#3[i]%</unbreak>.",
-      "icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Rank1.png",
-      "rankIcon": "spriteoutput/textures/1501/1501_Rank_1.png",
-      "shortIcon": "SkillIcon_1501_Rank1",
-      "params": [
-        5,
-        0.015,
-        0.15
-      ],
-      "skillUpgrades": {},
-      "id": "150101"
-    },
-    {
-      "name": "#AudienceKnows",
-      "description": "When Aha Instant ends, Sparxie gains 1 <u>extra turn</u> and <unbreak>#1[i]</unbreak> \"Thrill.\" For every 1 \"Thrill\" consumed, increases this unit's CRIT DMG by <unbreak>#2[i]%</unbreak>, lasting for <unbreak>#3[i]</unbreak> turn(s) and stacking up to <unbreak>#4[i]</unbreak> time(s).",
-      "icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Rank2.png",
-      "rankIcon": "spriteoutput/textures/1501/1501_Rank_2.png",
-      "shortIcon": "SkillIcon_1501_Rank2",
-      "params": [
-        2,
-        0.1,
-        2,
-        4
-      ],
-      "skillUpgrades": {},
-      "id": "150102"
-    },
-    {
-      "name": "#LinkUp #HeartSkip",
-      "description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.\\nElation Skill Lv. +1, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_BP.png",
-      "rankIcon": "spriteoutput/textures/1501/1501_Rank_3.png",
-      "shortIcon": "SkillIcon_1501_BP",
-      "params": [],
-      "skillUpgrades": {
-        "150101": 1,
-        "150102": 2,
-        "150120": 1
-      },
-      "id": "150103"
-    },
-    {
-      "name": "#LockedIn #FaceCard",
-      "description": "When using Ultimate, additionally gains <unbreak>#1[i]</unbreak> <u>Punchline</u> and increases this unit's Elation by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
-      "icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Rank4.png",
-      "rankIcon": "spriteoutput/textures/1501/1501_Rank_4.png",
-      "shortIcon": "SkillIcon_1501_Rank4",
-      "params": [
-        5,
-        0.36,
-        3
-      ],
-      "skillUpgrades": {},
-      "id": "150104"
-    },
-    {
-      "name": "#HealingTheWorld #GoodVibesOnly",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nElation Skill Lv. +1, up to a maximum of Lv. <unbreak>15</unbreak>.",
-      "icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Ultra.png",
-      "rankIcon": "spriteoutput/textures/1501/1501_Rank_5.png",
-      "shortIcon": "SkillIcon_1501_Ultra",
-      "params": [],
-      "skillUpgrades": {
-        "150103": 2,
-        "150104": 2,
-        "150120": 1
-      },
-      "id": "150105"
-    },
-    {
-      "name": "#BuiltDifferent #GoingExtinct",
-      "description": "Increases All-Type <u>RES PEN</u> by <unbreak>#3[i]%</unbreak>. For every <unbreak>#1[i]</unbreak> <u>Punchline</u> taken into account by the Elation Skill, the number of its additional DMG instances increases by 1, up to a max of <unbreak>#2[i]</unbreak>.",
-      "icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Rank6.png",
-      "rankIcon": "spriteoutput/textures/1501/1501_Rank_6.png",
-      "shortIcon": "SkillIcon_1501_Rank6",
-      "params": [
-        1,
-        40,
-        0.2
-      ],
-      "skillUpgrades": {},
-      "id": "150106"
-    }
-  ],
-  "statsArray": [
-    {
-      "HPBase": 164.4,
-      "AttackBase": 81.84,
-      "DefenceBase": 66.0,
-      "MaxLevel": 20
-    },
-    {
-      "HPBase": 1206.6,
-      "AttackBase": 601.32,
-      "DefenceBase": 485.1,
-      "MaxLevel": 80
-    }
-  ]
+	"name": "Sparxie",
+	"description": "Like! Follow! Stream! Views! Party till the world ends!\nSparxie and Sparkle, the Mask and the Fool are fundamentally the same.\nWhoever is seen, whoever is liked, is the correct answer!",
+	"rarity": "SuperRare",
+	"avatarType": "Elation",
+	"element": "Fire",
+	"stats": {
+		"maxHP": 1047.816,
+		"maxATK": 640.332,
+		"maxDEF": 460.845,
+		"SPD": 107,
+		"TNT": 100,
+		"CR": 0.05,
+		"CDMG": 0.5
+	},
+	"icon": "spriteoutput/avatardrawcard/1501.png",
+	"shortIcon": "1501",
+	"drawIcon": "spriteoutput/avatardrawcardresult/1501.png",
+	"skills": [
+		{
+			"name": "Cat Got Your Flametongue?",
+			"tag": "Single Target",
+			"type": "Basic ATK",
+			"description": "Deals Fire DMG equal to ****1[i]%**** of Sparxie's ATK to one designated enemy.",
+			"regen": 20,
+			"er": 0,
+			"break": [
+				30,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Normal.png",
+			"shortIcon": "SkillIcon_1501_Normal",
+			"id": "150101",
+			"params": {
+				"lv1": [
+					0.5
+				],
+				"lv2": [
+					0.6
+				],
+				"lv3": [
+					0.7
+				],
+				"lv4": [
+					0.8
+				],
+				"lv5": [
+					0.9
+				],
+				"lv6": [
+					1
+				],
+				"lv7": [
+					1.1
+				],
+				"lv8": [
+					1.2
+				],
+				"lv9": [
+					1.3
+				],
+				"lv10": [
+					1.4
+				]
+			},
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 4000
+					},
+					{
+						"ItemID": 110261,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116001,
+						"ItemNum": 5
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 8000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 2
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 16000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 32000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 2
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 120000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 2
+					}
+				]
+			}
+		},
+		{
+			"name": "Boom! Sparxicle's Poppin'",
+			"tag": "Enhance",
+			"type": "Skill",
+			"description": "Start a livestream to turn Basic ATK into \"Bloom! Winner Takes All\" and trigger \"Engagement Farming\" 1 time. During this ability, \"Engagement Farming\" can be triggered repeatedly, up to **1[i]** time(s). Using this ability is not considered as using a Skill.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				0,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_BP.png",
+			"shortIcon": "SkillIcon_1501_BP",
+			"id": "150102",
+			"params": {
+				"lv1": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv2": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv3": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv4": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv5": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv6": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv7": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv8": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv9": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv10": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv11": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv12": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv13": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv14": [
+					20,
+					28,
+					3,
+					7,
+					4
+				],
+				"lv15": [
+					20,
+					28,
+					3,
+					7,
+					4
+				]
+			},
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2000
+					},
+					{
+						"ItemID": 116001,
+						"ItemNum": 2
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 4000
+					},
+					{
+						"ItemID": 110261,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 116001,
+						"ItemNum": 5
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 8000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 15000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 4
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 3
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 24000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 6
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 5
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 32000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 2
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 65000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 4
+					},
+					{
+						"ItemID": 110508,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 120000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 6
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110508,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 250000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 12
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110508,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Party's Wildin' and Camera's Rollin'",
+			"tag": "AoE",
+			"type": "Ultimate",
+			"description": "Gains **1[i]** **Punchline** point(s). Deals Fire DMG equal to (**3[f1]** × Elation + ****2[f1]%****) of Sparxie's ATK to all enemies.",
+			"regen": 5,
+			"er": 160,
+			"break": [
+				0,
+				60,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Ultra.png",
+			"shortIcon": "SkillIcon_1501_Ultra",
+			"id": "150103",
+			"params": {
+				"lv1": [
+					2,
+					0.3,
+					0.6
+				],
+				"lv2": [
+					2,
+					0.32,
+					0.6
+				],
+				"lv3": [
+					2,
+					0.34,
+					0.6
+				],
+				"lv4": [
+					2,
+					0.36,
+					0.6
+				],
+				"lv5": [
+					2,
+					0.38,
+					0.6
+				],
+				"lv6": [
+					2,
+					0.4,
+					0.6
+				],
+				"lv7": [
+					2,
+					0.425,
+					0.6
+				],
+				"lv8": [
+					2,
+					0.45,
+					0.6
+				],
+				"lv9": [
+					2,
+					0.475,
+					0.6
+				],
+				"lv10": [
+					2,
+					0.5,
+					0.6
+				],
+				"lv11": [
+					2,
+					0.52,
+					0.6
+				],
+				"lv12": [
+					2,
+					0.54,
+					0.6
+				],
+				"lv13": [
+					2,
+					0.56,
+					0.6
+				],
+				"lv14": [
+					2,
+					0.58,
+					0.6
+				],
+				"lv15": [
+					2,
+					0.6,
+					0.6
+				]
+			},
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2000
+					},
+					{
+						"ItemID": 116001,
+						"ItemNum": 2
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 4000
+					},
+					{
+						"ItemID": 110261,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 116001,
+						"ItemNum": 5
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 8000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 15000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 4
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 3
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 24000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 6
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 5
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 32000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 2
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 65000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 4
+					},
+					{
+						"ItemID": 110508,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 120000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 6
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110508,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 250000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 12
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110508,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Sleight of Sparx Hand",
+			"tag": "Enhance",
+			"type": "Talent",
+			"description": "While Sparxie holds \"**Certified Banger**\":\nUsing Enhanced Basic ATK deals ****3[i]%**** Fire **Elation DMG** to one designated enemy, and ****4[f1]%**** Fire **Elation DMG** to their adjacent targets. Additionally, for every 1 instance of \"Engagement Farming\" triggered, the Enhanced Basic ATK deals 1 extra instance of ****1[f1]%**** Fire **Elation DMG** to 1 random attacked enemy target.\nUsing Ultimate deals ****2[i]%**** Fire **Elation DMG** to all enemies.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				15,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Passive.png",
+			"shortIcon": "SkillIcon_1501_Passive",
+			"id": "150104",
+			"params": {
+				"lv1": [
+					0.1,
+					0.24,
+					0.2,
+					0.1
+				],
+				"lv2": [
+					0.11,
+					0.264,
+					0.22,
+					0.11
+				],
+				"lv3": [
+					0.12,
+					0.288,
+					0.24,
+					0.12
+				],
+				"lv4": [
+					0.13,
+					0.312,
+					0.26,
+					0.13
+				],
+				"lv5": [
+					0.14,
+					0.336,
+					0.28,
+					0.14
+				],
+				"lv6": [
+					0.15,
+					0.36,
+					0.3,
+					0.15
+				],
+				"lv7": [
+					0.1625,
+					0.39,
+					0.325,
+					0.1625
+				],
+				"lv8": [
+					0.175,
+					0.42,
+					0.35,
+					0.175
+				],
+				"lv9": [
+					0.1875,
+					0.45,
+					0.375,
+					0.1875
+				],
+				"lv10": [
+					0.2,
+					0.48,
+					0.4,
+					0.2
+				],
+				"lv11": [
+					0.21,
+					0.504,
+					0.42,
+					0.21
+				],
+				"lv12": [
+					0.22,
+					0.528,
+					0.44,
+					0.22
+				],
+				"lv13": [
+					0.23,
+					0.552,
+					0.46,
+					0.23
+				],
+				"lv14": [
+					0.24,
+					0.576,
+					0.48,
+					0.24
+				],
+				"lv15": [
+					0.25,
+					0.6,
+					0.5,
+					0.25
+				]
+			},
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2000
+					},
+					{
+						"ItemID": 116001,
+						"ItemNum": 2
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 4000
+					},
+					{
+						"ItemID": 110261,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 116001,
+						"ItemNum": 5
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 8000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 15000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 4
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 3
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 24000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 6
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 5
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 32000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 2
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 65000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 4
+					},
+					{
+						"ItemID": 110508,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 120000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 6
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110508,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 250000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 12
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110508,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Attack",
+			"tag": "",
+			"type": "",
+			"description": "Attacks an enemy, and after entering combat, reduces their Toughness of the corresponding Type.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				30,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Normal.png",
+			"shortIcon": "SkillIcon_1501_Normal",
+			"id": "150106",
+			"params": {
+				"lv1": []
+			}
+		},
+		{
+			"name": "Content Monetization",
+			"tag": "Impair",
+			"type": "Technique",
+			"description": "After using the Technique, inflicts enemies within a set area with \"Block\" for **3[i]** second(s). \"Blocked\" enemies cannot detect ally targets.\nAfter entering combat via actively attacking a \"Blocked\" enemy, deals Fire DMG to all enemies equal to **2[i]%** of Sparxie's ATK and recovers **1[i]** Skill Point(s) for allies.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				0,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Maze.png",
+			"shortIcon": "SkillIcon_1501_Maze",
+			"id": "150107",
+			"params": {
+				"lv1": [
+					2,
+					0.5,
+					10
+				]
+			}
+		},
+		{
+			"name": "Bloom! Winner Takes All",
+			"tag": "Blast",
+			"type": "Basic ATK",
+			"description": "Finalizes the livestream. Deals Fire DMG equal to ****1[i]%**** of Sparxie's ATK to one designated enemy, and Fire DMG equal to ****2[f1]%**** of Sparxie's ATK to adjacent targets.",
+			"regen": 40,
+			"er": 0,
+			"break": [
+				30,
+				0,
+				15
+			],
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Normal02.png",
+			"shortIcon": "SkillIcon_1501_Normal02",
+			"id": "150108",
+			"params": {
+				"lv1": [
+					0.5,
+					0.25
+				],
+				"lv2": [
+					0.6,
+					0.3
+				],
+				"lv3": [
+					0.7,
+					0.35
+				],
+				"lv4": [
+					0.8,
+					0.4
+				],
+				"lv5": [
+					0.9,
+					0.45
+				],
+				"lv6": [
+					1,
+					0.5
+				],
+				"lv7": [
+					1.1,
+					0.55
+				],
+				"lv8": [
+					1.2,
+					0.6
+				],
+				"lv9": [
+					1.3,
+					0.65
+				],
+				"lv10": [
+					1.4,
+					0.7
+				]
+			},
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 4000
+					},
+					{
+						"ItemID": 110261,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116001,
+						"ItemNum": 5
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 8000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 2
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 16000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 32000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 2
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 120000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 2
+					}
+				]
+			}
+		},
+		{
+			"name": "Engagement Farming",
+			"tag": "Enhance",
+			"type": "Skill",
+			"description": "Causes \"Bloom! Winner Takes All\" to increase the DMG multiplier against one designated enemy by ****4[f1]%**** and the DMG multiplier against adjacent targets by ****5[f1]%****. Randomly gains one of the following gifts:\n\"Straight Fire\": **3[i]** **Punchline** point(s) and **1[i]** Skill point(s).\n\"Unreal Banger\": **2[i]** **Punchline** point(s).\nUsing this ability is not considered as using a Skill.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				0,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_BP02.png",
+			"shortIcon": "SkillIcon_1501_BP02",
+			"id": "150109",
+			"params": {
+				"lv1": [
+					2,
+					1,
+					2,
+					0.1,
+					0.05
+				],
+				"lv2": [
+					2,
+					1,
+					2,
+					0.11,
+					0.055
+				],
+				"lv3": [
+					2,
+					1,
+					2,
+					0.12,
+					0.06
+				],
+				"lv4": [
+					2,
+					1,
+					2,
+					0.13,
+					0.065
+				],
+				"lv5": [
+					2,
+					1,
+					2,
+					0.14,
+					0.07
+				],
+				"lv6": [
+					2,
+					1,
+					2,
+					0.15,
+					0.075
+				],
+				"lv7": [
+					2,
+					1,
+					2,
+					0.1625,
+					0.08125
+				],
+				"lv8": [
+					2,
+					1,
+					2,
+					0.175,
+					0.0875
+				],
+				"lv9": [
+					2,
+					1,
+					2,
+					0.1875,
+					0.09375
+				],
+				"lv10": [
+					2,
+					1,
+					2,
+					0.2,
+					0.1
+				],
+				"lv11": [
+					2,
+					1,
+					2,
+					0.21,
+					0.105
+				],
+				"lv12": [
+					2,
+					1,
+					2,
+					0.22,
+					0.11
+				],
+				"lv13": [
+					2,
+					1,
+					2,
+					0.23,
+					0.115
+				],
+				"lv14": [
+					2,
+					1,
+					2,
+					0.24,
+					0.12
+				],
+				"lv15": [
+					2,
+					1,
+					2,
+					0.25,
+					0.125
+				]
+			},
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2000
+					},
+					{
+						"ItemID": 116001,
+						"ItemNum": 2
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 4000
+					},
+					{
+						"ItemID": 110261,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 116001,
+						"ItemNum": 5
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 8000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 15000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 4
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 3
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 24000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 6
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 5
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 32000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 2
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 65000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 4
+					},
+					{
+						"ItemID": 110508,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 120000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 6
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110508,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 250000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 12
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110508,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Bloom! Winner Takes All",
+			"tag": "Blast",
+			"type": "Basic ATK",
+			"description": "",
+			"regen": 40,
+			"er": 0,
+			"break": [
+				30,
+				0,
+				15
+			],
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Normal02.png",
+			"shortIcon": "SkillIcon_1501_Normal02",
+			"id": "150110",
+			"params": {
+				"lv1": [
+					0.5,
+					0.25
+				],
+				"lv2": [
+					0.6,
+					0.3
+				],
+				"lv3": [
+					0.7,
+					0.35
+				],
+				"lv4": [
+					0.8,
+					0.4
+				],
+				"lv5": [
+					0.9,
+					0.45
+				],
+				"lv6": [
+					1,
+					0.5
+				],
+				"lv7": [
+					1.1,
+					0.55
+				],
+				"lv8": [
+					1.2,
+					0.6
+				],
+				"lv9": [
+					1.3,
+					0.65
+				],
+				"lv10": [
+					1.4,
+					0.7
+				]
+			}
+		},
+		{
+			"name": "Signal Overflow: The Great Encore!",
+			"tag": "AoE",
+			"type": "Elation Skill",
+			"description": "Deals ****2[f1]%**** Fire **Elation DMG** to all enemies and deals **3[i]** additional instance(s) of DMG. Each instance deals ****1[f1]%**** Fire **Elation DMG** to one random enemy. Grants **4[i]** \"Thrill\" point(s) to Sparxie, which can be used to offset Sparxie's Skill Point consumption. Consuming \"Thrill\" is considered as consuming Skill Points.",
+			"regen": 5,
+			"er": 0,
+			"break": [
+				5,
+				20,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Elation.png",
+			"shortIcon": "SkillIcon_1501_Elation",
+			"id": "150120",
+			"params": {
+				"lv1": [
+					0.125,
+					0.25,
+					20,
+					2
+				],
+				"lv2": [
+					0.1375,
+					0.275,
+					20,
+					2
+				],
+				"lv3": [
+					0.15,
+					0.3,
+					20,
+					2
+				],
+				"lv4": [
+					0.1625,
+					0.325,
+					20,
+					2
+				],
+				"lv5": [
+					0.175,
+					0.35,
+					20,
+					2
+				],
+				"lv6": [
+					0.1875,
+					0.375,
+					20,
+					2
+				],
+				"lv7": [
+					0.203125,
+					0.40625,
+					20,
+					2
+				],
+				"lv8": [
+					0.21875,
+					0.4375,
+					20,
+					2
+				],
+				"lv9": [
+					0.234375,
+					0.46875,
+					20,
+					2
+				],
+				"lv10": [
+					0.25,
+					0.5,
+					20,
+					2
+				],
+				"lv11": [
+					0.2625,
+					0.525,
+					20,
+					2
+				],
+				"lv12": [
+					0.275,
+					0.55,
+					20,
+					2
+				],
+				"lv13": [
+					0.2875,
+					0.575,
+					20,
+					2
+				],
+				"lv14": [
+					0.3,
+					0.6,
+					20,
+					2
+				],
+				"lv15": [
+					0.3125,
+					0.625,
+					20,
+					2
+				]
+			},
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2000
+					},
+					{
+						"ItemID": 116001,
+						"ItemNum": 2
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 4000
+					},
+					{
+						"ItemID": 110261,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 116001,
+						"ItemNum": 5
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 8000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 15000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 4
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 3
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 24000
+					},
+					{
+						"ItemID": 110262,
+						"ItemNum": 6
+					},
+					{
+						"ItemID": 116002,
+						"ItemNum": 5
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 32000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 2
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 2
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 65000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 4
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 120000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 6
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 4
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 250000
+					},
+					{
+						"ItemID": 110263,
+						"ItemNum": 12
+					},
+					{
+						"ItemID": 116003,
+						"ItemNum": 4
+					}
+				]
+			}
+		}
+	],
+	"promos": {
+		"basicPromo": {
+			"2": 180000,
+			"110261": 2,
+			"110262": 5,
+			"110263": 8,
+			"116001": 5,
+			"116002": 5,
+			"116003": 4
+		},
+		"skillPromo": {
+			"2": 520000,
+			"241": 2,
+			"110261": 3,
+			"110262": 12,
+			"110263": 24,
+			"110508": 3,
+			"116001": 7,
+			"116002": 11,
+			"116003": 6
+		},
+		"ultPromo": {
+			"2": 520000,
+			"241": 2,
+			"110261": 3,
+			"110262": 12,
+			"110263": 24,
+			"110508": 3,
+			"116001": 7,
+			"116002": 11,
+			"116003": 6
+		},
+		"talentPromo": {
+			"2": 520000,
+			"241": 2,
+			"110261": 3,
+			"110262": 12,
+			"110263": 24,
+			"110508": 3,
+			"116001": 7,
+			"116002": 11,
+			"116003": 6
+		}
+	},
+	"promotion": {
+		"2": 308000,
+		"110432": 65,
+		"116001": 15,
+		"116002": 15,
+		"116003": 15
+	},
+	"treePromotion": {
+		"2": 740000,
+		"241": 2,
+		"110261": 4,
+		"110262": 16,
+		"110263": 35,
+		"110508": 3,
+		"116001": 8,
+		"116002": 7,
+		"116003": 22
+	},
+	"maxPromo": {
+		"2": 2788000,
+		"241": 8,
+		"110261": 15,
+		"110262": 57,
+		"110263": 115,
+		"110432": 65,
+		"110508": 12,
+		"116001": 49,
+		"116002": 60,
+		"116003": 59
+	},
+	"exp": 5797920,
+	"outfits": [],
+	"tree": [
+		{
+			"name": "Cat Got Your Flametongue?",
+			"description": "Deals Fire DMG equal to ****1[i]%**** of Sparxie's ATK to one designated enemy.",
+			"avatar": 1501,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Normal.png",
+			"shortIcon": "SkillIcon_1501_Normal",
+			"promotion": {
+				"2": 180000,
+				"110261": 2,
+				"110262": 5,
+				"110263": 8,
+				"116001": 5,
+				"116002": 5,
+				"116003": 4
+			},
+			"params": [
+				1.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				150101,
+				150108
+			],
+			"id": "1501001"
+		},
+		{
+			"name": "Boom! Sparxicle's Poppin'",
+			"description": "Start a livestream to turn Basic ATK into \"Bloom! Winner Takes All\" and trigger \"Engagement Farming\" 1 time. During this ability, \"Engagement Farming\" can be triggered repeatedly, up to **1[i]** time(s). Using this ability is not considered as using a Skill.",
+			"avatar": 1501,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_BP.png",
+			"shortIcon": "SkillIcon_1501_BP",
+			"promotion": {
+				"2": 520000,
+				"241": 2,
+				"110261": 3,
+				"110262": 12,
+				"110263": 24,
+				"110508": 3,
+				"116001": 7,
+				"116002": 11,
+				"116003": 6
+			},
+			"params": [
+				20,
+				28,
+				3,
+				7,
+				4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				150102,
+				150109
+			],
+			"id": "1501002"
+		},
+		{
+			"name": "Party's Wildin' and Camera's Rollin'",
+			"description": "Gains **1[i]** **Punchline** point(s). Deals Fire DMG equal to (**3[f1]** × Elation + ****2[f1]%****) of Sparxie's ATK to all enemies.",
+			"avatar": 1501,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Ultra.png",
+			"shortIcon": "SkillIcon_1501_Ultra",
+			"promotion": {
+				"2": 520000,
+				"241": 2,
+				"110261": 3,
+				"110262": 12,
+				"110263": 24,
+				"110508": 3,
+				"116001": 7,
+				"116002": 11,
+				"116003": 6
+			},
+			"params": [
+				2,
+				0.6,
+				0.6
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				150103
+			],
+			"id": "1501003"
+		},
+		{
+			"name": "Sleight of Sparx Hand",
+			"description": "While Sparxie holds \"**Certified Banger**\":\nUsing Enhanced Basic ATK deals ****3[i]%**** Fire **Elation DMG** to one designated enemy, and ****4[f1]%**** Fire **Elation DMG** to their adjacent targets. Additionally, for every 1 instance of \"Engagement Farming\" triggered, the Enhanced Basic ATK deals 1 extra instance of ****1[f1]%**** Fire **Elation DMG** to 1 random attacked enemy target.\nUsing Ultimate deals ****2[i]%**** Fire **Elation DMG** to all enemies.",
+			"avatar": 1501,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Passive.png",
+			"shortIcon": "SkillIcon_1501_Passive",
+			"promotion": {
+				"2": 520000,
+				"241": 2,
+				"110261": 3,
+				"110262": 12,
+				"110263": 24,
+				"110508": 3,
+				"116001": 7,
+				"116002": 11,
+				"116003": 6
+			},
+			"params": [
+				0.25,
+				0.6,
+				0.5,
+				0.25
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				150104
+			],
+			"id": "1501004"
+		},
+		{
+			"name": "Content Monetization",
+			"description": "After using the Technique, inflicts enemies within a set area with \"Block\" for **3[i]** second(s). \"Blocked\" enemies cannot detect ally targets.\nAfter entering combat via actively attacking a \"Blocked\" enemy, deals Fire DMG to all enemies equal to **2[i]%** of Sparxie's ATK and recovers **1[i]** Skill Point(s) for allies.",
+			"avatar": 1501,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Maze.png",
+			"shortIcon": "SkillIcon_1501_Maze",
+			"promotion": {},
+			"params": [
+				2,
+				0.5,
+				10
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				150107
+			],
+			"id": "1501007"
+		},
+		{
+			"name": "Sweet! Punchline Signing",
+			"description": "For every **100** of Sparxie's ATK that exceeds **2000**, increases this unit's Elation by **5%**, up to a maximum increase of **80%**.",
+			"avatar": 1501,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_SkillTree1.png",
+			"shortIcon": "SkillIcon_1501_SkillTree1",
+			"promotion": {
+				"2": 5000,
+				"110261": 2,
+				"110508": 1
+			},
+			"params": [
+				2000,
+				100,
+				0.05,
+				0.8
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "1501101"
+		},
+		{
+			"name": "Dazzling! Persona Kaleidoscope",
+			"description": "When there are 1/2/(3 or more) Elation characters in the team, using Sparxie's Ultimate will additionally gain **2**/**4**/**8** **Punchline** and **1**/**1**/**4** \"Thrill\".",
+			"avatar": 1501,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_SkillTree2.png",
+			"shortIcon": "SkillIcon_1501_SkillTree2",
+			"promotion": {
+				"2": 20000,
+				"241": 1,
+				"110262": 4,
+				"110508": 1
+			},
+			"params": [
+				2,
+				4,
+				8,
+				1,
+				1,
+				4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "1501102"
+		},
+		{
+			"name": "Frenzy! Palette of Truth and Lies",
+			"description": "For every 1 **Punchline** currently owned, increases all allies' CRIT DMG by **8%**, up to a max increase of **80%**.",
+			"avatar": 1501,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_SkillTree3.png",
+			"shortIcon": "SkillIcon_1501_SkillTree3",
+			"promotion": {
+				"2": 140000,
+				"241": 1,
+				"110263": 8,
+				"110508": 1
+			},
+			"params": [
+				0.08,
+				0.8
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "1501103"
+		},
+		{
+			"name": "Elation Boost",
+			"description": "",
+			"avatar": 1501,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconJoy.png",
+			"shortIcon": "IconJoy",
+			"promotion": {
+				"2": 2000,
+				"116001": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "ElationDamageAddedRatioBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "1501201"
+		},
+		{
+			"name": "CRIT Rate Boost",
+			"description": "",
+			"avatar": 1501,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+			"shortIcon": "IconCriticalChance",
+			"promotion": {
+				"2": 5000,
+				"110261": 2,
+				"116001": 6
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "CriticalChanceBase",
+					"Value": 0.026999999
+				}
+			],
+			"baseSkill": [],
+			"id": "1501202"
+		},
+		{
+			"name": "Elation Boost",
+			"description": "",
+			"avatar": 1501,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					1501101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconJoy.png",
+			"shortIcon": "IconJoy",
+			"promotion": {
+				"2": 10000,
+				"110262": 4,
+				"116002": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "ElationDamageAddedRatioBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "1501203"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1501,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": [
+					1501101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 10000,
+				"110262": 4,
+				"116002": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "1501204"
+		},
+		{
+			"name": "Elation Boost",
+			"description": "",
+			"avatar": 1501,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					1501102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconJoy.png",
+			"shortIcon": "IconJoy",
+			"promotion": {
+				"2": 18000,
+				"110262": 4,
+				"116002": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "ElationDamageAddedRatioBase",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "1501205"
+		},
+		{
+			"name": "CRIT Rate Boost",
+			"description": "",
+			"avatar": 1501,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					1501205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+			"shortIcon": "IconCriticalChance",
+			"promotion": {
+				"2": 45000,
+				"110263": 3,
+				"116003": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "CriticalChanceBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "1501206"
+		},
+		{
+			"name": "Elation Boost",
+			"description": "",
+			"avatar": 1501,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": [
+					1501206
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconJoy.png",
+			"shortIcon": "IconJoy",
+			"promotion": {
+				"2": 45000,
+				"110263": 3,
+				"116003": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "ElationDamageAddedRatioBase",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "1501207"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1501,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					1501103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 120000,
+				"110263": 5,
+				"116003": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1501208"
+		},
+		{
+			"name": "CRIT Rate Boost",
+			"description": "",
+			"avatar": 1501,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					1501208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+			"shortIcon": "IconCriticalChance",
+			"promotion": {
+				"2": 160000,
+				"110263": 8,
+				"116003": 8
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "CriticalChanceBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "1501209"
+		},
+		{
+			"name": "Elation Boost",
+			"description": "",
+			"avatar": 1501,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": [
+					1501209
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconJoy.png",
+			"shortIcon": "IconJoy",
+			"promotion": {
+				"2": 160000,
+				"110263": 8,
+				"116003": 8
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "ElationDamageAddedRatioBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1501210"
+		},
+		{
+			"name": "Signal Overflow: The Great Encore!",
+			"description": "Deals ****2[f1]%**** Fire **Elation DMG** to all enemies and deals **3[i]** additional instance(s) of DMG. Each instance deals ****1[f1]%**** Fire **Elation DMG** to one random enemy. Grants **4[i]** \"Thrill\" point(s) to Sparxie, which can be used to offset Sparxie's Skill Point consumption. Consuming \"Thrill\" is considered as consuming Skill Points.",
+			"avatar": 1501,
+			"type": 4,
+			"pos": {
+				"point": "22",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Elation.png",
+			"shortIcon": "SkillIcon_1501_Elation",
+			"promotion": {
+				"2": 520000,
+				"110261": 3,
+				"110262": 12,
+				"110263": 24,
+				"116001": 7,
+				"116002": 11,
+				"116003": 14
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				150120
+			],
+			"id": "1501420"
+		}
+	],
+	"ranks": [
+		{
+			"name": "#GoingViral #WhoIsShe",
+			"description": "When Aha Instant ends, gains <unbreak>#1[i]</unbreak> <u>Punchline</u>. For every 1 <u>Punchline</u> owned, increases All-Type <u>RES PEN</u> for all allies by <unbreak>#2[f1]%</unbreak>, up to a max increase of <unbreak>#3[i]%</unbreak>.",
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Rank1.png",
+			"rankIcon": "spriteoutput/textures/1501/1501_Rank_1.png",
+			"shortIcon": "SkillIcon_1501_Rank1",
+			"params": [
+				5,
+				0.015,
+				0.15
+			],
+			"skillUpgrades": {},
+			"id": "150101"
+		},
+		{
+			"name": "#AudienceKnows",
+			"description": "When Aha Instant ends, Sparxie gains 1 <u>extra turn</u> and <unbreak>#1[i]</unbreak> \"Thrill.\" For every 1 \"Thrill\" consumed, increases this unit's CRIT DMG by <unbreak>#2[i]%</unbreak>, lasting for <unbreak>#3[i]</unbreak> turn(s) and stacking up to <unbreak>#4[i]</unbreak> time(s).",
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Rank2.png",
+			"rankIcon": "spriteoutput/textures/1501/1501_Rank_2.png",
+			"shortIcon": "SkillIcon_1501_Rank2",
+			"params": [
+				2,
+				0.1,
+				2,
+				4
+			],
+			"skillUpgrades": {},
+			"id": "150102"
+		},
+		{
+			"name": "#LinkUp #HeartSkip",
+			"description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.\\nElation Skill Lv. +1, up to a maximum of Lv. <unbreak>15</unbreak>.",
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_BP.png",
+			"rankIcon": "spriteoutput/textures/1501/1501_Rank_3.png",
+			"shortIcon": "SkillIcon_1501_BP",
+			"params": [],
+			"skillUpgrades": {
+				"150101": 1,
+				"150102": 2,
+				"150108": 1,
+				"150109": 2,
+				"150120": 1
+			},
+			"id": "150103"
+		},
+		{
+			"name": "#LockedIn #FaceCard",
+			"description": "When using Ultimate, additionally gains <unbreak>#1[i]</unbreak> <u>Punchline</u> and increases this unit's Elation by <unbreak>#2[i]%</unbreak> for <unbreak>#3[i]</unbreak> turn(s).",
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Rank4.png",
+			"rankIcon": "spriteoutput/textures/1501/1501_Rank_4.png",
+			"shortIcon": "SkillIcon_1501_Rank4",
+			"params": [
+				5,
+				0.36,
+				3
+			],
+			"skillUpgrades": {},
+			"id": "150104"
+		},
+		{
+			"name": "#HealingTheWorld #GoodVibesOnly",
+			"description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nElation Skill Lv. +1, up to a maximum of Lv. <unbreak>15</unbreak>.",
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Ultra.png",
+			"rankIcon": "spriteoutput/textures/1501/1501_Rank_5.png",
+			"shortIcon": "SkillIcon_1501_Ultra",
+			"params": [],
+			"skillUpgrades": {
+				"150103": 2,
+				"150104": 2,
+				"150120": 1
+			},
+			"id": "150105"
+		},
+		{
+			"name": "#BuiltDifferent #GoingExtinct",
+			"description": "Increases All-Type <u>RES PEN</u> by <unbreak>#3[i]%</unbreak>. For every <unbreak>#1[i]</unbreak> <u>Punchline</u> taken into account, the number of additional DMG instances dealt by the Elation Skill increases by 1, up to a max of <unbreak>#2[i]</unbreak>.",
+			"icon": "spriteoutput/skillicons/avatar/1501/SkillIcon_1501_Rank6.png",
+			"rankIcon": "spriteoutput/textures/1501/1501_Rank_6.png",
+			"shortIcon": "SkillIcon_1501_Rank6",
+			"params": [
+				1,
+				40,
+				0.2
+			],
+			"skillUpgrades": {},
+			"id": "150106"
+		}
+	],
+	"statsArray": [
+		{
+			"HPBase": 142.56,
+			"HPAdd": 7.128,
+			"AttackBase": 87.12,
+			"AttackAdd": 4.356,
+			"DefenceBase": 62.7,
+			"DefenceAdd": 3.135,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 100,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 4000
+				},
+				{
+					"ItemID": 116001,
+					"ItemNum": 5
+				}
+			],
+			"MaxLevel": 20
+		},
+		{
+			"HPBase": 199.584,
+			"HPAdd": 7.128,
+			"AttackBase": 121.968,
+			"AttackAdd": 4.356,
+			"DefenceBase": 87.78,
+			"DefenceAdd": 3.135,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 100,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 8000
+				},
+				{
+					"ItemID": 116001,
+					"ItemNum": 10
+				}
+			],
+			"MaxLevel": 30
+		},
+		{
+			"HPBase": 256.608,
+			"HPAdd": 7.128,
+			"AttackBase": 156.816,
+			"AttackAdd": 4.356,
+			"DefenceBase": 112.86,
+			"DefenceAdd": 3.135,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 100,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 16000
+				},
+				{
+					"ItemID": 116002,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 110432,
+					"ItemNum": 3
+				}
+			],
+			"MaxLevel": 40
+		},
+		{
+			"HPBase": 313.632,
+			"HPAdd": 7.128,
+			"AttackBase": 191.664,
+			"AttackAdd": 4.356,
+			"DefenceBase": 137.94,
+			"DefenceAdd": 3.135,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 100,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 40000
+				},
+				{
+					"ItemID": 116002,
+					"ItemNum": 9
+				},
+				{
+					"ItemID": 110432,
+					"ItemNum": 7
+				}
+			],
+			"MaxLevel": 50
+		},
+		{
+			"HPBase": 370.656,
+			"HPAdd": 7.128,
+			"AttackBase": 226.512,
+			"AttackAdd": 4.356,
+			"DefenceBase": 163.02,
+			"DefenceAdd": 3.135,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 100,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 80000
+				},
+				{
+					"ItemID": 116003,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 110432,
+					"ItemNum": 20
+				}
+			],
+			"MaxLevel": 60
+		},
+		{
+			"HPBase": 427.68,
+			"HPAdd": 7.128,
+			"AttackBase": 261.36,
+			"AttackAdd": 4.356,
+			"DefenceBase": 188.1,
+			"DefenceAdd": 3.135,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 100,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 160000
+				},
+				{
+					"ItemID": 116003,
+					"ItemNum": 9
+				},
+				{
+					"ItemID": 110432,
+					"ItemNum": 35
+				}
+			],
+			"MaxLevel": 70
+		},
+		{
+			"HPBase": 484.704,
+			"HPAdd": 7.128,
+			"AttackBase": 296.208,
+			"AttackAdd": 4.356,
+			"DefenceBase": 213.18,
+			"DefenceAdd": 3.135,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 100,
+			"PromotionCostList": [],
+			"MaxLevel": 80
+		}
+	],
+	"advancement": {
+		"lv0": [
+			{
+				"ItemID": 2,
+				"ItemNum": 4000
+			},
+			{
+				"ItemID": 116001,
+				"ItemNum": 5
+			}
+		],
+		"lv1": [
+			{
+				"ItemID": 2,
+				"ItemNum": 8000
+			},
+			{
+				"ItemID": 116001,
+				"ItemNum": 10
+			}
+		],
+		"lv2": [
+			{
+				"ItemID": 2,
+				"ItemNum": 16000
+			},
+			{
+				"ItemID": 116002,
+				"ItemNum": 6
+			},
+			{
+				"ItemID": 110432,
+				"ItemNum": 3
+			}
+		],
+		"lv3": [
+			{
+				"ItemID": 2,
+				"ItemNum": 40000
+			},
+			{
+				"ItemID": 116002,
+				"ItemNum": 9
+			},
+			{
+				"ItemID": 110432,
+				"ItemNum": 7
+			}
+		],
+		"lv4": [
+			{
+				"ItemID": 2,
+				"ItemNum": 80000
+			},
+			{
+				"ItemID": 116003,
+				"ItemNum": 6
+			},
+			{
+				"ItemID": 110432,
+				"ItemNum": 20
+			}
+		],
+		"lv5": [
+			{
+				"ItemID": 2,
+				"ItemNum": 160000
+			},
+			{
+				"ItemID": 116003,
+				"ItemNum": 9
+			},
+			{
+				"ItemID": 110432,
+				"ItemNum": 35
+			}
+		]
+	},
+	"id": "1501"
 }

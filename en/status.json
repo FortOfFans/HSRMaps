@@ -289,6 +289,45 @@
 			"#SkillRelic_128_4_P2_CriticalDamage"
 		]
 	},
+	"5512911": {
+		"id": "5512911",
+		"name": "Ever-Glorious Magical Girl",
+		"desc": "Elation DMG dealt ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF.",
+		"effect": "",
+		"modifier": "MRelic_129_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffIgnoreDefence.png",
+		"tagList": [],
+		"readParams": [
+			"_DefenceAddRatio"
+		]
+	},
+	"5513011": {
+		"id": "5513011",
+		"name": "Diviner of Distant Reach",
+		"desc": "CRIT Rate increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MRelic_130_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCritical.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"5513012": {
+		"id": "5513012",
+		"name": "Diviner of Distant Reach",
+		"desc": "Elation increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Elation Boost",
+		"modifier": "MRelic_130_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillRelic_130_4_P5_ElationDamageAddedRatioBase"
+		]
+	},
 	"5531311": {
 		"id": "5531311",
 		"name": "Sigonia, the Unclaimed Desolation",
@@ -2397,6 +2436,28 @@
 			"MDF_1"
 		]
 	},
+	"30040001": {
+		"id": "30040001",
+		"name": "",
+		"desc": "",
+		"effect": "",
+		"modifier": "MBattleEvent_Elation_ElationEchoPointBuff",
+		"type": "Buff",
+		"icon": "",
+		"tagList": [],
+		"readParams": []
+	},
+	"30040002": {
+		"id": "30040002",
+		"name": "",
+		"desc": "",
+		"effect": "",
+		"modifier": "MLevel_ElationBE_ElationEchoPointBuff_OnEnterBattle",
+		"type": "Buff",
+		"icon": "",
+		"tagList": [],
+		"readParams": []
+	},
 	"30090010": {
 		"id": "30090010",
 		"name": "Burn",
@@ -2598,6 +2659,32 @@
 		"tagList": [],
 		"readParams": [
 			"#SkillEquip_P1_DamageAddedRatio"
+		]
+	},
+	"40200231": {
+		"id": "40200231",
+		"name": "Elation Boost",
+		"desc": "Elation increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Elation Boost",
+		"modifier": "MEquip_20023_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillEquip_P1_ElationDamageAddedRatio"
+		]
+	},
+	"40200241": {
+		"id": "40200241",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "CRIT DMG Boost",
+		"modifier": "MEquip_20024_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillEquip_P2_CriticalDamage"
 		]
 	},
 	"40210051": {
@@ -3045,6 +3132,33 @@
 		"tagList": [],
 		"readParams": [
 			"#SkillEquip_P3_DamageTakenRatio"
+		]
+	},
+	"40210641": {
+		"id": "40210641",
+		"name": "Elation DMG Vulnerability",
+		"desc": "Elation DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Elation DMG Vulnerability",
+		"modifier": "MEquip_21064_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamageExtraAddedRatio.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillEquip_P2_ElationDamageTakenRatio"
+		]
+	},
+	"40210651": {
+		"id": "40210651",
+		"name": "Elation Boost",
+		"desc": "Each stack increases Elation by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect can stack up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "Elation Boost",
+		"modifier": "MEquip_21065_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillEquip_P2_ElationDamageAddedRatio",
+			"#SkillEquip_P3_MaxLayer"
 		]
 	},
 	"40220011": {
@@ -4037,6 +4151,62 @@
 		"tagList": [],
 		"readParams": [
 			"MDF_DamageRatio"
+		]
+	},
+	"40230531": {
+		"id": "40230531",
+		"name": "Center of Attention",
+		"desc": "Each stack enables the Elation DMG dealt to ignore <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of the target's DEF.",
+		"effect": "Ignore Defense",
+		"modifier": "MEquip_23053_Sub02",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffIgnoreDefence.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue",
+			"MDF_PropertyValue2"
+		]
+	},
+	"40230532": {
+		"id": "40230532",
+		"name": "Stream Promo",
+		"desc": "Elation increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Elation Boost",
+		"modifier": "MEquip_23053_Sub02_Halo",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"40230541": {
+		"id": "40230541",
+		"name": "Great Fortune",
+		"desc": "CRIT Rate increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "Great Fortune",
+		"modifier": "MEquip_23054_Sub_ToTeamMembers",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCritical.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue",
+			"MDF_PropertyValue2"
+		]
+	},
+	"40230542": {
+		"id": "40230542",
+		"name": "Great Fortune",
+		"desc": "Increases CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, CRIT DMG by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, and Energy Regeneration Rate by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+		"effect": "Great Fortune",
+		"modifier": "MEquip_23054_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCritical.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillEquip_P2_Value",
+			"#SkillEquip_P3_Value",
+			"#SkillEquip_P5_AddSPRatio"
 		]
 	},
 	"40240001": {
@@ -5476,6 +5646,32 @@
 			"MDF_PropertyValue2"
 		]
 	},
+	"63046127": {
+		"id": "63046127",
+		"name": "Montane Gush",
+		"desc": "CRIT DMG dealt by Skill increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MStrongChallengeEX_Talent_StageAbility_TGT_084",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_BPCrit_DamageAddedRatio"
+		]
+	},
+	"63046128": {
+		"id": "63046128",
+		"name": "Collapse on Sight",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MStrongChallengeEX_Talent_StageAbility_TGT_086",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_SpeedAddedRatio"
+		]
+	},
 	"63047001": {
 		"id": "63047001",
 		"name": "Stage Buff: Combo Blast",
@@ -6816,7 +7012,7 @@
 	"63055218": {
 		"id": "63055218",
 		"name": "Apotheosis",
-		"desc": "CRIT Rate increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> and ATK increases by <color=#f29e38ff><unbreak>#1[f2]%</unbreak></color>.",
+		"desc": "Increases CRIT Rate by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> and ATK by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>.",
 		"effect": "Apotheosis",
 		"modifier": "MAvatar_GridFight_Argenti_00_Passive_Charge",
 		"type": "Buff",
@@ -7407,7 +7603,7 @@
 		"desc": "At the start of the turn, deals Physical DoT equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Hysilens' ATK per stack. After being attacked, immediately inflicts Physical DoT equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the original \"Deep Sea Resonance\" DMG to this unit and adjacent enemy targets, and triggers <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of the original DMG from 1 other random DoT state currently affecting the target.",
 		"effect": "Deep Sea Resonance",
 		"modifier": "MAvatar_GridFight_Harscyline_00_PassiveSkill01_Dot",
-		"type": "Buff",
+		"type": "Debuff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1410Dot.png",
 		"tagList": [],
 		"readParams": [
@@ -9049,6 +9245,99 @@
 			"#ADF_2"
 		]
 	},
+	"63055529": {
+		"id": "63055529",
+		"name": "Apotheosis",
+		"desc": "Increases CRIT Rate by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color> and ATK by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>.",
+		"effect": "Apotheosis",
+		"modifier": "MBattleEvent_GridFight_Argenti_00_Passive_Charge",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1302Passive.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_CritChance",
+			"MDF_AttackAddRatio",
+			"MDF_CritDamage"
+		]
+	},
+	"63055530": {
+		"id": "63055530",
+		"name": "Dance Partner",
+		"desc": "After attacking a Weakness Broken enemy target, converts the Toughness Reduction of this attack into 1 instance of <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Super Break DMG.",
+		"effect": "",
+		"modifier": "MAvatar_GridFight_Constance_00_Dancer",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1321Passive.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055531": {
+		"id": "63055531",
+		"name": "Fresh, Ethereal, and Beloved",
+		"desc": "All-Type RES decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "All-Type RES Reduction",
+		"modifier": "MAvatar_GridFight_Constance_00_Rank02_PropertyValue",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageResistanceElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055532": {
+		"id": "63055532",
+		"name": "Speed Alternation",
+		"desc": "Increases SPD Amplification by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "GridFight_MonsterTag_4.0_1009_Avatar_Buff",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_Accele.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055533": {
+		"id": "63055533",
+		"name": "Speed Alternation",
+		"desc": "SPD Amplification decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "GridFight_MonsterTag_4.0_1009_Avatar_DeBuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffSpeedDown.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055534": {
+		"id": "63055534",
+		"name": "Follower Growth",
+		"desc": "Each stack increases DMG Amplification during Aha Instant by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Amplification Boost",
+		"modifier": "MAvatar_GridFight_Sparxie_00_ElationTimeDamageUp",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_IncreasedDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055535": {
+		"id": "63055535",
+		"name": "Basic ATK DMG Multiplier Boost",
+		"desc": "The next Basic ATK's DMG multiplier increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MAvatar_GridFight_YaoGuang_00_AddNormalDamage",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_ExtraRatio"
+		]
+	},
 	"63055536": {
 		"id": "63055536",
 		"name": "DMG Mitigation",
@@ -9060,6 +9349,293 @@
 		"tagList": [],
 		"readParams": [
 			"MDF_PropertyValue"
+		]
+	},
+	"63055537": {
+		"id": "63055537",
+		"name": "Vulnerability",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MAvatar_GridFight_Sparkle_00_MonsterDamageTakenUp",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055538": {
+		"id": "63055538",
+		"name": "DEF Reduction",
+		"desc": "DEF decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MAvatar_GridFight_Sparkle_00_Rank02",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDefenceDown.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055539": {
+		"id": "63055539",
+		"name": "Special Guest Expert: Qingque",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "MStageAbility_GridFight_Stage_35500140_Avatar_Buff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055540": {
+		"id": "63055540",
+		"name": "Special Guest Expert: Tingyun",
+		"desc": "On-Field Strength increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "On-Field Strength Boost",
+		"modifier": "MStageAbility_GridFight_Stage_35500141_Buff",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_FrontRow.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055541": {
+		"id": "63055541",
+		"name": "Lick... Enkindled Betrayal",
+		"desc": "Weakness Break Efficiency increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Toughness Reduction taken by enemy targets that are not Weakness Broken can also be converted to Super Break DMG.",
+		"effect": "",
+		"modifier": "MAvatar_GridFight_Constance_00_Aura",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1321Aura.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055542": {
+		"id": "63055542",
+		"name": "Lick... Enkindled Betrayal",
+		"desc": "Toughness Reduction taken when not Weakness Broken can also be converted to Super Break DMG.",
+		"effect": "",
+		"modifier": "MAvatar_GridFight_Constance_00_Aura_OnEnemy",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1321Aura.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63055543": {
+		"id": "63055543",
+		"name": "And Yet, Always, Deathly Beautiful",
+		"desc": "Break Effect increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MAvatar_GridFight_Constance_00_Rank06_Property",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBreakDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055544": {
+		"id": "63055544",
+		"name": "Lick... Enkindled Betrayal",
+		"desc": "Weakness Break Efficiency increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MAvatar_GridFight_Constance_00_Aura_OnTeam",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1321Aura.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055545": {
+		"id": "63055545",
+		"name": "When a Bud Readies to Bloom",
+		"desc": "After attacking a Weakness Broken enemy target, converts the Toughness Reduction of this attack into 1 instance of <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Super Break DMG.",
+		"effect": "",
+		"modifier": "MAvatar_GridFight_Constance_00_Rank01_SuperBreak",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1321Passive.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055546": {
+		"id": "63055546",
+		"name": "Curbed Wind",
+		"desc": "Attacks will only deal 1 DMG, this effect lasts for <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attacks, <color=#f29e38ff><unbreak>#2[i]</unbreak></color> attack(s) have been used.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.0_1002_Debuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpWind.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1",
+			"_AttackTime"
+		]
+	},
+	"63055547": {
+		"id": "63055547",
+		"name": "Curbed Fire",
+		"desc": "Attacks will only deal 1 DMG, this effect lasts for <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attacks, <color=#f29e38ff><unbreak>#2[i]</unbreak></color> attack(s) have been used.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.0_1003_Debuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpFire.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1",
+			"_AttackTime"
+		]
+	},
+	"63055548": {
+		"id": "63055548",
+		"name": "Curbed Ice",
+		"desc": "Attacks will only deal 1 DMG, this effect lasts for <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attacks, <color=#f29e38ff><unbreak>#2[i]</unbreak></color> attack(s) have been used.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.0_1004_Debuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpIce.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1",
+			"_AttackTime"
+		]
+	},
+	"63055549": {
+		"id": "63055549",
+		"name": "Curbed Lightning",
+		"desc": "Attacks will only deal 1 DMG, this effect lasts for <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attacks, <color=#f29e38ff><unbreak>#2[i]</unbreak></color> attack(s) have been used.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.0_1005_Debuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpThunder.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1",
+			"_AttackTime"
+		]
+	},
+	"63055550": {
+		"id": "63055550",
+		"name": "Curbed Physical",
+		"desc": "Attacks will only deal 1 DMG, this effect lasts for <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attacks, <color=#f29e38ff><unbreak>#2[i]</unbreak></color> attack(s) have been used.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.0_1006_Debuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpPhysical.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1",
+			"_AttackTime"
+		]
+	},
+	"63055551": {
+		"id": "63055551",
+		"name": "Curbed Quantum",
+		"desc": "Attacks will only deal 1 DMG, this effect lasts for <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attacks, <color=#f29e38ff><unbreak>#2[i]</unbreak></color> attack(s) have been used.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.0_1007_Debuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpQuantum.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1",
+			"_AttackTime"
+		]
+	},
+	"63055552": {
+		"id": "63055552",
+		"name": "Curbed Imaginary",
+		"desc": "Attacks will only deal 1 DMG, this effect lasts for <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attacks, <color=#f29e38ff><unbreak>#2[i]</unbreak></color> attack(s) have been used.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.0_1008_Debuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpImaginary.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1",
+			"_AttackTime"
+		]
+	},
+	"63055553": {
+		"id": "63055553",
+		"name": "Fuyuan Fulgurating Strike",
+		"desc": "DMG Amplification increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and DMG Mitigation increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MAvatar_Lingsha_00_GridFight_RabbitCountBuff",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_IncreasedDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue",
+			"MDF_PropertyValue02"
+		]
+	},
+	"63055554": {
+		"id": "63055554",
+		"name": "Emergency Hemostasis",
+		"desc": "After performing an action, restores HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of this unit's Max HP.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.0_1011_Monster",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHot.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_HealHPRatio"
+		]
+	},
+	"63055555": {
+		"id": "63055555",
+		"name": "Imprisonment",
+		"desc": "Action delayed.",
+		"effect": "Imprisonment",
+		"modifier": "MGridFight_MonsterTag_4.0_1010_Confine",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDotCage.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63055556": {
+		"id": "63055556",
+		"name": "Entanglement",
+		"desc": "Action delayed.",
+		"effect": "Entanglement",
+		"modifier": "MGridFight_MonsterTag_4.0_1010_Entangle",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDotTangle.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63055557": {
+		"id": "63055557",
+		"name": "Content Creation Team",
+		"desc": "Each stack provides 1 stack of \"Follower Growth\" at the start of the next Aha's turn.",
+		"effect": "",
+		"modifier": "MAvatar_GridFight_Sparxie_00_ElationTimeDamageUp_PreCheck",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_IncreasedDamage.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63055558": {
+		"id": "63055558",
+		"name": "Debtor",
+		"desc": "Each stack increases the CRIT DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect can stack up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "Debtor",
+		"modifier": "MAvatar_Topaz_GridFight_Rank01",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1112Rank01.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillRank_Rank01_P1_CriticalValue",
+			"#SkillRank_Rank01_P2_CriticalMaxLayer"
 		]
 	},
 	"63056001": {
@@ -10580,6 +11156,357 @@
 		"modifier": "StageAbility_2050005_Modifier_Sub",
 		"type": "Buff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000101": {
+		"id": "64000101",
+		"name": "Ultimate Dental Care Package",
+		"desc": "Physical DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050101_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpPhysical.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000102": {
+		"id": "64000102",
+		"name": "Ultimate Dental Care Package",
+		"desc": "Wind DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050102_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpWind.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000103": {
+		"id": "64000103",
+		"name": "Ultimate Dental Care Package",
+		"desc": "Fire DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050103_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpFire.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000104": {
+		"id": "64000104",
+		"name": "Ultimate Dental Care Package",
+		"desc": "Ice DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050104_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpIce.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000105": {
+		"id": "64000105",
+		"name": "Ultimate Dental Care Package",
+		"desc": "Lightning DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050105_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpThunder.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000106": {
+		"id": "64000106",
+		"name": "Ultimate Dental Care Package",
+		"desc": "Quantum DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050106_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpQuantum.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000107": {
+		"id": "64000107",
+		"name": "Ultimate Dental Care Package",
+		"desc": "Imaginary DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050107_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpImaginary.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000108": {
+		"id": "64000108",
+		"name": "Imagenated Dental Cleaning Package",
+		"desc": "DEF increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>",
+		"effect": "",
+		"modifier": "StageAbility_2050108_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDefenceUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000109": {
+		"id": "64000109",
+		"name": "Imagenated Dental Cleaning Package",
+		"desc": "Max HP increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050109_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHPBoost.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000110": {
+		"id": "64000110",
+		"name": "Imagenated Dental Cleaning Package",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050110_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000111": {
+		"id": "64000111",
+		"name": "Sweet Sweet Time",
+		"desc": "Shield Effect gained increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050111_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffShield.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000112": {
+		"id": "64000112",
+		"name": "Sweet Sweet Time",
+		"desc": "HP restored increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050112_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHealRatio.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000113": {
+		"id": "64000113",
+		"name": "Sweet Sweet Time",
+		"desc": "CRIT Rate increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050113_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCritical.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000114": {
+		"id": "64000114",
+		"name": "Sweet Sweet Time",
+		"desc": "Break Effect increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050114_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBreakDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000115": {
+		"id": "64000115",
+		"name": "Sweet Sweet Time",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050115_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000116": {
+		"id": "64000116",
+		"name": "That Hit the Spot",
+		"desc": "Basic ATK DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050116_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000117": {
+		"id": "64000117",
+		"name": "That Hit the Spot",
+		"desc": "Ultimate DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050117_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000118": {
+		"id": "64000118",
+		"name": "That Hit the Spot",
+		"desc": "Skill DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050118_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000119": {
+		"id": "64000119",
+		"name": "That Hit the Spot",
+		"desc": "Follow-Up ATK DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050119_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000120": {
+		"id": "64000120",
+		"name": "That Hit the Spot",
+		"desc": "Elation increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050120_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000121": {
+		"id": "64000121",
+		"name": "Greetings From World's End",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050121_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000122": {
+		"id": "64000122",
+		"name": "Greetings From World's End",
+		"desc": "Chance to resist Burn increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050122_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconImmuneBurn.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000123": {
+		"id": "64000123",
+		"name": "Greetings From World's End",
+		"desc": "Chance to resist Freeze increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050123_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconImmuneFrozen.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000125": {
+		"id": "64000125",
+		"name": "Greetings From World's End",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050125_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000127": {
+		"id": "64000127",
+		"name": "Greetings From World's End",
+		"desc": "DEF increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>",
+		"effect": "",
+		"modifier": "StageAbility_2050127_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDefenceUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000128": {
+		"id": "64000128",
+		"name": "Greetings From World's End",
+		"desc": "Effect Hit Rate increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050128_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffStatusProbability.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64000129": {
+		"id": "64000129",
+		"name": "Greetings From World's End",
+		"desc": "Max HP increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_2050129_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHPBoost.png",
 		"tagList": [],
 		"readParams": [
 			"MDF_1"
@@ -16598,7 +17525,7 @@
 	"64997501": {
 		"id": "64997501",
 		"name": "Giant Wise Tree",
-		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When launching an attack and dealing Ultimate DMG, causes \"Murmur\" to dealt DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the original DMG.",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When launching an attack and dealing Ultimate DMG, causes \"Murmur\" to deal DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the original DMG.",
 		"effect": "ATK Boost",
 		"modifier": "Modifier_StageAbility_674820_Character",
 		"type": "Buff",
@@ -20655,6 +21582,150 @@
 			"DV_FantasticStory_PlusAbility_2018_ADF_3"
 		]
 	},
+	"65999149": {
+		"id": "65999149",
+		"name": "Grit Mechanics",
+		"desc": "Each time Punchline is gained, allies will additionally accumulate <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2210_BaseAddOn_ForShow",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff158.png",
+		"tagList": [],
+		"readParams": [
+			"DV_Ratio"
+		]
+	},
+	"65999150": {
+		"id": "65999150",
+		"name": "Concordant Truce",
+		"desc": "This stage has a special Elation Skill. When entering Aha Instant, deals <color=#f29e38ff><unbreak>#1[i]</unbreak></color> instance(s) of Elation DMG to a random enemy target. When an enemy target is defeated, obtains <color=#f29e38ff><unbreak>#3[i]</unbreak></color> Punchline point(s).",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2210_BeforeFever_ForShow",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff_Normal.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_BaseAbility_2210_BeforeFever_P1_MaxCount",
+			"DV_FantasticStory_BaseAbility_2210_BeforeFever_P2_Ratio",
+			"DV_FantasticStory_BaseAbility_2210_BeforeFever_P3_ElationPoint"
+		]
+	},
+	"65999151": {
+		"id": "65999151",
+		"name": "Surging Grit",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2210_EnterFever_sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff_Advance.png",
+		"tagList": [],
+		"readParams": [
+			"DV_Ratio_Get"
+		]
+	},
+	"65999152": {
+		"id": "65999152",
+		"name": "Grit Mechanics_Euphoria",
+		"desc": "When consuming Skill Points, additionally accumulates <color=#f29e38ff><unbreak>#3[i]</unbreak></color> Grit Value for allies.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2210_Plus1AddOn_ForShow",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0008.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2211_ADF_1",
+			"DV_FantasticStory_PlusAbility_2211_ADF_2",
+			"DV_FantasticStory_PlusAbility_2211_ADF_3"
+		]
+	},
+	"65999153": {
+		"id": "65999153",
+		"name": "Euphoria",
+		"desc": "Elation DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2210_plus1_sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0008.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2211_ADF_1",
+			"DV_FantasticStory_PlusAbility_2211_ADF_2",
+			"DV_FantasticStory_PlusAbility_2211_ADF_3"
+		]
+	},
+	"65999154": {
+		"id": "65999154",
+		"name": "Grit Mechanics_Delirium",
+		"desc": "After using Basic ATK or Skill to attack, every enemy target hit additionally accumulates <color=#f29e38ff><unbreak>#3[i]</unbreak></color> Grit Value for allies.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2210_Plus2AddOn_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff156.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2212_ADF_1",
+			"DV_FantasticStory_PlusAbility_2212_ADF_2",
+			"DV_FantasticStory_PlusAbility_2212_ADF_3"
+		]
+	},
+	"65999155": {
+		"id": "65999155",
+		"name": "Delirium",
+		"desc": "After using Basic ATK or Skill, gains <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Punchline. During Surging Grit, DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2210_plus2_sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff156.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2212_ADF_1",
+			"DV_FantasticStory_PlusAbility_2212_ADF_2",
+			"DV_FantasticStory_PlusAbility_2212_ADF_3"
+		]
+	},
+	"65999156": {
+		"id": "65999156",
+		"name": "Tirade",
+		"desc": "Increases Break DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2210_plus3_sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff157.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2213_ADF_1",
+			"DV_FantasticStory_PlusAbility_2213_ADF_2",
+			"DV_FantasticStory_PlusAbility_2213_ADF_3"
+		]
+	},
+	"65999157": {
+		"id": "65999157",
+		"name": "Tirade",
+		"desc": "After dealing Break DMG with an attack, gains <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Punchline.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2210_plus3_sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff157.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2213_ADF_1",
+			"DV_FantasticStory_PlusAbility_2213_ADF_2",
+			"DV_FantasticStory_PlusAbility_2213_ADF_3"
+		]
+	},
+	"65999158": {
+		"id": "65999158",
+		"name": "Grit Mechanics_Tirade",
+		"desc": "When a Weakness is Broken, additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value for allies.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2210_Plus3AddOn_ForShow",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff157.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2213_ADF_3"
+		]
+	},
 	"66000001": {
 		"id": "66000001",
 		"name": "Resilient Armor",
@@ -21197,6 +22268,115 @@
 			"ChallengePeakBattle_0013_ADF_2"
 		]
 	},
+	"66000049": {
+		"id": "66000049",
+		"name": "Confinement",
+		"desc": "Each stack decreases DMG dealt by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, and 1 stack is removed after each Ultimate used.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0014_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0005.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0014_ADF_1",
+			"ChallengePeakBattle_0014_ADF_2"
+		]
+	},
+	"66000050": {
+		"id": "66000050",
+		"name": "Confinement+",
+		"desc": "Each stack decreases DMG dealt by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, and 1 stack is removed after each Ultimate used.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_EnhancedAbility_0014_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0005.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0014_ADF_1",
+			"ChallengePeakBattle_0014_ADF_2"
+		]
+	},
+	"66000051": {
+		"id": "66000051",
+		"name": "Tears Behind Smiles",
+		"desc": "Increases Final DMG received by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, but cannot take CRIT Hits.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0011_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0009.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"66000052": {
+		"id": "66000052",
+		"name": "Thrilling Delight",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0012_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0006.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0012_ADF_1"
+		]
+	},
+	"66000053": {
+		"id": "66000053",
+		"name": "Thrilling Delight",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0012_03",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0001.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0012_ADF_2"
+		]
+	},
+	"66000054": {
+		"id": "66000054",
+		"name": "Confinement++",
+		"desc": "Each stack decreases DMG dealt by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, and 1 stack is removed after each Ultimate used.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_ExtremeAbility_0014_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0005.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0014_ADF_1",
+			"ChallengePeakBattle_0014_ADF_2"
+		]
+	},
+	"66000055": {
+		"id": "66000055",
+		"name": "Honing the Blade",
+		"desc": "Each stack reduces CRIT DMG by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. Each time any ally consumes 1 Skill Point, 1 stack of this effect is removed.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0015_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0007.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0015_ADF_1",
+			"ChallengePeakBattle_0015_ADF_2"
+		]
+	},
+	"66000056": {
+		"id": "66000056",
+		"name": "Elation Instant",
+		"desc": "All-Type RES PEN increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0010_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0011.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue",
+			"MDF_PropertyValue2"
+		]
+	},
 	"66000999": {
 		"id": "66000999",
 		"name": "Middlegame Mayhem",
@@ -21550,7 +22730,8 @@
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHealRatio.png",
 		"tagList": [],
 		"readParams": [
-			"ADF_1"
+			"ADF_1",
+			"#ADF_2"
 		]
 	},
 	"66001028": {
@@ -21610,7 +22791,7 @@
 	"66001032": {
 		"id": "66001032",
 		"name": "Permanent Trauma",
-		"desc": "Decreases Max HP by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"desc": "Max HP decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "MGridFight_MonsterTag_3019_Debuff",
 		"type": "Debuff",
@@ -23537,6 +24718,137 @@
 		"modifier": "MItem_408641",
 		"type": "Buff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDefenceUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010143": {
+		"id": "70010143",
+		"name": "Grudge Notebook",
+		"desc": "When HP percentage is lowered to below <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> for the first time in battle, restores HP equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of Max HP.",
+		"effect": "",
+		"modifier": "MItem_402036",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHot.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1",
+			"MDF_2"
+		]
+	},
+	"70010144": {
+		"id": "70010144",
+		"name": "Steel Coil",
+		"desc": "Elation increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_403016",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010145": {
+		"id": "70010145",
+		"name": "Anti-Meme Toy Box",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_408444",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010146": {
+		"id": "70010146",
+		"name": "Anti-Meme Toy Box",
+		"desc": "ATK decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_408444_2",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010147": {
+		"id": "70010147",
+		"name": "Badge Battle Robe",
+		"desc": "DEF increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>",
+		"effect": "",
+		"modifier": "MItem_408445",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDefenceUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010148": {
+		"id": "70010148",
+		"name": "Sparxie Unlimited Edition Collectible Plushie",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_408446",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010149": {
+		"id": "70010149",
+		"name": "Cold Joke",
+		"desc": "Ice DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_408447",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpIce.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010150": {
+		"id": "70010150",
+		"name": "Bottled Quantum Ghost",
+		"desc": "SPD decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_408642",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffSpeedDown.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010151": {
+		"id": "70010151",
+		"name": "Sea Monster's Touch",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_408643",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010152": {
+		"id": "70010152",
+		"name": "<i>The Fluffy</i> Multi-Functional Fan Glowstick",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_408804",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
 		"tagList": [],
 		"readParams": [
 			"MDF_1"

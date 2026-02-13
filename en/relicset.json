@@ -808,8 +808,8 @@
 		"setID": "127",
 		"two": "Increases CRIT Rate by **8%**.",
 		"twopc": "Increases CRIT Rate by **1[i]%**.",
-		"four": "After the wearer uses Basic ATK or Skill, if the wearer's memosprite is on the field, increases Max HP of the wearer and their memosprite by **24%**, and increases all allies' dealt DMG by **15%**, lasting until after the wearer's next use of Basic ATK or Skill.",
-		"fourpc": "After the wearer uses Basic ATK or Skill, if the wearer's memosprite is on the field, increases Max HP of the wearer and their memosprite by **1[i]%**, and increases all allies' dealt DMG by **2[i]%**, lasting until after the wearer's next use of Basic ATK or Skill.",
+		"four": "After the wearer uses Basic ATK or Skill, if the wearer's memosprite is on the field, increases Max HP of the wearer and their memosprite by **24%**, and increases all allies' DMG dealt by **15%**, lasting until after the wearer's next use of Basic ATK or Skill.",
+		"fourpc": "After the wearer uses Basic ATK or Skill, if the wearer's memosprite is on the field, increases Max HP of the wearer and their memosprite by **1[i]%**, and increases all allies' DMG dealt by **2[i]%**, lasting until after the wearer's next use of Basic ATK or Skill.",
 		"params": [
 			[
 				0.08
@@ -873,7 +873,15 @@
 				10
 			]
 		],
-		"props": [],
+		"props": [
+			[
+				{
+					"active": 2,
+					"type": "CriticalDamageBase",
+					"value": 0.16
+				}
+			]
+		],
 		"setIcon": "spriteoutput/itemfigures/71052.png",
 		"icon": "spriteoutput/relicfigures/IconRelic_129_1.png",
 		"planarSet": false,
@@ -884,8 +892,8 @@
 		"setID": "130",
 		"two": "Increases SPD by **6%**.",
 		"twopc": "Increases SPD by **1[i]%**.",
-		"four": "Before entering combat, if the wearer's SPD is greater than or equal to **120**/**160**, increases the wearer's CRIT Rate by **10%**/**18%**. When the wearer uses Elation Skill for the first time in each battle, enhances all allies' Elation by **10%**. This effect cannot stack.",
-		"fourpc": "Before entering combat, if the wearer's SPD is greater than or equal to **1[i]**/**2[i]**, increases the wearer's CRIT Rate by **3[i]%**/**4[i]%**. When the wearer uses Elation Skill for the first time in each battle, enhances all allies' Elation by **5[i]%**.",
+		"four": "Before entering combat, if the wearer's SPD is greater than or equal to **120**/**160**, increases the wearer's CRIT Rate by **10%**/**18%**. When the wearer uses Elation Skill for the first time in each battle, increases all allies' Elation by **10%**. This effect cannot stack.",
+		"fourpc": "Before entering combat, if the wearer's SPD is greater than or equal to **1[i]**/**2[i]**, increases the wearer's CRIT Rate by **3[i]%**/**4[i]%**. When the wearer uses Elation Skill for the first time in each battle, increases all allies' Elation by **5[i]%**. This effect cannot stack.",
 		"params": [
 			[
 				0.06
@@ -1570,47 +1578,5 @@
 		"icon": "spriteoutput/relicfigures/IconRelic_324_5.png",
 		"planarSet": true,
 		"id": "324"
-	},
-	"325": {
-		"name": "City of Myriad Forms",
-		"setID": "325",
-		"two": "When the wearer uses a Follow-Up ATK, their ATK increases by **24%** for **2** turn(s). When an enemy target is defeated, increases CRIT DMG for all allies by **12%** for the rest of the current battle. This effect cannot stack.",
-		"twopc": "When the wearer uses a Follow-Up ATK, their ATK increases by **1[i]%** for **2[i]** turn(s). When an enemy target is defeated, increases CRIT DMG for all allies by **3[i]%** for the rest of the current battle. This effect cannot stack.",
-		"four": "",
-		"fourpc": "",
-		"params": [
-			[
-				0.24,
-				2,
-				0.12
-			]
-		],
-		"props": [],
-		"setIcon": "spriteoutput/itemfigures/71055.png",
-		"icon": "spriteoutput/relicfigures/IconRelic_325_5.png",
-		"planarSet": true,
-		"id": "325"
-	},
-	"326": {
-		"name": "Punklorde Stage Zero",
-		"setID": "326",
-		"two": "Increases the wearer's Elation by **10%**. When Elation reaches **40%**/**80%** for the first time in battle, increases the wearer's CRIT DMG by **20%**/**30%**.",
-		"twopc": "Increases the wearer's Elation by **1[i]%**. When Elation reaches **2[i]%**/**3[i]%** for the first time in battle, increases the wearer's CRIT DMG by **4[i]%**/**5[i]%**.",
-		"four": "",
-		"fourpc": "",
-		"params": [
-			[
-				0.1,
-				0.4,
-				0.8,
-				0.2,
-				0.3
-			]
-		],
-		"props": [],
-		"setIcon": "spriteoutput/itemfigures/71054.png",
-		"icon": "spriteoutput/relicfigures/IconRelic_326_5.png",
-		"planarSet": true,
-		"id": "326"
 	}
 }

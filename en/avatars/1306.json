@@ -896,7 +896,7 @@
 			"name": "Unreliable Narrator",
 			"tag": "Support",
 			"type": "Technique",
-			"description": "Using the Technique grants all allies Misdirect for **2[i]** seconds. Characters with Misdirect will not be detected by enemies, and entering battle in the Misdirect state recovers **1[i]** Skill Point(s) for the team.",
+			"description": "After using Technique, grants all allies Misdirect for **2[i]** seconds. Characters with Misdirect will not be detected by enemies, and entering combat in the Misdirect state recovers **1[i]** Skill Point(s) for the team.",
 			"regen": 0,
 			"er": 0,
 			"break": [
@@ -967,27 +967,27 @@
 		"114013": 15
 	},
 	"treePromotion": {
-		"2": 802500,
-		"241": 2,
-		"110231": 6,
-		"110232": 16,
-		"110233": 38,
-		"110504": 3,
-		"114011": 8,
-		"114012": 10,
-		"114013": 30
+		"2": 1605000,
+		"241": 4,
+		"110231": 12,
+		"110232": 32,
+		"110233": 76,
+		"110504": 6,
+		"114011": 16,
+		"114012": 20,
+		"114013": 60
 	},
 	"maxPromo": {
-		"2": 3308000,
-		"241": 8,
-		"110231": 18,
-		"110232": 69,
-		"110233": 139,
+		"2": 4110500,
+		"241": 10,
+		"110231": 24,
+		"110232": 85,
+		"110233": 177,
 		"110426": 65,
-		"110504": 12,
-		"114011": 56,
-		"114012": 71,
-		"114013": 73
+		"110504": 15,
+		"114011": 64,
+		"114012": 81,
+		"114013": 103
 	},
 	"exp": 5797920,
 	"outfits": [],
@@ -1133,7 +1133,7 @@
 		},
 		{
 			"name": "Unreliable Narrator",
-			"description": "Using the Technique grants all allies Misdirect for **2[i]** seconds. Characters with Misdirect will not be detected by enemies, and entering battle in the Misdirect state recovers **1[i]** Skill Point(s) for the team.",
+			"description": "After using Technique, grants all allies Misdirect for **2[i]** seconds. Characters with Misdirect will not be detected by enemies, and entering combat in the Misdirect state recovers **1[i]** Skill Point(s) for the team.",
 			"avatar": 1306,
 			"type": 2,
 			"pos": {
@@ -1529,6 +1529,546 @@
 			],
 			"baseSkill": [],
 			"id": "1306210"
+		},
+		{
+			"name": "Monodrama",
+			"description": "Deals Quantum DMG equal to ****1[i]%**** of Sparkle's ATK to one designated enemy.",
+			"avatar": 1306,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11306/SkillIcon_11306_Normal.png",
+			"shortIcon": "SkillIcon_11306_Normal",
+			"promotion": {
+				"2": 240000,
+				"110231": 3,
+				"110232": 8,
+				"110233": 11,
+				"114011": 6,
+				"114012": 7,
+				"114013": 7
+			},
+			"params": [
+				1.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1130601
+			],
+			"id": "11306001"
+		},
+		{
+			"name": "Dreamdiver",
+			"description": "Increases the CRIT DMG of a designated ally by ****1[f1]%**** of Sparkle's CRIT DMG plus ****2[f1]%****, lasting for **3[i]** turn(s). And at the same time, advances this ally's action by **4[i]%**.\nWhen Sparkle uses this ability on herself, the Action Advance effect will not trigger.",
+			"avatar": 1306,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11306/SkillIcon_11306_BP.png",
+			"shortIcon": "SkillIcon_11306_BP",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110231": 3,
+				"110232": 15,
+				"110233": 30,
+				"110504": 3,
+				"114011": 9,
+				"114012": 13,
+				"114013": 7
+			},
+			"params": [
+				0.3,
+				0.54,
+				2,
+				0.5
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1130602
+			],
+			"id": "11306002"
+		},
+		{
+			"name": "The Hero with a Thousand Faces",
+			"description": "Recovers **2[i]** Skill Point(s) for allies. If Skill Points overflow during recovery, the excess points will be recorded, up to a max of **5[i]** points. When an ally character's turn ends, if Skill Points are below the maximum, Sparkle consumes the recorded value to recover Skill Points until the upper limit is reached. Then, grants all allies \"Cipher.\" For ally targets with \"Cipher,\" each stack of Boost of DMG taken by enemies provided by Sparkle's Talent additionally increases by ****3[f2]%****, lasting for **4[i]** turn(s).",
+			"avatar": 1306,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11306/SkillIcon_11306_Ultra.png",
+			"shortIcon": "SkillIcon_11306_Ultra",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110231": 3,
+				"110232": 15,
+				"110233": 30,
+				"110504": 3,
+				"114011": 9,
+				"114012": 13,
+				"114013": 7
+			},
+			"params": [
+				2,
+				6,
+				0.072,
+				3,
+				10
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1130603
+			],
+			"id": "11306003"
+		},
+		{
+			"name": "Red Herring",
+			"description": "While Sparkle is on the battlefield, additionally increases the max number of Skill Points by **3[i]**. Whenever an ally target consumes 1 Skill Point, Sparkle gains 1 stack of \"Figment,\" with each stack increasing the DMG taken by all enemies by ****2[f1]%****. This effect lasts for **1[i]** turn(s) and can stack up to **4[i]** time(s).",
+			"avatar": 1306,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11306/SkillIcon_11306_Passive.png",
+			"shortIcon": "SkillIcon_11306_Passive",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110231": 3,
+				"110232": 15,
+				"110233": 30,
+				"110504": 3,
+				"114011": 9,
+				"114012": 13,
+				"114013": 7
+			},
+			"params": [
+				2,
+				0.05,
+				2,
+				3
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1130604
+			],
+			"id": "11306004"
+		},
+		{
+			"name": "Unreliable Narrator",
+			"description": "After using Technique, grants all allies Misdirect for **2[i]** seconds. Characters with Misdirect will not be detected by enemies, and entering combat in the Misdirect state recovers **1[i]** Skill Point(s) for the team and regenerates **2[i]** Energy for Sparkle.",
+			"avatar": 1306,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11306/SkillIcon_11306_Maze.png",
+			"shortIcon": "SkillIcon_11306_Maze",
+			"promotion": {},
+			"params": [
+				3,
+				20
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				1130607
+			],
+			"id": "11306007"
+		},
+		{
+			"name": "Almanac",
+			"description": "Using Basic ATK additionally regenerates **10** Energy. When an ally character who holds the CRIT DMG Boost effect provided by the Skill consumes Skill Points, Sparkle additionally regenerates **1** Energy.",
+			"avatar": 1306,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11306/SkillIcon_11306_SkillTree1.png",
+			"shortIcon": "SkillIcon_11306_SkillTree1",
+			"promotion": {
+				"2": 5000,
+				"110231": 3,
+				"110504": 1
+			},
+			"params": [
+				10,
+				1
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "11306101"
+		},
+		{
+			"name": "Artificial Flower",
+			"description": "If an ally character consumes **3** or more Skill Points in a single turn, Sparkle's next use of Skill will not consume Skill Points.",
+			"avatar": 1306,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11306/SkillIcon_11306_SkillTree2.png",
+			"shortIcon": "SkillIcon_11306_SkillTree2",
+			"promotion": {
+				"2": 20000,
+				"241": 1,
+				"110232": 5,
+				"110504": 1
+			},
+			"params": [
+				3
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "11306102"
+		},
+		{
+			"name": "Nocturne",
+			"description": "Increases all allies's ATK by **45%**. When an ally character holds the CRIT DMG Boost effect provided by the Skill, All-Type **RES PEN** increases by **10%**.",
+			"avatar": 1306,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11306/SkillIcon_11306_SkillTree3.png",
+			"shortIcon": "SkillIcon_11306_SkillTree3",
+			"promotion": {
+				"2": 160000,
+				"241": 1,
+				"110233": 8,
+				"110504": 1
+			},
+			"params": [
+				0.45,
+				0.1
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "11306103"
+		},
+		{
+			"name": "HP Boost",
+			"description": "",
+			"avatar": 1306,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 2500,
+				"114011": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11306201"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1306,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": [
+					11306101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 5000,
+				"110231": 3,
+				"114011": 6
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "11306202"
+		},
+		{
+			"name": "HP Boost",
+			"description": "",
+			"avatar": 1306,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					11306202
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 10000,
+				"110232": 3,
+				"114012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11306203"
+		},
+		{
+			"name": "Effect RES Boost",
+			"description": "",
+			"avatar": 1306,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": [
+					11306201
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 10000,
+				"110232": 3,
+				"114012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11306204"
+		},
+		{
+			"name": "HP Boost",
+			"description": "",
+			"avatar": 1306,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					11306102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 20000,
+				"110232": 5,
+				"114012": 4
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11306205"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1306,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					11306205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 45000,
+				"110233": 3,
+				"114013": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "11306206"
+		},
+		{
+			"name": "HP Boost",
+			"description": "",
+			"avatar": 1306,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": [
+					11306201
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 45000,
+				"110233": 3,
+				"114013": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11306207"
+		},
+		{
+			"name": "Effect RES Boost",
+			"description": "",
+			"avatar": 1306,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					11306103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 160000,
+				"110233": 8,
+				"114013": 8
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11306208"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1306,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					11306208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 160000,
+				"110233": 8,
+				"114013": 8
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.107
+				}
+			],
+			"baseSkill": [],
+			"id": "11306209"
+		},
+		{
+			"name": "HP Boost",
+			"description": "",
+			"avatar": 1306,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": [
+					11306208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 160000,
+				"110233": 8,
+				"114013": 8
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "11306210"
 		}
 	],
 	"ranks": [

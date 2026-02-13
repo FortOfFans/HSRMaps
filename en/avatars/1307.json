@@ -422,7 +422,7 @@
 			"name": "Bliss of <unbreak>Otherworld's Embrace</unbreak>",
 			"tag": "AoE",
 			"type": "Ultimate",
-			"description": "Inflicts Epiphany on all enemies for **2[i]** turn(s).\nWhile afflicted with Epiphany, enemies take ****3[i]%**** increased DMG in their turn. Additionally, if enemies are also inflicted with **Arcana**, they are considered to be simultaneously afflicted with Wind Shear, Bleed, Burn, and Shock. After **Arcana** causes DMG at the start of each turn, its stacks are not reset. This non-reset effect of **Arcana** stacks can be triggered up to **4[i]** time(s) for the duration of Epiphany. And the trigger count resets when Epiphany is applied again.\nDeals Wind DMG equal to ****1[i]%**** of Black Swan's ATK to all enemies.",
+			"description": "Inflicts Epiphany on all enemies for **2[i]** turn(s).\nWhile afflicted with Epiphany, enemies take ****3[i]%**** increased DMG in their turn. Additionally, if enemies are also inflicted with **Arcana**, they are also considered to be simultaneously afflicted with Wind Shear, Bleed, Burn, and Shock. After **Arcana** causes DMG at the start of each turn, its stacks are not reset. This non-reset effect of **Arcana** stacks can be triggered up to **4[i]** time(s) for the duration of Epiphany. And the trigger count resets when Epiphany is applied again.\nDeals Wind DMG equal to ****1[i]%**** of Black Swan's ATK to all enemies.",
 			"regen": 5,
 			"er": 120,
 			"break": [
@@ -1062,27 +1062,27 @@
 		"111003": 15
 	},
 	"treePromotion": {
-		"2": 802500,
-		"241": 2,
-		"110221": 6,
-		"110222": 16,
-		"110223": 38,
-		"110504": 3,
-		"111001": 8,
-		"111002": 10,
-		"111003": 30
+		"2": 1605000,
+		"241": 4,
+		"110221": 12,
+		"110222": 32,
+		"110223": 76,
+		"110504": 6,
+		"111001": 16,
+		"111002": 20,
+		"111003": 60
 	},
 	"maxPromo": {
-		"2": 3308000,
-		"241": 8,
-		"110221": 18,
-		"110222": 69,
-		"110223": 139,
+		"2": 4110500,
+		"241": 10,
+		"110221": 24,
+		"110222": 85,
+		"110223": 177,
 		"110415": 65,
-		"110504": 12,
-		"111001": 56,
-		"111002": 71,
-		"111003": 73
+		"110504": 15,
+		"111001": 64,
+		"111002": 81,
+		"111003": 103
 	},
 	"exp": 5797920,
 	"outfits": [],
@@ -1159,7 +1159,7 @@
 		},
 		{
 			"name": "Bliss of <unbreak>Otherworld's Embrace</unbreak>",
-			"description": "Inflicts Epiphany on all enemies for **2[i]** turn(s).\nWhile afflicted with Epiphany, enemies take ****3[i]%**** increased DMG in their turn. Additionally, if enemies are also inflicted with **Arcana**, they are considered to be simultaneously afflicted with Wind Shear, Bleed, Burn, and Shock. After **Arcana** causes DMG at the start of each turn, its stacks are not reset. This non-reset effect of **Arcana** stacks can be triggered up to **4[i]** time(s) for the duration of Epiphany. And the trigger count resets when Epiphany is applied again.\nDeals Wind DMG equal to ****1[i]%**** of Black Swan's ATK to all enemies.",
+			"description": "Inflicts Epiphany on all enemies for **2[i]** turn(s).\nWhile afflicted with Epiphany, enemies take ****3[i]%**** increased DMG in their turn. Additionally, if enemies are also inflicted with **Arcana**, they are also considered to be simultaneously afflicted with Wind Shear, Bleed, Burn, and Shock. After **Arcana** causes DMG at the start of each turn, its stacks are not reset. This non-reset effect of **Arcana** stacks can be triggered up to **4[i]** time(s) for the duration of Epiphany. And the trigger count resets when Epiphany is applied again.\nDeals Wind DMG equal to ****1[i]%**** of Black Swan's ATK to all enemies.",
 			"avatar": 1307,
 			"type": 2,
 			"pos": {
@@ -1284,7 +1284,7 @@
 		},
 		{
 			"name": "Goblet's Dredges",
-			"description": "When an enemy target enters battle, there is a **65%** **base chance** for it to be inflicted with 1 stack of **Arcana**.\nEvery time an enemy target receives 1 instance of DoT during a single attack by an ally, there is a **65%** **base chance** for the target to be inflicted with 1 stack of **Arcana**. The maximum number of stacks that can be inflicted during 1 single attack is **3**.",
+			"description": "When an enemy target enters combat, there is a **65%** **base chance** for it to be inflicted with 1 stack of **Arcana**.\nEvery time an enemy target receives 1 instance of DoT during a single attack by an ally, there is a **65%** **base chance** for the target to be inflicted with 1 stack of **Arcana**. The maximum number of stacks that can be inflicted during 1 single attack is **3**.",
 			"avatar": 1307,
 			"type": 3,
 			"pos": {
@@ -1632,12 +1632,557 @@
 			],
 			"baseSkill": [],
 			"id": "1307210"
+		},
+		{
+			"name": "Percipience, Silent Dawn",
+			"description": "Deals Wind DMG equal to ****1[i]%**** of Black Swan's ATK to one designated enemy.",
+			"avatar": 1307,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11307/SkillIcon_11307_Normal.png",
+			"shortIcon": "SkillIcon_11307_Normal",
+			"promotion": {
+				"2": 240000,
+				"110221": 3,
+				"110222": 8,
+				"110223": 11,
+				"111001": 6,
+				"111002": 7,
+				"111003": 7
+			},
+			"params": [
+				1.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1130701
+			],
+			"id": "11307001"
+		},
+		{
+			"name": "Decadence, False Twilight",
+			"description": "Deals Wind DMG equal to ****1[i]%**** of Black Swan's ATK to one designated enemy and adjacent targets. At the same time, there is a **3[i]%** **base chance** of reducing the DEF of the enemy target and the adjacent targets by ****4[f1]%****, lasting for **2[i]** turn(s).",
+			"avatar": 1307,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11307/SkillIcon_11307_BP.png",
+			"shortIcon": "SkillIcon_11307_BP",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110221": 3,
+				"110222": 15,
+				"110223": 30,
+				"110504": 3,
+				"111001": 9,
+				"111002": 13,
+				"111003": 7
+			},
+			"params": [
+				1.125,
+				3,
+				1,
+				0.238
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1130702
+			],
+			"id": "11307002"
+		},
+		{
+			"name": "Bliss of Otherworld's Embrace",
+			"description": "Inflicts \"Epiphany\" state on all enemies for **2[i]** turn(s). Then deals Wind DMG to all enemies equal to ****1[i]%**** of Black Swan's ATK.\nWhile in the \"Epiphany\" state, enemy targets take ****3[i]%**** increased DMG. For every 1 stack of \"**Arcana** inflicted,\" there is a **4[i]%** **fixed chance** to additionally increase the number of \"Arcana\" stacked this time by 1. And \"**Arcana**\" stacks won't be halved after dealing DMG at the start of the turn.",
+			"avatar": 1307,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11307/SkillIcon_11307_Ultra.png",
+			"shortIcon": "SkillIcon_11307_Ultra",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110221": 3,
+				"110222": 15,
+				"110223": 30,
+				"110504": 3,
+				"111001": 9,
+				"111002": 13,
+				"111003": 7
+			},
+			"params": [
+				1.44,
+				2,
+				0.3,
+				0.5
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1130703
+			],
+			"id": "11307003"
+		},
+		{
+			"name": "Loom of Fate's Caprice",
+			"description": "Every time an enemy target receives 1 instance of DoT, there is a ****2[i]%**** **base chance** for it to be inflicted with 1 stack of \"**Arcana**\".\nWhile an enemy target is in the \"**Arcana**\" state, they are also considered to be simultaneously afflicted with Wind Shear, Bleed, Burn, and Shock. The target receives Wind DoT equal to ****1[i]%**** of Black Swan's ATK at the start of each turn, after which the number of stacks is halved. Each stack of \"**Arcana**\" increases this DMG multiplier by ****3[f1]%****. \"**Arcana**\" can stack **8[i]** times, and can continue to stack beyond this limit, with the excess stacks removed after dealing DMG.\nDMG from \"**Arcana**\" ignores **7[i]%** of the target's DEF. Only when \"Arcana\" deals DMG at the start of the enemy target's turn, adjacent targets take 1 additional instance of Wind DoT equal to ****5[i]%**** of Black Swan's ATK.",
+			"avatar": 1307,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11307/SkillIcon_11307_Passive.png",
+			"shortIcon": "SkillIcon_11307_Passive",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110221": 3,
+				"110222": 15,
+				"110223": 30,
+				"110504": 3,
+				"111001": 9,
+				"111002": 13,
+				"111003": 7
+			},
+			"params": [
+				3,
+				0.725,
+				0.15,
+				0.15,
+				2.25,
+				0,
+				0.2,
+				50
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1130704
+			],
+			"id": "11307004"
+		},
+		{
+			"name": "From Façade to Vérité",
+			"description": "After Technique is used, there is a **1[i]%** **base chance** for each enemy to be inflicted with 1 stack of \"**Arcana**\" at the start of the next battle. For each successful application of \"**Arcana**\" on a target, inflicts another stack of \"**Arcana**\" on the same target. This process repeats until \"**Arcana**\" fails to be inflicted on this target. For each successive application of \"**Arcana**\" on a target, its **base chance** of success is equal to **2[i]%** of the **base chance** of the previous successful infliction of \"**Arcana**\" on that target.",
+			"avatar": 1307,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11307/SkillIcon_11307_Maze.png",
+			"shortIcon": "SkillIcon_11307_Maze",
+			"promotion": {},
+			"params": [
+				1.5,
+				0.5
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				1130707
+			],
+			"id": "11307007"
+		},
+		{
+			"name": "Viscera's Disquiet",
+			"description": "When an enemy target gets attacked by Black Swan, there is a **65%** **base chance** of inflicting **5** stack(s) of \"**Arcana**\" on them.",
+			"avatar": 1307,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11307/SkillIcon_11307_SkillTree1.png",
+			"shortIcon": "SkillIcon_11307_SkillTree1",
+			"promotion": {
+				"2": 5000,
+				"110221": 3,
+				"110504": 1
+			},
+			"params": [
+				0.65,
+				5
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "11307101"
+		},
+		{
+			"name": "Goblet's Dredges",
+			"description": "When an enemy targets enters combat, there is a **65%** **base chance** for it to be inflicted with 1 stack of \"**Arcana**,\" and a **100%** **base chance** to be inflicted with the DEF reduction effect from the Skill, which lasts for **3** turn(s).\nAfter using Basic ATK or Ultimate, there is also a **100%** **base chance** to inflict the DEF reduction effect from the Skill on the hit enemy targets, which lasts for **3** turn(s).",
+			"avatar": 1307,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11307/SkillIcon_11307_SkillTree2.png",
+			"shortIcon": "SkillIcon_11307_SkillTree2",
+			"promotion": {
+				"2": 20000,
+				"241": 1,
+				"110222": 5,
+				"110504": 1
+			},
+			"params": [
+				0.65,
+				1,
+				3
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "11307102"
+		},
+		{
+			"name": "Candleflame's Portent",
+			"description": "Increases the DMG dealt by all allies by an amount equal to **60%** of Black Swan's Effect Hit Rate, up to a maximum DMG increase of **72%**.",
+			"avatar": 1307,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11307/SkillIcon_11307_SkillTree3.png",
+			"shortIcon": "SkillIcon_11307_SkillTree3",
+			"promotion": {
+				"2": 160000,
+				"241": 1,
+				"110223": 8,
+				"110504": 1
+			},
+			"params": [
+				0.6,
+				0.72
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "11307103"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1307,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 2500,
+				"111001": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11307201"
+		},
+		{
+			"name": "DMG Boost: Wind",
+			"description": "",
+			"avatar": 1307,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": [
+					11307101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconWindAddedRatio.png",
+			"shortIcon": "IconWindAddedRatio",
+			"promotion": {
+				"2": 5000,
+				"110221": 3,
+				"111001": 6
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "WindAddedRatio",
+					"Value": 0.032
+				}
+			],
+			"baseSkill": [],
+			"id": "11307202"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1307,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					11307202
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 10000,
+				"110222": 3,
+				"111002": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11307203"
+		},
+		{
+			"name": "Effect Hit Rate Boost",
+			"description": "",
+			"avatar": 1307,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": [
+					11307203
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+			"shortIcon": "IconStatusProbability",
+			"promotion": {
+				"2": 10000,
+				"110222": 3,
+				"111002": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "StatusProbabilityBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11307204"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1307,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					11307102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 20000,
+				"110222": 5,
+				"111002": 4
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11307205"
+		},
+		{
+			"name": "DMG Boost: Wind",
+			"description": "",
+			"avatar": 1307,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					11307205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconWindAddedRatio.png",
+			"shortIcon": "IconWindAddedRatio",
+			"promotion": {
+				"2": 45000,
+				"110223": 3,
+				"111003": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "WindAddedRatio",
+					"Value": 0.048
+				}
+			],
+			"baseSkill": [],
+			"id": "11307206"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1307,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": [
+					11307206
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 45000,
+				"110223": 3,
+				"111003": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11307207"
+		},
+		{
+			"name": "Effect Hit Rate Boost",
+			"description": "",
+			"avatar": 1307,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					11307103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+			"shortIcon": "IconStatusProbability",
+			"promotion": {
+				"2": 160000,
+				"110223": 8,
+				"111003": 8
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "StatusProbabilityBase",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11307208"
+		},
+		{
+			"name": "DMG Boost: Wind",
+			"description": "",
+			"avatar": 1307,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					11307103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconWindAddedRatio.png",
+			"shortIcon": "IconWindAddedRatio",
+			"promotion": {
+				"2": 160000,
+				"110223": 8,
+				"111003": 8
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "WindAddedRatio",
+					"Value": 0.064
+				}
+			],
+			"baseSkill": [],
+			"id": "11307209"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1307,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": [
+					11307201
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 160000,
+				"110223": 8,
+				"111003": 8
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "11307210"
 		}
 	],
 	"ranks": [
 		{
 			"name": "Seven Pillars of Wisdom",
-			"description": "While Black Swan is active in battle, enemies afflicted with Wind Shear, Bleed, Burn, or Shock will have their corresponding Wind, Physical, Fire, or Lightning RES respectively reduced by <unbreak>#1[i]%</unbreak>.",
+			"description": "While Black Swan is active in combat, enemies afflicted with Wind Shear, Bleed, Burn, or Shock will have their corresponding Wind, Physical, Fire, or Lightning RES respectively reduced by <unbreak>#1[i]%</unbreak>.",
 			"icon": "spriteoutput/skillicons/avatar/1307/SkillIcon_1307_Rank1.png",
 			"rankIcon": "spriteoutput/textures/1307/1307_Rank_1.png",
 			"shortIcon": "SkillIcon_1307_Rank1",
