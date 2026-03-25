@@ -448,6 +448,45 @@
 			"#SkillRelic_324_2_P3_CriticalDamage"
 		]
 	},
+	"5532511": {
+		"id": "5532511",
+		"name": "Punklorde Stage Zero",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MRelic_325_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"5532611": {
+		"id": "5532611",
+		"name": "City of Converging Stars",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "MRelic_326_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillRelic_326_2_P1_AttackAddedRatio"
+		]
+	},
+	"5532612": {
+		"id": "5532612",
+		"name": "City of Converging Stars",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "CRIT DMG Boost",
+		"modifier": "MRelic_326_Sub4",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillRelic_326_2_P3_CriticalDamage"
+		]
+	},
 	"6002530": {
 		"id": "6002530",
 		"name": "",
@@ -2013,7 +2052,7 @@
 		"effect": "Stunned",
 		"modifier": "MCommon_CTRL_Stun",
 		"type": "Debuff",
-		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffEye.png",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffStun.png",
 		"tagList": [],
 		"readParams": []
 	},
@@ -4209,6 +4248,33 @@
 			"#SkillEquip_P5_AddSPRatio"
 		]
 	},
+	"40230561": {
+		"id": "40230561",
+		"name": "Umbra Devourer",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and DMG taken by all enemies' increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "MEquip_23056_Main_Sub1",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_AttackUp",
+			"MDF_DamageTakenUpTemp2"
+		]
+	},
+	"40230562": {
+		"id": "40230562",
+		"name": "Umbra Devourer",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Vulnerability",
+		"modifier": "MEquip_23056_Main_Sub2",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_DamageTakenUp"
+		]
+	},
 	"40240001": {
 		"id": "40240001",
 		"name": "ATK Boost",
@@ -4310,6 +4376,19 @@
 		"tagList": [],
 		"readParams": [
 			"#SkillEquip_P2_DamageAddedRatio"
+		]
+	},
+	"40240061": {
+		"id": "40240061",
+		"name": "Elation Boost",
+		"desc": "Elation stat increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Elation Boost",
+		"modifier": "MEquip_24006_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillEquip_P2_ElationAddedRatio"
 		]
 	},
 	"61041101": {
@@ -11726,6 +11805,20 @@
 			"MDF_DamageUpRatio_PerLayer"
 		]
 	},
+	"64777103": {
+		"id": "64777103",
+		"name": "Bloody Fight",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, but HP restored and Shield Effect received decreases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. This effect can stack.",
+		"effect": "",
+		"modifier": "Monster_RogueLightTeam_Rage",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_DamageUpRatio_PerLayer",
+			"MDF_HealDownRatio_PerLayer"
+		]
+	},
 	"64777998": {
 		"id": "64777998",
 		"name": "Enhance",
@@ -18121,6 +18214,100 @@
 			"ExtraImaginaryCount"
 		]
 	},
+	"64997546": {
+		"id": "64997546",
+		"name": "Reverse Critical Boost",
+		"desc": "Before an enemy target is attacked, for each stack of \"Reverse Critical Boost\" they possess, they take Wind Additional DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the attacker's ATK after being hit. At the start of the enemy target's turn, \"Reverse Critical Boost\" stacks are cleared. Up to a maximum of <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stacks can be held at any time.",
+		"effect": "Reverse Critical Boost",
+		"modifier": "RogueBuffModifier_AntiHalo_S7",
+		"type": "Debuff",
+		"icon": "spriteoutput/Rogue/Buff/IconRogueBuffS7_01.png",
+		"tagList": [],
+		"readParams": [
+			"AntiHalo_AttackPercentage",
+			"AntiHalo_MaxLayer"
+		]
+	},
+	"64997547": {
+		"id": "64997547",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "StageAbility_617432_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997548": {
+		"id": "64997548",
+		"name": "Vulnerability",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617442_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"Value1"
+		]
+	},
+	"64997549": {
+		"id": "64997549",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "SPD Boost",
+		"modifier": "StageAbility_617443_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2"
+		]
+	},
+	"64997550": {
+		"id": "64997550",
+		"name": "ATK Boost",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "StageAbility_617444_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2"
+		]
+	},
+	"64997551": {
+		"id": "64997551",
+		"name": "ATK Boost",
+		"desc": "Increases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "ATK Boost",
+		"modifier": "StageAbility_617454_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1",
+			"ADF_2"
+		]
+	},
+	"64997552": {
+		"id": "64997552",
+		"name": "SPD Boost",
+		"desc": "Increases SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Can stack up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "SPD Boost",
+		"modifier": "StageAbility_617457_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1",
+			"ADF_2"
+		]
+	},
 	"64997553": {
 		"id": "64997553",
 		"name": "Transform!!!",
@@ -18129,6 +18316,125 @@
 		"modifier": "MLevel_StageAbility_633235_Modifier_Sub",
 		"type": "Buff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997554": {
+		"id": "64997554",
+		"name": "Harmonize",
+		"desc": "When entering or dispelling the Weakness Broken state, deals Break DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of base DMG per stack of \"Harmonize,\" up to a max of <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stacks. All \"Harmonize\" stacks are removed when the Weakness Broken state is dispelled.",
+		"effect": "Harmonize",
+		"modifier": "Modifier_StageAbility_617910_Resonance_S7_Enemy",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffS4_09.png",
+		"tagList": [],
+		"readParams": [
+			"StageAbility_617910_BreakDamageRatio",
+			"MDF_MaxLayer"
+		]
+	},
+	"64997555": {
+		"id": "64997555",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "SPD Boost",
+		"modifier": "Modifier_StageAbility_617953_Avatar_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1"
+		]
+	},
+	"64997556": {
+		"id": "64997556",
+		"name": "Break Effect Boost",
+		"desc": "Break Effect increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Break Effect Boost",
+		"modifier": "Modifier_StageAbility_617954_Avatar_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBreakDamage.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1"
+		]
+	},
+	"64997557": {
+		"id": "64997557",
+		"name": "DEF Reduction",
+		"desc": "DEF decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DEF Reduction",
+		"modifier": "Modifier_StageAbility_617956_Enemy_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDefenceDown.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1"
+		]
+	},
+	"64997558": {
+		"id": "64997558",
+		"name": "Blazar",
+		"desc": "Current Charge is <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "Blazar",
+		"modifier": "RogueBuffModifier_RuinBlood_S7",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffS4_05.png",
+		"tagList": [],
+		"readParams": [
+			"_BloodValue"
+		]
+	},
+	"64997559": {
+		"id": "64997559",
+		"name": "DMG Mitigation",
+		"desc": "Decreases DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and increases HP restored by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "DMG Reduction",
+		"modifier": "StageAbility_617546_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1",
+			"#ADF_2"
+		]
+	},
+	"64997560": {
+		"id": "64997560",
+		"name": "Compact Blaze",
+		"desc": "DMG multiplier of \"Blazar\" increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original multiplier.",
+		"effect": "",
+		"modifier": "StageAbility_617540_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"_DamageIncreaseTotal"
+		]
+	},
+	"64997561": {
+		"id": "64997561",
+		"name": "Max HP Boost",
+		"desc": "Max HP increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Max HP Boost",
+		"modifier": "StageAbility_617555_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHPBoost.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997562": {
+		"id": "64997562",
+		"name": "Effect RES Boost",
+		"desc": "Effect RES increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Effect RES Boost",
+		"modifier": "StageAbility_617556_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageResistance.png",
 		"tagList": [],
 		"readParams": [
 			"#ADF_1"
@@ -18147,6 +18453,434 @@
 			"Remain_Count"
 		]
 	},
+	"64997564": {
+		"id": "64997564",
+		"name": "Encocoon",
+		"desc": "Accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> DMG taken from \"Butterfly Soul.\" After taking <color=#f29e38ff><unbreak>#3[i]</unbreak></color> hits/when the target is defeated/when exiting \"Butterfly Soul,\" deals DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the accumulated value to all enemy targets and clears the recorded value.",
+		"effect": "",
+		"modifier": "StageAbility_676170_Modifier_Enemy",
+		"type": "Other",
+		"icon": "spriteoutput/Rogue/Buff/IconRogueBuffS7_02.png",
+		"tagList": [],
+		"readParams": [
+			"SumBreedingDamage",
+			"ADF_1",
+			"ADF_2"
+		]
+	},
+	"64997565": {
+		"id": "64997565",
+		"name": "Stormheave",
+		"desc": "\"Harmonize\" gains an additional effect: After an enemy target is attacked when Weakness Broken, all DoT debuffs currently applied to the enemy will immediately produce DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG.",
+		"effect": "Harmonize Additional Effect",
+		"modifier": "StageAbility_676920_Modifier_Resonance_S7_WindThunderPhysical",
+		"type": "Debuff",
+		"icon": "spriteoutput/Rogue/Buff/IconRogueBuffS7_0303.png",
+		"tagList": [],
+		"readParams": [
+			"ExtraDOTDamage_676920"
+		]
+	},
+	"64997566": {
+		"id": "64997566",
+		"name": "Moltflare",
+		"desc": "\"Harmonize\" gains an additional effect: Super Break DMG dealt to enemy targets in the Weakness Broken state increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Harmonize Additional Effect",
+		"modifier": "StageAbility_676920_Modifier_Resonance_S7_Fire",
+		"type": "Debuff",
+		"icon": "spriteoutput/Rogue/Buff/IconRogueBuffS7_0302.png",
+		"tagList": [],
+		"readParams": [
+			"ExtraSuperBreakDamage_676920"
+		]
+	},
+	"64997567": {
+		"id": "64997567",
+		"name": "Intimidation",
+		"desc": "\"Harmonize\" gains an additional effect: After an enemy target is attacked when Weakness Broken, triggers <color=#f29e38ff><unbreak>#2[i]</unbreak></color> instances of \"Harmonize\" DMG in a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> ratio.",
+		"effect": "Harmonize Additional Effect",
+		"modifier": "StageAbility_676920_Modifier_Resonance_S7_QuantumImaginaryIce",
+		"type": "Debuff",
+		"icon": "spriteoutput/Rogue/Buff/IconRogueBuffS7_0301.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1",
+			"ADF_2",
+			"ExtraDelay_676920"
+		]
+	},
+	"64997568": {
+		"id": "64997568",
+		"name": "Highlight",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617000_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"DamageUp_Value"
+		]
+	},
+	"64997569": {
+		"id": "64997569",
+		"name": "Highlight",
+		"desc": "After attacking, each stack deals True DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG.",
+		"effect": "",
+		"modifier": "StageAbility_617000_20_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"Spotlight_ExtraTrueDamage_Value"
+		]
+	},
+	"64997570": {
+		"id": "64997570",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "CRIT DMG Boost",
+		"modifier": "StageAbility_617631_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"CriticalDamageUp"
+		]
+	},
+	"64997571": {
+		"id": "64997571",
+		"name": "DMG Mitigation",
+		"desc": "DMG taken decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Reduction",
+		"modifier": "StageAbility_617632_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2"
+		]
+	},
+	"64997572": {
+		"id": "64997572",
+		"name": "Vulnerability",
+		"desc": "Each stack increases DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, lasting until the start of \"Dealer's\" next action.",
+		"effect": "Vulnerability",
+		"modifier": "StageAbility_617641_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997573": {
+		"id": "64997573",
+		"name": "Weaken",
+		"desc": "Each stack decreases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stacks.",
+		"effect": "Weaken",
+		"modifier": "StageAbility_617644_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffFatigueRatio.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1",
+			"#ADF_2"
+		]
+	},
+	"64997574": {
+		"id": "64997574",
+		"name": "Ignore Defense",
+		"desc": "DMG dealt ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the enemy target's DEF. If this is Elation DMG, ignores an additional <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617645_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffIgnoreDefence.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1",
+			"#ADF_2"
+		]
+	},
+	"64997575": {
+		"id": "64997575",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "SPD Boost",
+		"modifier": "StageAbility_617643_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997576": {
+		"id": "64997576",
+		"name": "DMG Boost",
+		"desc": "While in the \"Butterfly Soul\" state, DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_676470_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997577": {
+		"id": "64997577",
+		"name": "Obsession",
+		"desc": "When the current team's total stacks are at <color=#f29e38ff><unbreak>#1[i]</unbreak></color>, increases ATK by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> and increases Max HP by <color=#f29e38ff><unbreak>#3[f1]%</unbreak></color>. Every target can stack up to <color=#f29e38ff><unbreak>#4[i]</unbreak></color> stacks, and loses <color=#f29e38ff><unbreak>#5[i]</unbreak></color> stack(s) at the end of the turn.",
+		"effect": "",
+		"modifier": "RogueBuffModifier_Enhance_S7",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffS4_01.png",
+		"tagList": [],
+		"readParams": [
+			"EnhanceSum",
+			"AttackValue",
+			"HPValue",
+			"_MaxLayer",
+			"_LoseLayer"
+		]
+	},
+	"64997578": {
+		"id": "64997578",
+		"name": "Vulnerability",
+		"desc": "Each stack increases DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Stacks will be cleared at the end of the turn.",
+		"effect": "",
+		"modifier": "StageAbility_617145_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1"
+		]
+	},
+	"64997579": {
+		"id": "64997579",
+		"name": "Weaken",
+		"desc": "Each stack reduces DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Stacks will be cleared at the end of the turn.",
+		"effect": "",
+		"modifier": "StageAbility_617146_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffFatigueRatio.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1"
+		]
+	},
+	"64997580": {
+		"id": "64997580",
+		"name": "CRIT Rate Boost",
+		"desc": "CRIT Rate increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617156_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCritical.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997581": {
+		"id": "64997581",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617157_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997582": {
+		"id": "64997582",
+		"name": "Murmur",
+		"desc": "Takes Wind DoT equal to Charge value at the start of the turn. Current Charge is <color=#f29e38ff><unbreak>#1[i]</unbreak></color>, currently at <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the clear threshold.",
+		"effect": "",
+		"modifier": "RogueBuffModifier_Curse_S7",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffS4_02.png",
+		"tagList": [],
+		"readParams": [
+			"RecordValue",
+			"RecordPercent"
+		]
+	},
+	"64997583": {
+		"id": "64997583",
+		"name": "Vulnerability",
+		"desc": "Each stack increases DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617246_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997584": {
+		"id": "64997584",
+		"name": "ATK Boost",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "StageAbility_617254_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997585": {
+		"id": "64997585",
+		"name": "Vulnerability",
+		"desc": "Increases DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617255_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997586": {
+		"id": "64997586",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "SPD Boost",
+		"modifier": "StageAbility_617256_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997587": {
+		"id": "64997587",
+		"name": "Soul Chrysalis",
+		"desc": "Current Charge is <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When Charge reaches <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, this effect is converted to \"Butterfly Soul.\"",
+		"effect": "Soul Chrysalis",
+		"modifier": "MLevel_Rogue_Breeding_Cocoon_S7",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffS4_07.png",
+		"tagList": [],
+		"readParams": [
+			"_CocoonEnergy2",
+			"_MaxLayer"
+		]
+	},
+	"64997588": {
+		"id": "64997588",
+		"name": "Butterfly Soul",
+		"desc": "Attacking with Basic ATK/Skill will deal additional True DMG. This can take effect <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s).",
+		"effect": "Butterfly Soul",
+		"modifier": "MLevel_Rogue_Breeding_Butterfly_S7",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffS4_07_1.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_CurrentLayer"
+		]
+	},
+	"64997589": {
+		"id": "64997589",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617732_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Total"
+		]
+	},
+	"64997590": {
+		"id": "64997590",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617840_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997591": {
+		"id": "64997591",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617842_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"_AllDamageTypeAddedRatio"
+		]
+	},
+	"64997592": {
+		"id": "64997592",
+		"name": "ATK Boost",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617844_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997593": {
+		"id": "64997593",
+		"name": "ATK Boost",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617854_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997594": {
+		"id": "64997594",
+		"name": "Max HP Boost",
+		"desc": "Max HP increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617855_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHPBoost.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997595": {
+		"id": "64997595",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "SPD Boost",
+		"modifier": "StageAbility_617831_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2"
+		]
+	},
 	"64997596": {
 		"id": "64997596",
 		"name": "Selfless Giant Turtle",
@@ -18158,6 +18892,2462 @@
 		"tagList": [],
 		"readParams": [
 			"ADF_6"
+		]
+	},
+	"64997597": {
+		"id": "64997597",
+		"name": "Additional Fire Weakness",
+		"desc": "Additionally implanted Fire Weakness.",
+		"effect": "Implant Fire Weakness",
+		"modifier": "MStageAbility_676940_WeakType_Fire",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997598": {
+		"id": "64997598",
+		"name": "Additional Ice Weakness",
+		"desc": "Additionally implanted Ice Weakness.",
+		"effect": "Implant Ice Weakness",
+		"modifier": "MStageAbility_676940_WeakType_Ice",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997599": {
+		"id": "64997599",
+		"name": "Additional Wind Weakness",
+		"desc": "Additionally implanted Wind Weakness.",
+		"effect": "Implant Wind Weakness",
+		"modifier": "MStageAbility_676940_WeakType_Wind",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997600": {
+		"id": "64997600",
+		"name": "Additional Physical Weakness",
+		"desc": "Additionally implanted Physical Weakness.",
+		"effect": "Implant Physical Weakness",
+		"modifier": "MStageAbility_676940_WeakType_Physical",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997601": {
+		"id": "64997601",
+		"name": "Additional Lightning Weakness",
+		"desc": "Additionally implanted Lightning Weakness.",
+		"effect": "Implant Lightning Weakness",
+		"modifier": "MStageAbility_676940_WeakType_Thunder",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997602": {
+		"id": "64997602",
+		"name": "Additional Quantum Weakness",
+		"desc": "Additionally implanted Quantum Weakness.",
+		"effect": "Implant Quantum Weakness",
+		"modifier": "MStageAbility_676940_WeakType_Quantum",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997603": {
+		"id": "64997603",
+		"name": "Additional Imaginary Weakness",
+		"desc": "Additionally implanted Imaginary Weakness.",
+		"effect": "Implant Imaginary Weakness",
+		"modifier": "MStageAbility_676940_WeakType_Imaginary",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997604": {
+		"id": "64997604",
+		"name": "Weakness Record",
+		"desc": "Weakness Record: Physical <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s), Fire <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s), Ice <color=#f29e38ff><unbreak>#3[i]</unbreak></color> time(s), Lightning <color=#f29e38ff><unbreak>#4[i]</unbreak></color> time(s), Wind <color=#f29e38ff><unbreak>#5[i]</unbreak></color> time(s), Quantum <color=#f29e38ff><unbreak>#6[i]</unbreak></color> time(s), Imaginary <color=#f29e38ff><unbreak>#7[i]</unbreak></color> time(s).",
+		"effect": "",
+		"modifier": "StageAbility_676940_Modifier_Enemy",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": [
+			"ExtraPhysicalCount",
+			"ExtraFireCount",
+			"ExtraIceCount",
+			"ExtraThunderCount",
+			"ExtraWindCount",
+			"ExtraQuantumCount",
+			"ExtraImaginaryCount"
+		]
+	},
+	"64997605": {
+		"id": "64997605",
+		"name": "Soul Returner",
+		"desc": "Still need to use Ultimate <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s).",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_676280_Character",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuff_Counter.png",
+		"tagList": [],
+		"readParams": [
+			"_Layer"
+		]
+	},
+	"64997606": {
+		"id": "64997606",
+		"name": "Soul Returner",
+		"desc": "When \"Murmur\" DMG is triggered, deals DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of \"Murmur\" original DMG to adjacent enemy targets. DMG dealt increases by \"Murmur\" by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_676280_Enemy",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffS4_02.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2",
+			"UltraBoost"
+		]
+	},
+	"64997607": {
+		"id": "64997607",
+		"name": "Vulnerability",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_676890_Damage_Modifier",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_6"
+		]
+	},
+	"64997608": {
+		"id": "64997608",
+		"name": "Serpent Slithering",
+		"desc": "While in the \"Butterfly Soul\" state, DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_676720_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"DamageTaken_Up"
+		]
+	},
+	"64997609": {
+		"id": "64997609",
+		"name": "SPD Boost",
+		"desc": "Increases SPD by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "SPD Boost",
+		"modifier": "StageAbility_617610_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"SpeedUp_Desc"
+		]
+	},
+	"64997611": {
+		"id": "64997611",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "",
+		"modifier": "StageAbility_676650_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"DamageUp",
+			"ADF_7"
+		]
+	},
+	"64997612": {
+		"id": "64997612",
+		"name": "Galactic Grand Lotto",
+		"desc": "<color=#f29e38ff><unbreak>#1[i]</unbreak></color> prize draw(s) currently available.",
+		"effect": "",
+		"modifier": "StageAbility_676760_Modifier_Mark",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuff106.png",
+		"tagList": [],
+		"readParams": [
+			"_PassiveValue"
+		]
+	},
+	"64997613": {
+		"id": "64997613",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_676860_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"CriticalDamage_Up"
+		]
+	},
+	"64997614": {
+		"id": "64997614",
+		"name": "Overclock",
+		"desc": "Exits the \"Overclock\" state after using Ultimate <color=#f29e38ff><unbreak>#1[i]</unbreak></color> more time(s).",
+		"effect": "Overclock",
+		"modifier": "Modifier_StageAbility_676860_OverCharge",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueS1Buff03.png",
+		"tagList": [],
+		"readParams": [
+			"_Count"
+		]
+	},
+	"64997615": {
+		"id": "64997615",
+		"name": "History Agent",
+		"desc": "For each stack of \"Obsession\" in possession, Basic ATK and Skill DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_677170_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"DamageIncrease"
+		]
+	},
+	"64997616": {
+		"id": "64997616",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "StageAbility_677510_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"DamageIncrease"
+		]
+	},
+	"64997617": {
+		"id": "64997617",
+		"name": "IQ Tax Collector",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When launching an attack and dealing Ultimate DMG, causes \"Murmur\" to deal DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the original DMG.",
+		"effect": "ATK Boost",
+		"modifier": "Modifier_StageAbility_677820_Character",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"_AttackAddedRatio",
+			"_CurseDamage"
+		]
+	},
+	"64997618": {
+		"id": "64997618",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "StageAbility_677810_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"_DamageIncrease"
+		]
+	},
+	"64997619": {
+		"id": "64997619",
+		"name": "SPD Boost",
+		"desc": "For every stack of \"Obsession\" on all allies, SPD increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>. Currently, all allies have a total of <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stack(s) of \"Obsession.\"",
+		"effect": "SPD Boost",
+		"modifier": "Modifier_StageAbility_677190_Effect2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_3",
+			"Value"
+		]
+	},
+	"64997620": {
+		"id": "64997620",
+		"name": "CRIT Rate Boost",
+		"desc": "Each stack increases CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stacks.",
+		"effect": "",
+		"modifier": "StageAbility_677460_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCritical.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2",
+			"#ADF_3"
+		]
+	},
+	"64997621": {
+		"id": "64997621",
+		"name": "DMG Boost",
+		"desc": "Each stack increases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stack(s). This effect lasts until exiting \"Butterfly Soul.\"",
+		"effect": "DMG Boost",
+		"modifier": "StageAbility_677720_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2",
+			"#ADF_3"
+		]
+	},
+	"64997622": {
+		"id": "64997622",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_677680_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997623": {
+		"id": "64997623",
+		"name": "DoT Boost",
+		"desc": "DoT taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_677260_Modifier_Enemy",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDotDeepen.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997624": {
+		"id": "64997624",
+		"name": "Ultimate DMG Boost",
+		"desc": "Ultimate DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_678180_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2"
+		]
+	},
+	"64997625": {
+		"id": "64997625",
+		"name": "Memosprite DMG Boost",
+		"desc": "Memosprite DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_678180_Effect2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_3"
+		]
+	},
+	"64997626": {
+		"id": "64997626",
+		"name": "RES PEN Boost",
+		"desc": "All-Type RES PEN increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_678190_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamagePenetrateElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997627": {
+		"id": "64997627",
+		"name": "DoT Boost",
+		"desc": "DoT taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_678240_Modifier_Enemy",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDotDeepen.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997628": {
+		"id": "64997628",
+		"name": "Bleed",
+		"desc": "Takes Physical DMG at the start of each turn.",
+		"effect": "Bleed",
+		"modifier": "Modifier_StageAbility_678250_Tear",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDotLaceration.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997629": {
+		"id": "64997629",
+		"name": "Max HP Boost",
+		"desc": "Max HP increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Max HP Boost",
+		"modifier": "Modifier_StageAbility_678510_MaxHP",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHPBoost.png",
+		"tagList": [],
+		"readParams": [
+			"_HPAddedRatio"
+		]
+	},
+	"64997630": {
+		"id": "64997630",
+		"name": "Breach",
+		"desc": "Ultimate DMG dealt in this combat ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of target's DEF.",
+		"effect": "",
+		"modifier": "StageAbility_678580_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffIgnoreDefence.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2"
+		]
+	},
+	"64997631": {
+		"id": "64997631",
+		"name": "Shield",
+		"desc": "Gains a Shield that offsets DMG. Before the Shield gets depleted or the effect disappears, enemy attacks will not reduce the HP of the ally character with the Shield.",
+		"effect": "Shield",
+		"modifier": "Modifier_StageAbility_678590_Shield",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffShield.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997632": {
+		"id": "64997632",
+		"name": "Bizarre Spell",
+		"desc": "\"Blazar\" DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_678850_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997633": {
+		"id": "64997633",
+		"name": "Ultimate DMG Boost",
+		"desc": "Ultimate DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, lasting until after the Ultimate is cast.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_678870_Character",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"Value"
+		]
+	},
+	"64997634": {
+		"id": "64997634",
+		"name": "DMG Boost",
+		"desc": "Each stack increases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, up to a maximum of <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "StageAbility_678170_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1",
+			"#ADF_2"
+		]
+	},
+	"64997635": {
+		"id": "64997635",
+		"name": "Burn",
+		"desc": "Takes Fire DoT equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of base DMG at the start of each turn.",
+		"effect": "Burn",
+		"modifier": "StageAbility_678260_Modifier_Burn",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDotBurn.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1"
+		]
+	},
+	"64997636": {
+		"id": "64997636",
+		"name": "CRIT Rate Boost",
+		"desc": "CRIT Rate increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_678410_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCritical.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997637": {
+		"id": "64997637",
+		"name": "DMG Boost",
+		"desc": "Each stack increases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Ultimate DMG dealt by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "StageAbility_678480_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1",
+			"#ADF_2"
+		]
+	},
+	"64997638": {
+		"id": "64997638",
+		"name": "Elation Boost",
+		"desc": "Elation stat increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_678640_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"_Value"
+		]
+	},
+	"64997639": {
+		"id": "64997639",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_678670_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"64997640": {
+		"id": "64997640",
+		"name": "Necrosis",
+		"desc": "Within a certain number of turns, takes Fire DMG at the beginning of each turn and causes the Burn state other than \"Necrosis\" to immediately produce a certain percentage of DMG.",
+		"effect": "Necrosis",
+		"modifier": "MCommon_DOT_Burn_633403",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDotBurn.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997641": {
+		"id": "64997641",
+		"name": "Excitation",
+		"desc": "After using Basic ATK or Skill to attack, consumes <color=#f29e38ff><unbreak>#1[i]</unbreak></color> stack(s) of \"Excitation\" from all allies to deal Quantum Additional DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of their ATK to the attack targets, with a <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> base chance to inflict Entanglement for <color=#f29e38ff><unbreak>#4[i]</unbreak></color> turn(s).",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_633406_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_2",
+			"ADF_3",
+			"ADF_4",
+			"ADF_5"
+		]
+	},
+	"64997642": {
+		"id": "64997642",
+		"name": "Weaken",
+		"desc": "Decreases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_633414_ReduceDamage",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffFatigueRatio.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2"
+		]
+	},
+	"64997643": {
+		"id": "64997643",
+		"name": "Vulnerability",
+		"desc": "Each stack increases DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_633407_Enemy_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2"
+		]
+	},
+	"64997644": {
+		"id": "64997644",
+		"name": "Shield",
+		"desc": "Gains a Shield that offsets DMG. Before the Shield gets depleted or the effect disappears, enemy attacks will not reduce the HP of the ally character with the Shield.",
+		"effect": "Shield",
+		"modifier": "Modifier_StageAbility_633409_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffShield.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997645": {
+		"id": "64997645",
+		"name": "The Story Presently",
+		"desc": "CRIT Rate increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. After using an attack, deals Additional DMG equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> the sum of this unit's Max HP, DEF, and ATK to the attack target(s).",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_633417_Character",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCritical.png",
+		"tagList": [],
+		"readParams": [
+			"_CriticalChanceTotal",
+			"_CriticalDamageTotal",
+			"_DamageTotal"
+		]
+	},
+	"64997646": {
+		"id": "64997646",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "StageAbility_617000_Modifier_Effect2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_9"
+		]
+	},
+	"64997647": {
+		"id": "64997647",
+		"name": "DMG Mitigation",
+		"desc": "DMG taken decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Reduction",
+		"modifier": "StageAbility_617000_Modifier_Effect3",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_10"
+		]
+	},
+	"64997648": {
+		"id": "64997648",
+		"name": "Elation Boost",
+		"desc": "Elation stat increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633415_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2"
+		]
+	},
+	"64997649": {
+		"id": "64997649",
+		"name": "DMG Boost",
+		"desc": "Each stack increases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stack(s).",
+		"effect": "DMG Boost",
+		"modifier": "Modifier_StageAbility_633411_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2",
+			"#ADF_3"
+		]
+	},
+	"64997650": {
+		"id": "64997650",
+		"name": "Deflagration",
+		"desc": "At the start of each turn, takes Fire DoT equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of base DMG, and causes Burn states other than \"Deflagration\" to immediately produce <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> DMG.",
+		"effect": "Burn",
+		"modifier": "Modifier_StageAbility_633412_SuperBurn",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDotBurn.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_5",
+			"BurnTriggerRatio_Copy"
+		]
+	},
+	"64997651": {
+		"id": "64997651",
+		"name": "Overclock",
+		"desc": "When not in the \"Overclock\" state, the \"Dealer\" allows the first character to enter the \"Overclock\" state after taking action <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s).",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_676860_Count",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueS1Buff04.png",
+		"tagList": [],
+		"readParams": [
+			"LeftCount"
+		]
+	},
+	"64997652": {
+		"id": "64997652",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633501_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997653": {
+		"id": "64997653",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633502_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997654": {
+		"id": "64997654",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633503_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"_CriticalDamage"
+		]
+	},
+	"64997655": {
+		"id": "64997655",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633504_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997656": {
+		"id": "64997656",
+		"name": "Tawot Cards",
+		"desc": "After receiving an attack, restores HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Max HP.",
+		"effect": "",
+		"modifier": "StageAbility_633505_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHot.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997657": {
+		"id": "64997657",
+		"name": "The Doctor's Robe",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633508_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997658": {
+		"id": "64997658",
+		"name": "Record from Beyond the Sky",
+		"desc": "Nullifies all DMG received except DoTs. This state is dispelled after being attacked.",
+		"effect": "",
+		"modifier": "StageAbility_633509_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffMiracleStatus01.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997659": {
+		"id": "64997659",
+		"name": "Record from Beyond the Sky",
+		"desc": "Immune to debuffs.",
+		"effect": "",
+		"modifier": "StageAbility_633509_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffMiracleStatus01.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997660": {
+		"id": "64997660",
+		"name": "Parasitized",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. At the start of the turn, consumes HP equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of their current HP. When this character is knocked down, this state will be transferred to another random ally target.",
+		"effect": "Parasitized",
+		"modifier": "StageAbility_633510_Modifier_Sub",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffMiracleStatus02.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1",
+			"MazeBuffParam_2"
+		]
+	},
+	"64997661": {
+		"id": "64997661",
+		"name": "Thalan Toxi-Flame",
+		"desc": "At the start of the turn, consume HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Max HP.",
+		"effect": "",
+		"modifier": "MLevel_StageAbility_633511_Modifier_Sub2",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHot.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997662": {
+		"id": "64997662",
+		"name": "SPD Boost",
+		"desc": "Each stack increases SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect can stack up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "SPD Boost",
+		"modifier": "MLevel_StageAbility_633511_Modifier_Sub3",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_2",
+			"MazeBuffParam_3"
+		]
+	},
+	"64997663": {
+		"id": "64997663",
+		"name": "Break Effect Boost",
+		"desc": "Break Effect increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633512_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBreakDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997664": {
+		"id": "64997664",
+		"name": "Self-Consciousness Relaxation",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Max HP increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633513_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1",
+			"MazeBuffParam_2"
+		]
+	},
+	"64997665": {
+		"id": "64997665",
+		"name": "Vulnerability",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633514_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997666": {
+		"id": "64997666",
+		"name": "Shatterbone Blade",
+		"desc": "DMG taken decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Reduction",
+		"modifier": "StageAbility_633526_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_2"
+		]
+	},
+	"64997667": {
+		"id": "64997667",
+		"name": "Punklorde Mentality",
+		"desc": "Implanted new Weakness.",
+		"effect": "Weakness Implant",
+		"modifier": "StageAbility_633515_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffFoible.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997668": {
+		"id": "64997668",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "StageAbility_633517_Modifier_Buff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997669": {
+		"id": "64997669",
+		"name": "Dreams — <unbreak>0110</unbreak>",
+		"desc": "After <color=#f29e38ff><unbreak>#1[i]</unbreak></color> turn(s), DMG taken increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633517_Modifier_Debuff_Wait",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_CountDown",
+			"MDF_PropertyValue"
+		]
+	},
+	"64997670": {
+		"id": "64997670",
+		"name": "Vulnerability",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Vulnerability",
+		"modifier": "StageAbility_633517_Modifier_Debuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997671": {
+		"id": "64997671",
+		"name": "Break Effect Boost",
+		"desc": "Break Effect increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633518_Buff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBreakDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"64997672": {
+		"id": "64997672",
+		"name": "Illusory Automaton",
+		"desc": "At the start of the turn, restore HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Max HP.",
+		"effect": "",
+		"modifier": "StageAbility_633521_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHot.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997673": {
+		"id": "64997673",
+		"name": "Rotting Fruit of the Alien Tree",
+		"desc": "Resists Crowd Control debuffs. Every time a debuff is resisted, consume HP equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Max HP.",
+		"effect": "Resists Crowd Control debuffs",
+		"modifier": "StageAbility_633522_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffResistDebuff.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997674": {
+		"id": "64997674",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633523_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997675": {
+		"id": "64997675",
+		"name": "SPD Reduction",
+		"desc": "Decreases SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633523_Modifier_Sub2",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_2"
+		]
+	},
+	"64997676": {
+		"id": "64997676",
+		"name": "Max HP Boost",
+		"desc": "Max HP increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633524_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHPBoost.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64997677": {
+		"id": "64997677",
+		"name": "ATK Boost",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633524_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64997678": {
+		"id": "64997678",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633525_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997682": {
+		"id": "64997682",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633529_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997683": {
+		"id": "64997683",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633530_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997684": {
+		"id": "64997684",
+		"name": "Obliteration Wick Trimmer",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633531_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997685": {
+		"id": "64997685",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633532_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997686": {
+		"id": "64997686",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633519_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"Value"
+		]
+	},
+	"64997687": {
+		"id": "64997687",
+		"name": "Rubert Empire Difference Machine",
+		"desc": "CRIT Rate increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633533_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCritical.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1",
+			"MazeBuffParam_2"
+		]
+	},
+	"64997688": {
+		"id": "64997688",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633534_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64997689": {
+		"id": "64997689",
+		"name": "ATK Boost",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633535_Modifier_Buff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997690": {
+		"id": "64997690",
+		"name": "Black Forest Cuckoo Clock",
+		"desc": "Significantly increases the chance of being attacked by enemies.",
+		"effect": "Aggro Chance Boost",
+		"modifier": "StageAbility_633537_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHatredUp.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997691": {
+		"id": "64997691",
+		"name": "ATK Reduction",
+		"desc": "Decreases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633539_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997692": {
+		"id": "64997692",
+		"name": "ATK Reduction",
+		"desc": "Decreases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633540_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997693": {
+		"id": "64997693",
+		"name": "ATK Reduction",
+		"desc": "Decreases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633541_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997694": {
+		"id": "64997694",
+		"name": "ATK Reduction",
+		"desc": "Decreases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633542_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997695": {
+		"id": "64997695",
+		"name": "Talot Doll",
+		"desc": "There is a chance to select the wrong target when using abilities against enemy targets.",
+		"effect": "",
+		"modifier": "StageAbility_633544_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCommon.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997696": {
+		"id": "64997696",
+		"name": "Absolute Failure Prescription",
+		"desc": "Takes Physical DMG at the start of each turn for a certain number of turns.",
+		"effect": "Bleed",
+		"modifier": "Modifier_StageAbility_633547_Tear",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDotLaceration.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997697": {
+		"id": "64997697",
+		"name": "Absolute Failure Prescription",
+		"desc": "After the next attack received, additionally lose <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of current HP",
+		"effect": "",
+		"modifier": "StageAbility_633548_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997698": {
+		"id": "64997698",
+		"name": "Weaken",
+		"desc": "Decreases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633550_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffFatigueRatio.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997699": {
+		"id": "64997699",
+		"name": "Absolute Failure Prescription",
+		"desc": "Decreases Weakness Break Efficiency by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633551_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffFatigueRatio.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997700": {
+		"id": "64997700",
+		"name": "Stunned",
+		"desc": "Becomes Stunned and unable to take action.",
+		"effect": "Stunned",
+		"modifier": "MCommon_CTRL_Stun_S7",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffEye.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997701": {
+		"id": "64997701",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633562_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997702": {
+		"id": "64997702",
+		"name": "DEF Boost",
+		"desc": "DEF increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>",
+		"effect": "",
+		"modifier": "StageAbility_633553_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDefenceUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Value"
+		]
+	},
+	"64997703": {
+		"id": "64997703",
+		"name": "ATK Boost",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633554_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Value"
+		]
+	},
+	"64997704": {
+		"id": "64997704",
+		"name": "Max HP Boost",
+		"desc": "Max HP increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Max HP Boost",
+		"modifier": "StageAbility_633555_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHPBoost.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Value"
+		]
+	},
+	"64997705": {
+		"id": "64997705",
+		"name": "Elegant Code",
+		"desc": "Increase DEF, ATK, and Max HP by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After attacking, deals Additional DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of ATK to a random attack target.",
+		"effect": "",
+		"modifier": "StageAbility_633556_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Value1",
+			"MDF_Value2"
+		]
+	},
+	"64997706": {
+		"id": "64997706",
+		"name": "DMG Mitigation",
+		"desc": "DMG taken decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Reduction",
+		"modifier": "StageAbility_617651_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Value"
+		]
+	},
+	"64997707": {
+		"id": "64997707",
+		"name": "DEF Boost",
+		"desc": "DEF increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>",
+		"effect": "",
+		"modifier": "StageAbility_617656_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDefenceUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Value"
+		]
+	},
+	"64997708": {
+		"id": "64997708",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617657_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Value"
+		]
+	},
+	"64997709": {
+		"id": "64997709",
+		"name": "CRIT Rate Reduction",
+		"desc": "Decreases CRIT Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633564_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCritical.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997710": {
+		"id": "64997710",
+		"name": "Vulnerability",
+		"desc": "Each stack increases DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633565_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997711": {
+		"id": "64997711",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633568_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_2"
+		]
+	},
+	"64997712": {
+		"id": "64997712",
+		"name": "Special Absolute Failure Prescription",
+		"desc": "DMG dealt to ally targets with Shields increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633569_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997713": {
+		"id": "64997713",
+		"name": "Special Absolute Failure Prescription",
+		"desc": "Ultimate DMG taken is reduced by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Resets at the start of the turn.",
+		"effect": "",
+		"modifier": "StageAbility_633570_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"UltraDamageReduce"
+		]
+	},
+	"64997714": {
+		"id": "64997714",
+		"name": "Special Absolute Failure Prescription",
+		"desc": "Effect RES increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When HP drops to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>/<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>/<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>, dispels all debuffs from this unit.",
+		"effect": "Effect RES Boost",
+		"modifier": "StageAbility_633571_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageResistance.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1",
+			"MazeBuffParam_2",
+			"MazeBuffParam_3",
+			"MazeBuffParam_4"
+		]
+	},
+	"64997715": {
+		"id": "64997715",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633574_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997716": {
+		"id": "64997716",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633575_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997717": {
+		"id": "64997717",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633590_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997718": {
+		"id": "64997718",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617132_Modifier_ExtraTurn_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_2"
+		]
+	},
+	"64997719": {
+		"id": "64997719",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617143_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"Value"
+		]
+	},
+	"64997720": {
+		"id": "64997720",
+		"name": "Benediction Shard: Strife",
+		"desc": "Based on the total number of stars of all currently possessed Blessings and Equations, increases DMG dealt to Elite Enemies by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633578_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997721": {
+		"id": "64997721",
+		"name": "Benediction Shard: Death",
+		"desc": "Based on the total number of stars of all currently possessed Blessings and Equations, increases DoT received by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633580_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDotDeepen.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997722": {
+		"id": "64997722",
+		"name": "Benediction Shard: Reason",
+		"desc": "Based on the total number of stars of all currently possessed Blessings and Equations, increases Ultimate DMG dealt by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633582_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997723": {
+		"id": "64997723",
+		"name": "Benediction Shard: Time",
+		"desc": "Based on the total number of stars of all currently possessed Blessings and Equations, increases DMG dealt by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633583_Modifier_Sub1",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997724": {
+		"id": "64997724",
+		"name": "Benediction Shard: Time",
+		"desc": "Based on the total number of stars of all currently possessed Blessings and Equations, increases DMG dealt by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633583_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"Value"
+		]
+	},
+	"64997725": {
+		"id": "64997725",
+		"name": "Benediction Shard: Passage",
+		"desc": "Based on the total number of stars of all currently possessed Blessings and Equations, increases Break DMG received by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633584_Modifier_Sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffStanceRatioDown.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997726": {
+		"id": "64997726",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "SPD Boost",
+		"modifier": "StageAbility_633586_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997727": {
+		"id": "64997727",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633588_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997728": {
+		"id": "64997728",
+		"name": "Break Effect Boost",
+		"desc": "Break Effect increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_678190_Effect2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBreakDamage.png",
+		"tagList": [],
+		"readParams": [
+			"BreakValue"
+		]
+	},
+	"64997729": {
+		"id": "64997729",
+		"name": "History Agent",
+		"desc": "The max number of \"<u>Obsession</u>\" stacks increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_677170_EnhanceLimit",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuffS4_01.png",
+		"tagList": [],
+		"readParams": [
+			"Value"
+		]
+	},
+	"64997730": {
+		"id": "64997730",
+		"name": "Eternal Supplicant",
+		"desc": "Lost <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Max HP in total.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_676590_Character",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueBuff_Counter.png",
+		"tagList": [],
+		"readParams": [
+			"CurrentLoseRatio"
+		]
+	},
+	"64997731": {
+		"id": "64997731",
+		"name": "Eternal Supplicant",
+		"desc": "Consumes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of Max HP at the start of turn.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_676590_Character_Revive",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHot.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64997732": {
+		"id": "64997732",
+		"name": "Eternal Supplicant",
+		"desc": "When struck by a killing blow, instead of being knocked down, immediately restores a certain amount of HP.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_676590_Character_Revive2",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffRebirth.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997733": {
+		"id": "64997733",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633596_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997801": {
+		"id": "64997801",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661002_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64997802": {
+		"id": "64997802",
+		"name": "Vulnerability",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661004_Modifier_Sub2",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_5"
+		]
+	},
+	"64997803": {
+		"id": "64997803",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661009_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"_Speed"
+		]
+	},
+	"64997804": {
+		"id": "64997804",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661103_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"_DamageAdd"
+		]
+	},
+	"64997805": {
+		"id": "64997805",
+		"name": "DMG Reduction",
+		"desc": "DMG taken decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661105_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_5"
+		]
+	},
+	"64997806": {
+		"id": "64997806",
+		"name": "ATK Boost",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661106_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"_Attack"
+		]
+	},
+	"64997807": {
+		"id": "64997807",
+		"name": "DMG Reduction",
+		"desc": "DMG taken decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661110_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_5"
+		]
+	},
+	"64997808": {
+		"id": "64997808",
+		"name": "DMG Boost",
+		"desc": "Each stack increases final DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Stacks are removed when HP is reduced.",
+		"effect": "",
+		"modifier": "StageAbility_661112_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
+		]
+	},
+	"64997809": {
+		"id": "64997809",
+		"name": "ATK Boost",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661202_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"_Attack"
+		]
+	},
+	"64997810": {
+		"id": "64997810",
+		"name": "HP Restoration, DMG Boost",
+		"desc": "HP restored increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and final DMG dealt increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661205_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4",
+			"#ADF_5"
+		]
+	},
+	"64997811": {
+		"id": "64997811",
+		"name": "SPD Boost",
+		"desc": "Each stack increases SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661206_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
+		]
+	},
+	"64997812": {
+		"id": "64997812",
+		"name": "ATK Boost",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661207_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"_Attack"
+		]
+	},
+	"64997813": {
+		"id": "64997813",
+		"name": "DMG Boost",
+		"desc": "Each stack increases final DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Stacks are removed when HP is reduced.",
+		"effect": "",
+		"modifier": "StageAbility_661209_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
+		]
+	},
+	"64997814": {
+		"id": "64997814",
+		"name": "HP Restoration, DMG Boost",
+		"desc": "HP restored increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and final DMG dealt increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661212_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4",
+			"#ADF_5"
+		]
+	},
+	"64997815": {
+		"id": "64997815",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661215_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"_Speed"
+		]
+	},
+	"64997816": {
+		"id": "64997816",
+		"name": "DMG Reduction",
+		"desc": "DMG taken decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661217_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_5"
+		]
+	},
+	"64997817": {
+		"id": "64997817",
+		"name": "DMG Boost",
+		"desc": "Each stack increases final DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Stacks are removed when HP is reduced.",
+		"effect": "",
+		"modifier": "StageAbility_661220_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
+		]
+	},
+	"64997818": {
+		"id": "64997818",
+		"name": "DMG Reduction",
+		"desc": "DMG taken decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661222_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_5"
+		]
+	},
+	"64997819": {
+		"id": "64997819",
+		"name": "DMG Boost",
+		"desc": "Each stack increases final DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Stacks are removed when HP is reduced.",
+		"effect": "",
+		"modifier": "StageAbility_661223_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
+		]
+	},
+	"64997820": {
+		"id": "64997820",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661224_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"64997821": {
+		"id": "64997821",
+		"name": "DMG Reduction",
+		"desc": "DMG taken decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661301_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_5"
+		]
+	},
+	"64997822": {
+		"id": "64997822",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661302_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"_DamageAdd"
+		]
+	},
+	"64997823": {
+		"id": "64997823",
+		"name": "DMG Boost",
+		"desc": "Each stack increases final DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Stacks are removed when HP is reduced.",
+		"effect": "",
+		"modifier": "StageAbility_661305_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
+		]
+	},
+	"64997824": {
+		"id": "64997824",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661309_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"_Speed"
+		]
+	},
+	"64997825": {
+		"id": "64997825",
+		"name": "DMG Boost",
+		"desc": "Each stack increases final DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Stacks are removed when HP is reduced.",
+		"effect": "",
+		"modifier": "StageAbility_661314_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
+		]
+	},
+	"64997826": {
+		"id": "64997826",
+		"name": "SPD Boost",
+		"desc": "Each stack increases SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661315_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
+		]
+	},
+	"64997827": {
+		"id": "64997827",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661401_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"_DamageAdd"
+		]
+	},
+	"64997828": {
+		"id": "64997828",
+		"name": "DMG Boost",
+		"desc": "Each stack increases the final DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661403_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
+		]
+	},
+	"64997829": {
+		"id": "64997829",
+		"name": "HP Restoration, DMG Boost",
+		"desc": "HP restored increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and final DMG dealt increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661404_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4",
+			"#ADF_5"
+		]
+	},
+	"64997830": {
+		"id": "64997830",
+		"name": "SPD Boost",
+		"desc": "Each stack increases SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661405_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
+		]
+	},
+	"64997831": {
+		"id": "64997831",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661408_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"_DamageAdd"
+		]
+	},
+	"64997832": {
+		"id": "64997832",
+		"name": "DMG Boost",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661501_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"_DamageAdd"
+		]
+	},
+	"64997833": {
+		"id": "64997833",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661502_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"_Speed"
+		]
+	},
+	"64997834": {
+		"id": "64997834",
+		"name": "DMG Boost",
+		"desc": "Each stack increases the final DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661014_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
+		]
+	},
+	"64997835": {
+		"id": "64997835",
+		"name": "Street Rider Officer",
+		"desc": "After using an attack, deals Additional DMG equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of Max HP plus <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of ATK to the attack target. For each stack of \"Obsession\" on allies, increases this DMG by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "Extra Turn",
+		"modifier": "StageAbility_676410_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_3",
+			"ADF_4",
+			"ADF_5"
+		]
+	},
+	"64997836": {
+		"id": "64997836",
+		"name": "Street Rider Officer",
+		"desc": "After cumulatively launching <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attacks, the first character in the current team gains an extra turn. The attack count taken into account by Follow-Up ATKs is doubled.",
+		"effect": "",
+		"modifier": "StageAbility_676410_Modifier_Sub",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"LeftCount"
+		]
+	},
+	"64997837": {
+		"id": "64997837",
+		"name": "Max HP Boost",
+		"desc": "Max HP increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Max HP Boost",
+		"modifier": "StageAbility_633597_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHPBoost.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997838": {
+		"id": "64997838",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633598_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997839": {
+		"id": "64997839",
+		"name": "Vulnerability",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_677690_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"Value1"
+		]
+	},
+	"64997840": {
+		"id": "64997840",
+		"name": "Max HP Reduction",
+		"desc": "Maximum Restorable HP decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633567_Modifier_Effect",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffBlackBlood.png",
+		"tagList": [],
+		"readParams": [
+			"_Ratio"
+		]
+	},
+	"64997841": {
+		"id": "64997841",
+		"name": "DMG Reduction",
+		"desc": "DMG taken decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633591_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_2"
+		]
+	},
+	"64997842": {
+		"id": "64997842",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633591_Modifier_Sub1",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997844": {
+		"id": "64997844",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> times.",
+		"effect": "SPD Boost",
+		"modifier": "StageAbility_676890_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"Value1",
+			"Value2"
+		]
+	},
+	"64997845": {
+		"id": "64997845",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "SPD Boost",
+		"modifier": "StageAbility_676940_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"Value1"
+		]
+	},
+	"64997846": {
+		"id": "64997846",
+		"name": "DMG Reduction",
+		"desc": "DMG taken decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633600_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_2"
+		]
+	},
+	"64997847": {
+		"id": "64997847",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633600_Modifier_Sub1",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997848": {
+		"id": "64997848",
+		"name": "ATK Boost",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633416_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"Value1"
+		]
+	},
+	"64997849": {
+		"id": "64997849",
+		"name": "RES PEN Boost",
+		"desc": "All-Type RES PEN increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_617632_Effect1",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamagePenetrateElement.png",
+		"tagList": [],
+		"readParams": [
+			"Value1"
+		]
+	},
+	"64997850": {
+		"id": "64997850",
+		"name": "Elation Boost",
+		"desc": "Elation stat increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_617632_Effect2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"Value1"
+		]
+	},
+	"64997851": {
+		"id": "64997851",
+		"name": "DMG Boost",
+		"desc": "\"Blazar\" DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_617530_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"Value1"
+		]
+	},
+	"64997852": {
+		"id": "64997852",
+		"name": "Max HP Boost",
+		"desc": "Max HP increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Max HP Boost",
+		"modifier": "StageAbility_633531_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHPBoost.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_2"
+		]
+	},
+	"64997853": {
+		"id": "64997853",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "SPD Boost",
+		"modifier": "StageAbility_678690_Modifier_Effect",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"Value1"
+		]
+	},
+	"64997854": {
+		"id": "64997854",
+		"name": "Benediction Shard: Sky",
+		"desc": "On the basis of every currently possessed Blessings and Equations, increases DMG dealt by next attack after HP changes by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633579_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997855": {
+		"id": "64997855",
+		"name": "Benediction Shard: Trickery",
+		"desc": "Based on the total number of stars of all currently possessed Blessings and Equations, increases Follow-Up ATK DMG and Additional DMG dealt by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633581_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997856": {
+		"id": "64997856",
+		"name": "Benediction Shard: Romance",
+		"desc": "Based on the total number of stars of all currently possessed Blessings and Equations, increases Basic ATK DMG and Skill DMG dealt by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633585_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
 		]
 	},
 	"64998001": {
@@ -19715,6 +22905,19 @@
 			"#ADF_3"
 		]
 	},
+	"64999843": {
+		"id": "64999843",
+		"name": "Brain in a Vat",
+		"desc": "Current Enlightenment Charge ratio: <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. If the Enlightenment Charge of \"Brain in a Vat\" reaches <unbreak>100%</unbreak> when a character uses their Ultimate through a method other than \"Brain in a Vat,\" the Ultimate will be activated again, consuming <unbreak>100%</unbreak> of the Enlightenment Charge.",
+		"effect": "Brain in a Vat",
+		"modifier": "MLevel_Rogue_Knowledge_S7",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonsterRogueNousKnowledge02.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_EnergyBase"
+		]
+	},
 	"65999001": {
 		"id": "65999001",
 		"name": "Ice Vulnerability",
@@ -20960,7 +24163,7 @@
 		"effect": "",
 		"modifier": "Modifier_FantasticStory_BaseAbility_2060_BaseAddOn_ForShow",
 		"type": "Buff",
-		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff140.png",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff125.png",
 		"tagList": [],
 		"readParams": [
 			"DV_Ratio"
@@ -21726,6 +24929,59 @@
 			"DV_FantasticStory_PlusAbility_2213_ADF_3"
 		]
 	},
+	"65999159": {
+		"id": "65999159",
+		"name": "Streets Abuzz",
+		"desc": "Follow-Up ATK DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After using a Follow-Up ATK, applies <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stack(s) of \"Resound\" to all allies.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2060_Plus9_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff159.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2069_ADF_1",
+			"DV_FantasticStory_PlusAbility_2069_ADF_2"
+		]
+	},
+	"65999160": {
+		"id": "65999160",
+		"name": "Grit Mechanics_Streets Abuzz",
+		"desc": "After using a Follow-Up ATK to attack, additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value for allies with every enemy target hit.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2060_Plus9AddOn_ForShow",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff159.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2069_ADF_3"
+		]
+	},
+	"65999161": {
+		"id": "65999161",
+		"name": "Commotion",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When all \"Resound\" is consumed in an attack, recover 1 Skill Point.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2060_Plus10_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff144.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2070_ADF_1"
+		]
+	},
+	"65999162": {
+		"id": "65999162",
+		"name": "Grit Mechanics_Commotion",
+		"desc": "After using Basic ATK or Skill to attack, every enemy target hit additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value for allies.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2060_Plus10AddOn_ForShow",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff144.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2070_ADF_2"
+		]
+	},
 	"66000001": {
 		"id": "66000001",
 		"name": "Resilient Armor",
@@ -22375,6 +25631,59 @@
 		"readParams": [
 			"MDF_PropertyValue",
 			"MDF_PropertyValue2"
+		]
+	},
+	"66000057": {
+		"id": "66000057",
+		"name": "Beaming with Joy",
+		"desc": "Elation stat increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0013_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0012.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0013_ADF_1"
+		]
+	},
+	"66000058": {
+		"id": "66000058",
+		"name": "Add Insult to Injury",
+		"desc": "Each stack increases DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect can stack up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0014_03",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff141.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0014_ADF_1",
+			"ChallengePeakBattle_Plugins_0014_ADF_3"
+		]
+	},
+	"66000059": {
+		"id": "66000059",
+		"name": "Logistics Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0015_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0010.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0015_ADF_1"
+		]
+	},
+	"66000060": {
+		"id": "66000060",
+		"name": "Logistics Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0015_03",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0010.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0015_ADF_2"
 		]
 	},
 	"66000999": {
