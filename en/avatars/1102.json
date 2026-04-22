@@ -572,7 +572,7 @@
 			"name": "Resurgence",
 			"tag": "Enhance",
 			"type": "Talent",
-			"description": "Enters the Amplification state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an **extra turn**. While in the Amplification state, the DMG of Seele's attacks increases by ****1[i]%**** for **2[i]** turn(s).\nEnemies defeated in the **extra turn** provided by \"Resurgence\" will not trigger another \"Resurgence.\"",
+			"description": "Enters the Amplification state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an **extra turn**. While in the Amplification state, increases the DMG of Seele's attacks by ****1[i]%**** for **2[i]** turn(s).\nEnemies defeated in the **extra turn** provided by \"Resurgence\" will not trigger another \"Resurgence.\"",
 			"regen": 0,
 			"er": 0,
 			"break": [
@@ -876,27 +876,27 @@
 		"111013": 15
 	},
 	"treePromotion": {
-		"2": 802500,
-		"241": 2,
-		"110121": 6,
-		"110122": 16,
-		"110123": 38,
-		"110502": 3,
-		"111011": 8,
-		"111012": 10,
-		"111013": 30
+		"2": 1605000,
+		"241": 4,
+		"110121": 12,
+		"110122": 32,
+		"110123": 76,
+		"110502": 6,
+		"111011": 16,
+		"111012": 20,
+		"111013": 60
 	},
 	"maxPromo": {
-		"2": 3308000,
-		"241": 8,
-		"110121": 18,
-		"110122": 69,
-		"110123": 139,
+		"2": 4110500,
+		"241": 10,
+		"110121": 24,
+		"110122": 85,
+		"110123": 177,
 		"110406": 65,
-		"110502": 12,
-		"111011": 56,
-		"111012": 71,
-		"111013": 73
+		"110502": 15,
+		"111011": 64,
+		"111012": 81,
+		"111013": 103
 	},
 	"exp": 5797920,
 	"outfits": [],
@@ -1002,7 +1002,7 @@
 		},
 		{
 			"name": "Resurgence",
-			"description": "Enters the Amplification state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an **extra turn**. While in the Amplification state, the DMG of Seele's attacks increases by ****1[i]%**** for **2[i]** turn(s).\nEnemies defeated in the **extra turn** provided by \"Resurgence\" will not trigger another \"Resurgence.\"",
+			"description": "Enters the Amplification state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an **extra turn**. While in the Amplification state, increases the DMG of Seele's attacks by ****1[i]%**** for **2[i]** turn(s).\nEnemies defeated in the **extra turn** provided by \"Resurgence\" will not trigger another \"Resurgence.\"",
 			"avatar": 1102,
 			"type": 2,
 			"pos": {
@@ -1111,7 +1111,7 @@
 		},
 		{
 			"name": "Rippling Waves",
-			"description": "After using a Basic ATK, Seele's next **action advances** by **20%**.",
+			"description": "After using a Basic ATK, advances Seele's next **action ** by **20%**.",
 			"avatar": 1102,
 			"type": 3,
 			"pos": {
@@ -1427,12 +1427,541 @@
 			],
 			"baseSkill": [],
 			"id": "1102210"
+		},
+		{
+			"name": "Thwack",
+			"description": "Deals Quantum DMG equal to ****1[i]%**** of Seele's ATK to one designated enemy.",
+			"avatar": 1102,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Normal.png",
+			"shortIcon": "SkillIcon_11102_Normal",
+			"promotion": {
+				"2": 240000,
+				"110121": 3,
+				"110122": 8,
+				"110123": 11,
+				"111011": 6,
+				"111012": 7,
+				"111013": 7
+			},
+			"params": [
+				1.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1110201
+			],
+			"id": "11102001"
+		},
+		{
+			"name": "Sheathed Blade",
+			"description": "Increases Seele's SPD by **2[i]%** for **3[i]** turn(s) and deals Quantum DMG equal to ****1[i]%**** of Seele's ATK to one designated enemy.\nAfter an ally target attacks, if the attack target's current HP percentage is **4[i]%** or below, Seele will automatically use her Skill at that target 1 time. This Skill does not consume Skill Points or regenerate Energy. This effect can only be triggered 1 time per turn and resets at the start of Seele's turn. If there are no valid targets to attack, she attacks the enemy target with the lowest HP percentage instead.",
+			"avatar": 1102,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_BP.png",
+			"shortIcon": "SkillIcon_11102_BP",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110121": 3,
+				"110122": 15,
+				"110123": 30,
+				"110502": 3,
+				"111011": 9,
+				"111012": 13,
+				"111013": 7
+			},
+			"params": [
+				4.5,
+				0.25,
+				3,
+				0.5
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1110202
+			],
+			"id": "11102002"
+		},
+		{
+			"name": "Butterfly Flurry",
+			"description": "Seele enters the Amplification state and deals Quantum DMG equal to ****1[i]%**** of her ATK to one designated enemy.",
+			"avatar": 1102,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Ultra.png",
+			"shortIcon": "SkillIcon_11102_Ultra",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110121": 3,
+				"110122": 15,
+				"110123": 30,
+				"110502": 3,
+				"111011": 9,
+				"111012": 13,
+				"111013": 7
+			},
+			"params": [
+				9
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1110203
+			],
+			"id": "11102003"
+		},
+		{
+			"name": "Resurgence",
+			"description": "Enters the Amplification state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an **extra turn**. While in the Amplification state, increases the DMG dealt by Seele increases by ****1[i]%**** for **2[i]** turn(s).\nEnemies defeated in the **extra turn** provided by \"Resurgence\" will not trigger another \"Resurgence.\"",
+			"avatar": 1102,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Passive.png",
+			"shortIcon": "SkillIcon_11102_Passive",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110121": 3,
+				"110122": 15,
+				"110123": 30,
+				"110502": 3,
+				"111011": 9,
+				"111012": 13,
+				"111013": 7
+			},
+			"params": [
+				1,
+				3
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1110204
+			],
+			"id": "11102004"
+		},
+		{
+			"name": "Phantom Illusion",
+			"description": "After using her Technique, Seele gains Stealth for **1[i]** second(s). While Stealth is active, Seele cannot be detected by enemies. And when entering combat by attacking enemies, Seele will immediately enter the Amplification state and deals Quantum DMG equal to Seele's Skill DMG multiplier to random enemy target 1 time. This DMG is a guaranteed CRIT Hit.",
+			"avatar": 1102,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Maze.png",
+			"shortIcon": "SkillIcon_11102_Maze",
+			"promotion": {},
+			"params": [
+				20
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				1110207
+			],
+			"id": "11102007"
+		},
+		{
+			"name": "Nightshade",
+			"description": "When defeating an enemy target, increases the wearer's DMG dealt by **50%**. This effect can stack up to **3** time(s) and lasts for **3** turn(s).",
+			"avatar": 1102,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_SkillTree1.png",
+			"shortIcon": "SkillIcon_11102_SkillTree1",
+			"promotion": {
+				"2": 5000,
+				"110121": 3,
+				"110502": 1
+			},
+			"params": [
+				0.5,
+				3,
+				3
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "11102101"
+		},
+		{
+			"name": "Lacerate",
+			"description": "While Seele is in the Amplification state, her Quantum **RES PEN** increases by **25%**.",
+			"avatar": 1102,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_SkillTree2.png",
+			"shortIcon": "SkillIcon_11102_SkillTree2",
+			"promotion": {
+				"2": 20000,
+				"241": 1,
+				"110122": 5,
+				"110502": 1
+			},
+			"params": [
+				0.25
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "11102102"
+		},
+		{
+			"name": "Rippling Waves",
+			"description": "After using a Basic ATK, advances Seele's next **action ** by **20%**.",
+			"avatar": 1102,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_SkillTree3.png",
+			"shortIcon": "SkillIcon_11102_SkillTree3",
+			"promotion": {
+				"2": 160000,
+				"241": 1,
+				"110123": 8,
+				"110502": 1
+			},
+			"params": [
+				0.2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "11102103"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1102,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 2500,
+				"111011": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11102201"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1102,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": [
+					11102101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 5000,
+				"110121": 3,
+				"111011": 6
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "11102202"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1102,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					11102202
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 10000,
+				"110122": 3,
+				"111012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11102203"
+		},
+		{
+			"name": "DEF Boost",
+			"description": "",
+			"avatar": 1102,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+			"shortIcon": "IconDefence",
+			"promotion": {
+				"2": 10000,
+				"110122": 3,
+				"111012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "DefenceAddedRatio",
+					"Value": 0.05
+				}
+			],
+			"baseSkill": [],
+			"id": "11102204"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1102,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					11102102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 20000,
+				"110122": 5,
+				"111012": 4
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11102205"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1102,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					11102205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 45000,
+				"110123": 3,
+				"111013": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "11102206"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1102,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 45000,
+				"110123": 3,
+				"111013": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11102207"
+		},
+		{
+			"name": "DEF Boost",
+			"description": "",
+			"avatar": 1102,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					11102103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconDefence.png",
+			"shortIcon": "IconDefence",
+			"promotion": {
+				"2": 160000,
+				"110123": 8,
+				"111013": 8
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "DefenceAddedRatio",
+					"Value": 0.075
+				}
+			],
+			"baseSkill": [],
+			"id": "11102208"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1102,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					11102208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 160000,
+				"110123": 8,
+				"111013": 8
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.107
+				}
+			],
+			"baseSkill": [],
+			"id": "11102209"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1102,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": [
+					11102208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 160000,
+				"110123": 8,
+				"111013": 8
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "11102210"
 		}
 	],
 	"ranks": [
 		{
 			"name": "Extirpating Slash",
-			"description": "When dealing DMG to an enemy whose HP percentage is <unbreak>#1[i]%</unbreak> or lower, CRIT Rate increases by <unbreak>#2[i]%</unbreak>.",
+			"description": "When dealing DMG to an enemy whose HP percentage is <unbreak>#1[i]%</unbreak> or lower, increases CRIT Rate by <unbreak>#2[i]%</unbreak>.",
 			"icon": "spriteoutput/skillicons/avatar/1102/SkillIcon_1102_Rank1.png",
 			"rankIcon": "spriteoutput/textures/1102/1102_Rank_1.png",
 			"shortIcon": "SkillIcon_1102_Rank1",

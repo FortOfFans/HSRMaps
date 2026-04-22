@@ -142,7 +142,7 @@
 			"name": "Edge of the Void",
 			"tag": "Bounce",
 			"type": "Skill",
-			"description": "Deals Imaginary DMG equal to ****1[i]%**** of Welt's ATK to one designated enemy and further deals DMG 2 extra times, with each time dealing Imaginary DMG equal to ****1[i]%**** of Welt's ATK to a random enemy. On hit, there is a ****2[i]%**** **base chance** to reduce the enemy's SPD by **3[i]%** for **4[i]** turn(s).",
+			"description": "Deals Imaginary DMG equal to ****1[i]%**** of Welt's ATK to one designated enemy and additionally deals 2 instances of DMG, with each time dealing Imaginary DMG equal to ****1[i]%**** of Welt's ATK to a random enemy. On hit, there is a ****2[i]%**** **base chance** to reduce the enemy's SPD by **3[i]%** for **4[i]** turn(s).",
 			"regen": 10,
 			"er": 0,
 			"break": [
@@ -925,27 +925,27 @@
 		"112003": 15
 	},
 	"treePromotion": {
-		"2": 802500,
-		"241": 2,
-		"110151": 6,
-		"110152": 16,
-		"110153": 38,
-		"110501": 3,
-		"112001": 8,
-		"112002": 10,
-		"112003": 30
+		"2": 1605000,
+		"241": 4,
+		"110151": 12,
+		"110152": 32,
+		"110153": 76,
+		"110501": 6,
+		"112001": 16,
+		"112002": 20,
+		"112003": 60
 	},
 	"maxPromo": {
-		"2": 3308000,
-		"241": 8,
-		"110151": 18,
-		"110152": 69,
-		"110153": 139,
+		"2": 4110500,
+		"241": 10,
+		"110151": 24,
+		"110152": 85,
+		"110153": 177,
 		"110407": 65,
-		"110501": 12,
-		"112001": 56,
-		"112002": 71,
-		"112003": 73
+		"110501": 15,
+		"112001": 64,
+		"112002": 81,
+		"112003": 103
 	},
 	"exp": 5797920,
 	"outfits": [],
@@ -983,7 +983,7 @@
 		},
 		{
 			"name": "Edge of the Void",
-			"description": "Deals Imaginary DMG equal to ****1[i]%**** of Welt's ATK to one designated enemy and further deals DMG 2 extra times, with each time dealing Imaginary DMG equal to ****1[i]%**** of Welt's ATK to a random enemy. On hit, there is a ****2[i]%**** **base chance** to reduce the enemy's SPD by **3[i]%** for **4[i]** turn(s).",
+			"description": "Deals Imaginary DMG equal to ****1[i]%**** of Welt's ATK to one designated enemy and additionally deals 2 instances of DMG, with each time dealing Imaginary DMG equal to ****1[i]%**** of Welt's ATK to a random enemy. On hit, there is a ****2[i]%**** **base chance** to reduce the enemy's SPD by **3[i]%** for **4[i]** turn(s).",
 			"avatar": 1004,
 			"type": 2,
 			"pos": {
@@ -1488,6 +1488,556 @@
 			],
 			"baseSkill": [],
 			"id": "1004210"
+		},
+		{
+			"name": "Gravity Suppression",
+			"description": "Deals Imaginary DMG equal to ****1[i]%**** of Welt's ATK to one designated enemy.",
+			"avatar": 1004,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11004/SkillIcon_11004_Normal.png",
+			"shortIcon": "SkillIcon_11004_Normal",
+			"promotion": {
+				"2": 240000,
+				"110151": 3,
+				"110152": 8,
+				"110153": 11,
+				"112001": 6,
+				"112002": 7,
+				"112003": 7
+			},
+			"params": [
+				1.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1100401
+			],
+			"id": "11004001"
+		},
+		{
+			"name": "Edge of the Void",
+			"description": "Deals Imaginary DMG equal to ****1[i]%**** of Welt's ATK to one designated enemy and additionally deals DMG 4 times, with each time dealing Imaginary DMG equal to ****1[i]%**** of Welt's ATK to one random enemy. On hit, there is a ****2[i]%**** **base chance** to reduce the enemy's SPD by **3[i]%** for **4[i]** turn(s).",
+			"avatar": 1004,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11004/SkillIcon_11004_BP.png",
+			"shortIcon": "SkillIcon_11004_BP",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110151": 3,
+				"110152": 15,
+				"110153": 30,
+				"110501": 3,
+				"112001": 9,
+				"112002": 13,
+				"112003": 7
+			},
+			"params": [
+				0.9,
+				0.8,
+				0.1,
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1100402
+			],
+			"id": "11004002"
+		},
+		{
+			"name": "Synthetic Black Hole",
+			"description": "Deals Imaginary DMG equal to ****1[i]%**** of Welt's ATK to all enemies. Has a **3[i]%** **base chance** to Imprison hit enemy targets for 1 turn.\nWhile Imprisoned, enemy targets have their **actions delayed** by ****2[f1]%**** and their SPD reduced by **4[i]%**. After using his Ultimate, inflicts the \"Weightless\" state on all enemies. When targets in \"Weightless\" state get attacked, their **actions are delayed** by **5[f1]%**. This effect can trigger up to **6[i]** time(s) per target per turn. \"Weightless\" lasts for **7[i]** turn(s).",
+			"avatar": 1004,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11004/SkillIcon_11004_Ultra.png",
+			"shortIcon": "SkillIcon_11004_Ultra",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110151": 3,
+				"110152": 15,
+				"110153": 30,
+				"110501": 3,
+				"112001": 9,
+				"112002": 13,
+				"112003": 7
+			},
+			"params": [
+				1.8,
+				0.15,
+				1,
+				0.1,
+				0.04,
+				8,
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1100403
+			],
+			"id": "11004003"
+		},
+		{
+			"name": "Time Distortion",
+			"description": "Enemy targets in the \"Weightless\" state have their DEF reduced by **2[i]%** and their SPD reduced by **3[i]%**. When Welt attacks an enemy that is already Slowed, he additionally deals Imaginary **Additional DMG** equal to ****1[i]%**** of his ATK to the enemy.",
+			"avatar": 1004,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11004/SkillIcon_11004_Passive.png",
+			"shortIcon": "SkillIcon_11004_Passive",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110151": 3,
+				"110152": 15,
+				"110153": 30,
+				"110501": 3,
+				"112001": 9,
+				"112002": 13,
+				"112003": 7
+			},
+			"params": [
+				1.25,
+				0.4,
+				0.05
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1100404
+			],
+			"id": "11004004"
+		},
+		{
+			"name": "Gravitational Imprisonment",
+			"description": "After using Welt's Technique, create a Special Dimension that lasts for **4[i]** second(s). Enemies in this Special Dimension have their movement speed reduced by **5[i]%**. After entering combat with enemies in the Special Dimension, there is a **1[i]%** **base chance** to Imprison the enemies for 1 turn.\nImprisoned enemies have their **actions delayed** by **2[i]%** and SPD reduced by **3[i]%**. Only 1 Dimension Effect created by allies can exist at the same time.",
+			"avatar": 1004,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11004/SkillIcon_11004_Maze.png",
+			"shortIcon": "SkillIcon_11004_Maze",
+			"promotion": {},
+			"params": [
+				1,
+				0.2,
+				0.1,
+				15,
+				0.5
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				1100407
+			],
+			"id": "11004007"
+		},
+		{
+			"name": "Retribution",
+			"description": "When ally targets attack targets under the \"Weightless\" state, their DMG dealt increases by **10%**. This effect stacks up to **10** times and lasts for **2** turn(s). At the start of the battle, Welt regenerates **30** Energy.",
+			"avatar": 1004,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11004/SkillIcon_11004_SkillTree1.png",
+			"shortIcon": "SkillIcon_11004_SkillTree1",
+			"promotion": {
+				"2": 5000,
+				"110151": 3,
+				"110501": 1
+			},
+			"params": [
+				0.1,
+				10,
+				2,
+				30
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "11004101"
+		},
+		{
+			"name": "Judgment",
+			"description": "When Welt uses Basic ATK or Skill, additionally deals 1 extra instance of **Additional DMG** to the enemy target. The **Additional DMG** dealt when using Basic ATK is equal to **80%** of Basic ATK DMG multiplier. The **Additional DMG** dealt when using Skill is equal to **120%** of Skill DMG multiplier.",
+			"avatar": 1004,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11004/SkillIcon_11004_SkillTree2.png",
+			"shortIcon": "SkillIcon_11004_SkillTree2",
+			"promotion": {
+				"2": 20000,
+				"241": 1,
+				"110152": 5,
+				"110501": 1
+			},
+			"params": [
+				0.8,
+				1.2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "11004102"
+		},
+		{
+			"name": "Punishment",
+			"description": "When Welt's **Effect Hit Rate** is greater than **40%**, for every **10%** that exceeds this value, increases ATK by **20%**, up to a maximum increase of **80%**. When using Ultimate, additionally restores **5** Energy.",
+			"avatar": 1004,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11004/SkillIcon_11004_SkillTree3.png",
+			"shortIcon": "SkillIcon_11004_SkillTree3",
+			"promotion": {
+				"2": 160000,
+				"241": 1,
+				"110153": 8,
+				"110501": 1
+			},
+			"params": [
+				0.4,
+				0.1,
+				0.2,
+				0.8,
+				5
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "11004103"
+		},
+		{
+			"name": "Effect Hit Rate Boost",
+			"description": "",
+			"avatar": 1004,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+			"shortIcon": "IconStatusProbability",
+			"promotion": {
+				"2": 2500,
+				"112001": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "StatusProbabilityBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11004201"
+		},
+		{
+			"name": "DMG Boost: Imaginary",
+			"description": "",
+			"avatar": 1004,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": [
+					11004101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryAddedRatio.png",
+			"shortIcon": "IconImaginaryAddedRatio",
+			"promotion": {
+				"2": 5000,
+				"110151": 3,
+				"112001": 6
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "ImaginaryAddedRatio",
+					"Value": 0.032
+				}
+			],
+			"baseSkill": [],
+			"id": "11004202"
+		},
+		{
+			"name": "Effect Hit Rate Boost",
+			"description": "",
+			"avatar": 1004,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					11004202
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+			"shortIcon": "IconStatusProbability",
+			"promotion": {
+				"2": 10000,
+				"110152": 3,
+				"112002": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "StatusProbabilityBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11004203"
+		},
+		{
+			"name": "Effect RES Boost",
+			"description": "",
+			"avatar": 1004,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": [
+					11004203
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 10000,
+				"110152": 3,
+				"112002": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11004204"
+		},
+		{
+			"name": "Effect Hit Rate Boost",
+			"description": "",
+			"avatar": 1004,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					11004102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+			"shortIcon": "IconStatusProbability",
+			"promotion": {
+				"2": 20000,
+				"110152": 5,
+				"112002": 4
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "StatusProbabilityBase",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11004205"
+		},
+		{
+			"name": "DMG Boost: Imaginary",
+			"description": "",
+			"avatar": 1004,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					11004205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryAddedRatio.png",
+			"shortIcon": "IconImaginaryAddedRatio",
+			"promotion": {
+				"2": 45000,
+				"110153": 3,
+				"112003": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "ImaginaryAddedRatio",
+					"Value": 0.048
+				}
+			],
+			"baseSkill": [],
+			"id": "11004206"
+		},
+		{
+			"name": "Effect Hit Rate Boost",
+			"description": "",
+			"avatar": 1004,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": [
+					11004206
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+			"shortIcon": "IconStatusProbability",
+			"promotion": {
+				"2": 45000,
+				"110153": 3,
+				"112003": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "StatusProbabilityBase",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11004207"
+		},
+		{
+			"name": "Effect RES Boost",
+			"description": "",
+			"avatar": 1004,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					11004103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 160000,
+				"110153": 8,
+				"112003": 8
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11004208"
+		},
+		{
+			"name": "DMG Boost: Imaginary",
+			"description": "",
+			"avatar": 1004,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					11004103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryAddedRatio.png",
+			"shortIcon": "IconImaginaryAddedRatio",
+			"promotion": {
+				"2": 160000,
+				"110153": 8,
+				"112003": 8
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "ImaginaryAddedRatio",
+					"Value": 0.064
+				}
+			],
+			"baseSkill": [],
+			"id": "11004209"
+		},
+		{
+			"name": "Effect Hit Rate Boost",
+			"description": "",
+			"avatar": 1004,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": [
+					11004201
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+			"shortIcon": "IconStatusProbability",
+			"promotion": {
+				"2": 160000,
+				"110153": 8,
+				"112003": 8
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "StatusProbabilityBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "11004210"
 		}
 	],
 	"ranks": [
@@ -1557,7 +2107,7 @@
 		},
 		{
 			"name": "Prospect of Glory",
-			"description": "When using Skill, deals DMG for 1 extra time to a random enemy.",
+			"description": "When using Skill, deals DMG for 1 extra time to one random enemy.",
 			"icon": "spriteoutput/skillicons/avatar/1004/SkillIcon_1004_Rank6.png",
 			"rankIcon": "spriteoutput/textures/1004/1004_Rank_6.png",
 			"shortIcon": "SkillIcon_1004_Rank6",

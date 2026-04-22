@@ -21,7 +21,7 @@
 			"name": "Banner: Stormcaller",
 			"tag": "Single Target",
 			"type": "Basic ATK",
-			"description": "Deals Wind DMG equal to ****1[i]%**** of Huohuo's Max HP to a target enemy.",
+			"description": "Deals Wind DMG equal to ****1[i]%**** of Huohuo's Max HP to one designated enemy.",
 			"regen": 20,
 			"er": 0,
 			"break": [
@@ -142,7 +142,7 @@
 			"name": "Talisman: Protection",
 			"tag": "Restore",
 			"type": "Skill",
-			"description": "Dispels **5[i]** **debuff(s)** from a single target ally and immediately restores this ally's HP by an amount equal to ****1[f1]%**** of Huohuo's Max HP plus ****2[i]****. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to ****3[f1]%**** of Huohuo's Max HP plus ****4[i]****.",
+			"description": "Dispels **5[i]** **debuff(s)** from one designated ally and immediately restores this ally's HP by an amount equal to ****1[f1]%**** of Huohuo's Max HP plus ****2[i]****. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to ****3[f1]%**** of Huohuo's Max HP plus ****4[i]****.",
 			"regen": 30,
 			"er": 0,
 			"break": [
@@ -1014,34 +1014,34 @@
 		"113003": 15
 	},
 	"treePromotion": {
-		"2": 802500,
-		"241": 2,
-		"110171": 6,
-		"110172": 16,
-		"110173": 38,
-		"110503": 3,
-		"113001": 8,
-		"113002": 10,
-		"113003": 30
+		"2": 1605000,
+		"241": 4,
+		"110171": 12,
+		"110172": 32,
+		"110173": 76,
+		"110503": 6,
+		"113001": 16,
+		"113002": 20,
+		"113003": 60
 	},
 	"maxPromo": {
-		"2": 3308000,
-		"241": 8,
-		"110171": 18,
-		"110172": 69,
-		"110173": 139,
+		"2": 4110500,
+		"241": 10,
+		"110171": 24,
+		"110172": 85,
+		"110173": 177,
 		"110415": 65,
-		"110503": 12,
-		"113001": 56,
-		"113002": 71,
-		"113003": 73
+		"110503": 15,
+		"113001": 64,
+		"113002": 81,
+		"113003": 103
 	},
 	"exp": 5797920,
 	"outfits": [],
 	"tree": [
 		{
 			"name": "Banner: Stormcaller",
-			"description": "Deals Wind DMG equal to ****1[i]%**** of Huohuo's Max HP to a target enemy.",
+			"description": "Deals Wind DMG equal to ****1[i]%**** of Huohuo's Max HP to one designated enemy.",
 			"avatar": 1217,
 			"type": 2,
 			"pos": {
@@ -1072,7 +1072,7 @@
 		},
 		{
 			"name": "Talisman: Protection",
-			"description": "Dispels **5[i]** **debuff(s)** from a single target ally and immediately restores this ally's HP by an amount equal to ****1[f1]%**** of Huohuo's Max HP plus ****2[i]****. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to ****3[f1]%**** of Huohuo's Max HP plus ****4[i]****.",
+			"description": "Dispels **5[i]** **debuff(s)** from one designated ally and immediately restores this ally's HP by an amount equal to ****1[f1]%**** of Huohuo's Max HP plus ****2[i]****. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to ****3[f1]%**** of Huohuo's Max HP plus ****4[i]****.",
 			"avatar": 1217,
 			"type": 2,
 			"pos": {
@@ -1209,7 +1209,7 @@
 		},
 		{
 			"name": "Fearful to Act",
-			"description": "When battle starts, Huohuo gains Divine Provision, lasting for **1** turn(s).",
+			"description": "When combat starts, Huohuo gains Divine Provision, lasting for **1** turn(s).",
 			"avatar": 1217,
 			"type": 3,
 			"pos": {
@@ -1578,6 +1578,549 @@
 			],
 			"baseSkill": [],
 			"id": "1217210"
+		},
+		{
+			"name": "Banner: Stormcaller",
+			"description": "Deals Wind DMG equal to ****1[i]%**** of Huohuo's Max HP to one designated enemy.",
+			"avatar": 1217,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11217/SkillIcon_11217_Normal.png",
+			"shortIcon": "SkillIcon_11217_Normal",
+			"promotion": {
+				"2": 240000,
+				"110171": 3,
+				"110172": 8,
+				"110173": 11,
+				"113001": 6,
+				"113002": 7,
+				"113003": 7
+			},
+			"params": [
+				0.7
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1121701
+			],
+			"id": "11217001"
+		},
+		{
+			"name": "Talisman: Protection",
+			"description": "Dispels **5[i]** **debuff(s)** from one designated ally and immediately restores this ally's HP by an amount equal to ****1[f1]%**** of Huohuo's Max HP plus ****2[i]****. At the same time, restores HP for allies that are adjacent to this target ally by an amount equal to ****3[f1]%**** of Huohuo's Max HP plus ****4[i]****.",
+			"avatar": 1217,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11217/SkillIcon_11217_BP.png",
+			"shortIcon": "SkillIcon_11217_BP",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110171": 3,
+				"110172": 15,
+				"110173": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"params": [
+				0.28,
+				820,
+				0.224,
+				656,
+				1
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1121702
+			],
+			"id": "11217002"
+		},
+		{
+			"name": "Tail: Spiritual Domination",
+			"description": "Regenerates Energy for all teammates (i.e., excluding this unit) by an amount equal to ****1[f1]%**** of their respective Max Energy. At the same time, increases their ATK by ****2[f1]%**** for **3[i]** turn(s).",
+			"avatar": 1217,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11217/SkillIcon_11217_Ultra.png",
+			"shortIcon": "SkillIcon_11217_Ultra",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110171": 3,
+				"110172": 15,
+				"110173": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"params": [
+				0.225,
+				0.48,
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1121703
+			],
+			"id": "11217003"
+		},
+		{
+			"name": "Possession: Ethereal Metaflow",
+			"description": "After using her Skill or Ultimate, Huohuo gains \"Divine Provision,\" lasting for **1[i]** turn(s). This duration decreases by 1 turn at the start of Huohuo's every turn. When Huohuo has \"Divine Provision\" at the start of an ally target's turn or when they use their Ultimate, restores HP for that ally target and the ally target with the lowest HP percentage by an amount equal to ****3[f1]%**** of Huohuo's Max HP plus ****5[i]****. Then, restores HP for every ally with a current HP percentage at or below **6[i]%** by an amount equal to ****3[f1]%**** of Huohuo's Max HP plus ****5[i]****.\nWhen \"Divine Provision\" is triggered to heal an ally target, dispels **2[i]** **debuff(s)** from that target. This effect can be triggered **7[i]** time(s). Gaining \"Divine Provision\" again resets the effect's trigger count.",
+			"avatar": 1217,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11217/SkillIcon_11217_Passive.png",
+			"shortIcon": "SkillIcon_11217_Passive",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110171": 3,
+				"110172": 15,
+				"110173": 30,
+				"110503": 3,
+				"113001": 9,
+				"113002": 13,
+				"113003": 7
+			},
+			"params": [
+				3,
+				1,
+				0.052500002,
+				0,
+				153.75,
+				0.5,
+				6
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1121704
+			],
+			"id": "11217004"
+		},
+		{
+			"name": "Fiend: Impeachment of Evil",
+			"description": "Huohuo terrorizes surrounding enemies, inflicting \"Horror-Struck\" on them. Enemies in \"Horror-Struck\" will flee away from Huohuo for **4[i]** second(s). When entering combat with enemies in \"Horror-Struck,\" there is a **1[i]%** **base chance** of reducing every single enemy's ATK by **2[i]%** for **3[i]** turn(s).",
+			"avatar": 1217,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11217/SkillIcon_11217_Maze.png",
+			"shortIcon": "SkillIcon_11217_Maze",
+			"promotion": {},
+			"params": [
+				1,
+				0.25,
+				2,
+				10
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				1121707
+			],
+			"id": "11217007"
+		},
+		{
+			"name": "Fearful to Act",
+			"description": "When battle starts, Huohuo gains **30** Energy and \"Divine Provision,\" lasting for **2** turn(s).",
+			"avatar": 1217,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11217/SkillIcon_11217_SkillTree1.png",
+			"shortIcon": "SkillIcon_11217_SkillTree1",
+			"promotion": {
+				"2": 5000,
+				"110171": 3,
+				"110503": 1
+			},
+			"params": [
+				30,
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "11217101"
+		},
+		{
+			"name": "The Cursed One",
+			"description": "Increases the chance to resist **Crowd Control debuffs** by **35%**. When using Ultimate, if an ally target's Max Energy is **160** or higher, additionally increases their ATK by **24%**.",
+			"avatar": 1217,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11217/SkillIcon_11217_SkillTree2.png",
+			"shortIcon": "SkillIcon_11217_SkillTree2",
+			"promotion": {
+				"2": 20000,
+				"241": 1,
+				"110172": 5,
+				"110503": 1
+			},
+			"params": [
+				0.35,
+				160,
+				0.24
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "11217102"
+		},
+		{
+			"name": "Stress Reaction to Horror",
+			"description": "When her Talent is triggered to heal ally targets, Huohuo regenerates **1** Energy.",
+			"avatar": 1217,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11217/SkillIcon_11217_SkillTree3.png",
+			"shortIcon": "SkillIcon_11217_SkillTree3",
+			"promotion": {
+				"2": 160000,
+				"241": 1,
+				"110173": 8,
+				"110503": 1
+			},
+			"params": [
+				1
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "11217103"
+		},
+		{
+			"name": "HP Boost",
+			"description": "",
+			"avatar": 1217,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 2500,
+				"113001": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11217201"
+		},
+		{
+			"name": "Effect RES Boost",
+			"description": "",
+			"avatar": 1217,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": [
+					11217101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 5000,
+				"110171": 3,
+				"113001": 6
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11217202"
+		},
+		{
+			"name": "HP Boost",
+			"description": "",
+			"avatar": 1217,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					11217202
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 10000,
+				"110172": 3,
+				"113002": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11217203"
+		},
+		{
+			"name": "SPD Boost",
+			"description": "",
+			"avatar": 1217,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": [
+					11217203
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+			"shortIcon": "IconSpeed",
+			"promotion": {
+				"2": 10000,
+				"110172": 3,
+				"113002": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "SpeedDelta",
+					"Value": 2
+				}
+			],
+			"baseSkill": [],
+			"id": "11217204"
+		},
+		{
+			"name": "HP Boost",
+			"description": "",
+			"avatar": 1217,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					11217102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 20000,
+				"110172": 5,
+				"113002": 4
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11217205"
+		},
+		{
+			"name": "Effect RES Boost",
+			"description": "",
+			"avatar": 1217,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					11217205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 45000,
+				"110173": 3,
+				"113003": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11217206"
+		},
+		{
+			"name": "HP Boost",
+			"description": "",
+			"avatar": 1217,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": [
+					11217206
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 45000,
+				"110173": 3,
+				"113003": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11217207"
+		},
+		{
+			"name": "SPD Boost",
+			"description": "",
+			"avatar": 1217,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					11217103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+			"shortIcon": "IconSpeed",
+			"promotion": {
+				"2": 160000,
+				"110173": 8,
+				"113003": 8
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "SpeedDelta",
+					"Value": 3
+				}
+			],
+			"baseSkill": [],
+			"id": "11217208"
+		},
+		{
+			"name": "Effect RES Boost",
+			"description": "",
+			"avatar": 1217,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					11217103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 160000,
+				"110173": 8,
+				"113003": 8
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "11217209"
+		},
+		{
+			"name": "HP Boost",
+			"description": "",
+			"avatar": 1217,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 160000,
+				"110173": 8,
+				"113003": 8
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "11217210"
 		}
 	],
 	"ranks": [
