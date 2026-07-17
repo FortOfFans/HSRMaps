@@ -513,6 +513,32 @@
 			"#SkillRelic_326_2_P3_CriticalDamage"
 		]
 	},
+	"5532711": {
+		"id": "5532711",
+		"name": "Fallen Star Anchorage",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MRelic_327_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillRelic_327_2_P2_CriticalDamage"
+		]
+	},
+	"5532811": {
+		"id": "5532811",
+		"name": "Cosmic Life Sciences Institute",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MRelic_328_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"_DamageAdd"
+		]
+	},
 	"6002530": {
 		"id": "6002530",
 		"name": "",
@@ -790,7 +816,7 @@
 		"name": "Antimatter Speed Boost",
 		"desc": "After using Basic ATK or Skill, immediately takes an extra action. This effect cannot be consecutively triggered.",
 		"effect": "Consecutive Action",
-		"modifier": "Avatar_AetherDivide_AML_Minion04_00_ExtraTurn",
+		"modifier": "OK",
 		"type": "Buff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
 		"tagList": [],
@@ -4367,6 +4393,85 @@
 			"MDF_PropertyValue2"
 		]
 	},
+	"40230601": {
+		"id": "40230601",
+		"name": "Sail",
+		"desc": "Each stack increases DMG dealt by Assist Skill by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Sail",
+		"modifier": "MEquip_23060_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_AssistDamageAddedRatio",
+			"MDF_UltraDamageAddedRatio"
+		]
+	},
+	"40230602": {
+		"id": "40230602",
+		"name": "Ignore Defense",
+		"desc": "DMG dealt ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF.",
+		"effect": "",
+		"modifier": "MEquip_23060_Sub02",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffIgnoreDefence.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_DefenceIgnoreRatio"
+		]
+	},
+	"40230611": {
+		"id": "40230611",
+		"name": "Radiant Crown",
+		"desc": "Skill DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Radiant Crown",
+		"modifier": "MEquip_23061_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"40230612": {
+		"id": "40230612",
+		"name": "Radiant Crown",
+		"desc": "DMG dealt ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF.",
+		"effect": "",
+		"modifier": "MEquip_23061_Sub_Team",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffIgnoreDefence.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_TeamDefenceIgnoreRatio"
+		]
+	},
+	"40230621": {
+		"id": "40230621",
+		"name": "King's Entertainment",
+		"desc": "All allies' CRIT DMG increases.",
+		"effect": "King's Entertainment",
+		"modifier": "MEquip_23062_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_TeamCriticalDamageBaseAdd"
+		]
+	},
+	"40230622": {
+		"id": "40230622",
+		"name": "King's Entertainment",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "King's Entertainment",
+		"modifier": "MEquip_23062_Sub_Team",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_TeamCriticalDamageBaseAdd"
+		]
+	},
 	"40240001": {
 		"id": "40240001",
 		"name": "ATK Boost",
@@ -6710,9 +6815,9 @@
 	},
 	"63053005": {
 		"id": "63053005",
-		"name": "DoT Dealt Boost",
+		"name": "DoT Taken Boost",
 		"desc": "DoT taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
-		"effect": "DoT Dealt Boost",
+		"effect": "DoT Taken Boost",
 		"modifier": "Junk_BattleEvent_03_EvBuff_OnMonster",
 		"type": "Debuff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDotDeepen.png",
@@ -10117,6 +10222,775 @@
 		"modifier": "MAvatar_Aventurine_00_GridFight_PC01_TeamDamage",
 		"type": "Buff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055580": {
+		"id": "63055580",
+		"name": "Average One",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "CRIT DMG Boost",
+		"modifier": "MAvatar_GridFight_TohsakaRin_00_SkillPC02_CritDmgBuff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_CritDmgValue"
+		]
+	},
+	"63055581": {
+		"id": "63055581",
+		"name": "An Gal Ta Ki Gal Šè",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Vulnerability",
+		"modifier": "MBattleEvent_GridFight_TohsakaRin_00_Skill03_Debuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055582": {
+		"id": "63055582",
+		"name": "Gem Magecraft",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "CRIT DMG Boost",
+		"modifier": "MBattleEvent_GridFight_TohsakaRin_00_Passive_Buff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055583": {
+		"id": "63055583",
+		"name": "Basic ATK DMG and Skill DMG Amplification Boost",
+		"desc": "DMG Amplification for Basic ATK and Skill increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_3007_Type01_Team_LightRailAmp",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_IncreasedDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055584": {
+		"id": "63055584",
+		"name": "Ultimate DMG Amplification Boost",
+		"desc": "DMG Amplification for Ultimate increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_3007_Type02_Team_UltraAmp",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_IncreasedDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055585": {
+		"id": "63055585",
+		"name": "Elation DMG Amplification Boost",
+		"desc": "Elation DMG Amplification increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_3007_Type03_Team_ElationAmp",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_IncreasedDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055586": {
+		"id": "63055586",
+		"name": "Star Rail Scorch",
+		"desc": "After being attacked, causes this unit to further take True DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG.",
+		"effect": "Star Rail Scorch",
+		"modifier": "MGridFight_Origin_3007_Type04_LihuoEnhance",
+		"type": "Debuff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_Trait1001.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055587": {
+		"id": "63055587",
+		"name": "Break Effect Boost",
+		"desc": "Break Effect increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_3007_Type05_Team_BreakAmp",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBreakDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055588": {
+		"id": "63055588",
+		"name": "Break Effect Boost",
+		"desc": "Break Effect increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_3007_Type05_HimekoNova_BreakSpecial",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBreakDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055589": {
+		"id": "63055589",
+		"name": "Navigator: March 7th",
+		"desc": "When attacked, each stack of \"Light Rail\" causes the attacking enemy to take \"Quake\" DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the character's current Shield Effect.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_3007_Type06_Front_Reflect",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_Trait1001.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue",
+			"MDF_PropertyValue02"
+		]
+	},
+	"63055590": {
+		"id": "63055590",
+		"name": "Shield",
+		"desc": "Gains a Shield that offsets DMG. Before the Shield gets depleted or the effect disappears, enemy attacks will not reduce the HP of the unit with the Shield.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_3007_Type06_TrainShield",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffShield.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63055591": {
+		"id": "63055591",
+		"name": "Lucky Strike DMG Boost",
+		"desc": "Lucky Strike DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_3007_Type07_Team_LuckDmg",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_LuckyHit.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055592": {
+		"id": "63055592",
+		"name": "DMG Amplification Boost",
+		"desc": "DMG Amplification increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_3007_Type07_HimekoNova_DmgAmp",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_IncreasedDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055593": {
+		"id": "63055593",
+		"name": "Shield",
+		"desc": "Gains a Shield that offsets DMG. Before the Shield gets depleted or the effect disappears, enemy attacks will not reduce the HP of the unit with the Shield.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_3007_Type06_HimekoShield",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffShield.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63055594": {
+		"id": "63055594",
+		"name": "DoT Taken Boost",
+		"desc": "DoT taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DoT Taken Boost",
+		"modifier": "MAvatar_GridFight_Jiaoqiu_00_Skill03_DotTakenUp",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDotDeepen.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_DotTakenRatio"
+		]
+	},
+	"63055595": {
+		"id": "63055595",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. The Follow-Up ATK DMG dealt additionally increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. The Ultimate DMG dealt additionally increases by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "G_MAvatar_MortenaxBlade_00_PointB3_Teammember_DamageUp",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue",
+			"MDF_PropertyValue2",
+			"MDF_PropertyValue3"
+		]
+	},
+	"63055596": {
+		"id": "63055596",
+		"name": "Infinite Fury",
+		"desc": "CRIT Rate increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG increases by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>.",
+		"effect": "Infinite Fury",
+		"modifier": "MBattleEvent_GridFight_MortenaxBlade_00_Super",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1507Ultra02.png",
+		"tagList": [],
+		"readParams": [
+			"#Skill03_P2_AddedCriticalChance",
+			"#Skill03_P3_AddedCriticalDamageRatio"
+		]
+	},
+	"63055597": {
+		"id": "63055597",
+		"name": "Balefire Bind",
+		"desc": "DEF decreases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>, and DMG taken increases by <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>.",
+		"effect": "Balefire Bind",
+		"modifier": "MBattleEvent_GridFight_MortenaxBlade_00_Debuff_ToEnemy",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1507Ultra01.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue",
+			"MDF_PropertyValue2"
+		]
+	},
+	"63055598": {
+		"id": "63055598",
+		"name": "Interest Piqued!",
+		"desc": "Current \"Interest\" count is <color=#f29e38ff><unbreak>#1[i]</unbreak></color>. Gilgamesh is greatly amused and only uses Skill.",
+		"effect": "Interest Piqued!",
+		"modifier": "GridFight_Gilgamesh_00_DamageUp",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1509Passive02.png",
+		"tagList": [],
+		"readParams": [
+			"Avatar_Gilgamesh_00_KingCount",
+			"#SkillP01_P2_KingGate"
+		]
+	},
+	"63055599": {
+		"id": "63055599",
+		"name": "King's Burden",
+		"desc": "Ultimate DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Ultimate DMG Boost",
+		"modifier": "GridFight_Gilgamesh_Overcharge",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillP01_P3_DamageAddedRatio"
+		]
+	},
+	"63055600": {
+		"id": "63055600",
+		"name": "King's Acknowledgement",
+		"desc": "When dealing DMG, ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF.",
+		"effect": "Ignore DEF",
+		"modifier": "GridFight_Gilgamesh_DroneAnalysis",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffIgnoreDefence.png",
+		"tagList": [],
+		"readParams": [
+			"#Skill02_P5_DefenceDown_Ratio"
+		]
+	},
+	"63055601": {
+		"id": "63055601",
+		"name": "Hero's Hauteur",
+		"desc": "Each stack increases this unit's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> times.",
+		"effect": "CRIT DMG Boost",
+		"modifier": "GridFight_Gilgamesh_TreeBuff2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillP01_P7_DamageAddedRatio",
+			"#SkillP01_P9_DamageAddedlayer"
+		]
+	},
+	"63055602": {
+		"id": "63055602",
+		"name": "Hegemon's Strife",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "GridFight_Gilgamesh_00_ChainBuff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_AttackAddedFinal",
+			"MDF_CriticalDamageBaseFinal"
+		]
+	},
+	"63055603": {
+		"id": "63055603",
+		"name": "Navigator's Semaphore",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. At the start of each turn, immediately recovers <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Assist Skill uses.",
+		"effect": "Navigator's Semaphore",
+		"modifier": "MAvatar_GridFight_HimekoNova_00_Skill02_OnListen",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1510BP.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue",
+			"MDF_AssistAddCount"
+		]
+	},
+	"63055604": {
+		"id": "63055604",
+		"name": "Navigator's Semaphore",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "MAvatar_GridFight_HimekoNova_00_Skill02_TeamBuff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_AllDamageTypeAddedRatio"
+		]
+	},
+	"63055605": {
+		"id": "63055605",
+		"name": "Cosmic Hunting Grounds",
+		"desc": "After a Stellaron Hunter attacks <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s), Mortenax Blade additionally uses his Ultimate.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_1002_MortenaxBladeBonus",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_Trait1002.png",
+		"tagList": [],
+		"readParams": [
+			"HunterNeedAttackCount"
+		]
+	},
+	"63055606": {
+		"id": "63055606",
+		"name": "Expensive Taste",
+		"desc": "The DMG dealt is equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.4_1001_Low",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffFatigueRatio.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055607": {
+		"id": "63055607",
+		"name": "Expensive Taste",
+		"desc": "The DMG dealt is equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.4_1001_High",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055608": {
+		"id": "63055608",
+		"name": "Rusting Treasury",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and DMG received decreases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.4_1002_Monster",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue",
+			"MDF_PropertyValue02"
+		]
+	},
+	"63055609": {
+		"id": "63055609",
+		"name": "Me, Alone",
+		"desc": "The DMG dealt is equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.4_1003_Debuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffFatigueRatio.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055610": {
+		"id": "63055610",
+		"name": "Navigation Expert: Himeko",
+		"desc": "SPD Amplification increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MStageAbility_GridFight_Augment_35402048_Spd",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_Accele.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055611": {
+		"id": "63055611",
+		"name": "Avalon",
+		"desc": "Gains a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Ultimate DMG Amplification, regenerates <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Energy at the start of the wearer's turn, and will not enter the knocked down state.",
+		"effect": "",
+		"modifier": "MGridFight_Equipment_Fate_352603",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_UltraDamageBonus",
+			"MDF_SPRecoveryRatio"
+		]
+	},
+	"63055612": {
+		"id": "63055612",
+		"name": "Curse: Avalon",
+		"desc": "Gains a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Ultimate DMG Amplification, regenerates <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Energy at the start of the wearer's turn, and will not enter the knocked down state.",
+		"effect": "",
+		"modifier": "MGridFight_Equipment_Fate_352703",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_UltraDamageBonus",
+			"MDF_SPRecoveryRatio"
+		]
+	},
+	"63055613": {
+		"id": "63055613",
+		"name": "Ultimate: Avalon",
+		"desc": "Gains a <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> Ultimate DMG Amplification, regenerates <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Energy at the start of the wearer's turn, and will not enter the knocked down state.",
+		"effect": "",
+		"modifier": "MGridFight_Equipment_Fate_352803",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_UltraDamageBonus",
+			"MDF_SPRecoveryRatio"
+		]
+	},
+	"63055614": {
+		"id": "63055614",
+		"name": "Cheap Taste",
+		"desc": "The DMG dealt is equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.4_1004_Low",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055615": {
+		"id": "63055615",
+		"name": "Cheap Taste",
+		"desc": "The DMG dealt is equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG.",
+		"effect": "",
+		"modifier": "MGridFight_MonsterTag_4.4_1004_High",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffFatigueRatio.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055616": {
+		"id": "63055616",
+		"name": "King's Acknowledgement",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>. When dealing DMG, ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF.",
+		"effect": "Ignore DEF",
+		"modifier": "GridFight_Gilgamesh_DroneAnalysis_Team",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1509Rank01.png",
+		"tagList": [],
+		"readParams": [
+			"#Skill02_P5_DefenceDown_Ratio",
+			"#Skill02_P7_MAXLAY",
+			"#SkillRank_Rank01_P1_Ratio"
+		]
+	},
+	"63055617": {
+		"id": "63055617",
+		"name": "Hegemon's Strife",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "GridFight_Gilgamesh_00_NoChainBuff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_AttackAddedFinal",
+			"MDF_CriticalDamageBaseFinal"
+		]
+	},
+	"63055618": {
+		"id": "63055618",
+		"name": "King's Acknowledgement",
+		"desc": "When dealing DMG, ignores <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the target's DEF.",
+		"effect": "Ignore DEF",
+		"modifier": "GridFight_Gilgamesh_DroneAnalysis_Halo",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffIgnoreDefence.png",
+		"tagList": [],
+		"readParams": [
+			"SkillRank_Rank01_DefenceDownRatio"
+		]
+	},
+	"63055619": {
+		"id": "63055619",
+		"name": "Soul That Bore Friendship",
+		"desc": "All-Type RES PEN increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "All-Type RES PEN Boost",
+		"modifier": "GridFight_MAvatar_Gilgamesh_00_Rank06_TeamBuff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamagePenetrateElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_AllDamageTypePenetrate"
+		]
+	},
+	"63055620": {
+		"id": "63055620",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "CRIT DMG Boost",
+		"modifier": "MBattleEvent_GridFight_Jingliu_00_Skill02_TeamCriticalDamage",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055621": {
+		"id": "63055621",
+		"name": "On/Off-Field Strength Boost",
+		"desc": "On/Off-Field Strength increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_1014_PLY_PowerBonus_JingYuan",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_FrontRow.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PowerBonus"
+		]
+	},
+	"63055622": {
+		"id": "63055622",
+		"name": "Inheritance",
+		"desc": "Each stack increases DMG Amplification by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Amplification Boost",
+		"modifier": "MGridFight_Origin_1014_PLY_Inherit",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"InheritDmgPerLayer"
+		]
+	},
+	"63055623": {
+		"id": "63055623",
+		"name": "Poem of Flawlessness",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MBattleEvent_GridFight_Mar_7th_00_PC_PassiveSkill01_DamageAddedRatio",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055624": {
+		"id": "63055624",
+		"name": "SPD Boost",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "SPD Boost",
+		"modifier": "MBattleEvent_GridFight_TohsakaRin_00_Skill21_SpeedBuff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055625": {
+		"id": "63055625",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MStageAbility_GridFight_Projection_TohsakaRin_CritDmg",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055626": {
+		"id": "63055626",
+		"name": "Vulnerability",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MStageAbility_GridFight_Projection_TohsakaRin_EnemyTake",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055627": {
+		"id": "63055627",
+		"name": "Hero's Hauteur",
+		"desc": "<color=#f29e38ff><unbreak>#1[i]</unbreak></color> overflow Energy accumulated.",
+		"effect": "",
+		"modifier": "GridFight_MAvatar_Gilgamesh_00_Passive_ExceedSpStatus",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1509SkillTree02.png",
+		"tagList": [],
+		"readParams": [
+			"Gilgamesh_00_EntityStockSP"
+		]
+	},
+	"63055628": {
+		"id": "63055628",
+		"name": "\"I Grant You Permission To Strike\"",
+		"desc": "Gilgamesh and Saber have currently launched attacks a total of <color=#f29e38ff><unbreak>#1[i]</unbreak></color>/<color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "",
+		"modifier": "GridFight_Avatar_Gilgamesh_00_SaberinTeam",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1509Link.png",
+		"tagList": [],
+		"readParams": [
+			"Saber_Chain",
+			"#SkillP02_P5_GilgameshChain"
+		]
+	},
+	"63055629": {
+		"id": "63055629",
+		"name": "Odium I've Smitten, Thence Came the Blade",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "MBattleEvent_GridFight_MortenaxBlade_00_Rank04_AllTeamDmgUp",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055630": {
+		"id": "63055630",
+		"name": "Golden Rule",
+		"desc": "<color=#f29e38ff><unbreak>#1[i]</unbreak></color> points of \"Golden Rule\" accumulated. When using Ultimate, consumes all \"Golden Rule,\" with each point of \"Golden Rule\" consumed increasing the CRIT DMG for the Ultimate DMG dealt by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "GridFight_MAvatar_Gilgamesh_00_Passive_Rank06_GoldenRule",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1509Rank06.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillRank_Rank06_P3_Ratio",
+			"#SkillRank_Rank06_P4_CriticalDamageRatio"
+		]
+	},
+	"63055631": {
+		"id": "63055631",
+		"name": "On/Off-Field Strength Boost",
+		"desc": "On/Off-Field Strength increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_1014_PLY_PowerBonus_Yanqing",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_FrontRow.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PowerBonus"
+		]
+	},
+	"63055632": {
+		"id": "63055632",
+		"name": "On/Off-Field Strength Boost",
+		"desc": "On/Off-Field Strength increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "MGridFight_Origin_1014_PLY_PowerBonus_Jingliu",
+		"type": "Buff",
+		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_FrontRow.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PowerBonus"
+		]
+	},
+	"63055633": {
+		"id": "63055633",
+		"name": "\"I Grant You Permission To Strike\"",
+		"desc": "The next time Saber uses Ultimate, the DMG dealt becomes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the original DMG.",
+		"effect": "",
+		"modifier": "GridFight_Avatar_Gilgamesh_00_SaberUltraBuff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_DamagePercentage"
+		]
+	},
+	"63055634": {
+		"id": "63055634",
+		"name": "The Beatified",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "The Beatified",
+		"modifier": "MBattleEvent_Sunday_10_Skill03_Link_BackEnd",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1313Linker.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyFinal",
+			"#SkillRank_Rank02_P1_AddDamage"
+		]
+	},
+	"63055635": {
+		"id": "63055635",
+		"name": "DMG Boost",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "MBattleEvent_Sunday_10_Skill03_Link_IncreaseDmg",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_DMGIncreaseReal"
+		]
+	},
+	"63055636": {
+		"id": "63055636",
+		"name": "\"Amuse Me to the Fullest\"",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "SPD Boost",
+		"modifier": "GridFight_BE_MAvatar_Gilgamesh_00_PassiveSpeed",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63055637": {
+		"id": "63055637",
+		"name": "Ash Was My Heart, Yet the Flame Stayed",
+		"desc": "When dealing DMG by using Ultimate, it is considered as having launched a Follow-Up ATK. The Follow-Up ATK DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "G_MBattleEvent_MortenaxBlade_00_Rank02_ToMember",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/Avatar/Icon1507Rank02.png",
 		"tagList": [],
 		"readParams": [
 			"MDF_PropertyValue"
@@ -19655,7 +20529,7 @@
 		"desc": "DoT taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "StageAbility_677260_Modifier_Enemy",
-		"type": "Buff",
+		"type": "Debuff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDotDeepen.png",
 		"tagList": [],
 		"readParams": [
@@ -21793,6 +22667,32 @@
 		"readParams": [
 			"#ADF_4",
 			"#ADF_5"
+		]
+	},
+	"64997859": {
+		"id": "64997859",
+		"name": "DMG Boost",
+		"desc": "Each stack increases the final DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661509_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
+		]
+	},
+	"64997860": {
+		"id": "64997860",
+		"name": "DMG Boost",
+		"desc": "Each stack increases the final DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_661510_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_4"
 		]
 	},
 	"64998001": {
@@ -25651,6 +26551,115 @@
 			"MDF_DmgTakenUp"
 		]
 	},
+	"65999179": {
+		"id": "65999179",
+		"name": "Grit Mechanics",
+		"desc": "After using a Follow-Up ATK to attack enemy targets, every enemy target hit additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value for allies.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2310_BaseAddOn_ForShow",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff141.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_BaseAbility_2310_BaseAddOn_P1_Charge"
+		]
+	},
+	"65999180": {
+		"id": "65999180",
+		"name": "Concordant Truce",
+		"desc": "After using a Follow-Up ATK or Ultimate to attack enemy targets, deals Additional DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of this unit's ATK plus <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of this unit's Max HP to each attacked enemy target.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2310_BeforeFever_ForShow",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff_Normal.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_BaseAbility_2310_BeforeFever_P1_AtkRatio",
+			"DV_FantasticStory_BaseAbility_2310_BeforeFever_P2_HPRatio"
+		]
+	},
+	"65999181": {
+		"id": "65999181",
+		"name": "Surging Grit",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2310_EnterFever_sub",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff_Advance.png",
+		"tagList": [],
+		"readParams": [
+			"DV_Ratio_Get"
+		]
+	},
+	"65999182": {
+		"id": "65999182",
+		"name": "Smack Talk",
+		"desc": "Increases the All-Type RES PEN of Follow-Up ATK DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. During Surging Grit, after using a Follow-Up ATK to attack enemy targets, deals Additional DMG equal to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of this unit's ATK plus <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of this unit's Max HP to targets adjacent to each attacked enemy target. This DMG is considered as Follow-Up ATK DMG.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2310_plus1_ForShow",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff164.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2311_ADF_1",
+			"DV_FantasticStory_PlusAbility_2311_ADF_2",
+			"DV_FantasticStory_PlusAbility_2311_ADF_3"
+		]
+	},
+	"65999183": {
+		"id": "65999183",
+		"name": "Grit Mechanics: Grand Rhetoric",
+		"desc": "After using Ultimate to attack enemy targets, every enemy target hit additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value for allies.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2310_plus2_charge_sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff165.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2312_ADF_3"
+		]
+	},
+	"65999184": {
+		"id": "65999184",
+		"name": "Grand Rhetoric",
+		"desc": "During Surging Grit, CRIT DMG dealt when using Ultimate increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When Surging Grit ends, all allies regenerate <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> Energy.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2310_plus2_ForShow",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff165.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2312_ADF_1",
+			"DV_FantasticStory_PlusAbility_2312_ADF_2"
+		]
+	},
+	"65999185": {
+		"id": "65999185",
+		"name": "Grit Mechanics: Motormouth",
+		"desc": "After using Basic ATK or Skill to attack enemy targets, every enemy target hit additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value for allies.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2310_plus3_charge_sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0001.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2313_ADF_3"
+		]
+	},
+	"65999186": {
+		"id": "65999186",
+		"name": "Motormouth",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2310_plus3_ForShow",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0001.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2313_ADF_1",
+			"DV_FantasticStory_PlusAbility_2313_ADF_2"
+		]
+	},
 	"66000001": {
 		"id": "66000001",
 		"name": "Resilient Armor",
@@ -26596,6 +27605,61 @@
 			"ChallengePeakBattle_0019_ADF_2",
 			"ChallengePeakBattle_0019_ADF_3",
 			"ChallengePeakBattle_0019_ADF_4"
+		]
+	},
+	"66000079": {
+		"id": "66000079",
+		"name": "Navigator's Oath",
+		"desc": "All-Type RES PEN for the Skill DMG and Ultimate DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0022_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0016.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0022_ADF_1"
+		]
+	},
+	"66000080": {
+		"id": "66000080",
+		"name": "Endless Euphoria",
+		"desc": "All-Type RES PEN increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, and the All-Type RES PEN of Elation DMG dealt additionally increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0023_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0011.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0023_ADF_1",
+			"ChallengePeakBattle_Plugins_0023_ADF_2"
+		]
+	},
+	"66000081": {
+		"id": "66000081",
+		"name": "Enrage",
+		"desc": "Each stack increases SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s). At the start of each turn, all stacks are removed.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0020_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0001.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0020_ADF_1",
+			"ChallengePeakBattle_0020_ADF_2"
+		]
+	},
+	"66000082": {
+		"id": "66000082",
+		"name": "Enrage+",
+		"desc": "Each stack increases SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s). At the start of each turn, all stacks are removed.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_EnhancedAbility_0020_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0001.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0020_ADF_1",
+			"ChallengePeakBattle_0020_ADF_2"
 		]
 	},
 	"66000999": {
