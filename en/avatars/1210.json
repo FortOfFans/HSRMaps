@@ -970,22 +970,572 @@
 		"113012": 13,
 		"113013": 12
 	},
-	"treePromotion": {},
+	"treePromotion": {
+		"2": 642000,
+		"241": 2,
+		"110151": 4,
+		"110152": 12,
+		"110153": 28,
+		"110503": 3,
+		"113011": 6,
+		"113012": 7,
+		"113013": 22
+	},
 	"maxPromo": {
-		"2": 2004400,
-		"241": 3,
-		"110151": 8,
-		"110152": 42,
-		"110153": 77,
+		"2": 2646400,
+		"241": 5,
+		"110151": 12,
+		"110152": 54,
+		"110153": 105,
 		"110412": 50,
-		"110503": 9,
-		"113011": 34,
-		"113012": 48,
-		"113013": 32
+		"110503": 12,
+		"113011": 40,
+		"113012": 55,
+		"113013": 54
 	},
 	"exp": 5797920,
 	"outfits": [],
-	"tree": [],
+	"tree": [
+		{
+			"name": "Standing Ovation",
+			"description": "Deals Fire DMG equal to ****1[i]%**** of Guinaifen's ATK to one designated enemy.",
+			"avatar": 1210,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1210/SkillIcon_1210_Normal.png",
+			"shortIcon": "SkillIcon_1210_Normal",
+			"promotion": {
+				"2": 192000,
+				"110151": 2,
+				"110152": 6,
+				"110153": 8,
+				"113011": 4,
+				"113012": 5,
+				"113013": 5
+			},
+			"params": [
+				1.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				121001
+			],
+			"id": "1210001"
+		},
+		{
+			"name": "Blazing Welcome",
+			"description": "Deals Fire DMG equal to ****1[i]%**** of Guinaifen's ATK to one designated enemy and Fire DMG equal to ****2[i]%**** of Guinaifen's ATK to any adjacent enemies, with a **3[i]%** **base chance** to Burn the target and adjacent targets. When Burned, enemies will take a Fire DoT equal to ****4[i]%**** of Guinaifen's ATK at the beginning of each turn, lasting for **5[i]** turn(s).",
+			"avatar": 1210,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1210/SkillIcon_1210_BP.png",
+			"shortIcon": "SkillIcon_1210_BP",
+			"promotion": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"113011": 6,
+				"113012": 10,
+				"113013": 5
+			},
+			"params": [
+				1.5,
+				0.5,
+				1,
+				2.72769,
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				121002
+			],
+			"id": "1210002"
+		},
+		{
+			"name": "Watch This Showstopper",
+			"description": "Deals Fire DMG equal to ****1[f1]%**** of Guinaifen's ATK to all enemies. If the target enemy is currently inflicted with Burn, then their Burn status immediately produces DMG equal to ****2[i]%**** of their original DMG.",
+			"avatar": 1210,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1210/SkillIcon_1210_Ultra.png",
+			"shortIcon": "SkillIcon_1210_Ultra",
+			"promotion": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"113011": 6,
+				"113012": 10,
+				"113013": 5
+			},
+			"params": [
+				1.44,
+				1.02
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				121003
+			],
+			"id": "1210003"
+		},
+		{
+			"name": "PatrAeon Benefits",
+			"description": "When Guinaifen is on the field, there is a **1[i]%** **base chance** to apply Firekiss to an enemy after their Burn status causes DMG. While inflicted with Firekiss, the enemy receives ****4[f1]%**** increased DMG, which lasts for **5[i]** turn(s) and can stack up to **6[i]** time(s).",
+			"avatar": 1210,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1210/SkillIcon_1210_Passive.png",
+			"shortIcon": "SkillIcon_1210_Passive",
+			"promotion": {
+				"2": 522000,
+				"241": 1,
+				"110151": 2,
+				"110152": 12,
+				"110153": 23,
+				"110503": 3,
+				"113011": 6,
+				"113012": 10,
+				"113013": 5
+			},
+			"params": [
+				1,
+				0,
+				0,
+				0.085,
+				3,
+				3
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				121004
+			],
+			"id": "1210004"
+		},
+		{
+			"name": "Skill Showcase",
+			"description": "Immediately attacks the enemy. After entering battle, deals DMG for **2[i]** time(s), dealing Fire DMG equal to **1[i]%** of Guinaifen's ATK to a random single enemy target each time, with a **3[i]%** **base chance** of inflicting Firekiss on them.",
+			"avatar": 1210,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1210/SkillIcon_1210_Maze.png",
+			"shortIcon": "SkillIcon_1210_Maze",
+			"promotion": {},
+			"params": [
+				0.5,
+				4,
+				1
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				121007
+			],
+			"id": "1210007"
+		},
+		{
+			"name": "High Poles",
+			"description": "Basic ATK has a **80%** **base chance** of inflicting an enemy with a Burn equivalent to that of Skill.",
+			"avatar": 1210,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1210/SkillIcon_1210_SkillTree1.png",
+			"shortIcon": "SkillIcon_1210_SkillTree1",
+			"promotion": {
+				"2": 4000,
+				"110151": 2,
+				"110503": 1
+			},
+			"params": [
+				0.8
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "1210101"
+		},
+		{
+			"name": "Bladed Hoop",
+			"description": "When the battle begins, Guinaifen's **action advances** by **25%**.",
+			"avatar": 1210,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1210/SkillIcon_1210_SkillTree2.png",
+			"shortIcon": "SkillIcon_1210_SkillTree2",
+			"promotion": {
+				"2": 16000,
+				"241": 1,
+				"110152": 4,
+				"110503": 1
+			},
+			"params": [
+				0.25
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "1210102"
+		},
+		{
+			"name": "Walking on Knives",
+			"description": "Deals **20%** more DMG to Burned enemies.",
+			"avatar": 1210,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1210/SkillIcon_1210_SkillTree3.png",
+			"shortIcon": "SkillIcon_1210_SkillTree3",
+			"promotion": {
+				"2": 128000,
+				"241": 1,
+				"110153": 6,
+				"110503": 1
+			},
+			"params": [
+				0.2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "1210103"
+		},
+		{
+			"name": "DMG Boost: Fire",
+			"description": "",
+			"avatar": 1210,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconFireAddedRatio.png",
+			"shortIcon": "IconFireAddedRatio",
+			"promotion": {
+				"2": 2000,
+				"113011": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "FireAddedRatio",
+					"Value": 0.032
+				}
+			],
+			"baseSkill": [],
+			"id": "1210201"
+		},
+		{
+			"name": "Break Boost",
+			"description": "",
+			"avatar": 1210,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": [
+					1210101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 4000,
+				"110151": 2,
+				"113011": 4
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "1210202"
+		},
+		{
+			"name": "DMG Boost: Fire",
+			"description": "",
+			"avatar": 1210,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					1210202
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconFireAddedRatio.png",
+			"shortIcon": "IconFireAddedRatio",
+			"promotion": {
+				"2": 8000,
+				"110152": 2,
+				"113012": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "FireAddedRatio",
+					"Value": 0.032
+				}
+			],
+			"baseSkill": [],
+			"id": "1210203"
+		},
+		{
+			"name": "Effect Hit Rate Boost",
+			"description": "",
+			"avatar": 1210,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": [
+					1210203
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+			"shortIcon": "IconStatusProbability",
+			"promotion": {
+				"2": 8000,
+				"110152": 2,
+				"113012": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "StatusProbabilityBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "1210204"
+		},
+		{
+			"name": "DMG Boost: Fire",
+			"description": "",
+			"avatar": 1210,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					1210102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconFireAddedRatio.png",
+			"shortIcon": "IconFireAddedRatio",
+			"promotion": {
+				"2": 16000,
+				"110152": 4,
+				"113012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "FireAddedRatio",
+					"Value": 0.048
+				}
+			],
+			"baseSkill": [],
+			"id": "1210205"
+		},
+		{
+			"name": "Break Boost",
+			"description": "",
+			"avatar": 1210,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					1210205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 36000,
+				"110153": 2,
+				"113013": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1210206"
+		},
+		{
+			"name": "DMG Boost: Fire",
+			"description": "",
+			"avatar": 1210,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": [
+					1210206
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconFireAddedRatio.png",
+			"shortIcon": "IconFireAddedRatio",
+			"promotion": {
+				"2": 36000,
+				"110153": 2,
+				"113013": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "FireAddedRatio",
+					"Value": 0.048
+				}
+			],
+			"baseSkill": [],
+			"id": "1210207"
+		},
+		{
+			"name": "Effect Hit Rate Boost",
+			"description": "",
+			"avatar": 1210,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					1210103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusProbability.png",
+			"shortIcon": "IconStatusProbability",
+			"promotion": {
+				"2": 128000,
+				"110153": 6,
+				"113013": 6
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "StatusProbabilityBase",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "1210208"
+		},
+		{
+			"name": "Break Boost",
+			"description": "",
+			"avatar": 1210,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					1210103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 128000,
+				"110153": 6,
+				"113013": 6
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.107
+				}
+			],
+			"baseSkill": [],
+			"id": "1210209"
+		},
+		{
+			"name": "DMG Boost: Fire",
+			"description": "",
+			"avatar": 1210,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": [
+					1210201
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconFireAddedRatio.png",
+			"shortIcon": "IconFireAddedRatio",
+			"promotion": {
+				"2": 128000,
+				"110153": 6,
+				"113013": 6
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "FireAddedRatio",
+					"Value": 0.064
+				}
+			],
+			"baseSkill": [],
+			"id": "1210210"
+		}
+	],
 	"ranks": [
 		{
 			"name": "Slurping Noodles During Handstand",

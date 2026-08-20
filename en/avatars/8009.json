@@ -1160,22 +1160,607 @@
 		"111012": 13,
 		"111013": 12
 	},
-	"treePromotion": {},
+	"treePromotion": {
+		"2": 592000,
+		"241": 2,
+		"110261": 3,
+		"110262": 14,
+		"110263": 26,
+		"110508": 3,
+		"111011": 5,
+		"111012": 5,
+		"111013": 18
+	},
 	"maxPromo": {
-		"2": 1638400,
-		"241": 3,
-		"110261": 7,
-		"110262": 31,
-		"110263": 61,
+		"2": 2230400,
+		"241": 5,
+		"110261": 10,
+		"110262": 45,
+		"110263": 87,
 		"110400": 28,
-		"110508": 9,
-		"111011": 29,
-		"111012": 42,
-		"111013": 28
+		"110508": 12,
+		"111011": 34,
+		"111012": 47,
+		"111013": 46
 	},
 	"exp": 5797920,
 	"outfits": [],
-	"tree": [],
+	"tree": [
+		{
+			"name": "Make Some Noise",
+			"description": "Deals Lightning DMG equal to ****1[i]%**** of Trailblazer's ATK to one designated enemy.",
+			"avatar": 8009,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/8009/SkillIcon_8009_Normal.png",
+			"shortIcon": "SkillIcon_8009_Normal",
+			"promotion": {
+				"2": 144000,
+				"110261": 1,
+				"110262": 4,
+				"110263": 7,
+				"111011": 5,
+				"111012": 5,
+				"111013": 4
+			},
+			"params": [
+				1.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				800901
+			],
+			"id": "8009001"
+		},
+		{
+			"name": "Let the Storm Rage On",
+			"description": "Deals Lightning DMG equal to ****1[i]%**** of the Trailblazer's ATK to all enemies and gains **2[i]** point(s) of \"**Certified Banger**.\"",
+			"avatar": 8009,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/8009/SkillIcon_8009_BP.png",
+			"shortIcon": "SkillIcon_8009_BP",
+			"promotion": {
+				"2": 416000,
+				"241": 1,
+				"110261": 2,
+				"110262": 9,
+				"110263": 18,
+				"110508": 3,
+				"111011": 4,
+				"111012": 8,
+				"111013": 4
+			},
+			"params": [
+				0.75,
+				20
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				800902
+			],
+			"id": "8009002"
+		},
+		{
+			"name": "May the Trailblaze Fly You Starward",
+			"description": "Gains **6[i]** **Punchline** point(s). Increases the CRIT DMG of one designated ally by ****1[i]%**** for **2[i]** turn(s), and dispels **Crowd Control debuffs** on them.\nIf the target has Elation Skill, they additionally gain **4[i]** point(s) of \"**Certified Banger**\" and immediately use their Elation Skill 1 time, taking into account a fixed amount of **5[i]** **Punchline** point(s). If the enemy target is defeated before the Elation Skill is unleashed, then the Elation Skill is instead launched on a newly entering enemy target.\nIf the target does not have Elation Skill, their **action advances** by **3[i]%**.",
+			"avatar": 8009,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/8009/SkillIcon_8009_Ultra.png",
+			"shortIcon": "SkillIcon_8009_Ultra",
+			"promotion": {
+				"2": 416000,
+				"241": 1,
+				"110261": 2,
+				"110262": 9,
+				"110263": 18,
+				"110508": 3,
+				"111011": 4,
+				"111012": 8,
+				"111013": 4
+			},
+			"params": [
+				0.6,
+				3,
+				0.5,
+				10,
+				20,
+				5
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				800903
+			],
+			"id": "8009003"
+		},
+		{
+			"name": "That Smile Hits Different",
+			"description": "After using an attack, regenerates a fixed amount of **1[i]** Energy and gains **2[i]** **Punchline** point(s).\nWhen the Trailblazer holds \"**Certified Banger**,\" their Skill additionally deals ****3[i]%**** Lightning **Elation DMG** to all enemies. This DMG is calculated using the highest \"**Certified Banger**\" value among all allies.",
+			"avatar": 8009,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/8009/SkillIcon_8009_Passive.png",
+			"shortIcon": "SkillIcon_8009_Passive",
+			"promotion": {
+				"2": 416000,
+				"241": 1,
+				"110261": 2,
+				"110262": 9,
+				"110263": 18,
+				"110508": 3,
+				"111011": 4,
+				"111012": 8,
+				"111013": 4
+			},
+			"params": [
+				10,
+				3,
+				0.375
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				800904
+			],
+			"id": "8009004"
+		},
+		{
+			"name": "We Are So Back!",
+			"description": "After using Technique, randomly gains 1 of the following effects:\nA low chance to gain \"Hearty Laughter\": Increases Elation by **1[i]%**.\nA high chance to gain \"Irrepressible Laughter\": Increases Elation by **3[i]%**.\nWhen the next battle begins, increases all allies' Elation stat by the corresponding amount for **5[i]** turn(s).",
+			"avatar": 8009,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/8009/SkillIcon_8009_Maze.png",
+			"shortIcon": "SkillIcon_8009_Maze",
+			"promotion": {},
+			"params": [
+				0.3,
+				0.1,
+				0.2,
+				0.1,
+				3
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				800907
+			],
+			"id": "8009007"
+		},
+		{
+			"name": "On Cloud Nine",
+			"description": "For every **200** point(s) of Trailblazer's ATK that exceeds **1000**, increases this unit's Elation stat by **10%**, up to a maximum increase of **60%**.",
+			"avatar": 8009,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/8009/SkillIcon_8009_SkillTree1.png",
+			"shortIcon": "SkillIcon_8009_SkillTree1",
+			"promotion": {
+				"2": 4000,
+				"110261": 2,
+				"110508": 1
+			},
+			"params": [
+				1000,
+				200,
+				0.1,
+				0.6
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "8009101"
+		},
+		{
+			"name": "Screw It, We Ball",
+			"description": "Increases this unit's CRIT Rate by **15%**. After using Ultimate, recovers **1** Skill Point(s) for the team.",
+			"avatar": 8009,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/8009/SkillIcon_8009_SkillTree2.png",
+			"shortIcon": "SkillIcon_8009_SkillTree2",
+			"promotion": {
+				"2": 16000,
+				"241": 1,
+				"110262": 4,
+				"110508": 1
+			},
+			"params": [
+				0.15,
+				1
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "8009102"
+		},
+		{
+			"name": "Aha, Sic 'Em!",
+			"description": "After an ally target uses Elation Skill, Trailblazer additionally gains **2** point(s) of \"**Certified Banger**\" the next time they use their Skill.",
+			"avatar": 8009,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/8009/SkillIcon_8009_SkillTree3.png",
+			"shortIcon": "SkillIcon_8009_SkillTree3",
+			"promotion": {
+				"2": 112000,
+				"241": 1,
+				"110263": 5,
+				"110508": 1
+			},
+			"params": [
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "8009103"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 8009,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 1600,
+				"111011": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "8009201"
+		},
+		{
+			"name": "CRIT Rate Boost",
+			"description": "",
+			"avatar": 8009,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+			"shortIcon": "IconCriticalChance",
+			"promotion": {
+				"2": 4000,
+				"110261": 1,
+				"111011": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "CriticalChanceBase",
+					"Value": 0.026999999
+				}
+			],
+			"baseSkill": [],
+			"id": "8009202"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 8009,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					8009101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 8000,
+				"110262": 3,
+				"111012": 1
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "8009203"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 8009,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": [
+					8009101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 8000,
+				"110262": 3,
+				"111012": 1
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "8009204"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 8009,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					8009102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 14400,
+				"110262": 4,
+				"111012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "8009205"
+		},
+		{
+			"name": "CRIT Rate Boost",
+			"description": "",
+			"avatar": 8009,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					8009205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+			"shortIcon": "IconCriticalChance",
+			"promotion": {
+				"2": 36000,
+				"110263": 2,
+				"111013": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "CriticalChanceBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "8009206"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 8009,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": [
+					8009206
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 36000,
+				"110263": 2,
+				"111013": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "8009207"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 8009,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					8009103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 96000,
+				"110263": 5,
+				"111013": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "8009208"
+		},
+		{
+			"name": "CRIT Rate Boost",
+			"description": "",
+			"avatar": 8009,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					8009208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalChance.png",
+			"shortIcon": "IconCriticalChance",
+			"promotion": {
+				"2": 128000,
+				"110263": 6,
+				"111013": 6
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "CriticalChanceBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "8009209"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 8009,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": [
+					8009209
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 128000,
+				"110263": 6,
+				"111013": 6
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "8009210"
+		},
+		{
+			"name": "I Said \"Elation,\" Did I Stutter?",
+			"description": "Deals **1[i]** instances of DMG, with each instance dealing ****2[i]%**** Lightning **Elation DMG** to one random enemy. At last, deals ****3[i]%**** Lightning **Elation DMG**, which is split evenly among all enemies.",
+			"avatar": 8009,
+			"type": 4,
+			"pos": {
+				"point": "22",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/8009/SkillIcon_8009_Elation.png",
+			"shortIcon": "SkillIcon_8009_Elation",
+			"promotion": {
+				"2": 416000,
+				"110261": 2,
+				"110262": 9,
+				"110263": 18,
+				"111011": 6,
+				"111012": 8,
+				"111013": 8
+			},
+			"params": [
+				8,
+				0.25,
+				0.75
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				800920
+			],
+			"id": "8009420"
+		}
+	],
 	"ranks": [
 		{
 			"name": "Believe In the Light",

@@ -865,22 +865,563 @@
 		"113012": 13,
 		"113013": 12
 	},
-	"treePromotion": {},
+	"treePromotion": {
+		"2": 642000,
+		"241": 2,
+		"110191": 4,
+		"110192": 12,
+		"110193": 28,
+		"110506": 3,
+		"113011": 6,
+		"113012": 7,
+		"113013": 22
+	},
 	"maxPromo": {
-		"2": 2004400,
-		"241": 3,
-		"110191": 8,
-		"110192": 42,
-		"110193": 77,
+		"2": 2646400,
+		"241": 5,
+		"110191": 12,
+		"110192": 54,
+		"110193": 105,
 		"110424": 50,
-		"110506": 9,
-		"113011": 34,
-		"113012": 48,
-		"113013": 32
+		"110506": 12,
+		"113011": 40,
+		"113012": 55,
+		"113013": 54
 	},
 	"exp": 5797920,
 	"outfits": [],
-	"tree": [],
+	"tree": [
+		{
+			"name": "Hurlthorn",
+			"description": "Deals Lightning DMG equal to ****1[i]%**** of Moze's ATK to one designated enemy target.",
+			"avatar": 1223,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Normal.png",
+			"shortIcon": "SkillIcon_1223_Normal",
+			"promotion": {
+				"2": 192000,
+				"110191": 2,
+				"110192": 6,
+				"110193": 8,
+				"113011": 4,
+				"113012": 5,
+				"113013": 5
+			},
+			"params": [
+				1.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				122301
+			],
+			"id": "1223001"
+		},
+		{
+			"name": "Fleetwinged Raid",
+			"description": "Marks a designated single enemy target as \"Prey\" and deals to it Lightning DMG equal to ****1[i]%**** of Moze's ATK, and gains **2[i]** points of Charge.\nWhen there are no other characters on the field that are capable of combat, Moze cannot use his Skill and dispels the enemy's \"Prey\" state.",
+			"avatar": 1223,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_BP.png",
+			"shortIcon": "SkillIcon_1223_BP",
+			"promotion": {
+				"2": 522000,
+				"241": 1,
+				"110191": 2,
+				"110192": 12,
+				"110193": 23,
+				"110506": 3,
+				"113011": 6,
+				"113012": 10,
+				"113013": 5
+			},
+			"params": [
+				1.875,
+				9
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				122302
+			],
+			"id": "1223002"
+		},
+		{
+			"name": "<unbreak>Dash In,</unbreak> <unbreak>Gash Out</unbreak>",
+			"description": "Deals Lightning DMG equal to ****1[i]%**** of Moze's ATK to one designated enemy target, and launches the Talent's **Follow-Up ATK** against this target. If the target is defeated before this **Follow-Up ATK** is used, then launches the **Follow-Up ATK** against a random single enemy instead.",
+			"avatar": 1223,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Ultra.png",
+			"shortIcon": "SkillIcon_1223_Ultra",
+			"promotion": {
+				"2": 522000,
+				"241": 1,
+				"110191": 2,
+				"110192": 12,
+				"110193": 23,
+				"110506": 3,
+				"113011": 6,
+				"113012": 10,
+				"113013": 5
+			},
+			"params": [
+				3.24
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				122303
+			],
+			"id": "1223003"
+		},
+		{
+			"name": "Cascading Featherblade",
+			"description": "When \"Prey\" exists on the field, Moze will enter the **Departed** state.\nAfter ally targets attack \"Prey,\" Moze will additionally deal 1 instance of Lightning **Additional DMG** equal to ****1[i]%**** of his ATK and consumes 1 point of Charge. For every **2[i]** point(s) of Charge consumed, Moze launches 1 **Follow-Up ATK** to \"Prey,\" dealing Lightning DMG equal to ****3[i]%**** of his ATK. When Charge reaches 0, dispels the target's \"Prey\" state and resets the tally of Charge points required to launch **Follow-Up ATK**. Talent's **Follow-Up ATK** does not consume Charge.",
+			"avatar": 1223,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Passive.png",
+			"shortIcon": "SkillIcon_1223_Passive",
+			"promotion": {
+				"2": 522000,
+				"241": 1,
+				"110191": 2,
+				"110192": 12,
+				"110193": 23,
+				"110506": 3,
+				"113011": 6,
+				"113012": 10,
+				"113013": 5
+			},
+			"params": [
+				0.375,
+				3,
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				122304
+			],
+			"id": "1223004"
+		},
+		{
+			"name": "Bated Wings",
+			"description": "After using Technique, enters the Stealth state for **1[i]** second(s). While in Stealth, Moze is undetectable by enemies. If Moze attacks enemies to enter combat while in Stealth, increases DMG by **2[i]%**, lasting for **3[i]** turn(s).",
+			"avatar": 1223,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_Maze.png",
+			"shortIcon": "SkillIcon_1223_Maze",
+			"promotion": {},
+			"params": [
+				20,
+				0.3,
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				122307
+			],
+			"id": "1223007"
+		},
+		{
+			"name": "Nightfeather",
+			"description": "After using Talent's **Follow-Up ATK**, recovers **1** Skill Point(s). This effect can trigger again after **1** turn(s).",
+			"avatar": 1223,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_SkillTree1.png",
+			"shortIcon": "SkillIcon_1223_SkillTree1",
+			"promotion": {
+				"2": 4000,
+				"110191": 2,
+				"110506": 1
+			},
+			"params": [
+				1,
+				1
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "1223101"
+		},
+		{
+			"name": "Daggerhold",
+			"description": "When Moze dispels his **Departed** state, his **action advances** by **20%**. At the start of each wave, Moze's **action advances** by **30%**.",
+			"avatar": 1223,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_SkillTree2.png",
+			"shortIcon": "SkillIcon_1223_SkillTree2",
+			"promotion": {
+				"2": 16000,
+				"241": 1,
+				"110192": 4,
+				"110506": 1
+			},
+			"params": [
+				0.2,
+				0.3
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "1223102"
+		},
+		{
+			"name": "Vengewise",
+			"description": "When dealing DMG by using Ultimate, it is considered as having launched a **Follow-Up ATK**. The **Follow-Up ATK** DMG taken by the \"Prey\" increases by **25%**.",
+			"avatar": 1223,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1223/SkillIcon_1223_SkillTree3.png",
+			"shortIcon": "SkillIcon_1223_SkillTree3",
+			"promotion": {
+				"2": 128000,
+				"241": 1,
+				"110193": 6,
+				"110506": 1
+			},
+			"params": [
+				0.25
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "1223103"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1223,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 2000,
+				"113011": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "1223201"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1223,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": [
+					1223101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 4000,
+				"110191": 2,
+				"113011": 4
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "1223202"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1223,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					1223202
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 8000,
+				"110192": 2,
+				"113012": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "1223203"
+		},
+		{
+			"name": "HP Boost",
+			"description": "",
+			"avatar": 1223,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 8000,
+				"110192": 2,
+				"113012": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "1223204"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1223,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					1223102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 16000,
+				"110192": 4,
+				"113012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1223205"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1223,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					1223205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 36000,
+				"110193": 2,
+				"113013": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "1223206"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1223,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 36000,
+				"110193": 2,
+				"113013": 2
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1223207"
+		},
+		{
+			"name": "HP Boost",
+			"description": "",
+			"avatar": 1223,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					1223103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 128000,
+				"110193": 6,
+				"113013": 6
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "1223208"
+		},
+		{
+			"name": "ATK Boost",
+			"description": "",
+			"avatar": 1223,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					1223208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 128000,
+				"110193": 6,
+				"113013": 6
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1223209"
+		},
+		{
+			"name": "CRIT DMG Boost",
+			"description": "",
+			"avatar": 1223,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": [
+					1223208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconCriticalDamage.png",
+			"shortIcon": "IconCriticalDamage",
+			"promotion": {
+				"2": 128000,
+				"110193": 6,
+				"113013": 6
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "CriticalDamageBase",
+					"Value": 0.107
+				}
+			],
+			"baseSkill": [],
+			"id": "1223210"
+		}
+	],
 	"ranks": [
 		{
 			"name": "Oathkeeper",
