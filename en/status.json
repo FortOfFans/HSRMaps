@@ -3331,6 +3331,20 @@
 			"#SkillEquip_P2_ElationAddedRatio"
 		]
 	},
+	"40220081": {
+		"id": "40220081",
+		"name": "CRIT DMG Boost",
+		"desc": "Each stack increases CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect can stack up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "CRIT DMG Boost",
+		"modifier": "MEquip_22008_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillEquip_P2_CriticalDamage",
+			"#SkillEquip_P4_MaxLayer"
+		]
+	},
 	"40230001": {
 		"id": "40230001",
 		"name": "DMG Boost",
@@ -4400,7 +4414,7 @@
 		"effect": "Sail",
 		"modifier": "MEquip_23060_Sub",
 		"type": "Buff",
-		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
 		"tagList": [],
 		"readParams": [
 			"MDF_AssistDamageAddedRatio",
@@ -4470,6 +4484,58 @@
 		"tagList": [],
 		"readParams": [
 			"MDF_TeamCriticalDamageBaseAdd"
+		]
+	},
+	"40230631": {
+		"id": "40230631",
+		"name": "New Melody",
+		"desc": "All allies' SPD increases while held.",
+		"effect": "New Melody",
+		"modifier": "MEquip_23063_SpeedBuff",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_SpeedAddedRatio"
+		]
+	},
+	"40230632": {
+		"id": "40230632",
+		"name": "New Melody",
+		"desc": "Increases SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MEquip_23063_SpeedBuff_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_SpeedAddedRatio"
+		]
+	},
+	"40230641": {
+		"id": "40230641",
+		"name": "Updraft",
+		"desc": "Increases SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "SPD Boost",
+		"modifier": "MEquip_23064_Buff_1",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyRatio"
+		]
+	},
+	"40230642": {
+		"id": "40230642",
+		"name": "Uptrend",
+		"desc": "Elation increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Elation Boost",
+		"modifier": "MEquip_23064_Buff_2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyRatio"
 		]
 	},
 	"40240001": {
@@ -10354,8 +10420,8 @@
 		"icon": "spriteoutput/GridFight/BattleIcon/BuffIcon/Icon_GridFight_Trait1001.png",
 		"tagList": [],
 		"readParams": [
-			"MDF_PropertyValue",
-			"MDF_PropertyValue02"
+			"MDF_PropertyValue02",
+			"MDF_PropertyValue"
 		]
 	},
 	"63055590": {
@@ -10775,7 +10841,7 @@
 	"63055621": {
 		"id": "63055621",
 		"name": "On/Off-Field Strength Boost",
-		"desc": "On/Off-Field Strength increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"desc": "On/Off-Field Strength increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "MGridFight_Origin_1014_PLY_PowerBonus_JingYuan",
 		"type": "Buff",
@@ -10907,7 +10973,7 @@
 	"63055631": {
 		"id": "63055631",
 		"name": "On/Off-Field Strength Boost",
-		"desc": "On/Off-Field Strength increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"desc": "On/Off-Field Strength increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "MGridFight_Origin_1014_PLY_PowerBonus_Yanqing",
 		"type": "Buff",
@@ -10920,7 +10986,7 @@
 	"63055632": {
 		"id": "63055632",
 		"name": "On/Off-Field Strength Boost",
-		"desc": "On/Off-Field Strength increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"desc": "On/Off-Field Strength increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "MGridFight_Origin_1014_PLY_PowerBonus_Jingliu",
 		"type": "Buff",
@@ -11949,6 +12015,628 @@
 			"MDF_PropertyValue",
 			"MDF_PropertyValue02"
 		]
+	},
+	"63061008": {
+		"id": "63061008",
+		"name": "Vulnerability",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Vulnerability",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_6014",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"DamageUpRatio"
+		]
+	},
+	"63061009": {
+		"id": "63061009",
+		"name": "Seamless Teamwork",
+		"desc": "Gains <color=#f29e38ff><unbreak>#1[i]</unbreak></color> magical energy next turn.",
+		"effect": "Seamless Teamwork",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_5001_AddMana",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBPSkill.png",
+		"tagList": [],
+		"readParams": [
+			"_AddMana"
+		]
+	},
+	"63061011": {
+		"id": "63061011",
+		"name": "Ruby Pendant",
+		"desc": "The magical energy of the next <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Victorious Slash becomes 0.",
+		"effect": "Ruby Pendant",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_5006_MinusCost",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconActivity_FateRin_Rin_Pendant.png",
+		"tagList": [],
+		"readParams": [
+			"Limit"
+		]
+	},
+	"63061012": {
+		"id": "63061012",
+		"name": "Ruby Pendant",
+		"desc": "For every <color=#f29e38ff><unbreak>#1[i]</unbreak></color> \"Aha Smash!\" used this turn, generates 1 \"Aha Smash!\".",
+		"effect": "Ruby Pendant",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_5007",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconActivity_FateRin_Rin_Pendant.png",
+		"tagList": [],
+		"readParams": [
+			"CreateCount"
+		]
+	},
+	"63061014": {
+		"id": "63061014",
+		"name": "Golden Rule!",
+		"desc": "After using any card, generates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> \"Gate of Babylon!\".",
+		"effect": "Golden Rule!",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_2004",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconActivity_FateRin_Gilgamesh_Door.png",
+		"tagList": [],
+		"readParams": [
+			"CreateCount"
+		]
+	},
+	"63061016": {
+		"id": "63061016",
+		"name": "Full Support!",
+		"desc": "After attacking, Trailblazer gains <color=#f29e38ff><unbreak>#1[i]</unbreak></color> additional tally count.",
+		"effect": "Full Support!",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_1004",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconActivity_FateRin_Trailblazer_Support.png",
+		"tagList": [],
+		"readParams": [
+			"ExtraLayer"
+		]
+	},
+	"63061017": {
+		"id": "63061017",
+		"name": "Gem: Water",
+		"desc": "After every attack received, additionally takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> DMG.",
+		"effect": "Gem: Water",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_6006",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconActivity_FateRin_Rin_Jewel.png",
+		"tagList": [],
+		"readParams": [
+			"ExtraDamage"
+		]
+	},
+	"63061019": {
+		"id": "63061019",
+		"name": "Pass The Spark",
+		"desc": "After being attacked 3 times, deals DMG to this unit and adjacent units. Has been attacked <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s).",
+		"effect": "Pass The Spark",
+		"modifier": "Modifier_Activity_FateRin_061_Boomer",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"Attack_Count"
+		]
+	},
+	"63061020": {
+		"id": "63061020",
+		"name": "Suppression Tactics",
+		"desc": "DMG dealt decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Suppression Tactics",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_5003_Debuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffFatigueRatio.png",
+		"tagList": [],
+		"readParams": [
+			"BuffRatio"
+		]
+	},
+	"63061021": {
+		"id": "63061021",
+		"name": "Permanent Enhancement",
+		"desc": "Each stack increases the DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Permanent Enhancement",
+		"modifier": "Modifier_Monster_W5_Peacock_00_Skill02_FateRin_PowerUp",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#Skill02_P1_BuffRatio"
+		]
+	},
+	"63061022": {
+		"id": "63061022",
+		"name": "Shackle-Bearing Messenger",
+		"desc": "About to use \"Desmios Evangelion.\"",
+		"effect": "Shackle-Bearing Messenger",
+		"modifier": "Monster_W3_Figure_02_IsAiming_FateRin",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonster_W3_Figure_02_UltraPrepared.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061023": {
+		"id": "63061023",
+		"name": "Permanent Enhancement",
+		"desc": "Each stack increases the DMG dealt by <color=#f29e38ff><unbreak>25%</unbreak></color>.",
+		"effect": "Permanent Enhancement",
+		"modifier": "Modifier_Activity_FateRin_Side01_PowerUp",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061024": {
+		"id": "63061024",
+		"name": "Lurking",
+		"desc": "Cannot become the primary target for abilities that require active selection. When there are no other enemy units on the battlefield, this unit dispels the \"Lurking\" state.",
+		"effect": "Lurking",
+		"modifier": "MMonster_W4_Scholar_01_Stealth_FateRin",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffStealth.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061025": {
+		"id": "63061025",
+		"name": "Permanent Enhancement",
+		"desc": "Each stack increases the DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Permanent Enhancement",
+		"modifier": "MModifier_Monster_W4_Claymore_00_Skill05_PowerUp",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"BuffRatio"
+		]
+	},
+	"63061026": {
+		"id": "63061026",
+		"name": "Pass The Spark",
+		"desc": "After being attacked 3 times, deals DMG to this unit and adjacent units. Has been attacked <color=#f29e38ff><unbreak>#1[i]</unbreak></color> time(s).",
+		"effect": "Pass The Spark",
+		"modifier": "Modifier_Activity_FateRin_Side04_Boomer",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"Attack_Count"
+		]
+	},
+	"63061027": {
+		"id": "63061027",
+		"name": "Charging",
+		"desc": "Uses \"Time to Rock!\" when taking the next action. Taking <color=#f29e38ff><unbreak>#1[i]</unbreak></color> more hit(s) will dispel the Charging state.",
+		"effect": "Charging",
+		"modifier": "MModifier_Monster_W4_Claymore_02_Skill03_Aim_FateRin",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonster_W5_Claymore_02_Charge.png",
+		"tagList": [],
+		"readParams": [
+			"AttackCount"
+		]
+	},
+	"63061028": {
+		"id": "63061028",
+		"name": "ATK Boost",
+		"desc": "Each stack increases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "MMonster_W3_TV_03_Skill02_AttackUp",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63061029": {
+		"id": "63061029",
+		"name": "Whirl",
+		"desc": "Uses \"Hemotort Vortex\" in the next action. Increases DMG dealt by this unit after it is attacked while Charging.",
+		"effect": "Whirl",
+		"modifier": "MMonster_W4_Serpent_00_Charge_FateRin",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonster_W4_Serpent_00_Charge.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061030": {
+		"id": "63061030",
+		"name": "DMG Boost",
+		"desc": "Each stack increases the DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "MMonster_W4_Serpent_00_Charge_AttackUp_FateRin",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#Skill03_P1_BuffRatio"
+		]
+	},
+	"63061031": {
+		"id": "63061031",
+		"name": "Sanction Mode",
+		"desc": "Aurumaton Gatekeeper's DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and it activates the ability: Enchainment.",
+		"effect": "Sanction Mode",
+		"modifier": "MMonster_W2_Mecha03_00_Overdrive_On_FateRin",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonsterFury.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillP01_P1_DamageUpRatio"
+		]
+	},
+	"63061032": {
+		"id": "63061032",
+		"name": "Verification Error",
+		"desc": "The next attack will hit an enemy target.",
+		"effect": "Verification Error",
+		"modifier": "MMonster_W3_Clock_03_TargetSelect_ToFriend",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffChallengeMaze.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061033": {
+		"id": "63061033",
+		"name": "Permanent Enhancement",
+		"desc": "Each stack increases the DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Permanent Enhancement",
+		"modifier": "MMonster_W4_Serpent_FateRin_PowerUp",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#Skill03_P2_BuffRatio"
+		]
+	},
+	"63061034": {
+		"id": "63061034",
+		"name": "Devour",
+		"desc": "<color=#f29e38ff><unbreak>#1[i]</unbreak></color> ATK from %DynamicTargetName has been stolen by \"%CasterName\"",
+		"effect": "Devour",
+		"modifier": "MMonster_W5_Eater_00_Skill02_Ate_FateRin",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonster_W5_Eater_00_Eater.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_LoseAttack"
+		]
+	},
+	"63061035": {
+		"id": "63061035",
+		"name": "Satiated",
+		"desc": "Steals <color=#f29e38ff><unbreak>#1[i]</unbreak></color> ATK. After each time this unit is attacked by a target unit, it returns a certain percentage of ATK to the target inflicted with the \"Devour\" state. After receiving a certain number of attacks from target units, dispels the \"Devour\" state applied by this unit.",
+		"effect": "Satiated",
+		"modifier": "MMonster_W5_Eater_00_Skill02_Eater_FateRin",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonster_W5_Eater_00_Eater.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Attack"
+		]
+	},
+	"63061036": {
+		"id": "63061036",
+		"name": "Utopia",
+		"desc": "Heals all enemy targets at the start of the turn.",
+		"effect": "Utopia",
+		"modifier": "Modifier_Activity_FateRin_Side03_Control",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuff_Fate_Sabar01.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061037": {
+		"id": "63061037",
+		"name": "P—Protect You",
+		"desc": "Each stack of \"P—Protect You\" can negate 1 instance of DMG. All enemies share \"P—Protect You\" stacks.",
+		"effect": "P—Protect You",
+		"modifier": "MMonster_XP_Minion04_02_Cunhu_Buff_FateRin",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonsterKnight.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061038": {
+		"id": "63061038",
+		"name": "Utopia",
+		"desc": "Heals <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> when using a card. This effect cannot stack.",
+		"effect": "Utopia",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_6013",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuff_Fate_Sabar01.png",
+		"tagList": [],
+		"readParams": [
+			"HOTPercent"
+		]
+	},
+	"63061039": {
+		"id": "63061039",
+		"name": "Chimera",
+		"desc": "The chimera's current level is <color=#f29e38ff><unbreak>#1[i]</unbreak></color>, and it will obtain treasure at the start of the turn. Upon repeated use, it immediately levels up and obtains treasure.",
+		"effect": "Chimera",
+		"modifier": "Modifier_Ability_6022_Create",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconActivity_FateRin_Normal_Chimera.png",
+		"tagList": [],
+		"readParams": [
+			"_CatLevel"
+		]
+	},
+	"63061040": {
+		"id": "63061040",
+		"name": "Praise of High Morals",
+		"desc": "Has obtained <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Moral(s). DMG dealt by all allies increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Praise of High Morals",
+		"modifier": "Activity_FateRin_Card_Ability_6018_Controller",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"TotalDamageUpRatio",
+			"Count"
+		]
+	},
+	"63061041": {
+		"id": "63061041",
+		"name": "Shock",
+		"desc": "Takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> extra DMG after every attack received.",
+		"effect": "Shock",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_6019",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDotElectric.png",
+		"tagList": [],
+		"readParams": [
+			"ExtraDamage"
+		]
+	},
+	"63061042": {
+		"id": "63061042",
+		"name": "Rho Aias",
+		"desc": "When attacked, deals DMG to the attacker equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of the Shield value.",
+		"effect": "Rho Aias",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_6012_Status",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffReflect.png",
+		"tagList": [],
+		"readParams": [
+			"ReflectRatio"
+		]
+	},
+	"63061043": {
+		"id": "63061043",
+		"name": "Enhance",
+		"desc": "Enemy stats are greatly enhanced.",
+		"effect": "Enhance",
+		"modifier": "Modifier_Activity_FateRin_Ability_HardMode_Status",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHatredUp.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061044": {
+		"id": "63061044",
+		"name": "Weakened",
+		"desc": "Enemy stats are greatly weakened.",
+		"effect": "Weakened",
+		"modifier": "Modifier_Activity_FateRin_Ability_EasyMode_Status",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHatredDown.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061045": {
+		"id": "63061045",
+		"name": "DMG Mitigation",
+		"desc": "DMG taken decreases <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Mitigation",
+		"modifier": "MMonster_W1_Soldier03_00_Passive_FateRin_DamageReduce",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageReduction.png",
+		"tagList": [],
+		"readParams": [
+			"ReduceRatio"
+		]
+	},
+	"63061046": {
+		"id": "63061046",
+		"name": "ATK Boost",
+		"desc": "Each stack increases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "Modifier_Activity_FateRin_Ability_Challenge_1_2_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"63061047": {
+		"id": "63061047",
+		"name": "ATK Boost",
+		"desc": "Each stack increases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "Modifier_Activity_FateRin_Ability_Challenge_2_2_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"63061048": {
+		"id": "63061048",
+		"name": "Outgoing Healing Reduction",
+		"desc": "Each stack decreases allies' Incoming Healing and Shield Effect gained by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "HP Restored Decreased",
+		"modifier": "Modifier_Activity_FateRin_Ability_Challenge_3_2_Sub2_Status",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHealRatio.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"63061049": {
+		"id": "63061049",
+		"name": "ATK Boost",
+		"desc": "Each stack increases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "Modifier_Activity_FateRin_Ability_Challenge_4_2_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"63061050": {
+		"id": "63061050",
+		"name": "Vulnerability",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Vulnerability",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_7001_Debuff_Status",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"DebuffRatio"
+		]
+	},
+	"63061051": {
+		"id": "63061051",
+		"name": "ATK Boost",
+		"desc": "Each stack increases ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "Modifier_Activity_FateRin_Ability_Challenge_3_3_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"#ADF_1"
+		]
+	},
+	"63061052": {
+		"id": "63061052",
+		"name": "ATK Boost",
+		"desc": "%DynamicTargetName's ATK increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "MMonster_W5_Eater_00_Skill03_Attack_FateRin",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonster_W5_Eater_00_AttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Attack"
+		]
+	},
+	"63061053": {
+		"id": "63061053",
+		"name": "Wingbeats",
+		"desc": "\"Daythunder Raven\" enters the enhanced state.",
+		"effect": "Enhance",
+		"modifier": "MMonster_W4_DawnsEye_00_WeatherEnhanced_FateRin",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonster_W4_DawnsEye_00_Enhance.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061054": {
+		"id": "63061054",
+		"name": "Overdue Obituary",
+		"desc": "\"The Living Shan't Flee\" enhances to \"The Dead Shan't Avoid.\"",
+		"effect": "Enhance",
+		"modifier": "Monster_W4_PolluxPart_00_Shield_FateRin",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonster_W4_PolluxPart_00_Enhance.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061055": {
+		"id": "63061055",
+		"name": "Unable to Act",
+		"desc": "Unable to take action on the next turn.",
+		"effect": "Unable to Act",
+		"modifier": "Monster_W4_PolluxPart_00_Disable_FateRin",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonsterCommonDying.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061056": {
+		"id": "63061056",
+		"name": "King's Goblet",
+		"desc": "Gains <color=#f29e38ff><unbreak>#1[i]</unbreak></color> magical energy and draws <color=#f29e38ff><unbreak>#2[i]</unbreak></color> card(s) next turn.",
+		"effect": "King's Goblet",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_6020",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuff_Fate_Common01.png",
+		"tagList": [],
+		"readParams": [
+			"CostCount",
+			"DrawCount"
+		]
+	},
+	"63061057": {
+		"id": "63061057",
+		"name": "Youth Special",
+		"desc": "Gains <color=#f29e38ff><unbreak>#1[i]</unbreak></color> magical energy next turn.",
+		"effect": "Youth Special",
+		"modifier": "Modifier_Activity_FateRin_Card_Ability_6024",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBPSkill.png",
+		"tagList": [],
+		"readParams": [
+			"Mana"
+		]
+	},
+	"63061058": {
+		"id": "63061058",
+		"name": "Hemotort Resonance",
+		"desc": "After other \"Avenger Squadron: Pheasant\" in the \"Hemotort Resonance\" state attacks, this unit will also launch an attack.",
+		"effect": "Hemotort Resonance",
+		"modifier": "MMonster_W4_Turkey_00_Skill02_Power_FateRin",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonster_W4_Turkey_00_Power.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061059": {
+		"id": "63061059",
+		"name": "Lasting Antibac",
+		"desc": "Loses 1 stack after being attacked. When all stacks are removed, exits the \"Steam Wash\" state and takes massive DMG.",
+		"effect": "Lasting Antibac",
+		"modifier": "Modifier_Monster_W5_Pam_00_DefenceUp_FateRin",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonster_W5_Pam_00_Enhance.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63061060": {
+		"id": "63061060",
+		"name": "DMG Boost",
+		"desc": "Each stack increases the DMG dealt by %DynamicTargetName by<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "DMG Boost",
+		"modifier": "MMonster_Argenti_DamageUP_FateRin",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_ShowValue1"
+		]
+	},
+	"63061061": {
+		"id": "63061061",
+		"name": "Barrier",
+		"desc": "%DynamicTargetName nullifies all DMG received except DoTs. This state is dispelled after being attacked.",
+		"effect": "Barrier",
+		"modifier": "MMonster_W2_Beast02_00_BlockDamage_FateRin",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageCut.png",
+		"tagList": [],
+		"readParams": []
 	},
 	"63999001": {
 		"id": "63999001",
@@ -16954,7 +17642,7 @@
 	"64997334": {
 		"id": "64997334",
 		"name": "Murmur",
-		"desc": "Takes Wind DoT equal to Charge at the start of the turn. Current Charge is at <color=#f29e38ff><unbreak>#1[i]</unbreak></color>, currently at <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of clear threshold.",
+		"desc": "Takes Wind DoT equal to Charge value at the start of the turn. Current Charge is <color=#f29e38ff><unbreak>#1[i]</unbreak></color>, reaching <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of clearance threshold.",
 		"effect": "",
 		"modifier": "RogueBuffModifier_Curse_S4",
 		"type": "Debuff",
@@ -19992,7 +20680,7 @@
 	"64997582": {
 		"id": "64997582",
 		"name": "Murmur",
-		"desc": "Takes Wind DoT equal to Charge value at the start of the turn. Current Charge is <color=#f29e38ff><unbreak>#1[i]</unbreak></color>, currently at <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of the clear threshold.",
+		"desc": "Takes Wind DoT equal to Charge value at the start of the turn. Current Charge is <color=#f29e38ff><unbreak>#1[i]</unbreak></color>, reaching <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of clearance threshold.",
 		"effect": "",
 		"modifier": "RogueBuffModifier_Curse_S7",
 		"type": "Debuff",
@@ -21914,6 +22602,279 @@
 		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "",
 		"modifier": "StageAbility_633596_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997734": {
+		"id": "64997734",
+		"name": "Deck Cut",
+		"desc": "The next attack can trigger \"Murmur\" DMG.",
+		"effect": "",
+		"modifier": "StageAbility_676260_Modifier_Stack",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_3_Copy",
+			"ADF_4_Copy"
+		]
+	},
+	"64997735": {
+		"id": "64997735",
+		"name": "Imaginator",
+		"desc": "The team has cumulatively obtained <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Skill Point(s). For every <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Skill Point(s) cumulatively obtained, deals DMG to all enemies.",
+		"effect": "",
+		"modifier": "StageAbility_676710_Modifier_Stack",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffFightFest.png",
+		"tagList": [],
+		"readParams": [
+			"_Layer",
+			"_ADF_2",
+			"_ADF_3"
+		]
+	},
+	"64997736": {
+		"id": "64997736",
+		"name": "Popularity",
+		"desc": "After being attacked, consumes <color=#f29e38ff><unbreak>#1[i]</unbreak></color> stack(s) to deal <color=#f29e38ff><unbreak>#2[i]</unbreak></color> instance(s) of Additional DMG of a random Type equal to <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of ATK to an enemy target.",
+		"effect": "",
+		"modifier": "StageAbility_676850_Modifier_PendingBuff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"_ADF_2_Copy",
+			"_ADF_3_Copy",
+			"_ADF_4_Copy"
+		]
+	},
+	"64997739": {
+		"id": "64997739",
+		"name": "Piercing Shards",
+		"desc": "Every stack makes the DMG dealt by the next Ultimate ignore <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of enemy targets' All-Type RES.",
+		"effect": "",
+		"modifier": "StageAbility_678481_Modifier_Buff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamagePenetrateElement.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1"
+		]
+	},
+	"64997740": {
+		"id": "64997740",
+		"name": "Organic Emperor",
+		"desc": "Each stack increases CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Skill and Ultimate DMG dealt by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#3[i]</unbreak></color> time(s).",
+		"effect": "",
+		"modifier": "StageAbility_678780_Modifier_Buff",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1",
+			"ADF_2",
+			"ADF_3"
+		]
+	},
+	"64997741": {
+		"id": "64997741",
+		"name": "Chord",
+		"desc": "Deals Additional DMG to the attack target after the next time Basic ATK is used. Each stack will increase the Additional DMG.",
+		"effect": "Chord",
+		"modifier": "Modifier_StageAbility_633422_Mark",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconRogueS1Buff05.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"64997742": {
+		"id": "64997742",
+		"name": "I'm Tired, Boss",
+		"desc": "DMG dealt decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and DMG taken increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_678251_Modifier_Debuff",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"_ADF_1",
+			"_ADF_2"
+		]
+	},
+	"64997743": {
+		"id": "64997743",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_678861_Modifier_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"_ADF_2"
+		]
+	},
+	"64997744": {
+		"id": "64997744",
+		"name": "Vulnerability",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_678610_Modifier_Enemy",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1"
+		]
+	},
+	"64997745": {
+		"id": "64997745",
+		"name": "ATK Boost",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_633419_Attack",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"AttackAddedRatio_633419"
+		]
+	},
+	"64997746": {
+		"id": "64997746",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_676710_Modifier_CritDmg",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_CritBoost"
+		]
+	},
+	"64997747": {
+		"id": "64997747",
+		"name": "CRIT DMG Boost",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_676670_Modifier_CritDmg",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_CritBoost"
+		]
+	},
+	"64997748": {
+		"id": "64997748",
+		"name": "Lucidity",
+		"desc": "Each stack increases CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "",
+		"modifier": "StageAbility_677180_Modifier_CritDmg",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1",
+			"ADF_3"
+		]
+	},
+	"64997749": {
+		"id": "64997749",
+		"name": "Lucidity",
+		"desc": "Each stack increases CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, stacking up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> time(s).",
+		"effect": "",
+		"modifier": "StageAbility_677180_Modifier_CritDmg_Servant",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_2",
+			"ADF_3"
+		]
+	},
+	"64997750": {
+		"id": "64997750",
+		"name": "Humanity's Nemesis",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633601_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997751": {
+		"id": "64997751",
+		"name": "Bud in the Wind",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, up to a max increase of <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_633424_CritDmg",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"_ADF_1",
+			"ADF_2"
+		]
+	},
+	"64997752": {
+		"id": "64997752",
+		"name": "Guidance",
+		"desc": "After using an attack, additionally deals Additional DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of ATK to attack targets. This can be stacked up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> times.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_633425_Stack",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_3",
+			"ADF_2"
+		]
+	},
+	"64997753": {
+		"id": "64997753",
+		"name": "Chance Jailbreak",
+		"desc": "DMG taken by increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When receiving a killing blow, they will not be knocked down, and their current HP is immediately restored to <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> of their Max HP. This effect can trigger <color=#f29e38ff><unbreak>#3[i]</unbreak></color> time(s). After using an attack, they additionally deal True DMG equal to <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of the original DMG.",
+		"effect": "",
+		"modifier": "Modifier_StageAbility_633426_Character",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffRebirth.png",
+		"tagList": [],
+		"readParams": [
+			"ADF_1",
+			"ADF_2",
+			"_ADF_3",
+			"ADF_4"
+		]
+	},
+	"64997754": {
+		"id": "64997754",
+		"name": "Trader Mask: Supreme",
+		"desc": "After using an attack, additionally deals Additional DMG equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of ATK to attack targets.",
+		"effect": "",
+		"modifier": "StageAbility_633602_Modifier_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MazeBuffParam_1"
+		]
+	},
+	"64997755": {
+		"id": "64997755",
+		"name": "Trader Mask: Activate",
+		"desc": "Final DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "StageAbility_633603_Modifier_Sub",
 		"type": "Buff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
 		"tagList": [],
@@ -26660,6 +27621,33 @@
 			"DV_FantasticStory_PlusAbility_2313_ADF_2"
 		]
 	},
+	"65999187": {
+		"id": "65999187",
+		"name": "Grit Mechanics: Riddle Fanatic",
+		"desc": "For each enemy target hit after using an attack, additionally accumulates <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Grit Value for allies.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2210_Plus5AddOn_ForShow",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff166.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2215_ADF_3"
+		]
+	},
+	"65999188": {
+		"id": "65999188",
+		"name": "Riddle Fanatic",
+		"desc": "After using an attack, gains <color=#f29e38ff><unbreak>#2[i]</unbreak></color> Punchline. During Surging Grit, DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_FantasticStory_BaseAbility_2210_Plus5AddOn_Servant",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff166.png",
+		"tagList": [],
+		"readParams": [
+			"DV_FantasticStory_PlusAbility_2215_ADF_1",
+			"DV_FantasticStory_PlusAbility_2215_ADF_2"
+		]
+	},
 	"66000001": {
 		"id": "66000001",
 		"name": "Resilient Armor",
@@ -27662,6 +28650,126 @@
 			"ChallengePeakBattle_0020_ADF_2"
 		]
 	},
+	"66000083": {
+		"id": "66000083",
+		"name": "Scales",
+		"desc": "Each stack reduces DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. This effect decreases by 1 stack after each attack received.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0021_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0003.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0021_ADF_1",
+			"ChallengePeakBattle_0021_ADF_2"
+		]
+	},
+	"66000084": {
+		"id": "66000084",
+		"name": "Scales+",
+		"desc": "Each stack reduces DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. This effect decreases by 1 stack after each attack received.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_EnhancedAbility_0021_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0003.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0021_ADF_1",
+			"ChallengePeakBattle_0021_ADF_2"
+		]
+	},
+	"66000085": {
+		"id": "66000085",
+		"name": "Marvelous Laughter",
+		"desc": "Increases Elation by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and All-Type RES PEN of Elation DMG dealt by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. This effect is doubled when using an Elation Skill.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0024_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0011.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0024_ADF_1",
+			"ChallengePeakBattle_Plugins_0024_ADF_2"
+		]
+	},
+	"66000087": {
+		"id": "66000087",
+		"name": "Finale's Kiss",
+		"desc": "Increases Skill DMG and Ultimate DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0025_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0017.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0025_ADF_2"
+		]
+	},
+	"66000088": {
+		"id": "66000088",
+		"name": "Midnight Song",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0026_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0001.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0026_ADF_1"
+		]
+	},
+	"66000089": {
+		"id": "66000089",
+		"name": "Midnight Song",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0026_03",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0001.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0026_ADF_2"
+		]
+	},
+	"66000099": {
+		"id": "66000099",
+		"name": "Joint Forces",
+		"desc": "DMG taken decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0025_02_ForShow",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0003.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0025_ADF_3"
+		]
+	},
+	"66000101": {
+		"id": "66000101",
+		"name": "Memoria Swarm",
+		"desc": "DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0030_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0001.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0030_ADF_1"
+		]
+	},
+	"66000102": {
+		"id": "66000102",
+		"name": "Unwavering",
+		"desc": "Toughness cannot be reduced, and Break DMG taken is reduced by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0026_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffFoibleInvalid.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0026_ADF_1"
+		]
+	},
 	"66000999": {
 		"id": "66000999",
 		"name": "Middlegame Mayhem",
@@ -28111,6 +29219,19 @@
 		"tagList": [],
 		"readParams": [
 			"#ADF_1"
+		]
+	},
+	"66002001": {
+		"id": "66002001",
+		"name": "Inglutition",
+		"desc": "Maximum Restorable HP decreases by <color=#f29e38ff><unbreak>#1[f1]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MCommon_Gluttony_DirtyHp",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconMonster_W5_StageInvasion.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_AccumDirtyHPRatio"
 		]
 	},
 	"69999001": {
@@ -30147,6 +31268,113 @@
 		"modifier": "MItem_402037",
 		"type": "Buff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010154": {
+		"id": "70010154",
+		"name": "Mung Bean Soda Sukiyaki",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_402038",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010155": {
+		"id": "70010155",
+		"name": "Amber Lord Jumps Over the Wall",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and CRIT DMG increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_403017",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1",
+			"MDF_2"
+		]
+	},
+	"70010156": {
+		"id": "70010156",
+		"name": "Invincible Steak",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_408450",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010157": {
+		"id": "70010157",
+		"name": "\"Oceanic\" Tri-Flavored Ice Cream",
+		"desc": "DEF increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>, Max HP increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, and HP restored increases by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_408451",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDefenceUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1",
+			"MDF_2",
+			"MDF_3"
+		]
+	},
+	"70010158": {
+		"id": "70010158",
+		"name": "\"Lighthouse\" Movable Action Model",
+		"desc": "DEF increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>",
+		"effect": "",
+		"modifier": "MItem_408452",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDefenceUp.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010159": {
+		"id": "70010159",
+		"name": "\"Diggertron\" 1:1 Replica Model",
+		"desc": "Fire DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_408454",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpFire.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010160": {
+		"id": "70010160",
+		"name": "The Swimsuit",
+		"desc": "Elation increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_408644",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_1"
+		]
+	},
+	"70010161": {
+		"id": "70010161",
+		"name": "Speeding Jet Surfboard",
+		"desc": "SPD increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MItem_408645",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
 		"tagList": [],
 		"readParams": [
 			"MDF_1"
