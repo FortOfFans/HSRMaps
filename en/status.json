@@ -354,6 +354,45 @@
 			"#SkillRelic_132_4_P3_DamageAddedRatio"
 		]
 	},
+	"5513311": {
+		"id": "5513311",
+		"name": "Dreamlit Actor",
+		"desc": "Elation increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Elation Boost",
+		"modifier": "MRelic_133_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffElationDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillRelic_133_4_P1_CriticalDamage"
+		]
+	},
+	"5513321": {
+		"id": "5513321",
+		"name": "Dreamlit Actor",
+		"desc": "CRIT DMG increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "CRIT DMG Boost",
+		"modifier": "MRelic_133_Sub2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillRelic_133_4_P4_CriticalDamage"
+		]
+	},
+	"5513411": {
+		"id": "5513411",
+		"name": "The Edacious Heretic",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "ATK Boost",
+		"modifier": "MRelic_134_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUp.png",
+		"tagList": [],
+		"readParams": [
+			"#SkillRelic_134_4_P2_AttackAddRatio"
+		]
+	},
 	"5531311": {
 		"id": "5531311",
 		"name": "Sigonia, the Unclaimed Desolation",
@@ -816,7 +855,7 @@
 		"name": "Antimatter Speed Boost",
 		"desc": "After using Basic ATK or Skill, immediately takes an extra action. This effect cannot be consecutively triggered.",
 		"effect": "Consecutive Action",
-		"modifier": "OK",
+		"modifier": "Avatar_AetherDivide_AML_Minion04_00_ExtraTurn",
 		"type": "Buff",
 		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffSpeedUp.png",
 		"tagList": [],
@@ -1093,7 +1132,7 @@
 	"30010014": {
 		"id": "30010014",
 		"name": "CRIT DMG Reduction",
-		"desc": "CRIT DMG -<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"desc": "CRIT DMG decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
 		"effect": "CRIT DMG Reduction",
 		"modifier": "MCommon_CriticalDamageDown",
 		"type": "Debuff",
@@ -4327,6 +4366,32 @@
 			"#SkillEquip_P5_AddSPRatio"
 		]
 	},
+	"40230551": {
+		"id": "40230551",
+		"name": "Ink Splash",
+		"desc": "All-Type RES increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "All-Type RES Boost",
+		"modifier": "MEquip_23055_DamageResistance",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageResistanceElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"40230552": {
+		"id": "40230552",
+		"name": "Ink Splash",
+		"desc": "DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Vulnerability",
+		"modifier": "MEquip_23055_Fragile",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
 	"40230561": {
 		"id": "40230561",
 		"name": "Umbra Devourer",
@@ -6051,6 +6116,19 @@
 		"tagList": [],
 		"readParams": [
 			"MDF_CritDamageAddedRatio"
+		]
+	},
+	"63046131": {
+		"id": "63046131",
+		"name": "Magic Time",
+		"desc": "Elation increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MStrongChallengeEX_Talent_StageAbility_PLY_094",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/ActivityFantasticStoryBuff/ActivityBattleBuff158.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
 		]
 	},
 	"63047001": {
@@ -12638,6 +12716,136 @@
 		"tagList": [],
 		"readParams": []
 	},
+	"63063001": {
+		"id": "63063001",
+		"name": "Raging Fire",
+		"desc": "Weakness Break Efficiency increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Break Effect increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+		"effect": "Raging Fire",
+		"modifier": "Modifier_FeverTime_431001_LightTeamStanceBreakUp",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffStanceBreakAddedRatio.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue1",
+			"MDF_PropertyValue2"
+		]
+	},
+	"63063002": {
+		"id": "63063002",
+		"name": "Raging Fire",
+		"desc": "",
+		"effect": "",
+		"modifier": "Modifier_FeverTime_431001_LightTeamBreakDmgUp",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffBreakDamage.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_PropertyValue"
+		]
+	},
+	"63063003": {
+		"id": "63063003",
+		"name": "Mark",
+		"desc": "Action is delayed after receiving a total of <color=#f29e38ff><unbreak>#1[i]</unbreak></color> attacks. Attacks received: <color=#f29e38ff><unbreak>#2[i]</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_Avatar_Feixiao_00_PassiveSkill01_FinalityBattle_Sub2",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffSpeedDown.png",
+		"tagList": [],
+		"readParams": [
+			"#Activity_ModifiedSkill_P1_AttackCount",
+			"_Layer"
+		]
+	},
+	"63063004": {
+		"id": "63063004",
+		"name": "CRIT DMG Boost",
+		"desc": "Each Punchline increases the Elation Skill's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_Activity_FinalityBattle_2_Fever_Sub",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffCriticalDamage.png",
+		"tagList": [],
+		"readParams": [
+			"#Activity_Stage_P8_CriticalDamage"
+		]
+	},
+	"63063005": {
+		"id": "63063005",
+		"name": "",
+		"desc": "",
+		"effect": "",
+		"modifier": "Modifier_Activity_FinalityBattle_2_Fever",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffSpeedDown.png",
+		"tagList": [],
+		"readParams": [
+			"#Activity_Stage_P4_DebuffRatio"
+		]
+	},
+	"63063006": {
+		"id": "63063006",
+		"name": "All-Type RES Reduction",
+		"desc": "All-Type RES decreases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "All-Type RES Reduction",
+		"modifier": "MAvatar_Sam_00_FinalityBattle_Skill31_ResistanceDown",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffDamageResistanceElement.png",
+		"tagList": [],
+		"readParams": [
+			"#Activity_ModifiedSkill_P12_ResistanceDown"
+		]
+	},
+	"63063007": {
+		"id": "63063007",
+		"name": "Possessed",
+		"desc": "When HP reaches its maximum, loses a certain amount of HP and grants the Main Actor a massive amount of HP. After the Main Actor uses a Fusion Ability, transfers this mark to another random non-Main Actor unit.",
+		"effect": "Possessed",
+		"modifier": "Modifier_Activity_FinalityBattle_3_Fever_HealTargetMark",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffHPBoost.png",
+		"tagList": [],
+		"readParams": []
+	},
+	"63063008": {
+		"id": "63063008",
+		"name": "Fusion Ability DMG Boost",
+		"desc": "Each stack increases the Fusion Ability DMG multiplier by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Fusion Ability DMG Boost",
+		"modifier": "Modifier_Avatar_Huohuo_00_Skill41_Phase02_FinalityBattle_Enhance",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffAttackUpElement.png",
+		"tagList": [],
+		"readParams": [
+			"#Activity_Stage_P10_DamagePercentageUp"
+		]
+	},
+	"63063009": {
+		"id": "63063009",
+		"name": "Fallen",
+		"desc": "When <color=#f29e38ff><unbreak>#1[i]</unbreak></color> stacks are reached, this unit takes DMG and simultaneously increases the \"Fallen\" stack count of adjacent units.",
+		"effect": "Fallen",
+		"modifier": "Modifier_Avatar_Kafka_00_PassiveSkill01_FinalityBattle_DOT",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"#Activity_Stage_P6_MaxLayer"
+		]
+	},
+	"63063010": {
+		"id": "63063010",
+		"name": "Break Efficiency Boost",
+		"desc": "Weakness Break Efficiency increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "Break Efficiency Boost",
+		"modifier": "Modifier_FinalityBattle_Sam_PassiveStanceBreakEfficiencyUp",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconBuffStanceBreakAddedRatio.png",
+		"tagList": [],
+		"readParams": [
+			"#Activity_ModifiedSkill_P15"
+		]
+	},
 	"63999001": {
 		"id": "63999001",
 		"name": "",
@@ -13797,6 +14005,19 @@
 		"readParams": [
 			"MDF_DamageUpRatio_PerLayer",
 			"MDF_HealDownRatio_PerLayer"
+		]
+	},
+	"64777997": {
+		"id": "64777997",
+		"name": "Reposeful Elwood Caress",
+		"desc": "Due to the Elwood's suppression of restless greed, DMG taken increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Monster_Rogue_Gluttony_DamageTakenUp",
+		"type": "Debuff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconDeBuffDamageTakenRatioElement.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_DamageTakenUpRatio"
 		]
 	},
 	"64777998": {
@@ -28731,6 +28952,112 @@
 			"ChallengePeakBattle_Plugins_0026_ADF_2"
 		]
 	},
+	"66000090": {
+		"id": "66000090",
+		"name": "Lockdown",
+		"desc": "Upon reaching <color=#f29e38ff><unbreak>#1[i]</unbreak></color> stack(s), causes this unit to enter the \"Imprisonment\" state for 1 turn and reduces their Energy by a fixed amount of <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. All stacks of this effect are cleared at the start of this unit's turn or after a debuff is triggered.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0022_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0011.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0022_ADF_1",
+			"ChallengePeakBattle_0022_ADF_2"
+		]
+	},
+	"66000091": {
+		"id": "66000091",
+		"name": "Lockdown+",
+		"desc": "Upon reaching <color=#f29e38ff><unbreak>#1[i]</unbreak></color> stack(s), causes this unit to enter the \"Imprisonment\" state for 1 turn and reduces their Energy by a fixed amount of <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. All stacks of this effect are cleared at the start of this unit's turn or after a debuff is triggered.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_EnhancedAbility_0022_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0011.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0022_ADF_1",
+			"ChallengePeakBattle_0022_ADF_2"
+		]
+	},
+	"66000092": {
+		"id": "66000092",
+		"name": "Perforation",
+		"desc": "When attacking, if the attacked ally target has a Shield, increases DMG dealt by this attack by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0023_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0012.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0023_ADF_1"
+		]
+	},
+	"66000093": {
+		"id": "66000093",
+		"name": "Perforation+",
+		"desc": "When attacking, if the attacked ally target has a Shield, increases DMG dealt by this attack by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_EnhancedAbility_0023_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0012.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0023_ADF_1"
+		]
+	},
+	"66000094": {
+		"id": "66000094",
+		"name": "Unyielding",
+		"desc": "When attacked, gains a Shield equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of this unit's Max HP.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0024_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0013.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0024_ADF_1"
+		]
+	},
+	"66000095": {
+		"id": "66000095",
+		"name": "Unyielding+",
+		"desc": "When attacked, gains a Shield equal to <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> of this unit's Max HP.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_EnhancedAbility_0024_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0013.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0024_ADF_1"
+		]
+	},
+	"66000096": {
+		"id": "66000096",
+		"name": "Ecstasy Night",
+		"desc": "Merrymakes Elation DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0027_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0018.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0027_ADF_1"
+		]
+	},
+	"66000097": {
+		"id": "66000097",
+		"name": "Navigator's Oath",
+		"desc": "All-Type RES PEN of Skill DMG and Ultimate DMG dealt increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_Plugins_0028_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattlePlugins0016.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_Plugins_0028_ADF_1"
+		]
+	},
 	"66000099": {
 		"id": "66000099",
 		"name": "Joint Forces",
@@ -28768,6 +29095,19 @@
 		"tagList": [],
 		"readParams": [
 			"ChallengePeakBattle_0026_ADF_1"
+		]
+	},
+	"66000105": {
+		"id": "66000105",
+		"name": "Purify",
+		"desc": "At the start of the turn, dispels all DoT effects on this unit, and decreases DoT taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "Modifier_ChallengePeakBattle_BaseAbility_0028_02",
+		"type": "Other",
+		"icon": "spriteoutput/BuffIcon/ActivityChallengePeakBattle/IconChallengePeakBattleAffixes0014.png",
+		"tagList": [],
+		"readParams": [
+			"ChallengePeakBattle_0028_ADF_1"
 		]
 	},
 	"66000999": {
@@ -29232,6 +29572,57 @@
 		"tagList": [],
 		"readParams": [
 			"MDF_AccumDirtyHPRatio"
+		]
+	},
+	"66002011": {
+		"id": "66002011",
+		"name": "Aha Be Useful",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>, DEF increases by <color=#f29e38ff><unbreak>#2[i]</unbreak></color>, Max HP increases by <color=#f29e38ff><unbreak>#3[i]</unbreak></color>, and CRIT DMG increases by <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MCommon_Gluttony_BUFF_LV1",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconActivity_StageInvasion_Support.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Param1",
+			"MDF_Param2",
+			"MDF_Param3",
+			"MDF_Param4",
+			"MDF_Param5"
+		]
+	},
+	"66002012": {
+		"id": "66002012",
+		"name": "Aha's Tiny Aid",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>, DEF increases by <color=#f29e38ff><unbreak>#2[i]</unbreak></color>, Max HP increases by <color=#f29e38ff><unbreak>#3[i]</unbreak></color>, SPD increases by <color=#f29e38ff><unbreak>#4[i]</unbreak></color>, and CRIT DMG increases by <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MCommon_Gluttony_BUFF_LV2",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconActivity_StageInvasion_Support.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Param1",
+			"MDF_Param2",
+			"MDF_Param3",
+			"MDF_Param4",
+			"MDF_Param5"
+		]
+	},
+	"66002013": {
+		"id": "66002013",
+		"name": "Aha's Big Help",
+		"desc": "ATK increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>, DEF increases by <color=#f29e38ff><unbreak>#2[i]</unbreak></color>, Max HP increases by <color=#f29e38ff><unbreak>#3[i]</unbreak></color>, SPD increases by <color=#f29e38ff><unbreak>#4[i]</unbreak></color>, and CRIT DMG increases by <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>.",
+		"effect": "",
+		"modifier": "MCommon_Gluttony_BUFF_LV3",
+		"type": "Buff",
+		"icon": "spriteoutput/BuffIcon/Inlevel/IconActivity_StageInvasion_Support.png",
+		"tagList": [],
+		"readParams": [
+			"MDF_Param1",
+			"MDF_Param2",
+			"MDF_Param3",
+			"MDF_Param4",
+			"MDF_Param5"
 		]
 	},
 	"69999001": {
