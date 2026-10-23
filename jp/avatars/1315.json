@@ -1,0 +1,2076 @@
+{
+	"name": "ブートヒル",
+	"description": "宇宙を放浪するサイボーグカウボーイ。かなり楽観的で、自由奔放。\n「巡海レンジャー」の一員で、悪を懲らしめるためなら手段を選ばない——\nその派手な行動は、復讐の対象である「スターピースカンパニー」の注意を引くためである。",
+	"rarity": "SuperRare",
+	"avatarType": "Rogue",
+	"element": "Physical",
+	"stats": {
+		"maxHP": 1203.0479999999998,
+		"maxATK": 620.9280000000001,
+		"maxDEF": 436.59000000000003,
+		"SPD": 107,
+		"TNT": 75,
+		"CR": 0.05,
+		"CDMG": 0.5
+	},
+	"icon": "spriteoutput/avatardrawcard/1315.png",
+	"shortIcon": "1315",
+	"drawIcon": "spriteoutput/avatardrawcardresult/1315.png",
+	"skills": [
+		{
+			"name": "スパーズ・クラッシュ",
+			"tag": "単体攻撃",
+			"type": "通常攻撃",
+			"description": "指定した敵単体にブートヒルの攻撃力****1[i]%****分の物理属性ダメージを与える。",
+			"regen": 20,
+			"er": 0,
+			"break": [
+				30,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Normal.png",
+			"shortIcon": "SkillIcon_1315_Normal",
+			"id": "131501",
+			"params": {
+				"lv1": [
+					0.5
+				],
+				"lv2": [
+					0.6
+				],
+				"lv3": [
+					0.7
+				],
+				"lv4": [
+					0.8
+				],
+				"lv5": [
+					0.9
+				],
+				"lv6": [
+					1
+				],
+				"lv7": [
+					1.1
+				],
+				"lv8": [
+					1.2
+				],
+				"lv9": [
+					1.3
+				],
+				"lv10": [
+					1.4
+				]
+			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110191,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 6
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 3
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 4
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 3
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 4
+					}
+				]
+			}
+		},
+		{
+			"name": "RUBY_Bねっさ熱砂RUBY_Eのタンゴ",
+			"tag": "妨害",
+			"type": "戦闘スキル",
+			"description": "指定した敵単体と自身を「九死の決闘」状態にする。この状態のブートヒルは戦闘スキルを発動できず、通常攻撃が「ファニング」に強化される、**3[i]**ターン継続。ブートヒルのターンが回ってくるたびに、「九死の決闘」の継続時間-1ターン。\n「九死の決闘」状態にある敵は、挑発状態と見なされる。その敵がブートヒルの攻撃を受ける時、受けるダメージ+****1[i]%****。また、ブートヒルがその敵の攻撃を受ける時、受けるダメージ+**2[i]%**。\nその敵が倒される、または弱点撃破された後、ブートヒルは「ポケットアドバンテージ」を1層獲得し、「九死の決闘」状態を解除する。\nこの戦闘スキルはEPを回復できない。また、この戦闘スキルを発動した後、ターンは終了しない。",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				0,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_BP.png",
+			"shortIcon": "SkillIcon_1315_BP",
+			"id": "131502",
+			"params": {
+				"lv1": [
+					0.15,
+					0.15,
+					2
+				],
+				"lv2": [
+					0.165,
+					0.15,
+					2
+				],
+				"lv3": [
+					0.18,
+					0.15,
+					2
+				],
+				"lv4": [
+					0.195,
+					0.15,
+					2
+				],
+				"lv5": [
+					0.21,
+					0.15,
+					2
+				],
+				"lv6": [
+					0.225,
+					0.15,
+					2
+				],
+				"lv7": [
+					0.24375,
+					0.15,
+					2
+				],
+				"lv8": [
+					0.2625,
+					0.15,
+					2
+				],
+				"lv9": [
+					0.28125,
+					0.15,
+					2
+				],
+				"lv10": [
+					0.3,
+					0.15,
+					2
+				],
+				"lv11": [
+					0.315,
+					0.15,
+					2
+				],
+				"lv12": [
+					0.33,
+					0.15,
+					2
+				],
+				"lv13": [
+					0.345,
+					0.15,
+					2
+				],
+				"lv14": [
+					0.36,
+					0.15,
+					2
+				],
+				"lv15": [
+					0.375,
+					0.15,
+					2
+				]
+			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2500
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 3
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110191,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 6
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 4
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 30000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 7
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 6
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 3
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 80000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 300000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 14
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "ダストデビル・ダンサー",
+			"tag": "単体攻撃",
+			"type": "必殺技",
+			"description": "指定した敵単体に物理属性弱点を付与する、**3[i]**ターン継続。\nその敵にブートヒルの攻撃力****1[i]%****分の物理属性ダメージを与え、**行動順**を****2[i]%****遅延させる。",
+			"regen": 5,
+			"er": 115,
+			"break": [
+				90,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Ultra.png",
+			"shortIcon": "SkillIcon_1315_Ultra",
+			"id": "131503",
+			"params": {
+				"lv1": [
+					2.4,
+					0.3,
+					2
+				],
+				"lv2": [
+					2.56,
+					0.31,
+					2
+				],
+				"lv3": [
+					2.72,
+					0.32,
+					2
+				],
+				"lv4": [
+					2.88,
+					0.33,
+					2
+				],
+				"lv5": [
+					3.04,
+					0.34,
+					2
+				],
+				"lv6": [
+					3.2,
+					0.35,
+					2
+				],
+				"lv7": [
+					3.4,
+					0.3625,
+					2
+				],
+				"lv8": [
+					3.6,
+					0.375,
+					2
+				],
+				"lv9": [
+					3.8,
+					0.3875,
+					2
+				],
+				"lv10": [
+					4,
+					0.4,
+					2
+				],
+				"lv11": [
+					4.16,
+					0.41,
+					2
+				],
+				"lv12": [
+					4.32,
+					0.42,
+					2
+				],
+				"lv13": [
+					4.48,
+					0.43,
+					2
+				],
+				"lv14": [
+					4.64,
+					0.44,
+					2
+				],
+				"lv15": [
+					4.8,
+					0.45,
+					2
+				]
+			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2500
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 3
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110191,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 6
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 4
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 30000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 7
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 6
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 3
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 80000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 300000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 14
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "RUBY_Bごはつ5発RUBY_EのRUBY_Bじゅうだん銃弾RUBY_E",
+			"tag": "強化",
+			"type": "天賦",
+			"description": "「ポケットアドバンテージ」1層につき、「ファニング」の削靭値+**4[i]%**、最大で**5[i]**累積できる。\n強化通常攻撃を行っている間、敵が**弱点撃破状態**の場合、「ポケットアドバンテージ」の層数に応じて、その敵にブートヒルの物理属性弱点撃破ダメージ****1[i]%****/****2[i]%****/****3[i]%****分の**弱点撃破ダメージ**を与える。この弱点撃破ダメージにカウントされる靭性は、通常攻撃「スパーズ・クラッシュ」の基礎削靭値の**6[i]**倍を超えない。\n戦闘に勝利した後、ブートヒルは「ポケットアドバンテージ」を次の戦闘に持ち越せる。",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				0,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Passive.png",
+			"shortIcon": "SkillIcon_1315_Passive",
+			"id": "131504",
+			"params": {
+				"lv1": [
+					0.35,
+					0.6,
+					0.85,
+					0.5,
+					3,
+					16
+				],
+				"lv2": [
+					0.385,
+					0.66,
+					0.935,
+					0.5,
+					3,
+					16
+				],
+				"lv3": [
+					0.42,
+					0.72,
+					1.02,
+					0.5,
+					3,
+					16
+				],
+				"lv4": [
+					0.455,
+					0.78,
+					1.105,
+					0.5,
+					3,
+					16
+				],
+				"lv5": [
+					0.49,
+					0.84,
+					1.19,
+					0.5,
+					3,
+					16
+				],
+				"lv6": [
+					0.525,
+					0.9,
+					1.275,
+					0.5,
+					3,
+					16
+				],
+				"lv7": [
+					0.56875,
+					0.975,
+					1.38125,
+					0.5,
+					3,
+					16
+				],
+				"lv8": [
+					0.6125,
+					1.05,
+					1.4875,
+					0.5,
+					3,
+					16
+				],
+				"lv9": [
+					0.65625,
+					1.125,
+					1.59375,
+					0.5,
+					3,
+					16
+				],
+				"lv10": [
+					0.7,
+					1.2,
+					1.7,
+					0.5,
+					3,
+					16
+				],
+				"lv11": [
+					0.735,
+					1.26,
+					1.785,
+					0.5,
+					3,
+					16
+				],
+				"lv12": [
+					0.77,
+					1.32,
+					1.87,
+					0.5,
+					3,
+					16
+				],
+				"lv13": [
+					0.805,
+					1.38,
+					1.955,
+					0.5,
+					3,
+					16
+				],
+				"lv14": [
+					0.84,
+					1.44,
+					2.04,
+					0.5,
+					3,
+					16
+				],
+				"lv15": [
+					0.875,
+					1.5,
+					2.125,
+					0.5,
+					3,
+					16
+				]
+			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2500
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 3
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110191,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 6
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 4
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 30000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 7
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 6
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 3
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 80000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 300000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 14
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "攻撃",
+			"tag": "",
+			"type": "",
+			"description": "敵を攻撃。戦闘に入った後、敵の対応する属性の靭性を削る。",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				30,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_MazeNormal.png",
+			"shortIcon": "SkillIcon_1315_MazeNormal",
+			"id": "131506",
+			"params": {
+				"lv1": []
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
+		},
+		{
+			"name": "ビッグ・スマイル",
+			"tag": "強化",
+			"type": "秘技",
+			"description": "秘技を使用した後、次の戦闘で初めて戦闘スキルを発動する時、敵に必殺技が与えるものと同じ物理属性弱点を付与する、**1[i]**ターン継続。",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				0,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Maze.png",
+			"shortIcon": "SkillIcon_1315_Maze",
+			"id": "131507",
+			"params": {
+				"lv1": [
+					2
+				]
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
+		},
+		{
+			"name": "ファニング",
+			"tag": "単体攻撃",
+			"type": "通常攻撃",
+			"description": "指定した敵単体にブートヒルの攻撃力****1[i]%****分の物理属性ダメージを与える。\n強化通常攻撃はSPを回復できず、「九死の決闘」状態の敵のみを攻撃できる。",
+			"regen": 30,
+			"er": 0,
+			"break": [
+				60,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Normal02.png",
+			"shortIcon": "SkillIcon_1315_Normal02",
+			"id": "131508",
+			"params": {
+				"lv1": [
+					1.1
+				],
+				"lv2": [
+					1.32
+				],
+				"lv3": [
+					1.54
+				],
+				"lv4": [
+					1.76
+				],
+				"lv5": [
+					1.98
+				],
+				"lv6": [
+					2.2
+				],
+				"lv7": [
+					2.42
+				],
+				"lv8": [
+					2.64
+				],
+				"lv9": [
+					2.86
+				],
+				"lv10": [
+					3.08
+				]
+			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110191,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 6
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 3
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110192,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 4
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 3
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110193,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 4
+					}
+				]
+			}
+		}
+	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"131501",
+					"131502",
+					"131503",
+					"131504",
+					"131507",
+					"131506"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"131508"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"131501",
+				"131502",
+				"131503",
+				"131504",
+				"131507",
+				"131506"
+			],
+			"1": [
+				"131508",
+				"131502",
+				"131503",
+				"131504",
+				"131507",
+				"131506"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"131501",
+					"131502",
+					"131503",
+					"131504",
+					"131507",
+					"131506"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"131508",
+					"131502",
+					"131503",
+					"131504",
+					"131507",
+					"131506"
+				],
+				"changed": [
+					"basic"
+				]
+			}
+		]
+	},
+	"promos": {
+		"basicPromo": {
+			"2": 240000,
+			"110191": 3,
+			"110192": 8,
+			"110193": 11,
+			"114011": 6,
+			"114012": 7,
+			"114013": 7
+		},
+		"skillPromo": {
+			"2": 652500,
+			"241": 2,
+			"110191": 3,
+			"110192": 15,
+			"110193": 30,
+			"110505": 3,
+			"114011": 9,
+			"114012": 13,
+			"114013": 7
+		},
+		"ultPromo": {
+			"2": 652500,
+			"241": 2,
+			"110191": 3,
+			"110192": 15,
+			"110193": 30,
+			"110505": 3,
+			"114011": 9,
+			"114012": 13,
+			"114013": 7
+		},
+		"talentPromo": {
+			"2": 652500,
+			"241": 2,
+			"110191": 3,
+			"110192": 15,
+			"110193": 30,
+			"110505": 3,
+			"114011": 9,
+			"114012": 13,
+			"114013": 7
+		}
+	},
+	"promotion": {
+		"2": 308000,
+		"110421": 65,
+		"114011": 15,
+		"114012": 15,
+		"114013": 15
+	},
+	"treePromotion": {
+		"2": 802500,
+		"241": 2,
+		"110191": 6,
+		"110192": 16,
+		"110193": 38,
+		"110505": 3,
+		"114011": 8,
+		"114012": 10,
+		"114013": 30
+	},
+	"maxPromo": {
+		"2": 3308000,
+		"241": 8,
+		"110191": 18,
+		"110192": 69,
+		"110193": 139,
+		"110421": 65,
+		"110505": 12,
+		"114011": 56,
+		"114012": 71,
+		"114013": 73
+	},
+	"exp": 5797920,
+	"outfits": [],
+	"tree": [
+		{
+			"name": "スパーズ・クラッシュ",
+			"description": "指定した敵単体にブートヒルの攻撃力****1[i]%****分の物理属性ダメージを与える。",
+			"avatar": 1315,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Normal.png",
+			"shortIcon": "SkillIcon_1315_Normal",
+			"promotion": {
+				"2": 240000,
+				"110191": 3,
+				"110192": 8,
+				"110193": 11,
+				"114011": 6,
+				"114012": 7,
+				"114013": 7
+			},
+			"params": [
+				1.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				131501,
+				131508
+			],
+			"id": "1315001"
+		},
+		{
+			"name": "{RUBY_B#ねっさ}熱砂{RUBY_E#}のタンゴ",
+			"description": "指定した敵単体と自身を「九死の決闘」状態にする。この状態のブートヒルは戦闘スキルを発動できず、通常攻撃が「ファニング」に強化される、**3[i]**ターン継続。ブートヒルのターンが回ってくるたびに、「九死の決闘」の継続時間-1ターン。\n「九死の決闘」状態にある敵は、挑発状態と見なされる。その敵がブートヒルの攻撃を受ける時、受けるダメージ+****1[i]%****。また、ブートヒルがその敵の攻撃を受ける時、受けるダメージ+**2[i]%**。\nその敵が倒される、または弱点撃破された後、ブートヒルは「ポケットアドバンテージ」を1層獲得し、「九死の決闘」状態を解除する。\nこの戦闘スキルはEPを回復できない。また、この戦闘スキルを発動した後、ターンは終了しない。",
+			"avatar": 1315,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_BP.png",
+			"shortIcon": "SkillIcon_1315_BP",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110191": 3,
+				"110192": 15,
+				"110193": 30,
+				"110505": 3,
+				"114011": 9,
+				"114012": 13,
+				"114013": 7
+			},
+			"params": [
+				0.375,
+				0.15,
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				131502
+			],
+			"id": "1315002"
+		},
+		{
+			"name": "ダストデビル・ダンサー",
+			"description": "指定した敵単体に物理属性弱点を付与する、**3[i]**ターン継続。\nその敵にブートヒルの攻撃力****1[i]%****分の物理属性ダメージを与え、**行動順**を****2[i]%****遅延させる。",
+			"avatar": 1315,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Ultra.png",
+			"shortIcon": "SkillIcon_1315_Ultra",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110191": 3,
+				"110192": 15,
+				"110193": 30,
+				"110505": 3,
+				"114011": 9,
+				"114012": 13,
+				"114013": 7
+			},
+			"params": [
+				4.8,
+				0.45,
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				131503
+			],
+			"id": "1315003"
+		},
+		{
+			"name": "{RUBY_B#ごはつ}5発{RUBY_E#}の{RUBY_B#じゅうだん}銃弾{RUBY_E#}",
+			"description": "「ポケットアドバンテージ」1層につき、「ファニング」の削靭値+**4[i]%**、最大で**5[i]**累積できる。\n強化通常攻撃を行っている間、敵が**弱点撃破状態**の場合、「ポケットアドバンテージ」の層数に応じて、その敵にブートヒルの物理属性弱点撃破ダメージ****1[i]%****/****2[i]%****/****3[i]%****分の**弱点撃破ダメージ**を与える。この弱点撃破ダメージにカウントされる靭性は、通常攻撃「スパーズ・クラッシュ」の基礎削靭値の**6[i]**倍を超えない。\n戦闘に勝利した後、ブートヒルは「ポケットアドバンテージ」を次の戦闘に持ち越せる。",
+			"avatar": 1315,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Passive.png",
+			"shortIcon": "SkillIcon_1315_Passive",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110191": 3,
+				"110192": 15,
+				"110193": 30,
+				"110505": 3,
+				"114011": 9,
+				"114012": 13,
+				"114013": 7
+			},
+			"params": [
+				0.875,
+				1.5,
+				2.125,
+				0.5,
+				3,
+				16
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				131504
+			],
+			"id": "1315004"
+		},
+		{
+			"name": "ビッグ・スマイル",
+			"description": "秘技を使用した後、次の戦闘で初めて戦闘スキルを発動する時、敵に必殺技が与えるものと同じ物理属性弱点を付与する、**1[i]**ターン継続。",
+			"avatar": 1315,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Maze.png",
+			"shortIcon": "SkillIcon_1315_Maze",
+			"promotion": {},
+			"params": [
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				131507
+			],
+			"id": "1315007"
+		},
+		{
+			"name": "ゴーストロード",
+			"description": "自身の会心率を、撃破特効の**10%**分アップする。最大で会心率+**30%**。\n自身の会心ダメージを、撃破特効の**50%**分アップする。最大で会心ダメージ+**150%**。",
+			"avatar": 1315,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_SkillTree1.png",
+			"shortIcon": "SkillIcon_1315_SkillTree1",
+			"promotion": {
+				"2": 5000,
+				"110191": 3,
+				"110505": 1
+			},
+			"params": [
+				0.1,
+				0.3,
+				0.5,
+				1.5
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "1315101"
+		},
+		{
+			"name": "{RUBY_B#しち}死地{RUBY_E#}からの{RUBY_B#だっしゅつ}脱出{RUBY_E#}",
+			"description": "ブートヒルが「九死の決闘」状態の場合、「九死の決闘」状態でない敵の攻撃を受ける時、受けるダメージ-**30%**。",
+			"avatar": 1315,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_SkillTree2.png",
+			"shortIcon": "SkillIcon_1315_SkillTree2",
+			"promotion": {
+				"2": 20000,
+				"241": 1,
+				"110192": 5,
+				"110505": 1
+			},
+			"params": [
+				0.3
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "1315102"
+		},
+		{
+			"name": "ポイントブランク",
+			"description": "「九死の決闘」の状態で「ポケットアドバンテージ」を獲得する時、EPを**10**回復する。この効果は獲得する「ポケットアドバンテージ」が上限を超える時にも発動する。",
+			"avatar": 1315,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_SkillTree3.png",
+			"shortIcon": "SkillIcon_1315_SkillTree3",
+			"promotion": {
+				"2": 160000,
+				"241": 1,
+				"110193": 8,
+				"110505": 1
+			},
+			"params": [
+				10
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "1315103"
+		},
+		{
+			"name": "撃破強化",
+			"description": "",
+			"avatar": 1315,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 2500,
+				"114011": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "1315201"
+		},
+		{
+			"name": "攻撃強化",
+			"description": "",
+			"avatar": 1315,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": [
+					1315101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 5000,
+				"110191": 3,
+				"114011": 6
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "1315202"
+		},
+		{
+			"name": "撃破強化",
+			"description": "",
+			"avatar": 1315,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					1315202
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 10000,
+				"110192": 3,
+				"114012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "1315203"
+		},
+		{
+			"name": "HP強化",
+			"description": "",
+			"avatar": 1315,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 10000,
+				"110192": 3,
+				"114012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "1315204"
+		},
+		{
+			"name": "撃破強化",
+			"description": "",
+			"avatar": 1315,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					1315102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 20000,
+				"110192": 5,
+				"114012": 4
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1315205"
+		},
+		{
+			"name": "攻撃強化",
+			"description": "",
+			"avatar": 1315,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					1315205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 45000,
+				"110193": 3,
+				"114013": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "1315206"
+		},
+		{
+			"name": "撃破強化",
+			"description": "",
+			"avatar": 1315,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 45000,
+				"110193": 3,
+				"114013": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1315207"
+		},
+		{
+			"name": "HP強化",
+			"description": "",
+			"avatar": 1315,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					1315103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconMaxHP.png",
+			"shortIcon": "IconMaxHP",
+			"promotion": {
+				"2": 160000,
+				"110193": 8,
+				"114013": 8
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "HPAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "1315208"
+		},
+		{
+			"name": "攻撃強化",
+			"description": "",
+			"avatar": 1315,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					1315208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 160000,
+				"110193": 8,
+				"114013": 8
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1315209"
+		},
+		{
+			"name": "撃破強化",
+			"description": "",
+			"avatar": 1315,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": [
+					1315208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 160000,
+				"110193": 8,
+				"114013": 8
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.107
+				}
+			],
+			"baseSkill": [],
+			"id": "1315210"
+		}
+	],
+	"ranks": [
+		{
+			"name": "RUBY_Bさじん砂塵RUBY_EのRUBY_Bなか中RUBY_EのRUBY_Bいっとうせい一等星RUBY_E",
+			"description": "戦闘開始時、「ポケットアドバンテージ」を1層獲得する。ブートヒルがダメージを与える時、敵の防御力を**1[i]%**無視する。",
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Rank1.png",
+			"rankIcon": "spriteoutput/textures/1315/1315_Rank_1.png",
+			"shortIcon": "SkillIcon_1315_Rank1",
+			"params": [
+				0.16
+			],
+			"skillUpgrades": {},
+			"id": "131501"
+		},
+		{
+			"name": "マイルストーン・\nマンガー",
+			"description": "「九死の決闘」状態で「ポケットアドバンテージ」を獲得する時、SPを**1[i]**回復する。同時に撃破特効+**2[i]%**、**3[i]**ターン継続。この効果はターンが回ってくるたびに1回まで発動でき、獲得する「ポケットアドバンテージ」が上限を超える時にも触発される。",
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Rank2.png",
+			"rankIcon": "spriteoutput/textures/1315/1315_Rank_2.png",
+			"shortIcon": "SkillIcon_1315_Rank2",
+			"params": [
+				1,
+				0.3,
+				2
+			],
+			"skillUpgrades": {},
+			"id": "131502"
+		},
+		{
+			"name": "RUBY_Bはかもり墓守RUBY_E",
+			"description": "必殺技のLv.+2、最大Lv.**15**まで。通常攻撃のLv.+1、最大Lv.**10**まで。",
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Ultra.png",
+			"rankIcon": "spriteoutput/textures/1315/1315_Rank_3.png",
+			"shortIcon": "SkillIcon_1315_Ultra",
+			"params": [],
+			"skillUpgrades": {
+				"131501": 1,
+				"131503": 2,
+				"131508": 1
+			},
+			"id": "131503"
+		},
+		{
+			"name": "RUBY_Bさ冷RUBY_EめたRUBY_Bにく肉RUBY_EのRUBY_Bりょうりにん料理人RUBY_E",
+			"description": "「九死の決闘」状態の敵がブートヒルの攻撃を受ける時、被ダメージアップ効果さらに+**1[i]%**。ブートヒルが「九死の決闘」状態の敵の攻撃を受ける時、被ダメージアップ効果-**2[i]%**。",
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Rank4.png",
+			"rankIcon": "spriteoutput/textures/1315/1315_Rank_4.png",
+			"shortIcon": "SkillIcon_1315_Rank4",
+			"params": [
+				0.12,
+				0.12
+			],
+			"skillUpgrades": {},
+			"id": "131504"
+		},
+		{
+			"name": "RUBY_Bき切RUBY_EりRUBY_Bかぶ株RUBY_EのRUBY_Bえんぜつか演説家RUBY_E",
+			"description": "戦闘スキルのLv.+2、最大Lv.**15**まで。天賦のLv.+2、最大Lv.**15**まで。",
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_BP.png",
+			"rankIcon": "spriteoutput/textures/1315/1315_Rank_5.png",
+			"shortIcon": "SkillIcon_1315_BP",
+			"params": [],
+			"skillUpgrades": {
+				"131502": 2,
+				"131504": 2
+			},
+			"id": "131505"
+		},
+		{
+			"name": "RUBY_Bてつごうし鉄格子RUBY_EホテルのRUBY_Bじょうれん常連RUBY_E",
+			"description": "天賦を触発して**弱点撃破ダメージ**を与える時、ターゲットに対してさらに本来のダメージ倍率**1[i]%**分の**弱点撃破ダメージ**を与え、隣接する敵に本来のダメージ倍率**2[i]%**分の**弱点撃破ダメージ**を与える。",
+			"icon": "spriteoutput/skillicons/avatar/1315/SkillIcon_1315_Rank6.png",
+			"rankIcon": "spriteoutput/textures/1315/1315_Rank_6.png",
+			"shortIcon": "SkillIcon_1315_Rank6",
+			"params": [
+				0.4,
+				0.7
+			],
+			"skillUpgrades": {},
+			"id": "131506"
+		}
+	],
+	"statsArray": [
+		{
+			"HPBase": 163.68,
+			"HPAdd": 8.184,
+			"AttackBase": 84.48,
+			"AttackAdd": 4.224,
+			"DefenceBase": 59.4,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 4000
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 5
+				}
+			],
+			"MaxLevel": 20
+		},
+		{
+			"HPBase": 229.152,
+			"HPAdd": 8.184,
+			"AttackBase": 118.272,
+			"AttackAdd": 4.224,
+			"DefenceBase": 83.16,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 8000
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 10
+				}
+			],
+			"MaxLevel": 30
+		},
+		{
+			"HPBase": 294.624,
+			"HPAdd": 8.184,
+			"AttackBase": 152.064,
+			"AttackAdd": 4.224,
+			"DefenceBase": 106.92,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 16000
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 110421,
+					"ItemNum": 3
+				}
+			],
+			"MaxLevel": 40
+		},
+		{
+			"HPBase": 360.096,
+			"HPAdd": 8.184,
+			"AttackBase": 185.856,
+			"AttackAdd": 4.224,
+			"DefenceBase": 130.68,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 40000
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 9
+				},
+				{
+					"ItemID": 110421,
+					"ItemNum": 7
+				}
+			],
+			"MaxLevel": 50
+		},
+		{
+			"HPBase": 425.568,
+			"HPAdd": 8.184,
+			"AttackBase": 219.648,
+			"AttackAdd": 4.224,
+			"DefenceBase": 154.44,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 80000
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 110421,
+					"ItemNum": 20
+				}
+			],
+			"MaxLevel": 60
+		},
+		{
+			"HPBase": 491.04,
+			"HPAdd": 8.184,
+			"AttackBase": 253.44,
+			"AttackAdd": 4.224,
+			"DefenceBase": 178.2,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 160000
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 9
+				},
+				{
+					"ItemID": 110421,
+					"ItemNum": 35
+				}
+			],
+			"MaxLevel": 70
+		},
+		{
+			"HPBase": 556.512,
+			"HPAdd": 8.184,
+			"AttackBase": 287.232,
+			"AttackAdd": 4.224,
+			"DefenceBase": 201.96,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 107,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [],
+			"MaxLevel": 80
+		}
+	],
+	"advancement": {
+		"lv0": [
+			{
+				"ItemID": 2,
+				"ItemNum": 4000
+			},
+			{
+				"ItemID": 114011,
+				"ItemNum": 5
+			}
+		],
+		"lv1": [
+			{
+				"ItemID": 2,
+				"ItemNum": 8000
+			},
+			{
+				"ItemID": 114011,
+				"ItemNum": 10
+			}
+		],
+		"lv2": [
+			{
+				"ItemID": 2,
+				"ItemNum": 16000
+			},
+			{
+				"ItemID": 114012,
+				"ItemNum": 6
+			},
+			{
+				"ItemID": 110421,
+				"ItemNum": 3
+			}
+		],
+		"lv3": [
+			{
+				"ItemID": 2,
+				"ItemNum": 40000
+			},
+			{
+				"ItemID": 114012,
+				"ItemNum": 9
+			},
+			{
+				"ItemID": 110421,
+				"ItemNum": 7
+			}
+		],
+		"lv4": [
+			{
+				"ItemID": 2,
+				"ItemNum": 80000
+			},
+			{
+				"ItemID": 114013,
+				"ItemNum": 6
+			},
+			{
+				"ItemID": 110421,
+				"ItemNum": 20
+			}
+		],
+		"lv5": [
+			{
+				"ItemID": 2,
+				"ItemNum": 160000
+			},
+			{
+				"ItemID": 114013,
+				"ItemNum": 9
+			},
+			{
+				"ItemID": 110421,
+				"ItemNum": 35
+			}
+		]
+	},
+	"id": "1315"
+}

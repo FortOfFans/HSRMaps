@@ -1,0 +1,1786 @@
+{
+	"name": "Himeko",
+	"description": "Die Frau, die den Astralexpress repariert hat.\nSie stieg an Bord, um den weiten Sternenhimmel zu erkunden.\nIhr Hobby ist es, Kaffee zu kochen, und zwar von Hand.",
+	"rarity": "SuperRare",
+	"avatarType": "Mage",
+	"element": "Fire",
+	"stats": {
+		"maxHP": 1047.816,
+		"maxATK": 756.756,
+		"maxDEF": 436.59000000000003,
+		"SPD": 96,
+		"TNT": 75,
+		"CR": 0.05,
+		"CDMG": 0.5
+	},
+	"icon": "spriteoutput/avatardrawcard/1003.png",
+	"shortIcon": "1003",
+	"drawIcon": "spriteoutput/avatardrawcardresult/1003.png",
+	"skills": [
+		{
+			"name": "Sägeblatt-Justierung",
+			"tag": "Einzelangriff",
+			"type": "Standardangriff",
+			"description": "Fügt einem anvisierten Gegner Feuer-SCH in Höhe von ****1[i]%**** von Himekos ANG zu.",
+			"regen": 20,
+			"er": 0,
+			"break": [
+				30,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Normal.png",
+			"shortIcon": "SkillIcon_1003_Normal",
+			"id": "100301",
+			"params": {
+				"lv1": [
+					0.5
+				],
+				"lv2": [
+					0.6
+				],
+				"lv3": [
+					0.7
+				],
+				"lv4": [
+					0.8
+				],
+				"lv5": [
+					0.9
+				],
+				"lv6": [
+					1
+				],
+				"lv7": [
+					1.1
+				],
+				"lv8": [
+					1.2
+				],
+				"lv9": [
+					1.3
+				],
+				"lv10": [
+					1.4
+				]
+			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110131,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 111001,
+						"ItemNum": 6
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110132,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 111002,
+						"ItemNum": 3
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110132,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 111002,
+						"ItemNum": 4
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 111003,
+						"ItemNum": 3
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 111003,
+						"ItemNum": 4
+					}
+				]
+			}
+		},
+		{
+			"name": "Geschmolzene Explosion",
+			"tag": "Ausdehnung",
+			"type": "Fertigkeit",
+			"description": "Fügt einem anvisierten Gegner Feuer-SCH in Höhe von ****1[i]%**** von Himekos ANG zu und fügt den angrenzenden Zielen Feuer-SCH in Höhe von ****2[i]%**** von Himekos ANG zu.",
+			"regen": 30,
+			"er": 0,
+			"break": [
+				60,
+				0,
+				30
+			],
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_BP.png",
+			"shortIcon": "SkillIcon_1003_BP",
+			"id": "100302",
+			"params": {
+				"lv1": [
+					1,
+					0.4
+				],
+				"lv2": [
+					1.1,
+					0.44
+				],
+				"lv3": [
+					1.2,
+					0.48
+				],
+				"lv4": [
+					1.3,
+					0.52
+				],
+				"lv5": [
+					1.4,
+					0.56
+				],
+				"lv6": [
+					1.5,
+					0.6
+				],
+				"lv7": [
+					1.625,
+					0.65
+				],
+				"lv8": [
+					1.75,
+					0.7
+				],
+				"lv9": [
+					1.875,
+					0.75
+				],
+				"lv10": [
+					2,
+					0.8
+				],
+				"lv11": [
+					2.1,
+					0.84
+				],
+				"lv12": [
+					2.2,
+					0.88
+				],
+				"lv13": [
+					2.3,
+					0.92
+				],
+				"lv14": [
+					2.4,
+					0.96
+				],
+				"lv15": [
+					2.5,
+					1
+				]
+			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2500
+					},
+					{
+						"ItemID": 111001,
+						"ItemNum": 3
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110131,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 111001,
+						"ItemNum": 6
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110132,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 111002,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110132,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 111002,
+						"ItemNum": 4
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 30000
+					},
+					{
+						"ItemID": 110132,
+						"ItemNum": 7
+					},
+					{
+						"ItemID": 111002,
+						"ItemNum": 6
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 111003,
+						"ItemNum": 3
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 80000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 110501,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 111003,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110501,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 300000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 14
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110501,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Himmlisches Leuchtsignal",
+			"tag": "Flächenangriff",
+			"type": "Ultimate",
+			"description": "Fügt allen Gegnern Feuer-SCH in Höhe von ****1[i]%**** von Himekos ANG zu. Für jeden besiegten Gegner erhält Himeko zusätzlich **2[i]** Pkt. Energie zurück.",
+			"regen": 5,
+			"er": 120,
+			"break": [
+				0,
+				60,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Ultra.png",
+			"shortIcon": "SkillIcon_1003_Ultra",
+			"id": "100303",
+			"params": {
+				"lv1": [
+					1.38,
+					5
+				],
+				"lv2": [
+					1.472,
+					5
+				],
+				"lv3": [
+					1.564,
+					5
+				],
+				"lv4": [
+					1.656,
+					5
+				],
+				"lv5": [
+					1.748,
+					5
+				],
+				"lv6": [
+					1.84,
+					5
+				],
+				"lv7": [
+					1.955,
+					5
+				],
+				"lv8": [
+					2.07,
+					5
+				],
+				"lv9": [
+					2.185,
+					5
+				],
+				"lv10": [
+					2.3,
+					5
+				],
+				"lv11": [
+					2.392,
+					5
+				],
+				"lv12": [
+					2.484,
+					5
+				],
+				"lv13": [
+					2.576,
+					5
+				],
+				"lv14": [
+					2.668,
+					5
+				],
+				"lv15": [
+					2.76,
+					5
+				]
+			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2500
+					},
+					{
+						"ItemID": 111001,
+						"ItemNum": 3
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110131,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 111001,
+						"ItemNum": 6
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110132,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 111002,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110132,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 111002,
+						"ItemNum": 4
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 30000
+					},
+					{
+						"ItemID": 110132,
+						"ItemNum": 7
+					},
+					{
+						"ItemID": 111002,
+						"ItemNum": 6
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 111003,
+						"ItemNum": 3
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 80000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 110501,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 111003,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110501,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 300000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 14
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110501,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Siegesrausch",
+			"tag": "Flächenangriff",
+			"type": "Talent",
+			"description": "Wenn die Schwäche eines Gegners gebrochen wird, erhält Himeko 1 Pkt. Aufladung, maximal **2[i]** Pkt.\nWenn ein Verbündeter einen Angriff ausführt und Himeko voll aufgeladen ist, führt sie sofort 1 **Folgeangriff** aus, der allen Gegnern Feuer-SCH in Höhe von ****1[i]%**** von Himekos ANG zufügt und alle Aufladungen verbraucht.\nErhält beim Kampfeintritt 1 Pkt. Aufladung.",
+			"regen": 10,
+			"er": 0,
+			"break": [
+				0,
+				30,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Passive.png",
+			"shortIcon": "SkillIcon_1003_Passive",
+			"id": "100304",
+			"params": {
+				"lv1": [
+					0.7,
+					3
+				],
+				"lv2": [
+					0.77,
+					3
+				],
+				"lv3": [
+					0.84,
+					3
+				],
+				"lv4": [
+					0.91,
+					3
+				],
+				"lv5": [
+					0.98,
+					3
+				],
+				"lv6": [
+					1.05,
+					3
+				],
+				"lv7": [
+					1.1375,
+					3
+				],
+				"lv8": [
+					1.225,
+					3
+				],
+				"lv9": [
+					1.3125,
+					3
+				],
+				"lv10": [
+					1.4,
+					3
+				],
+				"lv11": [
+					1.47,
+					3
+				],
+				"lv12": [
+					1.54,
+					3
+				],
+				"lv13": [
+					1.61,
+					3
+				],
+				"lv14": [
+					1.68,
+					3
+				],
+				"lv15": [
+					1.75,
+					3
+				]
+			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2500
+					},
+					{
+						"ItemID": 111001,
+						"ItemNum": 3
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110131,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 111001,
+						"ItemNum": 6
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110132,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 111002,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110132,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 111002,
+						"ItemNum": 4
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 30000
+					},
+					{
+						"ItemID": 110132,
+						"ItemNum": 7
+					},
+					{
+						"ItemID": 111002,
+						"ItemNum": 6
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 111003,
+						"ItemNum": 3
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 80000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 110501,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 111003,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110501,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 300000
+					},
+					{
+						"ItemID": 110133,
+						"ItemNum": 14
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110501,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Angriff",
+			"tag": "",
+			"type": "",
+			"description": "Greift den Gegner an und reduziert nach Kampfeintritt den WDS des Ziels gegen den entsprechenden Typ.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				30,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Normal.png",
+			"shortIcon": "SkillIcon_1003_Normal",
+			"id": "100306",
+			"params": {
+				"lv1": []
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
+		},
+		{
+			"name": "Unvollständige Verbrennung",
+			"tag": "Beeinträchtigung",
+			"type": "Technik",
+			"description": "Erzeugt nach dem Einsatz der Technik für **4[i]** s eine spezielle Dimension. Nach Kampfeintritt mit Gegnern in dieser Dimension besteht eine **Grundchance** von **1[i]%**, den von den Gegnern erlittenen Feuer-SCH für **3[i]** Rd. um **2[i]%** zu erhöhen. Es kann nur eine von Verbündeten erschaffene Dimension zur gleichen Zeit existieren.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				0,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Maze.png",
+			"shortIcon": "SkillIcon_1003_Maze",
+			"id": "100307",
+			"params": {
+				"lv1": [
+					1,
+					0.1,
+					2,
+					15
+				]
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
+		}
+	],
+	"promos": {
+		"basicPromo": {
+			"2": 240000,
+			"110131": 3,
+			"110132": 8,
+			"110133": 11,
+			"111001": 6,
+			"111002": 7,
+			"111003": 7
+		},
+		"skillPromo": {
+			"2": 652500,
+			"241": 2,
+			"110131": 3,
+			"110132": 15,
+			"110133": 30,
+			"110501": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"ultPromo": {
+			"2": 652500,
+			"241": 2,
+			"110131": 3,
+			"110132": 15,
+			"110133": 30,
+			"110501": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		},
+		"talentPromo": {
+			"2": 652500,
+			"241": 2,
+			"110131": 3,
+			"110132": 15,
+			"110133": 30,
+			"110501": 3,
+			"111001": 9,
+			"111002": 13,
+			"111003": 7
+		}
+	},
+	"promotion": {
+		"2": 308000,
+		"110402": 65,
+		"111001": 15,
+		"111002": 15,
+		"111003": 15
+	},
+	"treePromotion": {
+		"2": 802500,
+		"241": 2,
+		"110131": 6,
+		"110132": 16,
+		"110133": 38,
+		"110501": 3,
+		"111001": 8,
+		"111002": 10,
+		"111003": 30
+	},
+	"maxPromo": {
+		"2": 3308000,
+		"241": 8,
+		"110131": 18,
+		"110132": 69,
+		"110133": 139,
+		"110402": 65,
+		"110501": 12,
+		"111001": 56,
+		"111002": 71,
+		"111003": 73
+	},
+	"exp": 5797920,
+	"outfits": [],
+	"tree": [
+		{
+			"name": "Sägeblatt-Justierung",
+			"description": "Fügt einem anvisierten Gegner Feuer-SCH in Höhe von ****1[i]%**** von Himekos ANG zu.",
+			"avatar": 1003,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Normal.png",
+			"shortIcon": "SkillIcon_1003_Normal",
+			"promotion": {
+				"2": 240000,
+				"110131": 3,
+				"110132": 8,
+				"110133": 11,
+				"111001": 6,
+				"111002": 7,
+				"111003": 7
+			},
+			"params": [
+				1.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				100301
+			],
+			"id": "1003001"
+		},
+		{
+			"name": "Geschmolzene Explosion",
+			"description": "Fügt einem anvisierten Gegner Feuer-SCH in Höhe von ****1[i]%**** von Himekos ANG zu und fügt den angrenzenden Zielen Feuer-SCH in Höhe von ****2[i]%**** von Himekos ANG zu.",
+			"avatar": 1003,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_BP.png",
+			"shortIcon": "SkillIcon_1003_BP",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110131": 3,
+				"110132": 15,
+				"110133": 30,
+				"110501": 3,
+				"111001": 9,
+				"111002": 13,
+				"111003": 7
+			},
+			"params": [
+				2.5,
+				1
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				100302
+			],
+			"id": "1003002"
+		},
+		{
+			"name": "Himmlisches Leuchtsignal",
+			"description": "Fügt allen Gegnern Feuer-SCH in Höhe von ****1[i]%**** von Himekos ANG zu. Für jeden besiegten Gegner erhält Himeko zusätzlich **2[i]** Pkt. Energie zurück.",
+			"avatar": 1003,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Ultra.png",
+			"shortIcon": "SkillIcon_1003_Ultra",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110131": 3,
+				"110132": 15,
+				"110133": 30,
+				"110501": 3,
+				"111001": 9,
+				"111002": 13,
+				"111003": 7
+			},
+			"params": [
+				2.76,
+				5
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				100303
+			],
+			"id": "1003003"
+		},
+		{
+			"name": "Siegesrausch",
+			"description": "Wenn die Schwäche eines Gegners gebrochen wird, erhält Himeko 1 Pkt. Aufladung, maximal **2[i]** Pkt.\nWenn ein Verbündeter einen Angriff ausführt und Himeko voll aufgeladen ist, führt sie sofort 1 **Folgeangriff** aus, der allen Gegnern Feuer-SCH in Höhe von ****1[i]%**** von Himekos ANG zufügt und alle Aufladungen verbraucht.\nErhält beim Kampfeintritt 1 Pkt. Aufladung.",
+			"avatar": 1003,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Passive.png",
+			"shortIcon": "SkillIcon_1003_Passive",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110131": 3,
+				"110132": 15,
+				"110133": 30,
+				"110501": 3,
+				"111001": 9,
+				"111002": 13,
+				"111003": 7
+			},
+			"params": [
+				1.75,
+				3
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				100304
+			],
+			"id": "1003004"
+		},
+		{
+			"name": "Unvollständige Verbrennung",
+			"description": "Erzeugt nach dem Einsatz der Technik für **4[i]** s eine spezielle Dimension. Nach Kampfeintritt mit Gegnern in dieser Dimension besteht eine **Grundchance** von **1[i]%**, den von den Gegnern erlittenen Feuer-SCH für **3[i]** Rd. um **2[i]%** zu erhöhen. Es kann nur eine von Verbündeten erschaffene Dimension zur gleichen Zeit existieren.",
+			"avatar": 1003,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Maze.png",
+			"shortIcon": "SkillIcon_1003_Maze",
+			"promotion": {},
+			"params": [
+				1,
+				0.1,
+				2,
+				15
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				100307
+			],
+			"id": "1003007"
+		},
+		{
+			"name": "Sternenfeuer",
+			"description": "Nach einem Angriff besteht eine **Grundchance** von **50%**, bei den Gegnern für **2** Rd. Brennen zu verursachen.\nGegner im Status Brennen erleiden zu Beginn jeder Runde Feuer-DoT in Höhe von **30%** von Himekos ANG.",
+			"avatar": 1003,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_SkillTree1.png",
+			"shortIcon": "SkillIcon_1003_SkillTree1",
+			"promotion": {
+				"2": 5000,
+				"110131": 3,
+				"110501": 1
+			},
+			"params": [
+				0.5,
+				2,
+				0.3
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "1003101"
+		},
+		{
+			"name": "Magma",
+			"description": "Erhöht den zugefügten SCH an brennenden Gegnern durch Fertigkeit um **20%**.",
+			"avatar": 1003,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_SkillTree2.png",
+			"shortIcon": "SkillIcon_1003_SkillTree2",
+			"promotion": {
+				"2": 20000,
+				"241": 1,
+				"110132": 5,
+				"110501": 1
+			},
+			"params": [
+				0.2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "1003102"
+		},
+		{
+			"name": "Norm",
+			"description": "Liegt der LP-Prozentsatz bei **80%** oder höher, steigt die KRIT-Rate um **15%**.",
+			"avatar": 1003,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_SkillTree3.png",
+			"shortIcon": "SkillIcon_1003_SkillTree3",
+			"promotion": {
+				"2": 160000,
+				"241": 1,
+				"110133": 8,
+				"110501": 1
+			},
+			"params": [
+				0.8,
+				0.15
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "1003103"
+		},
+		{
+			"name": "SCH-Verstärkung: Feuer",
+			"description": "",
+			"avatar": 1003,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconFireAddedRatio.png",
+			"shortIcon": "IconFireAddedRatio",
+			"promotion": {
+				"2": 2500,
+				"111001": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "FireAddedRatio",
+					"Value": 0.032
+				}
+			],
+			"baseSkill": [],
+			"id": "1003201"
+		},
+		{
+			"name": "ANG-Verstärkung",
+			"description": "",
+			"avatar": 1003,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": [
+					1003101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 5000,
+				"110131": 3,
+				"111001": 6
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "1003202"
+		},
+		{
+			"name": "SCH-Verstärkung: Feuer",
+			"description": "",
+			"avatar": 1003,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					1003202
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconFireAddedRatio.png",
+			"shortIcon": "IconFireAddedRatio",
+			"promotion": {
+				"2": 10000,
+				"110132": 3,
+				"111002": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "FireAddedRatio",
+					"Value": 0.032
+				}
+			],
+			"baseSkill": [],
+			"id": "1003203"
+		},
+		{
+			"name": "Effekt-WDS-Verstärkung",
+			"description": "",
+			"avatar": 1003,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": [
+					1003202
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 10000,
+				"110132": 3,
+				"111002": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "1003204"
+		},
+		{
+			"name": "SCH-Verstärkung: Feuer",
+			"description": "",
+			"avatar": 1003,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					1003102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconFireAddedRatio.png",
+			"shortIcon": "IconFireAddedRatio",
+			"promotion": {
+				"2": 20000,
+				"110132": 5,
+				"111002": 4
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "FireAddedRatio",
+					"Value": 0.048
+				}
+			],
+			"baseSkill": [],
+			"id": "1003205"
+		},
+		{
+			"name": "ANG-Verstärkung",
+			"description": "",
+			"avatar": 1003,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					1003205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 45000,
+				"110133": 3,
+				"111003": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "1003206"
+		},
+		{
+			"name": "SCH-Verstärkung: Feuer",
+			"description": "",
+			"avatar": 1003,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": [
+					1003205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconFireAddedRatio.png",
+			"shortIcon": "IconFireAddedRatio",
+			"promotion": {
+				"2": 45000,
+				"110133": 3,
+				"111003": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "FireAddedRatio",
+					"Value": 0.048
+				}
+			],
+			"baseSkill": [],
+			"id": "1003207"
+		},
+		{
+			"name": "Effekt-WDS-Verstärkung",
+			"description": "",
+			"avatar": 1003,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					1003103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 160000,
+				"110133": 8,
+				"111003": 8
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "1003208"
+		},
+		{
+			"name": "ANG-Verstärkung",
+			"description": "",
+			"avatar": 1003,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					1003103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
+			"shortIcon": "IconAttack",
+			"promotion": {
+				"2": 160000,
+				"110133": 8,
+				"111003": 8
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "AttackAddedRatio",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1003209"
+		},
+		{
+			"name": "SCH-Verstärkung: Feuer",
+			"description": "",
+			"avatar": 1003,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconFireAddedRatio.png",
+			"shortIcon": "IconFireAddedRatio",
+			"promotion": {
+				"2": 160000,
+				"110133": 8,
+				"111003": 8
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "FireAddedRatio",
+					"Value": 0.064
+				}
+			],
+			"baseSkill": [],
+			"id": "1003210"
+		}
+	],
+	"ranks": [
+		{
+			"name": "Kindheit",
+			"description": "Erhöht Himekos GES nach Auslösung von „Siegesrausch“ für **2[i]** Rd. um **1[i]%**.",
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Rank1.png",
+			"rankIcon": "spriteoutput/textures/1003/1003_Rank_1.png",
+			"shortIcon": "SkillIcon_1003_Rank1",
+			"params": [
+				0.2,
+				2
+			],
+			"skillUpgrades": {},
+			"id": "100301"
+		},
+		{
+			"name": "Konvergenz",
+			"description": "Verursacht **2[i]%** mehr SCH bei Gegnern mit LP-Prozentzahl von **1[i]%** oder weniger.",
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Rank2.png",
+			"rankIcon": "spriteoutput/textures/1003/1003_Rank_2.png",
+			"shortIcon": "SkillIcon_1003_Rank2",
+			"params": [
+				0.5,
+				0.15
+			],
+			"skillUpgrades": {},
+			"id": "100302"
+		},
+		{
+			"name": "Selbstsicherheit",
+			"description": "Fertigkeitsstufe +2 bis max. St. **15**. Standardangriff-Stufe +1 bis max. St. **10**.",
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_BP.png",
+			"rankIcon": "spriteoutput/textures/1003/1003_Rank_3.png",
+			"shortIcon": "SkillIcon_1003_BP",
+			"params": [],
+			"skillUpgrades": {
+				"100301": 1,
+				"100302": 2
+			},
+			"id": "100303"
+		},
+		{
+			"name": "Hingabe",
+			"description": "Verursacht die Fertigkeit bei Gegnern Schwächebruch, erhält Himeko zusätzlich **1[i]** Pkt. Aufladung.",
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Rank4.png",
+			"rankIcon": "spriteoutput/textures/1003/1003_Rank_4.png",
+			"shortIcon": "SkillIcon_1003_Rank4",
+			"params": [
+				1
+			],
+			"skillUpgrades": {},
+			"id": "100304"
+		},
+		{
+			"name": "Bestrebung",
+			"description": "Ultimate-Stufe +2 bis max. St. **15**. Talentstufe +2 bis max. St. **15**.",
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Ultra.png",
+			"rankIcon": "spriteoutput/textures/1003/1003_Rank_5.png",
+			"shortIcon": "SkillIcon_1003_Ultra",
+			"params": [],
+			"skillUpgrades": {
+				"100303": 2,
+				"100304": 2
+			},
+			"id": "100305"
+		},
+		{
+			"name": "Trailblaze!",
+			"description": "Der Ultimate verursacht zweimal zusätzlichen SCH und fügt zufälligen Gegnern jedes Mal Feuer-SCH in Höhe von **1[i]%** des ursprünglichen SCH zu.",
+			"icon": "spriteoutput/skillicons/avatar/1003/SkillIcon_1003_Rank6.png",
+			"rankIcon": "spriteoutput/textures/1003/1003_Rank_6.png",
+			"shortIcon": "SkillIcon_1003_Rank6",
+			"params": [
+				0.4
+			],
+			"skillUpgrades": {},
+			"id": "100306"
+		}
+	],
+	"statsArray": [
+		{
+			"HPBase": 142.56,
+			"HPAdd": 7.128,
+			"AttackBase": 102.96,
+			"AttackAdd": 5.148,
+			"DefenceBase": 59.4,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 96,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 4000
+				},
+				{
+					"ItemID": 111001,
+					"ItemNum": 5
+				}
+			],
+			"MaxLevel": 20
+		},
+		{
+			"HPBase": 199.584,
+			"HPAdd": 7.128,
+			"AttackBase": 144.144,
+			"AttackAdd": 5.148,
+			"DefenceBase": 83.16,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 96,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 8000
+				},
+				{
+					"ItemID": 111001,
+					"ItemNum": 10
+				}
+			],
+			"MaxLevel": 30
+		},
+		{
+			"HPBase": 256.608,
+			"HPAdd": 7.128,
+			"AttackBase": 185.328,
+			"AttackAdd": 5.148,
+			"DefenceBase": 106.92,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 96,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 16000
+				},
+				{
+					"ItemID": 111002,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 110402,
+					"ItemNum": 3
+				}
+			],
+			"MaxLevel": 40
+		},
+		{
+			"HPBase": 313.632,
+			"HPAdd": 7.128,
+			"AttackBase": 226.512,
+			"AttackAdd": 5.148,
+			"DefenceBase": 130.68,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 96,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 40000
+				},
+				{
+					"ItemID": 111002,
+					"ItemNum": 9
+				},
+				{
+					"ItemID": 110402,
+					"ItemNum": 7
+				}
+			],
+			"MaxLevel": 50
+		},
+		{
+			"HPBase": 370.656,
+			"HPAdd": 7.128,
+			"AttackBase": 267.696,
+			"AttackAdd": 5.148,
+			"DefenceBase": 154.44,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 96,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 80000
+				},
+				{
+					"ItemID": 111003,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 110402,
+					"ItemNum": 20
+				}
+			],
+			"MaxLevel": 60
+		},
+		{
+			"HPBase": 427.68,
+			"HPAdd": 7.128,
+			"AttackBase": 308.88,
+			"AttackAdd": 5.148,
+			"DefenceBase": 178.2,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 96,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 160000
+				},
+				{
+					"ItemID": 111003,
+					"ItemNum": 9
+				},
+				{
+					"ItemID": 110402,
+					"ItemNum": 35
+				}
+			],
+			"MaxLevel": 70
+		},
+		{
+			"HPBase": 484.704,
+			"HPAdd": 7.128,
+			"AttackBase": 350.064,
+			"AttackAdd": 5.148,
+			"DefenceBase": 201.96,
+			"DefenceAdd": 2.97,
+			"SpeedBase": 96,
+			"SpeedAdd": 0,
+			"AggroBase": 75,
+			"PromotionCostList": [],
+			"MaxLevel": 80
+		}
+	],
+	"advancement": {
+		"lv0": [
+			{
+				"ItemID": 2,
+				"ItemNum": 4000
+			},
+			{
+				"ItemID": 111001,
+				"ItemNum": 5
+			}
+		],
+		"lv1": [
+			{
+				"ItemID": 2,
+				"ItemNum": 8000
+			},
+			{
+				"ItemID": 111001,
+				"ItemNum": 10
+			}
+		],
+		"lv2": [
+			{
+				"ItemID": 2,
+				"ItemNum": 16000
+			},
+			{
+				"ItemID": 111002,
+				"ItemNum": 6
+			},
+			{
+				"ItemID": 110402,
+				"ItemNum": 3
+			}
+		],
+		"lv3": [
+			{
+				"ItemID": 2,
+				"ItemNum": 40000
+			},
+			{
+				"ItemID": 111002,
+				"ItemNum": 9
+			},
+			{
+				"ItemID": 110402,
+				"ItemNum": 7
+			}
+		],
+		"lv4": [
+			{
+				"ItemID": 2,
+				"ItemNum": 80000
+			},
+			{
+				"ItemID": 111003,
+				"ItemNum": 6
+			},
+			{
+				"ItemID": 110402,
+				"ItemNum": 20
+			}
+		],
+		"lv5": [
+			{
+				"ItemID": 2,
+				"ItemNum": 160000
+			},
+			{
+				"ItemID": 111003,
+				"ItemNum": 9
+			},
+			{
+				"ItemID": 110402,
+				"ItemNum": 35
+			}
+		]
+	},
+	"id": "1003"
+}

@@ -1,0 +1,2944 @@
+{
+	"name": "Glühwürmchen",
+	"description": "Ein Mitglied der Stellaron-Jäger. Sie kämpft in ihrer mechanischen Rüstung namens „SAM“ und ihr Charakter ist von Loyalität und Entschlossenheit gekennzeichnet.\nSie wurde als Waffe gegen den Schwarm entwickelt und erfährt ein beschleunigtes Wachstum, hat aber eine tragisch verkürzte Lebenserwartung.\nSie schloss sich den Stellaron-Jägern an, um einen Weg zu finden, dem Schicksal zu trotzen.",
+	"rarity": "SuperRare",
+	"avatarType": "Warrior",
+	"element": "Fire",
+	"stats": {
+		"maxHP": 814.968,
+		"maxATK": 523.908,
+		"maxDEF": 776.1600000000001,
+		"SPD": 104,
+		"TNT": 125,
+		"CR": 0.05,
+		"CDMG": 0.5
+	},
+	"icon": "spriteoutput/avatardrawcard/1310.png",
+	"shortIcon": "1310",
+	"drawIcon": "spriteoutput/avatardrawcardresult/1310.png",
+	"skills": [
+		{
+			"name": "Befehl: Fackelantrieb",
+			"tag": "Einzelangriff",
+			"type": "Standardangriff",
+			"description": "Fügt einem anvisierten Gegner Feuer-SCH in Höhe von ****1[i]%**** von SAMs ANG zu.",
+			"regen": 20,
+			"er": 0,
+			"break": [
+				30,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Normal.png",
+			"shortIcon": "SkillIcon_1310_Normal",
+			"id": "131001",
+			"params": {
+				"lv1": [
+					0.5
+				],
+				"lv2": [
+					0.6
+				],
+				"lv3": [
+					0.7
+				],
+				"lv4": [
+					0.8
+				],
+				"lv5": [
+					0.9
+				],
+				"lv6": [
+					1
+				],
+				"lv7": [
+					1.1
+				],
+				"lv8": [
+					1.2
+				],
+				"lv9": [
+					1.3
+				],
+				"lv10": [
+					1.4
+				]
+			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110181,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 6
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 3
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 4
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 3
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 4
+					}
+				]
+			}
+		},
+		{
+			"name": "Befehl: Luftbombardierung",
+			"tag": "Einzelangriff",
+			"type": "Fertigkeit",
+			"description": "Verbraucht **2[i]%** der eigenen max. LP und stellt eine feste Menge Energie in Höhe von ****3[i]%**** der eigenen max. Energie wieder her, um einem anvisierten Gegner Feuer-SCH in Höhe von ****1[i]%**** von SAMs ANG zuzufügen. Wenn die aktuellen LP nicht ausreichen, werden SAMs LP beim Einsatz der Fertigkeit auf 1 reduziert. Die nächste Aktion wird um **4[i]%** **vorgezogen**.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				60,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_BP.png",
+			"shortIcon": "SkillIcon_1310_BP",
+			"id": "131002",
+			"params": {
+				"lv1": [
+					1,
+					0.4,
+					0.5,
+					0.25
+				],
+				"lv2": [
+					1.1,
+					0.4,
+					0.51,
+					0.25
+				],
+				"lv3": [
+					1.2,
+					0.4,
+					0.52,
+					0.25
+				],
+				"lv4": [
+					1.3,
+					0.4,
+					0.53,
+					0.25
+				],
+				"lv5": [
+					1.4,
+					0.4,
+					0.54,
+					0.25
+				],
+				"lv6": [
+					1.5,
+					0.4,
+					0.55,
+					0.25
+				],
+				"lv7": [
+					1.625,
+					0.4,
+					0.5625,
+					0.25
+				],
+				"lv8": [
+					1.75,
+					0.4,
+					0.575,
+					0.25
+				],
+				"lv9": [
+					1.875,
+					0.4,
+					0.5875,
+					0.25
+				],
+				"lv10": [
+					2,
+					0.4,
+					0.6,
+					0.25
+				],
+				"lv11": [
+					2.1,
+					0.4,
+					0.61,
+					0.25
+				],
+				"lv12": [
+					2.2,
+					0.4,
+					0.62,
+					0.25
+				],
+				"lv13": [
+					2.3,
+					0.4,
+					0.63,
+					0.25
+				],
+				"lv14": [
+					2.4,
+					0.4,
+					0.64,
+					0.25
+				],
+				"lv15": [
+					2.5,
+					0.4,
+					0.65,
+					0.25
+				]
+			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2500
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 3
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110181,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 6
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 4
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 30000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 7
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 6
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 3
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 80000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 300000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 14
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "PyroFly Typ IV: Vollständige Verbrennung",
+			"tag": "Verstärkung",
+			"type": "Ultimate",
+			"description": "Tritt in den Status „Vollständige Verbrennung“ ein. Zieht die eigene Aktion um **100** % vor und erhält den verstärkten Standardangriff sowie die verstärkte Fertigkeit. Erhöht im Status Vollständige Verbrennung die GES um ****3[i]**** Pkt., beim Einsatz des verstärkten Standardangriffs oder der verstärkten Fertigkeit die eigene Schwächebruch-Effizienz um **2[i]%** und den von Gegnern erlittenen Bruch-SCH durch SAM um ****1[f1]%****. Dies dauert bis zum Ende des Angriffs an.\nIn der Aktionsreihenfolge erscheint ein Countdown für Vollständige Verbrennung. Beginnt die Runde des Countdowns, verlässt SAM den Status Vollständige Verbrennung. Der Countdown hat eine feste GES von **4[i]**.\nIm Status Vollständige Verbrennung kann SAM den Ultimate nicht einsetzen.",
+			"regen": 5,
+			"er": 240,
+			"break": [
+				0,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Ultra.png",
+			"shortIcon": "SkillIcon_1310_Ultra",
+			"id": "131003",
+			"params": {
+				"lv1": [
+					0.1,
+					0.5,
+					30,
+					70
+				],
+				"lv2": [
+					0.11,
+					0.5,
+					33,
+					70
+				],
+				"lv3": [
+					0.12,
+					0.5,
+					36,
+					70
+				],
+				"lv4": [
+					0.13,
+					0.5,
+					39,
+					70
+				],
+				"lv5": [
+					0.14,
+					0.5,
+					42,
+					70
+				],
+				"lv6": [
+					0.15,
+					0.5,
+					45,
+					70
+				],
+				"lv7": [
+					0.1625,
+					0.5,
+					48.75,
+					70
+				],
+				"lv8": [
+					0.175,
+					0.5,
+					52.5,
+					70
+				],
+				"lv9": [
+					0.1875,
+					0.5,
+					56.25,
+					70
+				],
+				"lv10": [
+					0.2,
+					0.5,
+					60,
+					70
+				],
+				"lv11": [
+					0.21,
+					0.5,
+					63,
+					70
+				],
+				"lv12": [
+					0.22,
+					0.5,
+					66,
+					70
+				],
+				"lv13": [
+					0.23,
+					0.5,
+					69,
+					70
+				],
+				"lv14": [
+					0.24,
+					0.5,
+					72,
+					70
+				],
+				"lv15": [
+					0.25,
+					0.5,
+					75,
+					70
+				]
+			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2500
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 3
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110181,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 6
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 4
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 30000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 7
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 6
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 3
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 80000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 300000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 14
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Kokon-Pyronexus",
+			"tag": "Verteidigung",
+			"type": "Talent",
+			"description": "Je niedriger die LP sind, desto geringer wird der erlittene SCH. Wenn die LP **3[i]%** oder weniger betragen, ist der Effekt maximal wirksam, wobei die max. SCH-Reduktion bei ****1[i]%**** liegt. Im Status Vollständige Verbrennung ist die SCH-Reduktion stets maximal wirksam und der Effekt-WDS wird um ****4[i]%**** erhöht.\nWenn die Energie beim Kampfbeginn unter **2[i]%** liegt, wird sie auf **2[i]%** wiederhergestellt. Sobald die Energie vollständig wiederhergestellt ist, werden alle **Debuffs** entfernt.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				0,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Passive.png",
+			"shortIcon": "SkillIcon_1310_Passive",
+			"id": "131004",
+			"params": {
+				"lv1": [
+					0.2,
+					0.5,
+					0.2,
+					0.1
+				],
+				"lv2": [
+					0.22,
+					0.5,
+					0.2,
+					0.12
+				],
+				"lv3": [
+					0.24,
+					0.5,
+					0.2,
+					0.14
+				],
+				"lv4": [
+					0.26,
+					0.5,
+					0.2,
+					0.16
+				],
+				"lv5": [
+					0.28,
+					0.5,
+					0.2,
+					0.18
+				],
+				"lv6": [
+					0.3,
+					0.5,
+					0.2,
+					0.2
+				],
+				"lv7": [
+					0.325,
+					0.5,
+					0.2,
+					0.225
+				],
+				"lv8": [
+					0.35,
+					0.5,
+					0.2,
+					0.25
+				],
+				"lv9": [
+					0.375,
+					0.5,
+					0.2,
+					0.275
+				],
+				"lv10": [
+					0.4,
+					0.5,
+					0.2,
+					0.3
+				],
+				"lv11": [
+					0.42,
+					0.5,
+					0.2,
+					0.32
+				],
+				"lv12": [
+					0.44,
+					0.5,
+					0.2,
+					0.34
+				],
+				"lv13": [
+					0.46,
+					0.5,
+					0.2,
+					0.36
+				],
+				"lv14": [
+					0.48,
+					0.5,
+					0.2,
+					0.38
+				],
+				"lv15": [
+					0.5,
+					0.5,
+					0.2,
+					0.4
+				]
+			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2500
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 3
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110181,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 6
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 4
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 30000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 7
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 6
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 3
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 80000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 300000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 14
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Angriff",
+			"tag": "",
+			"type": "",
+			"description": "Greift den Gegner an und reduziert nach Kampfeintritt den WDS des Ziels gegen den entsprechenden Typ.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				30,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Normal02.png",
+			"shortIcon": "SkillIcon_1310_Normal02",
+			"id": "131006",
+			"params": {
+				"lv1": []
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
+		},
+		{
+			"name": "Δ Befehl: Verbrannter Meteorit",
+			"tag": "",
+			"type": "Technik",
+			"description": "Springt in die Luft und bewegt sich ohne Einschränkungen. Dies dauert **1[i]** Sek. an und kann mit einem Sturzangriff vorzeitig beendet werden. Nach dem Ende der freien Bewegung steigt SAM herab und greift sofort alle Gegner in einem bestimmten Wirkungsbereich an. Implantiert allen Gegnern zu Beginn jeder Kampfwelle für **3[i]** Rd. Feuer-Schwäche und fügt ihnen dann Feuer-SCH in Höhe von **2[i]%** von SAMs ANG zu.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				60,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Maze.png",
+			"shortIcon": "SkillIcon_1310_Maze",
+			"id": "131007",
+			"params": {
+				"lv1": [
+					5,
+					2,
+					2
+				]
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
+		},
+		{
+			"name": "PyroFly Typ IV: Pyrogene Dezimierung",
+			"tag": "Einzelangriff",
+			"type": "Standardangriff",
+			"description": "Stellt **2[i]%** der eigenen max. LP wieder her. Fügt einem anvisierten Gegner Feuer-SCH in Höhe von ****1[i]%**** von SAMs ANG zu.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				45,
+				0,
+				0
+			],
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Normal02.png",
+			"shortIcon": "SkillIcon_1310_Normal02",
+			"id": "131008",
+			"params": {
+				"lv1": [
+					1,
+					0.2
+				],
+				"lv2": [
+					1.2,
+					0.2
+				],
+				"lv3": [
+					1.4,
+					0.2
+				],
+				"lv4": [
+					1.6,
+					0.2
+				],
+				"lv5": [
+					1.8,
+					0.2
+				],
+				"lv6": [
+					2,
+					0.2
+				],
+				"lv7": [
+					2.2,
+					0.2
+				],
+				"lv8": [
+					2.4,
+					0.2
+				],
+				"lv9": [
+					2.6,
+					0.2
+				],
+				"lv10": [
+					2.8,
+					0.2
+				]
+			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110181,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 6
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 3
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 4
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 3
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 4
+					}
+				]
+			}
+		},
+		{
+			"name": "PyroFly Typ IV: Überladung eines sterbenden Sterns",
+			"tag": "Ausdehnung",
+			"type": "Fertigkeit",
+			"description": "Stellt **3[i]%** der eigenen max. LP wieder her. Implantiert einem anvisierten Gegner für **4[i]** Rd. eine Feuer-Schwäche und fügt ihm Feuer-SCH in Höhe von **5[f1]** × Brucheffekt + ****1[f1]%**** von SAMs ANG zu. Fügt gleichzeitig angrenzenden Einheiten Feuer-SCH in Höhe von **6[f1]** × Brucheffekt + ****2[f1]%**** von SAMs ANG zu. Dabei werden max. **7[i]%** des Brucheffekts berechnet.",
+			"regen": 0,
+			"er": 0,
+			"break": [
+				90,
+				0,
+				45
+			],
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_BP02.png",
+			"shortIcon": "SkillIcon_1310_BP02",
+			"id": "131009",
+			"params": {
+				"lv1": [
+					1,
+					0.5,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv2": [
+					1.1,
+					0.55,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv3": [
+					1.2,
+					0.6,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv4": [
+					1.3,
+					0.65,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv5": [
+					1.4,
+					0.7,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv6": [
+					1.5,
+					0.75,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv7": [
+					1.625,
+					0.8125,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv8": [
+					1.75,
+					0.875,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv9": [
+					1.875,
+					0.9375,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv10": [
+					2,
+					1,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv11": [
+					2.1,
+					1.05,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv12": [
+					2.2,
+					1.1,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv13": [
+					2.3,
+					1.15,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv14": [
+					2.4,
+					1.2,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				],
+				"lv15": [
+					2.5,
+					1.25,
+					0.25,
+					2,
+					0.2,
+					0.1,
+					3.6
+				]
+			},
+			"state": 1,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill21",
+			"promotion": {
+				"lv1": [],
+				"lv2": [
+					{
+						"ItemID": 2,
+						"ItemNum": 2500
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 3
+					}
+				],
+				"lv3": [
+					{
+						"ItemID": 2,
+						"ItemNum": 5000
+					},
+					{
+						"ItemID": 110181,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114011,
+						"ItemNum": 6
+					}
+				],
+				"lv4": [
+					{
+						"ItemID": 2,
+						"ItemNum": 10000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 3
+					}
+				],
+				"lv5": [
+					{
+						"ItemID": 2,
+						"ItemNum": 20000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 4
+					}
+				],
+				"lv6": [
+					{
+						"ItemID": 2,
+						"ItemNum": 30000
+					},
+					{
+						"ItemID": 110182,
+						"ItemNum": 7
+					},
+					{
+						"ItemID": 114012,
+						"ItemNum": 6
+					}
+				],
+				"lv7": [
+					{
+						"ItemID": 2,
+						"ItemNum": 45000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 3
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 3
+					}
+				],
+				"lv8": [
+					{
+						"ItemID": 2,
+						"ItemNum": 80000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 5
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 114013,
+						"ItemNum": 4
+					}
+				],
+				"lv9": [
+					{
+						"ItemID": 2,
+						"ItemNum": 160000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 8
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				],
+				"lv10": [
+					{
+						"ItemID": 2,
+						"ItemNum": 300000
+					},
+					{
+						"ItemID": 110183,
+						"ItemNum": 14
+					},
+					{
+						"ItemID": 241,
+						"ItemNum": 1
+					},
+					{
+						"ItemID": 110505,
+						"ItemNum": 1
+					}
+				]
+			}
+		}
+	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"131001",
+					"131002",
+					"131003",
+					"131004",
+					"131007",
+					"131006"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"131008",
+					"131009"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"131001",
+				"131002",
+				"131003",
+				"131004",
+				"131007",
+				"131006"
+			],
+			"1": [
+				"131008",
+				"131009",
+				"131003",
+				"131004",
+				"131007",
+				"131006"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"131001",
+					"131002",
+					"131003",
+					"131004",
+					"131007",
+					"131006"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"131008",
+					"131009",
+					"131003",
+					"131004",
+					"131007",
+					"131006"
+				],
+				"changed": [
+					"basic",
+					"skill"
+				]
+			}
+		]
+	},
+	"promos": {
+		"basicPromo": {
+			"2": 240000,
+			"110181": 3,
+			"110182": 8,
+			"110183": 11,
+			"114011": 6,
+			"114012": 7,
+			"114013": 7
+		},
+		"skillPromo": {
+			"2": 652500,
+			"241": 2,
+			"110181": 3,
+			"110182": 15,
+			"110183": 30,
+			"110505": 3,
+			"114011": 9,
+			"114012": 13,
+			"114013": 7
+		},
+		"ultPromo": {
+			"2": 652500,
+			"241": 2,
+			"110181": 3,
+			"110182": 15,
+			"110183": 30,
+			"110505": 3,
+			"114011": 9,
+			"114012": 13,
+			"114013": 7
+		},
+		"talentPromo": {
+			"2": 652500,
+			"241": 2,
+			"110181": 3,
+			"110182": 15,
+			"110183": 30,
+			"110505": 3,
+			"114011": 9,
+			"114012": 13,
+			"114013": 7
+		}
+	},
+	"promotion": {
+		"2": 308000,
+		"110422": 65,
+		"114011": 15,
+		"114012": 15,
+		"114013": 15
+	},
+	"treePromotion": {
+		"2": 1605000,
+		"241": 4,
+		"110181": 12,
+		"110182": 32,
+		"110183": 76,
+		"110505": 6,
+		"114011": 16,
+		"114012": 20,
+		"114013": 60
+	},
+	"maxPromo": {
+		"2": 4110500,
+		"241": 10,
+		"110181": 24,
+		"110182": 85,
+		"110183": 177,
+		"110422": 65,
+		"110505": 15,
+		"114011": 64,
+		"114012": 81,
+		"114013": 103
+	},
+	"exp": 5797920,
+	"outfits": [
+		{
+			"name": "",
+			"icon": "spriteoutput/avatardrawcard/avatarskin/1131001.png"
+		}
+	],
+	"tree": [
+		{
+			"name": "Befehl: Fackelantrieb",
+			"description": "Fügt einem anvisierten Gegner Feuer-SCH in Höhe von ****1[i]%**** von SAMs ANG zu.",
+			"avatar": 1310,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Normal.png",
+			"shortIcon": "SkillIcon_1310_Normal",
+			"promotion": {
+				"2": 240000,
+				"110181": 3,
+				"110182": 8,
+				"110183": 11,
+				"114011": 6,
+				"114012": 7,
+				"114013": 7
+			},
+			"params": [
+				1.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				131001,
+				131008
+			],
+			"id": "1310001"
+		},
+		{
+			"name": "Befehl: Luftbombardierung",
+			"description": "Verbraucht **2[i]%** der eigenen max. LP und stellt eine feste Menge Energie in Höhe von ****3[i]%**** der eigenen max. Energie wieder her, um einem anvisierten Gegner Feuer-SCH in Höhe von ****1[i]%**** von SAMs ANG zuzufügen. Wenn die aktuellen LP nicht ausreichen, werden SAMs LP beim Einsatz der Fertigkeit auf 1 reduziert. Die nächste Aktion wird um **4[i]%** **vorgezogen**.",
+			"avatar": 1310,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_BP.png",
+			"shortIcon": "SkillIcon_1310_BP",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110181": 3,
+				"110182": 15,
+				"110183": 30,
+				"110505": 3,
+				"114011": 9,
+				"114012": 13,
+				"114013": 7
+			},
+			"params": [
+				2.5,
+				0.4,
+				0.65,
+				0.25
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				131002,
+				131009
+			],
+			"id": "1310002"
+		},
+		{
+			"name": "PyroFly Typ IV: Vollständige Verbrennung",
+			"description": "Tritt in den Status „Vollständige Verbrennung“ ein. Zieht die eigene Aktion um **100** % vor und erhält den verstärkten Standardangriff sowie die verstärkte Fertigkeit. Erhöht im Status Vollständige Verbrennung die GES um ****3[i]**** Pkt., beim Einsatz des verstärkten Standardangriffs oder der verstärkten Fertigkeit die eigene Schwächebruch-Effizienz um **2[i]%** und den von Gegnern erlittenen Bruch-SCH durch SAM um ****1[f1]%****. Dies dauert bis zum Ende des Angriffs an.\nIn der Aktionsreihenfolge erscheint ein Countdown für Vollständige Verbrennung. Beginnt die Runde des Countdowns, verlässt SAM den Status Vollständige Verbrennung. Der Countdown hat eine feste GES von **4[i]**.\nIm Status Vollständige Verbrennung kann SAM den Ultimate nicht einsetzen.",
+			"avatar": 1310,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Ultra.png",
+			"shortIcon": "SkillIcon_1310_Ultra",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110181": 3,
+				"110182": 15,
+				"110183": 30,
+				"110505": 3,
+				"114011": 9,
+				"114012": 13,
+				"114013": 7
+			},
+			"params": [
+				0.25,
+				0.5,
+				75,
+				70
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				131003
+			],
+			"id": "1310003"
+		},
+		{
+			"name": "Kokon-Pyronexus",
+			"description": "Je niedriger die LP sind, desto geringer wird der erlittene SCH. Wenn die LP **3[i]%** oder weniger betragen, ist der Effekt maximal wirksam, wobei die max. SCH-Reduktion bei ****1[i]%**** liegt. Im Status Vollständige Verbrennung ist die SCH-Reduktion stets maximal wirksam und der Effekt-WDS wird um ****4[i]%**** erhöht.\nWenn die Energie beim Kampfbeginn unter **2[i]%** liegt, wird sie auf **2[i]%** wiederhergestellt. Sobald die Energie vollständig wiederhergestellt ist, werden alle **Debuffs** entfernt.",
+			"avatar": 1310,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Passive.png",
+			"shortIcon": "SkillIcon_1310_Passive",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110181": 3,
+				"110182": 15,
+				"110183": 30,
+				"110505": 3,
+				"114011": 9,
+				"114012": 13,
+				"114013": 7
+			},
+			"params": [
+				0.5,
+				0.5,
+				0.2,
+				0.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				131004
+			],
+			"id": "1310004"
+		},
+		{
+			"name": "Δ Befehl: Verbrannter Meteorit",
+			"description": "Springt in die Luft und bewegt sich ohne Einschränkungen. Dies dauert **1[i]** Sek. an und kann mit einem Sturzangriff vorzeitig beendet werden. Nach dem Ende der freien Bewegung steigt SAM herab und greift sofort alle Gegner in einem bestimmten Wirkungsbereich an. Implantiert allen Gegnern zu Beginn jeder Kampfwelle für **3[i]** Rd. Feuer-Schwäche und fügt ihnen dann Feuer-SCH in Höhe von **2[i]%** von SAMs ANG zu.",
+			"avatar": 1310,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Maze.png",
+			"shortIcon": "SkillIcon_1310_Maze",
+			"promotion": {},
+			"params": [
+				5,
+				2,
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				131007
+			],
+			"id": "1310007"
+		},
+		{
+			"name": "Modul α: Diachroner Ausbruch",
+			"description": "Im Status „Vollständige Verbrennung“ reduzieren Angriffe auf Gegner ohne Feuer-Schwäche ebenfalls den WDS, wobei der Effekt **55%** der WDS-Reduzierung der ursprünglichen Fähigkeit entspricht.",
+			"avatar": 1310,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_SkillTree1.png",
+			"shortIcon": "SkillIcon_1310_SkillTree1",
+			"promotion": {
+				"2": 5000,
+				"110181": 3,
+				"110505": 1
+			},
+			"params": [
+				0.55
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "1310101"
+		},
+		{
+			"name": "Modul β: Autoreaktive Rüstung",
+			"description": "Wenn SAM sich im Status „Vollständige Verbrennung“ befindet und der Brucheffekt bei **200%**/**360%** oder mehr liegt, wird nach einem Angriff auf Gegner im **Schwächebruch** der WDS-Reduzierungswert des Angriffs in 1-mal **35%**/**50%** **Super-Bruch-SCH** umgewandelt.",
+			"avatar": 1310,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_SkillTree2.png",
+			"shortIcon": "SkillIcon_1310_SkillTree2",
+			"promotion": {
+				"2": 20000,
+				"241": 1,
+				"110182": 5,
+				"110505": 1
+			},
+			"params": [
+				2,
+				3.6,
+				0.35,
+				0.5
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "1310102"
+		},
+		{
+			"name": "Modul γ: Kernüberladung",
+			"description": "Für je **10** Pkt. von SAMs ANG, die **1800** überschreiten, wird sein Brucheffekt um **0.8%** erhöht.",
+			"avatar": 1310,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_SkillTree3.png",
+			"shortIcon": "SkillIcon_1310_SkillTree3",
+			"promotion": {
+				"2": 160000,
+				"241": 1,
+				"110183": 8,
+				"110505": 1
+			},
+			"params": [
+				1800,
+				10,
+				0.007999999
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "1310103"
+		},
+		{
+			"name": "Bruch-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 2500,
+				"114011": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "1310201"
+		},
+		{
+			"name": "Effekt-WDS-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": [
+					1310101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 5000,
+				"110181": 3,
+				"114011": 6
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "1310202"
+		},
+		{
+			"name": "Bruch-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					1310202
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 10000,
+				"110182": 3,
+				"114012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "1310203"
+		},
+		{
+			"name": "GES-Erhöhung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": [
+					1310203
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+			"shortIcon": "IconSpeed",
+			"promotion": {
+				"2": 10000,
+				"110182": 3,
+				"114012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "SpeedDelta",
+					"Value": 2
+				}
+			],
+			"baseSkill": [],
+			"id": "1310204"
+		},
+		{
+			"name": "Bruch-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					1310102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 20000,
+				"110182": 5,
+				"114012": 4
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1310205"
+		},
+		{
+			"name": "Effekt-WDS-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					1310205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 45000,
+				"110183": 3,
+				"114013": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "1310206"
+		},
+		{
+			"name": "Bruch-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": [
+					1310206
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 45000,
+				"110183": 3,
+				"114013": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1310207"
+		},
+		{
+			"name": "GES-Erhöhung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					1310103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+			"shortIcon": "IconSpeed",
+			"promotion": {
+				"2": 160000,
+				"110183": 8,
+				"114013": 8
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "SpeedDelta",
+					"Value": 3
+				}
+			],
+			"baseSkill": [],
+			"id": "1310208"
+		},
+		{
+			"name": "Effekt-WDS-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					1310208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 160000,
+				"110183": 8,
+				"114013": 8
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "1310209"
+		},
+		{
+			"name": "Bruch-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": [
+					1310208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 160000,
+				"110183": 8,
+				"114013": 8
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.107
+				}
+			],
+			"baseSkill": [],
+			"id": "1310210"
+		},
+		{
+			"name": "Befehl: Fackelantrieb",
+			"description": "Fügt einem anvisierten Gegner Feuer-SCH in Höhe von ****1[i]%**** von SAMs ANG zu.",
+			"avatar": 1310,
+			"type": 2,
+			"pos": {
+				"point": "01",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11310/SkillIcon_11310_Normal.png",
+			"shortIcon": "SkillIcon_11310_Normal",
+			"promotion": {
+				"2": 240000,
+				"110181": 3,
+				"110182": 8,
+				"110183": 11,
+				"114011": 6,
+				"114012": 7,
+				"114013": 7
+			},
+			"params": [
+				1.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1131001,
+				1131008
+			],
+			"id": "11310001"
+		},
+		{
+			"name": "Befehl: Luftbombardierung",
+			"description": "Verbraucht **2[i]%** der eigenen max. LP und stellt eine feste Menge Energie in Höhe von ****3[i]%**** der eigenen max. Energie wieder her, um einem anvisierten Gegner Feuer-SCH in Höhe von ****1[i]%**** von SAMs ANG zuzufügen. Wenn die aktuellen LP nicht ausreichen, werden SAMs LP beim Einsatz der Fertigkeit auf 1 reduziert. Die nächste Aktion wird um **4[i]%** **vorgezogen**.",
+			"avatar": 1310,
+			"type": 2,
+			"pos": {
+				"point": "02",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11310/SkillIcon_11310_BP.png",
+			"shortIcon": "SkillIcon_11310_BP",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110181": 3,
+				"110182": 15,
+				"110183": 30,
+				"110505": 3,
+				"114011": 9,
+				"114012": 13,
+				"114013": 7
+			},
+			"params": [
+				2.5,
+				0.4,
+				0.65,
+				0.25
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1131002,
+				1131009
+			],
+			"id": "11310002"
+		},
+		{
+			"name": "PyroFly Typ IV: Vollständige Verbrennung",
+			"description": "Tritt in den Status „Vollständige Verbrennung“ ein. Zieht die eigene Aktion um **100** % vor und erhält den verstärkten Standardangriff sowie die verstärkte Fertigkeit. Erhöht im Status Vollständige Verbrennung die GES um ****3[i]**** Pkt., beim Einsatz des verstärkten Standardangriffs oder der verstärkten Fertigkeit die eigene Schwächebruch-Effizienz um **2[i]%** und den von Gegnern erlittenen Bruch-SCH durch SAM um ****1[f1]%****. Dies dauert bis zum Ende des Angriffs an.\nIn der Aktionsreihenfolge erscheint ein Countdown für Vollständige Verbrennung. Beginnt die Runde des Countdowns, verlässt SAM den Status Vollständige Verbrennung. Der Countdown hat eine feste GES von **4[i]**.\nIm Status Vollständige Verbrennung kann SAM den Ultimate nicht einsetzen.",
+			"avatar": 1310,
+			"type": 2,
+			"pos": {
+				"point": "03",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11310/SkillIcon_11310_Ultra.png",
+			"shortIcon": "SkillIcon_11310_Ultra",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110181": 3,
+				"110182": 15,
+				"110183": 30,
+				"110505": 3,
+				"114011": 9,
+				"114012": 13,
+				"114013": 7
+			},
+			"params": [
+				0.25,
+				0.5,
+				75,
+				70
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1131003
+			],
+			"id": "11310003"
+		},
+		{
+			"name": "Kokon-Pyronexus",
+			"description": "Je niedriger die LP sind, desto geringer wird der erlittene SCH. Wenn die LP **3[i]%** oder weniger betragen, ist der Effekt maximal wirksam, wobei die max. SCH-Reduktion bei ****1[i]%**** liegt. Im Status Vollständige Verbrennung ist die SCH-Reduktion stets maximal wirksam und der Effekt-WDS wird um ****4[i]%**** erhöht.\nWenn die Energie beim Kampfbeginn unter **2[i]%** liegt, wird sie auf **2[i]%** wiederhergestellt. Sobald die Energie vollständig wiederhergestellt ist, werden alle **Debuffs** entfernt.",
+			"avatar": 1310,
+			"type": 2,
+			"pos": {
+				"point": "04",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11310/SkillIcon_11310_Passive.png",
+			"shortIcon": "SkillIcon_11310_Passive",
+			"promotion": {
+				"2": 652500,
+				"241": 2,
+				"110181": 3,
+				"110182": 15,
+				"110183": 30,
+				"110505": 3,
+				"114011": 9,
+				"114012": 13,
+				"114013": 7
+			},
+			"params": [
+				0.5,
+				0.5,
+				0.2,
+				0.4
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [
+				1131004
+			],
+			"id": "11310004"
+		},
+		{
+			"name": "Δ Befehl: Verbrannter Meteorit",
+			"description": "Springt in die Luft und bewegt sich ohne Einschränkungen. Dies dauert **1[i]** Sek. an und kann mit einem Sturzangriff vorzeitig beendet werden. Nach dem Ende der freien Bewegung steigt SAM herab und greift sofort alle Gegner in einem bestimmten Wirkungsbereich an. Implantiert allen Gegnern zu Beginn jeder Kampfwelle für **3[i]** Rd. Feuer-Schwäche und fügt ihnen dann Feuer-SCH in Höhe von **2[i]%** von SAMs ANG zu.",
+			"avatar": 1310,
+			"type": 2,
+			"pos": {
+				"point": "05",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11310/SkillIcon_11310_Maze.png",
+			"shortIcon": "SkillIcon_11310_Maze",
+			"promotion": {},
+			"params": [
+				5,
+				2,
+				2
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 0,
+			"status": [],
+			"baseSkill": [
+				1131007
+			],
+			"id": "11310007"
+		},
+		{
+			"name": "Modul α: Diachroner Ausbruch",
+			"description": "Im Status „Vollständige Verbrennung“ wird SAMs Brucheffekt um **25%** erhöht. Wenn ein Ziel durch den Einsatz des verstärkten Standardangriffs oder der verstärkten Fertigkeit **Schwächebruch** erleidet, wird die Aktion des Countdowns von Vollständige Verbrennung um **10%** **verzögert**. Dieser Effekt kann während jedes Status Vollständige Verbrennung bis zu **3**-mal ausgelöst werden.",
+			"avatar": 1310,
+			"type": 3,
+			"pos": {
+				"point": "06",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11310/SkillIcon_11310_SkillTree1.png",
+			"shortIcon": "SkillIcon_11310_SkillTree1",
+			"promotion": {
+				"2": 5000,
+				"110181": 3,
+				"110505": 1
+			},
+			"params": [
+				0.25,
+				0.1,
+				3
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [],
+			"baseSkill": [],
+			"id": "11310101"
+		},
+		{
+			"name": "Modul β: Autoreaktive Rüstung",
+			"description": "Wenn SAM sich im Status „Vollständige Verbrennung“ befindet und der Brucheffekt bei **150%**/**300%** oder mehr liegt, wird nach einem Angriff auf Gegner im **Schwächebruch** der WDS-Reduzierungswert des Angriffs in 1-mal **100%**/**150%** **Super-Bruch-SCH** umgewandelt.",
+			"avatar": 1310,
+			"type": 3,
+			"pos": {
+				"point": "07",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11310/SkillIcon_11310_SkillTree2.png",
+			"shortIcon": "SkillIcon_11310_SkillTree2",
+			"promotion": {
+				"2": 20000,
+				"241": 1,
+				"110182": 5,
+				"110505": 1
+			},
+			"params": [
+				1.5,
+				3,
+				1,
+				1.5
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [],
+			"baseSkill": [],
+			"id": "11310102"
+		},
+		{
+			"name": "Modul γ: Kernüberladung",
+			"description": "Für je **10** Pkt. von SAMs ANG, die **1800** überschreiten, wird sein Brucheffekt um **0.8%** erhöht.",
+			"avatar": 1310,
+			"type": 3,
+			"pos": {
+				"point": "08",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/skillicons/avatar/11310/SkillIcon_11310_SkillTree3.png",
+			"shortIcon": "SkillIcon_11310_SkillTree3",
+			"promotion": {
+				"2": 160000,
+				"241": 1,
+				"110183": 8,
+				"110505": 1
+			},
+			"params": [
+				1800,
+				10,
+				0.007999999
+			],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [],
+			"baseSkill": [],
+			"id": "11310103"
+		},
+		{
+			"name": "Bruch-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "09",
+				"prePoint": []
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 2500,
+				"114011": 2
+			},
+			"params": [],
+			"requiredLevel": 1,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "11310201"
+		},
+		{
+			"name": "Effekt-WDS-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "10",
+				"prePoint": [
+					11310101
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 5000,
+				"110181": 3,
+				"114011": 6
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 2,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.04
+				}
+			],
+			"baseSkill": [],
+			"id": "11310202"
+		},
+		{
+			"name": "Bruch-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "11",
+				"prePoint": [
+					11310202
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 10000,
+				"110182": 3,
+				"114012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.053
+				}
+			],
+			"baseSkill": [],
+			"id": "11310203"
+		},
+		{
+			"name": "GES-Erhöhung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "12",
+				"prePoint": [
+					11310203
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+			"shortIcon": "IconSpeed",
+			"promotion": {
+				"2": 10000,
+				"110182": 3,
+				"114012": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 3,
+			"status": [
+				{
+					"PropertyType": "SpeedDelta",
+					"Value": 2
+				}
+			],
+			"baseSkill": [],
+			"id": "11310204"
+		},
+		{
+			"name": "Bruch-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "13",
+				"prePoint": [
+					11310102
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 20000,
+				"110182": 5,
+				"114012": 4
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 4,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "11310205"
+		},
+		{
+			"name": "Effekt-WDS-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "14",
+				"prePoint": [
+					11310205
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 45000,
+				"110183": 3,
+				"114013": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.06
+				}
+			],
+			"baseSkill": [],
+			"id": "11310206"
+		},
+		{
+			"name": "Bruch-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "15",
+				"prePoint": [
+					11310206
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 45000,
+				"110183": 3,
+				"114013": 3
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 5,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "11310207"
+		},
+		{
+			"name": "GES-Erhöhung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "16",
+				"prePoint": [
+					11310103
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconSpeed.png",
+			"shortIcon": "IconSpeed",
+			"promotion": {
+				"2": 160000,
+				"110183": 8,
+				"114013": 8
+			},
+			"params": [],
+			"requiredLevel": 0,
+			"requiredPromotion": 6,
+			"status": [
+				{
+					"PropertyType": "SpeedDelta",
+					"Value": 3
+				}
+			],
+			"baseSkill": [],
+			"id": "11310208"
+		},
+		{
+			"name": "Effekt-WDS-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "17",
+				"prePoint": [
+					11310208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconStatusResistance.png",
+			"shortIcon": "IconStatusResistance",
+			"promotion": {
+				"2": 160000,
+				"110183": 8,
+				"114013": 8
+			},
+			"params": [],
+			"requiredLevel": 75,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "StatusResistanceBase",
+					"Value": 0.08
+				}
+			],
+			"baseSkill": [],
+			"id": "11310209"
+		},
+		{
+			"name": "Bruch-Verstärkung",
+			"description": "",
+			"avatar": 1310,
+			"type": 1,
+			"pos": {
+				"point": "18",
+				"prePoint": [
+					11310208
+				]
+			},
+			"icon": "spriteoutput/ui/avatar/icon/IconBreakUp.png",
+			"shortIcon": "IconBreakUp",
+			"promotion": {
+				"2": 160000,
+				"110183": 8,
+				"114013": 8
+			},
+			"params": [],
+			"requiredLevel": 80,
+			"requiredPromotion": 0,
+			"status": [
+				{
+					"PropertyType": "BreakDamageAddedRatioBase",
+					"Value": 0.107
+				}
+			],
+			"baseSkill": [],
+			"id": "11310210"
+		}
+	],
+	"ranks": [
+		{
+			"name": "Im geröteten Kokon schlief ich einst",
+			"description": "Beim Einsatz der verstärkten Fertigkeit werden **1[i]%** der VTD des Ziels ignoriert und keine Fertigkeitspunkte verbraucht.",
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Rank1.png",
+			"rankIcon": "spriteoutput/textures/1310/1310_Rank_1.png",
+			"shortIcon": "SkillIcon_1310_Rank1",
+			"params": [
+				0.15
+			],
+			"skillUpgrades": {},
+			"id": "131001"
+		},
+		{
+			"name": "Fall aus zerbrochenem Himmel",
+			"description": "Wenn im Status „Vollständige Verbrennung“ durch den Einsatz des verstärkten Standardangriffs oder der verstärkten Fertigkeit ein Gegner besiegt wird oder **Schwächebruch** erleidet, erhält SAM sofort eine **zusätzliche Runde**. Dieser Effekt kann nach **2[i]** Rd. erneut ausgelöst werden.",
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Rank2.png",
+			"rankIcon": "spriteoutput/textures/1310/1310_Rank_2.png",
+			"shortIcon": "SkillIcon_1310_Rank2",
+			"params": [
+				1,
+				1
+			],
+			"skillUpgrades": {},
+			"id": "131002"
+		},
+		{
+			"name": "Schlummern in der totenstillen Galaxie",
+			"description": "Fertigkeitsstufe +2 bis max. St. **15**. Standardangriff-Stufe +1 bis max. St. **10**.",
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_BP.png",
+			"rankIcon": "spriteoutput/textures/1310/1310_Rank_3.png",
+			"shortIcon": "SkillIcon_1310_BP",
+			"params": [],
+			"skillUpgrades": {
+				"131001": 1,
+				"131002": 2,
+				"131008": 1,
+				"131009": 2
+			},
+			"id": "131003"
+		},
+		{
+			"name": "Ich sehe sie bald, die Flamme des Glühwürmchens",
+			"description": "Erhöht im Status „Vollständige Verbrennung“ SAMs Effekt-WDS um **1[i]%**.",
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Rank4.png",
+			"rankIcon": "spriteoutput/textures/1310/1310_Rank_4.png",
+			"shortIcon": "SkillIcon_1310_Rank4",
+			"params": [
+				0.5
+			],
+			"skillUpgrades": {},
+			"id": "131004"
+		},
+		{
+			"name": "Entfacht aus traumloser Nacht",
+			"description": "Ultimate-Stufe +2 bis max. St. **15**. Talentstufe +2 bis max. St. **15**.",
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Ultra.png",
+			"rankIcon": "spriteoutput/textures/1310/1310_Rank_5.png",
+			"shortIcon": "SkillIcon_1310_Ultra",
+			"params": [],
+			"skillUpgrades": {
+				"131003": 2,
+				"131004": 2
+			},
+			"id": "131005"
+		},
+		{
+			"name": "Erblüht aus endgültigem Morgen",
+			"description": "Erhöht im Status „Vollständige Verbrennung“ SAMs **Feuer-WDS-DUR** um **1[i]%**. Beim Einsatz des verstärkten Standardangriffs und der verstärkten Fertigkeit wird die Schwächebruch-Effizienz um **2[i]%** erhöht.",
+			"icon": "spriteoutput/skillicons/avatar/1310/SkillIcon_1310_Rank6.png",
+			"rankIcon": "spriteoutput/textures/1310/1310_Rank_6.png",
+			"shortIcon": "SkillIcon_1310_Rank6",
+			"params": [
+				0.2,
+				0.5
+			],
+			"skillUpgrades": {},
+			"id": "131006"
+		}
+	],
+	"statsArray": [
+		{
+			"HPBase": 110.88,
+			"HPAdd": 5.544,
+			"AttackBase": 71.28,
+			"AttackAdd": 3.564,
+			"DefenceBase": 105.6,
+			"DefenceAdd": 5.28,
+			"SpeedBase": 104,
+			"SpeedAdd": 0,
+			"AggroBase": 125,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 4000
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 5
+				}
+			],
+			"MaxLevel": 20
+		},
+		{
+			"HPBase": 155.232,
+			"HPAdd": 5.544,
+			"AttackBase": 99.792,
+			"AttackAdd": 3.564,
+			"DefenceBase": 147.84,
+			"DefenceAdd": 5.28,
+			"SpeedBase": 104,
+			"SpeedAdd": 0,
+			"AggroBase": 125,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 8000
+				},
+				{
+					"ItemID": 114011,
+					"ItemNum": 10
+				}
+			],
+			"MaxLevel": 30
+		},
+		{
+			"HPBase": 199.584,
+			"HPAdd": 5.544,
+			"AttackBase": 128.304,
+			"AttackAdd": 3.564,
+			"DefenceBase": 190.08,
+			"DefenceAdd": 5.28,
+			"SpeedBase": 104,
+			"SpeedAdd": 0,
+			"AggroBase": 125,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 16000
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 110422,
+					"ItemNum": 3
+				}
+			],
+			"MaxLevel": 40
+		},
+		{
+			"HPBase": 243.936,
+			"HPAdd": 5.544,
+			"AttackBase": 156.816,
+			"AttackAdd": 3.564,
+			"DefenceBase": 232.32,
+			"DefenceAdd": 5.28,
+			"SpeedBase": 104,
+			"SpeedAdd": 0,
+			"AggroBase": 125,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 40000
+				},
+				{
+					"ItemID": 114012,
+					"ItemNum": 9
+				},
+				{
+					"ItemID": 110422,
+					"ItemNum": 7
+				}
+			],
+			"MaxLevel": 50
+		},
+		{
+			"HPBase": 288.288,
+			"HPAdd": 5.544,
+			"AttackBase": 185.328,
+			"AttackAdd": 3.564,
+			"DefenceBase": 274.56,
+			"DefenceAdd": 5.28,
+			"SpeedBase": 104,
+			"SpeedAdd": 0,
+			"AggroBase": 125,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 80000
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 6
+				},
+				{
+					"ItemID": 110422,
+					"ItemNum": 20
+				}
+			],
+			"MaxLevel": 60
+		},
+		{
+			"HPBase": 332.64,
+			"HPAdd": 5.544,
+			"AttackBase": 213.84,
+			"AttackAdd": 3.564,
+			"DefenceBase": 316.8,
+			"DefenceAdd": 5.28,
+			"SpeedBase": 104,
+			"SpeedAdd": 0,
+			"AggroBase": 125,
+			"PromotionCostList": [
+				{
+					"ItemID": 2,
+					"ItemNum": 160000
+				},
+				{
+					"ItemID": 114013,
+					"ItemNum": 9
+				},
+				{
+					"ItemID": 110422,
+					"ItemNum": 35
+				}
+			],
+			"MaxLevel": 70
+		},
+		{
+			"HPBase": 376.992,
+			"HPAdd": 5.544,
+			"AttackBase": 242.352,
+			"AttackAdd": 3.564,
+			"DefenceBase": 359.04,
+			"DefenceAdd": 5.28,
+			"SpeedBase": 104,
+			"SpeedAdd": 0,
+			"AggroBase": 125,
+			"PromotionCostList": [],
+			"MaxLevel": 80
+		}
+	],
+	"advancement": {
+		"lv0": [
+			{
+				"ItemID": 2,
+				"ItemNum": 4000
+			},
+			{
+				"ItemID": 114011,
+				"ItemNum": 5
+			}
+		],
+		"lv1": [
+			{
+				"ItemID": 2,
+				"ItemNum": 8000
+			},
+			{
+				"ItemID": 114011,
+				"ItemNum": 10
+			}
+		],
+		"lv2": [
+			{
+				"ItemID": 2,
+				"ItemNum": 16000
+			},
+			{
+				"ItemID": 114012,
+				"ItemNum": 6
+			},
+			{
+				"ItemID": 110422,
+				"ItemNum": 3
+			}
+		],
+		"lv3": [
+			{
+				"ItemID": 2,
+				"ItemNum": 40000
+			},
+			{
+				"ItemID": 114012,
+				"ItemNum": 9
+			},
+			{
+				"ItemID": 110422,
+				"ItemNum": 7
+			}
+		],
+		"lv4": [
+			{
+				"ItemID": 2,
+				"ItemNum": 80000
+			},
+			{
+				"ItemID": 114013,
+				"ItemNum": 6
+			},
+			{
+				"ItemID": 110422,
+				"ItemNum": 20
+			}
+		],
+		"lv5": [
+			{
+				"ItemID": 2,
+				"ItemNum": 160000
+			},
+			{
+				"ItemID": 114013,
+				"ItemNum": 9
+			},
+			{
+				"ItemID": 110422,
+				"ItemNum": 35
+			}
+		]
+	},
+	"id": "1310"
+}
