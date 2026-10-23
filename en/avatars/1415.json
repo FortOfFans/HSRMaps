@@ -74,6 +74,10 @@
 					1
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -240,6 +244,10 @@
 					3
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -485,6 +493,10 @@
 					12
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -745,6 +757,10 @@
 					12
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -900,7 +916,11 @@
 			"id": "141506",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Peace at West Wind's End",
@@ -922,7 +942,11 @@
 					30,
 					0.5
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "To Love and Tomorrow ♪",
@@ -991,6 +1015,10 @@
 					0.42
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1127,6 +1155,10 @@
 					12
 				]
 			},
+			"state": 1,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill31",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1282,9 +1314,93 @@
 			"id": "141519",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"141501",
+					"141502",
+					"141503",
+					"141504",
+					"141507",
+					"141506",
+					"141519"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"141508",
+					"141514"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"141501",
+				"141502",
+				"141503",
+				"141504",
+				"141507",
+				"141506",
+				"141519"
+			],
+			"1": [
+				"141508",
+				"141502",
+				"141514",
+				"141504",
+				"141507",
+				"141506",
+				"141519"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"141501",
+					"141502",
+					"141503",
+					"141504",
+					"141507",
+					"141506",
+					"141519"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"141508",
+					"141502",
+					"141514",
+					"141504",
+					"141507",
+					"141506",
+					"141519"
+				],
+				"changed": [
+					"basic",
+					"ultimate"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 201500,

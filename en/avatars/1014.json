@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -245,6 +249,10 @@
 					0.175
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -475,6 +483,10 @@
 					10
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -780,6 +792,10 @@
 					1
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -935,7 +951,11 @@
 			"id": "101406",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Behold, the King of Knights",
@@ -958,7 +978,11 @@
 					2,
 					2
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Release, the Golden Scepter",
@@ -1037,6 +1061,10 @@
 					3.08
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1112,6 +1140,79 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"101401",
+					"101402",
+					"101403",
+					"101404",
+					"101407",
+					"101406"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"101408"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"101401",
+				"101402",
+				"101403",
+				"101404",
+				"101407",
+				"101406"
+			],
+			"1": [
+				"101408",
+				"101402",
+				"101403",
+				"101404",
+				"101407",
+				"101406"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"101401",
+					"101402",
+					"101403",
+					"101404",
+					"101407",
+					"101406"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"101408",
+					"101402",
+					"101403",
+					"101404",
+					"101407",
+					"101406"
+				],
+				"changed": [
+					"basic"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

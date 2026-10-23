@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -260,6 +264,10 @@
 					4
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -490,6 +498,10 @@
 					0.6
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -735,6 +747,10 @@
 					0.25
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -890,7 +906,11 @@
 			"id": "150106",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Content Monetization",
@@ -913,7 +933,11 @@
 					0.5,
 					10
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Bloom! Winner Takes All",
@@ -972,6 +996,10 @@
 					0.7
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1168,6 +1196,10 @@
 					0.125
 				]
 			},
+			"state": 1,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill21",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1362,7 +1394,12 @@
 					1.4,
 					0.7
 				]
-			}
+			},
+			"state": 2,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill12",
+			"hidden": true
 		},
 		{
 			"name": "Signal Overflow: The Great Encore!",
@@ -1471,6 +1508,10 @@
 					2
 				]
 			},
+			"state": 0,
+			"slot": "elation",
+			"kind": "elation",
+			"trigger": "Skill04",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1598,6 +1639,102 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 2,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"150101",
+					"150102",
+					"150103",
+					"150104",
+					"150107",
+					"150120",
+					"150106"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"150108",
+					"150109"
+				],
+				"hidden": false
+			},
+			{
+				"state": 2,
+				"skills": [
+					"150110"
+				],
+				"hidden": true
+			}
+		],
+		"resolved": {
+			"0": [
+				"150101",
+				"150102",
+				"150103",
+				"150104",
+				"150107",
+				"150120",
+				"150106"
+			],
+			"1": [
+				"150108",
+				"150109",
+				"150103",
+				"150104",
+				"150107",
+				"150120",
+				"150106"
+			],
+			"2": [
+				"150110",
+				"150109",
+				"150103",
+				"150104",
+				"150107",
+				"150120",
+				"150106"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"150101",
+					"150102",
+					"150103",
+					"150104",
+					"150107",
+					"150120",
+					"150106"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"150108",
+					"150109",
+					"150103",
+					"150104",
+					"150107",
+					"150120",
+					"150106"
+				],
+				"changed": [
+					"basic",
+					"skill"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 180000,

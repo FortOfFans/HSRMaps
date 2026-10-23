@@ -94,6 +94,10 @@
 					0.3
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -245,6 +249,10 @@
 					1
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -520,6 +528,10 @@
 					4
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -795,6 +807,10 @@
 					25
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -950,7 +966,11 @@
 			"id": "140106",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Vibe Checker",
@@ -976,7 +996,11 @@
 					0.3,
 					25
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Hear Me Out",
@@ -1070,6 +1094,10 @@
 					0.5
 				]
 			},
+			"state": 1,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill21",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1209,6 +1237,79 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"140101",
+					"140102",
+					"140103",
+					"140104",
+					"140107",
+					"140106"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"140109"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"140101",
+				"140102",
+				"140103",
+				"140104",
+				"140107",
+				"140106"
+			],
+			"1": [
+				"140101",
+				"140109",
+				"140103",
+				"140104",
+				"140107",
+				"140106"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"140101",
+					"140102",
+					"140103",
+					"140104",
+					"140107",
+					"140106"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"140101",
+					"140109",
+					"140103",
+					"140104",
+					"140107",
+					"140106"
+				],
+				"changed": [
+					"skill"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

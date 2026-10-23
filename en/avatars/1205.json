@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -245,6 +249,10 @@
 					0.54
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -535,6 +543,10 @@
 					0.9
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -780,6 +792,10 @@
 					1.375
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -935,7 +951,11 @@
 			"id": "120506",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Karma Wind",
@@ -957,7 +977,11 @@
 					0.4,
 					0.2
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Forest of Swords",
@@ -1046,6 +1070,10 @@
 					0.56
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1121,6 +1149,79 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"120501",
+					"120502",
+					"120503",
+					"120504",
+					"120507",
+					"120506"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"120508"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"120501",
+				"120502",
+				"120503",
+				"120504",
+				"120507",
+				"120506"
+			],
+			"1": [
+				"120508",
+				"120502",
+				"120503",
+				"120504",
+				"120507",
+				"120506"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"120501",
+					"120502",
+					"120503",
+					"120504",
+					"120507",
+					"120506"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"120508",
+					"120502",
+					"120503",
+					"120504",
+					"120507",
+					"120506"
+				],
+				"changed": [
+					"basic"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

@@ -64,6 +64,10 @@
 					0.7
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -230,6 +234,10 @@
 					0.5
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -490,6 +498,10 @@
 					20
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -750,6 +762,10 @@
 					0.5
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -905,7 +921,11 @@
 			"id": "140406",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Cage of Broken Lance",
@@ -930,7 +950,11 @@
 					1,
 					50
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Kingslayer Be King",
@@ -1024,6 +1048,10 @@
 					0.35
 				]
 			},
+			"state": 1,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill21",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1254,6 +1282,10 @@
 					150
 				]
 			},
+			"state": 2,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill22",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1393,6 +1425,109 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 2,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"140401",
+					"140402",
+					"140403",
+					"140404",
+					"140407",
+					"140406"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"140409"
+				],
+				"hidden": false
+			},
+			{
+				"state": 2,
+				"skills": [
+					"140411"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"140401",
+				"140402",
+				"140403",
+				"140404",
+				"140407",
+				"140406"
+			],
+			"1": [
+				"140401",
+				"140409",
+				"140403",
+				"140404",
+				"140407",
+				"140406"
+			],
+			"2": [
+				"140401",
+				"140411",
+				"140403",
+				"140404",
+				"140407",
+				"140406"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"140401",
+					"140402",
+					"140403",
+					"140404",
+					"140407",
+					"140406"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"140401",
+					"140409",
+					"140403",
+					"140404",
+					"140407",
+					"140406"
+				],
+				"changed": [
+					"skill"
+				]
+			},
+			{
+				"index": 2,
+				"level": 2,
+				"skills": [
+					"140401",
+					"140411",
+					"140403",
+					"140404",
+					"140407",
+					"140406"
+				],
+				"changed": [
+					"skill"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

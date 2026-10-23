@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -230,6 +234,10 @@
 					2
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -475,6 +483,10 @@
 					8
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -720,6 +732,10 @@
 					12
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1010,6 +1026,10 @@
 					0.2
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1165,7 +1185,11 @@
 			"id": "140806",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Beginning of the End",
@@ -1189,7 +1213,11 @@
 					25,
 					1
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Creation: Bloodthorn Ferry",
@@ -1258,6 +1286,10 @@
 					2
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1454,6 +1486,10 @@
 					0.2
 				]
 			},
+			"state": 1,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill21",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1714,6 +1750,10 @@
 					14.625
 				]
 			},
+			"state": 2,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill22",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1853,6 +1893,119 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 2,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"140801",
+					"140802",
+					"140803",
+					"140804",
+					"140805",
+					"140807",
+					"140806"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"140808",
+					"140809"
+				],
+				"hidden": false
+			},
+			{
+				"state": 2,
+				"skills": [
+					"140811"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"140801",
+				"140802",
+				"140803",
+				"140804",
+				"140805",
+				"140807",
+				"140806"
+			],
+			"1": [
+				"140808",
+				"140809",
+				"140803",
+				"140804",
+				"140805",
+				"140807",
+				"140806"
+			],
+			"2": [
+				"140808",
+				"140811",
+				"140803",
+				"140804",
+				"140805",
+				"140807",
+				"140806"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"140801",
+					"140802",
+					"140803",
+					"140804",
+					"140805",
+					"140807",
+					"140806"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"140808",
+					"140809",
+					"140803",
+					"140804",
+					"140805",
+					"140807",
+					"140806"
+				],
+				"changed": [
+					"basic",
+					"skill"
+				]
+			},
+			{
+				"index": 2,
+				"level": 2,
+				"skills": [
+					"140808",
+					"140811",
+					"140803",
+					"140804",
+					"140805",
+					"140807",
+					"140806"
+				],
+				"changed": [
+					"basic",
+					"skill"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

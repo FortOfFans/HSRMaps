@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -275,6 +279,10 @@
 					0.5
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -475,6 +483,10 @@
 					2.5
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -690,6 +702,10 @@
 					0.4
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -845,7 +861,11 @@
 			"id": "122506",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Percipient Shine",
@@ -869,7 +889,11 @@
 					2,
 					0.4
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Fiery Caress",
@@ -928,6 +952,10 @@
 					0.7
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1003,6 +1031,79 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"122501",
+					"122502",
+					"122503",
+					"122504",
+					"122507",
+					"122506"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"122508"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"122501",
+				"122502",
+				"122503",
+				"122504",
+				"122507",
+				"122506"
+			],
+			"1": [
+				"122508",
+				"122502",
+				"122503",
+				"122504",
+				"122507",
+				"122506"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"122501",
+					"122502",
+					"122503",
+					"122504",
+					"122507",
+					"122506"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"122508",
+					"122502",
+					"122503",
+					"122504",
+					"122507",
+					"122506"
+				],
+				"changed": [
+					"basic"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

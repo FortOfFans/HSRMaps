@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -200,6 +204,10 @@
 					1.5625
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -426,6 +434,10 @@
 					1.89
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -637,6 +649,10 @@
 					2
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -788,7 +804,11 @@
 			"id": "800206",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Immortal Third Strike",
@@ -809,7 +829,11 @@
 				"lv1": [
 					0.15
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Blowout: Farewell Hit",
@@ -873,6 +897,10 @@
 					5.25
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "ultimate",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1084,6 +1112,10 @@
 					1.89
 				]
 			},
+			"state": 1,
+			"slot": "skill",
+			"kind": "ultimate",
+			"trigger": "Skill21",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1219,6 +1251,81 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"800201",
+					"800202",
+					"800203",
+					"800204",
+					"800207",
+					"800206"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"800208",
+					"800209"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"800201",
+				"800202",
+				"800203",
+				"800204",
+				"800207",
+				"800206"
+			],
+			"1": [
+				"800208",
+				"800209",
+				"800203",
+				"800204",
+				"800207",
+				"800206"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"800201",
+					"800202",
+					"800203",
+					"800204",
+					"800207",
+					"800206"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"800208",
+					"800209",
+					"800203",
+					"800204",
+					"800207",
+					"800206"
+				],
+				"changed": [
+					"basic",
+					"skill"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 192000,

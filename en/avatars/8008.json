@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -215,6 +219,10 @@
 					0.1
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -426,6 +434,10 @@
 					0.4
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -667,6 +679,10 @@
 					760
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -818,7 +834,11 @@
 			"id": "800806",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Memories Back as Echoes",
@@ -841,7 +861,11 @@
 					0.5,
 					1
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Together, We Script Tomorrow!",
@@ -910,6 +934,11 @@
 					0.1
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1016,6 +1045,11 @@
 				"lv14": [],
 				"lv15": []
 			},
+			"state": 1,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill21",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1151,6 +1185,65 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": false,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"800801",
+					"800802",
+					"800803",
+					"800804",
+					"800807",
+					"800806"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"800808",
+					"800809"
+				],
+				"hidden": true
+			}
+		],
+		"resolved": {
+			"0": [
+				"800801",
+				"800802",
+				"800803",
+				"800804",
+				"800807",
+				"800806"
+			],
+			"1": [
+				"800808",
+				"800809",
+				"800803",
+				"800804",
+				"800807",
+				"800806"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"800801",
+					"800802",
+					"800803",
+					"800804",
+					"800807",
+					"800806"
+				],
+				"changed": []
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 161200,

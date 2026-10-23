@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -230,6 +234,10 @@
 					4
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -426,6 +434,10 @@
 					2.4
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -622,6 +634,10 @@
 					0.9
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -773,7 +789,11 @@
 			"id": "120106",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Game Solitaire",
@@ -794,7 +814,11 @@
 				"lv1": [
 					2
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Cherry on Top!",
@@ -853,6 +877,10 @@
 					1.4
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -928,6 +956,79 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"120101",
+					"120102",
+					"120103",
+					"120104",
+					"120107",
+					"120106"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"120108"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"120101",
+				"120102",
+				"120103",
+				"120104",
+				"120107",
+				"120106"
+			],
+			"1": [
+				"120108",
+				"120102",
+				"120103",
+				"120104",
+				"120107",
+				"120106"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"120101",
+					"120102",
+					"120103",
+					"120104",
+					"120107",
+					"120106"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"120108",
+					"120102",
+					"120103",
+					"120104",
+					"120107",
+					"120106"
+				],
+				"changed": [
+					"basic"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 192000,

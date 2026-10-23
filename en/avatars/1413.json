@@ -64,6 +64,10 @@
 					0.7
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -275,6 +279,10 @@
 					0.1
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -520,6 +528,10 @@
 					0.375
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -810,6 +822,10 @@
 					0.05
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -965,7 +981,11 @@
 			"id": "141306",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Let it Rain Cold On Thee",
@@ -987,7 +1007,11 @@
 					1,
 					1
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Day Gently Slips",
@@ -1126,6 +1150,11 @@
 					0.1
 				]
 			},
+			"state": 1,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill21",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1265,6 +1294,64 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": false,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"141301",
+					"141302",
+					"141303",
+					"141304",
+					"141307",
+					"141306"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"141309"
+				],
+				"hidden": true
+			}
+		],
+		"resolved": {
+			"0": [
+				"141301",
+				"141302",
+				"141303",
+				"141304",
+				"141307",
+				"141306"
+			],
+			"1": [
+				"141301",
+				"141309",
+				"141303",
+				"141304",
+				"141307",
+				"141306"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"141301",
+					"141302",
+					"141303",
+					"141304",
+					"141307",
+					"141306"
+				],
+				"changed": []
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 201500,

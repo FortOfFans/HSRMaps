@@ -64,6 +64,10 @@
 					1.26
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -230,6 +234,10 @@
 					300
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -535,6 +543,10 @@
 					30
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -795,6 +807,10 @@
 					200
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -950,7 +966,11 @@
 			"id": "150306",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Recast Masterwork in Nacre",
@@ -972,7 +992,11 @@
 					2,
 					20
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Brushstroke: Imagenate the Starry Night",
@@ -1061,6 +1085,10 @@
 					0.2
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1212,6 +1240,10 @@
 					224
 				]
 			},
+			"state": 2,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill12",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1393,6 +1425,10 @@
 					0.5
 				]
 			},
+			"state": 0,
+			"slot": "elation",
+			"kind": "elation",
+			"trigger": "Skill04",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1520,6 +1556,116 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 2,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"150301",
+					"150302",
+					"150303",
+					"150304",
+					"150307",
+					"150320",
+					"150306"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"150308"
+				],
+				"hidden": false
+			},
+			{
+				"state": 2,
+				"skills": [
+					"150310"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"150301",
+				"150302",
+				"150303",
+				"150304",
+				"150307",
+				"150320",
+				"150306"
+			],
+			"1": [
+				"150308",
+				"150302",
+				"150303",
+				"150304",
+				"150307",
+				"150320",
+				"150306"
+			],
+			"2": [
+				"150310",
+				"150302",
+				"150303",
+				"150304",
+				"150307",
+				"150320",
+				"150306"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"150301",
+					"150302",
+					"150303",
+					"150304",
+					"150307",
+					"150320",
+					"150306"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"150308",
+					"150302",
+					"150303",
+					"150304",
+					"150307",
+					"150320",
+					"150306"
+				],
+				"changed": [
+					"basic"
+				]
+			},
+			{
+				"index": 2,
+				"level": 2,
+				"skills": [
+					"150310",
+					"150302",
+					"150303",
+					"150304",
+					"150307",
+					"150320",
+					"150306"
+				],
+				"changed": [
+					"basic"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 180000,

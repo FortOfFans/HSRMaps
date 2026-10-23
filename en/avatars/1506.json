@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -215,6 +219,10 @@
 					5
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -505,6 +513,10 @@
 					2
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -780,6 +792,10 @@
 					0.01
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -935,7 +951,11 @@
 			"id": "150606",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "This? Absolute Meta!",
@@ -956,7 +976,11 @@
 				"lv1": [
 					99
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Bonus Stage: αWolf Instant",
@@ -1075,6 +1099,10 @@
 					0.15
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1176,6 +1204,11 @@
 				"lv9": [],
 				"lv10": []
 			},
+			"state": 2,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill12",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1277,6 +1310,11 @@
 				"lv9": [],
 				"lv10": []
 			},
+			"state": 3,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill13",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1378,6 +1416,11 @@
 				"lv9": [],
 				"lv10": []
 			},
+			"state": 4,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill14",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1514,6 +1557,10 @@
 					15
 				]
 			},
+			"state": 0,
+			"slot": "elation",
+			"kind": "elation",
+			"trigger": "Skill04",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1717,6 +1764,10 @@
 					6
 				]
 			},
+			"state": 1,
+			"slot": "elation",
+			"kind": "elation",
+			"trigger": "Skill41",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1844,6 +1895,134 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 4,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"150601",
+					"150602",
+					"150603",
+					"150604",
+					"150607",
+					"150620",
+					"150606"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"150608",
+					"150621"
+				],
+				"hidden": false
+			},
+			{
+				"state": 2,
+				"skills": [
+					"150610"
+				],
+				"hidden": true
+			},
+			{
+				"state": 3,
+				"skills": [
+					"150612"
+				],
+				"hidden": true
+			},
+			{
+				"state": 4,
+				"skills": [
+					"150618"
+				],
+				"hidden": true
+			}
+		],
+		"resolved": {
+			"0": [
+				"150601",
+				"150602",
+				"150603",
+				"150604",
+				"150607",
+				"150620",
+				"150606"
+			],
+			"1": [
+				"150608",
+				"150602",
+				"150603",
+				"150604",
+				"150607",
+				"150621",
+				"150606"
+			],
+			"2": [
+				"150610",
+				"150602",
+				"150603",
+				"150604",
+				"150607",
+				"150621",
+				"150606"
+			],
+			"3": [
+				"150612",
+				"150602",
+				"150603",
+				"150604",
+				"150607",
+				"150621",
+				"150606"
+			],
+			"4": [
+				"150618",
+				"150602",
+				"150603",
+				"150604",
+				"150607",
+				"150621",
+				"150606"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"150601",
+					"150602",
+					"150603",
+					"150604",
+					"150607",
+					"150620",
+					"150606"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"150608",
+					"150602",
+					"150603",
+					"150604",
+					"150607",
+					"150621",
+					"150606"
+				],
+				"changed": [
+					"basic",
+					"elation"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 180000,

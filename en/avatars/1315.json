@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -230,6 +234,10 @@
 					2
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -460,6 +468,10 @@
 					2
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -735,6 +747,10 @@
 					16
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -890,7 +906,11 @@
 			"id": "131506",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "3-9× Smile",
@@ -911,7 +931,11 @@
 				"lv1": [
 					2
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Fanning the Hammer",
@@ -960,6 +984,10 @@
 					3.08
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1035,6 +1063,79 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"131501",
+					"131502",
+					"131503",
+					"131504",
+					"131507",
+					"131506"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"131508"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"131501",
+				"131502",
+				"131503",
+				"131504",
+				"131507",
+				"131506"
+			],
+			"1": [
+				"131508",
+				"131502",
+				"131503",
+				"131504",
+				"131507",
+				"131506"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"131501",
+					"131502",
+					"131503",
+					"131504",
+					"131507",
+					"131506"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"131508",
+					"131502",
+					"131503",
+					"131504",
+					"131507",
+					"131506"
+				],
+				"changed": [
+					"basic"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

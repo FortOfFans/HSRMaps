@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -215,6 +219,10 @@
 					4
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -460,6 +468,10 @@
 					3
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -675,6 +687,10 @@
 					6
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -830,7 +846,11 @@
 			"id": "121306",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Heaven-Quelling Prismadrakon",
@@ -853,7 +873,11 @@
 					20,
 					1.2
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Transcendence",
@@ -902,6 +926,10 @@
 					3.64
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -993,7 +1021,12 @@
 			"id": "121309",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 1,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill21",
+			"hidden": true
 		},
 		{
 			"name": "Divine Spear",
@@ -1052,6 +1085,10 @@
 					0.84
 				]
 			},
+			"state": 2,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill12",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1183,6 +1220,10 @@
 					2.52
 				]
 			},
+			"state": 3,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill13",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1258,6 +1299,140 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 3,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"121301",
+					"121302",
+					"121303",
+					"121304",
+					"121307",
+					"121306"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"121308",
+					"121309"
+				],
+				"hidden": false
+			},
+			{
+				"state": 2,
+				"skills": [
+					"121310"
+				],
+				"hidden": false
+			},
+			{
+				"state": 3,
+				"skills": [
+					"121312"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"121301",
+				"121302",
+				"121303",
+				"121304",
+				"121307",
+				"121306"
+			],
+			"1": [
+				"121308",
+				"121309",
+				"121303",
+				"121304",
+				"121307",
+				"121306"
+			],
+			"2": [
+				"121310",
+				"121309",
+				"121303",
+				"121304",
+				"121307",
+				"121306"
+			],
+			"3": [
+				"121312",
+				"121309",
+				"121303",
+				"121304",
+				"121307",
+				"121306"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"121301",
+					"121302",
+					"121303",
+					"121304",
+					"121307",
+					"121306"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"121308",
+					"121302",
+					"121303",
+					"121304",
+					"121307",
+					"121306"
+				],
+				"changed": [
+					"basic"
+				]
+			},
+			{
+				"index": 2,
+				"level": 2,
+				"skills": [
+					"121310",
+					"121302",
+					"121303",
+					"121304",
+					"121307",
+					"121306"
+				],
+				"changed": [
+					"basic"
+				]
+			},
+			{
+				"index": 3,
+				"level": 3,
+				"skills": [
+					"121312",
+					"121302",
+					"121303",
+					"121304",
+					"121307",
+					"121306"
+				],
+				"changed": [
+					"basic"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

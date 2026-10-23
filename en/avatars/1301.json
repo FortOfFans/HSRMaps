@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -200,6 +204,10 @@
 					2020
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -411,6 +419,10 @@
 					2
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -622,6 +634,10 @@
 					808
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -773,7 +789,11 @@
 			"id": "130106",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Artisan Elixir",
@@ -795,7 +815,11 @@
 					2,
 					0.5
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Nectar Blitz",
@@ -864,6 +888,10 @@
 					2
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -939,6 +967,79 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"130101",
+					"130102",
+					"130103",
+					"130104",
+					"130107",
+					"130106"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"130108"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"130101",
+				"130102",
+				"130103",
+				"130104",
+				"130107",
+				"130106"
+			],
+			"1": [
+				"130108",
+				"130102",
+				"130103",
+				"130104",
+				"130107",
+				"130106"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"130101",
+					"130102",
+					"130103",
+					"130104",
+					"130107",
+					"130106"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"130108",
+					"130102",
+					"130103",
+					"130104",
+					"130107",
+					"130106"
+				],
+				"changed": [
+					"basic"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 192000,

@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -290,6 +294,10 @@
 					2
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -520,6 +528,10 @@
 					10
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -765,6 +777,10 @@
 					0.1
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1040,6 +1056,10 @@
 					2.4
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1195,7 +1215,11 @@
 			"id": "150906",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Enkidu",
@@ -1218,7 +1242,11 @@
 					2,
 					3
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Halfhearted Blow",
@@ -1266,9 +1294,76 @@
 				"lv10": [
 					1.4
 				]
-			}
+			},
+			"state": 1,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill21",
+			"hidden": true
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": false,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"150901",
+					"150902",
+					"150903",
+					"150904",
+					"150905",
+					"150907",
+					"150906"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"150909"
+				],
+				"hidden": true
+			}
+		],
+		"resolved": {
+			"0": [
+				"150901",
+				"150902",
+				"150903",
+				"150904",
+				"150905",
+				"150907",
+				"150906"
+			],
+			"1": [
+				"150901",
+				"150909",
+				"150903",
+				"150904",
+				"150905",
+				"150907",
+				"150906"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"150901",
+					"150902",
+					"150903",
+					"150904",
+					"150905",
+					"150907",
+					"150906"
+				],
+				"changed": []
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

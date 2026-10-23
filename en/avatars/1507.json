@@ -64,6 +64,10 @@
 					0.7
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -245,6 +249,10 @@
 					0.1
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -550,6 +558,10 @@
 					2
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -765,6 +777,10 @@
 					30
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -920,7 +936,11 @@
 			"id": "150706",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Blade's Reach Spares None",
@@ -942,7 +962,11 @@
 					0.9,
 					2
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "A Tempered Blade Severs Souls",
@@ -991,6 +1015,10 @@
 					1.4
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1127,6 +1155,11 @@
 					0.1
 				]
 			},
+			"state": 1,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill21",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1327,6 +1360,10 @@
 					4.2
 				]
 			},
+			"state": 1,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill31",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1466,6 +1503,82 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"150701",
+					"150702",
+					"150703",
+					"150704",
+					"150707",
+					"150706"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"150708",
+					"150709",
+					"150714"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"150701",
+				"150702",
+				"150703",
+				"150704",
+				"150707",
+				"150706"
+			],
+			"1": [
+				"150708",
+				"150709",
+				"150714",
+				"150704",
+				"150707",
+				"150706"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"150701",
+					"150702",
+					"150703",
+					"150704",
+					"150707",
+					"150706"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"150708",
+					"150702",
+					"150714",
+					"150704",
+					"150707",
+					"150706"
+				],
+				"changed": [
+					"basic",
+					"ultimate"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

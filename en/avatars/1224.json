@@ -74,6 +74,10 @@
 					1
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -240,6 +244,10 @@
 					1
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -466,6 +474,10 @@
 					0.2
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -692,6 +704,10 @@
 					10
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -843,7 +859,11 @@
 			"id": "122406",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Feast in One Go",
@@ -865,7 +885,11 @@
 					3,
 					30
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Brows Be Smitten, Heart Be Bitten",
@@ -944,6 +968,10 @@
 					3
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1019,6 +1047,79 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"122401",
+					"122402",
+					"122403",
+					"122404",
+					"122407",
+					"122406"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"122408"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"122401",
+				"122402",
+				"122403",
+				"122404",
+				"122407",
+				"122406"
+			],
+			"1": [
+				"122408",
+				"122402",
+				"122403",
+				"122404",
+				"122407",
+				"122406"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"122401",
+					"122402",
+					"122403",
+					"122404",
+					"122407",
+					"122406"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"122408",
+					"122402",
+					"122403",
+					"122404",
+					"122407",
+					"122406"
+				],
+				"changed": [
+					"basic"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 192000,

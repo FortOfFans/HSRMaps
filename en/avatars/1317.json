@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -200,6 +204,10 @@
 					1.5
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -430,6 +438,10 @@
 					3
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -705,6 +717,10 @@
 					1
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -860,7 +876,11 @@
 			"id": "131706",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Ninja Dash: By Leaps and Bounds",
@@ -885,7 +905,11 @@
 					10,
 					30
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Ningu: Demonbane Petalblade",
@@ -964,6 +988,11 @@
 					0.5
 				]
 			},
+			"state": 1,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill11",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1095,6 +1124,11 @@
 					0.66
 				]
 			},
+			"state": 2,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill12",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1216,6 +1250,11 @@
 					1.32
 				]
 			},
+			"state": 3,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill13",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1367,6 +1406,10 @@
 					0.5
 				]
 			},
+			"state": 4,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill14",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1442,6 +1485,124 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 4,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"131701",
+					"131702",
+					"131703",
+					"131704",
+					"131707",
+					"131706"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"131708"
+				],
+				"hidden": true
+			},
+			{
+				"state": 2,
+				"skills": [
+					"131710"
+				],
+				"hidden": true
+			},
+			{
+				"state": 3,
+				"skills": [
+					"131712"
+				],
+				"hidden": true
+			},
+			{
+				"state": 4,
+				"skills": [
+					"131718"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"131701",
+				"131702",
+				"131703",
+				"131704",
+				"131707",
+				"131706"
+			],
+			"1": [
+				"131708",
+				"131702",
+				"131703",
+				"131704",
+				"131707",
+				"131706"
+			],
+			"2": [
+				"131710",
+				"131702",
+				"131703",
+				"131704",
+				"131707",
+				"131706"
+			],
+			"3": [
+				"131712",
+				"131702",
+				"131703",
+				"131704",
+				"131707",
+				"131706"
+			],
+			"4": [
+				"131718",
+				"131702",
+				"131703",
+				"131704",
+				"131707",
+				"131706"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"131701",
+					"131702",
+					"131703",
+					"131704",
+					"131707",
+					"131706"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 4,
+				"skills": [
+					"131718",
+					"131702",
+					"131703",
+					"131704",
+					"131707",
+					"131706"
+				],
+				"changed": [
+					"basic"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

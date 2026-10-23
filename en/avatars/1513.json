@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -230,6 +234,10 @@
 					4
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -490,6 +498,10 @@
 					4
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -780,6 +792,10 @@
 					1
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -935,7 +951,11 @@
 			"id": "151306",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Make Waves in Still Waters",
@@ -958,7 +978,11 @@
 					2,
 					20
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Cheers! To Summer's Blaze",
@@ -1052,6 +1076,10 @@
 					0.225
 				]
 			},
+			"state": 0,
+			"slot": "elation",
+			"kind": "elation",
+			"trigger": "Skill04",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1285,6 +1313,10 @@
 					0.225
 				]
 			},
+			"state": 1,
+			"slot": "elation",
+			"kind": "elation",
+			"trigger": "Skill41",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1412,6 +1444,84 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"151301",
+					"151302",
+					"151303",
+					"151304",
+					"151307",
+					"151320",
+					"151306"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"151321"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"151301",
+				"151302",
+				"151303",
+				"151304",
+				"151307",
+				"151320",
+				"151306"
+			],
+			"1": [
+				"151301",
+				"151302",
+				"151303",
+				"151304",
+				"151307",
+				"151321",
+				"151306"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"151301",
+					"151302",
+					"151303",
+					"151304",
+					"151307",
+					"151320",
+					"151306"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"151301",
+					"151302",
+					"151303",
+					"151304",
+					"151307",
+					"151321",
+					"151306"
+				],
+				"changed": [
+					"elation"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 180000,

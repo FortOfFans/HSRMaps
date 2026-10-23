@@ -64,6 +64,10 @@
 					0.7
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -230,6 +234,10 @@
 					0.375
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -490,6 +498,10 @@
 					0
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -735,6 +747,10 @@
 					3
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -890,7 +906,11 @@
 			"id": "140706",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Wail, Death's Herald",
@@ -914,7 +934,11 @@
 					20,
 					0.3
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Boneclaw, Doomdrake's Embrace",
@@ -1008,6 +1032,10 @@
 					0.625
 				]
 			},
+			"state": 1,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill21",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1147,6 +1175,79 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 1,
+		"userFacing": true,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"140701",
+					"140702",
+					"140703",
+					"140704",
+					"140707",
+					"140706"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"140709"
+				],
+				"hidden": false
+			}
+		],
+		"resolved": {
+			"0": [
+				"140701",
+				"140702",
+				"140703",
+				"140704",
+				"140707",
+				"140706"
+			],
+			"1": [
+				"140701",
+				"140709",
+				"140703",
+				"140704",
+				"140707",
+				"140706"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"140701",
+					"140702",
+					"140703",
+					"140704",
+					"140707",
+					"140706"
+				],
+				"changed": []
+			},
+			{
+				"index": 1,
+				"level": 1,
+				"skills": [
+					"140701",
+					"140709",
+					"140703",
+					"140704",
+					"140707",
+					"140706"
+				],
+				"changed": [
+					"skill"
+				]
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 201500,

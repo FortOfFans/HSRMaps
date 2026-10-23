@@ -64,6 +64,10 @@
 					1.4
 				]
 			},
+			"state": 0,
+			"slot": "basic",
+			"kind": "basic",
+			"trigger": "Skill01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -230,6 +234,10 @@
 					1
 				]
 			},
+			"state": 0,
+			"slot": "skill",
+			"kind": "skill",
+			"trigger": "Skill02",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -520,6 +528,10 @@
 					3.6
 				]
 			},
+			"state": 0,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill03",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -735,6 +747,10 @@
 					0.25
 				]
 			},
+			"state": 0,
+			"slot": "talent",
+			"kind": "talent",
+			"trigger": "SkillP01",
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -890,7 +906,11 @@
 			"id": "130806",
 			"params": {
 				"lv1": []
-			}
+			},
+			"state": 0,
+			"slot": "mazeAttack",
+			"kind": "mazeAttack",
+			"trigger": ""
 		},
 		{
 			"name": "Quadrivalent Ascendance",
@@ -912,7 +932,11 @@
 					2,
 					1
 				]
-			}
+			},
+			"state": 0,
+			"slot": "technique",
+			"kind": "technique",
+			"trigger": "SkillMaze"
 		},
 		{
 			"name": "Rainblade",
@@ -1006,6 +1030,11 @@
 					1.44
 				]
 			},
+			"state": 1,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill31",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1236,6 +1265,11 @@
 					1.44
 				]
 			},
+			"state": 2,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill32",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1466,6 +1500,11 @@
 					1.44
 				]
 			},
+			"state": 3,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill33",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1666,6 +1705,11 @@
 					1.44
 				]
 			},
+			"state": 4,
+			"slot": "ultimate",
+			"kind": "ultimate",
+			"trigger": "Skill34",
+			"hidden": true,
 			"promotion": {
 				"lv1": [],
 				"lv2": [
@@ -1805,6 +1849,109 @@
 			}
 		}
 	],
+	"skillStates": {
+		"max": 4,
+		"userFacing": false,
+		"layers": [
+			{
+				"state": 0,
+				"skills": [
+					"130801",
+					"130802",
+					"130803",
+					"130804",
+					"130807",
+					"130806"
+				],
+				"hidden": false
+			},
+			{
+				"state": 1,
+				"skills": [
+					"130814"
+				],
+				"hidden": true
+			},
+			{
+				"state": 2,
+				"skills": [
+					"130815"
+				],
+				"hidden": true
+			},
+			{
+				"state": 3,
+				"skills": [
+					"130816"
+				],
+				"hidden": true
+			},
+			{
+				"state": 4,
+				"skills": [
+					"130817"
+				],
+				"hidden": true
+			}
+		],
+		"resolved": {
+			"0": [
+				"130801",
+				"130802",
+				"130803",
+				"130804",
+				"130807",
+				"130806"
+			],
+			"1": [
+				"130801",
+				"130802",
+				"130814",
+				"130804",
+				"130807",
+				"130806"
+			],
+			"2": [
+				"130801",
+				"130802",
+				"130815",
+				"130804",
+				"130807",
+				"130806"
+			],
+			"3": [
+				"130801",
+				"130802",
+				"130816",
+				"130804",
+				"130807",
+				"130806"
+			],
+			"4": [
+				"130801",
+				"130802",
+				"130817",
+				"130804",
+				"130807",
+				"130806"
+			]
+		},
+		"forms": [
+			{
+				"index": 0,
+				"level": 0,
+				"skills": [
+					"130801",
+					"130802",
+					"130803",
+					"130804",
+					"130807",
+					"130806"
+				],
+				"changed": []
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,
