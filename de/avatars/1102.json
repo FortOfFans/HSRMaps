@@ -848,6 +848,936 @@
 			"trigger": "SkillMaze"
 		}
 	],
+	"enhanced": {
+		"id": "1102",
+		"enhancedId": 1,
+		"season": 3,
+		"activityId": 50100,
+		"trialStageId": 311029,
+		"spNeed": 120,
+		"summary": [
+			"Wenn die LP des angegriffenen Ziels unter einem bestimmten Prozentsatz liegen, löst Seele **automatisch 1-mal einen Angriff durch Fertigkeit** gegen das Ziel aus.",
+			"Nach dem Besiegen eines Gegners **wird der verursachte SCH dieser Einheit erhöht. Dieser Effekt ist stapelbar.**"
+		],
+		"skills": [
+			{
+				"name": "Prügel",
+				"tag": "Einzelangriff",
+				"type": "Standardangriff",
+				"description": "Fügt einem anvisierten Gegner Quanten-SCH in Höhe von ****1[i]%**** von Seeles ANG zu.",
+				"regen": 20,
+				"er": 0,
+				"break": [
+					30,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Normal.png",
+				"shortIcon": "SkillIcon_11102_Normal",
+				"id": "1110201",
+				"params": {
+					"lv1": [
+						0.5
+					],
+					"lv2": [
+						0.6
+					],
+					"lv3": [
+						0.7
+					],
+					"lv4": [
+						0.8
+					],
+					"lv5": [
+						0.9
+					],
+					"lv6": [
+						1
+					],
+					"lv7": [
+						1.1
+					],
+					"lv8": [
+						1.2
+					],
+					"lv9": [
+						1.3
+					],
+					"lv10": [
+						1.4
+					]
+				},
+				"state": 0,
+				"slot": "basic",
+				"kind": "basic",
+				"trigger": "Skill01",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110121,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 6
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 3
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 4
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 3
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 4
+						}
+					]
+				}
+			},
+			{
+				"name": "Ungezückte Klinge",
+				"tag": "Einzelangriff",
+				"type": "Fertigkeit",
+				"description": "Erhöht Seeles GES für **3[i]** Rd. um **2[i]%** und fügt einem anvisierten Gegner Quanten-SCH in Höhe von ****1[i]%**** von Seeles ANG zu.\nWenn der aktuelle LP-Prozentsatz des Angriffsziels nach dem Angriff eines Verbündeten kleiner oder gleich **4[i]%** ist, setzt Seele automatisch 1-mal ihre Fertigkeit gegen dieses Ziel ein. Dieser Einsatz der Fertigkeit verbraucht keine Fertigkeitspunkte und stellt keine Energie wieder her. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden. Die Auslösungsanzahl wird zu Beginn von Seeles Runde zurückgesetzt. Wenn es kein angreifbares Ziel gibt, wird der Gegner mit den niedrigsten LP angegriffen.",
+				"regen": 30,
+				"er": 0,
+				"break": [
+					60,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_BP.png",
+				"shortIcon": "SkillIcon_11102_BP",
+				"id": "1110202",
+				"params": {
+					"lv1": [
+						1.8,
+						0.25,
+						3,
+						0.5
+					],
+					"lv2": [
+						1.98,
+						0.25,
+						3,
+						0.5
+					],
+					"lv3": [
+						2.16,
+						0.25,
+						3,
+						0.5
+					],
+					"lv4": [
+						2.34,
+						0.25,
+						3,
+						0.5
+					],
+					"lv5": [
+						2.52,
+						0.25,
+						3,
+						0.5
+					],
+					"lv6": [
+						2.7,
+						0.25,
+						3,
+						0.5
+					],
+					"lv7": [
+						2.925,
+						0.25,
+						3,
+						0.5
+					],
+					"lv8": [
+						3.15,
+						0.25,
+						3,
+						0.5
+					],
+					"lv9": [
+						3.375,
+						0.25,
+						3,
+						0.5
+					],
+					"lv10": [
+						3.6,
+						0.25,
+						3,
+						0.5
+					],
+					"lv11": [
+						3.78,
+						0.25,
+						3,
+						0.5
+					],
+					"lv12": [
+						3.96,
+						0.25,
+						3,
+						0.5
+					],
+					"lv13": [
+						4.14,
+						0.25,
+						3,
+						0.5
+					],
+					"lv14": [
+						4.32,
+						0.25,
+						3,
+						0.5
+					],
+					"lv15": [
+						4.5,
+						0.25,
+						3,
+						0.5
+					]
+				},
+				"state": 0,
+				"slot": "skill",
+				"kind": "skill",
+				"trigger": "Skill02",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 2500
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 3
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110121,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 6
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 3
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 4
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 30000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 7
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 6
+						}
+					],
+					"lv7": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 3
+						}
+					],
+					"lv8": [
+						{
+							"ItemID": 2,
+							"ItemNum": 80000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 4
+						}
+					],
+					"lv9": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						}
+					],
+					"lv10": [
+						{
+							"ItemID": 2,
+							"ItemNum": 300000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 14
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						}
+					]
+				}
+			},
+			{
+				"name": "Schmetterlingssturm",
+				"tag": "Einzelangriff",
+				"type": "Ultimate",
+				"description": "Tritt in den Verstärkten Zustand ein und fügt einem anvisierten Gegner Quanten-SCH in Höhe von ****1[i]%**** von Seeles ANG zu.",
+				"regen": 5,
+				"er": 120,
+				"break": [
+					90,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Ultra.png",
+				"shortIcon": "SkillIcon_11102_Ultra",
+				"id": "1110203",
+				"params": {
+					"lv1": [
+						3.6
+					],
+					"lv2": [
+						3.96
+					],
+					"lv3": [
+						4.32
+					],
+					"lv4": [
+						4.68
+					],
+					"lv5": [
+						5.04
+					],
+					"lv6": [
+						5.4
+					],
+					"lv7": [
+						5.85
+					],
+					"lv8": [
+						6.3
+					],
+					"lv9": [
+						6.75
+					],
+					"lv10": [
+						7.2
+					],
+					"lv11": [
+						7.56
+					],
+					"lv12": [
+						7.92
+					],
+					"lv13": [
+						8.28
+					],
+					"lv14": [
+						8.64
+					],
+					"lv15": [
+						9
+					]
+				},
+				"state": 0,
+				"slot": "ultimate",
+				"kind": "ultimate",
+				"trigger": "Skill03",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 2500
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 3
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110121,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 6
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 3
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 4
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 30000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 7
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 6
+						}
+					],
+					"lv7": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 3
+						}
+					],
+					"lv8": [
+						{
+							"ItemID": 2,
+							"ItemNum": 80000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 4
+						}
+					],
+					"lv9": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						}
+					],
+					"lv10": [
+						{
+							"ItemID": 2,
+							"ItemNum": 300000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 14
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						}
+					]
+				}
+			},
+			{
+				"name": "Erneute Erscheinung",
+				"tag": "Verstärkung",
+				"type": "Talent",
+				"description": "Tritt beim Besiegen eines Gegners durch Standardangriff, Fertigkeit oder Ultimate in den Verstärkten Zustand ein und erhält sofort eine **zusätzliche Runde**. Während des Verstärkten Zustands wird Seeles verursachter SCH für **2[i]** Rd. um ****1[i]%**** erhöht.\nGegner, die in der **zusätzlichen Runde** des Talents „Erneute Erscheinung“ besiegt werden, lösen dieses Talent nicht aus.",
+				"regen": 0,
+				"er": 0,
+				"break": [
+					0,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Passive.png",
+				"shortIcon": "SkillIcon_11102_Passive",
+				"id": "1110204",
+				"params": {
+					"lv1": [
+						0.4,
+						3
+					],
+					"lv2": [
+						0.44,
+						3
+					],
+					"lv3": [
+						0.48,
+						3
+					],
+					"lv4": [
+						0.52,
+						3
+					],
+					"lv5": [
+						0.56,
+						3
+					],
+					"lv6": [
+						0.6,
+						3
+					],
+					"lv7": [
+						0.65,
+						3
+					],
+					"lv8": [
+						0.7,
+						3
+					],
+					"lv9": [
+						0.75,
+						3
+					],
+					"lv10": [
+						0.8,
+						3
+					],
+					"lv11": [
+						0.84,
+						3
+					],
+					"lv12": [
+						0.88,
+						3
+					],
+					"lv13": [
+						0.92,
+						3
+					],
+					"lv14": [
+						0.96,
+						3
+					],
+					"lv15": [
+						1,
+						3
+					]
+				},
+				"state": 0,
+				"slot": "talent",
+				"kind": "talent",
+				"trigger": "SkillP01",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 2500
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 3
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110121,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 6
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 3
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 4
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 30000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 7
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 6
+						}
+					],
+					"lv7": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 3
+						}
+					],
+					"lv8": [
+						{
+							"ItemID": 2,
+							"ItemNum": 80000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 4
+						}
+					],
+					"lv9": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						}
+					],
+					"lv10": [
+						{
+							"ItemID": 2,
+							"ItemNum": 300000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 14
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						}
+					]
+				}
+			},
+			{
+				"name": "Angriff",
+				"tag": "",
+				"type": "",
+				"description": "Greift den Gegner an und reduziert nach Kampfeintritt den WDS des Ziels gegen den entsprechenden Typ.",
+				"regen": 0,
+				"er": 0,
+				"break": [
+					30,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Normal.png",
+				"shortIcon": "SkillIcon_11102_Normal",
+				"id": "1110206",
+				"params": {
+					"lv1": []
+				},
+				"state": 0,
+				"slot": "mazeAttack",
+				"kind": "mazeAttack",
+				"trigger": ""
+			},
+			{
+				"name": "Phantomillusion",
+				"tag": "Verstärkung",
+				"type": "Technik",
+				"description": "Nach dem Einsatz der Technik erhält Seele für **1[i]** Sek. Tarnung. Während Tarnung aktiv ist, ist Seele für Gegner unsichtbar. Wenn sie durch einen aktiven Angriff auf Gegner in den Kampf eintritt, tritt Seele sofort in den verstärkten Zustand ein und fügt einem zufälligen Gegner 1-mal Quanten-SCH in Höhe des SCH-Multiplikators von Seeles Fertigkeits-SCH zu. Dieser SCH ist garantiert ein Kritischer Treffer.",
+				"regen": 0,
+				"er": 0,
+				"break": [
+					0,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Maze.png",
+				"shortIcon": "SkillIcon_11102_Maze",
+				"id": "1110207",
+				"params": {
+					"lv1": [
+						20
+					]
+				},
+				"state": 0,
+				"slot": "technique",
+				"kind": "technique",
+				"trigger": "SkillMaze"
+			}
+		],
+		"rankIds": [
+			"1110201",
+			"1110202",
+			"1110203",
+			"1110204",
+			"1110205",
+			"1110206"
+		],
+		"skillChanges": [
+			{
+				"id": "1110202",
+				"baseId": "110202",
+				"before": "Erhöht Seeles GES für **3[i]** Rd. um **2[i]%** und fügt einem anvisierten Gegner Quanten-SCH in Höhe von **1[i]%** von Seeles ANG zu.",
+				"after": "Erhöht Seeles GES für ****3[i]**** Rd. um **2[i]%** und fügt einem anvisierten Gegner Quanten-SCH in Höhe von ****1[i]%**** von Seeles ANG zu.\n**Wenn der aktuelle LP-Prozentsatz des Angriffsziels nach dem Angriff eines Verbündeten kleiner oder gleich **4[i]%** ist, setzt Seele automatisch 1-mal ihre Fertigkeit gegen dieses Ziel ein. Dieser Einsatz der Fertigkeit verbraucht keine Fertigkeitspunkte und stellt keine Energie wieder her. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden. Die Auslösungsanzahl wird zu Beginn von Seeles Runde zurückgesetzt. Wenn es kein angreifbares Ziel gibt, wird der Gegner mit den niedrigsten LP angegriffen.**",
+				"simpleBefore": "Fügt einem Gegner Quanten-SCH zu und erhöht die eigene GES.",
+				"simpleAfter": "Fügt einem Gegner **massiven** Quanten-SCH zu und erhöht die eigene GES. **Wenn der aktuelle LP-Prozentsatz des Angriffsziels nach dem Angriff eines Verbündeten kleiner oder gleich **4[i]%** ist, setzt Seele automatisch 1-mal ihre Fertigkeit gegen dieses Ziel ein.**",
+				"comments": []
+			},
+			{
+				"id": "1110203",
+				"baseId": "110203",
+				"before": "Tritt in den Verstärkten Zustand ein und fügt einem anvisierten Gegner Quanten-SCH in Höhe von **1[i]%** von Seeles ANG zu.",
+				"after": "Tritt in den Verstärkten Zustand ein und fügt einem anvisierten Gegner Quanten-SCH in Höhe von ****1[i]%**** von Seeles ANG zu.",
+				"simpleBefore": "Tritt in den Verstärkten Zustand ein und fügt einem Gegner massiven Quanten-SCH zu.",
+				"simpleAfter": "Tritt in den Verstärkten Zustand ein und fügt einem Gegner massiven Quanten-SCH zu.",
+				"comments": []
+			},
+			{
+				"id": "1110204",
+				"baseId": "110204",
+				"before": "Tritt beim Besiegen eines Gegners durch Standardangriff, Fertigkeit oder Ultimate in den Verstärkten Zustand ein und erhält sofort eine zusätzliche Runde. Während des Verstärkten Zustands wird Seeles durch Angriffe verursachter SCH für **2[i]** Rd. um **1[i]%** erhöht.\nGegner, die in der zusätzlichen Runde des Talents „Erneute Erscheinung“ besiegt werden, lösen dieses Talent nicht aus.",
+				"after": "Tritt beim Besiegen eines Gegners durch Standardangriff, Fertigkeit oder Ultimate in den Verstärkten Zustand ein und erhält sofort eine zusätzliche Runde. Während des Verstärkten Zustands wird Seeles verursachter SCH für ****2[i]**** Rd. um **1[i]%** erhöht.\nGegner, die in der zusätzlichen Runde des Talents „Erneute Erscheinung“ besiegt werden, lösen dieses Talent nicht aus.",
+				"simpleBefore": "Tritt beim Besiegen eines Gegners durch Standardangriff, Fertigkeit oder Ultimate in den Verstärkten Zustand ein und erhält eine zusätzliche Runde. Während des Verstärkten Zustands wird der verursachte SCH dieser Einheit erhöht.",
+				"simpleAfter": "Tritt beim Besiegen eines Gegners durch Standardangriff, Fertigkeit oder Ultimate in den Verstärkten Zustand ein und erhält eine zusätzliche Runde. Während des Verstärkten Zustands wird der verursachte SCH dieser Einheit erhöht.",
+				"comments": []
+			},
+			{
+				"id": "1110207",
+				"baseId": "110207",
+				"before": "Nach dem Einsatz der Technik erhält Seele für **1[i]** Sek. Tarnung. Während Tarnung aktiv ist, ist Seele für Gegner unsichtbar. Wenn sie durch einen aktiven Angriff auf Gegner in den Kampf eintritt, tritt Seele sofort in den Verstärkten Zustand ein.",
+				"after": "Nach dem Einsatz der Technik erhält Seele für **1[i]** Sek. Tarnung. Während Tarnung aktiv ist, ist Seele für Gegner unsichtbar. Wenn sie durch einen aktiven Angriff auf Gegner in den Kampf eintritt, tritt Seele sofort in den verstärkten Zustand ein und fügt einem zufälligen Gegner 1-mal Quanten-SCH in Höhe des SCH-Multiplikators von Seeles Fertigkeits-SCH zu. **Dieser SCH ist garantiert ein Kritischer Treffer.**",
+				"simpleBefore": "Tritt in den Status Tarnung ein. Nachdem diese Einheit durch einen Angriff auf Gegner in den Kampf eingetreten ist, tritt sie sofort in den Verstärkten Zustand ein.",
+				"simpleAfter": "Tritt in den Status Tarnung ein. Nachdem diese Einheit durch einen Angriff auf Gegner in den Kampf eingetreten ist, tritt sie sofort in den Verstärkten Zustand ein und fügt einem zufälligen Ziel massiven Quanten-SCH zu, der **garantiert ein Kritischer Treffer** ist.",
+				"comments": []
+			}
+		],
+		"rankChanges": [
+			{
+				"id": "1110201",
+				"baseId": "110201",
+				"before": "Wenn Seele einem Gegner mit LP-Prozentsatz **1[i]%** oder niedriger SCH zufügt, steigt ihre KRIT-Rate um **2[i]%**.",
+				"after": "Wenn Seele einem Gegner mit LP-Prozentsatz **1[i]%** oder niedriger SCH zufügt, wird ihre KRIT-Rate um **2[i]%** erhöht und ****3[i]%** der VTD des Ziels ignoriert**.",
+				"comments": []
+			},
+			{
+				"id": "1110206",
+				"baseId": "110206",
+				"before": "Ein Angriff mit dem Ultimate verursacht beim getroffenen Gegner für **2[i]** Rd. den Status „Schmetterlingssturm“. Gegner im Schmetterlingssturm erleiden bei Treffern 1-mal zusätzlichen Quanten-SCH in Höhe von **1[i]%** von Seeles Ultimate-SCH. Wenn ein anderer Verbündeter das Ziel durch den zusätzlichen SCH von Schmetterlingssturm besiegt, wird Seeles Talent nicht ausgelöst.\nIst Seele handlungsunfähig, wird der Status Schmetterlingssturm vom Gegner entfernt.",
+				"after": "Ein Angriff mit dem Ultimate verursacht beim Ziel für ****2[i]**** Rd. den Status „Schmetterlingssturm“. Gegner im Schmetterlingssturm erleiden bei Treffern 1-mal zusätzlich **Tatsächlichen SCH** in Höhe von ****1[i]%**** von Seeles in diesem Einsatz verursachtem Ultimate-SCH. **Wenn ein Gegner im Status Schmetterlingssturm von einer beliebigen Einheit besiegt wird, wird auch Seeles Talent ausgelöst.**\nIst Seele handlungsunfähig, wird der Status Schmetterlingssturm vom Gegner entfernt.",
+				"comments": []
+			}
+		],
+		"traceChanges": [
+			{
+				"id": "11102101",
+				"baseId": "1102101",
+				"before": "Liegt der LP-Prozentsatz bei **1[i]%** oder niedriger, sinkt die Chance, von Gegnern angegriffen zu werden.",
+				"after": "**Erhöht den verursachten SCH dieser Einheit beim Besiegen eines Gegners um **1[i]%**. Dieser Effekt ist bis zu **2[i]**-fach stapelbar und hält **3[i]** Rd. an.**",
+				"comments": []
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

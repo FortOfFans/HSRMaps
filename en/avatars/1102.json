@@ -848,6 +848,936 @@
 			"trigger": "SkillMaze"
 		}
 	],
+	"enhanced": {
+		"id": "1102",
+		"enhancedId": 1,
+		"season": 3,
+		"activityId": 50100,
+		"trialStageId": 311029,
+		"spNeed": 120,
+		"summary": [
+			"When an attack target's HP falls below a certain percentage, Seele **automatically triggers 1 Skill attack** against them",
+			"After defeating an enemy, **increases this unit's DMG dealt. This effect can stack**"
+		],
+		"skills": [
+			{
+				"name": "Thwack",
+				"tag": "Single Target",
+				"type": "Basic ATK",
+				"description": "Deals Quantum DMG equal to ****1[i]%**** of Seele's ATK to one designated enemy.",
+				"regen": 20,
+				"er": 0,
+				"break": [
+					30,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Normal.png",
+				"shortIcon": "SkillIcon_11102_Normal",
+				"id": "1110201",
+				"params": {
+					"lv1": [
+						0.5
+					],
+					"lv2": [
+						0.6
+					],
+					"lv3": [
+						0.7
+					],
+					"lv4": [
+						0.8
+					],
+					"lv5": [
+						0.9
+					],
+					"lv6": [
+						1
+					],
+					"lv7": [
+						1.1
+					],
+					"lv8": [
+						1.2
+					],
+					"lv9": [
+						1.3
+					],
+					"lv10": [
+						1.4
+					]
+				},
+				"state": 0,
+				"slot": "basic",
+				"kind": "basic",
+				"trigger": "Skill01",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110121,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 6
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 3
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 4
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 3
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 4
+						}
+					]
+				}
+			},
+			{
+				"name": "Sheathed Blade",
+				"tag": "Single Target",
+				"type": "Skill",
+				"description": "Increases Seele's SPD by **2[i]%** for **3[i]** turn(s) and deals Quantum DMG equal to ****1[i]%**** of Seele's ATK to one designated enemy.\nAfter an ally target attacks, if the attack target's current HP percentage is **4[i]%** or below, Seele will automatically use her Skill at that target 1 time. This Skill does not consume Skill Points or regenerate Energy. This effect can only be triggered 1 time per turn and resets at the start of Seele's turn. If there are no valid targets to attack, she attacks the enemy target with the lowest HP percentage instead.",
+				"regen": 30,
+				"er": 0,
+				"break": [
+					60,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_BP.png",
+				"shortIcon": "SkillIcon_11102_BP",
+				"id": "1110202",
+				"params": {
+					"lv1": [
+						1.8,
+						0.25,
+						3,
+						0.5
+					],
+					"lv2": [
+						1.98,
+						0.25,
+						3,
+						0.5
+					],
+					"lv3": [
+						2.16,
+						0.25,
+						3,
+						0.5
+					],
+					"lv4": [
+						2.34,
+						0.25,
+						3,
+						0.5
+					],
+					"lv5": [
+						2.52,
+						0.25,
+						3,
+						0.5
+					],
+					"lv6": [
+						2.7,
+						0.25,
+						3,
+						0.5
+					],
+					"lv7": [
+						2.925,
+						0.25,
+						3,
+						0.5
+					],
+					"lv8": [
+						3.15,
+						0.25,
+						3,
+						0.5
+					],
+					"lv9": [
+						3.375,
+						0.25,
+						3,
+						0.5
+					],
+					"lv10": [
+						3.6,
+						0.25,
+						3,
+						0.5
+					],
+					"lv11": [
+						3.78,
+						0.25,
+						3,
+						0.5
+					],
+					"lv12": [
+						3.96,
+						0.25,
+						3,
+						0.5
+					],
+					"lv13": [
+						4.14,
+						0.25,
+						3,
+						0.5
+					],
+					"lv14": [
+						4.32,
+						0.25,
+						3,
+						0.5
+					],
+					"lv15": [
+						4.5,
+						0.25,
+						3,
+						0.5
+					]
+				},
+				"state": 0,
+				"slot": "skill",
+				"kind": "skill",
+				"trigger": "Skill02",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 2500
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 3
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110121,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 6
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 3
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 4
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 30000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 7
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 6
+						}
+					],
+					"lv7": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 3
+						}
+					],
+					"lv8": [
+						{
+							"ItemID": 2,
+							"ItemNum": 80000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 4
+						}
+					],
+					"lv9": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						}
+					],
+					"lv10": [
+						{
+							"ItemID": 2,
+							"ItemNum": 300000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 14
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						}
+					]
+				}
+			},
+			{
+				"name": "Butterfly Flurry",
+				"tag": "Single Target",
+				"type": "Ultimate",
+				"description": "Seele enters the Amplification state and deals Quantum DMG equal to ****1[i]%**** of her ATK to one designated enemy.",
+				"regen": 5,
+				"er": 120,
+				"break": [
+					90,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Ultra.png",
+				"shortIcon": "SkillIcon_11102_Ultra",
+				"id": "1110203",
+				"params": {
+					"lv1": [
+						3.6
+					],
+					"lv2": [
+						3.96
+					],
+					"lv3": [
+						4.32
+					],
+					"lv4": [
+						4.68
+					],
+					"lv5": [
+						5.04
+					],
+					"lv6": [
+						5.4
+					],
+					"lv7": [
+						5.85
+					],
+					"lv8": [
+						6.3
+					],
+					"lv9": [
+						6.75
+					],
+					"lv10": [
+						7.2
+					],
+					"lv11": [
+						7.56
+					],
+					"lv12": [
+						7.92
+					],
+					"lv13": [
+						8.28
+					],
+					"lv14": [
+						8.64
+					],
+					"lv15": [
+						9
+					]
+				},
+				"state": 0,
+				"slot": "ultimate",
+				"kind": "ultimate",
+				"trigger": "Skill03",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 2500
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 3
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110121,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 6
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 3
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 4
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 30000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 7
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 6
+						}
+					],
+					"lv7": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 3
+						}
+					],
+					"lv8": [
+						{
+							"ItemID": 2,
+							"ItemNum": 80000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 4
+						}
+					],
+					"lv9": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						}
+					],
+					"lv10": [
+						{
+							"ItemID": 2,
+							"ItemNum": 300000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 14
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						}
+					]
+				}
+			},
+			{
+				"name": "Resurgence",
+				"tag": "Enhance",
+				"type": "Talent",
+				"description": "Enters the Amplification state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an **extra turn**. While in the Amplification state, increases the DMG dealt by Seele increases by ****1[i]%**** for **2[i]** turn(s).\nEnemies defeated in the **extra turn** provided by \"Resurgence\" will not trigger another \"Resurgence.\"",
+				"regen": 0,
+				"er": 0,
+				"break": [
+					0,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Passive.png",
+				"shortIcon": "SkillIcon_11102_Passive",
+				"id": "1110204",
+				"params": {
+					"lv1": [
+						0.4,
+						3
+					],
+					"lv2": [
+						0.44,
+						3
+					],
+					"lv3": [
+						0.48,
+						3
+					],
+					"lv4": [
+						0.52,
+						3
+					],
+					"lv5": [
+						0.56,
+						3
+					],
+					"lv6": [
+						0.6,
+						3
+					],
+					"lv7": [
+						0.65,
+						3
+					],
+					"lv8": [
+						0.7,
+						3
+					],
+					"lv9": [
+						0.75,
+						3
+					],
+					"lv10": [
+						0.8,
+						3
+					],
+					"lv11": [
+						0.84,
+						3
+					],
+					"lv12": [
+						0.88,
+						3
+					],
+					"lv13": [
+						0.92,
+						3
+					],
+					"lv14": [
+						0.96,
+						3
+					],
+					"lv15": [
+						1,
+						3
+					]
+				},
+				"state": 0,
+				"slot": "talent",
+				"kind": "talent",
+				"trigger": "SkillP01",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 2500
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 3
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110121,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111011,
+							"ItemNum": 6
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 3
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 4
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 30000
+						},
+						{
+							"ItemID": 110122,
+							"ItemNum": 7
+						},
+						{
+							"ItemID": 111012,
+							"ItemNum": 6
+						}
+					],
+					"lv7": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 3
+						}
+					],
+					"lv8": [
+						{
+							"ItemID": 2,
+							"ItemNum": 80000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 111013,
+							"ItemNum": 4
+						}
+					],
+					"lv9": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						}
+					],
+					"lv10": [
+						{
+							"ItemID": 2,
+							"ItemNum": 300000
+						},
+						{
+							"ItemID": 110123,
+							"ItemNum": 14
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110502,
+							"ItemNum": 1
+						}
+					]
+				}
+			},
+			{
+				"name": "Attack",
+				"tag": "",
+				"type": "",
+				"description": "Attacks an enemy, and after entering combat, reduces their Toughness of the corresponding Type.",
+				"regen": 0,
+				"er": 0,
+				"break": [
+					30,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Normal.png",
+				"shortIcon": "SkillIcon_11102_Normal",
+				"id": "1110206",
+				"params": {
+					"lv1": []
+				},
+				"state": 0,
+				"slot": "mazeAttack",
+				"kind": "mazeAttack",
+				"trigger": ""
+			},
+			{
+				"name": "Phantom Illusion",
+				"tag": "Enhance",
+				"type": "Technique",
+				"description": "After using her Technique, Seele gains Stealth for **1[i]** second(s). While Stealth is active, Seele cannot be detected by enemies. And when entering combat by attacking enemies, Seele will immediately enter the Amplification state and deals Quantum DMG equal to Seele's Skill DMG multiplier to random enemy target 1 time. This DMG is a guaranteed CRIT Hit.",
+				"regen": 0,
+				"er": 0,
+				"break": [
+					0,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Maze.png",
+				"shortIcon": "SkillIcon_11102_Maze",
+				"id": "1110207",
+				"params": {
+					"lv1": [
+						20
+					]
+				},
+				"state": 0,
+				"slot": "technique",
+				"kind": "technique",
+				"trigger": "SkillMaze"
+			}
+		],
+		"rankIds": [
+			"1110201",
+			"1110202",
+			"1110203",
+			"1110204",
+			"1110205",
+			"1110206"
+		],
+		"skillChanges": [
+			{
+				"id": "1110202",
+				"baseId": "110202",
+				"before": "Increases Seele's SPD by **2[i]%** for **3[i]** turn(s) and deals Quantum DMG equal to **1[i]%** of Seele's ATK to one designated enemy.",
+				"after": "Increases Seele's SPD by **2[i]%** for ****3[i]**** turn(s) and deals Quantum DMG equal to ****1[i]%**** of Seele's ATK to one designated enemy.\n**After an ally target attacks, if the attack target's current HP percentage is **4[i]%** or below, Seele will automatically use her Skill at that target 1 time. This Skill does not consume Skill Points or regenerate Energy. This effect can only be triggered 1 time per turn and resets at the start of Seele's turn. If there are no valid targets to attack, she attacks the enemy target with the lowest HP instead**.",
+				"simpleBefore": "Deals Quantum DMG to one enemy and increases SPD.",
+				"simpleAfter": "Deals **massive** Quantum DMG to one enemy and increases this unit's SPD. **After an ally target attacks, if the attacked target's current HP percentage is less than or equal to **4[i]%**, Seele automatically uses her Skill against them 1 time**.",
+				"comments": []
+			},
+			{
+				"id": "1110203",
+				"baseId": "110203",
+				"before": "Seele enters the Amplification state and deals Quantum DMG equal to **1[i]%** of her ATK to one designated enemy.",
+				"after": "Seele enters the Amplification state and deals Quantum DMG equal to ****1[i]%**** of her ATK to one designated enemy.",
+				"simpleBefore": "Enters the Amplification state and deals massive Quantum DMG to one enemy.",
+				"simpleAfter": "Enters the Amplification state and deals massive Quantum DMG to one enemy.",
+				"comments": []
+			},
+			{
+				"id": "1110204",
+				"baseId": "110204",
+				"before": "Enters the Amplification state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an extra turn. While in the Amplification state, increases the DMG of Seele's attacks by **1[i]%** for **2[i]** turn(s).\nEnemies defeated in the extra turn provided by \"Resurgence\" will not trigger another \"Resurgence.\"",
+				"after": "Enters the Amplification state upon defeating an enemy with Basic ATK, Skill, or Ultimate, and receives an extra turn. While in the Amplification state, increases the DMG dealt by Seele increases by **1[i]%** for ****2[i]**** turn(s).\nEnemies defeated in the extra turn provided by \"Resurgence\" will not trigger another \"Resurgence.\"",
+				"simpleBefore": "When defeating enemy targets with Basic ATK, Skill, or Ultimate, gains an extra turn and enters the Amplification state. While in Amplification, increases the DMG dealt by this unit.",
+				"simpleAfter": "When defeating enemy targets with Basic ATK, Skill, or Ultimate, gains an extra turn and enters the Amplification state. While in Amplification, increases the DMG dealt by this unit.",
+				"comments": []
+			},
+			{
+				"id": "1110207",
+				"baseId": "110207",
+				"before": "After using her Technique, Seele gains Stealth for **1[i]** second(s). While Stealth is active, Seele cannot be detected by enemies. And when entering combat by attacking enemies, Seele will immediately enter the Amplification state.",
+				"after": "After using her Technique, Seele gains Stealth for **1[i]** second(s). While Stealth is active, Seele cannot be detected by enemies. And when entering combat by attacking enemies, Seele will immediately enter the Amplification state and deal Quantum DMG equal to Seele's Skill DMG multiplier to random enemy target 1 time. **This DMG is guaranteed CRIT Hit**.",
+				"simpleBefore": "Enters Stealth mode. After attacking an enemy and entering combat, enters the Amplification state.",
+				"simpleAfter": "Enters Stealth mode. After attacking an enemy and entering combat, enters the Amplification state and deals massive Quantum DMG with a **guaranteed CRIT Hit** to one random target.",
+				"comments": []
+			}
+		],
+		"rankChanges": [
+			{
+				"id": "1110201",
+				"baseId": "110201",
+				"before": "When dealing DMG to an enemy whose HP percentage is **1[i]%** or lower, increases CRIT Rate by **2[i]%**.",
+				"after": "When dealing DMG to an enemy whose HP percentage is **1[i]%** or lower, increases CRIT Rate by **2[i]%**, **and ignores **3[i]%** of target's DEF**.",
+				"comments": []
+			},
+			{
+				"id": "1110206",
+				"baseId": "110206",
+				"before": "After attacking with Ultimate, Seele inflicts \"Butterfly Flurry\" on the attacked enemy target for **2[i]** turn(s). Enemy targets in \"Butterfly Flurry\" additionally take 1 instance of Quantum Additional DMG equal to **1[i]%** of Seele's Ultimate DMG every time they are attacked. If the target enemy is defeated by the Butterfly Flurry DMG triggered by other allies' attacks, Seele's Talent will not be triggered.\nWhen Seele is knocked down, the Butterfly Flurry inflicted on the enemies will be removed.",
+				"after": "After attacking with Ultimate, Seele inflicts \"Butterfly Flurry\" on the target for ****2[i]**** turn(s). Enemy targets in \"Butterfly Flurry\" will additionally take 1 instance of **True DMG** equal to ****1[i]%** of Seele's Ultimate DMG after receiving an attack. When the target under the \"Butterfly Flurry\" state is defeated by any unit, Seele's Talent will also be triggered.**\nWhen Seele is knocked down, the \"Butterfly Flurry\" inflicted on the enemies will be removed.",
+				"comments": []
+			}
+		],
+		"traceChanges": [
+			{
+				"id": "11102101",
+				"baseId": "1102101",
+				"before": "When current HP percentage is **1[i]%** or lower, reduces the chance of being attacked by enemies.",
+				"after": "**When defeating an enemy target, increases this unit's DMG dealt by **1[i]%**. This effect can stack up to **2[i]** time(s) and lasts for **3[i]** turn(s)**.",
+				"comments": []
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,

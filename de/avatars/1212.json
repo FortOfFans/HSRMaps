@@ -1265,6 +1265,1323 @@
 			}
 		]
 	},
+	"enhanced": {
+		"id": "1212",
+		"enhancedId": 1,
+		"season": 1,
+		"activityId": 50047,
+		"trialStageId": 312129,
+		"spNeed": 140,
+		"summary": [
+			"Die Fähigkeit fügt nun basierend auf den **max. LP** SCH zu.",
+			"Wenn die LP von Teammitgliedern verringert werden, wird Jinglius **KRIT-SCH erhöht und sie erhält „Lunation“**.",
+			"Wenn Jingliu in den Status „Seelenwanderung“ eintritt, wird **das Stapelungslimit von „Lunation“ erhöht und sie erhält zusätzlich 1 Stapelung Lunation**."
+		],
+		"skills": [
+			{
+				"name": "Strahlendes Mondleuchten",
+				"tag": "Einzelangriff",
+				"type": "Standardangriff",
+				"description": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von ****1[i]%**** von Jinglius max. LP zu.",
+				"regen": 20,
+				"er": 0,
+				"break": [
+					30,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_Normal.png",
+				"shortIcon": "SkillIcon_11212_Normal",
+				"id": "1121201",
+				"params": {
+					"lv1": [
+						0.25
+					],
+					"lv2": [
+						0.3
+					],
+					"lv3": [
+						0.35
+					],
+					"lv4": [
+						0.4
+					],
+					"lv5": [
+						0.45
+					],
+					"lv6": [
+						0.5
+					],
+					"lv7": [
+						0.55
+					],
+					"lv8": [
+						0.6
+					],
+					"lv9": [
+						0.65
+					],
+					"lv10": [
+						0.7
+					]
+				},
+				"state": 0,
+				"slot": "basic",
+				"kind": "basic",
+				"trigger": "Skill01",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110111,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113001,
+							"ItemNum": 6
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 3
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 4
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113003,
+							"ItemNum": 3
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 113003,
+							"ItemNum": 4
+						}
+					]
+				}
+			},
+			{
+				"name": "Transzendenter Blitz",
+				"tag": "Einzelangriff",
+				"type": "Fertigkeit",
+				"description": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von ****1[i]%**** von Jinglius max. LP zu und erhält **2[i]** Stapelung „Lunation“.",
+				"regen": 20,
+				"er": 0,
+				"break": [
+					60,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_BP.png",
+				"shortIcon": "SkillIcon_11212_BP",
+				"id": "1121202",
+				"params": {
+					"lv1": [
+						0.75,
+						1
+					],
+					"lv2": [
+						0.825,
+						1
+					],
+					"lv3": [
+						0.9,
+						1
+					],
+					"lv4": [
+						0.975,
+						1
+					],
+					"lv5": [
+						1.05,
+						1
+					],
+					"lv6": [
+						1.125,
+						1
+					],
+					"lv7": [
+						1.21875,
+						1
+					],
+					"lv8": [
+						1.3125,
+						1
+					],
+					"lv9": [
+						1.40625,
+						1
+					],
+					"lv10": [
+						1.5,
+						1
+					],
+					"lv11": [
+						1.575,
+						1
+					],
+					"lv12": [
+						1.65,
+						1
+					],
+					"lv13": [
+						1.725,
+						1
+					],
+					"lv14": [
+						1.8,
+						1
+					],
+					"lv15": [
+						1.875,
+						1
+					]
+				},
+				"state": 0,
+				"slot": "skill",
+				"kind": "skill",
+				"trigger": "Skill02",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 2500
+						},
+						{
+							"ItemID": 113001,
+							"ItemNum": 3
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110111,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113001,
+							"ItemNum": 6
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 3
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 4
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 30000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 7
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 6
+						}
+					],
+					"lv7": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113003,
+							"ItemNum": 3
+						}
+					],
+					"lv8": [
+						{
+							"ItemID": 2,
+							"ItemNum": 80000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 110503,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 113003,
+							"ItemNum": 4
+						}
+					],
+					"lv9": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110503,
+							"ItemNum": 1
+						}
+					],
+					"lv10": [
+						{
+							"ItemID": 2,
+							"ItemNum": 300000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 14
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110503,
+							"ItemNum": 1
+						}
+					]
+				}
+			},
+			{
+				"name": "Traum der vergänglichen Blüten",
+				"tag": "Ausdehnung",
+				"type": "Ultimate",
+				"description": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von ****1[i]%**** von Jinglius max. LP und angrenzenden Einheiten Eis-SCH in Höhe von ****3[i]%**** von Jinglius max. LP zu. Nach dem Angriff erhält sie **2[i]** Stapelung „Lunation“.",
+				"regen": 5,
+				"er": 140,
+				"break": [
+					60,
+					0,
+					60
+				],
+				"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_Ultra.png",
+				"shortIcon": "SkillIcon_11212_Ultra",
+				"id": "1121203",
+				"params": {
+					"lv1": [
+						0.9,
+						1,
+						0.45,
+						1
+					],
+					"lv2": [
+						0.99,
+						1,
+						0.495,
+						1
+					],
+					"lv3": [
+						1.08,
+						1,
+						0.54,
+						1
+					],
+					"lv4": [
+						1.17,
+						1,
+						0.585,
+						1
+					],
+					"lv5": [
+						1.26,
+						1,
+						0.63,
+						1
+					],
+					"lv6": [
+						1.35,
+						1,
+						0.675,
+						1
+					],
+					"lv7": [
+						1.4625,
+						1,
+						0.73125,
+						1
+					],
+					"lv8": [
+						1.575,
+						1,
+						0.7875,
+						1
+					],
+					"lv9": [
+						1.6875,
+						1,
+						0.84375,
+						1
+					],
+					"lv10": [
+						1.8,
+						1,
+						0.9,
+						1
+					],
+					"lv11": [
+						1.89,
+						1,
+						0.945,
+						1
+					],
+					"lv12": [
+						1.98,
+						1,
+						0.99,
+						1
+					],
+					"lv13": [
+						2.07,
+						1,
+						1.035,
+						1
+					],
+					"lv14": [
+						2.16,
+						1,
+						1.08,
+						1
+					],
+					"lv15": [
+						2.25,
+						1,
+						1.125,
+						1
+					]
+				},
+				"state": 0,
+				"slot": "ultimate",
+				"kind": "ultimate",
+				"trigger": "Skill03",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 2500
+						},
+						{
+							"ItemID": 113001,
+							"ItemNum": 3
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110111,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113001,
+							"ItemNum": 6
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 3
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 4
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 30000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 7
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 6
+						}
+					],
+					"lv7": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113003,
+							"ItemNum": 3
+						}
+					],
+					"lv8": [
+						{
+							"ItemID": 2,
+							"ItemNum": 80000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 110503,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 113003,
+							"ItemNum": 4
+						}
+					],
+					"lv9": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110503,
+							"ItemNum": 1
+						}
+					],
+					"lv10": [
+						{
+							"ItemID": 2,
+							"ItemNum": 300000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 14
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110503,
+							"ItemNum": 1
+						}
+					]
+				}
+			},
+			{
+				"name": "Seelenwanderung der Mondsichel",
+				"tag": "Verstärkung",
+				"type": "Talent",
+				"description": "Wenn Jingliu über **5[i]** Stapelungen „Lunation“ verfügt, tritt sie in den Status „Seelenwanderung“ ein und erhält zusätzlich 1 Stapelung Lunation, wobei ihre Aktion um **6[i]%** vorgezogen und ihre KRIT-Rate um ****7[i]%**** erhöht wird. Danach wird die Fertigkeit „Transzendenter Blitz“ zu „Gletscherfluss im Mondenschein“ verstärkt und sie kann nur noch diese Fertigkeit einsetzen. Wenn Jingliu im Status Seelenwanderung einen Angriff ausführt, verbraucht sie **2[i]%** der max. LP ihrer Teammitglieder (die LP aller Teammitglieder können bis auf 1 verbraucht werden). Im Status Seelenwanderung erhält Jingliu jedes Mal 1 Stapelung „Mondlicht“, wenn Verbündete SCH erleiden oder LP verbrauchen. Jede Stapelung Mondlicht erhöht Jinglius KRIT-SCH um ****3[i]%****, bis zu **4[i]** Stapelungen. Jingliu kann nicht wiederholt in den Status Seelenwanderung eintreten, bevor dieser endet. Lunation ist bis zu 4-fach stapelbar. Wenn keine Stapelungen von Lunation vorhanden sind, wird der Status Seelenwanderung beendet und alle Stapelungen Mondlicht werden entfernt. Nachdem Verbündete insgesamt **8[i]**-mal SCH erlitten oder LP verbraucht haben, erhält Jingliu 1 Stapelung Lunation. Jedes Mal, wenn ein Ziel angegriffen wird, wird höchstens 1-mal gezählt.",
+				"regen": 0,
+				"er": 0,
+				"break": [
+					0,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_Passive.png",
+				"shortIcon": "SkillIcon_11212_Passive",
+				"id": "1121204",
+				"params": {
+					"lv1": [
+						0.3,
+						0.05,
+						0.22,
+						5,
+						2,
+						1,
+						0.4,
+						20
+					],
+					"lv2": [
+						0.3,
+						0.05,
+						0.242,
+						5,
+						2,
+						1,
+						0.41,
+						20
+					],
+					"lv3": [
+						0.3,
+						0.05,
+						0.264,
+						5,
+						2,
+						1,
+						0.42,
+						20
+					],
+					"lv4": [
+						0.3,
+						0.05,
+						0.286,
+						5,
+						2,
+						1,
+						0.43,
+						20
+					],
+					"lv5": [
+						0.3,
+						0.05,
+						0.308,
+						5,
+						2,
+						1,
+						0.44,
+						20
+					],
+					"lv6": [
+						0.3,
+						0.05,
+						0.33,
+						5,
+						2,
+						1,
+						0.45,
+						20
+					],
+					"lv7": [
+						0.3,
+						0.05,
+						0.3575,
+						5,
+						2,
+						1,
+						0.4625,
+						20
+					],
+					"lv8": [
+						0.3,
+						0.05,
+						0.385,
+						5,
+						2,
+						1,
+						0.475,
+						20
+					],
+					"lv9": [
+						0.3,
+						0.05,
+						0.4125,
+						5,
+						2,
+						1,
+						0.4875,
+						20
+					],
+					"lv10": [
+						0.3,
+						0.05,
+						0.44,
+						5,
+						2,
+						1,
+						0.5,
+						20
+					],
+					"lv11": [
+						0.3,
+						0.05,
+						0.462,
+						5,
+						2,
+						1,
+						0.51,
+						20
+					],
+					"lv12": [
+						0.3,
+						0.05,
+						0.484,
+						5,
+						2,
+						1,
+						0.52,
+						20
+					],
+					"lv13": [
+						0.3,
+						0.05,
+						0.506,
+						5,
+						2,
+						1,
+						0.53,
+						20
+					],
+					"lv14": [
+						0.3,
+						0.05,
+						0.528,
+						5,
+						2,
+						1,
+						0.54,
+						20
+					],
+					"lv15": [
+						0.3,
+						0.05,
+						0.55,
+						5,
+						2,
+						1,
+						0.55,
+						20
+					]
+				},
+				"state": 0,
+				"slot": "talent",
+				"kind": "talent",
+				"trigger": "SkillP01",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 2500
+						},
+						{
+							"ItemID": 113001,
+							"ItemNum": 3
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110111,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113001,
+							"ItemNum": 6
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 3
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 4
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 30000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 7
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 6
+						}
+					],
+					"lv7": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113003,
+							"ItemNum": 3
+						}
+					],
+					"lv8": [
+						{
+							"ItemID": 2,
+							"ItemNum": 80000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 110503,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 113003,
+							"ItemNum": 4
+						}
+					],
+					"lv9": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110503,
+							"ItemNum": 1
+						}
+					],
+					"lv10": [
+						{
+							"ItemID": 2,
+							"ItemNum": 300000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 14
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110503,
+							"ItemNum": 1
+						}
+					]
+				}
+			},
+			{
+				"name": "Angriff",
+				"tag": "",
+				"type": "",
+				"description": "Greift den Gegner an und reduziert nach Kampfeintritt den WDS des Ziels gegen den entsprechenden Typ.",
+				"regen": 0,
+				"er": 0,
+				"break": [
+					30,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_Normal.png",
+				"shortIcon": "SkillIcon_11212_Normal",
+				"id": "1121206",
+				"params": {
+					"lv1": []
+				},
+				"state": 0,
+				"slot": "mazeAttack",
+				"kind": "mazeAttack",
+				"trigger": ""
+			},
+			{
+				"name": "Glanz des Inneren",
+				"tag": "Beeinträchtigung",
+				"type": "Technik",
+				"description": "Nach dem Einsatz der Technik wird eine spezielle Dimension für **3[i]** Sek. um Jingliu herum erzeugt. Alle Gegner innerhalb dieser Dimension werden eingefroren. Nach Kampfeintritt mit Gegnern in dieser Dimension werden **6[i]** Pkt. Energie sofort wiederhergestellt. Gleichzeitig erhält Jingliu **1[i]** Stapelung „Lunation“ und hat eine **Grundchance** von **2[i]%**, Gegner für **4[i]** Rd. einzufrieren. Gefrorene Gegner können keine Aktionen ausführen und erleiden zu Beginn jeder Runde **zusätzlichen Eis-SCH** in Höhe von **5[i]%** von Jinglius max. LP. Es kann nur 1 von Verbündeten erschaffene Dimension zur gleichen Zeit existieren.",
+				"regen": 0,
+				"er": 0,
+				"break": [
+					0,
+					0,
+					0
+				],
+				"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_Maze.png",
+				"shortIcon": "SkillIcon_11212_Maze",
+				"id": "1121207",
+				"params": {
+					"lv1": [
+						1,
+						1,
+						20,
+						1,
+						0.8,
+						15
+					]
+				},
+				"state": 0,
+				"slot": "technique",
+				"kind": "technique",
+				"trigger": "SkillMaze"
+			},
+			{
+				"name": "Gletscherfluss im Mondenschein",
+				"tag": "Ausdehnung",
+				"type": "Fertigkeit",
+				"description": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von ****1[i]%**** von Jinglius max. LP und angrenzenden Einheiten Eis-SCH in Höhe von ****3[i]%**** von Jinglius max. LP zu. Verbraucht **2[i]** Stapelung „Lunation“. Der Einsatz dieser Fähigkeit verbraucht keine Fertigkeitspunkte.",
+				"regen": 30,
+				"er": 0,
+				"break": [
+					60,
+					0,
+					30
+				],
+				"icon": "spriteoutput/skillicons/avatar/11212/SkillIcon_11212_BP02.png",
+				"shortIcon": "SkillIcon_11212_BP02",
+				"id": "1121209",
+				"params": {
+					"lv1": [
+						0.75,
+						1,
+						0.375
+					],
+					"lv2": [
+						0.825,
+						1,
+						0.4125
+					],
+					"lv3": [
+						0.9,
+						1,
+						0.45
+					],
+					"lv4": [
+						0.975,
+						1,
+						0.4875
+					],
+					"lv5": [
+						1.05,
+						1,
+						0.525
+					],
+					"lv6": [
+						1.125,
+						1,
+						0.5625
+					],
+					"lv7": [
+						1.21875,
+						1,
+						0.609375
+					],
+					"lv8": [
+						1.3125,
+						1,
+						0.65625
+					],
+					"lv9": [
+						1.40625,
+						1,
+						0.703125
+					],
+					"lv10": [
+						1.5,
+						1,
+						0.75
+					],
+					"lv11": [
+						1.575,
+						1,
+						0.7875
+					],
+					"lv12": [
+						1.65,
+						1,
+						0.825
+					],
+					"lv13": [
+						1.725,
+						1,
+						0.8625
+					],
+					"lv14": [
+						1.8,
+						1,
+						0.9
+					],
+					"lv15": [
+						1.875,
+						1,
+						0.9375
+					]
+				},
+				"state": 1,
+				"slot": "skill",
+				"kind": "skill",
+				"trigger": "Skill21",
+				"promotion": {
+					"lv1": [],
+					"lv2": [
+						{
+							"ItemID": 2,
+							"ItemNum": 2500
+						},
+						{
+							"ItemID": 113001,
+							"ItemNum": 3
+						}
+					],
+					"lv3": [
+						{
+							"ItemID": 2,
+							"ItemNum": 5000
+						},
+						{
+							"ItemID": 110111,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113001,
+							"ItemNum": 6
+						}
+					],
+					"lv4": [
+						{
+							"ItemID": 2,
+							"ItemNum": 10000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 3
+						}
+					],
+					"lv5": [
+						{
+							"ItemID": 2,
+							"ItemNum": 20000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 4
+						}
+					],
+					"lv6": [
+						{
+							"ItemID": 2,
+							"ItemNum": 30000
+						},
+						{
+							"ItemID": 110112,
+							"ItemNum": 7
+						},
+						{
+							"ItemID": 113002,
+							"ItemNum": 6
+						}
+					],
+					"lv7": [
+						{
+							"ItemID": 2,
+							"ItemNum": 45000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 3
+						},
+						{
+							"ItemID": 113003,
+							"ItemNum": 3
+						}
+					],
+					"lv8": [
+						{
+							"ItemID": 2,
+							"ItemNum": 80000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 5
+						},
+						{
+							"ItemID": 110503,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 113003,
+							"ItemNum": 4
+						}
+					],
+					"lv9": [
+						{
+							"ItemID": 2,
+							"ItemNum": 160000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 8
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110503,
+							"ItemNum": 1
+						}
+					],
+					"lv10": [
+						{
+							"ItemID": 2,
+							"ItemNum": 300000
+						},
+						{
+							"ItemID": 110113,
+							"ItemNum": 14
+						},
+						{
+							"ItemID": 241,
+							"ItemNum": 1
+						},
+						{
+							"ItemID": 110503,
+							"ItemNum": 1
+						}
+					]
+				}
+			}
+		],
+		"rankIds": [
+			"1121201",
+			"1121202",
+			"1121203",
+			"1121204",
+			"1121205",
+			"1121206"
+		],
+		"skillChanges": [
+			{
+				"id": "1121201",
+				"baseId": "121201",
+				"before": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von **1[i]%** von Jinglius ANG zu.",
+				"after": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von **1[i]%** von Jinglius **max. LP** zu.",
+				"simpleBefore": "Fügt einem anvisierten Gegner geringen Eis-SCH zu.",
+				"simpleAfter": "Fügt einem anvisierten Gegner **basierend auf den max. LP** geringen Eis-SCH zu.",
+				"comments": []
+			},
+			{
+				"id": "1121209",
+				"baseId": "121209",
+				"before": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von **1[i]%** von Jinglius ANG und angrenzenden Einheiten Eis-SCH in Höhe von **3[i]%** von Jinglius ANG zu. Verbraucht **2[i]** Stapelung „Lunation“. Der Einsatz dieser Fähigkeit verbraucht keine Fertigkeitspunkte.",
+				"after": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von **1[i]%** von Jinglius **max. LP** und angrenzenden Einheiten Eis-SCH in Höhe von **3[i]%** von Jinglius **max. LP** zu. Verbraucht **2[i]** Stapelung „Lunation“. Der Einsatz dieser Fähigkeit verbraucht keine Fertigkeitspunkte.",
+				"simpleBefore": "Fügt einem anvisierten Gegner und angrenzenden Einheiten Eis-SCH zu. Verbraucht 1 Stapelung „Lunation“.",
+				"simpleAfter": "Fügt einem anvisierten Gegner und angrenzenden Einheiten **basierend auf den max. LP** Eis-SCH zu. Verbraucht 1 Stapelung „Lunation“.",
+				"comments": []
+			},
+			{
+				"id": "1121202",
+				"baseId": "121202",
+				"before": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von **1[i]%** von Jinglius ANG zu und erhält **2[i]** Stapelung „Lunation“.",
+				"after": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von **1[i]%** von Jinglius **max. LP** zu und erhält **2[i]** Stapelung „Lunation“.",
+				"simpleBefore": "Fügt einem anvisierten Gegner Eis-SCH zu und erhält 1 Stapelung „Lunation“.",
+				"simpleAfter": "Fügt einem anvisierten Gegner **basierend auf den max. LP** Eis-SCH zu und erhält 1 Stapelung „Lunation“.",
+				"comments": []
+			},
+			{
+				"id": "1121203",
+				"baseId": "121203",
+				"before": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von **1[i]%** von Jinglius ANG und angrenzenden Einheiten Eis-SCH in Höhe von **3[i]%** von Jinglius ANG zu. Nach dem Angriff erhält sie **2[i]** Stapelung „Lunation“.",
+				"after": "Fügt einem anvisierten Gegner Eis-SCH in Höhe von **1[i]%** von Jinglius **max. LP** und angrenzenden Einheiten Eis-SCH in Höhe von **3[i]%** von Jinglius **max. LP** zu. Nach dem Angriff erhält sie **2[i]** Stapelung „Lunation“.",
+				"simpleBefore": "Fügt einem anvisierten Gegner massiven Eis-SCH und angrenzenden Einheiten Eis-SCH zu. Erhält 1 Stapelung „Lunation“.",
+				"simpleAfter": "Fügt **basierend auf den max. LP** einem anvisierten Gegner massiven Eis-SCH und angrenzenden Einheiten Eis-SCH zu. Erhält 1 Stapelung „Lunation“.",
+				"comments": []
+			},
+			{
+				"id": "1121207",
+				"baseId": "121207",
+				"before": "Nach dem Einsatz der Technik wird eine spezielle Dimension für **3[i]** Sek. um Jingliu herum erzeugt. Alle Gegner innerhalb dieser Dimension werden eingefroren. Nach Kampfeintritt mit Gegnern in dieser Dimension werden **6[i]** Pkt. Energie sofort wiederhergestellt. Gleichzeitig erhält Jingliu **1[i]** Stapelung „Lunation“ und hat eine Grundchance von **2[i]%**, Gegner für **4[i]** Rd. einzufrieren. Gefrorene Gegner können keine Aktionen ausführen und erleiden zu Beginn jeder Runde zusätzlichen Eis-SCH in Höhe von **5[i]%** von Jinglius ANG. Es kann nur 1 von Verbündeten erschaffene Dimension zur gleichen Zeit existieren.",
+				"after": "Nach dem Einsatz der Technik wird eine spezielle Dimension für **3[i]** Sek. um Jingliu herum erzeugt. Alle Gegner innerhalb dieser Dimension werden eingefroren. Nach Kampfeintritt mit Gegnern in dieser Dimension werden **6[i]** Pkt. Energie sofort wiederhergestellt. Gleichzeitig erhält Jingliu **1[i]** Stapelung „Lunation“ und hat eine Grundchance von **2[i]%**, Gegner für **4[i]** Rd. einzufrieren. Gefrorene Gegner können keine Aktionen ausführen und erleiden zu Beginn jeder Runde zusätzlichen Eis-SCH in Höhe von **5[i]%** von Jinglius **max. LP**. Es kann nur 1 von Verbündeten erschaffene Dimension zur gleichen Zeit existieren.",
+				"simpleBefore": "Erzeugt eine spezielle Dimension um Jingliu herum. Gegner innerhalb dieser Dimension werden eingefroren. Nach Kampfeintritt mit Gegnern in dieser Dimension erhält Jingliu Energie, 1 Stapelung „Lunation“ und hat eine hohe Chance, Gegner einzufrieren. Zu Beginn jeder Runde erleiden diese Gegner Eis-SCH basierend auf Jinglius ANG.",
+				"simpleAfter": "Erzeugt eine spezielle Dimension um Jingliu herum. Gegner innerhalb dieser Dimension werden eingefroren. Nach Kampfeintritt mit Gegnern in dieser Dimension erhält Jingliu Energie, 1 Stapelung „Lunation“ und hat eine hohe Chance, Gegner einzufrieren. Zu Beginn jeder Runde erleiden diese Gegner Eis-SCH basierend auf Jinglius **max. LP**.",
+				"comments": []
+			},
+			{
+				"id": "1121204",
+				"baseId": "121204",
+				"before": "Wenn Jingliu über **5[i]** Stapelungen „Lunation“ verfügt, tritt sie in den Status „Seelenwanderung“ ein, wobei ihre Aktion um **6[i]%** vorgezogen und ihre KRIT-Rate um **7[i]%** erhöht wird. Danach wird die Fertigkeit „Transzendenter Blitz“ zu „Gletscherfluss im Mondenschein“ verstärkt und sie kann nur noch diese Fertigkeit einsetzen. Wenn Jingliu im Status Seelenwanderung einen Angriff ausführt, verbraucht sie **2[i]%** der max. LP ihrer Teammitglieder (die LP aller Teammitglieder können bis auf 1 verbraucht werden). Jinglius ANG wird um **3[i]%** der diesmal gesamt verbrauchten Menge der LP aller Verbündeten erhöht, bis zu einem Maximum von **4[i]%** ihres Basis-ANG und dies hält an, bis ihr aktueller Angriff beendet ist. Jingliu kann nicht wiederholt in den Status Seelenwanderung eintreten, bevor dieser endet. Lunation ist bis zu 3-fach stapelbar. Wenn keine Stapelungen von Lunation vorhanden sind, wird der Status Seelenwanderung beendet.",
+				"after": "Wenn Jingliu über **5[i]** Stapelungen „Lunation“ verfügt, tritt sie in den Status „Seelenwanderung“ ein und erhält **zusätzlich 1 Stapelung Lunation**, wobei ihre Aktion um **6[i]%** vorgezogen und ihre KRIT-Rate um **7[i]%** erhöht wird. Danach wird die Fertigkeit „Transzendenter Blitz“ zu „Gletscherfluss im Mondenschein“ verstärkt und sie kann nur noch diese Fertigkeit einsetzen. Wenn Jingliu im Status Seelenwanderung einen Angriff ausführt, verbraucht sie **2[i]%** der max. LP ihrer Teammitglieder (die LP aller Teammitglieder können bis auf 1 verbraucht werden). Im Status Seelenwanderung erhält Jingliu jedes Mal 1 Stapelung „Mondlicht“, wenn Verbündete SCH erleiden oder LP verbrauchen. Jede Stapelung Mondlicht erhöht Jinglius KRIT-SCH um **3[i]%**, bis zu **4[i]** Stapelungen. Jingliu kann nicht wiederholt in den Status Seelenwanderung eintreten, bevor dieser endet. Lunation ist bis zu **4-fach** stapelbar. Wenn keine Stapelungen von Lunation vorhanden sind, wird der Status Seelenwanderung beendet und alle Stapelungen Mondlicht werden entfernt. **Nachdem Verbündete insgesamt **8[i]**-mal SCH erlitten oder LP verbraucht haben, erhält Jingliu 1 Stapelung Lunation. Jedes Mal, wenn ein Ziel angegriffen wird, wird höchstens 1-mal gezählt.**",
+				"simpleBefore": "Wenn Jingliu über **5[i]** Stapelungen „Lunation“ verfügt, tritt sie in den Status „Seelenwanderung“ ein, wobei ihre Aktion um **100** % vorgezogen und ihre KRIT-Rate erhöht wird. Außerdem erhält sie eine verstärkte Fertigkeit. Beim Angriff verbraucht sie die LP ihrer Teammitglieder und ihr ANG wird basierend auf den gesamt verbrauchten Menge der LP erhöht. Wenn keine Stapelungen von Lunation vorhanden sind, wird der Status Seelenwanderung beendet.",
+				"simpleAfter": "Wenn Jingliu über **5[i]** Stapelung(en) „Lunation“ verfügt, tritt sie in den Status „Seelenwanderung“ ein, wobei ihre Aktion um **100** % vorgezogen und ihre KRIT-Rate erhöht wird. Außerdem erhält sie eine verstärkte Fertigkeit sowie **1 Stapelung Lunation**. Im Status Seelenwanderung werden beim Angriff die LP der Teammitglieder verbraucht. Wenn **Verbündete SCH erleiden oder LP verbrauchen, wird Jinglius KRIT-SCH erhöht**. Wenn keine Stapelungen von Lunation vorhanden sind, wird der Status Seelenwanderung beendet.",
+				"comments": [
+					"Jedes Mal, wenn die LP ihrer Teammitglieder verringert werden, **wird KRIT-SCH gestapelt**.",
+					"Wenn Jingliu in den Status „Seelenwanderung“ eintritt, wird **das Stapelungslimit von „Lunation“ erhöht und sie erhält zusätzlich 1 Stapelung Lunation**."
+				]
+			}
+		],
+		"rankChanges": [
+			{
+				"id": "1121201",
+				"baseId": "121201",
+				"before": "Beim Einsatz des Ultimates oder der verstärkten Fertigkeit wird Jinglius KRIT-SCH für **3[i]** Rd. um **1[i]%** erhöht. Wenn nur ein Gegner angegriffen wird, wird dem Ziel zusätzlich 1-mal Eis-SCH in Höhe von **2[i]%** von Jinglius ANG zugefügt.",
+				"after": "Beim Einsatz des Ultimates oder der verstärkten Fertigkeit wird Jinglius KRIT-SCH für **3[i]** Rd. um ****1[i]%**** erhöht. Fügt dem **Hauptziel** **außerdem** zusätzlich 1-mal Eis-SCH in Höhe von **2[i]%** von Jinglius **max. LP** zu.",
+				"comments": []
+			},
+			{
+				"id": "1121204",
+				"baseId": "121204",
+				"before": "Im Status „Seelenwanderung“ wird der ANG, der durch den Verbrauch der LP von Teammitgliedern erhalten wird, zusätzlich um **1[i]%** der insgesamt verbrauchten Menge der LP aller Verbündeten erhöht. Die Obergrenze für den auf diese Weise verstärkten ANG wird um **2[i]%** erhöht.",
+				"after": "Im Status „Seelenwanderung“ **erhöht jede Stapelung „Mondlicht“ den KRIT-SCH zusätzlich um **1[i]%****.",
+				"comments": []
+			},
+			{
+				"id": "1121206",
+				"baseId": "121206",
+				"before": "Wenn Jingliu in den Status „Seelenwanderung“ eintritt, wird das Stapelungslimit von „Lunation“ um 1 erhöht und sie erhält **1[i]** Stapelung Lunation. Im Status Seelenwanderung wird ihr KRIT-SCH um **2[i]%** erhöht.",
+				"after": "Wenn Jingliu in den Status „Seelenwanderung“ eintritt, wird das Stapelungslimit von „Lunation“ um 1 erhöht und sie erhält zusätzlich ****1[i]**** Stapelungen Lunation. Im Status Seelenwanderung wird ihre **Eis-WDS-DUR um **2[i]%** erhöht**.",
+				"comments": []
+			}
+		],
+		"traceChanges": [
+			{
+				"id": "11212101",
+				"baseId": "1212101",
+				"before": "Erhöht im Status „Seelenwanderung“ den Effekt-WDS um **1[i]%**.",
+				"after": "Erhöht im Status „Seelenwanderung“ den Effekt-WDS um **1[i]%** und **den verursachten Ultimate-SCH um **2[i]%****.",
+				"comments": []
+			},
+			{
+				"id": "11212102",
+				"baseId": "1212102",
+				"before": "Nach dem Einsatz von „Transzendenter Blitz“ wird die nächste Aktion um **1[i]%** vorgezogen.",
+				"after": "Stellt nach dem Einsatz von „Transzendenter Blitz“ **zusätzlich **1[i]** Pkt. Energie wieder her. Stellt nach dem Einsatz von „Gletscherfluss im Mondenschein“ zusätzlich **2[i]** Pkt. Energie wieder her.**",
+				"comments": []
+			},
+			{
+				"id": "11212103",
+				"baseId": "1212103",
+				"before": "Erhöht im Status „Seelenwanderung“ den durch Ultimates verursachten SCH um **1[i]%**.",
+				"after": "**Wenn beim Erhalt von „Lunation“ das Stapelungslimit bereits erreicht ist, ignoriert Jinglius nächster Angriff **1[i]%** der VTD des Ziels.**",
+				"comments": []
+			}
+		]
+	},
 	"promos": {
 		"basicPromo": {
 			"2": 240000,
