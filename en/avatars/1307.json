@@ -2045,6 +2045,7 @@
 				"after": "Inflicts the \"Epiphany\" state on all enemies for **2[i]** turn(s). Then, deals Wind DMG to all enemies equal to **1[i]%** of Black Swan's ATK.\nWhile in the \"Epiphany\" state, enemy targets **take **3[i]%** increased DMG**. **For every 1 stack of \"Arcana\" inflicted, there is a **4[i]%** fixed chance to additionally increase the number of \"Arcana\" stacked this time by 1**. And \"Arcana\" stacks won't be halved after dealing DMG at the start of the turn.",
 				"simpleBefore": "Inflicts \"Epiphany\" on all enemies, increasing the DMG the targets take in their turn. Additionally, having \"Arcana\" is regarded as having Wind Shear, Bleed, Burn, and Shock. Furthermore, \"Arcana\" will not reset its stacks after causing DMG at the start of the next turn. Deals Wind DMG to all enemies.",
 				"simpleAfter": "Inflicts the \"Epiphany\" state on all enemies. **Increases DMG taken by targets and has a chance to increase the number of stacks applied when stacking \"Arcana.\"** Additionally, \"Arcana\" stacks won't be halved after dealing DMG at the start of the next turn. Deals Wind DMG to all enemies.",
+				"treeId": "11307003",
 				"comments": [
 					"Inflicts Vulnerability even **outside of enemies' turn**",
 					"Without using the Ultimate, \"Arcana\" is considered as **Wind Shear, Bleed, Burn, and Shock** states by default"
@@ -2057,6 +2058,7 @@
 				"after": "**Every time an enemy target receives 1 instance of DoT, there is a **2[i]%** base chance for it to be inflicted with 1 stack of \"Arcana\"**.\n**While an enemy target is in the \"Arcana\" state, they are also considered to be simultaneously afflicted with Wind Shear, Bleed, Burn, and Shock**. The target receives Wind DoT equal to **1[i]%** of Black Swan's ATK at the start of each turn, after which **the number of stacks is halved**. Each stack of \"Arcana\" increases this DMG multiplier by **3[f1]%**. **\"Arcana\" can stack **8[i]** times, and can continue to stack beyond this limit, with the excess stacks removed after dealing DMG**.\n**DMG from \"Arcana\" ignores **7[i]%** of the target's DEF. Only when \"Arcana\" deals DMG at the start of the enemy target's turn, adjacent targets take 1 additional instance of Wind DoT equal to **5[i]%** of Black Swan's ATK**.",
 				"simpleBefore": "When an enemy target receives DoT at the start of each turn, there is a chance for it to be inflicted with \"Arcana.\" They receive **Wind DoT** at the start of the turn, and Black Swan triggers **additional effects** based on the number of \"Arcana\" stacks.",
 				"simpleAfter": "When an enemy target receives DoT, there's a chance for it to be inflicted with \"Arcana.\" **\"Arcana\" is considered as Wind Shear, Bleed, Burn, and Shock**. The target receives **Wind DoT** in every turn. Only at the start of the enemy target's turn, additionally deals Wind DoT to adjacent targets.\n\"Arcana\" **can continue to stack after reaching its upper limit**, and the excess stacks are removed after dealing DMG.",
+				"treeId": "11307004",
 				"comments": [
 					"Can quickly stack \"Arcana\" **outside enemy turns** without needing to unlock Traces",
 					"\"Arcana\" can **exceed the stack limit**, and **half the stacks are retained** when reset"
@@ -2113,6 +2115,280 @@
 				"comments": [
 					"Can increase DMG dealt by **all allies**"
 				]
+			}
+		],
+		"treeNodes": [
+			{
+				"id": "11307003",
+				"name": "Bliss of Otherworld's Embrace",
+				"icon": "spriteoutput/skillicons/avatar/11307/SkillIcon_11307_Ultra.png",
+				"shortIcon": "SkillIcon_11307_Ultra",
+				"type": 2,
+				"avatar": 1307,
+				"baseSkill": [
+					"1130703"
+				],
+				"description": "Inflicts \"Epiphany\" state on all enemies for **2[i]** turn(s). Then deals Wind DMG to all enemies equal to ****1[i]%**** of Black Swan's ATK.\nWhile in the \"Epiphany\" state, enemy targets take ****3[i]%**** increased DMG. For every 1 stack of \"**Arcana** inflicted,\" there is a **4[i]%** **fixed chance** to additionally increase the number of \"Arcana\" stacked this time by 1. And \"**Arcana**\" stacks won't be halved after dealing DMG at the start of the turn.",
+				"params": {
+					"lv1": [
+						0.72,
+						2,
+						0.15,
+						0.5
+					],
+					"lv2": [
+						0.768,
+						2,
+						0.16,
+						0.5
+					],
+					"lv3": [
+						0.816,
+						2,
+						0.17,
+						0.5
+					],
+					"lv4": [
+						0.864,
+						2,
+						0.18,
+						0.5
+					],
+					"lv5": [
+						0.912,
+						2,
+						0.19,
+						0.5
+					],
+					"lv6": [
+						0.96,
+						2,
+						0.2,
+						0.5
+					],
+					"lv7": [
+						1.02,
+						2,
+						0.2125,
+						0.5
+					],
+					"lv8": [
+						1.08,
+						2,
+						0.225,
+						0.5
+					],
+					"lv9": [
+						1.14,
+						2,
+						0.2375,
+						0.5
+					],
+					"lv10": [
+						1.2,
+						2,
+						0.25,
+						0.5
+					],
+					"lv11": [
+						1.248,
+						2,
+						0.26,
+						0.5
+					],
+					"lv12": [
+						1.296,
+						2,
+						0.27,
+						0.5
+					],
+					"lv13": [
+						1.344,
+						2,
+						0.28,
+						0.5
+					],
+					"lv14": [
+						1.392,
+						2,
+						0.29,
+						0.5
+					],
+					"lv15": [
+						1.44,
+						2,
+						0.3,
+						0.5
+					]
+				},
+				"enhancedOf": "1307003",
+				"enhanced": true
+			},
+			{
+				"id": "11307004",
+				"name": "Loom of Fate's Caprice",
+				"icon": "spriteoutput/skillicons/avatar/11307/SkillIcon_11307_Passive.png",
+				"shortIcon": "SkillIcon_11307_Passive",
+				"type": 2,
+				"avatar": 1307,
+				"baseSkill": [
+					"1130704"
+				],
+				"description": "Every time an enemy target receives 1 instance of DoT, there is a ****2[i]%**** **base chance** for it to be inflicted with 1 stack of \"**Arcana**\".\nWhile an enemy target is in the \"**Arcana**\" state, they are also considered to be simultaneously afflicted with Wind Shear, Bleed, Burn, and Shock. The target receives Wind DoT equal to ****1[i]%**** of Black Swan's ATK at the start of each turn, after which the number of stacks is halved. Each stack of \"**Arcana**\" increases this DMG multiplier by ****3[f1]%****. \"**Arcana**\" can stack **8[i]** times, and can continue to stack beyond this limit, with the excess stacks removed after dealing DMG.\nDMG from \"**Arcana**\" ignores **7[i]%** of the target's DEF. Only when \"Arcana\" deals DMG at the start of the enemy target's turn, adjacent targets take 1 additional instance of Wind DoT equal to ****5[i]%**** of Black Swan's ATK.",
+				"params": {
+					"lv1": [
+						0.96,
+						0.5,
+						0.048,
+						0.048,
+						0.72,
+						0,
+						0.2,
+						50
+					],
+					"lv2": [
+						1.1184,
+						0.515,
+						0.05592,
+						0.05592,
+						0.8388,
+						0,
+						0.2,
+						50
+					],
+					"lv3": [
+						1.2768,
+						0.53,
+						0.06384,
+						0.06384,
+						0.9576,
+						0,
+						0.2,
+						50
+					],
+					"lv4": [
+						1.4352,
+						0.545,
+						0.07176,
+						0.07176,
+						1.0764,
+						0,
+						0.2,
+						50
+					],
+					"lv5": [
+						1.5936,
+						0.56,
+						0.07968,
+						0.07968,
+						1.1952,
+						0,
+						0.2,
+						50
+					],
+					"lv6": [
+						1.752,
+						0.575,
+						0.0876,
+						0.0876,
+						1.314,
+						0,
+						0.2,
+						50
+					],
+					"lv7": [
+						1.896,
+						0.59375,
+						0.0948,
+						0.0948,
+						1.422,
+						0,
+						0.2,
+						50
+					],
+					"lv8": [
+						2.04,
+						0.6125,
+						0.102,
+						0.102,
+						1.53,
+						0,
+						0.2,
+						50
+					],
+					"lv9": [
+						2.22,
+						0.63125,
+						0.111,
+						0.111,
+						1.665,
+						0,
+						0.2,
+						50
+					],
+					"lv10": [
+						2.4,
+						0.65,
+						0.12,
+						0.12,
+						1.8,
+						0,
+						0.2,
+						50
+					],
+					"lv11": [
+						2.52,
+						0.665,
+						0.126,
+						0.126,
+						1.89,
+						0,
+						0.2,
+						50
+					],
+					"lv12": [
+						2.64,
+						0.68,
+						0.132,
+						0.132,
+						1.98,
+						0,
+						0.2,
+						50
+					],
+					"lv13": [
+						2.76,
+						0.695,
+						0.138,
+						0.138,
+						2.07,
+						0,
+						0.2,
+						50
+					],
+					"lv14": [
+						2.88,
+						0.71,
+						0.144,
+						0.144,
+						2.16,
+						0,
+						0.2,
+						50
+					],
+					"lv15": [
+						3,
+						0.725,
+						0.15,
+						0.15,
+						2.25,
+						0,
+						0.2,
+						50
+					]
+				},
+				"enhancedOf": "1307004",
+				"enhanced": true
 			}
 		]
 	},

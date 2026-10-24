@@ -2045,6 +2045,7 @@
 				"after": "Belegt alle Gegner für **2[i]** Rd. mit dem Status „Enthüllung“. Fügt anschließend allen Gegnern Wind-SCH in Höhe von **1[i]%** des ANG von Schwarzer Schwan zu.\nIm Status Enthüllung **erleiden Gegner **3[i]%** mehr SCH**. **Für jede Stapelung Arkana besteht eine feste Chance von **4[i]%**, dass die Stapelzahl dieses Mal zusätzlich um 1 erhöht wird**. Außerdem wird die Stapelzahl von Arkana zu Beginn der Runde nach dem Verursachen von SCH nicht halbiert.",
 				"simpleBefore": "Belegt alle Gegner mit dem Status „Enthüllung“, wodurch der erlittene SCH während ihrer Runde erhöht wird. Zudem wird Arkana als gleichwertig mit den Status Windscherung, Bluten, Brennen und Schock betrachtet. Außerdem wird die Stapelzahl von Arkana zu Beginn der nächsten Runde nach dem Verursachen von SCH nicht zurückgesetzt. Fügt allen Gegnern Wind-SCH zu.",
 				"simpleAfter": "Belegt alle Gegner mit dem Status „Enthüllung“, **wodurch ihr erlittener SCH erhöht wird und die Chance besteht, dass sich beim Stapeln von „Arkana“ die Stapelzahl dieses Mal erhöht**. Außerdem werden die Stapelzahl von Arkana zu Beginn der nächsten Runde nach dem Verursachen von SCH nicht halbiert. Fügt allen Gegnern Wind-SCH zu.",
+				"treeId": "11307003",
 				"comments": [
 					"Fügt Gegnern auch **außerhalb ihrer Runde** Anfälligkeit zu.",
 					"Ohne Einsatz des Ultimates wird „Arkana“ standardmäßig als Status **Windscherung, Bluten, Brennen und Schock** gewertet."
@@ -2057,6 +2058,7 @@
 				"after": "**Jedes Mal, wenn ein Gegner DoT erleidet, besteht eine Grundchance von **2[i]%**, dass er mit 1 Stapelung „Arkana“ belegt wird**.\n**Wenn sich ein Gegner im Status Arkana befindet, gilt er gleichzeitig als von Windscherung, Bluten, Brennen und Schock betroffen**. Zu Beginn jeder Runde erleidet er Wind-DoT in Höhe von **1[i]%** des ANG von Schwarzer Schwan. Danach **halbiert sich die Stapelzahl**. Jede Stapelung Arkana erhöht den Multiplikator dieses SCH um **3[f1]%**. **Arkana ist bis zu **8[i]**-fach stapelbar. Auch nach Erreichen der Obergrenze können weitere Stapelungen hinzugefügt werden. Nach dem Verursachen von SCH werden die überschüssigen Stapelungen entfernt.**\n**Der durch Arkana verursachte SCH ignoriert **7[i]%** der VTD des Ziels. Nur wenn Arkana zu Beginn einer gegnerischen Runde SCH verursacht, erleiden angrenzende Einheiten zusätzlich 1-mal Wind-DoT in Höhe von **5[i]%** des ANG von Schwarzer Schwan**.",
 				"simpleBefore": "Wenn ein Gegner zu Beginn jeder Runde DoT erleidet, besteht eine Chance, dass er mit Arkana belegt wird, sodass er zu Beginn der Runde **Wind-DoT** erleidet. Basierend auf der Stapelzahl von Arkana löst Schwarzer Schwan **zusätzliche Effekte** aus.",
 				"simpleAfter": "Wenn ein Gegner DoT erleidet, besteht eine Chance, mit dem Status „Arkana“ belegt zu werden. **Arkana wird gleichzeitig als Windscherung, Bluten, Brennen und Schock** gewertet. Das Ziel erleidet jede Runde ** Wind-DoT**. Nur zu Beginn einer gegnerischen Runde wird angrenzenden Einheiten zusätzlich Wind-DoT zugefügt.\nArkana kann **auch nach Erreichen der Obergrenze weiter gestapelt werden**. Nach dem Verursachen von SCH werden die überschüssigen Stapelungen entfernt.",
+				"treeId": "11307004",
 				"comments": [
 					"„Arkana“ kann auch **außerhalb der gegnerischen Runde ** schnell gestapelt werden, ohne dass Spuren freigeschaltet werden müssen.",
 					"„Arkana“ kann **das Limit für Stapelungen überschreiten** und **behält beim Zurücksetzen die Hälfte der Stapelungen bei**."
@@ -2113,6 +2115,280 @@
 				"comments": [
 					"Kann den verursachten SCH **aller Verbündeten** erhöhen."
 				]
+			}
+		],
+		"treeNodes": [
+			{
+				"id": "11307003",
+				"name": "Schwelgend in den Armen der Anderwelt",
+				"icon": "spriteoutput/skillicons/avatar/11307/SkillIcon_11307_Ultra.png",
+				"shortIcon": "SkillIcon_11307_Ultra",
+				"type": 2,
+				"avatar": 1307,
+				"baseSkill": [
+					"1130703"
+				],
+				"description": "Versetzt alle Gegner für **2[i]** Rd. in den Status „Enthüllung“. Fügt anschließend allen Gegnern Wind-SCH in Höhe von ****1[i]%**** des ANG von Schwarzer Schwan zu.\nIm Status „Enthüllung“ erleiden Gegner ****3[i]%**** mehr SCH. Für jede Stapelung **Arkana** besteht eine **feste Chance** von **4[i]%**, dass die Stapelzahl dieses Mal zusätzlich um 1 erhöht wird. Außerdem wird die Stapelzahl von **Arkana** nach dem Verursachen von SCH zu Beginn der Runde nicht halbiert.",
+				"params": {
+					"lv1": [
+						0.72,
+						2,
+						0.15,
+						0.5
+					],
+					"lv2": [
+						0.768,
+						2,
+						0.16,
+						0.5
+					],
+					"lv3": [
+						0.816,
+						2,
+						0.17,
+						0.5
+					],
+					"lv4": [
+						0.864,
+						2,
+						0.18,
+						0.5
+					],
+					"lv5": [
+						0.912,
+						2,
+						0.19,
+						0.5
+					],
+					"lv6": [
+						0.96,
+						2,
+						0.2,
+						0.5
+					],
+					"lv7": [
+						1.02,
+						2,
+						0.2125,
+						0.5
+					],
+					"lv8": [
+						1.08,
+						2,
+						0.225,
+						0.5
+					],
+					"lv9": [
+						1.14,
+						2,
+						0.2375,
+						0.5
+					],
+					"lv10": [
+						1.2,
+						2,
+						0.25,
+						0.5
+					],
+					"lv11": [
+						1.248,
+						2,
+						0.26,
+						0.5
+					],
+					"lv12": [
+						1.296,
+						2,
+						0.27,
+						0.5
+					],
+					"lv13": [
+						1.344,
+						2,
+						0.28,
+						0.5
+					],
+					"lv14": [
+						1.392,
+						2,
+						0.29,
+						0.5
+					],
+					"lv15": [
+						1.44,
+						2,
+						0.3,
+						0.5
+					]
+				},
+				"enhancedOf": "1307003",
+				"enhanced": true
+			},
+			{
+				"id": "11307004",
+				"name": "Die Launen des sinnlosen Schicksals",
+				"icon": "spriteoutput/skillicons/avatar/11307/SkillIcon_11307_Passive.png",
+				"shortIcon": "SkillIcon_11307_Passive",
+				"type": 2,
+				"avatar": 1307,
+				"baseSkill": [
+					"1130704"
+				],
+				"description": "Jedes Mal, wenn ein Gegner DoT erleidet, besteht eine **Grundchance** von ****2[i]%****, dass er mit 1 Stapelung **Arkana** belegt wird.\nWenn sich ein Gegner im Status **Arkana** befindet, gilt er gleichzeitig als von Windscherung, Bluten, Brennen und Schock betroffen. Zu Beginn jeder Runde erleidet er Wind-DoT in Höhe von ****1[i]%**** des ANG von Schwarzer Schwan. Danach halbiert sich die Stapelzahl. Jede Stapelung **Arkana** erhöht den Multiplikator dieses SCH um ****3[f1]%****. **Arkana** ist bis zu **8[i]**-fach stapelbar. Auch nach Erreichen der Obergrenze können weitere Stapelungen hinzugefügt werden. Nach dem Verursachen von SCH werden die überschüssigen Stapelungen entfernt.\nDer durch **Arkana** verursachte SCH ignoriert **7[i]%** der VTD des Ziels. Nur wenn **Arkana** zu Beginn einer gegnerischen Runde SCH verursacht, erleiden angrenzende Einheiten zusätzlich 1-mal Wind-DoT in Höhe von ****5[i]%**** des ANG von Schwarzer Schwan.",
+				"params": {
+					"lv1": [
+						0.96,
+						0.5,
+						0.048,
+						0.048,
+						0.72,
+						0,
+						0.2,
+						50
+					],
+					"lv2": [
+						1.1184,
+						0.515,
+						0.05592,
+						0.05592,
+						0.8388,
+						0,
+						0.2,
+						50
+					],
+					"lv3": [
+						1.2768,
+						0.53,
+						0.06384,
+						0.06384,
+						0.9576,
+						0,
+						0.2,
+						50
+					],
+					"lv4": [
+						1.4352,
+						0.545,
+						0.07176,
+						0.07176,
+						1.0764,
+						0,
+						0.2,
+						50
+					],
+					"lv5": [
+						1.5936,
+						0.56,
+						0.07968,
+						0.07968,
+						1.1952,
+						0,
+						0.2,
+						50
+					],
+					"lv6": [
+						1.752,
+						0.575,
+						0.0876,
+						0.0876,
+						1.314,
+						0,
+						0.2,
+						50
+					],
+					"lv7": [
+						1.896,
+						0.59375,
+						0.0948,
+						0.0948,
+						1.422,
+						0,
+						0.2,
+						50
+					],
+					"lv8": [
+						2.04,
+						0.6125,
+						0.102,
+						0.102,
+						1.53,
+						0,
+						0.2,
+						50
+					],
+					"lv9": [
+						2.22,
+						0.63125,
+						0.111,
+						0.111,
+						1.665,
+						0,
+						0.2,
+						50
+					],
+					"lv10": [
+						2.4,
+						0.65,
+						0.12,
+						0.12,
+						1.8,
+						0,
+						0.2,
+						50
+					],
+					"lv11": [
+						2.52,
+						0.665,
+						0.126,
+						0.126,
+						1.89,
+						0,
+						0.2,
+						50
+					],
+					"lv12": [
+						2.64,
+						0.68,
+						0.132,
+						0.132,
+						1.98,
+						0,
+						0.2,
+						50
+					],
+					"lv13": [
+						2.76,
+						0.695,
+						0.138,
+						0.138,
+						2.07,
+						0,
+						0.2,
+						50
+					],
+					"lv14": [
+						2.88,
+						0.71,
+						0.144,
+						0.144,
+						2.16,
+						0,
+						0.2,
+						50
+					],
+					"lv15": [
+						3,
+						0.725,
+						0.15,
+						0.15,
+						2.25,
+						0,
+						0.2,
+						50
+					]
+				},
+				"enhancedOf": "1307004",
+				"enhanced": true
 			}
 		]
 	},

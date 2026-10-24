@@ -1722,6 +1722,7 @@
 				"after": "Erhöht Seeles GES für ****3[i]**** Rd. um **2[i]%** und fügt einem anvisierten Gegner Quanten-SCH in Höhe von ****1[i]%**** von Seeles ANG zu.\n**Wenn der aktuelle LP-Prozentsatz des Angriffsziels nach dem Angriff eines Verbündeten kleiner oder gleich **4[i]%** ist, setzt Seele automatisch 1-mal ihre Fertigkeit gegen dieses Ziel ein. Dieser Einsatz der Fertigkeit verbraucht keine Fertigkeitspunkte und stellt keine Energie wieder her. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden. Die Auslösungsanzahl wird zu Beginn von Seeles Runde zurückgesetzt. Wenn es kein angreifbares Ziel gibt, wird der Gegner mit den niedrigsten LP angegriffen.**",
 				"simpleBefore": "Fügt einem Gegner Quanten-SCH zu und erhöht die eigene GES.",
 				"simpleAfter": "Fügt einem Gegner **massiven** Quanten-SCH zu und erhöht die eigene GES. **Wenn der aktuelle LP-Prozentsatz des Angriffsziels nach dem Angriff eines Verbündeten kleiner oder gleich **4[i]%** ist, setzt Seele automatisch 1-mal ihre Fertigkeit gegen dieses Ziel ein.**",
+				"treeId": "11102002",
 				"comments": []
 			},
 			{
@@ -1731,6 +1732,7 @@
 				"after": "Tritt in den Verstärkten Zustand ein und fügt einem anvisierten Gegner Quanten-SCH in Höhe von ****1[i]%**** von Seeles ANG zu.",
 				"simpleBefore": "Tritt in den Verstärkten Zustand ein und fügt einem Gegner massiven Quanten-SCH zu.",
 				"simpleAfter": "Tritt in den Verstärkten Zustand ein und fügt einem Gegner massiven Quanten-SCH zu.",
+				"treeId": "11102003",
 				"comments": []
 			},
 			{
@@ -1740,6 +1742,7 @@
 				"after": "Tritt beim Besiegen eines Gegners durch Standardangriff, Fertigkeit oder Ultimate in den Verstärkten Zustand ein und erhält sofort eine zusätzliche Runde. Während des Verstärkten Zustands wird Seeles verursachter SCH für ****2[i]**** Rd. um **1[i]%** erhöht.\nGegner, die in der zusätzlichen Runde des Talents „Erneute Erscheinung“ besiegt werden, lösen dieses Talent nicht aus.",
 				"simpleBefore": "Tritt beim Besiegen eines Gegners durch Standardangriff, Fertigkeit oder Ultimate in den Verstärkten Zustand ein und erhält eine zusätzliche Runde. Während des Verstärkten Zustands wird der verursachte SCH dieser Einheit erhöht.",
 				"simpleAfter": "Tritt beim Besiegen eines Gegners durch Standardangriff, Fertigkeit oder Ultimate in den Verstärkten Zustand ein und erhält eine zusätzliche Runde. Während des Verstärkten Zustands wird der verursachte SCH dieser Einheit erhöht.",
+				"treeId": "11102004",
 				"comments": []
 			},
 			{
@@ -1749,6 +1752,7 @@
 				"after": "Nach dem Einsatz der Technik erhält Seele für **1[i]** Sek. Tarnung. Während Tarnung aktiv ist, ist Seele für Gegner unsichtbar. Wenn sie durch einen aktiven Angriff auf Gegner in den Kampf eintritt, tritt Seele sofort in den verstärkten Zustand ein und fügt einem zufälligen Gegner 1-mal Quanten-SCH in Höhe des SCH-Multiplikators von Seeles Fertigkeits-SCH zu. **Dieser SCH ist garantiert ein Kritischer Treffer.**",
 				"simpleBefore": "Tritt in den Status Tarnung ein. Nachdem diese Einheit durch einen Angriff auf Gegner in den Kampf eingetreten ist, tritt sie sofort in den Verstärkten Zustand ein.",
 				"simpleAfter": "Tritt in den Status Tarnung ein. Nachdem diese Einheit durch einen Angriff auf Gegner in den Kampf eingetreten ist, tritt sie sofort in den Verstärkten Zustand ein und fügt einem zufälligen Ziel massiven Quanten-SCH zu, der **garantiert ein Kritischer Treffer** ist.",
+				"treeId": "11102007",
 				"comments": []
 			}
 		],
@@ -1775,6 +1779,270 @@
 				"before": "Liegt der LP-Prozentsatz bei **1[i]%** oder niedriger, sinkt die Chance, von Gegnern angegriffen zu werden.",
 				"after": "**Erhöht den verursachten SCH dieser Einheit beim Besiegen eines Gegners um **1[i]%**. Dieser Effekt ist bis zu **2[i]**-fach stapelbar und hält **3[i]** Rd. an.**",
 				"comments": []
+			}
+		],
+		"treeNodes": [
+			{
+				"id": "11102002",
+				"name": "Ungezückte Klinge",
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_BP.png",
+				"shortIcon": "SkillIcon_11102_BP",
+				"type": 2,
+				"avatar": 1102,
+				"baseSkill": [
+					"1110202"
+				],
+				"description": "Erhöht Seeles GES für **3[i]** Rd. um **2[i]%** und fügt einem anvisierten Gegner Quanten-SCH in Höhe von ****1[i]%**** von Seeles ANG zu.\nWenn der aktuelle LP-Prozentsatz des Angriffsziels nach dem Angriff eines Verbündeten kleiner oder gleich **4[i]%** ist, setzt Seele automatisch 1-mal ihre Fertigkeit gegen dieses Ziel ein. Dieser Einsatz der Fertigkeit verbraucht keine Fertigkeitspunkte und stellt keine Energie wieder her. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden. Die Auslösungsanzahl wird zu Beginn von Seeles Runde zurückgesetzt. Wenn es kein angreifbares Ziel gibt, wird der Gegner mit den niedrigsten LP angegriffen.",
+				"params": {
+					"lv1": [
+						1.8,
+						0.25,
+						3,
+						0.5
+					],
+					"lv2": [
+						1.98,
+						0.25,
+						3,
+						0.5
+					],
+					"lv3": [
+						2.16,
+						0.25,
+						3,
+						0.5
+					],
+					"lv4": [
+						2.34,
+						0.25,
+						3,
+						0.5
+					],
+					"lv5": [
+						2.52,
+						0.25,
+						3,
+						0.5
+					],
+					"lv6": [
+						2.7,
+						0.25,
+						3,
+						0.5
+					],
+					"lv7": [
+						2.925,
+						0.25,
+						3,
+						0.5
+					],
+					"lv8": [
+						3.15,
+						0.25,
+						3,
+						0.5
+					],
+					"lv9": [
+						3.375,
+						0.25,
+						3,
+						0.5
+					],
+					"lv10": [
+						3.6,
+						0.25,
+						3,
+						0.5
+					],
+					"lv11": [
+						3.78,
+						0.25,
+						3,
+						0.5
+					],
+					"lv12": [
+						3.96,
+						0.25,
+						3,
+						0.5
+					],
+					"lv13": [
+						4.14,
+						0.25,
+						3,
+						0.5
+					],
+					"lv14": [
+						4.32,
+						0.25,
+						3,
+						0.5
+					],
+					"lv15": [
+						4.5,
+						0.25,
+						3,
+						0.5
+					]
+				},
+				"enhancedOf": "1102002",
+				"enhanced": true
+			},
+			{
+				"id": "11102003",
+				"name": "Schmetterlingssturm",
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Ultra.png",
+				"shortIcon": "SkillIcon_11102_Ultra",
+				"type": 2,
+				"avatar": 1102,
+				"baseSkill": [
+					"1110203"
+				],
+				"description": "Tritt in den Verstärkten Zustand ein und fügt einem anvisierten Gegner Quanten-SCH in Höhe von ****1[i]%**** von Seeles ANG zu.",
+				"params": {
+					"lv1": [
+						3.6
+					],
+					"lv2": [
+						3.96
+					],
+					"lv3": [
+						4.32
+					],
+					"lv4": [
+						4.68
+					],
+					"lv5": [
+						5.04
+					],
+					"lv6": [
+						5.4
+					],
+					"lv7": [
+						5.85
+					],
+					"lv8": [
+						6.3
+					],
+					"lv9": [
+						6.75
+					],
+					"lv10": [
+						7.2
+					],
+					"lv11": [
+						7.56
+					],
+					"lv12": [
+						7.92
+					],
+					"lv13": [
+						8.28
+					],
+					"lv14": [
+						8.64
+					],
+					"lv15": [
+						9
+					]
+				},
+				"enhancedOf": "1102003",
+				"enhanced": true
+			},
+			{
+				"id": "11102004",
+				"name": "Erneute Erscheinung",
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Passive.png",
+				"shortIcon": "SkillIcon_11102_Passive",
+				"type": 2,
+				"avatar": 1102,
+				"baseSkill": [
+					"1110204"
+				],
+				"description": "Tritt beim Besiegen eines Gegners durch Standardangriff, Fertigkeit oder Ultimate in den Verstärkten Zustand ein und erhält sofort eine **zusätzliche Runde**. Während des Verstärkten Zustands wird Seeles verursachter SCH für **2[i]** Rd. um ****1[i]%**** erhöht.\nGegner, die in der **zusätzlichen Runde** des Talents „Erneute Erscheinung“ besiegt werden, lösen dieses Talent nicht aus.",
+				"params": {
+					"lv1": [
+						0.4,
+						3
+					],
+					"lv2": [
+						0.44,
+						3
+					],
+					"lv3": [
+						0.48,
+						3
+					],
+					"lv4": [
+						0.52,
+						3
+					],
+					"lv5": [
+						0.56,
+						3
+					],
+					"lv6": [
+						0.6,
+						3
+					],
+					"lv7": [
+						0.65,
+						3
+					],
+					"lv8": [
+						0.7,
+						3
+					],
+					"lv9": [
+						0.75,
+						3
+					],
+					"lv10": [
+						0.8,
+						3
+					],
+					"lv11": [
+						0.84,
+						3
+					],
+					"lv12": [
+						0.88,
+						3
+					],
+					"lv13": [
+						0.92,
+						3
+					],
+					"lv14": [
+						0.96,
+						3
+					],
+					"lv15": [
+						1,
+						3
+					]
+				},
+				"enhancedOf": "1102004",
+				"enhanced": true
+			},
+			{
+				"id": "11102007",
+				"name": "Phantomillusion",
+				"icon": "spriteoutput/skillicons/avatar/11102/SkillIcon_11102_Maze.png",
+				"shortIcon": "SkillIcon_11102_Maze",
+				"type": 2,
+				"avatar": 1102,
+				"baseSkill": [
+					"1110207"
+				],
+				"description": "Nach dem Einsatz der Technik erhält Seele für **1[i]** Sek. Tarnung. Während Tarnung aktiv ist, ist Seele für Gegner unsichtbar. Wenn sie durch einen aktiven Angriff auf Gegner in den Kampf eintritt, tritt Seele sofort in den verstärkten Zustand ein und fügt einem zufälligen Gegner 1-mal Quanten-SCH in Höhe des SCH-Multiplikators von Seeles Fertigkeits-SCH zu. Dieser SCH ist garantiert ein Kritischer Treffer.",
+				"params": {
+					"lv1": [
+						20
+					]
+				},
+				"enhancedOf": "1102007",
+				"enhanced": true
 			}
 		]
 	},

@@ -1907,6 +1907,7 @@
 				"after": "Deals Lightning DMG equal to **1[i]%** of Kafka's ATK to one designated enemy and Lightning DMG equal to **3[i]%** of Kafka's ATK to adjacent targets.\nIf **the designated enemy or the adjacent targets** are currently afflicted with DoT, all DoTs currently placed on those enemies immediately produces DMG equal to **2[i]%** or ****4[i]%**** of the original DMG.",
 				"simpleBefore": "Deals Lightning DMG to one enemy and minor Lightning DMG to adjacent targets.\nIf the primary target currently has any DoT inflicted on it, the DoT additionally produces 1 instance of DMG.",
 				"simpleAfter": "Deals Lightning DMG to one enemy and minor Lightning DMG to adjacent targets.\nIf **the attacked targets** currently have any DoT inflicted on them, the DoT additionally produces 1 instance of DMG.",
+				"treeId": "11005002",
 				"comments": [
 					"Skill can cause DoTs on **all its targets** to immediately trigger 1 additional instance of DMG"
 				]
@@ -1918,6 +1919,7 @@
 				"after": "Deals Lightning DMG equal to **1[i]%** of Kafka's ATK to all enemies, with a **2[i]%** **base chance** for enemy targets hit to become Shocked and immediately take DMG from their current **DoT debuffs** equal to ****5[i]%**** of the original DMG. Shock lasts for **3[i]** turn(s).\nWhile Shocked, enemies receive Lightning DoT equal to **4[i]%** of Kafka's ATK at the beginning of each turn.",
 				"simpleBefore": "Deals minor Lightning DMG to all enemies, with a high chance of Shocking them.\nIf the enemies are currently Shocked, the Shock status produces 1 additional instance of DMG.",
 				"simpleAfter": "Deals minor Lightning DMG to all enemies, with a high chance of Shocking them.\nIf the enemy targets are currently **afflicted with DoT debuff(s)**, the **DoT(s)** will produce 1 additional instance of DMG.",
+				"treeId": "11005003",
 				"comments": [
 					"Can enable **DoT debuffs** to immediately trigger 1 extra instance of DMG without needing to unlock Traces"
 				]
@@ -1929,6 +1931,7 @@
 				"after": "After Kafka's teammate uses **an attack** on an enemy target, Kafka immediately launches Follow-Up ATK and deals Lightning DMG equal to **1[i]%** of Kafka's ATK to **the primary target**, with a **2[i]%** base chance to inflict Shock (equivalent to that applied by her Ultimate) on the attacked enemy target for **3[i]** turns. This effect **can trigger up to **5[i]** time(s), **4[i]** of which can be regained at the end of Kafka's turn**.",
 				"simpleBefore": "After a teammate uses Basic ATK on an enemy target, Kafka immediately launches Follow-Up ATK and deals Lightning DMG to that target, with a high chance of inflicting Shock. This effect can only trigger once per turn.",
 				"simpleAfter": "After a teammate uses **an attack** on an enemy target, Kafka immediately launches Follow-Up ATK and deals Lightning DMG to **the primary target**, with a high chance of inflicting Shock. This effect **can trigger up to **5[i]** time(s), **4[i]** of which can be regained at the end of Kafka's turn**.",
+				"treeId": "11005004",
 				"comments": [
 					"**Any attack** from teammates can trigger Kafka's Talent"
 				]
@@ -1966,6 +1969,356 @@
 				"before": "The base chance for enemy targets to get Shocked by the Ultimate, the Technique, or the Talent-triggered Follow-Up ATK increases by **1[i]%**.",
 				"after": "**After using Ultimate, restores the Talent's Follow-Up ATK trigger count by 1, and the Follow-Up ATK can cause all DoT debuffs currently on the target to immediately produce DMG equal to **1[i]%** of the original DMG.**",
 				"comments": []
+			}
+		],
+		"treeNodes": [
+			{
+				"id": "11005002",
+				"name": "Caressing Moonlight",
+				"icon": "spriteoutput/skillicons/avatar/11005/SkillIcon_11005_BP.png",
+				"shortIcon": "SkillIcon_11005_BP",
+				"type": 2,
+				"avatar": 1005,
+				"baseSkill": [
+					"1100502"
+				],
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Kafka's ATK to one designated enemy and Lightning DMG equal to ****3[i]%**** of Kafka's ATK to adjacent targets.\nIf the designated enemy or the adjacent targets are currently afflicted with DoT, all DoTs currently placed on those enemies immediately produces DMG equal to ****2[i]%**** or ****4[i]%**** of the original DMG.",
+				"params": {
+					"lv1": [
+						0.8,
+						0.6,
+						0.3,
+						0.4
+					],
+					"lv2": [
+						0.88,
+						0.615,
+						0.33,
+						0.41
+					],
+					"lv3": [
+						0.96,
+						0.63,
+						0.36,
+						0.42
+					],
+					"lv4": [
+						1.04,
+						0.645,
+						0.39,
+						0.43
+					],
+					"lv5": [
+						1.12,
+						0.66,
+						0.42,
+						0.44
+					],
+					"lv6": [
+						1.2,
+						0.675,
+						0.45,
+						0.45
+					],
+					"lv7": [
+						1.3,
+						0.69375,
+						0.4875,
+						0.4625
+					],
+					"lv8": [
+						1.4,
+						0.7125,
+						0.525,
+						0.475
+					],
+					"lv9": [
+						1.5,
+						0.73125,
+						0.5625,
+						0.4875
+					],
+					"lv10": [
+						1.6,
+						0.75,
+						0.6,
+						0.5
+					],
+					"lv11": [
+						1.68,
+						0.765,
+						0.63,
+						0.51
+					],
+					"lv12": [
+						1.76,
+						0.78,
+						0.66,
+						0.52
+					],
+					"lv13": [
+						1.84,
+						0.795,
+						0.69,
+						0.53
+					],
+					"lv14": [
+						1.92,
+						0.81,
+						0.72,
+						0.54
+					],
+					"lv15": [
+						2,
+						0.825,
+						0.75,
+						0.55
+					]
+				},
+				"enhancedOf": "1005002",
+				"enhanced": true
+			},
+			{
+				"id": "11005003",
+				"name": "Twilight Trill",
+				"icon": "spriteoutput/skillicons/avatar/11005/SkillIcon_11005_Ultra.png",
+				"shortIcon": "SkillIcon_11005_Ultra",
+				"type": 2,
+				"avatar": 1005,
+				"baseSkill": [
+					"1100503"
+				],
+				"description": "Deals Lightning DMG equal to ****1[i]%**** of Kafka's ATK to all enemies, with a **2[i]%** **base chance** for enemy targets hit to become Shocked and immediately take DMG from their current DoT debuff(s), equal to ****5[i]%**** of the original DMG. Shock lasts for **3[i]** turn(s).\nWhile Shocked, enemy targets receive Lightning DoT equal to ****4[i]%**** of Kafka's ATK at the beginning of each turn.",
+				"params": {
+					"lv1": [
+						0.48,
+						1,
+						2,
+						1.16,
+						1
+					],
+					"lv2": [
+						0.512,
+						1,
+						2,
+						1.26875,
+						1.02
+					],
+					"lv3": [
+						0.544,
+						1,
+						2,
+						1.3775,
+						1.04
+					],
+					"lv4": [
+						0.576,
+						1,
+						2,
+						1.48625,
+						1.06
+					],
+					"lv5": [
+						0.608,
+						1,
+						2,
+						1.595,
+						1.08
+					],
+					"lv6": [
+						0.64,
+						1,
+						2,
+						1.758125,
+						1.1
+					],
+					"lv7": [
+						0.68,
+						1,
+						2,
+						1.975625,
+						1.125
+					],
+					"lv8": [
+						0.72,
+						1,
+						2,
+						2.2475,
+						1.15
+					],
+					"lv9": [
+						0.76,
+						1,
+						2,
+						2.57375,
+						1.175
+					],
+					"lv10": [
+						0.8,
+						1,
+						2,
+						2.9,
+						1.2
+					],
+					"lv11": [
+						0.832,
+						1,
+						2,
+						3.041375,
+						1.22
+					],
+					"lv12": [
+						0.864,
+						1,
+						2,
+						3.18275,
+						1.24
+					],
+					"lv13": [
+						0.896,
+						1,
+						2,
+						3.324125,
+						1.26
+					],
+					"lv14": [
+						0.928,
+						1,
+						2,
+						3.4655,
+						1.28
+					],
+					"lv15": [
+						0.96,
+						1,
+						2,
+						3.606875,
+						1.3
+					]
+				},
+				"enhancedOf": "1005003",
+				"enhanced": true
+			},
+			{
+				"id": "11005004",
+				"name": "Gentle but Cruel",
+				"icon": "spriteoutput/skillicons/avatar/11005/SkillIcon_11005_Passive.png",
+				"shortIcon": "SkillIcon_11005_Passive",
+				"type": 2,
+				"avatar": 1005,
+				"baseSkill": [
+					"1100504"
+				],
+				"description": "After Kafka's teammate uses an attack on an enemy target, Kafka immediately launches **Follow-Up ATK** and deals Lightning DMG equal to ****1[i]%**** of Kafka's ATK to the primary target, with a **2[i]%** **base chance** to inflict Shock (equivalent to that applied by her Ultimate) on the attacked enemy target for **3[i]** turns. This effect can trigger up to **5[i]** time(s), **4[i]** of which can be regained at the end of Kafka's turn.",
+				"params": {
+					"lv1": [
+						0.42,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv2": [
+						0.518,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv3": [
+						0.616,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv4": [
+						0.714,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv5": [
+						0.812,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv6": [
+						0.91,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv7": [
+						1.0325,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv8": [
+						1.155,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv9": [
+						1.2775,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv10": [
+						1.4,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv11": [
+						1.498,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv12": [
+						1.596,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv13": [
+						1.694,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv14": [
+						1.792,
+						1,
+						2,
+						1,
+						2
+					],
+					"lv15": [
+						1.89,
+						1,
+						2,
+						1,
+						2
+					]
+				},
+				"enhancedOf": "1005004",
+				"enhanced": true
 			}
 		]
 	},
