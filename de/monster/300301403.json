@@ -1,0 +1,202 @@
+{
+	"name": "Truppe der Albträume: Flambosaurus",
+	"description": "Servicemaschine Penaconys, die aufgrund der emotionalen Interferenz in der Traumlandschaft außer Kontrolle geraten ist.\nUrsprünglich ein Küchenroboter. Flambiert seit dem Kontrollverlust alles, was ihm zu nahe kommt, um es in gegrillte Delikatessen zu verwandeln.",
+	"icon": "spriteoutput/monsterfigure/Monster_3003010.png",
+	"shortIcon": "Monster_3003010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Mächtiges Pfannenschwenken",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301401"
+		},
+		{
+			"name": "Wirbelnder Wurf",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten und angrenzenden Einheiten geringen Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301402"
+		},
+		{
+			"name": "Herdzündung",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Bis „Herdhitze“ eine bestimmte Zahl an Stapelungen erreicht, wird diese Einheit bei jeder Aktion „Flammendes Pfannengericht“ einsetzen. Wenn sich die Einheit bereits im Status Aufladen befindet, wird die aktuelle Stapelzahl von Herdhitze verringert.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1.4,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301403"
+		},
+		{
+			"name": "Flammendes Pfannengericht",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301404"
+		},
+		{
+			"name": "Küchenunfall",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Wenn die Stapelungen von „Herdhitze“ eine bestimmte Zahl erreicht haben, wird allen Gegnern massiver Feuer-SCH zugefügt und die VTD der Einheit selbst reduziert. Gleichzeitig werden alle Stapelungen von Herdhitze entfernt.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				6,
+				0.2,
+				0.2,
+				0.5,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301405"
+		},
+		{
+			"name": "Feurige Delikatesse",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn sich die Einheit nicht im Status Aufladen befindet, führt sie sofort eine Aktion aus und löst „Herdzündung“ aus, sobald eine bestimmte Anzahl von Stapelungen an „Herdhitze“ erreicht wurde.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301406"
+		},
+		{
+			"name": "Herdinferno",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beim Angriff besteht eine hohe Chance, das Ziel zu verlangsamen. Wenn diese Einheit einen Angriff oder DoT erleidet, wird 1-fach „Herdhitze“ gestapelt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				1,
+				0.1,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301407"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 182010,
+				"count": 1
+			},
+			{
+				"id": 183006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "300301403"
+}

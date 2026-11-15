@@ -1,0 +1,134 @@
+{
+	"name": "柯柯娜的原则",
+	"description": "坚定之心，曾相信总有些底线不能被逾越。",
+	"icon": "spriteoutput/monsterfigure/Monster_3002030.png",
+	"shortIcon": "Monster_3002030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3002030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 209.25,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "邀饮",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300203001"
+		},
+		{
+			"name": "泼洒甜蜜",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到致命攻击时，对自身相邻的敌方目标造成物理属性伤害，使其速度提高并陷入裂伤状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.3,
+				2,
+				0.025,
+				100,
+				0.01
+			],
+			"spGain": 0,
+			"delay": 0.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300203002"
+		},
+		{
+			"name": "酣畅",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到攻击或持续伤害时，获得1层可叠加的【苏乐达陶醉】。【苏乐达陶醉】层数越高，造成的伤害越高。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 0,
+			"delay": 0.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300203003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114001,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 181016,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "300203002"
+}

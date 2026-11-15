@@ -1,0 +1,239 @@
+{
+	"name": "Dezimierer, Karma des Tagdonners, Auge des Zwielichts",
+	"description": "Das Bild des Eroberers, der einst mit absoluter Macht den Himmel beherrschte und nun von der Schwarzen Flut verschlungen wurde. Die Rechte und Pflichten seiner Vergangenheit mögen schwer zu beurteilen sein, aber in diesem Moment bleibt nur eine formlose Flamme karmischer Zerstörung, die vor mörderischer Absicht brodelt.",
+	"icon": "spriteoutput/monsterfigure/Monster_4015020.png",
+	"shortIcon": "Monster_4015020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4015020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 23250,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 960,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "Asche an die ferne Küste",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "<u>Repariert</u> „Poröser Knochen“. Fügt einem anvisierten Verbündeten eine festgelegte Menge an massivem imaginärem SCH zu und belegt ihn mit <u>Zersetzung</u>. <u>Zersetzung</u> ist stapelbar.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1,
+				500,
+				600,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502001"
+		},
+		{
+			"name": "Auslöschung des geretteten Sterns",
+			"tag": "Verteilen",
+			"type": "Fähigkeit",
+			"description": "<u>Repariert</u> „Trockener Tränenknochen“ und fügt allen Verbündeten eine festgelegte Menge an massivem imaginärem SCH zu. Der SCH wird unter den Zielen <u>gleichmäßig aufgeteilt</u>.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502002"
+		},
+		{
+			"name": "Auge des Schreckens",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Wechselt in den Status „Aufkommende dunkle Flut“. Setzt in der nächsten Aktion „Staubtod der Götter“ ein und <u>repariert</u> „Poröser Knochen“ sowie „Trockener Tränenknochen“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502003"
+		},
+		{
+			"name": "Staubtod der Götter",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten eine festgelegte Menge an massivem imaginärem SCH zu und <u>repariert</u> „Poröser Knochen“ und „Trockener Tränenknochen“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502004"
+		},
+		{
+			"name": "Überreste",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Wenn „Dezimierer, Karma des Tagdonners, Auge des Zwielichts“ während dieses Kampfes „Poröser Knochen“ oder „Trockener Tränenknochen“ SCH zufügt, verliert er selbst eine entsprechende Menge an LP. Wenn „Poröser Knochen“ oder „Trockener Tränenknochen“ einen Todesstoß erhält, erleidet „Dezimierer, Karma des Tagdonners, Auge des Zwielichts“ Widerstand-SCH, und „Poröser Knochen“ oder „Trockener Tränenknochen“ stellt LP wieder her und kann nicht ausgewählt werden.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				120,
+				1.4,
+				1.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502005"
+		},
+		{
+			"name": "Schwarze Flut",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Fügt der Aktionsreihenfolge „Schwarze Flut“ hinzu. Jedes Mal, wenn „Schwarze Flut“ eine Aktion ausführt, fügt sie allen Verbündeten <u>Zersetzung</u> zu. <u>Zersetzung</u> ist stapelbar. Wenn Verbündete Todesstöße erleiden, erhalten sie <u>Schwarze Korrosion</u>. Wenn alle Verbündeten in den Status <u>Schwarze Korrosion</u> übergehen oder handlungsunfähig sind, endet der Kampf mit einer Niederlage.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				300,
+				1,
+				30,
+				0.8,
+				130,
+				150
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502006"
+		},
+		{
+			"name": "Ebbe",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Während dieses Kampfes verursacht sämtlicher SCH, den „Dezimierer, Karma des Tagdonners, Auge des Zwielichts“ zufügt, eine feste Menge an SCH basierend auf der „Synchronisierungsrate der Schwarzen Flut“. Nachdem ein Verbündeter einen Angriff eingesetzt hat, verursacht er zusätzlich <u>nicht tödlichen</u> <u>Tatsächlichen SCH</u> basierend auf der Synchronisierungsrate der Schwarzen Flut. Wenn „Dezimierer, Karma des Tagdonners, Auge des Zwielichts“ und „Schwarze Flut“ Aktionen ausführen, wird die Synchronisierungsrate der Schwarzen Flut erhöht. Wenn „Poröser Knochen“ oder „Trockener Tränenknochen“ besiegt werden, wird die Synchronisierungsrate der Schwarzen Flut verringert.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8,
+				16,
+				0.6,
+				1,
+				0.00070000044,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502007"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				1,
+				2,
+				0,
+				0,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502008"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				20,
+				0,
+				0,
+				40
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502009"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [
+		"4012092",
+		"4012093"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "401502001"
+}

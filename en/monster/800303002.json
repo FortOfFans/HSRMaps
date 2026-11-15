@@ -3,15 +3,22 @@
 	"description": "A shadow manifested by the power of a Stellaron, carrying out the Fragmentum's unceasing will to expand.\nA living being of energy born from the projection of the desires of sentient lifeforms into the Fragmentum, akin to a pearl created from a single grain of sand. This energy wanders around aimlessly, acting only when executing the will of its master.",
 	"icon": "spriteoutput/monsterfigure/Monster_8003030.png",
 	"shortIcon": "Monster_8003030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003030.png",
 	"stats": {
 		"baseAttack": 12.000006,
 		"baseDefense": 210,
 		"baseHealth": 558.0004650000001,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "800303001",
 			"name": "Lightning Recollection",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,15 +30,15 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303001"
 		},
 		{
-			"id": "800303002",
 			"name": "Lightning Condemnation",
 			"tag": "Blast",
 			"type": "Ability",
-			"description": "Deals minor Lightning DMG to a single target and units adjacent to the target.",
+			"description": "Deals minor Lightning DMG to one designated target and units adjacent to the target.",
 			"element": "Thunder",
 			"attackType": "Normal",
 			"params": [
@@ -40,11 +47,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303002"
 		},
 		{
-			"id": "800303003",
 			"name": "Tranquil Ban",
 			"tag": "Impair",
 			"type": "Ability",
@@ -54,11 +61,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303003"
 		},
 		{
-			"id": "800303004",
 			"name": "Disarm Ban",
 			"tag": "Impair",
 			"type": "Ability",
@@ -68,11 +75,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303004"
 		},
 		{
-			"id": "800303005",
 			"name": "Silent Ban",
 			"tag": "Impair",
 			"type": "Ability",
@@ -82,11 +89,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303005"
 		},
 		{
-			"id": "800303006",
 			"name": "Thunderstorm Condemnation",
 			"tag": "Bounce",
 			"type": "Ability",
@@ -102,11 +109,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303006"
 		},
 		{
-			"id": "800303007",
 			"name": "Inevitable Punishment",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -118,11 +125,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303007"
 		},
 		{
-			"id": "800303008",
 			"name": "",
 			"tag": "Talent",
 			"type": "Talent",
@@ -135,42 +142,53 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303008"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Physical",
 		"Wind",
 		"Quantum"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 111001,
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
 				"count": 1
 			},
 			{
@@ -183,6 +201,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "800303002"

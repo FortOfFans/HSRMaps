@@ -1,0 +1,223 @@
+{
+	"name": "バーサーカー・金を貪る害虫",
+	"description": "長い年月を生き抜いたオーディ、ピノコニーの歴史に刻まれた彼自身の投影。嫉妬、嘲笑、憎悪…耐え難い言葉と厳しい評価を一身に受け、商人は理性と狂気を併せ持つ<unbreak>バーサーカー</unbreak>となった。",
+	"icon": "spriteoutput/monsterfigure/Monster_8025010.png",
+	"shortIcon": "Monster_8025010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8025010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3952.499256,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "王虫砲",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501001"
+		},
+		{
+			"name": "瓦解蟄毒",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に量子ダメージを与え、高確率で攻撃を受けた味方をもつれ状態にする。同時に「蝕蟄虫」を1体召喚する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				1.2,
+				1,
+				0
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501002"
+		},
+		{
+			"name": "熱解死光",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.8,
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501003"
+		},
+		{
+			"name": "",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501004"
+		},
+		{
+			"name": "凶禍を呼ぶ外殻",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "「増殖・砕星」状態に入る、次の行動まで継続。「増殖・砕星」状態が持続する間、受けるダメージが大幅にダウンし、攻撃を受けるたびに「蝕蟄虫」を召喚する。「増殖・砕星」状態で弱点撃破されると、敵全体に自身の最大靭性と同等の削靭値を与え、自身以外の敵の受けるダメージをアップさせる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				5,
+				0.1,
+				3,
+				10,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501005"
+		},
+		{
+			"name": "壊星の卵",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				6.6
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501006"
+		},
+		{
+			"name": "災いを生む外殻",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージして「増殖・砕星」状態に入る、次の行動まで継続。次の行動時、味方全体に「壊星の卵」を発動する。「増殖・砕星」状態が持続する間、受けるダメージが大幅にダウンし、攻撃を受けるたびに「蝕蟄虫」または「次蟄虫」を召喚する。「増殖・砕星」状態で弱点撃破されると、敵全体に自身の最大靭性と同等の削靭値を与え、自身以外の敵の受けるダメージをアップさせる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.07
+			],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501007"
+		},
+		{
+			"name": "",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501008"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				1,
+				0.1,
+				3,
+				10,
+				30
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501009"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_Entangle",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"8022030",
+		"802202001"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Quantum",
+	"id": "802501002"
+}

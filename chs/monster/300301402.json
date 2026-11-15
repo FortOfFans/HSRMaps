@@ -1,0 +1,202 @@
+{
+	"name": "惊梦剧团的十七分熟",
+	"description": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是烹饪食物的料理机器，失控后仍在喷吐炙烤食材的烈焰，企图将食客一同烧成焦炭。",
+	"icon": "spriteoutput/monsterfigure/Monster_3003010.png",
+	"shortIcon": "Monster_3003010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "大力颠勺",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对我方单体造成火属性伤害。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301401"
+		},
+		{
+			"name": "旋风翻锅",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对我方单体及相邻目标造成少量火属性伤害。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301402"
+		},
+		{
+			"name": "爆发炉灶",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，在【炉灶加温】叠加至一定层数前，每次行动都会释放【烈焰爆炒】。已经处于蓄力状态时，减少当前【炉灶加温】的层数。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1.4,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301403"
+		},
+		{
+			"name": "烈焰爆炒",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成大量火属性伤害。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301404"
+		},
+		{
+			"name": "厨房事故",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				6,
+				0.2,
+				0.2,
+				0.5,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301405"
+		},
+		{
+			"name": "火炼佳肴",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【爆发炉灶】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301406"
+		},
+		{
+			"name": "猛火炉灶",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "自身在攻击时有大概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				1,
+				0.1,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301407"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 182010,
+				"count": 1
+			},
+			{
+				"id": 183006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "300301402"
+}

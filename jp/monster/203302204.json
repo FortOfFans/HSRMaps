@@ -1,0 +1,229 @@
+{
+	"name": "呪言妄念の蝕心獣",
+	"description": "「紅月」は宿主の弱さをつけ狙う。心に潜む魔を唆し、威霊を奪い、その容貌までも変えていく。\n終わることのないその狩りにおいて、飛霄は狩る側か、狩られる側か。",
+	"icon": "spriteoutput/monsterfigure/Monster_2033020.png",
+	"shortIcon": "Monster_2033020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2033020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 35805,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "通霊",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "「星雲を喰らう頭」「天地を裂く爪」「塵を払う尾」は「業火焚心の影将軍」とHPを共有する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203302201"
+		},
+		{
+			"name": "連心",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "「星雲を喰らう頭」「天地を裂く爪」「塵を払う尾」および「業火焚心の影将軍」が弱点撃破状態に入った時、「呪言妄念の蝕心獣」の靭性を削る。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203302202"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [],
+	"summons": [
+		"2032042",
+		"2032052",
+		"2032062"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 4,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101201",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101202",
+				"name": "屹立する鉄骨",
+				"description": "部位が受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。ボス幻影が<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101203",
+				"name": "鉤爪と鋸牙",
+				"description": "ボス幻影の靭性+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>。",
+				"params": [
+					40
+				]
+			},
+			{
+				"id": "101204",
+				"name": "沸き立つ獣血",
+				"description": "<color=#f29e38ff>「呪詛」</color>状態の継続時間+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>ターン。",
+				"params": [
+					1
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10121",
+				"name": "第一段階：風雲雷動",
+				"description": "ボス幻影は「蝕心の呪詛」を発動し、味方を「呪詛」状態にする。",
+				"answer": "対応戦略：「蝕心の呪詛」が発動した時、アタッカー以外の味方キャラをターゲットとして指定する。",
+				"skills": [
+					{
+						"id": "101211",
+						"type": "Normal",
+						"name": "戦闘中に「血まみれの人狼」を操作する方法",
+						"texts": [
+							{
+								"description": "「血まみれの人狼」の戦闘スキルを優先的に使い、敵の靭性を効果的に削ることができる。味方全体のHPが低下している場合は、「血まみれの人狼」の通常攻撃を優先的に使い、味方のHPを迅速に回復できる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101212",
+						"type": "Normal",
+						"name": "「呪詛」状態を解除するタイミング",
+						"texts": [
+							{
+								"description": "「血まみれの人狼」が通常攻撃または戦闘スキルを発動する時、「渇血」を1層獲得する。「渇血」の層数が上限に達した時「呪詛」状態を解除する。また、ボス幻影を弱点撃破状態にしても「呪詛」状態は解除される。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10122",
+				"name": "第二段階：乾坤席巻",
+				"description": "ボス幻影は「乾坤呑噬」を発動し、味方に大ダメージを与え、デバフを付与する。",
+				"answer": "対応戦略：「乾坤呑噬」が発動される前にできるだけすべての部位を弱点撃破する。",
+				"skills": [
+					{
+						"id": "101221",
+						"type": "Normal",
+						"name": "「乾坤呑噬」によるダメージとデバフへの対処法",
+						"texts": [
+							{
+								"description": "「血まみれの人狼」の戦闘スキルで攻撃を行い、ボス幻影の複数の部位に命中すると、部位の靭性を大幅に削ることができる。また、すべての部位を弱点撃破すると、「乾坤呑噬」の発動を阻止できる。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影およびそのすべての部位の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "ボス幻影の部位が<color=#f29e38ff>弱点撃破</color>された時、ボス幻影の靭性値が一定量削られる。",
+				"params": []
+			},
+			{
+				"description": "ボス幻影は「蝕心の呪詛」を発動して味方キャラを<color=#f29e38ff>「呪詛」</color>状態にし、同時に「血まみれの人狼」を召喚する。「呪詛」状態の味方キャラとその召喚物は一時離脱する。一時離脱したキャラの代わりに「血まみれの人狼」が戦闘を継続する。「血まみれの人狼」の攻撃は<color=#f29e38ff>比較的多くの靭性を削ることができる</color>。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "ボス幻影の<color=#f29e38ff>部位</color>を複数回弱点撃破することで、ボス幻影の靭性を効果的に削ることができる。ボス幻影を<color=#f29e38ff>弱点撃破</color>すると、ボス幻影とそのすべての部位の受けるダメージが大幅にアップし、味方はSPを回復し、味方全体の必殺技が発動できるようになる。",
+				"params": []
+			},
+			{
+				"description": "味方キャラの代わりに<color=#f29e38ff>「血まみれの人狼」</color>が戦闘に参加している時、攻撃を受けた敵に付与されている<color=#f29e38ff>持続ダメージ系デバフの数</color>に応じて、追加で<color=#f29e38ff>弱点属性を無視してその敵の靭性を削る</color>。「血まみれの人狼」の<color=#f29e38ff>通常攻撃</color>は味方全体のHPを回復し、<color=#f29e38ff>戦闘スキル</color>は複数の敵に命中し、命中した敵の靭性を大幅に削ることができ、<color=#f29e38ff>SPを消費しない</color>。",
+				"params": []
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Wind",
+	"id": "203302204"
+}

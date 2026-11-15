@@ -1,0 +1,234 @@
+{
+	"name": "Automaton: Düsterwolf (komplett)",
+	"description": "Eine vollständige Projektion, die von kompromittierten Codes erstellt wurde. Sie basiert auf einem Automaton, der mit Technologie aus der Alten Welt zusammengebaut wurde. Dieser seltene humanoide Automaton ist mit einer Kettensäge am rechten Arm ausgestattet, die vermutlich für Bergbau- oder Bauarbeiten verwendet wurde.\nIm Kampf setzt der Automaton: Düsterwolf (komplett) seine Kettensäge ein, um Bluten bei Gegnern zu bewirken und DoT zu verursachen.",
+	"icon": "spriteoutput/monsterfigure/Monster_1013020.png",
+	"shortIcon": "Monster_1013020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1013020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 172,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Fällbefehl",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten massiven physischen SCH zu und verursacht mit einer Wahrscheinlichkteit Bluten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.05,
+				4,
+				10
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302401"
+		},
+		{
+			"name": "Ziel anvisieren",
+			"tag": "Anvisieren",
+			"type": "Fähigkeit",
+			"description": "Visiert einen Verbündeten an. Die nächste Aktion auf ihn wirkt den Fällbefehl.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302402"
+		},
+		{
+			"name": "Zielbefehl",
+			"tag": "Anvisieren",
+			"type": "Fähigkeit",
+			"description": "Visiert 2 Ziele an und wirkt mit der nächsten Aktion den Fällbefehl auf die Ziele.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302403"
+		},
+		{
+			"name": "Teamarbeitsbefehl",
+			"tag": "Anvisieren",
+			"type": "Fähigkeit",
+			"description": "Visiert 2 Verbündete an und wirkt mit der nächsten Aktion den Fällbefehl auf sie. Bewirkt gleichzeitig beim Automaton: Grizzly den Status „Aufladen“, wodurch bei der nächsten Aktion der Vernichtungsbefehl auf alle Verbündeten gewirkt wird.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302404"
+		},
+		{
+			"name": "Auflösungsbefehl",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu und verursacht mit hoher Wahrscheinlichkeit 1-fach Bluten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302405"
+		},
+		{
+			"name": "Demontage",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu und verursacht mit hoher Wahrscheinlichkeit 1-fach Bluten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302406"
+		},
+		{
+			"name": "",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302407"
+		},
+		{
+			"name": "Schnellere Gefechte",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Erhöht die GES erheblich. Erhöht zusätzlich die GES für jeden eingesetzten Teamarbeitsbefehl gering. Diese GES-Erhöhung ist stapelbar.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.15,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302408"
+		},
+		{
+			"name": "Geschwindigkeit-Wiederherstellung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Tritt in den Status Geschwindigkeit-Erholung ein, wenn die Einheit handlungsunfähig gemacht wird. Sie kehrt nach einer bestimmten Anzahl von Runden in den Kampf zurück und die GES wird weiter geringfügig erhöht. Diese GES-Erhöhung ist stapelbar.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.25,
+				2,
+				0.5,
+				0,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302409"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "1013024"
+}

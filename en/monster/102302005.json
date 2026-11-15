@@ -3,15 +3,22 @@
 	"description": "A machine unit prowling in the Fragmentum. Undoubtedly, this monstrosity is not a human creation, but one that was born out of the perversion of the Fragmentum.\nFrigid Prowlers will attract Everwinter Shadewalkers and reduce its enemy's SPD and Ice RES.",
 	"icon": "spriteoutput/monsterfigure/Monster_1023020.png",
 	"shortIcon": "Monster_1023020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1023020.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1116,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "102302001",
 			"name": "Ice Wheel Fist",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302001"
 		},
 		{
-			"id": "102302005",
 			"name": "Summon Otherling",
 			"tag": "Summon",
 			"type": "Ability",
@@ -37,11 +44,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302005"
 		},
 		{
-			"id": "102302006",
 			"name": "Frozen Storm",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -56,11 +63,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302006"
 		},
 		{
-			"id": "102302007",
 			"name": "Devour Otherling",
 			"tag": "Lock On",
 			"type": "Ability",
@@ -72,11 +79,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302007"
 		},
 		{
-			"id": "102302008",
 			"name": "Devour Otherling",
 			"tag": "Lock On",
 			"type": "Ability",
@@ -88,11 +95,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302008"
 		},
 		{
-			"id": "102302009",
 			"name": "Ice Wheel Crusher",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -104,11 +111,11 @@
 			],
 			"spGain": 20,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302009"
 		},
 		{
-			"id": "102302010",
 			"name": "",
 			"tag": "Talent",
 			"type": "Talent",
@@ -118,26 +125,37 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302010"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
 		}
 	],
 	"weakness": [
@@ -145,15 +163,22 @@
 		"Thunder",
 		"Quantum"
 	],
+	"summons": [
+		"102201002"
+	],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 112011,
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
 				"count": 1
 			},
 			{
@@ -166,6 +191,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "102302005"

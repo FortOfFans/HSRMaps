@@ -1,0 +1,194 @@
+{
+	"name": "サンライトグリフォン（バグ）",
+	"description": "コードが影響を受けた後、バグってしまった投影。サンライトグリフォンを参照にしている。遥か遠い昔、造物紀だった頃、エーグルは黎明のミハニを造り上げた後、ケファレの協力のもとタイタンたちを代表する奇獣を創造した。中でも奇獣・サンライトグリフォンは、その目で世界に光明をもたらすエーグルだと言い伝えられている。",
+	"icon": "spriteoutput/monsterfigure/Monster_4023010.png",
+	"shortIcon": "Monster_4023010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4023010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1209,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "暗闇を突き破って",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1,
+				3,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301301"
+		},
+		{
+			"name": "夜明けの訪れ",
+			"tag": "薙ぎ払い",
+			"type": "スキル",
+			"description": "味方パーティの左側から3ターゲットを薙ぎ払い、少量の炎属性ダメージを与え、高確率で命中したターゲットに「焼却」を付与する。同時に「メテオイーグル」を召喚する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.8,
+				1.1,
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301302"
+		},
+		{
+			"name": "灯された未来",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "味方1名をロックオンし、「灯された未来」状態に入る。次の行動で「エーグルへの賛美」を発動する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301303"
+		},
+		{
+			"name": "エーグルへの賛美",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "ロックオンしたターゲットおよび隣接するターゲットに炎属性ダメージを与え、「焼却」状態のターゲットに追加で炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4,
+				3,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301304"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				40,
+				1.5,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301305"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1,
+				0.4,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301306"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"4022010",
+		"4022010",
+		"4022010",
+		"4022010"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Fire",
+	"id": "4023013"
+}

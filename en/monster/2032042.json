@@ -3,15 +3,22 @@
 	"description": "Head of the Inner Beast, drinker of stellar radiance, devourer of nebula clouds.",
 	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
 	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2032040.png",
 	"stats": {
 		"baseAttack": 15,
 		"baseDefense": 210,
 		"baseHealth": 4650,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 660,
+		"speed": 86,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
 		"type": "MinionLv2"
 	},
 	"skills": [
 		{
-			"id": "203204201",
 			"name": "Nebula Eater",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -26,11 +33,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203204201"
 		},
 		{
-			"id": "203204202",
 			"name": "Breathing Ether",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -42,22 +49,32 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203204202"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Ice",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
 		}
 	],
 	"weakness": [
@@ -66,10 +83,12 @@
 		"Wind",
 		"Quantum"
 	],
+	"summons": [],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
 	},
+	"guide": null,
 	"rank": "MinionLv2",
 	"stanceType": "Wind",
 	"id": "2032042"

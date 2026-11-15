@@ -1,0 +1,175 @@
+{
+	"name": "{RUBY_B#ぐふう}颶風{RUBY_E#}の{RUBY_B#はは}母{RUBY_E#}",
+	"description": "海の娘たちは「壊滅」の罪に魂も肉体も蝕まれ、歪な抜け殻だけを残した…今世、彼女たちは虚無に消えゆくことなく、「海洋」の刃に従い、黒き太陽へと襲いかかる荒波となった。\n終末の雨が天より降り注ぎ、万物の滅亡を告げる——\n荒波を生み出すハリケーンは、子供らの絶望を貪り尽くし、やがて狂気に染まっていく——\n幾億もの死胎が海へと葬られ、涙は洪水のごとく荒れ狂い、憎しみを岸辺へと叩きつけた。",
+	"icon": "spriteoutput/monsterfigure/Monster_4053020.png",
+	"shortIcon": "Monster_4053020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4053020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 165,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "深淵を嫌う黒",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302001"
+		},
+		{
+			"name": "岸辺に落ちる産声",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に少量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302002"
+		},
+		{
+			"name": "風、雨、そして雷の懐妊",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "アクションバーに「孵化」を追加し、自身に「<u>育みの狂潮</u>」を付与する。「孵化」は行動する時に「洪水と荒波の分娩」を発動する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.5,
+				0.1,
+				4,
+				0.05,
+				0.3,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302003"
+		},
+		{
+			"name": "誕生から落ち続ける雨",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302004"
+		},
+		{
+			"name": "洪水と荒波の分娩",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「泡沫の稚児」を召喚し、「台風の目の巣」を付与する。フィールド上に「泡沫の稚児」がいる場合、「颶風の母」はすべての「泡沫の稚児」が倒されるまで「誕生から落ち続ける雨」を発動し続ける。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302005"
+		},
+		{
+			"name": "帆を休めよ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "一定回数の通常攻撃、戦闘スキル、必殺技、または精霊スキルを受けた後行動順が早まる。「<u>壊滅の狂宴</u>」状態中、行動順が早まるまでに必要な被攻撃回数がダウンする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Thunder"
+	],
+	"summons": [
+		"4052020"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Quantum",
+	"id": "4053020"
+}

@@ -1,0 +1,177 @@
+{
+	"name": "Sturmbringer",
+	"description": "Monster, die in den Weiten des Fragmentums Korrosion ausgesetzt waren. Seit ihre ursprüngliche Kraft verdorben wurde, zeigen sie im Kampf mehr Geschick.\nSturmbringer verlassen sich im Kampf auf die Kraft des Windes, dank der sie Pfeile schneller abfeuern können.",
+	"icon": "spriteoutput/monsterfigure/Monster_8003050.png",
+	"shortIcon": "Monster_8003050",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003050.png",
+	"stats": {
+		"baseAttack": 10.000008000000001,
+		"baseDefense": 210,
+		"baseHealth": 1023,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Wachsamer Meteor",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Wind-SCH zu und verursacht mit hoher Chance Windscherung.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305001"
+		},
+		{
+			"name": "Windgänger",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzende Einheiten geringen Wind-SCH zu und verursacht mit hoher Chance Windscherung.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305002"
+		},
+		{
+			"name": "Windwirbelnde Armbrust",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein und visiert alle Verbündeten an, die unter Windscherung leiden. Bei der nächsten Aktion wird „Windfall-Sturm“ eingesetzt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305003"
+		},
+		{
+			"name": "Windfall-Sturm",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt Verbündeten mit dem Status Windscherung Wind-SCH zu. Leidet niemand im Team unter Windscherung, schlägt diese Fähigkeit fehl.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305004"
+		},
+		{
+			"name": "Sturm-Zyklon",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Erhöht den ANG ein wenig, nachdem ein Verbündeter mit Windscherung angegriffen wurde. Dieser Effekt wird bei Schwächebruch entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.08,
+				2,
+				5,
+				0.75,
+				2,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305005"
+		},
+		{
+			"name": "Windfall-Sturm",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt Verbündeten mit dem Status Windscherung Wind-SCH zu. Leidet niemand im Team unter Windscherung, schlägt diese Fähigkeit fehl.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800305009"
+}

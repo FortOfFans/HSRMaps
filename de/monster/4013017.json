@@ -1,0 +1,197 @@
+{
+	"name": "Heroisches Duo: Weißer Eisenwächter",
+	"description": "Die legendären Dolos-Banditenzwillinge, in ihrer Kampfkraft und ihrer makellosen Teamarbeit unübertroffen. Selbst die mächtigsten Helden fielen durch ihre vier Fäuste. Schließlich triumphieren zwei Fäuste selten über vier.",
+	"icon": "spriteoutput/monsterfigure/Monster_4013010.png",
+	"shortIcon": "Monster_4013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4013010.png",
+	"stats": {
+		"baseAttack": 15,
+		"baseDefense": 210,
+		"baseHealth": 465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 110,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Vom Morgengrauen bis zum Abendrot",
+			"tag": "Wegfegen",
+			"type": "Fähigkeit",
+			"description": "Fügt Verbündeten im Kampf gegen den „Weißen Wächter“ geringen imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301701"
+		},
+		{
+			"name": "Erwacht aus dem Grab",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Titanenwesen“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301704"
+		},
+		{
+			"name": "Wächter des Stadtstaates",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn eine Einheit eine bestimmte Anzahl von Stapelungen „Kriegsrüstung“ besitzt, wird ihr erlittener SCH reduziert. Verliert nach dem Erleiden von Angriffen 1 Stapelung Kriegsrüstung. Wenn 0 Stapelungen erreicht sind, wird die Kriegsrüstung zerstört, wobei dieser Einheit massiver imaginärer SCH zugefügt und ihre Aktion verzögert wird. Der Verbündete, der die Kriegsrüstung zerstört hat, stellt Energie wieder her. Nachdem die Kriegsrüstung zerstört wurde, erleidet diese Einheit außerdem zusätzlich geringen imaginären SCH, wenn sie angegriffen wird. Wenn die Runde dieser Einheit endet, wird die Kriegsrüstung auf die max. Stapelzahl wiederhergestellt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.2,
+				0.05,
+				0.02,
+				0.15,
+				0.05,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301705"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.3,
+				0.2,
+				0.2,
+				0.2,
+				0.2,
+				0.2,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301706"
+		},
+		{
+			"name": "Unnachgiebiger Kampf",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "In jeder Phase, wenn diese Einheit einen K.-o.-Schlag erleidet, wird ihre Aktion verzögert und sie tritt in den Status „Ruhepause“ ein. Bei der nächsten Aktion wird „Unnachgiebiger Kampf“ ausgelöst, eine bestimmte Menge LP wiederhergestellt und die Einheit steht auf.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				0.2,
+				1.5,
+				0.2,
+				1.5,
+				0.2,
+				1.5,
+				0.2,
+				1.5,
+				0.2,
+				2,
+				0.2,
+				2,
+				0.2,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301707"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [
+		"4012033",
+		"4012023"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "4013017"
+}

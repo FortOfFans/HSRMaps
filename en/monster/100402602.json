@@ -3,15 +3,22 @@
 	"description": "Captain of the Silvermane Guards.\nGepard will provide soldiers with a shield that can block DMG taken.",
 	"icon": "spriteoutput/monsterfigure/Monster_1004020.png",
 	"shortIcon": "Monster_1004020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004020.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 2790,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 125,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "LittleBoss"
 	},
 	"skills": [
 		{
-			"id": "100402601",
 			"name": "Fist of Conviction",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402601"
 		},
 		{
-			"id": "100402602",
 			"name": "Smite of Frost",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -39,11 +46,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402602"
 		},
 		{
-			"id": "100402603",
 			"name": "Garrison Aura Field",
 			"tag": "Defense",
 			"type": "Ability",
@@ -59,11 +66,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402603"
 		},
 		{
-			"id": "100402607",
 			"name": "",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -75,11 +82,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402607"
 		},
 		{
-			"id": "100402608",
 			"name": "Tit for Tat",
 			"tag": "Others",
 			"type": "Ability",
@@ -89,26 +96,37 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402608"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
 		}
 	],
 	"weakness": [
@@ -116,10 +134,12 @@
 		"Quantum",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
 	},
+	"guide": null,
 	"rank": "LittleBoss",
 	"stanceType": "Physical",
 	"id": "100402602"

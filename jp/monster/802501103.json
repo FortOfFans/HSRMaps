@@ -1,0 +1,482 @@
+{
+	"name": "天覆う星喰らいの虫",
+	"description": "ルアン・メェイが培養した「繁殖」の使令のクローン。原型は蟲の王の顎を継承した巨大な蟲でしばしば不完全な姿でこの世界に出現する。天体をも引き裂く死の光を口器に集めて子孫を育てる温床とするために星を砕く。宇宙の蝗害における諸界の悪夢の1つだった。",
+	"icon": "spriteoutput/monsterfigure/Monster_8025010.png",
+	"shortIcon": "Monster_8025010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8025010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 14880,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 3,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "王虫砲",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501101"
+		},
+		{
+			"name": "瓦解蟄毒",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に量子ダメージを与え、高確率で攻撃を受けた味方をもつれ状態にする。同時に「蝕蟄虫」を1体召喚する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.6,
+				1,
+				0
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501102"
+		},
+		{
+			"name": "熱解死光",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				3.5,
+				0.5,
+				1.2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501103"
+		},
+		{
+			"name": "共食い",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "「虫卵」を消費して召喚物のスウォームを強化する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501104"
+		},
+		{
+			"name": "",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0,
+				3,
+				0.1,
+				3,
+				10,
+				60
+			],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501105"
+		},
+		{
+			"name": "壊星の卵",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501106"
+		},
+		{
+			"name": "卵の世話",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、靭性保護と一定層数の「虫卵」を獲得する、次の行動まで継続。次の行動で味方全体に「壊星の卵」を発動する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501107"
+		},
+		{
+			"name": "",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501108"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.15,
+				1,
+				0.1,
+				3,
+				10,
+				60
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501109"
+		},
+		{
+			"name": "蟲海の併呑",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "攻撃を受けた後、 召喚物のスウォームを召喚する。弱点撃破される時、敵全体に量子属性ダメージを与え、自身以外の敵の受けるダメージをアップさせ、弱点撃破状態にする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.8,
+				1.1,
+				0.6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501110"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501111"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501112"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501113"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501114"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501115"
+		},
+		{
+			"name": "無限繁殖",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "ターンが終了する時に一定数の「虫卵」を獲得する。「虫の断末魔」または「蝕む断末魔」を受ける時、「虫卵」を1層失う。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0,
+				0,
+				7,
+				3,
+				150
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501116"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_Entangle",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"802203103",
+		"802202103"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 3,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100901",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延する。また、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100902",
+				"name": "虫卵分裂",
+				"description": "ボス幻影はターンが終了するたびに一定数の<color=#f29e38ff><u>虫卵</u></color>を獲得する。ボス幻影は虫卵を消費して召喚物のスウォームを強化し、「成長ホルモン」を1層付与できる。",
+				"params": []
+			},
+			{
+				"id": "100903",
+				"name": "ホルモン分泌",
+				"description": "ボス幻影が一定数のスウォームを召喚するたびに、次に召喚するスウォームは最初から「<color=#f29e38ff><u>成長ホルモン</u></color>」を1層持つ。",
+				"params": []
+			},
+			{
+				"id": "100904",
+				"name": "虫卵増殖",
+				"description": "ボス幻影がターン終了時や「卵の世話」を通じて獲得する虫卵の数がアップする。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10091",
+				"name": "第一段階：蟲の巣に入る",
+				"description": "ボス幻影はターンが終了するたびに一定数の虫卵を獲得する。ボス幻影は虫卵を消費して召喚物のスウォームを強化し、「成長ホルモン」を1層付与できる。",
+				"answer": "対応戦略：ボス幻影に虫卵がある時、優先的に召喚物を倒し、召喚物の「虫の断末魔」や「蝕む断末魔」を利用してボス幻影の虫卵の数を減らす。",
+				"skills": [
+					{
+						"id": "100911",
+						"type": "Normal",
+						"name": "ボス幻影の虫卵を減らす方法",
+						"texts": [
+							{
+								"description": "召喚物のスウォームを倒し、「虫の断末魔」または「蝕む断末魔」を発動させてボス幻影にダメージを与えると、ボス幻影の虫卵を1つ減らすことができる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100912",
+						"type": "Normal",
+						"name": "「蝕蟄虫」が強化されると何が起こるのか",
+						"texts": [
+							{
+								"description": "「蝕蟄虫」は強化された後に攻撃力がアップする。強化が3層に達した時、その攻撃は確率で味方に「もつれ」効果を付与する。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10092",
+				"name": "第二段階：厄災の虫害",
+				"description": "ボス幻影の「蟲海の併呑」が触発される時、召喚される召喚物の数がアップし、「次蟄虫」も召喚される。",
+				"answer": "対応戦略：優先的に「次蟄虫」を倒し、「起爆拡散」の攻撃によって怒噪状態に入ることを避ける。",
+				"skills": [
+					{
+						"id": "100921",
+						"type": "Normal",
+						"name": "「次蟄虫」が強化されると何が起こるのか",
+						"texts": [
+							{
+								"description": "「次蟄虫」は強化された後に攻撃力がアップする。強化が3層に達した時、即座に行動できる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100922",
+						"type": "Normal",
+						"name": "「次蟄虫」の「起爆拡散」の対処法",
+						"texts": [
+							{
+								"description": "優先的に「次蟄虫」を倒し、または弱点撃破して「起爆拡散」の発動を阻止する。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "ボス幻影はターン終了ごとに一定数の<color=#f29e38ff>「虫卵」</color>を獲得する。<color=#f29e38ff>「虫の断末魔」または「蝕む断末魔」</color>の攻撃を受ける時、虫卵を1失う。同時に受けるダメージがアップする。",
+				"params": []
+			},
+			{
+				"description": "ボス幻影は「虫卵」を消費して召喚物のスウォームを強化し、1層の<color=#f29e38ff>「成長ホルモン」</color>を付与できる。「成長ホルモン」1層につき攻撃力がアップし、3層になると追加で強化される。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "優先的に<color=#f29e38ff>召喚物を倒し</color>、召喚物の<color=#f29e38ff>「虫の断末魔」または「蝕む断末魔」</color>を利用してボス幻影の虫卵の数と靭性を削る。",
+				"params": []
+			},
+			{
+				"description": "<color=#f29e38ff>全体攻撃</color>スキルを使用すれば、召喚物を倒すと同時にボス幻影にも攻撃できる。",
+				"params": []
+			},
+			{
+				"description": "味方が<color=#f29e38ff>量子もつれまたは怒噪</color>状態になった時、スキルを使って<color=#f29e38ff>状態異常を解除</color>する。",
+				"params": []
+			}
+		]
+	},
+	"rank": "BigBoss",
+	"stanceType": "Quantum",
+	"id": "802501103"
+}

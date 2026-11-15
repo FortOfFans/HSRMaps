@@ -1,0 +1,212 @@
+{
+	"name": "{RUBY_B#きおくいき}記憶域{RUBY_E#}ミーム「{RUBY_B#し}死{RUBY_E#}へ{RUBY_B#む}向{RUBY_E#}かうのは{RUBY_B#なにもの}何物{RUBY_E#}」",
+	"description": "特定の認識を持つ実体。記憶域にある潜在意識の欠片が積み重なってできたもの。\n神秘的で危険な記憶域ミーム。夢の中では存在しないはずの「死亡」と見なされている。それは十二の刻を彷徨い、鋭い刃で悪夢を散布し、死の影で美しき夢を覆う。この記憶域ミームが至るところには、必ず災禍が降りかかる。",
+	"icon": "spriteoutput/monsterfigure/Monster_3014020.png",
+	"shortIcon": "Monster_3014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3014020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2046,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "葬儀の接吻",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402001"
+		},
+		{
+			"name": "死の黒雨",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402002"
+		},
+		{
+			"name": "鋭い弔辞",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "自身の与ダメージを大アップする、1ターン継続。この効果は弱点撃破された後に解除される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402003"
+		},
+		{
+			"name": "消える光明",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "「日没」状態に入る。味方が通常攻撃、戦闘スキル、または必殺技を発動するたびに「日没」を1層獲得する。「日没」が3層に達した時、一つ前に行動した味方に対して「黄昏に色褪せて」を発動する。「黄昏に色褪せて」を1回発動した後、または弱点撃破された後に、この状態は解除される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402004"
+		},
+		{
+			"name": "黄昏に色褪せて",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "最後に通常攻撃、戦闘スキル、または必殺技を発動した味方に致命攻撃を行い、その味方を「夢死」状態にする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				300,
+				1,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402005"
+		},
+		{
+			"name": "良い夜へ",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "「夜の到来」状態に入り、味方全体のEPを回復する。「夜の到来」状態の間で最初に行動した味方2名をロックオンする。次の行動で「水が水に消え逝くように」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402006"
+		},
+		{
+			"name": "水が水に消え逝くように",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "ロックオンされたすべての味方に致命攻撃を行い、「夢死」状態にする。ロックオンされた味方がない場合、ランダムな味方2名に致命攻撃を行い、「夢死」状態にする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402007"
+		},
+		{
+			"name": "",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402008"
+		},
+		{
+			"name": "弔えぬ荒涼",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "味方が「夢死」状態になった時、対応する「永眠の墓碑」を1体召喚する。味方全体が「夢死」状態になる、または戦闘不能状態になると、戦闘失敗になる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402009"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.5
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"3012030"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "3014020"
+}

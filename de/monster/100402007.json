@@ -1,0 +1,150 @@
+{
+	"name": "Gepard",
+	"description": "Der Anführer der Silbermähnen-Wachen.\nGepard kann seinen Soldaten befehlen, ihre Angriffe zu fokussieren, und eine Barriere errichten, die einmalig vor einem Angriff schützt.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004020.png",
+	"shortIcon": "Monster_1004020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 11392.500372,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Faust der Überzeugung",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402001"
+		},
+		{
+			"name": "Mit Frost geschlagen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402002"
+		},
+		{
+			"name": "Aurafeld der Garnison",
+			"tag": "Verteidigung",
+			"type": "Fähigkeit",
+			"description": "Gewährt einem anderen Gegner eine Barriere, die allem SCH außer DoT widerstehen kann. Dieser Effekt wird nach dem Angriff entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402003"
+		},
+		{
+			"name": "Eisiger Wasserfall",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402004"
+		},
+		{
+			"name": "Belagerungsunterstützung",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört Silbermähnen-Schützen oder Silbermähnen-Kanoniere, fixiert einen Verbündeten und veranlasst alle Gegner dazu, ihn anzugreifen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [
+		"100204024",
+		"100205019"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "100402007"
+}

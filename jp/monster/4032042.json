@@ -1,0 +1,143 @@
+{
+	"name": "暗黒の潮の参議",
+	"description": "暗黒の潮から生まれた歪な造物。空虚な肉体を支えるのは殺戮への渇望だけ。\nかつて人を救うためにあったはずの叡智は、いまや文明を脅かす悪意へと変わった。潜伏や罠に長けた彼らは、まるで貪欲なハゲタカのように、暗黒の潮に絶えず新たな犠牲を捧げようとしている。",
+	"icon": "spriteoutput/monsterfigure/Monster_4032040.png",
+	"shortIcon": "Monster_4032040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032040.png",
+	"stats": {
+		"baseAttack": 15,
+		"baseDefense": 210,
+		"baseHealth": 279,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "潜伏",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "自身を<u>「潜伏」</u>状態にする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204201"
+		},
+		{
+			"name": "破滅の理性",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204202"
+		},
+		{
+			"name": "陰湿な扇動",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与え、自身の<u>「潜伏」</u>状態を解除する。<u>「潜伏」</u>状態でのみ発動可能。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204203"
+		},
+		{
+			"name": "綻び",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "自身が<u>「潜伏」</u>状態の時、受けるダメージがアップする。<u>「潜伏」</u>状態が弱点撃破によって解除された時、行動順が遅延され、この被ダメージアップ効果は自身の次の行動開始まで継続する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204204"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032042"
+}

@@ -3,15 +3,22 @@
 	"description": "Only the echoes of pain remain on the devastated earth — the march of the end times.\nDisaster's Right Hand is adept at drawing upon Imaginary power to create large-scale attacks.",
 	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
 	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012140.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
 		"type": "MinionLv2"
 	},
 	"skills": [
 		{
-			"id": "801214001",
 			"name": "Calamity Tear",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214001"
 		},
 		{
-			"id": "801214002",
 			"name": "Tough Cuts",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -43,11 +50,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214002"
 		},
 		{
-			"id": "801214003",
 			"name": "The Breakdown of Tyranny",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -63,38 +70,51 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214003"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
 		}
 	],
 	"weakness": [
 		"Fire",
 		"Ice"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 36,
+		"avatarExpReward": 108,
 		"itemList": [
 			{
 				"id": 2,
@@ -105,11 +125,20 @@
 				"count": 1
 			},
 			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
 				"id": 181003,
 				"count": 1
 			}
 		]
 	},
+	"guide": null,
 	"rank": "MinionLv2",
 	"stanceType": "Physical",
 	"id": "8012140"

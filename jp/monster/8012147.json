@@ -1,0 +1,182 @@
+{
+	"name": "黎明の左手",
+	"description": "終末が降臨する前の最後の黎明、明潔な朝日も怯え慄きひっそりと退場する。\n黎明の左手は量子属性の単体攻撃を行う。",
+	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
+	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012142.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 90,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "殞落の鍛造",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "味方単体に少量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214701"
+		},
+		{
+			"name": "星墜としの詰問",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "味方単体に量子属性ダメージを与え、「量子付与」状態を付与する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214702"
+		},
+		{
+			"name": "曙光が黯淡する時",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "味方単体に大量の量子属性ダメージを与え、「量子付与」状態を付与する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214703"
+		},
+		{
+			"name": "対消滅",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "自身がスキルを発動し、味方単体を同時に「量子付与」状態と「虚数付与」状態にした場合、この2つの状態を解除し、その味方に少量の量子属性ダメージと虚数属性ダメージを与え、高確率で「<u>縛り</u>」状態を付与する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1,
+				0.1,
+				0.3,
+				0.6,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214704"
+		},
+		{
+			"name": "仮死",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受けた後、「仮死」状態に入る。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214705"
+		},
+		{
+			"name": "守備",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「守備」状態に入る。弱点撃破状態でない時の被ダメージがダウンする。弱点撃破された時の行動順遅延量がアップし、弱点撃破状態の時の被ダメージがアップする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214706"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111011,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 181003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "8012147"
+}

@@ -3,15 +3,22 @@
 	"description": "Penacony's service machinery that got out of control due to the emotional interference in the Dreamscape.\nOriginally a culinary robot, it is still breathing fire for grilling ingredients after losing control, intending to burn the diners to crisps.",
 	"icon": "spriteoutput/monsterfigure/Monster_3003010.png",
 	"shortIcon": "Monster_3003010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003010.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1674,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "300301001",
 			"name": "Ladle Swirl",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301001"
 		},
 		{
-			"id": "300301002",
 			"name": "Tornado Toss",
 			"tag": "Blast",
 			"type": "Ability",
@@ -40,11 +47,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301002"
 		},
 		{
-			"id": "300301003",
 			"name": "Ignite Stove",
 			"tag": "Charging",
 			"type": "Ability",
@@ -56,11 +63,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301003"
 		},
 		{
-			"id": "300301004",
 			"name": "Flaming Stir-Fry",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -72,11 +79,11 @@
 			],
 			"spGain": 20,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301004"
 		},
 		{
-			"id": "300301005",
 			"name": "Kitchen Mishap",
 			"tag": "Talent",
 			"type": "Ability",
@@ -91,11 +98,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301005"
 		},
 		{
-			"id": "300301006",
 			"name": "Flame-Forged Feast",
 			"tag": "Talent",
 			"type": "Talent",
@@ -107,11 +114,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301006"
 		},
 		{
-			"id": "300301007",
 			"name": "Inferno Stove",
 			"tag": "Talent",
 			"type": "Talent",
@@ -126,39 +133,49 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301007"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Physical",
 		"Fire",
 		"Thunder",
 		"Wind"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 114001,
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
 				"count": 1
 			},
 			{
@@ -171,6 +188,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "300301011"

@@ -3,15 +3,22 @@
 	"description": "Provoking the temptations within, usurping the powerful spirit, transforming in appearance... The abomination lurking inside Feixiao has begun its hunt for her.\nAt the end of this stalking pursuit, the surviving party would obtain the right to walk the world as the Merlin's Claw.",
 	"icon": "spriteoutput/monsterfigure/Monster_2033020.png",
 	"shortIcon": "Monster_2033020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2033020.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1627.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "203302101",
 			"name": "Seance",
 			"tag": "Talent",
 			"type": "Ability",
@@ -21,45 +28,60 @@
 			"params": [],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203302101"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [],
+	"summons": [
+		"2032041",
+		"2032051",
+		"2032061"
+	],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Wind",
 	"id": "2033021"

@@ -1,0 +1,99 @@
+{
+	"name": "Finstermond-Wolfskrieger",
+	"description": "Ein Borisin-Soldat aus dem Rudel Finstermond. Sie sind berüchtigt für ihre Gier nach dem Fleisch ihrer Feinde.",
+	"icon": "spriteoutput/monsterfigure/Monster_2032020.png",
+	"shortIcon": "Monster_2032020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2032020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 372,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 210,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Nagen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203202201"
+		},
+		{
+			"name": "Bauch der Bestie",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Nachdem ein Gegner einen Angriff ausgeführt hat, wird <u>ein Gegner, der „Mondverschlinger“ auslösen kann</u>, mit 1 Stapelung <u>Blutdurst</u> belegt. Wenn die Stapelungen von <u>Blutdurst</u> eine bestimmte Zahl erreichen, tritt der Gegner in den Status <u>Mondverschlinger</u> ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				0.4,
+				5,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203202202"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181013,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "2032022"
+}

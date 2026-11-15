@@ -1,0 +1,153 @@
+{
+	"name": "惊梦剧团的甜猿泰山",
+	"description": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\n原本是「苏乐达」汽水的运输工，失控后仍在分享背负的美味，向路过的宾客抛掷它的礼物。",
+	"icon": "spriteoutput/monsterfigure/Monster_3003020.png",
+	"shortIcon": "Monster_3003020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930.000744,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "限量赠饮",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成冰属性伤害，如果目标身上拥有护盾，则造成伤害后还会对自身造成冰属性伤害，并大概率使自身防御力降低。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.8,
+				0.08,
+				1.5,
+				0.2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302001"
+		},
+		{
+			"name": "无限畅饮",
+			"tag": "弹射",
+			"type": "技能",
+			"description": "对我方随机单体造成4次冰属性伤害，如果目标身上拥有护盾，则造成伤害后还会对自身造成冰属性伤害，并大概率使自身防御力降低。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.6,
+				0.08,
+				1.5,
+				0.2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302002"
+		},
+		{
+			"name": "苏乐达派对",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤2只【气泡锂犬】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302003"
+		},
+		{
+			"name": "酬宾喷泉",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，获得韧性保护，下次行动时施放【无限畅饮】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [
+		"300203016"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 182010,
+				"count": 1
+			},
+			{
+				"id": 183006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "300302009"
+}

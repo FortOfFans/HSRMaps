@@ -1,0 +1,145 @@
+{
+	"name": "{RUBY_B#きょすう}虚数{RUBY_E#}の{RUBY_B#は}葉{RUBY_E#}を{RUBY_B#お}織{RUBY_E#}る{RUBY_B#もの}者{RUBY_E#}",
+	"description": "この世に属さない怪異な生命体、黯淡な星空の彼方より、幾重もの帷幕を超えてやって来た。その身体はまるで病に患った枝葉が現実に突き出したように、虚数の力で現実を意のままに書き換える。",
+	"icon": "spriteoutput/monsterfigure/Monster_8002010.png",
+	"shortIcon": "Monster_8002010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8002010.png",
+	"stats": {
+		"baseAttack": 23.999994,
+		"baseDefense": 210,
+		"baseHealth": 223.2000186,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 60,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "賛歌の光",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800201001"
+		},
+		{
+			"name": "賛歌爆発",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800201002"
+		},
+		{
+			"name": "賛歌激震",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に虚数属性ダメージを与え、「後手」状態に入る。次の行動で「賛歌爆発」を発動し、自身の与ダメージが大アップする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800201003"
+		},
+		{
+			"name": "虚数アーマー",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "非弱点属性に対する被ダメージがダウンする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800201004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111001,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 181008,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "800201005"
+}

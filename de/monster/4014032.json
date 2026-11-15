@@ -1,0 +1,262 @@
+{
+	"name": "Pollux, Leichnam der Netherschwinge, Fährmann der Seelen",
+	"description": "Netherschwinge, die im Fluss der Seelen schlummerte, wurde durch eine alchemistische Beschwörung wiedererweckt und in etwas Fauliges und Verwesendes verwandelt.\nEinst war er der Titan des Todes, der in der Strömung des Flusses der Seelen flussaufwärts schwamm, das Reich der Nichtexistenz verließ und in der Welt der Sterblichen strandete. Einst folgte er den Gezeiten des Flusses der Seelen, um die Länder der Lebenden zu ertränken, und brandmarkte alle Dinge in Amphoreus mit einem schicksalhaften Ende. Alle Existenzen, die sterben werden oder gestorben sind, werden bei der Rückkehr des Drachen in den Tiefen ihrer Seelen ein Zittern verspüren.",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2325,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Umklammerung der Gefallenen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten Quanten-SCH zu. Wenn der LP-Prozentsatz eines Ziels einen bestimmten Wert übersteigt, wird der SCH in <u>Degenerativen SCH</u> umgewandelt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.1,
+				0.5,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403201"
+		},
+		{
+			"name": "Begräbnis der Schlafenden",
+			"tag": "Verteilen",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Quanten-SCH zu. Der SCH wird unter den Verbündeten <u>gleichmäßig aufgeteilt</u>. Wenn der LP-Prozentsatz eines Ziels einen bestimmten Wert übersteigt, wird der SCH in <u>Degenerativen SCH</u> umgewandelt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.1,
+				0.5,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403202"
+		},
+		{
+			"name": "Abschiedstrauer der Verstorbenen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt 3 zufälligen Verbündeten <u>Degenerativen Quanten-SCH</u> zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403203"
+		},
+		{
+			"name": "Bitterkeit bringt verspätete Todesnachricht",
+			"tag": "Unterstützung",
+			"type": "Fähigkeit",
+			"description": "Verstärkt „Die langen Arme des Kummers“ und zieht seine Aktion vor. Dies hält 3 Rd. an.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403204"
+		},
+		{
+			"name": "In aromatischem Schmerz sterben",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status <u>Duft des Todes</u> ein und fügt allen Verbündeten massiven <u>Degenerativen Quanten-SCH</u> zu. Dieser SCH ist <u>nicht tödlich</u> und belegt alle Verbündeten mit <u>Süßer Schlummer</u>. In der zweiten Phase und vor der nächsten Aktion dieser Einheit kann ihr Widerstand nicht verringert werden sie ist immun gegen Aktionsverzögerung durch Verbündete.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1,
+				1.2,
+				11,
+				0.5,
+				0.9
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403205"
+		},
+		{
+			"name": "Der Tod verlangt nach mehr Tod",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten <u>Degenerativen SCH</u> zu. Fügt Zielen im Status <u>Süßer Schlummer</u> zusätzlichen <u>Degenerativen Quanten-SCH</u> zu, verzögert ihre Aktion und belegt sie mit hoher Chance mit Verschränkung.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.15,
+				0.5,
+				1,
+				2,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403206"
+		},
+		{
+			"name": "Tintenschwarzer Rauch eines Nahtodtraums",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Reduziert den anfänglichen SCH, den diese Einheit und „Die langen Arme des Kummers“ erleiden. Wenn die LP eines Verbündeten sinken, wird „Verzweifelte Traumblase“ angesammelt. Wenn Verzweifelte Traumblase den Grenzwert erreicht, wird die Aktion dieser Einheit vorgezogen und sie tritt bei der nächsten Aktion in den Status <u>Duft des Todes</u> ein. Während dieses Status wird die SCH-Reduktion von dieser Einheit und von „Die langen Arme des Kummers“ entfernt. Wenn <u>Duft des Todes</u> entfernt wird, erleidet diese Einheit SCH und stellt bei Verbündeten LP wieder her.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.6,
+				0.45,
+				1,
+				1,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403207"
+		},
+		{
+			"name": "Warte nicht reglos auf den Tod",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn die Fähigkeiten von „Pollux“ oder „Die langen Arme des Kummers“ einen Verbündeten treffen, wird dieser mit einem speziellen, nicht entfernbaren DoT-Status belegt. Je höher in diesem Status der LP-Prozentsatz ist, desto höher wird der erlittene SCH. Dieser SCH ist <u>nicht tödlich</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				1,
+				0.12,
+				0.9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403208"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1,
+				1.5,
+				14,
+				0.5,
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403209"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.35,
+				0.8,
+				1,
+				0.1,
+				0.9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403210"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"4012070",
+		"4012071"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "4014032"
+}

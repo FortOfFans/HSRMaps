@@ -1,0 +1,160 @@
+{
+	"name": "ヴォイドレンジャー・蹂躙",
+	"description": "「反物質レギオン」が「戦争洪炉」で戦士と古獣の残片を鋳造して融合させた産物。\n 数は比較的少ないが、戦士の知性と古獣の強さと機動力を併せ持ち、そのいななきは大量のヴォイドレンジャーを呼び寄せることができる。",
+	"icon": "spriteoutput/monsterfigure/Monster_8013010.png",
+	"shortIcon": "Monster_8013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8013010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 837,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 110,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "虚実の投影",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801301201"
+		},
+		{
+			"name": "侵略の鉄蹄",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801301202"
+		},
+		{
+			"name": "戦争の蹂躙",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に少量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801301203"
+		},
+		{
+			"name": "螺旋の弓矢",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "指定した味方単体をロックオンし、次の行動でターゲットに「強弓の終末」を発動する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801301204"
+		},
+		{
+			"name": "強弓の終末",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				9,
+				0,
+				0
+			],
+			"spGain": 25,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801301205"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 182001,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "8013012"
+}

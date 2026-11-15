@@ -1,0 +1,165 @@
+{
+	"name": "シルバーメイン・尉官（バグ）",
+	"description": "コードが影響を受けた後、バグってしまった投影。ベロブルグの戍衛部隊である「シルバーメイン」の分隊指揮官を参照にしている。\n戦闘中、敵と味方がいる限り、シルバーメイン・尉官は巨大なシールドを立てている。その状態のシルバーメイン・尉官を攻撃すると、強力なカウンターを受ける。",
+	"icon": "spriteoutput/monsterfigure/Monster_1003010.png",
+	"shortIcon": "Monster_1003010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1003010.png",
+	"stats": {
+		"baseAttack": 7.2,
+		"baseDefense": 210,
+		"baseHealth": 13950,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "突撃",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301101"
+		},
+		{
+			"name": "刺突",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301102"
+		},
+		{
+			"name": "ジャストガード",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "カウンター状態に入り、味方単体の攻撃を受けた後に追加ターンを1回獲得し、攻撃した味方に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301103"
+		},
+		{
+			"name": "増援",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「シルバーメイン・近衛」または「シルバーメイン・狙撃手」を召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301104"
+		},
+		{
+			"name": "激励",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "「シルバーメイン・尉官（バグ）」以外の敵の攻撃力をアップし、直ちに行動させる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301105"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [
+		"1002040",
+		"1002050"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112002,
+				"count": 1
+			},
+			{
+				"id": 112003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "100301102"
+}

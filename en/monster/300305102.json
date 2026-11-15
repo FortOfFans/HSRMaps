@@ -3,15 +3,22 @@
 	"description": "A fighter from the Zhuming.",
 	"icon": "spriteoutput/monsterfigure/Monster_3003050.png",
 	"shortIcon": "Monster_3003050",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003050.png",
 	"stats": {
 		"baseAttack": 9,
 		"baseDefense": 210,
 		"baseHealth": 1023,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 180,
+		"speed": 110,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "300305101",
 			"name": "Precious Blood Shed For You",
 			"tag": "Impair",
 			"type": "Ability",
@@ -27,11 +34,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300305101"
 		},
 		{
-			"id": "300305102",
 			"name": "Feast That Is Set For You",
 			"tag": "Impair",
 			"type": "Ability",
@@ -45,11 +52,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300305102"
 		},
 		{
-			"id": "300305103",
 			"name": "",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -63,11 +70,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300305103"
 		},
 		{
-			"id": "300305104",
 			"name": "A Cup Runneth Over For You",
 			"tag": "Charging",
 			"type": "Ability",
@@ -81,11 +88,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300305104"
 		},
 		{
-			"id": "300305105",
 			"name": "Wash Away All Sins For You",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -97,11 +104,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300305105"
 		},
 		{
-			"id": "300305106",
 			"name": "",
 			"tag": "Single Target",
 			"type": "Talent",
@@ -111,11 +118,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300305106"
 		},
 		{
-			"id": "300305107",
 			"name": "",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -129,42 +136,53 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300305107"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Physical",
 		"Fire",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 114001,
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
 				"count": 1
 			},
 			{
@@ -177,6 +195,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "300305102"

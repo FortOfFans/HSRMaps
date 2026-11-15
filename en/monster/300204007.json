@@ -3,15 +3,22 @@
 	"description": "Penacony's service machinery that got out of control due to the emotional interference in the Dreamscape.\nOriginally a waiter in The Reverie, it is still performing its duty of announcing the time after losing control, jolting dreamers awake in the most crude manner.",
 	"icon": "spriteoutput/monsterfigure/Monster_3002040.png",
 	"shortIcon": "Monster_3002040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3002040.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 162.75,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 80,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
 		"type": "MinionLv2"
 	},
 	"skills": [
 		{
-			"id": "300204001",
 			"name": "Set Alarm",
 			"tag": "Charging",
 			"type": "Ability",
@@ -21,11 +28,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300204001"
 		},
 		{
-			"id": "300204002",
 			"name": "Wake-Up Alarm",
 			"tag": "Support",
 			"type": "Ability",
@@ -35,11 +42,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300204002"
 		},
 		{
-			"id": "300204003",
 			"name": "Wake-Up Punch",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -51,38 +58,46 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300204003"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Fire",
 		"Thunder"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 36,
+		"avatarExpReward": 108,
 		"itemList": [
 			{
 				"id": 2,
@@ -93,11 +108,20 @@
 				"count": 1
 			},
 			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
 				"id": 181016,
 				"count": 1
 			}
 		]
 	},
+	"guide": null,
 	"rank": "MinionLv2",
 	"stanceType": "Physical",
 	"id": "300204007"

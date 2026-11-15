@@ -1,0 +1,240 @@
+{
+	"name": "雲騎驍衛・彦卿（幻像）",
+	"description": "景元将軍の護衛を務める、まだ総角の歳の剣の天才。ここに現れたのはあなたの記憶をもとにシミュレートされた幻である。",
+	"icon": "spriteoutput/monsterfigure/Monster_2004020.png",
+	"shortIcon": "Monster_2004020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 6510,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 660,
+		"speed": 119,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "快哉風",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与える。同時にすべての「飛剣（幻像）」に攻撃するよう命令し、追加ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402301"
+		},
+		{
+			"name": "帰燕",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「飛剣（幻像）」を4本召喚して、「剣陣」効果を獲得し、自身の速度をアップさせる。「飛剣（幻像）」は弱点撃破されなければ倒すことはできず、弱点撃破された時は弱点をランダムな残っている飛剣に移す。すべての「飛剣（幻像）」が弱点撃破された時に「剣陣」が解除される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				35,
+				60,
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402302"
+		},
+		{
+			"name": "三尺水",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃された味方を凍結状態にする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1,
+				1,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402303"
+		},
+		{
+			"name": "破陣歌",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体及び隣接する味方に氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402304"
+		},
+		{
+			"name": "剣気迫近",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入る。次の行動で味方全体に「天河瀉り」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402305"
+		},
+		{
+			"name": "天河瀉り",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402306"
+		},
+		{
+			"name": "剣気凝",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "味方単体をロックオンし、2ターン後にロックオンした味方に「風帰りて雲動き、天河瀉りし夢」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402307"
+		},
+		{
+			"name": "風帰りて雲動き、天河瀉りし夢",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に連続で大量の氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402308"
+		},
+		{
+			"name": "無影剣",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "彦卿と「飛剣（幻像）」のすべての攻撃は、攻撃を受けた味方を「霜刺」状態にし、氷属性の被ダメージをアップさせる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				200,
+				5,
+				1,
+				0.02
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402309"
+		},
+		{
+			"name": "帰燕",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「飛剣（幻像）」を4本召喚して、「剣陣」効果を獲得し、自身の速度をアップさせる。最初「飛剣（幻像）」の弱点属性は隠されているが、弱点属性に合致する攻撃を受けた後に、この効果は解除される。「飛剣（幻像）」は弱点撃破されなければ倒すことはできず、弱点撃破された時は弱点をランダムな残っている飛剣に移す。すべての「飛剣（幻像）」が弱点撃破された時に「剣陣」が解除される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				35,
+				60,
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402310"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"200202003",
+		"200202103"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "2004023"
+}

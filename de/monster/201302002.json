@@ -1,0 +1,179 @@
+{
+	"name": "Aurumaton-Seelengesandte",
+	"description": "Ein gesetzeshütender Aurumaton, in den die Kampfschriften der Zehn Fürsten eingraviert sind und der Befehle der Zehn-Fürsten-Kommission entgegennimmt.\nLebende Wesen sind empfänglich für die körperliche und geistige Existenz des Ichs, aber Gold und Metall lassen sich nicht beirren und folgen unbeirrt den Erlassen der Zehn Fürsten.\nDiese Aurumaton-Gesetzeshüter setzen ihre Kraft ein, um Bösewichte, die von der natürlichen Ordnung des Lebens abgewichen sind, zu unterwerfen und sie in die Unterwelt zu bringen, wo sie ihre Strafe erhalten. Ihre Autorität ist manchmal sogar größer als die eines Richters.",
+	"icon": "spriteoutput/monsterfigure/Monster_2013020.png",
+	"shortIcon": "Monster_2013020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2013020.png",
+	"stats": {
+		"baseAttack": 16.363637999999998,
+		"baseDefense": 210,
+		"baseHealth": 1116,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Analysieren und Beurteilen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302001"
+		},
+		{
+			"name": "Unterwerfen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu und verursacht mit hoher Chance „Nachhall“. Befindet sich das Ziel bereits im Status Nachhall, wird bei ihm „Starker Nachhall“ verursacht und dann Nachhall entfernt. Ziele im Status Starker Nachhall können keine Aktion ausführen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.6,
+				0.7,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302002"
+		},
+		{
+			"name": "Yin und Yang umkehren",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu und verursacht mit einer Chance „Nachhall“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.35,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302003"
+		},
+		{
+			"name": "Himmelssturz",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten massiven physischen SCH zu. Wenn das Ziel unter dem Status „Starker Nachhall“ leidet, wird ihm zusätzlich physischer SCH zugefügt und gleichzeitig Starker Nachhall entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302004"
+		},
+		{
+			"name": "Seelenbefehl",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn sich auf dem Kampffeld Verbündete befinden, die unter dem Status „Starker Nachhall“ leiden, werden sie anvisiert. Bei der nächsten Aktion wird „Himmelssturz“ gegen sie eingesetzt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302005"
+		},
+		{
+			"name": "Himmelssturz",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten massiven physischen SCH zu. Wenn das Ziel unter dem Status „Starker Nachhall“ leidet, wird ihm zusätzlich physischer SCH zugefügt und gleichzeitig Starker Nachhall entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113012,
+				"count": 1
+			},
+			{
+				"id": 113013,
+				"count": 1
+			},
+			{
+				"id": 182002,
+				"count": 1
+			},
+			{
+				"id": 183001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "201302002"
+}

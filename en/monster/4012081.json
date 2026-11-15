@@ -1,0 +1,136 @@
+{
+	"name": "Daythunder Raven",
+	"description": "A crow from the flock surrounding Theos Synthetos. Possesses the ability to polarize the weather. Leaving them unchecked could be dangerous.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012080.png",
+	"shortIcon": "Monster_4012080",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012080.png",
+	"stats": {
+		"baseAttack": 40.008892,
+		"baseDefense": 210,
+		"baseHealth": 150.009,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 180,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Discharge",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Lightning DMG to one designated target.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401208101"
+		},
+		{
+			"name": "Heat It Up",
+			"tag": "Support",
+			"type": "Ability",
+			"description": "Increases current \"<u>Temperature</u>.\" When this unit is downed, reduces current \"<u>Temperature</u>.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				10,
+				10,
+				0.1,
+				10,
+				10,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401208102"
+		},
+		{
+			"name": "Polarization",
+			"tag": "Support",
+			"type": "Ability",
+			"description": "Increases the number of \"<u>Thunderclouds</u>.\" When this unit is Weakness Broken, reduces number of \"<u>Thunderclouds</u>.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401208103"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Imaginary",
+	"id": "4012081"
+}

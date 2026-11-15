@@ -1,0 +1,194 @@
+{
+	"name": "合金机铠•帕姆王",
+	"description": "谁能驾驭星穹列车的洪荒之力？！失控的帕姆变成了「合金机铠•帕姆王」。\n帕姆王是一台对干净整洁极为执着的强大机铠，按照它的标准，这里不干净了，必须进行全！面！打！扫！帕！",
+	"icon": "spriteoutput/monsterfigure/Monster_5014020.png",
+	"shortIcon": "Monster_5014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5014020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1162.49890725,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "灵魂修正剪",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成少量量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402001"
+		},
+		{
+			"name": "高温消毒模式",
+			"tag": "强化",
+			"type": "技能",
+			"description": "进入【蒸汽洗涤】状态，使自身造成的伤害提高，并获得一定层数的【长效抗菌】效果，使自身受到的伤害降低。【长效抗菌】效果被全部移除时，退出【蒸汽洗涤】状态并受到大量伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				2,
+				0.3,
+				0.1,
+				2,
+				0.45
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402003"
+		},
+		{
+			"name": "无死角洗涤",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成量子属性伤害，并使我方获得<u>笑点</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402002"
+		},
+		{
+			"name": "强效肥皂泡",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成量子属性伤害并施加【<u>劳动最快乐！</u>】效果，同时使我方获得<u>笑点</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				0.02,
+				5,
+				2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402004"
+		},
+		{
+			"name": "值日准备中…",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入【摩拳擦掌】状态，获得【弱点无效】效果，下次行动时施放【饱和式大扫除！】。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402005"
+		},
+		{
+			"name": "饱和式大扫除！",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成大量量子属性伤害，并使我方获得<u>笑点</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				5,
+				8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402006"
+		},
+		{
+			"name": "洗地机之乱",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "在行动序列上添加【会场秩序维持】，每次【会场秩序维持】行动时，为敌我双方召唤「合金保姆」。我方每获得1个笑点时我方的「合金保姆」积累1点充能值，充能值达到<unbreak>1[i]</unbreak>时可施放强化普攻移除1层【合金机铠•帕姆王】的【长效抗菌】效果。我方的「合金保姆」最多存在1个，且不会被敌我双方选中。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				20,
+				0.55,
+				0,
+				10,
+				0.6,
+				0.8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402008"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [
+		"501212001"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "501402003"
+}

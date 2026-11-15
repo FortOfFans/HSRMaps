@@ -1,0 +1,268 @@
+{
+	"name": "火花大会@Official",
+	"description": "二相楽園の人気ライバー「火花」が配信を開始した。ファンが注目する中、自分の新しいアバターを作り上げるイベント——「火花大会」が、今夜始まる！",
+	"icon": "spriteoutput/monsterfigure/Monster_5014010.png",
+	"shortIcon": "Monster_5014010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5014010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3952.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 960,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "アンチコメ消すよ～",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "<u>コラボ対決</u>が解除される時、サブフィールドにいる敵がすべて倒されている場合、敵全体の受けるダメージをアップさせ、行動順が遅らされ、SPを回復する。<u>アッハ</u>が即座に、<u>爆笑ネタ</u>がカウントされる<u>追加ターン</u>を1ターン獲得し、このターンでは<u>爆笑ネタ</u>が消費されない。<u>コラボ対決</u>が解除される時、サブフィールドにいる敵がすべて倒されていない場合、サブフィールドにいた味方キャラに大量の量子属性ダメージを与え、「もつれ」状態にする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				2,
+				6,
+				1,
+				20,
+				6,
+				0.5,
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401606"
+		},
+		{
+			"name": "アンチコメ消すよ～",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "<u>コラボ対決</u>が解除される時、サブフィールドにいる敵がすべて倒されている場合、敵全体の受けるダメージをアップさせ、行動順が遅らされ、SPを回復する。<u>アッハ</u>が即座に、<u>爆笑ネタ</u>がカウントされる<u>追加ターン</u>を1ターン獲得し、このターンでは<u>爆笑ネタ</u>が消費されない。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401607"
+		},
+		{
+			"name": "弾幕祭り！",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "<u>コラボ対決</u>が解除される時、サブフィールドにいる敵が倒されていない場合、味方全体に量子属性ダメージを与え、確率で攻撃を受けたターゲットに<u>ランダムな弾幕ペナルティ</u>を付与する。サブフィールドにいる敵の残りHPの割合が高いほど与ダメージがアップし、ペナルティを付与する確率が高くなる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				12,
+				2,
+				0.1,
+				2,
+				1.2,
+				1,
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401608"
+		},
+		{
+			"name": "レスバ！",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401601"
+		},
+		{
+			"name": "煽ってこう！",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401602"
+		},
+		{
+			"name": "コラボしよう！",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "<u>コラボ対決</u>を始め、味方キャラを1名選択しサブフィールドに配置して戦闘させ、残りのキャラはメインフィールドで支援を行う。<u>コラボ対決</u>の間、愉悦スキルはサブフィールドにいる敵のみ攻撃可能。アクションバーにコラボ対決のカウントダウンが出現する。\nコラボ対決のカウントダウンが終了する時、サブフィールドにいる味方キャラが戦闘不能状態になった時、サブフィールドにいる敵がすべて倒される時、またはサブフィールドにいる戦える味方キャラがいない時、<u>コラボ対決</u>を解除する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0,
+				4,
+				0.3,
+				0.6,
+				0.3,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401603"
+		},
+		{
+			"name": "配信プッシュ",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "サブフィールドにいる敵に「視聴者殺到」状態を付与し、その行動順を早め、会心率をアップさせる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.25,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401604"
+		},
+		{
+			"name": "好感度調整",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "<u>コラボ対決</u>開始後、「出力端子1号」を攻撃する時、「味方の人気度」がアップする。「出力端子2号」を攻撃する時、「相手の人気度」がダウンする。「味方の人気度」がアップする時、「出力端子1号」の行動順が早まる。「相手の人気度」がダウンする時、「出力端子2号」の行動順が早まる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.2,
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401609"
+		},
+		{
+			"name": "オフ会",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "<u>コラボ対決</u>開始後、メインフィールドにいる敵の受けるダメージがダウンし、行動制限系デバフを無効化する。<u>コラボ対決</u>が解除される時、サブフィールドにいる敵がすべて倒されている場合、この効果を解除する。そうでない場合は、サブフィールドにいる敵の残りHPの割合に応じて、ダメージダウン効果の一部を維持する。この効果は次の<u>コラボ対決</u>が始まるまで継続する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401610"
+		},
+		{
+			"name": "永遠の演目",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「コラボしよう！」を発動した後、メインフィールドの敵は「永遠の演目」を獲得する。靭性を削れなくなり、受けるすべてのダメージが大幅にダウンする。サブフィールドの敵は「狂喜」を獲得する。靭性を削れなくなり、受ける愉悦ダメージ以外のダメージが大幅にダウンし、受ける愉悦ダメージが少しダウンする。また、愉悦ダメージで「狂喜」を解除する効率が大幅にアップする。<u>コラボ対決</u>が解除されると、メインフィールドの敵の「永遠の演目」が解除される。この時、サブフィールドの敵がすべて倒されていた場合、自身は大量のダメージを受け、敵全体の受けるダメージがアップする。「コラボしよう！」を発動する前にHPが一定値まで減少した場合、即座に「コラボしよう！」を発動する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				12,
+				3,
+				1,
+				0.25,
+				0.9,
+				0.8,
+				1,
+				0.99,
+				0.0002500005,
+				0.25,
+				4,
+				0.99,
+				0.95,
+				0.5,
+				0.45,
+				0.6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401611"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"5012070",
+		"5012080",
+		"501203102",
+		"501203103",
+		"5014011"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "5014016"
+}

@@ -1,0 +1,236 @@
+{
+	"name": "示死祸源：深魇蝗灾",
+	"description": "仿若被「繁育」侵蚀的格拉默装甲，在那覆盖着异质的躯壳下，只藏着被星核扭曲的愿望——于梦境的深处，寰宇蝗灾以此样貌再度现世。",
+	"icon": "spriteoutput/monsterfigure/Monster_3024030.png",
+	"shortIcon": "Monster_3024030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3024030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7440,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "恶变鞘翅",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成少量火属性伤害。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302403001"
+		},
+		{
+			"name": "饕虐外肢",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成少量火属性伤害。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				1.8,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302403002"
+		},
+		{
+			"name": "侵掠，撕碎，进食",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成火属性伤害。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302403003"
+		},
+		{
+			"name": "分裂，腐化，吞吃",
+			"tag": "强化",
+			"type": "技能",
+			"description": "进入【基因复制】状态，使自身速度提高，召唤【幼蛰虫】并为其附加【速效进化】状态。我方可选择一名角色及其召唤的目标立即行动，并进入【天敌】状态，使其击破特攻提高。处于【速效进化】状态下的敌方目标受到不处于【天敌】状态下的我方攻击时，无法造成暴击效果。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302403004"
+		},
+		{
+			"name": "荒潮到临，蝗灾示死",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成大量火属性伤害。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302403005"
+		},
+		{
+			"name": "原始饥饿",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "使自身召唤的【幼蛰虫】速度提高。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				20,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302403006"
+		},
+		{
+			"name": "旋覆甲壳",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "当【示死祸源：深魇蝗灾】受到攻击后，降低生命值的一部分转化为【侵蚀】。当【示死祸源：深魇蝗灾】施放【荒潮到临，蝗灾示死】时，将回复侵蚀部分的生命值。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.01,
+				0.1,
+				0.15
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302403007"
+		},
+		{
+			"name": "共生，群集，噬咬",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "进入【基因复制】状态后使场地燃烧。召唤的【幼蛰虫】全部被消灭时解除【基因复制】。解除【基因复制】时，【示死祸源：深魇蝗灾】受到的伤害提高，并移除【侵蚀】状态。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302403008"
+		},
+		{
+			"name": "诸界噩兆，蚀生虫鸣",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "进入【基因复制】状态后，每当自身施放攻击，会根据剩余【幼蛰虫】的数量额外造成少量火属性伤害。每当【幼蛰虫】施放攻击后，为【示死祸源：深魇蝗灾】附加一层【死灭本能】，当【死灭本能】叠加到一定层数时，【示死祸源：深魇蝗灾】将立即行动，施放【荒潮到临，蝗灾示死】并清除所有【死灭本能】层数。【幼蛰虫】将优先攻击处于【天敌】状态的我方角色。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1,
+				5,
+				0.75,
+				0.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302403009"
+		},
+		{
+			"name": "",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302403010"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind"
+	],
+	"summons": [
+		"8022012"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Fire",
+	"id": "3024030"
+}

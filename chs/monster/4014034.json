@@ -1,0 +1,165 @@
+{
+	"name": "练度不够的遐蝶",
+	"description": "冥河中沉眠的死龙，受炼成召引再度苏醒，化成槁骨腐肉的模样。\n它曾是「死亡」的泰坦，逆溯冥河向上，离开乌有之界于现世搁浅。它曾随冥河潮汐涌上大地，为翁法罗斯的万事万物烙上命定的终局。那些将死的，或已死的存在，皆会因它的归来感受到灵魂深处的颤栗。",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014030.png",
+	"stats": {
+		"baseAttack": 40.008892,
+		"baseDefense": 210,
+		"baseHealth": 600.036,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 140,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "长眠者厚土安葬",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成大量量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403402"
+		},
+		{
+			"name": "辞世者临别哀悼",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403403"
+		},
+		{
+			"name": "苦涩送来迟到的死讯",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "使【哀悯长臂】得到强化。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403404"
+		},
+		{
+			"name": "于痛苦的芬芳中死去",
+			"tag": "强化",
+			"type": "技能",
+			"description": "进入<u>【死亡的芬芳】</u>状态，对我方全体角色造成大量量子属性伤害，该伤害<u>【不致命】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.145
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403405"
+		},
+		{
+			"name": "死亡想要更多的死亡",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403406"
+		},
+		{
+			"name": "濒死之梦，浓烟似墨",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "使自身初始受到的伤害降低。在<u>【死亡的芬芳】</u>状态下，移除自身的受到伤害降低状态。受到攻击后回复我方全体生命值。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403407"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"4012074",
+		"4012075"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "4014034"
+}

@@ -3,15 +3,22 @@
 	"description": "A false projection produced by compromised codes. The referent entity is an alien life form that was born out of the Fragmentum brought by a Stellaron and feeds on this world's energy. Its armor reflects the gloomy and profound starry sky.\nIn combat, the Ice Out of Space (Bug) will freeze targets it touches and delay their actions.",
 	"icon": "spriteoutput/monsterfigure/Monster_8003010.png",
 	"shortIcon": "Monster_8003010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003010.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "800301101",
 			"name": "Chilling Lament",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -27,11 +34,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301101"
 		},
 		{
-			"id": "800301102",
 			"name": "Frosty Absorption",
 			"tag": "Enhance",
 			"type": "Ability",
@@ -45,11 +52,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301102"
 		},
 		{
-			"id": "800301103",
 			"name": "Everwinter Rain",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -66,11 +73,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301103"
 		},
 		{
-			"id": "800301104",
 			"name": "Chilling Lament",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -86,11 +93,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301104"
 		},
 		{
-			"id": "800301105",
 			"name": "",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -103,11 +110,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301105"
 		},
 		{
-			"id": "800301106",
 			"name": "Freeze Burst",
 			"tag": "Blast",
 			"type": "Ability",
@@ -120,26 +127,37 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301106"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
 		}
 	],
 	"weakness": [
@@ -147,15 +165,20 @@
 		"Wind",
 		"Quantum"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 111001,
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
 				"count": 1
 			},
 			{
@@ -168,6 +191,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "8003011"

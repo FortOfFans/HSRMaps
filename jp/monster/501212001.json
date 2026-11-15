@@ -1,0 +1,130 @@
+{
+	"name": "「{RUBY_B#ごうきん}合金{RUBY_E#}おそうじパム」",
+	"description": "「星穹列車FES」の警備と清掃サービスを提供するメカヨロイ。\nこのメカヨロイたちは働き者で、飲み込みも早い。それから…それから…二相楽園をもう1度きれいにするのじゃ！",
+	"icon": "spriteoutput/monsterfigure/Monster_5012120.png",
+	"shortIcon": "Monster_5012120",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5012120.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 186.000093,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 180,
+		"speed": 160,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "お掃除",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501212001"
+		},
+		{
+			"name": "汚水スプラッシュ",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の量子属性ダメージを与え、攻撃を受けた味方の防御力をダウンさせる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.5,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501212002"
+		},
+		{
+			"name": "回路クラッシュ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受けた時、味方が<u>爆笑ネタ</u>を獲得する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501212003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116001,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 181010,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "501212001"
+}

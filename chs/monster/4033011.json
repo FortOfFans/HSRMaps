@@ -1,0 +1,224 @@
+{
+	"name": "蚀心影魔•浑流奔涌的腐坏者",
+	"description": "从黑潮中诞生的扭曲造物，对杀戮的渴求成为了空洞躯壳中仅存的意志，此时获得强大力量的它，已经没有任何人可以阻挡。",
+	"icon": "spriteoutput/monsterfigure/Monster_4033010.png",
+	"shortIcon": "Monster_4033010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4033010.png",
+	"stats": {
+		"baseAttack": 72,
+		"baseDefense": 210,
+		"baseHealth": 93,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 210,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "凋敝岩流",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成物理属性伤害，目标生命值越高造成的伤害越高。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301101"
+		},
+		{
+			"name": "腐败骤陨",
+			"tag": "弹射",
+			"type": "技能",
+			"description": "连续对我方随机单体目标造成物理属性伤害，目标生命值越高造成的伤害越高。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301102"
+		},
+		{
+			"name": "蚀心噬骨",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "为我方和敌方其他目标施加【可负载】状态。处于【可负载】状态的单位会将受到伤害超出当前生命值的部分转化为<u>【负载生命值】</u>，且不会因此陷入无法战斗状态。同时行动序列上出现【负载清算】，当【负载清算】行动时，将进行生命值结算，当前生命值为0以下的单位会受到致命伤害。【负载清算】会随着敌方召唤物数量的减少而提高行动速度，当敌方召唤物被全部消灭时【负载清算】移除。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.25,
+				8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301103"
+		},
+		{
+			"name": "浑流奔涌",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成基于目标生命上限的真实伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.9
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301105"
+		},
+		{
+			"name": "摄取污秽",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "每个当前生命值为0以下的目标使【蚀心影魔】造成的伤害提高。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.03,
+				0.5,
+				0.99
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301106"
+		},
+		{
+			"name": "黑潮降临",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤【黑潮造物】，当【黑潮造物】未被全部消灭时，敌方全体目标受到的伤害降低。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.5,
+				1.25,
+				1.75,
+				3,
+				6,
+				8,
+				8,
+				8,
+				8,
+				8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301107"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.99,
+				0.99,
+				0.99,
+				0.99,
+				0.99,
+				0.99
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301108"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"4032011",
+		"4032031",
+		"4032041",
+		"4032051"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "4033011"
+}

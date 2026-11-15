@@ -1,0 +1,134 @@
+{
+	"name": "Die langen Arme des Kummers",
+	"description": "Alle, die dem Ende entkommen wollen, müssen sich den Verfolgungen der Unterwelt stellen.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012070.png",
+	"shortIcon": "Monster_4012070",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012070.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 4.65,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Die Lebenden dürfen nicht entkommen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten geringen Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207201"
+		},
+		{
+			"name": "Die Toten dürfen sich nicht verbergen",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten und angrenzenden Einheiten geringen Quanten-SCH zu. Wenn der LP-Prozentsatz eines Ziels einen bestimmten Wert übersteigt, wird der SCH in <u>Degenerativen SCH</u> umgewandelt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.05,
+				0.5,
+				0.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207202"
+		},
+		{
+			"name": "Zwischen Leben und Tod",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Im Status „Überfällige Todesnachricht“ wird „Die Lebenden dürfen nicht entkommen“ zu „Die Toten dürfen sich nicht verbergen“ verstärkt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207203"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "4012072"
+}

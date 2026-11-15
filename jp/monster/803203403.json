@@ -1,0 +1,95 @@
+{
+	"name": "「オール・オア・ナッシング・ダブルラック」",
+	"description": "「大博打の賽を振る者」が化した博戯のサイコロ。賭けのステージで、博徒たちの運命を裁断する。",
+	"icon": "spriteoutput/monsterfigure/Monster_8032034.png",
+	"shortIcon": "Monster_8032034",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8032034.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 232.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 60,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "リミテッド・タイム・ラック",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "行動する時、自身が戦闘から離脱する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803203401"
+		},
+		{
+			"name": "ダブルベット",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "倒された後、味方の「ポイント」を2倍にする。さらに、「大博打の賽を振る者」の靱性を削り、HPを一定量削る。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				60,
+				0.03
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803203402"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181010,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "803203403"
+}

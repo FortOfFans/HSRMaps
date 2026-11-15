@@ -3,15 +3,22 @@
 	"description": "Provoking their temptations within, usurping their powerful spirit, transforming into their appearance... The Crimson Moon will conduct a targeted hunt based on its host's weakness.\nIs Feixiao the hunter or the prey in this endless pursuit?",
 	"icon": "spriteoutput/monsterfigure/Monster_2033020.png",
 	"shortIcon": "Monster_2033020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2033020.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 35805,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "203302201",
 			"name": "Seance",
 			"tag": "Talent",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203302201"
 		},
 		{
-			"id": "203302202",
 			"name": "Synchronization",
 			"tag": "Talent",
 			"type": "Ability",
@@ -37,45 +44,60 @@
 			"params": [],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203302202"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [],
+	"summons": [
+		"2032042",
+		"2032052",
+		"2032062"
+	],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Wind",
 	"id": "2033022"

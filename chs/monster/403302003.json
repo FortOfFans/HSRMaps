@@ -1,0 +1,161 @@
+{
+	"name": "黑潮斗将",
+	"description": "从黑潮中诞生的扭曲造物，对杀戮的渴求成为了空洞躯壳中仅存的意志。\n生前的决斗之魂被黑潮扭曲，它握持一柄与肩齐高的双手大剑，在漫无目的的游荡中寻找着所有可摧毁的目标，为世界的纷乱献上新增的熵值。",
+	"icon": "spriteoutput/monsterfigure/Monster_4033020.png",
+	"shortIcon": "Monster_4033020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4033020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1674,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "慑敌怖军",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403302001"
+		},
+		{
+			"name": "死斗绝命",
+			"tag": "强化",
+			"type": "技能",
+			"description": "令自身和指定我方角色及该角色召唤的目标进入<u>【决斗】</u>状态。并在3回合后施放【破心灭道】。优先选择增益效果数量最多的目标。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.5,
+				0.5,
+				0.5,
+				0.2,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403302002"
+		},
+		{
+			"name": "力拔云石",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成大量物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403302003"
+		},
+		{
+			"name": "破心灭道",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成大量物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403302004"
+		},
+		{
+			"name": "末路既定",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "攻击对我方目标造成伤害时，被击中目标降低生命值的一部分转化为<u>【侵蚀】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.2,
+				0,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403302005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "403302003"
+}

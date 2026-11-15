@@ -1,0 +1,104 @@
+{
+	"name": "火焚灾影",
+	"description": "寒潮降临后逡巡在裂界中的虚影。它扭曲地模仿着银鬃铁卫的身形。其甲胄着装与贝洛伯格的战士们同样严整，头颅却被没有五官的燃烬所取代。\n战斗中火焚灾影会挥舞燃烧的斧刃，灼烧敌人。",
+	"icon": "spriteoutput/monsterfigure/Monster_1022020.png",
+	"shortIcon": "Monster_1022020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1022020.png",
+	"stats": {
+		"baseAttack": 12.000006,
+		"baseDefense": 210,
+		"baseHealth": 139.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 60,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "灼炎重击",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成火属性伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1,
+				3,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102202001"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_DOT_Burn",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112001,
+				"count": 1
+			},
+			{
+				"id": 112002,
+				"count": 1
+			},
+			{
+				"id": 112003,
+				"count": 1
+			},
+			{
+				"id": 181005,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "102202002"
+}

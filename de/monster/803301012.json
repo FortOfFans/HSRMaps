@@ -1,0 +1,180 @@
+{
+	"name": "Leitender Angestellter: Teamleiter",
+	"description": "Ein leitender Angestellter der Interastralen Friedenskorporation, der mindestens den Rang eines Projektteamleiters hat. Der Mech, den er bedient, gehört der IFK. Wird er beschädigt, müssen die Reparaturkosten aus eigener Tasche bezahlt werden. Mit einem halbwegs anständigen Gehalt können solche Leute es sich zumindest leisten, eine Einraumwohnung auf einem der Unternehmensschiffe der IFK zu mieten.",
+	"icon": "spriteoutput/monsterfigure/Monster_8033010.png",
+	"shortIcon": "Monster_8033010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8033010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1674,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Diszipliniert",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301001"
+		},
+		{
+			"name": "Kostenreduktion",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301002"
+		},
+		{
+			"name": "Im Training ...",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Bei der nächsten Aktion wird „Arbeitskulturschock“ eingesetzt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301003"
+		},
+		{
+			"name": "Arbeitskulturschock",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301004"
+		},
+		{
+			"name": "<unbreak>720</unbreak>-Grad-Beurteilung",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Nimmt alle Leistungspunkte von Assistenzkraft: Außendienst und Assistenzkraft: Sicherheitspersonal weg.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301005"
+		},
+		{
+			"name": "Teamaufbau",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört eine Assistenzkraft: Außendienst oder eine Assistenzkraft: Sicherheitspersonal. Jede Assistenzkraft: Außendienst und Assistenzkraft: Sicherheitspersonal erhält 1 „Leistungspunkt“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301006"
+		},
+		{
+			"name": "Leistung verbessern",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Erhält nach dem Einsatz eines Angriffs 1 „Leistungspunkt“. Leistungspunkte können vom Angreifer weggenommen werden, wenn die Schwäche dieser Einheit gebrochen wird oder sie einen Todesstoß erleidet.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301007"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"803201010",
+		"803202011"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182004,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "803301012"
+}

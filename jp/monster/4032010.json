@@ -1,0 +1,116 @@
+{
+	"name": "{RUBY_B#あんこく}暗黒{RUBY_E#}の{RUBY_B#しお}潮{RUBY_E#}の{RUBY_B#やいば}刃{RUBY_E#}",
+	"description": "暗黒の潮と共に現われた歪んだ造物。空虚な肉体を支えるのは殺戮への渇望だけ。\n鋭い双刃は目の前に立ちふさがるあらゆる生物を瞬時に切り裂き、その俊敏な動きは幽霊のように捉えがたい。それらは汚染と侵蝕を世界の隅々にまで広げようとしている。",
+	"icon": "spriteoutput/monsterfigure/Monster_4032010.png",
+	"shortIcon": "Monster_4032010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 279,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "破滅の切先",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				2.4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403201001"
+		},
+		{
+			"name": "決まった末路",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "攻撃が味方にダメージを与えた時、命中された味方の減少したHPの一部が<u>「侵蝕」</u>に転換される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.2,
+				0,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403201002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032010"
+}

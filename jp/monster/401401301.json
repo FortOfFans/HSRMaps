@@ -1,0 +1,559 @@
+{
+	"name": "戦乱に明け暮れる常勝軍",
+	"description": "「紛争」のタイタン。狂気の中で狂気の戦争を続ける、オンパロスを覆う永遠の恐怖。\nかつては栄光に包まれ、都市国家と神々から尊敬を集めていた。だが、かの神を畏敬する都市は踏みにじられ、かの神を賛美する詩篇は焼き尽くされ、今ではその悪名だけが光なきエスカトンの世界に残り、万象の座が背負う輝きを貶めている。",
+	"icon": "spriteoutput/monsterfigure/Monster_4014010.png",
+	"shortIcon": "Monster_4014010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 32550,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1440,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "蒼穹の雷槍",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401301"
+		},
+		{
+			"name": "大地の脊髄を引き裂く",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に少量の虚数属性ダメージを与え、攻撃を受けた味方の行動順を遅らす。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.2,
+				1.8,
+				0.1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401302"
+		},
+		{
+			"name": "ステュクスの急流を断つ",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401303"
+		},
+		{
+			"name": "死の水に生者を投げ込む",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に虚数属性ダメージを与え、攻撃を受けた味方の行動順を遅らす。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.15
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401304"
+		},
+		{
+			"name": "戦火は消えない",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401305"
+		},
+		{
+			"name": "山の如き墳墓を燃やす",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に虚数属性ダメージを与え、攻撃を受けた味方の行動順を遅らす。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.2,
+				0.1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401306"
+		},
+		{
+			"name": "天を突き刺す矛先",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				5
+			],
+			"spGain": 5,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401307"
+		},
+		{
+			"name": "昼夜を焼き払う",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "連続でランダムな味方単体に少量の虚数属性ダメージを与え、攻撃を受けた味方の行動順を遅らす。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				10,
+				0.1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401308"
+		},
+		{
+			"name": "不滅の災厄",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "味方全体に虚数属性ダメージを与える。第一段階では、自身の<u>「戦鎧」</u>の所持層数上限をアップし、次の行動で「千の国は滅び、万の軍は塵に」を発動する。第二段階では、次の行動で「与えし者、千軍の首、天罰の矛」と共に「天罰下る、軒昂たる紛争に畏敬を」を発動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.8,
+				25,
+				0.5,
+				0.5
+			],
+			"spGain": 5,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401309"
+		},
+		{
+			"name": "千の国は滅び、万の軍は塵に",
+			"tag": "分担",
+			"type": "スキル",
+			"description": "味方全体に大量の虚数属性ダメージを与える。このダメージはターゲットで<u>均等に分担</u>される。この攻撃は味方全体の<u>「栄光」</u>を1層まで減らす。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				22
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401310"
+		},
+		{
+			"name": "孤高の玉座",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「戦乱に明け暮れる常勝軍」は一定層数の<u>「戦鎧」</u>を獲得し、自身の受けるダメージをダウンさせる。攻撃を受けた後、攻撃者の<u>「栄光」</u>の層数に応じて自身の<u>「戦鎧」</u>の層数を減らす。0層になると<u>「戦鎧」</u>が破壊され、自身に大量の虚数属性ダメージを与える。また、自身の靭性を削り、行動順を遅延させた後、味方のSPを回復する。<u>「戦鎧」</u>が破壊された後、攻撃を受ける時に追加で少量の虚数属性ダメージを受ける。自身のターンが終了する時、<u>「戦鎧」</u>の層数はMAXまでリセットされる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				12,
+				0.1,
+				0.03,
+				1,
+				0.25,
+				0.0029999998,
+				240
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401311"
+		},
+		{
+			"name": "最後の君主",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「戦乱に明け暮れる常勝軍」の<u>「戦鎧」</u>が<u>「百錬戦鎧」</u>に強化され、自身の受けるダメージをダウンさせる。<u>「百錬戦鎧」</u>の層数が0を超えた場合、「戦乱に明け暮れる常勝軍」はさらに靭性保護状態となる。攻撃を受けた後、攻撃者の<u>「栄光」</u>の層数に応じて自身の<u>「百錬戦鎧」</u>の層数を減らす。0層になると<u>「百錬戦鎧」</u>が破壊され、自身に大量の虚数属性ダメージを与える。また、自身の靭性を大幅に削り、行動順を遅延させた後、味方のSPを回復し、攻撃者に一定層数の<u>「栄光」</u>を付与する。<u>「百錬戦鎧」</u>が破壊された後、攻撃を受けた時に追加で少量の虚数属性ダメージを受ける。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				49,
+				1,
+				1,
+				0.5,
+				960
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401312"
+		},
+		{
+			"name": "断ち切られた帰路",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "戦闘開始時、味方全体に<u>「栄光」</u>を付与し、<u>「栄光」</u>1層につき与える会心ダメージがアップする。SPを1消費するごとに<u>「栄光」</u>を1層獲得する。「戦乱に明け暮れる常勝軍」が「千の国は滅び、万の軍は塵に」を発動、または弱点撃破状態から回復した時、味方全体の<u>「栄光」</u>が1層になる。味方のSPは上限を超えることが可能。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.02
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401313"
+		},
+		{
+			"name": "死がもたらす栄光",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "第二段階に入ると、味方全体の<u>「栄光」</u>が1層になる。<u>「栄光」</u>1層につき与える会心ダメージがアップする。SPを1消費するごとに<u>「栄光」</u>を1層獲得する。味方のSPは上限を超えることが可能。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401314"
+		},
+		{
+			"name": "紛争の意志",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「戦乱に明け暮れる常勝軍」は1ターンに4回行動できる。なお行動する時、フィールド上にいる<u>「百錬戦鎧」</u>が破壊されていない「征服されし者」1体につき、<u>百錬攻撃スキル</u>を1回発動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401315"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401316"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401317"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				99
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401318"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401319"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401320"
+		},
+		{
+			"name": "",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401321"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"401402101"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101401",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101402",
+				"name": "林立する鎧",
+				"description": "ボス幻影とその召喚物は<color=#f29e38ff><u>「戦鎧」</u></color>を持っており、自身の受けるダメージをダウンさせる。第二段階では<color=#f29e38ff><u>「戦鎧」</u></color>が<color=#f29e38ff><u>「百錬戦鎧」</u></color>に強化され、重ねられる層数の上限が大幅にアップする。また、ボス幻影はさらに靭性保護を獲得する。",
+				"params": []
+			},
+			{
+				"id": "101403",
+				"name": "刻まれた汚点",
+				"description": "第二段階では、ボス幻影の「百錬戦鎧」の層数上限がアップする。",
+				"params": []
+			},
+			{
+				"id": "101404",
+				"name": "主君を守る堅陣",
+				"description": "ボス幻影以外の<color=#f29e38ff>敵</color>1体につき、敵全体の受けるダメージがダウンし、与えるダメージがアップする。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10141",
+				"name": "第一段階：鉄馬金戈",
+				"description": "ボス幻影とその召喚物は「戦鎧」を持っており、自身の受けるダメージをダウンさせる。",
+				"answer": "対処戦略：SPを優先的に消費して「栄光」を獲得し、与える会心ダメージと削る「戦鎧」の層数をアップさせよう。",
+				"skills": [
+					{
+						"id": "101411",
+						"type": "Normal",
+						"name": "「栄光」の獲得方法",
+						"texts": [
+							{
+								"description": "味方がSPを1消費するごとに「栄光」を1層獲得します（召喚者と記憶の精霊の「栄光」層数は常に同じになる）。SPを積極的に消費することで「栄光」の層数を素早く重ねられる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101412",
+						"type": "Normal",
+						"name": "「戦鎧」の削り方",
+						"texts": [
+							{
+								"description": "味方が敵を攻撃すると、攻撃者の「栄光」の層数と同じ数分だけ、敵の「戦鎧」を削ることができる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101413",
+						"type": "Normal",
+						"name": "ボス幻影の靭性を効率よく削る方法",
+						"texts": [
+							{
+								"description": "ボス幻影の「戦鎧」の層数を0にすると、靭性を大きく削ることができる。また、ボス幻影の召喚物を倒すことでも、靭性を少量削ることができる。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10142",
+				"name": "第二段階：直接対決",
+				"description": "ボス幻影とその召喚物の「戦鎧」が「百錬戦鎧」に強化される。「百錬戦鎧」を持つ召喚物は、ボス幻影のスキルをさらに強化する。",
+				"answer": "対処戦略：ボス幻影が行動する前に、召喚物の「百錬戦鎧」をできるだけ多く削ることで、ボス幻影のスキルを弱体化できる。",
+				"skills": [
+					{
+						"id": "101421",
+						"type": "Normal",
+						"name": "ボス幻影の靭性保護状態に対処しよう",
+						"texts": [
+							{
+								"description": "ボス幻影は「百錬戦鎧」の層数が0を超えた場合、靭性保護状態となる。「百錬戦鎧」の層数を0にすることで靭性保護状態を解除できる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101422",
+						"type": "Normal",
+						"name": "ボス幻影の「百錬攻撃スキル」と「天罰下る、軒昂たる紛争に畏敬を」に対処しよう",
+						"texts": [
+							{
+								"description": "ボス幻影が行動する前に、召喚物の「百錬戦鎧」をできるだけ多く削ることで、ボス幻影のスキルを弱体化できる。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影とその召喚物の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "ボス幻影とその召喚物は<color=#f29e38ff>「戦鎧」</color>を持っており、自身の受けるダメージをダウンさせる。第二段階では<color=#f29e38ff>「戦鎧」</color>が<color=#f29e38ff>「百錬戦鎧」</color>に強化され、重ねられる層数の上限が大幅にアップする。また、ボス幻影はさらに<color=#f29e38ff>靭性保護</color>を獲得する。",
+				"params": []
+			},
+			{
+				"description": "戦闘開始時、味方全体が<color=#f29e38ff>「栄光」</color>を1層獲得する。味方が<color=#f29e38ff>SP</color>を1消費するごとに<color=#f29e38ff>「栄光」</color>を1層獲得する（召喚者と記憶の精霊の「栄光」層数は常に同じになる）。「栄光」1層につき、与える会心ダメージがアップする。「戦鎧」を持つ敵を攻撃した時、攻撃者の「栄光」層数分の「戦鎧」を削る。味方の<color=#f29e38ff>SPは上限を突破できる</color>。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "<color=#f29e38ff>SPを優先的に消費</color>して<color=#f29e38ff>「栄光」</color>を獲得し、与える会心ダメージと削れる敵の「戦鎧」の層数をアップさせよう。味方の<color=#f29e38ff>SPは上限を突破できる</color>。",
+				"params": []
+			},
+			{
+				"description": "敵は<color=#f29e38ff>「戦鎧」</color>を所持している場合、防御力が大幅にアップする。「戦鎧」を削ると、受けるダメージをアップさせることができ、さらに<color=#f29e38ff>SPも回復できる</color>。",
+				"params": []
+			},
+			{
+				"description": "第二段階では、召喚物が<color=#f29e38ff>「百錬戦鎧」</color>を所持している場合、ボス幻影のスキルが強化される。召喚物の「百錬戦鎧」を優先的に削ることで、<color=#f29e38ff>ボス幻影のスキルを弱体化</color>できる。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "401401301"
+}

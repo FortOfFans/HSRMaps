@@ -3,15 +3,22 @@
 	"description": "An automaton pieced together with Old World technology. This rare type of humanoid automaton is equipped with a chainsaw on its right arm, presumably used for mining or construction operations.\nIn combat, Automaton Direwolfs will use their chainsaw to Bleed enemies, dealing DoT.",
 	"icon": "spriteoutput/monsterfigure/Monster_1013020.png",
 	"shortIcon": "Monster_1013020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1013020.png",
 	"stats": {
 		"baseAttack": 14.999994,
 		"baseDefense": 210,
 		"baseHealth": 185.99981400000001,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "101302001",
 			"name": "Felling Order",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -26,11 +33,11 @@
 			],
 			"spGain": 20,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302001"
 		},
 		{
-			"id": "101302002",
 			"name": "Lock On Target",
 			"tag": "Lock On",
 			"type": "Ability",
@@ -40,11 +47,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1.25,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302002"
 		},
 		{
-			"id": "101302003",
 			"name": "Disintegration Order",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -56,11 +63,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302003"
 		},
 		{
-			"id": "101302004",
 			"name": "Dismantle",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -72,42 +79,53 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302004"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Ice",
 		"Thunder",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 112011,
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
 				"count": 1
 			},
 			{
@@ -120,6 +138,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "101302017"

@@ -1,0 +1,128 @@
+{
+	"name": "Black Tide's Corroded Axe",
+	"description": "A creature warped by the black tide, driven solely by an insatiable thirst for bloodshed.\nWielding a massive axe weighing a thousand pounds, its charged strike can shatter even the hardest stone. Any living being that stands in its way is doomed to be crushed and corroded.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032030.png",
+	"shortIcon": "Monster_4032030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032030.png",
+	"stats": {
+		"baseAttack": 66.666664,
+		"baseDefense": 210,
+		"baseHealth": 0.465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Wrathful Blazing Axe",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Fire DMG to one designated target.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403203101"
+		},
+		{
+			"name": "Fire of Vengeance",
+			"tag": "Distribute",
+			"type": "Ability",
+			"description": "Deals Fire DMG to all targets. The DMG is <u>distributed evenly</u> among targets.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403203102"
+		},
+		{
+			"name": "Guillotine of the Weak",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When the target's HP is below 0, dispels their Weakness Break state and grants the \"Weakness Protected\" effect to them.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403203103"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032031"
+}

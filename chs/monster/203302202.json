@@ -1,0 +1,229 @@
+{
+	"name": "蛊言妄念的蚀心兽",
+	"description": "挑动其心魔，窃据其威灵，幻化其形貌，「赤月」会根据宿主的弱点展开针对性的狩猎。\n在这场无尽的猎杀中，飞霄的身份究竟是猎手还是猎物。",
+	"icon": "spriteoutput/monsterfigure/Monster_2033020.png",
+	"shortIcon": "Monster_2033020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2033020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 35805,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "通灵",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "【喰云之首】、【裂维之爪】、【辟尘之尾】与【业火焚心的影将军】共享血量。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203302201"
+		},
+		{
+			"name": "连心",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "【喰云之首】、【裂维之爪】、【辟尘之尾】与【业火焚心的影将军】陷入弱点击破状态时会削减【蛊言妄念的蚀心兽】的韧性。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203302202"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [],
+	"summons": [
+		"2032042",
+		"2032052",
+		"2032062"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 2,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101201",
+				"name": "坚防守备",
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101202",
+				"name": "铁骨峥嵘",
+				"description": "部位受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。当首领幻影被<color=#f29e38ff>弱点击破</color>后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101203",
+				"name": "钩爪锯牙",
+				"description": "首领幻影的韧性提高<color=#f29e38ff><unbreak>#1[i]</unbreak></color>点。",
+				"params": [
+					40
+				]
+			},
+			{
+				"id": "101204",
+				"name": "兽血沸腾",
+				"description": "<color=#f29e38ff>【厉咒】</color>状态的持续时间延长<color=#f29e38ff><unbreak>#1[i]</unbreak></color>回合。",
+				"params": [
+					1
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10121",
+				"name": "阶段一：叱咤风云",
+				"description": "首领幻影会施放【蚀心厉咒】使我方陷入【厉咒】效果。",
+				"answer": "应对策略：在【蚀心厉咒】施放时，优先选择我方非输出角色作为技能的目标。",
+				"skills": [
+					{
+						"id": "101211",
+						"type": "Normal",
+						"name": "如何控制【浴血人狼】进行战斗",
+						"texts": [
+							{
+								"description": "优先使用【浴血人狼】的战技可有效削减敌方目标的韧性。当我方全体生命值较低时，优先使用【浴血人狼】的普攻可以快速回复我方生命值。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101212",
+						"type": "Normal",
+						"name": "【厉咒】状态何时解除",
+						"texts": [
+							{
+								"description": "【浴血人狼】施放普攻或战技时，获得1层【渴血】，当【渴血】层数达到上限时解除【厉咒】效果。使首领幻影陷入弱点击破状态也可以解除【厉咒】效果。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10122",
+				"name": "阶段二：席卷乾圜",
+				"description": "首领幻影会施放【席卷乾圜，气吞坤矩】造成高额伤害和负面效果。",
+				"answer": "应对策略：在【席卷乾圜，气吞坤矩】施放前尽可能击破所有部位。",
+				"skills": [
+					{
+						"id": "101221",
+						"type": "Normal",
+						"name": "应对【席卷乾圜，气吞坤矩】造成的伤害和负面效果",
+						"texts": [
+							{
+								"description": "使用【浴血人狼】的战技命中多个首领幻影的部位可以大幅削减部位的韧性，或将其所有部位弱点击破以阻止【席卷乾圜，气吞坤矩】的施放。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影和其所有部位受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "首领幻影的部位被<color=#f29e38ff>弱点击破</color>时，首领幻影会削减一定韧性。",
+				"params": []
+			},
+			{
+				"description": "首领幻影施放【蚀心厉咒】，使我方角色<color=#f29e38ff>陷入【厉咒】状态</color>。【厉咒】状态下的我方角色及其召唤物离场。同时召唤【浴血人狼】，代替该离场角色继续战斗，并且【浴血人狼】的攻击能<color=#f29e38ff>造成较多的韧性削减</color>。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "多次击破首领幻影的<color=#f29e38ff>部位</color>可有效削减首领幻影的韧性，<color=#f29e38ff>击破</color>首领幻影会大幅提高首领幻影和其所有部位受到的伤害，并使我方全体恢复战技点并激活终结技。",
+				"params": []
+			},
+			{
+				"description": "当<color=#f29e38ff>【浴血人狼】</color>代替我方角色战斗时，会根据受到攻击的敌方目标<color=#f29e38ff>持续伤害类负面状态的数量</color>额外<color=#f29e38ff>无视弱点属性削减其韧性</color>。【浴血人狼】的<color=#f29e38ff>普攻</color>可为我方全体目标回复生命值，<color=#f29e38ff>战技</color>可命中多个敌方目标并大幅削减韧性，且<color=#f29e38ff>不消耗战技点</color>。",
+				"params": []
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Wind",
+	"id": "203302202"
+}

@@ -1,0 +1,265 @@
+{
+	"name": "The Long-Suffering Conductor",
+	"description": "Who can handle the wild, untamed power of the Astral Express!? Pom-Pom, now beyond control, has transformed into Alloy Mechatron: King Pom-Pom.\nKing Pom-Pom is a powerful mechatron obsessed with cleanliness and order. By its standards, this place is a mess and needs a thorough! Deep! Clean!",
+	"icon": "spriteoutput/monsterfigure/Monster_5014020.png",
+	"shortIcon": "Monster_5014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5014020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 32550,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1200,
+		"speed": 134,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Soulmend Shears",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Quantum DMG to one designated target.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402401"
+		},
+		{
+			"name": "High-Temp Sterilization Mode",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Enters the \"Steam Wash\" state, increasing DMG dealt by this unit, and gains a set number of \"Lasting Antibac\" stacks, reducing the DMG this unit receives. When all stacks of \"Lasting Antibac\" are removed, exits the \"Steam Wash\" state and receives massive DMG.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				2,
+				0.44,
+				0.1,
+				4,
+				0.22
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402403"
+		},
+		{
+			"name": "Zero-Blind-Spot Cleanse",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Quantum DMG to all targets and grants the target team <u>Punchline</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402402"
+		},
+		{
+			"name": "Potent Foam Soap",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Quantum DMG to all targets and applies the \"<u>Work Is Bliss!</u>\" effect, while causing the target team to gain <u>Punchline</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				0.02,
+				5,
+				2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402404"
+		},
+		{
+			"name": "Duty Prep in Progress...",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the \"Raring to Go\" state and gains the \"Weakness Protected\" effect. Uses \"Saturation Cleaning!\" in the next action.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402405"
+		},
+		{
+			"name": "Saturation Cleaning!",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals massive Quantum DMG to all targets and grants the target team <u>Punchline</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				5,
+				8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402406"
+		},
+		{
+			"name": "Scrubber's Mutiny",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "At the start of each phase, the \"Venue Protocol Enforcer\" summons reinforcements for both sides. Each time an ally gains 1 Punchline, the ally's \"Alloy Pommy\" accumulates 1 Charge. Upon reaching <unbreak>1[i]</unbreak> Charge, it can use Enhanced Basic ATK to remove 1 stack of the \"Lasting Antibac\" effect from \"The Long-Suffering Conductor\" and ignore the \"Weakness Protected\" effect to forcibly reduce Toughness. A maximum of 1 ally \"Alloy Pommy\" can exist, and it cannot be targeted by either side.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				80,
+				0,
+				0,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402408"
+		},
+		{
+			"name": "Innovative Bleach",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "While \"Daybreak Squadron\" is in the \"Daybreak Forcefield\" state, \"The Long-Suffering Conductor\" gains a \"Damage Immunity\" effect of the same Type as that \"Daybreak Squadron\" member, while also gaining the \"Weakness Protected\" effect. When any \"Daybreak Squadron\" member is defeated by an ally target, the target \"Alloy Pommy\" immediately gains 1 extra turn, during which it can use its Enhanced Basic ATK.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1.75,
+				1.2,
+				0.3,
+				0.6,
+				0.9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402409"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402411"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402415"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402414"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"5013052",
+		"5013072",
+		"5013042",
+		"5013062"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "5014024"
+}

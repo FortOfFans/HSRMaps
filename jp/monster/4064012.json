@@ -1,0 +1,345 @@
+{
+	"name": "迷いの淵の裁定者",
+	"description": "黄金の血の記憶の精霊の亡骸に残る狂気の欠片が、長夜月によって抽出され、より歪な姿に融合された怪物。\n創造主の指示に従い、何が記憶され、何が忘却されるべきかを裁定する。徒労に終わった記憶を飲み込み、歳月の内に沈黙させるのだ。\n「新しい命が芽吹いたら、その種は死んでいなければならない」",
+	"icon": "spriteoutput/monsterfigure/Monster_4064010.png",
+	"shortIcon": "Monster_4064010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4064010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 27900,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 8,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "血罪の歯形",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に虚数属性ダメージを与える。ターゲットがバリアを所持している場合、「<u>壁反震</u>」を発動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				180,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401201"
+		},
+		{
+			"name": "執行準備",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「黄金の血の記憶の精霊・パーシアーノス」を召喚する。各召喚物が倒された時、「<u>壁反震</u>」が発動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				120,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401202"
+		},
+		{
+			"name": "血罪の睨み",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "指定した味方キャラをロックオンし、自身の速度アップ。数ターン内、その味方に「血罪の歯形」と「血罪の鋸刑」を発動する。このスキルを発動した後、1回再行動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401203"
+		},
+		{
+			"name": "血罪の鋸刑",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の虚数属性ダメージを与え、ターゲットの減少したHPの一部を「<u>侵蝕</u>」に変換する。ターゲットがバリアを所持している場合、「<u>壁反震</u>」を発動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				180
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401204"
+		},
+		{
+			"name": "罪血の鉗刑",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の虚数属性ダメージを与え、ターゲットの減少したHPの一部を「<u>侵蝕</u>」に変換する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				0.5,
+				0.2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401205"
+		},
+		{
+			"name": "元凶を差し出せ",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入る。次の行動時に「罪血の梟首」を発動する。味方キャラ1名を選び、「罪血の梟首」の最も高いダメージと「<u>血罪の腐蝕</u>」を受けさせる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401206"
+		},
+		{
+			"name": "罪血の梟首",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「元凶を差し出せ」で選択されたキャラ以外の味方に虚数属性ダメージを与え、「元凶を差し出せ」で選択された味方に大量の虚数属性ダメージを与える。さらに、該当キャラのバリアで相殺できなかったダメージの数値に応じて、「<u>血罪の腐蝕</u>」を付与する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				12,
+				4,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401207"
+		},
+		{
+			"name": "常識はずれのしぶとさ",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "戦闘開始時とフェーズ移行時、自身は「防御力強化」状態に入り、自身の防御力を大幅にアップする。弱点撃破された後、「防御力強化」状態を解除する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401208"
+		},
+		{
+			"name": "壁反震",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "「<u>壁反震</u>」発動時、自身は防御力低下を1層獲得する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401209"
+		},
+		{
+			"name": "細分化",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "戦闘開始時およびフェーズ移行時、自身は「黄金の血の記憶の精霊・パーシアーノス」、「黄金の血の記憶の精霊・キュオーン」、「黄金の血の記憶の精霊・オフィス」に分裂する。さらにこれらの「黄金の血の記憶の精霊」は「<u>一体化</u>」を獲得し、自身は「血脈衰弱」を獲得する。\n「<u>一体化</u>」を持つ「黄金の血の記憶の精霊」が行動するたびに、自身の「血脈衰弱」が1減少する。\n「<u>一体化</u>」を持つ「黄金の血の記憶の精霊」がすべて「<u>仮死</u>」状態になった時、それらは再び合体して「迷いの淵の裁定者」となり、その時点で残っている「血脈衰弱」の数に応じて、「迷いの淵の裁定者」の靭性を削る。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.25,
+				0.75,
+				0.5,
+				1,
+				48,
+				1440
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401211"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401213"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401214"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401215"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.04,
+				0.04
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401216"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401217"
+		},
+		{
+			"name": "劣化の残躯",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "自身と自身の召喚物は「劣化残躯」を獲得する。味方が「劣化の残躯」を持つ敵を攻撃した際に弱体効果を付与すると、その敵の靭性を少し削り、確定ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				45,
+				0.005
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401210"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [
+		"406201002",
+		"406201007",
+		"406202002",
+		"406301003"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "4064012"
+}

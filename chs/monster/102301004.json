@@ -1,0 +1,171 @@
+{
+	"name": "炽燃徘徊者",
+	"description": "徘徊在裂界中的机械单元，但毫无疑问这并非人类技术造就的产物，而是裂界扭曲的力量模仿而成的怪物。\n炽燃徘徊者的攻击会对处于灼烧状态的敌人造成额外效果。",
+	"icon": "spriteoutput/monsterfigure/Monster_1023010.png",
+	"shortIcon": "Monster_1023010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1023010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2278.500279,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "赤红刀锋",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成火属性伤害，并大概率使受到攻击的我方目标陷入灼烧状态。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301001"
+		},
+		{
+			"name": "燃焰斩击",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成火属性伤害，本技能优先攻击陷入灼烧状态的我方目标。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301002"
+		},
+		{
+			"name": "熔解",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "对陷入灼烧状态的我方单体施放攻击后自身造成的伤害提高。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.06,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301003"
+		},
+		{
+			"name": "高温运转",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使自身攻击力小幅提高，速度大幅提高，弱点被击破后以上增益效果解除。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				100
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301004"
+		},
+		{
+			"name": "飞舞烬火",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成火属性伤害。使陷入灼烧状态的我方目标受到额外火属性伤害的同时解除该目标的灼烧状态。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_DOT_Burn",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "102301004"
+}

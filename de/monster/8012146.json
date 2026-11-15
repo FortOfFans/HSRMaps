@@ -1,0 +1,182 @@
+{
+	"name": "Rechte Hand der Katastrophe",
+	"description": "Auf der verwüsteten Erde sind lediglich die Echos von Schmerz geblieben – die Marschmusik des Untergangs.\nDie Rechte Hand der Katastrophe kann imaginäre Macht geschickt einsetzen, um großflächige Angriffe auszuführen.",
+	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
+	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012140.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 90,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Katastrophenträne",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.6
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214601"
+		},
+		{
+			"name": "Harte Schnitte",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen imaginären SCH zu und verursacht bei 2 zufälligen Figuren den Status „Imaginärer Zauber“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214602"
+		},
+		{
+			"name": "Der Zusammenbruch der Tyrannei",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten imaginären SCH zu und verursacht bei 3 zufälligen Figuren den Status „Imaginärer Zauber“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214603"
+		},
+		{
+			"name": "Kollision der Auslöschung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn durch den Einsatz der Fähigkeit ein Verbündeter gleichzeitig mit „Quanten-Zauber“ und „Imaginärer Zauber“ belegt wird, werden Quanten-Zauber und Imaginärer Zauber von diesem Ziel entfernt. Ihm wird geringer Quanten- und imaginärer SCH zugefügt und er tritt mit hoher Chance in den Status <u>Verschränkte Gefangenschaft</u> ein.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1,
+				0.1,
+				0.3,
+				0.6,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214604"
+		},
+		{
+			"name": "Scheintod",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Tritt nach Erleiden eines Todesstoßes in den Status „Scheintod“ ein.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214605"
+		},
+		{
+			"name": "Schutz",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Tritt in den Status „Schutz“ ein und reduziert erlittenen SCH, solange die Einheit sich nicht im Status Schwächebruch befindet. Wenn die Einheit Schwächebruch erleidet, werden ihre Aktionen zusätzlich verzögert und der erlittene SCH erhöht.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214606"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111011,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 181003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Imaginary",
+	"id": "8012146"
+}

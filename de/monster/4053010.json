@@ -1,0 +1,194 @@
+{
+	"name": "Herrin der Brandung",
+	"description": "Die Töchter des Meeres, deren Geist und Körper von der Sünde der Zerstörung zerfressen wurden, tanzen und singen für die kommende dunkle Sonne, nur noch leere, verzerrte Hüllen ihrer selbst.\nDie verbliebene Schwarze Flut fließt aus vergangenen Zeiten und ergießt sich in die Wellen dieser Welt.\nO bezaubernde Brandung, du hast das Unglück für deine Herrscherin getrunken, und dein Antlitz ist mit weinbefleckten Blütenblättern und zerbrochenen Perlen geschmückt.\nDu liegst trunken im Schlachthof des Wahnsinns, und in diesem Grab aus Blut und honigsüßem Verderben singst du dein Klagelied in die Leere.",
+	"icon": "spriteoutput/monsterfigure/Monster_4053010.png",
+	"shortIcon": "Monster_4053010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4053010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Berauschende Verderbnis",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten geringen Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301001"
+		},
+		{
+			"name": "Honiggebräu funkelt wie Sterne",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen Eis-SCH zu und reduziert mit hoher Chance ihre VTD und ihren WDS aller Typen.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				0.15,
+				2,
+				0.15
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301002"
+		},
+		{
+			"name": "Melodie der Einladung",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Dienerin der Gischt“.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301003"
+		},
+		{
+			"name": "Empfange die Gabe des Ozeans",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Sehnsucht nach einem gemeinsamen Tanz“ ein. Setzt bei jeder Aktion „Umarmung der Wellen“ ein. Wenn diese Einheit sich nicht im Status <u>Schwelgen in Zerstörung</u> befindet, gehen <u>Gegner, die in diesen Status eintreten können</u>, in den Status <u>Schwelgen in Zerstörung</u> über. Dadurch wird ein Teil des erlittenen SCH als DoT über eine bestimmte Anzahl von Runden hinweg abgezogen.\nEin Countdown für Schwelgen in Zerstörung erscheint in der Aktionsreihenfolge. Zu Beginn der Runde des Countdowns wird der Status <u>Schwelgen in Zerstörung</u> von allen Gegnern entfernt.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301004"
+		},
+		{
+			"name": "Umarmung der Wellen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen Eis-SCH zu. Im Status <u>Schwelgen in Zerstörung</u> wird angegriffenen Zielen <u>Schwarze-Flut-Fieber</u> zugefügt, wodurch ein Teil des verursachten SCH als DoT über eine bestimmte Anzahl von Runden hinweg abgezogen wird.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301005"
+		},
+		{
+			"name": "Rast am Wasser",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Zieht die Aktion vor, nachdem eine bestimmte Anzahl von Angriffen durch Standardangriffe, Fertigkeiten, Ultimates oder Memogeist-Techniken erlitten wurde. Im Status <u>Schwelgen in Zerstörung</u> verringert sich die Anzahl der Angriffe, die erforderlich sind, um die Aktion vorzuziehen.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301006"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301007"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Thunder"
+	],
+	"summons": [
+		"4052010"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Ice",
+	"id": "4053010"
+}

@@ -1,0 +1,429 @@
+{
+	"name": "Verzweifelter Würfelwerfer",
+	"description": "Eine hochrangige Führungskraft in der Abteilung für strategische Investitionen der IFK und eines der Zehn Steinherzen. Mit dem Kernstein erlangt er die Macht der Emanatoren der Bewahrung und macht sich selbst zum Würfel, um sich kopfüber ins Getümmel zu stürzen.",
+	"icon": "spriteoutput/monsterfigure/Monster_8034010.png",
+	"shortIcon": "Monster_8034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 8137.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 570,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Hoher Einsatz",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401201"
+		},
+		{
+			"name": "Diversifizierte Investition",
+			"tag": "Abpraller",
+			"type": "Fähigkeit",
+			"description": "Fügt zufälligen Verbündeten kontinuierlich geringen imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.1,
+				5,
+				8
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401202"
+		},
+		{
+			"name": "Profitkürzung",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen imaginären SCH zu und reduziert ihre Energie. In der zweiten Phase wird die Punktzahl der Verbündeten zusätzlich reduziert.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401203"
+		},
+		{
+			"name": "Wettzeit",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Alles oder nichts“ und lässt einen Verbündeten in das Spiel eintreten. Jedes Mal, wenn ein Alles oder nichts von einem ins Spiel eingetretenen Verbündeten angegriffen wird, erhält dieser Verbündete eine zufällige Zahl zwischen 1 und 6. Wenn ein ins Spiel eingetretener Verbündeter seine Runde beendet, gelten Ziele mit einer niedrigeren Zahl als Aventurin der Kriegslist als Verlierer und werden angegriffen; Ziele mit einer höheren Zahl als Aventurin der Kriegslist gelten als Gewinner und ihr Ultimate wird aktiviert. Gleichzeitig werden Ziele, die nicht ins Spiel eingetreten sind, mit dem Status „Stilles Betrachten“ belegt, der am Ende des Spiels entfernt wird.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401204"
+		},
+		{
+			"name": "Großes Glücksspielfest",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Alles oder nichts“ und lässt alle Verbündeten in das Spiel eintreten. Jedes Mal, wenn ein Alles oder nichts angegriffen wird, erhält der Angreifer eine zufällige Zahl zwischen 1 und 6. Bei der nächsten Aktion von Aventurin der Kriegslist gelten Ziele mit einer niedrigeren Zahl als Aventurin der Kriegslist als Verlierer und werden angegriffen; Ziele mit einer höheren Zahl als Aventurin der Kriegslist gelten als Gewinner und ihr Ultimate wird aktiviert.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.2,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401205"
+		},
+		{
+			"name": "Keine Zeit für Verlierer",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten, der das Spiel verloren hat, imaginären SCH zu und verursacht mit hoher Chance Gefangenschaft.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.7,
+				1,
+				0.3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401206"
+		},
+		{
+			"name": "Der Sieger kriegt alles",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt Verbündeten, die das Spiel verloren haben, massiven imaginären SCH zu und verursacht mit hoher Chance Gefangenschaft.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.7,
+				1,
+				0.3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401207"
+		},
+		{
+			"name": "Wette der Kriegslist",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Jedes Mal, wenn ein Verbündeter gewinnt, erhält er „Glückspilz“, wodurch sein verursachter SCH erhöht wird. Jedes Mal, wenn ein Verbündeter verliert, erhält er „Kein Glückstag“, wodurch sein erlittener SCH erhöht wird.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401208"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401209"
+		},
+		{
+			"name": "Eröffnungswette",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Aktiviert 2 „Alles oder nichts“ und visiert einen Verbündeten an. Die nächste Aktion setzt Alles oder nichts gegen den anvisierten Verbündeten ein. Besiege alle aktivierten Alles oder nichts, um diese Aktion zu verhindern und den Ultimate eines zufälligen Verbündeten zu aktivieren.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.2,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401210"
+		},
+		{
+			"name": "All-In",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Aktiviert alle „Alles oder nichts“ und setzt bei der nächsten Aktion „Zum Verlieren verdammt“ ein. Besiege alle aktivierten Alles oder nichts, um diese Aktion zu verhindern und die Ultimates aller Verbündeten zu aktivieren.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.2,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401211"
+		},
+		{
+			"name": "Alles oder nichts",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten imaginären SCH zu und verursacht mit hoher Chance Gefangenschaft.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401212"
+		},
+		{
+			"name": "Zum Verlieren verdammt",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten imaginären SCH zu und verursacht mit hoher Chance Gefangenschaft.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.25,
+				0.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401213"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.95,
+				0.01,
+				49,
+				99,
+				1.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401214"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401215"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401216"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.45
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401217"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.01
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401218"
+		},
+		{
+			"name": "Punkte",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Während des Kampfes erhalten alle Einheiten eine bestimmte Anzahl von Punkten, die zwischen den Phasen zurückgesetzt werden. Wenn die Punktzahl der Verbündeten niedriger ist als die der Gegner, wird der erlittene SCH der Gegner stark reduziert und sie erhalten Widerstandschutz. Wenn die Punktzahl der Verbündeten gleich hoch oder höher als die der Gegner ist, wird der erlittene SCH der Gegner erhöht.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401219"
+		},
+		{
+			"name": "Call",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beschwört zu Beginn der Phase oder wenn ein beschworenes Objekt besiegt wird bis zu <unbreak>1[i]</unbreak>-mal „Alles oder nichts“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401220"
+		},
+		{
+			"name": "Blinde Wette",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beschwört zu Beginn der Phase oder wenn ein beschworenes Objekt besiegt wird bis zu <unbreak>1[i]</unbreak>-mal „Alles oder nichts“ oder „Alles oder nichts: Doppeltes Glück“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				11
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401221"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401222"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [
+		"8032033",
+		"8032034"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "8034012"
+}

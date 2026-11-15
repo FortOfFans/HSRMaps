@@ -1,0 +1,167 @@
+{
+	"name": "「星核猎手」卡芙卡",
+	"description": "「星核猎手」的一员，面带莫测笑容的杀手丽人，善用种类纷繁的武器和心控之术。正是她将星穹列车引至此处，以实现某个计划……",
+	"icon": "spriteoutput/monsterfigure/Monster_2004010.png",
+	"shortIcon": "Monster_2004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1302,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 450,
+		"speed": 119,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "夜间喧嚣不止",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量雷属性伤害，并大概率使受到攻击的我方目标陷入触电状态。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				3,
+				0.75
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401001"
+		},
+		{
+			"name": "月光摩挲连绵",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成雷属性伤害，如主目标处于触电状态，则会使副目标也陷入触电状态。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401002"
+		},
+		{
+			"name": "缄默厉声嘲笑",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成少量雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401003"
+		},
+		{
+			"name": "言灵",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "使指定我方单体大概率陷入【支配】状态，并将其行动提前，立即随机攻击1名我方其他目标。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2,
+				1.5,
+				0.5,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401004"
+		},
+		{
+			"name": "颤慄",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "如受到攻击的目标正处于触电状态，则直接造成1次触电伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401005"
+		},
+		{
+			"name": "残酷",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "当敌方除卡芙卡外的目标或我方陷入【支配】状态的目标对我方陷入触电状态的主目标进行攻击时，追加1次雷属性攻击。该效果每回合只触发1次。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "200401002"
+}

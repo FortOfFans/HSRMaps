@@ -1,0 +1,291 @@
+{
+	"name": "灾虐的右手",
+	"description": "被殃难浸润的大地只剩下苦痛的回音，这就是末日应有的进行曲。\n灾虐的右手善于使用虚数属性的力量，造成大范围的攻击。",
+	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
+	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012140.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 90,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "灾殃的撕裂",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成少量虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.6
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214601"
+		},
+		{
+			"name": "荒难的割扯",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成少量虚数属性伤害，并使随机2名角色陷入【虚数附魔】状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214602"
+		},
+		{
+			"name": "劫虐崩裂之时",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成虚数属性伤害，并使随机3名角色陷入【虚数附魔】状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214603"
+		},
+		{
+			"name": "湮灭碰撞",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "自身施放技能令我方单体同时处于【量子附魔】与【虚数附魔】状态时，解除该目标的【量子附魔】与【虚数附魔】状态，并对其造成少量量子属性伤害与虚数属性伤害，同时大概率使其陷入【<u>缠禁</u>】状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1,
+				0.1,
+				0.3,
+				0.6,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214604"
+		},
+		{
+			"name": "假死",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到致命攻击后进入【假死】状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214605"
+		},
+		{
+			"name": "守备",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "进入【守备】状态，弱点未被击破时受到的伤害降低，被击破时行动额外延后，被击破后受到的伤害提高。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214606"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111011,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 181003,
+				"count": 1
+			}
+		]
+	},
+	"guide": {
+		"difficulty": 2,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100301",
+				"name": "坚防守备",
+				"description": "首领幻影不可被攻击。首领幻影的三个<color=#f29e38ff><u>部位</u></color>同时处于假死状态时，首领幻影陷入弱点击破状态并可以被攻击，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"id": "100302",
+				"name": "阵地转移",
+				"description": "【反物质引擎】会将自身弱点属性<color=#f29e38ff><u>转移</u></color>给【灾虐的右手】和【黎明的左手】，但当【灾虐的右手】或【黎明的左手】被消灭时，【反物质引擎】的韧性值受到额外削减。",
+				"params": []
+			},
+			{
+				"id": "100303",
+				"name": "战而愈勇",
+				"description": "敌方单位施放单攻技能后，速度提高，持续1回合；施放群攻技能后，攻击力提高，持续1回合；施放辅助技能后，为技能目标回复生命值。",
+				"params": []
+			},
+			{
+				"id": "100304",
+				"name": "坚韧之志",
+				"description": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10031",
+				"name": "诛尽杀绝的灭星兽",
+				"description": "首领幻影的部位会对我方单位施加量子/虚数属性附魔状态，在被消灭后会进入假死状态且行动延后，并在下次行动时再生。",
+				"answer": "应对策略：优先攻击有相同属性标记的目标以解除我方单位的属性附魔效果，在首领幻影的部位再生前，消灭所有部位，以击破首领幻影。",
+				"skills": [
+					{
+						"id": "100311",
+						"type": "Normal",
+						"name": "应对【缠禁】状态的控制效果",
+						"texts": [
+							{
+								"description": "我方单位同时处于量子和虚数属性附魔状态后，会陷入【缠禁】状态。优先攻击有相同属性标记的目标以解除我方单位的量子/虚数属性附魔状态。或者通过提高效果抵抗、使用解除负面效果的技能以应对【缠禁】状态。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100312",
+						"type": "Normal",
+						"name": "应对没有弱点属性的【反物质引擎】",
+						"texts": [
+							{
+								"description": "消灭【灾虐的右手】或【黎明的左手】，会使弱点属性转移回【反物质引擎】，并削弱【反物质引擎】。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100313",
+						"type": "Normal",
+						"name": "应对首领幻影的三个部位的再生机制",
+						"texts": [
+							{
+								"description": "在首领幻影的部位再生前，消灭所有部位，可以使首领幻影陷入弱点击破状态。在首领幻影从弱点击破状态恢复前，部位不会再生。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影的部位被消灭后会进入假死状态且行动延后，并在下次行动时再生。当三个部位<color=#f29e38ff>同时处于假死状态</color>时，本体陷入弱点击破状态并行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"description": "【反物质引擎】会将<color=#f29e38ff>自身弱点属性转移</color>给【灾虐的右手】与【黎明的左手】。",
+				"params": []
+			},
+			{
+				"description": "首领幻影会对我方单位施加量子/虚数属性附魔状态，<color=#f29e38ff>同时陷入两种属性附魔状态</color>时会陷入【缠禁】状态。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "消灭首领幻影的三个部位使它们<color=#f29e38ff>同时处于假死状态时</color>，可对本体造成弱点击破，此时攻击可直接对本体造成伤害。",
+				"params": []
+			},
+			{
+				"description": "我方单位处于<color=#f29e38ff>量子/虚数属性附魔</color>状态时，及时攻击有相同属性标记的目标以解除属性附魔状态，避免陷入【缠禁】状态。",
+				"params": []
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Imaginary",
+	"id": "801214602"
+}

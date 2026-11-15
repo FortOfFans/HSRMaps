@@ -3,15 +3,22 @@
 	"description": "An entity imbued with specific cognition, formed by the accumulation of subconscious fragments in the Memory Zone.\nMemories of anguish burn like flames, scorching the heart. When the suffering fades away, the life born from resentment will rise from the ashes, accumulating boundless fury.",
 	"icon": "spriteoutput/monsterfigure/Monster_3013010.png",
 	"shortIcon": "Monster_3013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3013010.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1302,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 110,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "301301001",
 			"name": "Grudging Courtesy",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301001"
 		},
 		{
-			"id": "301301002",
 			"name": "Roar of Furious Thunder",
 			"tag": "Enhance",
 			"type": "Ability",
@@ -37,11 +44,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301002"
 		},
 		{
-			"id": "301301003",
 			"name": "Tide of Enduring Grudges",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -53,11 +60,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301003"
 		},
 		{
-			"id": "301301004",
 			"name": "Bonepiercing Odium",
 			"tag": "Bounce",
 			"type": "Ability",
@@ -70,11 +77,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301004"
 		},
 		{
-			"id": "301301005",
 			"name": "Disembodied Shell",
 			"tag": "Talent",
 			"type": "Talent",
@@ -88,42 +95,53 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301005"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Thunder",
 		"Quantum",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 114011,
+				"id": 114012,
+				"count": 1
+			},
+			{
+				"id": 114013,
 				"count": 1
 			},
 			{
@@ -136,6 +154,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "3013010"

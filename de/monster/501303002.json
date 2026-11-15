@@ -1,0 +1,170 @@
+{
+	"name": "Sparxies Geschenk",
+	"description": "Springt auf! Singt mit! Kämpft los! Lasst die Zuschauer vor der SparxiCon richtig in Stimmung kommen!",
+	"icon": "spriteoutput/monsterfigure/Monster_5013030.png",
+	"shortIcon": "Monster_5013030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5013030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1488,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Meisterhände",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303001"
+		},
+		{
+			"name": "Beeindruckende Farben",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu und verbraucht 1 Pkt. <u>Farbmittel</u>, um zusätzlichen SCH des entsprechenden Typs zu verursachen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303002"
+		},
+		{
+			"name": "Tanzende Pracht",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu und verbraucht 1 Pkt. <u>Farbmittel</u>, um zusätzlichen SCH des entsprechenden Typs zu verursachen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303003"
+		},
+		{
+			"name": "Palettenschmelze",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu und verbraucht sämtliche verbleibende <u>Farbmittel</u>, um zusätzlichen SCH des entsprechenden Typs zu verursachen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303004"
+		},
+		{
+			"name": "Farbtonüberlauf",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Erhält nach einem Angriff durch Verbündete im Status <u>Farblos</u> basierend auf dem Typ des Angreifers 1 Pkt. <u>Farbmittel</u>. Erhält zusätzlich eine bestimmte Menge <u>Farbmittel</u>, wenn dabei Hochgefühl-SCH erlitten wird.\nBei 6 Pkt. <u>Farbmittel</u> tritt diese Einheit in den Status <u>Farbe</u> ein.\nIm Status <u>Farblos</u> kann der WDS nicht unter 1 sinken.\nErhöht den WDS aller Typen. Dieser Effekt wird beim Schwächebruch entfernt. Wenn sich diese Einheit vom Schwächebruch erholt, wird der Effekt erneut aktiviert.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				0.6,
+				1,
+				0.03,
+				0.5,
+				1,
+				2,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303005"
+		},
+		{
+			"name": "Chromatische Schwelle",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn <u>Farbmittel</u> verbraucht wird, um Verbündeten zusätzlichen SCH zuzufügen, wird dieser zusätzliche SCH erhöht, wenn sich der Typ des Ziels vom Typ des zusätzlichen SCH unterscheidet.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303006"
+		},
+		{
+			"name": "Kunst der Farbe",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beim Eintritt in den Status <u>Farbe</u> erhalten Verbündete basierend auf der Anzahl der aktuell am häufigsten vorhandenen <u>Farbmittel</u> eine bestimmte Menge <u>Lachpunkte</u>. Anschließend werden basierend auf den Typen der bereits erhaltenen <u>Farbmittel</u> die entsprechenden Schwächen erhalten und der WDS des entsprechenden Typs reduziert.\nWenn sich das Ziel im Status <u>Farbe</u> befindet und am Ende der Runde alle <u>Farbmittel</u> verbraucht sind, tritt es in den Status <u>Farblos</u> ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303007"
+		}
+	],
+	"resistance": [],
+	"debuffResist": [],
+	"weakness": [],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "501303002"
+}

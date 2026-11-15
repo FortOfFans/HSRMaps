@@ -1,0 +1,149 @@
+{
+	"name": "破灭玄莲",
+	"description": "无根自开、凭空生就的幻花。乘间抵隙的煽动者托体「建木」，炼成肉身，却不曾放下毁灭的权柄。",
+	"icon": "spriteoutput/monsterfigure/Monster_8012211.png",
+	"shortIcon": "Monster_8012211",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012211.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 697.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 240,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "玄气噬身",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "大概率使指定我方单体陷入【噬命】状态。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				3,
+				1.5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221501"
+		},
+		{
+			"name": "玄气归身",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到致命攻击后，驱散全队负面效果并恢复全队生命值，同时对乘间抵隙的煽动者造成固定数值的伤害，并提升我方【毁灭增益】等级，【毁灭增益】使角色击破特攻提高。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.033,
+				135,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221502"
+		},
+		{
+			"name": "守备",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "进入【守备】状态，弱点未被击破时受到的伤害降低，被击破时行动额外延后，被击破后受到的伤害提高。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221503"
+		},
+		{
+			"name": "万劫不复",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对被锁定的目标造成虚数属性伤害，锁定目标越多伤害越高。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 30,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221504"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111011,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 181003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Thunder",
+	"id": "8012215"
+}

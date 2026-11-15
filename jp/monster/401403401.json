@@ -1,0 +1,165 @@
+{
+	"name": "育成不足のキャストリス",
+	"description": "ステュクスに眠る死竜は、錬成により再び目を覚まし、腐肉を纏う朽ちた骨と化す。\nかつて「死」のタイタンだった死竜はステュクスの流れに逆らい、夢現の境を離れ、現世に座礁する。それはかつてステュクスの潮汐と共に大地に湧き、オンパロスの万物に運命の結末を刻んだ。死にかけの者も、死んだ者も、その帰還によって魂の奥底が震えることとなる。",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014030.png",
+	"stats": {
+		"baseAttack": 40.008892,
+		"baseDefense": 210,
+		"baseHealth": 700.0109981399999,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 140,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "長き眠りについた者への厚葬",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403402"
+		},
+		{
+			"name": "この世を去る者への哀悼",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403403"
+		},
+		{
+			"name": "苦渋より遅れた訃報",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "「憐憫の腕」を強化する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403404"
+		},
+		{
+			"name": "苦しみの香りの中で死にゆく",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "<u>「死の芳香」</u>状態に入り、味方キャラ全体に大量の量子属性ダメージを与える。なお、このダメージは<u>「非致死性」</u>である。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.145
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403405"
+		},
+		{
+			"name": "死は更なる死を欲する",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403406"
+		},
+		{
+			"name": "瀕死の夢、墨汁の如き煙",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "自身が初期に受けるダメージをダウンさせる。<u>「死の芳香」</u>状態の時、自身の受けるダメージダウン状態を解除する。攻撃を受けた後、味方全体のHPを回復する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403407"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"401207401",
+		"401207501"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "401403401"
+}

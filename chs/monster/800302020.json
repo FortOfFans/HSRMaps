@@ -1,0 +1,160 @@
+{
+	"name": "外宇宙之炎",
+	"description": "不属此世的怪异生命，自星核带来的裂界中成长，寄生在世界的根基结构中汲取能量，其甲胄外壳上燃烧着星辰内核的烈焰。\n在战斗中，外宇宙之炎能轻易将敌人焚作灰烬。",
+	"icon": "spriteoutput/monsterfigure/Monster_8003020.png",
+	"shortIcon": "Monster_8003020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "咆哮之火",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量火属性伤害，并大概率使受到攻击的我方目标陷入【焚烧】状态。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302001"
+		},
+		{
+			"name": "汲取炎华",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使自身进入【自燃】状态，之后的攻击可以施放【净炎之雨】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				60,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302002"
+		},
+		{
+			"name": "净炎之雨",
+			"tag": "弹射",
+			"type": "技能",
+			"description": "连续对我方随机单体造成少量火属性伤害，并大概率使受到攻击的我方目标陷入【焚烧】状态。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				2,
+				0.5,
+				5,
+				60
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302003"
+		},
+		{
+			"name": "熔聚",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使自身攻击力提高，被弱点击破时该状态解除。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_DOT_Burn",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800302020"
+}

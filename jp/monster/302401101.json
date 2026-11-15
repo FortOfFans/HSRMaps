@@ -1,0 +1,213 @@
+{
+	"name": "アルジェンティ（スペック）",
+	"description": "コードが影響を受けた後の正常な投影。「純美の騎士団」の古典的な騎士を参照にしている。",
+	"icon": "spriteoutput/monsterfigure/Monster_3024010.png",
+	"shortIcon": "Monster_3024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3024010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "敬虔と誠実",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401101"
+		},
+		{
+			"name": "敬虔と誠実に至るまで",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.4,
+				2.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401102"
+		},
+		{
+			"name": "槍と盾",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "ランダムで「槍先」、「盾」、「叙勲」の彫刻を召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.5,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401103"
+		},
+		{
+			"name": "愛の霊はこう語った",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "彫刻の中の純美の魂を1つ昇華する。魂を昇華された彫刻のスキル効果が強化され、即座に行動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401104"
+		},
+		{
+			"name": "純美の勇気賛歌",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				5.4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401105"
+		},
+		{
+			"name": "罪と浄化",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "すべての彫刻の中の純美の魂を昇華する。魂を昇華された彫刻のスキル効果が強化される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401106"
+		},
+		{
+			"name": "",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401107"
+		},
+		{
+			"name": "騎士団",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「槍先」を4体召喚する。フィールド上にすでに彫刻がある場合、そのHPを全回復する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401108"
+		},
+		{
+			"name": "厳かなる殉身",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「純美の勇気賛歌」を発動するたびに、自身の与ダメージがアップする。与ダメージアップ効果は累積できる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.12
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401110"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"summons": [
+		"3021021",
+		"3021031",
+		"3021041"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "302401101"
+}

@@ -1,0 +1,120 @@
+{
+	"name": "Furbo-Journalist",
+	"description": "Ein Furbo-Journalist des „Furbobo-Wochenblatts“. Der Hauptproduzent von Klatschnachrichten, ein kleiner Schurke, der sich gerne verwandelt, und ein gelegentlicher Faulpelz, der die Arbeit schwänzt – meistens in Ecken, wo er denkt, dass man ihn nicht sehen kann.",
+	"icon": "spriteoutput/monsterfigure/Monster_5012110.png",
+	"shortIcon": "Monster_5012110",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5012110.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 558,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Schnappschuss",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501211001"
+		},
+		{
+			"name": "Hässliche Nahaufnahme",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Schießt bei einem erlittenen Todesstoß ein Foto und erhält basierend auf dem durch den Todesstoß verursachten SCH eine Wertung, was Hochgefühl als Belohnung gewährt. Verbündeten erhalten gleichzeitig <u>Lachpunkte</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.5,
+				10,
+				5,
+				3,
+				0.5,
+				0.2,
+				0.1,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501211002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116001,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 181010,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "501211002"
+}

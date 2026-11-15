@@ -1,0 +1,109 @@
+{
+	"name": "玄爪狼卒",
+	"description": "来自玄爪猎群的步离人士兵，擅长在无声息中猎杀目标。",
+	"icon": "spriteoutput/monsterfigure/Monster_2032010.png",
+	"shortIcon": "Monster_2032010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2032010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 186,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "厮杀",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体目标及其相邻目标造成少量物理属性伤害，若自身处于【<u>月狂</u>】状态，则大概率为目标附上【裂伤】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203201001"
+		},
+		{
+			"name": "狼吞",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "当敌方施放攻击后，为<u>能够进入【月狂】状态的敌方单位</u>附加1层【<u>嗜血</u>】，当【<u>嗜血</u>】达到指定层数时，将使其进入【<u>月狂</u>】状态。\n行动序列上出现【月狂】倒计时，倒计时回合开始时所有敌方单位解除【<u>月狂</u>】状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				1,
+				2,
+				6,
+				0.3,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203201002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181013,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "203201001"
+}

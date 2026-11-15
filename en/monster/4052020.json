@@ -3,15 +3,22 @@
 	"description": "Daughters of the sea, their spirits and flesh corroded by the sins of Destruction, leaving only empty, distorted shells... In this life, they follow the Ocean's honed blade, not to be obliterated into nihility, but to become the tidal waves crashing against the Dark Sun.\nThe apocalyptic storm descends from the heavens, heralding the extinction of all things.\nO premature Mirage Fizzle, doomed to perish before birth, exhaling countless sorrows.\nThe murky amniotic fluid flows, staining heaven and earth black, tainting even newborn hope.",
 	"icon": "spriteoutput/monsterfigure/Monster_4052020.png",
 	"shortIcon": "Monster_4052020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4052020.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 302.25,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
 		"type": "MinionLv2"
 	},
 	"skills": [
 		{
-			"id": "405202001",
 			"name": "Rumination of Putrid Dream",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -24,11 +31,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202001"
 		},
 		{
-			"id": "405202002",
 			"name": "Mirage Rush",
 			"tag": "Support",
 			"type": "Ability",
@@ -40,11 +47,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202002"
 		},
 		{
-			"id": "405202003",
 			"name": "Such Is the Fate of Bubbles",
 			"tag": "Talent",
 			"type": "Talent",
@@ -57,11 +64,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202003"
 		},
 		{
-			"id": "405202004",
 			"name": "Respite By The Waters",
 			"tag": "Talent",
 			"type": "Talent",
@@ -73,38 +80,46 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202004"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Fire",
 		"Thunder"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 36,
+		"avatarExpReward": 108,
 		"itemList": [
 			{
 				"id": 2,
@@ -116,6 +131,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "MinionLv2",
 	"stanceType": "Quantum",
 	"id": "4052020"

@@ -1,0 +1,171 @@
+{
+	"name": "Aszendent der Freude: Finale",
+	"description": "Ein Mensch, infiziert von „Umgekehrte höchste Wonne: Erzlotos des bösen Willens“.\nAbgesehen von endlosen Freudenschüben bleibt er von den sechs Emotionen unberührt und von den sechs Begierden unbefleckt.",
+	"icon": "spriteoutput/monsterfigure/Monster_5023010.png",
+	"shortIcon": "Monster_5023010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5023010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 372,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 240,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Atem der Ekstase",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Wind-SCH zu.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502202001"
+		},
+		{
+			"name": "Fröhliches Lachen",
+			"tag": "Abpraller",
+			"type": "Fähigkeit",
+			"description": "Fügt einem zufälligen Verbündeten kontinuierlich Wind-SCH zu. Jeder Treffer hat eine Chance, dem angegriffenen Verbündeten den Effekt „<u>Glückseligkeit</u>“ zuzufügen. Wenn diese Fähigkeit eingesetzt wird und sich andere „Aszendenten der Freude“ auf dem Feld befinden, setzen die anderen Aszendenten der Freude diese Fähigkeit ebenfalls ein.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.5,
+				0.35,
+				0.7
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502202002"
+		},
+		{
+			"name": "Erblühendes Lächeln",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Knospend“ ein. Wirkt bei der nächsten Aktion „Spirale der Glückseligkeit“ auf alle Verbündeten.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502202003"
+		},
+		{
+			"name": "Spirale der Glückseligkeit",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten SCH zu. Wenn ein Ziel den Effekt „<u>Glückseligkeit</u>“ besitzt, wird <u>Glückseligkeit</u> entfernt, die Aktion des Ziels verzögert und Fertigkeitspunkte werden reduziert.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502202004"
+		},
+		{
+			"name": "Spaltung des bösen Willens",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Spaltet sich beim Erleiden von tödlichem SCH in 2 „Aszendenten der Freude: Anfang“ und gewährt Verbündeten eine bestimmte Menge <u>Lachpunkte</u>. Wenn Aszendent der Freude: Anfang tödlichen SCH erleidet, spaltet es sich in 2 „Aszendenten der Freude: Finale“ und gewährt Verbündeten eine bestimmte Menge <u>Lachpunkte</u>. Aszendent der Freude: Finale spaltet sich nicht weiter.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.4,
+				1.2,
+				1,
+				0.4,
+				1.2,
+				5,
+				1,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502202005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "5022020"
+}

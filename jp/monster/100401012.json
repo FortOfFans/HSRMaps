@@ -1,0 +1,166 @@
+{
+	"name": "カカリア",
+	"description": "ベロブルグの守護者、永屹の城・ベロブルグの最高統治者。\nカカリアは歴代の守護者より神の権能を引き継いでいるため、戦闘中に氷雪の力で敵を凍結させることができる。",
+	"icon": "spriteoutput/monsterfigure/Monster_1004010.png",
+	"shortIcon": "Monster_1004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7672.500465000001,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "骨を刺す寒冷",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401001"
+		},
+		{
+			"name": "長い氷期の兆し",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「氷刃」を召喚する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401002"
+		},
+		{
+			"name": "無尽なる冬の絶罰",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401003"
+		},
+		{
+			"name": "永遠に囚われし霜",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の氷属性ダメージを与え、高確率で攻撃を受けた味方を凍結状態にする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				2,
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401004"
+		},
+		{
+			"name": "雪国の聖者の怒り",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次の行動の時に味方全体に「無尽なる冬の絶罰」を発動。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401005"
+		},
+		{
+			"name": "",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		},
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"1002011",
+		"1002012"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Ice",
+	"id": "100401012"
+}

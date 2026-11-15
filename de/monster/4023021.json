@@ -1,0 +1,166 @@
+{
+	"name": "Pegasus im Mondlicht",
+	"description": "In der antiken Ära Creatura arbeitete Aquila nach dem Erschaffen der Morgenrot-Maschine mit Kephale zusammen, um die legendären Bestien hervorzubringen, welche die Titanen verkörpern. Der Pegasus im Mondlicht soll Aquilas ewige Rivalin Oronyx darstellen.",
+	"icon": "spriteoutput/monsterfigure/Monster_4023020.png",
+	"shortIcon": "Monster_4023020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4023020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 837,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Erschaffenes Mondlicht",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402302101"
+		},
+		{
+			"name": "Dreifacher Sichelmond",
+			"tag": "Wegfegen",
+			"type": "Fähigkeit",
+			"description": "Wird gleichzeitig von „Erderschütterer Leo“ entfesselt. Fügt allen Verbündeten SCH zu und hat eine Chance, Verschränkung beim angegriffenen Ziel zu verursachen.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402302102"
+		},
+		{
+			"name": "Doppelter Sichelmond",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Visiert 2 Verbündete an und tritt in den Status „Doppelter Sichelmond“ ein. Wirkt bei der nächsten Aktion „Sechsfacher Vollmond“.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402302103"
+		},
+		{
+			"name": "Sechsfacher Vollmond",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt anvisierten Zielen Quanten-SCH zu und hat eine Chance, Verschränkung beim angegriffenen Ziel zu verursachen.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402302104"
+		},
+		{
+			"name": "Auf der Suche nach Erleuchtung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Der von „Pegasus im Mondlicht“ erlittene SCH wird von „Erderschütterer Leo“ erlitten. Wenn ein <u>Ziel in der hinteren Reihe</u> besiegt wird, wird der von Pegasus im Mondlicht erlittene SCH erhöht.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				1,
+				0.3,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402302105"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Quantum",
+	"id": "4023021"
+}

@@ -1,0 +1,189 @@
+{
+	"name": "金血忆灵•裁定忘却之形",
+	"description": "那众多金血忆灵的残躯中一丝尚存的疯狂，被长夜月抽取提炼，融合成了更为扭曲怪异的怪物。\n它将遵守造物主的指示，裁定何物应被记起，何物应被忘却，它会吞噬掉徒劳无功的冗余记忆，使它们在岁月中沉默。\n「新的生命若要萌芽，它的种子须是死的。」",
+	"icon": "spriteoutput/monsterfigure/Monster_4064010.png",
+	"shortIcon": "Monster_4064010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4064010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7672.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "罪血嚼齿",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成大量虚数属性伤害，若目标持有护盾则削减自身韧性，该削韧效果不会使韧性低于1点。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				120,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401401"
+		},
+		{
+			"name": "罪血眈视",
+			"tag": "锁定",
+			"type": "技能",
+			"description": "锁定指定我方角色，使自身的速度提高，并在数个回合内对该目标施放【罪血嚼齿】和【罪血锯刑】。施放该技能后再行动1次。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401403"
+		},
+		{
+			"name": "罪血锯刑",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成大量虚数属性伤害，使目标降低生命值的一部分转化为【<u>侵蚀</u>】，若目标持有护盾则削减自身韧性，该削韧效果不会使韧性低于1点。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				120
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401404"
+		},
+		{
+			"name": "罪血钳刑",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成大量虚数属性伤害，使目标降低生命值的一部分转化为【<u>侵蚀</u>】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.5,
+				0.2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401405"
+		},
+		{
+			"name": "指名祸首",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，下次行动时施放【罪血枭首】，选择1名我方角色承受【罪血枭首】的最高伤害和【<u>罪血腐蚀</u>】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401406"
+		},
+		{
+			"name": "罪血枭首",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对被【指名祸首】选中的角色以外的我方角色造成虚数属性伤害，对被【指名祸首】选中的我方角色造成大量虚数属性伤害，并根据该角色受到的未被护盾抵消的伤害的数值，对其施加【<u>罪血腐蚀</u>】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				12,
+				4.5,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401407"
+		},
+		{
+			"name": "决狱从速",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "未被弱点击破时，受到的伤害降低，被弱点击破时行动额外延后，并对自身造成大量虚数属性伤害，被弱点击破后，受到的伤害提高。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				1,
+				0.2,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401408"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "4064014"
+}

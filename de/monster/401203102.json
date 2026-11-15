@@ -1,0 +1,119 @@
+{
+	"name": "Furiae-Bogenschützin",
+	"description": "Ein Titanenwesen, geformt aus Zwist. In ihm fließt das goldene Blut Nikadors. Mit einem Glauben, der so unerschütterlich ist wie ein fliegender Pfeil, sind diese Titanenwesen dazu bestimmt, Beute für Kremnos’ Streitkräfte und Waffen zu finden, Bestien und Feinde in der Einöde zu jagen und sicherzustellen, dass nichts und niemand in Schussweite überlebt.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012030.png",
+	"shortIcon": "Monster_4012030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 46500,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Weinender Pfeil",
+			"tag": "Sperrfeuer",
+			"type": "Fähigkeit",
+			"description": "Führt beginnend mit dem Verbündeten rechts als Ziel mehrere Angriffe aus. Priorisiert dabei, alle Verbündeten einmal anzugreifen, und greift dann zufällige Verbündete an. Jeder Treffer verursacht geringen Blitz-SCH. Wenn das Ziel während dieses Angriffs schon einmal getroffen wurde, verursacht die Fähigkeit zusätzlichen Blitz-SCH. Wenn die Stapelzahl von „Kriegsrüstung“ 0 beträgt, wird die Trefferzahl von „Weinender Pfeil“ beim nächsten Mal verringert.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				5,
+				2
+			],
+			"spGain": 8,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401203101"
+		},
+		{
+			"name": "Wächter des Stadtstaates",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn eine Einheit eine bestimmte Anzahl von Stapelungen „Kriegsrüstung“ besitzt, wird ihr erlittener SCH reduziert. Verliert nach dem Erleiden von Angriffen 1 Stapelung Kriegsrüstung. Wenn 0 Stapelungen erreicht sind, wird die Kriegsrüstung zerstört, wobei dieser Einheit massiver imaginärer SCH zugefügt und ihre Aktion verzögert wird. Der Verbündete, der die Kriegsrüstung zerstört hat, stellt Energie wieder her. Nachdem die Kriegsrüstung zerstört wurde, erleidet diese Einheit außerdem zusätzlich geringen imaginären SCH, wenn sie angegriffen wird. Wenn die Runde dieser Einheit endet, wird die Kriegsrüstung auf die max. Stapelzahl wiederhergestellt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6,
+				0.3,
+				0.1,
+				0.1,
+				0.06,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401203102"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "401203102"
+}

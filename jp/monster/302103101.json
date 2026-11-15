@@ -1,0 +1,99 @@
+{
+	"name": "「槍先」",
+	"description": "「槍」の彫刻。純美の魂がまとわりついており、槍と盾が寄り添っている。槍は暗闇を打ち破る勇気である。",
+	"icon": "spriteoutput/monsterfigure/Monster_3021030.png",
+	"shortIcon": "Monster_3021030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3021030.png",
+	"stats": {
+		"baseAttack": 7.2,
+		"baseDefense": 210,
+		"baseHealth": 146.475,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "Minion"
+	},
+	"skills": [
+		{
+			"name": "純美の騎士の踵",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与える。「魂の解放」状態にある時、与ダメージアップ。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.2,
+				3.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302103101"
+		},
+		{
+			"name": "死した運命の風情",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受けた時、敵全体に物理属性ダメージを与える。「魂の解放」状態にある時、与ダメージアップ。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				30,
+				0.6,
+				60
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302103102"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "Minion",
+	"stanceType": "Physical",
+	"id": "302103101"
+}

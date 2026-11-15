@@ -1,0 +1,147 @@
+{
+	"name": "Automaton: Spinne",
+	"description": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Er führt einfache Aufgaben für die Menschen aus.\nIm Kampf ist der Automaton: Spinne recht labil und kann explodieren, wenn er beschädigt wurde.",
+	"icon": "spriteoutput/monsterfigure/Monster_1012020.png",
+	"shortIcon": "Monster_1012020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1012020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 69.75,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 60,
+		"speed": 83,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Rammen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101202101"
+		},
+		{
+			"name": "Zeitmodul",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Die nächste Aktion nutzt Selbstsprengendes Modul.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101202102"
+		},
+		{
+			"name": "Selbstsprengendes Modul",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Zerstört sich selbst und fügt einem anvisierten Verbündeten und angrenzenden Einheiten Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101202103"
+		},
+		{
+			"name": "Ketten der Zerstörung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Fügt angrenzenden Gegnern nach dem Erleiden eines Todesstoßes Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				60
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101202104"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112011,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 181001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Fire",
+	"id": "101202101"
+}

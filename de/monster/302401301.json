@@ -1,0 +1,604 @@
+{
+	"name": "Silberner Ritter der Tugend",
+	"description": "Ein klassischer „Ritter der Schönheit“ auf frommer Suche nach seinem vermissten Äon, Idrila der „Schönheit“.\nOffen wandert er durch den Kosmos und vertritt Idrilas Tugenden und ihren guten Namen.",
+	"icon": "spriteoutput/monsterfigure/Monster_3024010.png",
+	"shortIcon": "Monster_3024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3024010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 5812.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 810,
+		"speed": 105,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Frömmigkeit",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401301"
+		},
+		{
+			"name": "Erfüllte Hingabe",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401302"
+		},
+		{
+			"name": "",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.5,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401303"
+		},
+		{
+			"name": "",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401304"
+		},
+		{
+			"name": "Hymne der herrlichen Anmut",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 10,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401305"
+		},
+		{
+			"name": "",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401306"
+		},
+		{
+			"name": "",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401307"
+		},
+		{
+			"name": "",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401308"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.12
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401310"
+		},
+		{
+			"name": "Beschwörung des Speers",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört 4 Statuen von „Die Speerspitze“. Wenn sich auf dem Kampffeld bereits 4 Statuen von „Die Speerspitze“ befinden, wird „Speerschwung“ eingesetzt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.5,
+				0.7,
+				0.75
+			],
+			"spGain": 15,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401311"
+		},
+		{
+			"name": "Beschwörung des Schildes",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört 4 Statuen von „Der Schild“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.7,
+				0.75,
+				1
+			],
+			"spGain": 10,
+			"delay": 1.75,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401312"
+		},
+		{
+			"name": "Geehrte Scharen",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört 4 Statuen von „Der Ehrenhafte“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.75,
+				1,
+				1.25,
+				1.25
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401313"
+		},
+		{
+			"name": "Speerschwung",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Setzt die Kraft in der Statue „Die Speerspitze“ frei und fügt allen Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				10
+			],
+			"spGain": 40,
+			"delay": 1.6,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401314"
+		},
+		{
+			"name": "Rückgabe des Schildes",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Setzt die Kraft in der Statue von „Der Schild“ frei und befiehlt der Statue, die verbündeten Figuren ihr gegenüber zu verspotten. Der Schwächetyp der Statue wird entsprechend dem Ziel angepasst.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1.75,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401315"
+		},
+		{
+			"name": "Kraft des Ehrenhaften",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in einen unanvisierbaren Status ein. Bei der nächsten Aktion wird „Unabwendbares Schicksal“ eingesetzt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401316"
+		},
+		{
+			"name": "Seelenrückgewinnung",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Erhält „Seelenbefreiung“ von allen Statuen zurück und verstärkt sich selbst für 1 Rd. basierend auf der Anzahl von Seelenbefreiung.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.08
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401317"
+		},
+		{
+			"name": "Seelenbefreiung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Silberner Ritter der Tugend wird den beschworenen Statuen „Seelenbefreiung“ verleihen. Wenn eine Einheit mit Seelenbefreiung besiegt wird, erhalten alle Verbündeten „Seelenverstärkung“ und der verursachte SCH wird erhöht. Wenn Silberner Ritter der Tugend Seelenbefreiung zurückerhält, wird stattdessen sein SCH in dieser Runde erhöht.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401318"
+		},
+		{
+			"name": "Unabwendbares Schicksal",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu. Verursacht für jede Stapelung von „Kranz“ 1-mal zusätzlich physischen SCH.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401319"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401320"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401321"
+		},
+		{
+			"name": "Unaufhaltsamer Vormarsch",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Der von Silberner Ritter der Tugend erlittene SCH wird stark reduziert. Sobald er jedoch Schwächebruch erleidet, werden seine Aktionen zusätzlich verzögert und er erleidet mehr SCH. Außerdem werden die Fertigkeitspunkte aller Verbündeten wiederhergestellt und ihre Ultimates aktiviert.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401322"
+		},
+		{
+			"name": "Wechsel der Strategie",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Der Silberne Ritter der Tugend kann im Kampf seine <u>Kampfstellung</u> ändern und verschiedene Statuen heraufbeschwören. Wenn Verbündete Statuen mit dem Status „Seelenbefreiung“ besiegen, wird der verursachte SCH aller Verbündeten in diesem Kampf erhöht.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0.1,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401323"
+		},
+		{
+			"name": "Das Blatt dreht sich",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn Silberner Ritter der Tugend in der zweiten Phase „Seelenbefreiung“ einsetzt, visiert er alle Statuen als Ziel an.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401324"
+		},
+		{
+			"name": "Stellarer Beschützer",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Für jede gegnerische Einheit auf dem Kampffeld außer Silberner Ritter der Tugend wird der erlittene SCH aller Gegner reduziert und ihr verursachte SCH erhöht.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0.03
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401325"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401326"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [
+		"3021022",
+		"3021032",
+		"3021042"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100201",
+				"name": "Solider Schutz",
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"id": "100202",
+				"name": "Wechsel der Strategie",
+				"description": "Das Boss-Phantom kann im Kampf seine <color=#f29e38ff><u>Kampfstellung</u></color> ändern und verschiedene Statuen heraufbeschwören. Wenn Verbündete Statuen mit dem Status „Seelenbefreiung“ besiegen, wird der verursachte SCH aller Verbündeten in diesem Kampf erhöht.",
+				"params": []
+			},
+			{
+				"id": "100203",
+				"name": "Das Blatt dreht sich",
+				"description": "Setzt das Boss-Phantom in der zweiten Phase „Seelenbefreiung“ ein, visiert es <color=#f29e38ff>alle</color> Statuen als Ziel an.",
+				"params": []
+			},
+			{
+				"id": "100204",
+				"name": "Stellarer Beschützer",
+				"description": "Für <color=#f29e38ff>jede gegnerische Einheit</color> auf dem Kampffeld außer dem Boss-Phantom erleiden alle Gegner weniger SCH und verursachen mehr SCH.",
+				"params": [
+					0.25
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10021",
+				"name": "Phase I: Kraft von Angriff und Verteidigung",
+				"description": "Das Boss-Phantom wird „Die Speerspitze“ oder „Der Schild“ heraufbeschwören.",
+				"answer": "Strategie: Besiege zunächst die verstärkten beschworenen Objekte, um das Boss-Phantom zu schwächen.",
+				"skills": [
+					{
+						"id": "100211",
+						"type": "Normal",
+						"name": "SCH des beschworenen Objekts „Die Speerspitze“ entgegenwirken",
+						"texts": [
+							{
+								"description": "Besiege das verstärkte beschworene Objekt „Die Speerspitze“, um Verbündete zu verstärken und das Boss-Phantom zu schwächen.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100212",
+						"type": "Normal",
+						"name": "Flächenangriff-SCH des Boss-Phantoms entgegenwirken, wenn sich das beschworene Objekt „Der Schild“ auf dem Kampffeld befindet",
+						"texts": [
+							{
+								"description": "Besiege das beschworene Objekt „Der Schild“, um Schild zu erhalten, der deine Überlebenschancen erhöht.",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10022",
+				"name": "Phase II: Kampf der Ehre",
+				"description": "Das Boss-Phantom wird zusätzlich „Der Ehrenhafte“ heraufbeschwören.",
+				"answer": "Strategie: Besiege zunächst die verstärkten beschworenen Objekte, um das Boss-Phantom zu schwächen.",
+				"skills": [
+					{
+						"id": "100221",
+						"type": "Normal",
+						"name": "Dem unanvisierbaren Zustand des Boss-Phantoms entgegenwirken, wenn sich das beschworene Objekt „Der Ehrenhafte“ auf dem Kampffeld befindet",
+						"texts": [
+							{
+								"description": "Wenn sich das beschworene Objekte „Der Ehrenhafte“ auf dem Kampffeld befindet, kann das Boss-Phantom nicht als Angriffsziel ausgewählt werden. Bei der nächsten Aktion oder nachdem alle beschworenen Objekte „Der Ehrenhafte“ besiegt sind, kann es wieder als Angriffsziel ausgewählt werden.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100222",
+						"type": "Normal",
+						"name": "Dem massiven SCH entgegenwirken, der durch den Einsatz von „Unabwendbares Schicksal“ des Boss-Phantoms verursacht wird",
+						"texts": [
+							{
+								"description": "Besiege oder brich die Schwäche des beschworenen Objekts „Der Ehrenhafte“, um den SCH zu reduzieren, der durch den Einsatz von „Unabwendbares Schicksal“ des Boss-Phantoms verursacht wird.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"description": "<color=#f29e38ff>Beschworene Objekte</color> mit dem Status „Seelenbefreiung“ werden erheblich verstärkt.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Wenn das Boss-Phantom <color=#f29e38ff>Schwächebruch</color> erleidet, wird sein erlittener SCH massiv erhöht. Es werden Fertigkeitspunkte für alle Verbündeten wiederhergestellt und ihre Aktionen werden vorgezogen.",
+				"params": []
+			},
+			{
+				"description": "Besiege zunächst die <color=#f29e38ff>beschworenen Objekte</color> oder brich ihre Schwäche, um das Boss-Phantom effektiv zu schwächen.",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "302401301"
+}

@@ -1,0 +1,229 @@
+{
+	"name": "暴走した飛霄",
+	"description": "危機を救うため「紅月」を呑み込み、制御できない怒りに陥った天撃将軍。\n戦場で殺し合った過去から生まれた心の魔に意識を奪われ、疲れを知らない闘神の化身となった。彼女の友人として、また彼女の目に映る敵として、あなたたちが出せる「解毒剤」はただ1つ…戦い続けることのみだ。",
+	"icon": "spriteoutput/monsterfigure/Monster_2035010.png",
+	"shortIcon": "Monster_2035010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2035010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1488,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 130,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "銃剣・刃",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に風属性ダメージを与える。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200501001"
+		},
+		{
+			"name": "巨斧・爪",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に風属性ダメージを与え、高確率で攻撃を受けた味方を<u>虚弱</u>状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.2,
+				1,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200501002"
+		},
+		{
+			"name": "束縛の天梯",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "自身を強化し、追加ターンを獲得する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				5,
+				3.8,
+				0.5,
+				1,
+				1
+			],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200501003"
+		},
+		{
+			"name": "風雷の鎧",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "蝕月心獣のすべての部位と共鳴し、その弱点撃破状態を解除する。次の行動まで攻撃されず、次の行動で味方全体に「乾坤呑噬」を発動する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1.75
+			],
+			"spGain": 0,
+			"delay": 1.75,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200501004"
+		},
+		{
+			"name": "乾坤呑噬",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の風属性ダメージを与え、残りの弱点撃破されていない部位の数に応じて強化する。弱点撃破されていない部位1つにつき、このスキルの与ダメージがアップし、対応する部位の強化効果を得る。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				3,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200501005"
+		},
+		{
+			"name": "辻風",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に風属性ダメージを与える。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200501006"
+		},
+		{
+			"name": "心獣合撃",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「『飛霄』の影」は追加ターンの行動で蝕月心獣の部位と共鳴する。共鳴すると、心獣の部位が一定量の靭性値を回復し、攻撃を受ける時に削られる靭性値がアップする。次の行動が強化行動になり、「星雲を喰らう頭」との共鳴は高確率で味方全体を<u>怒噪</u>状態にし、「天地を裂く爪」との共鳴は自身の与ダメージを大幅にアップし、「塵を払う尾」との共鳴は高確率で味方全体を<u>虚弱</u>状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				120,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200501007"
+		},
+		{
+			"name": "守備",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「守備」状態に入る。弱点が撃破されていない時、受けるダメージがダウンする。弱点が撃破された時、行動順の遅延量がアップする。弱点撃破状態の時、受けるダメージがアップする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.75,
+				0.5,
+				0.9,
+				0.7,
+				0.35
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200501008"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				5,
+				8,
+				2,
+				2,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200501009"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Wind",
+	"id": "2005010"
+}

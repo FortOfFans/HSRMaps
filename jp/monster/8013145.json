@@ -1,0 +1,234 @@
+{
+	"name": "反物質エンジン",
+	"description": "力の根源を象徴する極致の化身、それが持つエネルギーの形式はまだ解明されていない。\n反物質エンジンは他の敵にエネルギーを供給し、それらのスキルを強化する。",
+	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
+	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012141.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1674,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 420,
+		"speed": 90,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "虚明裂変",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "敵単体「厄災の右手」に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314501"
+		},
+		{
+			"name": "災厄侵襲",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "敵単体「黎明の左手」に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314502"
+		},
+		{
+			"name": "エンジン昇変",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "自身以外の敵に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314503"
+		},
+		{
+			"name": "順逆湮滅",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "味方単体に量子属性と虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4.4
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314504"
+		},
+		{
+			"name": "厄災の前兆",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次の行動で味方全体に「終末降臨」を発動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314505"
+		},
+		{
+			"name": "終末降臨",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性ダメージと虚数属性ダメージを与える。攻撃を行った後、味方それぞれにランダムで「量子付与」状態または「虚数付与」状態を付与する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.6
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314506"
+		},
+		{
+			"name": "末日の呪い",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "味方それぞれにランダムで「量子付与」状態または「虚数付与」状態を付与する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314507"
+		},
+		{
+			"name": "集団感染",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性と虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314508"
+		},
+		{
+			"name": "対消滅",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "自身がスキルを発動し、味方単体を同時に「量子付与」状態と「虚数付与」状態にした場合、この2つの状態を解除し、その味方に少量の量子属性ダメージと虚数属性ダメージを与え、高確率で「<u>縛り</u>」状態を付与する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1,
+				0.1,
+				0.3,
+				0.6,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314509"
+		},
+		{
+			"name": "仮死",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受けた後、「仮死」状態に入る。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314510"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 182001,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "8013145"
+}

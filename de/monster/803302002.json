@@ -1,0 +1,165 @@
+{
+	"name": "Leuchtturm",
+	"description": "Der Superheld von Astropolis, ausgerüstet mit den fortschrittlichsten technologischen Errungenschaften der Intelligenzia-Gilde, scheut keine Mühen, um das Böse zu besiegen und den Frieden in der Stadt zu wahren. In den letzten fünf Jahren hat er die Menschen von Astropolis immer wieder vor großen und kleinen Katastrophen gerettet.\nManche weisen darauf hin, dass diese Heldentaten niemals von einer einzigen Person vollbracht werden könnten und der sogenannte Leuchtturm nichts weiter als ein von der Unterhaltungsindustrie geschaffenes falsches Idol sei. Doch die Öffentlichkeit hat bereits ihre ganze Hoffnung darauf gesetzt, dass jemand die Last auf sich nimmt, wenn sie in eine Krise gerät. Sie ahnt nicht, dass sich hinter der Rüstung von Leuchtturm weitaus dunklere Geheimnisse verbergen ...",
+	"icon": "spriteoutput/monsterfigure/Monster_8033020.png",
+	"shortIcon": "Monster_8033020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8033020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 697.49966706,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Strahlender Schwung",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302001"
+		},
+		{
+			"name": "Unnachgiebige Gerechtigkeit",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Böse ausmerzen“ ein, erhält selbst eine bestimmte Stapelzahl von „Gemeinsame Wünsche“ und belegt alle Gegner mit dem Effekt „Geschützte Schwäche“. Setzt bei der nächsten Aktion „Alles Böse ausmerzen“ ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				12,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302003"
+		},
+		{
+			"name": "Alles Böse ausmerzen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven physischen SCH zu und verzögert die Aktion der angegriffenen Verbündeten. Beim Einsatz dieser Fähigkeit erhöht jede Stapelung von „Gemeinsame Wünsche“ dieser Einheit den SCH-Multiplikator von „Alles Böse ausmerzen“ um einen bestimmten Prozentsatz. Anschließend werden alle Stapelungen von Gemeinsame Wünsche zurückgesetzt und die Effekte „Geschützte Schwäche“ sowie „Inspirieren“ aller Gegner entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.6,
+				0.2,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302004"
+		},
+		{
+			"name": "Navigationsguide",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Im Status „Böse ausmerzen“ erhalten alle Gegner den Effekt „Inspirieren“ entsprechend von Leuchtturms Stapelzahl von „Gemeinsame Wünsche“. Jede Stapelung verringert den vom Träger erlittenen SCH. Nachdem Leuchtturm von einem Verbündeten angegriffen wurde, verliert er 1 Stapelung Gemeinsame Wünsche. Nachdem ein beliebiger Gegner einen Verbündeten angegriffen hat, erhält Leuchtturm 1 Stapelung Gemeinsame Wünsche. Wenn Leuchtturms Stapelzahl von Gemeinsame Wünsche 0 beträgt, entfernt er seine eigenen Mengenkontrolle-Debuffs sowie den Status Böse ausmerzen, seine Aktion wird verzögert und er belegt alle Gegner mit dem Effekt „In Trümmern“, während gleichzeitig der Effekt Inspirieren von allen Gegnern entfernt wird.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0,
+				1,
+				2,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302005"
+		},
+		{
+			"name": "Rechtschaffene Frontlinie",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Astropolis-Wächter“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.2,
+				0.6,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"8032040"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182004,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "803302002"
+}

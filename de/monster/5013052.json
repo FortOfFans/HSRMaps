@@ -1,0 +1,170 @@
+{
+	"name": "Dämmerungstrupp: Flammenweber",
+	"description": "Der Kapitän des Dämmerungstrupps. Ein unbändiger Optimist, der jede düstere Wolke ignorieren kann, und ein totaler, fröhlicher, heißblütiger Idiot.\n„Eine Erfolgsquote von 1 % ist nichts als eine Zahl auf einem Blatt! Wir überbrücken die Kluft einfach mit Mut, Freundschaft und reiner Willenskraft!“\nSeele geschmiedet im Feuer! Versengt die Dunkelheit! Der Stern, der die Felder in Flammen setzt – Flammenweber!\nDie Dunkelheit schwindet, und die Morgendämmerung erwacht! Der Dämmerungstrupp erhebt sich!",
+	"icon": "spriteoutput/monsterfigure/Monster_5013050.png",
+	"shortIcon": "Monster_5013050",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5013050.png",
+	"stats": {
+		"baseAttack": 15,
+		"baseDefense": 210,
+		"baseHealth": 6045,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Dämmerungsklinge",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501305201"
+		},
+		{
+			"name": "Dämmerungsschwungrad",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				6,
+				3,
+				0.15,
+				60,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501305202"
+		},
+		{
+			"name": "Dämmerungswille",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Verleiht dieser Einheit und allen anderen Mitgliedern des Dämmerungstrupps „Dämmerungskraftfeld“. In diesem Status ist der Dämmerungstrupp immun gegen SCH des eigenen Typs und setzt kontinuierlich „Dämmerungsschwerttanz“ ein. Gleichzeitig ist er immun gegen Mengenkontrolle-Debuffs und sein WDS kann nicht verringert werden. Wenn sich der Dämmerungstrupp im Status Dämmerungskraftfeld befindet, setzt er nach einer bestimmten Anzahl erlittener Angriffe „Dämmerungsrückzug“ ein. Wenn der Angriff <u>Hochgefühl-SCH</u> verursacht, erhöht dieser Angriff den Zähler stattdessen um <unbreak>3[i]</unbreak>.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				8,
+				1,
+				2,
+				16
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501305203"
+		},
+		{
+			"name": "Dämmerungsschwerttanz",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten massiven Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501305204"
+		},
+		{
+			"name": "Dämmerungsrückzug",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "Entfernt „Dämmerungskraftfeld“, verliert eine bestimmte Menge an LP und verleiht dieser Einheit „Frustration“, wodurch der erlittene SCH erhöht und der Feuer-WDS dieser Einheit verringert wird.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.6,
+				2,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501305205"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.8,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Fire",
+	"id": "5013052"
+}

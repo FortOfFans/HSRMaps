@@ -1,0 +1,441 @@
+{
+	"name": "雷奔云谲的恶狼主",
+	"description": "犯尽十恶，永镇于幽狱之底的步离人首领。\n身负七百年苦狱仇恨，在脱出牢笼后，群狼之主向整个罗浮仙舟发起了挑战。但潜藏在疯狂之举的背后，似乎另有目标……",
+	"icon": "spriteoutput/monsterfigure/Monster_2034010.png",
+	"shortIcon": "Monster_2034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 10230,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1140,
+		"speed": 160,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "碎剑为牙",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401401"
+		},
+		{
+			"name": "斩铁成爪",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及相邻目标造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				1.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401402"
+		},
+		{
+			"name": "裂地三舍，寸草不留",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "对除自身外的所有目标造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.3,
+				2.2,
+				30
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401403"
+		},
+		{
+			"name": "雷动风咆，摧枯灭朽",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401404"
+		},
+		{
+			"name": "贪狼逐驰，血色临照",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成大量雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				6,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401405"
+		},
+		{
+			"name": "血鸣狂噬",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "呼雷在进入【噬月】状态前，韧性无法被削减，当敌方施放攻击后，为<u>能够进入【噬月】状态的敌方单位</u>附加1层【<u>嗜血</u>】，当【<u>嗜血</u>】达到指定层时，呼雷将进入【<u>噬月</u>】状态，并施放【孤战】。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				4,
+				5,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401406"
+		},
+		{
+			"name": "狼啸八方",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "当呼雷进入【<u>噬月</u>】状态时，受到的伤害降低，韧性可以被削减，并为自身添加【怒意】。【怒意】拥有初始层数，且每当敌方回合结束时，将减少1层【怒意】。每当【怒意】减少至0层时，将退出【噬月】状态。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				4,
+				3,
+				0.06,
+				2,
+				0.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401407"
+		},
+		{
+			"name": "狼群敕令，唤雷奔袭",
+			"tag": "其他",
+			"type": "技能",
+			"description": "每当我方对其他敌方目标造成致命攻击时，会对呼雷造成伤害并削减韧性，为我方全体角色添加【<u>血涌</u>】，为<u>能够进入【噬月】状态的敌方单位</u>附加1层【<u>嗜血</u>】，并召唤【玄爪狼卒】或【蚀月狼卒】。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0,
+				1.15,
+				1.33,
+				90,
+				0.03
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401408"
+		},
+		{
+			"name": "孤战",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "进入【孤战】状态，呼雷造成的伤害增加，我方可选择1名角色及其召唤的目标进入【孤战】状态，选择后对指定我方单体造成雷属性伤害，且直到【怒意】耗尽前其他我方和敌方目标<u>离场</u>。我方目标进入【孤战】状态后，将使我方恢复战技点，根据我方全体角色当前的生命值上限和攻击力提高自身的生命值上限和攻击力，且【<u>血涌</u>】将生效，并根据【<u>血涌</u>】层数为自身添加【<u>战血激昂</u>】。我方全体角色所持有的【<u>血涌</u>】将在【孤战】状态结束后移除。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.15,
+				5,
+				5,
+				0.05,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401409"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401410"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401411"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401412"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401413"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401414"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"2032011",
+		"2032022"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 2,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101001",
+				"name": "坚防守备",
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101002",
+				"name": "宁枉勿纵",
+				"description": "首领幻影在施放【裂地三舍，寸草不留】时，将会消灭其他所有狼卒。",
+				"params": []
+			},
+			{
+				"id": "101003",
+				"name": "狼顾鸱张",
+				"description": "首领幻影在进入第二阶段后，【孤战】期间每回合可再次行动。",
+				"params": []
+			},
+			{
+				"id": "101004",
+				"name": "至死方休",
+				"description": "首领幻影在进入【孤战】后，受到的伤害额外降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
+				"params": [
+					0.6
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10101",
+				"name": "阶段一：风雷激荡",
+				"description": "首领幻影进入【噬月】状态时，我方需要选择1名最强的角色与首领幻影进行【孤战】。",
+				"answer": "应对策略：在首领幻影进入【噬月】状态前，尽可能击杀狼卒以获得强化。",
+				"skills": [
+					{
+						"id": "101011",
+						"type": "Normal",
+						"name": "如何获得【血涌】并快速进入【噬月】状态",
+						"texts": [
+							{
+								"description": "消灭狼卒，会使我方全体获得【血涌】，并为首领幻影施加【嗜血】，加速进入【噬月】状态",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101012",
+						"type": "Normal",
+						"name": "如何应对【孤战】",
+						"texts": [
+							{
+								"description": "保存更多实力进入【孤战】，并尽可能选择存在召唤目标的我方角色以获得行动次数优势。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10102",
+				"name": "阶段二：吞天噬月",
+				"description": "首领幻影的技能会对狼卒造成伤害，且进入【噬月】状态时会获得额外强化。",
+				"answer": "应对策略：在首领幻影行动前击杀狼卒，防止狼卒被首领幻影消灭。",
+				"skills": [
+					{
+						"id": "101021",
+						"type": "Normal",
+						"name": "避免失去获得【血涌】的机会",
+						"texts": [
+							{
+								"description": "首领幻影消灭的狼卒不能为我方提供【血涌】，尽量在其行动前消灭更多的狼卒。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "首领幻影进入【噬月】状态时，会解除弱点保护，我方需要选择1名最强的角色与首领幻影进行【孤战】，【孤战】期间除被选择的角色及其召唤的目标外，其他我方目标处于离场状态。",
+				"params": []
+			},
+			{
+				"description": "我方在击杀敌方狼卒时，会获得【血涌】，进入【孤战】的角色和召唤的目标会根据【血涌】层数获得强化。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "在首领幻影尚未进入【噬月】状态时，优先消灭狼卒，为我方提供【血涌】并使首领幻影快速进入【噬月】状态。",
+				"params": []
+			},
+			{
+				"description": "在首领幻影即将进入【噬月】状态时，保存实力以应对【孤战】。",
+				"params": []
+			},
+			{
+				"description": "在进行【孤战】时，若选择的我方角色存在召唤的目标，召唤的目标将一同进入【孤战】。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "203401402"
+}

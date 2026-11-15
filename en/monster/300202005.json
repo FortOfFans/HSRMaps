@@ -3,15 +3,22 @@
 	"description": "Penacony's service machinery that got out of control due to the emotional interference in the Dreamscape.\nOriginally a prize-drawing robot made to bring surprise to guests, it still bears all kinds of gifts even after losing control, and longs to prove the good luck of the guest by sacrificing itself.",
 	"icon": "spriteoutput/monsterfigure/Monster_3002020.png",
 	"shortIcon": "Monster_3002020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3002020.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 209.25,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 60,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
 		"type": "MinionLv2"
 	},
 	"skills": [
 		{
-			"id": "300202001",
 			"name": "Lottery Warmup",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300202001"
 		},
 		{
-			"id": "300202002",
 			"name": "Dreamjolt Prizepool",
 			"tag": "Talent",
 			"type": "Ability",
@@ -37,11 +44,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300202002"
 		},
 		{
-			"id": "300202003",
 			"name": "Lost the <unbreak>50</unbreak>/<unbreak>50</unbreak>!",
 			"tag": "Talent",
 			"type": "Ability",
@@ -53,15 +60,15 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300202003"
 		},
 		{
-			"id": "300202004",
 			"name": "Hit the Guarantee!",
 			"tag": "Talent",
 			"type": "Ability",
-			"description": "After suffering a killing blow from a Skill, Memosprite Skill, or a Follow-up ATK, regenerates Energy for all targets.",
+			"description": "After suffering a killing blow from a Skill, Memosprite Skill, or a Follow-Up ATK, regenerates Energy for all targets.",
 			"element": "Physical",
 			"attackType": "Normal",
 			"params": [
@@ -69,11 +76,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300202004"
 		},
 		{
-			"id": "300202005",
 			"name": "Jackpot!",
 			"tag": "Talent",
 			"type": "Ability",
@@ -86,38 +93,46 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300202005"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Ice",
 		"Wind"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 36,
+		"avatarExpReward": 108,
 		"itemList": [
 			{
 				"id": 2,
@@ -128,11 +143,20 @@
 				"count": 1
 			},
 			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
 				"id": 181016,
 				"count": 1
 			}
 		]
 	},
+	"guide": null,
 	"rank": "MinionLv2",
 	"stanceType": "Physical",
 	"id": "300202005"

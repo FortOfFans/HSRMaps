@@ -1,0 +1,152 @@
+{
+	"name": "Zerbrochenes Gefäß",
+	"description": "Jedes einzelne Fragment, das sich in endlosem Unheil widerspiegelt, ist ein Bote des Unheils, der den Willen zur Zerstörung in sich trägt.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032020.png",
+	"shortIcon": "Monster_4032020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 180,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Gemeinsames Opfer: Sturmwolke des Untergangs",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten geringen physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.25
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202201"
+		},
+		{
+			"name": "Gemeinsames Opfer: Verblassendes Schicksal",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen physischen SCH zu. Ein Anteil der reduzierten LP der getroffenen Ziele wird in <u>Korrosion</u> umgewandelt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202202"
+		},
+		{
+			"name": "Ein Gebet für mich",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Widersteht Mengenkontrolle-Debuffs. Wenn „???“ „Sturmwolke des Untergangs“ oder „Verblassendes Schicksal“ und die betroffene Einheit durch diesen Angriff beschworen wurde, greift sie mit „???“ gemeinsam an. Diese Einheit wird dann absorbiert und „???“ stellt die Menge an LP, die für <u>Verstrickter Schmerz</u> verbraucht wurde, wieder her. Außerdem erhält „???“ <u>Kraft der Katastrophe</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.06
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202203"
+		},
+		{
+			"name": "Ein Denkmal für mich",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Nachdem die Einheit einen Todesstoß erlitten hat und wenn „???“ mindestens 1 Stapelung <u>Kraft der Katastrophe</u> besitzt, wird sie sofort wieder beschworen, wobei „???“ dafür 1 Stapelung <u>Kraft der Katastrophe</u> sowie einen gewissen LP-Prozentsatz verliert. Wenn „???“ „Weine nicht für die Verlassenen“ einsetzt, wird die Einheit absorbiert und die LP, die zu <u>Verstrickter Schmerz</u> umgewandelt wurden, werden wiederhergestellt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.02
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202204"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "403202206"
+}

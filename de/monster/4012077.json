@@ -1,0 +1,161 @@
+{
+	"name": "Die langen Arme des Kummers",
+	"description": "Alle, die dem Ende entkommen wollen, müssen sich den Verfolgungen der Unterwelt stellen.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012070.png",
+	"shortIcon": "Monster_4012070",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012070.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 180,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Die Lebenden dürfen nicht entkommen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten geringen Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207704"
+		},
+		{
+			"name": "Die Toten dürfen sich nicht verbergen",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten und angrenzenden Einheiten geringen Quanten-SCH und <u>Degenerativen SCH</u> zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1.5,
+				0.08,
+				0.08
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207705"
+		},
+		{
+			"name": "Todesblüte",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn sich der „Anführer von Welken und Verfall“ im Status <u>Duft des Todes</u> befindet, wird „Die Lebenden dürfen nicht entkommen“ von „Die langen Arme des Kummers“ zu „Die Toten dürfen sich nicht verbergen“ verstärkt. Wenn „Die langen Arme des Kummers“ Schwächebruch erleidet, werden der WDS und die LP von Anführer von Welken und Verfall reduziert. Wenn sich Anführer von Welken und Verfall zu diesem Zeitpunkt im Status <u>Duft des Todes</u> befindet, werden zusätzlich bei allen Verbündeten LP wiederhergestellt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				210,
+				0.03,
+				0.15,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207706"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207707"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "4012077"
+}

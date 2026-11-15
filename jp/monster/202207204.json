@@ -1,0 +1,128 @@
+{
+	"name": "厳風の梢",
+	"description": "玄鹿の足跡に生える建木の枝先。",
+	"icon": "spriteoutput/monsterfigure/Monster_2022070.png",
+	"shortIcon": "Monster_2022070",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2022070.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 511.5001395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "怒噪",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "指定した味方単体に風属性ダメージを与え、高確率でその味方を「怒噪」状態と「風化」状態にする。「怒噪」状態になると数ターンの間行動できなくなり、ランダムな敵単体に攻撃を行う。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				2,
+				1,
+				2,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202207201"
+		},
+		{
+			"name": "静謐のトーテム",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "フィールド上にいる時、「怒噪」状態を付与された味方の、「厳風の梢」以外のすべての敵に対する与ダメージが大幅にダウンする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202207202"
+		},
+		{
+			"name": "滋養の力",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "味方がこのユニットを倒した後、「滋養の力」を1層獲得し、与ダメージがアップする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202207203"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113001,
+				"count": 1
+			},
+			{
+				"id": 113002,
+				"count": 1
+			},
+			{
+				"id": 113003,
+				"count": 1
+			},
+			{
+				"id": 181004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Wind",
+	"id": "202207204"
+}

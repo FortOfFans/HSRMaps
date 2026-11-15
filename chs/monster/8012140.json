@@ -1,0 +1,145 @@
+{
+	"name": "灾虐的右手",
+	"description": "被殃难浸润的大地只剩下苦痛的回音，这就是末日应有的进行曲。\n灾虐的右手善于使用虚数属性的力量，造成大范围的攻击。",
+	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
+	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012140.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "灾殃的撕裂",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成少量虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.35
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214001"
+		},
+		{
+			"name": "荒难的割扯",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成少量虚数属性伤害，同时有小概率使我方目标陷入禁锢状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.2,
+				1,
+				0.3,
+				0.2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214002"
+		},
+		{
+			"name": "劫虐崩裂之时",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成虚数属性伤害，同时有小概率使我方目标陷入禁锢状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.25,
+				1,
+				0.3,
+				0.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Ice"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111011,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 181003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "8012140"
+}

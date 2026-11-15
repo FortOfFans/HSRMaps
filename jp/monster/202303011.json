@@ -1,0 +1,169 @@
+{
+	"name": "{RUBY_B#しょうろてんにん}承露天人{RUBY_E#}",
+	"description": "「薬王秘伝」の信徒が渇望する形態、人間性の重荷を捨て、仙道で再構築した真体。\n太古の時代、求道者たちは建木を通して玄旨を悟り、「仙人」を自称した。「仙人」たちは自在に振舞い、血肉と衆生を泥土のように塑形する。数え切れないほどの変化を経て、やがて自身の本来の姿を忘れてしまった。",
+	"icon": "spriteoutput/monsterfigure/Monster_2023030.png",
+	"shortIcon": "Monster_2023030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2023030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1813.499721,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 420,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "若木化生儀祷",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "ランダムな味方単体に連続で風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				3,
+				0.7
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303001"
+		},
+		{
+			"name": "引導の風",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体及び隣接する味方に風属性ダメージを与え、高確率で攻撃された味方を風化状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				3,
+				0.7
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303002"
+		},
+		{
+			"name": "若木の棘",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1,
+				3,
+				0.7
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303003"
+		},
+		{
+			"name": "玄気呪厭法",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "「持呪」状態に入る。次の行動で味方全体に「玄気噬身」を発動する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303004"
+		},
+		{
+			"name": "玄気噬身",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "高確率で味方全体を「噬命」状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Thunder"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113002,
+				"count": 1
+			},
+			{
+				"id": 113003,
+				"count": 1
+			},
+			{
+				"id": 182002,
+				"count": 1
+			},
+			{
+				"id": 183001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "202303011"
+}

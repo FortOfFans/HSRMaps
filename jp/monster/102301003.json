@@ -1,0 +1,171 @@
+{
+	"name": "{RUBY_B#しゃくえんはいかいしゃ}灼焔徘徊者{RUBY_E#}",
+	"description": "裂界を彷徨う機械ユニット、だが紛れもなくこれは人間の造物ではない、裂界の歪んだ力が模倣して作った化け物だ。\n灼焔徘徊者の攻撃は燃焼状態の敵に対して追加ダメージを与える。",
+	"icon": "spriteoutput/monsterfigure/Monster_1023010.png",
+	"shortIcon": "Monster_1023010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1023010.png",
+	"stats": {
+		"baseAttack": 30.000006,
+		"baseDefense": 210,
+		"baseHealth": 604.499907,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "赤の刃先",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に炎属性ダメージを与え、高確率で攻撃を受けた味方を燃焼状態にする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301001"
+		},
+		{
+			"name": "灼焔切り",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に炎属性ダメージを与える、このスキルは優先的に燃焼状態の味方をターゲットにする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301002"
+		},
+		{
+			"name": "熔解",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "燃焼状態の味方単体に攻撃を行った後、与ダメージがアップする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.06,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301003"
+		},
+		{
+			"name": "高温回転",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "自身の攻撃力を小アップし、速度を大アップする、弱点撃破されると前期のバフが解除される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				100
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301004"
+		},
+		{
+			"name": "余燼の舞い",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に炎属性ダメージを与える。燃焼状態の味方はさらに炎属性ダメージを受け、燃焼状態が解除される。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_DOT_Burn",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "102301003"
+}

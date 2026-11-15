@@ -1,0 +1,164 @@
+{
+	"name": "\"Embryo of Philosophy\" Madness",
+	"description": "A new sprout / blooms in the rotting mud of the past / The universe! The universe shattered into a kaleidoscope! / Its sharp shards fall into \"my\" eyes / Is every piece called \"madness\"?",
+	"icon": "spriteoutput/monsterfigure/Monster_5035020.png",
+	"shortIcon": "Monster_5035020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5035020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 37200,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 960,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "Sneering of Fallen Arcadia",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Gains <u>Madness</u>, then deals Quantum DMG to all targets. If this unit is in the \"Power of Impermanence\" state, increases the DMG dealt by this ability.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				5.5,
+				20
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502101"
+		},
+		{
+			"name": "Cry Born for Death",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Gains a massive amount of <u>Madness</u>, then this unit enters the \"Power of Impermanence\" state. If this unit is already in the \"Power of Impermanence\" state, this unit enters the \"Primordial Chaos\" state and uses \"Delirious Farce of Universal Folly\" during its next action.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				50,
+				50,
+				50,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502102"
+		},
+		{
+			"name": "Delirious Farce of Universal Folly",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Gains <u>Madness</u>, then deals massive Quantum DMG to all targets and reduces all targets' Energy.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				7,
+				0.2,
+				20
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502103"
+		},
+		{
+			"name": "Measure of Comedy",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When the number of <u>Madness</u> points exceeds the number of targets' <u>Punchline</u>, this unit's action advances, and it enters the \"<u>Madness</u>\" state. When the number of targets' <u>Punchline</u> exceeds the number of <u>Madness</u> points, all targets' actions advance, and they enter the \"<u>Comedy</u>\" state.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				0.0029999998,
+				66,
+				0.08,
+				0.08,
+				0.06,
+				0.5,
+				0.5,
+				0.02,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502104"
+		},
+		{
+			"name": "Instinct of Unprovoked Clamor",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Every time a certain percentage of HP is lost, immediately uses \"Cry Born for Death.\" If this unit has entered the \"Primordial Chaos\" state, immediately uses \"Delirious Farce of Universal Folly\" instead.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.35,
+				0.35,
+				0.9,
+				0.98,
+				0.85
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502105"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Quantum",
+	"id": "5035021"
+}

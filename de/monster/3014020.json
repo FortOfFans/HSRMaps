@@ -1,0 +1,212 @@
+{
+	"name": "Speicherbereich-Mem: Dem Tod entgegen",
+	"description": "Eine Entität, die bestimmte Wahrnehmungen erhält, geformt durch unterbewusste Fragmente aus dem Speicherbereich.\nEin mysteriöses und gefährliches Speicherbereich-Mem, das als „Tod“ angesehen wird – etwas, das in Träumen niemals existieren sollte. Sein finsterer Schatten wandert durch die Zwölf Stunden und bringt unvorhergesehenes Unheil, wohin er auch geht. Er verbreitet Unglück wie eine scharfe Klinge und wirft einen tödlichen Schatten über die süßen Träume.",
+	"icon": "spriteoutput/monsterfigure/Monster_3014020.png",
+	"shortIcon": "Monster_3014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3014020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2046,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Begräbniskuss",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402001"
+		},
+		{
+			"name": "Versunkener Regen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402002"
+		},
+		{
+			"name": "Beißender Kummer",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Erhöht für 1 Rd. massiv den verursachten SCH. Dieser Effekt wird entfernt, wenn die Einheit Schwächebruch erleidet.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402003"
+		},
+		{
+			"name": "Abschwächendes Licht",
+			"tag": "Anvisieren",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Sonnenuntergang“ ein. Erhält jedes Mal 1 Stapelung, wenn ein Verbündeter einen Standardangriff, eine Fertigkeit oder einen Ultimate einsetzt. Wurden 3 Stapelungen von Sonnenuntergang erreicht, wird gegen den Verbündeten, der die letzte Aktion ausgeführt hat, „Verblassende Abendröte“ eingesetzt. Dieser Effekt wird entfernt, wenn Verblassende Abendröte schon einmal eingesetzt oder Schwächebruch erlitten wurde.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402004"
+		},
+		{
+			"name": "Verblassende Abendröte",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt dem letzten Verbündeten, der einen Standardangriff, eine Fertigkeit oder einen Ultimate eingesetzt hat, einen Todesstoß zu und belegt ihn mit dem Status „Traumtod“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				300,
+				1,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402005"
+		},
+		{
+			"name": "In die Mondnacht",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Nachtdämmerung“ ein und stellt bei allen Verbündeten Energie wieder her. Während dieses Status werden die beiden Verbündeten, die die nächsten Aktionen ausführen werden, anvisiert. Setzt in der nächsten Aktion „Auflösung im Wasser“ ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402006"
+		},
+		{
+			"name": "Auflösung im Wasser",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen anvisierten Verbündeten einen Todesstoß zu und belegt sie mit dem Status „Traumtod“. Wenn kein Ziel anvisiert wird, wird Todesstoß gegen 2 zufällige Verbündete zugefügt und sie werden mit dem Status „Traumtod“ belegt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402007"
+		},
+		{
+			"name": "",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402008"
+		},
+		{
+			"name": "Verlassene Ödnis",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beschwört für jeden Verbündeten mit „Traumtod“ ein „Grab der ewigen Ruhe“. Wenn sich alle Verbündeten im Status Traumtod befinden oder handlungsunfähig sind, gilt der Kampf als verloren.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301402009"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.5
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"3012030"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "3014020"
+}

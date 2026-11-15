@@ -1,0 +1,165 @@
+{
+	"name": "アルジェンティ",
+	"description": "「純美の騎士団」の古典的な騎士。行方不明になっている「純美」の星神イドリラを敬虔に慕っていた。\n正直で、堂々とした性格の人。宇宙を漫遊し、イドリラの名を広めている。",
+	"icon": "spriteoutput/monsterfigure/Monster_3024010.png",
+	"shortIcon": "Monster_3024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3024010.png",
+	"stats": {
+		"baseAttack": 16.363637999999998,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "敬虔と誠実",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401001"
+		},
+		{
+			"name": "敬虔と誠実に至るまで",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.6,
+				1.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401002"
+		},
+		{
+			"name": "槍と盾",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "ランダムで「槍先」、「盾」、「叙勲」の彫刻を召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.5,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401003"
+		},
+		{
+			"name": "強靭な魂",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "彫刻の中の純美の魂を1つ解放する。魂を解放された彫刻のスキル効果が強化される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401004"
+		},
+		{
+			"name": "純美の勇気賛歌",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401005"
+		},
+		{
+			"name": "槍と盾",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "ランダムで「槍先」、「盾」、「叙勲」の彫刻を召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401007"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"summons": [
+		"3021020",
+		"3021030",
+		"3021040"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "302401001"
+}

@@ -1,0 +1,419 @@
+{
+	"name": "无望冽风的幻灭者",
+	"description": "无望冽风的幻灭者秉持传承自历代守护者的神迹权能，在战斗中号令冰雪的力量冻结敌人。",
+	"icon": "spriteoutput/monsterfigure/Monster_1004010.png",
+	"shortIcon": "Monster_1004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 5812.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 130,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "刺骨凝血的寒芒",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成冰属性伤害。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401401"
+		},
+		{
+			"name": "漫长冰期的预兆",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤【冰锋】。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401402"
+		},
+		{
+			"name": "无尽长冬的绝罚",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成大量冰属性伤害。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401403"
+		},
+		{
+			"name": "永囚于此的白霜",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成冰属性伤害，并有大概率使受到攻击的我方目标陷入冻结状态。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.8,
+				0.5,
+				1,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401404"
+		},
+		{
+			"name": "雪国圣徒的烈怒",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，下次行动时对我方全体施放【无尽长冬的绝罚】。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401405"
+		},
+		{
+			"name": "碎冰震荡",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对冻结状态下的我方目标及相邻目标造成冰属性伤害，同时解除主目标的冻结状态。若相邻目标处于冻结状态，则再次对主目标施放本技能。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401406"
+		},
+		{
+			"name": "愈寒愈烈",
+			"tag": "强化",
+			"type": "天赋",
+			"description": "每有1个我方目标陷入冻结状态，自身及召唤物造成的伤害提高。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				10,
+				1.125,
+				0,
+				1.66,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401407"
+		},
+		{
+			"name": "雪国后盾",
+			"tag": "召唤",
+			"type": "天赋",
+			"description": "杰帕德加入战斗。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401409"
+		},
+		{
+			"name": "破竹之势",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "无望冽风的幻灭者受到的伤害大幅降低，但在被弱点击破后，行动额外延后，受到的伤害额外提高，同时使我方全体恢复战技点并激活终结技。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401410"
+		},
+		{
+			"name": "无望冽风",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "无望冽风的幻灭者会自身弱点属性<u>转移</u>给【冰锋】。当【冰锋】被消灭时，自身受到额外削韧值。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.2,
+				0.9,
+				60
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401411"
+		},
+		{
+			"name": "逃无可逃",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "无望冽风的幻灭者施放【刺骨凝血的寒芒】和【永囚于此的白霜】时，会对【冰锋】锁定的目标<u>追加施放</u>。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401412"
+		},
+		{
+			"name": "坚韧之志",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "敌方全体受到的伤害降低，但每拥有1个弱点属性，受到的伤害提高。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401413"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401414"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"100402602",
+		"100501402",
+		"100201503",
+		"100201603"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 2,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100101",
+				"name": "坚防守备",
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"id": "100102",
+				"name": "阵地转移",
+				"description": "杰帕德会加入战斗并为首领幻影提供保护。首领幻影会将自身弱点属性<color=#f29e38ff><u>转移</u></color>给召唤物，但当召唤物被消灭时，自身韧性值受到额外削减。",
+				"params": []
+			},
+			{
+				"id": "100103",
+				"name": "逃无可逃",
+				"description": "首领幻影的召唤物会标记1个我方单位，首领幻影施放单攻技能后会对被标记的我方单位<color=#f29e38ff><u>追加施放</u></color>。",
+				"params": []
+			},
+			{
+				"id": "100104",
+				"name": "坚韧之志",
+				"description": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10011",
+				"name": "阶段一：无望冽风的幻灭者",
+				"description": "首领幻影会使用技能冻结目标并造成伤害。杰帕德会提供群体护盾。",
+				"answer": "应对策略：优先消灭召唤物，若杰帕德施放全体护盾，尽快击破并消灭杰帕德。",
+				"skills": [
+					{
+						"id": "100111",
+						"type": "Normal",
+						"name": "应对首领幻影的冻结效果",
+						"texts": [
+							{
+								"description": "提高效果抵抗或使用技能解除冻结状态。消灭召唤物可以降低首领幻影控制我方角色的频率。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100112",
+						"type": "Normal",
+						"name": "应对首领幻影弱点属性消失的状态",
+						"texts": [
+							{
+								"description": "消灭召唤物会使弱点属性转移回首领幻影，并且对首领幻影造成额外削韧值。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100113",
+						"type": "Normal",
+						"name": "应对杰帕德的护盾技能",
+						"texts": [
+							{
+								"description": "击破杰帕德的弱点可以直接解除护盾。尽快消灭杰帕德，避免其多次施放全体护盾。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10012",
+				"name": "阶段二：无望冽风的幻灭者•虚妄之母",
+				"description": "首领幻影会不断施放【创世绝响】造成高额全体伤害，并使用技能限制我方目标行动。",
+				"answer": "应对策略：优先消灭召唤物后，尽快击破首领幻影的弱点。",
+				"skills": [
+					{
+						"id": "100121",
+						"type": "Normal",
+						"name": "应对首领幻影的控制效果",
+						"texts": [
+							{
+								"description": "提高效果抵抗或使用技能解除控制状态。消灭召唤物可以降低首领幻影控制我方角色的频率。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100122",
+						"type": "Normal",
+						"name": "应对首领幻影不断施放【创世绝响】",
+						"texts": [
+							{
+								"description": "尽快击破首领幻影的弱点，阻止其施放【创世绝响】。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"description": "有召唤物在场时，首领幻影会将<color=#f29e38ff>自身弱点属性转移给召唤物</color>。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "<color=#f29e38ff>击破</color>首领幻影会大幅提高其受到的伤害，使我方全体恢复战技点并行动提前。",
+				"params": []
+			},
+			{
+				"description": "优先消灭或击破<color=#f29e38ff>召唤物</color>，可以有效削弱首领幻影。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Ice",
+	"id": "100401402"
+}

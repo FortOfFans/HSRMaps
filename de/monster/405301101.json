@@ -1,0 +1,202 @@
+{
+	"name": "Sirene der Elegie: Unersättlicher Leviathan",
+	"description": "Die Legende besagt, dass die plündernden Seesirenen singen können, um Seeleute mit schwachem Willen zu locken. Wer dem Wahnsinn verfällt, springt ins Meer und wird zur Delikatesse für die Tiefsee.",
+	"icon": "spriteoutput/monsterfigure/Monster_4053010.png",
+	"shortIcon": "Monster_4053010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4053010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 27900,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 180,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Berauschende Verderbnis",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten geringen Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301101"
+		},
+		{
+			"name": "Honiggebräu funkelt wie Sterne",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen Eis-SCH zu und reduziert mit hoher Chance ihre VTD und ihren WDS aller Typen.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				0.15,
+				2,
+				0.15
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301102"
+		},
+		{
+			"name": "Psychedelische Elegie",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Kann eine Figur auswählen. Fügt dann der anvisierten verbündeten Figur Eis-SCH zu und versetzt sie in den Status „Phantomillusion“. Im Status Phantomillusion treten die verbündete Figur und ihr beschworenes Objekt in den Status <u>„Abgang“</u> ein. Gleichzeitig wird die Halluzinogene Meerjungfrau beschworen, um die Figur mit Abgang im Kampf zu ersetzen, und die Halluzinogene Meerjungfrau wird als verbündete Figur betrachtet.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301103"
+		},
+		{
+			"name": "Empfange die Gabe des Ozeans",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Sehnsucht nach einem gemeinsamen Tanz“ ein und setzt bei jeder Aktion „Umarmung der Wellen“ ein.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301104"
+		},
+		{
+			"name": "Umarmung der Wellen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301105"
+		},
+		{
+			"name": "Schwelgen in Zerstörung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Versetzt einen angegriffenen Verbündeten beim Verursachen von SCH in den Status „Eiskorrosion“.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				0.8,
+				1.2,
+				0.7,
+				0.05,
+				3,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301106"
+		},
+		{
+			"name": "Rast am Wasser",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Nach einer bestimmten Anzahl von Angriffen durch Verbündete wird „Psychedelische Elegie“ sofort eingesetzt.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				5,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301107"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Thunder"
+	],
+	"summons": [
+		"403302301",
+		"403303101",
+		"4052011"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Ice",
+	"id": "405301101"
+}

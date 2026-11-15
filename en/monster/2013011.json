@@ -3,15 +3,22 @@
 	"description": "A false projection produced by compromised codes. The referent entity is the garrison aurumatons created with ancient ingenium technology.\nCountless years ago, the aurumatons set sail with the Xianzhou to seek divine recipes of immortality, and were tasked to oversee humanity and to aid humankind during warfare. However, after countless rebellions, they were finally overpowered by the Xianzhou natives.\nNow, all aurumatons are strictly controlled with talismans, and are employed to guard important places.",
 	"icon": "spriteoutput/monsterfigure/Monster_2013010.png",
 	"shortIcon": "Monster_2013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2013010.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "201301101",
 			"name": "Penal Code",
 			"tag": "Talent",
 			"type": "Talent",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201301101"
 		},
 		{
-			"id": "201301102",
 			"name": "Dread",
 			"tag": "Impair",
 			"type": "Ability",
@@ -42,11 +49,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201301102"
 		},
 		{
-			"id": "201301103",
 			"name": "",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -58,11 +65,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201301103"
 		},
 		{
-			"id": "201301104",
 			"name": "Track Down",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -77,42 +84,55 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201301104"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Thunder",
 		"Wind",
 		"Quantum"
 	],
+	"summons": [
+		"2012010"
+	],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 113011,
+				"id": 113012,
+				"count": 1
+			},
+			{
+				"id": 113013,
 				"count": 1
 			},
 			{
@@ -125,6 +145,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "2013011"

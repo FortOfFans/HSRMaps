@@ -1,0 +1,110 @@
+{
+	"name": "歪み",
+	"description": "「記憶」と「写真」はとても似ている。それは「真実」を記録しているように見えるが、「真実」に侵入し、「真実」を変化させ、改ざんしているのだ。もしその中の「歪み」を消すことができれば信頼できるものになるかもしれない、ならないかもしれない。",
+	"icon": "spriteoutput/monsterfigure/Monster_2022040.png",
+	"shortIcon": "Monster_2022040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2022040.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 148.8,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 118,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "角抵",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に風属性ダメージを与える。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202204001"
+		},
+		{
+			"name": "遠吠え",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受けた時、自身に隣接する敵の行動順を早める。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202204002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113001,
+				"count": 1
+			},
+			{
+				"id": 113002,
+				"count": 1
+			},
+			{
+				"id": 113003,
+				"count": 1
+			},
+			{
+				"id": 181004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "202204001"
+}

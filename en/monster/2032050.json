@@ -3,19 +3,26 @@
 	"description": "Claw of the Inner Beast, shredder of heavenly planes, sunderers of earthly latitudes.",
 	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
 	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2032050.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 372,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 240,
+		"speed": 130,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
 		"type": "MinionLv2"
 	},
 	"skills": [
 		{
-			"id": "203205001",
 			"name": "Plane Shred",
 			"tag": "Blast",
 			"type": "Ability",
-			"description": "Deals minor Wind DMG to a designated single target and any adjacent targets.",
+			"description": "Deals minor Wind DMG to one designated single target and any adjacent targets.",
 			"element": "Wind",
 			"attackType": "Normal",
 			"params": [
@@ -26,11 +33,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203205001"
 		},
 		{
-			"id": "203205002",
 			"name": "Firmament Divider",
 			"tag": "Blast",
 			"type": "Ability",
@@ -42,11 +49,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203205002"
 		},
 		{
-			"id": "203205003",
 			"name": "Safeguard",
 			"tag": "Talent",
 			"type": "Ability",
@@ -56,40 +63,54 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203205003"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
 		}
 	],
 	"weakness": [
 		"Fire",
 		"Wind"
 	],
+	"summons": [],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
 	},
+	"guide": null,
 	"rank": "MinionLv2",
 	"stanceType": "Wind",
 	"id": "2032050"

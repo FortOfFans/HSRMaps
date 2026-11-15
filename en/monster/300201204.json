@@ -3,15 +3,22 @@
 	"description": "Originally a Mr. Domescreen loaded with the general syllabus. The educational materials became banaducational materials due to the influence of the memetic virus. It shifts between banarocky seriousness and sunny banapassion. An indisposable banamployee and a monkey who's a worthy banafriend.",
 	"icon": "spriteoutput/monsterfigure/Monster_3002011.png",
 	"shortIcon": "Monster_3002011",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3002011.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 450,
+		"speed": 110,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "MinionLv2"
 	},
 	"skills": [
 		{
-			"id": "300201201",
 			"name": "Appropriate Teachingnana",
 			"tag": "Talent",
 			"type": "Talent",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300201201"
 		},
 		{
-			"id": "300201202",
 			"name": "Banascary Semester",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -40,11 +47,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300201202"
 		},
 		{
-			"id": "300201203",
 			"name": "Change Banasyllabus",
 			"tag": "Others",
 			"type": "Ability",
@@ -54,11 +61,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300201203"
 		},
 		{
-			"id": "300201204",
 			"name": "Banacademic Incident",
 			"tag": "Talent",
 			"type": "Talent",
@@ -71,11 +78,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300201204"
 		},
 		{
-			"id": "300201205",
 			"name": "",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -87,11 +94,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300201205"
 		},
 		{
-			"id": "300201206",
 			"name": "",
 			"tag": "Talent",
 			"type": "Talent",
@@ -105,35 +112,42 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300201206"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Ice",
 		"Thunder",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 36,
+		"avatarExpReward": 108,
 		"itemList": [
 			{
 				"id": 2,
@@ -144,11 +158,20 @@
 				"count": 1
 			},
 			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
 				"id": 181016,
 				"count": 1
 			}
 		]
 	},
+	"guide": null,
 	"rank": "MinionLv2",
 	"stanceType": "Imaginary",
 	"id": "300201204"

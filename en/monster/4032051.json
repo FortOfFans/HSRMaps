@@ -1,0 +1,112 @@
+{
+	"name": "Black Tide's Decrepit Bow",
+	"description": "A creature warped by the black tide, driven solely by an insatiable thirst for bloodshed.\nHolding a bow imbued with a curse, it can simultaneously attack targets in multiple directions while shooting. Any living being that enters its sight is doomed to face the inescapable aim of its arrows.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032050.png",
+	"shortIcon": "Monster_4032050",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032050.png",
+	"stats": {
+		"baseAttack": 66.666664,
+		"baseDefense": 210,
+		"baseHealth": 0.465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Arrow of the Foul Tide",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to all targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403205101"
+		},
+		{
+			"name": "Corrosive Arrowhead",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When the target's HP is below 0, dispels their Weakness Break state and grants the \"Weakness Protected\" effect to them.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403205102"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032051"
+}

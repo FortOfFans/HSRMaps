@@ -1,0 +1,224 @@
+{
+	"name": "Earthshaker Leo: Solblaze Winged Beast",
+	"description": "In the ancient Era Creatura, Aquila, after forging the Dawn Device, collaborated with Kephale to bring forth the legendary beasts embodying the Titans. Today, the souls of those great beasts are now in utter chaos.",
+	"icon": "spriteoutput/monsterfigure/Monster_4023010.png",
+	"shortIcon": "Monster_4023010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4023010.png",
+	"stats": {
+		"baseAttack": 22.5,
+		"baseDefense": 210,
+		"baseHealth": 13949.999069999998,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Through the Darkness",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Fire DMG to one designated target.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301101"
+		},
+		{
+			"name": "Heralding the Dawn",
+			"tag": "Sweep",
+			"type": "Ability",
+			"description": "Starting from the leftmost target, uses a sweeping attack on 3 consecutive targets, dealing minor Fire DMG with a high chance to Burn the attacked targets.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.2,
+				0.4,
+				0.7,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301102"
+		},
+		{
+			"name": "Light the Future",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Locks on to all targets and enters the \"Light the Future\" state. \"Praise Aquila\" will be used with next action.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301103"
+		},
+		{
+			"name": "Praise Aquila",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Fire DMG to all targets, with a high chance to Burn the attacked targets.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301104"
+		},
+		{
+			"name": "Radiant Macrocosm",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When <u>\"Back Row Target\"</u> is defeated, \"Earthshaker Leo\" takes more DMG.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				3,
+				1,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301105"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				12,
+				16,
+				2,
+				4,
+				20,
+				2,
+				4,
+				2,
+				4,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301106"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				8,
+				12,
+				2,
+				4,
+				2,
+				4,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301107"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [
+		"402201101",
+		"4023021",
+		"4012052"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Fire",
+	"id": "402301101"
+}

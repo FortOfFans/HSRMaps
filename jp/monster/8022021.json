@@ -1,0 +1,177 @@
+{
+	"name": "{RUBY_B#じちっちゅう}次蟄虫{RUBY_E#}",
+	"description": "真蟄虫の幼体。「真蟄虫」の幼体は成長の過程によって「幼蟄虫」と「次蟄虫」に分けられる。",
+	"icon": "spriteoutput/monsterfigure/Monster_8022020.png",
+	"shortIcon": "Monster_8022020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8022020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1116,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 180,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "予備兵器",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次の行動で「起爆拡散」を発動する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802202101"
+		},
+		{
+			"name": "起爆拡散",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "自爆し、指定した味方単体及び隣接する味方に風属性ダメージを与え、高確率で攻撃された味方を「怒噪」状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.2,
+				2.2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802202102"
+		},
+		{
+			"name": "",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				0.5,
+				3,
+				5,
+				0.08
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802202103"
+		},
+		{
+			"name": "虫の断末魔",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受けた時、敵全体に風属性ダメージを与え、高い確率で攻撃を受けた敵の被ダメージを少しアップさせる。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.08,
+				1,
+				0.1,
+				3,
+				10,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802202104"
+		},
+		{
+			"name": "栄養",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受ける時、味方のSPを回復する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802202105"
+		},
+		{
+			"name": "増殖",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「成長ホルモン」1層につき、一定の攻撃力をアップする、最大で3層累積できる。3層に達する時、即座に行動する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802202106"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Wind",
+	"id": "8022021"
+}

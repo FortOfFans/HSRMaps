@@ -1,0 +1,182 @@
+{
+	"name": "厄災の右手",
+	"description": "災厄に見舞われた大地に残るのは苦痛の反響だけ、それこそ終末にあるべき進行曲。\n厄災の右手は虚数属性の広い範囲攻撃を行う。",
+	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
+	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012140.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 90,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "災禍の裂撃",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.6
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214601"
+		},
+		{
+			"name": "荒難の割撃",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の虚数属性ダメージを与え、ランダムな味方2名を「虚数付与」状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214602"
+		},
+		{
+			"name": "劫虐崩裂の時",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に虚数属性ダメージを与え、ランダムな味方3名を「虚数付与」状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214603"
+		},
+		{
+			"name": "対消滅",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "自身がスキルを発動し、味方単体を同時に「量子付与」状態と「虚数付与」状態にした場合、この2つの状態を解除し、その味方に少量の量子属性ダメージと虚数属性ダメージを与え、高確率で「<u>縛り</u>」状態を付与する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1,
+				0.1,
+				0.3,
+				0.6,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214604"
+		},
+		{
+			"name": "仮死",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受けた後、「仮死」状態に入る。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214605"
+		},
+		{
+			"name": "守備",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「守備」状態に入る。弱点撃破状態でない時の被ダメージがダウンする。弱点撃破された時の行動順遅延量がアップし、弱点撃破状態の時の被ダメージがアップする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214606"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111011,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 181003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Imaginary",
+	"id": "8012146"
+}

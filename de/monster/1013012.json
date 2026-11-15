@@ -1,0 +1,223 @@
+{
+	"name": "Automaton: Grizzly (komplett)",
+	"description": "Eine vollständige Projektion, die von kompromittierten Codes erstellt wurde. Sie basiert auf einem Automaton, der mit Technologie aus der Alten Welt zusammengebaut wurde. Er wurde mit einer widerstandsfähigen Panzerung ausgestattet, sodass er sich in den Kampf stürzen und die Silbermähnen-Wachen beschützen kann.\nIm Kampf beschwört ein Automaton: Grizzly (komplett) Automatons des Typs „Spinne“ und entfesselt einen mächtigen, geladenen Angriff.",
+	"icon": "spriteoutput/monsterfigure/Monster_1013010.png",
+	"shortIcon": "Monster_1013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1013010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 697.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Zerstörungsbefehl",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301201"
+		},
+		{
+			"name": "",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301202"
+		},
+		{
+			"name": "Sprengbefehl",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört den Automaton: Spinne.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301203"
+		},
+		{
+			"name": "Wutbefehl",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Hat eine Chance, bei allen Verbündeten Verspotten zu verursachen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				2,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301204"
+		},
+		{
+			"name": "Überlastbefehl",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Bei der nächsten Aktion wird „Vernichtungsbefehl“ gegen alle Verbündeten eingesetzt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301205"
+		},
+		{
+			"name": "Vernichtungsbefehl",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301206"
+		},
+		{
+			"name": "",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301207"
+		},
+		{
+			"name": "Auslöschungsbefehl",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Erhöht den SCH für jeden eingesetzten „Überlastbefehl“. Der erhöhte SCH ist stapelbar.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301208"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.5
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.5
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Thunder"
+	],
+	"summons": [
+		"101202103",
+		"1012030"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "1013012"
+}

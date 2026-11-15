@@ -1,0 +1,109 @@
+{
+	"name": "Düsterklauen-Wolfskrieger",
+	"description": "Ein Borisin-Soldat aus dem Rudel Düsterklauen. Spezialisiert auf die stille Tötung seiner Ziele.",
+	"icon": "spriteoutput/monsterfigure/Monster_2032010.png",
+	"shortIcon": "Monster_2032010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2032010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 186,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Blutbad",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten geringen physischen SCH zu. Wenn sich diese Einheit im Status <u>Mondwahnsinn</u> befindet, besteht eine hohe Chance, dem Ziel Bluten zuzufügen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203201001"
+		},
+		{
+			"name": "Bauch der Bestie",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Wenn ein Gegner einen Angriff ausführt, werden <u>Gegner, die in den Status Mondwahnsinn eintreten können</u>, mit 1 Stapelung <u>Blutdurst</u> belegt. Wenn die Stapelungen von <u>Blutdurst</u> eine bestimmte Zahl erreichen, treten die Gegner in den Status <u>Mondwahnsinn</u> ein.\nIn der Aktionsleiste erscheint ein Countdown für Mondwahnsinn. Zu Beginn der Runde des Countdowns wird <u>Mondwahnsinn</u> von allen Gegnern entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				1,
+				2,
+				6,
+				0.3,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203201002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181013,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "203201004"
+}

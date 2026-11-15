@@ -1,0 +1,239 @@
+{
+	"name": "絶滅者、陽雷の業果、晨昏の目",
+	"description": "覇道をもって天空を統べていた征服者が、暗黒の潮に呑まれた後の姿。かの者の功罪を判断するのは難しいが、今あるのはただ万物を焼き尽くす、滅びの業火のごとき殺意のみ。",
+	"icon": "spriteoutput/monsterfigure/Monster_4015020.png",
+	"shortIcon": "Monster_4015020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4015020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 23250,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 960,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "灰燼の彼方より",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "「<u>枯れ果てた篩骨</u>」を<u>修復</u>し、指定した味方単体に大量の虚数属性固定ダメージを与え、「<u>腐敗</u>」を付与する。なお、追加で付与された「<u>腐敗</u>」は累積される。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1,
+				500,
+				600,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502001"
+		},
+		{
+			"name": "堕ちゆく余塵の星",
+			"tag": "分担",
+			"type": "スキル",
+			"description": "「乾き切った涙骨」を<u>修復</u>し、味方全体に大量の虚数属性固定ダメージを与える。このダメージは味方全体で<u>均等に分担</u>される。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502002"
+		},
+		{
+			"name": "開かれし恐寂の魔眼",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "「暗黒の潮の襲来」状態に入り、次の行動で「燼灰死寂・諸神屠滅」を発動し、「枯れ果てた篩骨」と「乾き切った涙骨」を<u>修復</u>する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502003"
+		},
+		{
+			"name": "燼灰死寂・諸神屠滅",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の虚数属性固定ダメージを与え、「枯れ果てた篩骨」と「乾き切った涙骨」を<u>修復</u>する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502004"
+		},
+		{
+			"name": "遺骨",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "今回の戦闘では、「枯れ果てた篩骨」または「乾き切った涙骨」がダメージを受けると、「絶滅者、陽雷の業果、晨昏の目」も同量のダメージを受ける。また、「枯れ果てた篩骨」または「乾き切った涙骨」がHPが0になる攻撃を受けると、「絶滅者、陽雷の業果、晨昏の目」の靭性が削られ、「枯れ果てた篩骨」または「乾き切った涙骨」のHPが回復し、選択不能な状態になる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				120,
+				1.4,
+				1.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502005"
+		},
+		{
+			"name": "暗黒の潮",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "アクションバーに「暗黒の潮」が追加され、「暗黒の潮」が行動するたび、累積可能な「<u>腐敗</u>」が味方全体に付与される。味方がHPが0になる攻撃を受けた時、「<u>黒蝕</u>」状態になる。味方全体が「<u>黒蝕</u>」状態か戦闘不能状態になると、戦闘失敗になる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				300,
+				1,
+				30,
+				0.8,
+				130,
+				150
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502006"
+		},
+		{
+			"name": "至闇の潮",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "この戦闘において、「絶滅者、陽雷の業果、晨昏の目」が与える全てのダメージは、「暗黒の潮の同調率」に応じた固定ダメージになる。味方が攻撃を行うと「暗黒の潮の同調率」に応じる<u>確定ダメージ</u>を与え、このダメージは<u>「非致死性」</u>となる。「絶滅者、陽雷の業果、晨昏の目」と「暗黒の潮」が行動すると「暗黒の潮の同調率」が上昇し、「枯れ果てた篩骨」または「乾き切った涙骨」が倒れると、「暗黒の潮の同調率」がダウンする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8,
+				16,
+				0.6,
+				1,
+				0.00070000044,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502007"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				1,
+				2,
+				0,
+				0,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502008"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				20,
+				0,
+				0,
+				40
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401502009"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [
+		"4012092",
+		"4012093"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "4015020"
+}

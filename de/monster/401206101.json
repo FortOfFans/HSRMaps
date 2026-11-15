@@ -1,0 +1,125 @@
+{
+	"name": "Der Eroberte",
+	"description": "Die Spitze seiner Lanze definiert grenzenlose Grenzen.\nDie Armeen und Völker inmitten der Grenzen wurden alle bezwungen oder werden es noch.\nDas Blut der Fürchtenden wird zum Honiggebräu, das den göttlichen Körper nährt, und die Seelen der Widerständigen betreten die ehrenvollen Hallen unter dem Fluss der Seelen.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012060.png",
+	"shortIcon": "Monster_4012060",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012060.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1860,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 240,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Sieger auf Milliarden von Gebeinen",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "„Der Eroberte“ führt keine Aktionen aus und erhält bei der Beschwörung <u>Kriegsrüstung</u> oder <u>Veredelte Kriegsrüstung</u>, abhängig von der aktuellen Phase von „Vom Krieg erschütterte, unbesiegbare Armee“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0,
+				0.3,
+				1,
+				0.5,
+				0.015,
+				60
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401206101"
+		},
+		{
+			"name": "Ein Zuhause nach tausend Narben",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn „Der Eroberte“ einen Todesstoß erleidet und seine <u>Kriegsrüstung</u> oder <u>Veredelte Kriegsrüstung</u> noch nicht zerstört ist, werden sofort die entsprechenden Fertigkeitspunkte sowie die Belohnung von <u>Ehre</u> erhalten. Bei einem Todesstoß werden der WDS und die LP von „Vom Krieg erschütterte, unbesiegbare Armee“ reduziert.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				15,
+				1,
+				0,
+				0.05,
+				0.08,
+				0.25,
+				180
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401206102"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Imaginary",
+	"id": "401206101"
+}

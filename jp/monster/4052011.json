@@ -1,0 +1,105 @@
+{
+	"name": "幻覚人魚",
+	"description": "セイレーンの歌声に影響された狂乱者。海に飛び込んだ瞬間に理性が崩壊し、セイレーンの配下となった。",
+	"icon": "spriteoutput/monsterfigure/Monster_4052010.png",
+	"shortIcon": "Monster_4052010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4052010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "翻る海のドレス",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405201101"
+		},
+		{
+			"name": "耐え難いステュクスの孤独",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受けた時、敵全体に大量の氷属性ダメージを与え、敵全体を「氷蝕」状態にする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				30,
+				0.03,
+				3,
+				0.05,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405201102"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Ice",
+	"id": "4052011"
+}

@@ -1,0 +1,195 @@
+{
+	"name": "{RUBY_B#あんこく}暗黒{RUBY_E#}の{RUBY_B#しお}潮{RUBY_E#}の{RUBY_B#まじゅう}魔獣{RUBY_E#}",
+	"description": "暗黒の潮と共に現われた歪んだ造物。空虚な肉体を支えるのは殺戮への渇望だけ。\n人の形を失ったその体は穢れに覆われ、ひどい腐臭を放っている。その歩みが及ぶ場所では、あらゆる生命の気配が奪われていく。",
+	"icon": "spriteoutput/monsterfigure/Monster_4033010.png",
+	"shortIcon": "Monster_4033010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4033010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1022.99966706,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "砕ける岩流",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与える。命中された味方の減少したHPの一部が<u>「侵蝕」</u>に変換される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301001"
+		},
+		{
+			"name": "瞬蝕崩墜",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "連続でランダムな味方単体に物理属性ダメージを与える。命中された味方の減少したHPの一部が<u>「侵蝕」</u>に変換される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301002"
+		},
+		{
+			"name": "汚濁吸収",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "味方が持つ<u>「侵蝕」</u>を吸収する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301003"
+		},
+		{
+			"name": "堕落",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "自身を<u>「禍堕ち」</u>状態にし、次の行動で「濁流奔湧」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301004"
+		},
+		{
+			"name": "濁流奔湧",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与え、味方全体の最大HPの一部を<u>「侵蝕」</u>に変換させる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				0.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301005"
+		},
+		{
+			"name": "汚染",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "味方1人の<u>「侵蝕」</u>が吸収されるたびに、暗黒の潮の魔獣に「垢」を1層付与する。「垢」が一定層数に達した時、次の行動で「堕落」を発動して、「垢」の層数を全てクリアする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.2,
+				0,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301006"
+		},
+		{
+			"name": "汚濁吸収",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "味方が持つ<u>「侵蝕」</u>を吸収する。失敗した場合は、自身の防御力がダウンする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301007"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "403301001"
+}

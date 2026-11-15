@@ -3,15 +3,22 @@
 	"description": "Crystallized elements with only the simplest intelligence. It drifts in the Fragmentum in the form of a bird releasing eerily low temperatures, freezing everything around it.",
 	"icon": "spriteoutput/monsterfigure/Monster_8001020.png",
 	"shortIcon": "Monster_8001020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8001020.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 279,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 30,
+		"speed": 83,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
 		"type": "Minion"
 	},
 	"skills": [
 		{
-			"id": "800102001",
 			"name": "Distract",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,38 +30,51 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800102001"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
 		}
 	],
 	"weakness": [
 		"Fire",
 		"Wind"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 36,
+		"avatarExpReward": 108,
 		"itemList": [
 			{
 				"id": 2,
@@ -65,11 +85,20 @@
 				"count": 1
 			},
 			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
 				"id": 180004,
 				"count": 1
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Minion",
 	"stanceType": "Physical",
 	"id": "800102018"

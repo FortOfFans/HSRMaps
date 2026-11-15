@@ -1,0 +1,234 @@
+{
+	"name": "カカリア・虚妄の母",
+	"description": "「星核」から溢れる裂界エネルギーに同化され、大守護者は虚数エネルギーを操る歌者に幻化した、そしてそれこそ彼女が約束した「新世界」の代弁者である。",
+	"icon": "spriteoutput/monsterfigure/Monster_1005010.png",
+	"shortIcon": "Monster_1005010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1005010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1767,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "砕骨の寒流",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501201"
+		},
+		{
+			"name": "裂魂の寒流",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の氷属性ダメージを与え、高確率で攻撃を受けた味方を凍結状態にする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				6.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501202"
+		},
+		{
+			"name": "滅世の氷雨",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501203"
+		},
+		{
+			"name": "冷酷なる滅世者の呼喚",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「無尽なる冬の槊」を召喚する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501204"
+		},
+		{
+			"name": "創世のコード",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501205"
+		},
+		{
+			"name": "創世紀のプレリュード",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入る。次の行動で味方全体に「創世の絶唱」を発動。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501206"
+		},
+		{
+			"name": "創世の絶唱",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6.5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501207"
+		},
+		{
+			"name": "滅世紀の兆し",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "指定した味方単体をロックオンし、次の行動でこのターゲットに「裂魂の寒流」を発動する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501208"
+		},
+		{
+			"name": "滅世者の決意",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "指定した味方単体に「裂魂の寒流」を発動し、高確率でターゲットを凍結状態にする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501209"
+		},
+		{
+			"name": "創世者の決意",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "段階進行後に速度アップ、攻撃が虚数属性に変化。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.75,
+				0.888,
+				40
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501210"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"1002017",
+		"1002018"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Ice",
+	"id": "1005012"
+}

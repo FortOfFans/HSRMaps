@@ -1,0 +1,224 @@
+{
+	"name": "地を震わす獅子・炎の如き飛翼獣",
+	"description": "遥か遠い昔、造物紀だった頃、エーグルは黎明のミハニを造り上げた後、ケファレの協力のもとタイタンたちを代表する奇獣を創造した。今では、あの偉大なる巨獣たちの魂はすでに混沌と化している。",
+	"icon": "spriteoutput/monsterfigure/Monster_4023010.png",
+	"shortIcon": "Monster_4023010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4023010.png",
+	"stats": {
+		"baseAttack": 22.5,
+		"baseDefense": 210,
+		"baseHealth": 13949.999069999998,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "暗闇を突き破って",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301101"
+		},
+		{
+			"name": "夜明けの訪れ",
+			"tag": "薙ぎ払い",
+			"type": "スキル",
+			"description": "味方パーティの左側から3ターゲットを薙ぎ払い、少量の炎属性ダメージを与え、高確率で命中したターゲットを燃焼状態にする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.2,
+				0.4,
+				0.7,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301102"
+		},
+		{
+			"name": "灯された未来",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "味方全体をロックオンし、「灯された未来」状態に入る。次の行動で「エーグルへの賛美」を発動する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301103"
+		},
+		{
+			"name": "エーグルへの賛美",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に炎属性ダメージを与え、高確率で命中したターゲットを燃焼状態にする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301104"
+		},
+		{
+			"name": "天地を照らす光",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "<u>「後方ターゲット」</u>が倒された時、「地を震わす獅子」の受けるダメージがアップする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				3,
+				1,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301105"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				12,
+				16,
+				2,
+				4,
+				20,
+				2,
+				4,
+				2,
+				4,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301106"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				8,
+				12,
+				2,
+				4,
+				2,
+				4,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301107"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [
+		"402201101",
+		"4023021",
+		"4012052"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Fire",
+	"id": "402301101"
+}

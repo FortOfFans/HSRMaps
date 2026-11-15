@@ -1,0 +1,234 @@
+{
+	"name": "Gepard (komplett)",
+	"description": "Eine vollständige Projektion, die von kompromittierten Codes erstellt wurde. Sie basiert auf dem Anführer der Silbermähnen-Wachen.\nGepard (komplett) befehligt seine Soldaten, ihre Angriffe zu bündeln, und bietet ihnen ein Schild, um Angriffe zu blockieren.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004020.png",
+	"shortIcon": "Monster_1004020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004020.png",
+	"stats": {
+		"baseAttack": 15,
+		"baseDefense": 210,
+		"baseHealth": 604.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Faust der Überzeugung",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402201"
+		},
+		{
+			"name": "Mit Frost geschlagen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402202"
+		},
+		{
+			"name": "Aurafeld der Garnison",
+			"tag": "Verteidigung",
+			"type": "Fähigkeit",
+			"description": "Erzeugt einen Schild für alle Gegner, der erlittenen SCH absorbiert und verhindert, dass ihr WDS reduziert wird.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1.2,
+				0.3,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402203"
+		},
+		{
+			"name": "Eisiger Wasserfall",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Eis-SCH zu und erhöht den verursachten SCH ein wenig. Die SCH-Erhöhung ist stapelbar.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.8,
+				0.12,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402204"
+		},
+		{
+			"name": "Belagern",
+			"tag": "Anvisieren",
+			"type": "Fähigkeit",
+			"description": "Gepard visiert einen Verbündeten an, wodurch alle Gegner sofort koordinierte Angriffe auf das Ziel starten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402205"
+		},
+		{
+			"name": "",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402207"
+		},
+		{
+			"name": "Auge um Auge, Zahn um Zahn",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "Bewirkt für 1 Rd. den Status Konter. Erfolgt in diesem Status ein Angriff durch einen Verbündeten, wird sofort „Mit Frost geschlagen“ gegen den Angreifer eingesetzt. Dieser Effekt kann nur 1-mal ausgelöst werden.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402208"
+		},
+		{
+			"name": "Unterstützung",
+			"tag": "Beschwören",
+			"type": "Talent",
+			"description": "Beschwört zu Beginn der Phase sofort Silbermähnen-Soldaten oder Silbermähnen-Kanoniere.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402209"
+		},
+		{
+			"name": "Unterstützung",
+			"tag": "Beschwören",
+			"type": "Talent",
+			"description": "Beschwört zu Beginn der Phase sofort Silbermähnen-Kanoniere.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402210"
+		},
+		{
+			"name": "Unterstützung",
+			"tag": "Beschwören",
+			"type": "Talent",
+			"description": "Beschwört zu Beginn der Phase sofort Silbermähnen-Leutnant (komplett).",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402211"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [
+		"1003012",
+		"100203001",
+		"100204101"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "1004022"
+}

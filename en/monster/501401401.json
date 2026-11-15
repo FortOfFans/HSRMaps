@@ -1,0 +1,448 @@
+{
+	"name": "Super Idol: Center of Attention",
+	"description": "Planarcadia's hottest streamer Sparxie is going live! Tonight, witness SparxiCon where she'll unveil her brand-new look for her adoring fans!",
+	"icon": "spriteoutput/monsterfigure/Monster_5014010.png",
+	"shortIcon": "Monster_5014010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5014010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 20460,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1320,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Commence Chat Bombing!",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "If all sub-field friendly units are defeated when <u>Live Showdown</u> is dispelled, increases the DMG taken by all friendly units, delays their actions, recovers Skill Points, and enables <u>Aha</u> to immediately gain 1 <u>extra turn</u> where a fixed amount of <u>Punchline</u> is taken into account. This extra turn does not consume <u>Punchline</u>. If not all sub-field friendly units are defeated when <u>Live Showdown</u> is dispelled, then deals massive Quantum DMG to target characters going into the sub-field, and inflicts them with \"Entanglement.\"",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				2,
+				6,
+				1,
+				20,
+				6,
+				0.5,
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401406"
+		},
+		{
+			"name": "Commence Chat Bombing!",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "If all sub-field friendly units have been defeated when <u>Live Showdown</u> is dispelled, increases DMG taken by all friendly units, delays their actions, restores Skill Points, and grants <u>Aha</u> 1 <u>extra turn</u> where a fixed amount of <u>Punchline</u> is taken into account. This turn does not consume <u>Punchline</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401407"
+		},
+		{
+			"name": "Bullet Comments Ready!",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "When <u>Live Showdown</u> is dispelled, if the sub-field friendly units are still not defeated, it will deal Quantum DMG to all targets and has a chance to inflict <u>random Bullet Comments penalties</u>. The higher the remaining HP percentage of the sub-field friendly units, the higher the DMG dealt and the higher the probability of penalties.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				12,
+				2,
+				0.1,
+				2,
+				1.2,
+				1,
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401408"
+		},
+		{
+			"name": "Net Battle!",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Quantum DMG to one designated target.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401401"
+		},
+		{
+			"name": "Bring the Beat In!",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Quantum DMG to all targets.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401402"
+		},
+		{
+			"name": "Get On the Mic!",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Initiates <u>Live Showdown</u> and selects one target character to fight in sub-field while other characters remain in the prime-field providing support. During <u>Live Showdown</u>, Elation Skills can only target sub-field friendly units. A Live Showdown countdown appears in the Action Order.\nThe <u>Live Showdown</u> will be dispelled when any of these conditions are met: countdown ends, the sub-field target character is downed, all sub-field friendly units are defeated, or when there are no sub-field target characters left available to battle.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0,
+				3,
+				0.3,
+				0.6,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401403"
+		},
+		{
+			"name": "Stream Promo",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "Apply the \"Flooding Viewers\" state to sub-field friendly units, advancing their actions and increasing their CRIT Rate.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.25,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401404"
+		},
+		{
+			"name": "Friendship Level Adjustment",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "After <u>Live Showdown</u> is activated, attacking \"Output Port 1\" will increase \"Ally Popularity,\" while attacking \"Output Port 2\" will decrease \"Enemy Popularity.\" When \"Ally Popularity\" increases, \"Output Port 1\" action advances, and when \"Enemy Popularity\" decreases, \"Output Port 2\" action advances.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3,
+				0.6,
+				4,
+				0,
+				5,
+				0.15,
+				600,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401409"
+		},
+		{
+			"name": "Fan Frenzy",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "After <u>Live Showdown</u> is activated, friendly targets on the prime-field receive reduced DMG and become immune to Crowd Control debuffs. When <u>Live Showdown</u> is dispelled, if all friendly targets on the sub-field are defeated, this effect will be removed. Otherwise, based on the remaining HP percentage of sub-field friendly targets, a portion of the DMG Reduction effect will be retained until the next <u>Live Showdown</u> is activated. If this unit's HP drops to a certain percentage without having activated <u>Live Showdown</u>, this unit's action advances.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401410"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401411"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401412"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401413"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401414"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401415"
+		},
+		{
+			"name": "Super Idol",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "At the start of this unit's turn, both \"Ally Popularity\" and \"Enemy Popularity\" are reset to their initial states.\nWhen attacks cause \"Ally Popularity\" to reach its maximum or \"Enemy Popularity\" to reach its minimum, reduce the HP of all friendly units on the sub-field and gain a certain amount of Punchline.\nWhen all friendly units on the sub-field are eliminated, massively reduce \"Super Idol: Center of Attention's\" Toughness and HP.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401416"
+		},
+		{
+			"name": "Dedicated Streamer",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "At the start of Combat, this unit enters the \"<u>Toughness Lock</u>\" state. When <u>Live Showdown</u> is dispelled, this unit dispels the \"<u>Toughness Lock</u>\" state. When <u>Live Showdown</u> is initiated or during phase transitions, this unit re-enters the \"<u>Toughness Lock</u>\" state.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401417"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"501207101",
+		"501208101",
+		"501203107",
+		"501301003",
+		"501401103"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101601",
+				"name": "Steadfast Safeguard",
+				"description": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is broken</color>, action gets additionally delayed and DMG taken increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101602",
+				"name": "Biphasic Battlefield",
+				"description": "The Boss Mirage will initiate a <u>Live Showdown</u> during combat, selecting one ally character to battle on the sub-field while the remaining characters stay on the prime-field to provide Support. Once the <u>Live Showdown</u> begins, enemy targets on the prime-field take reduced DMG and become immune to Crowd Control debuffs, and the Boss Mirage enters the \"<u>Toughness Lock</u>\" state. When the Boss Mirage's turn starts, both \"Ally Popularity\" and \"Enemy Popularity\" reset to their initial states.",
+				"params": []
+			},
+			{
+				"id": "101603",
+				"name": "Popularity Burst",
+				"description": "Increases the max \"Ally Popularity\" and \"Enemy Popularity.\"",
+				"params": []
+			},
+			{
+				"id": "101604",
+				"name": "Basking in Popularity",
+				"description": "For each \"Ally Popularity\" or \"Enemy Popularity\" that hasn't hit the Limit, DMG taken by all enemies is reduced.",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10161",
+				"name": "Super Idol: Center of Attention",
+				"description": "At the start of combat, when entering the second phase, and when Live Showdown begins, the Boss Mirage enters \"Toughness Lock\" state. When Live Showdown ends, the Boss Mirage's \"Toughness Lock\" state is dispelled.",
+				"answer": "Strategy: When the Boss Mirage initiates a Live Showdown, prioritize sending characters with higher DMG output to the sub-field. The remaining characters should focus on attacking \"Output Port 1\" and \"Output Port 2\" to provide support.",
+				"skills": [
+					{
+						"id": "101611",
+						"type": "Normal",
+						"name": "How to Efficiently Reduce Boss Mirage Toughness",
+						"texts": [
+							{
+								"description": "Defeat all enemy targets in the sub-field to end the Live Showdown, massively reduce the Boss Mirage's Toughness, and dispel the Boss Mirage's \"Toughness Lock\" state.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101612",
+						"type": "Normal",
+						"name": "How to Support Sub-Field Characters",
+						"texts": [
+							{
+								"description": "Characters remaining on the prime-field can attack \"Output Port 1\" and \"Output Port 2\" to provide buffs for the ally character on the sub-field and reduce the HP of enemy targets on the sub-field.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Boss Mirage and its summons take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is Broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "At the start of combat, when entering the second phase, and when Live Showdown begins, the Boss Mirage enters the <color=#f29e38ff>\"Toughness Lock\"</color> state. When Live Showdown ends, the Boss Mirage's <color=#f29e38ff>\"Toughness Lock\"</color> state is removed.",
+				"params": []
+			},
+			{
+				"description": "At the start of Boss Mirage's turn, both \"Ally Popularity\" and \"Enemy Popularity\" are <color=#f29e38ff>reset to their initial states</color>. When attacks cause \"Ally Popularity\" to <color=#f29e38ff>reach its maximum</color> or <color=#f29e38ff>\"Enemy Popularity\" to reach its minimum</color>, reduce the HP of all enemy targets on the sub-field and gain a certain amount of Punchline. When all enemy targets on the sub-field are eliminated, massively reduce Boss Mirage's Toughness and HP.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Prioritize defeating all enemy targets in the sub-field to make the Boss Mirage disconnect from the Live Showdown and Weaken the Boss Mirage.",
+				"params": []
+			},
+			{
+				"description": "Actively attacking \"Output Port 1\" and \"Output Port 2\" on the prime-field will grant buffs to the ally character in the sub-field and reduce the HP of enemy targets on the sub-field.",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "501401401"
+}

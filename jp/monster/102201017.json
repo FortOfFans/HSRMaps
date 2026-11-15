@@ -1,0 +1,106 @@
+{
+	"name": "外勤社員（幻像）",
+	"description": "「スターピースカンパニー」の平社員。主に表に出ない「業務の漏れ」を処理するのが仕事である。給料は高くないため、カンパニー傘下の企業艦でシェアハウスするしかない。",
+	"icon": "spriteoutput/monsterfigure/Monster_1022010.png",
+	"shortIcon": "Monster_1022010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1022010.png",
+	"stats": {
+		"baseAttack": 7.2,
+		"baseDefense": 210,
+		"baseHealth": 279,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 60,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "霜枯れの一撃",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与える、攻撃を受けた味方の行動順を遅らす。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102201001"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112001,
+				"count": 1
+			},
+			{
+				"id": 112002,
+				"count": 1
+			},
+			{
+				"id": 112003,
+				"count": 1
+			},
+			{
+				"id": 181005,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "102201017"
+}

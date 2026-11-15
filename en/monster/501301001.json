@@ -1,0 +1,184 @@
+{
+	"name": "Rocking Rebel",
+	"description": "A die-hard rock music fan. In pursuit of his musical dreams, he ventured down a dark path. But at the end of the day, he's still just a fan.\nHates \"bassist jokes\" with a passion.\nSome third-rate media outlets speculated that \"the bass is his true form\" based on his design, but that's pure rumor... the bass is actually being coerced.",
+	"icon": "spriteoutput/monsterfigure/Monster_5013010.png",
+	"shortIcon": "Monster_5013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5013010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930.000744,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Sweep the Left!",
+			"tag": "Sweep",
+			"type": "Ability",
+			"description": "Starting from the leftmost target, uses a sweeping attack on 3 consecutive targets, dealing minor Imaginary DMG.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301001"
+		},
+		{
+			"name": "Sweep the Right!",
+			"tag": "Sweep",
+			"type": "Ability",
+			"description": "Starting from the rightmost target, uses a sweeping attack on 3 consecutive targets, dealing minor Imaginary DMG.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301002"
+		},
+		{
+			"name": "Performance Rehearsal",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters Charging state. On its next action, uses \"Time to Rock!\" When Aha Instant triggers, immediately dispels the Charging state, grants the target team <u>Punchline</u>, and increases DMG taken by this unit.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				10,
+				0.4,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301003"
+		},
+		{
+			"name": "Time to Rock!",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals massive Imaginary DMG to all targets.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301004"
+		},
+		{
+			"name": "Get Hyped!",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "If this unit is not in \"Frenzied Rendition\" state, increases SPD of friendly units other than this unit. If this unit is in the \"Frenzied Rendition\" state, deals Imaginary DMG to friendly units other than this unit, with a chance to inflict the \"<u>Revelry</u>\" state to them, and grants the target team <u>Punchline</u>.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				2,
+				1,
+				1,
+				0.1,
+				120,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301005"
+		},
+		{
+			"name": "Music Madness",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When Aha Instant is activated, this unit gains the \"Frenzied Rendition\" state, making the effects of \"Get Hyped!\" more Elated.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "501301001"
+}

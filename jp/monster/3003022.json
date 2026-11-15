@@ -1,0 +1,160 @@
+{
+	"name": "ナイトメア劇団・スウィート・ゴリラ（バグ）",
+	"description": "コードが影響を受けた後、バグってしまった投影。夢境での感情の干渉により、暴走してしまったピノコニーのサービスロボットを参照にしている。\n本来は「スラーダ」の搬送員だった。暴走した後も職務を放棄せず、来客たちにプレゼントを投げ捨てている。",
+	"icon": "spriteoutput/monsterfigure/Monster_3003020.png",
+	"shortIcon": "Monster_3003020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1953,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "フリードリンク（飲み放題）",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方1人に氷属性のダメージを与え、攻撃がバリアをもっていない味方に命中した後、低確率でその味方を凍結状態にする。味方がバリアを持つ場合、ダメージを与えた後、自身に氷属性のダメージを与え、高確率で自身の防御力をダウンする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.8,
+				0.08,
+				1.5,
+				0.2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302201"
+		},
+		{
+			"name": "狂気の飲み放題",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "ランダムな味方単体に氷属性ダメージを4回与え、各段攻撃がバリアをもっていない味方に命中した後、高確率でその味方を凍結状態にする。味方がバリアを持つ場合、ダメージを与えた後、自身に氷属性ダメージを与え、高確率で自身の防御力をダウンする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.08,
+				1.5,
+				0.2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302202"
+		},
+		{
+			"name": "スラーダパーティ",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「ソーダドッグ」を2体召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302203"
+		},
+		{
+			"name": "スラーダ噴水",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態になり、靭性保護を獲得し、次の行動時に「狂気の飲み放題」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1,
+				1,
+				0.5,
+				1,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302204"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [
+		"3002030"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 182010,
+				"count": 1
+			},
+			{
+				"id": 183006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "3003022"
+}

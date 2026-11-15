@@ -1,0 +1,95 @@
+{
+	"name": "喰云之首",
+	"description": "心兽之首，饮星辉，喰云埃。",
+	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
+	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2032040.png",
+	"stats": {
+		"baseAttack": 15,
+		"baseDefense": 210,
+		"baseHealth": 4650,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 660,
+		"speed": 86,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "喰云",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成少量风属性伤害。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				0,
+				0.5,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203204201"
+		},
+		{
+			"name": "吐纳太虚",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "处于共鸣状态时施放，对我方全体目标造成风属性伤害，并大概率使受到攻击的我方目标陷入<u>怒噪</u>状态。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203204202"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Wind",
+	"id": "2032042"
+}

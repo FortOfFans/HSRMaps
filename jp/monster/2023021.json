@@ -1,0 +1,157 @@
+{
+	"name": "豊穣の霊獣・長右（バグ）",
+	"description": "コードが影響を受けた後、バグってしまった投影。凄まじい破壊力を持ち、岩のように大きな蒼猿を参照している。\n前回「建木」が佇立した時、仙舟人は奇術で数多の珍獣を育種した。その中で、長右は従軍する戦獣の1つである。",
+	"icon": "spriteoutput/monsterfigure/Monster_2023020.png",
+	"shortIcon": "Monster_2023020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2023020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1674,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 172,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "獣撃",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "味方単体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202302101"
+		},
+		{
+			"name": "怒哮",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "ランダムな味方単体をロックオンする。味方が戦闘スキルを発動した時、ロックオン対象が最後に戦闘スキルを発動した味方に変わり、「元気」を1層獲得する。次に「獣撃」を発動した時、すべての「元気」を消費し、消費した「元気」の数に応じて攻撃力をアップする。弱点撃破された時、すべての「元気」を失う。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202302102"
+		},
+		{
+			"name": "",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202302103"
+		},
+		{
+			"name": "猿鳴",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202302104"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202302105"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113002,
+				"count": 1
+			},
+			{
+				"id": 113003,
+				"count": 1
+			},
+			{
+				"id": 182002,
+				"count": 1
+			},
+			{
+				"id": 183001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "2023021"
+}

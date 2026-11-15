@@ -1,0 +1,166 @@
+{
+	"name": "God-Devourer Offspring",
+	"description": "A monstrous legion created from Asat Pramad's split \"Voracity\" power, now the prototype of the \"imagenae.\" Asat Pramad sensed within the dormant core from Ahatopia an unending hunger tied to the Voracity, whose pulsation resonated closely with the Path of Destruction. Amused by this restless force, he began his dark creation: erasing human heads, leaving only grinning, devouring mouths that howl, demand, and consume without end.",
+	"icon": "spriteoutput/monsterfigure/Monster_5023020.png",
+	"shortIcon": "Monster_5023020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5023020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 418.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Rite of Gorging",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Fire DMG to one designated target, with a high chance to reduce the attacked target's DEF.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.8,
+				0.2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302001"
+		},
+		{
+			"name": "Feast of the Living Offering",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Causes one designated target character to enter the \"Devour\" state, reducing their Maximum Restorable HP and stealing a certain percentage of the character's ATK.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1000,
+				6,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302002"
+		},
+		{
+			"name": "Rite of Expiation",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When the \"Devour\" state applied by this unit is dispelled, increases the ATK of the target unit who has dispelled the \"Devour\" state.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302003"
+		},
+		{
+			"name": "Banquet of Beasts",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals minor Fire DMG to all targets.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.4
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302004"
+		},
+		{
+			"name": "Sacred Regurgitation",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Each time after this unit is attacked by a target unit, increases the Maximum Restorable HP of the target character inflicted with the \"Devour\" state by this unit, and returns a certain percentage of ATK. After receiving a certain number of attacks from target units, or when its Weakness is Broken, dispels the \"Devour\" state applied by this unit.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Fire",
+	"id": "502302005"
+}

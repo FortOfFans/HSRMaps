@@ -3,15 +3,22 @@
 	"description": "An Interastral Peace Corporation senior staff member with a minimal rank of project team leader. The mech they drive belongs to the IPC. If damaged, its repair fees have to be paid out-of-pocket. With a half-decent salary, they can at least afford to rent a one-bedroom apartment on one of the IPC's enterprise ships.",
 	"icon": "spriteoutput/monsterfigure/Monster_8033010.png",
 	"shortIcon": "Monster_8033010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8033010.png",
 	"stats": {
 		"baseAttack": 5.99999436,
 		"baseDefense": 210,
 		"baseHealth": 12090,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "803301001",
 			"name": "Disciplined",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301001"
 		},
 		{
-			"id": "803301002",
 			"name": "Cost Reduction",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -39,11 +46,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301002"
 		},
 		{
-			"id": "803301003",
 			"name": "In Training...",
 			"tag": "Charging",
 			"type": "Ability",
@@ -53,11 +60,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301003"
 		},
 		{
-			"id": "803301004",
 			"name": "Work Culture Shock",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -69,11 +76,11 @@
 			],
 			"spGain": 20,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301004"
 		},
 		{
-			"id": "803301005",
 			"name": "<unbreak>720</unbreak>-Degree Review",
 			"tag": "Enhance",
 			"type": "Ability",
@@ -83,11 +90,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301005"
 		},
 		{
-			"id": "803301006",
 			"name": "Team Building",
 			"tag": "Summon",
 			"type": "Ability",
@@ -100,11 +107,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301006"
 		},
 		{
-			"id": "803301007",
 			"name": "Performance Boost",
 			"tag": "Talent",
 			"type": "Talent",
@@ -116,35 +123,45 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803301007"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Ice",
 		"Thunder",
 		"Imaginary"
 	],
+	"summons": [
+		"803201008",
+		"803202009"
+	],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
@@ -160,6 +177,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "803301007"

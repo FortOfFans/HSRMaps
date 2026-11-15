@@ -1,0 +1,218 @@
+{
+	"name": "Borisin-Kriegshäuptling: Hoolay",
+	"description": "Ein Anführer der Borisin, der die Zehn unverzeihlichen Sünden begangen hat und auf ewig am Fuße des Kerkers der Ketten gefangen ist.\nDer Herr der Wölfe trägt den Hass von sieben Jahrhunderten bitterer Gefangenschaft in sich und fordert ganz Xianzhou Luofu heraus, nachdem er aus seinem Käfig ausgebrochen hatte. Doch hinter seinen wahnsinnigen Handlungen scheint sich ein anderes Ziel zu verbergen ...",
+	"icon": "spriteoutput/monsterfigure/Monster_2034010.png",
+	"shortIcon": "Monster_2034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2557.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Zerbrochene Schwerter als Zähne",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Blitz-SCH zu.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401001"
+		},
+		{
+			"name": "Abgetrenntes Eisen als Klauen",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten Blitz-SCH zu.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1.8,
+				1.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401002"
+		},
+		{
+			"name": "Unfruchtbarkeit aufgerissener Erde",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Verzögert die Aktionen aller Ziele (außer dieser Einheit) und verursacht geringen Blitz-SCH.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.3,
+				0.5,
+				1000
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401003"
+		},
+		{
+			"name": "Vernichtung der tosenden Stürme",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Blitz-SCH zu.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401004"
+		},
+		{
+			"name": "Wolfsjagd ruft blutigen Glanz",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten massiven Blitz-SCH zu und verursacht mit hoher Chance <u>Umzingelnde Angst</u>.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				5,
+				1,
+				60
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401005"
+		},
+		{
+			"name": "Kriegshäuptling Mondwahnsinn",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Nachdem ein Gegner einen Angriff ausgeführt hat, werden <u>Gegner, die in den Status Mondwahnsinn eintreten können</u>, mit 1 Stapelung <u>Blutdurst</u> belegt. Wenn die Stapelungen von <u>Blutdurst</u> eine bestimmte Zahl erreichen, treten die Gegner in den Status <u>Mondwahnsinn</u> ein.\nIn der Aktionsleiste erscheint ein Countdown für Mondwahnsinn. Zu Beginn der Runde des Countdowns wird <u>Mondwahnsinn</u> von allen Gegnern entfernt.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				4,
+				6,
+				0.8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401006"
+		},
+		{
+			"name": "Mondgeheul des Wolfes",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Wenn Hoolay in den Status <u>Mondwahnsinn</u> eintritt, erhält er jedes Mal, nachdem ein Gegner angegriffen hat, 1 Stapelung „Erzürnt“. Wenn Hoolay angreift, erhält er zusätzlich 1 Stapelung Erzürnt. Nach jedem Angriff von Verbündeten wird Erzürnt um 1 Stapelung verringert. Erzürnt besitzt eine anfängliche Stapelzahl. Wenn die Stapelungen von Erzürnt eine bestimmte Zahl erreichen, setzt Hoolay „Wolfsjagd ruft blutigen Glanz“ ein und entfernt alle Stapelungen von Erzürnt. Wenn die Stapelzahl durch den Angriff eines Verbündeten auf 0 sinkt, wird Hoolays WDS reduziert und die Stapelungen von Erzürnt werden auf eine bestimmte Zahl zurückgesetzt.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				8,
+				3,
+				180,
+				4,
+				0.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401007"
+		},
+		{
+			"name": "Das Rudel gehorcht meinem Heulen",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "Fügt der Aktionsreihenfolge „Beschwörung des Wolfsrudels“ hinzu. Beschwört bei jeder Aktion von „Beschwörung des Wolfsrudels“ einen Düsterklauen-Wolfskrieger oder einen Finstermond-Wolfskrieger. Wenn ein Gegner in den Status <u>Mondwahnsinn</u> eintritt, wird die Aktion von „Beschwörung des Wolfsrudels“ verzögert.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.15,
+				0.33
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401008"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [
+		"203201003",
+		"203202004"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "203401002"
+}

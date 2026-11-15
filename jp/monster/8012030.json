@@ -1,0 +1,112 @@
+{
+	"name": "ヴォイドレンジャー・{RUBY_B#まっしょう}抹消{RUBY_E#}",
+	"description": "死亡後、裂界に侵蝕された亡骸、異質なバイタルサインを発しているが、生前と変わらず抹消命令を執行している。\nヴォイドレンジャー・抹消は攻撃が命中した味方をマークする、マークされたターゲットは攻撃されるとさらにダメージを受ける。",
+	"icon": "spriteoutput/monsterfigure/Monster_8012030.png",
+	"shortIcon": "Monster_8012030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 195.3,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "虚灼砲",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に虚数属性ダメージを与え、自身を「オーバーヒート」状態にする。攻撃を受けた味方は確率で「起爆」状態になる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.75,
+				0.4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801203001"
+		},
+		{
+			"name": "熱障阻塞",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "自身の「オーバーヒート」状態を解除する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 0.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801203002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111011,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 181003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "8012030"
+}

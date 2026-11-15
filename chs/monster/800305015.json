@@ -1,0 +1,177 @@
+{
+	"name": "兴风者",
+	"description": "在裂界延展中遭遇侵蚀的怪物，在力量的本源发生畸变后拥有了更为灵活的战斗方式。\n兴风者会利用风的力量协助自己战斗，借助风向射出更为迅猛的箭矢。",
+	"icon": "spriteoutput/monsterfigure/Monster_8003050.png",
+	"shortIcon": "Monster_8003050",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003050.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1023,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "巡风光陨",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成风属性伤害，并大概率使其陷入风化状态。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305001"
+		},
+		{
+			"name": "踏风而行",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成少量风属性伤害，并有概率使受到攻击的我方目标陷入风化状态。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305002"
+		},
+		{
+			"name": "拈风张弩",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，并锁定陷入风化状态的所有我方目标，下次行动施放【风落暴矢】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305003"
+		},
+		{
+			"name": "风落暴矢",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对处于风化状态的我方目标造成风属性伤害。若场上没有处于风化状态的我方目标，则本技能施放失败。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305004"
+		},
+		{
+			"name": "风浪急旋",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "攻击陷入风化状态的我方目标后，自身攻击力小幅提高。当弱点被击破时，该效果解除。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.08,
+				2,
+				5,
+				0.75,
+				2,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305005"
+		},
+		{
+			"name": "风落暴矢",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对处于风化状态的我方目标造成风属性伤害。若场上没有处于风化状态的我方目标，则本技能施放失败。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800305015"
+}

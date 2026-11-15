@@ -1,0 +1,517 @@
+{
+	"name": "万籁齐响的指挥家",
+	"description": "「齐响诗班」众愿之多米尼克斯，是为「同谐」希佩的众相化身之一，因「秩序」的干扰展现出不同以往的面貌。作为集群意识对愿望的回应，他指挥的颂歌能依照万千愿望重塑世界，建立新的法则，而所有许愿者都会成为其力量的来源。",
+	"icon": "spriteoutput/monsterfigure/Monster_3025010.png",
+	"shortIcon": "Monster_3025010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3025010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 16275,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 240,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 10,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "幽雅的",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501301"
+		},
+		{
+			"name": "庄严的",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501302"
+		},
+		{
+			"name": "在梦中的",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "使指定我方单体大概率陷入【<u>异梦</u>】状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501303"
+		},
+		{
+			"name": "变奏",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，下回合施放【于梦中起舞】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501304"
+		},
+		{
+			"name": "转音",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，下回合施放【在雨中高歌】，同时恢复所有「旧梦的回声」的韧性。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501305"
+		},
+		{
+			"name": "于梦中起舞",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "使所有可以行动的「旧梦的回声」对指定我方单体造成虚数属性伤害。若没有可以行动的「旧梦的回声」则本技能施放失败，同时削减大量韧性。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				240
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501306"
+		},
+		{
+			"name": "于梦中起舞",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "使所有可以行动的「旧梦的回声」对指定我方单体造成虚数属性伤害。若没有可以行动的「旧梦的回声」则本技能施放失败，同时削减大量韧性。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501307"
+		},
+		{
+			"name": "在雨中高歌",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成虚数属性伤害，并使所有可以行动的「旧梦的回声」对我方全体造成虚数属性伤害。若没有可以行动的「旧梦的回声」则本技能施放失败，同时削减大量韧性。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				3,
+				0.5,
+				240
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501308"
+		},
+		{
+			"name": "音域无垠",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使自身进入【和光同尘】状态，获得护盾，造成的伤害提高。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.09,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501309"
+		},
+		{
+			"name": "",
+			"tag": "强化",
+			"type": "技能",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501310"
+		},
+		{
+			"name": "太初有道",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，7回合后施放【太初有为】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501311"
+		},
+		{
+			"name": "太初有为",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成大量虚数属性伤害，该伤害无视目标的防御力。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501312"
+		},
+		{
+			"name": "洪钟大吕",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "「万籁齐响的指挥家」在处于【太初有力】状态时，将在我方目标每次行动后立即行动，并免疫来自我方目标造成的行动延后效果，同时被弱点击破时不会打断【太初有为】的计数。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				10,
+				10,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501313"
+		},
+		{
+			"name": "大梦初醒",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "「万籁齐响的指挥家」召唤四个「旧梦的回声」，「旧梦的回声」受到的伤害均由「万籁齐响的指挥家」承受，同时每次回合结束时都会使处于弱点击破状态的「旧梦的回声」恢复韧性。自身每层韧性被击破后，对我方施加【<u>在光明中行</u>】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.25,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501314"
+		},
+		{
+			"name": "苦乐同享",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501315"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501316"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501317"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501318"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501319"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501320"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"3022011"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 2,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100701",
+				"name": "坚防守备",
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100702",
+				"name": "韵律不息",
+				"description": "召唤物受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。当首领幻影被<color=#f29e38ff>弱点击破</color>后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100703",
+				"name": "苦乐同享",
+				"description": "首领幻影将自身弱点属性<color=#f29e38ff><u>分享</u></color>给召唤物，同时非对应弱点的属性抗性提高<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
+				"params": [
+					0.4
+				]
+			},
+			{
+				"id": "100704",
+				"name": "神主赐福",
+				"description": "召唤物的韧性上限提高<color=#f29e38ff><unbreak>#1[i]</unbreak></color>。",
+				"params": [
+					10
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10071",
+				"name": "阶段一：万众齐颂",
+				"description": "首领幻影会释放【于梦中起舞】和【在雨中高歌】造成高额伤害。",
+				"answer": "应对策略：在【于梦中起舞】和【在雨中高歌】施放前尽可能击破召唤物。",
+				"skills": [
+					{
+						"id": "100711",
+						"type": "Normal",
+						"name": "如何充能和使用【遥远地平的长音】",
+						"texts": [
+							{
+								"description": "召唤物被弱点击破后会为【遥远地平的长音】充能。【遥远地平的长音】能对敌方全体造成韧性削减，尽可能使其命中更多未进入弱点击破状态的敌人，使韧性削减收益最大化。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100712",
+						"type": "Normal",
+						"name": "应对首领幻影的【于梦中起舞】和【在雨中高歌】造成的伤害",
+						"texts": [
+							{
+								"description": "尽可能击破召唤物，以削弱【于梦中起舞】和【在雨中高歌】的伤害。未被击破的召唤物越多，首领幻影【于梦中起舞】和【在雨中高歌】造成的伤害越高。当所有召唤物都处于被击破状态时，首领幻影施放【于梦中起舞】和【在雨中高歌】时会使自身受到韧性削减。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100713",
+						"type": "Normal",
+						"name": "应对【异梦】状态的控制效果",
+						"texts": [
+							{
+								"description": "提高效果抵抗或使用技能解除【异梦】状态。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10072",
+				"name": "阶段二：最终乐章",
+				"description": "【旧梦的回声】不会离开战场，【太初有为】不会被打断。",
+				"answer": "应对策略：击破敌方韧性为【遥远地平的长音】充能，同时为我方获取护盾。",
+				"skills": [
+					{
+						"id": "100721",
+						"type": "Normal",
+						"name": "应对首领幻影的【太初有为】造成的伤害",
+						"texts": [
+							{
+								"description": "击破召唤物或削弱首领幻影的韧性，可以获取护盾以抵挡【太初有为】。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影和其召唤物受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "召唤物被<color=#f29e38ff>弱点击破</color>时，首领幻影会削减一定韧性。召唤物被<color=#f29e38ff>弱点击破</color>后会为【遥远地平的长音】充能，施放【遥远地平的长音】对敌方全体造成高额伤害并削减韧性。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "<color=#f29e38ff>击破</color>首领幻影会大幅提高首领幻影和其召唤物受到的伤害，使我方全体恢复战技点并激活终结技。",
+				"params": []
+			},
+			{
+				"description": "多次击破<color=#f29e38ff>召唤物</color>可有效为【遥远地平的长音】充能，施放【遥远地平的长音】对敌方全体造成韧性削减。",
+				"params": []
+			}
+		]
+	},
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "302501302"
+}

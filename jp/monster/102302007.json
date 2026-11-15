@@ -1,0 +1,198 @@
+{
+	"name": "{RUBY_B#れいかんはいかいしゃ}冷寒徘徊者{RUBY_E#}",
+	"description": "裂界を彷徨う機械ユニット、だが紛れもなくこれは人間の造物ではない、裂界の歪んだ力が模倣して作った化け物だ。\n冷寒徘徊者は永冬の災影を引き寄せる、同時に味方の速度と氷属性耐性をダウンさせる。",
+	"icon": "spriteoutput/monsterfigure/Monster_1023020.png",
+	"shortIcon": "Monster_1023020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1023020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1116,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "氷輪鉄拳",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302001"
+		},
+		{
+			"name": "誘導体召喚",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「永冬の災影」を召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302005"
+		},
+		{
+			"name": "氷結の嵐",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に氷属性ダメージを与え、高確率で攻撃を受けた味方を「冷寒」状態にする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.12,
+				0.2,
+				1,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302006"
+		},
+		{
+			"name": "誘導体吸収",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "永冬の災影を1体吸収し、自身の攻撃力をアップする、同時に味方単体をロックオンする。フィールド上に永冬の災影が存在しない場合、自身の防御力がダウンする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302007"
+		},
+		{
+			"name": "誘導体吸収",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "永冬の災影を1体吸収し、自身の攻撃力をアップする、同時に味方単体をロックオンする。フィールド上に永冬の災影が存在しない場合、自身の防御力がダウンする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302008"
+		},
+		{
+			"name": "氷輪破砕",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃を受けた味方を「冷寒」状態にする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302009"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302010"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Quantum"
+	],
+	"summons": [
+		"102201002"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "102302007"
+}

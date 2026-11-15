@@ -1,0 +1,203 @@
+{
+	"name": "Glühender Streuner (Fehler)",
+	"description": "Eine falsche Projektion, die von kompromittierten Codes erstellt wurde. Sie basiert auf einer Maschineneinheit, die das Fragmentum durchstreift. Zweifelsohne ist diese Monstrosität keine menschliche Schöpfung, sondern wurde aus der Abartigkeit des Fragmentums geboren.\nDie Angriffe des Glühenden Streuners (Fehler) fügen verbrannten Gegnern zusätzlichen Schaden zu.",
+	"icon": "spriteoutput/monsterfigure/Monster_1023010.png",
+	"shortIcon": "Monster_1023010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1023010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1302,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Karminrote Klinge",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Feuer-SCH zu und verursacht mit einer Chance Brennen.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301101"
+		},
+		{
+			"name": "Verbrennungshieb",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten Feuer-SCH zu. Dieser Angriff trifft mit höherer Chance Verbündeten, denen schon Brennen zugefügt wurde.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301102"
+		},
+		{
+			"name": "Hochtemperatur-Operation",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Erhöht geringen ANG und massive GES. Diese Buffs werden bei Schwächebruch entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				100
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301103"
+		},
+		{
+			"name": "Tanzende Asche",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Feuer-SCH zu. Verbündete mit dem Status Brennen erleiden zusätzlichen Feuer-SCH. Es besteht eine Chance, bei den betroffenen Zielen Brennen zu verursachen.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301104"
+		},
+		{
+			"name": "Omen der Feuersbrunst",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Setzt in der nächsten Aktion „Sengende Salve“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301105"
+		},
+		{
+			"name": "Sengende Salve",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Feuer-SCH zu. Die brennenden Verbündeten explodieren und fügen sich selbst und angrenzenden Zielen Feuer-SCH zu. Der Status Brennen wird danach entfernt.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301106"
+		},
+		{
+			"name": "Schmelzen",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Nach dem Angriff erleidet der brennende Verbündete erhöhten SCH.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.06,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102301107"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_DOT_Burn",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "1023011"
+}

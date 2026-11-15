@@ -3,15 +3,22 @@
 	"description": "In the ancient Era Creatura, Aquila, after forging the Dawn Device, collaborated with Kephale to bring forth the legendary beasts embodying the Titans. The Noontide Gryphon is said to represent Aquila after opening their eyes to bestow light upon the world.",
 	"icon": "spriteoutput/monsterfigure/Monster_4023010.png",
 	"shortIcon": "Monster_4023010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4023010.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 7672.500186,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "402301001",
 			"name": "Through the Darkness",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301001"
 		},
 		{
-			"id": "402301002",
 			"name": "Heralding the Dawn",
 			"tag": "Sweep",
 			"type": "Ability",
@@ -43,11 +50,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301002"
 		},
 		{
-			"id": "402301003",
 			"name": "Light the Future",
 			"tag": "Charging",
 			"type": "Ability",
@@ -57,11 +64,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301003"
 		},
 		{
-			"id": "402301004",
 			"name": "Praise Aquila",
 			"tag": "Blast",
 			"type": "Ability",
@@ -74,11 +81,11 @@
 			],
 			"spGain": 20,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301004"
 		},
 		{
-			"id": "402301005",
 			"name": "",
 			"tag": "Talent",
 			"type": "Talent",
@@ -92,11 +99,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301005"
 		},
 		{
-			"id": "402301006",
 			"name": "",
 			"tag": "Talent",
 			"type": "Talent",
@@ -112,42 +119,58 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301006"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Physical",
 		"Quantum",
 		"Imaginary"
 	],
+	"summons": [
+		"4022010",
+		"4022010",
+		"4022010",
+		"4022010"
+	],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 115001,
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
 				"count": 1
 			},
 			{
@@ -160,6 +183,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Fire",
 	"id": "402301002"

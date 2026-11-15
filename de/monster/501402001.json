@@ -1,0 +1,194 @@
+{
+	"name": "Legierungs-Mechatron: König Pom-Pom",
+	"description": "Wer ist der wilden, ungezähmten Kraft des Astralexpresses gewachsen?! Der außer Kontrolle geratene Pom-Pom hat sich in den Legierungs-Mechatron: König Pom-Pom verwandelt.\nKönig Pom-Pom ist ein mächtiger Mechatron, der von Sauberkeit und Ordnung besessen ist. Nach seinen Maßstäben ist dieser Ort ein einziges Chaos und braucht eine Gründliche! Tiefe! Reinigung! Pom!",
+	"icon": "spriteoutput/monsterfigure/Monster_5014020.png",
+	"shortIcon": "Monster_5014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5014020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3487.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Seelenheilungsschere",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402001"
+		},
+		{
+			"name": "Sterilisationsmodus mit Hochtemperatur",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Dampfreinigung“ ein, erhöht den verursachten SCH dieser Einheit und erhält eine bestimmte Stapelzahl von „Anhaltende antibakterielle Wirkung“, wodurch der erlittene SCH dieser Einheit reduziert wird. Wird Anhaltende antibakterielle Wirkung vollständig entfernt, tritt die Einheit aus dem Status Dampfreinigung aus und erleidet massiven SCH.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				2,
+				0.3,
+				0.1,
+				2,
+				0.45
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402003"
+		},
+		{
+			"name": "Lückenlose Reinigung",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Quanten-SCH zu und gewährt ihnen <u>Lachpunkte</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402002"
+		},
+		{
+			"name": "Starke Schaumseife",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Quanten-SCH zu, versetzt sie in den Status „<u>Arbeit ist das Schönste!</u>“ und gewährt ihnen <u>Lachpunkte</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				0.02,
+				5,
+				2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402004"
+		},
+		{
+			"name": "Vorbereitung für Schichtarbeit läuft ...",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Voller Tatendrang“ ein und erhält den Effekt „Geschützte Schwäche“. Bei der nächsten Aktion wird „Sättigungsreinigung!“ eingesetzt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402005"
+		},
+		{
+			"name": "Sättigungsreinigung!",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Quanten-SCH zu und gewährt ihnen <u>Lachpunkte</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				5,
+				8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402006"
+		},
+		{
+			"name": "Aufstand der Bodenreiniger",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Fügt der Aktionsreihenfolge „Protokollvollstrecker des Veranstaltungsorts“ hinzu. Jedes Mal, wenn Protokollvollstrecker des Veranstaltungsorts eine Aktion ausführt, wird „Legierungs-Pommy“ für Gegner sowie Verbündete beschworen. Jedes Mal, wenn ein Verbündeter 1 Lachpunkt erhält, sammelt der verbündete Legierungs-Pommy 1 Punkt Aufladung an. Wenn die Aufladung <unbreak>1[i]</unbreak> erreicht, kann ein verstärkter Standardangriff ausgeführt werden, um 1 Stapelung des Effekts „Anhaltende antibakterielle Wirkung“ von „Legierungs-Mechatron: König Pom-Pom“ zu entfernen. Es kann max. 1 verbündeten Legierungs-Pommy geben, und er kann weder von Verbündeten noch von Gegnern als Ziel gewählt werden.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				20,
+				0.55,
+				0,
+				10,
+				0.6,
+				0.8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402008"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [
+		"5012120"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "501402001"
+}

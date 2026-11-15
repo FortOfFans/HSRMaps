@@ -1,0 +1,263 @@
+{
+	"name": "Gepard",
+	"description": "Captain of the Silvermane Guards.\nGepard can command his soldiers to focus their attacks, and provide each of them with a barrier that blocks one attack.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004020.png",
+	"shortIcon": "Monster_1004020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004020.png",
+	"stats": {
+		"baseAttack": 15,
+		"baseDefense": 210,
+		"baseHealth": 1394.999814,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Fist of Conviction",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Ice DMG to a single target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402301"
+		},
+		{
+			"name": "Smite of Frost",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Ice DMG to a single target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402302"
+		},
+		{
+			"name": "Garrison Aura Field",
+			"tag": "Defense",
+			"type": "Ability",
+			"description": "Unleashes the Collective Shield and absorbs DMG taken by all friendly units, as well as preventing all friendly units from receiving damage to their Toughness.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1.33,
+				0.3,
+				0.5,
+				1.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402303"
+		},
+		{
+			"name": "Frigid Waterfall",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Ice DMG to all targets and slightly increases own DMG. This DMG boosting effect is stackable.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.8,
+				0.12,
+				1.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402304"
+		},
+		{
+			"name": "Besiege",
+			"tag": "Lock On",
+			"type": "Ability",
+			"description": "Gepard locks on to a single target, causing all friendly units to immediately attack the target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402305"
+		},
+		{
+			"name": "",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402307"
+		},
+		{
+			"name": "Tit for Tat",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "Enters the Counter state for 1 turn. If attacked while in this state, immediately use Smite of Frost on the attacker. This effect can only be triggered 1 time.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402308"
+		},
+		{
+			"name": "Support",
+			"tag": "Summon",
+			"type": "Talent",
+			"description": "When the phase starts, immediately summons Silvermane Soldiers or Silvermane Cannoneers.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402309"
+		},
+		{
+			"name": "Support",
+			"tag": "Summon",
+			"type": "Talent",
+			"description": "When the phase starts, immediately summons Silvermane Cannoneers.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402310"
+		},
+		{
+			"name": "Support",
+			"tag": "Summon",
+			"type": "Talent",
+			"description": "When the phase starts, immediately summons Silvermane Lieutenant (Complete).",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402311"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402312"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402313"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [
+		"100301301",
+		"100203025",
+		"100204030"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "100402302"
+}

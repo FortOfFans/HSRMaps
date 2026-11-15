@@ -1,0 +1,128 @@
+{
+	"name": "暗黒の潮の斧",
+	"description": "暗黒の潮と共に現われた歪んだ造物。空虚な肉体を支えるのは殺戮への渇望だけ。\n手に持っている千鈞の重さを持つ巨大な斧は、一撃で磐石を砕くことができる。立ちはだかる生き物は皆、粉砕と侵蝕の運命から逃れることはできない。",
+	"icon": "spriteoutput/monsterfigure/Monster_4032030.png",
+	"shortIcon": "Monster_4032030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032030.png",
+	"stats": {
+		"baseAttack": 66.666664,
+		"baseDefense": 210,
+		"baseHealth": 0.465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "怒りの潮の斧",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403203101"
+		},
+		{
+			"name": "怨恨の炎",
+			"tag": "分担",
+			"type": "スキル",
+			"description": "味方全体に炎属性ダメージを与える。このダメージはすべての味方で<u>均等に分担</u>される。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403203102"
+		},
+		{
+			"name": "弱者の断頭台​",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "ターゲットの残りHPがマイナスの時、弱点撃破状態を解除し、「弱点無効」効果を獲得する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403203103"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032031"
+}

@@ -1,0 +1,517 @@
+{
+	"name": "弗有垂暮的不老仙",
+	"description": "由「建木」化生，拱卫其根系的灵瑞之兽，履迹所之，和泽滋生，枝杪郁敷。\n自毁于太古时代的战争后，「建木」终于在星核的修补下再度生长。彼时仙人们所造的珍禽奇兽纷至沓来，宛如旧梦重临。",
+	"icon": "spriteoutput/monsterfigure/Monster_2024010.png",
+	"shortIcon": "Monster_2024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2024010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 26040,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 3,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "呦鸣",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401605"
+		},
+		{
+			"name": "绾风",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成少量风属性伤害。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401606"
+		},
+		{
+			"name": "蕉覆",
+			"tag": "防御",
+			"type": "技能",
+			"description": "提高防御力，且使自身韧性无法被削减。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401607"
+		},
+		{
+			"name": "斑龙触",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "每当【嘉实之杪】施放技能后，【弗有垂暮的不老仙】获得1点充能。当充能达到上限时立即施放该技能，对我方全体造成雷属性伤害。场上【<u>建木枝梢</u>】数量越多，造成的伤害越高。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.2,
+				3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401608"
+		},
+		{
+			"name": "回生",
+			"tag": "回复",
+			"type": "技能",
+			"description": "所有召唤物回复等同于【弗有垂暮的不老仙】生命上限一定百分比的生命值。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.015
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401609"
+		},
+		{
+			"name": "衔枝 • 肃风",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤建木枝梢【肃风之杪】。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401601"
+		},
+		{
+			"name": "衔枝 • 缃叶",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤建木枝梢【缃叶之杪】。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401602"
+		},
+		{
+			"name": "衔枝 • 繁花",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤建木枝梢【繁花之杪】。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401603"
+		},
+		{
+			"name": "衔枝 • 嘉实",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤建木枝梢【嘉实之杪】。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401604"
+		},
+		{
+			"name": "鸡犬升天",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "战斗开始时，召唤【<u>丰饶孽物</u>】和【<u>建木枝梢</u>】。\n当召唤物被消灭时，对自身造成少量真实伤害，削减自身少量韧性，然后立即召唤新的【<u>丰饶孽物</u>】或【<u>建木枝梢</u>】。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.25,
+				0.5,
+				0.25,
+				0.25,
+				0.5,
+				0,
+				0.5,
+				60,
+				0.007999999,
+				480,
+				0.08,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401610"
+		},
+		{
+			"name": "鸡犬升天•强化",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "转阶段时，召唤【仙人童子】、【仙人天女】和【<u>建木枝梢</u>】，并对【仙人童子】和【仙人天女】施加【得力干将】。当【得力干将】在场时，【弗有垂暮的不老仙】受到的伤害大幅降低。\n当召唤物被消灭时，对自身造成少量真实伤害，削减自身少量韧性，如果被消灭的是【得力干将】，则改为对自身造成大量真实伤害，削减自身大量韧性；然后立即召唤新的【<u>建木枝梢</u>】。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.45
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401611"
+		},
+		{
+			"name": "飞升之力",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【肃风之杪】、【缃叶之杪】和【繁花之杪】在场时，会分别对其它单位施加不同的【<u>仙光</u>】效果。\n【肃风之杪】：被施加【怒噪】状态的我方单位，对【肃风之杪】以外的所有敌方单位造成的伤害大幅降低。\n【缃叶之杪】：【缃叶之杪】以外的所有敌方单位，受到攻击后行动少量提前。\n【繁花之杪】：【繁花之杪】和【弗有垂暮的不老仙】以外的所有敌方单位，回合开始时，回复少量生命值。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.7,
+				0.06,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401612"
+		},
+		{
+			"name": "滋养之力",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "我方单位消灭【<u>建木枝梢</u>】后，获得1层【滋养之力】，造成的伤害提高。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401613"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401614"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401615"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401616"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401617"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401618"
+		},
+		{
+			"name": "泄力",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【弗有垂暮的不老仙】会将自身的弱点属性转移给【得力干将】，【得力干将】被消灭后向【弗有垂暮的不老仙】和其他【得力干将】转移自身的弱点属性。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401619"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.5
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [
+		"202207202",
+		"202208202",
+		"202209202",
+		"202210202",
+		"202201018",
+		"202206016",
+		"202301202",
+		"202303202"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 2,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101701",
+				"name": "坚防守备",
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101702",
+				"name": "丰亨豫大",
+				"description": "当首领幻影的召唤物被消灭时，其对自身造成少量真实伤害，削减自身少量韧性；如果被消灭的是<color=#f29e38ff>精英敌人</color>，则改为对自身造成大量真实伤害，削减自身大量韧性。然后<color=#f29e38ff>立即召唤</color>新的召唤物。",
+				"params": []
+			},
+			{
+				"id": "101703",
+				"name": "如鹿添翼",
+				"description": "通过【鸡犬升天】和【鸡犬升天•强化】召唤的召唤物的初始行动值大幅提前。",
+				"params": []
+			},
+			{
+				"id": "101704",
+				"name": "仙光夺目",
+				"description": "任意种类的【<u>仙光</u>】效果生效期间，所有未被弱点击破的敌方目标受到的伤害降低，造成的伤害提高。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10171",
+				"name": "阶段一：丰饶大军",
+				"description": "战斗开始时，首领幻影召唤【丰饶孽物】和【建木枝梢】，召唤物被消灭时首领幻影受到少量真实伤害并削减少量韧性，随后立即召唤新的召唤物。",
+				"answer": "应对策略：积极消灭召唤物以削减首领幻影的韧性，并优先消灭【建木枝梢】，以叠加【滋养之力】。",
+				"skills": [
+					{
+						"id": "101711",
+						"type": "Normal",
+						"name": "如何高效削减首领幻影的韧性",
+						"texts": [
+							{
+								"description": "消灭【丰饶孽物】或【建木枝梢】可对首领幻影造成真实伤害并削减其韧性。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101712",
+						"type": "Normal",
+						"name": "如何应对【建木枝梢】的【仙光】效果",
+						"texts": [
+							{
+								"description": "优先消灭【建木枝梢】，可以解除【仙光】效果，并且令我方获得【滋养之力】，提高造成的伤害。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10172",
+				"name": "阶段二：左右护法",
+				"description": "转阶段时，首领幻影召唤【仙人童子】和【仙人天女】，并为它们赋予【得力干将】，且当【得力干将】在场时，首领幻影受到的伤害大幅降低。",
+				"answer": "应对策略：优先消灭【得力干将】，削弱首领幻影的减伤效果，同时也可大幅削减首领幻影的韧性。",
+				"skills": [
+					{
+						"id": "101721",
+						"type": "Normal",
+						"name": "如何应对首领幻影的【斑龙触】",
+						"texts": [
+							{
+								"description": "【嘉实之杪】每次施放技能都会为首领幻影的【斑龙触】充能，尽快消灭【嘉实之杪】以阻止其为【斑龙触】持续充能。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "当首领幻影的召唤物被消灭时，其对自身造成少量真实伤害，削减自身少量韧性；如果被消灭的是<color=#f29e38ff>精英敌人</color>，则改为对自身造成大量真实伤害，削减自身大量韧性。然后<color=#f29e38ff>立即召唤</color>新的召唤物。",
+				"params": []
+			},
+			{
+				"description": "【肃风之杪】、【缃叶之杪】和【繁花之杪】在场时，会分别对其它单位产生不同的<color=#f29e38ff>【仙光】</color>效果。我方单位<color=#f29e38ff>消灭【建木枝梢】</color>后，获得1层【滋养之力】，造成的伤害提高。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "积极消灭首领幻影的召唤物，可以有效削减首领幻影的韧性。",
+				"params": []
+			},
+			{
+				"description": "优先消灭场上【建木枝梢】，获得【滋养之力】，提高我方输出角色造成的伤害。",
+				"params": []
+			},
+			{
+				"description": "在【嘉实之杪】行动前尽快将其消灭，阻止其为首领幻影的【斑龙触】持续充能。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Wind",
+	"id": "202401602"
+}

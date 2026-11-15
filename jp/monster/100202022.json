@@ -1,0 +1,114 @@
+{
+	"name": "{RUBY_B#るろうしゃ}流浪者{RUBY_E#}",
+	"description": "下層部に閉じ込められた人々は、生計のために危険な裂界で使えそうな物資を探すことが多い。その途中で掘り出した古代機械は彼らの良き「助っ人」となっている。",
+	"icon": "spriteoutput/monsterfigure/Monster_1002020.png",
+	"shortIcon": "Monster_1002020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1002020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 464.9999535,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 60,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "スライド攻撃",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100202001"
+		},
+		{
+			"name": "鼓舞",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "指定した敵単体の攻撃力をアップし、即座に行動させる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100202002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112001,
+				"count": 1
+			},
+			{
+				"id": 112002,
+				"count": 1
+			},
+			{
+				"id": 112003,
+				"count": 1
+			},
+			{
+				"id": 181005,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "100202022"
+}

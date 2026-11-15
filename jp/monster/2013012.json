@@ -1,0 +1,152 @@
+{
+	"name": "金人・門番",
+	"description": "古い機巧術で鋳造された金人。\n太古の昔、金人は仙舟と共に仙方を求める旅に出た。当時の金人は人間を監視し、戦いを補助する立場であったが、反乱を経て最終的に仙舟人に降伏した。\n今日に至っては、すべての金人は呪符によって厳重に牽制されており、要地を守るために使われている。",
+	"icon": "spriteoutput/monsterfigure/Monster_2013010.png",
+	"shortIcon": "Monster_2013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2013010.png",
+	"stats": {
+		"baseAttack": 12,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "命ニ奉ジテ制裁ヲ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "味方が戦闘スキルまたは必殺技を発動して攻撃する時、「懲戒度」が溜まる。「懲戒度」は最高レベルに到達すると、即座に「懲罰モード」に入り、「入魔機巧・灯火龍魚」を召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				30
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201301201"
+		},
+		{
+			"name": "戒惧",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "「懲戒度」のレベルを上げ、味方全体に少量の虚数属性ダメージを与え、高確率で味方を虚弱状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.6,
+				0.2,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201301202"
+		},
+		{
+			"name": "戒退",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201301203"
+		},
+		{
+			"name": "首枷",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の虚数属性ダメージを与え、低確率で攻撃を受けた味方を禁錮状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0.1,
+				1,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201301204"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"2012010"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113012,
+				"count": 1
+			},
+			{
+				"id": 113013,
+				"count": 1
+			},
+			{
+				"id": 182002,
+				"count": 1
+			},
+			{
+				"id": 183001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "2013012"
+}

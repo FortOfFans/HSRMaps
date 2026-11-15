@@ -1,0 +1,291 @@
+{
+	"name": "Linke Hand der Dämmerung",
+	"description": "Beim letzten Morgengrauen vor dem Ende wird die helle, strahlende Morgensonne erzittern und verschwinden.\nDie Linke Hand der Dämmerung kann Quantenmacht geschickt einsetzen, um einzelne Ziele anzugreifen.",
+	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
+	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012142.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 90,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Gefallener Schmiedehammer",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten geringen Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214701"
+		},
+		{
+			"name": "Der Besuch des Gefallenen Sterns",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten Quanten-SCH zu und verursacht den Status „Quanten-Zauber“.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214702"
+		},
+		{
+			"name": "Wenn die Dämmerung dunkel ist",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten massiven Quanten-SCH zu und verursacht den Status „Quanten-Zauber“.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214703"
+		},
+		{
+			"name": "Kollision der Auslöschung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn durch den Einsatz der Fähigkeit ein Verbündeter gleichzeitig mit „Quanten-Zauber“ und „Imaginärer Zauber“ belegt wird, werden Quanten-Zauber und Imaginärer Zauber von diesem Ziel entfernt. Ihm wird geringer Quanten- und imaginärer SCH zugefügt und er tritt mit hoher Chance in den Status <u>Verschränkte Gefangenschaft</u> ein.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1,
+				0.1,
+				0.3,
+				0.6,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214704"
+		},
+		{
+			"name": "Scheintod",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Tritt nach Erleiden eines Todesstoßes in den Status „Scheintod“ ein.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214705"
+		},
+		{
+			"name": "Schutz",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Tritt in den Status „Schutz“ ein und reduziert erlittenen SCH, solange die Einheit sich nicht im Status Schwächebruch befindet. Wenn die Einheit Schwächebruch erleidet, werden ihre Aktionen zusätzlich verzögert und der erlittene SCH erhöht.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214706"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111011,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 181003,
+				"count": 1
+			}
+		]
+	},
+	"guide": {
+		"difficulty": 3,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100301",
+				"name": "Solider Schutz",
+				"description": "Das Boss-Phantom kann nicht angegriffen werden. Wenn die drei <color=#f29e38ff><u>Teile</u></color> des Boss-Phantoms gleichzeitig im Status Scheintod sind, erleidet das Boss-Phantom Schwächebruch und kann angegriffen werden. Seine Aktion wird zusätzlich verzögert und sein erlittener SCH wird um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"id": "100302",
+				"name": "Verlagerung des Schlachtfelds",
+				"description": "Der Antimaterie-Motor <color=#f29e38ff><u>übeträgt</u></color> seine Schwächetypen auf die Rechte Hand der Katastrophe und Linke Hand der Dämmerung. Wenn jedoch die Rechte Hand der Katastrophe oder Linke Hand der Dämmerung besiegt wird, wird der Widerstand des Antimaterie-Motors zusätzlich verringert.",
+				"params": []
+			},
+			{
+				"id": "100303",
+				"name": "Kampferprobt",
+				"description": "Wenn ein Gegner einen Einzelangriff einsetzt, wird seine GES für 1 Rd. erhöht. Wenn er einen Flächenangriff einsetzt, wird sein ANG für 1 Rd. erhöht. Wenn er eine Unterstützungs-Fähigkeit einsetzt, werden die LP des Ziels der Fähigkeit wiederhergestellt.",
+				"params": []
+			},
+			{
+				"id": "100304",
+				"name": "Beharrliche Entschlossenheit",
+				"description": "Reduziert den erlittenen SCH aller Gegner. Sie erleiden aber mehr SCH für jeden <color=#f29e38ff>Schwächetyp</color>, den sie besitzen.",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10031",
+				"name": "Sternenvernichtende Todesbestie",
+				"description": "Die Teile des Boss-Phantoms verleihen den Verbündeten „Quanten-/Imaginärer Zauber“. Nachdem sie besiegt werden, werden sie in den Status Scheintod versetzt und ihre Aktion wird verzögert. Bei ihrer nächsten Aktion regenerieren sie sich.",
+				"answer": "Strategie: Konzentriere deine Angriffe auf Ziele mit der gleichen Typenmarkierung, um den Zauber-Effekt von Verbündeten zu entfernen. Zerstöre alle Teile des Boss-Phantoms, bevor sie regeneriert werden, um ihm Schwächebruch zuzufügen.",
+				"skills": [
+					{
+						"id": "100311",
+						"type": "Normal",
+						"name": "Dem Kontrolleffekt von „Verschränkte Gefangenschaft“ entgegenwirken",
+						"texts": [
+							{
+								"description": "Wenn Verbündete sich gleichzeitig im Status Quanten- und Imaginärer Zauber befinden, werden sie mit „Verschränkte Gefangenschaft“ belegt. Konzentriere deine Angriffe auf Ziele mit der gleichen Typenmarkierung, um den Status Quanten- und Imaginärer Zauber von den Verbündeten zu entfernen. Alternativ kannst du auch den Effekt-WDS erhöhen oder Fähigkeiten einsetzen, die Debuffs entfernen, um Verschränkte Gefangenschaft entgegenzuwirken.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100312",
+						"type": "Normal",
+						"name": "Dem Antimaterie-Motor ohne Schwächetyp entgegenwirken",
+						"texts": [
+							{
+								"description": "Das Besiegen von Rechte Hand der Katastrophe oder Linke Hand der Dämmerung überträgt die Schwächetypen zurück auf den Antimaterie-Motor und schwächt ihn.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100313",
+						"type": "Normal",
+						"name": "Dem Wiederherstellungs-Mechanismus der drei Teile von Boss-Phantom entgegenwirken",
+						"texts": [
+							{
+								"description": "Zerstöre alle Teile des Boss-Phantoms, bevor sie wiederhergestellt werden, um ihm Schwächebruch zuzufügen. Während des Schwächebruchs werden die Teile nicht wiederhergestellt, bis sich das Boss-Phantom davon erholt.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Wenn ein Teil des Boss-Phantoms besiegt wird, wird es in den Status Scheintod versetzt und seine Aktion verzögert. Die Teile regenerieren sich bei seiner nächsten Aktion. Wenn sich alle drei Teile <color=#f29e38ff>gleichzeitig im Status Scheintod befinden</color>, erleidet der Körper selbst Schwächebruch und seine Aktion wird zusätzlich verzögert. Außerdem wird sein erlittener SCH um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"description": "Der Antimaterie-Motor <color=#f29e38ff>überträgt seine Schwächetypen</color> auf die Rechte Hand der Katastrophe und die Linke Hand der Dämmerung.",
+				"params": []
+			},
+			{
+				"description": "Das Boss-Phantom verleiht den Verbündeten „Quanten-/Imaginärer Zauber“. Wenn sie <color=#f29e38ff>beide Zauber-Status gleichzeitig erhalten</color>, werden sie mit dem Status „Verschränkte Gefangenschaft“ belegt.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Sobald die drei Teile des Boss-Phantoms <color=#f29e38ff>gleichzeitig in den Status Scheintod</color> versetzt wurden, kann der Bossgegner selbst Schwächebruch erleiden. In diesem Zustand kann dem Bossgegner direkt SCH zugefügt werden.",
+				"params": []
+			},
+			{
+				"description": "Greife Ziele mit der gleichen Typenmarkierung rechtzeitig an, wenn ein Verbündeter sich im Status <color=#f29e38ff>Quanten-/Imaginärer Zauber</color> befindet, um den Status zu entfernen und Eintritt in „Verschränkte Gefangenschaft“ zu vermeiden.",
+				"params": []
+			}
+		]
+	},
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "801214703"
+}

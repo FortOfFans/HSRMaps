@@ -1,0 +1,166 @@
+{
+	"name": "Gottverschlingende Brut",
+	"description": "Eine monströse Legion, erschaffen aus Asat Pramads gespaltener Kraft der Gier, ist nun der Prototyp der Imagenaes. Asat Pramad spürte im schlummernden Kern von Ahatopia einen unstillbaren Hunger, der mit der Gier verbunden war und dessen Pulsieren eng mit dem Pfad der Zerstörung mitschwang. Amüsiert von dieser rastlosen Kraft begann er seine dunkle Schöpfung – er radierte menschliche Köpfe aus und ließ nur grinsende Mäuler zurück, die heulen, fordern und ohne Ende verschlingen.",
+	"icon": "spriteoutput/monsterfigure/Monster_5023020.png",
+	"shortIcon": "Monster_5023020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5023020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 651,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Fest der Völlerei",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Feuer-SCH zu und verringert mit hoher Chance dessen VTD.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.8,
+				0.2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302001"
+		},
+		{
+			"name": "Festmahl des Lebendopfers",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Versetzt eine anvisierte verbündete Figur in den Status „Verschlingen“, verringert die Obergrenze der wiederherstellbaren LP und raubt der Figur einen bestimmten Prozentsatz ihres ANG.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1000,
+				6,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302002"
+		},
+		{
+			"name": "Sühneopfer",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn der von dieser Einheit zugefügte Status „Verschlingen“ entfernt wird, wird der ANG des Verbündeten erhöht, der den Status aufgehoben hat.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302003"
+		},
+		{
+			"name": "Bankett der Bestien",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.4
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302004"
+		},
+		{
+			"name": "Heiliges Wiederkäuen",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Erhöht nach jedem erlittenen Angriff durch einen Verbündeten die Obergrenze der wiederherstellbaren LP der verbündeten Figur, die von dieser Einheit mit dem Status „Verschlingen“ belegt wurde, und gibt einen bestimmten Prozentsatz des ANG zurück. Nach einer bestimmten Anzahl erlittener Angriffe durch Verbündete oder beim Erleiden von Schwächebruch wird der von dieser Einheit zugefügte Status Verschlingen aufgehoben.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Fire",
+	"id": "502302001"
+}

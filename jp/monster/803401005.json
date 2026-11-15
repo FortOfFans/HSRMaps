@@ -1,0 +1,212 @@
+{
+	"name": "金色の通り魔",
+	"description": "銀河を渡り歩く恐ろしい通り魔。金色の姿は富の象徴であり、死の象徴でもある。",
+	"icon": "spriteoutput/monsterfigure/Monster_8034010.png",
+	"shortIcon": "Monster_8034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2046.000744,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 450,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "一か八か",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401001"
+		},
+		{
+			"name": "分散投資",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.1,
+				5,
+				8
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401002"
+		},
+		{
+			"name": "サイコロ噴泉",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "味方全体に少量の虚数属性ダメージを与え、味方それぞれのEPを減らす。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401003"
+		},
+		{
+			"name": "ギャンブルタイム",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「オール・オア・ナッシング」を召喚し、味方単体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」はギャンブルデュエルに参加している味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。\nギャンブルデュエルに参加している味方単体のターン終了時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。\nポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。\nまた、賭けに参加していない味方は「観戦者は語る勿れ」状態になり、賭けが終了した後に解除される。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401004"
+		},
+		{
+			"name": "博打の宴",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「オール・オア・ナッシング」を召喚し、味方全体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」は味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。\n博戯の砂金石の次の行動時、ポイントが博戯の砂金石より小さい味方は敗北となり、攻撃を受ける。\nポイントが博戯の砂金石より大きい味方は勝利となり、必殺技を発動できるようになる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.2,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 0.4,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401005"
+		},
+		{
+			"name": "敗者の退席",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.7,
+				1,
+				0.3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401006"
+		},
+		{
+			"name": "勝者総取り",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "ギャンブルデュエルに負けたすべての味方に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.7,
+				1,
+				0.3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401007"
+		},
+		{
+			"name": "博戯",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "毎回賭けに勝った味方は「豪運」の効果を獲得し、与ダメージが増加する。毎回賭けに負けた味方は「不運」の効果を獲得し、被ダメージが増加する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401008"
+		},
+		{
+			"name": "",
+			"tag": "単体攻撃",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401009"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Thunder"
+	],
+	"summons": [
+		"8032030"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "803401005"
+}

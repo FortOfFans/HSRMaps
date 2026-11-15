@@ -1,0 +1,110 @@
+{
+	"name": "{RUBY_B#きょうじゅう}狂獣{RUBY_E#}の{RUBY_B#はいが}胚芽{RUBY_E#}",
+	"description": "「堕神の血・アポリ」の歪んだ身体から生れ落ちた異形の幼体。主脳の中で暴走した古獣の力を受け継いでいる。\nこの未成熟な奇形の胚芽は、原始的な飢餓と殺戮の本能のままに行動し、母体の異変と拡散の一部となって、周囲のあらゆる生き物を無差別に引き裂き、貪り食う。",
+	"icon": "spriteoutput/monsterfigure/Monster_5032010.png",
+	"shortIcon": "Monster_5032010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5032010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 279,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "芽を摘む",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体キャラに少量の量子属性ダメージを与え、<u>「衰腐」</u>状態を1層付与する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2.2,
+				3,
+				2,
+				3,
+				0.1,
+				0.1,
+				3,
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503201001"
+		},
+		{
+			"name": "予測制御操作",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "指定した敵単体のHPを回復させ、与ダメージをアップさせる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.02,
+				0.1,
+				2,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503201002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "503201003"
+}

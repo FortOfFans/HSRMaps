@@ -1,0 +1,234 @@
+{
+	"name": "自动机兵•齿狼（完整）",
+	"description": "代码受到影响后的完整投影。参照本体为以旧世界遗留的科技拼凑制造的自动机器单元，少见的人形机械，其右臂部分统一装置着链锯，似乎曾用于采集或建造作业。\n战斗中，自动机兵「齿狼」（完整）的链锯会造成裂伤，令对手持续损失生命值。",
+	"icon": "spriteoutput/monsterfigure/Monster_1013020.png",
+	"shortIcon": "Monster_1013020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1013020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 172,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "砍伐指令",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成大量物理属性伤害，每次击中该目标都有概率使其陷入裂伤状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.05,
+				4,
+				10
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302401"
+		},
+		{
+			"name": "目标锁定",
+			"tag": "锁定",
+			"type": "技能",
+			"description": "锁定指定我方单体，下次行动对其施放【砍伐指令】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302402"
+		},
+		{
+			"name": "瞄准指令",
+			"tag": "锁定",
+			"type": "技能",
+			"description": "锁定2个我方目标，下次行动对其施放【砍伐指令】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302403"
+		},
+		{
+			"name": "协力指令",
+			"tag": "锁定",
+			"type": "技能",
+			"description": "锁定2个我方单体，下次行动对其施放【砍伐指令】。同时使【自动机兵**•** 灰熊】进入蓄力状态，下次行动对我方全体施放【剿灭指令】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302404"
+		},
+		{
+			"name": "解体指令",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成物理属性伤害，并大概率对其增加1层裂伤状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302405"
+		},
+		{
+			"name": "解体拆除",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成物理属性伤害，并大概率对其增加1层裂伤状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302406"
+		},
+		{
+			"name": "",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302407"
+		},
+		{
+			"name": "作战加速",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "使自身速度大幅提高。每次施放【协力指令】时使自身速度进一步小幅提高，速度提高效果可叠加。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.15,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302408"
+		},
+		{
+			"name": "速率重构",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "被击倒后进入【速率修复】状态，在一定回合后起身，并使自身速度进一步小幅提高，速度提高效果可叠加。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.25,
+				2,
+				0.5,
+				0,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302409"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "1013024"
+}

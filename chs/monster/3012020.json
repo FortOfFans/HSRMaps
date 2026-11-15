@@ -1,0 +1,114 @@
+{
+	"name": "忆域迷因「我心支离破碎」",
+	"description": "蕴含特定认知的实体，由忆域中的潜意识碎片堆积而成。\n坚不可摧的障壁包裹起生命，阻拦异己。但在那坚硬的躯壳下，却是脆弱不堪的无名地带。",
+	"icon": "spriteoutput/monsterfigure/Monster_3012020.png",
+	"shortIcon": "Monster_3012020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3012020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 130.2,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 60,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "排异",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301202001"
+		},
+		{
+			"name": "刚愎盾甲",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "进入【守备】状态，弱点未被击破时受到的伤害降低，被击破时行动额外延后，被击破后受到的伤害提高。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.75,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301202002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Thunder"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114011,
+				"count": 1
+			},
+			{
+				"id": 114012,
+				"count": 1
+			},
+			{
+				"id": 114013,
+				"count": 1
+			},
+			{
+				"id": 181015,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "3012020"
+}

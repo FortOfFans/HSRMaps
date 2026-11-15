@@ -1,0 +1,122 @@
+{
+	"name": "Rächer-Trupp: Geflügelte Schlange",
+	"description": "Ein verzerrtes Monster, das durch das goldene Blut der Zerstörung aus einem Mem des Gartens des Gedächtnisses geformt wurde. Es hat die rudimentäre Form einer fliegenden Schlange, durch die seine Angreifer eingeschüchtert werden.\nSein verzerrter Verstand wurde in der Schwarzen Flut völlig wahnsinnig, und sein intensiver Selbstverteidigungsdrang nahm allmählich einen illusorischen Charakter an.",
+	"icon": "spriteoutput/monsterfigure/Monster_4063010.png",
+	"shortIcon": "Monster_4063010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4063010.png",
+	"stats": {
+		"baseAttack": 40.008892,
+		"baseDefense": 210,
+		"baseHealth": 900.0075,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Spucke der Blutsünde",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301201"
+		},
+		{
+			"name": "Abschreckende Warnung",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein und erhöht den von dieser Einheit verursachten SCH. Bei der nächsten Aktion wird „Vortex der Blutsünde“ eingesetzt. Während des Aufladens erlittene Angriffe erhöhen den durch den nächsten Angriff verursachten SCH.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301202"
+		},
+		{
+			"name": "Vortex der Blutsünde",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.75
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301203"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "4063012"
+}

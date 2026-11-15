@@ -1,0 +1,535 @@
+{
+	"name": "大博打の賽を振る者",
+	"description": "スターピースカンパニー「戦略投資部」の高級幹部であり、「十の石心」の1人。基石を通して「存護」の使令の権能を手に入れた。その身をダイスとして、死地に立ちながら生を手にする。",
+	"icon": "spriteoutput/monsterfigure/Monster_8034010.png",
+	"shortIcon": "Monster_8034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 8137.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 570,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "一か八か",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401201"
+		},
+		{
+			"name": "分散投資",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.1,
+				5,
+				8
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401202"
+		},
+		{
+			"name": "収益の取り分",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "味方全体に少量の虚数属性ダメージを与え、EPを減らす。第二段階の時、追加で味方の「ポイント」を減らす。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401203"
+		},
+		{
+			"name": "ギャンブルタイム",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「オール・オア・ナッシング」を召喚し、味方単体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」はギャンブルデュエルに参加している味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。ギャンブルデュエルに参加している味方単体のターン終了時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。また、ギャンブルデュエルに参加していない味方は「観戦者は語る勿れ」状態になり、ギャンブルデュエルが終了した後に解除される。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401204"
+		},
+		{
+			"name": "博打の宴",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「オール・オア・ナッシング」を召喚し、味方全体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」は味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。博戯の砂金石の次の行動時、ポイントが博戯の砂金石より小さい味方は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい味方は勝利となり、必殺技を発動できるようになる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.2,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401205"
+		},
+		{
+			"name": "敗者の退席",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方単体を禁錮状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.7,
+				1,
+				0.3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401206"
+		},
+		{
+			"name": "勝者総取り",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "ギャンブルデュエルに負けたすべての味方に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.7,
+				1,
+				0.3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401207"
+		},
+		{
+			"name": "博戯",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "ギャンブルデュエルに勝った味方は「豪運」の効果を獲得し、与ダメージがアップする。ギャンブルデュエルに負けた味方は「不運」の効果を獲得し、受けるダメージがアップする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401208"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401209"
+		},
+		{
+			"name": "フロップにベット",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "「オール・オア・ナッシング」を2つアクティベートする。さらに、味方単体をロックオンし、次の行動時にロックオンした味方単体に「大博打」を発動する。アクティベートされた「オール・オア・ナッシング」をすべて倒すと、「大博打」は発動されず、ランダムな味方単体が必殺技を発動できるようになる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.2,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401210"
+		},
+		{
+			"name": "オールイン",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "すべての「オール・オア・ナッシング」をアクティベートし、次の行動時に「賭けに出れば必ず負ける」を発動する。アクティベートされた「オール・オア・ナッシング」をすべて倒すと、「賭けに出れば必ず負ける」は発動されず、味方全体が必殺技を発動できるようになる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.2,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401211"
+		},
+		{
+			"name": "大博打",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "ロックオンした味方単体に虚数属性ダメージを与え、高確率で禁錮状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401212"
+		},
+		{
+			"name": "賭けに出れば必ず負ける",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に虚数属性ダメージを与え、高確率で禁錮状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.25,
+				0.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401213"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.95,
+				0.01,
+				49,
+				99,
+				1.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401214"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401215"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401216"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.45
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401217"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.01
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401218"
+		},
+		{
+			"name": "ポイント",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "戦闘中、すべてのユニットに一定数の「ポイント」が付与される、段階が進むとポイントがリセットされる。味方の「ポイント」が敵より小さい時、敵の受けるダメージが大幅に軽減され、靭性保護を獲得する。味方の「ポイント」が敵と同じ、またはそれより大きい時、敵の受けるダメージがアップする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401219"
+		},
+		{
+			"name": "コール",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "段階開始時、または召喚物が倒された時、「オール・オア・ナッシング」を最大<unbreak>1[i]</unbreak>体召喚する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401220"
+		},
+		{
+			"name": "ブラインドベット",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "段階開始時または召喚物が倒された時、「オール・オア・ナッシング」または「オール・オア・ナッシング・ダブルラック」を最大<unbreak>1[i]</unbreak>体召喚する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				11
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401221"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401222"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [
+		"803203303",
+		"803203403"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 3,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100501",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100502",
+				"name": "ポイント競争",
+				"description": "ボス幻影のスキルは味方と敵全体に<color=#f29e38ff><u>ポイント</u></color>を与える。",
+				"params": []
+			},
+			{
+				"id": "100503",
+				"name": "ハウスアドバンテージ",
+				"description": "味方のポイントが召喚物のポイントより小さい時、召喚物が受けるダメージが大幅にダウンする。",
+				"params": []
+			},
+			{
+				"id": "100504",
+				"name": "先手必勝",
+				"description": "召喚物のポイントが大きいほど、その最大HPが高くなる。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10051",
+				"name": "第一段階：ギャンブルスタート",
+				"description": "敵は「ポイント」を有する。敵の「ポイント」が味方より大きい時、受けるダメージが大幅にダウンし、靭性保護を獲得する。",
+				"answer": "味方の「ポイント」がボス幻影と同じ、またはボス幻影より小さい時、優先的に「ポイント」が味方と同じ、または味方より小さいサイコロを消し、「ポイント」を貯めることを推奨する。",
+				"skills": [
+					{
+						"id": "100511",
+						"type": "Normal",
+						"name": "味方の「ポイント」の上げ方",
+						"texts": [
+							{
+								"description": "「ポイント」が味方と同じ、または味方より小さいサイコロを倒すと、その「ポイント」が味方に累加され、味方の「ポイント」がアップする。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10052",
+				"name": "第二段階：2倍ボーナス",
+				"description": "ボス幻影の「収益の取り分」はさらに味方の「ポイント」を減らし、フィールド上に「2倍サイコロ」を出現させる。",
+				"answer": "「2倍サイコロ」が退場する前に倒すと、味方の「ポイント」が2倍になる。",
+				"skills": [
+					{
+						"id": "100521",
+						"type": "Normal",
+						"name": "ボス幻影が「収益の取り分」で味方の「ポイント」を減らすことへの対処法",
+						"texts": [
+							{
+								"description": "味方の「ポイント」が減らされ、ボス幻影より小さくなった時、優先的にサイコロを倒して「ポイント」を貯める。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "敵は<color=#f29e38ff>「ポイント」</color>を有している。サイコロが消された後、その「ポイント」は味方に<color=#f29e38ff>累加</color>される。",
+				"params": []
+			},
+			{
+				"description": "敵の「ポイント」が味方より<color=#f29e38ff>大きい</color>時、受けるダメージが大幅にダウンする。敵の「ポイント」が味方と<color=#f29e38ff>同じ</color>、または味方より<color=#f29e38ff>小さい</color>時、受けるダメージがアップする。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "「ポイント」が<color=#f29e38ff>味方と同じ</color>、<color=#f29e38ff>または味方より小さい</color>サイコロを優先的に倒し、「ポイント」を貯める。「2倍サイコロ」が退場する前に倒すと、より多くの「ポイント」を獲得することができる。",
+				"params": []
+			},
+			{
+				"description": "味方の「ポイント」がボス幻影と同じ、またはボス幻影より大きい時、できるだけはやくボス幻影を弱点撃破しよう。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "803401203"
+}

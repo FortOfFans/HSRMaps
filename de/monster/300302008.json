@@ -1,0 +1,153 @@
+{
+	"name": "Truppe der Albträume: Süßer Affe Tarzan",
+	"description": "Servicemaschine Penaconys, die aufgrund der emotionalen Interferenz in der Traumlandschaft außer Kontrolle geraten ist.\nUrsprünglich ein Kurier für SeelFroh. Verteilt seit dem Kontrollverlust weiterhin Köstlichkeiten, indem er Vorbeigehende damit beschießt.",
+	"icon": "spriteoutput/monsterfigure/Monster_3003020.png",
+	"shortIcon": "Monster_3003020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1674,
+		"hardLevelGroup": 1,
+		"eliteGroup": 140,
+		"baseStance": 300,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Limitiertes Getränk",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu. Wenn das Ziel einen Schild hat, wird der Einheit selbst ebenfalls Eis-SCH zugefügt und ihre VTD wird mit hoher Chance verringert.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.8,
+				0.08,
+				1.5,
+				0.2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302001"
+		},
+		{
+			"name": "Unbegrenzte Getränke",
+			"tag": "Abpraller",
+			"type": "Fähigkeit",
+			"description": "Fügt einem zufälligen Verbündeten 4-mal Eis-SCH zu. Wenn das Ziel einen Schild hat, wird der Einheit selbst ebenfalls Eis-SCH zugefügt und ihre VTD wird mit hoher Chance verringert.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.6,
+				0.08,
+				1.5,
+				0.2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302002"
+		},
+		{
+			"name": "SeelFroh-Party",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört 2 Sodahunde.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302003"
+		},
+		{
+			"name": "Partyfontäne",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein und verleiht Widerstandsschutz. Wendet bei der nächsten Aktion „Unbegrenzte Getränke“ an.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"3002030"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 182010,
+				"count": 1
+			},
+			{
+				"id": 183006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "300302008"
+}

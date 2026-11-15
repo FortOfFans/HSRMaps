@@ -1,0 +1,87 @@
+{
+	"name": "Cirrus",
+	"description": "Ein Fragment des großen Heliobus Ignamar. Sammle alle Fragmente von Ignamar, um seinen Geist wiederauferstehen zu lassen.",
+	"icon": "spriteoutput/monsterfigure/Monster_2024020.png",
+	"shortIcon": "Monster_2024020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2024020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 1,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Seelenspaltung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Kann nicht als Angriffsziel gewählt werden. Wenn ein Gegner besiegt wird, verliert die Einheit LP.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202402001"
+		},
+		{
+			"name": "Schneller Schachzug",
+			"tag": "Unterstützung",
+			"type": "Fähigkeit",
+			"description": "Veranlasst alle verbündeten Einheiten dazu, sofort eine Aktion durchzuführen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.15,
+				2,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202402002"
+		},
+		{
+			"name": "Zögern",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "Versucht, eine Fähigkeit anzuwenden, aber es passiert nichts.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202402003"
+		}
+	],
+	"resistance": [],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "202402008"
+}

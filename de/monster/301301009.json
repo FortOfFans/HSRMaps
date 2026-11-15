@@ -1,0 +1,161 @@
+{
+	"name": "Speicherbereich-Mem: Verblichene Hülle des Zorns",
+	"description": "Eine Entität, die bestimmte Wahrnehmungen erhält, geformt durch unterbewusste Fragmente aus dem Speicherbereich.\nDie Erinnerungen an Kummer und Bitterkeit brennen wie eine lodernde Flamme. Wenn das Leid verblasst, entsteht aus der Asche das Leben des Grolls und sammelt unendlich viel Wut an.",
+	"icon": "spriteoutput/monsterfigure/Monster_3013010.png",
+	"shortIcon": "Monster_3013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3013010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930.000372,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 110,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Geschenk des Hasses",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Quanten-SCH zu und erhält für sich selbst 1 Stapelung „Obskure Flamme“.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301001"
+		},
+		{
+			"name": "Donnergroll",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Erhält 3 Stapelungen „Obskure Flamme“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301002"
+		},
+		{
+			"name": "Unerbittliche Verbitterung",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen Quanten-SCH zu. Diese Einheit erhält selbst 1 Stapelung „Obskure Flamme“.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301003"
+		},
+		{
+			"name": "Knochendorn",
+			"tag": "Abpraller",
+			"type": "Fähigkeit",
+			"description": "Fügt einem zufälligen Verbündeten kontinuierlich geringen Quanten-SCH zu. Jede Stapelung „Obskure Flamme“ verursacht 1-mal zusätzlich SCH.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301004"
+		},
+		{
+			"name": "Hysterische Hülle",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Tritt in den Status „Schutz“ ein und reduziert erlittenen SCH, solange die Schwäche der Einheit nicht gebrochen ist. Erleidet sie Schwächebruch, werden ihre Aktionen verzögert und der erlittene SCH erhöht.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.75,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114012,
+				"count": 1
+			},
+			{
+				"id": 114013,
+				"count": 1
+			},
+			{
+				"id": 182009,
+				"count": 1
+			},
+			{
+				"id": 183005,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "301301009"
+}

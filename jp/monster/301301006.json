@@ -1,0 +1,161 @@
+{
+	"name": "溶金（幻像）",
+	"description": "溶金選手は数多くの栄光を手にしてきた——仙舟古武術マスター、羅浮アマチュア武道家百傑、長楽天杯フェザー級十強、形虎拳館特別コーチなど…彼の武は最強ではないが、称号の数なら間違いなく一番だろう。",
+	"icon": "spriteoutput/monsterfigure/Monster_3013010.png",
+	"shortIcon": "Monster_3013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3013010.png",
+	"stats": {
+		"baseAttack": 5.99999436,
+		"baseDefense": 210,
+		"baseHealth": 1302,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 110,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "憎悪のお礼",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に量子属性のダメージを与える。さらに自身が「怒りの炎」を1層獲得する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301001"
+		},
+		{
+			"name": "雷霆の如き叱咤",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "自身に「怒りの炎」を3層付与する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301002"
+		},
+		{
+			"name": "宿怨は波の如く逆巻く",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の量子属性のダメージを与える。さらに自身が「怒りの炎」を1層獲得する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301003"
+		},
+		{
+			"name": "骨を刺す嫌悪",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "ランダムな味方単体に少量の量子属性のダメージを連続して与える。「怒りの炎」1層につき、追加で1回ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301004"
+		},
+		{
+			"name": "ヒステリックボディ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「守備」状態に入る。弱点撃破状態でない時の被ダメージがダウンする。弱点撃破された時の行動順遅延量がアップし、弱点撃破状態の時の被ダメージがアップする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.75,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114012,
+				"count": 1
+			},
+			{
+				"id": 114013,
+				"count": 1
+			},
+			{
+				"id": 182009,
+				"count": 1
+			},
+			{
+				"id": 183005,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "301301006"
+}

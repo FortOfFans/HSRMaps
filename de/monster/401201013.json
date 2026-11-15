@@ -1,0 +1,120 @@
+{
+	"name": "Furiae-Krieger",
+	"description": "Ein Titanenwesen, geformt aus Zwist. In ihm fließt das goldene Blut Nikadors. Die robusten Körper dieser Titanenwesen dienen der Armee als Schild, und mit ihrer unerbittlichen Stärke zertrennen sie feindliche Truppen, während sie mit ihren kräftigen Armen die Verpflegung über das Schlachtfeld tragen. Sie werden von den Soldaten von Kremnos auch oft als Trainingspartner eingesetzt.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012010.png",
+	"shortIcon": "Monster_4012010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 37.1999628,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Kollision der dritten Umlaufbahn",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu. Wenn die Stapelung von „Kriegsrüstung“ nicht 0 ist, besteht eine Chance, dem Ziel „Nachhall“ zuzufügen. Wenn die Stapelung von „Kriegsrüstung“ 0 ist, wird die Einheit selbst von „Nachhall“ betroffen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.4,
+				1,
+				0.4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401201001"
+		},
+		{
+			"name": "Wächter des Stadtstaates",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn eine Einheit eine bestimmte Anzahl von Stapelungen „Kriegsrüstung“ besitzt, wird ihr erlittener SCH reduziert. Verliert nach dem Erleiden von Angriffen 1 Stapelung Kriegsrüstung. Wenn 0 Stapelungen erreicht sind, wird die Kriegsrüstung zerstört, wobei dieser Einheit massiver imaginärer SCH zugefügt und ihre Aktion verzögert wird. Der Verbündete, der die Kriegsrüstung zerstört hat, stellt Energie wieder her. Nachdem die Kriegsrüstung zerstört wurde, erleidet diese Einheit außerdem zusätzlich geringen imaginären SCH, wenn sie angegriffen wird. Wenn die Runde dieser Einheit endet, wird die Kriegsrüstung auf die max. Stapelzahl wiederhergestellt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3,
+				0.1,
+				0.1,
+				0.06,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401201002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "401201013"
+}

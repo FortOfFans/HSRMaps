@@ -1,0 +1,143 @@
+{
+	"name": "Silbermähnen-Offizier Dunn",
+	"description": "Der Anführer eines Trupps von Belobogs Silbermähnen-Wachen.\nSilbermähnen-Leutnants können im Kampf einen riesigen Schild aufstellen und sich selbst verbessern. Wenn du einen Silbermähnen-Leutnant mit erhobenem Schild angreifst, führt das sofort zu einem heftigen Gegenangriff.",
+	"icon": "spriteoutput/monsterfigure/Monster_1003010.png",
+	"shortIcon": "Monster_1003010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1003010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 837,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 240,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Sturmangriff",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301001"
+		},
+		{
+			"name": "Durchbohren",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten massiven physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6.5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301002"
+		},
+		{
+			"name": "Schildreflexion",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Konter ein. Bei einem Angriff durch einen Verbündeten wird die Aktion dieser Einheit vorgezogen und setzt sie sofort „Durchbohren“ gegen das Ziel ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301003"
+		},
+		{
+			"name": "Verstärkung",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört einen Silbermähnen-Soldaten oder einen Silbermähnen-Schütze.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [
+		"1002040",
+		"1002040"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112002,
+				"count": 1
+			},
+			{
+				"id": 112003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "100301001"
+}

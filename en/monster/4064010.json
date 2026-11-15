@@ -3,15 +3,22 @@
 	"description": "A trace of lingering madness extracted and refined by Evernight from the countless corpses of ichor memosprites, then synthesized into more twisted and grotesque monsters.\nIt shall follow the creator's directive, determining what should be remembered and what should be forgotten, devouring redundant memories that serve no purpose and leaving them muted in the flow of time.\n\"If a new life is to be born, its seed has to be dead.\"",
 	"icon": "spriteoutput/monsterfigure/Monster_4064010.png",
 	"shortIcon": "Monster_4064010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4064010.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 2511,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 4,
 		"type": "LittleBoss"
 	},
 	"skills": [
 		{
-			"id": "406401001",
 			"name": "Hemotort Teethgrind",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -25,11 +32,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401001"
 		},
 		{
-			"id": "406401002",
 			"name": "Execution in Place",
 			"tag": "Summon",
 			"type": "Ability",
@@ -44,11 +51,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401002"
 		},
 		{
-			"id": "406401003",
 			"name": "Hemotort Glower",
 			"tag": "Lock On",
 			"type": "Ability",
@@ -62,11 +69,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401003"
 		},
 		{
-			"id": "406401004",
 			"name": "Hemotort Saw",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -79,11 +86,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401004"
 		},
 		{
-			"id": "406401005",
 			"name": "Hemotort Clamps",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -98,11 +105,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401005"
 		},
 		{
-			"id": "406401006",
 			"name": "Name the Culprit",
 			"tag": "Charging",
 			"type": "Ability",
@@ -114,11 +121,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401006"
 		},
 		{
-			"id": "406401007",
 			"name": "Hemotort Decapitation",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -132,11 +139,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401007"
 		},
 		{
-			"id": "406401008",
 			"name": "Expedite Verdict",
 			"tag": "Talent",
 			"type": "Ability",
@@ -151,26 +158,37 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401008"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
 		}
 	],
 	"weakness": [
@@ -178,10 +196,14 @@
 		"Ice",
 		"Imaginary"
 	],
+	"summons": [
+		"4062010"
+	],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
 	},
+	"guide": null,
 	"rank": "LittleBoss",
 	"stanceType": "Imaginary",
 	"id": "4064010"

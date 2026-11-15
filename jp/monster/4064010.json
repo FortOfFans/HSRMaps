@@ -1,0 +1,210 @@
+{
+	"name": "{RUBY_B#おうごん}黄金{RUBY_E#}の{RUBY_B#ち}血{RUBY_E#}の{RUBY_B#きおく}記憶{RUBY_E#}の{RUBY_B#せいれい}精霊{RUBY_E#}・{RUBY_B#ぼうきゃく}忘却{RUBY_E#}を{RUBY_B#さだ}定{RUBY_E#}むもの",
+	"description": "黄金の血の記憶の精霊の亡骸に残る狂気の欠片が、長夜月によって抽出され、より歪な姿に融合された怪物。\n創造主の指示に従い、何が記憶され、何が忘却されるべきかを裁定する。徒労に終わった記憶を飲み込み、歳月の内に沈黙させるのだ。\n「新しい命が芽吹いたら、その種は死んでいなければならない」",
+	"icon": "spriteoutput/monsterfigure/Monster_4064010.png",
+	"shortIcon": "Monster_4064010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4064010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2511,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 4,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "血罪の歯形",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の虚数属性ダメージを与える。ターゲットがバリアを所持している場合、自身の靭性を削る。この効果により靭性が1を下回ることはない。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				180,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401001"
+		},
+		{
+			"name": "執行準備",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「黄金の血の記憶の精霊・パーシアーノス」を召喚する。召喚物が倒されるたびに、自身の靭性を削る。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				2,
+				180,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401002"
+		},
+		{
+			"name": "血罪の睨み",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "指定した味方キャラをロックオンし、自身の速度アップ。数ターン内、その味方に「血罪の歯形」と「血罪の鋸刑」を発動する。このスキルを発動した後、1回再行動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401003"
+		},
+		{
+			"name": "血罪の鋸刑",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の虚数属性ダメージを与え、ターゲットの減少したHPの一部を「<u>侵蝕</u>」に変換する。ターゲットがバリアを所持している場合、自身の靭性を削る。この効果により靭性が1を下回ることはない。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				180
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401004"
+		},
+		{
+			"name": "罪血の鉗刑",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の虚数属性ダメージを与え、ターゲットの減少したHPの一部を「<u>侵蝕</u>」に変換する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.5,
+				0.2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401005"
+		},
+		{
+			"name": "元凶を差し出せ",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入る。次の行動時に「罪血の梟首」を発動する。味方キャラ1名を選び、「罪血の梟首」の最も高いダメージと「<u>血罪の腐蝕</u>」を受けさせる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401006"
+		},
+		{
+			"name": "罪血の梟首",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「元凶を差し出せ」で選択されたキャラ以外の味方に虚数属性ダメージを与え、「元凶を差し出せ」で選択された味方に大量の虚数属性ダメージを与える。さらに、該当キャラのバリアで相殺できなかったダメージの数値に応じて、「<u>血罪の腐蝕</u>」を付与する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				14,
+				4.5,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401007"
+		},
+		{
+			"name": "迅速な断罪",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "弱点撃破状態でない時の受けるダメージがダウンし、弱点撃破された時の行動順遅延量がアップし、自身に大量の虚数属性ダメージを与える。弱点撃破された後、受けるダメージがアップする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				2,
+				0.5,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401008"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [
+		"4062010"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "4064010"
+}

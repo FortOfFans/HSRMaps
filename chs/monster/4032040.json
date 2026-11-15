@@ -1,0 +1,143 @@
+{
+	"name": "黑潮参议",
+	"description": "从黑潮中诞生的扭曲造物，对杀戮的渴求成为了空洞躯壳中仅存的意志。\n原本可用来经世济民的学识反转为文明的恶敌，擅长潜伏与博弈的它们如同贪婪的秃鹫，渴望为黑潮不断奉上新的牺牲。",
+	"icon": "spriteoutput/monsterfigure/Monster_4032040.png",
+	"shortIcon": "Monster_4032040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032040.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 372,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 155,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "潜伏",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使自身进入<u>【潜伏】</u>状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204001"
+		},
+		{
+			"name": "破灭的理性",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204002"
+		},
+		{
+			"name": "阴谋的躁动",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成物理属性伤害，然后解除<u>【潜伏】</u>状态。仅可在<u>【潜伏】</u>状态下施放。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204003"
+		},
+		{
+			"name": "破绽",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "自身处于<u>【潜伏】</u>状态时，受到的伤害提高，如果由于弱点被击破而解除<u>【潜伏】</u>，则行动延后，且该易伤效果持续到自身下次行动开始时。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032040"
+}

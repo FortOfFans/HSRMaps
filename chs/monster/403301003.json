@@ -1,0 +1,195 @@
+{
+	"name": "黑潮蚀魔",
+	"description": "从黑潮中诞生的扭曲造物，对杀戮的渴求成为了空洞躯壳中仅存的意志。\n已经失去人形的身躯被污浊之物包裹，通体散发着令人作呕的腐蚀气息。凡是蚀魔途经之处，一切生命气息皆遭其掠夺。",
+	"icon": "spriteoutput/monsterfigure/Monster_4033010.png",
+	"shortIcon": "Monster_4033010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4033010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930.000372,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "凋敝岩流",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成物理属性伤害，被击中目标降低生命值的一部分转化为<u>【侵蚀】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301001"
+		},
+		{
+			"name": "腐败骤陨",
+			"tag": "弹射",
+			"type": "技能",
+			"description": "连续对我方随机单体目标造成物理属性伤害，被击中目标降低生命值的一部分转化为<u>【侵蚀】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301002"
+		},
+		{
+			"name": "吞浊纳污",
+			"tag": "强化",
+			"type": "技能",
+			"description": "吸收我方目标持有的<u>【侵蚀】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301003"
+		},
+		{
+			"name": "堕化",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "使自身进入<u>【厄堕】</u>状态，下一次行动会施放【浑流奔涌】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301004"
+		},
+		{
+			"name": "浑流奔涌",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成物理属性伤害，并将我方全体目标最大生命值的一部分直接转化为<u>【侵蚀】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				0.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301005"
+		},
+		{
+			"name": "浊染",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "每有1名我方目标的<u>【侵蚀】</u>被吸收，为黑潮蚀魔附加1层【污垢】，当【污垢】叠加到一定层数时，下一次行动释放【堕化】并清除所有【污垢】层数。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.2,
+				0,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301006"
+		},
+		{
+			"name": "吞浊纳污",
+			"tag": "强化",
+			"type": "技能",
+			"description": "吸收我方目标持有的<u>【侵蚀】</u>失败，降低自身防御力。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301007"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "403301003"
+}

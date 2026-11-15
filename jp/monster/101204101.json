@@ -1,0 +1,205 @@
+{
+	"name": "マニピュレーターユニット",
+	"description": "スヴァローグに操られる機械装置。\nマニピュレーターは一定ターンを経て、味方を猛攻撃する。",
+	"icon": "spriteoutput/monsterfigure/Monster_1012040.png",
+	"shortIcon": "Monster_1012040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1012040.png",
+	"stats": {
+		"baseAttack": 4.5,
+		"baseDefense": 210,
+		"baseHealth": 4.64993025,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204101"
+		},
+		{
+			"name": "巨大なる掌",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「束縛」状態の味方に、その味方のHPの割合に応じた物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204102"
+		},
+		{
+			"name": "指示を待つ",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204103"
+		},
+		{
+			"name": "巨大なる掌",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "指定した味方単体を「束縛」状態にし、物理属性ダメージを1回与える。自身が弱点撃破されるかHPが一定値を下回ると、味方の「束縛」状態は解除される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204104"
+		},
+		{
+			"name": "失力電場",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "「束縛」状態の味方に、HPの割合に応じた物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204105"
+		},
+		{
+			"name": "制御起爆",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "マニピュレーターユニットが爆発し、指定した味方単体に大量の物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				15
+			],
+			"spGain": 25,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204106"
+		},
+		{
+			"name": "過負荷警告",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "マニピュレーターユニットが「過負荷」状態に入り、味方の「束縛」状態を解除する。この状態に入ると、マニピュレーターユニットが次の行動で「制御起爆」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204107"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112011,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 181001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "101204101"
+}

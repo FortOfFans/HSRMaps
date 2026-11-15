@@ -1,0 +1,259 @@
+{
+	"name": "漆黒の剣、フレイムスティーラー（汚染）",
+	"description": "暗黒の潮と共に現れ、タイタンの火種を狩る無名の剣士。その正体を知る者はいない。\n不可解な力と完璧に近い剣技を使う。その刃には狂気と執念が宿っており、神悟の樹庭もエリュシオンも、その手によって滅ぼされた。",
+	"icon": "spriteoutput/monsterfigure/Monster_4034010.png",
+	"shortIcon": "Monster_4034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "死の黒雲",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				0.05,
+				8,
+				0.05
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401901"
+		},
+		{
+			"name": "消えゆく運命",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与える。命中された味方の減少したHPの一部が<u>「侵蝕」</u>に転換される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401902"
+		},
+		{
+			"name": "交差する道",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "「壊れた容器」を「共祭」状態にし、数回の行動で「暗き弔い」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401903"
+		},
+		{
+			"name": "幽冥の弔い",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「壊れた容器」と共に「死の黒雲」または「消えゆく運命」を発動した後、「壊れた容器」を吸収して自身のHPを回復し、<u>「災厄の力」</u>を獲得する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401904"
+		},
+		{
+			"name": "沈黙の悲嘆",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "<u>「災厄の力」</u>を獲得し、「沈黙の悲嘆」状態に入る。次の行動で「捨つることに涙せず」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.05,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401905"
+		},
+		{
+			"name": "必要な苦難",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "<u>「災厄の力」</u>をすべて消費し、味方全体に少量の物理属性ダメージを数回与える。消費された「災厄の力」の層数が多いほど、攻撃の段数がアップする。最後に味方全体に少量の物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401906"
+		},
+		{
+			"name": "捨つることに涙せず",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与える。すべての<u>「災厄の力」</u>を消費し、追加で少量の物理属性ダメージを数回与える。消費する「災厄の力」の層数が多いほど、攻撃段数が増える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1.6,
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401907"
+		},
+		{
+			"name": "悲痛の別れ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「死の黒雲」または「消えゆく運命」を発動した時、自身のHPを消費して「壊れた容器」を召喚する。さらに消費したHPが<u>「纏わりつく苦痛」</u>に転換される。この攻撃に召喚された「壊れた容器」が倒されると、追加で自身に物理属性ダメージを与える。自身が再び「死の黒雲」または「消えゆく運命」を発動する時、この攻撃に召喚された「壊れた容器」が自身と共に攻撃を行う。その後、「壊れた容器」は自身に吸収され、<u>「纏わりつく苦痛」</u>に転換された分のHPを回復する。同時に自身は<u>「災厄の力」</u>を獲得する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				16
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401908"
+		},
+		{
+			"name": "迷いの共祭",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「沈黙の悲嘆」を発動した時、自身のHPを消費して「壊れた容器」を召喚する。消費したHPは<u>「纏わりつく苦痛」</u>に転換される。<u>「災厄の力」</u>層数が0でない時、「壊れた容器」がHPが0になる攻撃を受けた場合、直ちに<u>「災厄の力」</u>を1層、自身のHPを一定割合消費する。同時に、「壊れた容器」を再度召喚する。「捨つることに涙せず」を発動した時、「壊れた容器」が自身に吸収され、<u>「纏わりつく苦痛」</u>に転換された分のHPを回復する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.8,
+				0.3,
+				1,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401909"
+		},
+		{
+			"name": "冷酷な永別",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「ダメージ軽減」を一定層数獲得し、自身の受けるダメージがダウンする。「壊れた容器」が1体倒されるたびに1層を失う。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401910"
+		},
+		{
+			"name": "消えゆく残火",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "戦闘中、ボスを強化する「黒い泥」が出現する。「漆黒の剣、フレイムスティーラー（汚染）」が強化された後、即座に「必要な苦難」または「沈黙の悲嘆」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401911"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"4032020"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "4034019"
+}

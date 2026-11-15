@@ -1,0 +1,133 @@
+{
+	"name": "{RUBY_B#むそうかめん}無想仮面{RUBY_E#}",
+	"description": "裂界に侵蝕された被害者たちで繋ぎ合わされた怪奇な造物。朴訥な顔が羅列されており、思想もなく、情緒もなく、かつて人と呼ばれた部分は全て消え去った。",
+	"icon": "spriteoutput/monsterfigure/Monster_8001030.png",
+	"shortIcon": "Monster_8001030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8001030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 93,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 30,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
+		"type": "Minion"
+	},
+	"skills": [
+		{
+			"name": "虹色ビーム",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800103001"
+		},
+		{
+			"name": "集束チャージ",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "敵全体の攻撃力をアップする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800103002"
+		},
+		{
+			"name": "エネルギー湧泄",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受けた後、味方全体のEPを回復する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800103003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111001,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 180004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Minion",
+	"stanceType": "Physical",
+	"id": "800103001"
+}

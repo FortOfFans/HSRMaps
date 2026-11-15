@@ -1,0 +1,226 @@
+{
+	"name": "雲騎驍衛・彦卿（スペック）",
+	"description": "コードが影響を受けた後の正常な投影。参照元の本体は景元将軍の護衛を務める、まだ総角の歳の剣の天才。",
+	"icon": "spriteoutput/monsterfigure/Monster_2004020.png",
+	"shortIcon": "Monster_2004020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "快哉風",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与える。彦卿とすべての飛剣が「冷光」を1層獲得し、与ダメージが小アップする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402201"
+		},
+		{
+			"name": "帰燕",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「飛剣」を4本召喚して、「剣陣」効果を獲得し、自身の速度がアップする。「飛剣」に「陣眼」を付与する。第三段階の時にこのスキルを発動すると、一定数の「飛剣」が追加で「練磨」を獲得する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				60,
+				0.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402202"
+		},
+		{
+			"name": "三尺水",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃された味方を凍結状態にする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				1,
+				1,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402203"
+		},
+		{
+			"name": "破陣歌",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体及び隣接する味方に氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402204"
+		},
+		{
+			"name": "剣気迫近",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入る。次の行動で味方全体に「天河瀉り」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402205"
+		},
+		{
+			"name": "天河瀉り",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402206"
+		},
+		{
+			"name": "剣気凝",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "味方単体をロックオンし、2ターン後にロックオンした味方に「風帰りて雲動き、天河瀉りし夢」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402207"
+		},
+		{
+			"name": "風帰りて雲動き、天河瀉りし夢",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に連続で氷属性ダメージを与える。このスキルを発動する時、追加でダメージを与える。ダメージ回数はフィールドに存在する「飛剣」の数と同じである。スキル発動後、フィールド上のすべての「飛剣」を消す。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402208"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				1.5,
+				1.5,
+				50,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402209"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"200202001",
+		"200202101"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "2004022"
+}

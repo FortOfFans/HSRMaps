@@ -1,0 +1,517 @@
+{
+	"name": "Altersloser Unsterblicher",
+	"description": "Ein glückbringendes rituelles Wesen, das aus dem Himmelsbaum geboren wurde und seine Wurzeln beschützt. Es bringt bei seiner Ankunft blühende Äste mit sich und ist ein gutes Omen.\nDer Himmelsbaum, der in einem uralten Krieg zerstört wurde, wurde vom Stellaron wiederbelebt und gepflegt. Seltene Lebewesen und legendäre Tiere, die von vergangenen Himmlischen erschaffen wurden, kehren in diese Welt zurück, wie eine alte Erinnerung aus einem Traum, die wieder zum Leben erweckt wird.",
+	"icon": "spriteoutput/monsterfigure/Monster_2024010.png",
+	"shortIcon": "Monster_2024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2024010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 26040,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 3,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Bebendes Blöken",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Blitz-SCH zu.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401605"
+		},
+		{
+			"name": "Berührung des Windes",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen Wind-SCH zu.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401606"
+		},
+		{
+			"name": "Harte Blattschneide",
+			"tag": "Verteidigung",
+			"type": "Fähigkeit",
+			"description": "Erhöht die VTD. WDS kann nicht reduziert werden.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401607"
+		},
+		{
+			"name": "Überladener Geweihstoß",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Jedes Mal, nachdem „Zweig mit saftigen Früchten“ eine Fähigkeit eingesetzt hat, erhält „Altersloser Unsterblicher“ 1 Pkt. Aufladung. Wenn die Aufladung das Maximum erreicht, wird diese Fähigkeit sofort eingesetzt und fügt allen Verbündeten Blitz-SCH zu. Je mehr <u>Zweige des Himmelsbaums</u> sich auf dem Kampffeld befinden, desto höher ist der verursachte SCH.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.2,
+				3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401608"
+		},
+		{
+			"name": "Wiedergeburt",
+			"tag": "Wiederherstellen",
+			"type": "Fähigkeit",
+			"description": "Alle beschworenen Objekte stellen LP in Höhe eines bestimmten Prozentsatzes der max. LP von „Altersloser Unsterblicher“ wieder her.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.015
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401609"
+		},
+		{
+			"name": "Zweig: Winterlicher Wind",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Zweig des winterlichen Windes“.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401601"
+		},
+		{
+			"name": "Zweig: Ahornblatt",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Zweig mit Ahornblatt“.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401602"
+		},
+		{
+			"name": "Zweig: Glorreiche Blüten",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Zweig mit glorreichen Blüten“.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401603"
+		},
+		{
+			"name": "Zweig: Saftige Früchte",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Zweig mit saftigen Früchten“.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401604"
+		},
+		{
+			"name": "Aufstieg für einen, Aufstieg für alle",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beschwört zu Beginn des Kampfes <u>Ausgeburten des Überflusses</u> und <u>Zweig des Himmelsbaums</u>.\nWenn ein beschworenes Objekt besiegt wird, fügt diese Einheit sich selbst geringen Tatsächlichen SCH zu, reduziert den eigenen WDS leicht und beschwört danach sofort neue <u>Ausgeburten des Überflusses</u> oder <u>Zweige des Himmelsbaums</u>.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.25,
+				0.5,
+				0.25,
+				0.25,
+				0.5,
+				0,
+				0.5,
+				60,
+				0.007999999,
+				480,
+				0.08,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401610"
+		},
+		{
+			"name": "Aufstieg für einen, Aufstieg für alle: Verstärkt",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beschwört beim Phasenübergang „Himmlischer Cherub“, „Himmlische Maid“ und „<u>Zweig des Himmelsbaums</u>“ und belegt Himmlischen Cherub sowie Himmlische Maid mit „Rechte Hand“. Solange sich Rechte Hände auf dem Kampffeld befinden, wird der SCH, den der Alterslose Unsterbliche erleidet, stark reduziert.\nWenn ein beschworenes Objekt besiegt wird, fügt diese Einheit sich selbst geringen Tatsächlichen SCH zu und reduziert seinen eigenen WDS leicht. Handelt es sich bei dem besiegten Objekt um eine Rechte Hand, fügt diese Einheit sich stattdessen massiven Tatsächlichen SCH zu, reduziert seinen eigenen WDS stark und beschwört dann sofort einen neuen <u>Zweig des Himmelsbaums</u>.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.45
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401611"
+		},
+		{
+			"name": "Kraft des Aufstiegs",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn sich „Zweig des winterlichen Windes“, „Zweig mit Ahornblatt“ und „Zweig mit glorreichen Blüten“ auf dem Kampffeld befinden, erzeugen sie jeweils verschiedene <u>Aura</u>-Effekte bei anderen Einheiten.\nZweig des winterlichen Windes: Der SCH, den ein mit dem Status „Empörung“ belegter Verbündeter allen Gegnern außer Zweig des winterlichen Windes zufügt, wird stark reduziert.\nZweig mit Ahornblatt: Die Aktion aller Gegner außer Zweig mit Ahornblatt wird nach Erleiden eines Angriffs leicht vorgezogen.\nZweig mit glorreichen Blüten: Alle Gegner außer Zweig mit glorreichen Blüten und „Altersloser Unsterblicher“ stellen zu Beginn der Runde eine geringe Menge LP wieder her.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.7,
+				0.06,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401612"
+		},
+		{
+			"name": "Macht der Versorgung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Nachdem ein Verbündeter <u>Zweig des Himmelsbaums</u> besiegt hat, erhält er 1 Stapelung „Macht der Versorgung“, wodurch der verursachte SCH erhöht wird.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401613"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401614"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401615"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401616"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401617"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401618"
+		},
+		{
+			"name": "Entkräftung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "„Altersloser Unsterblicher“ überträgt seinen Schwächetyp auf „Rechte Hand“. Nachdem eine Rechte Hand besiegt wurde, überträgt sie ihren Schwächetyp auf Altersloser Unsterblicher und andere Rechte Hände.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401619"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.5
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [
+		"202207201",
+		"202208201",
+		"202209201",
+		"202210201",
+		"202201017",
+		"202206015",
+		"202301201",
+		"202303201"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101701",
+				"name": "Solider Schutz",
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101702",
+				"name": "Wohlstand in Hülle und Fülle",
+				"description": "Wenn die beschworenen Objekte des Boss-Phantoms besiegt werden, wird dieser Einheit geringer Tatsächlicher SCH zugefügt und ihr WDS geringfügig reduziert. Handelt es sich bei dem besiegten Ziel um einen <color=#f29e38ff>Elitegegner</color>, wird dieser Einheit stattdessen massiver Tatsächlicher SCH zugefügt und ihr WDS massiv reduziert. Anschließend <color=#f29e38ff>beschwört sie sofort</color> neue beschworene Objekte.",
+				"params": []
+			},
+			{
+				"id": "101703",
+				"name": "Wie ein beflügelter Hirsch",
+				"description": "Der anfängliche Aktionswert der beschworenen Objekte, die durch „Aufstieg für einen, Aufstieg für alle“ und „Aufstieg für einen, Aufstieg für alle: Verstärkt“ beschworen werden, wird erheblich vorgezogen.",
+				"params": []
+			},
+			{
+				"id": "101704",
+				"name": "Blendende Aura",
+				"description": "Solange ein <u>Aura-Effekt</u> beliebiger Art aktiv ist, erleiden alle Gegner, die sich nicht im Schwächebruch befinden, verringerten SCH und verursachen erhöhten SCH.",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10171",
+				"name": "Phase I: Armee des Überflusses",
+				"description": "Zu Beginn des Kampfes beschwört das Boss-Phantom „Ausgeburten des Überflusses“ und „Zweig des Himmelsbaums“. Wenn die beschworenen Objekte besiegt werden, erleidet das Boss-Phantom geringen Tatsächlichen SCH und sein WDS wird geringfügig reduziert, woraufhin es sofort neue beschworene Objekte herbeiruft.",
+				"answer": "Strategie: Besiege aktiv beschworene Objekte, um den WDS des Boss-Phantoms zu verringern, und besiege vorrangig den „Zweig des Himmelsbaums“, um „Macht der Versorgung“ zu stapeln.",
+				"skills": [
+					{
+						"id": "101711",
+						"type": "Normal",
+						"name": "So wird der WDS von Boss-Phantom effizient reduziert",
+						"texts": [
+							{
+								"description": "Besiege „Ausgeburten des Überflusses“ oder „Zweig des Himmelsbaums“, um dem Boss-Phantom Tatsächlichen SCH zuzufügen und seinen WDS zu verringern.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101712",
+						"type": "Normal",
+						"name": "So umgehst du mit dem Aura-Effekt von „Zweig des Himmelsbaums“",
+						"texts": [
+							{
+								"description": "Besiege vorrangig den „Zweig des Himmelsbaums“, um den Aura-Effekt aufzuheben und Verbündeten „Macht der Versorgung“ zu verleihen, wodurch der verursachte SCH erhöht wird.",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10172",
+				"name": "Phase II: Linker und rechter Leibwächter",
+				"description": "Beim Phasenwechsel beschwört das Boss-Phantom „Himmlischer Cherub“ und „Himmlische Maid“ und belegt sie mit „Rechte Hand“. Solange Rechte Hand auf dem Kampffeld ist, wird der vom Boss-Phantom erlittene SCH stark verringert.",
+				"answer": "Strategie: Besiege zuerst die „Rechte Hand“, um die SCH-Reduzierung des Boss-Phantoms zu schwächen und gleichzeitig den WDS des Boss-Phantoms stark zu verringern.",
+				"skills": [
+					{
+						"id": "101721",
+						"type": "Normal",
+						"name": "So umgehst du mit „Überladener Geweihstoß“ des Boss-Phantoms",
+						"texts": [
+							{
+								"description": "Jedes Mal, wenn „Zweig mit saftigen Früchten“ eine Fähigkeit einsetzt, lädt er „Überladener Geweihstoß“ des Boss-Phantoms auf. Besiege Zweig mit saftigen Früchten so schnell wie möglich, um zu verhindern, dass er Überladener Geweihstoß weiterhin auflädt.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "Wenn die beschworenen Objekte des Boss-Phantoms besiegt werden, wird dieser Einheit geringer Tatsächlicher SCH zugefügt und ihr WDS geringfügig reduziert. Handelt es sich bei dem besiegten Ziel um einen <color=#f29e38ff>Elitegegner</color>, wird dieser Einheit stattdessen massiver Tatsächlicher SCH zugefügt und ihr WDS massiv reduziert. Anschließend <color=#f29e38ff>beschwört sie sofort</color> neue beschworene Objekte.",
+				"params": []
+			},
+			{
+				"description": "Solange sich „Zweig des winterlichen Windes“, „Zweig mit Ahornblatt“ und „Zweig mit glorreichen Blüten“ auf dem Kampffeld befinden, belegen sie andere Einheiten jeweils mit einem unterschiedlichen <color=#f29e38ff>Aura</color>-Effekt. Nachdem eine verbündete Einheit <color=#f29e38ff>einen „Zweig des Himmelsbaums“ besiegt</color> hat, erhält sie 1 Stapelung „Macht der Versorgung“, was den verursachten SCH erhöht.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Besiege aktiv die beschworenen Objekte des Boss-Phantoms, um seinen WDS effektiv zu verringern.",
+				"params": []
+			},
+			{
+				"description": "Besiege vorrangig den „Zweig des Himmelsbaums“ auf dem Kampffeld, um „Macht der Versorgung“ zu erhalten und den verursachten SCH verbündeter DPS-Figuren zu erhöhen.",
+				"params": []
+			},
+			{
+				"description": "Besiege den „Zweig mit saftigen Früchten“ so schnell wie möglich vor seiner Aktion, um zu verhindern, dass er „Überladener Geweihstoß“ des Boss-Phantoms kontinuierlich auflädt.",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Wind",
+	"id": "202401601"
+}

@@ -1,0 +1,176 @@
+{
+	"name": "Automaton: Grizzly",
+	"description": "Ein Automaton, der mit Technologie aus der Alten Welt zusammengebaut wurde. Er wurde mit einer robusten Rüstung verstärkt, um vorzustürmen und die Silbermähnen-Wachen zu beschützen.\nIm Kampf beschwört ein Automaton: Grizzly Automatons des Typs „Spinne“ und entfesselt einen mächtigen, geladenen Angriff.",
+	"icon": "spriteoutput/monsterfigure/Monster_1013010.png",
+	"shortIcon": "Monster_1013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1013010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1209,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 420,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Sprengbefehl",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört den Automaton: Spinne.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301001"
+		},
+		{
+			"name": "Wutbefehl",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Hat eine Chance, alle Verbündeten zu verspotten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				2,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301002"
+		},
+		{
+			"name": "Überlastbefehl",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Bei der nächsten Aktion wird „Vernichtungsbefehl“ gegen alle Verbündeten eingesetzt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301003"
+		},
+		{
+			"name": "Vernichtungsbefehl",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301004"
+		},
+		{
+			"name": "",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301005"
+		},
+		{
+			"name": "Zerstörungsbefehl",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101301009"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Thunder"
+	],
+	"summons": [
+		"1012021"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "1013010"
+}

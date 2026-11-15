@@ -1,0 +1,107 @@
+{
+	"name": "蚀月狼卒",
+	"description": "来自蚀月猎群的步离人士兵，以贪婪吞噬敌人血肉而闻名。",
+	"icon": "spriteoutput/monsterfigure/Monster_2032020.png",
+	"shortIcon": "Monster_2032020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2032020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 186,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "啃噬",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成物理属性伤害，若自身处于【<u>月狂</u>】状态，则攻击我方目标后，回复其自身生命值。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203202001"
+		},
+		{
+			"name": "狼吞",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "当敌方施放攻击后，为<u>能够进入【月狂】状态的敌方单位</u>附加1层【<u>嗜血</u>】，当【<u>嗜血</u>】达到指定层数时，将使其进入【<u>月狂</u>】状态。\n行动序列上出现【月狂】倒计时，倒计时回合开始时所有敌方单位解除【<u>月狂</u>】状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.4,
+				6,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203202002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181013,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "203202003"
+}

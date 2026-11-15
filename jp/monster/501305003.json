@@ -1,0 +1,167 @@
+{
+	"name": "{RUBY_B#ふつぎょうせんたい}払暁戦隊{RUBY_E#}・レッド",
+	"description": "「払暁戦隊」のリーダー。どんな困難も気に留めないほどの楽天家で、豪快な熱血漢。\n「成功率がたったの1%？はははっ、それはデータに過ぎない。残りは私たちの勇気と友情、そして根性で補えばいい！」\n烈火で鍛えた魂で暗闇を燃やす——燎原の恒星、レイメイレッド！\n必ず夜は明ける——払暁戦隊、レイメイジャー！",
+	"icon": "spriteoutput/monsterfigure/Monster_5013050.png",
+	"shortIcon": "Monster_5013050",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5013050.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 116.24953500000001,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "払暁ブレード",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501305001"
+		},
+		{
+			"name": "払暁ホイール",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体及び隣接する味方に炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				6,
+				3,
+				0.15,
+				60,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501305002"
+		},
+		{
+			"name": "払暁の意志",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "自身に「払暁フィールド」を付与する。この状態では、レイメイジャーが継続的に「払暁の閃影」を発動し、行動制限系デバフを無効化し、自身の靭性は削られなくなる。また、炎属性の攻撃を受けると即座に行動する。レイメイジャーが「払暁フィールド」状態にある時、一定回数の攻撃を受けた後、「払暁の消滅」を発動する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				7,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501305003"
+		},
+		{
+			"name": "払暁の閃影",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501305004"
+		},
+		{
+			"name": "払暁の消滅",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "「払暁フィールド」を解除し、自身に「失意」を付与する。受けるダメージがアップし、炎属性耐性がダウンする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.4,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501305005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.8,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Fire",
+	"id": "501305003"
+}

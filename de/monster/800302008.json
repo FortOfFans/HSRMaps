@@ -1,0 +1,160 @@
+{
+	"name": "Lodern aus dem All",
+	"description": "Eine außerirdische Lebensform, die im vom Stellaron erschaffenen Fragmentum heranwächst und sich von der Energie dieser Welt ernährt. Auf ihrer Rüstung lodern die sengenden Flammen aus dem Innern eines Sterns.\nIm Kampf äschert das Lodern aus dem All alles ein, mit dem es in Berührung kommt.",
+	"icon": "spriteoutput/monsterfigure/Monster_8003020.png",
+	"shortIcon": "Monster_8003020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 627.75,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Brüllendes Inferno",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Feuer-SCH zu und verursacht mit hoher Chance „Anfachen“.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302001"
+		},
+		{
+			"name": "Flammende Absorption",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Wechselt in den Status „Selbstentzündung“. „Regen der reinigenden Flammen“ kann in nachfolgenden Angriffen eingesetzt werden.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				60,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302002"
+		},
+		{
+			"name": "Regen der reinigenden Flammen",
+			"tag": "Abpraller",
+			"type": "Fähigkeit",
+			"description": "Fügt einem zufälligen Verbündeten kontinuierlich geringen Feuer-SCH zu und verursacht mit hoher Chance „Anfachen“.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				2,
+				0.5,
+				5,
+				60
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302003"
+		},
+		{
+			"name": "Geschmolzene Fusion",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Erhöht ANG. Dieser Status wird bei Schwächebruch entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_DOT_Burn",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800302008"
+}

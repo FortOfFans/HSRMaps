@@ -1,0 +1,517 @@
+{
+	"name": "Dirigent aller Klänge",
+	"description": "Dominicus des Chors der Harmonie ist eine der Inkarnationen von Xipe der Harmonie. Durch die Störungen der „Ordnung“ hat sich seine ursprüngliche Form verändert. Als Reaktion auf die Wünsche des kollektiven Bewusstseins können die von ihm geleiteten Hymnen die Welt den Wünschen nach neu formen und neue Gesetze erschaffen. Jeder, der sich dies wünscht, wird zu der Quelle seiner Macht.",
+	"icon": "spriteoutput/monsterfigure/Monster_3025010.png",
+	"shortIcon": "Monster_3025010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3025010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 16275,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 240,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 10,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "Grazioso",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501301"
+		},
+		{
+			"name": "Maestoso",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501302"
+		},
+		{
+			"name": "Vaneggiando",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Lässt einen Verbündeten eine hohe Chance haben, von <u>Fremdartiger Traum</u> betroffen zu werden.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501303"
+		},
+		{
+			"name": "Variation",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. In der nächsten Runde wird „Tanzen im Traume“ eingesetzt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501304"
+		},
+		{
+			"name": "Überleitung",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Setzt in der nächsten Runde „Singen im Regen“ ein und stellt den WDS aller „Echos alter Träume“ wieder her.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501305"
+		},
+		{
+			"name": "Tanzen im Traume",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Veranlasst alle handlungsfähigen „Echos alter Träume“ dazu, einem anvisierten Verbündeten imaginären SCH zuzufügen. Wenn keine handlungsfähigen Echos alter Träume vorhanden sind, schlägt der Einsatz dieser Fähigkeit fehl. Reduziert gleichzeitig massiv den WDS.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				240
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501306"
+		},
+		{
+			"name": "Tanzen im Traume",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Veranlasst alle handlungsfähigen „Echos alter Träume“ dazu, einem anvisierten Verbündeten imaginären SCH zuzufügen. Wenn keine handlungsfähigen Echos alter Träume vorhanden sind, schlägt der Einsatz dieser Fähigkeit fehl. Reduziert gleichzeitig massiv den WDS.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501307"
+		},
+		{
+			"name": "Singen im Regen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten imaginären SCH zu und veranlasst alle handlungsfähigen „Echos alter Träume“ dazu, allen Verbündeten imaginären SCH zuzufügen. Wenn keine handlungsfähigen Echos alter Träume vorhanden sind, schlägt der Einsatz dieser Fähigkeit fehl. Reduziert gleichzeitig massiv den WDS.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				3,
+				0.5,
+				240
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501308"
+		},
+		{
+			"name": "Unendlicher Stimmumfang",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Eins mit dem Licht“ ein und erhält einen Schild. Der verursachte SCH wird erhöht.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.09,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501309"
+		},
+		{
+			"name": "",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501310"
+		},
+		{
+			"name": "Im Anfang war das Wort",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Nach 7 Rd. wird „Im Anfang war die Tat“ eingesetzt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501311"
+		},
+		{
+			"name": "Im Anfang war die Tat",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven imaginären SCH zu, der die VTD der Ziele ignoriert.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501312"
+		},
+		{
+			"name": "Resonante Projektion",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Während „Dirigent aller Klänge“ im Status „Im Anfang war die Kraft“ ist, führt er sofort nach jeder Aktion eines Verbündeten selbst eine Aktion durch und wird immun gegen von Verbündeten verursachte Effekte, die die Aktion verzögern. Wenn er Schwächebruch erleidet, wird der Zähler von „Im Anfang war die Tat“ nicht unterbrochen.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				10,
+				10,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501313"
+		},
+		{
+			"name": "Großes Erwachen",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "„Dirigent aller Klänge“ beschwört 4 „Echos alter Träume“. Der von Echos alter Träume erlittene SCH wird von Dirigent aller Klänge aufgenommen. Nach jeder Runde wird WDS von Echos alter Träume mit Schwächebruch wiederhergestellt. Für jeden gebrochenen Widerstand der Einheit wird Verbündeten „<u>Wenn wir im Licht wandeln</u>“ zugefügt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.25,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501314"
+		},
+		{
+			"name": "Freud und Leid geteilt",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501315"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501316"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501317"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501318"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501319"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501320"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"3022011"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 2,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100701",
+				"name": "Solider Schutz",
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100702",
+				"name": "Endloser Rhythmus",
+				"description": "Beschworene Objekte erleiden <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem das Boss-Phantom <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird der erlittene SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100703",
+				"name": "Freud und Leid geteilt",
+				"description": "Das Boss-Phantom <color=#f29e38ff><u>teilt</u></color> seine eigene Schwächetypen mit beschworenen Objekten. Gleichzeitig wird WDS, der nicht den Schwächetypen entspricht, um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.4
+				]
+			},
+			{
+				"id": "100704",
+				"name": "Erhabener Segen",
+				"description": "Erhöht den max. WDS von beschworenen Objekten um <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+				"params": [
+					10
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10071",
+				"name": "Phase I: Chor des Volkes",
+				"description": "Das Boss-Phantom wird „Tanzen im Traume“ und „Singen im Regen“ einsetzen, um massiven SCH zu verursachen.",
+				"answer": "Strategie: Füge so vielen beschworenen Objekten wie möglich Schwächebruch zu, bevor „Tanzen im Traume“ und „Singen im Regen“ eingesetzt werden.",
+				"skills": [
+					{
+						"id": "100711",
+						"type": "Normal",
+						"name": "Aufladen und Einsetzen von „Langer Ton am fernen Horizont“",
+						"texts": [
+							{
+								"description": "Nachdem beschworene Objekte Schwächebruch erlitten haben, wird „Langer Ton am fernen Horizont“ aufgeladen. Langer Ton am fernen Horizont reduziert den WDS aller Gegner. Triff so viele Gegner ohne Schwächebruch wie möglich, um den Effekt der WDS-Reduzierung zu maximieren.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100712",
+						"type": "Normal",
+						"name": "Dem SCH entgegenwirken, der durch „Tanzen im Traume“ und „Singen im Regen“ des Boss-Phantoms verursacht wird",
+						"texts": [
+							{
+								"description": "Füge so vielen beschworenen Objekten wie möglich Schwächebruch zu, um den durch „Tanzen im Traume“ und „Singen im Regen“ verursachten SCH zu schwächen. Je mehr beschworene Objekte nicht an Schwächebruch leiden, desto höher ist der SCH, der durch „Tanzen im Traume“ und „Singen im Regen“ des Boss-Phantoms verursacht wird. Wenn alle beschworenen Objekte Schwächebruch erleiden, wird der WDS des Boss-Phantoms beim Einsatz von „Tanzen im Traume“ und „Singen im Regen“ reduziert.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100713",
+						"type": "Normal",
+						"name": "Dem Kontrolleffekt von „Fremdartiger Traum“ entgegenwirken",
+						"texts": [
+							{
+								"description": "Erhöhe den Effekt-WDS oder setze Fähigkeiten ein, um „Fremdartiger Traum“ zu entfernen.",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10072",
+				"name": "Phase II: Letzter Satz",
+				"description": "„Echo alter Träume“ wird das Kampffeld nicht verlassen und „Im Anfang war die Tat“ wird nicht unterbrochen werden.",
+				"answer": "Strategie: Füge dem Gegner Schwächebruch zu, um Langer Ton am fernen Horizont aufzuladen und Verbündeten Schilde zu verleihen.",
+				"skills": [
+					{
+						"id": "100721",
+						"type": "Normal",
+						"name": "Dem SCH entgegenwirken, der durch „Im Anfang war die Tat“ des Boss-Phantoms verursacht wird",
+						"texts": [
+							{
+								"description": "Füge beschworenen Objekten Schwächebruch zu oder reduziere den WDS des Boss-Phantoms, um einen Schild zu erhalten, der „Im Anfang war die Tat“ abwehren kann.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Das Boss-Phantom und seine beschworenen Objekte erleiden <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nach dem Erleiden von <color=#f29e38ff>Schwächebruch</color> wird die Aktion zusätzlich verzögert und erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "Wenn beschworene Objekte <color=#f29e38ff>Schwächebruch</color> erleiden, verliert das Boss-Phantom eine bestimmte Menge an WDS. Nachdem beschworene Objekte <color=#f29e38ff>Schwächebruch</color> erlitten haben, wird „Langer Ton am fernen Horizont“ aufgeladen. Setze Langer Ton am fernen Horizont ein, um allen Gegnern massiven SCH zuzufügen und ihren WDS zu reduzieren.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Wenn das Boss-Phantom <color=#f29e38ff>Schwächebruch</color> erleidet, wird der von ihm und seinen beschworenen Objekten erlittene SCH massiv erhöht. Es werden Fertigkeitspunkte für alle Verbündeten wiederhergestellt und ihre Ultimates werden aktiviert.",
+				"params": []
+			},
+			{
+				"description": "Füge <color=#f29e38ff>beschworenen Objekten</color> mehrmals Schwächebruch zu, um „Langer Ton am fernen Horizont“ effektiv aufzuladen. Setze Langer Ton am fernen Horizont ein, um den WDS aller Gegnern zu reduzieren.",
+				"params": []
+			}
+		]
+	},
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "302501302"
+}

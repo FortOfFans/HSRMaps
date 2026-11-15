@@ -1,0 +1,128 @@
+{
+	"name": "Bronya",
+	"description": "Wächternachfolgerin von Belobog und Kommandantin der Silbermähnen-Wachen.\nBronya kann verschiedene Taktiken gegen ihre Gegner einsetzen und die Kampffähigkeiten Verbündeter deutlich verstärken.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004030.png",
+	"shortIcon": "Monster_1004030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7672.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 210,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Windreiterkugel",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Wind-SCH zu.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403001"
+		},
+		{
+			"name": "Erneuter Kampfeinsatz",
+			"tag": "Unterstützung",
+			"type": "Fähigkeit",
+			"description": "Entfernt alle Debuffs eines Gegners (Bronya ausgenommen) und lässt ihn sofort die nächste Aktion ausführen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403002"
+		},
+		{
+			"name": "Koordinierte Verstärkung",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört einen Silbermähnen-Soldaten oder einen Silbermähnen-Schütze.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403003"
+		},
+		{
+			"name": "Unterdrückungsfeuer",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Wind-SCH zu und verzögert dessen Aktion.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [
+		"1002040",
+		"1002050"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "100403008"
+}

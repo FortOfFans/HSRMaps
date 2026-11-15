@@ -1,0 +1,244 @@
+{
+	"name": "歩離人の戦首・呼雷",
+	"description": "十の悪行を尽くして幽獄の底に封じられた歩離人の首領。\n<unbreak>700</unbreak>年にわたる幽閉生活で苦しみと憎しみを募らせた呼雷は、脱獄を果たした後、狼群の主として仙舟「羅浮」に戦いを挑んだ。しかし、この狂気に満ちた行動の裏には、何やら別の目的が隠されているようだ……",
+	"icon": "spriteoutput/monsterfigure/Monster_2034010.png",
+	"shortIcon": "Monster_2034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1488,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "折れた剣を牙とする",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401701"
+		},
+		{
+			"name": "鉄を斬って爪とする",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に雷属性のダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401702"
+		},
+		{
+			"name": "地割れ、草残らず",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "自身以外のすべてのユニットの行動を遅延させ、少量の雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				0.5,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401703"
+		},
+		{
+			"name": "雷風鳴り、枯草滅ぼす",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に雷属性ダメージを与え、確率で味方全体に「<u>まとわりつく恐怖</u>」を付与する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401704"
+		},
+		{
+			"name": "貪狼は駆け、血色が降臨する",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の雷属性ダメージを与え、高確率で「<u>まとわりつく恐怖</u>」を付与する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				1.5,
+				60
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401705"
+		},
+		{
+			"name": "月狂い",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "敵が攻撃を行った後、<u>「月狂い」状態に入ることができる敵</u>に「<u>嗜血</u>」を1層付与する。「<u>嗜血</u>」が一定層数に達する時、「<u>月狂い</u>」状態に入る。\nアクションバーに「月狂い」のカウントダウンが出現し、カウントダウンのターンが回ってきた時、すべての敵の「<u>月狂い</u>」状態が解除される。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				4,
+				8,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401706"
+		},
+		{
+			"name": "月に吼える狼",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "呼雷が「<u>月狂い</u>」状態に入った後、敵が攻撃を行うたびに、呼雷は「憤激」を1層獲得する。攻撃を行ったのが呼雷の場合、追加で「憤激」を1層獲得する。敵以外が攻撃を行うたびに、「憤激」が1層減少する。「憤激」には初期層数がある。「憤激」が一定層数に達すると、呼雷は「憤激」の層数をすべて消費して「貪狼は駆け、血色が降臨する」を発動する。味方キャラの攻撃によって「憤激」が0層になると、呼雷の靭性を削り、「憤激」を指定の層数にリセットする。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				10,
+				3,
+				120,
+				4,
+				0.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401707"
+		},
+		{
+			"name": "我の咆哮に耳を傾け、狼群に追従せよ",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "アクションバーに「狼群招集」が出現する。「狼群招集」が行動する時、「狼兵・玄爪」または「狼兵・蝕月」が召喚される。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				30,
+				0,
+				0.6,
+				1.2,
+				1.8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401708"
+		},
+		{
+			"name": "呼集",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "第三段階に入った後、「狼群招集」の速度がアップし、さらに即座に「<u>月狂い</u>」状態になる。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401709"
+		},
+		{
+			"name": "紅月の力",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "呼雷が「雷風鳴り、枯草滅ぼす」を発動するたびに、自身の与ダメージがアップする。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401710"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind"
+	],
+	"summons": [
+		"203201005",
+		"203202006"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "2034017"
+}

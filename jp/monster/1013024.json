@@ -1,0 +1,234 @@
+{
+	"name": "自動機兵・ヴォルク（スペック）",
+	"description": "コードが影響を受けた後の正常な投影。旧世界が残した技術で作られた機械ユニットを参考にしている。あまり見れない人型の機械、右腕の一部にチェーンソーが付いていて、採集や建造の作業を担っていたらしい。\n戦闘中、自動機兵「ヴォルク」（スペック）のチェーンソーは裂創を作り、相手のHPを継続的に減らす。",
+	"icon": "spriteoutput/monsterfigure/Monster_1013020.png",
+	"shortIcon": "Monster_1013020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1013020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 172,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "伐採指令",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の物理属性ダメージを与え、1ヒットごとに確率で裂創状態を付与する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.05,
+				4,
+				10
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302401"
+		},
+		{
+			"name": "目標ロックオン",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "指定した味方単体をロックオンし、次の行動でターゲットに「伐採指令」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302402"
+		},
+		{
+			"name": "照準指令",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "味方を2人ロックオンし、次の行動で「伐採指令」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302403"
+		},
+		{
+			"name": "協力指令",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "味方2人をロックオンし、次の行動で「伐採指令」を発動する。同時に「自動機兵・グリズリー」がチャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302404"
+		},
+		{
+			"name": "解体指示",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与え、高確率で裂創状態を1層与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302405"
+		},
+		{
+			"name": "取り壊す",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与え、高確率で裂創状態を1層与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302406"
+		},
+		{
+			"name": "",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302407"
+		},
+		{
+			"name": "作戦加速",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "自身の速度を大アップする。「協力指令」を発動する時、さらに速度を小アップする。速度アップ効果は累積できる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.15,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302408"
+		},
+		{
+			"name": "速度率再構成",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "倒された後に「速度率修復」状態に入り、一定ターン後に復活し、自身の速度をさらにわずかにアップする。速度アップ効果は累積できる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.25,
+				2,
+				0.5,
+				0,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302409"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "1013024"
+}

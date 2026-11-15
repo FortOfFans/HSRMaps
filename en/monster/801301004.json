@@ -1,17 +1,24 @@
 {
 	"name": "Voidranger: Trampler",
-	"description": "A product of the Antimatter Legion utilizing the Warforge to recast and fuse remnants of fallen warriors and Leviathans.\nThough relatively rare, they possess both the intelligence of a warrior and the power and mobility of a Leviathan. Its screech can summon a large number of Voidrangers.",
+	"description": "A product of the Antimatter Legion utilizing the Warforge to recast and fuse remnants of fallen warriors and leviathans.\nThough relatively rare, they possess both the intelligence of a warrior and the power and mobility of a leviathan. Its screech can summon a large number of Voidrangers.",
 	"icon": "spriteoutput/monsterfigure/Monster_8013010.png",
 	"shortIcon": "Monster_8013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8013010.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 302.250465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "801301001",
 			"name": "Unreal Projection",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801301001"
 		},
 		{
-			"id": "801301002",
 			"name": "Rule of Force",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -39,15 +46,15 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801301002"
 		},
 		{
-			"id": "801301003",
 			"name": "War Trample",
 			"tag": "Blast",
 			"type": "Ability",
-			"description": "Deals minor Quantum DMG to a single target and units adjacent to the target.",
+			"description": "Deals minor Quantum DMG to one designated target and units adjacent to the target.",
 			"element": "Quantum",
 			"attackType": "Normal",
 			"params": [
@@ -55,11 +62,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801301003"
 		},
 		{
-			"id": "801301004",
 			"name": "Spiral Arrow",
 			"tag": "Lock On",
 			"type": "Ability",
@@ -69,11 +76,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801301004"
 		},
 		{
-			"id": "801301005",
 			"name": "End of Bow",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -87,42 +94,53 @@
 			],
 			"spGain": 25,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801301005"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Physical",
 		"Wind",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 111011,
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
 				"count": 1
 			},
 			{
@@ -135,6 +153,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "801301004"

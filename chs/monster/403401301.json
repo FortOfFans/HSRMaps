@@ -1,0 +1,493 @@
+{
+	"name": "末日歧途的盗火者",
+	"description": "伴随黑潮而来、狩猎泰坦火种的无名剑士，无人知晓其真身。\n身负不可思议的力量，剑技也近乎无懈可击。疯狂与执着交织于它的锋刃，神悟树庭与哀丽秘榭皆毁于其手。",
+	"icon": "spriteoutput/monsterfigure/Monster_4034010.png",
+	"shortIcon": "Monster_4034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 10230,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1200,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 2,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "亡死的黑云",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401301"
+		},
+		{
+			"name": "将尽的命数",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成物理属性伤害，被击中目标降低生命值的一部分转化为<u>【侵蚀】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401302"
+		},
+		{
+			"name": "相混的道途",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使【残破容器】进入【共祭】状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401303"
+		},
+		{
+			"name": "幽冥的悼念",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "与【残破容器】一同施放【亡死的黑云】或【将尽的命数】，随后吸收【残破容器】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401304"
+		},
+		{
+			"name": "垂死的哽咽",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "获得<u>【灾难之力】</u>并进入【垂死的哽咽】状态，下次行动时施放【却是必要的苦难】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.8,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401305"
+		},
+		{
+			"name": "沉默的悲叹",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "获得<u>【灾难之力】</u>并进入【沉默的悲叹】状态，下次行动时施放【莫因舍弃而哭泣】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.0029999998,
+				2.5
+			],
+			"spGain": 0,
+			"delay": 1.8,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401306"
+		},
+		{
+			"name": "却是必要的苦难",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "消耗所有<u>【灾难之力】</u>对我方全体造成数次少量物理属性伤害，消耗的<u>【灾难之力】</u>层数越多，伤害的段数越多，随后对我方全体造成少量物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.2,
+				2
+			],
+			"spGain": 20,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401307"
+		},
+		{
+			"name": "莫因舍弃而哭泣",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成物理属性伤害，消耗所有<u>【灾难之力】</u>额外造成数次少量物理属性伤害，消耗的<u>【灾难之力】</u>层数越多，伤害的段数越多。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.4,
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401308"
+		},
+		{
+			"name": "分离的哀痛",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "施放【亡死的黑云】或【将尽的命数】时，召唤【残破容器】。【残破容器】被消灭时，自身失去生命值。当自身再次施放【亡死的黑云】或【将尽的命数】时，曾被该攻击召唤的【残破容器】将一同发起攻击，随后被自身吸收。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				135,
+				16,
+				0.0029999998
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401309"
+		},
+		{
+			"name": "迷失的共祭",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "施放【垂死的哽咽】或【沉默的悲叹】时，召唤【残破容器】。当【末日歧途的盗火者】处于<u>【镣铐崩解】</u>状态时，若【残破容器】受到致命攻击，则立即重新召唤【残破容器】，并削减【末日歧途的盗火者】的韧性。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.8,
+				0.3,
+				1,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401310"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401311"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401312"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401313"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401314"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401315"
+		},
+		{
+			"name": "镣铐崩解",
+			"tag": "强化",
+			"type": "技能",
+			"description": "进入<u>【镣铐崩解】</u>状态，召唤4个【残破容器】，并对这些【残破容器】施加【枷锁】状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401316"
+		},
+		{
+			"name": "灾厄复苏",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "失去第1层韧性时，解除所有控制状态，进入<u>【镣铐崩解】</u>状态，并立即行动。进入<u>【镣铐崩解】</u>状态前，韧性不会低于1层。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.25,
+				95,
+				0.1,
+				0.5,
+				225
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401317"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.15,
+				1,
+				0.2,
+				1,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401318"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.7,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401319"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"4032021",
+		"403202111",
+		"403202112",
+		"403202113"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101101",
+				"name": "坚防守备",
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101102",
+				"name": "镣铐崩解",
+				"description": "首领幻影失去第一层韧性或行动一定次数后，进入【<color=#f29e38ff><u>镣铐崩解</u></color>】状态，改变攻击方式。",
+				"params": []
+			},
+			{
+				"id": "101103",
+				"name": "黑雾弥漫",
+				"description": "消灭【完整容器】将不再削减首领幻影的韧性。",
+				"params": []
+			},
+			{
+				"id": "101104",
+				"name": "容器强化",
+				"description": "所有【残破容器】和【完整容器】的生命上限提高。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10111",
+				"name": "末日歧途的盗火者",
+				"description": "首领幻影失去第一层韧性或行动一定次数后，进入【镣铐崩解】状态，改变攻击方式，并召唤可以不断重复召唤的【残破容器】。",
+				"answer": "应对策略：在首领幻影施放强力技能前，尽可能地消灭【残破容器】以降低【灾难之力】层数，优先消灭【完整容器】。",
+				"skills": [
+					{
+						"id": "101111",
+						"type": "Normal",
+						"name": "如何削减首领幻影的【灾难之力】",
+						"texts": [
+							{
+								"description": "每消灭1个【残破容器】，会让首领幻影失去1层【灾难之力】。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101112",
+						"type": "Normal",
+						"name": "如何应对【完整容器】",
+						"texts": [
+							{
+								"description": "优先消灭【完整容器】，可以获得额外回合和增益状态奖励，同时阻止其为首领幻影的【灾难之力】充能。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "首领幻影<color=#f29e38ff>失去第一层韧性</color>时，立即进入<color=#f29e38ff>【镣铐崩解】</color>状态。首领幻影在不处于【镣铐崩解】状态的情况下行动一定次数后，也会进入【镣铐崩解】状态。",
+				"params": []
+			},
+			{
+				"description": "首领幻影进入【镣铐崩解】状态后，<color=#f29e38ff>改变攻击方式</color>。且召唤的【残破容器】在被消灭后会立即召唤新的【残破容器】。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "在首领幻影的【灾难之力】未被清空时，消灭召唤物以削弱首领幻影的强力技能。",
+				"params": []
+			},
+			{
+				"description": "优先消灭【完整容器】，可以获得额外回合和增益状态奖励，同时阻止其为首领幻影的【灾难之力】充能。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "403401301"
+}

@@ -1,0 +1,167 @@
+{
+	"name": "Daybreak Squadron: Cinderborne",
+	"description": "The youngest member of the group, a model citizen who perfectly embodies the school conduct code and looks to the future with starry-eyed optimism. Yet, beneath his earnestness lies a trace of shyness and self-doubt. When something piques his interest, he erupts with a manic enthusiasm only to be overcome with mortification afterward for being a nuisance.\n\"It's a promise, then. You protect the universe, and we'll protect Planarcadia.\"\nCleaving through despair! A blade as sharp as steel! The undying edge — Cinderborne Warrior!\nDarkness wanes, and dawn awakens! The Daybreak Squadron arises!",
+	"icon": "spriteoutput/monsterfigure/Monster_5013070.png",
+	"shortIcon": "Monster_5013070",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5013070.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Daybreak Blade",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to one designated target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501307001"
+		},
+		{
+			"name": "Daybreak Flywheel",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Physical DMG to one designated target and adjacent targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6,
+				3,
+				0.15,
+				60,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501307002"
+		},
+		{
+			"name": "Daybreak Will",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Applies \"Daybreak Forcefield\" to this unit. While in this state, Daybreak Squadron continuously uses \"Shadow Dance of the Daybreak Blade,\" and is immune to Crowd Control debuffs. This unit's Toughness cannot be reduced. When this unit is attacked by a Physical-Type attack, it will immediately take action. When Daybreak Squadron is in the \"Daybreak Forcefield\" state, after being attacked a certain number of times, it will use \"Daybreak Dispersal.\"",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				7,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501307003"
+		},
+		{
+			"name": "Shadow Dance of the Daybreak Blade",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals massive Physical DMG to one designated target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501307004"
+		},
+		{
+			"name": "Daybreak Dispersal",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "Dispels \"Daybreak Forcefield\" and applies \"Disheartened\" to this unit, increasing DMG taken and reducing this unit's Physical RES.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.4,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501307005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.8,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "501307001"
+}

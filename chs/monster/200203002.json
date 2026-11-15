@@ -1,0 +1,86 @@
+{
+	"name": "幽府武弁",
+	"description": "追随十王司判官执行任务的武卫。\n面戴象征冥世来使的黑白绘面，手持铡刀，其攻击一如十王司的使命沉重而不可违逆。",
+	"icon": "spriteoutput/monsterfigure/Monster_2002030.png",
+	"shortIcon": "Monster_2002030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2002030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 139.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 60,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "锯恶",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量物理属性伤害，并有概率使受到攻击的我方目标陷入【震荡】状态。【震荡】状态下的目标受到攻击后，陷入【强烈震荡】状态，然后解除【震荡】状态。【强烈震荡】状态下的目标无法行动。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.35,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200203001"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "200203002"
+}

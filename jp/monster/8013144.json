@@ -1,0 +1,190 @@
+{
+	"name": "反物質エンジン",
+	"description": "力の根源を象徴する極致の化身、それが持つエネルギーの形式はまだ解明されていない。\n反物質エンジンは他の敵にエネルギーを供給し、それらのスキルを強化する。",
+	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
+	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012141.png",
+	"stats": {
+		"baseAttack": 14.4,
+		"baseDefense": 210,
+		"baseHealth": 627.75,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 180,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "虚明裂変",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "「厄災の右手」に強化状態を付与し、ターゲットの靭性を回復する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314401"
+		},
+		{
+			"name": "災厄侵襲",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "「黎明の左手」に強化状態を付与し、ターゲットの靭性を回復する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314402"
+		},
+		{
+			"name": "エンジン昇変",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "自身以外の敵全体に強化状態を付与し、ターゲットの靭性を回復する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314403"
+		},
+		{
+			"name": "順逆湮滅",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "味方単体に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314404"
+		},
+		{
+			"name": "厄災の前兆",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次の行動で味方全体に「終末降臨」を発動。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314405"
+		},
+		{
+			"name": "終末降臨",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314406"
+		},
+		{
+			"name": "エンジンの狭間",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "「反物質エンジン」が弱点撃破状態から回復するたびに、弱点属性が変化する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314407"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 182001,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "8013144"
+}

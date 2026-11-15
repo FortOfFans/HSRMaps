@@ -1,0 +1,136 @@
+{
+	"name": "天谴歌队",
+	"description": "由「纷争」雕琢的泰坦眷属，流淌着尼卡多利的金血。天谴之矛下的歌者，唱诵着赞美战士与疯王的诗句，以神咒呼唤尼卡多利的赐福。",
+	"icon": "spriteoutput/monsterfigure/Monster_4012040.png",
+	"shortIcon": "Monster_4012040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012040.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 892.8000744000001,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "礼赞尼卡多利",
+			"tag": "强化",
+			"type": "技能",
+			"description": "进入【战歌】状态，使自身以外的敌方单位的【战甲】的层数上限提高。进入战斗时立即进入【战歌】状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401204001"
+		},
+		{
+			"name": "投进柔软的火焰",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401204002"
+		},
+		{
+			"name": "城邦守护者",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "拥有一定层数的【战甲】，使自身受到的伤害降低。受到攻击后减少自身1层【战甲】，减少到0层时，【战甲】被破坏，对自身造成大量虚数属性伤害，并使自身行动延后，使破坏【战甲】的我方单位恢复能量。【战甲】被破坏后，自身受到攻击时额外再受到少量虚数属性伤害。【战甲】在自身回合结束时恢复到最大层数。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.3,
+				0.1,
+				0.1,
+				0.06,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401204003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Imaginary",
+	"id": "401204003"
+}

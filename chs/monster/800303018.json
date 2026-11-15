@@ -1,0 +1,213 @@
+{
+	"name": "守护者之影",
+	"description": "由星核力量幻造而成的虚影，执行着令裂界不断扩张的意志。\n智慧生命的欲求在裂界中投影形成的活体能量，犹如一颗沙砾在蚌壳中凝成了珠贝。这股力量四处徘徊，漫无目的，直到感受到其主的意志才会听令行事。",
+	"icon": "spriteoutput/monsterfigure/Monster_8003030.png",
+	"shortIcon": "Monster_8003030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003030.png",
+	"stats": {
+		"baseAttack": 7.2,
+		"baseDefense": 210,
+		"baseHealth": 371.99962800000003,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "追忆闪电",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303001"
+		},
+		{
+			"name": "谴罚闪电",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成少量雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303002"
+		},
+		{
+			"name": "宁静禁令",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "对我方全体设下不能攻击守护者之影的【禁令】，攻击守护者之影的我方目标将立即受到1次攻击。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303003"
+		},
+		{
+			"name": "缴械禁令",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "对我方全体设下不能施放普攻的【禁令】，施放普攻的我方目标将立即受到1次攻击。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303004"
+		},
+		{
+			"name": "缄默禁令",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "对我方全体设下不能施放战技的【禁令】，施放战技的我方目标将立即受到1次攻击。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303005"
+		},
+		{
+			"name": "谴罚雷暴",
+			"tag": "弹射",
+			"type": "技能",
+			"description": "连续对我方随机单体造成少量雷属性伤害，并有概率使受到攻击的我方目标陷入触电状态。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				8,
+				0.5,
+				0.5,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303006"
+		},
+		{
+			"name": "不可违逆之责罚",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对破坏【禁令】的我方单体造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303007"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800303008"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": -0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800303018"
+}

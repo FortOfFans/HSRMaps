@@ -1,0 +1,146 @@
+{
+	"name": "杰帕德",
+	"description": "银鬃铁卫的戍卫长。\n杰帕德会为士兵提供抵挡攻击伤害的护盾。",
+	"icon": "spriteoutput/monsterfigure/Monster_1004020.png",
+	"shortIcon": "Monster_1004020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004020.png",
+	"stats": {
+		"baseAttack": 9,
+		"baseDefense": 210,
+		"baseHealth": 6277.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 125,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "一意之拳",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量冰属性伤害。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402601"
+		},
+		{
+			"name": "霜之惩击",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成冰属性伤害。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402602"
+		},
+		{
+			"name": "戍卫气场",
+			"tag": "防御",
+			"type": "技能",
+			"description": "施放【全体护盾】吸收敌方全体受到的伤害，并使除自身外敌方全体的韧性值无法受到削减。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.48,
+				0.3,
+				0.5,
+				1.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402603"
+		},
+		{
+			"name": "",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402607"
+		},
+		{
+			"name": "以牙还牙",
+			"tag": "其他",
+			"type": "技能",
+			"description": "进入反击状态，持续1回合。在该状态下受到我方目标攻击后，立即对该目标施放【霜之惩击】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402608"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "100402605"
+}

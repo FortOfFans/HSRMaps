@@ -1,0 +1,190 @@
+{
+	"name": "Greif im Mittagslicht",
+	"description": "In der antiken Ära Creatura arbeitete Aquila nach dem Erschaffen der Morgenrot-Maschine mit Kephale zusammen, um die legendären Bestien hervorzubringen, welche die Titanen verkörpern. Der Greif im Mittagslicht soll Aquila darstellen, nachdem er seine Augen geöffnet hatte, um der Welt Licht zu schenken.",
+	"icon": "spriteoutput/monsterfigure/Monster_4023010.png",
+	"shortIcon": "Monster_4023010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4023010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7672.500186,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Durch die Dunkelheit",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301001"
+		},
+		{
+			"name": "Morgengrauen",
+			"tag": "Wegfegen",
+			"type": "Fähigkeit",
+			"description": "Führt beginnend mit dem Verbündeten links einen Wegfegen-Angriff auf 3 aufeinanderfolgende Ziele aus, verursacht geringen Feuer-SCH, fügt den getroffenen Zielen <u>Aquilas Markierung</u> zu und beschwört gleichzeitig „Meteoradler“.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.6,
+				0.5,
+				0.8,
+				1.1,
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301002"
+		},
+		{
+			"name": "Licht in die Zukunft",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Visiert 1 Verbündeten an und aktiviert den Status „Licht in die Zukunft“. Die nächste Aktion setzt „Preiset Aquila“ ein.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301003"
+		},
+		{
+			"name": "Preiset Aquila",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Ziel und angrenzenden Einheiten Feuer-SCH zu. Fügt getroffenen Zielen <u>„Aquilas Markierung“</u> hinzu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4,
+				3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301004"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				40,
+				1.5,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301005"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1,
+				0.4,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"4022010",
+		"4022010",
+		"4022010",
+		"4022010"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Fire",
+	"id": "402301002"
+}

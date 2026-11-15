@@ -3,15 +3,22 @@
 	"description": "An entity imbued with specific cognition, formed by the accumulation of subconscious fragments in the Memory Zone.\nThe boasting of bystanders, the clinging of the weak, the flattery of the servile... The endless vanity shifts into a memetic lifeform, seeking a host that covets both fame and fortune.",
 	"icon": "spriteoutput/monsterfigure/Monster_3012040.png",
 	"shortIcon": "Monster_3012040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3012040.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 116.25,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
 		"type": "MinionLv2"
 	},
 	"skills": [
 		{
-			"id": "301204001",
 			"name": "Crowned in Mortal Name",
 			"tag": "Support",
 			"type": "Ability",
@@ -21,11 +28,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301204001"
 		},
 		{
-			"id": "301204002",
 			"name": "",
 			"tag": "Others",
 			"type": "Ability",
@@ -35,11 +42,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301204002"
 		},
 		{
-			"id": "301204003",
 			"name": "The Authentic Plunges",
 			"tag": "Talent",
 			"type": "Talent",
@@ -52,38 +59,46 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301204003"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Physical",
 		"Fire"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 36,
+		"avatarExpReward": 108,
 		"itemList": [
 			{
 				"id": 2,
@@ -94,11 +109,20 @@
 				"count": 1
 			},
 			{
+				"id": 114012,
+				"count": 1
+			},
+			{
+				"id": 114013,
+				"count": 1
+			},
+			{
 				"id": 181015,
 				"count": 1
 			}
 		]
 	},
+	"guide": null,
 	"rank": "MinionLv2",
 	"stanceType": "Physical",
 	"id": "3012040"

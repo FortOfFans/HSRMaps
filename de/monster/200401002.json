@@ -1,0 +1,167 @@
+{
+	"name": "Stellaron-Jägerin Kafka",
+	"description": "Mitglied der Stellaron-Jäger. Eine wunderschöne Attentäterin mit einem geheimnisvollen Lächeln, die sich durch ihr Geschick mit verschiedensten Waffen und bei der Manipulation anderer auszeichnet. Sie hat den Astralexpress hierhergeführt, um einen unbekannten Plan auszuführen ...",
+	"icon": "spriteoutput/monsterfigure/Monster_2004010.png",
+	"shortIcon": "Monster_2004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1302,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 450,
+		"speed": 119,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Mitternächtlicher Tumult",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Blitz-SCH zu und verursacht mit hoher Chance Schock.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				3,
+				0.75
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401001"
+		},
+		{
+			"name": "Streichelndes Mondlicht",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Zielen Blitz-SCH zu. Wenn das Hauptziel geschockt ist, werden die angrenzenden Ziele auch in Schock versetzt.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401002"
+		},
+		{
+			"name": "Stiller und scharfer Spott",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen Blitz-SCH zu.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401003"
+		},
+		{
+			"name": "Geistergeflüster",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Verursacht bei einem anvisierten Verbündeten mit hoher Chance „Dominieren“ zu und zieht dessen Aktion vor, sodass er sofort einen anderen Verbündeten angreift.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2,
+				1.5,
+				0.5,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401004"
+		},
+		{
+			"name": "Zittern",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn das Ziel gerade unter Schock steht, wird 1-mal direkt Schock-SCH verursacht.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401005"
+		},
+		{
+			"name": "Grausamkeit",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn Gegner (außer Kafka) oder dominierte Ziele das geschockte Hauptziel angreifen, wird ein zusätzlicher Blitz-ANG entfesselt. Dieser Effekt kann nur 1-mal pro Runde ausgelöst werden.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "200401002"
+}

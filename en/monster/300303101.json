@@ -3,15 +3,22 @@
 	"description": "An artist playing the role of the prisoner in the Sweet Dreams Troupe. It should be performing in the Charmony Festival, but it is now bound by Order and keeps performing scenes of the \"Past.\" The past is an immortal chain, its tranquil flame igniting within a cage, beckoning the jailer's authority with mere candlelight.",
 	"icon": "spriteoutput/monsterfigure/Monster_3003030.png",
 	"shortIcon": "Monster_3003030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003030.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1627.499907,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 180,
+		"speed": 90,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "300303101",
 			"name": "Cleansing Flagellation",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -24,15 +31,15 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300303101"
 		},
 		{
-			"id": "300303102",
 			"name": "Admonishment of the Masses",
 			"tag": "Blast",
 			"type": "Ability",
-			"description": "Deals minor Physical DMG to a single target and units adjacent to the target.",
+			"description": "Deals minor Physical DMG to one designated target and units adjacent to the target.",
 			"element": "Physical",
 			"attackType": "Normal",
 			"params": [
@@ -41,11 +48,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300303102"
 		},
 		{
-			"id": "300303103",
 			"name": "Shackle-Bearing Messenger",
 			"tag": "Charging",
 			"type": "Ability",
@@ -55,11 +62,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300303103"
 		},
 		{
-			"id": "300303104",
 			"name": "Desmios Evangelion",
 			"tag": "Distribute",
 			"type": "Ability",
@@ -71,11 +78,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300303104"
 		},
 		{
-			"id": "300303105",
 			"name": "",
 			"tag": "Talent",
 			"type": "Talent",
@@ -85,11 +92,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300303105"
 		},
 		{
-			"id": "300303106",
 			"name": "",
 			"tag": "Summon",
 			"type": "Ability",
@@ -99,11 +106,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300303106"
 		},
 		{
-			"id": "300303107",
 			"name": "",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -115,42 +122,53 @@
 			],
 			"spGain": 15,
 			"delay": 1.333,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300303107"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Fire",
 		"Thunder",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 114001,
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
 				"count": 1
 			},
 			{
@@ -163,6 +181,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "300303101"

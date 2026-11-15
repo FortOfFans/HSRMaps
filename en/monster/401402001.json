@@ -3,15 +3,22 @@
 	"description": "The undefeated. The sovereign of all battles. The king of Castrum Kremnos and of ruins,\nGrand Artisan of the war chariot, the throne upon a mountain of corpses, and father of victory,\nThe tyrant of glories, the lightning that split the sea, the Guardian of Amphoreus,\nThe Titan of Strife, the Lance of Fury: Nikador.\nA general that all the world should heed, the eternal sharp sword, the law of Strife and of ending Strife.\nPraise Nikador, greatest of conquerors, greatest of guardians.",
 	"icon": "spriteoutput/monsterfigure/Monster_4014020.png",
 	"shortIcon": "Monster_4014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014020.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 5580,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 60,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
 		"type": "LittleBoss"
 	},
 	"skills": [
 		{
-			"id": "401402001",
 			"name": "The Vanquished Behold Woe",
 			"tag": "Impair",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402001"
 		},
 		{
-			"id": "401402002",
 			"name": "Glory to All Honorable Dead",
 			"tag": "Impair",
 			"type": "Ability",
@@ -39,11 +46,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402002"
 		},
 		{
-			"id": "401402003",
 			"name": "Fury Falls, and All Bows to Strife",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -59,11 +66,11 @@
 			],
 			"spGain": 20,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402003"
 		},
 		{
-			"id": "401402004",
 			"name": "The Fallen Feeds My Might",
 			"tag": "Enhance",
 			"type": "Ability",
@@ -73,45 +80,64 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402004"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
 		}
 	],
 	"weakness": [],
+	"summons": [
+		"4014012",
+		"4012060"
+	],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
 	},
+	"guide": null,
 	"rank": "LittleBoss",
 	"stanceType": "Imaginary",
 	"id": "401402001"

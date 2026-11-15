@@ -1,0 +1,286 @@
+{
+	"name": "{RUBY_B#はんそうぞうしゅ}反創造主{RUBY_E#}、{RUBY_B#じゅういつ}充溢{RUBY_E#}する{RUBY_B#ぞうお}憎悪{RUBY_E#}",
+	"description": "古き「セプター」の核心、オンパロスの「憎悪」が具現化したもの。幾億もの魂の苦難が刻まれ、無数の子羊の血が漆黒の闇へと溶けていく。無限に続く闇が壊れた殻から溢れ出し、首なしの巨人を動かし続ける。\nその殻は絶え間なく流れる「憎悪」によって形作られ、その奥底には混沌の炎に包まれた心が存在するようだ。",
+	"icon": "spriteoutput/monsterfigure/Monster_4035010.png",
+	"shortIcon": "Monster_4035010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4035010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 6975,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 160,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "血と傷を投じる",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				0.05
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501001"
+		},
+		{
+			"name": "苦痛と死を編む",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				0.08
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501002"
+		},
+		{
+			"name": "暴政に屈することなかれ",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "ロックオン中のターゲットに量子属性ダメージを与え、EPを減らす。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				0.5,
+				0.08
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501003"
+		},
+		{
+			"name": "洞窟に囚われ死すなかれ",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "ロックオン中のターゲットに虚数属性ダメージを与え、「<u>行動ロック</u>」状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0.08,
+				3,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501004"
+		},
+		{
+			"name": "神の冠はいずれ砕け散る",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の量子属性ダメージを与え、味方それぞれのEPを減らす。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0.5,
+				0.08
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501005"
+		},
+		{
+			"name": "魂の檻は必ず燃え落ちる",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "ロックオン中のターゲットに大量の虚数属性ダメージを与え、「<u>行動ロック</u>」状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0.08,
+				3,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501006"
+		},
+		{
+			"name": "抗え、そして壊滅せよ",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "「抗え、そして壊滅せよ」状態になり、「ミソス」と「ロゴス」のHPを全回復する。次の行動までは攻撃を受けず、次の行動時に味方全体に「神の国を焼き払い、世界を葬れ」を発動する。すべての「ミソス」と「ロゴス」を「重傷」状態にすると「抗え、そして壊滅せよ」状態が解除される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501007"
+		},
+		{
+			"name": "神の国を焼き払い、世界を葬れ",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の物理属性ダメージを与える。「ミソス」が「重傷」状態でない場合、ランダムで味方キャラ1名を「<u>行動ロック</u>」状態にし、「ロゴス」が「重傷」状態でない場合、味方全体のEPを減らす。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				9,
+				0.2,
+				0.5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501008"
+		},
+		{
+			"name": "オンパロスの「憎悪」",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「反創造主」、「ミソス」、「ロゴス」の攻撃スキルは「オンパロスの『憎悪』」をアップさせる。「憎悪」がアップする時、「鉄墓」は「『知恵』の隕落」を発動し、味方ターゲットの回復できる最大HPと回復できる最大SPをダウンさせる。「憎悪」がダウンする時、この効果は弱まる。「憎悪」が上限に達した時、即座に「万有を灰に、新生の礎に」を発動する。フィールドにいる味方キャラの数が少ないほど、「オンパロスの『憎悪』」が増える量も少なくなる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.35,
+				0.6,
+				0.85,
+				0,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501009"
+		},
+		{
+			"name": "3千万の流転、罪業の輪廻",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「ミソス」と「ロゴス」がダメージを受ける時、「反創造主」もダメージを受ける。「反創造主」、「ミソス」、「ロゴス」は初期に受けるダメージがダウンするが、1体の「ミソス」または「ロゴス」が「重傷」状態になるたびに、ダメージダウン効果は弱まり、両者が同時に「重傷」状態になった時、この効果は解除される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.35,
+				1,
+				1.25,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501010"
+		},
+		{
+			"name": "万有を灰に、新生の礎に",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「オンパロスの『憎悪』」が上限に達した時、戦闘失敗になる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.8,
+				0.9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501011"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				50,
+				20
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501012"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"4035020",
+		"4032060",
+		"4032070"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Physical",
+	"id": "4035010"
+}

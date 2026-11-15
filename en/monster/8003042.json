@@ -3,15 +3,22 @@
 	"description": "A shadow manifested by the power of Stellaron, carrying out the Fragmentum's unceasing will to expand.\nA physical embodiment of the desires of intelligent life in the Fragmentum, like a pearl created from a single grain of sand. However, its purpose has long been twisted and distorted.",
 	"icon": "spriteoutput/monsterfigure/Monster_8003040.png",
 	"shortIcon": "Monster_8003040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003040.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 744,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 172,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "800304201",
 			"name": "",
 			"tag": "Enhance",
 			"type": "Ability",
@@ -21,11 +28,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800304201"
 		},
 		{
-			"id": "800304202",
 			"name": "Fleeting Gilded Spikes",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -37,11 +44,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800304202"
 		},
 		{
-			"id": "800304203",
 			"name": "Fleeting Punishment",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -53,11 +60,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800304203"
 		},
 		{
-			"id": "800304204",
 			"name": "Binding of the Golden Age",
 			"tag": "Charging",
 			"type": "Ability",
@@ -67,11 +74,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 2,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800304204"
 		},
 		{
-			"id": "800304205",
 			"name": "Liberation of the Golden Age",
 			"tag": "Bounce",
 			"type": "Ability",
@@ -83,15 +90,15 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800304205"
 		},
 		{
-			"id": "800304206",
 			"name": "Fleeting Veil",
 			"tag": "Talent",
 			"type": "Talent",
-			"description": "Slightly reduces the Basic ATK, Skill, Ultimate, and Follow-up ATK DMG received by this unit, with a small chance to inflict Imprisonment on the target attacked by Decaying Shadow.",
+			"description": "Slightly reduces the Basic ATK, Skill, Ultimate, and Follow-Up ATK DMG received by this unit, with a small chance to inflict Imprisonment on the target attacked by Decaying Shadow.",
 			"element": "Physical",
 			"attackType": "Normal",
 			"params": [
@@ -101,11 +108,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800304206"
 		},
 		{
-			"id": "800304207",
 			"name": "Liberation of the Golden Age",
 			"tag": "Bounce",
 			"type": "Ability",
@@ -115,42 +122,53 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800304207"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Fire",
 		"Thunder",
 		"Wind"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 111001,
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
 				"count": 1
 			},
 			{
@@ -163,6 +181,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "8003042"

@@ -1,0 +1,145 @@
+{
+	"name": "Fernunterstützung: Drachenreiter",
+	"description": "Ein Automaton, der aus der Technologie der Alten Welt zusammengebaut wurde. Diese seltene Art von humanoidem Automaton wurde am rechten Arm mit einer Kettensäge ausgestattet – vermutlich wurde sie im Bergbau oder auf Baustellen eingesetzt.\nIm Kampf setzt der Automaton: Düsterwolf seine Kettensäge ein, um Bluten bei Gegnern zu bewirken und DoT zu verursachen.",
+	"icon": "spriteoutput/monsterfigure/Monster_1013020.png",
+	"shortIcon": "Monster_1013020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1013020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 651.0003720000001,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Fällbefehl",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten massiven physischen SCH zu. Jedes Mal, wenn das Ziel getroffen wird, besteht eine Chance, dass bei ihm Bluten verursacht wird. Wenn das Ziel beim Einsatz dieser Fähigkeit kein Schild hat, erleidet ein zufälliger Verbündeter 1-mal „Demontage“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.05,
+				4,
+				10
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302001"
+		},
+		{
+			"name": "Ziel anvisieren",
+			"tag": "Anvisieren",
+			"type": "Fähigkeit",
+			"description": "Visiert einen Verbündeten an. Die nächste Aktion auf das Ziel wirkt den Fällbefehl.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302002"
+		},
+		{
+			"name": "Auflösungsbefehl",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen physischen SCH zu und verursacht mit hoher Chance 1 Stapelung Bluten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302003"
+		},
+		{
+			"name": "Demontage",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen physischen SCH zu und verursacht mit hoher Chance 1 Stapelung Bluten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101302004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "101302004"
+}

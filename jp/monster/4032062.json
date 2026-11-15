@@ -1,0 +1,122 @@
+{
+	"name": "囚われたミソス",
+	"description": "叙事詩の記録、伝説に宿るロマン、そしてそれらに価値を与えた幾千もの歳月——そのすべてから、あらゆる信仰を抱く霊性が芽生えた。それはもはや囚人ではない。霊知の葬儀の中で命を終え、鉄で築かれた墓のみをこの世に残すだろう。",
+	"icon": "spriteoutput/monsterfigure/Monster_4032060.png",
+	"shortIcon": "Monster_4032060",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032060.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1488,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "悲劇の残響だけをここに",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に虚数属性ダメージを与え、行動を少し遅延させる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.25,
+				0.005
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403206203"
+		},
+		{
+			"name": "永劫の苦しみを解き放たん",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "味方2体をロックオンし、「解脱をもたらさん」状態になる。「反創造主」は次の行動で「魂の檻は必ず燃え落ちる」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403206204"
+		},
+		{
+			"name": "永劫回帰",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "自身が「重傷」状態になった時、次の行動でHPを全回復し、「重傷」状態を解除する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403206205"
+		},
+		{
+			"name": "不生不滅",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「反創造主」以外のユニットがもたらす行動順を変化させる効果に抵抗できる。HPが0になる攻撃を受けた後、「ミソス」は倒れずに「重傷」状態に入り、味方全体の行動順を早める。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403206206"
+		}
+	],
+	"resistance": [],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032062"
+}

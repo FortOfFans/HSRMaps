@@ -3,15 +3,22 @@
 	"description": "Daughters of the sea, their spirits and flesh corroded by the sins of Destruction, leaving only empty, distorted shells... In this life, they follow the Ocean's honed blade, not to be obliterated into nihility, but to become the tidal waves crashing against the Dark Sun.\nThe apocalyptic rain descends from the heavens, heralding the extinction of all things.\nO Cyclonic Swarm that breeds great waves, you who have tasted the despair of your children, finally pregnant with madness.\nIn this burial at sea of countless stillborn souls, even tears should surge like floods, dashing hatred against the shore.",
 	"icon": "spriteoutput/monsterfigure/Monster_4053020.png",
 	"shortIcon": "Monster_4053020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4053020.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 165,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "405302001",
 			"name": "Spurn the Abyssal Umbra",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302001"
 		},
 		{
-			"id": "405302002",
 			"name": "Weeping Upon the Shore",
 			"tag": "Blast",
 			"type": "Ability",
@@ -39,11 +46,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302002"
 		},
 		{
-			"id": "405302003",
 			"name": "Gestation of Tempest",
 			"tag": "Enhance",
 			"type": "Ability",
@@ -61,11 +68,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302003"
 		},
 		{
-			"id": "405302004",
 			"name": "Rain Is Born to Fall",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -77,11 +84,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302004"
 		},
 		{
-			"id": "405302005",
 			"name": "Parturition of Tides",
 			"tag": "Summon",
 			"type": "Ability",
@@ -91,11 +98,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302005"
 		},
 		{
-			"id": "405302006",
 			"name": "Respite By The Waters",
 			"tag": "Talent",
 			"type": "Talent",
@@ -108,35 +115,44 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302006"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Fire",
 		"Ice",
 		"Thunder"
 	],
+	"summons": [
+		"4052020"
+	],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
@@ -152,6 +168,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Quantum",
 	"id": "4053020"

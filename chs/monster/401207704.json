@@ -1,0 +1,161 @@
+{
+	"name": "哀悯长臂",
+	"description": "一切妄图逃离终局的生者，皆要面对来自冥土的追索。",
+	"icon": "spriteoutput/monsterfigure/Monster_4012070.png",
+	"shortIcon": "Monster_4012070",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012070.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 180,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "生者不应逃离",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对我方单体造成少量量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207704"
+		},
+		{
+			"name": "死者不应躲避",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对我方单体及其相邻目标造成少量量子属性伤害和量子属性<u>【衰亡伤害】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1.5,
+				0.08,
+				0.08
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207705"
+		},
+		{
+			"name": "死亡绽放",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【枯茎朽骨的引路人】处于<u>【死亡的芬芳】</u>状态时，【哀悯长臂】的【生者不应逃离】强化为【死者不应躲避】。击破【哀悯长臂】时，会削减【枯茎朽骨的引路人】的韧性和生命值，若此时【枯茎朽骨的引路人】处于<u>【死亡的芬芳】</u>状态，我方全体目标还会额外回复生命值。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				210,
+				0.03,
+				0.15,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207706"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207707"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "401207704"
+}

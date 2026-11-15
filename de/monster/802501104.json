@@ -1,0 +1,482 @@
+{
+	"name": "Schwarm der Sternenverschlinger",
+	"description": "Von Ruan Mei aufgezüchteter Klon des Emanators der Ausbreitung, kurzzeitig in bruchstückhaftem Zustand erschienen. Seine ursprüngliche Form ist ein Rieseninsekt, das das Mundwerkzeug des Imperators Insektorum erbte. Mit diesem Kiefer kann das Licht der stellaren Tode verdichten und die zersplitterten Sterne zur Brutstätte für seinen Nachwuchs machen. Er war einer der über mehrere Welten verstreuten Albträume während der Schwarmkatastrophe.",
+	"icon": "spriteoutput/monsterfigure/Monster_8025010.png",
+	"shortIcon": "Monster_8025010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8025010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 14880,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 3,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "Kanone des Schwarmkönigs",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501101"
+		},
+		{
+			"name": "Giftstrahlen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Quanten-SCH zu und hat eine hohe Chance, Verschränkung zu verursachen. Außerdem wird 1 Zersetzender Treustachel beschworen.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.6,
+				1,
+				0
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501102"
+		},
+		{
+			"name": "Pyrolyse-Todesstrahl",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				3.5,
+				0.5,
+				1.2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501103"
+		},
+		{
+			"name": "Kannibalismus",
+			"tag": "Unterstützung",
+			"type": "Fähigkeit",
+			"description": "Verbraucht Insekteneier, um die beschworenen Objekte des Schwarms zu verstärken.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501104"
+		},
+		{
+			"name": "",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0,
+				3,
+				0.1,
+				3,
+				10,
+				60
+			],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501105"
+		},
+		{
+			"name": "Ovum des kollabierten Sterns",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501106"
+		},
+		{
+			"name": "Nestbau und Eierschlupf",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein, erhält Widerstandsschutz und eine bestimmte Menge an „Insekteneiern“. Dieser Effekt hält bis zur nächsten Aktion an. Bei der nächsten Aktion wird „Ovum des kollabierten Sterns“ gegen alle Verbündeten eingesetzt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501107"
+		},
+		{
+			"name": "",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501108"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.15,
+				1,
+				0.1,
+				3,
+				10,
+				60
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501109"
+		},
+		{
+			"name": "Vom Schwarm verschlungen",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beschwört nach einem erlittenen Angriff einen Schwarm. Wenn die Einheit Schwächebruch erleidet, wird allen Gegnern Quanten-SCH zugefügt. Alle Gegner außer dieser Einheit erleiden erhöhten SCH und werden von Schwächebruch betroffen.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.8,
+				1.1,
+				0.6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501110"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501111"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501112"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501113"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501114"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501115"
+		},
+		{
+			"name": "Unbegrenzte Vermehrung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Erhält zu Beginn jeder Runde eine bestimmte Menge an Insekteneiern. Verliert nach Erleiden von Angriffen mit „Entomologische Elegie“ oder „Erosions-Elegie“ 1 Insektenei.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0,
+				0,
+				7,
+				3,
+				150
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501116"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_Entangle",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"802203104",
+		"802202104"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 4,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100901",
+				"name": "Solider Schutz",
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100902",
+				"name": "Insektenei-Spaltung",
+				"description": "Das Boss-Phantom erhält am Ende jeder Runde eine bestimmte Menge an <color=#f29e38ff><u>Insekteneiern</u></color>. Das Boss-Phantom kann Insekteneier verbrauchen, um die beschworenen Objekte des Schwarms zu verstärken und ihnen 1 Stapelung „Wachstumshormon“ zu verleihen.",
+				"params": []
+			},
+			{
+				"id": "100903",
+				"name": "Hormonsekretion",
+				"description": "Jedes Mal, wenn das Boss-Phantom eine bestimmte Menge an beschworenen Objekten des Schwarms heraufbeschwört, besitzt das nächste beschworene Objekt automatisch 1 Stapelung <color=#f29e38ff><u>Wachstumshormon</u></color>.",
+				"params": []
+			},
+			{
+				"id": "100904",
+				"name": "Ausbruch aus dem Ei",
+				"description": "Am Ende jeder Runde des Boss-Phantoms wird die Anzahl der Insekteneier, die durch „Nestbau und Eierschlupf“ erhalten wird, erhöht.",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10091",
+				"name": "Phase I: Erstes Vordringen in das Insektennest",
+				"description": "Das Boss-Phantom erhält am Ende jeder Runde eine bestimmte Menge an Insekteneiern. Das Boss-Phantom kann Insekteneier verbrauchen, um die beschworenen Objekte des Schwarms zu verstärken und ihnen 1 Stapelung „Wachstumshormon“ zu verleihen.",
+				"answer": "Strategie: Wenn das Boss-Phantom Insekteneier besitzt, konzentriere dich darauf, die beschworenen Objekte zu besiegen und die Angriffe „Entomologische Elegie“ bzw. „Erosions-Elegie“ der beschworenen Objekte zu nutzen, um die Insekteneier des Boss-Phantoms zu reduzieren.",
+				"skills": [
+					{
+						"id": "100911",
+						"type": "Normal",
+						"name": "So werden die Insekteneier des Boss-Phantoms reduziert",
+						"texts": [
+							{
+								"description": "Durch das Besiegen von beschworenen Objekten des Schwarms, das Auslösen von „Entomologische Elegie“ oder „Erosions-Elegie“ und das Verursachen von SCH beim Boss-Phantom wird 1 Insektenei abgezogen.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100912",
+						"type": "Normal",
+						"name": "Was passiert nach Verstärkung von „Zersetzender Treustachel“",
+						"texts": [
+							{
+								"description": "Nach der Verstärkung von „Zersetzender Treustachel“ wird sein ANG erhöht. Wenn die Verstärkung 3 Stapelungen erreicht, haben seine Angriffe eine Chance, Verbündete mit Verschränkung zu belegen.",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10092",
+				"name": "Phase II: Unglück der Schwarmkatastrophe",
+				"description": "Wenn „Vom Schwarm verschlungen“ des Boss-Phantoms ausgelöst wird, erscheinen mehr beschworene Objekte sowie Wachsende Treustachel.",
+				"answer": "Strategie: Konzentriere dich darauf, Wachsender Treustachel zu besiegen, um Angriffe mit „Explosive Sprengung“ und den Eintritt in den Status Empörung zu vermeiden.",
+				"skills": [
+					{
+						"id": "100921",
+						"type": "Normal",
+						"name": "Was passiert nach Verstärkung von „Wachsender Treustachel“",
+						"texts": [
+							{
+								"description": "Nach der Verstärkung von „Wachsender Treustachel“ wird sein ANG erhöht. Wenn die Verstärkung 3 Stapelungen erreicht, kann er sofort eine Aktion ausführen.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100922",
+						"type": "Normal",
+						"name": "„Explosive Sprengung“ des Wachsenden Treustachels entgegenwirken",
+						"texts": [
+							{
+								"description": "Konzentriere dich darauf, „Wachsender Treustachel“ zu besiegen oder ihm Schwächebruch zuzufügen, um zu verhindern, dass „Explosive Sprengung“ eingesetzt wird.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "Das Boss-Phantom erhält zu Beginn jeder Runde eine bestimmte Menge an <color=#f29e38ff>Insekteneiern</color>. Verliert nach Erleiden von Angriffen mit <color=#f29e38ff>„Entomologische Elegie“ oder „Erosions-Elegie“</color> 1 Insektenei und erleidet mehr SCH.",
+				"params": []
+			},
+			{
+				"description": "Das Boss-Phantom kann Insekteneier verbrauchen, um die beschworenen Objekte des Schwarms zu verstärken und ihnen 1 Stapelung <color=#f29e38ff>Wachstumshormon</color> zu verleihen. Jede Stapelung erhöht seinen ANG. Beim Erreichen von 3 Stapelungen wird es zusätzlich verstärkt.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Konzentriere dich darauf, die <color=#f29e38ff>beschworenen Objekte zu besiegen</color> und die Angriffe <color=#f29e38ff>„Entomologische Elegie“ bzw. „Erosions-Elegie“</color> der beschworenen Objekte zu nutzen, um die Insekteneier und den WDS des Boss-Phantoms zu reduzieren.",
+				"params": []
+			},
+			{
+				"description": "Setze Fähigkeiten mit <color=#f29e38ff>Flächenangriff</color> ein, um beim Besiegen der beschworenen Objekte das Boss-Phantom anzugreifen.",
+				"params": []
+			},
+			{
+				"description": "Setze Fähigkeiten ein, um die <color=#f29e38ff>Debuffs zu entfernen</color>, wenn sich Verbündete im Status <color=#f29e38ff>Quanten-Verschränkung oder Empörung</color> befinden.",
+				"params": []
+			}
+		]
+	},
+	"rank": "BigBoss",
+	"stanceType": "Quantum",
+	"id": "802501104"
+}

@@ -1,0 +1,105 @@
+{
+	"name": "喜剧的残渣",
+	"description": "「欢愉」概念的残渣，被「贪饕」吞吃消解后已无意义的存在。\n因为无意义而去寻找意义，但被「贪饕」啃食过后的它们已经再无自我满足的可能。\n因此，不断猎杀着其他生命，以满足自己永远不可能被满足的对「欢愉」的渴望。",
+	"icon": "spriteoutput/monsterfigure/Monster_5032040.png",
+	"shortIcon": "Monster_5032040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5032040.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 232.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "这并不好笑",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量物理属性伤害，并夺取我方少量笑点。若我方笑点不足，则根据不足的笑点使其额外失去一定比例的生命值。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503204001"
+		},
+		{
+			"name": "冒犯性笑话",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "受到致命攻击时，将夺取的笑点双倍返还。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503204002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "503204001"
+}

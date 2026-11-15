@@ -1,0 +1,165 @@
+{
+	"name": "「ライトハウス」",
+	"description": "千星シティのスーパーヒーロー。博識学会の最先端テクノロジーで武装し、悪を懲らしめ、街の平和を守るために全力を尽くしている。過去5年間にわたって、彼は千星シティの人々を大小さまざまな災難から何度も救ってきた。\n一方で、こうした偉業の数々をたった1人で達成することは不可能だと指摘する者もいる。彼らによれば「ライトハウス」は結局のところエンタメ産業複合体によって生み出された偶像に過ぎないのだという。けれど、自分たちが陥った危機、そのすべてを背負ってくれる誰かを人々が切望していることは間違いない——ただし、「ライトハウス」のアーマーの下に仄暗い秘密が隠されていることに、未だ彼らが気づく様子はない……",
+	"icon": "spriteoutput/monsterfigure/Monster_8033020.png",
+	"shortIcon": "Monster_8033020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8033020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 6044.999814000001,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "薙ぎ払う輝き",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302001"
+		},
+		{
+			"name": "不屈の正義",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "「断罪」状態に入る。自身が一定層数の「人々の願い」を獲得し、敵全体に「弱点無効」効果を付与する。次の行動時に「悪を断つ」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				12,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302003"
+		},
+		{
+			"name": "悪を断つ",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の物理属性ダメージを与え、攻撃を受けた味方の行動順を遅らせる。このスキルを発動した時、自身の「人々の願い」1層につき、「悪を断つ」のダメージ倍率が一定割合アップする。その後、「人々の願い」の層数をクリアし、敵全体の「弱点無効」と「鼓舞」効果を解除する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.6,
+				0.2,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302004"
+		},
+		{
+			"name": "航路の導き",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「断罪」状態の時、敵全体は「ライトハウス」の「人々の願い」と同じ層数の「鼓舞」効果を獲得する。1層につき、所持者の受けるダメージがダウンする。「ライトハウス」が味方から攻撃を受けた後、「人々の願い」が1層減少する。任意の敵が味方に攻撃を行った後、「人々の願い」が1層増加する。「ライトハウス」の「人々の願い」の層数が0になると、自身の行動制限系デバフと「断罪」状態を解除し、行動順が遅延する。さらに敵全体に「失堕」効果を付与し、同時に敵全体の「鼓舞」効果を解除する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0,
+				1,
+				2,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302005"
+		},
+		{
+			"name": "正義の戦線",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「千星ガード」を召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.2,
+				0.6,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"8032040"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182004,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "803302001"
+}

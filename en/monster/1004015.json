@@ -3,15 +3,22 @@
 	"description": "An extroverted and socially skilled investment expert, one of the directors of the Strategic Investment Department in the IPC. Leads the Special Debt Marshal Force.",
 	"icon": "spriteoutput/monsterfigure/Monster_1004010.png",
 	"shortIcon": "Monster_1004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004010.png",
 	"stats": {
 		"baseAttack": 5.142857,
 		"baseDefense": 210,
 		"baseHealth": 25575,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
 		"type": "LittleBoss"
 	},
 	"skills": [
 		{
-			"id": "100401501",
 			"name": "Chill of Bone-Piercing Coagulation",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401501"
 		},
 		{
-			"id": "100401502",
 			"name": "Omen of Everlasting Freeze",
 			"tag": "Summon",
 			"type": "Ability",
@@ -37,11 +44,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401502"
 		},
 		{
-			"id": "100401503",
 			"name": "Punishment of Endless Winter",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -53,11 +60,11 @@
 			],
 			"spGain": 20,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401503"
 		},
 		{
-			"id": "100401504",
 			"name": "Omen of Everlasting Freeze",
 			"tag": "Impair",
 			"type": "Ability",
@@ -72,11 +79,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401504"
 		},
 		{
-			"id": "100401505",
 			"name": "Wrath of Winterland Saints",
 			"tag": "Charging",
 			"type": "Ability",
@@ -88,11 +95,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401505"
 		},
 		{
-			"id": "100401506",
 			"name": "Intensifying Cold",
 			"tag": "Enhance",
 			"type": "Talent",
@@ -109,11 +116,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401506"
 		},
 		{
-			"id": "100401507",
 			"name": "Hoarfrost of Eternal Isolation",
 			"tag": "Impair",
 			"type": "Ability",
@@ -128,11 +135,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401507"
 		},
 		{
-			"id": "100401508",
 			"name": "Reverberating Ice",
 			"tag": "Blast",
 			"type": "Ability",
@@ -145,26 +152,41 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401508"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.6
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		},
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
 		}
 	],
 	"weakness": [
@@ -172,10 +194,17 @@
 		"Thunder",
 		"Quantum"
 	],
+	"summons": [
+		"100201508",
+		"100201608",
+		"100201509",
+		"100201609"
+	],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
 	},
+	"guide": null,
 	"rank": "LittleBoss",
 	"stanceType": "Ice",
 	"id": "1004015"

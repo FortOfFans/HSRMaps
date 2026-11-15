@@ -1,0 +1,143 @@
+{
+	"name": "Rat der Schwarzen Flut",
+	"description": "Eine durch die Schwarze Flut entstandene verzerrte Schöpfung, getrieben von einem unstillbaren Durst nach Blutvergießen.\nWissen, das einst der Menschheit hätte dienen können, hat sich in einen Feind der Zivilisation verwandelt. Die Meister des Hinterhalts und der Strategie schweben wie gefräßige Aasgeier über der Erde und gieren danach, der Schwarzen Flut frische Opfer zu liefern.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032040.png",
+	"shortIcon": "Monster_4032040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032040.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 372,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 155,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Lauernd",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Führt dazu, dass diese Einheit in den Status <u>„Lauernd“</u> eintritt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204001"
+		},
+		{
+			"name": "Desillusioniert",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204002"
+		},
+		{
+			"name": "Heimtückische Intrige",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu und entfernt dann den Status „<u>Lauernd“</u> auf. Kann nur im Status „<u>Lauern“</u> eingesetzt werden.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204003"
+		},
+		{
+			"name": "Fehlerhaft",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Während sich diese Einheit im Status <u>„Lauernd“</u> befindet, erhöht sich ihr erlittener SCH. Wenn der Status <u>„Lauernd“</u> aufgrund eines Schwächebruchs aufgehoben wird, wird die Aktion dieser Einheit verzögert und der Anfälligkeitseffekt hält bis zum Beginn der nächsten Aktion dieser Einheit an.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032040"
+}

@@ -1,0 +1,176 @@
+{
+	"name": "Heulender Sarg",
+	"description": "Eine Kampfmaschine, die von der Intelligenzia-Gilde entwickelt wurde. Sie besteht aus dem organischen Gewebe der Borisin und verfügt über die widerstandsfähige Vitalität von Langlebigen sowie den durch jahrhundertelange Evolution erlangten „Massaker-Algorithmus“.",
+	"icon": "spriteoutput/monsterfigure/Monster_2033010.png",
+	"shortIcon": "Monster_2033010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2033010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7672.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Bionische Klauen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301001"
+		},
+		{
+			"name": "Donnerndes Brüllen",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten geringen physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.6,
+				1.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301002"
+		},
+		{
+			"name": "Mondwahnsinn-Nachahmung",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status <u>Mondwahnsinn</u> ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301003"
+		},
+		{
+			"name": "Lupitoxin-Synthese",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen physischen SCH zu und verursacht mit hoher Chance <u>Umzingelnde Angst</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0,
+				0,
+				1.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301004"
+		},
+		{
+			"name": "Massaker-Algorithmus",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten physischen SCH zu. Verursacht zusätzlichen SCH, wenn das Ziel mit <u>Umzingelnde Angst</u> oder <u>Angst</u> belegt ist.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.2,
+				1.8,
+				1.8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301005"
+		},
+		{
+			"name": "Borisin-Instinkt",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Reduziert beim Kampfeintritt die erforderliche Stapelzahl von <u>Blutdurst</u> zum Eintreten in den Status <u>Mondwahnsinn</u>. Wenn ein Gegner einen Angriff ausführt, werden <u>Gegner, die in den Status Mondwahnsinn eintreten können</u>, mit 1 Stapelung <u>Blutdurst</u> belegt. Wenn die Stapelungen von <u>Blutdurst</u> eine bestimmte Zahl erreichen, treten die Gegner in den Status <u>Mondwahnsinn</u> ein.\nIn der Aktionsleiste erscheint ein Countdown für Mondwahnsinn. Zu Beginn der Runde des Countdowns wird <u>Mondwahnsinn</u> von allen Gegnern entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182008,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "203301008"
+}

@@ -1,0 +1,138 @@
+{
+	"name": "泡影稚子",
+	"description": "大海的女儿们，被「毁灭」的罪孽蚀尽灵肉，只余空荡扭曲的形骸…这一世，她们追随「海洋」的利刃，并非湮灭于虚无，而是成为袭向黑日的巨浪。\n末日的风暴从天而降，宣告万物的灭亡——\n不幸早产的泡影啊，还未诞生就注定消亡，吞吐着数不尽的悲怆——\n污浊的羊水流淌，染黑天和地，把初生的希望也弄脏。",
+	"icon": "spriteoutput/monsterfigure/Monster_4052020.png",
+	"shortIcon": "Monster_4052020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4052020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 302.25,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "反刍腐烂的梦",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成少量量子属性伤害。若此时场上有【泡影稚子】处于【向蜃楼冲锋】状态，则造成额外量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202001"
+		},
+		{
+			"name": "向蜃楼冲锋",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "进入【向蜃楼冲锋】状态，锁定我方单体目标，该状态解除前其他【泡影稚子】会优先攻击被锁定的目标。当自身被击破或受到致命攻击时，解除【向蜃楼冲锋】状态。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202002"
+		},
+		{
+			"name": "泡沫的宿命如此",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到致命攻击时，对自身相邻的敌方目标造成量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				30
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202003"
+		},
+		{
+			"name": "请泊舟暂歇",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到一定次数的普攻、战技、终结技或忆灵技攻击后行动提前，处于【<u>在毁灭中狂欢</u>】状态时，触发行动提前的受击次数降低。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "4052020"
+}

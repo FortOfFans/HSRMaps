@@ -1,0 +1,164 @@
+{
+	"name": "杰帕德",
+	"description": "银鬃铁卫的戍卫长。\n杰帕德会指挥麾下士兵集中攻击，并且能为士兵提供免疫一次攻击的屏障。",
+	"icon": "spriteoutput/monsterfigure/Monster_1004020.png",
+	"shortIcon": "Monster_1004020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1301.999721,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "一意之拳",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量冰属性伤害。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402001"
+		},
+		{
+			"name": "霜之惩击",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成冰属性伤害。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402002"
+		},
+		{
+			"name": "戍卫气场",
+			"tag": "防御",
+			"type": "技能",
+			"description": "为自身以外的敌方目标提供屏障，屏障状态下的目标可抵抗除持续伤害外的所有伤害，受到攻击后解除。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402003"
+		},
+		{
+			"name": "极寒瀑流",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成冰属性伤害。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402004"
+		},
+		{
+			"name": "围攻打援",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤【银鬃射手】或【银鬃炮手】，同时锁定我方单体，使敌方全体集中攻击该目标。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100402005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice",
+		"Thunder",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"1002050",
+		"1002030"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "100402003"
+}

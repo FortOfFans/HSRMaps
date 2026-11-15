@@ -1,0 +1,517 @@
+{
+	"name": "Unwaning Ageless Immortal",
+	"description": "An auspicious spiritual beast wrought into being by the Ambrosial Arbor and protects its roots. Its arrival brings along exuberant vegetation and promises good fortune.\nOnce destroyed during ancient wars, the Ambrosial Arbor is mended by the Stellaron and finally revives. Rare creatures and legendary beasts made by celestials of the past all return to this world, like an old dream coming alive again.",
+	"icon": "spriteoutput/monsterfigure/Monster_2024010.png",
+	"shortIcon": "Monster_2024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2024010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 26040,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 3,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Wavering Bleat",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Lightning DMG to one designated target.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401605"
+		},
+		{
+			"name": "Caress of Wind",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals minor Wind DMG to all targets.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401606"
+		},
+		{
+			"name": "Hardy Leaf Sheath",
+			"tag": "Defense",
+			"type": "Ability",
+			"description": "Increases DEF. This unit's Toughness cannot be reduced.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401607"
+		},
+		{
+			"name": "Flamboyant Gore",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "After \"Twig of Lavish Fruits\" uses an ability, \"Unwaning Ageless Immortal\" gains 1 Charge. When Charge reaches its limit, immediately uses this ability, dealing Lightning DMG to all targets. The more \"<u>Ambrosial Arbor branches</u>\" on the field, the higher the DMG dealt.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.2,
+				3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401608"
+		},
+		{
+			"name": "Back to Life",
+			"tag": "Restore",
+			"type": "Ability",
+			"description": "All summons restore HP equal to a set percentage of \"Unwaning Ageless Immortal\"'s Max HP.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.015
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401609"
+		},
+		{
+			"name": "Pedicel: Wintry Wind",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons Ambrosial Arbor branch \"Twig of Wintry Wind.\"",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401601"
+		},
+		{
+			"name": "Pedicel: Marple Leaf",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons Ambrosial Arbor branch \"Twig of Marple Leaf.\"",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401602"
+		},
+		{
+			"name": "Pedicel: Glorious Blooms",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons Ambrosial Arbor branch \"Twig of Glorious Blooms.\"",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401603"
+		},
+		{
+			"name": "Pedicel: Lavish Fruits",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons Ambrosial Arbor branch \"Twig of Lavish Fruits.\"",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401604"
+		},
+		{
+			"name": "Heavenbound One And All",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When combat begins, summons \"<u>Abominations of Abundance</u>\" and \"<u>Ambrosial Arbor branch</u>.\"\nWhen a summon is defeated, deals minor True DMG to this unit, slightly reduces this unit's Toughness, then immediately summons new \"<u>Abominations of Abundance</u>\" or \"<u>Ambrosial Arbor branch</u>.\"",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.25,
+				0.5,
+				0.25,
+				0.25,
+				0.5,
+				0,
+				0.5,
+				60,
+				0.007999999,
+				480,
+				0.08,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401610"
+		},
+		{
+			"name": "Heavenbound One And All: Enhanced",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Upon phase change, summons \"Celestial Cherub,\" \"Celestial Maiden,\" and \"<u>Ambrosial Arbor branch</u>,\" and applies \"Right-Hand Man\" to \"Celestial Cherub\" and \"Celestial Maiden.\" While the \"Right-Hand Men\" are on the field, DMG taken by the \"Unwaning Ageless Immortal\" is greatly reduced.\nWhen summons are defeated, deals minor True DMG to this unit and reduces this unit's Toughness by a minor amount. If the defeated unit is a \"Right-Hand Man,\" instead deals massive True DMG to this unit and reduces this unit's Toughness by a massive amount, then immediately summons a new \"<u>Ambrosial Arbor branch</u>.\"",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.45
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401611"
+		},
+		{
+			"name": "Power of Ascension",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When \"Twig of Wintry Wind,\" \"Twig of Marple Leaf,\" and \"Twig of Glorious Blooms\" are on the field, they produce unique <u>Halo</u> effects on other units respectively.\n\"Twig of Wintry Wind\": DMG dealt by ally units inflicted with the \"Outrage\" state to all enemy units other than \"Twig of Wintry Wind\" is greatly reduced.\n\"Twig of Marple Leaf\": All enemy units other than \"Twig of Marple Leaf\" have their actions Advanced Forward slightly after being attacked.\n\"Twig of Glorious Blooms\": At the start of their turn, all enemy units other than \"Twig of Glorious Blooms\" and \"Unwaning Ageless Immortal\" recover a minor amount of HP.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.7,
+				0.06,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401612"
+		},
+		{
+			"name": "Power of Sustenance",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "After a target unit defeats an \"<u>Ambrosial Arbor branch</u>\", they gain 1 stack of \"Power of Sustenance,\" increasing DMG dealt.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401613"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401614"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401615"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401616"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401617"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401618"
+		},
+		{
+			"name": "Power Leak",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "\"Unwaning Ageless Immortal\" will Transfer its Weakness Type to \"Right-Hand Men.\" When a \"Right-Hand Man\" is defeated, it Transfers its Weakness Type to \"Unwaning Ageless Immortal\" and other \"Right-Hand Man\" units.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401619"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.5
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [
+		"202207201",
+		"202208201",
+		"202209201",
+		"202210201",
+		"202201017",
+		"202206015",
+		"202301201",
+		"202303201"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101701",
+				"name": "Steadfast Safeguard",
+				"description": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is Broken</color>, action gets additionally delayed and DMG taken increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101702",
+				"name": "Bountiful Prosperity",
+				"description": "When the Boss Mirage's summons are defeated, it deals minor True DMG to this unit and slightly reduces its Toughness. If the defeated target is an <color=#f29e38ff>Elite Enemy</color>, it instead deals massive True DMG to this unit and massively reduces its Toughness. Then, it <color=#f29e38ff>immediately summons</color> new summons.",
+				"params": []
+			},
+			{
+				"id": "101703",
+				"name": "Like a Deer With Wings",
+				"description": "The initial action value of the summons summoned via \"Heavenbound One And All\" and \"Heavenbound One And All: Enhanced\" is greatly advanced.",
+				"params": []
+			},
+			{
+				"id": "101704",
+				"name": "Dazzling Halo",
+				"description": "While any type of \"<u>Halo</u>\" effect is active, all enemy targets that are not Weakness Broken take reduced DMG and deal increased DMG.",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10171",
+				"name": "Phase I: Army of Abundance",
+				"description": "When combat begins, the Boss Mirage summons \"Abominations of Abundance\" and \"Ambrosial Arbor branch.\" When the summons are defeated, the Boss Mirage takes minor True DMG and has its Toughness reduced by a minor amount, then immediately summons new summons.",
+				"answer": "Strategy: Actively defeat summons to reduce the Boss Mirage's Toughness, and prioritize defeating the \"Ambrosial Arbor branch\" to stack \"Power of Sustenance.\"",
+				"skills": [
+					{
+						"id": "101711",
+						"type": "Normal",
+						"name": "How to efficiently reduce Boss Mirage's Toughness",
+						"texts": [
+							{
+								"description": "Defeating \"Abominations of Abundance\" or \"Ambrosial Arbor branches\" deals True DMG to the Boss Mirage and reduces its Toughness.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101712",
+						"type": "Normal",
+						"name": "How to counter the \"Ambrosial Arbor branches'\" \"Halo\" effect",
+						"texts": [
+							{
+								"description": "Prioritize defeating the \"Ambrosial Arbor branch\" to dispel the \"Halo\" effect and grant allies the \"Power of Sustenance,\" increasing DMG dealt.",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10172",
+				"name": "Phase II: Left and Right Lieutenants",
+				"description": "When changing phases, the Boss Mirage summons \"Celestial Cherub\" and \"Celestial Maiden,\" and applies \"Right-Hand Man\" to them. While \"Right-Hand Man\" is on the field, DMG taken by the Boss Mirage is greatly reduced.",
+				"answer": "Strategy: Prioritize defeating the \"Right-Hand Man\" to weaken the Boss Mirage's DMG reduction effect, while also greatly reducing the Boss Mirage's Toughness.",
+				"skills": [
+					{
+						"id": "101721",
+						"type": "Normal",
+						"name": "How to counter Boss Mirage's \"Flamboyant Gore\"",
+						"texts": [
+							{
+								"description": "Every time \"Twig of Lavish Fruits\" uses an ability, it charges the Boss Mirage's \"Flamboyant Gore.\" Defeat \"Twig of Lavish Fruits\" as soon as possible to stop it from continuously charging \"Flamboyant Gore.\"",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is Broken</color>, action gets additionally delayed and DMG taken increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "When the Boss Mirage's summons are defeated, it deals minor True DMG to this unit and slightly reduces its Toughness. If the defeated target is an <color=#f29e38ff>Elite Enemy</color>, it instead deals massive True DMG to this unit and massively reduces its Toughness. Then, it <color=#f29e38ff>immediately summons</color> new summons.",
+				"params": []
+			},
+			{
+				"description": "While \"Twig of Wintry Wind,\" \"Twig of Marple Leaf,\" and \"Twig of Glorious Blooms\" are on the field, they apply different <color=#f29e38ff>Halo</color> effects respectively to other units. After an ally unit <color=#f29e38ff>defeats an \"Ambrosial Arbor branch,\"</color> they gain 1 stack of \"Power of Sustenance,\" increasing DMG dealt.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Proactively defeating the Boss Mirage's summons can effectively reduce the Boss Mirage's Toughness.",
+				"params": []
+			},
+			{
+				"description": "Prioritize defeating the \"Ambrosial Arbor branch\" on the field to gain \"Power of Sustenance\" and increase the DMG dealt by damage-dealing ally characters.",
+				"params": []
+			},
+			{
+				"description": "Defeat the \"Twig of Lavish Fruits\" as quickly as possible before it takes action to prevent it from continuously charging the Boss Mirage's \"Flamboyant Gore.\"",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Wind",
+	"id": "202401601"
+}

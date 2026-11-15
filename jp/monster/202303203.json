@@ -1,0 +1,175 @@
+{
+	"name": "仙人天女",
+	"description": "「薬王秘伝」の信徒が渇望する形態、人間性の重荷を捨て、仙道で再構築した真体。\n太古の時代、求道者たちは建木を通して玄旨を悟り、「仙人」を自称した。「仙人」たちは自在に振舞い、血肉と衆生を泥土のように塑形する。数え切れないほどの変化を経て、やがて自身の本来の姿を忘れてしまった。",
+	"icon": "spriteoutput/monsterfigure/Monster_2023030.png",
+	"shortIcon": "Monster_2023030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2023030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3720,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "若木化生儀祷",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "ランダムな味方単体に連続で風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				3,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303201"
+		},
+		{
+			"name": "引導の風",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体及び隣接する味方に風属性ダメージを与え、高確率で攻撃された味方を風化状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				3,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303202"
+		},
+		{
+			"name": "若木の棘",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1,
+				3,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303203"
+		},
+		{
+			"name": "玄気噬身",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "高確率で味方全体を「噬命」状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303204"
+		},
+		{
+			"name": "生気虚弱",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "すべての敵が「噬命」状態のターゲットを攻撃する時、今回の攻撃の与ダメージは「噬命」によって減らされた分の最大HPに転換し、「噬命」の継続時間をリセットする。「噬命」は最高で<unbreak>99%</unbreak>分の回復可能な最大HPを減らすことができる。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.99
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303205"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113002,
+				"count": 1
+			},
+			{
+				"id": 113003,
+				"count": 1
+			},
+			{
+				"id": 182002,
+				"count": 1
+			},
+			{
+				"id": 183001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Wind",
+	"id": "202303203"
+}

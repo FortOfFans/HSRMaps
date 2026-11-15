@@ -1,0 +1,205 @@
+{
+	"name": "Roboterarmeinheit",
+	"description": "Ein mechanisches Gerät, das von Svarog gesteuert wird.\nIst es während bestimmter Runden auf dem Schlachtfeld aktiv, greift es seine Gegner gnadenlos an.",
+	"icon": "spriteoutput/monsterfigure/Monster_1012040.png",
+	"shortIcon": "Monster_1012040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1012040.png",
+	"stats": {
+		"baseAttack": 4.5,
+		"baseDefense": 210,
+		"baseHealth": 4.64993025,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204101"
+		},
+		{
+			"name": "Unterdrückende Umarmung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Fügt inhaftierten Verbündeten physischen SCH in Höhe eines Prozentsatzes seiner max. LP zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204102"
+		},
+		{
+			"name": "Warten auf Befehle",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204103"
+		},
+		{
+			"name": "Unterdrückende Umarmung",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Verursacht bei einem anvisierten Verbündeten „Fesseln“ und fügt 1-mal physischen SCH zu. Wenn dieses Ziel Schwächebruch hat oder eine bestimmte LP-Grenze unterschreitet, wird der Status Fesseln entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204104"
+		},
+		{
+			"name": "Deaktivierungsfeld",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt gefesselten Verbündeten physischen SCH in Höhe eines Prozentsatzes seiner max. LP zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204105"
+		},
+		{
+			"name": "Kontrollierte Sprengung",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Die Roboterarmeinheit explodiert und fügt einem anvisierten Verbündeten massiven physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				15
+			],
+			"spGain": 25,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204106"
+		},
+		{
+			"name": "Überladungswarnung",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Die Roboterarmeinheit geht in den Zustand Überladung über und entfernt sofort die Gefangenschaft von Verbündeten, sodass die nächste Aktion eine Kontrollierte Sprengung ist.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204107"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112011,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 181001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "101204101"
+}

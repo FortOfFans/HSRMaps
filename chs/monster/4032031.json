@@ -1,0 +1,128 @@
+{
+	"name": "黑潮蚀斧",
+	"description": "从黑潮中诞生的扭曲造物，对杀戮的渴求成为了空洞躯壳中仅存的意志。\n手持千斤重的巨斧，蓄力一击甚至可以击碎坚硬的磐石。任何挡在它面前的活物，皆避免不了被碾碎和侵蚀的结局。",
+	"icon": "spriteoutput/monsterfigure/Monster_4032030.png",
+	"shortIcon": "Monster_4032030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032030.png",
+	"stats": {
+		"baseAttack": 66.666664,
+		"baseDefense": 210,
+		"baseHealth": 0.465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "怒潮炽斧",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成火属性伤害。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403203101"
+		},
+		{
+			"name": "仇心忿火",
+			"tag": "分摊",
+			"type": "技能",
+			"description": "对我方全体目标造成火属性伤害，伤害由目标<u>平均分摊</u>。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403203102"
+		},
+		{
+			"name": "弱者断头台",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "当目标生命值低于0时，会解除其弱点击破状态并获得【弱点无效】效果。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403203103"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032031"
+}

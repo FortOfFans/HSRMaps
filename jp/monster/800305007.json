@@ -1,0 +1,177 @@
+{
+	"name": "ストーム",
+	"description": "裂界拡大の途中で侵蝕されたモンスター、力の源が変異した後、より柔軟な戦闘スタイルを得た。\nストームは風の力を利用して戦いを有利に進め、追い風に乗った迅速な矢を放つ。",
+	"icon": "spriteoutput/monsterfigure/Monster_8003050.png",
+	"shortIcon": "Monster_8003050",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003050.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 511.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "風を巡る光隕",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に風属性ダメージを与え、高確率で風化状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305001"
+		},
+		{
+			"name": "踏風の行軍",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に少量の風属性ダメージを与え、確率で攻撃を受けた味方を風化状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305002"
+		},
+		{
+			"name": "風を掴む",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、風化状態にあるすべての味方をロックオンし、次の行動で「暴風の矢」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305003"
+		},
+		{
+			"name": "暴風の矢",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "風化状態の味方に風属性ダメージを与える。フィールド上に風化状態の味方が存在しない場合、このスキルの発動は失敗する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305004"
+		},
+		{
+			"name": "急旋する風",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "風化状態の味方を攻撃した後、攻撃力が小アップする。弱点撃破されると効果が解除される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.08,
+				2,
+				5,
+				0.75,
+				2,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305005"
+		},
+		{
+			"name": "暴風の矢",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "風化状態の味方に風属性ダメージを与える。フィールド上に風化状態の味方が存在しない場合、このスキルの発動は失敗する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800305007"
+}

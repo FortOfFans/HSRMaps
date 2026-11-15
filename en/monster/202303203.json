@@ -1,0 +1,175 @@
+{
+	"name": "Celestial Maiden",
+	"description": "The form that the Disciples of Sanctus Medicus crave. A true appearance that cast off the burdens of humanity and has been reforged using the way of immortality.\nIn ancient times, those who sought immortality received wisdom from the Ambrosial Arbor and called themselves Celestials. They lived without restraints and molded the flesh of themselves and others at will. They have long forgotten their original appearances after countless metamorphoses.",
+	"icon": "spriteoutput/monsterfigure/Monster_2023030.png",
+	"shortIcon": "Monster_2023030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2023030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3720,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Rite of Great Arbor Metamorphosis",
+			"tag": "Bounce",
+			"type": "Ability",
+			"description": "Continuously deal Wind DMG to one random target, with a high chance to cause Wind Shear to attacked targets.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				3,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303201"
+		},
+		{
+			"name": "Guiding Vulturnus",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Wind DMG to one designated target and adjacent targets, with a high chance to cause Wind Shear to attacked targets.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				3,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303202"
+		},
+		{
+			"name": "Arboreal Thorns",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Wind DMG to one designated target, with a high chance to cause Wind Shear to attacked targets.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1,
+				3,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303203"
+		},
+		{
+			"name": "Black Prana's Snare",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "Has a high chance for all targets to become afflicted with the \"Prana-Siphon\" state.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303204"
+		},
+		{
+			"name": "Vitals Drained",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When friendly units attack targets in the \"Prana-Siphon\" state, the DMG dealt by this instance of attack will be converted to the extent of Max HP reduced by \"Prana-Siphon,\" and refresh \"Prana-Siphon's\" duration. \"Prana-Siphon\" can reduce Maximum Restorable HP by up to <unbreak>99%</unbreak>.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.99
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303205"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113002,
+				"count": 1
+			},
+			{
+				"id": 113003,
+				"count": 1
+			},
+			{
+				"id": 182002,
+				"count": 1
+			},
+			{
+				"id": 183001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Wind",
+	"id": "202303203"
+}

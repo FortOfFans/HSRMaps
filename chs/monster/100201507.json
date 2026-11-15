@@ -1,0 +1,123 @@
+{
+	"name": "公司安保幻象",
+	"description": "「星际和平公司」的基层员工，主要负责维持公司管辖地区的治安秩序。工资不高，只能在公司旗下的企业舰上合租房间。",
+	"icon": "spriteoutput/monsterfigure/Monster_1002011.png",
+	"shortIcon": "Monster_1002011",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1002011.png",
+	"stats": {
+		"baseAttack": 5.99999436,
+		"baseDefense": 210,
+		"baseHealth": 279,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "冰风",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成少量冰属性伤害。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100201501"
+		},
+		{
+			"name": "冰冷凝视",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "锁定一个目标，【可可利亚（幻象）】的部分技能会对被锁定的目标额外追加释放一次，持续直到冰锋（幻象）被弱点击破或击杀。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100201502"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112001,
+				"count": 1
+			},
+			{
+				"id": 112002,
+				"count": 1
+			},
+			{
+				"id": 112003,
+				"count": 1
+			},
+			{
+				"id": 181005,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Ice",
+	"id": "100201507"
+}

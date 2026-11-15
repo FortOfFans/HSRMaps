@@ -1,0 +1,222 @@
+{
+	"name": "云骑骁卫•彦卿",
+	"description": "将军景元的侍卫，不过总角之年的御剑天才。",
+	"icon": "spriteoutput/monsterfigure/Monster_2004020.png",
+	"shortIcon": "Monster_2004020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004020.png",
+	"stats": {
+		"baseAttack": 22.5,
+		"baseDefense": 210,
+		"baseHealth": 10323,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "快哉风",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成冰属性伤害，并使彦卿和所有飞剑获得1层【寒芒】，造成的伤害小幅提高。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402101"
+		},
+		{
+			"name": "燕归来",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤4把【飞剑】，获得【剑阵】效果提高自身速度，使【飞剑】获得【阵眼】。第三阶段时使一定数量的【飞剑】额外获得【砥砺】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				60,
+				0.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402102"
+		},
+		{
+			"name": "三尺水",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成冰属性伤害，同时有大概率使受到攻击的目标陷入冻结状态。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				1,
+				1,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402103"
+		},
+		{
+			"name": "破阵歌",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成冰属性伤害。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402104"
+		},
+		{
+			"name": "剑气近",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态。下次行动对我方全体施放【天河泻】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402105"
+		},
+		{
+			"name": "天河泻",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成大量冰属性伤害。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402106"
+		},
+		{
+			"name": "剑气凝",
+			"tag": "锁定",
+			"type": "技能",
+			"description": "锁定我方单体，两回合后对其施放【风归云动，天河泻梦】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402107"
+		},
+		{
+			"name": "风归云动，天河泻梦",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体连续造成冰属性伤害。施放该技能时，额外造成伤害，伤害次数等同于场上【飞剑】的数量。施放技能后，清除场上所有的【飞剑】。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402108"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				1,
+				1.5,
+				50,
+				0
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402109"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"200202005",
+		"200202105"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "200402101"
+}

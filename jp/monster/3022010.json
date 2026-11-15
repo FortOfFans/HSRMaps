@@ -1,0 +1,90 @@
+{
+	"name": "往日の夢のこだま",
+	"description": "誰かの家族に対する記憶の余韻。長い夜、それは彼と共にある——過去も、今も、これからも。",
+	"icon": "spriteoutput/monsterfigure/Monster_3022010.png",
+	"shortIcon": "Monster_3022010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3022010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 279,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "アッフリット",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "味方単体に少量の虚数属性ダメージを与え、行動を少し遅延させる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.05
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302201001"
+		},
+		{
+			"name": "コメ・ウン・インクボ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "自身が受けるダメージは「ハルモニア聖歌隊」が代わりに受ける。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302201002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "3022010"
+}

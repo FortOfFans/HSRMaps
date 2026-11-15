@@ -1,0 +1,166 @@
+{
+	"name": "ムーンライトペガサス",
+	"description": "遥か遠い昔、造物紀だった頃、エーグルは黎明のミハニを造り上げた後、ケファレの協力のもとタイタンたちを代表する奇獣を創造した。中でも奇獣・ムーンライトペガサスは、エーグルの宿敵・オロニクスの象徴だと言い伝えられている。",
+	"icon": "spriteoutput/monsterfigure/Monster_4023020.png",
+	"shortIcon": "Monster_4023020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4023020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 837,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "創造されし月光",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402302101"
+		},
+		{
+			"name": "3倍の下弦の月",
+			"tag": "薙ぎ払い",
+			"type": "スキル",
+			"description": "「地を震わす獅子」と同時に発動し、味方全体にダメージを与え、一定確率で命中した対象をもつれ状態にする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402302102"
+		},
+		{
+			"name": "2倍の上弦の月",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "味方2名をロックオンし、「2倍の上弦の月」状態に入る。次の行動で「6倍の満月」を発動する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402302103"
+		},
+		{
+			"name": "6倍の満月",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "ロックオンされているターゲットに量子属性ダメージを与え、一定確率でターゲットをもつれ状態にする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402302104"
+		},
+		{
+			"name": "光を追い求める",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「ムーンライトペガサス」が受けるダメージはすべて「地を震わす獅子」が肩代わりする。<u>「後方ターゲット」</u>が倒された時、「ムーンライトペガサス」の受けるダメージがアップする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				1,
+				0.3,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402302105"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Quantum",
+	"id": "4023021"
+}

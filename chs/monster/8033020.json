@@ -1,0 +1,165 @@
+{
+	"name": "「灯塔」",
+	"description": "千星城的超级英雄，武装着博识学会最先进的科技成果，不遗余力地惩奸除恶，维护城市的和平。五年来，他数次拯救千星城的人民于大小灾难中。\n有人指出，这些壮举绝不可能靠一人完成，而所谓「灯塔」也不过是由娱乐工业复合体包装打造出的虚假偶像。但人们已经全心期盼着有人能在他们陷入危机时扛起一切——只是他们并不知晓，「灯塔」的铠甲之下藏着某些更为幽暗的秘密……",
+	"icon": "spriteoutput/monsterfigure/Monster_8033020.png",
+	"shortIcon": "Monster_8033020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8033020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1302,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "光辉扫击",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302001"
+		},
+		{
+			"name": "不屈正义",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入【除恶】状态，自身获得一定层数【众愿】并使敌方全体获得【弱点无效】效果，下次行动施放【除恶务尽】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				12,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302003"
+		},
+		{
+			"name": "除恶务尽",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成大量物理属性伤害并使受到攻击的我方目标行动延后。施放该技能时，自身每持有1层【众愿】效果，使【除恶务尽】的伤害倍率提高一定比例，随后清空【众愿】层数，移除敌方全体的【弱点无效】和【鼓舞】效果。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.6,
+				0.2,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302004"
+		},
+		{
+			"name": "指引航向",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "处于【除恶】状态时，敌方全体目标获得等同于「灯塔」【众愿】层数的【鼓舞】效果，每层使持有者受到的伤害降低。「灯塔」受到我方目标攻击后减少1层【众愿】，任意敌方目标对我方目标施放攻击后增加1层【众愿】。「灯塔」的【众愿】层数为0时，解除自身的控制类负面状态和【除恶】状态，行动延后并对敌方全体目标施加【失堕】效果，同时移除敌方全体目标的【鼓舞】效果。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0,
+				1,
+				2,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302005"
+		},
+		{
+			"name": "正道战线",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤【千星戍卫】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.2,
+				0.6,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"8032040"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182004,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "8033020"
+}

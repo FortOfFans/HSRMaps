@@ -3,15 +3,22 @@
 	"description": "Successor to Belobog's Guardian, and commander of the Silvermane Guards.\nBronya can use various tactics to attack her enemies, and greatly enhance the battle prowess of all allies.",
 	"icon": "spriteoutput/monsterfigure/Monster_1004030.png",
 	"shortIcon": "Monster_1004030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004030.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 464.999814,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 210,
+		"speed": 143,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "LittleBoss"
 	},
 	"skills": [
 		{
-			"id": "100403101",
 			"name": "Windrider Bullet",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403101"
 		},
 		{
-			"id": "100403102",
 			"name": "Combat Redeployment",
 			"tag": "Support",
 			"type": "Ability",
@@ -40,11 +47,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403102"
 		},
 		{
-			"id": "100403103",
 			"name": "Coordinated Reinforcement",
 			"tag": "Summon",
 			"type": "Ability",
@@ -54,11 +61,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403103"
 		},
 		{
-			"id": "100403104",
 			"name": "Suppressive Fire",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -71,26 +78,37 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403104"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
 		}
 	],
 	"weakness": [
@@ -98,10 +116,12 @@
 		"Fire",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
 	},
+	"guide": null,
 	"rank": "LittleBoss",
 	"stanceType": "Physical",
 	"id": "100403103"

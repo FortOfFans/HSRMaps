@@ -1,0 +1,164 @@
+{
+	"name": "「哲学的胎儿」疯狂",
+	"description": "新的萌芽 / 在旧日腐泥中开化 / 宇宙！宇宙碎成了万花筒！ / 它锋利的渣落进「我」的眼 / 每一片都唤作「疯狂」？",
+	"icon": "spriteoutput/monsterfigure/Monster_5035020.png",
+	"shortIcon": "Monster_5035020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5035020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 37200,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 960,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "乐园坠落的嗤笑",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "获得<u>疯狂点</u>，随后对我方全体造成量子属性伤害，若自身已进入【无常之力】状态，则使该技能造成的伤害提高。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				5.5,
+				20
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502101"
+		},
+		{
+			"name": "为死而生的啼哭",
+			"tag": "强化",
+			"type": "技能",
+			"description": "获得大量<u>疯狂点</u>，随后使自身进入【无常之力】状态，若自身已进入【无常之力】状态，则使自身进入【混沌狂乱】状态，并在下次行动时施放【谵妄痴愚，寰宇笑剧】。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				50,
+				50,
+				50,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502102"
+		},
+		{
+			"name": "谵妄痴愚，寰宇笑剧",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "获得<u>疯狂点</u>，随后对我方全体造成大量量子属性伤害，并使我方全体能量减少。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				7,
+				0.2,
+				20
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502103"
+		},
+		{
+			"name": "衡量欢笑的准绳",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "当<u>疯狂点</u>的数量超过我方的<u>笑点</u>数量时，自身行动提前，并进入【<u>疯狂</u>】状态。当我方的<u>笑点</u>数量超过<u>疯狂点</u>的数量时，我方全体行动提前，并进入【<u>欢笑</u>】状态。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				0.0029999998,
+				66,
+				0.08,
+				0.08,
+				0.06,
+				0.5,
+				0.5,
+				0.02,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502104"
+		},
+		{
+			"name": "无故喧嚣的本能",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "每损失一定比例的生命值后，立即施放【为死而生的啼哭】，若自身已进入【混沌狂乱】状态，则立即施放【谵妄痴愚，寰宇笑剧】。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.35,
+				0.35,
+				0.9,
+				0.98,
+				0.85
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502105"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Quantum",
+	"id": "5035021"
+}

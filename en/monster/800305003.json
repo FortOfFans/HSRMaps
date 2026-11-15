@@ -3,15 +3,22 @@
 	"description": "Monsters that have experienced corrosion as the Fragmentum expanded. They now have a more nimble way of fighting after the source of their power mutated.\nStormbringers utilize the power of the wind to aid them in battle, enabling them to fire arrows more rapidly.",
 	"icon": "spriteoutput/monsterfigure/Monster_8003050.png",
 	"shortIcon": "Monster_8003050",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003050.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1023,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "800305001",
 			"name": "Watchful Meteor",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,15 +30,15 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305001"
 		},
 		{
-			"id": "800305002",
 			"name": "Wind Walker",
 			"tag": "Blast",
 			"type": "Ability",
-			"description": "Deals minor Wind DMG to the target and units adjacent to the target, with a chance to inflict Wind Shear.",
+			"description": "Deals minor Wind DMG to one designated target and units adjacent to the target, with a chance to inflict Wind Shear.",
 			"element": "Wind",
 			"attackType": "Normal",
 			"params": [
@@ -39,11 +46,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305002"
 		},
 		{
-			"id": "800305003",
 			"name": "Wind-Twisting Crossbow",
 			"tag": "Charging",
 			"type": "Ability",
@@ -53,11 +60,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305003"
 		},
 		{
-			"id": "800305004",
 			"name": "Windfall Storm",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -69,11 +76,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305004"
 		},
 		{
-			"id": "800305005",
 			"name": "Storm Cyclone",
 			"tag": "Talent",
 			"type": "Talent",
@@ -90,11 +97,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305005"
 		},
 		{
-			"id": "800305006",
 			"name": "Windfall Storm",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -104,42 +111,53 @@
 			"params": [],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800305006"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Fire",
 		"Ice",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 111001,
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
 				"count": 1
 			},
 			{
@@ -152,6 +170,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "800305003"

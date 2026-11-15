@@ -1,0 +1,184 @@
+{
+	"name": "Caustide, Unterboss des Synwish-Syndikats",
+	"description": "Der Unterboss des Synwish-Syndikats.\nObwohl er auf Abwege geraten ist, hat er seinen Traum von der Musik nie aufgegeben und tanzt und singt sogar während der Kämpfe mit einem Instrument in der Hand.",
+	"icon": "spriteoutput/monsterfigure/Monster_5013011.png",
+	"shortIcon": "Monster_5013011",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5013011.png",
+	"stats": {
+		"baseAttack": 15,
+		"baseDefense": 210,
+		"baseHealth": 1488,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Schlag auf links!",
+			"tag": "Wegfegen",
+			"type": "Fähigkeit",
+			"description": "Führt beginnend beim linken Verbündeten einen Wegfegen-Angriff auf drei aufeinanderfolgende Ziele aus und fügt ihnen dabei geringen imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301101"
+		},
+		{
+			"name": "Schlag auf rechts!",
+			"tag": "Wegfegen",
+			"type": "Fähigkeit",
+			"description": "Führt beginnend beim rechten Verbündeten einen Wegfegen-Angriff auf drei aufeinanderfolgende Ziele aus und fügt ihnen dabei geringen imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301102"
+		},
+		{
+			"name": "Vorstellungsprobe",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein und setzt bei der nächsten Aktion „Zeit für Rock ’n’ Roll!“ ein. Beim Auslösen des Aha-Moments wird der Status Aufladen sofort entfernt, Verbündete erhalten <u>Lachpunkte</u> und der von dieser Einheit erlittene SCH wird erhöht.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				5,
+				0.4,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301103"
+		},
+		{
+			"name": "Zeit für Rock ’n’ Roll!",
+			"tag": "Verteilen",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301104"
+		},
+		{
+			"name": "Lass es krachen!",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Wenn sich diese Einheit nicht im Status „Rauschende Melodie“ befindet, wird die GES aller Gegner außer der Einheit selbst erhöht. Wenn sich diese Einheit im Status Rauschende Melodie befindet, fügt sie allen Gegnern außer sich selbst imaginären SCH zu und versetzt sie mit einer Chance in den Status <u>Rausch</u>. Verbündeten erhalten außerdem <u>Lachpunkte</u>.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				2,
+				1,
+				1,
+				0.1,
+				120,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301105"
+		},
+		{
+			"name": "Verrückt nach Musik",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beim Auslösen des Aha-Moments erhält diese Einheit den Status „Rauschende Melodie“, wodurch der Hochgefühl-Effekt von „Lass es krachen!“ verstärkt wird.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301106"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "5013011"
+}

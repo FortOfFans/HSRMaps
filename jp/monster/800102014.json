@@ -1,0 +1,101 @@
+{
+	"name": "{RUBY_B#しも}霜{RUBY_E#}の{RUBY_B#ぞうぶつ}造物{RUBY_E#}",
+	"description": "裂界を彷徨う結晶体の元素、簡単な知能しか持っていない。その形はまるで低温を発散する、すべてを凍らせる鳥のようだ。",
+	"icon": "spriteoutput/monsterfigure/Monster_8001020.png",
+	"shortIcon": "Monster_8001020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8001020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 55.8,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 30,
+		"speed": 83,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
+		"type": "Minion"
+	},
+	"skills": [
+		{
+			"name": "かく乱",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800102001"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111001,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 180004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Minion",
+	"stanceType": "Physical",
+	"id": "800102014"
+}

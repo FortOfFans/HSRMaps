@@ -1,0 +1,129 @@
+{
+	"name": "{RUBY_B#きおくいき}記憶域{RUBY_E#}ミーム「{RUBY_B#み}満{RUBY_E#}たされぬ{RUBY_B#きょえいしん}虚栄心{RUBY_E#}」",
+	"description": "特定の認識を持つ実体。記憶域にある潜在意識の欠片が積み重なってできたもの。\n傍人の称賛、弱者の懇願、奸臣の追従…満たされることのない虚栄心がミーム生命体となり、名声と利益を貪る宿主を求めている。",
+	"icon": "spriteoutput/monsterfigure/Monster_3012040.png",
+	"shortIcon": "Monster_3012040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3012040.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 116.25,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "虚名下賜",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "指定した敵単体に憑依し、「虚飾の冠」を付与する。その敵にある行動制限系デバフを解除し、靭性を回復させる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301204001"
+		},
+		{
+			"name": "",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301204002"
+		},
+		{
+			"name": "沈みゆく自我",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「虚飾の冠」状態の敵は攻撃を受けた後にHPを回復するが、物理属性と炎属性を弱点として付与され、受ける弱点撃破ダメージがアップする。その敵が倒される、または弱点撃破される時、「虚飾の冠」を解除し、同時に「満たされぬ虚栄心」も倒される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.35,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301204003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114011,
+				"count": 1
+			},
+			{
+				"id": 114012,
+				"count": 1
+			},
+			{
+				"id": 114013,
+				"count": 1
+			},
+			{
+				"id": 181015,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "3012040"
+}

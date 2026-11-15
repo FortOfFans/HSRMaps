@@ -1,0 +1,182 @@
+{
+	"name": "天谴先锋",
+	"description": "由「纷争」雕琢的泰坦眷属，流淌着尼卡多利的金血，能承载泰坦灵魂的强大造物。以巨剑抵挡黑潮的侵袭，亦会用巨剑带来战争的侵袭。\n天谴先锋会献祭弱小的眷属，以此暴行换得泰坦的天罚。",
+	"icon": "spriteoutput/monsterfigure/Monster_4013010.png",
+	"shortIcon": "Monster_4013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4013010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 604.49984748,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "从天帷斩向黎明",
+			"tag": "横扫",
+			"type": "技能",
+			"description": "从我方队伍左侧起横扫攻击我方3个连续目标，造成少量虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301001"
+		},
+		{
+			"name": "从黎明杀往天帷",
+			"tag": "横扫",
+			"type": "技能",
+			"description": "从我方队伍右侧起横扫攻击我方3个连续目标，造成少量虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301002"
+		},
+		{
+			"name": "像威猛暴怒的雄狮",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，下回合使用【在滔滔血海中沉溺】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301003"
+		},
+		{
+			"name": "在滔滔血海中沉溺",
+			"tag": "分摊",
+			"type": "技能",
+			"description": "吸收【天谴斗士】，随后对我方全体造成大量虚数属性伤害并施加【易伤】效果，伤害和【易伤】效果由目标<u>平均分摊</u>，吸收的【天谴斗士】数量越多，造成的伤害越高。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				12,
+				1.2,
+				4,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301004"
+		},
+		{
+			"name": "快从坟墓中苏生",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤【天谴斗士】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301005"
+		},
+		{
+			"name": "城邦守护者",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "拥有一定层数的【战甲】，使自身受到的伤害降低。受到攻击后减少自身1层【战甲】，减少到0层时，【战甲】被破坏，对自身造成大量虚数属性伤害，并使自身行动延后，使破坏【战甲】的我方单位恢复能量。【战甲】被破坏后，自身受到攻击时额外再受到少量虚数属性伤害。【战甲】在自身回合结束时恢复到最大层数。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				0.2,
+				0.1,
+				0.03,
+				0.15,
+				0.15
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"4012010"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "401301001"
+}

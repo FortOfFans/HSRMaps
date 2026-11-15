@@ -1,0 +1,130 @@
+{
+	"name": "ナイトメア{RUBY_B#げきだん}劇団{RUBY_E#}・ソーダドッグ",
+	"description": "ピノコニーのサービスロボット。夢境で感情に干渉されたことで、暴走してしまった。\n本来は「スラーダ」の配達員だった。暴走した後も甘い幸せを撒き散らし、人々にこの芳しいドリンクを味わってもらおうとしている。",
+	"icon": "spriteoutput/monsterfigure/Monster_3002030.png",
+	"shortIcon": "Monster_3002030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3002030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 627.75,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "飲みの誘い",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300203001"
+		},
+		{
+			"name": "甘みを浴びろ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受けた後、隣接する敵に物理属性ダメージを与え、速度をアップさせ、裂創状態にする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.3,
+				2,
+				0.025,
+				100,
+				0.01
+			],
+			"spGain": 0,
+			"delay": 0.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300203002"
+		},
+		{
+			"name": "爽やかすっきり",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "攻撃を受けた時または持続ダメージを受けた時、重ね掛け可能な「スラーダ酔い」を1層獲得する。「スラーダ酔い」の層数が高ければ高いほど、与えるダメージがアップする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 0,
+			"delay": 0.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300203003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114001,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 181016,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "300203010"
+}

@@ -1,0 +1,447 @@
+{
+	"name": "Arbiter of the Lost Abyss",
+	"description": "A trace of lingering madness extracted and refined by Evernight from the countless corpses of ichor memosprites, then synthesized into more twisted and grotesque monsters.\nIt shall follow the creator's directive, determining what should be remembered and what should be forgotten, devouring redundant memories that serve no purpose and leaving them muted in the flow of time.\n\"If a new life is to be born, its seed has to be dead.\"",
+	"icon": "spriteoutput/monsterfigure/Monster_4064010.png",
+	"shortIcon": "Monster_4064010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4064010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 30690.000000000004,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 8,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Hemotort Teethgrind",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to one designated target. If the target has a Shield, triggers \"<u>Barrier Recoil</u>.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				180,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401201"
+		},
+		{
+			"name": "Execution in Place",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons \"Ichor Memosprite: Pheasant.\" When each summon is defeated, triggers \"<u>Barrier Recoil</u>.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				120,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401202"
+		},
+		{
+			"name": "Hemotort Glower",
+			"tag": "Lock On",
+			"type": "Ability",
+			"description": "Locks on to one designated character, increases this unit's SPD, and uses \"Hemotort Teethgrind\" and \"Hemotort Saw\" on the target within several turns. Take 1 extra action after using this ability.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401203"
+		},
+		{
+			"name": "Hemotort Saw",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals massive Imaginary DMG to one designated target and converts a portion of the hit target's reduced HP into \"<u>Corrosion</u>.\" If the target has Shield, triggers \"<u>Barrier Recoil</u>.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				180
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401204"
+		},
+		{
+			"name": "Hemotort Clamps",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals massive Imaginary DMG to all targets and converts a portion of the targets' reduced HP to \"<u>Corrosion</u>.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				0.5,
+				0.2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401205"
+		},
+		{
+			"name": "Name the Culprit",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the Charging state. In the next action, uses \"Hemotort Decapitation.\" Selects 1 target to receive the highest DMG of \"Hemotort Decapitation\" and \"<u>Hemotort Corruption</u>.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401206"
+		},
+		{
+			"name": "Hemotort Decapitation",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to target characters not selected with \"Name the Culprit.\" Deals massive Imaginary DMG to target characters selected with \"Name the Culprit,\" and applies \"<u>Hemotort Corruption</u>\" based on the amount of DMG taken (not offset by Shield) to the selected characters.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				12,
+				4,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401207"
+		},
+		{
+			"name": "Thick-Skinned",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "At the start of battle and upon entering a new phase, this unit enters the \"Enhance Defense\" state, greatly increasing this unit's DEF. After being Weakness Broken, dispels the \"Enhanced Defense\" state.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401208"
+		},
+		{
+			"name": "Barrier Recoil",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "When triggering \"<u>Barrier Recoil</u>,\" this unit receives 1 stack of DEF reduction.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401209"
+		},
+		{
+			"name": "Singularity Split",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "When Combat begins and when changing phases, this unit splits into \"Ichor Memosprite: Pheasant,\" \"Ichor Memosprite: Canine,\" and \"Ichor Memosprite: Winged Serpent,\" and these \"ichor memosprites\" gain \"<u>Monoform Merger</u>,\" while this unit gains \"Bloodline Frailty.\"\nAfter an \"ichor memosprite\" with \"<u>Monoform Merger</u>\" takes action, this unit's \"Bloodline Frailty\" reduces by 1.\nWhen all \"ichor memosprites\" with \"<u>Monoform Merger</u>\" enter the \"<u>Feigned Death</u>\" state, they undergo merger again to become the \"Arbiter of the Lost Abyss,\" reducing the Toughness of the \"Arbiter of the Lost Abyss\" based on the remaining amount of \"Bloodline Frailty.\"",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.25,
+				0.75,
+				0.5,
+				1,
+				48,
+				1440
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401211"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401213"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401214"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401215"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.04,
+				0.04
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401216"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401217"
+		},
+		{
+			"name": "Degraded Vessel",
+			"tag": "Talent",
+			"type": "Ability",
+			"description": "This unit and its summons gain \"Degraded Vessel.\" If a target inflicts a debuff when using an attack on an friendly unit with \"Degraded Vessel,\" slightly reduces the Toughness of that friendly unit and deals True DMG to it.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				45,
+				0.005
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401210"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [
+		"406201005",
+		"406201010",
+		"406202005",
+		"406301006"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 4,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101501",
+				"name": "Steadfast Safeguard",
+				"description": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is Broken</color>, action gets additionally delayed and DMG taken increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101502",
+				"name": "Singularity Split",
+				"description": "At the start of combat and during phase transitions, the Boss Mirage splits into 5 \"ichor memosprites\" and applies \"<u>Monoform Merger</u>\" to these summons. When all \"ichor memosprites\" with \"Monoform Merger\" enter the \"<u>Feigned Death</u>\" state, they merge back into the Boss Mirage.",
+				"params": []
+			},
+			{
+				"id": "101503",
+				"name": "Mutual Complement",
+				"description": "Increases the Max HP of the \"ichor memosprites\" summoned after the Boss Mirage's split, and the \"ichor memosprites\" summoned after the split in the second phase have Shared HP.",
+				"params": []
+			},
+			{
+				"id": "101504",
+				"name": "Economies of Scale",
+				"description": "For <color=#f29e38ff>every unit</color> on the enemy's side of the field that is not in the \"<u>Feigned Death</u>\" state aside from Boss Mirage, all enemies receive less DMG and deal more DMG.",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10151",
+				"name": "Arbiter of the Lost Abyss",
+				"description": "At the start of combat and during phase transitions, the Boss Mirage splits into 5 \"ichor memosprites.\"",
+				"answer": "Strategy: Actively use AoE ATK abilities to cause all \"ichor memosprites\" to enter \"Feigned Death\" as quickly as possible, forcing them to merge back.",
+				"skills": [
+					{
+						"id": "101511",
+						"type": "Normal",
+						"name": "How to Efficiently Reduce Boss Mirage's Toughness",
+						"texts": [
+							{
+								"description": "Ally units can reduce the Boss Mirage's Toughness by using a Shield to offset its specific abilities, or by defeating its summons. When allies use attack abilities to inflict debuffs on enemy targets, they can also reduce its Toughness by a minor amount.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101512",
+						"type": "Normal",
+						"name": "How to Counter Boss Mirage's \"Singularity Split\"",
+						"texts": [
+							{
+								"description": "Actively use AoE ATK abilities to quickly cause all \"ichor memosprites\" to enter \"Feigned Death\" so they undergo merger again.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After <color=#f29e38ff>Weakness is Broken</color>, action gets additionally delayed and DMG taken increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "After Boss Mirage uses \"Hemotort Teethgrind\" and \"Hemotort Saw\" to hit an ally target, \"Barrier Recoil\" is triggered if the attacked ally target has a Shield. Defeating the summons summoned by \"Execution in Place\" triggers \"Barrier Recoil.\" When Boss Mirage triggers \"Barrier Recoil,\" it reduces this unit's Toughness and DEF.\\nIf an ally inflicts a debuff on Boss Mirage and its summons when using an attack, slightly reduces the Toughness of that enemy unit and deals True DMG to it.",
+				"params": []
+			},
+			{
+				"description": "At the start of combat and during phase transitions, Boss Mirage splits into 5 \"ichor memosprites\" and applies \"Monoform Merger\" to these summons. When all \"ichor memosprites\" with \"Monoform Merger\" enter the \"Feigned Death\" state, they merge back into the Boss Mirage.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Prioritize applying Shields to ally targets. This can offset the Boss Mirage's DMG while reducing its Toughness and lowering its DEF.",
+				"params": []
+			},
+			{
+				"description": "Attack enemy targets using abilities with <color=#f29e38ff>Impair</color> capabilities. If a debuff is successfully applied, their Toughness will be further reduced, and they will take True DMG.",
+				"params": []
+			},
+			{
+				"description": "When the Boss Mirage fissures and summons \"ichor memosprite,\" prioritize using AoE ATK abilities to quickly force the summons into the \"Feigned Death\" state.",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "406401204"
+}

@@ -1,0 +1,165 @@
+{
+	"name": "Unterlevelte Castorice",
+	"description": "Der tote Drache, der im Fluss der Seelen schlummerte, wurde durch eine alchimistische Beschwörung erweckt und verwandelte sich in ein faulendes, verwesendes Etwas.\nEinst war er der Titan des Todes, der den Fluss der Seelen hinauf schwamm, um das Reich der Nichtexistenz zu verlassen und in der Welt der Sterblichen zu stranden. Einst folgte er den Gezeiten des Flusses der Seelen, strömte auf das lebende Land und brachte alles auf Amphoreus zu einem schicksalhaften Ende. Alle Existenzen, die sterben werden oder gestorben sind, werden einen Schauer in den Tiefen ihrer Seelen spüren, wenn der Drache zurückkehrt.",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014030.png",
+	"stats": {
+		"baseAttack": 40.008892,
+		"baseDefense": 210,
+		"baseHealth": 700.0109981399999,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 140,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Begräbnis der Schlafenden",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403402"
+		},
+		{
+			"name": "Abschiedstrauer der Verstorbenen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403403"
+		},
+		{
+			"name": "Bitterkeit bringt verspätete Todesnachricht",
+			"tag": "Unterstützung",
+			"type": "Fähigkeit",
+			"description": "Verstärkt „Die langen Arme des Kummers“.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403404"
+		},
+		{
+			"name": "In aromatischem Schmerz sterben",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status <u>Duft des Todes</u> ein und fügt allen Figuren massiven Quanten-SCH zu. Dieser SCH ist <u>nicht tödlich</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.145
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403405"
+		},
+		{
+			"name": "Der Tod verlangt nach mehr Tod",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403406"
+		},
+		{
+			"name": "Tintenschwarzer Rauch eines Nahtodtraums",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Verringert anfänglich den von dieser Einheit erlittenen SCH. Entfernt im Status <u>Duft des Todes</u> die Reduktion des erlittenen SCH dieser Einheit. Stellt nach einem erlittenen Angriff bei allen Verbündeten LP wieder her.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403407"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"401207401",
+		"401207501"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "401403401"
+}

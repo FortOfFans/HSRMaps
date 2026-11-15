@@ -1,0 +1,164 @@
+{
+	"name": "「哲学の胎児 - 狂気」",
+	"description": "新たな萌芽 / 古く腐った泥の中で咲く / 宇宙！宇宙が砕けて万華鏡になった！ / その鋭い欠片が「ぼく」の目に落ちる / どの欠片も「狂気」と呼ばれるのか？",
+	"icon": "spriteoutput/monsterfigure/Monster_5035020.png",
+	"shortIcon": "Monster_5035020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5035020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 93000,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1200,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "堕ちた楽園の嗤笑",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "<u>狂気ネタ</u>を獲得し、その後味方全体に量子属性ダメージを与える。自身がすでに「無常の力」状態の場合、このスキルの与ダメージをアップさせる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				6,
+				20
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502001"
+		},
+		{
+			"name": "死のための産声",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "大量の<u>狂気ネタ</u>を獲得し、その後自身を「無常の力」状態にする。自身がすでに「無常の力」状態の場合、自身を「狂乱の混沌」状態にし、次の行動時に「狂気と痴愚、銀河の茶番劇」を発動する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				50,
+				50,
+				50,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502002"
+		},
+		{
+			"name": "狂気と痴愚、銀河の茶番劇",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "<u>狂気ネタ</u>を獲得し、その後味方全体に大量の量子属性ダメージを与え、味方全体のEPを減らす。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.3,
+				20
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502003"
+		},
+		{
+			"name": "笑いを測る尺度",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "<u>狂気ネタ</u>の数が味方の<u>爆笑ネタ</u>の数を上回ると、自身の行動順が早まり、「<u>狂気</u>」状態に入る。味方の<u>爆笑ネタ</u>の数が<u>狂気ネタ</u>の数を上回ると、味方全体の行動順が早まり、「<u>愉快</u>」状態に入る。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.0029999998,
+				66,
+				0.08,
+				0.08,
+				0.06,
+				0.5,
+				0.5,
+				0.02,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502004"
+		},
+		{
+			"name": "わけもなく騒ぎ立てる本能",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPを一定割合失うごとに、即座に「死のための産声」を発動する。自身がすでに「狂乱の混沌」状態である場合は、即座に「狂気と痴愚、銀河の茶番劇」を発動する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.35,
+				0.35,
+				0.9,
+				0.98,
+				0.85
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Quantum",
+	"id": "5035020"
+}

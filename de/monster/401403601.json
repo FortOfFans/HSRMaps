@@ -1,0 +1,450 @@
+{
+	"name": "Anführer von Welken und Verfall",
+	"description": "Netherschwinge, die im Fluss der Seelen schlummerte, wurde durch eine alchemistische Beschwörung wiedererweckt und in etwas Fauliges und Verwesendes verwandelt.\nEinst war er der Titan des Todes, der in der Strömung des Flusses der Seelen flussaufwärts schwamm, das Reich der Nichtexistenz verließ und in der Welt der Sterblichen strandete. Einst folgte er den Gezeiten des Flusses der Seelen, um die Länder der Lebenden zu ertränken, und brandmarkte alle Dinge in Amphoreus mit einem schicksalhaften Ende. Alle Existenzen, die sterben werden oder gestorben sind, werden bei der Rückkehr des Drachen in den Tiefen ihrer Seelen ein Zittern verspüren.",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 46500,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 2400,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Umklammerung der Gefallenen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten Quanten-SCH zu. Wenn sich der „Anführer von Welken und Verfall“ im Status <u>Duft des Todes</u> befindet, wird zusätzlich <u>Degenerativer Quanten-SCH</u> verursacht.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.15
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403601"
+		},
+		{
+			"name": "Begräbnis der Schlafenden",
+			"tag": "Verteilen",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Quanten-SCH zu, der <u>gleichmäßig aufgeteilt</u> wird. Falls sich der „Anführer von Welken und Verfall“ im Status <u>Duft des Todes</u> befindet, wird jedem Ziel zusätzliche <u>Degenerativer Quanten-SCH</u> zugefügt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				12,
+				0.15
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403602"
+		},
+		{
+			"name": "Abschiedstrauer der Verstorbenen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt 3 zufälligen Verbündeten <u>Degenerativen Quanten-SCH</u> zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403603"
+		},
+		{
+			"name": "Bitterkeit bringt verspätete Todesnachricht",
+			"tag": "Unterstützung",
+			"type": "Fähigkeit",
+			"description": "Entfernt den Schwächebruch-Status von allen „Die langen Arme des Kummers“, die sich im Schwächebruch befinden. Ihr gesamter WDS wird wiederhergestellt und sie führen sofort eine Aktion aus.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403604"
+		},
+		{
+			"name": "In aromatischem Schmerz sterben",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status <u>Duft des Todes</u> ein und fügt allen Figuren massiven <u>Degenerativen Quanten-SCH</u> zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1.2,
+				2,
+				5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403605"
+		},
+		{
+			"name": "Der Tod verlangt nach mehr Tod",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten <u>Degenerativen Quanten-SCH</u> zu. Fügt Zielen im Status <u>Todesröcheln</u> tödlichen SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.8
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403606"
+		},
+		{
+			"name": "Tintenschwarzer Rauch eines Nahtodtraums",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Reduziert den anfänglichen SCH, den diese Einheit erleidet, und versetzt sie in den Status Widerstandsschutz. Wenn die LP eines Verbündeten sinken, wird „Verzweifelte Traumblase“ angesammelt. Wenn Verzweifelte Traumblase den Grenzwert erreicht, tritt diese Einheit in den Status <u>Duft des Todes</u> ein. Während dieses Status werden die SCH-Reduktion sowie der Status Widerstandsschutz von dieser Einheit entfernt. Wenn <u>Duft des Todes</u> aufgehoben wird, erleidet diese Einheit SCH und erleidet direkt Schwächebruch.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.8,
+				0.2,
+				1,
+				0,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403607"
+		},
+		{
+			"name": "Warte nicht reglos auf den Tod",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn die Fähigkeiten von „Anführer von Welken und Verfall“ oder „Die langen Arme des Kummers“ einen Verbündeten treffen, wird dieser mit einem speziellen, nicht entfernbaren DoT-Status belegt. Je höher in diesem Status der LP-Prozentsatz ist, desto höher wird der erlittene SCH.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.3,
+				0,
+				0.15,
+				0.9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403608"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403609"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403610"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403611"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403612"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403613"
+		},
+		{
+			"name": "Todeskampf",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Alle Verbündeten im Kampf erhalten den Status <u>Überladbar</u>. Verbündete im Status <u>Todesröcheln</u> verursachen deutlich weniger SCH und haben eine stark reduzierte Schwächebruch-Effizienz. Wenn Verbündete über mehrere Runden hinweg im Status <u>Todesröcheln</u> bleiben, erleiden sie tödlichen SCH.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.9,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403614"
+		},
+		{
+			"name": "Fleischzersetzende Rache",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn sich „Anführer von Welken und Verfall“ im Status „Tiefe Todesträume“ befindet, erhält „Die langen Arme des Kummers“ den Status <u>Ätzende Vergeltung</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				600
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403615"
+		},
+		{
+			"name": "Lichtverschlingender Abgrund",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "„Anführer von Welken und Verfall“ hat keine Schwäche. Wenn sich „Die langen Arme des Kummers“ im Schwächebruch befindet, wird seine anfängliche Schwäche allen anderen Gegnern implantiert, bis er sich vom Schwächebruch erholt hat.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403616"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"401207601",
+		"401207701"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101301",
+				"name": "Solider Schutz",
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101302",
+				"name": "Verwelktes Grün",
+				"description": "In diesem Kampf sinken die LP der verbündeten Einheiten nicht unter 1, und jeglicher SCH, der die aktuellen LP übersteigt, wird in „LP-Überladung“ umgewandelt. Der verursachte SCH von verbündeten Einheiten im Status LP-Überladung und ihre Schwächebruch-Effizienz werden stark reduziert.",
+				"params": []
+			},
+			{
+				"id": "101303",
+				"name": "Zerschlagung der Härte",
+				"description": "Erhöht den max. WDS von „Die langen Arme des Kummers“.",
+				"params": []
+			},
+			{
+				"id": "101304",
+				"name": "Beharrliche Entschlossenheit",
+				"description": "Reduziert den erlittenen SCH aller Gegner. Sie erleiden aber mehr SCH für jeden <color=#f29e38ff>Schwächetyp</color>, den sie besitzen.",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10131",
+				"name": "Phase I: Abgelehnter Todeswunsch",
+				"description": "In diesem Kampf sinken die LP der verbündeten Einheiten nicht unter 1, und jeglicher SCH, der die aktuellen LP übersteigt, wird in „LP-Überladung“ umgewandelt. Der verursachte SCH von verbündeten Einheiten im Status LP-Überladung und ihre Schwächebruch-Effizienz werden stark reduziert.",
+				"answer": "Strategie: Stelle vorrangig bei Verbündeten mit dem Status „LP-Überladung“ LP wieder her.",
+				"skills": [
+					{
+						"id": "101311",
+						"type": "Normal",
+						"name": "So wird der Status „Duft des Todes“ des Boss-Phantoms entfernt",
+						"texts": [
+							{
+								"description": "Wenn sich das Boss-Phantom im Status „Duft des Todes“ befindet, lässt jeder SCH, der ihm und seinen beschworenen Objekten zugefügt wird, seine LP sinken, was wiederum die „Verzweifelte Traumblase“ verringert und den Status Duft des Todes aufhebt.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101312",
+						"type": "Normal",
+						"name": "So wird der Status „LP-Überladung“ von verbündeten Einheiten entfernt",
+						"texts": [
+							{
+								"description": "Die Wiederherstellung der LP eines Verbündeten stellt vorrangig die „LP-Überladung“ dieses Ziels wieder her.",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10132",
+				"name": "Phase II: Nach dem Tod kommt Leben",
+				"description": "Wenn das Boss-Phantom „Der Tod verlangt nach mehr Tod“ einsetzt, fügt es Verbündeten mit dem Status „LP-Überladung“ tödlichen SCH zu.",
+				"answer": "Strategie: Stelle LP wieder her, bevor „Der Tod verlangt nach mehr Tod“ eingesetzt wird, um den Status „LP-Überladung“ von allen verbündeten Einheiten zu entfernen.",
+				"skills": [
+					{
+						"id": "101321",
+						"type": "Normal",
+						"name": "Dem tödlichen Effekt von „Der Tod verlangt nach mehr Tod“ entgegenwirken",
+						"texts": [
+							{
+								"description": "Stelle LP wieder her, um den Status „LP-Überlastung“ von allen Verbündeten zu entfernen, bevor das Boss-Phantom „Der Tod verlangt nach mehr Tod“ einsetzt.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Das Boss-Phantom und seine beschworenen Objekte erleiden <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nach dem Erleiden von <color=#f29e38ff>Schwächebruch</color> wird die Aktion zusätzlich verzögert und erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "In diesem Kampf sinken die LP der Verbündeten nicht unter 1, und jeglicher SCH, der die aktuellen LP übersteigt, wird in „LP-Überladung“ umgewandelt. Verbündete Einheiten im Status LP-Überladung erleiden geringeren SCH und ihre Schwächebruch-Effizienz ist stark verringert.",
+				"params": []
+			},
+			{
+				"description": "Wenn die LP eines Verbündeten sinken und das Boss-Phantom sich im Status „Tiefe Todesträume“ befindet, sammelt es „Verzweifelte Traumblase“ an. Sobald Verzweifelte Traumblase den Grenzwert erreicht, tritt das Boss-Phantom in den Status „Duft des Todes“ ein. In diesem Status werden die Fähigkeiten des Boss-Phantoms und seiner beschworenen Objekte erheblich verstärkt.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Wenn Verbündete den Status „LP-Überladung“ betreten, werden ihr verursachter Schaden und ihre Schwächebruch-Effizienz stark verringert. Versuche zuerst, ihre LP wiederherzustellen, um diesen Status aufzuheben.",
+				"params": []
+			},
+			{
+				"description": "Wenn „Die langen Arme des Kummers“ Schwächebruch erleidet, werden der WDS und die LP des Boss-Phantoms verringert. Befindet sich das Boss-Phantom im Status „Duft des Todes“, werden außerdem bei den Verbündeten LP wiederhergestellt.",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "401403601"
+}

@@ -1,0 +1,367 @@
+{
+	"name": "苦労の絶えない車掌",
+	"description": "星穹列車の荒ぶる力を、いったい誰が制御できようか！？パムは暴走し、「合金メカヨロイ・パムキング」へと変貌を遂げた。\n異常なまでに清潔さにこだわる強大なメカヨロイ、パムキング…その基準によると、ここはすでに汚れているらしい——大・掃・除じゃー！",
+	"icon": "spriteoutput/monsterfigure/Monster_5014020.png",
+	"shortIcon": "Monster_5014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5014020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 37199.99535,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1200,
+		"speed": 134,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "魂剪定バサミ",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402401"
+		},
+		{
+			"name": "高温殺菌モード",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "「蒸気洗浄」状態に入り、自身の与ダメージをアップさせる。同時に一定層数の「持続除菌」効果を獲得し、自身の受けるダメージをダウンさせる。「持続除菌」効果がすべてクリアされる時、「蒸気洗浄」状態を解除し、大量のダメージを受ける。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				2,
+				0.44,
+				0.1,
+				4,
+				0.22
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402403"
+		},
+		{
+			"name": "死角なき洗浄",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性ダメージを与え、味方が<u>爆笑ネタ</u>を獲得する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402402"
+		},
+		{
+			"name": "強力シャボン玉",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性ダメージを与え、「<u>労働は最高の喜び！</u>」状態を付与する。また、味方が<u>爆笑ネタ</u>を獲得する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				0.02,
+				5,
+				2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402404"
+		},
+		{
+			"name": "当番準備中…",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "「やる気満々」状態に入り、「弱点無効」効果を獲得する。次の行動時、「徹底的大掃除！」を発動する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402405"
+		},
+		{
+			"name": "徹底的大掃除！",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の量子属性ダメージを与え、味方が<u>爆笑ネタ</u>を獲得する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				5,
+				8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402406"
+		},
+		{
+			"name": "お掃除ロボの反乱",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "各フェーズの開始時、「会場の秩序維持」は敵味方双方に増援を召喚する。味方が爆笑ネタを1個獲得するたびに、味方の「合金おそうじパム」がチャージを1獲得する。チャージが<unbreak>1[i]</unbreak>に達すると、強化通常攻撃が発動可能になり、「苦労の絶えない車掌」の「持続除菌」効果を1層解除し、「弱点無効」効果を無視して強制的に靭性を削ることができる。味方の「合金おそうじパム」は最大1体まで存在でき、敵味方双方から選択されない。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				80,
+				0,
+				0,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402408"
+		},
+		{
+			"name": "革新的なブリーチ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「払暁戦隊」が「払暁フィールド」状態の時、「苦労の絶えない車掌」はその「払暁戦隊」メンバーと同じ属性の「ダメージ無効」効果を獲得し、同時に「弱点無効」効果を獲得する。ランダムな「払暁戦隊」メンバーが味方に倒された時、味方の「合金おそうじパム」は即座に強化通常攻撃を発動できる追加ターンを1獲得する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1.75,
+				1.2,
+				0.3,
+				0.6,
+				0.9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402409"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402411"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402415"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402414"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"5013052",
+		"5013072",
+		"5013042",
+		"5013062"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 4,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101801",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101802",
+				"name": "友情の極み",
+				"description": "「払暁戦隊」は召喚されると即座に「払暁の意志」を発動し、「払暁フィールド」状態に入る。「払暁戦隊」が「払暁フィールド」状態の間、ボス幻影はその「払暁戦隊」のメンバーと同じ属性の<color=#f29e38ff>「ダメージ無効」</color>効果と、<color=#f29e38ff>「弱点無効」</color>効果を獲得する。",
+				"params": []
+			},
+			{
+				"id": "101803",
+				"name": "動かざること山の如し",
+				"description": "「払暁戦隊」が「払暁フィールド」から退出するために必要な攻撃回数がアップする。",
+				"params": []
+			},
+			{
+				"id": "101804",
+				"name": "難攻不落",
+				"description": "「払暁戦隊」が「払暁フィールド」状態の時、受けるダメージが大幅にダウンする。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10181",
+				"name": "苦労の絶えない車掌",
+				"description": "「払暁戦隊」は召喚されると即座に「払暁の意志」を発動し、「払暁フィールド」状態に入る。「払暁戦隊」が「払暁フィールド」状態の間、ボス幻影はその「払暁戦隊」のメンバーと同じ属性の<color=#f29e38ff>「ダメージ無効」</color>効果と、<color=#f29e38ff>「弱点無効」</color>効果を獲得する。",
+				"answer": "対応戦略：<color=#f29e38ff>愉悦ダメージ</color>を与えることで、「払暁戦隊」の「払暁フィールド」状態をより早く解除できる。",
+				"skills": [
+					{
+						"id": "101811",
+						"type": "Normal",
+						"name": "ボス幻影の靭性を効率よく削る方法",
+						"texts": [
+							{
+								"description": "味方の「合金おそうじパム」の強化通常攻撃は、ボス幻影の「弱点無効」効果を無視して、強制的に靭性を削ることができる。爆笑ネタを獲得すると、味方の「合金おそうじパム」は強化通常攻撃を発動できる追加ターンをさらに獲得できる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101812",
+						"type": "Normal",
+						"name": "ボス幻影の「ダメージ無効」を解除する方法",
+						"texts": [
+							{
+								"description": "愉悦ダメージを与えると、「払暁戦隊」の「払暁フィールド」とボス幻影の「ダメージ無効」効果をより早く解除できる。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "「払暁戦隊」は召喚されると即座に「払暁の意志」を発動し、「払暁フィールド」状態に入る。「払暁戦隊」が「払暁フィールド」状態の間、ボス幻影はその「払暁戦隊」のメンバーと同じ属性の<color=#f29e38ff>「ダメージ無効」</color>効果と、<color=#f29e38ff>「弱点無効」</color>効果を獲得する。<color=#f29e38ff>愉悦ダメージ</color>を与えることで、「払暁戦隊」の「払暁フィールド」状態をより早く解除できる。",
+				"params": []
+			},
+			{
+				"description": "ランダムな「払暁戦隊」が味方によって倒されると、味方の「合金おそうじパム」は即座に、強化通常攻撃を発動できる追加ターンを1回獲得する。味方の「合金おそうじパム」がボス幻影に強化通常攻撃を発動する際は、<color=#f29e38ff>ボス幻影の「弱点無効」効果を無視</color>して、強制的に靭性を削ることができる。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "<color=#f29e38ff>爆笑ネタを獲得する</color>と、味方の「合金おそうじパム」のチャージを早める。味方の「合金おそうじパム」の強化通常攻撃はボス幻影のダメージ軽減効果を解除し、ボス幻影の靭性を削ることができる。",
+				"params": []
+			},
+			{
+				"description": "<color=#f29e38ff>愉悦ダメージ</color>を与えることで、「払暁戦隊」の「払暁フィールド」状態をより早く解除できる。",
+				"params": []
+			},
+			{
+				"description": "ランダムな<color=#f29e38ff>「払暁戦隊」</color>を倒すと、味方の「合金おそうじパム」は即座に、強化通常攻撃を発動できる追加ターンを1獲得する。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "501402404"
+}

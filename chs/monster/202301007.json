@@ -1,0 +1,162 @@
+{
+	"name": "隐秘的行刺者",
+	"description": "以云吟之术消隐身形的刺客，不知受何人所遣。",
+	"icon": "spriteoutput/monsterfigure/Monster_2023010.png",
+	"shortIcon": "Monster_2023010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2023010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 929.999628,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "震击",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202301001"
+		},
+		{
+			"name": "霆罚",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202301002"
+		},
+		{
+			"name": "劫雷",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成大量雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202301003"
+		},
+		{
+			"name": "召遣",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "消耗自身生命值，召唤【魔阴身士卒】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202301004"
+		},
+		{
+			"name": "采气",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "当场上其它敌方目标带有【重生】时，其自身具有【击中回复】。当击中我方目标后，回复其自身生命值。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.025
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202301005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"202201003"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113002,
+				"count": 1
+			},
+			{
+				"id": 113003,
+				"count": 1
+			},
+			{
+				"id": 182002,
+				"count": 1
+			},
+			{
+				"id": 183001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "202301007"
+}

@@ -1,0 +1,164 @@
+{
+	"name": "記憶域ミーム「怒りの抜け殻」（バグ）",
+	"description": "コードが影響を受けた後、バグってしまった投影。参照元の本体は特定の認識を持つ実体。記憶域にある潜在意識の欠片が積み重なってできたもの。\n悲しみと苦しみの記憶は業火のように心を焼く。苦難が過ぎた後、際限のない怒りを携え、命を得た恨みが灰燼の中から誕生する。",
+	"icon": "spriteoutput/monsterfigure/Monster_3013010.png",
+	"shortIcon": "Monster_3013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3013010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1302,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 110,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "憎悪のお礼",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に量子属性ダメージを与える。自身が「骨を灼く炎」を1層獲得する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301301"
+		},
+		{
+			"name": "雷霆の如き叱咤",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "自身が「骨を灼く炎」を大量に獲得する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301302"
+		},
+		{
+			"name": "宿怨は波の如く逆巻く",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の量子属性ダメージを与える。自身が「骨を灼く炎」を1層獲得する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301303"
+		},
+		{
+			"name": "骨を刺す嫌悪",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "連続でランダムな味方単体およびその隣接する味方に少量の量子属性ダメージを与える。「骨を灼く炎」1層につき、さらに1回ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301304"
+		},
+		{
+			"name": "ヒステリックボディ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「守備」状態に入る。弱点が撃破されていない時、受けるダメージがダウンする。弱点が撃破された時、行動順の遅延量がアップする。弱点撃破状態の時、受けるダメージがアップする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				0.75,
+				0.5,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301301305"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114012,
+				"count": 1
+			},
+			{
+				"id": 114013,
+				"count": 1
+			},
+			{
+				"id": 182009,
+				"count": 1
+			},
+			{
+				"id": 183005,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "3013013"
+}

@@ -1,0 +1,210 @@
+{
+	"name": "Goldblut-Memogeist: Richter des Vergessens",
+	"description": "Der letzte Rest von Wahnsinn, der in den zahllosen Überresten der Goldblut-Memogeister verweilte, wurde von Evernight extrahiert und zu einer noch bizarreren, groteskeren Kreatur verschmolzen.\nSie folgt dem Willen ihrer Schöpferin und entscheidet, was in Erinnerung bleiben und was in Vergessenheit geraten soll. Sie verschlingt nutzlose, überflüssige Erinnerungen, damit sie im Strom der Zeit verstummen.\n„Soll neues Leben keimen, so muss sein Samen tot sein.“",
+	"icon": "spriteoutput/monsterfigure/Monster_4064010.png",
+	"shortIcon": "Monster_4064010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4064010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2511,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 4,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Zähneknirschen der Blutsünde",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten massiven imaginären SCH zu. Wenn das Ziel einen Schild besitzt, wird der WDS dieser Einheit reduziert. Diese WDS-Reduzierung kann den WDS nicht unter 1 senken.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				180,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401301"
+		},
+		{
+			"name": "Bereit zur Hinrichtung",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Goldblut-Memogeist: Fasan“. Jedes Mal, wenn ein beschworenes Objekt besiegt wird, wird der WDS dieser Einheit verringert.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				2,
+				180,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401302"
+		},
+		{
+			"name": "Finsterblick der Blutsünde",
+			"tag": "Anvisieren",
+			"type": "Fähigkeit",
+			"description": "Visiert eine verbündete Figur an und erhöht die eigene GES. Wendet in mehreren Runden „Zähneknirschen der Blutsünde“ und „Säge der Blutsünde“ auf das anvisierte Ziel an. Führt nach Einsatz dieser Fähigkeit eine zusätzliche Aktion aus.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401303"
+		},
+		{
+			"name": "Säge der Blutsünde",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten massiven imaginären SCH zu und wandelt einen Teil seiner verlorenen LP in <u>Korrosion</u> um. Wenn das Ziel einen Schild besitzt, wird der WDS dieser Einheit reduziert. Diese WDS-Reduzierung kann den WDS nicht unter 1 senken.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				180
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401304"
+		},
+		{
+			"name": "Zange der Blutsünde",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven imaginären SCH zu und wandelt einen Teil der verlorenen LP in <u>Korrosion</u> um.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.5,
+				0.2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401305"
+		},
+		{
+			"name": "Nenne den Schuldigen",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Setzt bei der nächsten Aktion „Enthauptung der Blutsünde“ ein, wobei ein Verbündeter ausgewählt wird, der den höchsten SCH von Enthauptung der Blutsünde und <u>Verderbnis der Blutsünde</u> erleidet.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401306"
+		},
+		{
+			"name": "Enthauptung der Blutsünde",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt verbündeten Figuren, die nicht für „Nenne den Schuldigen“ ausgewählt wurden, imaginären SCH zu. Fügt der verbündeten Figur, die für Nenne den Schuldigen ausgewählt wurde, massiven imaginären SCH zu und belegt sie basierend auf dem SCH, der nicht durch Schilde ausgeglichen wurde, mit <u>Verderbnis der Blutsünde</u>.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				14,
+				4.5,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401307"
+		},
+		{
+			"name": "Beschleunigtes Urteil",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Befindet die Einheit sich nicht im Schwächebruch, wird der erlittene SCH reduziert. Erleidet sie Schwächebruch, werden ihre Aktionen zusätzlich verzögert und sie erleidet massiven imaginären SCH. Nach dem Schwächebruch wird der erlittene SCH erhöht.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				2,
+				0.5,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401308"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [
+		"4062010"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "4064013"
+}

@@ -1,0 +1,471 @@
+{
+	"name": "魂魄蠱惑の支配者",
+	"description": "「星核ハンター」の一員。掴みどころのない笑みを浮かべる美しい殺し屋で、様々な武器の扱いとマインドコントロールに長けている。星穹列車をここまで誘導したのも、ある計画を実現するためである……",
+	"icon": "spriteoutput/monsterfigure/Monster_2004010.png",
+	"shortIcon": "Monster_2004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7207.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 900,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "止まない夜の喧騒",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				3,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401401"
+		},
+		{
+			"name": "月明かりが撫でる連綿",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方および隣接する味方に雷属性ダメージを与える。指定した味方が感電状態の場合、隣接する味方を感電状態にする。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1.75
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401402"
+		},
+		{
+			"name": "沈黙は厳かに嘲笑う",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401403"
+		},
+		{
+			"name": "言霊",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "高確率で指定した味方単体を「支配」状態にし、行動順を早め、他の味方1名をランダムに攻撃させる。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				2.5,
+				1.5,
+				0.5,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401404"
+		},
+		{
+			"name": "死者は歯ぎしりしながら囁く",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。同時に感電状態の全味方に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401405"
+		},
+		{
+			"name": "心理暗示",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "複数の味方を「心理暗示」状態にし、アクションバーに「公開」を追加する。次に「公開」が行動する時、「心理暗示」にかかった味方は「支配」状態になる。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				1.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401406"
+		},
+		{
+			"name": "戦慄",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "攻撃を受けたターゲットが感電状態の場合、感電ダメージを1回与える、このダメージは感電状態によるものとみなす。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401407"
+		},
+		{
+			"name": "残酷",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "自身以外の敵、または「支配」状態の味方が感電状態の味方をメインターゲットとして攻撃を行う時、さらに雷属性攻撃を1回行う。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401408"
+		},
+		{
+			"name": "傀儡スタンバイ",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "召喚物に「<u>誘狂</u>」を付与する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				0,
+				3,
+				0.75,
+				1.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401409"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5,
+				0,
+				0,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401410"
+		},
+		{
+			"name": "叫喚の霊",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "精鋭エネミーを2体召喚して戦闘を支援させる。味方キャラが召喚物にダメージを与えた時、「魂魄蠱惑の支配者」も同時に同量のHPを失う。召喚物が弱点撃破される時、さらに行動順が遅延される。いずれかの召喚物が倒された後、弱点属性がフィールド上にいる他の召喚物に移、その召喚物に「<u>血眼</u>」を付与する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				240,
+				0,
+				1,
+				0.5,
+				0.5,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401411"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401412"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.75,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401413"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401414"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"800302201",
+		"800301201",
+		"300301401",
+		"301301201"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100401",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100402",
+				"name": "陣地移転",
+				"description": "ボス幻影が2体の精鋭エネミーを召喚して戦闘を支援させる。ボス幻影は自身の弱点属性を召喚物に<color=#f29e38ff><u>トランス</u></color>させる。召喚物が倒される時、ボス自身の靭性が追加で削られる。",
+				"params": []
+			},
+			{
+				"id": "100403",
+				"name": "星々の守り",
+				"description": "フィールド上に存在するボス幻影以外の<color=#f29e38ff>敵</color>1体につき、敵全体の受けるダメージがダウンする。",
+				"params": []
+			},
+			{
+				"id": "100404",
+				"name": "土壇場の逆転",
+				"description": "ボス幻影が第二段階で「傀儡スタンバイ」を発動する時、<color=#f29e38ff>すべての召喚物</color>にバフを付与する。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10041",
+				"name": "第一段階：氷と炎の重奏",
+				"description": "ボス幻影は宇宙からの炎と宇宙からの氷を召喚して戦闘を支援し、自身の弱点属性を召喚物に移す。",
+				"answer": "対応戦略：優先的に召喚物を倒す。すべての召喚物を倒すと、弱点属性がボス幻影に戻る。",
+				"skills": [
+					{
+						"id": "100411",
+						"type": "Normal",
+						"name": "ボス幻影が付与する「支配」状態への対処法",
+						"texts": [
+							{
+								"description": "効果抵抗をアップするか、スキルを使用してボス幻影が付与する行動制限系デバフ「支配」を解除する。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100412",
+						"type": "Normal",
+						"name": "ボス幻影の召喚物への対処法",
+						"texts": [
+							{
+								"description": "いずれかの召喚物を倒すと、残りの召喚物の速度と受けるダメージがアップする。この仕様を利用して残りの召喚物を素早く倒す。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100413",
+						"type": "Normal",
+						"name": "弱点属性のないボス幻影への対処法",
+						"texts": [
+							{
+								"description": "召喚物を倒すとボス幻影の靭性を追加で削る。すべての召喚物を倒すと、弱点属性がボス幻影に戻る。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10042",
+				"name": "第二段階：ゲームスタート",
+				"description": "ボス幻影はナイトメア劇団・エクセスウェルダンと記憶域ミーム「怒りの抜け殻」を召喚して戦闘を支援し、自身の弱点属性を召喚物に移す。",
+				"answer": "対応戦略：優先的に召喚物を倒す。すべての召喚物を倒すと、弱点属性がボス幻影に戻る。",
+				"skills": [
+					{
+						"id": "100421",
+						"type": "Normal",
+						"name": "ボス幻影の「心理暗示」スキルへの対処法",
+						"texts": [
+							{
+								"description": "効果抵抗をアップするか、スキルを発動してボス幻影が味方に付与する「心理暗示」を解除する。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100422",
+						"type": "Normal",
+						"name": "召喚物ナイトメア劇団・エクセスウェルダンへの対処法",
+						"texts": [
+							{
+								"description": "ナイトメア劇団・エクセスウェルダンのチャージ中に「コンロ加熱」を6層まで累積させることでチャージ状態を解除させ、敵全体にダメージとデバフを与える。攻撃または持続ダメージで「コンロ加熱」の層数を累積できる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100423",
+						"type": "Normal",
+						"name": "記憶域ミーム「怒りの抜け殻」への対処法",
+						"texts": [
+							{
+								"description": "記憶域ミーム「怒りの抜け殻」を弱点撃破することで、チャージ状態と「守備」効果を解除し、受けるダメージをアップさせる。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "ボス幻影は<color=#f29e38ff>自身の弱点属性を召喚物に移す</color>。いずれかの召喚物が倒された後、その召喚物の弱点属性が他の召喚物に<color=#f29e38ff>付与</color>される。",
+				"params": []
+			},
+			{
+				"description": "召喚物を攻撃すると、ボス幻影に<color=#f29e38ff>同量のダメージ</color>を与える。いずれかの召喚物が倒された後、残りの召喚物の速度がアップし、<color=#f29e38ff>受けるダメージがアップ</color>する。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "優先的に<color=#f29e38ff>召喚物を倒すと</color>、召喚物が持つ弱点属性はボス幻影に<color=#f29e38ff>戻る</color>。",
+				"params": []
+			},
+			{
+				"description": "いずれかの召喚物を倒すと、残りの召喚物の受けるダメージがアップする。この仕様を利用して残りの召喚物を素早く倒す。",
+				"params": []
+			},
+			{
+				"description": "効果抵抗をアップするか、スキルを発動してボス幻影が付与する<color=#f29e38ff>「支配」</color>状態を解除する。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "200401401"
+}

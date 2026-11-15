@@ -3,15 +3,22 @@
 	"description": "One of the Stellaron Hunters. A beautiful assassin wearing an enigmatic smile, she excels in manipulation and various weaponry. It was by her design that the Astral Express was led here, all of which was simply part of a certain plan...",
 	"icon": "spriteoutput/monsterfigure/Monster_2004010.png",
 	"shortIcon": "Monster_2004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004010.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 2789.999814,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 450,
+		"speed": 119,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "LittleBoss"
 	},
 	"skills": [
 		{
-			"id": "200401001",
 			"name": "Midnight Tumult",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -26,11 +33,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401001"
 		},
 		{
-			"id": "200401002",
 			"name": "Caressing Moonlight",
 			"tag": "Blast",
 			"type": "Ability",
@@ -43,11 +50,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401002"
 		},
 		{
-			"id": "200401003",
 			"name": "Silent and Sharp Mockery",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -59,11 +66,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401003"
 		},
 		{
-			"id": "200401004",
 			"name": "Spirit Whisper",
 			"tag": "Impair",
 			"type": "Ability",
@@ -79,11 +86,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401004"
 		},
 		{
-			"id": "200401005",
 			"name": "Tremble",
 			"tag": "Talent",
 			"type": "Talent",
@@ -93,11 +100,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401005"
 		},
 		{
-			"id": "200401006",
 			"name": "Cruelty",
 			"tag": "Talent",
 			"type": "Talent",
@@ -110,26 +117,37 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401006"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.5
 		}
 	],
 	"weakness": [
@@ -137,10 +155,12 @@
 		"Ice",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
 	},
+	"guide": null,
 	"rank": "LittleBoss",
 	"stanceType": "Physical",
 	"id": "200401005"

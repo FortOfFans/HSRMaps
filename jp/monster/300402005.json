@@ -1,0 +1,119 @@
+{
+	"name": "{RUBY_B#きそう}奇想{RUBY_E#}ジャングルのバナ{RUBY_B#けん}研{RUBY_E#}",
+	"description": "「源究の森」の茂みに理性を覆われてしまったスウィート・ドリーム劇団。「奇想ジャングル」で発生したミームウイルスを携え、夢の中でバナーネモンキーが代表する精神と、原始博士の教えをバナ暴に宣伝している。",
+	"icon": "spriteoutput/monsterfigure/Monster_3004020.png",
+	"shortIcon": "Monster_3004020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3004020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3720,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 80,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "モンキー集団主義",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "今回の戦闘において、「奇想ジャングルのバナ研」はすべての「バナ研」メンバーとHPを共有する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				0.4,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300402001"
+		},
+		{
+			"name": "バナ育コマ割り",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "アクションバーに「学期末パーティー」を追加する。「学期末パーティー」が行動する時、フィールド上にいるすべての「バナ研」メンバーにある行動制限系デバフおよび弱点撃破状態を解除し、「バナ研」全体を「講義チャンネル」状態にする。さらに、「博士に捧げる：バナ育成果発表会」を発動する。「バナ研」メンバーが弱点撃破される時、「学期末パーティー」の行動順が小幅遅延される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				100,
+				0.15,
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300402002"
+		},
+		{
+			"name": "博士に捧げる：バナ育成果発表会",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "敵全体の攻撃力をアップし、味方全体のEPとSPを減らす。味方全体に量子属性ダメージと炎属性ダメージを与え、確率で味方全体に減速状態を付与する。さらに、高確率で味方全体を「燃焼」状態にする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				0.8,
+				1.5,
+				1.8,
+				1.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300402003"
+		},
+		{
+			"name": "",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				0,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300402004"
+		}
+	],
+	"resistance": [],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [
+		"3003013",
+		"3002021",
+		"3002011",
+		"3002041"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "300402005"
+}

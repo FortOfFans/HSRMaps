@@ -1,0 +1,201 @@
+{
+	"name": "蕉研组的谐乐蕉师",
+	"description": "原本是搭载了谐乐学院教材的「十七分熟」，受到模因病毒的影响，教材变成了蕉材。舞台上的蕉燥之心酝酿炽焰的蕉响乐，誓要将不听从蕉诲的坏猴生烤为蕉碳。",
+	"icon": "spriteoutput/monsterfigure/Monster_3003013.png",
+	"shortIcon": "Monster_3003013",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003013.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2232,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 420,
+		"speed": 130,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "体罚，尝尝蕉训！",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对我方单体及相邻目标造成少量火属性伤害，并大概率使其陷入【灼烧】状态。只能在【课堂频道】状态下使用。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.6,
+				2,
+				0.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301301"
+		},
+		{
+			"name": "连坐，尝尝焦训！",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成少量火属性伤害，并大概率使我方全体陷入【灼烧】状态。只能在【课堂频道】状态下使用。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				0.5,
+				3,
+				3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301302"
+		},
+		{
+			"name": "不猴，紧急补课！",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使敌方随机单体和自身转变为【课堂频道】状态，并为其附加【<u>补课</u>】状态。只能在【课间频道】状态下使用。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301303"
+		},
+		{
+			"name": "猴啊，假期活动！",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "使我方全体攻击力提高。只能在【课间频道】状态下使用。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.1,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301304"
+		},
+		{
+			"name": "打乱蕉程",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "在受到攻击后，会从【课堂频道】状态转变为【课间频道】状态。处在【课间频道】状态时，受到攻击后不会切换频道。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301305"
+		},
+		{
+			"name": "蕉泥做猴",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "自身在攻击时有概率对目标施加减速状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.5,
+				0.2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301306"
+		},
+		{
+			"name": "",
+			"tag": "弹射",
+			"type": "技能",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301307"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 182010,
+				"count": 1
+			},
+			{
+				"id": 183006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "3003013"
+}

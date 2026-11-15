@@ -1,0 +1,189 @@
+{
+	"name": "Stellaron-Jäger: Sam",
+	"description": "Einer der Stellaron-Jäger, ein mysteriöser Krieger in einer gewaltigen Rüstung. Sein eiserner Anzug verfügt über die Fähigkeit, feurige Angriffe zu entfesseln und das Schlachtfeld in Flammen zu tauchen.",
+	"icon": "spriteoutput/monsterfigure/Monster_3024020.png",
+	"shortIcon": "Monster_3024020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3024020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7440,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "BHF: Flammender Vorstoß",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402001"
+		},
+		{
+			"name": "BHF: Himmelsfeuer",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten geringen Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.2,
+				1.6,
+				2.4,
+				1.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402002"
+		},
+		{
+			"name": "BBHF: Verbrannte Erde",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1.8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402003"
+		},
+		{
+			"name": "DHGDR: Sekundäre Verbrennung",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Verbraucht eigene LP, um in den Status „Sekundäre Verbrennung“ einzutreten und „Geschützte Schwäche“ aufzuheben. Wird in diesem Status erheblich stärker, aber alle Angriffe verbrauchen LP.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.03,
+				180,
+				0.28,
+				0.5,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402004"
+		},
+		{
+			"name": "DHGDR: Supernova-Überladung",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Feuer-SCH zu und hat eine hohe Chance, Brennen zu verursachen.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.7,
+				1.2,
+				3,
+				0.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402005"
+		},
+		{
+			"name": "SGE: Geschmolzener Kern",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Nach dem Eintritt in den Status „Sekundäre Verbrennung“ verbrennt Sam sowohl die Umgebung als auch die Fertigkeitspunkte der Verbündeten. Wenn Verbündete angezündete Fertigkeitspunkte verbrauchen, verlieren sie LP und verursachen zusätzlich eine feste Menge Feuer-SCH basierend auf einem Prozentsatz des ursprünglichen SCH. Außerdem wird die LP-Wiederherstellung stark reduziert, wenn sie Heilung von anderen Einheiten außer sich selbst erhalten.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.01,
+				1.5,
+				0.3,
+				1.6,
+				0.9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402006"
+		},
+		{
+			"name": "SGE: Geschmolzener Motor",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Im Status „Sekundäre Verbrennung“ besitzt Sam „Geschmolzene Energie“. Eine entsprechende Menge Geschmolzene Energie wird verbraucht, wenn er von Angriffen mit Fertigkeitspunkten angegriffen wird. Wenn die Geschmolzene Energie verbraucht ist oder Sam Schwächebruch erleidet, wird Sekundäre Verbrennung aufgehoben. Danach wird der von Sam erlittene SCH erhöht und alle Fertigkeitspunkte werden wiederhergestellt.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402007"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Fire",
+	"id": "302402009"
+}

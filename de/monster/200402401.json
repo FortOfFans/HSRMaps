@@ -1,0 +1,226 @@
+{
+	"name": "Wolkenritter-Leutnant: Yanqing",
+	"description": "General Jing Yuans Dienstmann. Ein begabter Schwertkämpfer, der noch nicht einmal volljährig ist.",
+	"icon": "spriteoutput/monsterfigure/Monster_2004020.png",
+	"shortIcon": "Monster_2004020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 6975,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Stürmischer Wind",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu. Yanqing und alle Fliegenden Schwerter erhalten 1 Stapelung „Fröstelndes Licht“ und ihr verursachter SCH wird ein wenig erhöht.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402401"
+		},
+		{
+			"name": "Schwalbenflug",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört 4 „Fliegende Schwerter“ und erhält den Effekt „Schwertformation“. Die Schwertformation erhöht die GES der Einheit und verleiht den Fliegenden Schwertern einen „Formationskern“. In der dritten Phase erhält eine bestimmte Anzahl an Fliegenden Schwertern zusätzlich „Tortur“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				60,
+				0.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402402"
+		},
+		{
+			"name": "Eisendorn",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu und friert ihn mit hoher Wahrscheinlichkeit ein.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				1,
+				1,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402403"
+		},
+		{
+			"name": "Ballade des Formationsbrechers",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402404"
+		},
+		{
+			"name": "Qi-Annäherung",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Aktiviert den Status Aufladen. Wirkt bei der nächsten Aktion „Fließende Wunde“ gegen alle Verbündeten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402405"
+		},
+		{
+			"name": "Fließende Wunde",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402406"
+		},
+		{
+			"name": "Qi-Konzentration",
+			"tag": "Anvisieren",
+			"type": "Fähigkeit",
+			"description": "Legt sich auf einen Verbündeten fest. Wirkt nach 2 Rd. „Wolkentraumfluss“ beim Ziel.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402407"
+		},
+		{
+			"name": "Wolkentraumfluss",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten kontinuierlich Eis-SCH zu. Fügt nach Einsatz dieser Fähigkeit zusätzlich einige Male SCH entsprechend der Anzahl an Fliegenden Schwertern auf dem Kampffeld zu. Nach Einsatz dieser Fähigkeit werden alle Fliegenden Schwerter vom Feld genommen.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402408"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				1,
+				1.5,
+				50,
+				0
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200402409"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"200202001",
+		"200202101"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "200402401"
+}

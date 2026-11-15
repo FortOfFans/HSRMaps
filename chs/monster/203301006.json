@@ -1,0 +1,172 @@
+{
+	"name": "咆哮灵柩",
+	"description": "博识学会研发的战斗机器。以步离人的生物组织为部件，兼具长生种顽强的生命力与无数岁月进化所得的「杀戮算法」。",
+	"icon": "spriteoutput/monsterfigure/Monster_2033010.png",
+	"shortIcon": "Monster_2033010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2033010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 4650.000372,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "仿生利爪",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301001"
+		},
+		{
+			"name": "电震咆哮",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及相邻目标造成少量物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.6,
+				1.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301002"
+		},
+		{
+			"name": "拟态月狂",
+			"tag": "强化",
+			"type": "技能",
+			"description": "进入【<u>月狂</u>】状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301003"
+		},
+		{
+			"name": "合成狼毒",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成少量物理属性伤害，大概率使我方全体陷入【<u>恐惧萦绕</u>】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0,
+				0,
+				1.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301004"
+		},
+		{
+			"name": "杀戮算法",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及相邻目标造成物理属性伤害，目标陷入【<u>恐惧萦绕</u>】或【<u>恐惧</u>】时造成额外伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.2,
+				1.8,
+				1.8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301005"
+		},
+		{
+			"name": "步离本能",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "进入战斗时，减少进入【<u>月狂</u>】状态需要的【<u>嗜血</u>】层数。当敌方施放攻击后，为<u>能够进入【月狂】状态的敌方单位</u>附加1层【<u>嗜血</u>】，当【<u>嗜血</u>】达到指定层数时，将使其进入【<u>月狂</u>】状态。\n行动序列上出现【月狂】倒计时，倒计时回合开始时所有敌方单位解除【<u>月狂</u>】状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182008,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "203301006"
+}

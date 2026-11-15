@@ -1,0 +1,174 @@
+{
+	"name": "{RUBY_B#きんじん}金人{RUBY_E#}・{RUBY_B#こうこん}勾魂{RUBY_E#}",
+	"description": "『十王武経』を記録しており、十王司の命に従い、法を執行する金人。\n血肉は五陰の苦に囚われやすいが、金鉄の心は揺るがずに十王の勅令を執行できる。\nこの金人執行者は生命の秩序から逸脱した邪悪を力でねじ伏せ、幽府に連行して判決を下す。その権限は時に判官すらを凌駕する。",
+	"icon": "spriteoutput/monsterfigure/Monster_2013020.png",
+	"shortIcon": "Monster_2013020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2013020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1116,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "裁判",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302001"
+		},
+		{
+			"name": "鎮魂",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与え、高確率で攻撃を受けた味方を「震とう」状態にする。「震とう」状態の味方は攻撃を受けた後に「強烈震とう」状態になり、「震とう」状態が解除される。「強烈震とう」状態の味方は行動できない。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.6,
+				0.7,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302002"
+		},
+		{
+			"name": "陰陽転",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与え、確率で攻撃を受けた味方を「震とう」状態にする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.35,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302003"
+		},
+		{
+			"name": "天墜",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の物理属性ダメージを与える。その味方が「強烈震とう」状態の場合、さらに物理属性ダメージを与え、「強烈震とう」状態を解除させる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302004"
+		},
+		{
+			"name": "拘魂令",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "フィールド上に「強烈震とう」状態の味方がいる時、その味方をロックオンし、次の行動で「天墜」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302005"
+		},
+		{
+			"name": "天墜",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の物理属性ダメージを与える。その味方が「強烈震とう」状態の場合、さらに物理属性ダメージを与え、「強烈震とう」状態を解除させる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113012,
+				"count": 1
+			},
+			{
+				"id": 113013,
+				"count": 1
+			},
+			{
+				"id": 182002,
+				"count": 1
+			},
+			{
+				"id": 183001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "201302008"
+}

@@ -1,0 +1,126 @@
+{
+	"name": "Verätzte Axt der Schwarzen Flut",
+	"description": "Eine durch die Schwarze Flut entstandene verzerrte Schöpfung, getrieben von einem unstillbaren Durst nach Blutvergießen.\nMit einer gewaltigen Axt, die tausend Pfund wiegt, kann ihr gezielter Schlag selbst den härtesten Stein zerschmettern. Jedes Lebewesen, das sich ihr in den Weg stellt, ist dazu verdammt, zermalmt und zerfressen zu werden.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032030.png",
+	"shortIcon": "Monster_4032030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 316.2,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Zornig lodernde Axt",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403203001"
+		},
+		{
+			"name": "Feuer der Vergeltung",
+			"tag": "Verteilen",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Feuer-SCH zu. Der SCH wird unter den Zielen <u>gleichmäßig aufgeteilt</u>.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				14
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403203002"
+		},
+		{
+			"name": "Erbitterte Fehde",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Führt sofort eine Aktion aus und setzt 1-mal „Feuer der Vergeltung“ ein, wenn andere Gegner besiegt werden. Wenn sich mehr als ein „Verätzte Axt der Schwarzen Flut“ auf dem Kampffeld befinden, kann höchstens 1-mal das Talent „Erbitterte Fehde“ von Verätzte Axt der Schwarzen Flut gleichzeitig ausgelöst werden.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403203003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032030"
+}

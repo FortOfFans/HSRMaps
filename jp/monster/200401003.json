@@ -1,0 +1,167 @@
+{
+	"name": "「{RUBY_B#せいかく}星核{RUBY_E#}ハンター」カフカ",
+	"description": "「星核ハンター」の一員。掴みどころのない笑みを浮かべる美しい殺し屋で、様々な武器の扱いとマインドコントロールに長けている。星穹列車をここまで誘導したのも、ある計画を実現するためである……",
+	"icon": "spriteoutput/monsterfigure/Monster_2004010.png",
+	"shortIcon": "Monster_2004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2092.5001859999998,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 450,
+		"speed": 119,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "止まない夜の喧騒",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の雷属性ダメージを与え、高確率で攻撃を受けた味方を感電状態にする。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				3,
+				0.75
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401001"
+		},
+		{
+			"name": "月明かりが撫でる連綿",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に雷属性ダメージを与える、メインターゲットが感電状態の場合、サブターゲットを感電状態にする。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401002"
+		},
+		{
+			"name": "沈黙は厳かに嘲笑う",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401003"
+		},
+		{
+			"name": "言霊",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "高確率で指定した味方単体を「支配」状態にし、行動順を早め、他の味方1名をランダムに攻撃させる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2,
+				1.5,
+				0.5,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401004"
+		},
+		{
+			"name": "戦慄",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "攻撃を受けたターゲットが感電状態の場合、感電ダメージを1回与える、このダメージは感電状態によるものとみなす。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401005"
+		},
+		{
+			"name": "残酷",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "カフカ以外の敵、または「支配」状態の味方が感電状態の味方をメインターゲットとして攻撃を行う時、さらに雷属性攻撃を1回行う。この効果はターンが回ってくるたびに1回まで発動できる。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "200401003"
+}

@@ -1,0 +1,138 @@
+{
+	"name": "Aufführung der Vergangenheit, Gegenwart und Zukunft (komplett)",
+	"description": "Eine vollständige Projektion, die von kompromittierten Codes erstellt wurde. Sie basiert auf den Schauspielern der Truppe der Wunschträume, die die Gnade der Ordnung erhalten haben und zu Marionetten geworden sind, die das Gesetz verkünden. Sie tanzen unter den obersten Geboten und präsentieren eine Aufführung zur Begrüßung des Paradieses.",
+	"icon": "spriteoutput/monsterfigure/Monster_3004010.png",
+	"shortIcon": "Monster_3004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2511,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Im Gesetz sind alle eins",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "In diesem Kampf teilt „Aufführung der Vergangenheit, Gegenwart und Zukunft“ LP mit allen „Marionetten der Ordnung“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300401101"
+		},
+		{
+			"name": "Gesetz geschaffen, durch Göttliche Gnade",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Beim Kampfeintritt wird eine „Marionette der Ordnung“ als „Impresario“ ausgewählt. Diese Einheit kann jede Runde eine zusätzliche Aktion ausführen und ihre GES wird geringfügig erhöht. Wenn das Ziel Schwächebruch erleidet, wird seine Aktion verzögert und eine neue Marionette der Ordnung wird als Impresario ausgewählt. Wenn die Schwäche aller Marionetten der Ordnung zu diesem Zeitpunkt gebrochen ist, erleidet diese Einheit selbst SCH, die Aktion aller Marionetten der Ordnung wird zusätzlich verzögert und ihr erlittener SCH erhöht. Wenn eine Marionette der Ordnung sich vom Schwächebruch erholt, wird sie erneut als Impresario ausgewählt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				0.1,
+				0.1,
+				0.8,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300401102"
+		},
+		{
+			"name": "Gesetz gefallen, Einklang mit dem Himmel",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Lässt alle Marionetten der Ordnung zum „Impresario“ werden und verleiht ihnen den Status „Schutz“. Sie können jede Runde eine zusätzliche Aktion ausführen und ihre GES wird ein wenig erhöht. Wenn das Ziel Schwächebruch erleidet, wird seine Aktion verzögert. Wenn die Schwäche aller Marionetten der Ordnung zu diesem Zeitpunkt gebrochen ist, erleidet diese Einheit selbst SCH, die Aktion aller Marionetten der Ordnung wird zusätzlich verzögert und ihr erlittener SCH erhöht. Wenn eine Marionette der Ordnung sich vom Schwächebruch erholt, wird sie erneut als Impresario ausgewählt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300401103"
+		},
+		{
+			"name": "Gesetz erlassen, Befolgung der Gebote",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Fügt „Predigt“ zur Aktionsleiste hinzu. Jedes Mal, wenn Predigt eine Aktion ausführt, werden Mengenkontrolle-Debuffs und Schwächebruch von allen Marionetten der Ordnung auf dem Kampffeld aufgehoben und „Gesetz des Einheitstanzes“ wird eingesetzt. Wenn eine Marionette der Ordnung Schwächebruch erleidet, wird die Aktion von Predigt ein wenig verzögert.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				80,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300401104"
+		},
+		{
+			"name": "Urteil, ewiges Leben",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Fügt der Aktionsreihenfolge 1-mal „Predigt“ hinzu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				100,
+				0.1,
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300401105"
+		},
+		{
+			"name": "Gesetz des Einheitstanzes",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Hat eine hohe Chance, bei allen Verbündeten <u>Sünde der Zecherei</u> oder <u>Sünde der Völlerei</u> zu verursachen. Es besteht auch eine hohe Chance, alle Verbündeten mit dem Status <u>Fremdartiger Traum</u> zu belegen und ihnen massiven physischen SCH zuzufügen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300401106"
+		}
+	],
+	"resistance": [],
+	"debuffResist": [],
+	"weakness": [],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "3004011"
+}

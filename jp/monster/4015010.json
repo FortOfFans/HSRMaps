@@ -1,0 +1,340 @@
+{
+	"name": "至高、極陽、天空の化身",
+	"description": "「天空」のタイタンであり、融合神。人に征服され、人と融合したことで、オンパロスの昼夜を支配する存在ではなくなった。だが、その孤高で傲慢な本性は変わっていない。\nその目に映る壊れた世界の俗世はかくも醜く——光で守られた世界よりも暗黒の潮のほうが相応しいとさえ言える。",
+	"icon": "spriteoutput/monsterfigure/Monster_4015010.png",
+	"shortIcon": "Monster_4015010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4015010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 11625,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 960,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "火を撃ち続けて三千里",
+			"tag": "掃射",
+			"type": "スキル",
+			"description": "「<u>温度</u>」を上昇させ、味方パーティを左側から攻撃し、優先的に1回ずつ攻撃する。その後、ランダムに単体攻撃を行う。攻撃は現在の「<u>温度</u>」に応じた炎属性ダメージを与え、「百眼の芽」を<u>修復</u>する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.03,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501001"
+		},
+		{
+			"name": "炎を巻き起こして九万里",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「<u>温度</u>」を上昇させ、味方全体に現在の「<u>温度</u>」に応じた炎属性ダメージを与え、「百眼の梢」を<u>修復</u>する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.03,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501002"
+		},
+		{
+			"name": "昼長の月の風に佇む",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「<u>温度</u>」を上昇させ、味方全体に現在の「<u>温度</u>」に応じた炎属性ダメージを与え、味方全体の行動順を遅延させ、「百眼の梢」と「百眼の芽」を<u>修復</u>する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.03,
+				0.05,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501003"
+		},
+		{
+			"name": "光輝、垂天の雲の如く",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次の行動で「怒り、晨昏と日星を焼く」を発動する。自身に「<u>ヘリウムフラッシュ</u>」を付与し、「陽雷の鴉」を召喚する。この状態で味方が攻撃を行うと、その攻撃が命中した敵の数に応じて「<u>ヘリウムフラッシュ</u>」が減少する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				1,
+				10,
+				12,
+				1.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501004"
+		},
+		{
+			"name": "怒り、晨昏と日星を焼く",
+			"tag": "分担",
+			"type": "スキル",
+			"description": "自身の「<u>ヘリウムフラッシュ</u>」に応じ、味方全体に大量の炎属性ダメージを与える。なおダメージは味方全体で<u>均等に分担</u>される。また、「<u>ヘリウムフラッシュ</u>」に応じて「<u>温度</u>」がアップし、「百眼の芽」と「百眼の梢」を<u>修復</u>する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501005"
+		},
+		{
+			"name": "雷を鳴らして三千里",
+			"tag": "掃射",
+			"type": "スキル",
+			"description": "「<u>雷雲</u>」の層数を増加させ、味方パーティを左側から攻撃する。その際、優先的に各味方を1回ずつ攻撃し、その後ランダムに単体攻撃を行う。すべての攻撃は雷属性ダメージを与え、「百眼の芽」を<u>修復</u>する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501006"
+		},
+		{
+			"name": "稲妻を貫いて九万里",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「<u>雷雲</u>」の層数を増加させ、味方全体に雷属性ダメージを与え、「百眼の梢」を<u>修復</u>する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501007"
+		},
+		{
+			"name": "機縁の月がもたらす光",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「<u>雷雲</u>」の層数を増加させ、味方全体に雷属性ダメージを与え、「百眼の梢」と「百眼の芽」を<u>修復</u>する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501008"
+		},
+		{
+			"name": "雷霆、山海を揺らす",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "「<u>雷雲</u>」の層数を増加させ、チャージ状態に入り、次の行動で「憤り、昼夜の天空を破る」を発動する。また自身に「<u>電離</u>」を付与し、「陽雷の鴉」を召喚する。この時に味方が攻撃を行うと、その攻撃が命中した敵の数に応じて「<u>雷雲</u>」を奪う。「陽雷の鴉」、「百眼の芽」、または「百眼の梢」がHPが0になる攻撃を受けた場合、さらに「<u>雷雲</u>」を一定量奪う。なお、すべての「<u>雷雲</u>」が奪われると敵は弱点撃破状態に陥り、他の方法で弱点撃破された場合は、すべての「<u>雷雲</u>」を失ったうえで「<u>雷雲</u>」の数に応じた回数分、少量の雷属性ダメージを受ける。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				20
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501009"
+		},
+		{
+			"name": "憤り、昼夜の天空を破る",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「<u>雷雲</u>」を一定数消費して味方全体に雷属性ダメージを与えた後、ランダムな味方に少量の雷属性ダメージを与え、「百眼の芽」と「百眼の梢」を<u>修復</u>する。その後、味方に奪われた雷雲の数に応じて、自身に対応する回数の少量の雷属性付加ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				20
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501010"
+		},
+		{
+			"name": "百眼",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "この戦闘では、「陽雷の鴉」、「百眼の梢」または「百眼の芽」がダメージを受けると、「至高、極陽、天空の化身」も同量のダメージを受ける。「陽雷の鴉」、「百眼の梢」または「百眼の芽」がHPが0になる攻撃を受けると、「至高、極陽、天空の化身」の靭性が削られ、「百眼の梢」または「百眼の芽」のHPが回復し、選択不能な状態になる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.4,
+				1.2,
+				0.2,
+				5,
+				0.8,
+				120
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501011"
+		},
+		{
+			"name": "雷雨",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "天候が雷雲の時、戦闘環境に「<u>雷雲</u>」が出現する。「至高、極陽、天空の化身」が「<u>電離</u>」状態でない時、「陽雷の鴉」、「百眼の芽」、または「百眼の梢」がHPが0になる攻撃を受けると、戦闘環境の「<u>雷雲</u>」が一定数削られ、「至高、極陽、天空の化身」に少量の雷属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.005,
+				1,
+				3,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501012"
+		},
+		{
+			"name": "",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.75,
+				1.25,
+				0.25,
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501013"
+		},
+		{
+			"name": "酷暑",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "天候が酷暑の時、戦闘環境に「<u>温度</u>」が出現する。「<u>温度</u>」は任意のターンが訪れるたびに上昇し、蓄積している「<u>温度</u>」に応じて味方の与ダメージをアップする。また、味方全体を「ソーラーストーム」状態にし、ターンが回ってくるたびに「<u>温度</u>」に応じた炎属性ダメージを与える。なお、このダメージは<u>「非致死性」</u>であり、「陽雷の鴉」、「百眼の梢」または「百眼の芽」がHPが0になる攻撃を受けた時、戦闘環境の「<u>温度</u>」が下がる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1,
+				0.01
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501014"
+		},
+		{
+			"name": "",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0,
+				40,
+				0.3,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501015"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [
+		"4012090",
+		"4012091",
+		"4012080"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "4015010"
+}

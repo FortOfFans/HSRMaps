@@ -1,0 +1,103 @@
+{
+	"name": "Goldblut-Memogeist: Fasan",
+	"description": "Ein verzerrtes Monster, das durch das goldene Blut der „Zerstörung“ aus einem Mem des Gartens des Gedächtnisses geformt wurde. Es hat begonnen, die Gestalt eines Fasans anzunehmen.\nEs ist laut und bewegt sich immer in Gruppen – auch wenn seine Menschlichkeit sich bereits verflüchtigt hat, manifestiert sich so wohl sein Instinkt, der Zerstörung zu folgen.",
+	"icon": "spriteoutput/monsterfigure/Monster_4062010.png",
+	"shortIcon": "Monster_4062010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4062010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3720,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Schnabel der Blutsünde",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8,
+				1.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406201001"
+		},
+		{
+			"name": "Resonanz der Blutsünde",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Versetzt diese Einheit und alle anderen „Goldblut-Memogeister: Fasan“ auf dem Kampffeld in den Status <u>Resonanz der Blutsünde</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406201002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "406201010"
+}

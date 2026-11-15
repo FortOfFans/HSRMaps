@@ -1,0 +1,152 @@
+{
+	"name": "Furiae-Philosoph",
+	"description": "Ein Titanenwesen, geformt aus Zwist. In ihm fließt das goldene Blut Nikadors. Diese Titanenwesen enthalten geplünderte Rationalität. Der Grund für ihre Erschaffung ist nicht das Studium des universellen Wissens, sondern die Erforschung brutaler Strategien und grausamer Theorien basierend auf dem Recht des Stärkeren, um den als Philosophie getarnten Wahnsinn weiterzuverbreiten.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012020.png",
+	"shortIcon": "Monster_4012020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 892.8000744000001,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Kampf ist Gerechtigkeit",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Bekehrung“ ein. Erhöht die GES und den verursachten SCH eines Gegners.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401202001"
+		},
+		{
+			"name": "Krieg, Vater aller Dinge",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401202002"
+		},
+		{
+			"name": "Ewiges Feuer",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Erhöht beim Erleiden eines Todesstoßes die GES und den verursachten SCH des Angreifers.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.3,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401202003"
+		},
+		{
+			"name": "Wächter des Stadtstaates",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn eine Einheit eine bestimmte Anzahl von Stapelungen „Kriegsrüstung“ besitzt, wird ihr erlittener SCH reduziert. Verliert nach dem Erleiden von Angriffen 1 Stapelung Kriegsrüstung. Wenn 0 Stapelungen erreicht sind, wird die Kriegsrüstung zerstört, wobei dieser Einheit massiver imaginärer SCH zugefügt und ihre Aktion verzögert wird. Der Verbündete, der die Kriegsrüstung zerstört hat, stellt Energie wieder her. Nachdem die Kriegsrüstung zerstört wurde, erleidet diese Einheit außerdem zusätzlich geringen imaginären SCH, wenn sie angegriffen wird. Wenn die Runde dieser Einheit endet, wird die Kriegsrüstung auf die max. Stapelzahl wiederhergestellt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3,
+				0.1,
+				0.1,
+				0.06,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401202004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "401202004"
+}

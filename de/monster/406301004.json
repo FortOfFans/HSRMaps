@@ -1,0 +1,174 @@
+{
+	"name": "Goldblut-Memogeist: Geflügelte Schlange",
+	"description": "Ein verzerrtes Monster, das durch das goldene Blut der „Zerstörung“ aus einem Mem des Gartens des Gedächtnisses geformt wurde. Es hat die rudimentäre Form einer fliegenden Schlange, durch die seine Angreifer eingeschüchtert werden.\nSein verzerrter Verstand wurde in der Schwarzen Flut völlig wahnsinnig, und sein intensiver Selbstverteidigungsdrang nahm allmählich einen illusorischen Charakter an.",
+	"icon": "spriteoutput/monsterfigure/Monster_4063010.png",
+	"shortIcon": "Monster_4063010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4063010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 4650,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Peitsche der Blutsünde",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301001"
+		},
+		{
+			"name": "Spucke der Blutsünde",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301002"
+		},
+		{
+			"name": "Abschreckende Warnung",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein und erhält „Umwicklung“. Wenn bei der nächsten Aktion noch Umwicklung vorhanden ist, wird „Vortex der Blutsünde“ eingesetzt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301003"
+		},
+		{
+			"name": "Vortex der Blutsünde",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten imaginären SCH zu und wandelt einen Anteil ihrer verlorenen LP in „Korrosion“ um. Je mehr „Umwicklung“ vorhanden ist, desto mehr SCH wird verursacht. Anschließend werden alle Stapelungen von Umwicklung entfernt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				0.5,
+				0.2,
+				0.5,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301004"
+		},
+		{
+			"name": "Drehmoment-Konter",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen imaginären SCH zu und wandelt einen Anteil ihrer verlorenen LP in „Korrosion“ um.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.5,
+				0.2,
+				0.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301005"
+		},
+		{
+			"name": "Gewickelte Aufladung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn nach dem Erleiden von Angriffen durch einen Verbündeten die Stapelzahl von „Umwicklung“ nicht 0 beträgt, wird „Drehmoment-Konter“ ausgelöst und 1 Stapelung Umwicklung verloren. Dieser Effekt kann während der Runde eines beliebigen Ziels pro Verbündetem nur 1-mal ausgelöst werden. Wenn die Stapelzahl von Umwicklung 0 erreicht, wird der Status Aufladen aufgehoben.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "406301004"
+}

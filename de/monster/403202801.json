@@ -1,0 +1,155 @@
+{
+	"name": "Team-LP-Attentäter",
+	"description": "Der Team-LP-Attentäter schleicht sich durch Leben und Tod und raubt allen rücksichtslos ihre wertvollen Team-LP.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032020.png",
+	"shortIcon": "Monster_4032020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 558,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Gemeinsames Opfer: Sturmwolke des Untergangs",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten geringen physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202801"
+		},
+		{
+			"name": "Gemeinsames Opfer: Verblassendes Schicksal",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen physischen SCH zu. Ein Teil der LP des getroffenen Ziels wird in <u>Korrosion</u> umgewandelt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.6,
+				0.3,
+				0.2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202802"
+		},
+		{
+			"name": "Ein Gebet für mich",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Widersteht Mengenkontrolle-Debuffs. Wenn „Teufelskönig mit dem schwarzen Umhang“ „Sturmwolke des Untergangs“ oder „Verblassendes Schicksal“ erneut einsetzt und wenn diese Einheit bereits durch diesen Angriff beschworen wurde und sich im Status „Gemeinsames Opfer“ befindet, greift sie gemeinsam mit Teufelskönig mit dem schwarzen Umhang an. Danach wird diese Einheit absorbiert und sie stellt die in <u>Verstrickter Schmerz</u> umgewandelten LP wieder her. Außerdem erhält sie <u>Kraft der Katastrophe</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.08
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202803"
+		},
+		{
+			"name": "Ein Denkmal für mich",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn die Einheit im Status „Fessel“ von einem Todesstoß getroffen wird und „Teufelskönig mit dem schwarzen Umhang“ nicht 0 Stapelung <u>Kraft der Katastrophe</u> besitzt, wird sie sofort erneut beschworen und wieder in den Status Fessel versetzt, wobei Teufelskönig mit dem schwarzen Umhang 1 Stapelung <u>Kraft der Katastrophe</u> sowie einen bestimmten LP-Prozentsatz verliert. Wenn Teufelskönig mit dem schwarzen Umhang „Weine nicht für die Verlassenen“ einsetzt, wird die Einheit absorbiert und die in <u>Verstrickter Schmerz</u> umgewandelten LP werden wiederhergestellt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202804"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "403202801"
+}

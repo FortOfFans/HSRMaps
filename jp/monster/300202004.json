@@ -1,0 +1,159 @@
+{
+	"name": "ナイトメア{RUBY_B#げきだん}劇団{RUBY_E#}・ラッキーショップ",
+	"description": "ピノコニーのサービスロボット。夢境で感情に干渉されたことで、暴走してしまった。\n本来はゲストにサプライズを提供する抽選機だった。暴走した後もさまざまな賞品の用意を続けており、訪れる者の幸運を証明しようとしている。",
+	"icon": "spriteoutput/monsterfigure/Monster_3002020.png",
+	"shortIcon": "Monster_3002020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3002020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 209.25,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 60,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "抽選準備",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "味方単体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300202001"
+		},
+		{
+			"name": "ナイトメアガチャ",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "指定されたタイプの攻撃でHPが0になる攻撃を受けると、攻撃タイプに応じて異なる効果が発動する。複数タイプの攻撃を同時に受ける時、「すり抜けた！」、「天井！」、「アタリ！」の優先順位で効果が発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300202002"
+		},
+		{
+			"name": "すり抜けた！",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "通常攻撃、または持続ダメージによる攻撃でHPが0になる時、味方のSPを回復する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300202003"
+		},
+		{
+			"name": "天井！",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "戦闘スキル、精霊スキル、または追加攻撃による攻撃でHPが0になる時、味方全体のEPを回復する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				20
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300202004"
+		},
+		{
+			"name": "アタリ！",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "必殺技による攻撃でHPが0になる時、味方全体のEPとSPを回復する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				20
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300202005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114001,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 181016,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "300202004"
+}

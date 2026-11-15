@@ -1,0 +1,448 @@
+{
+	"name": "Superidol: Mittelpunkt der Aufmerksamkeit",
+	"description": "Planarcadias beliebte Streamerin Sparxie startet einen Livestream, in dem sie unter den wachsamen Blicken ihrer Fans ihren neuen Look kreiert. Die SparxiCon beginnt heute Nacht!",
+	"icon": "spriteoutput/monsterfigure/Monster_5014010.png",
+	"shortIcon": "Monster_5014010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5014010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 20460,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1320,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Chat-Flut starten!",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Wenn beim Ende des <u>Live-Showdowns</u> alle Gegner auf dem Nebenfeld besiegt werden, wird der erlittene SCH aller Gegner erhöht und ihre Aktion verzögert. Außerdem werden Fertigkeitspunkte wiederhergestellt und <u>Aha</u> erhält sofort eine <u>zusätzliche Runde</u>, in der eine feste Anzahl von <u>Lachpunkten</u> angerechnet wird. Diese Runde verbraucht keine <u>Lachpunkte</u>. Wenn beim Ende des <u>Live-Showdowns</u> noch nicht alle Gegner auf dem Nebenfeld besiegt werden, wird verbündeten Figuren auf dem Nebenfeld massiver Quanten-SCH zugefügt und sie werden in den Status „Verschränkung“ versetzt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				2,
+				6,
+				1,
+				20,
+				6,
+				0.5,
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401406"
+		},
+		{
+			"name": "Chat-Flut starten!",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Wenn beim Ende des <u>Live-Showdowns</u> alle Gegner auf dem Nebenfeld besiegt werden, wird der erlittene SCH aller Gegner erhöht und ihre Aktion verzögert. Außerdem werden Fertigkeitspunkte wiederhergestellt und <u>Aha</u> erhält sofort eine <u>zusätzliche Runde</u>, in der eine feste Anzahl von <u>Lachpunkten</u> angerechnet wird. Diese Runde verbraucht keine <u>Lachpunkte</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401407"
+		},
+		{
+			"name": "Kommentare bereit!",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Wenn beim Ende des <u>Live-Showdowns</u> noch nicht alle Gegner auf dem Nebenfeld besiegt werden, wird allen Verbündeten Quanten-SCH zugefügt und sie werden mit einer Chance in die <u>Zufällige Kommentarsstrafe</u> versetzt. Je höher der verbleibende LP-Prozentsatz der Gegner auf dem Nebenfeld, desto höher ist der verursachte SCH und die Chance auf die Strafe.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				12,
+				2,
+				0.1,
+				2,
+				1.2,
+				1,
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401408"
+		},
+		{
+			"name": "Netzduell!",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401401"
+		},
+		{
+			"name": "Gib den Takt an!",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401402"
+		},
+		{
+			"name": "Ans Mikro!",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Aktiviert den <u>Live-Showdown</u> und wählt eine verbündete Figur aus, die auf dem Nebenfeld kämpft, während die anderen Figuren auf dem Hauptfeld bleiben und Unterstützung leisten. Während des <u>Live-Showdowns</u> können Hochgefühl-Fähigkeiten nur Gegner auf dem Nebenfeld angreifen. In der Aktionsreihenfolge wird ein Countdown für den Live-Showdown angezeigt.\nDer <u>Live-Showdown</u> endet, wenn eine der folgenden Bedingungen erfüllt ist: Der Countdown endet, die verbündete Figuren auf dem Nebenfeld werden handlungsunfähig, alle Gegner auf dem Nebenfeld werden besiegt oder es stehen keine verbündeten Figuren auf dem Nebenfeld für den Kampf zur Verfügung.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0,
+				3,
+				0.3,
+				0.6,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401403"
+		},
+		{
+			"name": "Streamwerbung",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "Gegner auf dem Nebenfeld erhalten den Status „Zuschauerflut“, wodurch ihre Aktionen vorgezogen und ihre KRIT-Rate erhöht werden.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.25,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401404"
+		},
+		{
+			"name": "Anpassung der Freundschaftsstufe",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Nach dem Start des <u>Live-Showdowns</u> erhöht ein Angriff auf den „Ausgangsport 1“ die „Verbündetenbeliebtheit“, während ein Angriff auf „Ausgangsport 2“ die „Gegnerbeliebtheit“ senkt. Wenn sich die Verbündetenbeliebtheit erhöht, wird die Aktion von Ausgangsport 1 vorgezogen. Wenn die Gegnerbeliebtheit sinkt, wird die Aktion von Ausgangsport 2 vorgezogen.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3,
+				0.6,
+				4,
+				0,
+				5,
+				0.15,
+				600,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401409"
+		},
+		{
+			"name": "Fanrausch",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Nach dem Start des <u>Live-Showdowns</u> erleiden Gegner auf dem Hauptfeld weniger SCH und werden immun gegen Mengenkontrolle-Debuffs. Beim Ende des <u>Live-Showdowns</u>wird dieser Effekt entfernt, wenn alle Gegner besiegt werden. Andernfalls bleibt ein Teil der SCH-Reduktion basierend auf dem verbleibenden LP-Prozentsatz der Gegner auf dem Nebenfeld erhalten. Dieser Effekt hält bis zum nächsten <u>Live-Showdown</u>. Wenn die LP dieser Einheit unter einen bestimmten Prozentsatz fallen, ohne dass der <u>Live-Showdown</u> aktiviert wurde, wird die Aktion dieser Einheit vorgezogen.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401410"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401411"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401412"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401413"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401414"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401415"
+		},
+		{
+			"name": "Superbeliebtes Idol",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Zu Beginn der Runde dieser Einheit werden sowohl die Verbündeten- als auch die Gegnerbeliebtheit auf ihren anfänglichen Status zurückgesetzt.\nWenn Angriffe dazu führen, dass die Verbündetenbeliebtheit oder die Gegnerbeliebtheit ihr Minimum erreicht, werden die LP aller Gegner auf dem Nebenfeld verringert und du erhältst eine bestimmte Menge an Lachpunkten.\nWenn alle Gegner auf dem Nebenfeld eliminiert werden, werden der WDS und die LP von „Superidol — Mittelpunkt der Aufmerksamkeit“ massiv reduziert.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401416"
+		},
+		{
+			"name": "Engagierter Streamer",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Zu Beginn des Kampfes befindet sich diese Einheit im Status „<u>Widerstandssperre</u>“. Wird <u>Live-Showdown</u> aufgehoben, verliert sie den Status <u>Widerstandssperre</u>. Wird <u>Live-Showdown</u> aktiviert oder findet ein Phasenwechsel statt, tritt sie erneut in den Status <u>Widerstandssperre</u> ein.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401417"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"501207104",
+		"501208104",
+		"501203110",
+		"501301003",
+		"501401106"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 4,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101601",
+				"name": "Solider Schutz",
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101602",
+				"name": "Doppel-Schlachtfeld",
+				"description": "Das Boss-Phantom startet im Kampf einen <u>Live-Showdown</u> und wählt eine verbündete Figur aus, die sich zum Kampf auf das Nebenfeld begibt, während die restlichen Figuren auf dem Hauptfeld bleiben und Unterstützung bieten. Nach Beginn des <u>Live-Showdowns</u> erleiden Gegner auf dem Hauptfeld weniger SCH und sind immun gegen Mengenkontrolle-Debuffs. Das Boss-Phantom tritt in den Status „<u>Widerstandssperre</u>“ ein. Zu Beginn der Runde des Boss-Phantoms werden die „Verbündetenbeliebtheit“ und die „Gegnerbeliebtheit“ auf ihren anfänglichen Status zurückgesetzt.",
+				"params": []
+			},
+			{
+				"id": "101603",
+				"name": "Beliebtheitsexplosion",
+				"description": "Erhöht die Obergrenze der „Verbündetenbeliebtheit“ und der „Gegnerbeliebtheit“.",
+				"params": []
+			},
+			{
+				"id": "101604",
+				"name": "Umringt von Beliebtheit",
+				"description": "Für jeweils „Verbündetenbeliebtheit“ und „Gegnerbeliebtheit“, die ihre Obergrenze nicht erreicht, wird der erlittene SCH aller Gegner reduziert.",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10161",
+				"name": "Superidol: Mittelpunkt der Aufmerksamkeit",
+				"description": "Zu Beginn des Kampfes, beim Eintritt in Phase II und beim Beginn des Live-Showdowns tritt das Boss-Phantom in den Status „Widerstandssperre“ ein. Wenn der Live-Showdown endet, wird der Status Widerstandssperre des Boss-Phantoms aufgehoben.",
+				"answer": "Strategie: Wenn das Boss-Phantom einen Live-Showdown startet, schicke vorrangig Figuren mit höherem SCH ins Nebenfeld. Die restlichen Figuren sollten sich darauf konzentrieren, vorrangig „Ausgangsport 1“ und „Ausgangsport 2“ anzugreifen, um zu unterstützen.",
+				"skills": [
+					{
+						"id": "101611",
+						"type": "Normal",
+						"name": "So wird der WDS des Boss-Phantoms effizient reduziert",
+						"texts": [
+							{
+								"description": "Besiege alle Gegner auf dem Nebenfeld, um den Live-Showdown zu beenden, den WDS des Boss-Phantoms massiv zu reduzieren und den Status „Widerstandssperre“ des Boss-Phantoms aufzuheben.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101612",
+						"type": "Normal",
+						"name": "So werden Figuren auf dem Nebenfeld unterstützt",
+						"texts": [
+							{
+								"description": "Figuren, die auf dem Hauptfeld verbleiben, können „Ausgangsport 1“ und „Ausgangsport 2“ angreifen, um verbündeten Figuren auf dem Nebenfeld Buffs zu gewähren und die LP der Gegner auf dem Nebenfeld zu reduzieren.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Das Boss-Phantom und seine beschworenen Objekte erleiden <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nach dem Erleiden von <color=#f29e38ff>Schwächebruch</color> wird die Aktion zusätzlich verzögert und erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "Zu Beginn des Kampfes, beim Eintritt in Phase II und beim Beginn des Live-Showdowns tritt das Boss-Phantom in den Status <color=#f29e38ff>„Widerstandssperre“</color> ein. Wenn der Live-Showdown endet, wird der Status <color=#f29e38ff>Widerstandssperre</color> des Boss-Phantoms aufgehoben.",
+				"params": []
+			},
+			{
+				"description": "Zu Beginn der Runde des Boss-Phantoms werden sowohl die Verbündeten- als auch die Gegnerbeliebtheit <color=#f29e38ff>auf ihren anfänglichen Status zurückgesetzt</color>. Wenn Angriffe dazu führen, dass die <color=#f29e38ff>Verbündetenbeliebtheit</color> ihr Maximum oder die <color=#f29e38ff>Gegnerbeliebtheit</color> ihr Minimum erreicht, werden die LP aller Gegner auf dem Nebenfeld reduziert und die Verbündeten erhalten eine bestimmte Menge an Lachpunkten. Wenn alle Gegner auf dem Nebenfeld besiegt werden, werden WDS und LP des Boss-Phantoms massiv reduziert.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Besiege vorrangig alle Gegner auf dem Nebenfeld, sodass das Boss-Phantom den Live-Showdown beendet und geschwächt wird.",
+				"params": []
+			},
+			{
+				"description": "Aktive Angriffe auf „Ausgangsport 1“ und „Ausgangsport 2“ auf dem Hauptfeld können verbündeten Figuren, die das Nebenfeld betreten, Buffs gewähren und die LP der Gegner auf dem Nebenfeld reduzieren.",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "501401404"
+}

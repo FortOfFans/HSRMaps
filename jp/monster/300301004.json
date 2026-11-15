@@ -1,0 +1,199 @@
+{
+	"name": "ナイトメア{RUBY_B#げきだん}劇団{RUBY_E#}・エクセスウェルダン",
+	"description": "ピノコニーのサービスロボット。夢境で感情に干渉されたことで、暴走してしまった。\n本来は料理ロボットだった。暴走した後も食材を炙るために炎を吐き続け、客人さえも黒焦げにしようと企んでいる。",
+	"icon": "spriteoutput/monsterfigure/Monster_3003010.png",
+	"shortIcon": "Monster_3003010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 557.99947548,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "全力鍋振り",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "味方単体に炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301001"
+		},
+		{
+			"name": "旋風鍋振り",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "味方単体および隣接する味方に少量の炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.8,
+				2.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301002"
+		},
+		{
+			"name": "コンロ点火",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入る。次の行動時に「コンロ加熱」が一定層数に達してない場合、「爆裂炒め」を発動し、「コンロ加熱」の層数を全部リセットする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301003"
+		},
+		{
+			"name": "爆裂炒め",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				6.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301004"
+		},
+		{
+			"name": "厨房事故",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "チャージ状態に入った後、「コンロ加熱」が一定層数に達した時、敵全体に大量の炎属性ダメージを与え、自身の防御力をダウンさせ、「コンロ加熱」の層数を全部リセットする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				6,
+				0.3,
+				0.05,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301005"
+		},
+		{
+			"name": "ファイヤーグルメ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "チャージ状態に入ってない場合、「コンロ加熱」が一定層数に達した時、即座に行動し、「コンロ点火」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301006"
+		},
+		{
+			"name": "猛火コンロ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "自身が攻撃を行う時、確率で味方に減速状態を付与する。自身が攻撃を受ける、または持続ダメージを受ける時、「コンロ加熱」を1層獲得する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.5,
+				0.2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301007"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 182010,
+				"count": 1
+			},
+			{
+				"id": 183006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "300301004"
+}

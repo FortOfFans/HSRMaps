@@ -1,0 +1,166 @@
+{
+	"name": "{RUBY_B#どんしん}呑神{RUBY_E#}の{RUBY_B#こ}子{RUBY_E#}",
+	"description": "帰寂が「貪慾」の力を分裂させて生み出した化け物の集団であり、「幻造種」の原型。彼はアハトピアの眠れるコアの中から、飽くなき「貪慾」の渇望を感じ取った。その力の脈動は、「壊滅」の運命と深く共鳴していた。この衝動を面白いと思った彼は闇を作り——そして人間の頭部を消し去り、笑ったり呑み込んだりするための口だけを残した。それは永遠に満たされることなく外界へ咆哮し、求め、貪り続ける。",
+	"icon": "spriteoutput/monsterfigure/Monster_5023020.png",
+	"shortIcon": "Monster_5023020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5023020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "暴食祭",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けたターゲットの防御力をダウンさせる。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.8,
+				0.2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302001"
+		},
+		{
+			"name": "生贄の飽食",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "指定した味方キャラを「貪り食い」状態にし、回復できる最大HPをダウンさせ、そのキャラから一定割合の攻撃力を奪う。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1000,
+				6,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302002"
+		},
+		{
+			"name": "贖罪祭",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "自身が付与した「貪り食い」状態が解除された時、「貪り食い」状態を解除した味方の攻撃力をアップさせる。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302003"
+		},
+		{
+			"name": "獣たちの宴",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.4
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302004"
+		},
+		{
+			"name": "神聖なる反芻",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "味方から攻撃を受けるたびに、自身が「貪り食い」状態を付与した味方キャラの回復可能な最大HPをアップさせ、一定割合の攻撃力を返還する。味方から一定回数攻撃されるか、弱点撃破された時、自身が付与した「貪り食い」状態を解除する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502302005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Fire",
+	"id": "502302003"
+}

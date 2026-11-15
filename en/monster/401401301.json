@@ -1,0 +1,559 @@
+{
+	"name": "The Ravaged Unconquerable",
+	"description": "The Titan of Strife continues the mad war in their frenzy, becoming the unconquerable fear of Amphoreus's states.\nThey once were famed through glory, earning respect from gods and from the cities of the land. And yet, the city that revered them was sundered, and the poems that praised their name were destroyed. Only their evil reputation lingers in this lightless era and end times, tainting the Throne of Worlds's brilliance.",
+	"icon": "spriteoutput/monsterfigure/Monster_4014010.png",
+	"shortIcon": "Monster_4014010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 32550,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1440,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Lightning Spear of the Firmament",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Imaginary DMG to one designated target.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401301"
+		},
+		{
+			"name": "Worldsplitting Spine",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals minor Imaginary DMG to a single target and adjacent targets and delays their action.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.2,
+				1.8,
+				0.1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401302"
+		},
+		{
+			"name": "Hewing of the River of Souls",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to a single target.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401303"
+		},
+		{
+			"name": "Survivors Unto Dead Waters",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to a single target and delays their action.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.15
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401304"
+		},
+		{
+			"name": "Unceasing Flames of War",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to all targets.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401305"
+		},
+		{
+			"name": "Pyre of High Graves",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to all ally targets and delays their actions.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.2,
+				0.1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401306"
+		},
+		{
+			"name": "Sky-Piercing Lance",
+			"tag": "Bounce",
+			"type": "Ability",
+			"description": "Deals successive minor Imaginary DMG to random targets.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				5
+			],
+			"spGain": 5,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401307"
+		},
+		{
+			"name": "Ruination of Night and Light",
+			"tag": "Bounce",
+			"type": "Ability",
+			"description": "Repeatedly deals minor Imaginary DMG to a random ally and delays the attacked target's action.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				10,
+				0.1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401308"
+		},
+		{
+			"name": "Calamity Eternal",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Deals Imaginary DMG to all targets. In Phase 1, increases this unit's <u>\"War Armor\"</u> stack limit and uses \"All Realms Leveled, All Legions to Dust\" in the next action. In Phase 2, uses \"Fury Falls, and All Bows to Strife\" together with \"The Giver, Master of Legions, Lance of Fury\" in the next action.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.8,
+				25,
+				0.5,
+				0.5
+			],
+			"spGain": 5,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401309"
+		},
+		{
+			"name": "All Realms Leveled, All Legions to Dust",
+			"tag": "Distribute",
+			"type": "Ability",
+			"description": "Deals massive Imaginary DMG to all targets, with the DMG <u>distributed evenly</u> among targets. This attack reduces all targets' <u>\"Glory\"</u> to 1 stack.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				22
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401310"
+		},
+		{
+			"name": "The Solitary Throne",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "\"The Ravaged Unconquerable\" possesses a number of <u>\"War Armor\"</u> stacks, which decreases DMG taken. Loses stacks of <u>\"War Armor\"</u> based on the attacker's <u>\"Glory\"</u> stacks when attacked. When at 0 stacks, <u>\"War Armor\"</u> will be destroyed, dealing massive Imaginary DMG to this unit, reducing their Toughness, delaying their action, and restoring Skill Points to targets. After <u>\"War Armor\"</u> is destroyed, this unit will also additionally take minor Imaginary DMG when attacked. <u>\"War Armor\"</u> will be restored to maximum stacks at the end of this unit's turn.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				12,
+				0.1,
+				0.03,
+				1,
+				0.25,
+				0.0029999998,
+				240
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401311"
+		},
+		{
+			"name": "The Last Monarch",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "\"The Ravaged Unconquerable\"'s <u>\"War Armor\"</u> is enhanced into <u>\"Centirefined War Armor\"</u>, reducing damage taken by this unit. When <u>\"Centirefined War Armor\"</u> stacks are greater than 0, \"The Ravaged Unconquerable\" gains an additional Toughness Protection state. After being attacked, this unit's <u>\"Centirefined War Armor\"</u> stacks are reduced based on the attacker's <u>\"Glory\"</u> stacks. When reduced to 0 stacks, <u>\"Centirefined War Armor\"</u> is destroyed, dealing massive Imaginary DMG to this unit, reducing this unit's Toughness significantly, delaying its action, restoring its target's Skill Points, and granting the attacker certain stacks of <u>\"Glory\"</u>. After <u>\"Centirefined War Armor\"</u> is destroyed, this unit takes additional minor Imaginary DMG when attacked.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				49,
+				1,
+				1,
+				0.5,
+				960
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401312"
+		},
+		{
+			"name": "Sever the Path Homeward",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "At the start of combat, applies <u>\"Glory\"</u> to all targets. Each stack of <u>\"Glory\"</u> increases the target's CRIT DMG. Each Skill Point consumed adds 1 stack of <u>\"Glory\"</u>. When the \"The Ravaged Unconquerable\" uses \"All Realms Leveled, All Legions to Dust\" or recovers from Weakness Break state, all its targets' <u>\"Glory\"</u> stacks are reduced to 1. Its targets' Skill Points can exceed the limit.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.02
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401313"
+		},
+		{
+			"name": "Death Brings Glory",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When entering Phase 2, all targets' <u>\"Glory\"</u> is reduced to 1 stack. Each stack of <u>\"Glory\"</u> increases the target's CRIT DMG, and 1 stack of <u>\"Glory\"</u> can be gained for each Skill Point consumed. The targets' Skill Points can exceed the limit.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401314"
+		},
+		{
+			"name": "Will of Strife",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "\"The Ravaged Unconquerable\" can take 4 actions per turn. When it acts, for each undestroyed <u>\"Centirefined War Armor\"</u> belonging to a \"The Conquered\" on the field, \"The Ravaged Unconquerable\" will use the <u>Centirefined attack ability</u>.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401315"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401316"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401317"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				99
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401318"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401319"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401320"
+		},
+		{
+			"name": "",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401401321"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"401402101"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101401",
+				"name": "Steadfast Safeguard",
+				"description": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and increases its DMG taken by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101402",
+				"name": "Ironclad Renitence",
+				"description": "Boss Mirage and its summons have <color=#f29e38ff><u>\"War Armor\"</u></color>, reducing DMG taken by them. In phase two, <color=#f29e38ff><u>\"War Armor\"</u></color> will be enhanced to <color=#f29e38ff><u>\"Centirefined War Armor\"</u></color>, greatly increasing the maximum stack limit, and Boss Mirage will gain additional Toughness Protection.",
+				"params": []
+			},
+			{
+				"id": "101403",
+				"name": "Taint of the Sublime",
+				"description": "In Phase 2, the max stack of Boss Mirage's \"Centirefined War Armor\" will increase.",
+				"params": []
+			},
+			{
+				"id": "101404",
+				"name": "Protective Formation",
+				"description": "For <color=#f29e38ff>every unit</color> on the enemy's side of the field aside from Boss Mirage, all enemies receive less DMG and deal more DMG.",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10141",
+				"name": "Phase 1: Iron Steeds and Golden Spears",
+				"description": "Boss Mirage and its summons have \"War Armor\", reducing DMG taken by them.",
+				"answer": "Strategy: Prioritize consuming Skill Points to gain \"Glory,\" which increases your CRIT DMG and reduces more stacks of \"War Armor\".",
+				"skills": [
+					{
+						"id": "101411",
+						"type": "Normal",
+						"name": "How to obtain \"Glory\"",
+						"texts": [
+							{
+								"description": "Ally units gain 1 stack of \"Glory\" for each Skill Point consumed (memomasters and their memosprites will share \"Glory\" stacks). Actively consuming Skill Points will quickly increase the number of \"Glory\" stacks.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101412",
+						"type": "Normal",
+						"name": "How to reduce \"War Armor\"",
+						"texts": [
+							{
+								"description": "When an ally unit attacks an enemy target, it reduces their \"War Armor\" by an amount equal to the attacker's \"Glory\" stacks.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101413",
+						"type": "Normal",
+						"name": "How to Efficiently Reduce Boss Mirage's Toughness",
+						"texts": [
+							{
+								"description": "Destroying the \"War Armor\" of the Boss Mirage will massively reduce its Toughness. Defeating the summons of the Boss Mirage will reduce its Toughness by a small amount.",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10142",
+				"name": "Phase 2: Face-off with the Enemy",
+				"description": "The \"War Armor\" of Boss Mirage and its summons are enhanced into \"Centirefined War Armor.\" Summons with \"Centirefined War Armor\" enhance Boss Mirage's abilities.",
+				"answer": "Strategy: Reducing the \"Centirefined War Armor\" of the summons before each Boss Mirage's action can effectively weaken the Boss Mirage's abilities.",
+				"skills": [
+					{
+						"id": "101421",
+						"type": "Normal",
+						"name": "Counter the Toughness Protection state of the Boss Mirage",
+						"texts": [
+							{
+								"description": "When Boss Mirage's \"Centirefined War Armor\" stack count is greater than 0, it will be in a Toughness Protection state. Depleting its \"Centirefined War Armor\" will dispel the Toughness Protection state.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101422",
+						"type": "Normal",
+						"name": "Counter the Boss Mirage's \"Centirefined Attack Ability\" and \"Fury Falls, and All Bows to Strife\"",
+						"texts": [
+							{
+								"description": "Reducing the \"Centirefined War Armor\" of the summons before each Boss Mirage's action can effectively weaken the Boss Mirage's abilities.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Boss Mirage and its summons take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "Boss Mirage and its summons have <color=#f29e38ff>\"War Armor\"</color>, reducing DMG taken by them. In phase two, <color=#f29e38ff>\"War Armor\"</color> will be enhanced to <color=#f29e38ff>\"Centirefined War Armor\"</color>, greatly increasing the maximum stack limit, and Boss Mirage will gain additional <color=#f29e38ff>Toughness Protection</color>.",
+				"params": []
+			},
+			{
+				"description": "At the start of combat, all allies gain 1 stack of <color=#f29e38ff>\"Glory\"</color>. Ally units gain 1 stack of <color=#f29e38ff>\"Glory\"</color> for each <color=#f29e38ff>Skill Point</color> consumed (memomasters and their memosprites will share \"Glory\" stacks). Each stack of \"Glory\" increases CRIT DMG, and when enemy targets with \"War Armor\" are attacked, reduces their stacks of \"War Armor\" by an amount equal to the attacker's \"Glory\" stacks. Targets' <color=#f29e38ff>Skill Points can exceed the maximum limit</color>.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Prioritize <color=#f29e38ff>consuming Skill Points</color> to gain <color=#f29e38ff>\"Glory,\"</color> increasing CRIT DMG dealt and reducing enemy \"War Armor\" stacks. Ally <color=#f29e38ff>Skill Points can exceed the maximum limit</color>.",
+				"params": []
+			},
+			{
+				"description": "When enemy targets have <color=#f29e38ff>\"War Armor\"</color>, their DEF is greatly increased. Reducing their \"War Armor\" will increase the DMG they take and <color=#f29e38ff>recover Skill Points</color>.",
+				"params": []
+			},
+			{
+				"description": "In Phase 2, when summons have <color=#f29e38ff>\"Centirefined War Armor\"</color>, the Boss Mirage's abilities will be enhanced. Prioritizing reducing the summons' \"Centirefined War Armor\" can effectively <color=#f29e38ff>weaken the Boss Mirage's abilities</color>.",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "401401301"
+}

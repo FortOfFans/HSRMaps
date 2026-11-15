@@ -1,0 +1,215 @@
+{
+	"name": "ブローニャ（幻像）",
+	"description": "ベロブルグ守護者の後継者、シルバーメインの最高司令官。\nブローニャは多様な戦略で敵を攻撃し、味方の作戦能力を大アップする。ここに現れたのはあなたの記憶をもとにシミュレートされた幻である。",
+	"icon": "spriteoutput/monsterfigure/Monster_1004030.png",
+	"shortIcon": "Monster_1004030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3952.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 119,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "疾風の弾丸",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に風属性ダメージを与える。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403201"
+		},
+		{
+			"name": "作戦再展開",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "ブローニャ以外の指定した敵単体のすべてのデバフを解除し、即座に行動させる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403202"
+		},
+		{
+			"name": "増援協力",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「シルバーメイン・砲兵」を召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403203"
+		},
+		{
+			"name": "制圧射撃",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に風属性ダメージを与え、攻撃を受けた味方の行動順を遅らす。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403204"
+		},
+		{
+			"name": "行軍命令",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "敵全体の速度をアップ。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				50,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403205"
+		},
+		{
+			"name": "一気呵成",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "ブローニャのターンが回ってきた時、自身の速度と攻撃力をわずかにアップする。この効果は累積できる。この効果はブローニャが撃破された時に解除される。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.03,
+				0.03,
+				0.05,
+				0.05
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403206"
+		},
+		{
+			"name": "同じ敵に向かって",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "ジェパードが戦闘不能状態になった時、即座に行動し、強化状態に入り、自身の速度をアップする。この状態の時、ブローニャはより多くの「シルバーメイン・砲兵」を召喚する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403207"
+		},
+		{
+			"name": "コンビネーション",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "ブローニャとジェパードは交互にメインアタック状態とサポート状態に入る。メインアタック状態の時は、自身の靭性保護を解除し通常通りに攻撃する。サポート状態に入ると、自身の速度をダウンさせ、靭性保護を獲得し「増援協力」または「作戦再展開」を発動する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403208"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				50,
+				2,
+				1,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403209"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [
+		"100203012"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "1004032"
+}

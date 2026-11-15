@@ -1,0 +1,165 @@
+{
+	"name": "Spitzenprädator der Imagenaes",
+	"description": "Wer ist der wilden, ungezähmten Kraft des Astralexpresses gewachsen?! Der außer Kontrolle geratene Pom-Pom hat sich in den Legierungs-Mechatron: König Pom-Pom verwandelt.\nKönig Pom-Pom ist ein mächtiger Mechatron, der von Sauberkeit und Ordnung besessen ist. Nach seinen Maßstäben ist dieser Ort ein einziges Chaos und braucht eine Gründliche! Tiefe! Reinigung! Pom!",
+	"icon": "spriteoutput/monsterfigure/Monster_5014020.png",
+	"shortIcon": "Monster_5014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5014020.png",
+	"stats": {
+		"baseAttack": 40.008892,
+		"baseDefense": 210,
+		"baseHealth": 480.0195,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Seelenheilungsschere",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402201"
+		},
+		{
+			"name": "Sterilisationsmodus mit Hochtemperatur",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Dampfreinigung“ ein, erhöht den verursachten SCH dieser Einheit und erhält eine bestimmte Stapelzahl von „Anhaltende antibakterielle Wirkung“, wodurch der erlittene SCH dieser Einheit reduziert wird. Wird Anhaltende antibakterielle Wirkung vollständig entfernt, tritt die Einheit aus dem Status Dampfreinigung aus und erleidet massiven SCH.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				3,
+				0,
+				0.15,
+				3,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402203"
+		},
+		{
+			"name": "Lückenlose Reinigung",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402202"
+		},
+		{
+			"name": "Starke Schaumseife",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402204"
+		},
+		{
+			"name": "Vorbereitung für Schichtarbeit läuft ...",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Voller Tatendrang“ ein. Bei der nächsten Aktion wird „Sättigungsreinigung!“ eingesetzt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402205"
+		},
+		{
+			"name": "Sättigungsreinigung!",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402206"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [
+		"501212002"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "5014022"
+}

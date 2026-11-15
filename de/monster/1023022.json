@@ -1,0 +1,153 @@
+{
+	"name": "IFK-Teamleiter (Illusion)",
+	"description": "Ein leitender Angestellter der Interastralen Friedenskorporation, der mindestens den Rang eines Projektteamleiters hat. Der Mech, den er bedient, gehört der IFK. Wird er beschädigt, müssen die Reparaturkosten aus eigener Tasche bezahlt werden. Mit einem halbwegs anständigen Gehalt können solche Leute es sich zumindest leisten, eine Einraumwohnung auf einem der Unternehmensschiffe der IFK zu mieten.",
+	"icon": "spriteoutput/monsterfigure/Monster_1023020.png",
+	"shortIcon": "Monster_1023020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1023020.png",
+	"stats": {
+		"baseAttack": 6,
+		"baseDefense": 210,
+		"baseHealth": 12555,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Anderling verschlingen",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Verschlingt Immerwinter-Schattenwandler, um den eigenen ANG zu erhöhen. Bei der nächsten Aktion wird „Stürmischer Frost“ eingesetzt. Je mehr Immerwinter-Schattenwandler verschlingt werden, desto öfter kann Stürmischer Frost bei der nächsten Aktion eingesetzt werden. Wenn sich keine Immerwinter-Schattenwandler auf dem Kampffeld befinden, wird die eigene VTD verringert.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302201"
+		},
+		{
+			"name": "Gefrorener Sturm",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Eis-SCH zu und verursacht mit hoher Chance Tiefgefroren.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.12,
+				0.2,
+				1,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302202"
+		},
+		{
+			"name": "Stürmischer Frost",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Eis-SCH zu und verursacht mit hoher Chance Tiefgefroren.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				1,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302203"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302204"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "1023022"
+}

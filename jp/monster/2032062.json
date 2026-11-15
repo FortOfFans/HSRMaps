@@ -1,0 +1,95 @@
+{
+	"name": "塵を払う尾",
+	"description": "心獣の尾。風雷を招き、塵世を払う。",
+	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
+	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2032060.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 4650,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 660,
+		"speed": 104,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "塵払い",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の風属性ダメージを与える。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				0,
+				0.5,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203206201"
+		},
+		{
+			"name": "塵世掃蕩",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "共鳴状態の時に発動する。味方全体に風属性ダメージを与え、高確率で攻撃を受けた味方を<u>虚弱</u>状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203206202"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Wind",
+	"id": "2032062"
+}

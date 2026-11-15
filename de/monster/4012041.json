@@ -1,0 +1,136 @@
+{
+	"name": "Furiae-Chor",
+	"description": "Ein Titanenwesen, geformt aus Zwist. In ihm fließt das goldene Blut Nikadors. Diese Titanenwesen sind Sänger unter der Lanze des Zorns. In ihren Liedern preisen sie die Soldaten und den wahnsinnigen König und erbitten mit göttlichen Beschwörungen Nikadors Segen.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012040.png",
+	"shortIcon": "Monster_4012040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012040.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 241.8,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Gepriesen sei Nikador",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Kampflied“ ein. Erhöht die max. Stapelzahl von „Kriegsrüstung“ für alle Gegner außer dieser Einheit. Erhält beim Kampfeintritt sofort den Status Kampflied.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				5,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401204101"
+		},
+		{
+			"name": "In die weichen Flammen",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401204102"
+		},
+		{
+			"name": "Wächter des Stadtstaates",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn eine Einheit eine bestimmte Anzahl von Stapelungen „Kriegsrüstung“ besitzt, wird ihr erlittener SCH reduziert. Verliert nach dem Erleiden von Angriffen 1 Stapelung Kriegsrüstung. Wenn 0 Stapelungen erreicht sind, wird die Kriegsrüstung zerstört, wobei dieser Einheit massiver imaginärer SCH zugefügt und ihre Aktion verzögert wird. Der Verbündete, der die Kriegsrüstung zerstört hat, stellt Energie wieder her. Nachdem die Kriegsrüstung zerstört wurde, erleidet diese Einheit außerdem zusätzlich geringen imaginären SCH, wenn sie angegriffen wird. Wenn die Runde dieser Einheit endet, wird die Kriegsrüstung auf die max. Stapelzahl wiederhergestellt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.3,
+				0.1,
+				0.1,
+				0.06,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401204103"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Imaginary",
+	"id": "4012041"
+}

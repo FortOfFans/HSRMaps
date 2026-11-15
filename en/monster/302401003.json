@@ -3,15 +3,22 @@
 	"description": "A paragon knight of the Knights of Beauty who is piously seeking his missing Aeon, Idrila the Beauty.\nForthright and candid, he wanders the cosmos espousing the virtues of Idrila's good name.",
 	"icon": "spriteoutput/monsterfigure/Monster_3024010.png",
 	"shortIcon": "Monster_3024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3024010.png",
 	"stats": {
 		"baseAttack": 16.363637999999998,
 		"baseDefense": 210,
 		"baseHealth": 1162.499535,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
 		"type": "LittleBoss"
 	},
 	"skills": [
 		{
-			"id": "302401001",
 			"name": "Piety",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401001"
 		},
 		{
-			"id": "302401002",
 			"name": "Imbue Devotion",
 			"tag": "Blast",
 			"type": "Ability",
@@ -40,11 +47,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401002"
 		},
 		{
-			"id": "302401003",
 			"name": "Spear & Shield",
 			"tag": "Summon",
 			"type": "Ability",
@@ -58,11 +65,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401003"
 		},
 		{
-			"id": "302401004",
 			"name": "Soul of Tenacity",
 			"tag": "Enhance",
 			"type": "Ability",
@@ -74,11 +81,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401004"
 		},
 		{
-			"id": "302401005",
 			"name": "Hymn of Gorgeous Courage",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -90,11 +97,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401005"
 		},
 		{
-			"id": "302401007",
 			"name": "Spear & Shield",
 			"tag": "Summon",
 			"type": "Ability",
@@ -104,26 +111,37 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401007"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
 		}
 	],
 	"weakness": [
@@ -131,10 +149,16 @@
 		"Fire",
 		"Ice"
 	],
+	"summons": [
+		"3021020",
+		"3021030",
+		"3021040"
+	],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
 	},
+	"guide": null,
 	"rank": "LittleBoss",
 	"stanceType": "Physical",
 	"id": "302401003"

@@ -1,0 +1,192 @@
+{
+	"name": "外宇宙之炎",
+	"description": "不属此世的怪异生命，自星核带来的裂界中成长，寄生在世界的根基结构中汲取能量，其甲胄外壳上燃烧着星辰内核的烈焰。\n在战斗中，外宇宙之炎能轻易将敌人焚作灰烬。",
+	"icon": "spriteoutput/monsterfigure/Monster_8003020.png",
+	"shortIcon": "Monster_8003020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 744,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "咆哮之火",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量火属性伤害，并大概率使受到攻击的我方目标陷入【焚烧】状态。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				2,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302201"
+		},
+		{
+			"name": "炎华爆燃",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使自身进入【自燃】状态，之后的攻击可以施放【净炎之雨】，并使自身攻击力提高。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				60,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302202"
+		},
+		{
+			"name": "净炎之雨",
+			"tag": "弹射",
+			"type": "技能",
+			"description": "连续对我方随机单体造成少量火属性伤害，并大概率使受到攻击的我方目标陷入【焚烧】状态。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				2,
+				0.3,
+				5,
+				60
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302203"
+		},
+		{
+			"name": "熔聚",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使自身攻击力提高。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302204"
+		},
+		{
+			"name": "轰炸前兆",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "积蓄力量并吸收所有我方全体持有的【焚烧】状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302205"
+		},
+		{
+			"name": "火炽轰炸",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成火属性伤害并大概率使我方全体陷入【焚烧】状态，吸收的【焚烧】状态越多，本次攻击造成的伤害越高。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302206"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_DOT_Burn",
+			"value": 1
+		}
+	],
+	"weakness": [],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "8003022"
+}

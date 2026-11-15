@@ -1,0 +1,152 @@
+{
+	"name": "残破容器",
+	"description": "盗火行者以灾难之力创造的分身，皆是寄宿着破坏意志的祸端。",
+	"icon": "spriteoutput/monsterfigure/Monster_4032020.png",
+	"shortIcon": "Monster_4032020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 186,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 180,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "共祭•亡死的黑云",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成少量物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.25
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202001"
+		},
+		{
+			"name": "共祭•将尽的命数",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成少量物理属性伤害，被击中目标降低生命值的一部分转化为<u>【侵蚀】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202002"
+		},
+		{
+			"name": "为我祷咏",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "抵抗控制类负面状态。当【至黑之剑，盗火行者】再次施放【亡死的黑云】或【将尽的命数】时，若自身曾被该攻击召唤，则与【至黑之剑，盗火行者】一同发起攻击。随后被其吸收，回复转化为<u>【苦痛缠绕】</u>的生命值，并使其获得<u>【灾难之力】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.06
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202003"
+		},
+		{
+			"name": "为我设奠",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到致命攻击后，若【至黑之剑，盗火行者】的<u>【灾难之力】</u>层数不为0，立即被其重新召唤，但会使【至黑之剑，盗火行者】失去1层<u>【灾难之力】</u>和一定比例的生命值。【至黑之剑，盗火行者】施放【莫因舍弃而哭泣】时，被其吸收，并回复转化为<u>【苦痛缠绕】</u>的生命值。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.02
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "403202003"
+}

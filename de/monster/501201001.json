@@ -1,0 +1,137 @@
+{
+	"name": "Vollautomatischer Zauberstab",
+	"description": "Eine Imagenasis-Bewaffnung, die zur Angriffstruppe der Magischen Mädchen gehört. Sie wurde mobil, indem sie die schönen Wünsche junger Mädchen trug.\nEs wird durch die Kraft des Gesangs angetrieben und sendet verschiedene Verwandlungszauber.",
+	"icon": "spriteoutput/monsterfigure/Monster_5012010.png",
+	"shortIcon": "Monster_5012010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5012010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 232.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Knisterschuss",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501201001"
+		},
+		{
+			"name": "Glückszauber",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Löst zufällig einen der folgenden Effekte aus: Erhöht den ANG dieser Einheit, zieht die Aktionen aller Gegner vor, oder verleiht mit hoher Chance allen Gegnern außer dieser Einheit „Starker Nachhall“.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				0.25,
+				0.33,
+				0.33,
+				0.34
+			],
+			"spGain": 0,
+			"delay": 0.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501201002"
+		},
+		{
+			"name": "Magie des Lächelns",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn diese Einheit zum ersten Mal angegriffen wird, erhalten Verbündete <u>Lachpunkte</u> und diese Einheit setzt „Glückszauber“ ein.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501201003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116001,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 181010,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "501201001"
+}

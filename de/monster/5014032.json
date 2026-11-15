@@ -1,0 +1,179 @@
+{
+	"name": "Gründungsmalerin Murata Graphia",
+	"description": "Ein Nachbild von Murata Graphia, der ersten Malerin des alten Benzaitengoku.\nEinst nutzte sie die Macht der Gier, um imagenierte Ungeheuer für die Antimaterie-Legion zu erschaffen. Als sie schließlich den Absturz des Astralexpresses mitansah, erwachte in ihr der Wunsch, in den Himmel zu reisen. Gemeinsam mit den Namenlosen rebellierte sie gegen ihren eigenen Schöpfer.\nUm diese Welt zu beschützen, bannte sie am Ende alles Leben in ein Gemälde. In einsamer Trauer malte sie wieder und wieder die rachsüchtigen Geister derer, die durch die Hand von Asat Pramad gefallen waren, und dieser Groll trieb sie letztendlich in den Wahnsinn.",
+	"icon": "spriteoutput/monsterfigure/Monster_5014030.png",
+	"shortIcon": "Monster_5014030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5014030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1162.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1080,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Glutrotes Gemälde",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501403201"
+		},
+		{
+			"name": "Grausames Bildnis des Fegefeuers",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Fügt einer anvisierten verbündeten Figur Feuer-SCH zu und belegt sie mit hoher Chance mit dem Status <u>Brennender Groll</u>.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501403202"
+		},
+		{
+			"name": "Grausames Bildnis des Fegefeuers: Prächtige Tinte",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Fügt 2 verbündeten Figuren Feuer-SCH zu und belegt sie mit hoher Chance mit dem Status <u>Brennender Groll</u>.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501403203"
+		},
+		{
+			"name": "Imaginäres Monstergemälde",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Gottverschlingende Brut“, belegt alle beschworenen Objekte mit <u>Jenseits des menschlichen Reiches</u> und lässt dann beschworene Objekte mit mindestens 2 Stapelungen von <u>Jenseits des menschlichen Reiches</u> sofort eine Aktion ausführen.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.5,
+				0.01,
+				0.05,
+				1,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501403205"
+		},
+		{
+			"name": "Spektakel: Verschlingerin Murata",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Feuer-SCH zu und belegt die getroffenen Figuren mit hoher Chance mit dem Status <u>Brennender Groll</u>.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				1,
+				2,
+				0
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501403206"
+		},
+		{
+			"name": "Ewig brennender Groll",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Einige Fähigkeiten dieser Einheit belegen die getroffenen Figuren mit dem Status <u>Brennender Groll</u>.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.7,
+				0.3,
+				0.33,
+				2,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501403207"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"502302004"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Fire",
+	"id": "5014032"
+}

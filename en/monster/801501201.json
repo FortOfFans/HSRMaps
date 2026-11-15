@@ -3,15 +3,22 @@
 	"description": "Using fragments of the Dusk Leviathan as the foundation, and the weeping bones of thousands of the dead in the Warforge as the agent, the Antimatter Legion cast the Doomsday Beast. The resentful spirits' senseless obsession turns into a tangible hand, and the shadow of the old disaster conceals the heavens. The Doomsday Beast detains the will of all beings that are not at ease and have yet to die. Anger, mourning, or delusional joy — all is revealed, and all evil eagerly throb. The Doomsday Beast's core is a dark matter engine.",
 	"icon": "spriteoutput/monsterfigure/Monster_8015010.png",
 	"shortIcon": "Monster_8015010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8015010.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 7672.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
 		"type": "BigBoss"
 	},
 	"skills": [
 		{
-			"id": "801501201",
 			"name": "Leviathan's Vestige Valor",
 			"tag": "Talent",
 			"type": "Talent",
@@ -28,11 +35,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801501201"
 		},
 		{
-			"id": "801501202",
 			"name": "",
 			"tag": "Talent",
 			"type": "Talent",
@@ -49,11 +56,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801501202"
 		},
 		{
-			"id": "801501203",
 			"name": "",
 			"tag": "Talent",
 			"type": "Talent",
@@ -65,11 +72,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801501203"
 		},
 		{
-			"id": "801501204",
 			"name": "",
 			"tag": "Talent",
 			"type": "Talent",
@@ -84,11 +91,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801501204"
 		},
 		{
-			"id": "801501205",
 			"name": "",
 			"tag": "Talent",
 			"type": "Talent",
@@ -101,11 +108,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801501205"
 		},
 		{
-			"id": "801501206",
 			"name": "",
 			"tag": "Talent",
 			"type": "Talent",
@@ -120,22 +127,32 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801501206"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
 		}
 	],
 	"weakness": [
@@ -144,9 +161,124 @@
 		"Ice",
 		"Wind"
 	],
+	"summons": [
+		"801214601",
+		"801314501",
+		"801214701"
+	],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100301",
+				"name": "Steadfast Safeguard",
+				"description": "The Boss Mirage cannot be attacked directly. When all three <color=#f29e38ff><u>parts</u></color> of the Boss Mirage are in Feigned Death simultaneously, the Boss Mirage enters Weakness Break state and can be attacked. During this state, its actions are additionally delayed, and the DMG it receives increases by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"id": "100302",
+				"name": "Battlefield Transfer",
+				"description": "The Antimatter Engine <color=#f29e38ff><u>transfers</u></color> its own weakness type to Disaster's Right Hand and Dawn's Left Hand. However, when Disaster's Right Hand or Dawn's Left Hand is defeated, the Antimatter Engine's Toughness is additionally reduced.",
+				"params": []
+			},
+			{
+				"id": "100303",
+				"name": "Battle Hardened",
+				"description": "After using a single-target ability, enemy units gain increased SPD for 1 turn. After using an AoE ATK ability, their ATK increases for 1 turn. Using a Support ability recovers HP to the target of the ability.",
+				"params": []
+			},
+			{
+				"id": "100304",
+				"name": "Tenacious Resolve",
+				"description": "Reduces DMG received by all enemies, but every <color=#f29e38ff>Weakness-Type</color> they have increases DMG received.",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10031",
+				"name": "Starbane Doombringer",
+				"description": "The Boss Mirage's parts will inflict a Quantum/Imaginary-Type Infusion status on targets. After defeating them, they will enter the Feigned Death state and have their actions delayed. In their next action, they regenerate.",
+				"answer": "Strategy: Prioritize attacking specific targets to remove the Type Infusion effect from its targets. Eliminate all parts of the Boss Mirage before regeneration to inflict Weakness Break on the Boss Mirage.",
+				"skills": [
+					{
+						"id": "100311",
+						"type": "Normal",
+						"name": "Counters the control effects of Snarelock",
+						"texts": [
+							{
+								"description": "When units are simultaneously under Quantum and Imaginary Type Infusion states, they will enter the Snarelock state. Prioritize attacking specific targets with the same Type icon to remove the Quantum/Imaginary Type Infusion from player units. Alternatively, counter the Snarelock state by increasing Effect RES, or using abilities that remove debuffs.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100312",
+						"type": "Normal",
+						"name": "Counters Antimatter Engine with no Weakness Type",
+						"texts": [
+							{
+								"description": "Defeating Disaster's Right Hand or Dawn's Left Hand will transfer the Weakness Type back to Antimatter Engine and weakens it.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100313",
+						"type": "Normal",
+						"name": "Counters the regeneration mechanics of Boss Mirage's three parts",
+						"texts": [
+							{
+								"description": "Before the Boss Mirage's parts regenerate, eliminating all parts can cause the Boss Mirage to enter Weakness Break state. While in Weakness Break state, the parts will not regenerate until the Boss Mirage recovers from this state.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "After any of Boss Mirage's parts is eliminated, it enters a Feigned Death state and have its actions delayed. The parts regenerate during its next action. When all three parts are <color=#f29e38ff>in Feigned Death simultaneously</color>, the main body enters Weakness Break state with Boss Mirage's actions further delayed, increasing DMG taken by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"description": "Antimatter Engine will <color=#f29e38ff>transfer its own Weakness Type</color> to Disaster's Right Hand and Dawn's Left Hand.",
+				"params": []
+			},
+			{
+				"description": "The Boss Mirage will inflict a Quantum/Imaginary-Type Infusion status on targets, and <color=#f29e38ff>being inflicted by both Type Infusion statuses simultaneously</color> will result in being inflicted with the Snarelock state.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Defeating all three parts of the Boss Mirage and causing them to <color=#f29e38ff>enter Feigned Death simultaneously</color> can inflict Weakness Break on Boss Mirage, allowing DMG to be dealt directly to it.",
+				"params": []
+			},
+			{
+				"description": "When allies are under <color=#f29e38ff>Quantum/Imaginary Infusion</color> status, promptly attack targets with the same Type icon to remove the Type Infusion status and prevent falling into the Snarelock state.",
+				"params": []
+			}
+		]
 	},
 	"rank": "BigBoss",
 	"stanceType": "Imaginary",

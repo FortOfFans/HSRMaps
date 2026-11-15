@@ -1,0 +1,451 @@
+{
+	"name": "Opportunistische Provokateurin",
+	"description": "Dieses Fleisch besitzt die Kräfte der Zerstörung und des Überflusses, eine Form, die den Kreislauf von Tod und Wiedergeburt verkörpert. Es ist auch die erste „Frucht“, die aus dem verjüngten Himmelsbaum hervorging.",
+	"icon": "spriteoutput/monsterfigure/Monster_8015020.png",
+	"shortIcon": "Monster_8015020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8015020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7440,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1140,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "Acchata: Winde formen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Wind-SCH zu.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502201"
+		},
+		{
+			"name": "Staub abwischen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen Wind-SCH zu.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1.3,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502202"
+		},
+		{
+			"name": "Verworrene Wurzeln: Macht des Überflusses",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Wind-SCH zu und verzögert dessen Aktion. Gleichzeitig führen aktionsfähige Überflusslotus auf dem Kampffeld einen Angriff aus.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.1,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502203"
+		},
+		{
+			"name": "Verworrene Wurzeln: Macht der Verwüstung",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Blitz-SCH zu und verzögert dessen Aktion. Gleichzeitig führen aktionsfähige Verwüstungslotus auf dem Kampffeld einen Angriff aus.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.1,
+				0.25,
+				2,
+				1.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502204"
+		},
+		{
+			"name": "Acchata: Tosender Donner",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Blitz-SCH zu.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502205"
+		},
+		{
+			"name": "Schwebende Sterne, zerbrochener Mond: Macht des Überflusses",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Wind-SCH zu und geht in die Form des Überflusses über.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502206"
+		},
+		{
+			"name": "Schwebende Sterne, zerbrochener Mond: Macht der Zerstörung",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Blitz-SCH zu und geht in die „Form der Zerstörung“ über.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502207"
+		},
+		{
+			"name": "Zwillinge",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Überflusslotus“ und „Verwüstungslotus“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502208"
+		},
+		{
+			"name": "Wut",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502209"
+		},
+		{
+			"name": "Baumwurzel-Apotheose",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502210"
+		},
+		{
+			"name": "Zwillinge",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Überflusslotus“ und „Verwüstungslotus“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502211"
+		},
+		{
+			"name": "Verworrene Wurzeln: Zahllose Krümmungen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten imaginären SCH zu und verzögert dessen Aktion. Gleichzeitig führen aktionsfähige Lotus auf dem Kampffeld einen Angriff aus.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.1,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502212"
+		},
+		{
+			"name": "Leere",
+			"tag": "Anvisieren",
+			"type": "Fähigkeit",
+			"description": "Visiert alle Verbündeten an. Die nächste Aktion des Lotus ist „Ewige Verdammnis“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502213"
+		},
+		{
+			"name": "Ewige Verdammnis",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt dem anvisierten Ziel imaginären SCH zu. Je mehr Ziele anvisiert werden, desto höher wird der verursachte SCH.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.5,
+				5.5,
+				6,
+				6
+			],
+			"spGain": 30,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502214"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502215"
+		},
+		{
+			"name": "Zerstörungs-Buff",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502216"
+		},
+		{
+			"name": "Überfluss-Buff",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502217"
+		},
+		{
+			"name": "Solider Schutz",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502218"
+		},
+		{
+			"name": "Blume unter anderem Namen",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502219"
+		},
+		{
+			"name": "Frühling des verdorrten Baums",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502220"
+		},
+		{
+			"name": "Hohlblumenflamme",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502221"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502222"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1.5,
+				1,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502223"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"8012204",
+		"8012214"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "8015022"
+}

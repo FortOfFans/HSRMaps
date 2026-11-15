@@ -1,0 +1,86 @@
+{
+	"name": "{RUBY_B#ゆうふぶべん}幽府武弁{RUBY_E#}",
+	"description": "十王司判官に追従して任務を執行する武衛。\n冥界の使者を象徴する白黒仮面をつけ、鍘刀を持つ。その攻撃は十王司の使命のように重く、逆らうことを許さない。",
+	"icon": "spriteoutput/monsterfigure/Monster_2002030.png",
+	"shortIcon": "Monster_2002030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2002030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 139.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 60,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "断悪",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の物理属性ダメージを与え、確率で攻撃を受けた味方を「震とう」状態にする。「震とう」状態の味方は攻撃を受けた後に「強烈震とう」状態になり、「震とう」状態が解除される。「強烈震とう」状態の味方は行動できない。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.35,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200203001"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "200203006"
+}

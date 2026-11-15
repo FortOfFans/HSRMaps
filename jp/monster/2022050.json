@@ -1,0 +1,130 @@
+{
+	"name": "{RUBY_B#ほうじょう}豊穣{RUBY_E#}の{RUBY_B#れいじゅう}霊獣{RUBY_E#}・{RUBY_B#けいぼく}奎木{RUBY_E#}",
+	"description": "煙霧を纏う奔狼、ふらふらと動き見通しがつかない。\n前回「建木」が佇立した時、仙舟人は奇術で数多の珍獣を育種した。その中で、奎木は従軍する戦獣の1つである。",
+	"icon": "spriteoutput/monsterfigure/Monster_2022050.png",
+	"shortIcon": "Monster_2022050",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2022050.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 186,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "狼餐",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に雷属性ダメージを与え、高確率で攻撃を受けた味方を感電状態にする。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1.5,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202205001"
+		},
+		{
+			"name": "嘯合",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "自身の残りHPと同じHPを持つ「狽影」を1体召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202205002"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202205003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"2022051"
+	],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113001,
+				"count": 1
+			},
+			{
+				"id": 113002,
+				"count": 1
+			},
+			{
+				"id": 113003,
+				"count": 1
+			},
+			{
+				"id": 181004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "2022050"
+}

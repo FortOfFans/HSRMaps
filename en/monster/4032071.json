@@ -3,15 +3,22 @@
 	"description": "The shape of the world, the desire to seek, and the boundless space that gives them form. The intellect from which all wisdom is born. It is no longer a puppet, destined to perish in the funeral of knowledge, leaving behind an iron tombstone.",
 	"icon": "spriteoutput/monsterfigure/Monster_4032070.png",
 	"shortIcon": "Monster_4032070",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032070.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1860,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
 		"type": "MinionLv2"
 	},
 	"skills": [
 		{
-			"id": "403207101",
 			"name": "Hail Chaos",
 			"tag": "Blast",
 			"type": "Ability",
@@ -25,11 +32,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403207101"
 		},
 		{
-			"id": "403207102",
 			"name": "Foolish Pursuit",
 			"tag": "Charging",
 			"type": "Ability",
@@ -39,11 +46,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403207102"
 		},
 		{
-			"id": "403207103",
 			"name": "Eradication of Falsehood",
 			"tag": "Blast",
 			"type": "Ability",
@@ -57,11 +64,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403207103"
 		},
 		{
-			"id": "403207107",
 			"name": "Immortal",
 			"tag": "Talent",
 			"type": "Talent",
@@ -73,11 +80,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403207107"
 		},
 		{
-			"id": "403207104",
 			"name": "Break the Old, Build the New",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -91,11 +98,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403207104"
 		},
 		{
-			"id": "403207105",
 			"name": "A Fool's Defiance",
 			"tag": "Charging",
 			"type": "Ability",
@@ -105,11 +112,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403207105"
 		},
 		{
-			"id": "403207106",
 			"name": "Eternal Recurrence",
 			"tag": "Talent",
 			"type": "Talent",
@@ -119,14 +126,22 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403207106"
 		}
 	],
 	"resistance": [],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
 	"weakness": [],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 36,
+		"avatarExpReward": 108,
 		"itemList": [
 			{
 				"id": 2,
@@ -137,11 +152,20 @@
 				"count": 1
 			},
 			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
 				"id": 181017,
 				"count": 1
 			}
 		]
 	},
+	"guide": null,
 	"rank": "MinionLv2",
 	"stanceType": "Physical",
 	"id": "4032071"

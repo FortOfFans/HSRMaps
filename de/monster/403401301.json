@@ -1,0 +1,493 @@
+{
+	"name": "Irrender Flammendieb der Apokalypse",
+	"description": "Ein namenloser Schwertmeister, der mit der Schwarzen Flut kam und die Kernflammen der Titanen jagt. Niemand kennt seine wahre Identität.\nEr besitzt unglaubliche Kräfte, und seine Schwertkunst ist nahezu unfehlbar. Wahnsinn und Besessenheit verschmelzen in seinen Klingen und haben einst den Hain der Erleuchtung und Aedes Elysiae zu Fall gebracht.",
+	"icon": "spriteoutput/monsterfigure/Monster_4034010.png",
+	"shortIcon": "Monster_4034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 10230,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1200,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 2,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Sturmwolke des Untergangs",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401301"
+		},
+		{
+			"name": "Verblassendes Schicksal",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu. Ein Anteil der verlorenen LP der getroffenen Ziele wird in <u>Korrosion</u> umgewandelt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401302"
+		},
+		{
+			"name": "Unheilvoller Pfad",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Bewirkt, „Zerbrochenes Gefäß“ in den Status „Gemeinsames Opfer“ übergeht.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401303"
+		},
+		{
+			"name": "Trauer der Finsternis",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Löst „Sturmwolke des Untergangs“ oder „Verblassendes Schicksal“ zusammen mit dem „Zerbrochenen Gefäß“ aus. Absorbiert dann das „Zerbrochene Gefäß“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401304"
+		},
+		{
+			"name": "Todesschluchzer",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Erhält „<u>Kraft der Katastrophe</u>“ und den Status „Todesschluchzer“. Setzt in der nächsten Aktion „Ein notwendiges Opfer“ ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.8,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401305"
+		},
+		{
+			"name": "Stille Trauer",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Erhält „<u>Kraft der Katastrophe</u>“ und den Status „Stille Trauer“. Setzt in der nächsten Aktion „Weine nicht für die Verlassenen“ ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.0029999998,
+				2.5
+			],
+			"spGain": 0,
+			"delay": 1.8,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401306"
+		},
+		{
+			"name": "Ein notwendiges Opfer",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Verbraucht alle Stapelungen von <u>Kraft der Katastrophe</u> und fügt allen Verbündeten geringen physischen SCH zu. Je mehr Stapelungen von <u>Kraft der Katastrophe</u> verbraucht werden, desto höher wird die Trefferzahl des SCH. Fügt danach allen Verbündeten geringen physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.2,
+				2
+			],
+			"spGain": 20,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401307"
+		},
+		{
+			"name": "Weine nicht für die Verlassenen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu. Verbraucht alle Stapelungen von <u>Kraft der Katastrophe</u> und verursacht dabei zusätzlich geringen physischen SCH. Je mehr Stapelungen von <u>Kraft der Katastrophe</u> verbraucht werden, desto höher wird die Trefferzahl des SCH.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.4,
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401308"
+		},
+		{
+			"name": "Schmerz der Trennung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn „Sturmwolke des Untergangs“ oder „Verblassendes Schicksal“ eingesetzt werden, wird „Zerbrochenes Gefäß“ beschworen. Wenn ein Zerbrochenes Gefäß zerstört wird, verliert diese Einheit LP. Wenn Sturmwolke des Untergangs oder Verblassendes Schicksal erneut eingesetzt wird, werden die beschworenen Zerbrochenen Gefäße zum Angriff gezwungen, und danach werden sie von dieser Einheit absorbiert.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				135,
+				16,
+				0.0029999998
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401309"
+		},
+		{
+			"name": "Verlorenes Opfer",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beschwört beim Einsatz von „Todesschluchzer“ oder „Stille Trauer“ ein „Zerbrochenes Gefäß“. Wenn „Irrender Flammendieb der Apokalypse“ sich im Status <u>Kettenbruch</u> befindet und das Zerbrochene Gefäß einen Todesstoß erleidet, wird sofort erneut ein Zerbrochenes Gefäß beschworen und der WDS von Irrender Flammendieb der Apokalypse wird reduziert.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.8,
+				0.3,
+				1,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401310"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401311"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401312"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401313"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401314"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401315"
+		},
+		{
+			"name": "Kettenbruch",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Zustand <u>Kettenbruch</u> ein. Beschwört 4 „Zerbrochene Gefäße“ und versetzt sie in den Status „Gefesselt“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401316"
+		},
+		{
+			"name": "Wiederbelebung des Unheils",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Nach dem Verlust der ersten Schicht WDS werden alle Kontrolleffekte entfernt. Tritt in den Status <u>Kettenbruch</u> ein und führt sofort eine Aktion aus. Vor dem Eintritt in den Status <u>Kettenbruch</u> fällt der WDS nicht unter 1 Schicht.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.25,
+				95,
+				0.1,
+				0.5,
+				225
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401317"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.15,
+				1,
+				0.2,
+				1,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401318"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.7,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401319"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"4032021",
+		"403202111",
+		"403202112",
+		"403202113"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101101",
+				"name": "Solider Schutz",
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101102",
+				"name": "Kettenbruch",
+				"description": "Nachdem das Boss-Phantom die erste Schicht WDS verloren oder eine bestimmte Anzahl von Aktionen ausgeführt hat, tritt es in den Status <color=#f29e38ff><u>Kettenbruch</u></color> ein und ändert seine Angriffsmethode.",
+				"params": []
+			},
+			{
+				"id": "101103",
+				"name": "Schleichender Nebel",
+				"description": "Das Besiegen von „Intakten Gefäßen“ reduziert nicht mehr den WDS des Boss-Phantoms.",
+				"params": []
+			},
+			{
+				"id": "101104",
+				"name": "Gefäß-Verstärkung",
+				"description": "Erhöht die max. LP aller „Zerbrochenen Gefäße“ und „Intakten Gefäße“.",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10111",
+				"name": "Irrender Flammendieb der Apokalypse",
+				"description": "Nachdem das Boss-Phantom die erste Schicht WDS verloren oder eine bestimmte Anzahl von Aktionen ausgeführt hat, tritt es in den Status „Kettenbruch“ ein, ändert seine Angriffsmethode und beschwört ein „Zerbrochenes Gefäß“, das immer wieder neu beschworen werden kann.",
+				"answer": "Strategie: Besiege so viele „Zerbrochene Gefäße“ wie möglich, bevor das Boss-Phantom seine mächtige Fähigkeit einsetzt, um die Stapelzahl von „Kraft der Katastrophe“ zu reduzieren. Besiege vorrangig die „Intakten Gefäße“.",
+				"skills": [
+					{
+						"id": "101111",
+						"type": "Normal",
+						"name": "So wird die „Kraft der Katastrophe“ des Boss-Phantoms reduziert",
+						"texts": [
+							{
+								"description": "Für jedes zerstörte „Zerbrochene Gefäß“ verliert das Boss-Phantom 1 Stapelung „Kraft der Katastrophe“.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101112",
+						"type": "Normal",
+						"name": "So umgehst du mit dem „Intakten Gefäß“",
+						"texts": [
+							{
+								"description": "Konzentriere dich zunächst auf das Besiegen von „Intakten Gefäßen“, um zusätzliche Runden und Buffs zu erhalten und gleichzeitig zu verhindern, dass „Kraft der Katastrophe“ für das Boss-Phantom aufgeladen wird.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "Wenn das Boss-Phantom die <color=#f29e38ff>erste Schicht WDS verliert</color>, tritt es sofort in den Status <color=#f29e38ff>Kettenbruch</color> ein. Nachdem das Boss-Phantom eine bestimmte Anzahl von Aktionen ohne diesen Status ausgeführt hat, tritt es ebenfalls in Kettenbruch ein.",
+				"params": []
+			},
+			{
+				"description": "Nachdem das Boss-Phantom in den Status „Kettenbruch“ eingetreten ist, <color=#f29e38ff>ändert sich seine Angriffsmethode</color>. Außerdem wird jedes besiegte „Zerbrochene Gefäß“ sofort durch ein neues ersetzt.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Besiege die beschworenen Objekte, bevor alle Stapelungen von „Kraft der Katastrophe“ des Boss-Phantoms entfernt wurden, um seine mächtige Fähigkeit zu schwächen.",
+				"params": []
+			},
+			{
+				"description": "Konzentriere dich zunächst auf das Besiegen von „Intakten Gefäßen“, um zusätzliche Runden und Buffs zu erhalten und gleichzeitig zu verhindern, dass „Kraft der Katastrophe“ für das Boss-Phantom aufgeladen wird.",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "403401301"
+}

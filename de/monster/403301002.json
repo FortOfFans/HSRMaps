@@ -1,0 +1,195 @@
+{
+	"name": "Verätzter Dämon der Schwarzen Flut",
+	"description": "Eine durch die Schwarze Flut entstandene verzerrte Schöpfung, getrieben von einem unstillbaren Durst nach Blutvergießen.\nIhre einst menschliche Gestalt ist nun von Schmutz bedeckt und verströmt eine widerliche Aura der Korrosion. Wo immer die korrodierte Bestie auftritt, wird alles Leben ausgelöscht.",
+	"icon": "spriteoutput/monsterfigure/Monster_4033010.png",
+	"shortIcon": "Monster_4033010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4033010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7672.499814000001,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Zerfallener Erdrutsch",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu. Ein Anteil der verlorenen LP der getroffenen Ziele wird in <u>Korrosion</u> umgewandelt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301001"
+		},
+		{
+			"name": "Verrottender Verfall",
+			"tag": "Abpraller",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten kontinuierlich physischen SCH zu. Ein Anteil der verlorenen LP des getroffenen Ziels wird in <u>Korrosion</u> umgewandelt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301002"
+		},
+		{
+			"name": "Schmutzverschlinger",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Absorbiert <u>Korrosion</u> von Verbündeten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301003"
+		},
+		{
+			"name": "Verderbtheit",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status <u>Unheilvoller Niedergang</u> ein. Bei der nächsten Aktion wird „Reißender Strom“ eingesetzt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301004"
+		},
+		{
+			"name": "Turbulente Strömung",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu. Eine bestimmte Menge der max. LP aller Verbündeten wird in <u>Korrosion</u> umgewandelt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				0.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301005"
+		},
+		{
+			"name": "Verunreinigung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Jedes Mal, wenn <u>Korrosion</u> von einem Verbündeten absorbiert wird, erhält Verätzter Dämon der Schwarzen Flut 1 Stapelung „Schmutz“. Wenn Schmutz eine bestimmte Stapelzahl erreicht, wird bei der nächsten Aktion „Verderbtheit“ eingesetzt und alle Stapelungen von Schmutz werden entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.2,
+				0,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301006"
+		},
+		{
+			"name": "Schmutzverschlinger",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Absorption der <u>Korrosion</u> der Verbündeten gescheitert. VTD dieser Einheit wird reduziert.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301007"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "403301002"
+}

@@ -1,0 +1,147 @@
+{
+	"name": "Wachsender Treustachel",
+	"description": "Das Junge eines Treustachels. Je nach Wachstumsphase können Treustacheln in Junge Treustacheln und Wachsende Treustacheln unterteilt werden.",
+	"icon": "spriteoutput/monsterfigure/Monster_8022020.png",
+	"shortIcon": "Monster_8022020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8022020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 302.2499907,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Kampfbereitschaft",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Bei der nächsten Aktion wird „Explosive Sprengung“ eingesetzt.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802202001"
+		},
+		{
+			"name": "Explosive Sprengung",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Sprengt sich selbst in die Luft, fügt einem anvisierten Verbündeten und angrenzenden Einheiten Wind-SCH zu und verursacht mit hoher Chance „Empörung“.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802202002"
+		},
+		{
+			"name": "",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				0.5,
+				3,
+				5,
+				0.08
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802202003"
+		},
+		{
+			"name": "Entomologische Elegie",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Fügt beim Erleiden eines Todesstoßes allen Gegnern Wind-SCH zu und hat eine hohe Chance, deren erlittenen SCH leicht zu erhöhen.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				2,
+				0.1,
+				3,
+				10,
+				30
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802202004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Wind",
+	"id": "802202006"
+}

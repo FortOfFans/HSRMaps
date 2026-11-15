@@ -3,15 +3,22 @@
 	"description": "A phantom flower that blooms without root and forms out of thin air. Opportunistic Provocateur used the Ambrosial Arbor as her host to forge a physical body, yet never let go of Destruction's authority.",
 	"icon": "spriteoutput/monsterfigure/Monster_8012211.png",
 	"shortIcon": "Monster_8012211",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012211.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 697.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 240,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
 		"type": "MinionLv2"
 	},
 	"skills": [
 		{
-			"id": "801221501",
 			"name": "Black Prana's Snare",
 			"tag": "Impair",
 			"type": "Ability",
@@ -25,11 +32,11 @@
 			],
 			"spGain": 20,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221501"
 		},
 		{
-			"id": "801221502",
 			"name": "Black Prana's Return",
 			"tag": "Talent",
 			"type": "Talent",
@@ -43,11 +50,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221502"
 		},
 		{
-			"id": "801221503",
 			"name": "Safeguard",
 			"tag": "Talent",
 			"type": "Talent",
@@ -61,11 +68,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221503"
 		},
 		{
-			"id": "801221504",
 			"name": "Eternal Condemnation",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -75,22 +82,32 @@
 			"params": [],
 			"spGain": 30,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221504"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
 		}
 	],
 	"weakness": [
@@ -99,8 +116,9 @@
 		"Wind",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 36,
+		"avatarExpReward": 108,
 		"itemList": [
 			{
 				"id": 2,
@@ -111,11 +129,20 @@
 				"count": 1
 			},
 			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
 				"id": 181003,
 				"count": 1
 			}
 		]
 	},
+	"guide": null,
 	"rank": "MinionLv2",
 	"stanceType": "Thunder",
 	"id": "8012215"

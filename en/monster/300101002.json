@@ -3,15 +3,22 @@
 	"description": "Penacony's service machinery that got out of control due to the emotional interference in the Dreamscape.\nOriginally a tool for entertainment on the card table, it is still shaking the dice in its hands after losing control, continuing the game in a crude manner.",
 	"icon": "spriteoutput/monsterfigure/Monster_3001010.png",
 	"shortIcon": "Monster_3001010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3001010.png",
 	"stats": {
 		"baseAttack": 14.999994,
 		"baseDefense": 210,
 		"baseHealth": 139.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 30,
+		"speed": 83,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
 		"type": "Minion"
 	},
 	"skills": [
 		{
-			"id": "300101001",
 			"name": "Throw Die",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -25,38 +32,46 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300101001"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Physical",
 		"Thunder"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 36,
+		"avatarExpReward": 108,
 		"itemList": [
 			{
 				"id": 2,
@@ -67,11 +82,20 @@
 				"count": 1
 			},
 			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
 				"id": 180012,
 				"count": 1
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Minion",
 	"stanceType": "Physical",
 	"id": "300101002"

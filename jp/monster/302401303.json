@@ -1,0 +1,608 @@
+{
+	"name": "高潔で公正な銀騎士",
+	"description": "「純美の騎士団」の古典的な騎士。行方不明になっている「純美」の星神イドリラを敬虔に慕っていた。\n正直で、堂々とした性格の人。宇宙を漫遊し、イドリラの名を広めている。",
+	"icon": "spriteoutput/monsterfigure/Monster_3024010.png",
+	"shortIcon": "Monster_3024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3024010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 5812.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 810,
+		"speed": 105,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "敬虔",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401301"
+		},
+		{
+			"name": "敬虔と誠実に至るまで",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401302"
+		},
+		{
+			"name": "",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.5,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401303"
+		},
+		{
+			"name": "",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401304"
+		},
+		{
+			"name": "純美の勇気賛歌",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 10,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401305"
+		},
+		{
+			"name": "",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401306"
+		},
+		{
+			"name": "",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401307"
+		},
+		{
+			"name": "",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401308"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.12
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401310"
+		},
+		{
+			"name": "槍の召喚",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「槍先」の彫刻を4体召喚する。フィールド上にすでに槍先」の彫刻が4体いた場合は、「槍のなぎ払い」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.5,
+				0.7,
+				0.75
+			],
+			"spGain": 15,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401311"
+		},
+		{
+			"name": "盾の召喚",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「盾」の彫刻を4体召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.7,
+				0.75,
+				1
+			],
+			"spGain": 10,
+			"delay": 1.75,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401312"
+		},
+		{
+			"name": "叙勲雲集",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「叙勲」の彫刻を4体召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.75,
+				1,
+				1.25,
+				1.25
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401313"
+		},
+		{
+			"name": "槍のなぎ払い",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「槍先」の彫刻の力を解放し、味方全体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				10
+			],
+			"spGain": 40,
+			"delay": 1.6,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401314"
+		},
+		{
+			"name": "盾の奉還",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "「盾」の彫刻の力を解放し、「盾」の彫刻に対して正面にいる味方キャラを挑発するよう命じ、さらに正面にいる味方キャラに応じて自身の弱点属性を変更する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1.75,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401315"
+		},
+		{
+			"name": "叙勲の力",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "選択不可の状態になり、次の行動時に「抗えない運命」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401316"
+		},
+		{
+			"name": "魂の回収",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "すべての彫刻の「魂の解放」を回収し、「魂の解放」の数にもとづいて自身を強化する。1ターン継続。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.08
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401317"
+		},
+		{
+			"name": "魂の解放",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "高潔で公正な銀騎士が召喚した彫刻に「魂の解放」を付与する。付与された彫刻が倒される時、味方全体に「魂の強化」を付与し、与ダメージをアップさせる。高潔で公正な銀騎士によって回収された場合、高潔で公正な銀騎士のこのターンの与ダメージがアップする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401318"
+		},
+		{
+			"name": "抗えない運命",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理ダメージを与える。「月桂冠」1層につき、物理ダメージを追加で1回与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401319"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401320"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401321"
+		},
+		{
+			"name": "破竹の勢い",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "高潔で公正な銀騎士の受けるダメージが大幅にダウンするが、弱点撃破された後、行動順が追加で遅延し、受けるダメージがさらにアップする。同時に味方全体がSPを回復して必殺技を開放する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401322"
+		},
+		{
+			"name": "攻守の変化",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "高潔で公正な銀騎士が戦闘中に自身の<u>戦闘スタイル</u>を切り替え、さまざまな彫刻を召喚して戦う。味方が「魂の解放」状態の彫刻を消滅させた時、今回の戦闘における味方全体の与ダメージがアップする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0.1,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401323"
+		},
+		{
+			"name": "土壇場の逆転",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "高潔で公正な銀騎士第二段階が「魂の解放」を発動する時、すべての彫刻をターゲットとして選択する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401324"
+		},
+		{
+			"name": "星々の守り",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "高潔で公正な銀騎士以外の敵1体につき、敵全体の受けるダメージがダウンし、与ダメージがアップする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0.03
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401325"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401326"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [
+		"3021022",
+		"3021032",
+		"3021042"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 3,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100201",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"id": "100202",
+				"name": "攻守の変化",
+				"description": "ボス幻影は戦闘中に自身の<color=#f29e38ff><u>戦闘スタイル</u></color>を切り替え、さまざまな彫刻を召喚して戦う。味方が「魂の解放」状態の彫刻を倒すと、今回の戦闘における味方全体の与えるダメージがアップする。",
+				"params": []
+			},
+			{
+				"id": "100203",
+				"name": "土壇場の逆転",
+				"description": "ボス幻影第二段階が「魂の解放」を発動する時、<color=#f29e38ff>すべて</color>の彫刻をターゲットとして選択する。",
+				"params": []
+			},
+			{
+				"id": "100204",
+				"name": "星々の守り",
+				"description": "ボス幻影以外の<color=#f29e38ff>敵</color>1体につき、敵全体の受けるダメージがダウンし、与えるダメージがアップする。",
+				"params": [
+					0.25
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10021",
+				"name": "第一段階：攻防の勢い",
+				"description": "ボス幻影は2種類の召喚物「槍先」または「盾」を召喚する。",
+				"answer": "対応戦略：優先的に強化された召喚物を倒してボス幻影を弱体化する。",
+				"skills": [
+					{
+						"id": "100211",
+						"type": "Normal",
+						"name": "召喚物「槍先」のダメージの対処法",
+						"texts": [
+							{
+								"description": "強化された召喚物「槍先」を倒せば味方を強化でき、ボス幻影を弱体化させることができる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100212",
+						"type": "Normal",
+						"name": "召喚物「盾」がフィールド上に存在する時、ボス幻影が与えるグループダメージの対処法",
+						"texts": [
+							{
+								"description": "召喚物「盾」を倒せばバリアを獲得でき、生存プレッシャーを効果的に軽減できる。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10022",
+				"name": "第二段階：名誉の戦い",
+				"description": "ボス幻影はさらに召喚物「叙勲」を召喚する。",
+				"answer": "対応戦略：優先的に強化された召喚物を倒してボス幻影を弱体化する。",
+				"skills": [
+					{
+						"id": "100221",
+						"type": "Normal",
+						"name": "召喚物「叙勲」がフィールド上に存在する時、ボス幻影の選択不可の状態の対処法",
+						"texts": [
+							{
+								"description": "召喚物「叙勲」がフィールド上に存在する時、ボス幻影は選択不可状態になる。次の行動時、または「叙勲」をすべて倒すと選択可能状態に移行する。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100222",
+						"type": "Normal",
+						"name": "ボス幻影が発動する「抗えない運命」が与える大量のダメージの対処法",
+						"texts": [
+							{
+								"description": "召喚物「叙勲」を倒す、または弱点撃破すれば、ボス幻影が発動する「抗えない運命」の与ダメージをダウンできる。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"description": "「魂の解放」状態の<color=#f29e38ff>召喚物</color>が大幅に強化される。",
+				"params": []
+			},
+			{
+				"description": "第二段階で、<color=#f29e38ff>すべての召喚物</color>が「魂の解放」状態に強化される。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "ボス幻影は<color=#f29e38ff>弱点撃破</color>された後に受けるダメージが大アップし、味方全体のSPを回復して行動順を早める。",
+				"params": []
+			},
+			{
+				"description": "優先的に<color=#f29e38ff>召喚物</color>を消滅または弱点撃破すると、効果的にボス幻影を弱体化できる。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "302401303"
+}

@@ -1,0 +1,175 @@
+{
+	"name": "飓风大母",
+	"description": "大海的女儿们，被「毁灭」的罪孽蚀尽灵肉，只余空荡扭曲的形骸…这一世，她们追随「海洋」的利刃，并非湮灭于虚无，而是成为袭向黑日的巨浪。\n末日的雨从天而降，宣告万物的灭亡——\n孕育大浪的飓风啊，你尝尽子嗣的绝望，最终孕满疯狂——\n亿万死胎的海葬，泪也应汹涌如洪水，将恨拍在岸上。",
+	"icon": "spriteoutput/monsterfigure/Monster_4053020.png",
+	"shortIcon": "Monster_4053020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4053020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 165,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "唾弃深渊的黑",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302001"
+		},
+		{
+			"name": "啼哭落在岸上",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成少量量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302002"
+		},
+		{
+			"name": "风雨雷的妊娠",
+			"tag": "强化",
+			"type": "技能",
+			"description": "在行动序列上添加【孵化】，并为自身附加【<u>孵育狂潮</u>】。【孵化】行动时会施放【洪潮浪的分娩】。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.5,
+				0.1,
+				4,
+				0.05,
+				0.3,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302003"
+		},
+		{
+			"name": "雨自初生便落坠",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302004"
+		},
+		{
+			"name": "洪潮浪的分娩",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤【泡影稚子】，并为其附加【风眼巢】。若此时场上存在【泡影稚子】，【飓风大母】将一直施放【雨自初生便落坠】，直到所有【泡影稚子】被消灭。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302005"
+		},
+		{
+			"name": "请泊舟暂歇",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到一定次数的普攻、战技、终结技或忆灵技攻击后行动提前，处于【<u>在毁灭中狂欢</u>】状态时，触发行动提前的受击次数降低。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405302006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Thunder"
+	],
+	"summons": [
+		"4052020"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Quantum",
+	"id": "4053020"
+}

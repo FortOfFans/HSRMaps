@@ -1,0 +1,211 @@
+{
+	"name": "トパーズ（幻像）",
+	"description": "社交的な性格の投資専門家。スターピースカンパニー傘下の「戦略投資部」の総監の1人で、「特殊債務ピケ部隊」を率いている。",
+	"icon": "spriteoutput/monsterfigure/Monster_1004010.png",
+	"shortIcon": "Monster_1004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004010.png",
+	"stats": {
+		"baseAttack": 5.142857,
+		"baseDefense": 210,
+		"baseHealth": 25575,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "骨を刺す寒冷",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401501"
+		},
+		{
+			"name": "長い氷期の兆し",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「氷刃」を2体召喚する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401502"
+		},
+		{
+			"name": "無尽なる冬の絶罰",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.75
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401503"
+		},
+		{
+			"name": "長い氷期の兆し",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "「氷刃」を4体召喚する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				1,
+				1.125
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401504"
+		},
+		{
+			"name": "雪国の聖者の怒り",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次の行動の時に味方全体に「無尽なる冬の絶罰」を発動。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401505"
+		},
+		{
+			"name": "より寒くより強く",
+			"tag": "強化",
+			"type": "天賦",
+			"description": "凍結状態の味方1人につき、自身および召喚物の与ダメージが小アップする。ダメージアップ効果は累積できる。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				10,
+				1.125,
+				0.1,
+				1,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401506"
+		},
+		{
+			"name": "永遠に囚われし霜",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃を受けた味方を凍結状態にする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				3,
+				1,
+				1.125
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401507"
+		},
+		{
+			"name": "砕氷振動",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "凍結状態の味方および隣接する味方に氷属性ダメージを与え、メインターゲットの凍結状態を解除する。隣接する味方が凍結状態の場合、メインターゲットにこのスキルをもう一度発動する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.75,
+				1.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401508"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		},
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"100201508",
+		"100201608",
+		"100201509",
+		"100201609"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Ice",
+	"id": "1004015"
+}

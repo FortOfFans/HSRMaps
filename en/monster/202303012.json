@@ -3,15 +3,22 @@
 	"description": "The form that the Disciples of Sanctus Medicus crave. A true appearance that cast off the burdens of humanity and has been reforged using the way of immortality.\nIn ancient times, those who sought immortality received wisdom from the Ambrosial Arbor and called themselves Celestials. They lived without restraints and molded the flesh of themselves and others at will. They have long forgotten their original appearances after countless metamorphoses.",
 	"icon": "spriteoutput/monsterfigure/Monster_2023030.png",
 	"shortIcon": "Monster_2023030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2023030.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1023,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 420,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "202303001",
 			"name": "Rite of Great Arbor Metamorphosis",
 			"tag": "Bounce",
 			"type": "Ability",
@@ -26,11 +33,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303001"
 		},
 		{
-			"id": "202303002",
 			"name": "Guiding Vulturnus",
 			"tag": "Blast",
 			"type": "Ability",
@@ -45,11 +52,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303002"
 		},
 		{
-			"id": "202303003",
 			"name": "Arboreal Thorns",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -64,11 +71,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303003"
 		},
 		{
-			"id": "202303004",
 			"name": "Rite of Subduing Prana",
 			"tag": "Charging",
 			"type": "Ability",
@@ -78,11 +85,11 @@
 			"params": [],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303004"
 		},
 		{
-			"id": "202303005",
 			"name": "Black Prana's Snare",
 			"tag": "Impair",
 			"type": "Ability",
@@ -96,42 +103,53 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303005"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Physical",
 		"Ice",
 		"Thunder"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 113001,
+				"id": 113002,
+				"count": 1
+			},
+			{
+				"id": 113003,
 				"count": 1
 			},
 			{
@@ -144,6 +162,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "202303012"

@@ -3,15 +3,22 @@
 	"description": "A law-enforcing aurumaton engraved with the Ten-Lords Martial Scriptures and taking orders from the Ten-Lords Commission.\nLiving beings are susceptible to the corporeal and mental existence of the self, but gold and metal will never be swayed and will unwaveringly follow the Ten-Lords' edicts.\nThese aurumaton law enforcers use their strength to subdue evils that have strayed from the natural order of life, and bring them to the Netherworld to meet their sentence. Its authority is sometimes even greater than that of a judge.",
 	"icon": "spriteoutput/monsterfigure/Monster_2013020.png",
 	"shortIcon": "Monster_2013020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2013020.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 929.999628,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "201302001",
 			"name": "Adjudicate",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302001"
 		},
 		{
-			"id": "201302002",
 			"name": "Subdue",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -41,11 +48,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302002"
 		},
 		{
-			"id": "201302003",
 			"name": "Revert Yin and Yang",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -59,11 +66,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302003"
 		},
 		{
-			"id": "201302004",
 			"name": "Heaven's Fall",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -76,11 +83,11 @@
 			],
 			"spGain": 20,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302004"
 		},
 		{
-			"id": "201302005",
 			"name": "Soul Warrant",
 			"tag": "Talent",
 			"type": "Talent",
@@ -90,11 +97,11 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302005"
 		},
 		{
-			"id": "201302006",
 			"name": "Heaven's Fall",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -106,42 +113,53 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "201302006"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Physical",
 		"Thunder",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 113011,
+				"id": 113012,
+				"count": 1
+			},
+			{
+				"id": 113013,
 				"count": 1
 			},
 			{
@@ -154,6 +172,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "201302014"

@@ -1,0 +1,194 @@
+{
+	"name": "正阳狮鹫（错误）",
+	"description": "代码受到影响后的错误投影。参照本体为正阳狮鹫，在遥远的造物世，艾格勒打造黎明机器后，它又在刻法勒协助下创造了代表各种泰坦的奇兽。据信，正阳狮鹫象征着睁开眼睛后为世界带来光明的艾格勒。",
+	"icon": "spriteoutput/monsterfigure/Monster_4023010.png",
+	"shortIcon": "Monster_4023010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4023010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1209,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "穿透黑暗",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量火属性伤害，并大概率使受到攻击的我方目标陷入【焚烧】状态。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1,
+				3,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301301"
+		},
+		{
+			"name": "降示黎明",
+			"tag": "横扫",
+			"type": "技能",
+			"description": "从我方队伍左侧起横扫攻击我方3个连续目标，造成少量火属性伤害，击中目标时大概率对其施加【焚烧】，同时召唤「流星铁鹰」。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.8,
+				1.1,
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301302"
+		},
+		{
+			"name": "点亮未来",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "锁定1个我方目标，进入【点亮未来】状态，下次行动施放【赞美艾格勒】。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301303"
+		},
+		{
+			"name": "赞美艾格勒",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对锁定目标及其相邻目标造成火属性伤害，对处于【焚烧】状态的目标造成额外的火属性伤害。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4,
+				3,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301304"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				40,
+				1.5,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301305"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1,
+				0.4,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "402301306"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"4022010",
+		"4022010",
+		"4022010",
+		"4022010"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Fire",
+	"id": "4023013"
+}

@@ -1,0 +1,202 @@
+{
+	"name": "Elegy Siren: Insatiable Leviathan",
+	"description": "Legend has it that the plundering sea sirens can sing to lure sailors with wavering wills. Those who fall into madness will leap into the ocean and become a delicacy for the deep sea.",
+	"icon": "spriteoutput/monsterfigure/Monster_4053010.png",
+	"shortIcon": "Monster_4053010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4053010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 27900,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 180,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Intoxicating Corruption",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals minor Ice DMG to one designated target and targets adjacent to them.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301101"
+		},
+		{
+			"name": "Honeyed Brew Sprinkled Like Stars",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals minor Ice DMG to all targets and has a high chance to decrease the targets' DEF and All-Type RES.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				0.15,
+				2,
+				0.15
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301102"
+		},
+		{
+			"name": "Psychedelic Elegy",
+			"tag": "Impair",
+			"type": "Ability",
+			"description": "The target can select 1 character. Then, deals Ice DMG to the selected character and causes them to enter the \"Phantom Illusion\" state. In \"Phantom Illusion\" state, the target character and their summon are <u>Departed</u>. At the same time, summons \"Hallucinogenic Mermaid\" to replace the Departed character in battle. \"Hallucinogenic Mermaid\" is considered as a non-friendly target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301103"
+		},
+		{
+			"name": "Heed The Ocean's Gift",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Enters \"Yearning for a Shared Dance\" state and uses \"Embrace From the Waves\" during each action.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301104"
+		},
+		{
+			"name": "Embrace From the Waves",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals minor Ice DMG to all targets.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301105"
+		},
+		{
+			"name": "Revel in Destruction",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When dealing DMG, inflicts \"Glacial Erosion\" state on the attacked target.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				0.8,
+				1.2,
+				0.7,
+				0.05,
+				3,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301106"
+		},
+		{
+			"name": "Respite By The Waters",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "After receiving a certain number of attacks from the targets, immediately uses \"Psychedelic Elegy.\"",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				5,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301107"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Thunder"
+	],
+	"summons": [
+		"403302301",
+		"403303101",
+		"4052011"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Ice",
+	"id": "405301101"
+}

@@ -1,0 +1,112 @@
+{
+	"name": "Brüchiger Bogen der Schwarzen Flut",
+	"description": "Eine Kreatur, die von der Schwarzen Flut verzerrt wurde und nur von einem unstillbaren Durst nach Blutvergießen angetrieben wird.\nMit einem Bogen, der mit einem Fluch belegt ist, kann sie Ziele gleichzeitig aus mehreren Richtungen angreifen, während sie schießt. Jedes Lebewesen, das in ihr Sichtfeld gerät, ist dazu verdammt, dem unausweichlichen Ziel ihrer Pfeile gegenüberzustehen.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032050.png",
+	"shortIcon": "Monster_4032050",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032050.png",
+	"stats": {
+		"baseAttack": 66.666664,
+		"baseDefense": 210,
+		"baseHealth": 0.465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Pfeil der bösen Flut",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403205101"
+		},
+		{
+			"name": "Ätzende Pfeilspitze",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn die LP des Ziels unter 0 fallen, wird der Schwächebruch aufgehoben und es erhält den Effekt „Geschützte Schwäche“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403205102"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032051"
+}

@@ -1,0 +1,194 @@
+{
+	"name": "{RUBY_B#はとう}波濤{RUBY_E#}の{RUBY_B#ふじん}夫人{RUBY_E#}",
+	"description": "海の娘たちは、「壊滅」の罪業によって肉体も魂も蝕まれた。虚ろに歪んだ肉体は、暗黒の日の訪れまで歌い踊る。\n暗黒の潮の残滓が過去から現在へ流れ落ちていく——\n美しき波濤よ、あなたは主君のために災厄を飲み干した。杯からこぼれたそれが、真珠化粧を汚してしまった——\nあなたは狂気の屠場、メーレと血に濡れた墓地で酔う。その唇から零れるのは、自らを悼む哀歌だろうか。",
+	"icon": "spriteoutput/monsterfigure/Monster_4053010.png",
+	"shortIcon": "Monster_4053010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4053010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "袖舞う酔気",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に少量の氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301001"
+		},
+		{
+			"name": "星の如く散るメーレ",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の氷属性ダメージを与え、高確率で味方全体の防御力と全属性耐性をダウンさせる。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				0.15,
+				2,
+				0.15
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301002"
+		},
+		{
+			"name": "客人を誘う旋律",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「波の侍女」を召喚する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301003"
+		},
+		{
+			"name": "海の賜物に耳を澄ませて",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "「共舞への渇望」状態に入り、行動するたびに「波に抱かれて」を発動する。「<u>壊滅の狂宴</u>」状態ではない場合、<u>「壊滅の狂宴」状態に入れる敵</u>を「<u>壊滅の狂宴</u>」状態にし、それぞれが受けるダメージの一部を一定ターン内に持続ダメージとして発生させる。\nアクションバーに「壊滅の狂宴」カウントダウンが表示され、カウントダウンのターンが回ってきた時、全ての敵の「<u>壊滅の狂宴</u>」状態が解除される。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301004"
+		},
+		{
+			"name": "波に抱かれて",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の氷属性ダメージを与える。「<u>壊滅の狂宴</u>」状態の時、攻撃を受けた味方に「<u>暗黒の潮の熱病</u>」を付与し、与ダメージの一部は持続ダメージとして一定ターン内に発生する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301005"
+		},
+		{
+			"name": "帆を休めよ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "一定回数の通常攻撃、戦闘スキル、必殺技、または精霊スキルを受けた後行動順が早まる。「<u>壊滅の狂宴</u>」状態中、行動順が早まるまでに必要な被攻撃回数がダウンする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301006"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301007"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Thunder"
+	],
+	"summons": [
+		"4052010"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Ice",
+	"id": "405301006"
+}

@@ -1,0 +1,230 @@
+{
+	"name": "同心の双雄・堅鎧鉄壁のホワイトガーディアン",
+	"description": "伝説のドロス強盗の双子。武芸に優れ、息の合った連携を見せる。1人が2人に勝てるわけもなく、数多くの英雄が涙を飲みながら敗れ去った。",
+	"icon": "spriteoutput/monsterfigure/Monster_4013010.png",
+	"shortIcon": "Monster_4013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4013010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1859.999814,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 110,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "滔々たる血の海に溺れよ",
+			"tag": "分担",
+			"type": "スキル",
+			"description": "「ホワイトガーディアン」と戦う味方に大量の虚数属性ダメージを与え、「被ダメージアップ」効果を付与する。このダメージと「被ダメージアップ」効果はターゲットに<u>均等に分担される</u>。フィールドにいる「タイタンの眷属」の数が多いほど、与ダメージがアップする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				1.2,
+				4,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301603"
+		},
+		{
+			"name": "黎明より夜を誅す",
+			"tag": "薙ぎ払い",
+			"type": "スキル",
+			"description": "「ホワイトガーディアン」と戦う味方に少量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301601"
+		},
+		{
+			"name": "猛々しく怒れる獅子の如く",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次の行動で「滔々たる血の海に溺れよ」を発動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301602"
+		},
+		{
+			"name": "墓地からの復活",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「タイタンの眷属」を召喚する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301604"
+		},
+		{
+			"name": "都市国家の守護者",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "一定層数の「戦鎧」を獲得し、自身の受けるダメージをダウンする。攻撃を受けた後、「戦鎧」の層数-1層。「戦鎧」が0層になると破壊され、自身に大量の虚数属性ダメージを与え、自身の行動順を遅延させる。「戦鎧」を破壊した味方はEPを回復する。「戦鎧」が破壊された後、攻撃を受ける時に追加で少量の虚数属性ダメージを受ける。自身のターンが終了する時、「戦鎧」は最大層数までリセットされる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.2,
+				0.2,
+				0.02,
+				0.15,
+				0.05,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301605"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.3,
+				0.2,
+				0.2,
+				0.1,
+				0.1,
+				0.1,
+				0.15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301606"
+		},
+		{
+			"name": "不屈の激戦",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "各段階で、自身が倒された時、行動順が遅延され、「休眠」状態に入る。次の行動時に「不屈の激戦」を発動し、一定のHPを回復して起き上がる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.75,
+				0.4,
+				0.5,
+				0.2,
+				1,
+				0.2,
+				1,
+				0.2,
+				1.5,
+				0.2,
+				1.5,
+				0.2,
+				1.5,
+				0.2,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401301607"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [
+		"4012033",
+		"4012023"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "401301601"
+}

@@ -1,0 +1,191 @@
+{
+	"name": "Cocolia",
+	"description": "Die Wächterin von Belobog und die Herrscherin über die Emporragende Zitadelle von Belobog.\nDa Cocolia eine Wächterin ist, hat sie göttliche Kräfte geerbt, dank denen sie völlige Kontrolle über das Eis hat und ihre Gegner im Kampf einfrieren kann.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004010.png",
+	"shortIcon": "Monster_1004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 750,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Kälte der knochenbrechenden Gerinnung",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401601"
+		},
+		{
+			"name": "Omen des immerwährenden Frostes",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört Eiskanten.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401602"
+		},
+		{
+			"name": "Strafe des endlosen Winters",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.75
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401603"
+		},
+		{
+			"name": "Raureif der ewigen Isolation",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu und verursacht mit hoher Chance Gefroren.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				1,
+				1.125
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401604"
+		},
+		{
+			"name": "Zorn der Heiligen des Winterlandes",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Fügt bei der nächsten Aktion allen Verbündeten „Strafe des endlosen Winters“ zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401605"
+		},
+		{
+			"name": "Widerhallendes Eis",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt eingefrorenen Verbündeten und angrenzenden Einheiten Eis-SCH zu. Entfernt zudem den Status Gefroren des Hauptziels. Wenn die angrenzenden Einheiten eingefroren sind, wird diese Fähigkeit erneut auf das Hauptziel angewendet.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.75,
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401606"
+		},
+		{
+			"name": "Verschärfende Kälte",
+			"tag": "Verstärken",
+			"type": "Talent",
+			"description": "Für jeden eingefrorenen Verbündeten wird der von diesem Gegner und seinen beschworenen Objekten verursachte SCH wenig erhöht. Der erhöhte SCH ist stapelbar.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				10,
+				1.125,
+				0.1,
+				1,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401607"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"100403103",
+		"100201510",
+		"100201610"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Ice",
+	"id": "1004016"
+}

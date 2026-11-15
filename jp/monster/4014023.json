@@ -1,0 +1,144 @@
+{
+	"name": "天罰の矛、メデイモス",
+	"description": "不敗なる者、すべての戦場の主、クレムノスと廃墟の王、\n戦車長、屍山の王座、勝利の父——\n栄光の僭主、地を裂き海を震わす雷鳴、オンパロスの守護者、\n「紛争」の神、天罰の矛、メデイモス。\n世界が従うべき将、永遠に錆びない剣戟、紛争と紛争を断つ法則。\n最も偉大なる征服者にして守護者、メデイモスを称えよ。",
+	"icon": "spriteoutput/monsterfigure/Monster_4014020.png",
+	"shortIcon": "Monster_4014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7207.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 60,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "征服されし者が見るは災いのみ",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "味方キャラ1名につき、対応する「征服か屈服か」を1体生成し、その味方キャラを「屈服」状態にする。\n「屈服」状態の味方は、回復可能な最大HPがダウンする。対応する「征服か屈服か」のHPを減らすことで、「征服か屈服か」の失ったHPの割合に応じて回復可能な最大HPがアップしていく。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402301"
+		},
+		{
+			"name": "決死の戦いに栄光を",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "すべての味方キャラに「紛争より賜りし畏怖」を付与する。「屈服」状態が解除される時、対応する「紛争より賜りし畏怖」も解除される。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402302"
+		},
+		{
+			"name": "天罰下る、軒昂たる紛争に畏敬を",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「チャンピオン、アクロポリス、紛争の主」をコントロールし、味方キャラそれぞれに最大HPの割合に応じた虚数属性ダメージを与える。この攻撃は味方の防御力を無視し、高確率で「屈服」状態の味方を禁錮状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				1.5,
+				0.3,
+				0.05,
+				0.05
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402303"
+		},
+		{
+			"name": "畏怖で潰えし軍勢、皆鎧仗と成る",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "残りの「征服か屈服か」を吸収し、「チャンピオン、アクロポリス、紛争の主」を強化する。同時に、「チャンピオン、アクロポリス、紛争の主」に靭性保護を付与し、「チャンピオン、アクロポリス、紛争の主」に付与されているすべての行動制限系デバフと弱点撃破状態を解除する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402304"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [],
+	"summons": [
+		"4014016",
+		"4012063"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "4014023"
+}

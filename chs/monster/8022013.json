@@ -1,0 +1,147 @@
+{
+	"name": "幼蛰虫",
+	"description": "真蛰虫幼体；「真蛰虫」幼体依据生长程度可被划分为「幼蛰虫」与「次蛰虫」。",
+	"icon": "spriteoutput/monsterfigure/Monster_8022010.png",
+	"shortIcon": "Monster_8022010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8022010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 27.9,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "振翅",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				0.5,
+				3,
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802201301"
+		},
+		{
+			"name": "次分裂",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "繁殖出1名自身的繁衍体，该效果在2回合后可再次触发。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802201302"
+		},
+		{
+			"name": "",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				0.08
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802201303"
+		},
+		{
+			"name": "蛰亡语",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到致命攻击时，对敌方全体造成风属性伤害，并大概率使受到攻击的敌方目标受到的伤害小幅提高。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.0005000003,
+				1,
+				0.05,
+				3,
+				10,
+				30
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802201304"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"8022013"
+	],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Wind",
+	"id": "8022013"
+}

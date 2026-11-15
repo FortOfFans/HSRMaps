@@ -1,0 +1,243 @@
+{
+	"name": "冥魂の先導者、死竜の残躯、ボリュクス（スペック）",
+	"description": "コードが影響を受けた後の正常な投影。ステュクスに眠る死竜は錬成により再び目を覚まし、腐肉を纏う朽ちた骸と化す。\nかつて「死」のタイタンだった死竜はステュクスの流れに逆らい、夢現の境を離れ、現世に漂着した。それはかつてステュクスの潮汐と共に大地に湧き、オンパロスの万物に運命の結末を刻んだ。死にかけの者も、死んだ者も、その帰還によって魂の奥底が震えることとなる。",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2092.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "無念の死を遂げた者の手招き",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "味方単体に量子属性ダメージを与える。味方の残りHPが一定割合以上の場合、このダメージは量子属性<u>「衰亡ダメージ」</u>に転換される。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.15,
+				0.8,
+				0.25
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403101"
+		},
+		{
+			"name": "長き眠りについた者への厚葬",
+			"tag": "分担",
+			"type": "スキル",
+			"description": "味方全体に大量の量子属性ダメージを与える。このダメージは味方全体で<u>均等に分担</u>される。味方の残りHPが一定割合以上の場合、このダメージは量子属性<u>「衰亡ダメージ」</u>に転換される。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.1,
+				0.8,
+				0.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403102"
+		},
+		{
+			"name": "この世を去る者への哀悼",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "ランダムな味方3人に量子属性<u>「衰亡ダメージ」</u>を与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403103"
+		},
+		{
+			"name": "苦渋より遅れた訃報",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "「憐憫の腕」を強化し、行動順を早める。3ターン継続。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403104"
+		},
+		{
+			"name": "苦しみの香りの中で死にゆく",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "<u>「死の香り」</u>状態に入り、味方全体に大量の量子属性<u>「衰亡ダメージ」</u>を与える。このダメージは<u>「非致死性」</u>である。味方全体は<u>「永遠の眠りの中」</u>状態に入る。さらに第三段階では直ちに<u>「死の香り」</u>状態に入り、すべての「憐憫の腕」を強化する。また、味方のHP割合が低い時、再び<u>「永遠の眠りの中」</u>状態に入る。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1,
+				1.2,
+				11,
+				0.25,
+				0.2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403105"
+		},
+		{
+			"name": "死は更なる死を欲する",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性<u>「衰亡ダメージ」</u>を与える。<u>「永遠の眠りの中」</u>状態の味方に追加の量子属性<u>「衰亡ダメージ」</u>を与え、同時にその行動順を遅延させ、高確率で「もつれ」状態にする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.12,
+				0.05,
+				0.5,
+				1,
+				2,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403106"
+		},
+		{
+			"name": "瀕死の夢、墨汁の如き煙",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "味方のHPが減った時、「死へと誘う泡」が溜まる。「死へと誘う泡」が上限まで溜まると自身の行動順が早まり、次の行動時に<u>「死の香り」</u>状態に入る。<u>「死の香り」</u>状態の解除時、自身はダメージを受け、味方のHPを回復させる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.6,
+				0.45,
+				1,
+				1,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403107"
+		},
+		{
+			"name": "汝、死神を振り返るな",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「ボリュクス」または「憐憫の腕」の攻撃が味方に命中した時、味方に解除不可の特殊持続ダメージ系デバフを付与する。その時の残りHPの割合が高いほど、受けるダメージが高くなるが、このダメージは<u>「非致死性」</u>である。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.36,
+				1.05,
+				0.5,
+				0.12,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403108"
+		},
+		{
+			"name": "腐敗は後を追う",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "<u>「死の香り」</u>状態では、ターン終了時に自身の与ダメージが小アップする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				0.3,
+				0.3,
+				0.08
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403109"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"4012070",
+		"4012071",
+		"4012072",
+		"4012073"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "4014031"
+}

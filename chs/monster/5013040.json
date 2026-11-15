@@ -1,0 +1,167 @@
+{
+	"name": "破晓战队•苍翼",
+	"description": "理智、冷静的代表——吗？总是做出一副处变不惊的样子，仿佛很有学问和知识，但本质是个擅长吐槽的倒霉蛋。\n「我只负责想怎么做，至于能不能做到，那是你们需要考虑的——我去，你们还真干啊。」\n划破长空！翼展如电！碧蓝的苍穹，苍翼战士！\n暗夜终尽，黎明降临！破晓战队，登场！",
+	"icon": "spriteoutput/monsterfigure/Monster_5013040.png",
+	"shortIcon": "Monster_5013040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5013040.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "破晓战刃",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501304001"
+		},
+		{
+			"name": "破晓飞轮",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				6,
+				3,
+				0.15,
+				60,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501304002"
+		},
+		{
+			"name": "破晓意志",
+			"tag": "强化",
+			"type": "技能",
+			"description": "为自身附加【破晓力场】。此状态下，破晓战队会持续施放【破晓剑影舞】，且免疫控制类负面状态，自身的韧性无法被削减，若自身受到量子属性攻击时则会立即行动。当破晓战队处于【破晓力场】状态时，受到一定次数攻击后会施放【破晓退散】。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				7,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501304003"
+		},
+		{
+			"name": "破晓剑影舞",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成大量量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501304004"
+		},
+		{
+			"name": "破晓退散",
+			"tag": "其他",
+			"type": "技能",
+			"description": "解除【破晓力场】并为自身附加【失意】，受到的伤害提高，且自身量子属性抗性降低。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.4,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501304005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.8,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Quantum",
+	"id": "5013040"
+}

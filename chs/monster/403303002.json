@@ -1,0 +1,151 @@
+{
+	"name": "黑日狮鹫",
+	"description": "遭到黑潮侵蚀的正阳狮鹫。对杀戮的渴求成为了空洞躯壳中仅存的意志。\n虽然失去了艾格勒的赐福，但黑潮中取之不竭的能量令它成为了更加恐怖的存在。",
+	"icon": "spriteoutput/monsterfigure/Monster_4033030.png",
+	"shortIcon": "Monster_4033030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4033030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "黑光透射",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对全体我方单位造成风属性伤害，被击中目标降低生命值的一部分转化为<u>【侵蚀】</u>。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.2,
+				0,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403303001"
+		},
+		{
+			"name": "永夜颁示",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤【黑日弓手】，【黑日弓手】被消灭时，会使自身损失部分生命值。【黑日弓手】不会主动行动，自身施放攻击后，所召唤的【黑日弓手】会施放一次攻击。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.7,
+				0.8,
+				0.12
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403303002"
+		},
+		{
+			"name": "日蚀预言",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入【死风将至】状态，下次行动施放【热寂颂歌】。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403303003"
+		},
+		{
+			"name": "热寂颂歌",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对全体我方单位造成风属性伤害，目标<u>【侵蚀】</u>部分的生命值越高，造成的伤害越高，并立刻失去所有<u>【侵蚀】</u>部分的生命值。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403303004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Thunder"
+	],
+	"summons": [
+		"403205002"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Wind",
+	"id": "403303002"
+}

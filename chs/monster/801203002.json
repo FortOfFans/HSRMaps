@@ -1,0 +1,112 @@
+{
+	"name": "虚卒•抹消者",
+	"description": "死亡之后遭遇裂界侵蚀的躯壳残骸，其生命体征虽发生改变，但依然在执行抹消的指令。\n虚卒•抹消者会对命中的敌人添加标记，使其在攻击中受到额外的伤害。",
+	"icon": "spriteoutput/monsterfigure/Monster_8012030.png",
+	"shortIcon": "Monster_8012030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012030.png",
+	"stats": {
+		"baseAttack": 9,
+		"baseDefense": 210,
+		"baseHealth": 334.8000558,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "虚灼炮攻",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成虚数属性伤害，同时自身陷入【超负荷】状态。受到攻击的我方目标有概率陷入【起爆】状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.75,
+				0.4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801203001"
+		},
+		{
+			"name": "热障阻塞",
+			"tag": "其他",
+			"type": "技能",
+			"description": "解除自身的【超负荷】状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 0.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801203002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111011,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 181003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "801203002"
+}

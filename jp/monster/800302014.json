@@ -1,0 +1,160 @@
+{
+	"name": "{RUBY_B#うちゅう}宇宙{RUBY_E#}からの{RUBY_B#ほのお}炎{RUBY_E#}",
+	"description": "この世界に属さない怪異なる生命体、星核がもたらした裂界より生まれ、世界の根に寄生しエネルギーを吸収する。その甲冑には星のコアが燃える様が映っている。\n戦闘中、宇宙からの炎は容易に敵を灰に燃やせる。",
+	"icon": "spriteoutput/monsterfigure/Monster_8003020.png",
+	"shortIcon": "Monster_8003020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003020.png",
+	"stats": {
+		"baseAttack": 12.000006,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "怒号の火",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302001"
+		},
+		{
+			"name": "炎摂取",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "自身を「自然発火」状態にし、その後の攻撃で「浄炎の雨」を発動できる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				60,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302002"
+		},
+		{
+			"name": "浄炎の雨",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "連続でランダムな味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				2,
+				0.5,
+				5,
+				60
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302003"
+		},
+		{
+			"name": "溶融",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "攻撃力をアップする、弱点撃破されると効果が解除される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_DOT_Burn",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800302014"
+}

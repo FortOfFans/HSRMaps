@@ -1,0 +1,243 @@
+{
+	"name": "スウォーム・{RUBY_B#しんちっちゅう}真蟄虫{RUBY_E#}",
+	"description": "成熟体の真蟄虫。博識学会のデュロワ士爵は星海を漫遊し、<unbreak>30</unbreak>巻からなる『諸界異虫記』を書いた。これまで確認された十数種類の物を食い荒らす虫の種類および星系間に存在する数えきれないほどの亜種が記されている。",
+	"icon": "spriteoutput/monsterfigure/Monster_8024010.png",
+	"shortIcon": "Monster_8024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8024010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1674,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "蟲のブレス",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の風属性ダメージを与え、高確率で攻撃を受けた味方を2層の風化状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				2,
+				0.5,
+				3,
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401101"
+		},
+		{
+			"name": "戦争兵器",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の風属性ダメージを与える。攻撃を受けたターゲットが風化状態であった場合、風化ダメージを1回与える。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401102"
+		},
+		{
+			"name": "ハリケーン",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401103"
+		},
+		{
+			"name": "増殖",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "真蟄虫の群れを増やす。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401104"
+		},
+		{
+			"name": "強襲準備",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次の行動で「スウォーム強襲」を発動する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401105"
+		},
+		{
+			"name": "スウォーム強襲",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "フィールド上のすべての真蟄虫の群れの行動制限系デバフと弱点撃破状態を解除し、味方に風属性ダメージを与え、攻撃を受けるたびに1層の風化状態に陥るようにする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1.8,
+				1,
+				2,
+				1,
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401106"
+		},
+		{
+			"name": "スウォーム強襲",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "フィールド上のすべての真蟄虫の群れの行動制限系デバフと弱点撃破状態を解除し、味方に風属性ダメージを与え、攻撃を受けるたびに1層の風化状態に陥るようにする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401107"
+		},
+		{
+			"name": "継承フェロモン",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "フィールド上に真蟄虫の群れが1つ増えるごとに、すべての真蟄虫の群れがダメージアップを1層獲得する。フィールド上では1つの「継承フェロモン」のみが効果を発揮する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.08,
+				0.08
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401108"
+		},
+		{
+			"name": "虫の断末魔",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受けた時、敵全体に風属性ダメージを与え、高い確率で攻撃を受けた敵の被ダメージを少しアップさせる。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				2,
+				0.1,
+				3,
+				10,
+				30
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401109"
+		},
+		{
+			"name": "",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401110"
+		},
+		{
+			"name": "増殖",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "真蟄虫の群れを増やす。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401111"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"8022010",
+		"802202002",
+		"8022010"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Wind",
+	"id": "802401103"
+}

@@ -1,0 +1,164 @@
+{
+	"name": "Embryo der Philosophie: Manie",
+	"description": "Ein neuer Spross / erblüht im faulenden Schlamm der Vergangenheit. / Das Universum! Das Universum zersplitterte zu einem Kaleidoskop! / Seine scharfen Splitter fallen in meine Augen. / Wird jeder Splitter Wahnsinn genannt?",
+	"icon": "spriteoutput/monsterfigure/Monster_5035020.png",
+	"shortIcon": "Monster_5035020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5035020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 93000,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1200,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "Höhnisches Lachen des gefallenen Arcadia",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Erhält <u>Manische Punkte</u> und fügt anschließend allen Verbündeten Quanten-SCH zu. Befindet diese Einheit sich bereits im Status „Kraft der Unbeständigkeit“, wird der durch diese Fähigkeit verursachte SCH erhöht.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				6,
+				20
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502001"
+		},
+		{
+			"name": "Totgeborener Schrei",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Erhält eine große Menge <u>Manische Punkte</u> und tritt in den Status „Kraft der Unbeständigkeit“ ein. Befindet sich diese Einheit bereits im Status Kraft der Unbeständigkeit, versetzt sie sich in den Status „Urchaos“ und setzt bei der nächsten Aktion „Wahnwitzige Farce“ ein.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				50,
+				50,
+				50,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502002"
+		},
+		{
+			"name": "Wahnwitzige Farce",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Erhält <u>Manische Punkte</u>, fügt anschließend allen Verbündeten massiven Quanten-SCH zu und reduziert ihre Energie.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.3,
+				20
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502003"
+		},
+		{
+			"name": "Maß der Komik",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn die <u>Manischen Punkte</u> die Anzahl der <u>Lachpunkte</u> der Verbündeten übersteigt, wird die Aktion dieser Einheit vorgezogen und der Status <u>Manie</u> ausgelöst. Wenn die Anzahl der <u>Lachpunkte</u> der Verbündeten die <u>Manischen Punkte</u> übersteigt, wird die Aktion aller Verbündeten vorgezogen und sie treten in den Status <u>Heiterkeit</u> ein.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.0029999998,
+				66,
+				0.08,
+				0.08,
+				0.06,
+				0.5,
+				0.5,
+				0.02,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502004"
+		},
+		{
+			"name": "Grundloser Lärm",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Nach jedem Verlust eines bestimmten prozentualen Anteils an LP wird sofort „Totgeborener Schrei“ eingesetzt. Befindet sich diese Einheit bereits im Status „Urchaos“, wird sofort „Wahnwitzige Farce“ eingesetzt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.35,
+				0.35,
+				0.9,
+				0.98,
+				0.85
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503502005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Quantum",
+	"id": "5035020"
+}

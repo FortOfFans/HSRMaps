@@ -1,0 +1,604 @@
+{
+	"name": "芒寒色正的银骑士",
+	"description": "「纯美骑士团」的古典骑士，虔诚地仰慕着已失踪的「纯美」星神伊德莉拉。\n为人正直、光明磊落，于宇宙中漫游，宣扬伊德莉拉美名。",
+	"icon": "spriteoutput/monsterfigure/Monster_3024010.png",
+	"shortIcon": "Monster_3024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3024010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 5812.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 810,
+		"speed": 105,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "虔诚",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.6
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401301"
+		},
+		{
+			"name": "渐臻虔诚",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401302"
+		},
+		{
+			"name": "",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.5,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401303"
+		},
+		{
+			"name": "",
+			"tag": "强化",
+			"type": "技能",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401304"
+		},
+		{
+			"name": "纯美的勇气赞歌",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 10,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401305"
+		},
+		{
+			"name": "",
+			"tag": "强化",
+			"type": "技能",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401306"
+		},
+		{
+			"name": "",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401307"
+		},
+		{
+			"name": "",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401308"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.12
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401310"
+		},
+		{
+			"name": "枪之召唤",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤4个【枪尖】的雕塑。如果场上已经存在4个【枪尖】的雕塑，则会施放【枪之横扫】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.5,
+				0.7,
+				0.75
+			],
+			"spGain": 15,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401311"
+		},
+		{
+			"name": "盾之召唤",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤4个【盾】的雕塑。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.7,
+				0.75,
+				1
+			],
+			"spGain": 10,
+			"delay": 1.75,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401312"
+		},
+		{
+			"name": "授勋云集",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤4个【授勋】的雕塑。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.75,
+				1,
+				1.25,
+				1.25
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401313"
+		},
+		{
+			"name": "枪之横扫",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "释放【枪尖】的雕塑中的力量，对我方全体造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				10
+			],
+			"spGain": 40,
+			"delay": 1.6,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401314"
+		},
+		{
+			"name": "盾之奉还",
+			"tag": "强化",
+			"type": "技能",
+			"description": "释放【盾】的雕塑中的力量，命令【盾】的雕塑嘲讽对位我方角色，并根据目标调整自身弱点属性。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1.75,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401315"
+		},
+		{
+			"name": "授勋之力",
+			"tag": "强化",
+			"type": "技能",
+			"description": "进入不可选中状态，下次行动时释放【不可抵挡的命运】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401316"
+		},
+		{
+			"name": "灵魂回收",
+			"tag": "强化",
+			"type": "技能",
+			"description": "收回所有雕塑中的【灵魂释放】，并基于【灵魂释放】的数量强化自身，持续1回合。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.08
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401317"
+		},
+		{
+			"name": "灵魂释放",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "芒寒色正的银骑士会为召唤的雕塑施加【灵魂释放】，被施加的单位被消灭时，会为我方全体附加【灵魂强化】，提高造成的伤害；如果被芒寒色正的银骑士回收，则会提高芒寒色正的银骑士本回合造成的伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401318"
+		},
+		{
+			"name": "不可抵挡的命运",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成物理属性伤害。每有一层【桂冠】，额外追加一次物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401319"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401320"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401321"
+		},
+		{
+			"name": "破竹之势",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "芒寒色正的银骑士受到的伤害大幅降低，但在被弱点击破后，行动额外延后，受到的伤害额外提高，同时使我方全体恢复战技点并激活终结技。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401322"
+		},
+		{
+			"name": "攻守易型",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "芒寒色正的银骑士会在战斗中切换自身<u>战斗姿态</u>，召唤不同雕塑进行战斗；我方消灭【灵魂释放】状态的雕塑时，会使本次战斗中我方全体造成的伤害提高。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0.1,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401323"
+		},
+		{
+			"name": "绝境逆转",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "芒寒色正的银骑士二阶段释放【灵魂释放】时，会选择所有雕塑作为目标。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401324"
+		},
+		{
+			"name": "众星拱卫",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "除芒寒色正的银骑士外，每多存在1个敌方单位，敌方全体受到的伤害降低，造成的伤害提高。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0.03
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401325"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302401326"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [
+		"3021022",
+		"3021032",
+		"3021042"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100201",
+				"name": "坚防守备",
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"id": "100202",
+				"name": "攻守易型",
+				"description": "首领幻影会在战斗中切换自身<color=#f29e38ff><u>战斗姿态</u></color>，召唤不同雕塑进行战斗；我方消灭处于【灵魂释放】状态的雕塑时，会使本次战斗中我方全体造成的伤害提高。",
+				"params": []
+			},
+			{
+				"id": "100203",
+				"name": "绝境逆转",
+				"description": "首领幻影第二阶段施加【灵魂释放】时，会选择<color=#f29e38ff>所有</color>雕塑作为目标。",
+				"params": []
+			},
+			{
+				"id": "100204",
+				"name": "众星拱卫",
+				"description": "除首领幻影外，每多存在1个<color=#f29e38ff>敌方单位</color>，敌方全体受到的伤害降低，造成的伤害提高。",
+				"params": [
+					0.25
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10021",
+				"name": "阶段一：攻防之势",
+				"description": "首领幻影会召唤【枪尖】或【盾】两种召唤物。",
+				"answer": "应对策略：优先消灭被强化的召唤物以削弱首领幻影。",
+				"skills": [
+					{
+						"id": "100211",
+						"type": "Normal",
+						"name": "应对【枪尖】召唤物的伤害",
+						"texts": [
+							{
+								"description": "消灭被强化的【枪尖】召唤物以强化我方并削弱首领幻影。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100212",
+						"type": "Normal",
+						"name": "应对【盾】召唤物在场时，首领幻影造成的群体伤害",
+						"texts": [
+							{
+								"description": "消灭【盾】召唤物以获得护盾，可以有效降低生存压力。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10022",
+				"name": "阶段二：荣誉之战",
+				"description": "首领幻影会额外召唤【授勋】召唤物。",
+				"answer": "应对策略：优先消灭被强化的召唤物以削弱首领幻影。",
+				"skills": [
+					{
+						"id": "100221",
+						"type": "Normal",
+						"name": "应对【授勋】召唤物在场时，首领幻影的不可选中状态",
+						"texts": [
+							{
+								"description": "在【授勋】召唤物在场情况下，首领幻影会进入不可选中状态，将在下次行动或所有【授勋】召唤物被消灭后转为可选中状态。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100222",
+						"type": "Normal",
+						"name": "应对首领幻影施放【不可抵挡的命运】造成的大量伤害",
+						"texts": [
+							{
+								"description": "消灭或击破【授勋】召唤物以降低首领幻影施放【不可抵挡的命运】造成的伤害。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"description": "处于【灵魂释放】状态的<color=#f29e38ff>召唤物</color>会得到大幅强化。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "<color=#f29e38ff>击破</color>首领幻影会大幅提高其受到的伤害，使我方全体恢复战技点并行动提前。",
+				"params": []
+			},
+			{
+				"description": "优先消灭或击破<color=#f29e38ff>召唤物</color>，可以有效削弱首领幻影。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "302401301"
+}

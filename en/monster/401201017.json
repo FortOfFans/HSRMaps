@@ -1,0 +1,120 @@
+{
+	"name": "Furiae Warrior",
+	"description": "A Titankin sculpted by \"Strife.\" They are infused with Nikador's golden ichor. Their robust bodies are the shields of the army, and they use their stony corpus to cut off their foes, while their powerful limbs carry rations across the battlefield. They are also used as sparring partners by the soldiers of Kremnos.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012010.png",
+	"shortIcon": "Monster_4012010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 241.8,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Collision of the Third Orbit",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to one designated target. When \"War Armor\" stacks are not 0 on this unit, there is a chance to inflict \"Reverberation\" on the target. When this unit has 0 \"War Armor\" stacks, inflict \"Reverberation\" on this unit.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.4,
+				1,
+				0.4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401201001"
+		},
+		{
+			"name": "Polis Protector",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Possesses a number of \"War Armor\" stacks, which decreases DMG taken. Loses 1 stack of \"War Armor\" on this unit after being attacked. When at 0 stacks, \"War Armor\" will be destroyed, dealing massive Imaginary DMG to this unit and delaying their action. The target that destroyed \"War Armor\" will regenerate Energy. After \"War Armor\" is destroyed, this unit will also additionally take minor Imaginary DMG when attacked. \"War Armor\" will be restored to maximum stacks at the end of this unit's turn.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3,
+				0.1,
+				0.1,
+				0.06,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401201002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "401201017"
+}

@@ -1,0 +1,367 @@
+{
+	"name": "含辛茹苦的列车长",
+	"description": "谁能驾驭星穹列车的洪荒之力？！失控的帕姆变成了「合金机铠•帕姆王」。\n帕姆王是一台对干净整洁极为执着的强大机铠，按照它的标准，这里不干净了，必须进行全！面！打！扫！帕！",
+	"icon": "spriteoutput/monsterfigure/Monster_5014020.png",
+	"shortIcon": "Monster_5014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5014020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 32550,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1200,
+		"speed": 134,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "灵魂修正剪",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成少量量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402401"
+		},
+		{
+			"name": "高温消毒模式",
+			"tag": "强化",
+			"type": "技能",
+			"description": "进入【蒸汽洗涤】状态，使自身造成的伤害提高，并获得一定层数的【长效抗菌】效果，使自身受到的伤害降低。【长效抗菌】效果被全部移除时，退出【蒸汽洗涤】状态并受到大量伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				2,
+				0.44,
+				0.1,
+				4,
+				0.22
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402403"
+		},
+		{
+			"name": "无死角洗涤",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成量子属性伤害，并使我方获得<u>笑点</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402402"
+		},
+		{
+			"name": "强效肥皂泡",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成量子属性伤害并施加【<u>劳动最快乐！</u>】效果，同时使我方获得<u>笑点</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				0.02,
+				5,
+				2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402404"
+		},
+		{
+			"name": "值日准备中…",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入【摩拳擦掌】状态，获得【弱点无效】效果，下次行动时施放【饱和式大扫除！】。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402405"
+		},
+		{
+			"name": "饱和式大扫除！",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成大量量子属性伤害，并使我方获得<u>笑点</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				5,
+				8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402406"
+		},
+		{
+			"name": "洗地机之乱",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "每个阶段开始时【会场秩序维持】会为敌我双方召唤增援。我方每获得1个笑点时我方的「合金保姆」积累1点充能值，充能值达到<unbreak>1[i]</unbreak>时可施放强化普攻移除1层【含辛茹苦的列车长】的【长效抗菌】效果，并可无视【弱点无效】效果强制削减韧性。我方的「合金保姆」最多存在1个，且不会被敌我双方选中。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				80,
+				0,
+				0,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402408"
+		},
+		{
+			"name": "创新漂白液",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【破晓战队】处于【破晓力场】状态时，【含辛茹苦的列车长】会获得与该名【破晓战队】成员同属性的【伤害免疫】效果，同时获得【弱点无效】效果。任意【破晓战队】成员被我方目标消灭时，我方「合金保姆」立即获得1个可施放强化普攻的额外回合。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1.75,
+				1.2,
+				0.3,
+				0.6,
+				0.9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402409"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402411"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402415"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501402414"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"5013052",
+		"5013072",
+		"5013042",
+		"5013062"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 2,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101801",
+				"name": "坚防守备",
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101802",
+				"name": "至臻友情",
+				"description": "【破晓战队】被召唤时立即施放【破晓意志】进入【破晓力场】状态。【破晓战队】处于【破晓力场】状态时，首领幻影获得与该名【破晓战队】成员同属性的<color=#f29e38ff>【伤害免疫】</color>效果，并获得<color=#f29e38ff>【弱点无效】</color>效果。",
+				"params": []
+			},
+			{
+				"id": "101803",
+				"name": "不动如山",
+				"description": "【破晓战队】退出【破晓力场】所需的攻击次数提高。",
+				"params": []
+			},
+			{
+				"id": "101804",
+				"name": "坚不可摧",
+				"description": "【破晓战队】处于【破晓力场】状态时，受到的伤害大幅降低。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10181",
+				"name": "含辛茹苦的列车长",
+				"description": "【破晓战队】被召唤时立即施放【破晓意志】进入【破晓力场】状态。【破晓战队】处于【破晓力场】状态时，首领幻影获得与该名【破晓战队】成员同属性的<color=#f29e38ff>【伤害免疫】</color>效果，并获得<color=#f29e38ff>【弱点无效】</color>效果。",
+				"answer": "应对策略：造成<color=#f29e38ff>欢愉伤害</color>可使【破晓战队】更快退出【破晓力场】状态。",
+				"skills": [
+					{
+						"id": "101811",
+						"type": "Normal",
+						"name": "如何高效削减首领幻影的韧性",
+						"texts": [
+							{
+								"description": "我方「合金保姆」的强化普攻可无视首领幻影的【弱点无效】效果，强制削减韧性。获得笑点可使我方「合金保姆」获得更多可施放强化普攻的额外回合。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101812",
+						"type": "Normal",
+						"name": "如何解除首领幻影的【伤害免疫】",
+						"texts": [
+							{
+								"description": "造成欢愉伤害可更快解除【破晓战队】的【破晓力场】和首领幻影的【伤害免疫】效果。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "【破晓战队】被召唤时立即施放【破晓意志】进入【破晓力场】状态。【破晓战队】处于【破晓力场】状态时，首领幻影获得与该名【破晓战队】成员同属性的<color=#f29e38ff>【伤害免疫】</color>效果，并获得<color=#f29e38ff>【弱点无效】</color>效果。造成<color=#f29e38ff>欢愉伤害</color>可使【破晓战队】更快退出【破晓力场】状态。",
+				"params": []
+			},
+			{
+				"description": "任意【破晓战队】成员被我方目标消灭时，我方「合金保姆」立即获得1个可施放强化普攻的额外回合。我方「合金保姆」对首领幻影施放强化普攻时，可<color=#f29e38ff>无视其【弱点无效】</color>效果，强制削减韧性。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "<color=#f29e38ff>获得笑点</color>可加速充能我方「合金保姆」，我方「合金保姆」的强化普攻可解除首领幻影的伤害减免效果，并削减首领幻影的韧性。",
+				"params": []
+			},
+			{
+				"description": "造成<color=#f29e38ff>欢愉伤害</color>可使【破晓战队】更快退出【破晓力场】状态。",
+				"params": []
+			},
+			{
+				"description": "消灭任意<color=#f29e38ff>【破晓战队】</color>成员可使我方「合金保姆」立即获得1个可施放强化普攻的额外回合。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "501402402"
+}

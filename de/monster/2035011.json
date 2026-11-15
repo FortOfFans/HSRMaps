@@ -1,0 +1,231 @@
+{
+	"name": "Schatten Feixiaos",
+	"description": "Hoolay, der den karminroten Mond benutzt hat, um dem Tod zu entgehen, hat sich in der Gestalt von Feixiao manifestiert und steht ihr wie in einem Spiegel gegenüber.",
+	"icon": "spriteoutput/monsterfigure/Monster_2033020.png",
+	"shortIcon": "Monster_2033020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2035010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 4650,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 108,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "Speerklinge: Schwertzahn",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Wind-SCH zu.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203501101"
+		},
+		{
+			"name": "Großaxt: Eisenklaue",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Wind-SCH zu und verursacht mit hoher Chance <u>Schwächung</u>.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				0.2,
+				1,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203501102"
+		},
+		{
+			"name": "Himmlische Verpflichtung",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Verstärkt sich selbst und gewinnt eine zusätzliche Aktion.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				5,
+				3.8,
+				0.5,
+				1,
+				1
+			],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203501103"
+		},
+		{
+			"name": "Gewandet in Gewitter",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Resoniert mit allen Teilen der Inneren Bestie des Finstermonds und hebt den Schwächebruch auf. Diese Einheit kann vor ihrer nächsten Aktion nicht angegriffen werden. Bei der nächsten Aktion setzt diese Einheit „Streife den Himmel, verschlinge die Erde“ auf alle Verbündeten ein.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1.75
+			],
+			"spGain": 0,
+			"delay": 1.75,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203501104"
+		},
+		{
+			"name": "Streife den Himmel, verschlinge die Erde",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Wind-SCH zu und verstärkt diese Einheit basierend auf der Anzahl der Teile, die sich nicht im Schwächebruch befinden. Für jedes dieser Teile wird der von dieser Fähigkeit verursachte SCH erhöht und die Fähigkeit verstärkt diese Teile.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				4,
+				3,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203501105"
+		},
+		{
+			"name": "Vorbeiziehender Sturm",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Wind-SCH zu.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203501106"
+		},
+		{
+			"name": "Gemeinsamer Bestienangriff",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Die zusätzliche Aktion von Schatten Feixiaos resoniert mit den Teilen der Inneren Bestie des Finstermonds. Die Resonanz stellt eine bestimmte Menge des WDS der Bestie wieder her und erhöht bei erlittenen Angriffen gleichzeitig den reduzierten WDS. Die nächste Aktion wird verstärkt. Resonanz mit Haupt des Wolkenverschlingers hat eine hohe Chance, alle Verbündeten mit <u>Empörung</u> zu belegen. Resonanz mit Dimensionszerfetzende Klauen erhöht zusätzlich den SCH stark. Resonanz mit Entstaubender Schweif hat eine hohe Chance, allen Verbündeten <u>Schwächung</u> zuzufügen.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				120,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203501107"
+		},
+		{
+			"name": "Schutz",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Tritt in den Status „Schutz“ ein und reduziert erlittenen SCH, solange die Einheit sich nicht im Status Schwächebruch befindet. Wenn die Einheit Schwächebruch erleidet, werden ihre Aktionen zusätzlich verzögert und der erlittene SCH erhöht.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.75,
+				0.5,
+				1.3,
+				1.1,
+				0.8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203501108"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1.5,
+				2,
+				2,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203501109"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Quantum"
+	],
+	"summons": [
+		"2033021"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Wind",
+	"id": "2035011"
+}

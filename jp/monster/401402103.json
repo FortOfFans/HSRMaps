@@ -1,0 +1,138 @@
+{
+	"name": "与えし者、千軍の首、天罰の矛",
+	"description": "不敗なる者、すべての戦場の主、クレムノスと廃墟の王、\n戦車長、屍山の王座、勝利の父——\n栄光の僭主、地を裂き海を震わす雷鳴雷、オンパロスの守護者、\n「紛争」の神、天罰の矛、ニカドリー。\n世界が従うべき将、永遠に錆びない剣戟、紛争と紛争を断つ法則。\n最も偉大なる征服者にして守護者、ニカドリーを称えよ。",
+	"icon": "spriteoutput/monsterfigure/Monster_4014020.png",
+	"shortIcon": "Monster_4014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 5580,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 60,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "征服されるか、死ぬか",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "「征服されし者」を4体召喚する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				9,
+				0,
+				0.35,
+				1,
+				0.5,
+				0.03,
+				120,
+				15,
+				1,
+				1,
+				0.5,
+				720,
+				0.02,
+				0.02,
+				120
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402101"
+		},
+		{
+			"name": "天罰下る、軒昂たる紛争に畏敬を",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「戦乱に明け暮れる常勝軍」を操り、味方全体に大量の虚数属性ダメージを与える。フィールド上にいる<u>「百錬戦鎧」</u>が破壊されていない「征服されし者」の数に応じて、このスキルのダメージ倍率がアップする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				1
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402103"
+		},
+		{
+			"name": "畏怖で潰えし軍勢、皆鎧仗と成る",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "残りの「征服されし者」を吸収し、「戦乱に明け暮れる常勝軍」にかかっている行動制限系デバフを解除する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402104"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [],
+	"summons": [
+		"401206103"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "401402103"
+}

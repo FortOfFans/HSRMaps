@@ -1,0 +1,198 @@
+{
+	"name": "Eisiger Streuner",
+	"description": "Eine Maschineneinheit, die das Fragmentum durchstreift. Dieses Monster wurde zweifelsohne durch die bösen Kräfte des Fragmentums und nicht mithilfe der Technologie der Menschen erschaffen.\nEisige Streuner locken Immerwinter-Schattenwandler an und verringern die GES und den Eis-WDS ihrer Gegner.",
+	"icon": "spriteoutput/monsterfigure/Monster_1023020.png",
+	"shortIcon": "Monster_1023020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1023020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1116,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Eisrad-Faust",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302001"
+		},
+		{
+			"name": "Anderling beschwören",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Immerwinter-Schattenwandler“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302005"
+		},
+		{
+			"name": "Gefrorener Sturm",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Eis-SCH zu und hat eine hohe Chance, bei ihnen Tiefgefroren zu verursachen.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.12,
+				0.2,
+				1,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302006"
+		},
+		{
+			"name": "Anderling verschlingen",
+			"tag": "Anvisieren",
+			"type": "Fähigkeit",
+			"description": "Verschlingt 1 Immerwinter-Schattenwandler, um den ANG zu erhöhen und einen Verbündeten anzuvisieren. Wenn sich keine Immerwinter-Schattenwandler auf dem Kampffeld befinden, wird die VTD reduziert.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302007"
+		},
+		{
+			"name": "Anderling verschlingen",
+			"tag": "Anvisieren",
+			"type": "Fähigkeit",
+			"description": "Verschlingt 1 Immerwinter-Schattenwandler, um den ANG zu erhöhen und einen Verbündeten anzuvisieren. Wenn sich keine Immerwinter-Schattenwandler auf dem Kampffeld befinden, wird die VTD reduziert.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302008"
+		},
+		{
+			"name": "Eisrad-Brecher",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu und hat eine hohe Chance, Tiefgefroren zu verursachen.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302009"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302010"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"102201002"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 182006,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "1023020"
+}

@@ -1,0 +1,170 @@
+{
+	"name": "火花からの「プレゼント」",
+	"description": "踊れ！歌え！戦え！「火花大会」が始まる前に、観客席を盛り上げよう！",
+	"icon": "spriteoutput/monsterfigure/Monster_5013030.png",
+	"shortIcon": "Monster_5013030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5013030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1488,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "妙手",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303001"
+		},
+		{
+			"name": "色塗り",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与え、<u>「絵具」</u>を1消費して対応する属性の付加ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303002"
+		},
+		{
+			"name": "彩色乱舞",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与え、<u>「絵具」</u>を1消費して対応する属性の付加ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303003"
+		},
+		{
+			"name": "パレット氾濫",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与え、残りの<u>「絵具」</u>をすべて消費して対応する属性の付加ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303004"
+		},
+		{
+			"name": "色飽和",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "<u>「無色」</u>状態で味方からの攻撃を受けた後、攻撃者の属性に応じて<u>「絵具」</u>を1獲得する。攻撃を受ける時に愉悦ダメージを受けた場合、さらに一定数の<u>「絵具」</u>を獲得する。\n<u>「絵具」</u>が6に達した時、<u>「色彩」</u>状態になる。\n<u>「無色」</u>状態の間、靭性は1を下回らない。\n全属性耐性がアップし、弱点撃破された時に解除される。弱点撃破状態から回復した時に再び獲得する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				0.6,
+				1,
+				0.03,
+				0.5,
+				1,
+				2,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303005"
+		},
+		{
+			"name": "色弁別閾値",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "<u>「絵具」</u>を消費して味方に付加ダメージを与える時、ターゲットの属性と付加ダメージの属性が異なる場合、その付加ダメージがアップする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303006"
+		},
+		{
+			"name": "カラーアート",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "<u>「色彩」</u>状態になると、現在最も多い種類の<u>「絵具」</u>の数に応じて味方が<u>爆笑ネタ</u>を獲得する。獲得済みの<u>「絵具」</u>の種類に応じて、対応する属性の弱点を付与され、対応する属性耐性がダウンする。\n<u>「色彩」</u>状態でターン終了時、すべての<u>「絵具」</u>を消費している場合、<u>「無色」</u>状態になる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501303007"
+		}
+	],
+	"resistance": [],
+	"debuffResist": [],
+	"weakness": [],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "501303002"
+}

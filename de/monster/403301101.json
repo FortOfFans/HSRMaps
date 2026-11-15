@@ -1,0 +1,224 @@
+{
+	"name": "Verderbender Schattengeist: Überwältigender Fäulnisbringer",
+	"description": "Eine durch die Schwarze Flut entstandene verzerrte Schöpfung, getrieben von einem unstillbaren Durst nach Blutvergießen. Da sie nun über immense Macht verfügt, kann sie niemand mehr aufhalten.",
+	"icon": "spriteoutput/monsterfigure/Monster_4033010.png",
+	"shortIcon": "Monster_4033010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4033010.png",
+	"stats": {
+		"baseAttack": 105.882336,
+		"baseDefense": 210,
+		"baseHealth": 93,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 210,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Verrottender Verfall",
+			"tag": "Abpraller",
+			"type": "Fähigkeit",
+			"description": "Fügt einem zufälligen Verbündeten kontinuierlich physischen SCH zu. Je höher die LP des Ziels, desto höher der verursachte SCH.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301102"
+		},
+		{
+			"name": "Turbulente Strömung",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Tatsächlichen SCH basierend auf den max. LP des Ziels zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.9
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301105"
+		},
+		{
+			"name": "Zerfallener Erdrutsch",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu. Je höher die LP des Ziels, desto höher der verursachte SCH.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301101"
+		},
+		{
+			"name": "Herzmarkkorrosion",
+			"tag": "Unterstützung",
+			"type": "Fähigkeit",
+			"description": "Versetzt Verbündete und Gegner in den Status „Überladbar“. Einheiten mit dem Status Überladbar wandeln den SCH, der ihre aktuellen LP übersteigt, in <u>„LP-Überladung“</u> um und werden dadurch nicht handlungsunfähig. Gleichzeitig erscheint in der Aktionsreihenfolge „Überladungsausgleich“. Wenn die Aktion Überladungsausgleich auf der Aktionsleiste ausgeführt wird, wird eine LP-Berechnung ausgeführt. Einheiten, deren LP auf unter 0 liegen, erleiden tödlichen Schaden. Der Überladungsausgleich wird schneller, wenn die Anzahl der gegnerischen beschworenen Objekte abnimmt, und wird entfernt, wenn alle gegnerischen beschworenen Objekte beseitigt sind.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.25,
+				8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301103"
+		},
+		{
+			"name": "Absorbierter Schmutz",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Für jedes Ziel, dessen LP momentan unter 0 sind, wird der von „Verderbender Schattengeist“ verursachte SCH erhöht.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.03,
+				0.5,
+				0.99
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301106"
+		},
+		{
+			"name": "Einbruch der Schwarzen Flut",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört eine „Kreatur der Schwarzen Flut“. Solange noch nicht alle Kreaturen der Schwarzen Flut besiegt wurden, erleiden alle Gegner weniger SCH.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.5,
+				1.25,
+				1.75,
+				3,
+				6,
+				8,
+				8,
+				8,
+				8,
+				8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301107"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.99,
+				0.99,
+				0.99,
+				0.99,
+				0.99,
+				0.99
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301108"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"4032011",
+		"4032031",
+		"4032041",
+		"4032051"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "403301101"
+}

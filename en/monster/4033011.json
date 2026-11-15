@@ -1,0 +1,224 @@
+{
+	"name": "Corrupting Shadowfiend: Torrential Rotbringer",
+	"description": "A creature warped by the black tide, driven solely by an insatiable thirst for bloodshed. Having now acquired immense power, none can stand in its way.",
+	"icon": "spriteoutput/monsterfigure/Monster_4033010.png",
+	"shortIcon": "Monster_4033010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4033010.png",
+	"stats": {
+		"baseAttack": 72,
+		"baseDefense": 210,
+		"baseHealth": 93,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 210,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Shredding Landslide",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to one designated target. The higher the target's HP, the higher the DMG dealt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301101"
+		},
+		{
+			"name": "Descending Decay",
+			"tag": "Bounce",
+			"type": "Ability",
+			"description": "Consecutively deals Physical DMG to one random target. The higher the target's HP, the higher the DMG dealt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301102"
+		},
+		{
+			"name": "Heartmarrow Corrosion",
+			"tag": "Support",
+			"type": "Ability",
+			"description": "Applies the \"Overloadable\" state to all friendly and non-friendly targets (except this unit). When units are in the \"Overloadable\" state, they will convert DMG taken that exceeds their current HP to <u>\"HP Overload,\"</u> and will not be knocked down because of this. At the same time, \"Overload Settlement\" will appear on the Action Order. When \"Overload Settlement\" takes action, HP will be finalized and units with HP below 0 will take fatal damage. \"Overload Settlement\" will increase in SPD as the number of friendly summons decreases. When all friendly summons have been defeated, \"Overload Settlement\" is removed.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.25,
+				8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301103"
+		},
+		{
+			"name": "Torrential Surge",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals True DMG to all targets based on the target's Max HP.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.9
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301105"
+		},
+		{
+			"name": "Absorb Impurity",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "For each target with current HP below 0, increases DMG dealt by \"Corrupting Shadowfiend.\"",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.03,
+				0.5,
+				0.99
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301106"
+		},
+		{
+			"name": "Black Tide Inrush",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons \"Black Tide Creature.\" When there are \"Black Tide Creatures\" that are still undefeated, reduces DMG taken by all friendly units.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.5,
+				1.25,
+				1.75,
+				3,
+				6,
+				8,
+				8,
+				8,
+				8,
+				8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301107"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.99,
+				0.99,
+				0.99,
+				0.99,
+				0.99,
+				0.99
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403301108"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"4032011",
+		"4032031",
+		"4032041",
+		"4032051"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "4033011"
+}

@@ -1,0 +1,201 @@
+{
+	"name": "極楽顛倒・邪願蓮主",
+	"description": "満願テレビの局長であり、二相楽園に持ち込まれた倏忽の血肉とひとつになった姿。\n<unbreak>15</unbreak>年前の幻月遊儀で、「死告魔」と呼ばれる連続殺人鬼が世間に甚大な被害をもたらした。彼の凶行により多くの人が親や兄弟、同級生を失ったのである。\n肉体の傷は癒やせても、心と魂の傷が埋まることは永遠にない。人々は「被害者の会」を結成し、その痛みを癒やそうとした。\n満願は「ハッピー・オペ」を改良した。これを受ければ誰もが永遠に痛みを忘れ、幸せでいられるのだ。しかしその手術の源こそ、倏忽の血肉の欠片であった。\n<unbreak>15</unbreak>年の歳月が流れ、「被害者の会」は「ハッピースマイル研究会」という巨大組織へと変貌を遂げる。この簡単で小さな手術は、整形や医療行為などを通じて、二相楽園の無数の人々に広まり、倏忽の細胞は人々の中で眠ることとなった。\nハッピースマイル研究会の会長である満願は、死告魔を生み出した幻月遊儀を憎んでいる。そして、この世界に復讐するために「極楽顛倒・邪願蓮主」と化したのだ。",
+	"icon": "spriteoutput/monsterfigure/Monster_5024010.png",
+	"shortIcon": "Monster_5024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5024010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7672.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "裂空の刺蕊",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401401"
+		},
+		{
+			"name": "凶夢吸収",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "<u>「幸福」</u>または<u>「幸福傀儡」</u>効果を持つすべての味方のHPを吸収し、自身のHPに転換する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.005
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401403"
+		},
+		{
+			"name": "邪願散華",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "ランダムな味方複数のキャラに雷属性ダメージを与え、<u>「幸福」</u>効果を付与する。ターン終了時、<u>「幸福」</u>が<unbreak>2[i]</unbreak>層に達すると、対象を<u>「幸福傀儡」</u>に転換する。<u>「幸福」</u>が0層になると、<u>「幸福」</u>を解除し、<u>「顛倒離断」</u>効果を付与する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				6,
+				3,
+				2,
+				2,
+				0.25,
+				0.75,
+				0.8,
+				2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401404"
+		},
+		{
+			"name": "未開",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次のターンで「極楽の抱擁」を発動する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401405"
+		},
+		{
+			"name": "極楽の抱擁",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方キャラ全体に大量の雷属性ダメージを与え、自身が<u>「邪笑」</u>状態の場合、すべてのターゲットに<u>「幸福傀儡」</u>状態を付与する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				6,
+				1,
+				2,
+				2,
+				0.1,
+				10
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401406"
+		},
+		{
+			"name": "止笑",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "一定数の敵を倒した後、「止笑」が発動する。敵全体の受けるダメージがアップし、「極楽顛倒・邪願蓮主」の<u>「邪笑」</u>効果を解除する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				6,
+				0.2,
+				5,
+				0.1,
+				10,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401407"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				3,
+				2,
+				0.5,
+				1.5,
+				9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401408"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [
+		"5022010"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "5024014"
+}

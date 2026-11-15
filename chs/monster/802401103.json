@@ -1,0 +1,243 @@
+{
+	"name": "虫群•真蛰虫",
+	"description": "成熟体的真蛰虫；博识学会的杜卢伊爵士遨游星海，曾写下三十卷《诸界异虫札记》。书中详实记载了迄今为止被确认的十几种蠹虫种类，以及星系间数之不尽的亚种。",
+	"icon": "spriteoutput/monsterfigure/Monster_8024010.png",
+	"shortIcon": "Monster_8024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8024010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1674,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "作战时刻",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量风属性伤害，并大概率使受到攻击的我方目标陷入2层风化状态。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				2,
+				0.5,
+				3,
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401101"
+		},
+		{
+			"name": "战争兵器",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量风属性伤害。如受到攻击的目标正处于风化状态，则直接造成1次风化伤害。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401102"
+		},
+		{
+			"name": "飓风",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401103"
+		},
+		{
+			"name": "繁殖",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "繁殖真蛰虫群。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401104"
+		},
+		{
+			"name": "指挥准备",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，下次行动施放【虫群突袭】。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401105"
+		},
+		{
+			"name": "虫群突袭",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "解除场上所有真蛰虫群的控制类负面状态与弱点击破状态，并对我方目标造成风属性伤害，使我方目标每次受到攻击时大概率陷入1层风化状态。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1.8,
+				1,
+				2,
+				1,
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401106"
+		},
+		{
+			"name": "虫群突袭",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "解除场上所有真蛰虫群的控制类负面状态与弱点击破状态，并对我方目标造成风属性伤害，使我方目标每次受到攻击时大概率陷入1层风化状态。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401107"
+		},
+		{
+			"name": "传衍信息素",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "场上每繁殖出1个真蛰虫群，所有真蛰虫群获得1层伤害提高。场上仅能有1个【传衍信息素】效果生效。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.08,
+				0.08
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401108"
+		},
+		{
+			"name": "蛰亡语",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到致命攻击时，对敌方全体造成风属性伤害，并大概率使受到攻击的敌方目标受到的伤害小幅提高。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				2,
+				0.1,
+				3,
+				10,
+				30
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401109"
+		},
+		{
+			"name": "",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401110"
+		},
+		{
+			"name": "繁殖",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "繁殖真蛰虫群。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802401111"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"8022010",
+		"802202002",
+		"8022010"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Wind",
+	"id": "802401103"
+}

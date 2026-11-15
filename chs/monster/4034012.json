@@ -1,0 +1,257 @@
+{
+	"name": "「黑斗篷魔王」",
+	"description": "盘踞在银河深处的恐怖大魔王，拥有脚踩星系拳打黑洞的实力，数百万颗星球被笼罩在漆黑斗篷的阴影下，全银河都在呼唤一位能掀翻魔王统治的勇士。",
+	"icon": "spriteoutput/monsterfigure/Monster_4034010.png",
+	"shortIcon": "Monster_4034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 111600,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 250,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "亡死的黑云",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				0.01,
+				8,
+				0.0009999999
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401201"
+		},
+		{
+			"name": "将尽的命数",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成物理属性伤害，被击中目标降低生命值的一部分转化为<u>【侵蚀】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401202"
+		},
+		{
+			"name": "相混的道途",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使【魔王爪牙】进入【共祭】状态，在数次行动内施放【幽冥的悼念】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401203"
+		},
+		{
+			"name": "幽冥的悼念",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "与【魔王爪牙】一同施放【亡死的黑云】或【将尽的命数】，随后吸收【魔王爪牙】治疗自身，并获得<u>【灾难之力】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401204"
+		},
+		{
+			"name": "沉默的悲叹",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "获得<u>【灾难之力】</u>并进入【沉默的悲叹】状态，下次行动时施放【莫因舍弃而哭泣】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.0009999999,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401205"
+		},
+		{
+			"name": "却是必要的苦难",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "消耗所有<u>【灾难之力】</u>对我方全体造成数次少量物理属性伤害，消耗的【灾难之力】层数越多，伤害的段数越多，随后对我方全体造成少量物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401206"
+		},
+		{
+			"name": "莫因舍弃而哭泣",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成物理属性伤害，消耗所有<u>【灾难之力】</u>额外造成数次少量物理属性伤害，消耗的【灾难之力】层数越多，伤害的段数越多。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1.6,
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401207"
+		},
+		{
+			"name": "分离的哀痛",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "施放【亡死的黑云】或【将尽的命数】时，消耗生命值召唤【魔王爪牙】，并使消耗的生命值转化为<u>【苦痛缠绕】</u>。若该攻击召唤的【魔王爪牙】被消灭，则额外对自身造成物理属性伤害。当自身再次施放【亡死的黑云】或【将尽的命数】时，曾被该攻击召唤的【魔王爪牙】将一同发起攻击，随后被自身吸收， 回复转化为<u>【苦痛缠绕】</u>的生命值并使自身获得<u>【灾难之力】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				16
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401208"
+		},
+		{
+			"name": "迷失的共祭",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "施放【沉默的悲叹】时，消耗生命值召唤【魔王爪牙】，并使消耗的生命值转化为<u>【苦痛缠绕】</u>。当拥有的<u>【灾难之力】</u>层数不为0时，若【魔王爪牙】受到致命攻击，则立即消耗1层<u>【灾难之力】</u>和一定比例的生命值，重新召唤【魔王爪牙】。施放【莫因舍弃而哭泣】时，吸收【魔王爪牙】并回复转化为<u>【苦痛缠绕】</u>的生命值。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.8,
+				0.3,
+				1,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401209"
+		},
+		{
+			"name": "永别的决绝",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "获得一定层数的【减伤】，使自身受到的伤害降低，每有1个【魔王爪牙】被消灭后失去1层。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401210"
+		},
+		{
+			"name": "展开吧！无敌的黑斗篷",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "展开无敌的黑斗篷，使自身和【魔王爪牙】受到的所有伤害降低为1。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401211"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "4034012"
+}

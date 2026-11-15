@@ -1,0 +1,257 @@
+{
+	"name": "Teufelskönig mit dem schwarzen Umhang",
+	"description": "Ein schrecklicher Teufelskönig, der in den Tiefen des Kosmos haust. Er hat die Macht, über die Galaxie zu herrschen und schwarze Löcher zu durchschlagen. Millionen von Planeten liegen unter seinem schwarzen Umhang begraben und der gesamte Kosmos fleht nach einem Helden, der die Herrschaft des Teufelskönigs beenden kann.",
+	"icon": "spriteoutput/monsterfigure/Monster_4034010.png",
+	"shortIcon": "Monster_4034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 111600,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 250,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Sturmwolke des Untergangs",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				0.01,
+				8,
+				0.0009999999
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401201"
+		},
+		{
+			"name": "Verblassendes Schicksal",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu. Ein Anteil der verlorenen LP der getroffenen Ziele wird in <u>Korrosion</u> umgewandelt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401202"
+		},
+		{
+			"name": "Unheilvoller Pfad",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "„Teufelsdiener“ tritt in den Status „Gemeinsames Opfer“ ein. Löst nach einer bestimmten Zahl von Aktionen „Trauer der Finsternis“ aus.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401203"
+		},
+		{
+			"name": "Trauer der Finsternis",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Löst „Sturmwolke des Untergangs“ oder „Verblassendes Schicksal“ zusammen mit „Teufelsdiener“ aus. Absorbiert dann „Teufelsdiener“, um sich selbst zu heilen, und erhält <u>Kraft der Katastrophe</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401204"
+		},
+		{
+			"name": "Stille Trauer",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Erhält „<u>Kraft der Katastrophe</u>“ und den Status „Stille Trauer“. Setzt in der nächsten Aktion „Weine nicht für die Verlassenen“ ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.0009999999,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401205"
+		},
+		{
+			"name": "Ein notwendiges Opfer",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Verbraucht alle Stapelungen von <u>Kraft der Katastrophe</u> und fügt allen Verbündeten geringen physischen SCH zu. Je mehr Stapelungen von Kraft der Katastrophe verbraucht werden, desto höher wird die Trefferzahl des SCH. Fügt danach allen Verbündeten geringen physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401206"
+		},
+		{
+			"name": "Weine nicht für die Verlassenen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu. Verbraucht alle Stapelungen von <u>Kraft der Katastrophe</u> und verursacht dabei zusätzlich geringen physischen SCH. Je mehr Stapelungen von Kraft der Katastrophe verbraucht werden, desto höher wird die Trefferzahl des SCH.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1.6,
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401207"
+		},
+		{
+			"name": "Schmerz der Trennung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn „Sturmwolke des Untergangs“ oder „Verblassendes Schicksal“ eingesetzt werden, werden LP verbraucht, um Teufelsdiener zu beschwören, und die verbrauchten LP werden in <u>Verstrickter Schmerz</u> umgewandelt. Wenn die beschworenen Teufelsdiener besiegt werden, erleidet diese Einheit zusätzlich physischen SCH. Wenn Sturmwolke des Untergangs oder Verblassendes Schicksal erneut eingesetzt werden, werden die beschworenen Teufelsdiener zum Angriff gezwungen, und danach werden sie von dieser Einheit absorbiert. Dabei werden die LP, die zu <u>Verstrickter Schmerz</u> umgewandelt wurden, wiederhergestellt und diese Einheit erhält <u>Kraft der Katastrophe</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				16
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401208"
+		},
+		{
+			"name": "Verlorenes Opfer",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beim Einsatz von „Stille Trauer“ werden LP verbraucht, um Teufelsdiener zu beschwören. Die verbrauchte Menge an LP wird in <u>Verstrickter Schmerz</u> umgewandelt. Wenn die Stapelzahl von <u>Kraft der Katastrophe</u> nicht 0 ist und Teufelsdiener Todesstoß erleiden, wird 1 Stapelung von <u>Kraft der Katastrophe</u> und ein bestimmter LP-Prozentsatz verbraucht, um die Teufelsdiener erneut zu beschwören. Beim Einsatz von „Weine nicht für die Verlassenen“ werden die Teufelsdiener absorbiert und die LP, die in <u>Verstrickter Schmerz</u> umgewandelt wurden, werden wiederhergestellt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.8,
+				0.3,
+				1,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401209"
+		},
+		{
+			"name": "Abschiedsentschluss",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Erhält eine bestimmte Stapelzahl von „SCH-Reduktion“, was den erlittenen SCH verringert. Bei jedem getöteten Teufelsdiener wird 1 Stapelung entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401210"
+		},
+		{
+			"name": "Schau! Der unbesiegbare schwarze Umhang!",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Öffnet einen unbesiegbaren schwarzen Umhang, der sämtlichen SCH, den diese Einheit und Teufelsdiener erleiden, auf 1 reduziert.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401211"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "4034012"
+}

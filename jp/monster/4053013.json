@@ -1,0 +1,172 @@
+{
+	"name": "セイレーンの哀歌・無慈悲なる深海の魔物",
+	"description": "伝説のセイレーンの略奪者。歌声で意志の弱い船員を誘惑する。その影響を受けた者は海に身を投げ、深海の餌食となった。",
+	"icon": "spriteoutput/monsterfigure/Monster_4053010.png",
+	"shortIcon": "Monster_4053010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4053010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3487.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 180,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "袖舞う酔気",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に少量の氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301301"
+		},
+		{
+			"name": "星の如く散るメーレ",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の氷属性ダメージを与え、高確率で味方全体の防御力と全属性耐性をダウンさせる。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				0.15,
+				2,
+				0.15
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301302"
+		},
+		{
+			"name": "幻惑の哀歌",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "味方キャラを1名指定できる。指定された味方キャラに氷属性ダメージを与え、「幻惑」状態にする。「幻惑」状態の味方キャラおよびその召喚物は<u>一時離脱</u>する。同時に「幻覚人魚」を召喚し、一時離脱した味方キャラの代わりに戦闘を継続させる。「幻覚人魚」は味方キャラとして扱われる。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301303"
+		},
+		{
+			"name": "壊滅の狂宴",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "ダメージを与えた時、攻撃を受けた味方を「氷蝕」状態にする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				0.8,
+				1.2,
+				1,
+				0.05,
+				3,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301306"
+		},
+		{
+			"name": "帆を休めよ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "味方の一定回数の攻撃を受けた後、即座に「幻惑の哀歌」を発動する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				5,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405301307"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Thunder"
+	],
+	"summons": [
+		"4033023",
+		"4033031",
+		"4052011"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Ice",
+	"id": "4053013"
+}

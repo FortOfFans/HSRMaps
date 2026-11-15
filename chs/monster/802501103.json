@@ -1,0 +1,482 @@
+{
+	"name": "遮天蔽日的噬星蠹",
+	"description": "阮•梅培育的「繁育」令使复制体，以残缺的姿态短暂现世。原型为继承虫皇之颚的巨蠹，能以口器凝聚裂解天体的死光，将破碎的群星作为诞育子嗣的温床，曾是寰宇蝗灾中的诸界噩梦之一。",
+	"icon": "spriteoutput/monsterfigure/Monster_8025010.png",
+	"shortIcon": "Monster_8025010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8025010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 14880,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 3,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "王虫炮",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成量子属性伤害",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501101"
+		},
+		{
+			"name": "辐裂蛰毒",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成量子属性伤害，并大概率使受到攻击的我方目标陷入纠缠状态，同时召唤1只【蚀蛰虫】。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.6,
+				1,
+				0
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501102"
+		},
+		{
+			"name": "热解死光",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及相邻目标造成量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				3.5,
+				0.5,
+				1.2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501103"
+		},
+		{
+			"name": "同类相食",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "消耗【虫卵】强化虫群召唤物。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501104"
+		},
+		{
+			"name": "",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0,
+				3,
+				0.1,
+				3,
+				10,
+				60
+			],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501105"
+		},
+		{
+			"name": "坍星之卵",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成大量量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501106"
+		},
+		{
+			"name": "筑巢育卵",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，获得韧性保护，并获得一定数量的【虫卵】，持续直到下次行动。下次行动时对我方全体施放【坍星之卵】。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501107"
+		},
+		{
+			"name": "",
+			"tag": "强化",
+			"type": "技能",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501108"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.15,
+				1,
+				0.1,
+				3,
+				10,
+				60
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501109"
+		},
+		{
+			"name": "虫海吞噬",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到攻击后，召唤虫群召唤物。弱点被击破时，对敌方全体造成量子属性伤害，使自身以外的敌方目标受到的伤害提高，并陷入弱点击破状态。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.8,
+				1.1,
+				0.6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501110"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501111"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501112"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501113"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501114"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501115"
+		},
+		{
+			"name": "无限繁殖",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "每回合结束时获得一定数量的【虫卵】。受到【蛰亡语】或【蚀亡语】攻击时，失去1点【虫卵】。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0,
+				0,
+				7,
+				3,
+				150
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "802501116"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_Entangle",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"802203103",
+		"802202103"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 3,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100901",
+				"name": "坚防守备",
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100902",
+				"name": "虫卵分裂",
+				"description": "首领幻影每回合结束时获得一定数量的<color=#f29e38ff><u>虫卵</u></color>。首领幻影可以消耗虫卵强化虫群召唤物，使其获得1层【生长激素】。",
+				"params": []
+			},
+			{
+				"id": "100903",
+				"name": "激素分泌",
+				"description": "首领幻影每召唤一定数量的虫群召唤物，其召唤的下一只召唤物将自带1层【<color=#f29e38ff><u>生长激素</u></color>】。",
+				"params": []
+			},
+			{
+				"id": "100904",
+				"name": "虫卵爆发",
+				"description": "首领幻影每回合结束时和通过【筑巢育卵】获得的虫卵数量提高。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10091",
+				"name": "阶段一：初入虫巢",
+				"description": "首领幻影每回合结束时获得一定数量的虫卵。首领幻影可以消耗虫卵强化虫群召唤物，使其获得1层【生长激素】。",
+				"answer": "应对策略：在首领幻影拥有虫卵时，优先消灭召唤物，利用召唤物的【蛰亡语】或【蚀亡语】攻击削减首领幻影的虫卵。",
+				"skills": [
+					{
+						"id": "100911",
+						"type": "Normal",
+						"name": "如何削减首领幻影的虫卵",
+						"texts": [
+							{
+								"description": "消灭虫群召唤物，触发【蛰亡语】或【蚀亡语】并对首领幻影造成伤害时，会削减其1点虫卵。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100912",
+						"type": "Normal",
+						"name": "【蚀蛰虫】被强化后会发生什么",
+						"texts": [
+							{
+								"description": "【蚀蛰虫】被强化后攻击力会提高，强化达到3层时其攻击有概率对我方角色施加纠缠效果。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10092",
+				"name": "阶段二：厄运虫灾",
+				"description": "首领幻影的【虫海吞噬】触发时会召唤更多的召唤物，并会召唤【次蛰虫】。",
+				"answer": "应对策略：优先消灭【次蛰虫】，防止受到【引爆扩散】的攻击而陷入怒噪状态。",
+				"skills": [
+					{
+						"id": "100921",
+						"type": "Normal",
+						"name": "【次蛰虫】被强化后会发生什么",
+						"texts": [
+							{
+								"description": "【次蛰虫】被强化后攻击力会提高，强化达到3层时将立即行动。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100922",
+						"type": "Normal",
+						"name": "应对【次蛰虫】的【引爆扩散】",
+						"texts": [
+							{
+								"description": "优先消灭【次蛰虫】，或将其弱点击破以阻止【引爆扩散】的施放。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "首领幻影每回合结束时获得一定数量的<color=#f29e38ff>【虫卵】</color>，受到<color=#f29e38ff>【蛰亡语】或【蚀亡语】</color>攻击时，会损失1点虫卵，并且会受到更高的伤害。",
+				"params": []
+			},
+			{
+				"description": "首领幻影可以消耗【虫卵】强化虫群召唤物，使其获得1层<color=#f29e38ff>【生长激素】</color>，每层使攻击力提高，达到3层时获得额外强化。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "优先<color=#f29e38ff>消灭召唤物</color>，利用召唤物的<color=#f29e38ff>【蛰亡语】或【蚀亡语】</color>攻击削减首领幻影的虫卵和韧性。",
+				"params": []
+			},
+			{
+				"description": "使用具有<color=#f29e38ff>群攻</color>能力的技能，在消灭召唤物的同时攻击首领幻影。",
+				"params": []
+			},
+			{
+				"description": "当我方陷入<color=#f29e38ff>量子纠缠或者怒噪</color>状态时，使用技能<color=#f29e38ff>解除异常状态</color>。",
+				"params": []
+			}
+		]
+	},
+	"rank": "BigBoss",
+	"stanceType": "Quantum",
+	"id": "802501103"
+}

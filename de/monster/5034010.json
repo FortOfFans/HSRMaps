@@ -1,0 +1,222 @@
+{
+	"name": "Blut des gefallenen Gottes: Yabuli",
+	"description": "Die Leiterin der Technologie-Abteilung, die insgeheim die Intelligenzia-Gilde lenkte, gab ihre zerbrechliche menschliche Hülle auf und übertrug ihr Bewusstsein in ein riesiges baumartiges Gehirn, nur um die Geheimnisse der Leviathane zu ergründen.\nYabulis Besessenheit von übermenschlicher Macht führte sie schließlich an ihr Ende. Sie wurde von der Gier vollständig assimiliert, bildete sich zu einem Embryo zurück und vollzog eine Metamorphose zu einem unbeschreiblichen Monster.",
+	"icon": "spriteoutput/monsterfigure/Monster_5034010.png",
+	"shortIcon": "Monster_5034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2092.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1080,
+		"speed": 180,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Beutemarkierung",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einer anvisierten verbündeten Figur geringen Quanten-SCH zu und belegt sie mit 1 Stapelung des Status <u>Verfall des gefallenen Gottes</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401001"
+		},
+		{
+			"name": "Heulen des Hungers",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401002"
+		},
+		{
+			"name": "Makroökosystem",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Verschlingt „Keim der rasenden Bestie“, erhöht den eigenen verursachten SCH und stellt LP wieder her.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				2,
+				0.04,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401003"
+		},
+		{
+			"name": "Alles in mir",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Quanten-SCH zu und versetzt sie mit hoher Chance in den Status <u>Verschlingen der Essenz</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0.1
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401004"
+		},
+		{
+			"name": "Kollektive Stressreaktion",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Bei einem Angriff während des Ritus wird die Aktion von „Keim der rasenden Bestie“ vorgezogen, und „Blut des gefallenen Gottes“ wird nicht von Aktionsvorzug-Effekten beeinflusst.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.08,
+				0.7,
+				0.65,
+				0.75,
+				0.35,
+				2,
+				0.3,
+				0.1,
+				0.05,
+				66
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401005"
+		},
+		{
+			"name": "Hundert Facetten des Bestienauges",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Fügt nach jeder Aktion 1 „Auge der Gier“ hinzu. Erreicht die Anzahl an Auge der Gier am Ende der Runde einen bestimmten Wert, wird sofort „Alles in mir“ eingesetzt. Beim Erhalt von „Blut-Hirn-Barriere“ wird die GES stark erhöht.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.7,
+				0.65,
+				0.75,
+				0.35,
+				1,
+				0.5,
+				0.3,
+				0.05,
+				0.025,
+				40
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401006"
+		},
+		{
+			"name": "Traum des Embryos",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Fügt der Aktionsreihenfolge „Zytolytische Spaltung“ hinzu. Bei jeder Aktion von „Zytolytische Spaltung“ wird „Keim der rasenden Bestie“ beschworen. Wenn sich „Blut des gefallenen Gottes“ auf dem Kampffeld befindet, verursachen die Angriffe von Keim der rasenden Bestie zusätzlich <u>Verfall des gefallenen Gottes</u> und <u>Verschlingen der Essenz</u>. Nachdem Keim der rasenden Bestie besiegt wurde, werden die LP von Blut des gefallenen Gottes reduziert. Nach einem erlittenen Angriff visiert Keim der rasenden Bestie die angreifende Figur an. Wenn alle verbündeten Figuren in den Status „Phantomillusion“ versetzt werden, ist der Kampf verloren.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2,
+				3,
+				0.02
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401007"
+		},
+		{
+			"name": "Blut-Hirn-Barriere",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn die LP auf einen bestimmten Wert sinken, erhält diese Einheit „Blut-Hirn-Barriere“, wodurch ihr WDS nicht reduziert werden kann und jeglicher erlittene SCH stark verringert wird. Die Effizienz von Hochgefühl-SCH beim Brechen der Blut-Hirn-Barriere wird stark erhöht. Beim Erhalt von Blut-Hirn-Barriere wird „Homöostatisches Ungleichgewicht“ der Aktionsreihenfolge hinzugefügt. Das Besiegen von „Keim der rasenden Bestie“ kann den Aufladungswert von „Homöostatisches Ungleichgewicht“ erhöhen. Homöostatisches Ungleichgewicht fügt bei seiner Aktion der Blut-Hirn-Barriere basierend auf dem erhaltenen Aufladungswert SCH zu. Beim Aufheben von Blut-Hirn-Barriere erleidet diese Einheit massiven SCH.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.2,
+				0.98,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401008"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"503201002"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "5034010"
+}

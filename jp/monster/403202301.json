@@ -1,0 +1,155 @@
+{
+	"name": "魔王の手下",
+	"description": "魔王ブラックマントの忠実な従者。魔王の一部の力と残忍な性格を受け継いでおり、どの星にも彼らの悪行の痕跡が残されている。",
+	"icon": "spriteoutput/monsterfigure/Monster_4032020.png",
+	"shortIcon": "Monster_4032020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032020.png",
+	"stats": {
+		"baseAttack": 45,
+		"baseDefense": 210,
+		"baseHealth": 6510.000186,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "共祭・死の黒雲",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に少量の物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202301"
+		},
+		{
+			"name": "共祭・消えゆく運命",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の物理属性ダメージを与える。命中された味方の減少したHPの一部が<u>「侵蝕」</u>に転換される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.6,
+				0.3,
+				0.2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202302"
+		},
+		{
+			"name": "我がために祈りを捧げよ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "行動制限系デバフに抵抗する。「魔王ブラックマント」が再び「死の黒雲」または「消えゆく運命」を発動した時、自身がその攻撃によって召喚され、かつ「共祭」状態であった場合、「魔王ブラックマント」と一緒に攻撃を行う。その後、「魔王ブラックマント」に吸収され、「魔王ブラックマント」は<u>「纏わりつく苦痛」</u>に転換された分のHPを回復し、<u>「災厄の力」</u>を獲得する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.08
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202303"
+		},
+		{
+			"name": "我がために贄を捧げよ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「囚人の鎖」状態でHPが0になる攻撃を受けた時、「魔王ブラックマント」の<u>「災厄の力」</u>が0でない場合に限り、即座に再召喚されて「囚人の鎖」状態になる。ただし、これにより「魔王ブラックマント」は<u>「災厄の力」</u>1層と一定割合のHPを失う。「魔王ブラックマント」が「捨つることに涙せず」を発動すると、これを吸収して<u>「纏わりつく苦痛」</u>のHPを回復する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202304"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "403202301"
+}

@@ -1,0 +1,171 @@
+{
+	"name": "楽変天人・始",
+	"description": "「極楽顛倒・邪願蓮主」に侵食された人間。\n六情に触れず、六欲にも染まらず、ただひたすら歓喜の心を生み出していく。",
+	"icon": "spriteoutput/monsterfigure/Monster_5023010.png",
+	"shortIcon": "Monster_5023010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5023010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 325.50016275,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 420,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "狂喜の吐息",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に風属性ダメージを与える。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502301101"
+		},
+		{
+			"name": "愉快な笑い声",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "ランダムな味方単体に連続で風属性ダメージを与え、1段の攻撃につき確率で攻撃を受けた味方に「<u>極楽</u>」効果を付与する。このスキルを発動する時、フィールドに他の「楽変天人」がいる場合、他の「楽変天人」も一緒にこのスキルを発動する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.5,
+				0.35,
+				0.7
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502301102"
+		},
+		{
+			"name": "笑みの蕾",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "「蕾」状態に入る。次の行動で味方全体に「極楽螺旋」を発動する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502301103"
+		},
+		{
+			"name": "極楽螺旋",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "味方全体にダメージを与える。ターゲットに「<u>極楽</u>」効果がある場合、「<u>極楽</u>」効果を解除し、ターゲットの行動順を遅延させ、SPを減少させる。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3.8,
+				0.25,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502301104"
+		},
+		{
+			"name": "邪願裂変",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になるダメージを受ける時、2体の「楽変天人・始」に分裂し、味方が一定数の<u>爆笑ネタ</u>を獲得する。「楽変天人・始」がHPが0になるダメージを受ける時、2体の「楽変天人・終」に分裂し、味方が一定数の<u>爆笑ネタ</u>を獲得する。「楽変天人・終」はそれ以上分裂しない。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.85,
+				0.4,
+				1.2,
+				0.66,
+				0.4,
+				1.2,
+				5,
+				0.857,
+				0.571
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502301105"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "502301101"
+}

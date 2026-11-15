@@ -1,0 +1,245 @@
+{
+	"name": "至黑之剑，盗火行者",
+	"description": "伴随黑潮而来、狩猎泰坦火种的无名剑士，无人知晓其真身。\n身负不可思议的力量，剑技也近乎无懈可击。疯狂与执着交织于它的锋刃，神悟树庭与哀丽秘榭皆毁于其手。",
+	"icon": "spriteoutput/monsterfigure/Monster_4034010.png",
+	"shortIcon": "Monster_4034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 4650.001395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "亡死的黑云",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				0.05,
+				8,
+				0.05
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401001"
+		},
+		{
+			"name": "将尽的命数",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成物理属性伤害，被击中目标降低生命值的一部分转化为<u>【侵蚀】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401002"
+		},
+		{
+			"name": "相混的道途",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使【残破容器】进入【共祭】状态，在数次行动内施放【幽冥的悼念】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401003"
+		},
+		{
+			"name": "幽冥的悼念",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "与【残破容器】一同施放【亡死的黑云】或【将尽的命数】，随后吸收【残破容器】治疗自身，并获得<u>【灾难之力】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401004"
+		},
+		{
+			"name": "沉默的悲叹",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "获得<u>【灾难之力】</u>并进入【沉默的悲叹】状态，下次行动时施放【莫因舍弃而哭泣】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.05,
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401005"
+		},
+		{
+			"name": "却是必要的苦难",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "消耗所有<u>【灾难之力】</u>对我方全体造成数次少量物理属性伤害，消耗的【灾难之力】层数越多，伤害的段数越多，随后对我方全体造成少量物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401006"
+		},
+		{
+			"name": "莫因舍弃而哭泣",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成物理属性伤害，消耗所有<u>【灾难之力】</u>额外造成数次少量物理属性伤害，消耗的【灾难之力】层数越多，伤害的段数越多。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1.6,
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401007"
+		},
+		{
+			"name": "分离的哀痛",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "施放【亡死的黑云】或【将尽的命数】时，消耗生命值召唤【残破容器】，并使消耗的生命值转化为<u>【苦痛缠绕】</u>。若该攻击召唤的【残破容器】被消灭，则额外对自身造成物理属性伤害。当自身再次施放【亡死的黑云】或【将尽的命数】时，曾被该攻击召唤的【残破容器】将一同发起攻击，随后被自身吸收， 回复转化为<u>【苦痛缠绕】</u>的生命值并使自身获得<u>【灾难之力】</u>。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				16
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401008"
+		},
+		{
+			"name": "迷失的共祭",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "施放【沉默的悲叹】时，消耗生命值召唤【残破容器】，并使消耗的生命值转化为<u>【苦痛缠绕】</u>。当拥有的<u>【灾难之力】</u>层数不为0时，若【残破容器】受到致命攻击，则立即消耗1层<u>【灾难之力】</u>和一定比例的生命值，重新召唤【残破容器】。施放【莫因舍弃而哭泣】时，吸收【残破容器】并回复转化为<u>【苦痛缠绕】</u>的生命值。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.8,
+				0.3,
+				1,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401009"
+		},
+		{
+			"name": "永别的决绝",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "获得一定层数的【减伤】，使自身受到的伤害降低，每有1个【残破容器】被消灭后失去1层。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401010"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"4032020"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "403401001"
+}

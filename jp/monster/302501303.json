@@ -1,0 +1,525 @@
+{
+	"name": "万籟共奏の指揮者",
+	"description": "「ハルモニア聖歌隊」衆願のドミニクス、「調和」のシペの数ある化身の1つ。「秩序」の干渉により、今までとは異なる姿で顕現した。人々の「思い」に対する答えとして、彼の指揮する賛歌は幾千万もの願いに沿って世界を作り変え、新たな法則を確立する。そして、すべての祈願者がその力の源となる。",
+	"icon": "spriteoutput/monsterfigure/Monster_3025010.png",
+	"shortIcon": "Monster_3025010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3025010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 16275,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 240,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 10,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "グラツィオーソ",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501301"
+		},
+		{
+			"name": "マエストーソ",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501302"
+		},
+		{
+			"name": "ヴァネジアンド",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "高確率で指定した味方単体を「<u>異夢</u>」状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501303"
+		},
+		{
+			"name": "ヴァリエーション",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次のターンで「夢の中で踊る」を発動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501304"
+		},
+		{
+			"name": "メリスマ",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次のターンで「雨の中に歌えば」を発動し、すべての「往日の夢のこだま」の靭性を回復させる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501305"
+		},
+		{
+			"name": "夢の中で踊る",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "行動可能なすべての「往日の夢のこだま」が指定した味方単体に虚数属性ダメージを与える。行動可能な「往日の夢のこだま」がいない場合は発動に失敗し、同時に大量の靭性が削られる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				240
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501306"
+		},
+		{
+			"name": "夢の中で踊る",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "行動可能なすべての「往日の夢のこだま」が指定した味方単体に虚数属性ダメージを与える。行動可能な「往日の夢のこだま」がいない場合は発動に失敗し、同時に大量の靭性が削られる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501307"
+		},
+		{
+			"name": "雨の中に歌えば",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に虚数属性ダメージを与え、行動可能なすべての「往日の夢のこだま」が味方全体に虚数属性ダメージを与える。行動可能な「往日の夢のこだま」がいない場合は発動に失敗し、同時に大量の靭性が削られる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				3,
+				0.5,
+				240
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501308"
+		},
+		{
+			"name": "無限音域",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "「和光同塵」状態に入り、バリアを獲得する。与ダメージがアップする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.09,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501309"
+		},
+		{
+			"name": "",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501310"
+		},
+		{
+			"name": "初めに言葉ありき",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、7ターン後に「初めに行為ありき」を発動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501311"
+		},
+		{
+			"name": "初めに行為ありき",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の虚数属性ダメージを与える。このダメージはターゲットの防御力を無視する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501312"
+		},
+		{
+			"name": "嬰ニの鐘",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「万籟共奏の指揮者」は「初めに力ありき」状態の時、味方が行動するたびに即座に行動し、味方の付与する行動遅延効果を抵抗でき、さらに自身が弱点撃破されても「初めに力ありき」のカウントはリセットされない。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				10,
+				10,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501313"
+		},
+		{
+			"name": "夢からの目覚め",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「万籟共奏の指揮者」が「往日の夢のこだま」を4体召喚する。「往日の夢のこだま」が受けるすべてのダメージは「万籟共奏の指揮者」が代わりに受ける。「万籟共奏の指揮者」のターンが終了する時、弱点撃破状態の「往日の夢のこだま」の靭性を回復する。自身の靭性が1層撃破されるたびに、味方に「<u>光の中を歩んで</u>」を付与する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.25,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501314"
+		},
+		{
+			"name": "苦楽を共に",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501315"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501316"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501317"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501318"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501319"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501320"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"3022011"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 3,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100701",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100702",
+				"name": "止まることのない旋律",
+				"description": "召喚物が受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。ボス幻影が<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100703",
+				"name": "苦楽を共に",
+				"description": "ボス幻影は自身の弱点属性を召喚物に<color=#f29e38ff><u>シェア</u>する</color>。同時に弱点属性以外の属性の耐性+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
+				"params": [
+					0.4
+				]
+			},
+			{
+				"id": "100704",
+				"name": "デウムの賜福",
+				"description": "召喚物の最大靭性+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>。",
+				"params": [
+					10
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10071",
+				"name": "第一段階：万民斉頌",
+				"description": "ボス幻影が「夢の中で踊る」と「雨の中に歌えば」を発動し、大ダメージを与える。",
+				"answer": "対応戦略：「夢の中で踊る」と「雨の中に歌えば」が発動する前に召喚物をできるだけ倒す。",
+				"skills": [
+					{
+						"id": "100711",
+						"type": "Normal",
+						"name": "「遥かなる地平の長音」のチャージ方法と発動方法",
+						"texts": [
+							{
+								"description": "召喚物が弱点撃破された後、「遥かなる地平の長音」をチャージする。「遥かなる地平の長音」は敵全体の靭性を削ることができる。できるだけ多くの弱点撃破状態にない敵に命中させることで、靭性を削る効果を最大限有効活用できる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100712",
+						"type": "Normal",
+						"name": "ボス幻影が発動する「夢の中で踊る」と「雨の中に歌えば」が与えるダメージの対処法",
+						"texts": [
+							{
+								"description": "できるだけ召喚物を弱点撃破して「夢の中で踊る」と「雨の中に歌えば」によるダメージをダウンさせる。弱点撃破状態にない召喚物が多いほど、ボス幻影の「夢の中で踊る」と「雨の中に歌えば」の与ダメージがアップする。すべての召喚物が弱点撃破状態にある時、ボス幻影の発動する「夢の中で踊る」と「雨の中に歌えば」は自身の靭性を削る。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100713",
+						"type": "Normal",
+						"name": "「異夢」状態への対処法",
+						"texts": [
+							{
+								"description": "効果抵抗をアップさせるか、またはスキルを使用して「異夢」状態を解除する。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10072",
+				"name": "第二段階：最終楽章",
+				"description": "「往日の夢のこだま」は戦闘フィールドから離れず、「初めに行為ありき」は中断されない。",
+				"answer": "対応戦略：敵を弱点撃破することで「遥かなる地平の長音」をチャージし、味方にバリアを付与する。",
+				"skills": [
+					{
+						"id": "100721",
+						"type": "Normal",
+						"name": "ボス幻影の「初めに行為ありき」の与えるダメージの対処法",
+						"texts": [
+							{
+								"description": "召喚物を弱点撃破またはボス幻影の靭性を削ることで、「初めに行為ありき」を防ぐバリアを獲得できる。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影とその召喚物の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "召喚物が<color=#f29e38ff>弱点撃破</color>された時、ボス幻影の靭性が一定値削れる。召喚物が<color=#f29e38ff>弱点撃破</color>された後、「遥かなる地平の長音」はチャージを獲得する。「遥かなる地平の長音」を発動すると敵全体に大ダメージを与え、靭性を削ることができる。",
+				"params": []
+			},
+			{
+				"description": "ボス幻影は<color=#f29e38ff>自身の弱点属性を召喚物にシェアする</color>。いずれかの召喚物が<color=#f29e38ff>弱点撃破</color>される時、その召喚物の弱点属性がすべての敵に<color=#f29e38ff>付与</color>される。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "ボス幻影の<color=#f29e38ff>弱点を撃破</color>すると、ボス幻影と召喚物の受けるダメージが大アップし、味方全体のSPを回復して必殺技を発動できるようにする。",
+				"params": []
+			},
+			{
+				"description": "複数回<color=#f29e38ff>召喚物</color>を弱点撃破することで「遥かなる地平の長音」のチャージを進め、「遥かなる地平の長音」を発動して敵全体の靭性を削ることができる。",
+				"params": []
+			},
+			{
+				"description": "味方キャラに有利な弱点属性を持つ<color=#f29e38ff>召喚物</color>を優先的に弱点撃破することで、その弱点属性をすべての敵に<color=#f29e38ff>シェア</color>できる。",
+				"params": []
+			}
+		]
+	},
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "302501303"
+}

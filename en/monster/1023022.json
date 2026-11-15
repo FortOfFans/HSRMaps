@@ -3,15 +3,22 @@
 	"description": "An Interastral Peace Corporation senior staff member with a minimal rank of project team leader. The mech they drive belongs to the IPC. If damaged, its repair fees have to be paid out-of-pocket. With a half-decent salary, they can at least afford to rent a one-bedroom apartment on one of the IPC's enterprise ships.",
 	"icon": "spriteoutput/monsterfigure/Monster_1023020.png",
 	"shortIcon": "Monster_1023020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1023020.png",
 	"stats": {
 		"baseAttack": 6,
 		"baseDefense": 210,
 		"baseHealth": 12555,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "102302201",
 			"name": "Devour Otherling",
 			"tag": "Charging",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302201"
 		},
 		{
-			"id": "102302202",
 			"name": "Frozen Storm",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -42,11 +49,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302202"
 		},
 		{
-			"id": "102302203",
 			"name": "Blazing Freeze",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -61,11 +68,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302203"
 		},
 		{
-			"id": "102302204",
 			"name": "",
 			"tag": "Talent",
 			"type": "Talent",
@@ -75,26 +82,37 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102302204"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
 		}
 	],
 	"weakness": [
@@ -102,15 +120,20 @@
 		"Thunder",
 		"Quantum"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
 				"count": 1
 			},
 			{
-				"id": 112011,
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
 				"count": 1
 			},
 			{
@@ -123,6 +146,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Physical",
 	"id": "1023022"

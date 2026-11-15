@@ -1,0 +1,441 @@
+{
+	"name": "豪雷旋雲の狂狼の主",
+	"description": "十の悪行を尽くして幽獄の底に封じられた歩離人の首領。\n<unbreak>700</unbreak>年にわたる幽閉生活で苦しみと憎しみを募らせた呼雷は、脱獄を果たした後、狼群の主として仙舟「羅浮」に戦いを挑んだ。しかし、この狂気に満ちた行動の裏には、何やら別の目的が隠されているようだ……",
+	"icon": "spriteoutput/monsterfigure/Monster_2034010.png",
+	"shortIcon": "Monster_2034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 10230,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1140,
+		"speed": 160,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "折れた剣を牙とする",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401401"
+		},
+		{
+			"name": "鉄を斬って爪とする",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に雷属性のダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				1.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401402"
+		},
+		{
+			"name": "地割れ、草残らず",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "自身以外のすべてのユニットに雷属性のダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.3,
+				2.2,
+				30
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401403"
+		},
+		{
+			"name": "雷風鳴り、枯草滅ぼす",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401404"
+		},
+		{
+			"name": "貪狼は駆け、血色が降臨する",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				6,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401405"
+		},
+		{
+			"name": "血鳴狂噬",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "呼雷が「月喰み」状態に入る前、靭性が削られることはない。敵が攻撃を行った後、<u>「月喰み」状態に入れる敵</u>に「<u>嗜血</u>」を1層付与する。「<u>嗜血</u>」が一定層数に達した時、呼雷は「<u>月喰み</u>」状態に入り、「一騎打ち」を発動する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				4,
+				5,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401406"
+		},
+		{
+			"name": "群狼の遠吠え",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "呼雷が「<u>月喰み</u>」状態に入った時、受けるダメージがダウンし、靭性が削られるようになる。同時に自身に「憤激」を付与する。「憤激」には初期層数があり、敵のターンが終了するたびに「憤激」を1層失う。「憤激」が0層になるたびに、「月喰み」状態を解除する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				4,
+				3,
+				0.06,
+				2,
+				0.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401407"
+		},
+		{
+			"name": "群狼勅令、雷霆万鈞",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "味方が呼雷以外の敵にHPが0になる攻撃を与えるたびに、呼雷がダメージを受け、靭性を削られる。同時に味方キャラそれぞれに「<u>血騒ぎ</u>」を付与し、<u>「月喰み」状態に入れる敵</u>に「<u>嗜血</u>」を1層付与し、「狼兵・玄爪」または「狼兵・蝕月」を召喚する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0,
+				1.15,
+				1.33,
+				90,
+				0.03
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401408"
+		},
+		{
+			"name": "一騎打ち",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "「一騎打ち」状態に入り、呼雷の与ダメージがアップする。味方はキャラ1名とその召喚物を「一騎打ち」にすることができる。選択後、指定した味方単体に雷属性ダメージを与え、「憤激」が0になるまで選択した味方以外の味方と敵が<u>一時離脱</u>する。味方が「一騎打ち」状態に入った後、味方のSPを回復し、味方全体の現在の最大HPと攻撃力に応じて、自身の最大HPと攻撃力がアップする。同時に、「<u>血騒ぎ</u>」が発動し、その層数に応じて自身に「<u>激昂の戦い</u>」を付与する。味方キャラそれぞれが所持する「<u>血騒ぎ</u>」は、「一騎打ち」状態終了後に解除される。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.15,
+				5,
+				5,
+				0.05,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401409"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401410"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401411"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401412"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401413"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401414"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"2032011",
+		"2032022"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 2,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101001",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101002",
+				"name": "無差別アタック",
+				"description": "ボス幻影が「地割れ、草残らず」を発動する時、他の狼兵を全て消滅させる。",
+				"params": []
+			},
+			{
+				"id": "101003",
+				"name": "鷹視狼顧",
+				"description": "ボス幻影が第二段階に入った後、「一騎打ち」期間中は各ターン内にもう一度行動できる。",
+				"params": []
+			},
+			{
+				"id": "101004",
+				"name": "死に至るまで",
+				"description": "ボス幻影は「一騎打ち」に入った後、受けるダメージがさらに<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>ダウンする。",
+				"params": [
+					0.6
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10101",
+				"name": "第一段階：迅雷風烈",
+				"description": "ボス幻影が「月喰み」状態に入った時、味方はボス幻影と「一騎打ち」を行う最強キャラを1名選ぶ必要がある。",
+				"answer": "対応戦略：ボス幻影が「月喰み」状態に入る前に、できるだけ狼兵を倒して強化を獲得しよう。",
+				"skills": [
+					{
+						"id": "101011",
+						"type": "Normal",
+						"name": "「血騒ぎ」を素早く獲得し、「月喰み」状態に入る方法",
+						"texts": [
+							{
+								"description": "狼兵を倒すと、味方全体が「血騒ぎ」を獲得し、ボス幻影に「嗜血」を付与することができ、「月喰み」状態に入る速度が速くなる",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101012",
+						"type": "Normal",
+						"name": "「一騎打ち」の対処方法",
+						"texts": [
+							{
+								"description": "「一騎打ち」に入る時はできる限り力を温存し、なるべく召喚物を持つ味方キャラを選んで、行動回数の優位性を得る。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10102",
+				"name": "第二段階：呑天喰月",
+				"description": "ボス幻影のスキルは狼兵にダメージを与え、「月喰み」状態に入るとさらに強化される。",
+				"answer": "対応戦略：ボス幻影が行動する前に狼兵を倒し、狼兵がボス幻影に消されるのを防ごう。",
+				"skills": [
+					{
+						"id": "101021",
+						"type": "Normal",
+						"name": "「血騒ぎ」の獲得チャンスを逃さないように",
+						"texts": [
+							{
+								"description": "ボス幻影に倒された狼兵は味方に「血騒ぎ」を付与することが出来なくなる。なるべく、ボス幻影が行動する前に狼兵を倒そう。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "ボス幻影が「月喰み」状態に入ると、弱点保護が解除される。味方は最強のキャラクターを1名選択し、ボス幻影と「一騎打ち」を行う必要がある。その間、選択されたキャラとその召喚物を除き、他の味方は一時離脱状態になる。",
+				"params": []
+			},
+			{
+				"description": "味方が敵の狼兵を倒した時、「血騒ぎ」効果を獲得する。「一騎打ち」に入ったキャラとその召喚物は「血騒ぎ」の層数に応じて強化を獲得する。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "ボス幻影が「月喰み」状態に入る前に、狼兵を優先的に倒し、味方に「血騒ぎ」効果を付与すると同時にボス幻影を早めに「月喰み」状態に入らせる。",
+				"params": []
+			},
+			{
+				"description": "ボス幻影が「月喰み」状態に入る前、「一騎打ち」に備えて力を温存しよう。",
+				"params": []
+			},
+			{
+				"description": "「一騎打ち」に入る時、選択した味方キャラが召喚物を持っている場合、その召喚物も「一騎打ち」状態に入る。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "203401402"
+}

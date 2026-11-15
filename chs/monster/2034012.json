@@ -1,0 +1,244 @@
+{
+	"name": "步离战首•呼雷（完整）",
+	"description": "代码受到影响后的完整投影。参照本体为犯尽十恶，永镇于幽狱之底的步离人首领。\n身负七百年苦狱仇恨，在脱出牢笼后，群狼之主向整个罗浮仙舟发起了挑战。但潜藏在疯狂之举的背后，似乎另有目标……",
+	"icon": "spriteoutput/monsterfigure/Monster_2034010.png",
+	"shortIcon": "Monster_2034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "碎剑为牙",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401201"
+		},
+		{
+			"name": "斩铁成爪",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及相邻目标造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401202"
+		},
+		{
+			"name": "裂地三舍，寸草不留",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "使除自身外的所有目标行动延后，并造成少量雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				0.5,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401203"
+		},
+		{
+			"name": "雷动风咆，摧枯灭朽",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成雷属性伤害，并有概率为我方全体附上【<u>恐惧萦绕</u>】。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401204"
+		},
+		{
+			"name": "贪狼逐驰，血色临照",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成大量雷属性伤害，并大概率为其附上【<u>恐惧萦绕</u>】。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				1.5,
+				60
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401205"
+		},
+		{
+			"name": "月狂",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "当敌方施放攻击后，为<u>能够进入【月狂】状态的敌方单位</u>附加1层【<u>嗜血</u>】，当【<u>嗜血</u>】达到指定层时，将使其进入【<u>月狂</u>】状态。\n行动序列上出现【月狂】倒计时，倒计时回合开始时所有敌方单位解除【<u>月狂</u>】状态。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				4,
+				8,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401206"
+		},
+		{
+			"name": "啸月之狼",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "当呼雷进入【<u>月狂</u>】状态时，每当敌方施放攻击后，为呼雷附加1层【怒意】，若为呼雷攻击，则额外附加1层【怒意】。每当敌方目标以外的目标施放攻击后，将减少1层【怒意】。【怒意】拥有初始层数，当【怒意】层数叠加到一定值时，呼雷将释放【贪狼逐驰，血色临照】并清除所有【怒意】层数。每当【怒意】由于我方角色攻击被减少至0层时，将削减呼雷的韧性，并重置【怒意】层数为指定层。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				10,
+				3,
+				120,
+				4,
+				0.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401207"
+		},
+		{
+			"name": "听我孤嚎，群狼追从",
+			"tag": "其他",
+			"type": "技能",
+			"description": "在行动序列上添加【召集狼群】，每次【召集狼群】行动时，召唤【玄爪狼卒】或【蚀月狼卒】。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				30,
+				0,
+				0.6,
+				1.2,
+				1.8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401208"
+		},
+		{
+			"name": "呼召",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "进入三阶段后，【召集狼群】的速度将会提高，且在进入三阶段后立即进入【<u>月狂</u>】状态。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401209"
+		},
+		{
+			"name": "赤月之力",
+			"tag": "强化",
+			"type": "技能",
+			"description": "每当呼雷使用【雷动风咆，摧枯灭朽】时，将使自身造成的伤害提高。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401210"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind"
+	],
+	"summons": [
+		"203201003",
+		"203202004"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "2034012"
+}

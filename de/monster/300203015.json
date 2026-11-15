@@ -1,0 +1,134 @@
+{
+	"name": "Truppe der Albträume: Sodahund",
+	"description": "Servicemaschine Penaconys, die aufgrund der emotionalen Interferenz in der Traumlandschaft außer Kontrolle geraten ist.\nUrsprünglich ein Kurier für SeelFroh. Verteilt seit dem Kontrollverlust weiterhin süße Produkte und lädt alle dazu ein, die von ihm angebotenen Köstlichkeiten zu probieren.",
+	"icon": "spriteoutput/monsterfigure/Monster_3002030.png",
+	"shortIcon": "Monster_3002030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3002030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 418.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Trinkeinladung",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300203001"
+		},
+		{
+			"name": "Süßes Trankopfer",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Fügt beim Todesstoß angrenzenden Gegnern physischen SCH zu, erhöht ihre GES und verursacht bei ihnen Bluten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.3,
+				2,
+				0.025,
+				100,
+				0.01
+			],
+			"spGain": 0,
+			"delay": 0.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300203002"
+		},
+		{
+			"name": "Herzhafter Rausch",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Erhält beim Erleiden von Angriffen oder DoT eine Stapelung „SeelFroh-Rausch“. Jede Stapelung erhöht den verursachten SCH.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 0,
+			"delay": 0.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300203003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114001,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 181016,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "300203015"
+}

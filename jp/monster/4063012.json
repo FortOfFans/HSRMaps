@@ -1,0 +1,122 @@
+{
+	"name": "リベンジャーズ・オフィス",
+	"description": "ガーデン・オブ・リコレクションのミーム生命体が、「壊滅」の黄金の血と混ざり合って生まれた、いびつな怪物。翼の生えた蛇の姿を取りつつあり、鬼神を装って人を惑わすに十分な姿である。\nもともと歪んでいた理性は暗黒の潮の影響で完全に狂い、強烈な自己防衛の衝動はいつの間にか幻想的な色合いに染まってしまった。",
+	"icon": "spriteoutput/monsterfigure/Monster_4063010.png",
+	"shortIcon": "Monster_4063010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4063010.png",
+	"stats": {
+		"baseAttack": 40.008892,
+		"baseDefense": 210,
+		"baseHealth": 900.0075,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "血罪の唾",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301201"
+		},
+		{
+			"name": "威嚇警戒",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、自身の与ダメージがアップし、次の行動時に「血罪の渦」を発動する。チャージ中に攻撃を受けると、次の攻撃の与ダメージがアップする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301202"
+		},
+		{
+			"name": "血罪の渦",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.75
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301203"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "4063012"
+}

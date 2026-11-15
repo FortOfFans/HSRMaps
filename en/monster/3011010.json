@@ -3,15 +3,22 @@
 	"description": "An entity infused with a certain cognition, constructed from fragments of subconsciousness in the Memory Zone.\nObservation, retrospection, inspection... In the pursuit of preservation and existential understanding of the self, the memories of \"seeing\" and \"looking\" go hand-in-hand, eventually becoming an integral part of life itself.",
 	"icon": "spriteoutput/monsterfigure/Monster_3011010.png",
 	"shortIcon": "Monster_3011010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3011010.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 93,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 30,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
 		"type": "Minion"
 	},
 	"skills": [
 		{
-			"id": "301101001",
 			"name": "Glare of the Other",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -25,38 +32,46 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301101001"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Ice",
 		"Thunder"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 36,
+		"avatarExpReward": 108,
 		"itemList": [
 			{
 				"id": 2,
@@ -67,11 +82,20 @@
 				"count": 1
 			},
 			{
+				"id": 114012,
+				"count": 1
+			},
+			{
+				"id": 114013,
+				"count": 1
+			},
+			{
 				"id": 180011,
 				"count": 1
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Minion",
 	"stanceType": "Physical",
 	"id": "3011010"

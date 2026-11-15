@@ -1,0 +1,471 @@
+{
+	"name": "Herrscherin des Seelenhakens",
+	"description": "Mitglied der Stellaron-Jäger. Eine wunderschöne Attentäterin mit einem geheimnisvollen Lächeln, die sich durch ihr Geschick mit verschiedensten Waffen und bei der Manipulation anderer auszeichnet. Sie hat den Astralexpress hierhergeführt, um einen unbekannten Plan auszuführen ...",
+	"icon": "spriteoutput/monsterfigure/Monster_2004010.png",
+	"shortIcon": "Monster_2004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7207.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 900,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Mitternächtlicher Tumult",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Blitz-SCH zu und verursacht mit einer Chance Schock.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				3,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401401"
+		},
+		{
+			"name": "Streichelndes Mondlicht",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten Blitz-SCH zu. Wenn das Hauptziel geschockt wird, werden auch die angrenzenden Ziele geschockt.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1.75
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401402"
+		},
+		{
+			"name": "Stiller und scharfer Spott",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Blitz-SCH zu.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401403"
+		},
+		{
+			"name": "Geistergeflüster",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten mit hoher Chance Dominiert zu und zieht dessen Aktion vor, sodass er sofort einen anderen Verbündeten angreift.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				2.5,
+				1.5,
+				0.5,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401404"
+		},
+		{
+			"name": "Wütendes Flüstern der Gefallenen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Blitz-SCH zu und verursacht mit einer Chance Schock. Fügt gleichzeitig allen geschockten Verbündeten Blitz-SCH zu.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401405"
+		},
+		{
+			"name": "Psychologische Suggestion",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Wendet „Psychologische Suggestion“ auf mehrere Verbündete an. Fügt „Offenbarung“ zur Aktionsleiste hinzu. Wird Offenbarung das nächste Mal ausgeführt, werden jegliche Ziele mit Psychologischer Suggestion dominiert.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				1.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401406"
+		},
+		{
+			"name": "Zittern",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn das Ziel gerade unter Schock steht, wird 1-mal Schock-SCH direkt verursacht.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401407"
+		},
+		{
+			"name": "Grausamkeit",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn Gegner (außer sich selbst) oder dominierte Verbündete das geschockte Hauptziel angreifen, wird ein zusätzlicher Blitzangriff ausgelöst.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401408"
+		},
+		{
+			"name": "Zweitbesetzung der Marionette",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Verleiht beschworenen Objekten den Effekt <u>Delirium</u>.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				0,
+				3,
+				0.75,
+				1.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401409"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5,
+				0,
+				0,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401410"
+		},
+		{
+			"name": "Seelenrufer",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beschwört 2 Elitegegner zur Unterstützung im Kampf. Wenn ein Verbündeter einem beschworenen Objekt SCH zufügt, verliert die Herrscherin des Seelenhakens die gleiche Menge an LP. Wenn beschworene Objekte Schwächebruch erleiden, werden ihre Aktionen zusätzlich verzögert. Nachdem ein beschworenes Objekt besiegt wurde, wird ihr Schwächetyp auf ein anderes beschworenes Objekt übertragen und es wird mit <u>Blutiger Blick</u> belegt.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				240,
+				0,
+				1,
+				0.5,
+				0.5,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401411"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401412"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.75,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401413"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401414"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"800302201",
+		"800301201",
+		"300301401",
+		"301301201"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 2,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100401",
+				"name": "Solider Schutz",
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100402",
+				"name": "Verlagerung des Schlachtfelds",
+				"description": "Das Boss-Phantom beschwört 2 Elitegegner zur Unterstützung des Kampfes hervor und <color=#f29e38ff><u>überträgt</u></color> seine eigene Schwächetypen auf beschworene Objekte. Wenn jedoch ein beschworenes Objekt besiegt wird, wird der eigene WDS des Boss-Phantoms zusätzlich reduziert.",
+				"params": []
+			},
+			{
+				"id": "100403",
+				"name": "Stellarer Beschützer",
+				"description": "Für <color=#f29e38ff>jede gegnerische Einheit</color> auf dem Kampffeld außer dem Boss-Phantom erleiden alle Gegner weniger SCH.",
+				"params": []
+			},
+			{
+				"id": "100404",
+				"name": "Das Blatt dreht sich",
+				"description": "Wenn das Boss-Phantom in der zweiten Phase „Zweitbesetzung der Marionette“ einsetzt, verleiht es <color=#f29e38ff>allen beschworenen Objekten</color> einen Verstärkungseffekt.",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10041",
+				"name": "Phase I: Duett von Eis und Feuer",
+				"description": "Das Boss-Phantom beschwört Lodern aus dem All und Eis aus dem All zur Unterstützung im Kampf und überträgt seine eigene Schwächetypen auf die beschworenen Objekte.",
+				"answer": "Strategie: Besiege zuerst die beschworenen Objekte. Durch das Besiegen aller beschworenen Objekte werden die Schwächetypen wieder auf das Boss-Phantom übertragen.",
+				"skills": [
+					{
+						"id": "100411",
+						"type": "Normal",
+						"name": "Dem vom Boss-Phantom verursachten Kontrolleffekt „Dominiert“ entgegenwirken",
+						"texts": [
+							{
+								"description": "Erhöhe den Effekt-WDS oder setze Fähigkeiten ein, um den vom Boss-Phantom verursachten Kontrolleffekt „Dominiert“ zu entfernen.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100412",
+						"type": "Normal",
+						"name": "Den beschworenen Objekten des Boss-Phantoms entgegenwirken",
+						"texts": [
+							{
+								"description": "Nachdem ein beschworenes Objekt besiegt wurde, wird die GES der verbleibenden beschworenen Objekte erhöht, aber auch ihr erlittener SCH. Nutze diesen Mechanismus, um die verbleibenden beschworenen Objekte schnell zu besiegen.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100413",
+						"type": "Normal",
+						"name": "Dem Boss-Phantom ohne Schwächetyp entgegenwirken",
+						"texts": [
+							{
+								"description": "Besiege die beschworenen Objekte, um den WDS des Boss-Phantoms zusätzlich zu reduzieren. Durch das Besiegen aller beschworenen Objekte werden die Schwächetypen wieder auf das Boss-Phantom übertragen.",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10042",
+				"name": "Phase II: Vorhang auf",
+				"description": "Das Boss-Phantom beschwört Truppe der Albträume: Flambosaurus und Speicherbereich-Mem: Verblichene Hülle des Zorns zur Unterstützung im Kampf und überträgt seine eigene Schwächetypen auf die beschworenen Objekte.",
+				"answer": "Strategie: Besiege zuerst die beschworenen Objekte. Durch das Besiegen aller beschworenen Objekte werden die Schwächetypen wieder auf das Boss-Phantom übertragen.",
+				"skills": [
+					{
+						"id": "100421",
+						"type": "Normal",
+						"name": "Dem Effekt der Fähigkeit „Psychologische Suggestion“ des Boss-Phantoms entgegenwirken",
+						"texts": [
+							{
+								"description": "Erhöhe den Effekt-WDS oder setze Fähigkeiten ein, um den Effekt „Psychologische Suggestion“, den das Boss-Phantom bei Verbündeten verursacht, aufzuheben.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100422",
+						"type": "Normal",
+						"name": "Dem beschworenen Objekt Truppe der Albträume: Flambosaurus entgegenwirken",
+						"texts": [
+							{
+								"description": "Erreiche während des Status „Aufladen“ von Truppe der Albträume: Flambosaurus so schnell wie möglich 6 Stapelungen „Herdhitze“, um Aufladen zu entfernen und allen Gegnern SCH und schwächende Effekte zuzufügen. Angriffe oder DoT können Herdhitze stapeln.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100423",
+						"type": "Normal",
+						"name": "Speicherbereich-Mem: Verblichene Hülle des Zorns entgegenwirken",
+						"texts": [
+							{
+								"description": "Füge „Speicherbereich-Mem: Verblichene Hülle des Zorns“ Schwächebruch zu, um seinen Status „Aufladen“ und den Effekt „Schutz“ zu entfernen und zugleich seinen erlittenen SCH zu erhöhen.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "Das Boss-Phantom überträgt <color=#f29e38ff>seine eigene Schwächetypen auf beschworene Objekte</color>. Wenn ein beschworenes Objekt besiegt wird, werden seine Schwächetypen bei den verbleibenden beschworenen Objekten <color=#f29e38ff>implantiert</color>.",
+				"params": []
+			},
+			{
+				"description": "Bei Angriffen auf beschworene Objekte wird <color=#f29e38ff>die gleiche Menge der LP</color> des Boss-Phantoms reduziert. Wenn ein beschworenes Objekt besiegt wird, wird die GES und der <color=#f29e38ff>erlittene SCH</color> der verbleibenden beschworenen Objekte erhöht.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Konzentriere dich darauf, die <color=#f29e38ff>beschworenen Objekte</color> zu besiegen. Dadurch werden ihre Schwächetypen zurück auf Boss-Phantom <color=#f29e38ff>übertragen</color>.",
+				"params": []
+			},
+			{
+				"description": "Nachdem ein beschworenes Objekt besiegt wurde, wird der erlittene SCH der verbleibenden beschworenen Objekte erhöht. Nutze diesen Mechanismus, um die verbleibenden beschworenen Objekte schnell zu besiegen.",
+				"params": []
+			},
+			{
+				"description": "Erhöhe den Effekt-WDS oder setze Fähigkeiten ein, um den vom Boss-Phantom verursachten Status <color=#f29e38ff>Dominiert</color> aufzuheben.",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "200401402"
+}

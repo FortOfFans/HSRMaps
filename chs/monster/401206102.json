@@ -1,0 +1,125 @@
+{
+	"name": "被征服者",
+	"description": "它的矛尖划定了疆界，无边无际。\n疆界之中的军与民，皆是被征服或将被征服的。\n畏怖者的血成为滋养神躯的蜜酿，抗争者的魂灵踏入冥河下的荣耀殿堂。",
+	"icon": "spriteoutput/monsterfigure/Monster_4012060.png",
+	"shortIcon": "Monster_4012060",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012060.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1860,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 240,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "万亿枯骨上的胜者",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【被征服者】不会行动，被召唤时根据【兵戈扰攘的常胜军】所处的阶段获得<u>【战甲】</u>或<u>【百炼战甲】</u>。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0,
+				0.3,
+				1,
+				0.5,
+				0.015,
+				60
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401206101"
+		},
+		{
+			"name": "千百伤痕后的归宿",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【被征服者】受到致命攻击时，若其<u>【战甲】</u>或<u>【百炼战甲】</u>尚未被破坏，则直接获得对应的战技点与<u>【荣耀】</u>奖励。受到致命攻击时削减【兵戈扰攘的常胜军】的韧性和生命值。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				15,
+				1,
+				0,
+				0.05,
+				0.08,
+				0.25,
+				180
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401206102"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Imaginary",
+	"id": "401206102"
+}

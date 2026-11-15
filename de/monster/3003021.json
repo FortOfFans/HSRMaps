@@ -1,0 +1,162 @@
+{
+	"name": "Truppe der Albträume: Süßer Affe Tarzan (Projektion)",
+	"description": "Servicemaschine Penaconys, die aufgrund der emotionalen Interferenz in der Traumlandschaft außer Kontrolle geraten ist.\nUrsprünglich ein Kurier für SeelFroh. Verteilt seit dem Kontrollverlust weiterhin Köstlichkeiten, indem er Vorbeigehende damit beschießt.",
+	"icon": "spriteoutput/monsterfigure/Monster_3003020.png",
+	"shortIcon": "Monster_3003020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 13950,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Limitiertes Getränk",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu und seine Aktion wird vorgezogen. Wenn das Ziel einen Schild hat, wird der Einheit selbst ebenfalls Eis-SCH zugefügt und ihre VTD wird mit hoher Chance verringert.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.2,
+				1.5,
+				0.1,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302101"
+		},
+		{
+			"name": "Unbegrenzte Getränke",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem überwachten Verbündeten 4-mal Eis-SCH zu und seine Aktion wird vorgezogen. Wenn das Ziel einen Schild hat, wird außerdem einem zufälligen Gegner Eis-SCH zugefügt und die VTD des betroffenen Gegners mit hoher Chance verringert.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.2,
+				1.5,
+				0.1,
+				2,
+				0.0095
+			],
+			"spGain": 40,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302102"
+		},
+		{
+			"name": "SeelFroh-Party",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört 2 Sodahunde.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302103"
+		},
+		{
+			"name": "Partyfontäne",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein und erhält Widerstandsschutz. Setzt bei der nächsten Aktion „Unbegrenzte Getränke“ ein und markiert einen zufälligen Verbündeten als Überwachungsziel. Jedes Mal, wenn ein Verbündeter die Fertigkeit einsetzt, wird er zu dem neu markierten Ziel. In diesem Status werden die Aktionen dieser Einheit vorgezogen, wenn sie angegriffen wird.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302104"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [
+		"3002030"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 182010,
+				"count": 1
+			},
+			{
+				"id": 183006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "3003021"
+}

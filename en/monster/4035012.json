@@ -1,0 +1,242 @@
+{
+	"name": "Anti-Creator, Hatred Inundate",
+	"description": "The core of the ancient \"Scepter,\" the materialized \"hatred\" of Amphoreus. It has recorded billions of souls' suffering, countless lambs' blood converging into an absolute darkness. The endless, infinite darkness flows out from a broken shell, driving forth the headless giant.\nThis shell, forged from an endless stream of \"hatred,\" seems to contain a heart wrapped in chaotic flames deep within.",
+	"icon": "spriteoutput/monsterfigure/Monster_4035010.png",
+	"shortIcon": "Monster_4035010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4035010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 6975,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 240,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "Cast Down Blood and Scar",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to one designated target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				0.005
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501201"
+		},
+		{
+			"name": "Weave Suffering and Death",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals Physical DMG to all targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				0.007999999
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501202"
+		},
+		{
+			"name": "The Crown of Divinity Shall Shatter",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals massive Quantum DMG to all targets and reduces all targets' Energy.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0.5,
+				0.08
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501205"
+		},
+		{
+			"name": "The Spirit's Prison Shall Burn",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals massive Imaginary DMG to the locked-on target.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0.007999999,
+				3,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501206"
+		},
+		{
+			"name": "Resist and Destroy",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the \"Resist and Destroy\" state, fully restores HP for \"Mythos\" and \"Logos,\" cannot be attacked before the next action, and uses \"Immolate the Heavens, Abandon the World\" on all targets during the next action. The \"Resist and Destroy\" state can be dispelled when all \"Mythos\" and \"Logos\" enter \"Grave Wound\" state.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501207"
+		},
+		{
+			"name": "Immolate the Heavens, Abandon the World",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals massive Physical DMG to all targets. If \"Logos\" is not in the \"Grave Wound\" state, reduces the Energy of all targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				9,
+				0.02,
+				0.5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501208"
+		},
+		{
+			"name": "Thirty Million Cycles of Sin",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "When \"Mythos\" and \"Logos\" take DMG, \"Anti-Creator\" will also take DMG.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.25,
+				1,
+				1.25,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501210"
+		},
+		{
+			"name": "Reversal",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "After using \"Resist and Destroy,\" this unit gains \"Reversal,\" its Toughness cannot be reduced, and all DMG taken is greatly reduced. \"Mythos\" and \"Logos\" gain \"Non-Existence,\" DMG taken from non-memosprite units is greatly reduced, DMG taken from memosprite units is slightly reduced, and the efficiency of DMG dealt by memosprites in dispelling \"Non-Existence\" greatly increases. When the \"Non-Existence\" on \"Mythos\" and \"Logos\" is dispelled, this unit's \"Reversal\" is dispelled, this unit takes massive DMG, and DMG taken by this unit increases. If this unit's HP drops to a certain threshold before using \"Resist and Destroy,\" immediately uses \"Resist and Destroy.\"",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				16,
+				4,
+				1,
+				0.5,
+				0.9,
+				0.65,
+				1,
+				0.99,
+				0.0025000002,
+				0.2,
+				4,
+				0.99,
+				0.95,
+				0.5,
+				0.45,
+				0.6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501213"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403501212"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"4035020",
+		"4032062",
+		"4032072"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Physical",
+	"id": "4035012"
+}

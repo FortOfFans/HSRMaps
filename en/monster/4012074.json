@@ -1,0 +1,134 @@
+{
+	"name": "The Long Arms of Sorrow",
+	"description": "All who wish to futilely escape the Finale must face the underworld's pursuit.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012070.png",
+	"shortIcon": "Monster_4012070",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012070.png",
+	"stats": {
+		"baseAttack": 40.008892,
+		"baseDefense": 210,
+		"baseHealth": 120.0165,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "The Living Shan't Flee",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Quantum DMG to one target.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207401"
+		},
+		{
+			"name": "The Dead Shan't Avoid",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals minor Quantum DMG to one target and units adjacent to the target.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.75
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207402"
+		},
+		{
+			"name": "Between Life and Death",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "While in the \"Overdue Obituary\" state, \"The Living Shan't Flee\" is enhanced to \"The Dead Shan't Avoid.\" When defeated, restores HP for targets and draws a card, then revives",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401207403"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "4012074"
+}

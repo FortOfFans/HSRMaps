@@ -1,0 +1,127 @@
+{
+	"name": "Circe's Mechatron",
+	"description": "A general-purpose mechatron from Planarcadia. The letters \"SD\" are from the initials of \"Sorry, Dunno.\"",
+	"icon": "spriteoutput/monsterfigure/Monster_5012090.png",
+	"shortIcon": "Monster_5012090",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5012090.png",
+	"stats": {
+		"baseAttack": 40.000010025976,
+		"baseDefense": 210,
+		"baseHealth": 120.016360128,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 80,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Boosting Strength",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the \"Strength Boost!\" state. Uses \"Windmill Defacer\" in the next turn.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501209201"
+		},
+		{
+			"name": "Windmill Defacer",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to one designated target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501209202"
+		},
+		{
+			"name": "IFF Systems Malfunction",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Switches its attack target between friendly units and targets every time after it is attacked by a target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501209203"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Thunder"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116001,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 181010,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "501209201"
+}

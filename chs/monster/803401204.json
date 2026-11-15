@@ -1,0 +1,535 @@
+{
+	"name": "孤注一掷的掷骰者",
+	"description": "星际和平公司「战略投资部」的高级干部，「石心十人」之一。借由基石分得「存护」令使的权能，以身作骰，置之死地而后生。",
+	"icon": "spriteoutput/monsterfigure/Monster_8034010.png",
+	"shortIcon": "Monster_8034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 8137.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 570,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "押以重注",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401201"
+		},
+		{
+			"name": "分散投资",
+			"tag": "弹射",
+			"type": "技能",
+			"description": "连续对我方随机单体造成少量虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.1,
+				5,
+				8
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401202"
+		},
+		{
+			"name": "收益抽成",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "对我方全体造成少量虚数属性伤害，并减少我方全体的能量；在第二阶段时，额外减少我方【点数】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401203"
+		},
+		{
+			"name": "对赌时刻",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤【「所有或一无所有」】并使我方单体进入赌局，每个【「所有或一无所有」】每次受到进入赌局的我方目标攻击时，会使其获得1个随机1到6的点数。进入赌局的我方单体回合结束时，点数低于诡弈砂金视为输掉赌局并受到攻击；点数高于诡弈砂金视为赢得赌局且终结技被激活。同时使没有进入赌局的我方目标陷入【观局勿语】状态，赌局结束后解除。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401204"
+		},
+		{
+			"name": "豪赌盛宴",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤【「所有或一无所有」】并使我方全体进入赌局，每个【「所有或一无所有」】每次受到攻击时会使进行攻击的我方目标获得1个随机1到6的点数。下次诡弈砂金行动时，点数低于诡弈砂金的我方目标视为输掉赌局并受到攻击；点数高于诡弈砂金的我方目标视为赢得赌局且终结技被激活。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.2,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401205"
+		},
+		{
+			"name": "败者退席",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "对输掉赌局的我方单体造成虚数属性伤害，并大概率使受到攻击的我方单体陷入禁锢状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.7,
+				1,
+				0.3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401206"
+		},
+		{
+			"name": "胜者通杀",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对所有输掉赌局的我方目标造成大量虚数属性伤害，并大概率使受到攻击的我方目标陷入禁锢状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.7,
+				1,
+				0.3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401207"
+		},
+		{
+			"name": "诡弈赌约",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "每次赢得赌局的我方目标获得【鸿运当头】效果，造成的伤害提高；每次输掉赌局的我方目标获得【时运不济】效果，受到的伤害提高。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401208"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401209"
+		},
+		{
+			"name": "开牌下注",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "激活两个【「所有或一无所有」】，并锁定我方单体，下次行动对其施放【孤注一掷】。消灭所有被激活的【「所有或一无所有」】可以阻止【孤注一掷】的施放，并使随机我方单体激活终结技。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.2,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401210"
+		},
+		{
+			"name": "全部押进",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "激活所有【「所有或一无所有」】，下次行动施放【逢赌必输】。消灭所有被激活的【「所有或一无所有」】可以阻止【逢赌必输】的施放，并使我方全体激活终结技。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.2,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401211"
+		},
+		{
+			"name": "孤注一掷",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "对锁定的我方单体造成虚数属性伤害，并大概率使其陷入禁锢状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401212"
+		},
+		{
+			"name": "逢赌必输",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成虚数属性伤害，并大概率使其陷入禁锢状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.25,
+				0.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401213"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.95,
+				0.01,
+				49,
+				99,
+				1.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401214"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401215"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401216"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.45
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401217"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.01
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401218"
+		},
+		{
+			"name": "点数",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "战斗中，使所有单位获得一定量的【点数】，转阶段时重置。我方【点数】小于敌方目标时，敌方目标受到的伤害大幅降低，并获得韧性保护；我方【点数】大于等于敌方目标时，敌方目标受到的伤害提高。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401219"
+		},
+		{
+			"name": "跟注",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "阶段开始或召唤物被消灭时，召唤【「所有或一无所有」】，最多<unbreak>1[i]</unbreak>个。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401220"
+		},
+		{
+			"name": "盲注",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "阶段开始或召唤物被消灭时，召唤【「所有或一无所有」】或【「所有或一无所有•双倍好运」】，最多<unbreak>1[i]</unbreak>个。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				11
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401221"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803401222"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [
+		"803203304",
+		"803203404"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 4,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100501",
+				"name": "坚防守备",
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "100502",
+				"name": "点数竞赛",
+				"description": "首领幻影的技能会赋予所有我方和敌方单位<color=#f29e38ff><u>点数</u></color>",
+				"params": []
+			},
+			{
+				"id": "100503",
+				"name": "庄家优势",
+				"description": "当我方单位点数小于召唤物点数时，召唤物受到的伤害大幅降低。",
+				"params": []
+			},
+			{
+				"id": "100504",
+				"name": "先发优势",
+				"description": "召唤物的点数越大，其生命上限越高。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10051",
+				"name": "阶段一：赌局开场",
+				"description": "敌方目标具有【点数】，其【点数】大于我方时，受到的伤害大幅降低，且会获得韧性保护。",
+				"answer": "当我方【点数】小于等于首领幻影时，优先消灭【点数】小于等于我方的骰子，以累积点数。",
+				"skills": [
+					{
+						"id": "100511",
+						"type": "Normal",
+						"name": "如何提高我方【点数】",
+						"texts": [
+							{
+								"description": "消灭【点数】小于等于我方的骰子，其【点数】会累加到我方，使我方【点数】提高。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10052",
+				"name": "阶段二：双倍大奖",
+				"description": "首领幻影的【收益抽成】会额外使我方【点数】降低，并且场上会出现【翻倍骰子】。",
+				"answer": "在【翻倍骰子】离开前将其消灭，可使我方【点数】翻倍。",
+				"skills": [
+					{
+						"id": "100521",
+						"type": "Normal",
+						"name": "应对首领幻影【收益抽成】降低我方【点数】",
+						"texts": [
+							{
+								"description": "当我方【点数】被削减至小于首领幻影时，优先消灭骰子以累积【点数】。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "敌方目标具有<color=#f29e38ff>【点数】</color>，骰子被消灭后，其【点数】会<color=#f29e38ff>累加</color>到我方。",
+				"params": []
+			},
+			{
+				"description": "敌方目标【点数】<color=#f29e38ff>大于</color>我方时，受到的伤害大幅降低；敌方目标【点数】<color=#f29e38ff>小于等于</color>我方时，受到的伤害提高。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "优先消灭【点数】<color=#f29e38ff>小于等于我方</color>的骰子，累积【点数】。在【翻倍骰子】离开前将其消灭，以获取更多【点数】。",
+				"params": []
+			},
+			{
+				"description": "当我方【点数】大于等于首领幻影时，尽快击破首领幻影。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "803401204"
+}

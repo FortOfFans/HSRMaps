@@ -1,0 +1,229 @@
+{
+	"name": "Herzfressende Bestie",
+	"description": "Die inneren Dämonen provozieren, den mächtigen Geist verdrängen, das Aussehen verwandeln ... Der karminrote Mond wird eine gezielte Jagd je nach der Schwäche seines Wirts veranstalten.\nIst Feixiao die Jägerin oder die Beute in dieser endlosen Verfolgung?",
+	"icon": "spriteoutput/monsterfigure/Monster_2033020.png",
+	"shortIcon": "Monster_2033020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2033020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 35805,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Séance",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "„Haupt des Wolkenverschlingers“, „Dimensionszerfetzende Klauen“, „Entstaubender Schweif“ und „Höllenverkohlter Schattengeneral“ teilen sich ihre LP.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203302201"
+		},
+		{
+			"name": "Synchronisierung",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Wenn „Haupt des Wolkenverschlingers“, „Dimensionszerfetzende Klauen“, „Entstaubender Schweif“ und „Höllenverkohlter Schattengeneral“ Schwächebruch erleiden, wird der WDS von „Herzfressende Bestie“ reduziert.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203302202"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [],
+	"summons": [
+		"2032042",
+		"2032052",
+		"2032062"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 3,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101201",
+				"name": "Solider Schutz",
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101202",
+				"name": "Gipfel der Stahlknochen",
+				"description": "Reduziert den von Teilen erlittenen SCH um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. Nachdem das Boss-Phantom <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird der erlittene SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101203",
+				"name": "Klaue und Reißzahn",
+				"description": "Erhöht den WDS des Boss-Phantoms um <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+				"params": [
+					40
+				]
+			},
+			{
+				"id": "101204",
+				"name": "Kochendes Blut der Bestie",
+				"description": "Die Dauer des Status <color=#f29e38ff>Verwünschung</color> wird um <color=#f29e38ff><unbreak>#1[i]</unbreak></color> Rd. verlängert.",
+				"params": [
+					1
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10121",
+				"name": "Phase I: Beherrschendes Gebrüll",
+				"description": "Das Boss-Phantom wird „Herzfressende Verwünschung“ einsetzen und Verbündeten mit „Verwünschung“ belegen.",
+				"answer": "Strategie: Wenn „Herzfressende Verwünschung“ eingesetzt wird, wähle vorrangig eine Nicht-DPS-Figur als Ziel der Fähigkeit.",
+				"skills": [
+					{
+						"id": "101211",
+						"type": "Normal",
+						"name": "So wird „Wolf im Blutrausch“ im Kampf gesteuert",
+						"texts": [
+							{
+								"description": "Setze vorrangig die Fertigkeit von „Wolf im Blutrausch“ ein, um den WDS des Gegners effektiv zu reduzieren. Wenn die LP aller Verbündeten niedrig sind, setze vorrangig den Standardangriff von Wolf im Blutrausch ein, um die LP der Verbündeten schnell wiederherzustellen.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101212",
+						"type": "Normal",
+						"name": "Wann der Status „Verwünschung“ entfernt wird",
+						"texts": [
+							{
+								"description": "Wenn „Wolf im Blutrausch“ Standardangriff oder Fertigkeit einsetzt, wird 1 Stapelung „Blutgier“ erhalten. Wenn die Stapelzahl von Blutgier das Maximum erreicht, wird der Effekt „Verwünschung“ aufgehoben. Der Effekt wird auch aufgehoben, wenn das Boss-Phantom Schwächebruch erleidet.",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10122",
+				"name": "Phase II: Streife den Himmel",
+				"description": "Das Boss-Phantom wird „Streife den Himmel, verschlinge die Erde“ einsetzen und hohen SCH sowie Debuffs verursachen.",
+				"answer": "Strategie: Zerstöre möglichst alle Teile, bevor „Streife den Himmel, verschlinge die Erde“ eingesetzt wird.",
+				"skills": [
+					{
+						"id": "101221",
+						"type": "Normal",
+						"name": "Dem SCH und den Debuffs von „Streife den Himmel, verschlinge die Erde“ widerstehen",
+						"texts": [
+							{
+								"description": "Setze die Fertigkeit von „Wolf im Blutrausch“ ein, um mehrere Teile des Boss-Phantoms zu treffen und den WDS dieser Teile massiv zu reduzieren, oder füge allen Teilen Schwächebruch zu, um es daran zu hindern, „Streife den Himmel, verschlinge die Erde“ einzusetzen.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Das Boss-Phantom und alle seine Teile erleiden <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nach dem Erleiden von <color=#f29e38ff>Schwächebruch</color> wird die Aktion zusätzlich verzögert und der erlittene SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "Wenn ein Teil des Boss-Phantoms <color=#f29e38ff>Schwächebruch</color> erleidet, wird der WDS des Boss-Phantoms reduziert.",
+				"params": []
+			},
+			{
+				"description": "Wenn das Boss-Phantom „Herzfressende Verwünschung“ einsetzt, treten Verbündete <color=#f29e38ff>in den Status „Verwünschung“ ein</color>. Verbündete Figuren und ihre beschworene Objekte im Status „Verwünschung“ verlassen das Feld. Gleichzeitig ersetzt „Wolf im Blutrausch“ diese Figuren im Kampf und seine Angriffe können <color=#f29e38ff>hohe WDS-Reduzierung verursachen</color>.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Wenn die <color=#f29e38ff>Teile</color> des Boss-Phantoms mehrfach Schwächebruch erleiden, wird der WDS des Boss-Phantoms effektiv reduziert. Wenn das Boss-Phantom <color=#f29e38ff>Schwächebruch</color> erleidet, wird sein erlittener SCH sowie der all seiner Teile erheblich erhöht. Außerdem werden Fertigkeitspunkte wiederhergestellt und die Ultimates aller Verbündeten aktiviert.",
+				"params": []
+			},
+			{
+				"description": "Wenn <color=#f29e38ff>Wolf im Blutrausch</color> anstelle einer Figur kämpft, reduziert er basierend auf der <color=#f29e38ff>Anzahl der DoT-Debuffs</color> des getroffenen Gegners zusätzlich <color=#f29e38ff> seinen WDS unabhängig vom Schwächetyp</color>. Der <color=#f29e38ff>Standardangriff</color> von Wolf im Blutrausch stellt bei allen Verbündeten LP wieder her. Seine <color=#f29e38ff>Fertigkeit</color> trifft mehrere Gegner und reduziert deren WDS erheblich. Dies <color=#f29e38ff>verbraucht keine Fertigkeitspunkte</color>.",
+				"params": []
+			}
+		]
+	},
+	"rank": "Elite",
+	"stanceType": "Wind",
+	"id": "203302203"
+}

@@ -1,0 +1,182 @@
+{
+	"name": "Linke Hand der Dämmerung",
+	"description": "Beim letzten Morgengrauen vor dem Ende wird die helle, strahlende Morgensonne erzittern und verschwinden.\nDie Linke Hand der Dämmerung kann Quantenmacht geschickt einsetzen, um einzelne Ziele anzugreifen.",
+	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
+	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012142.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 90,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Gefallener Schmiedehammer",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten geringen Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214701"
+		},
+		{
+			"name": "Der Besuch des Gefallenen Sterns",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten Quanten-SCH zu und verursacht den Status „Quanten-Zauber“.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214702"
+		},
+		{
+			"name": "Wenn die Dämmerung dunkel ist",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten massiven Quanten-SCH zu und verursacht den Status „Quanten-Zauber“.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214703"
+		},
+		{
+			"name": "Kollision der Auslöschung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn durch den Einsatz der Fähigkeit ein Verbündeter gleichzeitig mit „Quanten-Zauber“ und „Imaginärer Zauber“ belegt wird, werden Quanten-Zauber und Imaginärer Zauber von diesem Ziel entfernt. Ihm wird geringer Quanten- und imaginärer SCH zugefügt und er tritt mit hoher Chance in den Status <u>Verschränkte Gefangenschaft</u> ein.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				1,
+				0.1,
+				0.3,
+				0.6,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214704"
+		},
+		{
+			"name": "Scheintod",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Tritt nach Erleiden eines Todesstoßes in den Status „Scheintod“ ein.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214705"
+		},
+		{
+			"name": "Schutz",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Tritt in den Status „Schutz“ ein und reduziert erlittenen SCH, solange die Einheit sich nicht im Status Schwächebruch befindet. Wenn die Einheit Schwächebruch erleidet, werden ihre Aktionen zusätzlich verzögert und der erlittene SCH erhöht.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801214706"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111011,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 181003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "8012147"
+}

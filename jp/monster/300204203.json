@@ -1,0 +1,190 @@
+{
+	"name": "ドリームメイクバナ{RUBY_B#し}師{RUBY_E#}（バナ{RUBY_B#けん}研{RUBY_E#}）",
+	"description": "元々はドリームメイク学部の教材を搭載していた「ゼンマイ暴徒」。ミームウィルスの影響で、教材がバナ材に変わってしまった。工事現場でのバナバナしい姿はまるで鉄壁のようで、時々、眠っている学生とバナ友を起こすためにベルの音を響かせている。",
+	"icon": "spriteoutput/monsterfigure/Monster_3002041.png",
+	"shortIcon": "Monster_3002041",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3002041.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 270,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "終鈴が鳴った！行こう行こう！",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「講義チャンネル」状態から「空きコマチャンネル」状態に切り替わると、味方それぞれの行動が早まる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300204201"
+		},
+		{
+			"name": "講義開始静かに着席！",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "敵全体の行動順を早める。「講義チャンネル」状態でのみ使用可能。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300204202"
+		},
+		{
+			"name": "バナキュラム変更",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "「空きコマチャンネル」状態から「講義チャンネル」状態に変更する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300204203"
+		},
+		{
+			"name": "バナ育事故",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "一定回数の攻撃を受けた後、「講義チャンネル」状態から「空きコマチャンネル」状態に切り替わり、弱点撃破状態になる。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300204204"
+		},
+		{
+			"name": "",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300204205"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300204206"
+		},
+		{
+			"name": "質問タイム",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300204207"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Ice",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114001,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 181016,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Imaginary",
+	"id": "300204203"
+}

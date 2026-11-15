@@ -1,0 +1,144 @@
+{
+	"name": "Verleiher, Anführer, Lanze des Zorns",
+	"description": "Der Unbesiegte, der Herr aller Schlachtfelder, der König von Castrum Kremnos und der Ruinen,\nder Meister des Streitwagens, der Thron des Leichenberges, der Vater des Sieges,\nder Tyrann der Ehre, der Erde und Meere zerreißende Donner, der Wächter von Amphoreus,\nder Titan des Zwists, die Lanze des Zorns, Nikador.\nDer General, dessen Verdammung die ganze Welt erhört, die ewige und scharfe Waffe, das Gesetz des Zwists und dessen Ende.\nGepriesen sei Nikador, der größte aller Bezwinger, der größte aller Wächter.",
+	"icon": "spriteoutput/monsterfigure/Monster_4014020.png",
+	"shortIcon": "Monster_4014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 5580,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 60,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Wehe den Bezwungenen",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Jeder Verbündete erzeugt 1 entsprechendes „Erobern oder erobert werden“, was die entsprechende Figur mit „Erobert“ belegt. Erobert reduziert die max. wiederherstellbaren LP der Figur. Das Verringern der LP des entsprechenden Erobern oder erobert werden stellt demgemäß einen Prozentsatz der wiederherstellbaren LP wieder her.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402001"
+		},
+		{
+			"name": "Ruhm des entehrten Todes",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Belegt alle Figuren mit „Furcht des Zwists“. Wenn der Status „Erobert“ entfernt wird, wird auch die entsprechende Furcht des Zwists entfernt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402002"
+		},
+		{
+			"name": "Himmlische Strafe für den Zwist",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Lässt „Ungestümer Gott, wahnsinniger König, Verkörperung des Zwists“ allen Figuren basierend auf einem Prozentsatz seiner max. LP imaginären SCH zufügen. Dieser SCH ignoriert die VTD des Ziels und es besteht eine hohe Chance, Ziele im Status „Erobert“ mit Gefangenschaft zu belegen.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.9,
+				1.5,
+				0.3,
+				0.15,
+				0.3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402003"
+		},
+		{
+			"name": "Waffen der furchtbefallenen Legion",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Absorbiert die verbleibenden „Erobern oder erobert werden“ und verstärkt „Ungestümer Gott, wahnsinniger König, Verkörperung des Zwists“. Fügt gleichzeitig Widerstandsschutz hinzu und entfernt Mengenkontrolle-Debuffs sowie Schwächebruch von Ungestümer Gott, wahnsinniger König, Verkörperung des Zwists.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [],
+	"summons": [
+		"401401201",
+		"401206001"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "401402002"
+}

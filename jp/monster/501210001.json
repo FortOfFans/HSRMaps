@@ -1,0 +1,150 @@
+{
+	"name": "{RUBY_B#まほうしょうじょきゅうしゅうげきだん}魔法少女急襲劇団{RUBY_E#}",
+	"description": "二相楽園の治安維持部隊兼アイドルグループ——魔法少女急襲劇団。\n古代弁才天国の時代、巫女たちは魔除けの舞と歌をもって、世に潜む闇を払っていた。\n時は流れ、巫女たちは現在の二相楽園において、除霊、暴動鎮圧、テロ対策、芸能を一体化させた職業——「魔法少女」となった。\nキュートな見た目とは裏腹に、魔法少女は二相楽園の極めて邪悪な存在に常に立ち向かわなければならない。そのため、プライベートでは性格が荒んでいることが多い。",
+	"icon": "spriteoutput/monsterfigure/Monster_5012100.png",
+	"shortIcon": "Monster_5012100",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5012100.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 232.499907,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "ラブ❤雷雨の日",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501210001"
+		},
+		{
+			"name": "ミスティレイン❤会いたいよ",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "HPが0になる攻撃を受ける時、「雨」状態の場合、連続でランダムな味方単体に少量の雷属性ダメージを与え、それぞれの攻撃後に高確率で攻撃を受けた味方を感電状態にする。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				2,
+				1,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501210002"
+		},
+		{
+			"name": "ファーストキス❤天気は晴れ",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "HPが0になる攻撃を受ける時、「晴れ」状態の場合、味方全体の会心ダメージをアップさせる。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501210003"
+		},
+		{
+			"name": "トキメキ❤雨のち晴れ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "戦闘開始時は「雨」状態にある。愉悦ダメージを受けるか、任意の対象が愉悦スキルを発動した後、「晴れ」状態になり、行動順が遅延し、味方が<u>爆笑ネタ</u>を獲得する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				2,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501210004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116001,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 181010,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Thunder",
+	"id": "501210001"
+}

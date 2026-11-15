@@ -3,19 +3,26 @@
 	"description": "Each and every clone summoned by the Flame Reaver using the Calamity Power is a seed of ruin harboring the will of destruction within.",
 	"icon": "spriteoutput/monsterfigure/Monster_4032020.png",
 	"shortIcon": "Monster_4032020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032020.png",
 	"stats": {
 		"baseAttack": 9,
 		"baseDefense": 210,
 		"baseHealth": 558.000093,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
 		"type": "MinionLv2"
 	},
 	"skills": [
 		{
-			"id": "403202101",
 			"name": "Mutual Sacrifice: Demise's Storm",
 			"tag": "Blast",
 			"type": "Ability",
-			"description": "Deals minor Physical DMG to one designated target and its adjacent targets.",
+			"description": "Deals minor Physical DMG to one designated target and units adjacent to the target.",
 			"element": "Physical",
 			"attackType": "Normal",
 			"params": [
@@ -24,11 +31,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202101"
 		},
 		{
-			"id": "403202102",
 			"name": "Mutual Sacrifice: Fading Fate",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -40,11 +47,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202102"
 		},
 		{
-			"id": "403202103",
 			"name": "Heed My Chants",
 			"tag": "Talent",
 			"type": "Talent",
@@ -58,11 +65,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202103"
 		},
 		{
-			"id": "403202104",
 			"name": "Share In My Ritual",
 			"tag": "Talent",
 			"type": "Talent",
@@ -76,11 +83,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202104"
 		},
 		{
-			"id": "403202105",
 			"name": "Plummeting Strike",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -92,11 +99,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202105"
 		},
 		{
-			"id": "403202106",
 			"name": "Return to Faded Ashes",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -110,22 +117,32 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202106"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Fire",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.4
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
 		}
 	],
 	"weakness": [
@@ -134,8 +151,9 @@
 		"Thunder",
 		"Quantum"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 36,
+		"avatarExpReward": 108,
 		"itemList": [
 			{
 				"id": 2,
@@ -146,11 +164,20 @@
 				"count": 1
 			},
 			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
 				"id": 181017,
 				"count": 1
 			}
 		]
 	},
+	"guide": null,
 	"rank": "MinionLv2",
 	"stanceType": "Physical",
 	"id": "403202123"

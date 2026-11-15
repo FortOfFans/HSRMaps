@@ -1,0 +1,142 @@
+{
+	"name": "過去、今、そして永遠に続く演目（スペック）",
+	"description": "コードが影響を受けた後の正常な投影。参照する本体はスウィート・ドリーム劇団の役者たち。彼らは「秩序」の恩恵を受け、掟を宣明する傀儡と化した。彼らは至高なる戒めのもと、楽園を迎える演目を披露している。",
+	"icon": "spriteoutput/monsterfigure/Monster_3004010.png",
+	"shortIcon": "Monster_3004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2511,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "旋律の中、一つへと",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "今回の戦闘において、「過去、今、そして永遠に続く演目」は全ての「秩序の傀儡」とHPを共有する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300401301"
+		},
+		{
+			"name": "旋律の始まり、神の独作",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "戦闘に入る時、「秩序の傀儡」を1人選んで「司律」にする。「司律」はターンごとに再行動でき、速度が小アップする。「司律」が弱点撃破される時、行動順が遅延し、再度「秩序の傀儡」を選んで「司律」にする。すべての「秩序の傀儡」が弱点撃破状態になった場合、自身にダメージを与え、すべての「秩序の傀儡」の行動順をさらに遅延させ、受けるダメージをアップさせる。任意の「秩序の傀儡」が弱点撃破状態から回復する時、再び「司律」に選ばれる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				0.1,
+				0.1,
+				0.8,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300401302"
+		},
+		{
+			"name": "旋律の終わり、天民と音",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "すべての「秩序の傀儡」を「司律」にし、「守備」状態にする。「司律」はターンごとに再行動でき、速度が小幅アップする。「司律」が弱点撃破される時、行動順が遅延する。すべての「秩序の傀儡」が弱点撃破状態になった場合、自身にダメージを与え、すべての「秩序の傀儡」の行動順をさらに遅延させ、受けるダメージをアップさせる。「秩序の傀儡」が弱点撃破状態から回復する時、再び「司律」に選ばれる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300401303"
+		},
+		{
+			"name": "旋律の完成、戒律の受容",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "アクションバーに「戒め」を追加する。「戒め」が行動するたび、フィールド上のすべての「秩序の傀儡」の行動制限系デバフと弱点撃破状態を解除し、「同一律に捧ぐ舞」を発動する。「秩序の傀儡」が1体弱点撃破されるたび、「戒め」の行動順が小幅遅延する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				80,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300401304"
+		},
+		{
+			"name": "旋律の集まり、生々流転",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "アクションバーに「戒め」を1回追加する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				100,
+				0.1,
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300401305"
+		},
+		{
+			"name": "同一律に捧ぐ舞",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "高確率で味方全体を「<u>宴荒らしの罪</u>」または「<u>宴の罪</u>」状態にする。高確率で味方全体を「<u>異夢</u>」状態にし、味方全体に大量の物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300401306"
+		}
+	],
+	"resistance": [],
+	"debuffResist": [],
+	"weakness": [],
+	"summons": [
+		"3003033",
+		"3003043",
+		"3003053"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "3004013"
+}

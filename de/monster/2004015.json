@@ -1,0 +1,220 @@
+{
+	"name": "Stellaron-Jägerin Kafka",
+	"description": "Mitglied der Stellaron-Jäger. Eine wunderschöne Attentäterin mit einem geheimnisvollen Lächeln, die sich durch ihr Geschick mit verschiedensten Waffen und bei der Manipulation anderer auszeichnet. Sie hat den Astralexpress hierhergeführt, um einen unbekannten Plan auszuführen ...",
+	"icon": "spriteoutput/monsterfigure/Monster_2004010.png",
+	"shortIcon": "Monster_2004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 450,
+		"speed": 119,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Mitternächtlicher Tumult",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Blitz-SCH zu und verursacht mit hoher Chance Schock.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				3,
+				0.75
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401501"
+		},
+		{
+			"name": "Streichelndes Mondlicht",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten Blitz-SCH zu. Wenn das Hauptziel geschockt wird, werden auch die angrenzenden Ziele geschockt.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401502"
+		},
+		{
+			"name": "Stiller und scharfer Spott",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen Blitz-SCH zu.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401503"
+		},
+		{
+			"name": "Geistergeflüster",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten mit hoher Chance „Dominiert“ zu und zieht dessen Aktion vor, sodass er sofort einen anderen Verbündeten angreift.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2.25,
+				1.5,
+				0.5,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401504"
+		},
+		{
+			"name": "Wütendes Flüstern der Gefallenen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Blitz-SCH zu und verursacht mit hoher Chance Schock. Gleichzeitig wird allen geschockten Verbündeten Blitz-SCH zugefügt.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401505"
+		},
+		{
+			"name": "Psychologische Suggestion",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Wendet „Psychologische Suggestion“ auf mehrere Verbündete an. Fügt „Offenbarung“ zur Aktionsleiste hinzu. Wird Offenbarung das nächste Mal ausgeführt, werden jegliche Ziele mit Psychologischer Suggestion dominiert.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				2,
+				1.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401506"
+		},
+		{
+			"name": "Zittern",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn das Ziel gerade unter Schock steht, wird 1-mal direkt Schock-SCH verursacht.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401507"
+		},
+		{
+			"name": "Grausamkeit",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn Gegner (außer Kafka) oder dominierte Verbündete das geschockte Hauptziel angreifen, wird ein zusätzlicher Blitzangriff entfesselt.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401508"
+		},
+		{
+			"name": "Trauerer",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Jedes Mal, wenn ein Verbündeter Schock auslöst, wird der von Kafka verursachte SCH ein wenig erhöht.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.02,
+				0,
+				0,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401509"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "2004015"
+}

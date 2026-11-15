@@ -1,0 +1,102 @@
+{
+	"name": "Immerwinter-Schattenwandler",
+	"description": "Schatten, die seit Beginn des Ewigen Frostes im Fragmentum umherwandern, geben sich als Silbermähnen-Wachen aus. Sie tragen zwar dieselben Rüstungen wie die Krieger von Belobog, aber dort, wo eigentlich ihr Gesicht sein sollte, befindet sich nichts als eine Schicht glattes Eis.\nImmerwinter-Schattenwandler schwingen Eisäxte und verlangsamen die Aktionen ihrer Gegner.",
+	"icon": "spriteoutput/monsterfigure/Monster_1022010.png",
+	"shortIcon": "Monster_1022010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1022010.png",
+	"stats": {
+		"baseAttack": 30.000006,
+		"baseDefense": 210,
+		"baseHealth": 195.29999999999998,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 60,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Froststoß",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu und verzögert seine Aktion.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "102201001"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112001,
+				"count": 1
+			},
+			{
+				"id": 112002,
+				"count": 1
+			},
+			{
+				"id": 112003,
+				"count": 1
+			},
+			{
+				"id": 181005,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "102201004"
+}

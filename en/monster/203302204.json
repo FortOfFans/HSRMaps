@@ -3,15 +3,22 @@
 	"description": "Provoking their temptations within, usurping their powerful spirit, transforming into their appearance... The Crimson Moon will conduct a targeted hunt based on its host's weakness.\nIs Feixiao the hunter or the prey in this endless pursuit?",
 	"icon": "spriteoutput/monsterfigure/Monster_2033020.png",
 	"shortIcon": "Monster_2033020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2033020.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 35805,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "203302201",
 			"name": "Seance",
 			"tag": "Talent",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203302201"
 		},
 		{
-			"id": "203302202",
 			"name": "Synchronization",
 			"tag": "Talent",
 			"type": "Ability",
@@ -37,44 +44,184 @@
 			"params": [],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203302202"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [],
+	"summons": [
+		"2032042",
+		"2032052",
+		"2032062"
+	],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
+	},
+	"guide": {
+		"difficulty": 4,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101201",
+				"name": "Steadfast Safeguard",
+				"description": "Boss Mirage takes <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101202",
+				"name": "Steelbone Summit",
+				"description": "Parts take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After Boss Mirage's <color=#f29e38ff>Weakness is broken</color>, the DMG they receive increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101203",
+				"name": "Sickleclawed Sawteeth",
+				"description": "Boss Mirage's Toughness increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color>.",
+				"params": [
+					40
+				]
+			},
+			{
+				"id": "101204",
+				"name": "Beastly Rage",
+				"description": "The duration of <color=#f29e38ff>\"Malediction\"</color> state increases by <color=#f29e38ff><unbreak>#1[i]</unbreak></color> turn(s).",
+				"params": [
+					1
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10121",
+				"name": "Phase 1: Unyielding Winds",
+				"description": "The Boss Mirage will use \"Soul-Shattering Malediction\" to inflict the \"Malediction\" effect on allies.",
+				"answer": "Strategy: When \"Soul-Shattering Malediction\" is used, prioritize selecting non-DMG dealing ally characters as the target of the ability.",
+				"skills": [
+					{
+						"id": "101211",
+						"type": "Normal",
+						"name": "How to control \"Bloodstained Lupine\" in battle",
+						"texts": [
+							{
+								"description": "Prioritize using \"Bloodstained Lupine's\" Skill to reduce the enemy target's Toughness. When all allies' HP are low, prioritize using \"Bloodstained Lupine's\" Basic ATK to quickly restore HP for allies.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101212",
+						"type": "Normal",
+						"name": "Dispelling the \"Malediction\" state",
+						"texts": [
+							{
+								"description": "When \"Bloodstained Lupine\" uses Basic ATK or Skill, gains 1 stack of \"Bloodthirst.\" When \"Bloodthirst\" stacks are maxed, dispels the \"Malediction\" effect. Causing Boss Mirage to enter the Weakness Broken state also dispels the \"Malediction\" effect.",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10122",
+				"name": "Phase 2: Sweep the Heavens",
+				"description": "The Boss Mirage will use \"Sweep the Heavens, Swallow the Earth\" to deal high DMG and debuffs.",
+				"answer": "Strategy: Do what you can to break all parts before \"Sweep the Heavens, Swallow the Earth\" is used.",
+				"skills": [
+					{
+						"id": "101221",
+						"type": "Normal",
+						"name": "How to face the DMG and debuffs dealt by \"Sweep the Heavens, Swallow the Earth\"",
+						"texts": [
+							{
+								"description": "Use \"Bloodstained Lupine's\" Skill to hit multiple Boss Mirage parts to greatly reduce the Toughness of those parts. Alternatively, Break the Weakness of all parts to prevent the Boss from using \"Sweep the Heavens, Swallow the Earth.\"",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Boss Mirage and all other parts take <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> less DMG. After its <color=#f29e38ff>Weakness is broken</color>, its action is additionally delayed and the DMG it receives increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>.",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "When the Boss Mirage's parts get <color=#f29e38ff>Weakness Broken</color>, the Toughness of the Boss Mirage will be reduced.",
+				"params": []
+			},
+			{
+				"description": "When the Boss Mirage uses \"Soul-Shattering Malediction,\" causes ally characters to <color=#f29e38ff>enter the \"Malediction\" state</color>. Ally characters and summons in the \"Malediction\" state will Depart the field. At the same time, summons Bloodstained Lupine to replace the Departed character and continue the battle, and the \"Bloodstained Lupine\"'s attacks can cause <color=#f29e38ff>heavy Toughness Reduction</color>.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Weakness Break Boss Mirage's <color=#f29e38ff>parts</color> multiple times to effectively reduce Boss Mirage's Toughness. <color=#f29e38ff>Break</color> Boss Mirage to greatly increase the DMG taken by itself and all its parts, while recovering Skill Points and activating Ultimates for all allies.",
+				"params": []
+			},
+			{
+				"description": "When <color=#f29e38ff>\"Bloodstained Lupine\"</color> replaces an ally character in battle, it will additionally <color=#f29e38ff>reduce Toughness irrespective of Weakness Types</color> based on the <color=#f29e38ff>number of DoT debuffs</color> inflicted on the enemy target attacked. \"Bloodstained Lupine's\" <color=#f29e38ff>Basic ATK</color> can restore HP for all ally targets, and its <color=#f29e38ff>Skill</color> can hit multiple enemy targets while greatly reducing their Toughness. This <color=#f29e38ff>does not consume Skill Points</color>.",
+				"params": []
+			}
+		]
 	},
 	"rank": "Elite",
 	"stanceType": "Wind",

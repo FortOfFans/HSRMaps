@@ -1,0 +1,587 @@
+{
+	"name": "Opportunistische Provokateurin",
+	"description": "Dieses Fleisch besitzt die Kräfte der Zerstörung und des Überflusses, eine Form, die den Kreislauf von Tod und Wiedergeburt verkörpert. Es ist auch die erste „Frucht“, die aus dem verjüngten Himmelsbaum hervorging.",
+	"icon": "spriteoutput/monsterfigure/Monster_8015020.png",
+	"shortIcon": "Monster_8015020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8015020.png",
+	"stats": {
+		"baseAttack": 23.999994,
+		"baseDefense": 210,
+		"baseHealth": 7440,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1140,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "Acchata: Winde formen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Wind-SCH zu.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502201"
+		},
+		{
+			"name": "Staub abwischen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten geringen Wind-SCH zu.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1.3,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502202"
+		},
+		{
+			"name": "Verworrene Wurzeln: Macht des Überflusses",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Wind-SCH zu und verzögert dessen Aktion. Gleichzeitig führen aktionsfähige Überflusslotus auf dem Kampffeld einen Angriff aus.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.1,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502203"
+		},
+		{
+			"name": "Verworrene Wurzeln: Macht der Verwüstung",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Blitz-SCH zu und verzögert dessen Aktion. Gleichzeitig führen aktionsfähige Verwüstungslotus auf dem Kampffeld einen Angriff aus.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.1,
+				0.25,
+				2,
+				1.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502204"
+		},
+		{
+			"name": "Acchata: Tosender Donner",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Blitz-SCH zu.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502205"
+		},
+		{
+			"name": "Schwebende Sterne, zerbrochener Mond: Macht des Überflusses",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Wind-SCH zu und geht in die Form des Überflusses über.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502206"
+		},
+		{
+			"name": "Schwebende Sterne, zerbrochener Mond: Macht der Zerstörung",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Blitz-SCH zu und geht in die „Form der Zerstörung“ über.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502207"
+		},
+		{
+			"name": "Zwillinge",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Überflusslotus“ und „Verwüstungslotus“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502208"
+		},
+		{
+			"name": "Wut",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502209"
+		},
+		{
+			"name": "Baumwurzel-Apotheose",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502210"
+		},
+		{
+			"name": "Zwillinge",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Überflusslotus“ und „Verwüstungslotus“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502211"
+		},
+		{
+			"name": "Verworrene Wurzeln: Zahllose Krümmungen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten imaginären SCH zu und verzögert dessen Aktion. Gleichzeitig führen aktionsfähige Lotus auf dem Kampffeld einen Angriff aus.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.1,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502212"
+		},
+		{
+			"name": "Leere",
+			"tag": "Anvisieren",
+			"type": "Fähigkeit",
+			"description": "Visiert alle Verbündeten an. Die nächste Aktion des Lotus ist „Ewige Verdammnis“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502213"
+		},
+		{
+			"name": "Ewige Verdammnis",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt dem anvisierten Ziel imaginären SCH zu. Je mehr Ziele anvisiert werden, desto höher wird der verursachte SCH.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.5,
+				5.5,
+				6,
+				6
+			],
+			"spGain": 30,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502214"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502215"
+		},
+		{
+			"name": "Zerstörungs-Buff",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502216"
+		},
+		{
+			"name": "Überfluss-Buff",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502217"
+		},
+		{
+			"name": "Solider Schutz",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502218"
+		},
+		{
+			"name": "Blume unter anderem Namen",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502219"
+		},
+		{
+			"name": "Frühling des verdorrten Baums",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502220"
+		},
+		{
+			"name": "Hohlblumenflamme",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502221"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502222"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1.5,
+				1,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502223"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"8012204",
+		"8012214"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 4,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100601",
+				"name": "Solider Schutz",
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"id": "100602",
+				"name": "Blume unter anderem Namen",
+				"description": "Wenn ein neuer Lotus beschworen wird, tritt das Boss-Phantom in den Status <color=#f29e38ff><u>Widerstandsschutz</u></color> ein. Das Besiegen eines beliebigen beschworenen Objekts entfernt den Widerstandsschutz des Boss-Phantoms und reduziert seinen Widerstand zusätzlich.",
+				"params": []
+			},
+			{
+				"id": "100603",
+				"name": "Frühling des verdorrten Baums",
+				"description": "In Phase I stellen beschworene Objekte <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> LP wieder her, wenn das Boss-Phantom die Form wechselt.",
+				"params": [
+					0.3
+				]
+			},
+			{
+				"id": "100604",
+				"name": "Hohlblumenflamme",
+				"description": "In Phase II werden die max. LP von beschworenen Objekten um <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.35
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10061",
+				"name": "Phase I: Buntes Leuchten",
+				"description": "Das Boss-Phantom wechselt zwischen der Form des Überflusses und der Form der Zerstörung. Beim Wechsel wird ein Lotus heraufbeschworen.",
+				"answer": "Strategie: Besiege so viele Überflusslotus oder Verwüstungslotus (wähle einen der beiden) wie möglich, um mehr Buffs zu erhalten.",
+				"skills": [
+					{
+						"id": "100611",
+						"type": "Normal",
+						"name": "Dem Effekt der Reduktion der max. LP von Verbündeten entgegenwirken",
+						"texts": [
+							{
+								"description": "Erhöhe den Effekt-WDS oder setze Fähigkeiten ein, um „Prana-Verschlinger“ aufzuheben. Besiege beschworene Objekte, um die Debuffs zu reduzieren.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100612",
+						"type": "Normal",
+						"name": "Dem Status Widerstandsschutz des Boss-Phantoms entgegenwirken",
+						"texts": [
+							{
+								"description": "Das Besiegen eines beliebigen beschworenen Objektes entfernt den Widerstandsschutz des Boss-Phantoms und reduziert seinen WDS zusätzlich.",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100613",
+						"type": "Normal",
+						"name": "Den Bedürfnissen der Verbündeten entsprechend den passenden Lotus auswählen und besiegen",
+						"texts": [
+							{
+								"description": "Das Besiegen von Lotus gewährt Verbündeten Buffs: Das Besiegen eines Überflusslotus erhöht den SCH aller Typen und das Besiegen eines Verwüstungslotus erhöht den Brucheffekt. Nur einer dieser Buffs kann erhalten werden. Du kannst den Bedürfnissen der Verbündeten entsprechend den Lotus mit dem passenden Buff auswählen.",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10062",
+				"name": "Phase II: Die Fackel im Gegenwind",
+				"description": "Vom Boss-Phantom beschworene Objekte visieren Verbündete an und setzen „Ewige Verdammnis“ gegen sie ein, was massiven SCH verursacht.",
+				"answer": "Strategie: Besiege die beschworenen Objekte, bevor sie „Ewige Verdammnis“ einsetzen können, um Buffs zu erhalten und die Kraft von Ewige Verdammnis zu schwächen.",
+				"skills": [
+					{
+						"id": "100621",
+						"type": "Normal",
+						"name": "Dem hohen SCH, den beschworene Objekte mit „Ewige Verdammnis“ verursachen, entgegenwirken",
+						"texts": [
+							{
+								"description": "Besiege so viele Lotus wie möglich, bevor die Fähigkeit „Ewige Verdammnis“ ausgelöst wird, um ihren SCH zu reduzieren.",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "Das Boss-Phantom erleidet <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> weniger SCH. Nachdem es <color=#f29e38ff>Schwächebruch</color> erlitten hat, wird seine Aktion zusätzlich verzögert und sein erlittener SCH um <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> erhöht.",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"description": "Wenn ein neuer Lotus beschworen wird, tritt das Boss-Phantom in den Status <color=#f29e38ff>Widerstandsschutz</color> ein.",
+				"params": []
+			},
+			{
+				"description": "Bei jedem Besiegen des Überflusslotus wird der <color=#f29e38ff>SCH aller Typen</color> von allen Verbündeten erhöht. Bei jedem Besiegen des Verwüstungslotus wird der <color=#f29e38ff>Brucheffekt</color> aller Verbündeten erhöht. Nach Erhalt eines der beiden Buffs kann der andere nicht mehr erhalten werden.",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "Wenn das Boss-Phantom <color=#f29e38ff>Schwächebruch</color> erleidet, wird sein erlittener SCH massiv erhöht. Es werden Fertigkeitspunkte für alle Verbündeten wiederhergestellt und ihre Aktionen werden vorgezogen.",
+				"params": []
+			},
+			{
+				"description": "Das Besiegen von <color=#f29e38ff>beschworenen Objekten</color> entfernt den Widerstandsschutz des Boss-Phantoms und schwächt es.",
+				"params": []
+			},
+			{
+				"description": "Wähle den Bedürfnissen der Verbündeten entsprechend den passenden Lotus: Besiege den Überflusslotus, um den <color=#f29e38ff>SCH aller Typen</color> der Verbündeten zu erhöhen, oder den Verwüstungslotus, um ihren <color=#f29e38ff>Brucheffekt</color> zu erhöhen.",
+				"params": []
+			}
+		]
+	},
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "801502204"
+}

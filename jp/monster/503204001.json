@@ -1,0 +1,105 @@
+{
+	"name": "{RUBY_B#きげき}喜劇{RUBY_E#}の{RUBY_B#ざんさい}残滓{RUBY_E#}",
+	"description": "「愉悦」の概念の残滓。「貪慾」に飲み込まれ消化された後、すっかり意味を失った存在。\n無意味だからこそ意味を探し求めるが、「貪慾」に喰われた彼らには、もはや自己を満たす術は残されていない。\nそのため、決して満たされることのない「愉悦」への渇望を満たそうと、他の命を狩り続けている。",
+	"icon": "spriteoutput/monsterfigure/Monster_5032040.png",
+	"shortIcon": "Monster_5032040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5032040.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 232.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "ぜんぜん笑えない",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の物理属性ダメージを与え、味方の爆笑ネタを少量奪う。味方の爆笑ネタが足りない場合、足りない爆笑ネタに応じて、その味方は追加で一定割合のHPを失う。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.2,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503204001"
+		},
+		{
+			"name": "失礼なジョーク",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "HPが0になる攻撃を受けた時、奪った爆笑ネタを2倍にして返す。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503204002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "503204001"
+}

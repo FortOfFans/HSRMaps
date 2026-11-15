@@ -1,0 +1,184 @@
+{
+	"name": "摇滚狂徒",
+	"description": "狂热的摇滚乐票友。为了追寻音乐梦想，不惜踏入魔道。但终归是个票友。\n最讨厌「贝斯手笑话」。\n有些三流媒体根据他的造型推测「贝斯才是他的本体」，但这纯属谣言，实际上贝斯是被胁迫的。",
+	"icon": "spriteoutput/monsterfigure/Monster_5013010.png",
+	"shortIcon": "Monster_5013010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5013010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 6277.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "左扫弦！",
+			"tag": "横扫",
+			"type": "技能",
+			"description": "从我方队伍左侧起横扫攻击我方3个连续目标，造成少量虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301001"
+		},
+		{
+			"name": "右扫弦！",
+			"tag": "横扫",
+			"type": "技能",
+			"description": "从我方队伍右侧起横扫攻击我方3个连续目标，造成少量虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301002"
+		},
+		{
+			"name": "演出彩排",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，下次行动时施放【摇滚时刻！】。阿哈时刻发动时立即解除蓄力状态，使我方获得<u>笑点</u>并使自身受到的伤害提高。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				10,
+				0.4,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301003"
+		},
+		{
+			"name": "摇滚时刻！",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成大量虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301004"
+		},
+		{
+			"name": "燥起来吧！",
+			"tag": "强化",
+			"type": "技能",
+			"description": "若自身未处于【狂奏】状态，则使自身以外的敌方目标速度提高，若自身处于【狂奏】状态，则会对自身以外的敌方目标造成虚数属性伤害，并有概率使其陷入【<u>陶醉</u>】状态，使我方获得<u>笑点</u>。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				2,
+				1,
+				1,
+				0.1,
+				120,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301005"
+		},
+		{
+			"name": "我为乐狂",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "阿哈时刻发动时，自身获得【狂奏】状态，使【燥起来吧！】产生更欢愉的效果。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501301006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "501301005"
+}

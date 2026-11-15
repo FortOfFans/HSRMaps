@@ -1,0 +1,222 @@
+{
+	"name": "堕神之血•亚婆离",
+	"description": "暗中掌控博识学会的技术研发部主管，抛弃了脆弱的人类躯壳，将意识置入庞大的「树状脑」，只为窥探古兽的奥秘。\n亚婆离对超越人类之力的执念最终将其引向了终局。她被「贪饕」彻底同化，重回胚胎，并蜕变为了不可名状的怪物。",
+	"icon": "spriteoutput/monsterfigure/Monster_5034010.png",
+	"shortIcon": "Monster_5034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 2092.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1080,
+		"speed": 180,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "猎食标记",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体角色造成少量量子属性伤害，并使其陷入1层<u>【堕神衰腐】</u>状态。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401001"
+		},
+		{
+			"name": "饥饿的鸣响",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401002"
+		},
+		{
+			"name": "宏观生态系统",
+			"tag": "强化",
+			"type": "技能",
+			"description": "吞噬【狂兽的胚芽】，使自身造成的伤害提高，并回复生命值。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				2,
+				0.04,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401003"
+		},
+		{
+			"name": "万物于我之中",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成大量量子属性伤害，并大概率使我方全体陷入<u>【源质吞噬】</u>状态。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0.1
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401004"
+		},
+		{
+			"name": "集群连带应激",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "仪式中受到攻击会使【狂兽的胚芽】行动提前，且【堕神之血】不受行动提前效果的影响。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.08,
+				0.7,
+				0.65,
+				0.75,
+				0.35,
+				2,
+				0.3,
+				0.1,
+				0.05,
+				66
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401005"
+		},
+		{
+			"name": "兽瞳百相",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "每次行动后增加1个「贪饕之眼」，回合结束时「贪饕之眼」达到一定数量则立刻施放【万物于我之中】。获得【血脑屏障】时速度大幅提高。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.7,
+				0.65,
+				0.75,
+				0.35,
+				1,
+				0.5,
+				0.3,
+				0.05,
+				0.025,
+				40
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401006"
+		},
+		{
+			"name": "胎儿之梦",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "在行动序列上添加【破胞分生】，每次【破胞分生】行动时召唤【狂兽的胚芽】。【堕神之血】在场时，【狂兽的胚芽】的攻击会额外附加<u>【堕神衰腐】</u>和<u>【源质吞噬】</u>，【狂兽的胚芽】被击杀后会使【堕神之血】的生命值降低。受到攻击后会使【狂兽的胚芽】锁定发起攻击的角色。当我方全体角色陷入【幻身】状态时，战斗失败。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2,
+				3,
+				0.02
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401007"
+		},
+		{
+			"name": "血脑屏障",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "当生命值降低到一定值时使自身获得【血脑屏障】，韧性无法被削减，并使自身受到所有伤害大幅降低，欢愉伤害破除【血脑屏障】的效率大幅提高。获得【血脑屏障】时，在行动序列上添加【稳态失衡】，击杀【狂兽的胚芽】可以增加【稳态失衡】的充能值，【稳态失衡】行动时根据获得的充能值对【血脑屏障】造成伤害。【血脑屏障】解除时自身受到大量伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.2,
+				0.98,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401008"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"503201002"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "503401002"
+}

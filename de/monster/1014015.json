@@ -1,0 +1,315 @@
+{
+	"name": "Svarog",
+	"description": "Dieses uralte Relikt der Alten Welt war eine automatisierte Steuereinheit, die von der Geomark-Erschließungsgruppe zurückgelassen wurde. Im Gegensatz zur überwiegenden Mehrheit der Maschinen, die keinen Intellekt haben und lediglich Befehlen folgen können, ist Svarog zu viel komplexeren Denkprozessen fähig.\nIm Kampf beschwört Svarog einen mechanischen Arm, um seine Feinde zu greifen und zu kontrollieren, während er verheerende Angriffe ausführt.",
+	"icon": "spriteoutput/monsterfigure/Monster_1014010.png",
+	"shortIcon": "Monster_1014010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1014010.png",
+	"stats": {
+		"baseAttack": 12,
+		"baseDefense": 210,
+		"baseHealth": 13950,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Bannschlag",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401501"
+		},
+		{
+			"name": "Brandstrahl",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu und verzögert dessen Aktion.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401502"
+		},
+		{
+			"name": "Unterdrückende Umarmung",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Verursacht bei einem anvisierten Verbündeten „Fesseln“, wodurch er weder Aktionen ausführen noch als Ziel anvisiert werden kann. Der Status Fesseln wird aufgehoben, wenn Roboterarmeinheit Schwächebruch erleidet.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401503"
+		},
+		{
+			"name": "Übersättigtes Bombardement",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven physischen SCH zu und reduziert mit hoher Chance deren VTD. Dieser Debuff ist stapelbar.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.15,
+				0.2,
+				3
+			],
+			"spGain": 2,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401504"
+		},
+		{
+			"name": "Kontrollierte Sprengung",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Die Roboterarmeinheit explodiert und fügt einem anvisierten Verbündeten massiven physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				15
+			],
+			"spGain": 25,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401505"
+		},
+		{
+			"name": "Überladungswarnung",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Die Roboterarmeinheit tritt in den Status „Überladungs-Countdown“ ein und setzt in der nächsten Aktion „Kontrollierte Sprengung“ ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401506"
+		},
+		{
+			"name": "Einsatzverstärkung",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Roboterarmeinheit“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401507"
+		},
+		{
+			"name": "",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401508"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401509"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401510"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401511"
+		},
+		{
+			"name": "Kraftverstärkung",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Erhöht den von allen Gegnern verursachten SCH ein wenig. Diese SCH-Erhöhung ist stapelbar.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401512"
+		},
+		{
+			"name": "Notfallunterstützung",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört nach dem Zufallsprinzip Automaton: Käfer und Automaton: Hund.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401513"
+		},
+		{
+			"name": "Taktische Unterstützung",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört „Automaton: Düsterwolf“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401514"
+		},
+		{
+			"name": "Einsatzverstärkung",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört 2 Roboterarmeinheiten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401515"
+		},
+		{
+			"name": "Einsatzverstärkung",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört 2 Roboterarmeinheiten, von denen 1 sich im Status Überladung befindet.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101401516"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"101204101"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "1014015"
+}

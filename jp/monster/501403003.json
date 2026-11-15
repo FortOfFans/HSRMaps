@@ -1,0 +1,179 @@
+{
+	"name": "{RUBY_B#そうし}創始{RUBY_E#}の{RUBY_B#えし}絵師{RUBY_E#}、{RUBY_B#むらた}無量塔{RUBY_E#}グラフィエ",
+	"description": "古代弁才天国の絵師の始祖、無量塔グラフィエの残像。\nかつて彼女は「貪慾」の力を使って、反物質レギオンのために妖魔を幻造していた。だが星穹列車の墜落を目撃した後、星空へ行きたいという願いが芽生え、ナナシビトと共に自身の創造主に逆らうようになった。\nそして最後、この世界を守るため、彼女は万物を絵の中に描き込んだ。孤独な悲しみの中、帰寂の手によって亡くなった怨霊たちを何度も何度も描き続け、やがてその怨念によって狂気に堕ちてしまった。",
+	"icon": "spriteoutput/monsterfigure/Monster_5014030.png",
+	"shortIcon": "Monster_5014030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5014030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3022.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1080,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "余燼赤絵",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501403001"
+		},
+		{
+			"name": "煉獄無惨絵",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "指定した味方キャラに炎属性ダメージを与え、高確率で「<u>身を焼く怨炎</u>」状態を付与する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501403002"
+		},
+		{
+			"name": "煉獄無惨絵・艶墨",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "味方2体に炎属性ダメージを与え、高確率で「<u>身を焼く怨炎</u>」状態を付与する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501403003"
+		},
+		{
+			"name": "空想異魔絵",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「呑神の子」を召喚し、すべての召喚物に「<u>人外魔境</u>」を付与する。その後、「<u>人外魔境</u>」の層数が2以上の召喚物を即座に行動させる。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.5,
+				0.01,
+				0.05,
+				1,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501403005"
+		},
+		{
+			"name": "絶景・呑天無量塔",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に炎属性ダメージを与え、高確率で命中したキャラに「<u>身を焼く怨炎</u>」状態を付与する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				1,
+				2,
+				0
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501403006"
+		},
+		{
+			"name": "消えぬ怨念の炎",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "自身の一部のスキルは、命中したキャラに「<u>身を焼く怨炎</u>」状態を付与する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.7,
+				0.3,
+				0.33,
+				2,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501403007"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"502302001"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Fire",
+	"id": "501403003"
+}

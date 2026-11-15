@@ -1,0 +1,174 @@
+{
+	"name": "{RUBY_B#おうごん}黄金{RUBY_E#}の{RUBY_B#ち}血{RUBY_E#}の{RUBY_B#きおく}記憶{RUBY_E#}の{RUBY_B#せいれい}精霊{RUBY_E#}・オフィス",
+	"description": "ガーデン・オブ・リコレクションのミーム生命体が、「壊滅」の黄金の血と混ざり合って生まれた、いびつな怪物。翼の生えた蛇の姿を取りつつあり、鬼神を装って人を惑わすに十分な姿である。\nもともと歪んでいた理性は暗黒の潮の影響で完全に狂い、強烈な自己防衛の衝動はいつの間にか幻想的な色合いに染まってしまった。",
+	"icon": "spriteoutput/monsterfigure/Monster_4063010.png",
+	"shortIcon": "Monster_4063010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4063010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 6975,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "血罪の鞭打ち",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301001"
+		},
+		{
+			"name": "血罪の唾",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301002"
+		},
+		{
+			"name": "威嚇警戒",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、「纏絡」を獲得する。次に行動する時、「纏絡」を所持している場合、「血罪の渦」を発動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301003"
+		},
+		{
+			"name": "血罪の渦",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に虚数属性ダメージを与え、ターゲットの減少したHPの一部を「侵蝕」に変換する。所持している「纏絡」の層数が多いほどダメージが高くなり、発動後は「纏絡」をすべて失う。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				0.5,
+				0.2,
+				0.5,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301004"
+		},
+		{
+			"name": "ねじり打ち",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の虚数属性ダメージを与える。ターゲットの減少したHPの一部を「侵蝕」に変換する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.5,
+				0.2,
+				0.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301005"
+		},
+		{
+			"name": "ひねり溜め",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "味方からの攻撃を受けた後、「纏絡」の層数が0でない場合、「ねじり打ち」を発動し「纏絡」を1層失う。任意のターゲットのターンに、この効果は味方1体につき1回まで発動できる。「纏絡」の層数が0になった時、チャージ状態を解除する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "406301006"
+}

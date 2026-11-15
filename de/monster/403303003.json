@@ -1,0 +1,151 @@
+{
+	"name": "Greif der dunklen Sonne",
+	"description": "Der Greif im Mittagslicht, der von der Schwarzen Flut verzerrt wurde und nur noch von einem unstillbaren Durst nach Blutvergießen getrieben wird.\nSelbst nachdem er Aquilas Segen verloren hat, hat die unerschöpfliche Energie in der Schwarzen Flut ihn in etwas noch Schrecklicheres verwandelt.",
+	"icon": "spriteoutput/monsterfigure/Monster_4033030.png",
+	"shortIcon": "Monster_4033030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4033030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 372.00046499999996,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Schwarzlichtemission",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Wind-SCH zu. Ein Anteil der verlorenen LP der getroffenen Ziele wird in <u>Korrosion</u> umgewandelt.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.5,
+				0.2,
+				0,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403303001"
+		},
+		{
+			"name": "Ikone von Ewignacht",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört einen Bogenschützen der dunklen Sonne. Wenn der Bogenschütze der dunklen Sonne besiegt wird, verliert diese Einheit einen Teil ihrer LP. Bogenschützen der dunklen Sonne führen keine aktiven Aktionen aus. Nachdem diese Einheit angegriffen hat, führen alle beschworenen Bogenschützen der dunklen Sonne einen Angriff aus.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.7,
+				0.8,
+				0.12
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403303002"
+		},
+		{
+			"name": "Prophezeiung der Sonnenfinsternis",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Die toten Winde ziehen auf“ ein. Bei der nächsten Aktion wird „Lied vom Hitzetod“ eingesetzt.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403303003"
+		},
+		{
+			"name": "Lied vom Hitzetod",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Wind-SCH zu. Je höher die <u>Korrosions-LP</u> eines Ziels sind, desto höher ist der verursachte SCH. Alle LP, die unter dem Effekt von <u>„Korrosion“</u> stehen, gehen ebenfalls sofort verloren.",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				4.5,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403303004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Quantum"
+	],
+	"summons": [
+		"403205002"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Wind",
+	"id": "403303003"
+}

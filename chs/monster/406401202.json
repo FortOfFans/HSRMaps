@@ -1,0 +1,447 @@
+{
+	"name": "迷惘之渊的裁定者",
+	"description": "那众多金血忆灵的残躯中一丝尚存的疯狂，被长夜月抽取提炼，融合成了更为扭曲怪异的怪物。\n它将遵守造物主的指示，裁定何物应被记起，何物应被忘却，它会吞噬掉徒劳无功的冗余记忆，使它们在岁月中沉默。\n「新的生命若要萌芽，它的种子须是死的。」",
+	"icon": "spriteoutput/monsterfigure/Monster_4064010.png",
+	"shortIcon": "Monster_4064010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4064010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 27900,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 8,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "罪血嚼齿",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成虚数属性伤害，若目标持有护盾则触发【<u>壁垒反震</u>】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				180,
+				0
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401201"
+		},
+		{
+			"name": "执刑就位",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤【金血忆灵•雉形】，每个召唤物被消灭时，触发【<u>壁垒反震</u>】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				120,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401202"
+		},
+		{
+			"name": "罪血眈视",
+			"tag": "锁定",
+			"type": "技能",
+			"description": "锁定指定我方角色，使自身的速度提高，并在数个回合内对该目标施放【罪血嚼齿】和【罪血锯刑】。施放该技能后再行动1次。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401203"
+		},
+		{
+			"name": "罪血锯刑",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成大量虚数属性伤害，使目标降低生命值的一部分转化为【<u>侵蚀</u>】，若目标持有护盾则触发【<u>壁垒反震</u>】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				6,
+				180
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401204"
+		},
+		{
+			"name": "罪血钳刑",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体目标造成大量虚数属性伤害，使目标降低生命值的一部分转化为【<u>侵蚀</u>】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				0.5,
+				0.2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401205"
+		},
+		{
+			"name": "指名祸首",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，下次行动时施放【罪血枭首】，选择1名我方角色承受【罪血枭首】的最高伤害和【<u>罪血腐蚀</u>】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401206"
+		},
+		{
+			"name": "罪血枭首",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对被【指名祸首】选中的角色以外的我方角色造成虚数属性伤害，对被【指名祸首】选中的我方角色造成大量虚数属性伤害，并根据该角色受到的未被护盾抵消的伤害的数值，对其施加【<u>罪血腐蚀</u>】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				12,
+				4,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401207"
+		},
+		{
+			"name": "皮糙肉厚",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "战斗开始时和转阶段时，自身进入【强化防御】状态，大幅提高自身防御力。被弱点击破后，解除【强化防御】状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401208"
+		},
+		{
+			"name": "壁垒反震",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "触发【<u>壁垒反震</u>】时，自身获得1层防御力降低。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401209"
+		},
+		{
+			"name": "化整为零",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "战斗开始时和转阶段时，自身分裂为【金血忆灵•雉形】、【金血忆灵•犬形】和【金血忆灵•翼蛇形】，且这些【金血忆灵】获得【<u>合而为一</u>】，自身获得【血脉衰弱】。\n拥有【<u>合而为一</u>】的【金血忆灵】每次行动后，自身减少1点【血脉衰弱】。\n当拥有【<u>合而为一</u>】的【金血忆灵】全部陷入【<u>假死</u>】状态时，它们重新合体成为【迷惘之渊的裁定者】，基于此时剩余的【血脉衰弱】的数量，削减【迷惘之渊的裁定者】的韧性。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.25,
+				0.75,
+				0.5,
+				1,
+				48,
+				1440
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401211"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401213"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401214"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401215"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.04,
+				0.04
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401216"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401217"
+		},
+		{
+			"name": "劣化残躯",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "自身及自身的召唤物获得【劣化残躯】。若我方对拥有【劣化残躯】的敌方单位施放攻击时施加了负面状态，则少量削减该敌方单位的韧性，并使其受到真实伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				45,
+				0.005
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406401210"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [
+		"406201003",
+		"406201008",
+		"406202003",
+		"406301004"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 2,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101501",
+				"name": "坚防守备",
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101502",
+				"name": "化整为零",
+				"description": "战斗开始时和转阶段时，首领幻影分裂为5只【金血忆灵】并为这些召唤物施加【<u>合而为一</u>】。当拥有【合而为一】的【金血忆灵】全部陷入【<u>假死</u>】状态时，它们重新合体成为首领幻影。",
+				"params": []
+			},
+			{
+				"id": "101503",
+				"name": "相生相成",
+				"description": "首领幻影分裂后召唤的【金血忆灵】的生命上限提高，且第二阶段分裂后召唤的【金血忆灵】共享生命值。",
+				"params": []
+			},
+			{
+				"id": "101504",
+				"name": "规模效应",
+				"description": "除首领幻影外，每多存在1个不处于【<u>假死</u>】状态的<color=#f29e38ff>敌方单位</color>，敌方全体受到的伤害降低，造成的伤害提高。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10151",
+				"name": "迷惘之渊的裁定者",
+				"description": "战斗开始时和转阶段时，首领幻影会分裂为5只【金血忆灵】。",
+				"answer": "应对策略：积极施放群攻技能，尽快使所有【金血忆灵】陷入【假死】，使其重新合体。",
+				"skills": [
+					{
+						"id": "101511",
+						"type": "Normal",
+						"name": "如何高效削减首领幻影的韧性",
+						"texts": [
+							{
+								"description": "我方单位通过护盾抵消首领幻影的特定技能，或消灭首领幻影的召唤物，可以削减其韧性。我方施放攻击技能对敌方目标施加负面状态，也可以少量削减其韧性。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101512",
+						"type": "Normal",
+						"name": "如何应对首领幻影的【化整为零】",
+						"texts": [
+							{
+								"description": "积极施放群攻技能，尽快使所有【金血忆灵】陷入【假死】，使其重新合体。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "首领幻影施放【罪血嚼齿】和【罪血锯刑】击中我方目标后，若受到攻击的我方目标拥有护盾，则触发【壁垒反震】。消灭【执刑就位】召唤的召唤物时，触发【壁垒反震】。首领幻影触发【壁垒反震】时，削减自身韧性和防御力。\\n若我方对首领幻影及其召唤物施放攻击时施加了负面状态，则少量削减该敌方单位的韧性，并使其受到真实伤害。",
+				"params": []
+			},
+			{
+				"description": "战斗开始时和转阶段时，首领幻影分裂为5只【金血忆灵】并为这些召唤物施加【合而为一】。当拥有【合而为一】的【金血忆灵】全部陷入【假死】状态时，它们重新合体成为首领幻影。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "优先为我方目标施加护盾，可以在抵消首领幻影的伤害的同时削减其韧性并降低其防御力。",
+				"params": []
+			},
+			{
+				"description": "使用具有<color=#f29e38ff>妨害</color>能力的技能攻击敌方目标，若成功施加负面状态还可进一步削减其韧性并使其受到真实伤害。",
+				"params": []
+			},
+			{
+				"description": "当首领幻影分裂并召唤【金血忆灵】后，优先施放群攻技能，尽快使召唤物陷入【假死】状态。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "406401202"
+}

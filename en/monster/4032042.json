@@ -1,0 +1,143 @@
+{
+	"name": "Black Tide Council",
+	"description": "A creature warped by the black tide, driven solely by an insatiable thirst for bloodshed.\nKnowledge that once could have served humanity has inverted into civilization's foe. Specializing in ambush and strategic maneuvers, they hover like ravenous vultures, craving to deliver fresh sacrifices to the black tide.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032040.png",
+	"shortIcon": "Monster_4032040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032040.png",
+	"stats": {
+		"baseAttack": 15,
+		"baseDefense": 210,
+		"baseHealth": 279,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Lurking",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Causes this unit to enter the <u>\"Lurking\"</u> state.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204201"
+		},
+		{
+			"name": "Broken Rationality",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to one designated target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204202"
+		},
+		{
+			"name": "Insidious Agitation",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Physical DMG to one designated target, then dispels the <u>\"Lurking\"</u> state. Can only be used while in the <u>\"Lurking\"</u> state.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204203"
+		},
+		{
+			"name": "Flawed",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "While this unit is in the <u>\"Lurking\"</u> state, increases their DMG taken. If the <u>\"Lurking\"</u> state is dispelled due to becoming Weakness Broken, this unit's action is delayed, and that Vulnerability effect lasts until the start of this unit's next action.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403204204"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032042"
+}

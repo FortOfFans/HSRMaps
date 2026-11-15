@@ -1,0 +1,191 @@
+{
+	"name": "Lodern aus dem All (Fehler)",
+	"description": "Eine falsche Projektion, die von kompromittierten Codes erstellt wurde. Sie basiert auf einer außerirdischen Lebensform, die im vom Stellaron erschaffenen Fragmentum heranwächst und sich von der Energie dieser Welt ernährt. Seine Rüstung ist mit den Flammen aus dem Kern eines Sterns versehen.\nIm Kampf verbrennt Lodern aus dem All (Fehler) alles, was er berührt.",
+	"icon": "spriteoutput/monsterfigure/Monster_8003020.png",
+	"shortIcon": "Monster_8003020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1488,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Brüllendes Inferno",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Feuer-SCH zu und verursacht mit hoher Chance „Anfachen“.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				2,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302101"
+		},
+		{
+			"name": "Flammende Absorption",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Wechselt in den Status „Selbstentzündung“. „Regen der reinigenden Flammen“ kann in nachfolgenden Angriffen eingesetzt werden.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				60,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302102"
+		},
+		{
+			"name": "Regen der reinigenden Flammen",
+			"tag": "Abpraller",
+			"type": "Fähigkeit",
+			"description": "Fügt einem zufälligen Verbündeten kontinuierlich geringen Feuer-SCH zu und verursacht mit hoher Chance „Anfachen“.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				2,
+				0.5,
+				5,
+				60
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302103"
+		},
+		{
+			"name": "Geschmolzene Fusion",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Erhöht den eigenen ANG.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302104"
+		},
+		{
+			"name": "Bombenwarnung",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Startet die Aufladung und absorbiert den Status „Anfachen“ aller Verbündeten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302105"
+		},
+		{
+			"name": "Massenbombardement",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Feuer-SCH zu und verursacht mit hoher Chance „Anfachen“. Je mehr Anfachen absorbiert wurde, desto mehr SCH wird der Angriff verursachen.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				0.75
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800302106"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_DOT_Burn",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800302101"
+}

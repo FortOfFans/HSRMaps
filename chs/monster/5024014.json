@@ -1,0 +1,201 @@
+{
+	"name": "极乐颠倒•邪愿莲华主",
+	"description": "满愿电视台的台长，与被带入二相乐园的倏忽血肉合二为一。\n在<unbreak>15</unbreak>年前的上一场幻月游戏中，名为「告死魔」的连环杀手造成了巨大的死伤。他的作为使得许多居民失去父母、兄弟、同学。\n肉体上的伤痕可以治愈，但心灵上的伤痕永远无法被填补。人们组成了「受害者互助会」，试图医治这道伤痛。\n满愿改进了一种「幸福手术」，接种后，所有人将永远忘却痛苦，保持快乐。手术的源头，就是倏忽血肉的残片。\n十五年过去后，「受害者互助会」演变成了庞大的「幸福微笑研究会」，而这项简单的小手术借由整容、医疗等行为，在二相乐园感染了无数人，让倏忽的细胞沉睡在人群中。\n作为幸福微笑研究会的首领，满愿仇恨着产生告死魔的幻月游戏，因而化作了「极乐颠倒•邪愿莲华主」，向这个世界发起复仇。",
+	"icon": "spriteoutput/monsterfigure/Monster_5024010.png",
+	"shortIcon": "Monster_5024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5024010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7672.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "空裂刺蕊",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401401"
+		},
+		{
+			"name": "凶梦汲取",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "吸取所有带有<u>【幸福】</u>或<u>【幸福傀儡】</u>效果我方目标的生命值并转化为自身生命值。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.005
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401403"
+		},
+		{
+			"name": "邪愿散华",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "对随机我方多个角色造成雷属性伤害并施加<u>【幸福】</u>效果。回合结束时<u>【幸福】</u>到达<unbreak>2[i]</unbreak>层会将目标转化为<u>【幸福傀儡】</u>。<u>【幸福】</u>变为0层则会移除<u>【幸福】</u>并添加<u>【颠倒离断】</u>效果。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				6,
+				3,
+				2,
+				2,
+				0.25,
+				0.75,
+				0.8,
+				2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401404"
+		},
+		{
+			"name": "待放",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，下回合施放【极乐之拥】。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401405"
+		},
+		{
+			"name": "极乐之拥",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体角色造成大量雷属性伤害，若自身处于<u>【邪笑】</u>状态则对所有目标施加<u>【幸福傀儡】</u>状态。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				6,
+				1,
+				2,
+				2,
+				0.1,
+				10
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401406"
+		},
+		{
+			"name": "笑止",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "一定数量的敌方目标被消灭后触发【笑止】，使敌方全体目标受到的伤害提高，并清除【极乐颠倒•邪愿莲华主】的<u>【邪笑】</u>效果。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				6,
+				0.2,
+				5,
+				0.1,
+				10,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401407"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				3,
+				2,
+				0.5,
+				1.5,
+				9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "502401408"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Thunder",
+		"Imaginary"
+	],
+	"summons": [
+		"5022010"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "5024014"
+}

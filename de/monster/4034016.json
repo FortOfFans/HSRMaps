@@ -1,0 +1,348 @@
+{
+	"name": "Flammendieb der tiefsten Dunkelheit",
+	"description": "Ein namenloser Schwertmeister, der mit der Schwarzen Flut kam und die Kernflammen der Titanen jagt. Niemand kennt seine wahre Identität.\nEr besitzt unglaubliche Kräfte, und seine Schwertkunst ist nahezu unfehlbar. Wahnsinn und Besessenheit verschmelzen in seinen Klingen und haben einst den Hain der Erleuchtung und Aedes Elysiae zu Fall gebracht.",
+	"icon": "spriteoutput/monsterfigure/Monster_4034010.png",
+	"shortIcon": "Monster_4034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Sturmwolke des Untergangs",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				0.05,
+				8,
+				0.05
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401601"
+		},
+		{
+			"name": "Verblassendes Schicksal",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu. Ein Anteil der verlorenen LP der getroffenen Ziele wird in <u>Korrosion</u> umgewandelt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401602"
+		},
+		{
+			"name": "Unheilvoller Pfad",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "„Zerbrochenes Gefäß“ tritt in den Status „Gemeinsames Opfer“ ein. Löst nach einer bestimmten Zahl von Aktionen „Trauer der Finsternis“ aus.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401603"
+		},
+		{
+			"name": "Trauer der Finsternis",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Löst „Sturmwolke des Untergangs“ oder „Verblassendes Schicksal“ zusammen mit dem „Zerbrochenen Gefäß“ aus. Absorbiert dann das Zerbrochene Gefäß, um sich selbst zu heilen, und erhält <u>Kraft der Katastrophe</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401604"
+		},
+		{
+			"name": "Stille Trauer",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Erhält „<u>Kraft der Katastrophe</u>“ und den Status „Stille Trauer“. Setzt in der nächsten Aktion „Weine nicht für die Verlassenen“ ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.05,
+				1.25
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401605"
+		},
+		{
+			"name": "Stille Trauer",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Erhält „<u>Kraft der Katastrophe</u>“ und den Status „Stille Trauer“. Setzt in der nächsten Aktion „Weine nicht für die Verlassenen“ ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401606"
+		},
+		{
+			"name": "Ein notwendiges Opfer",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Verbraucht alle Stapelungen von <u>Kraft der Katastrophe</u> und fügt allen Verbündeten geringen physischen SCH zu. Je mehr Stapelungen von Kraft der Katastrophe verbraucht werden, desto höher wird die Trefferzahl des SCH. Fügt danach allen Verbündeten geringen physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.5,
+				2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401607"
+		},
+		{
+			"name": "Weine nicht für die Verlassenen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu. Verbraucht alle Stapelungen von <u>Kraft der Katastrophe</u> und verursacht dabei zusätzlich geringen physischen SCH. Je mehr Stapelungen von Kraft der Katastrophe verbraucht werden, desto höher wird die Trefferzahl des SCH.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.6,
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401608"
+		},
+		{
+			"name": "Weine nicht für die Verlassenen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten physischen SCH zu. Verbraucht alle Stapelungen von <u>Kraft der Katastrophe</u> und verursacht dabei zusätzlich geringen physischen SCH. Je mehr Stapelungen von Kraft der Katastrophe verbraucht werden, desto höher wird die Trefferzahl des SCH.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401609"
+		},
+		{
+			"name": "Schmerz der Trennung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn „Sturmwolke des Untergangs“ oder „Verblassendes Schicksal“ eingesetzt werden, werden LP verbraucht, um Zerbrochene Gefäße zu beschwören, und die verbrauchten LP werden in <u>Verstrickter Schmerz</u> umgewandelt. Wenn das beschworene Zerbrochene Gefäß besiegt wird, erleidet diese Einheit zusätzlich physischen SCH. Wenn Sturmwolke des Untergangs oder Verblassendes Schicksal erneut eingesetzt werden, werden die beschworenen Zerbrochenen Gefäße zum Angriff gezwungen, und danach werden sie von dieser Einheit absorbiert. Dabei werden die LP, die zu <u>Verstrickter Schmerz</u> umgewandelt wurden, wiederhergestellt und diese Einheit erhält <u>Kraft der Katastrophe</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				16,
+				0.0029999998
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401610"
+		},
+		{
+			"name": "Verlorenes Opfer",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beim Einsatz von „Stille Trauer“ werden LP verbraucht, um Zerbrochene Gefäße zu beschwören. Die verbrauchte Menge an LP wird in <u>Verstrickter Schmerz</u> umgewandelt. Wenn die Stapelzahl von <u>Kraft der Katastrophe</u> nicht 0 ist und Zerbrochene Gefäße Todesstoß erleiden, wird 1 Stapelung von <u>Kraft der Katastrophe</u> und ein bestimmter LP-Prozentsatz verbraucht, um die Zerbrochenen Gefäße erneut zu beschwören. Beim Einsatz von „Weine nicht für die Verlassenen“ werden die Zerbrochenen Gefäße absorbiert und die LP, die in <u>Verstrickter Schmerz</u> umgewandelt wurden, werden wiederhergestellt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.8,
+				0.3,
+				1,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401611"
+		},
+		{
+			"name": "Abschiedsentschluss",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Erhält eine bestimmte Stapelzahl von „SCH-Reduktion“, was den erlittenen SCH verringert. Bei jedem zerstörten Zerbrochenen Gefäß wird 1 Stapelung entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401612"
+		},
+		{
+			"name": "Kettenbruch",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status <u>Kettenbruch</u> ein. Beschwört 4 „Zerbrochene Gefäße“ und versetzt sie in den Status „Gefesselt“.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401613"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.15,
+				0.4,
+				150,
+				0.15,
+				0.5,
+				300
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401614"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.15,
+				1,
+				0.2,
+				1,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401615"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.7,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401616"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"4032020"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "4034016"
+}

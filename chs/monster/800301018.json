@@ -1,0 +1,164 @@
+{
+	"name": "外宇宙之冰",
+	"description": "不属此世的怪异生命，自星核带来的裂界中成长，寄生在世界的根基结构中汲取能量，其甲胄外壳上倒映着幽深黯淡的星空。\n战斗中，外宇宙之冰能轻易将敌人冻结凝固。",
+	"icon": "spriteoutput/monsterfigure/Monster_8003010.png",
+	"shortIcon": "Monster_8003010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 558,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "叹息之寒",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成少量冰属性伤害。若自身处于【冰点】状态，对冻结状态的我方单体施放攻击后造成额外的冰属性伤害。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				2.5,
+				1,
+				0,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301001"
+		},
+		{
+			"name": "汲取霜晶",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使自身进入【冰点】状态，之后的攻击可以施放【永冬之雨】。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				120
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301002"
+		},
+		{
+			"name": "永冬之雨",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "只有在【冰点】状态下才会施放该技能。对我方全体造成少量冰属性伤害，并有概率使受到攻击的我方目标陷入冻结状态。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2,
+				0.6,
+				1,
+				1,
+				120
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301003"
+		},
+		{
+			"name": "叹息之寒",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成冰属性伤害。若自身处于【冰点】状态，则有概率使受到攻击的我方目标陷入冻结状态。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				3,
+				1,
+				1,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "800301018"
+}

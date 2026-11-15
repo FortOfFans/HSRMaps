@@ -1,0 +1,86 @@
+{
+	"name": "Geisterwärterin",
+	"description": "Eine düstere Kriegerin, welche die Richter der Zehn-Fürsten-Kommission bei ihren Missionen begleitete.\nSie trägt die schwarz-weiße Gesichtsbemalung, die sie als Gesandte der Unterwelt kennzeichnet, und führt eine Guillotinenklinge, deren Hiebe die gewichtige und unerbittliche Pflicht der Zehn-Fürsten-Kommission widerspiegeln.",
+	"icon": "spriteoutput/monsterfigure/Monster_2002030.png",
+	"shortIcon": "Monster_2002030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2002030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 139.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 60,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Sägendes Übel",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen physischen SCH zu und verursacht mit einer Chance „Nachhall“. Befindet sich das Ziel bereits im Status Nachhall, wird bei ihm „Starker Nachhall“ verursacht und dann Nachhall entfernt. Ziele im Status Starker Nachhall können keine Aktion ausführen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.35,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200203001"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "200203002"
+}

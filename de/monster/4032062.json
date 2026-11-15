@@ -1,0 +1,122 @@
+{
+	"name": "Gefangener Mythos",
+	"description": "Epische Chroniken, romantische Legenden und die unzähligen Zeitalter, die ihnen Bedeutung verliehen. Aus ihnen erwuchsen alle spirituellen Glaubenssätze. Es ist kein Gefangener mehr, es wird im Begräbnis des Geistenzials sterben und einen eisernen Grabstein hinterlassen.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032060.png",
+	"shortIcon": "Monster_4032060",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032060.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1488,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Nachhall der Tragödie",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten imaginären SCH zu und verzögert seine Aktion.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.25,
+				0.005
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403206203"
+		},
+		{
+			"name": "Entzündetes ewiges Leid",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Visiert 2 Verbündete an und aktiviert den Status „Befreiung bringen“. Der Anti-Schöpfer setzt in der nächsten Aktion „Der Käfig des Geistes soll brennen“ ein.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403206204"
+		},
+		{
+			"name": "Ewige Wiederholung",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn sich diese Einheit im Status „Schwer verwundet“ befindet, stellt sie bei der nächsten Aktion alle LP wieder her und Schwer verwundet wird aufgehoben.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403206205"
+		},
+		{
+			"name": "Unsterblich und unzerstörbar",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Immun gegen Effekte, die die Aktionsleiste beeinflussen, außer „Anti-Schöpfer“. „Mythos“ kann nicht eliminiert werden. Nach einem erlittenen Todesstoß wird der Status „Schwer verwundet“ ausgelöst, wodurch alle Verbündeten einen Aktionsvorzug erhalten.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403206206"
+		}
+	],
+	"resistance": [],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "4032062"
+}

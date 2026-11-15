@@ -1,0 +1,318 @@
+{
+	"name": "雷奔云谲的恶狼主",
+	"description": "犯尽十恶，永镇于幽狱之底的步离人首领。\n身负七百年苦狱仇恨，在脱出牢笼后，群狼之主向整个罗浮仙舟发起了挑战。但潜藏在疯狂之举的背后，似乎另有目标……",
+	"icon": "spriteoutput/monsterfigure/Monster_2034010.png",
+	"shortIcon": "Monster_2034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 10230,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1140,
+		"speed": 160,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "碎剑为牙",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401401"
+		},
+		{
+			"name": "斩铁成爪",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及相邻目标造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				1.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401402"
+		},
+		{
+			"name": "裂地三舍，寸草不留",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "对除自身外的所有目标造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.3,
+				2.2,
+				30
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401403"
+		},
+		{
+			"name": "雷动风咆，摧枯灭朽",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401404"
+		},
+		{
+			"name": "贪狼逐驰，血色临照",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成大量雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				6,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401405"
+		},
+		{
+			"name": "血鸣狂噬",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "呼雷在进入【噬月】状态前，韧性无法被削减，当敌方施放攻击后，为<u>能够进入【噬月】状态的敌方单位</u>附加1层【<u>嗜血</u>】，当【<u>嗜血</u>】达到指定层时，呼雷将进入【<u>噬月</u>】状态，并施放【孤战】。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				4,
+				5,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401406"
+		},
+		{
+			"name": "狼啸八方",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "当呼雷进入【<u>噬月</u>】状态时，受到的伤害降低，韧性可以被削减，并为自身添加【怒意】。【怒意】拥有初始层数，且每当敌方回合结束时，将减少1层【怒意】。每当【怒意】减少至0层时，将退出【噬月】状态。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				4,
+				3,
+				0.06,
+				2,
+				0.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401407"
+		},
+		{
+			"name": "狼群敕令，唤雷奔袭",
+			"tag": "其他",
+			"type": "技能",
+			"description": "每当我方对其他敌方目标造成致命攻击时，会对呼雷造成伤害并削减韧性，为我方全体角色添加【<u>血涌</u>】，为<u>能够进入【噬月】状态的敌方单位</u>附加1层【<u>嗜血</u>】，并召唤【玄爪狼卒】或【蚀月狼卒】。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0,
+				1.15,
+				1.33,
+				90,
+				0.03
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401408"
+		},
+		{
+			"name": "孤战",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "进入【孤战】状态，呼雷造成的伤害增加，我方可选择1名角色及其召唤的目标进入【孤战】状态，选择后对指定我方单体造成雷属性伤害，且直到【怒意】耗尽前其他我方和敌方目标<u>离场</u>。我方目标进入【孤战】状态后，将使我方恢复战技点，根据我方全体角色当前的生命值上限和攻击力提高自身的生命值上限和攻击力，且【<u>血涌</u>】将生效，并根据【<u>血涌</u>】层数为自身添加【<u>战血激昂</u>】。我方全体角色所持有的【<u>血涌</u>】将在【孤战】状态结束后移除。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.15,
+				5,
+				5,
+				0.05,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401409"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401410"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401411"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401412"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401413"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401414"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"2032011",
+		"2032022"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "2034014"
+}

@@ -1,0 +1,164 @@
+{
+	"name": "Eis aus dem All",
+	"description": "Eine außerirdische Lebensform, die im vom Stellaron erschaffenen Fragmentum heranwächst und sich von der Energie dieser Welt ernährt. Ihre Rüstung spiegelt den dunklen, weiten Sternenhimmel wider.\nIm Kampf friert das Eis aus dem All alles ein, mit dem es in Berührung kommt.",
+	"icon": "spriteoutput/monsterfigure/Monster_8003010.png",
+	"shortIcon": "Monster_8003010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 930,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Fröstelndes Lamento",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Eis-SCH zu. Fügt ihm zusätzlichen Eis-SCH zu, wenn ein Verbündeter gerade eingefroren ist und sich diese Einheit im Status „Gefrierpunkt“ befindet.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				2.5,
+				1,
+				0,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301001"
+		},
+		{
+			"name": "Frostige Absorption",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Gefrierpunkt ein. Immerwinterregen kann bei nachfolgenden Angriffen eingesetzt werden.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				120
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301002"
+		},
+		{
+			"name": "Immerwinterregen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Diese Fähigkeit ist nur im Status Gefrierpunkt verfügbar. Fügt allen Verbündeten geringen Eis-SCH zu und verursacht mit einer Chance Gefroren.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2,
+				0.6,
+				1,
+				1,
+				120
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301003"
+		},
+		{
+			"name": "Fröstelndes Lamento",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu. Verursacht beim Ziel mit einer Chance Gefroren, wenn diese Einheit sich im Status „Gefrierpunkt“ befindet.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				3,
+				1,
+				1,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "8003010"
+}

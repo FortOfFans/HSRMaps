@@ -1,0 +1,133 @@
+{
+	"name": "永眠の墓碑",
+	"description": "砕け散った命が集まって終焉の印を作り、彼岸の魂は依然としてこちらを見つめている。その目には忘却と離別の碑文が映っている。\n無辜の魂は永眠の墓碑で眠っている。永眠の墓碑を消し去れば彼らを目覚めさせることができる。",
+	"icon": "spriteoutput/monsterfigure/Monster_3012030.png",
+	"shortIcon": "Monster_3012030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3012030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 186,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "声なき眠りを醒ます",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "永眠の墓碑がHPが0になる攻撃を受けた後、対応する味方の「夢死」状態を解除し、そのHPとEPを回復する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301203101"
+		},
+		{
+			"name": "すべての消えた時間",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "永眠の墓碑は行動しない。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301203102"
+		},
+		{
+			"name": "永遠に溶け入る継続",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "永眠の墓碑は固定のマス数を持つ「回数HP」を持っている。攻撃を受ける、弱点撃破される、または持続ダメージを受ける時、HPが1マス減る。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301203103"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114011,
+				"count": 1
+			},
+			{
+				"id": 114012,
+				"count": 1
+			},
+			{
+				"id": 114013,
+				"count": 1
+			},
+			{
+				"id": 181015,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "3012031"
+}

@@ -1,0 +1,175 @@
+{
+	"name": "仙人天女",
+	"description": "「药王秘传」信徒渴求的形态，摆脱人性重负，以仙道重塑的真体。\n太古时代，求道者们自建木中参悟玄旨，自诩「仙人」。他们自在无拘，将血肉众生如泥塑形。在无数次变化间，他们忘却了自己的本来面目。",
+	"icon": "spriteoutput/monsterfigure/Monster_2023030.png",
+	"shortIcon": "Monster_2023030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2023030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3720,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "若木化生仪祷",
+			"tag": "弹射",
+			"type": "技能",
+			"description": "连续对我方随机单体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				3,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303201"
+		},
+		{
+			"name": "导引巽风",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				3,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303202"
+		},
+		{
+			"name": "若木棘",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成风属性伤害，并大概率使受到攻击的我方目标陷入风化状态。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1,
+				3,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303203"
+		},
+		{
+			"name": "玄气噬身",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "大概率使我方全体陷入【噬命】状态。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303204"
+		},
+		{
+			"name": "生机虚竭",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "所有敌方单位攻击处于【噬命】状态下的目标时，本次攻击造成的伤害将转化为【噬命】降低的生命上限，并刷新【噬命】的持续时间。【噬命】最高降低<unbreak>99%</unbreak>可回复的生命上限。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.99
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202303205"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 113002,
+				"count": 1
+			},
+			{
+				"id": 113003,
+				"count": 1
+			},
+			{
+				"id": 182002,
+				"count": 1
+			},
+			{
+				"id": 183001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Wind",
+	"id": "202303203"
+}

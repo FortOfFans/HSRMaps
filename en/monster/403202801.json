@@ -1,0 +1,155 @@
+{
+	"name": "Squad Life Assassin",
+	"description": "The Squad Life Assassin weaves between life and death, mercilessly reaping people's precious squad HP.",
+	"icon": "spriteoutput/monsterfigure/Monster_4032020.png",
+	"shortIcon": "Monster_4032020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4032020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 558,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Mutual Sacrifice: Demise's Storm",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to one designated target and units adjacent to the target.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202801"
+		},
+		{
+			"name": "Mutual Sacrifice: Fading Fate",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals minor Physical DMG to all targets. A portion of the hit target's reduced HP is converted to \"<u>Corrosion</u>.\"",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.6,
+				0.3,
+				0.2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202802"
+		},
+		{
+			"name": "Prayers For Me",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Resists Crowd Control debuffs. When \"Black Cloak Demon King\" uses \"Demise's Storm\" or \"Fading Fate\" again, if this unit was summoned by the current attack and is in a \"Mutual Sacrifice\" state, then \"Black Cloak Demon King\" also attacks. It is absorbed after this, restoring HP that was converted to <u>\"Entangled By Agony\"</u> and gaining \"<u>Calamity Power</u>.\"",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.08
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202803"
+		},
+		{
+			"name": "Libations For Me",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Receives the killing blow when \"Enfettered\" is active. If \"Black Cloak Demon King\"'s <u>\"Calamity Power\"</u> stacks are not 0, this unit is immediately resummoned and enters \"Enfettered\" state, but will cause \"Black Cloak Demon King\" to lose 1 <u>\"Calamity Power\"</u> stack and a certain proportion of HP. When \"Black Cloak Demon King\" uses \"Cry Not for the Discarded,\" it is absorbed, and restores HP that was converted to <u>\"Entangled By Agony\"</u>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403202804"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115011,
+				"count": 1
+			},
+			{
+				"id": 115012,
+				"count": 1
+			},
+			{
+				"id": 115013,
+				"count": 1
+			},
+			{
+				"id": 181017,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "403202801"
+}

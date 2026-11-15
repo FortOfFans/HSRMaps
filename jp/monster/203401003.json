@@ -1,0 +1,218 @@
+{
+	"name": "{RUBY_B#ほりじん}歩離人{RUBY_E#}の{RUBY_B#せんしゅ}戦首{RUBY_E#}・{RUBY_B#フーレイ}呼雷{RUBY_E#}",
+	"description": "十の悪行を尽くして幽獄の底に封じられた歩離人の首領。\n<unbreak>700</unbreak>年にわたる幽閉生活で苦しみと憎しみを募らせた呼雷は、脱獄を果たした後、狼群の主として仙舟「羅浮」に戦いを挑んだ。しかし、この狂気に満ちた行動の裏には、何やら別の目的が隠されているようだ……",
+	"icon": "spriteoutput/monsterfigure/Monster_2034010.png",
+	"shortIcon": "Monster_2034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395.0011625,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "折れた剣を牙とする",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401001"
+		},
+		{
+			"name": "鉄を斬って爪とする",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体及び隣接する味方に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1.8,
+				1.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401002"
+		},
+		{
+			"name": "地割れ、草残らず",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "自身以外のすべてのユニットの行動を遅延させ、少量の雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.3,
+				0.5,
+				1000
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401003"
+		},
+		{
+			"name": "雷風鳴り、枯草滅ぼす",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401004"
+		},
+		{
+			"name": "貪狼は駆け、血色が降臨する",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の雷属性ダメージを与え、高確率で「<u>まとわりつく恐怖</u>」を付与する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				5,
+				1,
+				60
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401005"
+		},
+		{
+			"name": "戦首の月狂い",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "敵が攻撃を行った後、<u>「月狂い」状態に入ることができる敵</u>に「<u>嗜血</u>」を1層付与する。「<u>嗜血</u>」が一定層数に達する時、「<u>月狂い</u>」状態に入る。\nアクションバーに「月狂い」のカウントダウンが出現し、カウントダウンのターンが回ってきた時、すべての敵の「<u>月狂い</u>」状態が解除される。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				4,
+				6,
+				0.8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401006"
+		},
+		{
+			"name": "月に吼える狼",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "呼雷が「<u>月狂い</u>」状態に入った後、敵が攻撃を行うたびに、呼雷は「憤激」を1層獲得する。攻撃を行ったのが呼雷の場合、追加で「憤激」を1層獲得する。味方が攻撃を行うたびに、「憤激」が1層減少する。「憤激」には初期層数がある。「憤激」が一定層数に達すると、呼雷は「憤激」の層数をすべて消費して「貪狼は駆け、血色が降臨する」を発動する。味方キャラの攻撃によって「憤激」が0層になると、呼雷の靭性を削り、「憤激」を指定の層数にリセットする。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				8,
+				3,
+				180,
+				4,
+				0.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401007"
+		},
+		{
+			"name": "我の咆哮に耳を傾け、狼群に追従せよ",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "アクションバーに「狼群招集」が出現する。「狼群招集」が行動する時、「狼兵・玄爪」または「狼兵・蝕月」が召喚される。敵が「<u>月狂い</u>」に入る時、「狼群招集」の行動順が遅れる。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.15,
+				0.33
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401008"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind"
+	],
+	"summons": [
+		"203201004",
+		"203202005"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "203401003"
+}

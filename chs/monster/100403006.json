@@ -1,0 +1,128 @@
+{
+	"name": "布洛妮娅",
+	"description": "贝洛伯格守护者的继任者，银鬃铁卫的统帅。\n布洛妮娅会使用多种战术攻击敌人，并大幅提升友军的作战能力。",
+	"icon": "spriteoutput/monsterfigure/Monster_1004030.png",
+	"shortIcon": "Monster_1004030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1116,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 210,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "驭风的子弹",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成风属性伤害。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403001"
+		},
+		{
+			"name": "作战再部署",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "解除指定除布洛妮娅外的敌方单体的全部负面效果，并使该目标立即行动。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403002"
+		},
+		{
+			"name": "增援协同",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤【银鬃近卫】或【银鬃射手】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403003"
+		},
+		{
+			"name": "压制射击",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成风属性伤害，并使受到攻击的我方目标行动延后。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				5,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100403004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Thunder"
+	],
+	"summons": [
+		"1002040",
+		"1002050"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "100403006"
+}

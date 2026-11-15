@@ -1,0 +1,317 @@
+{
+	"name": "勾魂摄魄的支配者",
+	"description": "「星核猎手」的一员，面带莫测笑容的杀手丽人，善用种类纷繁的武器和心控之术。正是她将星穹列车引至此处，以实现某个计划……",
+	"icon": "spriteoutput/monsterfigure/Monster_2004010.png",
+	"shortIcon": "Monster_2004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7207.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 900,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "夜间喧嚣不止",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成雷属性伤害，并有概率使受到攻击的我方目标陷入触电状态。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1,
+				3,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401401"
+		},
+		{
+			"name": "月光摩挲连绵",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成雷属性伤害，如主目标处于触电状态，则会使副目标也陷入触电状态。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1.75
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401402"
+		},
+		{
+			"name": "缄默厉声嘲笑",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401403"
+		},
+		{
+			"name": "言灵",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "使指定我方单体大概率陷入【支配】状态，并将其行动提前，立即随机攻击1名我方其他目标。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				2.5,
+				1.5,
+				0.5,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401404"
+		},
+		{
+			"name": "亡者切齿呢喃",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对指定我方单体造成雷属性伤害，并有概率使受到攻击的我方目标陷入触电状态。同时对所有处于触电状态的我方目标造成雷属性伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401405"
+		},
+		{
+			"name": "心理暗示",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "使我方多名目标进入【心理暗示】状态，并在行动序列上添加【揭晓】，下次【揭晓】行动时陷入【心理暗示】的角色陷入【支配】状态。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				1.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401406"
+		},
+		{
+			"name": "颤慄",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "如受到攻击的目标正处于触电状态，则直接造成1次触电伤害。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401407"
+		},
+		{
+			"name": "残酷",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "当敌方除自身外的目标或我方陷入【支配】状态的目标对我方陷入触电状态的主目标进行攻击时，追加1次雷属性攻击。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401408"
+		},
+		{
+			"name": "傀儡候场",
+			"tag": "强化",
+			"type": "技能",
+			"description": "对召唤物附加【<u>诱狂</u>】效果。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2,
+				0,
+				3,
+				0.75,
+				1.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401409"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5,
+				0,
+				0,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401410"
+		},
+		{
+			"name": "唤声灵形",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "召唤2个精英敌人协助战斗。我方单位对召唤物造成伤害时，【勾魂摄魄的支配者】也会损失相等的生命值。召唤物被弱点击破时，行动额外延后。任一召唤物被消灭后，其弱点属性会被添加给另一个在场的召唤物，并使其获得【<u>血眼</u>】效果。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				240,
+				0,
+				1,
+				0.5,
+				0.5,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401411"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401412"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.75,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401413"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401414"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"800302201",
+		"800301201",
+		"300301401",
+		"301301201"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "2004014"
+}

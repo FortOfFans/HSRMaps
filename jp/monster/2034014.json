@@ -1,0 +1,318 @@
+{
+	"name": "豪雷旋雲の狂狼の主",
+	"description": "十の悪行を尽くして幽獄の底に封じられた歩離人の首領。\n<unbreak>700</unbreak>年にわたる幽閉生活で苦しみと憎しみを募らせた呼雷は、脱獄を果たした後、狼群の主として仙舟「羅浮」に戦いを挑んだ。しかし、この狂気に満ちた行動の裏には、何やら別の目的が隠されているようだ……",
+	"icon": "spriteoutput/monsterfigure/Monster_2034010.png",
+	"shortIcon": "Monster_2034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 10230,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1140,
+		"speed": 160,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "折れた剣を牙とする",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401401"
+		},
+		{
+			"name": "鉄を斬って爪とする",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に雷属性のダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				1.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401402"
+		},
+		{
+			"name": "地割れ、草残らず",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "自身以外のすべてのユニットに雷属性のダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.3,
+				2.2,
+				30
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401403"
+		},
+		{
+			"name": "雷風鳴り、枯草滅ぼす",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401404"
+		},
+		{
+			"name": "貪狼は駆け、血色が降臨する",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				6,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401405"
+		},
+		{
+			"name": "血鳴狂噬",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "呼雷が「月喰み」状態に入る前、靭性が削られることはない。敵が攻撃を行った後、<u>「月喰み」状態に入れる敵</u>に「<u>嗜血</u>」を1層付与する。「<u>嗜血</u>」が一定層数に達した時、呼雷は「<u>月喰み</u>」状態に入り、「一騎打ち」を発動する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				4,
+				5,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401406"
+		},
+		{
+			"name": "群狼の遠吠え",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "呼雷が「<u>月喰み</u>」状態に入った時、受けるダメージがダウンし、靭性が削られるようになる。同時に自身に「憤激」を付与する。「憤激」には初期層数があり、敵のターンが終了するたびに「憤激」を1層失う。「憤激」が0層になるたびに、「月喰み」状態を解除する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				4,
+				3,
+				0.06,
+				2,
+				0.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401407"
+		},
+		{
+			"name": "群狼勅令、雷霆万鈞",
+			"tag": "その他",
+			"type": "スキル",
+			"description": "味方が呼雷以外の敵にHPが0になる攻撃を与えるたびに、呼雷がダメージを受け、靭性を削られる。同時に味方キャラそれぞれに「<u>血騒ぎ</u>」を付与し、<u>「月喰み」状態に入れる敵</u>に「<u>嗜血</u>」を1層付与し、「狼兵・玄爪」または「狼兵・蝕月」を召喚する。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0,
+				1.15,
+				1.33,
+				90,
+				0.03
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401408"
+		},
+		{
+			"name": "一騎打ち",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "「一騎打ち」状態に入り、呼雷の与ダメージがアップする。味方はキャラ1名とその召喚物を「一騎打ち」にすることができる。選択後、指定した味方単体に雷属性ダメージを与え、「憤激」が0になるまで選択した味方以外の味方と敵が<u>一時離脱</u>する。味方が「一騎打ち」状態に入った後、味方のSPを回復し、味方全体の現在の最大HPと攻撃力に応じて、自身の最大HPと攻撃力がアップする。同時に、「<u>血騒ぎ</u>」が発動し、その層数に応じて自身に「<u>激昂の戦い</u>」を付与する。味方キャラそれぞれが所持する「<u>血騒ぎ</u>」は、「一騎打ち」状態終了後に解除される。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.15,
+				5,
+				5,
+				0.05,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401409"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401410"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401411"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401412"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				0.15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401413"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203401414"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"2032011",
+		"2032022"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Thunder",
+	"id": "2034014"
+}

@@ -1,0 +1,512 @@
+{
+	"name": "Erhaben, strahlend, Verkörperung des Himmels",
+	"description": "Der Titan des Himmels. Theos Synthetos. Von der Menschheit erobert und mit ihr verschmolzen, herrscht er nicht mehr über den Tag- und Nachtzyklus von Amphoreus. Doch sein unnahbarer Stolz bleibt unverändert.\nIn seinen Augen sind die Sterblichen der zerschmetterten Welt unansehnlich – verglichen mit einer Welt, die durch Licht geschützt wird, scheinen die gedankenlosen menschlichen Massen eher der Schwarzen Flut angemessen zu sein.",
+	"icon": "spriteoutput/monsterfigure/Monster_4015010.png",
+	"shortIcon": "Monster_4015010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4015010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 5812.5023249999995,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 960,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "Feuerschlag über weite Himmel",
+			"tag": "Sperrfeuer",
+			"type": "Fähigkeit",
+			"description": "Erhöht die <u>Temperatur</u>. Startet mehrere Angriffe von der linken Seite des Teams und führt einen einmaligen Prioritätsangriff auf jedes Ziel aus, wobei die restlichen Angriffe zufällige Ziele angreifen. Jeder Angriff verursacht basierend auf der aktuellen <u>Temperatur</u> Feuer-SCH und <u>repariert</u> „Hundertäugiger Schütze“.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.03,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501101"
+		},
+		{
+			"name": "Flammen über endlose Weiten",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Erhöht die <u>Temperatur</u>. Fügt allen Verbündeten basierend auf der aktuellen <u>Temperatur</u> Feuer-SCH zu und <u>repariert</u> „Hundertäugiger Zweig“.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.03,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501102"
+		},
+		{
+			"name": "Ende des Monats der langen Tage",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Erhöht die <u>Temperatur</u>. Fügt allen Verbündeten basierend auf der aktuellen <u>Temperatur</u> Feuer-SCH zu. Verzögert die Aktionen aller Verbündeten basierend auf der aktuellen <u>Temperatur</u> und <u>repariert</u> „Hundertäugiger Schütze“ sowie „Hundertäugiger Zweig“.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.03,
+				0.05,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501103"
+		},
+		{
+			"name": "Pracht, wie Wolken, die den Himmel krönen",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Aufladen“ ein und setzt in der nächsten Aktion „Wut, Verbrennung der Morgen- und Abenddämmerung“ ein. Wendet <u>Heliumblitz</u> auf sich selbst an und beschwört den Tagdonnerraben. In diesem Status wird <u>Heliumblitz</u> nach Angriffen von Verbündeten basierend auf der Anzahl der getroffenen Gegner reduziert.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				1,
+				10,
+				12,
+				1.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501104"
+		},
+		{
+			"name": "Wut, Verbrennung der Morgen- und Abenddämmerung",
+			"tag": "Verteilen",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten basierend auf dem aktuellen <u>Heliumblitz</u> massiven Feuer-SCH zu. Der SCH wird gleichmäßig auf die Ziele <u>verteilt</u>. Erhöht gleichzeitig basierend auf dem aktuellen <u>Heliumblitz</u> die <u>Temperatur</u> und <u>repariert</u> „Hundertäugiger Schütze“ sowie „Hundertäugiger Zweig“.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501105"
+		},
+		{
+			"name": "Donnergrollen über weite Himmel",
+			"tag": "Sperrfeuer",
+			"type": "Fähigkeit",
+			"description": "Erhöht die Stapelzahl von <u>Sturmwolke</u>. Startet mehrere Angriffe von der linken Seite des Teams und führt einen einmaligen Prioritätsangriff auf jedes Ziel aus, wobei die restlichen Angriffe zufällige Ziele angreifen. Jeder Angriff verursacht Blitz-SCH und <u>repariert</u> „Hundertäugiger Schütze“.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2,
+				5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501106"
+		},
+		{
+			"name": "Blitze über endlose Weiten",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Erhöht die Stapelzahl von <u>Sturmwolke</u>. Fügt allen Verbündeten Blitz-SCH zu und <u>repariert</u> „Hundertäugiger Zweig“.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501107"
+		},
+		{
+			"name": "Leuchten des Monats des Glücks",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Erhöht die Stapelzahl von <u>Sturmwolke</u>. Fügt allen Verbündeten Blitz-SCH zu und <u>repariert</u> „Hundertäugiger Schütze“ sowie „Hundertäugiger Zweig“.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501108"
+		},
+		{
+			"name": "Donnerschlag, Beben der Berge und Meere",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Erhöht die Stapelzahl von <u>Sturmwolke</u> und tritt in den Status „Aufladen“ ein. Setzt bei der nächsten Aktion „Zorn, Riss des ewigen Himmels“ ein. Diese Einheit erhält <u>Ionisation</u> und beschwört den „Tagdonnerraben“. In diesem Status erhält sie nach dem Angriff von Verbündeten abhängig von der Anzahl der bei diesem Angriff getroffenen Gegner Stapelungen von <u>Sturmwolke</u>. Wenn „Tagdonnerrabe“, „Hundertäugiger Schütze“ oder „Hundertäugiger Zweig“ einen Todesstoß erleidet, erhält er eine bestimmte Stapelzahl von <u>Sturmwolke</u>. Wenn alle Stapelungen von <u>Sturmwolke</u> von Verbündeten übernommen wurden, erleidet diese Einheit Schwächebruch. Wenn diese Einheit Schwächebruch erleidet, gehen alle <u>Sturmwolken</u> verloren und ihr wird eine geringe Menge an zusätzlichem Blitz-SCH zugefügt, die der Stapelzahl von <u>Sturmwolke</u> entspricht.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				20
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501109"
+		},
+		{
+			"name": "Zorn, Riss des ewigen Himmels",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Zielen Blitz-SCH zu und verbraucht eine bestimmte Stapelzahl von <u>Sturmwolke</u>. Fügt zufälligen Zielen eine entsprechende geringe Menge an Blitz-SCH zu und <u>repariert</u> „Hundertäugiger Schütze“ und „Hundertäugiger Zweig“. Fügt dieser Einheit anschließend eine geringe Menge an zusätzlichem Blitz-SCH zu, die der Anzahl der von Verbündeten übernommenen Sturmwolken entspricht.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				20
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501110"
+		},
+		{
+			"name": "Hundert Augen",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Wenn „Tagdonnerrabe“, „Hundertäugiger Schütze“ und „Hundertäugiger Zweig“ während dieses Kampfes SCH erleiden, verliert „Erhaben, strahlend, Verkörperung des Himmels“ auch die gleiche Menge an LP. Wenn „Tagdonnerrabe“, „Hundertäugiger Schütze“ oder „Hundertäugiger Zweig“ einen Todesstoß erhält, erleidet „Erhaben, strahlend, Verkörperung des Himmels“ ebenfalls Widerstand-SCH, und „Hundertäugiger Schütze“ oder „Hundertäugiger Zweig“ werden geheilt und können nicht ausgewählt werden.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.4,
+				1.2,
+				0.2,
+				5,
+				0.8,
+				120
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501111"
+		},
+		{
+			"name": "Sturmfall",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Bei stürmischem Wetter, entstehen in der Umgebung <u>Sturmwolken</u>. Wenn „Tagdonnerrabe“, „Hundertäugiger Schütze“ oder „Hundertäugiger Zweig“ einen Todesstoß erleidet, während sich „Erhaben, strahlend, Verkörperung des Himmels“ nicht im Status <u>„Ionisation“</u> befindet, wird eine bestimmte Stapelzahl von <u>Sturmwolken</u> reduziert und Erhaben, strahlend, Verkörperung des Himmels erleidet geringen Blitz-SCH.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.75,
+				0.005,
+				1,
+				3,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501112"
+		},
+		{
+			"name": "",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.75,
+				1.25,
+				0.25,
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501113"
+		},
+		{
+			"name": "Erbarmungslose Sonne",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Bei sonnigem Wetter wird die Umgebung des Schlachtfelds von <u>Temperatur</u> betroffen. Die <u>Temperatur</u> steigt zu Beginn der Runde eines beliebigen Ziels. Der von Verbündeten verursachte SCH wird entsprechend der <u>Temperatur</u> erhöht. Alle Verbündeten treten in den Status „Sonnensturm“ ein. Verursacht zu Beginn der Runde von Verbündeten basierend auf der <u>Temperatur</u> Feuer-SCH. Dieser SCH ist <u>nicht tödlich</u>. Wenn „Tagdonnerrabe“, „Hundertäugige Schütze“ und „Hundertäugige Zweig“ einen Todesstoß erhalten, wird die <u>Temperatur</u> gesenkt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1,
+				0.01
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501114"
+		},
+		{
+			"name": "",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0,
+				40,
+				0.3,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501115"
+		},
+		{
+			"name": "Asche an die ferne Küste",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "<u>Repariert</u> „Poröser Knochen“. Fügt einem anvisierten Verbündeten eine festgelegte Menge an massivem imaginärem SCH zu und belegt ihn mit <u>Zersetzung</u>. <u>Zersetzung</u> ist stapelbar.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1,
+				500,
+				600,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501116"
+		},
+		{
+			"name": "Auslöschung des geretteten Sterns",
+			"tag": "Verteilen",
+			"type": "Fähigkeit",
+			"description": "<u>Repariert</u> „Trockener Tränenknochen“ und fügt allen Verbündeten eine festgelegte Menge an massivem imaginärem SCH zu. Der SCH wird unter den Zielen <u>gleichmäßig aufgeteilt</u>.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501117"
+		},
+		{
+			"name": "Auge des Schreckens",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Wechselt in den Status „Aufkommende dunkle Flut“. Setzt in der nächsten Aktion „Staubtod der Götter“ ein und <u>repariert</u> „Poröser Knochen“ sowie „Trockener Tränenknochen“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501118"
+		},
+		{
+			"name": "Staubtod der Götter",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten eine festgelegte Menge an massivem imaginärem SCH zu und <u>repariert</u> „Poröser Knochen“ und „Trockener Tränenknochen“.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501119"
+		},
+		{
+			"name": "Überreste",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Wenn „Dezimierer, Karma des Tagdonners, Auge des Zwielichts“ während dieses Kampfes „Poröser Knochen“ oder „Trockener Tränenknochen“ SCH zufügt, verliert er selbst eine entsprechende Menge an LP. Wenn „Poröser Knochen“ oder „Trockener Tränenknochen“ einen Todesstoß erhält, erleidet „Dezimierer, Karma des Tagdonners, Auge des Zwielichts“ Widerstand-SCH, und „Poröser Knochen“ oder „Trockener Tränenknochen“ stellt LP wieder her und kann nicht ausgewählt werden.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1.2,
+				120,
+				1.4,
+				1.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501120"
+		},
+		{
+			"name": "Schwarze Flut",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Fügt der Aktionsreihenfolge „Schwarze Flut“ hinzu. Jedes Mal, wenn „Schwarze Flut“ eine Aktion ausführt, fügt sie allen Verbündeten <u>Zersetzung</u> zu. <u>Zersetzung</u> ist stapelbar. Wenn Verbündete Todesstöße erleiden, erhalten sie <u>Schwarze Korrosion</u>. Wenn alle Verbündeten in den Status <u>Schwarze Korrosion</u> übergehen oder handlungsunfähig sind, endet der Kampf mit einer Niederlage.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				300,
+				1,
+				30,
+				0.8,
+				130,
+				150
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501121"
+		},
+		{
+			"name": "Ebbe",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Während dieses Kampfes verursacht sämtlicher SCH, den „Dezimierer, Karma des Tagdonners, Auge des Zwielichts“ zufügt, eine feste Menge an SCH basierend auf der „Synchronisierungsrate der Schwarzen Flut“. Nachdem ein Verbündeter einen Angriff eingesetzt hat, verursacht er zusätzlich <u>nicht tödlichen</u> <u>Tatsächlichen SCH</u> basierend auf der Synchronisierungsrate der Schwarzen Flut. Wenn „Dezimierer, Karma des Tagdonners, Auge des Zwielichts“ und „Schwarze Flut“ Aktionen ausführen, wird die Synchronisierungsrate der Schwarzen Flut erhöht. Wenn „Poröser Knochen“ oder „Trockener Tränenknochen“ besiegt werden, wird die Synchronisierungsrate der Schwarzen Flut verringert.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8,
+				16,
+				0.6,
+				1,
+				0.00070000044,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501122"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4,
+				1,
+				2,
+				0,
+				0,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501123"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5,
+				20,
+				0,
+				0,
+				40
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401501124"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [
+		"4012090",
+		"4012091",
+		"4012080"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "401501101"
+}

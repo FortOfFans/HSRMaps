@@ -1,0 +1,223 @@
+{
+	"name": "堕神の血・アポリ",
+	"description": "博識学会を裏で操る技術開発部の主務は、脆弱な人間の肉体を捨て、その意識を巨大な「樹状脳」へと移した。ただ古獣の神秘を探るためだけに。\n人間の力を超越しようとするアポリの執念は、やがて彼女自身を終末へと導いた。完全に「貪慾」と同化された彼女の姿は胚胎にまで遡り、名状しがたい化け物へとなり果てたのだ。",
+	"icon": "spriteoutput/monsterfigure/Monster_5034010.png",
+	"shortIcon": "Monster_5034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 465,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1080,
+		"speed": 160,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "捕食の印",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体キャラに少量の量子属性ダメージを与え、<u>「堕神の衰腐」</u>状態を1層付与する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401201"
+		},
+		{
+			"name": "飢えの響き",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401202"
+		},
+		{
+			"name": "マクロ生態系",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "「狂獣の胚芽」を呑み込み、自身の与ダメージをアップさせ、HPを回復する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				2,
+				0.04,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401203"
+		},
+		{
+			"name": "万物は我が内に",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の量子属性ダメージを与え、高確率で味方全体を<u>「源質吞み」</u>状態にする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				0.1
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401204"
+		},
+		{
+			"name": "集団連帯ストレス反応",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "儀式中に攻撃を受けると、「狂獣の胚芽」の行動順が早まり、かつ「堕神の血」は行動順を早める効果の影響を受けない。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.08,
+				0.7,
+				0.65,
+				0.45,
+				0.35,
+				1.5,
+				0.3,
+				0.1,
+				0.05,
+				166,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401205"
+		},
+		{
+			"name": "獣の瞳、その百態",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "行動するたびに「貪慾の眼」が1個増加する。ターン終了時に「貪慾の眼」が一定数に達していると、すぐに「万物は我が内に」を発動する。「血液脳関門」を獲得した時に速度が大幅にアップする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.7,
+				0.65,
+				0.45,
+				0.35,
+				1,
+				0.4,
+				0.3,
+				0.05,
+				0.025,
+				100
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401206"
+		},
+		{
+			"name": "胎児の夢",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "アクションバーに「破胞の分裂」が追加される。「破胞の分裂」が行動するたびに、「狂獣の胚芽」が召喚される。「堕神の血」がフィールド上に存在する時、「狂獣の胚芽」が攻撃すると追加で<u>「堕神の衰腐」</u>と<u>「源質吞み」</u>が付与される。「狂獣の胚芽」が倒されると「堕神の血」のHPが減少する。攻撃を受けると、「狂獣の胚芽」がその攻撃を行ったキャラをロックオンする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2,
+				3,
+				0.02
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401207"
+		},
+		{
+			"name": "血液脳関門",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが一定値まで低下した時、自身に「血液脳関門」を付与する。「血液脳関門」がある間は靭性を削られず、被ダメージが大幅にダウンする。一方、愉悦ダメージによる「血液脳関門」の破壊効率は大幅にアップする。「血液脳関門」を獲得すると、アクションバーに「恒常性の乱れ」が追加される。「狂獣の胚芽」を倒すと「恒常性の乱れ」のチャージが増加し、「恒常性の乱れ」は行動時、チャージ量に応じて「血液脳関門」にダメージを与える。「血液脳関門」が解除されると、自身が大ダメージを受ける。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.2,
+				0.98,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503401208"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"503201005"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "5034012"
+}

@@ -1,0 +1,166 @@
+{
+	"name": "破灭玄莲",
+	"description": "无根自开、凭空生就的幻花。幻胧托体「建木」，炼成肉身，却不曾放下毁灭的权柄。",
+	"icon": "spriteoutput/monsterfigure/Monster_8012211.png",
+	"shortIcon": "Monster_8012211",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012211.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 697.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "玄气噬身",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "大概率使指定我方单体陷入【噬命】状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.4,
+				2,
+				1
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221101"
+		},
+		{
+			"name": "",
+			"tag": "其他",
+			"type": "技能",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221102"
+		},
+		{
+			"name": "破灭",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成基于其生命上限百分比的虚数属性伤害，该伤害无视目标的防御力。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.59
+			],
+			"spGain": 40,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221103"
+		},
+		{
+			"name": "绽放",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【绽放】状态下，下次行动施放【破灭】。当【破灭玄莲】处于【绽放】状态下被弱点击破、消灭或【绽放】状态被解除时，【不死神实•幻胧】受到的伤害提高并且行动延后。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221104"
+		},
+		{
+			"name": "休眠",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到致命攻击后进入【休眠】状态。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801221105"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111011,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 181003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "8012211"
+}

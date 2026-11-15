@@ -1,0 +1,272 @@
+{
+	"name": "カカリア・虚妄の母（幻像）",
+	"description": "「星核」から溢れる裂界エネルギーと同化し、大守護者は虚数エネルギーを操る歌者に幻化した。そして、それこそが彼女が約束した「新世界」の代弁者である。ここに現れたのはあなたの記憶をもとにシミュレートされた幻である。",
+	"icon": "spriteoutput/monsterfigure/Monster_1005010.png",
+	"shortIcon": "Monster_1005010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1005010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 4882.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "砕骨の寒流",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501301"
+		},
+		{
+			"name": "滅世紀の兆し",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "指定した味方単体をロックオンし、次の行動でこのターゲットに「裂魂の寒流」を発動する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501302"
+		},
+		{
+			"name": "裂魂の寒流",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の氷属性ダメージを与え、高確率で攻撃を受けた味方を凍結状態にする。スキルは「無尽なる冬の槊（幻像）」がロックオンしているターゲットに対して追加で発動する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501303"
+		},
+		{
+			"name": "",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501304"
+		},
+		{
+			"name": "冷酷なる滅世者の呼喚",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「無尽なる冬の槊（幻像）」を召喚する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501305"
+		},
+		{
+			"name": "創世者の決意",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "虚数属性に変わり、速度がアップ。更に攻撃の与ダメージをアップさせ、靭性保護状態を解除する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.3,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501306"
+		},
+		{
+			"name": "創世のコード",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。スキルは「無尽なる冬の槊（幻像）」がロックオンしているターゲットに対して追加で発動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501307"
+		},
+		{
+			"name": "創世紀のプレリュード",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次の行動で味方全体に「創世の絶唱」を発動。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.25,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501308"
+		},
+		{
+			"name": "創世の絶唱",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501309"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1,
+				4.5,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501310"
+		},
+		{
+			"name": "狂雪の災い",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "凍結または禁錮状態の味方1人につき、自身及び召喚物の与ダメージがアップする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.15,
+				0.888,
+				40
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501311"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				200,
+				5,
+				1,
+				500
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501312"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"100201702",
+		"100201802"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Ice",
+	"id": "1005013"
+}

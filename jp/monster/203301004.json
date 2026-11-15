@@ -1,0 +1,176 @@
+{
+	"name": "{RUBY_B#ほうこう}咆哮{RUBY_E#}の{RUBY_B#ひつぎ}棺{RUBY_E#}",
+	"description": "博識学会が研究開発した戦闘兵器。歩離人の生物組織をパーツとしており、長命種の強い生命力と長い歳月で進化した「殺戮アルゴリズム」を併せ持つ。",
+	"icon": "spriteoutput/monsterfigure/Monster_2033010.png",
+	"shortIcon": "Monster_2033010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2033010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 558,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "バイオニクス・クロー",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301001"
+		},
+		{
+			"name": "雷電まとう咆哮",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に少量の物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2.6,
+				1.8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301002"
+		},
+		{
+			"name": "疑似月狂い",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "「<u>月狂い</u>」状態に入る。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301003"
+		},
+		{
+			"name": "合成狼毒",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の物理属性ダメージを与え、高確率で味方全体に「<u>まとわりつく恐怖</u>」を付与する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0,
+				0,
+				1.2
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301004"
+		},
+		{
+			"name": "殺戮アルゴリズム",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に物理属性ダメージを与える。味方が「<u>まとわりつく恐怖</u>」または「<u>恐怖</u>」状態になる時、さらにダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.2,
+				1.8,
+				1.8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301005"
+		},
+		{
+			"name": "歩離の本能",
+			"tag": "天賦",
+			"type": "スキル",
+			"description": "戦闘に入る時、「<u>月狂い</u>」状態に入るのに必要な「<u>嗜血</u>」の層数を減らす。敵が攻撃を行った後、<u>「月狂い」状態に入れる敵</u>に「<u>嗜血</u>」を1層付与する。「<u>嗜血</u>」が一定層数に達する時、「<u>月狂い</u>」状態に入る。\nアクションバーに「月狂い」のカウントダウンが出現し、カウントダウンのターンが回ってきた時、すべての敵の「<u>月狂い</u>」状態が解除される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "203301006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182008,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "203301004"
+}

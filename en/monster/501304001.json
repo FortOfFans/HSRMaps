@@ -1,0 +1,167 @@
+{
+	"name": "Daybreak Squadron: Azurewing",
+	"description": "The pinnacle of logic and composure... or is he? He maintains a constant air of unshakeable calm, as if he's a walking encyclopedia of wisdom and lore, but at his core, he's just a sardonic loser with a talent for snark.\n\"My job is simply to decide what to do. As for whether it's actually possible... well, that's for you all to worry about... Holy Aha, you guys are actually doing it!?\"\nCleaving the heavens! Wings spread like lightning! Warrior of the cyan welkin — Azurewing Warrior!\nDarkness wanes, and dawn awakens! The Daybreak Squadron arises!",
+	"icon": "spriteoutput/monsterfigure/Monster_5013040.png",
+	"shortIcon": "Monster_5013040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5013040.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 7672.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Daybreak Blade",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals Quantum DMG to one designated target.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501304001"
+		},
+		{
+			"name": "Daybreak Flywheel",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Quantum DMG to one designated target and units adjacent to the target.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				6,
+				3,
+				0.15,
+				60,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501304002"
+		},
+		{
+			"name": "Daybreak Will",
+			"tag": "Enhance",
+			"type": "Ability",
+			"description": "Applies \"Daybreak Forcefield\" to this unit. While in this state, Daybreak Squadron continuously uses \"Shadow Dance of the Daybreak Blade,\" and is immune to Crowd Control debuffs. This unit's Toughness cannot be reduced. When this unit is attacked by a Quantum-Type attack, it will immediately take action. When Daybreak Squadron is in the \"Daybreak Forcefield\" state, after being attacked a certain number of times, it will use \"Daybreak Dispersal.\"",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				7,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501304003"
+		},
+		{
+			"name": "Shadow Dance of the Daybreak Blade",
+			"tag": "Single Target",
+			"type": "Ability",
+			"description": "Deals massive Quantum DMG to one designated target.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501304004"
+		},
+		{
+			"name": "Daybreak Dispersal",
+			"tag": "Others",
+			"type": "Ability",
+			"description": "Dispels \"Daybreak Forcefield\" and applies \"Disheartened\" to this unit, increasing DMG taken and reducing this unit's Quantum RES.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.4,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501304005"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.8,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Quantum",
+	"id": "501304001"
+}

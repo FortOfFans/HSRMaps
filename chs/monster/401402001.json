@@ -1,0 +1,144 @@
+{
+	"name": "颁赐者，千军首，天谴之矛",
+	"description": "不败者，一切战场的领主，悬锋城与废墟的王，\n战车大匠，尸山王座，胜利父，\n荣耀僭主，裂地惊海的雷，翁法罗斯的守护者，\n纷争的泰坦，天谴之矛，尼卡多利。\n全体世间应听遣的将领，永恒且锋利的兵戈，纷争与断绝纷争的法则。\n礼赞尼卡多利，最伟大的征服者，最伟大的守护者。",
+	"icon": "spriteoutput/monsterfigure/Monster_4014020.png",
+	"shortIcon": "Monster_4014020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 5580,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 0,
+		"speed": 60,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "受征伐者皆见灾殃",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "每个我方角色生成1个对应的【征服或被征服】，并使对应角色进入【受征服】状态。【受征服】会降低角色可回复的生命上限，降低对应【征服或被征服】的生命值可恢复对应比例的可回复生命上限。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402001"
+		},
+		{
+			"name": "殊死御侮皆临荣光",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "对所有我方角色施加【纷争赐的畏怖】，【受征服】状态解除时对应【纷争赐的畏怖】一同解除。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402002"
+		},
+		{
+			"name": "天谴降，皆奠纷争昂藏",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "控制【蛮神，疯王，纷争的化身】对我方全体角色造成基于其生命上限百分比的虚数属性伤害，该伤害无视目标的防御力并大概率对处于【受征服】状态的目标附加禁锢。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.9,
+				1.5,
+				0.3,
+				0.15,
+				0.3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402003"
+		},
+		{
+			"name": "畏怖溃军皆成铠仗",
+			"tag": "强化",
+			"type": "技能",
+			"description": "吸收剩余的【征服或被征服】强化【蛮神，疯王，纷争的化身】，同时添加韧性保护并解除【蛮神，疯王，纷争的化身】身上的控制类负面状态与弱点击破状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401402004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [],
+	"summons": [
+		"4014012",
+		"4012060"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Imaginary",
+	"id": "401402001"
+}

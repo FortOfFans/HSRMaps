@@ -1,0 +1,450 @@
+{
+	"name": "枯茎朽骨的引路人",
+	"description": "冥河中沉眠的死龙，受炼成召引再度苏醒，化成槁骨腐肉的模样。\n它曾是「死亡」的泰坦，逆溯冥河向上，离开乌有之界于现世搁浅。它曾随冥河潮汐涌上大地，为翁法罗斯的万事万物烙上命定的终局。那些将死的，或已死的存在，皆会因它的归来感受到灵魂深处的颤栗。",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 46500,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 2400,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "沦殁者攫手挽留",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对我方单体造成量子属性伤害。如果【枯茎朽骨的引路人】处于<u>【死亡的芬芳】</u>状态，额外造成量子属性<u>【衰亡伤害】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.15
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403601"
+		},
+		{
+			"name": "长眠者厚土安葬",
+			"tag": "分摊",
+			"type": "技能",
+			"description": "对我方全体造成大量量子属性伤害，伤害由我方全体单位<u>平均分摊</u>。如果【枯茎朽骨的引路人】处于<u>【死亡的芬芳】</u>状态，对每个目标额外造成量子属性<u>【衰亡伤害】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				12,
+				0.15
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403602"
+		},
+		{
+			"name": "辞世者临别哀悼",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对随机我方3个目标造成量子属性<u>【衰亡伤害】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403603"
+		},
+		{
+			"name": "苦涩送来迟到的死讯",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "使所有处于弱点击破状态下的【哀悯长臂】解除弱点击破状态，恢复所有韧性，并立即行动。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403604"
+		},
+		{
+			"name": "于痛苦的芬芳中死去",
+			"tag": "强化",
+			"type": "技能",
+			"description": "进入<u>【死亡的芬芳】</u>状态，对我方全体角色造成大量量子属性<u>【衰亡伤害】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1.2,
+				2,
+				5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403605"
+		},
+		{
+			"name": "死亡想要更多的死亡",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成量子属性<u>【衰亡伤害】</u>。对处于<u>【垂死挣扎】</u>状态的目标则造成致命伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.8
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403606"
+		},
+		{
+			"name": "濒死之梦，浓烟似墨",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "使自身初始受到的伤害降低，且处于韧性保护状态。我方目标生命值降低时会积累【濒死梦泡】，当【濒死梦泡】达到上限时，使自身进入<u>【死亡的芬芳】</u>状态。在该状态下，移除自身的受到伤害降低状态和韧性保护状态。解除<u>【死亡的芬芳】</u>状态时，自身受到伤害并直接陷入弱点击破状态。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.8,
+				0.2,
+				1,
+				0,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403607"
+		},
+		{
+			"name": "汝不能停步等候死神",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【枯茎朽骨的引路人】或【哀悯长臂】的技能击中我方目标时，会为我方目标施加不可解除的特殊持续伤害状态，该状态下目标当前生命值百分比越高受到的伤害越高。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.3,
+				0,
+				0.15,
+				0.9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403608"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403609"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403610"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403611"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403612"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403613"
+		},
+		{
+			"name": "奄奄一息的挣扎",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "战斗中所有我方目标被施加<u>【可负载】</u>状态。处于<u>【垂死挣扎】</u>状态的我方目标造成的伤害和弱点击破效率大幅降低，且我方目标若连续处于<u>【垂死挣扎】</u>状态一定回合，将受到致命伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.9,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403614"
+		},
+		{
+			"name": "腐败骨肉的反噬",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【枯茎朽骨的引路人】处于【死梦深度】状态时，【哀悯长臂】会获得<u>【腐败反噬】</u>状态。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				600
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403615"
+		},
+		{
+			"name": "淹没光彩的深渊",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【枯茎朽骨的引路人】没有弱点。当【哀悯长臂】处于弱点击破状态时，其初始弱点会被添加到其他所有敌方目标，直到其从弱点击破状态恢复。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403616"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"401207603",
+		"401207703"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 3,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101301",
+				"name": "坚防守备",
+				"description": "首领幻影受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101302",
+				"name": "朽株枯木",
+				"description": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+				"params": []
+			},
+			{
+				"id": "101303",
+				"name": "摧刚为柔",
+				"description": "【哀悯长臂】的韧性上限提高。",
+				"params": []
+			},
+			{
+				"id": "101304",
+				"name": "坚韧之志",
+				"description": "敌方全体受到的伤害降低。但每拥有1个<color=#f29e38ff>弱点属性</color>，受到的伤害提高。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10131",
+				"name": "阶段一：求死不能",
+				"description": "本场战斗中我方单位的生命值最多降至1点，同时会将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+				"answer": "应对策略：优先对处于【负载生命值】状态的我方目标进行回复。",
+				"skills": [
+					{
+						"id": "101311",
+						"type": "Normal",
+						"name": "如何解除首领幻影的【死亡的芬芳】状态",
+						"texts": [
+							{
+								"description": "当首领幻影处于【死亡的芬芳】状态时，对首领幻影和其召唤物造成伤害，可以削减首领幻影的生命值，进而削减【濒死梦泡】，以此解除【死亡的芬芳】状态。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101312",
+						"type": "Normal",
+						"name": "如何解除我方单位的【负载生命值】状态",
+						"texts": [
+							{
+								"description": "回复我方目标的生命值会优先回复该目标的【负载生命值】。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10132",
+				"name": "阶段二：向死而生",
+				"description": "首领幻影施放【死亡想要更多的死亡】时会对处于【负载生命值】状态的我方目标造成致命伤害。",
+				"answer": "应对策略：在【死亡想要更多的死亡】施放前通过回复生命值解除所有我方单位的【负载生命值】状态。",
+				"skills": [
+					{
+						"id": "101321",
+						"type": "Normal",
+						"name": "应对【死亡想要更多的死亡】的斩杀效果",
+						"texts": [
+							{
+								"description": "在首领幻影施放【死亡想要更多的死亡】前通过回复生命值解除我方全体的【负载生命值】状态。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "首领幻影和其召唤物受到的伤害降低<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点击破</color>后，行动额外延后，受到的伤害提高<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "本场战斗中我方目标的生命值最多降至1点，同时将受到的伤害超出当前生命值的部分转化为【负载生命值】。处于【负载生命值】状态的我方单位造成的伤害和弱点击破效率大幅降低。",
+				"params": []
+			},
+			{
+				"description": "我方目标生命值降低时，处于【死梦深度】状态的首领幻影会积累【濒死梦泡】，【濒死梦泡】达到上限时首领幻影进入【死亡的芬芳】状态，此时首领幻影和其召唤物的技能大幅强化。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "我方目标陷入【负载生命值】状态时造成的伤害和弱点击破效率大幅降低，优先回复其生命值以解除该状态。",
+				"params": []
+			},
+			{
+				"description": "对【哀悯长臂】造成弱点击破可以削减首领幻影的韧性和生命值，若此时首领幻影处于【死亡的芬芳】状态，还可以回复我方生命值。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "401403603"
+}

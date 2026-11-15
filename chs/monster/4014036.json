@@ -1,0 +1,333 @@
+{
+	"name": "枯茎朽骨的引路人",
+	"description": "冥河中沉眠的死龙，受炼成召引再度苏醒，化成槁骨腐肉的模样。\n它曾是「死亡」的泰坦，逆溯冥河向上，离开乌有之界于现世搁浅。它曾随冥河潮汐涌上大地，为翁法罗斯的万事万物烙上命定的终局。那些将死的，或已死的存在，皆会因它的归来感受到灵魂深处的颤栗。",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 46500,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 2400,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "沦殁者攫手挽留",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对我方单体造成量子属性伤害。如果【枯茎朽骨的引路人】处于<u>【死亡的芬芳】</u>状态，额外造成量子属性<u>【衰亡伤害】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.15
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403601"
+		},
+		{
+			"name": "长眠者厚土安葬",
+			"tag": "分摊",
+			"type": "技能",
+			"description": "对我方全体造成大量量子属性伤害，伤害由我方全体单位<u>平均分摊</u>。如果【枯茎朽骨的引路人】处于<u>【死亡的芬芳】</u>状态，对每个目标额外造成量子属性<u>【衰亡伤害】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				12,
+				0.15
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403602"
+		},
+		{
+			"name": "辞世者临别哀悼",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对随机我方3个目标造成量子属性<u>【衰亡伤害】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403603"
+		},
+		{
+			"name": "苦涩送来迟到的死讯",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "使所有处于弱点击破状态下的【哀悯长臂】解除弱点击破状态，恢复所有韧性，并立即行动。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403604"
+		},
+		{
+			"name": "于痛苦的芬芳中死去",
+			"tag": "强化",
+			"type": "技能",
+			"description": "进入<u>【死亡的芬芳】</u>状态，对我方全体角色造成大量量子属性<u>【衰亡伤害】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1.2,
+				2,
+				5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403605"
+		},
+		{
+			"name": "死亡想要更多的死亡",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成量子属性<u>【衰亡伤害】</u>。对处于<u>【垂死挣扎】</u>状态的目标则造成致命伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.8
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403606"
+		},
+		{
+			"name": "濒死之梦，浓烟似墨",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "使自身初始受到的伤害降低，且处于韧性保护状态。我方目标生命值降低时会积累【濒死梦泡】，当【濒死梦泡】达到上限时，使自身进入<u>【死亡的芬芳】</u>状态。在该状态下，移除自身的受到伤害降低状态和韧性保护状态。解除<u>【死亡的芬芳】</u>状态时，自身受到伤害并直接陷入弱点击破状态。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.8,
+				0.2,
+				1,
+				0,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403607"
+		},
+		{
+			"name": "汝不能停步等候死神",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【枯茎朽骨的引路人】或【哀悯长臂】的技能击中我方目标时，会为我方目标施加不可解除的特殊持续伤害状态，该状态下目标当前生命值百分比越高受到的伤害越高。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.3,
+				0,
+				0.15,
+				0.9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403608"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403609"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403610"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403611"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403612"
+		},
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403613"
+		},
+		{
+			"name": "奄奄一息的挣扎",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "战斗中所有我方目标被施加<u>【可负载】</u>状态。处于<u>【垂死挣扎】</u>状态的我方目标造成的伤害和弱点击破效率大幅降低，且我方目标若连续处于<u>【垂死挣扎】</u>状态一定回合，将受到致命伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.9,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403614"
+		},
+		{
+			"name": "腐败骨肉的反噬",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【枯茎朽骨的引路人】处于【死梦深度】状态时，【哀悯长臂】会获得<u>【腐败反噬】</u>状态。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				600
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403615"
+		},
+		{
+			"name": "淹没光彩的深渊",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【枯茎朽骨的引路人】没有弱点。当【哀悯长臂】处于弱点击破状态时，其初始弱点会被添加到其他所有敌方目标，直到其从弱点击破状态恢复。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403616"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"4012076",
+		"4012077"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "4014036"
+}

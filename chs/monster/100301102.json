@@ -1,0 +1,165 @@
+{
+	"name": "银鬃尉官（错误）",
+	"description": "代码受到影响后的错误投影。参照本体为贝洛伯格的戍卫部队「银鬃铁卫」分队的领导者。\n战斗中，只要敌方还有队友存在，银鬃尉官会一直架起巨盾。攻击架盾状态下的银鬃尉官，会立即遭到强力的反击。",
+	"icon": "spriteoutput/monsterfigure/Monster_1003010.png",
+	"shortIcon": "Monster_1003010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1003010.png",
+	"stats": {
+		"baseAttack": 7.2,
+		"baseDefense": 210,
+		"baseHealth": 13950,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "突击",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301101"
+		},
+		{
+			"name": "穿刺",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体造成大量物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301102"
+		},
+		{
+			"name": "盾反",
+			"tag": "其他",
+			"type": "技能",
+			"description": "进入反击状态，在受到我方单体攻击后获得1个额外回合，对该目标造成物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301103"
+		},
+		{
+			"name": "增援",
+			"tag": "召唤",
+			"type": "技能",
+			"description": "召唤【银鬃近卫】或【银鬃射手】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301104"
+		},
+		{
+			"name": "鼓劲",
+			"tag": "强化",
+			"type": "技能",
+			"description": "使敌方除【银鬃尉官（错误）】外的目标攻击力提高并立即行动。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100301105"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [
+		"1002040",
+		"1002050"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112002,
+				"count": 1
+			},
+			{
+				"id": 112003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "100301102"
+}

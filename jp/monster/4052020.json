@@ -1,0 +1,138 @@
+{
+	"name": "{RUBY_B#ほうまつ}泡沫{RUBY_E#}の{RUBY_B#ちご}稚児{RUBY_E#}",
+	"description": "海の娘たちは「壊滅」の罪に魂も肉体も蝕まれ、歪な抜け殻だけを残した…今世、彼女たちは虚無に消えゆくことなく、「海洋」の刃に従い、黒き太陽へと襲いかかる荒波となった。\n終末の嵐が天より降り注ぎ、万物の滅亡を告げる——\n不幸にも早産した泡沫は、生まれる前から消え去る運命を背負い、数えきれぬ悲嘆を吐き出す——\n濁った羊水が奔流となり天と地を黒く染め、生まれたばかりの希望さえも穢した。",
+	"icon": "spriteoutput/monsterfigure/Monster_4052020.png",
+	"shortIcon": "Monster_4052020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4052020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 302.25,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "腐敗を反芻する夢",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の量子属性ダメージを与える。フィールド上に「蜃気楼への突撃」状態の「泡沫の稚児」がいる場合、さらに量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202001"
+		},
+		{
+			"name": "蜃気楼への突撃",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "「蜃気楼への突進」状態に入り、味方単体をロックオンする。状態が解除されるまで、他の「泡沫の稚児」はロックオンされた味方を優先的に攻撃する。自身が弱点撃破されるか、HPが0になる攻撃を受けた時、「蜃気楼への突撃」状態を解除する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202002"
+		},
+		{
+			"name": "これぞ泡沫の定め",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "HPが0になる攻撃を受けた時、隣接する敵ターゲットに量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				30
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202003"
+		},
+		{
+			"name": "帆を休めよ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "一定回数の通常攻撃、戦闘スキル、必殺技、または精霊スキルを受けた後行動順が早まる。「<u>壊滅の狂宴</u>」状態中、行動順が早まるまでに必要な被攻撃回数がダウンする。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "4052020"
+}

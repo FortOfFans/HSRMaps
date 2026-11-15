@@ -1,17 +1,24 @@
 {
 	"name": "Ichor Memosprite: Winged Serpent",
-	"description": "A distorted monster formed from the Garden of Recollection's memetic lifeform by the Destruction using golden ichor. It is in the rudimentary form of a flying snake, enough to intimidate its assailants.\nIts twisted rationality went completely mad in the black tide, and its intense self-protecting impulse imperceptibly took on a fantastical flavor.",
+	"description": "A distorted monster born from the fusing of a memetic lifeform from the Garden of Recollection and the golden ichor of \"Destruction.\" It is in the rudimentary form of a flying snake, enough to intimidate its assailants.\nIts twisted rationality went completely mad in the black tide, and its intense self-protecting impulse imperceptibly took on a fantastical flavor.",
 	"icon": "spriteoutput/monsterfigure/Monster_4063010.png",
 	"shortIcon": "Monster_4063010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4063010.png",
 	"stats": {
 		"baseAttack": 18,
 		"baseDefense": 210,
 		"baseHealth": 1488,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
 		"type": "Elite"
 	},
 	"skills": [
 		{
-			"id": "406301001",
 			"name": "Hemotort Whip",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,11 +30,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301001"
 		},
 		{
-			"id": "406301002",
 			"name": "Hemotort Spew",
 			"tag": "Blast",
 			"type": "Ability",
@@ -40,11 +47,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301002"
 		},
 		{
-			"id": "406301003",
 			"name": "Menacing Warning",
 			"tag": "Charging",
 			"type": "Ability",
@@ -56,11 +63,11 @@
 			],
 			"spGain": 0,
 			"delay": 1.5,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301003"
 		},
 		{
-			"id": "406301004",
 			"name": "Hemotort Vortex",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -76,11 +83,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301004"
 		},
 		{
-			"id": "406301005",
 			"name": "Torque Counter",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -95,11 +102,11 @@
 			],
 			"spGain": 5,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301005"
 		},
 		{
-			"id": "406301006",
 			"name": "Corkscrew Charge",
 			"tag": "Talent",
 			"type": "Talent",
@@ -109,35 +116,42 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301006"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Thunder",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
 		},
 		{
 			"element": "Quantum",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
 		},
 		{
 			"element": "Imaginary",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
 		}
 	],
+	"debuffResist": [],
 	"weakness": [
 		"Physical",
 		"Fire",
 		"Ice"
 	],
+	"summons": [],
 	"drops": {
-		"avatarExpReward": 150,
+		"avatarExpReward": 400,
 		"itemList": [
 			{
 				"id": 2,
@@ -153,6 +167,7 @@
 			}
 		]
 	},
+	"guide": null,
 	"rank": "Elite",
 	"stanceType": "Imaginary",
 	"id": "4063010"

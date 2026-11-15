@@ -1,0 +1,133 @@
+{
+	"name": "Grab der ewigen Ruhe",
+	"description": "Zersplitterte Leben, vereint als Symbol des Schlusses; die Seelen am anderen Ufer blicken noch immer herüber, und in ihren Augen spiegeln sich die Inschriften des Vergessens und des Abschieds wider.\nUnschuldige Seelen schlummern im Grab der ewigen Ruhe. Besiege es, um sie zu erwecken.",
+	"icon": "spriteoutput/monsterfigure/Monster_3012030.png",
+	"shortIcon": "Monster_3012030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3012030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 186,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Schlaferwachen",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Wenn Grab der ewigen Ruhe einen Todesstoß erleidet, wird bei dem entsprechenden Verbündeten der Status „Traumtod“ entfernt. Gleichzeitig werden seine LP und Energie wiederhergestellt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301203001"
+		},
+		{
+			"name": "Zeit der Vergänglichkeit",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "Das Grab der ewigen Ruhe führt keine Aktion aus.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301203002"
+		},
+		{
+			"name": "Fortwährende Ewigkeit",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Das Grab der ewigen Ruhe besitzt eine bestimmte Anzahl an LP-Leisten. Erleidet es Angriffe, Schwächebruch oder DoT, wird 1 LP-Leiste entfernt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "301203003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114011,
+				"count": 1
+			},
+			{
+				"id": 114012,
+				"count": 1
+			},
+			{
+				"id": 114013,
+				"count": 1
+			},
+			{
+				"id": 181015,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "3012030"
+}

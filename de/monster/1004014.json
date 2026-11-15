@@ -1,0 +1,284 @@
+{
+	"name": "Desillusionierte im Eiswind",
+	"description": "Desillusionierte im Eiswind hat göttliche Kräfte geerbt, die über Generationen von Wächtern weitergegeben wurden. Dank denen hat sie völlige Kontrolle über das Eis und kann ihre Gegner im Kampf einfrieren.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004010.png",
+	"shortIcon": "Monster_1004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 5812.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 130,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Kälte der knochenbrechenden Gerinnung",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401401"
+		},
+		{
+			"name": "Omen des immerwährenden Frostes",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört Eiskanten.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401402"
+		},
+		{
+			"name": "Strafe des endlosen Winters",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401403"
+		},
+		{
+			"name": "Raureif der ewigen Isolation",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu und verursacht mit hoher Chance Gefroren.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.8,
+				0.5,
+				1,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401404"
+		},
+		{
+			"name": "Zorn der Heiligen des Winterlandes",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Fügt bei der nächsten Aktion allen Verbündeten „Strafe des endlosen Winters“ zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401405"
+		},
+		{
+			"name": "Widerhallendes Eis",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt eingefrorenen Verbündeten und angrenzenden Einheiten Eis-SCH zu. Entfernt zudem den Status Gefroren des Hauptziels. Wenn die angrenzenden Einheiten eingefroren sind, wird diese Fähigkeit erneut auf das Hauptziel angewendet.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401406"
+		},
+		{
+			"name": "Verschärfende Kälte",
+			"tag": "Verstärken",
+			"type": "Talent",
+			"description": "Für jeden eingefrorenen Verbündeten wird der von dieser Einheit und ihren beschworenen Objekten verursachte SCH erhöht.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				10,
+				1.125,
+				0,
+				1.66,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401407"
+		},
+		{
+			"name": "Schild der Winterlande",
+			"tag": "Beschwören",
+			"type": "Talent",
+			"description": "Gepard tritt dem Kampf bei.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401409"
+		},
+		{
+			"name": "Unaufhaltsamer Vormarsch",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Der von Desillusionierte im Eiswind erlittene SCH wird stark reduziert. Sobald ihre Schwäche gebrochen ist, werden ihre Aktionen jedoch zusätzlich verzögert und sie erleidet mehr SCH. Außerdem werden die Fertigkeitspunkte aller Verbündeten wiederhergestellt und ihre Ultimates aktiviert.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401410"
+		},
+		{
+			"name": "Hoffnungsloser Eiswind",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Desillusionierte im Eiswind <u>überträgt</u> ihren Schwächetyp auf Eiskante. Wenn Eiskante besiegt wird, erleidet Desillusionierte im Eiswind zusätzliche WDS-Reduzierung.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.2,
+				0.9,
+				60
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401411"
+		},
+		{
+			"name": "Kein Entrinnen",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn Desillusionierte im Eiswind „Kälte der knochenbrechenden Gerinnung“ oder „Raureif der ewigen Isolation“ einsetzt, werden die Ziele, die von „Eiskante“ anvisiert wurden, durch einen <u>Folgeeinsatz</u> dieser Fähigkeiten getroffen.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401412"
+		},
+		{
+			"name": "Beharrliche Entschlossenheit",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Verringert den von allen Gegnern erlittenen SCH. Erhöht jedoch für jeden Schwächetyp ihren erlittenen SCH.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401413"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401414"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"1004026",
+		"100501401",
+		"100201501",
+		"100201601"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Ice",
+	"id": "1004014"
+}

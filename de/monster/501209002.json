@@ -1,0 +1,131 @@
+{
+	"name": "SD-Zivilmechatron",
+	"description": "Ein Allzweck-Mechatron aus Planarcadia. Die Buchstaben „SD“ sind die Initialen von „Sorry, dunno.“",
+	"icon": "spriteoutput/monsterfigure/Monster_5012090.png",
+	"shortIcon": "Monster_5012090",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5012090.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 232.500186,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 80,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Kraft wird verstärkt",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Kraftverstärkung!“ ein. In der nächsten Runde wird „Windmühlen-Gesichtsbrecher“ eingesetzt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501209001"
+		},
+		{
+			"name": "Windmühlen-Gesichtsbrecher",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu und gewährt Verbündeten <u>Lachpunkte</u>. Hat eine Chance, beim Angriffsziel „Starker Nachhall“ zu verursachen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				0.5,
+				2,
+				0.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501209002"
+		},
+		{
+			"name": "Freund-Feind-Erkennung fehlgeschlagen",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn sich diese Einheit im Status „Kraftverstärkung!“ befindet, führt sie nach einem erlittenen Angriff sofort eine Aktion aus. Hat dabei eine geringe Chance, einem zufälligen angrenzenden Gegner physischen SCH zuzufügen und den Verbündeten <u>Lachpunkte</u> zu gewähren. Andernfalls wird „Windmühlen-Gesichtsbrecher“ auf einen zufälligen Verbündeten gewirkt. Handelt es sich bei dem erlittenen SCH um Hochgefühl-SCH, wird garantiert ein Gegner angegriffen. Dieser Effekt kann während der Dauer von „Kraftverstärkung!“ nur 1-mal ausgelöst werden.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				5,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501209003"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Thunder"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116001,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 181010,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "501209002"
+}

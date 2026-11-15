@@ -1,0 +1,174 @@
+{
+	"name": "金血忆灵•翼蛇形",
+	"description": "流光忆庭的模因生命遭遇「毁灭」金血糅合而成的扭曲怪物。略有翼蛇雏形，足以装神弄鬼。\n它那扭曲的理智在黑潮中彻底疯狂，那强烈的自我防御冲动，无形中染上了一层幻想色彩。",
+	"icon": "spriteoutput/monsterfigure/Monster_4063010.png",
+	"shortIcon": "Monster_4063010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4063010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 6975,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "罪血鞭笞",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对指定我方单体目标造成虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301001"
+		},
+		{
+			"name": "罪血呛吐",
+			"tag": "扩散",
+			"type": "技能",
+			"description": "对指定我方单体及其相邻目标造成虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301002"
+		},
+		{
+			"name": "威慑警戒",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态并获得【旋绕】，下次行动时若仍有【旋绕】，则施放【罪血涡旋】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301003"
+		},
+		{
+			"name": "罪血涡旋",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成虚数属性伤害，并使目标降低生命值的一部分转化为【侵蚀】，【旋绕】越多，伤害越高，随后失去所有【旋绕】层数。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				0.5,
+				0.2,
+				0.5,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301004"
+		},
+		{
+			"name": "扭矩反打",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成少量虚数属性伤害，并使目标降低生命值的一部分转化为【侵蚀】。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.5,
+				0.2,
+				0.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301005"
+		},
+		{
+			"name": "蜷曲蓄力",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "受到我方单位的攻击后，若【旋绕】层数不为0，则施放【扭矩反打】并失去1层【旋绕】。任意目标回合每个我方单位只能触发一次该效果，【旋绕】层数为0时解除蓄力状态。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "406301006"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182011,
+				"count": 1
+			},
+			{
+				"id": 183007,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Imaginary",
+	"id": "406301006"
+}

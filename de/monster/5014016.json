@@ -1,0 +1,268 @@
+{
+	"name": "@SparxiConOfficial",
+	"description": "Planarcadias beliebte Streamerin Sparxie startet einen Livestream, in dem sie unter den wachsamen Blicken ihrer Fans ihren neuen Look kreiert. Die SparxiCon beginnt heute Nacht!",
+	"icon": "spriteoutput/monsterfigure/Monster_5014010.png",
+	"shortIcon": "Monster_5014010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5014010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 3952.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 960,
+		"speed": 200,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Chat-Flut starten!",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Wenn beim Ende des <u>Live-Showdowns</u> alle Gegner auf dem Nebenfeld besiegt werden, wird der erlittene SCH aller Gegner erhöht und ihre Aktion verzögert. Außerdem werden Fertigkeitspunkte wiederhergestellt und <u>Aha</u> erhält sofort eine <u>zusätzliche Runde</u>, in der eine feste Anzahl von <u>Lachpunkten</u> angerechnet wird. Diese Runde verbraucht keine <u>Lachpunkte</u>. Wenn beim Ende des <u>Live-Showdowns</u> noch nicht alle Gegner auf dem Nebenfeld besiegt werden, wird verbündeten Figuren auf dem Nebenfeld massiver Quanten-SCH zugefügt und sie werden in den Status „Verschränkung“ versetzt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				2,
+				6,
+				1,
+				20,
+				6,
+				0.5,
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401606"
+		},
+		{
+			"name": "Chat-Flut starten!",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Wenn beim Ende des <u>Live-Showdowns</u> alle Gegner auf dem Nebenfeld besiegt werden, wird der erlittene SCH aller Gegner erhöht und ihre Aktion verzögert. Außerdem werden Fertigkeitspunkte wiederhergestellt und <u>Aha</u> erhält sofort eine <u>zusätzliche Runde</u>, in der eine feste Anzahl von <u>Lachpunkten</u> angerechnet wird. Diese Runde verbraucht keine <u>Lachpunkte</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401607"
+		},
+		{
+			"name": "Kommentare bereit!",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Wenn beim Ende des <u>Live-Showdowns</u> noch nicht alle Gegner auf dem Nebenfeld besiegt werden, wird allen Verbündeten Quanten-SCH zugefügt und sie werden mit einer Chance in die <u>Zufällige Kommentarsstrafe</u> versetzt. Je höher der verbleibende LP-Prozentsatz der Gegner auf dem Nebenfeld, desto höher ist der verursachte SCH und die Chance auf die Strafe.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				12,
+				2,
+				0.1,
+				2,
+				1.2,
+				1,
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401608"
+		},
+		{
+			"name": "Netzduell!",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401601"
+		},
+		{
+			"name": "Gib den Takt an!",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401602"
+		},
+		{
+			"name": "Ans Mikro!",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Aktiviert den <u>Live-Showdown</u> und wählt eine verbündete Figur aus, die auf dem Nebenfeld kämpft, während die anderen Figuren auf dem Hauptfeld bleiben und Unterstützung leisten. Während des <u>Live-Showdowns</u> können Hochgefühl-Fähigkeiten nur Gegner auf dem Nebenfeld angreifen. In der Aktionsreihenfolge wird ein Countdown für den Live-Showdown angezeigt.\nDer <u>Live-Showdown</u> endet, wenn eine der folgenden Bedingungen erfüllt ist: Der Countdown endet, die verbündeten Figuren auf dem Nebenfeld werden handlungsunfähig, alle Gegner auf dem Nebenfeld werden besiegt oder es stehen keine verbündeten Figuren auf dem Nebenfeld für den Kampf zur Verfügung.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0,
+				4,
+				0.3,
+				0.6,
+				0.3,
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401603"
+		},
+		{
+			"name": "Streamwerbung",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "Gegner auf dem Nebenfeld erhalten den Status „Zuschauerflut“, wodurch ihre Aktionen vorgezogen und ihre KRIT-Rate erhöht werden.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.25,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401604"
+		},
+		{
+			"name": "Anpassung der Freundschaftsstufe",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Nach dem Start des <u>Live-Showdowns</u> erhöht ein Angriff auf den „Ausgangsport 1“ die „Verbündetenbeliebtheit“, während ein Angriff auf „Ausgangsport 2“ die „Gegnerbeliebtheit“ senkt. Wenn sich die Verbündetenbeliebtheit erhöht, wird die Aktion von Ausgangsport 1 vorgezogen. Wenn die Gegnerbeliebtheit sinkt, wird die Aktion von Ausgangsport 2 vorgezogen.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.2,
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401609"
+		},
+		{
+			"name": "Fanrausch",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Nach dem Start des <u>Live-Showdowns</u> erleiden Gegner auf dem Hauptfeld weniger SCH und werden immun gegen Mengenkontrolle-Debuffs. Beim Ende des <u>Live-Showdowns</u>wird dieser Effekt entfernt, wenn alle Gegner auf den Nebenfeld besiegt werden. Andernfalls bleibt ein Teil der SCH-Reduktion basierend auf dem verbleibenden LP-Prozentsatz der Gegner auf dem Nebenfeld erhalten. Dieser Effekt hält bis zum nächsten <u>Live-Showdown</u>.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401610"
+		},
+		{
+			"name": "Ewiges Repertoire",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Nach dem Einsatz von „Ans Mikro!“ erhalten Gegner auf dem Hauptfeld „Ewiges Repertoire“. Ihr WDS kann nicht reduziert werden und der gesamte erlittene SCH wird stark verringert. Gegner auf dem Nebenfeld erhalten „Euphorie“. Ihr WDS kann nicht reduziert werden. Außerdem wird der erlittene Nicht-Hochgefühl-SCH stark verringert, während der erlittene Hochgefühl-SCH nur leicht verringert wird. Die Effizienz, mit der Hochgefühl-SCH Euphorie bricht, wird stark erhöht. Wenn <u>Live-Showdown</u> aufgehoben wird, wird Ewiges Repertoire der Gegner auf dem Hauptfeld aufgehoben. Wenn alle Gegner auf dem Nebenfeld besiegt sind, erleiden die Gegner auf dem Hauptfeld massiven SCH und der von allen Gegnern erlittene SCH wird erhöht. Wenn die LP vor dem Einsatz von Ans Mikro! auf einen bestimmten Wert fallen, wird Ans Mikro! sofort eingesetzt.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				12,
+				3,
+				1,
+				0.25,
+				0.9,
+				0.8,
+				1,
+				0.99,
+				0.0002500005,
+				0.25,
+				4,
+				0.99,
+				0.95,
+				0.5,
+				0.45,
+				0.6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501401611"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"5012070",
+		"5012080",
+		"501203102",
+		"501203103",
+		"5014011"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "5014016"
+}

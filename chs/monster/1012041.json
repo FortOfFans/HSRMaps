@@ -1,0 +1,205 @@
+{
+	"name": "辅助机械臂单元",
+	"description": "受史瓦罗所操控的机械装置。\n机械臂在场上存在一定回合后会对我方展开猛攻。",
+	"icon": "spriteoutput/monsterfigure/Monster_1012040.png",
+	"shortIcon": "Monster_1012040",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1012040.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 162.75,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.15
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204101"
+		},
+		{
+			"name": "巨掌之间",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "对陷入【拘束】状态的我方目标造成基于其生命上限百分比的物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204102"
+		},
+		{
+			"name": "等待指令",
+			"tag": "其他",
+			"type": "技能",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204103"
+		},
+		{
+			"name": "巨掌之间",
+			"tag": "妨害",
+			"type": "技能",
+			"description": "使指定我方单体陷入【拘束】状态，并造成1次物理属性伤害。当自身被弱点击破或生命值低于一定量时我方目标的【拘束】状态立即解除。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204104"
+		},
+		{
+			"name": "失能电场",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对陷入【拘束】状态的我方目标造成基于生命上限百分比的物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204105"
+		},
+		{
+			"name": "控场起爆",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "辅助机械臂单元发生爆炸，对指定我方单体造成大量物理属性伤害。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				15
+			],
+			"spGain": 25,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204106"
+		},
+		{
+			"name": "过载警告",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "辅助机械臂单元进入【过载】状态，并立即解除我方目标的【拘束】状态。进入该状态后辅助机械臂单元下次行动施放【控场起爆】。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "101204107"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 112011,
+				"count": 1
+			},
+			{
+				"id": 112012,
+				"count": 1
+			},
+			{
+				"id": 112013,
+				"count": 1
+			},
+			{
+				"id": 181001,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "1012041"
+}

@@ -3,15 +3,22 @@
 	"description": "One of the Stellaron Hunters, a mysterious warrior donning formidable armor. The mech suit wields the power to unleash fiery onslaughts, engulfing the battlefield in flames.",
 	"icon": "spriteoutput/monsterfigure/Monster_3024020.png",
 	"shortIcon": "Monster_3024020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3024020.png",
 	"stats": {
 		"baseAttack": 14.999994,
 		"baseDefense": 210,
 		"baseHealth": 6789,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 600,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
 		"type": "LittleBoss"
 	},
 	"skills": [
 		{
-			"id": "302402001",
 			"name": "BHF: Fiery Advance",
 			"tag": "Single Target",
 			"type": "Ability",
@@ -23,15 +30,15 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402001"
 		},
 		{
-			"id": "302402002",
 			"name": "BHF: Heavenly Fire",
 			"tag": "Blast",
 			"type": "Ability",
-			"description": "Deals minor Fire DMG to a single target and any adjacent targets.",
+			"description": "Deals minor Fire DMG to one designated target and any adjacent targets.",
 			"element": "Fire",
 			"attackType": "Normal",
 			"params": [
@@ -42,11 +49,11 @@
 			],
 			"spGain": 10,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402002"
 		},
 		{
-			"id": "302402003",
 			"name": "BBHF: Scorched Earth",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -58,11 +65,11 @@
 			],
 			"spGain": 15,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402003"
 		},
 		{
-			"id": "302402004",
 			"name": "DHGDR: Secondary Combustion",
 			"tag": "Enhance",
 			"type": "Ability",
@@ -79,11 +86,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402004"
 		},
 		{
-			"id": "302402005",
 			"name": "DHGDR: Supernova Overload",
 			"tag": "AoE ATK",
 			"type": "Ability",
@@ -98,11 +105,11 @@
 			],
 			"spGain": 20,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402005"
 		},
 		{
-			"id": "302402006",
 			"name": "SGE: Molten Core",
 			"tag": "Talent",
 			"type": "Talent",
@@ -118,11 +125,11 @@
 			],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402006"
 		},
 		{
-			"id": "302402007",
 			"name": "SGE: Molten Engine",
 			"tag": "Talent",
 			"type": "Talent",
@@ -132,26 +139,37 @@
 			"params": [],
 			"spGain": 0,
 			"delay": 1,
-			"icon": "spriteoutput/skillicons/avatar/1001/skillicon_1001_maze.png",
-			"shortIcon": "skillicon_1001_maze"
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402007"
 		}
 	],
 	"resistance": [
 		{
 			"element": "Physical",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
 		},
 		{
 			"element": "Fire",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
 		},
 		{
 			"element": "Ice",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
 		},
 		{
 			"element": "Wind",
-			"value": 0.2
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
 		}
 	],
 	"weakness": [
@@ -159,10 +177,12 @@
 		"Quantum",
 		"Imaginary"
 	],
+	"summons": [],
 	"drops": {
 		"avatarExpReward": 0,
 		"itemList": []
 	},
+	"guide": null,
 	"rank": "LittleBoss",
 	"stanceType": "Fire",
 	"id": "302402002"

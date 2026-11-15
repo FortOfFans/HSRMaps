@@ -1,0 +1,450 @@
+{
+	"name": "枯れ果てた導き手",
+	"description": "ステュクスに眠る死竜は錬成によって再び目覚め、腐肉を纏う朽ちた骨と化した。\nかつて「死」のタイタンであった死竜はステュクスの流れに逆らって夢現の境を離れ、現世に座礁した。そしてステュクスの満ち引きと共に大地に湧き上がり、オンパロスの万物に運命の結末を刻みつける。死に瀕する者も、すでに死した者も、その帰還によって魂の奥底を震わせることになるだろう。",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 46500,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 2400,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "無念の死を遂げた者の手招き",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "味方の単体に量子属性ダメージを与える。「枯れ果てた導き手」が<u>「死の芳香」</u>状態の場合、追加で量子属性の<u>「衰亡ダメージ」</u>を与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.15
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403601"
+		},
+		{
+			"name": "長き眠りについた者への厚葬",
+			"tag": "分担",
+			"type": "スキル",
+			"description": "味方全体に大量の量子属性ダメージを与える。このダメージは味方全体で<u>均等に分担</u>される。「枯れ果てた導き手」が<u>「死の芳香」</u>状態の場合、ターゲットそれぞれに追加で量子属性の<u>「衰亡ダメージ」</u>を与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				12,
+				0.15
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403602"
+		},
+		{
+			"name": "この世を去る者への哀悼",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "ランダムな味方3人に量子属性<u>「衰亡ダメージ」</u>を与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403603"
+		},
+		{
+			"name": "苦渋より遅れた訃報",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "すべての弱点撃破状態にある「憐憫の腕」の弱点撃破状態を解除し、靭性を全回復させ、即座に行動させる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403604"
+		},
+		{
+			"name": "苦しみの香りの中で死にゆく",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "<u>「死の芳香」</u>状態に入り、味方全体に大量の量子属性<u>「衰亡ダメージ」</u>を与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1.2,
+				2,
+				5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403605"
+		},
+		{
+			"name": "死は更なる死を欲する",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性の<u>「衰亡ダメージ」</u>を与える。<u>「瀕死の足掻き」</u>状態のターゲットにはHPが0になるダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.8
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403606"
+		},
+		{
+			"name": "瀕死の夢、墨汁の如き煙",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "自身が受ける初期ダメージがダウンし、靭性保護状態になる。味方のHPが減った時、「死へと誘う泡」を蓄積する。「死へと誘う泡」が上限に達すると、<u>「死の芳香」</u>状態に入る。この状態にある時、自身の被ダメージダウン状態と靭性保護状態を解除する。<u>「死の芳香」</u>状態解除時、自身がダメージを受け、弱点撃破状態になる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.8,
+				0.2,
+				1,
+				0,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403607"
+		},
+		{
+			"name": "汝、死神を振り返るな",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「枯れ果てた導き手」または「憐憫の腕」のスキルが味方に命中した時、味方に解除不可の特殊持続ダメージ系デバフを付与する。その時の残りHPの割合が高いほど、受けるダメージが高くなる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.3,
+				0,
+				0.15,
+				0.9
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403608"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403609"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403610"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403611"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403612"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403613"
+		},
+		{
+			"name": "死に際の足掻き",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "戦闘中、味方全員に<u>「耐負荷」</u>状態が付与される。<u>「瀕死の足掻き」</u>状態の味方は与ダメージと弱点撃破効率が大幅にダウンする。また、味方が数ターン連続で<u>「瀕死の足掻き」</u>状態にあると、HPが0になるダメージを受ける。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.9,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403614"
+		},
+		{
+			"name": "腐敗した骨肉の咬傷",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「枯れ果てた導き手」が「深き死夢」状態にある時、「憐憫の腕」は<u>「腐敗の咬傷」</u>状態を獲得する。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				600
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403615"
+		},
+		{
+			"name": "光を呑み込む深淵",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「枯れ果てた導き手」には弱点がない。「憐憫の腕」が弱点撃破状態になると、弱点撃破状態が解除されるまでその最初の弱点が他の全ての敵に付与される。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403616"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Ice",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"401207604",
+		"401207704"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 4,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101301",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101302",
+				"name": "朽ち株と枯れ木",
+				"description": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+				"params": []
+			},
+			{
+				"id": "101303",
+				"name": "剛を砕きて柔と成す",
+				"description": "「憐憫の腕」の最大靭性値がアップする。",
+				"params": []
+			},
+			{
+				"id": "101304",
+				"name": "強靭な志",
+				"description": "敵全体の受けるダメージがダウンする。ただし所持する<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10131",
+				"name": "第一段階：許されざる死",
+				"description": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+				"answer": "対応戦略：「負荷HP」状態にある味方を優先的に回復する。",
+				"skills": [
+					{
+						"id": "101311",
+						"type": "Normal",
+						"name": "ボス幻影の「死の芳香」状態を解除する方法",
+						"texts": [
+							{
+								"description": "ボス幻影が「死の芳香」状態の時、ボス幻影およびその召喚物にダメージを与えると、ボス幻影のHPを削り、「死へと誘う泡」を削ることができる。そうすることで「死の芳香」状態を解除できる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101312",
+						"type": "Normal",
+						"name": "味方の「負荷HP」状態を解除する方法",
+						"texts": [
+							{
+								"description": "味方のHPを回復する際、その味方の「負荷HP」を優先的回復する。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10132",
+				"name": "第二段階：死へと向かう生",
+				"description": "ボス幻影が「死は更なる死を欲する」を発動すると、「負荷HP」状態の味方にHPが0になるダメージを与える。",
+				"answer": "対応戦略：「死は更なる死を欲する」が発動する前に、味方全体のHPを回復して「負荷HP」状態を解除する。",
+				"skills": [
+					{
+						"id": "101321",
+						"type": "Normal",
+						"name": "「死は更なる死を欲する」の致命効果への対策",
+						"texts": [
+							{
+								"description": "ボス幻影が「死は更なる死を欲する」を発動する前に、味方それぞれのHPを回復して「負荷HP」状態を解除しよう。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影とその召喚物の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "この戦闘中、味方のHPは1を下回らない。残りHPを超過した分のダメージは「負荷HP」に変換される。「負荷HP」状態の味方は、与ダメージと弱点撃破効率が大幅にダウンする。",
+				"params": []
+			},
+			{
+				"description": "味方のHPが減った時、「深き死夢」状態のボス幻影は「死へと誘う泡」を蓄積し、「死へと誘う泡」が上限に達すると、ボス幻影は「死の芳香」状態に入り、ボス幻影とその召喚物のスキルが大幅に強化される。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "味方が「負荷HP」状態になると、与ダメージと弱点撃破効率が大幅にダウンする。HPを優先的に回復して、状態を解除しよう。",
+				"params": []
+			},
+			{
+				"description": "「憐憫の腕」の弱点を撃破すると、ボス幻影の靭性とHPが削られる。この時、ボス幻影が「死の芳香」状態にある場合、味方のHPを回復できる。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "401403604"
+}

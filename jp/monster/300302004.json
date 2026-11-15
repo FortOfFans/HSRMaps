@@ -1,0 +1,153 @@
+{
+	"name": "ナイトメア{RUBY_B#げきだん}劇団{RUBY_E#}・スウィート・ゴリラ",
+	"description": "ピノコニーのサービスロボット。夢境で感情に干渉されたことで、暴走してしまった。\n本来は「スラーダ」の搬送員だった。暴走した後も職務を放棄せず、来客たちにプレゼントを投げ捨てている。",
+	"icon": "spriteoutput/monsterfigure/Monster_3003020.png",
+	"shortIcon": "Monster_3003020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1674,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "フリードリンク（数量限定）",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与える。ターゲットにバリアがある場合、ダメージを与えた後、自身も氷属性ダメージを受け、高確率で自身の防御力がダウンする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.8,
+				0.08,
+				1.5,
+				0.2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302001"
+		},
+		{
+			"name": "フリードリンク（飲み放題）",
+			"tag": "バウンド",
+			"type": "スキル",
+			"description": "ランダムな味方単体に氷属性ダメージを4回与える。ターゲットにバリアがある場合、ダメージを与えた後、自身も氷属性ダメージを受け、高確率で自身の防御力がダウンする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.6,
+				0.08,
+				1.5,
+				0.2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302002"
+		},
+		{
+			"name": "スラーダパーティ",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「ソーダドッグ」を2体召喚する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.75
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302003"
+		},
+		{
+			"name": "スラーダ噴水",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、靭性保護を獲得する。次の行動で「フリードリンク（飲み放題）」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300302004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"3002030"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 182010,
+				"count": 1
+			},
+			{
+				"id": 183006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "300302004"
+}

@@ -1,0 +1,180 @@
+{
+	"name": "Truppe der Albträume: Flambosaurus (Projektion)",
+	"description": "Servicemaschine Penaconys, die aufgrund der emotionalen Interferenz in der Traumlandschaft außer Kontrolle geraten ist.\nUrsprünglich ein Küchenroboter. Flambiert seit dem Kontrollverlust alles, was ihm zu nahe kommt, um es in gegrillte Delikatessen zu verwandeln.",
+	"icon": "spriteoutput/monsterfigure/Monster_3003010.png",
+	"shortIcon": "Monster_3003010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3003010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 697.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Mächtiges Pfannenschwenken",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301101"
+		},
+		{
+			"name": "Wirbelnder Wurf",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem Verbündeten und angrenzenden Einheiten geringen Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301102"
+		},
+		{
+			"name": "Herdzündung",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Bei der nächsten Aktion wird „Flammendes Pfannengericht“ eingesetzt.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				1.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301103"
+		},
+		{
+			"name": "Flammendes Pfannengericht",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Feuer-SCH zu.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301104"
+		},
+		{
+			"name": "Küchenunfall",
+			"tag": "Talent",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Wenn die Stapelungen von „Herdhitze“ eine bestimmte Zahl erreicht hat, wird allen Gegnern massiver Feuer-SCH zugefügt und die VTD der Einheit selbst reduziert. Außerdem wird bei allen Verbündeten Energie wiederhergestellt.",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				9,
+				0.3,
+				0.0025000002,
+				0.1,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301105"
+		},
+		{
+			"name": "Feurige Delikatesse",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn sich die Einheit nicht im Status Aufladen befindet, führt sie sofort eine Aktion aus und löst „Herdzündung“ aus, sobald eine bestimmte Anzahl von Stapelungen an „Herdhitze“ erreicht wurde.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301106"
+		},
+		{
+			"name": "Herdinferno",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Beim Angriff besteht eine Chance, das Ziel zu verlangsamen. Wenn diese Einheit einen Angriff oder DoT erleidet, wird 1-fach „Herdhitze“ gestapelt.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.5,
+				0.2,
+				2,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "300301107"
+		}
+	],
+	"resistance": [],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 114002,
+				"count": 1
+			},
+			{
+				"id": 114003,
+				"count": 1
+			},
+			{
+				"id": 182010,
+				"count": 1
+			},
+			{
+				"id": 183006,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "300301101"
+}

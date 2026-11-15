@@ -1,0 +1,198 @@
+{
+	"name": "宇宙からの氷（バグ）",
+	"description": "コードが影響を受けた後、バグってしまった投影。この世界に属さない怪異なる生命体、星核がもたらした裂界より生まれ、世界の根に寄生しエネルギーを吸収する。その甲冑には暗き星空が映っている。\n戦闘中、宇宙からの氷は容易に敵を凍結し、行動を遅延できる。",
+	"icon": "spriteoutput/monsterfigure/Monster_8003010.png",
+	"shortIcon": "Monster_8003010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8003010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1395,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "凍える哀",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の氷属性ダメージを与える。自身が「氷点」状態の場合、凍結状態の味方単体に攻撃を行った後、さらに氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				2.5,
+				1,
+				0,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301101"
+		},
+		{
+			"name": "霜摂取",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "自身が「氷点」状態になり、その後の攻撃で「永冬の雨」を発動できる。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0,
+				120
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301102"
+		},
+		{
+			"name": "永冬の雨",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "このスキルを発動できるのは「氷点」状態の時のみ。このスキルを発動すると、味方全体に氷属性ダメージを与え、確率で攻撃を受けた味方を凍結状態にする。さらにその味方の行動を遅延させる。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				2.5,
+				0.8,
+				1,
+				1,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301103"
+		},
+		{
+			"name": "凍える哀",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与える。自身が「氷点」状態の場合、確率で攻撃を受けた味方を凍結状態にする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				3,
+				1,
+				1,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301104"
+		},
+		{
+			"name": "",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301105"
+		},
+		{
+			"name": "砕氷裂寒",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "凍結状態の味方に氷属性ダメージを与え、同時にその凍結状態解除し、隣接するターゲットに氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				4,
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "800301106"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111002,
+				"count": 1
+			},
+			{
+				"id": 111003,
+				"count": 1
+			},
+			{
+				"id": 182007,
+				"count": 1
+			},
+			{
+				"id": 183004,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "8003011"
+}

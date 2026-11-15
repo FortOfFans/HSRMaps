@@ -1,0 +1,189 @@
+{
+	"name": "「星核ハンター」サム",
+	"description": "「星核ハンター」の一員、重装甲を纏った謎の戦士。彼の鉄甲は灼熱の炎を放ち、戦場を火の海に変え、烈火の如き攻撃を仕掛けることができる。",
+	"icon": "spriteoutput/monsterfigure/Monster_3024020.png",
+	"shortIcon": "Monster_3024020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3024020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1394.99721,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 540,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "BHF-轟炎推進",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に少量の炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402201"
+		},
+		{
+			"name": "BHF-天火",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に少量の炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2.2,
+				1.6,
+				2.4,
+				1.6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402202"
+		},
+		{
+			"name": "BBHF-焦土作戦",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の炎属性ダメージを与える。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402203"
+		},
+		{
+			"name": "DHGDR-二次燃焼",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "自身のHPを消費し、「二次燃焼」に入り「弱点無効」を解除する。「二次燃焼」に入ると自身を大幅に強化するが、攻撃を行うたびに自身のHPを消費する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.03,
+				180,
+				0.28,
+				0.5,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402204"
+		},
+		{
+			"name": "DHGDR-オーバーロード・スーパーノヴァ",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に炎属性ダメージを与え、高確率で攻撃を受けた味方を燃焼状態にする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				5,
+				1.2,
+				3,
+				0.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402205"
+		},
+		{
+			"name": "SGE-熔火フィールド",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「二次燃焼」状態に入った後、フィールドと味方のSPを燃やす。味方が燃えるSPを消費するとHPを消費し、さらに敵に本来のダメージ一定割合分の炎属性固定ダメージを与える。自身以外による治癒効果を受ける時の回復量が大幅にダウンする。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [
+				0.01,
+				1.5,
+				0.3,
+				2.4,
+				0.7
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402206"
+		},
+		{
+			"name": "SGE-熔火エンジン",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「二次燃焼」のサムは「熔火エネルギー」を持つ。サムが燃えるSPを消費する攻撃を受ける時、対応する数の「熔火エネルギー」が減り、「熔火エネルギー」が尽きる、または弱点を撃破されたとき、「二次燃焼」が解除される。「二次燃焼」を解除した時、サムの被ダメージがアップし、味方のSPがすべて回復する。",
+			"element": "Fire",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302402207"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Fire",
+	"id": "302402204"
+}

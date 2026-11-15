@@ -1,0 +1,138 @@
+{
+	"name": "Kind des Trugbilds",
+	"description": "Die Töchter des Ozeans, deren Geist und Fleisch durch die Sünden der Zerstörung zerfressen wurden, sodass nur leere, verzerrte Hüllen zurückblieben ... In diesem Leben folgen sie der geschärften Klinge des Ozeans, nicht um der Nichtigkeit anheim zu fallen, sondern um zu den Gezeitenwellen zu werden, die gegen die dunkle Sonne branden.\nDer apokalyptische Sturm stürzt vom Himmel herab und verkündet das Ende aller Dinge.\nO verfrühtes Trugbild, bereits vor der Geburt dem Untergang geweiht, unfassbaren Kummer aushauchend.\nDas trübe Fruchtwasser strömt, schwärzt Himmel und Erde und befleckt auch die neugeborene Hoffnung.",
+	"icon": "spriteoutput/monsterfigure/Monster_4052020.png",
+	"shortIcon": "Monster_4052020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4052020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 302.25,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 120,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Wiederkäuen von verfaulten Träumen",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen Quanten-SCH zu. Falls sich ein „Kind des Trugbilds“ im Status „Angriff auf die Phantasmagorie“ befindet, wird zusätzlicher Quanten-SCH verursacht.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202001"
+		},
+		{
+			"name": "Angriff auf die Phantasmagorie",
+			"tag": "Unterstützung",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Angriff auf die Phantasmagorie“ ein und visiert einen Verbündeten an. Bevor dieser Status aufgehoben wird, greifen andere „Kinder des Trugbilds“ vorrangig das anvisierte Ziel an. Der Status Angriff auf die Phantasmagorie wird aufgehoben, wenn diese Einheit Schwächebruch oder einen Todesstoß erleidet.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202002"
+		},
+		{
+			"name": "Das ist das Schicksal der Blasen",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Fügt beim Erleiden eines Todesstoßes angrenzenden gegnerischen Zielen Quanten-SCH zu.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				30
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202003"
+		},
+		{
+			"name": "Rast am Wasser",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Zieht die Aktion vor, nachdem eine bestimmte Anzahl von Angriffen durch Standardangriffe, Fertigkeiten, Ultimates oder Memogeist-Techniken erlitten wurde. Im Status <u>Schwelgen in Zerstörung</u> verringert sich die Anzahl der Angriffe, die erforderlich sind, um die Aktion vorzuziehen.",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "405202004"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Thunder"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Quantum",
+	"id": "4052020"
+}

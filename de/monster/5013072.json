@@ -1,0 +1,170 @@
+{
+	"name": "Dämmerungstrupp: Cinderborne",
+	"description": "Das jüngste Mitglied des Trupps, ein vorbildlicher Bürger, der den Verhaltenskodex der Schule perfekt verkörpert und mit strahlendem Optimismus in die Zukunft blickt. Doch hinter seiner Ernsthaftigkeit verbirgt sich eine Spur von Schüchternheit und Selbstzweifeln. Wenn sein Interesse geweckt ist, bricht er mit manischem Enthusiasmus aus, nur um sich hinterher dafür zu schämen, dass er ein Ärgernis war.\n„Es ist also versprochen. Du beschützt das Universum, und wir beschützen Planarcadia.“\nDie Verzweiflung durchbrechen! Eine Klinge so scharf wie Stahl! Die unsterbliche Klinge – Cinderborne!\nDie Dunkelheit schwindet, und die Morgendämmerung erwacht! Der Dämmerungstrupp erhebt sich!",
+	"icon": "spriteoutput/monsterfigure/Monster_5013070.png",
+	"shortIcon": "Monster_5013070",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5013070.png",
+	"stats": {
+		"baseAttack": 15,
+		"baseDefense": 210,
+		"baseHealth": 6045,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Dämmerungsklinge",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501307201"
+		},
+		{
+			"name": "Dämmerungsschwungrad",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				6,
+				3,
+				0.15,
+				60,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501307202"
+		},
+		{
+			"name": "Dämmerungswille",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Verleiht dieser Einheit „Dämmerungskraftfeld“. In diesem Status ist der Dämmerungstrupp immun gegen SCH des eigenen Typs und setzt kontinuierlich „Dämmerungsschwerttanz“ ein. Gleichzeitig ist er immun gegen Mengenkontrolle-Debuffs und sein WDS kann nicht verringert werden. Wenn sich der Dämmerungstrupp im Status Dämmerungskraftfeld befindet, setzt er nach einer bestimmten Anzahl erlittener Angriffe „Dämmerungsrückzug“ ein. Wenn der Angriff <u>Hochgefühl-SCH</u> verursacht, erhöht dieser Angriff den Zähler stattdessen um <unbreak>3[i]</unbreak>.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				1,
+				2,
+				16
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501307203"
+		},
+		{
+			"name": "Dämmerungsschwerttanz",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten massiven physischen SCH zu.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501307204"
+		},
+		{
+			"name": "Dämmerungsrückzug",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "Entfernt „Dämmerungskraftfeld“, verliert eine bestimmte Menge an LP und verleiht dieser Einheit „Frustration“, wodurch der erlittene SCH erhöht und der physische WDS dieser Einheit verringert wird.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.6,
+				2,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "501307205"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.8,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 116002,
+				"count": 1
+			},
+			{
+				"id": 116003,
+				"count": 1
+			},
+			{
+				"id": 182005,
+				"count": 1
+			},
+			{
+				"id": 183003,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "5013072"
+}

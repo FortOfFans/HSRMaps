@@ -1,0 +1,476 @@
+{
+	"name": "望みなき凛冽たる風の幻滅者・虚妄の母",
+	"description": "「星核」から溢れる裂界エネルギーと同化し、大守護者は虚数エネルギーを操る歌者に幻化した。そして、それこそ彼女が約束した「新世界」の代弁者である。",
+	"icon": "spriteoutput/monsterfigure/Monster_1005010.png",
+	"shortIcon": "Monster_1005010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1005010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 5812.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 300,
+		"speed": 125,
+		"critDamage": 0.2,
+		"effectResistance": 0,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "砕骨の寒流",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に氷属性ダメージを与える。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501401"
+		},
+		{
+			"name": "滅世紀の兆し",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "指定した味方単体をロックオンし、次の行動でこのターゲットに「裂魂の寒流」を発動する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501402"
+		},
+		{
+			"name": "裂魂の寒流",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に大量の氷属性ダメージを与え、高確率で攻撃を受けた味方を凍結状態にする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501403"
+		},
+		{
+			"name": "",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501404"
+		},
+		{
+			"name": "冷酷なる滅世者の呼喚",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「無尽なる冬の槊」を召喚する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501405"
+		},
+		{
+			"name": "創世者の決意",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "虚数属性に変わり、自身の速度および与ダメージアップ。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.1,
+				0.2,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501406"
+		},
+		{
+			"name": "創世のコード",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1,
+				0.3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501407"
+		},
+		{
+			"name": "創世紀のプレリュード",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "チャージ状態に入り、次の行動で味方全体に「創世の絶唱」を発動。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501408"
+		},
+		{
+			"name": "創世の絶唱",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に大量の虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501409"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				2,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501410"
+		},
+		{
+			"name": "狂雪の災い",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "凍結または禁錮状態の味方1人につき、自身及び召喚物の与ダメージがアップする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.888,
+				40
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501411"
+		},
+		{
+			"name": "破竹の勢い",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "望みなき凛冽たる風の幻滅者・虚妄の母の受けるダメージが大幅に低下するが、弱点撃破された後、行動順がさらに遅延し、受けるダメージがさらにアップする。同時に味方全体のSPを全回復し、必殺技を発動できるようにする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501413"
+		},
+		{
+			"name": "望みなき凛冽たる風",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "望みなき凛冽たる風の幻滅者・虚妄の母が自身の弱点属性を「無尽なる冬の槊」に<u>転移</u>させる。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.4,
+				1.7,
+				30
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501414"
+		},
+		{
+			"name": "退路なし",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "望みなき凛冽たる風の幻滅者・虚妄の母が「裂魂の寒流」または「創世のコード」を発動する時、「無尽なる冬の槊」がロックオンしたターゲットに対して<u>追加発動</u>する。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.25,
+				0.5,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501415"
+		},
+		{
+			"name": "強靭な志",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "敵全体の受けるダメージがダウンする。ただし、保有する弱点属性1つにつき、受けるダメージがアップする。",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501416"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100501417"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"100206003",
+		"100206103",
+		"100206203",
+		"100206303"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 3,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100101",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"id": "100102",
+				"name": "陣地移転",
+				"description": "ジェパードが戦闘に加わりボス幻影を守る。ボス幻影は自身の弱点属性を召喚物に<color=#f29e38ff><u>転移</u></color>させる。召喚物が倒されると、ボス自身の靭性値が追加で削られる。",
+				"params": []
+			},
+			{
+				"id": "100103",
+				"name": "退路なし",
+				"description": "ボス幻影の召喚物が味方1人をマークし、ボス幻影が単体攻撃スキルを発動した後にマークされた味方に<color=#f29e38ff><u>追加発動</u></color>する。",
+				"params": []
+			},
+			{
+				"id": "100104",
+				"name": "強靭な志",
+				"description": "敵全体が受けるダメージがダウンする。ただし所持している<color=#f29e38ff>弱点属性</color>1つにつき、受けるダメージがアップする。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10011",
+				"name": "第一段階：望みなき凛冽たる風の幻滅者",
+				"description": "ボス幻影はスキルを使用してターゲットを凍結し、ダメージを与える。ジェパードは全体バリアを提供する。",
+				"answer": "対応戦略：召喚物を優先的に倒し、ジェパードが全体バリアを発動した時は速やかに弱点撃破してジェパードを倒す。",
+				"skills": [
+					{
+						"id": "100111",
+						"type": "Normal",
+						"name": "ボス幻影の凍結効果の対処法",
+						"texts": [
+							{
+								"description": "効果抵抗をアップまたはスキルを使用して凍結状態を解除できる。召喚物を倒せば、ボス幻影が行う味方キャラへの行動制限頻度を下げられる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100112",
+						"type": "Normal",
+						"name": "ボス幻影の弱点属性が消えた状態の対処法",
+						"texts": [
+							{
+								"description": "召喚物を倒せば弱点属性がボス幻影に戻り、さらにボス幻影に追加の削靭値を与えられる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100113",
+						"type": "Normal",
+						"name": "ジェパードのバリアスキルの対処法",
+						"texts": [
+							{
+								"description": "ジェパードの弱点を撃破すればバリアを解除できる。速やかにジェパードを倒せば、全体バリアの繰り返し発動を防ぐことができる。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10012",
+				"name": "第二段階：望みなき凛冽たる風の幻滅者・虚妄の母",
+				"description": "ボス幻影は「創世の絶唱」を放ち続けて全体に大ダメージを与え、さらにスキルを使用して味方の行動を制限する。",
+				"answer": "対応戦略：優先的に召喚物を倒した後、速やかにボス幻影を弱点撃破する。",
+				"skills": [
+					{
+						"id": "100121",
+						"type": "Normal",
+						"name": "ボス幻影の行動制限系デバフの対処法",
+						"texts": [
+							{
+								"description": "効果抵抗をアップまたはスキルを使用して行動制限状態を解除できる。召喚物を倒せば、ボス幻影が行う味方キャラへの行動制限頻度を下げられる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100122",
+						"type": "Normal",
+						"name": "ボス幻影が繰り返し発動する「創世の絶唱」の対処法",
+						"texts": [
+							{
+								"description": "素早くボス幻影の弱点を撃破すれば「創世の絶唱」の発動を阻止できる。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"description": "召喚物がフィールド上に存在するとき、ボス幻影は<color=#f29e38ff>自身の弱点属性を召喚物に転移させる</color>。",
+				"params": []
+			},
+			{
+				"description": "ボス幻影は<color=#f29e38ff>召喚物</color>がロックオンしたターゲットに単体攻撃を追加発動し、確率で凍結または禁錮状態を付与する。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "ボス幻影は<color=#f29e38ff>弱点撃破</color>された後に受けるダメージが大アップし、味方全体のSPを回復して行動順を早める。",
+				"params": []
+			},
+			{
+				"description": "優先的に<color=#f29e38ff>召喚物</color>を消滅または弱点撃破すると、効果的にボス幻影を弱体化できる。",
+				"params": []
+			}
+		]
+	},
+	"rank": "BigBoss",
+	"stanceType": "Ice",
+	"id": "100501403"
+}

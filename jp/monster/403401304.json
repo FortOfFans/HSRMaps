@@ -1,0 +1,493 @@
+{
+	"name": "末日の岐路に立つフレイムスティーラー",
+	"description": "暗黒の潮と共に現れ、タイタンの火種を狩る無名の剣士。その正体を知る者はいない。\n不可解な力と完璧に近い剣技を使う。その刃には狂気と執念が宿っており、神悟の樹庭もエリュシオンも、その手によって滅ぼされた。",
+	"icon": "spriteoutput/monsterfigure/Monster_4034010.png",
+	"shortIcon": "Monster_4034010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4034010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 10230,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1200,
+		"speed": 132,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 2,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "死の黒雲",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401301"
+		},
+		{
+			"name": "消えゆく運命",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与える。命中された味方の減少したHPの一部が<u>「侵蝕」</u>に転換される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 10,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401302"
+		},
+		{
+			"name": "交差する道",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "「壊れた容器」を「共祭」状態にする。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401303"
+		},
+		{
+			"name": "幽冥の弔い",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「壊れた容器」と共に「死の黒雲」または「消えゆく運命」を発動した後、「壊れた容器」を吸収する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401304"
+		},
+		{
+			"name": "最期の嗚咽",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "<u>「災厄の力」</u>を獲得し、「最期の嗚咽」状態に入る。次の行動で「必要な苦難」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.8,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401305"
+		},
+		{
+			"name": "沈黙の悲嘆",
+			"tag": "チャージ",
+			"type": "スキル",
+			"description": "<u>「災厄の力」</u>を獲得し、「沈黙の悲嘆」状態に入る。次の行動で「捨つることに涙せず」を発動する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				8,
+				0.0029999998,
+				2.5
+			],
+			"spGain": 0,
+			"delay": 1.8,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401306"
+		},
+		{
+			"name": "必要な苦難",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "<u>「災厄の力」</u>をすべて消費し、味方全体に少量の物理属性ダメージを数回与える。消費された<u>「災厄の力」</u>の層数が多いほど、攻撃の段数がアップする。最後に味方全体に少量の物理属性ダメージを与える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				0.2,
+				2
+			],
+			"spGain": 20,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401307"
+		},
+		{
+			"name": "捨つることに涙せず",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に物理属性ダメージを与える。すべての<u>「災厄の力」</u>を消費し、追加で少量の物理属性ダメージを数回与える。消費する<u>「災厄の力」</u>の層数が多いほど、攻撃段数が増える。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.4,
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401308"
+		},
+		{
+			"name": "悲痛の別れ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「死の黒雲」または「消えゆく運命」を発動した時、「壊れた容器」を召喚する。「壊れた容器」が倒されると、自身のHPを失う。再び「死の黒雲」または「消えゆく運命」を発動する時、この攻撃に召喚された「壊れた容器」が自身と共に攻撃を行う。その後、「壊れた容器」は自身に吸収される。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				135,
+				16,
+				0.0029999998
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401309"
+		},
+		{
+			"name": "迷いの共祭",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「最期の嗚咽」または「沈黙の悲嘆」を発動する時、「壊れた容器」を召喚する。「末日の岐路に立つフレイムスティーラー」が<u>「枷鎖崩壊」</u>状態の場合、「壊れた容器」がHPが0になる攻撃を受けると、ただちに「壊れた容器」を再召喚し、「末日の岐路に立つフレイムスティーラー」の靭性が削られる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6,
+				0.8,
+				0.3,
+				1,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401310"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401311"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401312"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401313"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401314"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401315"
+		},
+		{
+			"name": "枷鎖崩壊",
+			"tag": "強化",
+			"type": "スキル",
+			"description": "<u>「枷鎖崩壊」</u>状態に入り、「壊れた容器」を4体召喚し、「壊れた容器」は「枷鎖」状態を付与する。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401316"
+		},
+		{
+			"name": "災厄の復活",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "1層目の靭性を削られた後、すべての行動制限状態を解除し、<u>「枷鎖崩壊」</u>状態に入り、即座に行動する。<u>枷鎖崩壊</u>状態に入る前に靭性は1層を下回らない。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.25,
+				95,
+				0.1,
+				0.5,
+				225
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401317"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				0.15,
+				1,
+				0.2,
+				1,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401318"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.7,
+				3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "403401319"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.75
+		},
+		{
+			"key": "STAT_Entangle",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"4032021",
+		"403202111",
+		"403202112",
+		"403202113"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 4,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101101",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101102",
+				"name": "枷鎖崩壊",
+				"description": "ボス幻影が1層目の靭性を削られた後、または一定回数行動した後、「<color=#f29e38ff><u>枷鎖崩壊</u></color>」状態に入り、攻撃パターンが変わる。",
+				"params": []
+			},
+			{
+				"id": "101103",
+				"name": "黒霧拡散",
+				"description": "「完璧な器」を倒しても、ボス幻影の靭性を削らない。",
+				"params": []
+			},
+			{
+				"id": "101104",
+				"name": "器の強化",
+				"description": "すべての「壊れた容器」と「完璧な器」の最大HPがアップする。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10111",
+				"name": "末日の岐路に立つフレイムスティーラー",
+				"description": "幻影ボスが1層目の靭性を失った後、もしくは一定回数の行動を行った後、「枷鎖崩壊」状態に入る。この状態中、ボスの攻撃パターンが変わり、繰り返し召喚できる「壊れた容器」を召喚し始める。",
+				"answer": "対処法：ボス幻影が強力なスキルを発動する前に、なるべく多くの「壊れた容器」を倒して、「災厄の力」の層数を減らし、「完璧な器」を優先的に倒そう。",
+				"skills": [
+					{
+						"id": "101111",
+						"type": "Normal",
+						"name": "ボス幻影の「災厄の力」を削る方法",
+						"texts": [
+							{
+								"description": "「壊れた容器」を1体倒すたびに、ボス幻影は「災厄の力」を1層失う。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101112",
+						"type": "Normal",
+						"name": "「完璧な器」の対処法",
+						"texts": [
+							{
+								"description": "「完璧な器」を優先的に倒すと、追加ターンとバフを獲得でき、ボス幻影の「災厄の力」へのチャージを阻止できる。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "ボス幻影が<color=#f29e38ff>1層目の靭性を失った</color>時、<color=#f29e38ff>「枷鎖崩壊」</color>状態に入る。幻影ボスが「枷鎖崩壊」状態ではない場合でも、一定回数の行動をした後に「枷鎖崩壊」状態に入る。",
+				"params": []
+			},
+			{
+				"description": "幻影ボスが「枷鎖崩壊」状態に入ると、<color=#f29e38ff>攻撃パターンが変わり</color>、召喚した「壊れた容器」が倒された後、直ちに新たな「壊れた容器」が召喚される。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "ボス幻影の「災厄の力」がクリアされる前に、召喚物を倒すことで、ボス幻影の強力なスキルを弱体化させよう。",
+				"params": []
+			},
+			{
+				"description": "「完璧な器」を優先的に倒すと、追加ターンとバフを獲得でき、ボス幻影の「災厄の力」へのチャージを阻止できる。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "403401304"
+}

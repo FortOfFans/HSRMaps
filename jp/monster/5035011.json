@@ -1,0 +1,252 @@
+{
+	"name": "貪悦の神首",
+	"description": "かつてアッハが悪知恵を巡らせた脳、かつて大笑いして宇宙を引き裂いた口、かつて無数の仮面を被った顔——それは古獣の王との血戦で丸呑みにされた。誰が誰に食われたのか、予想できた者はいないだろう。意外性——それこそがこの宇宙でいちばん魅力的なところなのだ。そしてアッハは、ここに来たり。",
+	"icon": "spriteoutput/monsterfigure/Monster_5035010.png",
+	"shortIcon": "Monster_5035010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_5035010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 16740,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 960,
+		"speed": 160,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "運命のパペットショー",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503501101"
+		},
+		{
+			"name": "聖餐の咀嚼儀式",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503501102"
+		},
+		{
+			"name": "巨大な手が動き出す！",
+			"tag": "妨害",
+			"type": "スキル",
+			"description": "「運命の巨大な手（握りしめ）」を召喚し、指定した味方キャラをその中に隠す。隠されたキャラは行動できず、ターゲットにも指定されなくなる。次に行動する時、そのターゲットに「死、両手に空しさ」を発動する。ターゲットを捕らえている手を倒すと救出でき、味方が爆笑ネタを獲得し、味方全体の全属性耐性貫通がアップするが、間違った手を倒すと、味方全体が量子属性ダメージを受ける。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				9,
+				20,
+				0.2,
+				2,
+				3,
+				0.01
+			],
+			"spGain": 0,
+			"delay": 2,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503501103"
+		},
+		{
+			"name": "死、巧みな両の手",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "すべての「運命の巨大な手（握りしめ）」を起爆し、その中にいるキャラに大量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503501104"
+		},
+		{
+			"name": "人々に贈る驚き",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503501105"
+		},
+		{
+			"name": "運命、ルーレットの大勝負",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方キャラに連続で<u>発砲</u>し、1発ごとにターゲットに量子属性ダメージを与える。ただし、発砲時に確率で<u>暴発</u>し、自身に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.01,
+				5,
+				1,
+				0.33,
+				20,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503501106"
+		},
+		{
+			"name": "そっちの番だ！",
+			"tag": "サポート",
+			"type": "スキル",
+			"description": "味方自身に<u>発砲</u>させる。味方は<u>発砲</u>するかやめるかを選択できる。発砲すると自身に量子属性ダメージを与える。ただし、確率で<u>暴発</u>し、指定した味方キャラクターがHPを失い、EPをクリアする。<u>爆笑ネタ</u>は「暴発」の確率を下げてくれる。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.035,
+				0.3,
+				10,
+				1,
+				0.33,
+				1,
+				2,
+				0.005,
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503501107"
+		},
+		{
+			"name": "神の食前デザート",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "アクションバーに「貪悦タイム」を追加する。「貪悦タイム」が行動するたびに、敵全体の<u>行動制限系デバフ</u>と弱点撃破状態を解除し、味方全体に大量の量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				6
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503501108"
+		},
+		{
+			"name": "マジシャンアシスタントのヒント",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "味方キャラクターが捕らえられている間、アッハが行動した後、「運命の巨大な手（握りしめ）」を1つ選んで消滅させる。間違えて選んだとしても、アッハがそれを起爆させ、残りの「運命の巨大な手（握りしめ）」に量子属性ダメージを与える。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				0.35,
+				0.9,
+				0.98,
+				0.85
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503501109"
+		},
+		{
+			"name": "貪る原始的な欲望",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "初めてHPが0になる攻撃を受けた後、最大HPは元の一定割合まで減少し、HPをすべて回復する。その後、受けるダメージの一定割合を「貪食」に転換するが、超過ダメージは計算されない。自身の回復可能な最大HPが一定割合を超えた時は消滅せず、HPが0になる攻撃を受けた後、HPを全回復する。この効果を発動するたびに、「貪悦タイム」の行動順を早める。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.77,
+				1.6,
+				1,
+				3,
+				1.6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "503501110"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"5032022",
+		"5032032"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Quantum",
+	"id": "5035011"
+}

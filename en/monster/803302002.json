@@ -1,0 +1,165 @@
+{
+	"name": "Lighthouse",
+	"description": "The superhero of Astropolis, armed with the Intelligentsia Guild's most advanced technological achievements, spares no effort to vanquish evil and maintain the city's peace. Over the past five years, he has repeatedly saved the people of Astropolis from disasters big and small.\nSome point out that these feats could never be accomplished by one person alone, and that the so-called \"Lighthouse\" is nothing more than a false idol manufactured by the entertainment-industrial complex. But the public has already poured their hearts into hoping someone will shoulder the burden when they face a crisis. Little do they know, far darker secrets lie hidden beneath the armor of \"Lighthouse\"...",
+	"icon": "spriteoutput/monsterfigure/Monster_8033020.png",
+	"shortIcon": "Monster_8033020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8033020.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 697.49966706,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "Radiant Sweep",
+			"tag": "Blast",
+			"type": "Ability",
+			"description": "Deals Physical DMG to one designated target and adjacent targets.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302001"
+		},
+		{
+			"name": "Unyielding Justice",
+			"tag": "Charging",
+			"type": "Ability",
+			"description": "Enters the \"Smite Evil\" state, causing this unit to gain a set number of \"All Wishes\" stacks and applying the \"Weakness Protected\" effect to all friendly units, then uses \"Smite All Evil\" during the next action.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				12,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302003"
+		},
+		{
+			"name": "Smite All Evil",
+			"tag": "AoE ATK",
+			"type": "Ability",
+			"description": "Deals massive Physical DMG to all targets and delays the action of the attacked targets. When using this ability, for every stack of \"All Wishes\" this unit has, DMG multiplier of \"Smite All Evil\" increases by a certain percentage. Afterward, clears the \"All Wishes\" stacks, and removes \"Weakness Protected\" from all friendly units and the \"Inspire\" effect.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3.6,
+				0.2,
+				0.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302004"
+		},
+		{
+			"name": "Navigation Guide",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "While in the \"Smite Evil\" state, all friendly units gain the \"Inspire\" effect equal to the number of \"All Wishes\" stacks on Lighthouse. Each stack reduces DMG taken by the holder. After Lighthouse is attacked by a target, decreases \"All Wishes\" stacks by 1. After any targets uses an attack on a friendly unit, increases \"All Wishes\" stacks by 1. When Lighthouse's \"All Wishes\" stack count reaches 0, they dispel all Crowd Control debuffs affecting this unit and exit the \"Smite Evil\" state, have their action delayed, and apply \"Ruined\" to all friendly units, while removing the \"Inspire\" effect from all friendly units on the field.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				0,
+				1,
+				2,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302005"
+		},
+		{
+			"name": "Righteous Frontline",
+			"tag": "Summon",
+			"type": "Ability",
+			"description": "Summons \"Astropolis Sentinel.\"",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.2,
+				0.6,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "803302002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Fire",
+		"Wind",
+		"Quantum"
+	],
+	"summons": [
+		"8032040"
+	],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 182004,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "803302002"
+}

@@ -1,0 +1,235 @@
+{
+	"name": "冥魂渡者，死龙残躯，玻吕刻斯（污染）",
+	"description": "冥河中沉眠的死龙，受炼成召引再度苏醒，化成槁骨腐肉的模样。\n它曾是「死亡」的泰坦，逆溯冥河向上，离开乌有之界于现世搁浅。它曾随冥河潮汐涌上大地，为翁法罗斯的万事万物烙上命定的终局。那些将死的，或已死的存在，皆会因它的归来感受到灵魂深处的颤栗。",
+	"icon": "spriteoutput/monsterfigure/Monster_4014030.png",
+	"shortIcon": "Monster_4014030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4014030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 1162.5,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 480,
+		"speed": 144,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "沦殁者攫手挽留",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对我方单体造成量子属性伤害，对高于一定生命值百分比的目标，该伤害会转化为量子属性<u>【衰亡伤害】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.1,
+				0.5,
+				1.75
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403501"
+		},
+		{
+			"name": "长眠者厚土安葬",
+			"tag": "分摊",
+			"type": "技能",
+			"description": "对我方全体造成大量量子属性伤害，伤害由我方全体单位<u>平均分摊</u>。对高于一定生命值百分比的目标，该伤害会转化为量子属性<u>【衰亡伤害】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				10,
+				0.1,
+				0.5,
+				2
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403502"
+		},
+		{
+			"name": "辞世者临别哀悼",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对随机我方3个目标造成量子属性<u>【衰亡伤害】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403503"
+		},
+		{
+			"name": "苦涩送来迟到的死讯",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "使【哀悯长臂】得到强化，并使其行动提前，持续3回合。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				3
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403504"
+		},
+		{
+			"name": "于痛苦的芬芳中死去",
+			"tag": "强化",
+			"type": "技能",
+			"description": "进入<u>【死亡的芬芳】</u>状态，对我方全体角色造成大量量子属性<u>【衰亡伤害】</u>，该伤害<u>【不致命】</u>，同时使我方全体角色陷入<u>【沉沦于长眠】</u>状态。在二阶段，还会使自身下次行动前，韧性无法被削减并免疫来自我方目标造成的行动延后效果。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.05,
+				1,
+				0.2,
+				8,
+				0.5,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403505"
+		},
+		{
+			"name": "死亡想要更多的死亡",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成量子属性<u>【衰亡伤害】</u>。对处于<u>【沉沦于长眠】</u>状态的目标造成额外的量子属性<u>【衰亡伤害】</u>，使其行动延后并大概率陷入纠缠状态。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.3,
+				0.15,
+				0.5,
+				1,
+				2,
+				1
+			],
+			"spGain": 5,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403506"
+		},
+		{
+			"name": "濒死之梦，浓烟似墨",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "使自身和【哀悯长臂】初始受到的伤害降低，我方目标生命值降低时会积累【濒死梦泡】，当【濒死梦泡】达到上限时，使自身立即行动并进入<u>【死亡的芬芳】</u>状态，同时移除自身和哀悯长臂的受到伤害降低状态。解除<u>【死亡的芬芳】</u>状态时，自身受到伤害并回复我方目标生命值。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				1,
+				1,
+				0.45,
+				1,
+				1,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403507"
+		},
+		{
+			"name": "汝不能停步等候死神",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "【玻吕刻斯】或【哀悯长臂】的技能击中我方目标时，会为我方目标施加不可解除的特殊持续伤害状态，该状态下目标当前生命值百分比越高受到的伤害越高，该伤害<u>【不致命】</u>。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				0.4,
+				1,
+				0.05,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403508"
+		},
+		{
+			"name": "死界垂怜",
+			"tag": "天赋",
+			"type": "天赋",
+			"description": "战斗中会出现黑泥对首领进行强化。强化后【冥魂渡者，死龙残躯，玻吕刻斯（污染）】会立刻进入【死亡的芬芳】状态并施放【于痛苦的芬芳中死去】。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401403509"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"4012070",
+		"4012071"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Quantum",
+	"id": "4014035"
+}

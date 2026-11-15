@@ -1,0 +1,284 @@
+{
+	"name": "Stellaron-Jägerin: Kafka (Illusion)",
+	"description": "Mitglied der Stellaron-Jäger. Eine wunderschöne Attentäterin mit einem geheimnisvollen Lächeln, die sich durch ihr Geschick mit verschiedensten Waffen und bei der Manipulation anderer auszeichnet. Sie hat den Astralexpress hierhergeführt, um einen unbekannten Plan auszuführen ... Diese Erscheinung ist eine Illusion, die auf deinen Erinnerungen basiert.",
+	"icon": "spriteoutput/monsterfigure/Monster_2004010.png",
+	"shortIcon": "Monster_2004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2004010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 6510,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 108,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Mitternächtlicher Tumult",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Blitz-SCH zu und hat eine Chance, Schock bei ihm zu verursachen.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				1,
+				3,
+				0.75
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401301"
+		},
+		{
+			"name": "Streichelndes Mondlicht",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten und angrenzenden Einheiten Blitz-SCH zu. Wenn das Hauptziel geschockt wird, werden auch die angrenzenden Ziele geschockt.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401302"
+		},
+		{
+			"name": "Stiller und scharfer Spott",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten Blitz-SCH zu.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401303"
+		},
+		{
+			"name": "Geistergeflüster",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten mit hoher Chance Dominiert zu und zieht dessen Aktion vor, sodass er sofort einen anderen Verbündeten angreift.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2.75,
+				1.5,
+				0.5,
+				1.2
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401304"
+		},
+		{
+			"name": "",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				2.5
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401305"
+		},
+		{
+			"name": "Druck",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Fügt der Aktionsleiste „Auslagerung“ hinzu. Jedes Mal, wenn Auslagerung ausgeführt wird, werden <unbreak>1[i]</unbreak> IFK-Mitarbeiter beschworen. Es können sich bis zu <unbreak>2[i]</unbreak> IFK-Mitarbeiter gleichzeitig auf dem Kampffeld befinden.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401306"
+		},
+		{
+			"name": "Psychologische Suggestion",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Wendet „Psychologische Suggestion“ auf mehrere Verbündete an. Fügt „Offenbarung“ zur Aktionsleiste hinzu. Wird Offenbarung das nächste Mal ausgeführt, werden jegliche Ziele mit Psychologischer Suggestion dominiert.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				1,
+				2,
+				1.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401307"
+		},
+		{
+			"name": "Zittern",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn das Ziel gerade geschockt ist, wird sofort 1-mal Schock-SCH verursacht.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401308"
+		},
+		{
+			"name": "Grausamkeit",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Wenn Gegner (außer Kafka) oder dominierte Ziele das geschockte Hauptziel angreifen, wird ein zusätzlicher Blitz-ANG entfesselt.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401309"
+		},
+		{
+			"name": "Trauerer",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Jedes Mal, wenn ein Ziel Schock erleidet, wird Kafkas SCH erhöht.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.02,
+				0.4,
+				0.75,
+				1.66
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401310"
+		},
+		{
+			"name": "Druck",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Fügt der Aktionsleiste „Auslagerung“ hinzu. Jedes Mal, wenn Auslagerung ausgeführt wird, werden <unbreak>1[i]</unbreak> IFK-Mitarbeiter beschworen. Es können sich bis zu <unbreak>2[i]</unbreak> IFK-Mitarbeiter gleichzeitig auf dem Kampffeld befinden.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				4,
+				4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401311"
+		},
+		{
+			"name": "Entzug",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Wenn Kafka eine Aktion ausführt und ein IFK-Arbeiter „Leistungspunkte“ besitzt, beschlagnahmt Kafka diese Punkte und setzt „Streichelndes Mondlicht“ ein. Leistungspunkte können den SCH, den Kafka bei diesem Angriff verursacht, stark erhöhen.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.6
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401312"
+		},
+		{
+			"name": "",
+			"tag": "Andere",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "200401313"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Fire",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Thunder",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Wind",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"803202003",
+		"803201003",
+		"803301202"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Physical",
+	"id": "2004013"
+}

@@ -1,0 +1,119 @@
+{
+	"name": "{RUBY_B#てんばつ}天罰{RUBY_E#}の{RUBY_B#かりゅうど}狩人{RUBY_E#}",
+	"description": "「紛争」によって生み出されたタイタンの眷属で、その身にはニカドリーの黄金の血が流れている。その信仰心は狙いを定めた矢のようにゆるぎなく、創造主のタイタンのために獲物である、クレムノスの軍勢と兵器を探す。荒原では奇獣を、戦場では敵兵を狩り尽くし、一度射程に入った生き物を決して逃さない。",
+	"icon": "spriteoutput/monsterfigure/Monster_4012030.png",
+	"shortIcon": "Monster_4012030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 51.1498884,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "哀哭を送る飛箭",
+			"tag": "掃射",
+			"type": "スキル",
+			"description": "味方パーティを右側から攻撃し、まずは味方それぞれにダメージを1回与え、それから数回、ランダムで味方単体にダメージを与える。1回のダメージで、少量の雷属性ダメージを与える。このスキルが味方単体に重複してダメージを与える時、追加で雷属性ダメージを与える。「戦鎧」が0層の時、次の「哀哭を送る飛箭」のダメージ回数が減る。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				5,
+				2
+			],
+			"spGain": 8,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401203001"
+		},
+		{
+			"name": "都市国家の守護者",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "一定層数の「戦鎧」を獲得し、自身の受けるダメージをダウンする。攻撃を受けた後、「戦鎧」の層数-1層。「戦鎧」が0層になると破壊され、自身に大量の虚数属性ダメージを与え、自身の行動順を遅延させる。「戦鎧」を破壊した味方はEPを回復する。「戦鎧」が破壊された後、攻撃を受ける時に追加で少量の虚数属性ダメージを受ける。自身のターンが終了する時、「戦鎧」は最大層数までリセットされる。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3,
+				0.1,
+				0.1,
+				0.06,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401203002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "401203006"
+}

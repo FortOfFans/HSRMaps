@@ -1,0 +1,587 @@
+{
+	"name": "隙を突く扇動者",
+	"description": "「壊滅」と「豊穣」の力を併せ持ち、生滅が循環する肉体。建木が蘇生した後に実った1つ目の「果実」である。",
+	"icon": "spriteoutput/monsterfigure/Monster_8015020.png",
+	"shortIcon": "Monster_8015020",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8015020.png",
+	"stats": {
+		"baseAttack": 23.999994,
+		"baseDefense": 210,
+		"baseHealth": 7440,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 1140,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "弾指・起風",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に風属性ダメージを与える。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502201"
+		},
+		{
+			"name": "塵雲一掃",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の風属性ダメージを与える。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1.5
+			],
+			"spGain": 10,
+			"delay": 1.3,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502202"
+		},
+		{
+			"name": "虬根・豊穣の威力",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に風属性ダメージを与え、その味方の行動順を遅延させる。さらに、フィールド上の行動可能な「豊穣の玄蓮」が攻撃を行う。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.1,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502203"
+		},
+		{
+			"name": "虬根・破滅の威力",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に雷属性ダメージを与え、その味方の行動順を遅延させる。さらに、フィールド上の行動可能な「破滅の玄蓮」が攻撃を行う。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.1,
+				0.25,
+				2,
+				1.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502204"
+		},
+		{
+			"name": "弾指・鳴雷",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502205"
+		},
+		{
+			"name": "破星砕月・豊穣の威力",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に風属性ダメージを与え、「豊穣形態」に切り替わる。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502206"
+		},
+		{
+			"name": "破星砕月・壊滅の威力",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に雷属性ダメージを与え、「壊滅形態」に切り替わる。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502207"
+		},
+		{
+			"name": "双生",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「豊穣の玄蓮」と「破滅の玄蓮」を召喚する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502208"
+		},
+		{
+			"name": "盛怒",
+			"tag": "拡散攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体および隣接する味方に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				1.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502209"
+		},
+		{
+			"name": "玄根化生",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に虚数属性ダメージを与える。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502210"
+		},
+		{
+			"name": "双生",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "「豊穣の玄蓮」と「破滅の玄蓮」を召喚する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502211"
+		},
+		{
+			"name": "虬根・万曲",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に虚数属性ダメージを与え、味方全体の行動順を遅らせる。さらに、フィールド上の行動可能な「玄蓮」が攻撃を行う。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.5,
+				0.1,
+				5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502212"
+		},
+		{
+			"name": "空劫",
+			"tag": "ロックオン",
+			"type": "スキル",
+			"description": "味方全体をロックオンし、次に「玄蓮」が行動する時に「未来永劫に戻らぬ」を発動する。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502213"
+		},
+		{
+			"name": "未来永劫に戻らぬ",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "ロックオンされている味方に虚数属性ダメージを与える。ロックオンされているターゲットが多いほどダメージがアップする。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				5.5,
+				5.5,
+				6,
+				6
+			],
+			"spGain": 30,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502214"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2,
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502215"
+		},
+		{
+			"name": "壊滅バフ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.25,
+				8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502216"
+		},
+		{
+			"name": "豊穣バフ",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				8
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502217"
+		},
+		{
+			"name": "鉄壁の防御",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502218"
+		},
+		{
+			"name": "移花接木",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502219"
+		},
+		{
+			"name": "枯木生華",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.25
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502220"
+		},
+		{
+			"name": "空花陽炎",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502221"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502222"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1.5,
+				1,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801502223"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 0.75
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Wind",
+		"Imaginary"
+	],
+	"summons": [
+		"8012204",
+		"8012214"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 4,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "100601",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"id": "100602",
+				"name": "移花接木",
+				"description": "新たな「玄蓮」を召喚する時、ボス幻影は<color=#f29e38ff><u>靭性保護</u></color>状態に入る。任意の召喚物を倒すとボス幻影の靭性保護が解除され、さらにボス幻影の靭性を追加で削ることができる。",
+				"params": []
+			},
+			{
+				"id": "100603",
+				"name": "枯木生華",
+				"description": "第一段階では、ボス幻影が形態を切り替えると、召喚物のHPが<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>回復する。",
+				"params": [
+					0.3
+				]
+			},
+			{
+				"id": "100604",
+				"name": "空花陽炎",
+				"description": "第二段階では、召喚物の最大HPが<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>アップする。",
+				"params": [
+					0.35
+				]
+			}
+		],
+		"phases": [
+			{
+				"id": "10061",
+				"name": "第一段階：浮翠流丹",
+				"description": "ボス幻影は「豊穣形態」と「壊滅形態」の間を切り替え、切り替わる時に「玄蓮」を召喚する。",
+				"answer": "対応戦略：できるだけ多くの「豊穣の玄蓮」または「破滅の玄蓮」を倒して、より多くのバフを獲得する。",
+				"skills": [
+					{
+						"id": "100611",
+						"type": "Normal",
+						"name": "味方キャラのHP上限を下げる効果への対策",
+						"texts": [
+							{
+								"description": "効果抵抗をアップする、またはスキルで「噬命」状態を解除する。また、召喚物を倒すことでそれによるデバフ効果を軽減できる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100612",
+						"type": "Normal",
+						"name": "ボス幻影の靭性保護状態の対処法",
+						"texts": [
+							{
+								"description": "任意の召喚物を倒すとボス幻影の靭性保護が解除され、さらにボス幻影の靭性を追加で削ることができる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "100613",
+						"type": "Normal",
+						"name": "味方の需要に応じて適切な「玄蓮」を選んで倒す",
+						"texts": [
+							{
+								"description": "「玄蓮」を倒すことで味方はバフを獲得することができる。「豊穣の玄蓮」を倒すと、全属性ダメージがアップする。「破滅の玄蓮」を倒すと撃破特効がアップする。上記のバフの内獲得できるのは1種類のみで、味方が必要としているバフタイプを選択して対応する「玄蓮」を倒す。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10062",
+				"name": "第二段階：風に逆らう松明",
+				"description": "ボス幻影の召喚物は味方をロックオンし、ロックオンしたターゲットに「未来永劫に戻らぬ」を発動して大ダメージを与える。",
+				"answer": "対応戦略：召喚物が「未来永劫に戻らぬ」を発動する前にできるだけ倒し、バフを獲得して「未来永劫に戻らぬ」の威力を下げる。",
+				"skills": [
+					{
+						"id": "100621",
+						"type": "Normal",
+						"name": "召喚物の「未来永劫に戻らぬ」がもたらす大ダメージへの対処法",
+						"texts": [
+							{
+								"description": "「未来永劫に戻らぬ」が発動する前に、できるだけ「玄蓮」を倒して「未来永劫に戻らぬ」によるダメージを軽減する。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延され、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.6,
+					1.25,
+					1
+				]
+			},
+			{
+				"description": "新たな「玄蓮」を召喚する時、ボス幻影は<color=#f29e38ff>靭性保護</color>状態に入る。",
+				"params": []
+			},
+			{
+				"description": "「豊穣の玄蓮」を倒すたびに味方全体の<color=#f29e38ff>全属性ダメージ</color>がアップする。「破滅の玄蓮」を倒すたびに味方全体の<color=#f29e38ff>撃破特効</color>がアップする。上記の2種類のバフのいずれか1種類を獲得すると、もう片方のバフを獲得できなくなる。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "ボス幻影は<color=#f29e38ff>弱点撃破</color>された後に受けるダメージが大アップし、味方全体のSPを回復して行動順を早める。",
+				"params": []
+			},
+			{
+				"description": "<color=#f29e38ff>召喚物</color>を倒すと、ボス幻影の靭性保護を解除し、弱体化させることができる。",
+				"params": []
+			},
+			{
+				"description": "味方の需要に応じて適切な「玄蓮」を選び、倒す。「豊穣の玄蓮」を倒すと、味方の<color=#f29e38ff>全属性ダメージ</color>がアップする。「破滅の玄蓮」を倒すと味方の<color=#f29e38ff>撃破特効</color>がアップする。",
+				"params": []
+			}
+		]
+	},
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "801502204"
+}

@@ -1,0 +1,517 @@
+{
+	"name": "老い知らずの仙者",
+	"description": "「建木」から生まれ、その根を守る霊瑞の獣。足跡は、潤いに満ち、梢が生い茂る。\n自ら滅びた太古の時代の戦争のあと、「建木」は星核による修復で再度成長を始めた。当時、仙人たちが創った奇妙な獣たちが昔の夢から目覚めたように往来する。",
+	"icon": "spriteoutput/monsterfigure/Monster_2024010.png",
+	"shortIcon": "Monster_2024010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_2024010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 26040,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 720,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 3,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "呦鳴",
+			"tag": "単体攻撃",
+			"type": "スキル",
+			"description": "指定した味方単体に雷属性ダメージを与える。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				3.5
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401605"
+		},
+		{
+			"name": "風綰り",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "味方全体に少量の風属性ダメージを与える。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401606"
+		},
+		{
+			"name": "覆蕉",
+			"tag": "防御",
+			"type": "スキル",
+			"description": "防御力をアップし、自身の靭性が削られなくなる。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				2,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401607"
+		},
+		{
+			"name": "斑竜触",
+			"tag": "全体攻撃",
+			"type": "スキル",
+			"description": "「嘉実の梢」がスキルを発動するたびに、「老い知らずの仙者」はチャージを1獲得する。チャージが上限に達すると直ちにこのスキルを発動し、味方全体に雷属性ダメージを与える。フィールド上の「<u>建木の枝先</u>」の数が多いほど、与ダメージがアップする。",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				4,
+				0.2,
+				3
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401608"
+		},
+		{
+			"name": "回生",
+			"tag": "回復",
+			"type": "スキル",
+			"description": "すべての召喚物は、「老い知らずの仙者」の最大HPの一定割合分のHPを回復する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.015
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401609"
+		},
+		{
+			"name": "銜枝・厳風",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "建木の枝先「厳風の梢」を召喚する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401601"
+		},
+		{
+			"name": "銜枝・黄葉",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "建木の枝先「黄葉の梢」を召喚する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401602"
+		},
+		{
+			"name": "銜枝・万花",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "建木の枝先「万花の梢」を召喚する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401603"
+		},
+		{
+			"name": "銜枝・嘉実",
+			"tag": "召喚",
+			"type": "スキル",
+			"description": "建木の枝先「嘉実の梢」を召喚する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401604"
+		},
+		{
+			"name": "鶏犬昇天",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "戦闘開始時、「<u>豊穣の忌み物</u>」と「<u>建木の枝先</u>」を召喚する。\n召喚物が倒された時、自身に少量の確定ダメージを与え、自身の靭性を少量削り、直ちに新たな「<u>豊穣の忌み物</u>」または「<u>建木の枝先</u>」を召喚する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0,
+				0.25,
+				0.5,
+				0.25,
+				0.25,
+				0.5,
+				0,
+				0.5,
+				60,
+				0.007999999,
+				480,
+				0.08,
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401610"
+		},
+		{
+			"name": "鶏犬昇天・強化",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "フェーズ切り替えの時、「仙人童子」、「仙人天女」、「<u>建木の枝先</u>」を召喚し、「仙人童子」と「仙人天女」に「優秀な部下」を付与する。「優秀な部下」がフィールド上にいる間、「老い知らずの仙者」の受けるダメージが大幅にダウンする。\n召喚物が倒されると、自身に少量の確定ダメージを与え、自身の靭性を少量削る。倒されたのが「優秀な部下」の場合、代わりに自身に大量の確定ダメージを与え、自身の靭性を大量削る。その後、新たな「<u>建木の枝先</u>」を直ちに召喚する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.45
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401611"
+		},
+		{
+			"name": "昇華の力",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「厳風の梢」、「黄葉の梢」、「万花の梢」がフィールド上にいる時、他のユニットにそれぞれ異なる<u>仙光</u>効果を付与する。\n「厳風の梢」：「怒噪」状態を付与された味方の、「厳風の梢」以外のすべての敵に対する与ダメージが大幅にダウンする。\n「黄葉の梢」：「黄葉の梢」以外のすべての敵は、攻撃を受けた後に行動順が少し早まる。\n「万花の梢」：「万花の梢」と「老い知らずの仙者」以外のすべての敵は、ターンが回ってきた時に少量のHPを回復する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.7,
+				0.06,
+				0.05
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401612"
+		},
+		{
+			"name": "滋養の力",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "味方が「<u>建木の枝先</u>」を倒した後、「滋養の力」を1層獲得し、与ダメージがアップする。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401613"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401614"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401615"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401616"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401617"
+		},
+		{
+			"name": "",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401618"
+		},
+		{
+			"name": "いなす",
+			"tag": "天賦",
+			"type": "天賦",
+			"description": "「老い知らずの仙者」は自身の弱点属性を「優秀な部下」に転移する。「優秀な部下」が倒された後、自身の弱点属性を「老い知らずの仙者」と他の「優秀な部下」に転移する。",
+			"element": "Wind",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "202401619"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 0.5
+		},
+		{
+			"key": "STAT_Confine",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Physical",
+		"Fire",
+		"Ice",
+		"Quantum"
+	],
+	"summons": [
+		"202207201",
+		"202208201",
+		"202209201",
+		"202210201",
+		"202201017",
+		"202206015",
+		"202301201",
+		"202303201"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": {
+		"difficulty": 1,
+		"difficultyList": [
+			1,
+			1,
+			3,
+			4
+		],
+		"tags": [
+			{
+				"id": "101701",
+				"name": "鉄壁の防御",
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"id": "101702",
+				"name": "繁盛の極み",
+				"description": "ボス幻影の召喚物が倒されると、自身に少量の確定ダメージを与え、自身の靭性を少量削る。倒されたのが<color=#f29e38ff>精鋭エネミー</color>の場合、代わりに自身に大量の確定ダメージを与え、自身の靭性を大量削る。その後、新たな召喚物を<color=#f29e38ff>即座に召喚</color>する。",
+				"params": []
+			},
+			{
+				"id": "101703",
+				"name": "鹿に翼",
+				"description": "「鶏犬昇天」および「鶏犬昇天・強化」によって召喚された召喚物の初期行動順が大幅に早まる。",
+				"params": []
+			},
+			{
+				"id": "101704",
+				"name": "まばゆい仙光",
+				"description": "任意の「<u>仙光</u>」効果が発動している間、弱点撃破されていないすべての敵の受けるダメージがダウンし、与ダメージがアップする。",
+				"params": []
+			}
+		],
+		"phases": [
+			{
+				"id": "10171",
+				"name": "第一段階：豊穣の大軍",
+				"description": "戦闘開始時、ボス幻影は「豊穣の忌み物」と「建木の枝先」を召喚する。召喚物が倒されると、ボス幻影は少量の確定ダメージを受けて少量の靭性を削られ、その後すぐに新たな召喚物を召喚する。",
+				"answer": "対応戦略：召喚物を積極的に倒してボス幻影の靭性を削り、「滋養の力」を累積するため、「建木の枝先」を優先して倒す。",
+				"skills": [
+					{
+						"id": "101711",
+						"type": "Normal",
+						"name": "ボス幻影の靭性を効率よく削る方法",
+						"texts": [
+							{
+								"description": "「豊穣の忌み物」または「建木の枝先」を倒すと、ボス幻影に確定ダメージを与え、靭性を削ることができる。",
+								"params": []
+							}
+						]
+					},
+					{
+						"id": "101712",
+						"type": "Normal",
+						"name": "「建木の枝先」の「仙光」効果への対処法",
+						"texts": [
+							{
+								"description": "優先して「建木の枝先」を倒すと、「仙光」効果を解除できるうえ、味方は「滋養の力」を獲得して与ダメージがアップする。",
+								"params": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "10172",
+				"name": "第二段階：左右の護法",
+				"description": "フェーズ移行時、ボス幻影は「仙人童子」と「仙人天女」を召喚し、彼らに「優秀な部下」を付与する。さらに、「優秀な部下」がフィールドにいる間、ボス幻影の受けるダメージが大幅に減少する。",
+				"answer": "対応戦略：優先的に「優秀な部下」を倒して、ボス幻影のダメージ軽減効果を弱め、同時にボス幻影の靭性を大幅に削ることもできる。",
+				"skills": [
+					{
+						"id": "101721",
+						"type": "Normal",
+						"name": "ボス幻影の「斑竜触」の対処法",
+						"texts": [
+							{
+								"description": "「嘉実の梢」がスキルを発動するたびに、ボス幻影の「斑竜触」がチャージされる。できるだけ早く「嘉実の梢」を倒し、「斑竜触」へのチャージを阻止しよう。",
+								"params": []
+							}
+						]
+					}
+				]
+			}
+		],
+		"guides": [
+			{
+				"description": "ボス幻影の受けるダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。<color=#f29e38ff>弱点撃破</color>された後、さらに行動順が遅延し、受けるダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+				"params": [
+					0.5,
+					1,
+					1.5
+				]
+			},
+			{
+				"description": "ボス幻影の召喚物が倒されると、自身に少量の確定ダメージを与え、自身の靭性を少量削る。倒されたのが<color=#f29e38ff>精鋭エネミー</color>の場合、代わりに自身に大量の確定ダメージを与え、自身の靭性を大量削る。その後、新たな召喚物を<color=#f29e38ff>即座に召喚</color>する。",
+				"params": []
+			},
+			{
+				"description": "「厳風の梢」、「黄葉の梢」、「万花の梢」がフィールド上にいる時、他のユニットにそれぞれ異なる<color=#f29e38ff>仙光</color>効果を付与する。味方が<color=#f29e38ff>「建木の枝先」を撃破する</color>と、「滋養の力」を1層獲得し、与ダメージがアップする。",
+				"params": []
+			}
+		],
+		"texts": [
+			{
+				"description": "ボス幻影の召喚物を積極的に倒すと、効果的にボス幻影の靭性を削ることができる。",
+				"params": []
+			},
+			{
+				"description": "優先してフィールド上の「建木の枝先」を倒して「滋養の力」を獲得し、味方アタッカーの与ダメージをアップさせよう。",
+				"params": []
+			},
+			{
+				"description": "「嘉実の梢」が行動する前に素早く倒し、ボス幻影の「斑竜触」へのチャージを阻止しよう。",
+				"params": []
+			}
+		]
+	},
+	"rank": "LittleBoss",
+	"stanceType": "Wind",
+	"id": "202401601"
+}

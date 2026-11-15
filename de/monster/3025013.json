@@ -1,0 +1,385 @@
+{
+	"name": "Dirigent aller Klänge",
+	"description": "Dominicus des Chors der Harmonie ist eine der Inkarnationen von Xipe der Harmonie. Durch die Störungen der „Ordnung“ hat sich seine ursprüngliche Form verändert. Als Reaktion auf die Wünsche des kollektiven Bewusstseins können die von ihm geleiteten Hymnen die Welt den Wünschen nach neu formen und neue Gesetze erschaffen. Jeder, der sich dies wünscht, wird zu der Quelle seiner Macht.",
+	"icon": "spriteoutput/monsterfigure/Monster_3025010.png",
+	"shortIcon": "Monster_3025010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_3025010.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 16275,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 240,
+		"speed": 150,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 10,
+		"type": "BigBoss"
+	},
+	"skills": [
+		{
+			"name": "Grazioso",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten geringen imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501301"
+		},
+		{
+			"name": "Maestoso",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten imaginären SCH zu.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501302"
+		},
+		{
+			"name": "Vaneggiando",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Lässt einen Verbündeten eine hohe Chance haben, von <u>Fremdartiger Traum</u> betroffen zu werden.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501303"
+		},
+		{
+			"name": "Variation",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. In der nächsten Runde wird „Tanzen im Traume“ eingesetzt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501304"
+		},
+		{
+			"name": "Überleitung",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Setzt in der nächsten Runde „Singen im Regen“ ein und stellt den WDS aller „Echos alter Träume“ wieder her.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1.5,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501305"
+		},
+		{
+			"name": "Tanzen im Traume",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Veranlasst alle handlungsfähigen „Echos alter Träume“ dazu, einem anvisierten Verbündeten imaginären SCH zuzufügen. Wenn keine handlungsfähigen Echos alter Träume vorhanden sind, schlägt der Einsatz dieser Fähigkeit fehl. Reduziert gleichzeitig massiv den WDS.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2,
+				240
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501306"
+		},
+		{
+			"name": "Tanzen im Traume",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Veranlasst alle handlungsfähigen „Echos alter Träume“ dazu, einem anvisierten Verbündeten imaginären SCH zuzufügen. Wenn keine handlungsfähigen Echos alter Träume vorhanden sind, schlägt der Einsatz dieser Fähigkeit fehl. Reduziert gleichzeitig massiv den WDS.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501307"
+		},
+		{
+			"name": "Singen im Regen",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten imaginären SCH zu und veranlasst alle handlungsfähigen „Echos alter Träume“ dazu, allen Verbündeten imaginären SCH zuzufügen. Wenn keine handlungsfähigen Echos alter Träume vorhanden sind, schlägt der Einsatz dieser Fähigkeit fehl. Reduziert gleichzeitig massiv den WDS.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				3.5,
+				3,
+				0.5,
+				240
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501308"
+		},
+		{
+			"name": "Unendlicher Stimmumfang",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status „Eins mit dem Licht“ ein und erhält einen Schild. Der verursachte SCH wird erhöht.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.09,
+				0.2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501309"
+		},
+		{
+			"name": "",
+			"tag": "Verstärken",
+			"type": "Fähigkeit",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501310"
+		},
+		{
+			"name": "Im Anfang war das Wort",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Nach 7 Rd. wird „Im Anfang war die Tat“ eingesetzt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501311"
+		},
+		{
+			"name": "Im Anfang war die Tat",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven imaginären SCH zu, der die VTD der Ziele ignoriert.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				4
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501312"
+		},
+		{
+			"name": "Resonante Projektion",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Während „Dirigent aller Klänge“ im Status „Im Anfang war die Kraft“ ist, führt er sofort nach jeder Aktion eines Verbündeten selbst eine Aktion durch und wird immun gegen von Verbündeten verursachte Effekte, die die Aktion verzögern. Wenn er Schwächebruch erleidet, wird der Zähler von „Im Anfang war die Tat“ nicht unterbrochen.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				10,
+				10,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501313"
+		},
+		{
+			"name": "Großes Erwachen",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "„Dirigent aller Klänge“ beschwört 4 „Echos alter Träume“. Der von Echos alter Träume erlittene SCH wird von Dirigent aller Klänge aufgenommen. Nach jeder Runde wird WDS von Echos alter Träume mit Schwächebruch wiederhergestellt. Für jeden gebrochenen Widerstand der Einheit wird Verbündeten „<u>Wenn wir im Licht wandeln</u>“ zugefügt.",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				0.25,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501314"
+		},
+		{
+			"name": "Freud und Leid geteilt",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501315"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.5,
+				1,
+				1.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501316"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501317"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				0.4
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501318"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				10
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501319"
+		},
+		{
+			"name": "",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				40,
+				20,
+				4,
+				0.1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "302501320"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL",
+			"value": 1
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum",
+		"Imaginary"
+	],
+	"summons": [
+		"3022011"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "BigBoss",
+	"stanceType": "Imaginary",
+	"id": "3025013"
+}

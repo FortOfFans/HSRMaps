@@ -1,0 +1,119 @@
+{
+	"name": "Furiae Archer",
+	"description": "A Titankin sculpted by \"Strife.\" They are infused with Nikador's golden ichor. With faith as steadfast as flying arrows, they are the means to find prey for Kremnos' forces, hunting down beasts and foes across the wastes, and ensuring none survive within firing range.",
+	"icon": "spriteoutput/monsterfigure/Monster_4012030.png",
+	"shortIcon": "Monster_4012030",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_4012030.png",
+	"stats": {
+		"baseAttack": 18,
+		"baseDefense": 210,
+		"baseHealth": 241.8,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 90,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.1,
+		"stanceCount": 1,
+		"type": "MinionLv2"
+	},
+	"skills": [
+		{
+			"name": "Weeping Arrow",
+			"tag": "Barrage",
+			"type": "Ability",
+			"description": "Launches several rounds of attacks from the right side of the target team, and delivers a 1 time priority attack to each target, with the remaining attack counts attacking random targets. Each attack deals minor Lightning DMG. When a target is hit more than once in this ability, additionally deals Lightning DMG. When the \"War Armor\" stack reaches 0, the next attack count of \"Weeping Arrow\" will be reduced.",
+			"element": "Thunder",
+			"attackType": "Normal",
+			"params": [
+				1,
+				5,
+				2
+			],
+			"spGain": 8,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401203001"
+		},
+		{
+			"name": "Polis Protector",
+			"tag": "Talent",
+			"type": "Talent",
+			"description": "Possesses a number of \"War Armor\" stacks, which decreases DMG taken. Loses 1 stack of \"War Armor\" on this unit after being attacked. When at 0 stacks, \"War Armor\" will be destroyed, dealing massive Imaginary DMG to this unit and delaying their action. The target that destroyed \"War Armor\" will regenerate Energy. After \"War Armor\" is destroyed, this unit will also additionally take minor Imaginary DMG when attacked. \"War Armor\" will be restored to maximum stacks at the end of this unit's turn.",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				3,
+				0.3,
+				0.1,
+				0.1,
+				0.06,
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "401203002"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Fire",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconFireResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Ice",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 108,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 115001,
+				"count": 1
+			},
+			{
+				"id": 115002,
+				"count": 1
+			},
+			{
+				"id": 115003,
+				"count": 1
+			},
+			{
+				"id": 181018,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "MinionLv2",
+	"stanceType": "Physical",
+	"id": "401203008"
+}

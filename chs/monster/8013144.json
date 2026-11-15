@@ -1,0 +1,190 @@
+{
+	"name": "反物质引擎",
+	"description": "力量本源的至极化身，它背后蕴含的能量形式并不为人知晓。\n反物质引擎会为其他敌人提供能量并强化其技能。",
+	"icon": "spriteoutput/monsterfigure/BossIconTemporary.png",
+	"shortIcon": "BossIconTemporary",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_8012141.png",
+	"stats": {
+		"baseAttack": 14.4,
+		"baseDefense": 210,
+		"baseHealth": 627.75,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 180,
+		"speed": 100,
+		"critDamage": 0.2,
+		"effectResistance": 0.2,
+		"stanceCount": 1,
+		"type": "Elite"
+	},
+	"skills": [
+		{
+			"name": "虚明裂变",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "对敌方单体【灾虐的右手】施加强化状态，恢复该目标的韧性。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314401"
+		},
+		{
+			"name": "灾厄侵袭",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "对敌方单体【黎明的左手】施加强化状态，恢复该目标的韧性。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314402"
+		},
+		{
+			"name": "引擎升变",
+			"tag": "辅助",
+			"type": "技能",
+			"description": "对除自身外的敌方全体施加强化状态，恢复该目标的韧性。",
+			"element": "Physical",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				2
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314403"
+		},
+		{
+			"name": "顺逆湮灭",
+			"tag": "单攻",
+			"type": "技能",
+			"description": "对我方单体造成虚数属性伤害。",
+			"element": "Imaginary",
+			"attackType": "Normal",
+			"params": [
+				2.8
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314404"
+		},
+		{
+			"name": "灾虐前兆",
+			"tag": "蓄力",
+			"type": "技能",
+			"description": "进入蓄力状态，下次行动时对我方全体施放【末日临空】。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.2,
+				1
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314405"
+		},
+		{
+			"name": "末日临空",
+			"tag": "群攻",
+			"type": "技能",
+			"description": "对我方全体造成量子属性伤害。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				3.4
+			],
+			"spGain": 15,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314406"
+		},
+		{
+			"name": "引擎狭缝",
+			"tag": "天赋",
+			"type": "技能",
+			"description": "每当【反物质引擎】从弱点击破状态恢复，其弱点属性会发生改变。",
+			"element": "Quantum",
+			"attackType": "Normal",
+			"params": [
+				0.5
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "801314407"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Thunder",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconThunderResistanceDelta.png"
+		},
+		{
+			"element": "Quantum",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconQuantumResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [],
+	"weakness": [
+		"Physical",
+		"Fire"
+	],
+	"summons": [],
+	"drops": {
+		"avatarExpReward": 400,
+		"itemList": [
+			{
+				"id": 2,
+				"count": 1
+			},
+			{
+				"id": 111012,
+				"count": 1
+			},
+			{
+				"id": 111013,
+				"count": 1
+			},
+			{
+				"id": 182001,
+				"count": 1
+			},
+			{
+				"id": 183002,
+				"count": 1
+			}
+		]
+	},
+	"guide": null,
+	"rank": "Elite",
+	"stanceType": "Physical",
+	"id": "8013144"
+}

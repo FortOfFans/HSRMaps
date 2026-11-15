@@ -1,0 +1,211 @@
+{
+	"name": "Topaz (Illusion)",
+	"description": "Eine aufgeschlossene und gesellige Investmentexpertin, eine Leiterin der Abteilung für strategische Investitionen von der IFK. Führt das Sondereinsatzkommando für Schuldeneintreibung an.",
+	"icon": "spriteoutput/monsterfigure/Monster_1004010.png",
+	"shortIcon": "Monster_1004010",
+	"roundIcon": "spriteoutput/monsterroundicon/Monster_1004010.png",
+	"stats": {
+		"baseAttack": 5.142857,
+		"baseDefense": 210,
+		"baseHealth": 25575,
+		"hardLevelGroup": 1,
+		"eliteGroup": 1,
+		"baseStance": 360,
+		"speed": 120,
+		"critDamage": 0.2,
+		"effectResistance": 0.3,
+		"stanceCount": 1,
+		"type": "LittleBoss"
+	},
+	"skills": [
+		{
+			"name": "Kälte der knochenbrechenden Gerinnung",
+			"tag": "Einzelangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401501"
+		},
+		{
+			"name": "Omen des immerwährenden Frostes",
+			"tag": "Beschwören",
+			"type": "Fähigkeit",
+			"description": "Beschwört 2 Eiskanten.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401502"
+		},
+		{
+			"name": "Strafe des endlosen Winters",
+			"tag": "Flächenangriff",
+			"type": "Fähigkeit",
+			"description": "Fügt allen Verbündeten massiven Eis-SCH zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.75
+			],
+			"spGain": 20,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401503"
+		},
+		{
+			"name": "Omen des immerwährenden Frostes",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Beschwört 4 Eiskanten.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				1,
+				1,
+				1.125
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401504"
+		},
+		{
+			"name": "Zorn der Heiligen des Winterlandes",
+			"tag": "Aufladen",
+			"type": "Fähigkeit",
+			"description": "Tritt in den Status Aufladen ein. Fügt bei der nächsten Aktion allen Verbündeten „Strafe des endlosen Winters“ zu.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				0.3
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401505"
+		},
+		{
+			"name": "Verschärfende Kälte",
+			"tag": "Verstärken",
+			"type": "Talent",
+			"description": "Für jeden eingefrorenen Verbündeten wird der von Gegner und seinen beschworenen Objekten verursachte SCH wenig erhöht. Der erhöhte SCH ist stapelbar.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				10,
+				1.125,
+				0.1,
+				1,
+				0
+			],
+			"spGain": 0,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401506"
+		},
+		{
+			"name": "Raureif der ewigen Isolation",
+			"tag": "Beeinträchtigen",
+			"type": "Fähigkeit",
+			"description": "Fügt einem anvisierten Verbündeten Eis-SCH zu und verursacht mit hoher Chance Gefroren.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				1.5,
+				3,
+				1,
+				1.125
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401507"
+		},
+		{
+			"name": "Widerhallendes Eis",
+			"tag": "Ausdehnung",
+			"type": "Fähigkeit",
+			"description": "Fügt eingefrorenen Verbündeten und angrenzenden Einheiten Eis-SCH zu. Entfernt zudem den Status Gefroren des Hauptziels. Wenn die angrenzenden Einheiten eingefroren sind, wird diese Fähigkeit erneut auf das Hauptziel angewendet.",
+			"element": "Ice",
+			"attackType": "Normal",
+			"params": [
+				2.75,
+				1.25
+			],
+			"spGain": 10,
+			"delay": 1,
+			"icon": "spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+			"shortIcon": "SkillIcon_1001_Maze",
+			"id": "100401508"
+		}
+	],
+	"resistance": [
+		{
+			"element": "Physical",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconPhysicalResistanceDelta.png"
+		},
+		{
+			"element": "Ice",
+			"value": 0.6,
+			"icon": "spriteoutput/ui/avatar/icon/IconIceResistanceDelta.png"
+		},
+		{
+			"element": "Wind",
+			"value": 0.4,
+			"icon": "spriteoutput/ui/avatar/icon/IconWindResistanceDelta.png"
+		},
+		{
+			"element": "Imaginary",
+			"value": 0.2,
+			"icon": "spriteoutput/ui/avatar/icon/IconImaginaryResistanceDelta.png"
+		}
+	],
+	"debuffResist": [
+		{
+			"key": "STAT_CTRL_Frozen",
+			"value": 1
+		},
+		{
+			"key": "STAT_CTRL",
+			"value": 0.5
+		}
+	],
+	"weakness": [
+		"Fire",
+		"Thunder",
+		"Quantum"
+	],
+	"summons": [
+		"100201508",
+		"100201608",
+		"100201509",
+		"100201609"
+	],
+	"drops": {
+		"avatarExpReward": 0,
+		"itemList": []
+	},
+	"guide": null,
+	"rank": "LittleBoss",
+	"stanceType": "Ice",
+	"id": "1004015"
+}
