@@ -49281,13 +49281,14 @@
 			151401,
 			151408,
 			151410,
-			151412
+			151412,
+			151418
 		],
 		"id": "1514001"
 	},
 	"1514002": {
 		"name": "Blizzard du Jour",
-		"description": "Gains **3[i]** point(s) of \"Shark's Gotta Bite.\" Inflicts the \"Bite Mark\" state on one designated enemy target, increasing the Basic ATK DMG taken by ****5[i]%****. Then, deals Ice DMG equal to ****1[i]%**** of Ellen's ATK to that target, while simultaneously dealing Ice DMG equal to ****2[i]%**** of Ellen's ATK to adjacent targets. At the start of an ally target's turn or when they take action, if there are no enemy targets in the \"Bite Mark\" state, Ellen causes the enemy target with the highest HP to become afflicted with \"Bite Mark.\"",
+		"description": "Gains **3[i]** \"Shark's Gotta Bite.\" Inflicts the \"Bite Mark\" state on one designated enemy target, increasing the Basic ATK DMG taken by ****5[i]%****. Then, deals Ice DMG equal to ****1[i]%**** of Ellen's ATK to that target, while simultaneously dealing Ice DMG equal to ****2[i]%**** of Ellen's ATK to adjacent targets. At the start of an ally target's turn or when they take action, if there are no enemy targets in the \"Bite Mark\" state, Ellen causes the enemy target with the highest current HP to become afflicted with \"Bite Mark.\"",
 		"avatar": 1514,
 		"type": 2,
 		"pos": {
@@ -49312,7 +49313,7 @@
 			3,
 			1,
 			3,
-			0.625
+			0.25
 		],
 		"requiredLevel": 0,
 		"requiredPromotion": 6,
@@ -49324,7 +49325,7 @@
 	},
 	"1514003": {
 		"name": "Welcome to the Ice Age",
-		"description": "Deals Ice DMG equal to ****1[i]%**** of Ellen's ATK to all enemies. Additionally deals Ice DMG equal to ****2[i]%**** of Ellen's ATK to enemy targets in the \"Bite Mark\" state. After using Ultimate, increases the DMG dealt by Ellen's next use of \"Ice Sea Diving\" by ****3[i]%****.",
+		"description": "Deals Ice DMG equal to ****1[i]%**** of Ellen's ATK to all enemies. Additionally deals Ice DMG equal to ****2[i]%**** of Ellen's ATK to enemy targets in the \"Bite Mark\" state.",
 		"avatar": 1514,
 		"type": 2,
 		"pos": {
@@ -49346,8 +49347,7 @@
 		},
 		"params": [
 			5,
-			4,
-			5
+			3
 		],
 		"requiredLevel": 0,
 		"requiredPromotion": 6,
@@ -49359,7 +49359,7 @@
 	},
 	"1514004": {
 		"name": "Better Call Bangboo",
-		"description": "At the start of the battle, summons \"Sharkboo\" with an initial SPD of **1[i]** points. When \"Sharkboo\" takes action, it launches **Follow-Up ATK**, dealing Ice DMG equal to ****2[i]%**** of Ellen's ATK to one enemy. \"Sharkboo\" will prioritize attacking targets under the \"Bite Mark\" state.\nEllen has a \"Shark's Gotta Bite\" limit of 6 points. When an ally character uses a Basic ATK, Skill, or Ultimate to attack, Ellen gains **3[i]** point(s) of \"Shark's Gotta Bite.\"\n\"Ice Sea Diving\" is unable to gain \"Shark's Gotta Bite.\"",
+		"description": "At the start of the battle, summons \"Sharkboo\" with an initial SPD of **1[i]**. When \"Sharkboo\" takes action, it launches **Follow-Up ATK**, dealing Ice DMG equal to ****2[i]%**** of Ellen's ATK to one enemy. \"Sharkboo\" will prioritize attacking targets in the \"Bite Mark\" state.\nEllen has a \"Shark's Gotta Bite\" limit of 6. When an ally character uses a Basic ATK, Skill, or Ultimate to attack, Ellen gains **3[i]** \"Shark's Gotta Bite.\"\n\"Ice Sea Diving\" cannot trigger the effects of \"Better Call Bangboo\" to gain \"Shark's Gotta Bite.\"",
 		"avatar": 1514,
 		"type": 2,
 		"pos": {
@@ -49395,7 +49395,7 @@
 	},
 	"1514007": {
 		"name": "Roaming Hunt",
-		"description": "Using the Technique grants the \"Roaming\" state for **1[i]** seconds. While in the \"Roaming\" state, this unit moves forward rapidly, blocking all enemy attacks while moving. Using an attack or stopping while in the \"Roaming\" state ends it prematurely. After actively attacking an enemy and entering combat, this unit gains **2[i]** \"Shark's Gotta Bite\" and regenerates **3[i]** Energy, and deals Ice DMG equal to **4[i]%** of Ellen's ATK to all enemies.",
+		"description": "Using the Technique grants the \"Roaming\" state for **1[i]** seconds. While in the \"Roaming\" state, this unit moves forward rapidly, blocking all enemy attacks while moving. Using an attack or stopping while in the \"Roaming\" state ends it prematurely. After actively attacking an enemy and entering combat, this unit gains **2[i]** \"Shark's Gotta Bite,\" regenerates **3[i]** Energy, and deals Ice DMG equal to **4[i]%** of Ellen's ATK to all enemies.",
 		"avatar": 1514,
 		"type": 2,
 		"pos": {
@@ -49421,7 +49421,7 @@
 	},
 	"1514101": {
 		"name": "Roaming Mode",
-		"description": "For each teammate who provides Ellen with at least 1 active buff, Ellen's CRIT DMG increases by **1[i]%**, up to 2 teammates are taken into account. When 2 teammates are taken into account, DMG dealt by Ellen additionally increases by **2[i]%**.",
+		"description": "For every ally target other than Ellen that provides Ellen with at least 1 active buff, Ellen's CRIT DMG increases by **1[i]%**, up to a max of 2 ally targets taken into account. When 2 ally targets are taken into account, DMG dealt by Ellen additionally increases by **2[i]%**.",
 		"avatar": 1514,
 		"type": 3,
 		"pos": {
@@ -49447,7 +49447,7 @@
 	},
 	"1514102": {
 		"name": "Diving Status",
-		"description": "At the start of combat, Ellen gains 3 points of \"Shark's Gotta Bite.\" Once \"Shark's Gotta Bite\" reaches its limit, for every 2 points of excess \"Shark's Gotta Bite\" accumulated, it is recorded as 1 point of \"Heat,\" up to a maximum of 2 points. After Ellen consumes 6 points of \"Shark's Gotta Bite\" to use \"Ice Sea Diving,\" she clears all \"Heat,\" with every 1 point of \"Heat\" cleared recovering 1 point of \"Shark's Gotta Bite.\"",
+		"description": "At the start of the battle, Ellen gains **1[i]** point(s) of \"Shark's Gotta Bite.\" After \"Shark's Gotta Bite\" reaches its max limit, every 1 excess point of \"Shark's Gotta Bite\" Ellen gains advances her action by **2[i]%**. This effect can trigger **3[i]** time(s) per Ellen's turn, and this trigger count resets when Ellen's turn ends.",
 		"avatar": 1514,
 		"type": 3,
 		"pos": {
@@ -49462,7 +49462,11 @@
 			"110112": 5,
 			"110501": 1
 		},
-		"params": [],
+		"params": [
+			3,
+			0.1,
+			2
+		],
 		"requiredLevel": 0,
 		"requiredPromotion": 4,
 		"status": [],
@@ -49471,7 +49475,7 @@
 	},
 	"1514103": {
 		"name": "Dining Etiquette",
-		"description": "After \"Sharkboo\" attacks a target, Ellen gains 1 point of \"Shark's Gotta Bite.\" This effect can trigger at most once per \"Sharkboo\" action. After Ellen consumes 6 points of \"Shark's Gotta Bite\" to use \"Ice Sea Diving,\" for every 1 point of \"Heat\" cleared, \"Sharkboo's\" **action advances** by **1[i]%**.",
+		"description": "After \"Sharkboo\" attacks a target, Ellen gains **1[i]** point of \"Shark's Gotta Bite.\" This effect can trigger at most once per \"Sharkboo\" action.",
 		"avatar": 1514,
 		"type": 3,
 		"pos": {
@@ -49487,7 +49491,7 @@
 			"110501": 1
 		},
 		"params": [
-			0.4
+			1
 		],
 		"requiredLevel": 0,
 		"requiredPromotion": 6,
@@ -49828,7 +49832,7 @@
 	},
 	"1515002": {
 		"name": "Shine for You in Every Hue",
-		"description": "Increases the ATK of all ally targets by an amount equal to ****1[i]%**** of Astra Yao's ATK plus ****3[i]****, and enhances Astra Yao's Basic ATK, lasting for **2[i]** turn(s). At the start of this unit's turn, this duration decreases by 1.",
+		"description": "Increases the ATK of all ally targets by an amount equal to ****1[i]%**** of Astra Yao's ATK plus ****3[i]****, and enhances Astra Yao's Basic ATK into \"Cadenza Cascade,\" lasting for **2[i]** turn(s). At the start of this unit's turn, this duration decreases by 1.",
 		"avatar": 1515,
 		"type": 2,
 		"pos": {
@@ -49899,7 +49903,7 @@
 	},
 	"1515004": {
 		"name": "Play the Galaxy's Message",
-		"description": "When an ally target attacks an enemy, Astra Yao gains 1 \"Syncopation.\" Each \"Syncopation\" increases DMG dealt by all ally characters' Basic ATK by ****1[f1]%****, lasting for **2[i]** turn(s). Astra Yao can gain a maximum of **3[i]** \"Syncopation.\"",
+		"description": "When an ally target attacks an enemy, Astra Yao gains 1 \"Syncopation.\" Each \"Syncopation\" increases DMG dealt by all ally targets' Basic ATK by ****1[f1]%****. This effect lasts for **2[i]** turn(s), and its duration decreases by 1 at the start of this unit's turn. Astra Yao can gain a maximum of **3[i]** \"Syncopation.\"",
 		"avatar": 1515,
 		"type": 2,
 		"pos": {
@@ -50013,7 +50017,7 @@
 	},
 	"1515103": {
 		"name": "Nevernight Tour",
-		"description": "When an ally character uses Basic ATK, Astra Yao additionally gains **2[i]** \"Syncopation.\" While possessing \"Syncopation,\" DMG dealt by all allies increases by **1[i]%**.",
+		"description": "When an ally target uses Basic ATK, Astra Yao additionally gains **2[i]** \"Syncopation.\" While possessing \"Syncopation,\" DMG dealt by all ally targets increases by **1[i]%**.",
 		"avatar": 1515,
 		"type": 3,
 		"pos": {

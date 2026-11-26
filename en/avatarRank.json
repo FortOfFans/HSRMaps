@@ -7022,27 +7022,27 @@
 	},
 	"151401": {
 		"name": "Moods Packed and Ready",
-		"description": "When Ellen consumes 6 \"Shark's Gotta Bite\" to unleash \"Ice Sea Diving,\" all DMG dealt by this \"Ice Sea Diving\" ignores **3[i]%** of the target's DEF. After this attack ends, Ellen's **action advances** by **1[i]%** and she recovers **2[i]** \"Shark's Gotta Bite.\"",
+		"description": "When Ellen's turn begins, recovers **2[i]** point(s) of \"Shark's Gotta Bite.\" When Ellen uses \"Ice Sea Diving,\" all DMG dealt by this use of \"Ice Sea Diving\" to ignore **3[i]%** of the target's DEF. If this use of \"Ice Sea Diving\" consumes 6 points of \"Shark's Gotta Bite,\" Ellen's **action advances** by **1[i]%** after this attack ends.",
 		"icon": "spriteoutput/skillicons/avatar/1514/SkillIcon_1514_Rank1.png",
 		"rankIcon": "spriteoutput/textures/1514/1514_Rank_1.png",
 		"shortIcon": "SkillIcon_1514_Rank1",
 		"params": [
 			0.25,
-			3,
-			0.3
+			4,
+			0.36
 		],
 		"skillUpgrades": {},
 		"id": "151401"
 	},
 	"151402": {
 		"name": "Pinch a Smile at the Mirror",
-		"description": "After Ellen uses \"Ice Sea Diving,\" \"Sharkboo\"'s **action advances** by **100%**. When using each attack, \"Sharkboo\" regenerates **1[i]** Energy and **3[i]** \"Shark's Gotta Bite\" for Ellen, and increases the CRIT DMG dealt by her next \"Ice Sea Diving\" by **2[i]%**. This effect does not stack.",
+		"description": "After Ellen uses \"Ice Sea Diving,\" \"Sharkboo\" immediately uses a **Follow-Up ATK**. When using each attack, \"Sharkboo\" regenerates **1[i]** Energy and recovers **3[i]** \"Shark's Gotta Bite\" for Ellen, and increases all CRIT DMG dealt by her next \"Ice Sea Diving\" by **2[i]%**. This effect does not stack.",
 		"icon": "spriteoutput/skillicons/avatar/1514/SkillIcon_1514_Rank2.png",
 		"rankIcon": "spriteoutput/textures/1514/1514_Rank_2.png",
 		"shortIcon": "SkillIcon_1514_Rank2",
 		"params": [
-			10,
-			0.5,
+			5,
+			0.4,
 			1
 		],
 		"skillUpgrades": {},
@@ -7064,12 +7064,12 @@
 	},
 	"151404": {
 		"name": "A Heart Served All the Same",
-		"description": "When Ellen uses \"Ice Sea Diving,\" every point of \"Shark's Gotta Bite\" consumed increases the Ice RES PEN of all DMG dealt by this \"Ice Sea Diving\" by **1[i]%**.",
+		"description": "When Ellen uses \"Ice Sea Diving,\" increases the Ice **RES PEN** of all DMG dealt by this use of \"Ice Sea Diving\" by **1[i]%**.",
 		"icon": "spriteoutput/skillicons/avatar/1514/SkillIcon_1514_Rank4.png",
 		"rankIcon": "spriteoutput/textures/1514/1514_Rank_4.png",
 		"shortIcon": "SkillIcon_1514_Rank4",
 		"params": [
-			0.02
+			0.12
 		],
 		"skillUpgrades": {},
 		"id": "151404"
@@ -7086,19 +7086,20 @@
 			"151403": 2,
 			"151408": 1,
 			"151410": 1,
-			"151412": 1
+			"151412": 1,
+			"151418": 1
 		},
 		"id": "151405"
 	},
 	"151406": {
 		"name": "Fed, Rested, and Left Alone",
-		"description": "When Ellen uses \"Ice Sea Diving,\" Ice **RES PEN** increases by **4[i]%**, and the number of instances of DMG dealt to random single enemy targets increases by **5[i]**. After Ellen uses her Ultimate, she gains **1[i]** stack(s) of \"Revelry Instant.\" The max limit of \"Revelry Instant\" stacks is **2[i]**. While possessing \"Revelry Instant,\" after Ellen's turn or \"Zoned In on Zero\" ends, 1 stack of \"Revelry Instant\" is immediately consumed, and Ellen immediately gains 1 extra turn and regenerates **3[i]** \"Shark's Gotta Bite.\"",
+		"description": "When Ellen uses \"Ice Sea Diving,\" all DMG dealt by this use of \"Ice Sea Diving\" has its Ice **RES PEN** increases by **4[i]%**, and the number of instances of DMG dealt to random single enemy targets increases by **5[i]**. After Ellen uses her Ultimate, she gains **1[i]** stack(s) of \"Revelry Instant.\" The max limit of \"Revelry Instant\" stacks is **2[i]**. While possessing \"Revelry Instant,\" after Ellen's turn or \"Zoned In on Zero\" ends, 1 stack of \"Revelry Instant\" is immediately consumed, and Ellen gains 1 **extra turn** during which she can use her Ultimate, and regenerates **3[i]** \"Shark's Gotta Bite.\"",
 		"icon": "spriteoutput/skillicons/avatar/1514/SkillIcon_1514_Rank6.png",
 		"rankIcon": "spriteoutput/textures/1514/1514_Rank_6.png",
 		"shortIcon": "SkillIcon_1514_Rank6",
 		"params": [
 			1,
-			2,
+			1,
 			6,
 			0.2,
 			3
@@ -7108,27 +7109,25 @@
 	},
 	"151501": {
 		"name": "Her Drumbeat Moves the Stars",
-		"description": "While the Zone is active, the DMG boost effect of \"Syncopation\" takes effect for all attacks of all ally targets. For each \"Syncopation\" Astra Yao has, DMG dealt by ally targets ignores **1[f1]%** of enemy targets' DEF. The Energy regeneration effect of the Trace \"Filigree Aria\" increases to **2[i]**. At the start of each wave, Astra Yao regenerates **3[i]** Energy.",
+		"description": "While the Zone is active, after an ally character uses an attack that deals Basic ATK DMG, they additionally deal 1 instance of **True DMG** equal to **1[i]%** of the total DMG of this attack to the hit target with the highest current HP. The Energy regeneration effect of the Trace \"Filigree Aria\" increases to **2[i]**.",
 		"icon": "spriteoutput/skillicons/avatar/1515/SkillIcon_1515_Rank1.png",
 		"rankIcon": "spriteoutput/textures/1515/1515_Rank_1.png",
 		"shortIcon": "SkillIcon_1515_Rank1",
 		"params": [
-			0.015,
-			20,
-			30
+			0.24,
+			20
 		],
 		"skillUpgrades": {},
 		"id": "151501"
 	},
 	"151502": {
 		"name": "The Sun Sets in Her Eyes",
-		"description": "The Skill's ATK boost effect additionally increases by an amount equal to **1[i]%** of Astra Yao's ATK. The **Additional DMG** dealt by the Zone increases by **2[i]%**.",
+		"description": "The Skill increases the ATK of all allies by an amount equal to **1[i]%** of Astra Yao's ATK. The DMG Boost effect of Talent \"Syncopation\" also applies to attack types other than Basic ATK.",
 		"icon": "spriteoutput/skillicons/avatar/1515/SkillIcon_1515_Rank2.png",
 		"rankIcon": "spriteoutput/textures/1515/1515_Rank_2.png",
 		"shortIcon": "SkillIcon_1515_Rank2",
 		"params": [
-			0.12,
-			0.8
+			0.12
 		],
 		"skillUpgrades": {},
 		"id": "151502"

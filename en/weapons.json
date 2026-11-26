@@ -50982,7 +50982,7 @@
 		"shortIcon": "23066",
 		"rarity": "SuperRare",
 		"weaponType": "Warrior",
-		"refinements": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Energy Regeneration Rate by <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>. When the wearer uses a Basic ATK, they gain \"Snack,\" lasting for 2 turns. While \"Snack\" is active, the wearer's ATK increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. When the wearer consumes at least <unbreak>200</unbreak> Energy at once to use their Ultimate, they gain \"Iced Drink,\" lasting for 3 turns. While \"Iced Drink\" is active, Basic ATK and Ultimate DMG dealt by the wearer ignores <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of the target's DEF. When the wearer has both \"Snack\" and \"Iced Drink\" simultaneously, they additionally gain \"Good Mood,\" and Basic ATK and Ultimate DMG dealt additionally ignores <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of the target's DEF.",
+		"refinements": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Energy Regeneration Rate by <color=#f29e38ff><unbreak>#5[i]%</unbreak></color>. When the wearer uses a Basic ATK, they gain \"Snack,\" lasting for 2 turns. While \"Snack\" is active, the wearer's ATK increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. At the start of battle or when the wearer uses their Ultimate, they gain \"Iced Drink,\" lasting for 3 turns. While \"Iced Drink\" is active, Basic ATK and Ultimate DMG dealt by the wearer ignores <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> of the target's DEF. When the wearer has both \"Snack\" and \"Iced Drink\" simultaneously, they additionally gain \"Good Mood,\" and Basic ATK and Ultimate DMG dealt additionally ignores <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> of the target's DEF.",
 		"maxHP": 953,
 		"maxATK": 582,
 		"maxDEF": 529,
@@ -51336,7 +51336,7 @@
 		],
 		"id": "23066",
 		"beta": true,
-		"betaVersion": "4.7.52"
+		"betaVersion": "4.7.53"
 	},
 	"23067": {
 		"name": "Shine Bright Like Her",
@@ -51344,7 +51344,7 @@
 		"shortIcon": "23067",
 		"rarity": "SuperRare",
 		"weaponType": "Shaman",
-		"refinements": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> and Energy Regeneration Rate by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>. After the wearer uses their Ultimate, if the wearer is not the character in position 1 of the team lineup, advances the action of the character in position 1 of the team lineup by <unbreak>#6[i]%</unbreak>. If this Ultimate consumes <unbreak>#5[i]</unbreak> Energy or more, the wearer gains \"Our Melody,\" increasing the CRIT DMG of all allies by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, lasting for <unbreak>#4[i]</unbreak> turn(s).",
+		"refinements": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After the wearer uses their Ultimate, advances all allies' actions by <unbreak>#2[i]%</unbreak>, and the wearer gains \"Our Melody,\" which increases all allies' CRIT DMG by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color>, lasting for <unbreak>#4[i]</unbreak> turn(s).",
 		"maxHP": 953,
 		"maxATK": 582,
 		"maxDEF": 529,
@@ -51442,44 +51442,34 @@
 		],
 		"params": {
 			"R1": [
+				0.36,
 				0.24,
-				0.12,
-				0.48,
-				4,
-				240,
-				0.25
+				0.4,
+				4
 			],
 			"R2": [
-				0.3,
-				0.13,
-				0.6,
-				4,
-				240,
-				0.25
+				0.45,
+				0.24,
+				0.5,
+				4
 			],
 			"R3": [
-				0.36,
-				0.14,
-				0.72,
-				4,
-				240,
-				0.25
+				0.54,
+				0.24,
+				0.6,
+				4
 			],
 			"R4": [
-				0.42,
-				0.15,
-				0.84,
-				4,
-				240,
-				0.25
+				0.63,
+				0.24,
+				0.7,
+				4
 			],
 			"R5": [
-				0.48,
-				0.16,
-				0.96,
-				4,
-				240,
-				0.25
+				0.72,
+				0.24,
+				0.8,
+				4
 			],
 			"id": "23067"
 		},
@@ -51633,77 +51623,47 @@
 			[
 				{
 					"type": "AttackAddedRatio",
-					"value": 0.24,
-					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
-					"flat": false
-				},
-				{
-					"type": "SPRatioBase",
-					"value": 0.12,
-					"icon": "spriteoutput/ui/avatar/icon/IconEnergyRecovery.png",
-					"flat": false
-				}
-			],
-			[
-				{
-					"type": "AttackAddedRatio",
-					"value": 0.3,
-					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
-					"flat": false
-				},
-				{
-					"type": "SPRatioBase",
-					"value": 0.13,
-					"icon": "spriteoutput/ui/avatar/icon/IconEnergyRecovery.png",
-					"flat": false
-				}
-			],
-			[
-				{
-					"type": "AttackAddedRatio",
 					"value": 0.36,
 					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
 					"flat": false
-				},
+				}
+			],
+			[
 				{
-					"type": "SPRatioBase",
-					"value": 0.14,
-					"icon": "spriteoutput/ui/avatar/icon/IconEnergyRecovery.png",
+					"type": "AttackAddedRatio",
+					"value": 0.45,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
 					"flat": false
 				}
 			],
 			[
 				{
 					"type": "AttackAddedRatio",
-					"value": 0.42,
+					"value": 0.54,
 					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
-					"flat": false
-				},
-				{
-					"type": "SPRatioBase",
-					"value": 0.15,
-					"icon": "spriteoutput/ui/avatar/icon/IconEnergyRecovery.png",
 					"flat": false
 				}
 			],
 			[
 				{
 					"type": "AttackAddedRatio",
-					"value": 0.48,
+					"value": 0.63,
 					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
 					"flat": false
-				},
+				}
+			],
+			[
 				{
-					"type": "SPRatioBase",
-					"value": 0.16,
-					"icon": "spriteoutput/ui/avatar/icon/IconEnergyRecovery.png",
+					"type": "AttackAddedRatio",
+					"value": 0.72,
+					"icon": "spriteoutput/ui/avatar/icon/IconAttack.png",
 					"flat": false
 				}
 			]
 		],
 		"id": "23067",
 		"beta": true,
-		"betaVersion": "4.7.52"
+		"betaVersion": "4.7.53"
 	},
 	"24000": {
 		"name": "On the Fall of an Aeon",
